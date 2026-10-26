@@ -26,7 +26,8 @@ jobs:
           python3 scripts/fetch_model.py
       - name: Build and check container
         run: |
-          docker build --tag aperture-submission:local .
+          docker pull rocm/pytorch:rocm10.0_ubuntu26.04_py3.14_pytorch_release_2.13.0@sha256:3174cb7061d94c427da96c0edef4adea28046fa3f3b2ff3948dc4e995665ff8c
+          docker build --provenance=false --label org.opencontainers.image.source=https://github.com/cs113062273-bot/AMD-AI-League-Match-4 --tag aperture-submission:local .
           python3 scripts/check_image.py aperture-submission:local > image-check.json
           docker run --rm --entrypoint python3 aperture-submission:local /app/scripts/runtime_compat_smoke.py --cpu
       - name: Publish container
