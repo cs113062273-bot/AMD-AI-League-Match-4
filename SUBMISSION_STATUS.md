@@ -7,3 +7,5 @@ Four fresh CLI/worker checks passed on 2026-10-26 with model, browser and extern
 The hosted build workflow fetches pinned model weights, builds the mandated ROCm image, validates image size and lower layers, exercises a tiny random Qwen model on CPU, then pushes the container. It does not validate AMD GPU performance. After a push, make the package public and verify anonymous pulling before sending its operational reference to the organizer. Keep that reference outside this repository.
 
 Formal event submission and certificate issuance are separate organizer actions. Neither is claimed by this repository.
+
+A real HTTP CLI demonstration queried the httpx PyPI JSON endpoint and returned `BSD-3-Clause` with the fetched source URL. It ran without the model or browser and is a visible demonstration only. See `benchmarks/submission-20261026-live-demo.json`.

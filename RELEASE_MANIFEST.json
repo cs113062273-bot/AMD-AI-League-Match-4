@@ -1,12 +1,17 @@
 {
   "format": "aperture-release-v1",
-  "at_utc": "2026-10-26T05:10:38Z",
+  "at_utc": "2026-10-26T05:17:49.277425+00:00",
   "bundled_weights": false,
   "files": [
     {
       "path": ".dockerignore",
       "bytes": 770,
       "sha256": "9b1579ada208f92a1659ef19863b7d4cfa64c6ad80ada2dc6346ea58358ca793"
+    },
+    {
+      "path": ".github/workflows/build-submission.yml",
+      "bytes": 1956,
+      "sha256": "455c14391c9abc4eae0eb2d950a8ca927d787f135a35b3a6eb53ff2ec36d67c6"
     },
     {
       "path": ".gitignore",
@@ -6464,6 +6469,11 @@
       "sha256": "678e172670adbbbb75d1330f157acc683b0d80f333c10fb8cc7fd00e27474551"
     },
     {
+      "path": "benchmarks/submission-20261026-live-demo.json",
+      "bytes": 545,
+      "sha256": "4b9e39ef76d2fc474535de3fb53dab9ef4009b53746d3fb2d8717bfe78db17fd"
+    },
+    {
       "path": "benchmarks/table-years-20261023-after-v1.json",
       "bytes": 30126,
       "sha256": "1c577e98420286a1552f6f00f0a1346fab917c9721edc28152d0e671e6c573a7"
@@ -8094,14 +8104,19 @@
       "sha256": "8e3dd0c3b5b11897cc71092ccfe517bb7a9783479baa3665aad73c8d1a2041cd"
     },
     {
+      "path": "PROJECT_FORM.json",
+      "bytes": 1860,
+      "sha256": "d6afe1e8ec84886c3a6ef2faea19527e08de3d4aa65a80d2402bb7918d0fd21c"
+    },
+    {
       "path": "pytest.ini",
       "bytes": 41,
       "sha256": "6a96ba0e2d5a8296fb90f474da9d2f0173d3e41eba18965513f711104155f913"
     },
     {
       "path": "README.md",
-      "bytes": 14923,
-      "sha256": "3541fa960b103ae2dd9c9fb075bd6f118ad259b8027984ed58dc8d96de2a52b9"
+      "bytes": 14990,
+      "sha256": "8ad5f3c64cc7561babf03f744dd4fe1545cb180d20878b1f77fd7240a356f901"
     },
     {
       "path": "requirements-browser.lock",
@@ -8322,6 +8337,11 @@
       "path": "SUBMISSION.md",
       "bytes": 3356,
       "sha256": "3e5775cb5bc1d93b5351d25312e226b3d2928eab31be0d84f51b9ca3bbe292fb"
+    },
+    {
+      "path": "SUBMISSION_STATUS.md",
+      "bytes": 1378,
+      "sha256": "2c76693e8c06a07c68fbb6e2f4220a69f489d231084c607f238056f5b9b1646b"
     }
   ]
 }

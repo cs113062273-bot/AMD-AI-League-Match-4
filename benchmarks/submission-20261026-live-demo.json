@@ -1,0 +1,11 @@
+{
+  "scope": "One real public HTTP CLI demonstration on 2026-10-26; model, browser and search disabled. Not an AMD execution or independent accuracy assessment.",
+  "command": "python app.py --query-id submission-demo --url https://pypi.org/pypi/httpx/json --query \"What is the license of the httpx package on PyPI?\" --diagnostics",
+  "result": {
+    "answer": "BSD-3-Clause",
+    "sources": [
+      "https://pypi.org/pypi/httpx/json"
+    ]
+  },
+  "result_sha256": "ce83bc9b0e94ec1d46e58ea13e364aefdf59ef8bd0af2474026922a65f6ed539"
+}
