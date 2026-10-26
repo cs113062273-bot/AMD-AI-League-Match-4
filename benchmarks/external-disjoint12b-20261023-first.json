@@ -1,0 +1,4029 @@
+{
+  "scope": "First frozen disjoint uniform sample, actual public HTTP/search + full4B. Exact answer and gold source scoring; not official SimpleQA or Match 4 accuracy.",
+  "context_limit": 1536,
+  "comparison_mode": false,
+  "baseline_revision": null,
+  "baseline_source_sha256": null,
+  "case_path": "benchmarks/external-disjoint12b-20261023.json",
+  "fixture_path": null,
+  "max_depth": 2,
+  "budget": 24.0,
+  "live_web": true,
+  "browser": true,
+  "production_sha256": {
+    "app.py": "c0267c0441330bd30559f48d2f33916418992b8e21ec8dd1d09ae4773c23b73b",
+    "agent\\browser.py": "53ac9a99f3afcefcdb197cd9b2296c2d380910a782178fadb65235e548efc353",
+    "agent\\candidates.py": "c55cd074f50d1b0c944cf5552bd604caf4b313bada23accd73674d5d1d93d116",
+    "agent\\currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent\\engine.py": "01464cb276814f2d7c845c269da2522c285a7a7e28051abd7e36ad0ec62b41ff",
+    "agent\\evidence.py": "09da13b3f2fb17de30734c44ddad1c89b856ec682ff2e88a78a57773409c0089",
+    "agent\\knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent\\members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "agent\\model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+    "agent\\model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent\\model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+    "agent\\model_server.py": "8d326a696942d259697a6fba8586441bbbe4874042ea900c6d7788a2a0e9fd22",
+    "agent\\navigation.py": "0f849c0c570720114c45c14b0a5286fe409e5d26c2945fdc9f6c1a6922bb7718",
+    "agent\\network.py": "def1be3752f81423c313c2dfa83f6703ee063d7e98652cf0d816b423d0e2d9cb",
+    "agent\\normalize.py": "05e48fa0be8384aa656bf1280ba0be44545efa51b7d4451f0716d836d39a1973",
+    "agent\\output.py": "b983ab2efe31707b1c974344a32dc4b40b708541257695de89cac9e343b073eb",
+    "agent\\oyez.py": "8475f248d78925522e0742b13518be2c4f4db11eae0d8391a8002da7d4e3b67d",
+    "agent\\parser.py": "60f4199ea41c63376ad347793e8b517b38557dcc238e266621cddef27481124e",
+    "agent\\planner.py": "8a617d26e724e8ebc5e604892e867ebcc9e417aa97cbd7e0feda4954cd5a1d2b",
+    "agent\\processes.py": "677c4372b40d1da0ffc0cf4120ca5b6be2fcf6b6c30f6ec17d0d8fae19e198c1",
+    "agent\\proofs.py": "0d7ae78df6ea9949c29f33c7b817dda352c75b3d99c960c3e987e37c7401faab",
+    "agent\\qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent\\resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent\\search.py": "6a4173e80dbe0e178056de5d0a4dd3d54560d140f0b3ffbb52f488566732636b",
+    "agent\\selector.py": "be7c0fce11c10921d5cd4e3d1072d5a2ca5a62f1c328730384d19b0fecd19566",
+    "agent\\signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent\\types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent\\urls.py": "3a6b8a380f6d7966f1f79b97ccdedab5a5959ffbe5a1aa244e3477a0fe6110f4",
+    "agent\\worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f",
+    "agent\\__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41"
+  },
+  "cases_sha256": "1af9b4a1921becccb2304adb7ffbac424f7e2b21dea4941f9e01b27e053c34f9",
+  "fixtures_sha256": null,
+  "rows": [
+    {
+      "id": "simpleqa-911",
+      "answer_ok": false,
+      "source_ok": true,
+      "joint_ok": false,
+      "result": {
+        "answer": "former Ryuhoku Elementary School",
+        "sources": [
+          "https://www.larosadei4venti.com/partnerships-and-projects/"
+        ],
+        "confidence": 0.802,
+        "evidence": "They received ten applications and selected the former Ryuhoku Elementary School in Taito-ku, Tokyo as a planting site. Through the process, Miyajima had conceived an art project called “Revive Time: Kaki Tree Project” and launched the Executive Committee. In 1996, the first planting of the project took place at the former Ryuhoku Elementary School. Miyajima himself conducted a workshop at the tree-planting ceremony.",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the name of the school where the Kaki Tree Project did its first planting?",
+            "url": "https://www.larosadei4venti.com/partnerships-and-projects/",
+            "kind": "text",
+            "terms": [
+              "name",
+              "school",
+              "kaki",
+              "tree",
+              "project",
+              "first",
+              "planting"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "school",
+              "kaki",
+              "tree",
+              "project",
+              "first",
+              "planting"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "www.larosadei4venti.com",
+            "focus": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 0.00012600002810359
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "former Ryuhoku Elementary School",
+              "answer": "former Ryuhoku Elementary School",
+              "source": "https://www.larosadei4venti.com/partnerships-and-projects/",
+              "evidence": "They received ten applications and selected the former Ryuhoku Elementary School in Taito-ku, Tokyo as a planting site. Through the process, Miyajima had conceived an art project called “Revive Time: Kaki Tree Project” and launched the Executive Committee. In 1996, the first planting of the project took place at the former Ryuhoku Elementary School. Miyajima himself conducted a workshop at the tree-planting ceremony.",
+              "label": "",
+              "section": "Worldwide Partnership",
+              "kind": "text",
+              "score": 10.060183729848227,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[4]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "former Ryuhoku Elementary School",
+            "answer": "former Ryuhoku Elementary School",
+            "source": "https://www.larosadei4venti.com/partnerships-and-projects/",
+            "evidence": "They received ten applications and selected the former Ryuhoku Elementary School in Taito-ku, Tokyo as a planting site. Through the process, Miyajima had conceived an art project called “Revive Time: Kaki Tree Project” and launched the Executive Committee. In 1996, the first planting of the project took place at the former Ryuhoku Elementary School. Miyajima himself conducted a workshop at the tree-planting ceremony.",
+            "label": "",
+            "section": "Worldwide Partnership",
+            "kind": "text",
+            "score": 10.060183729848227,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[4]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "https://www.larosadei4venti.com/partnerships-and-projects/",
+              "final": "https://www.larosadei4venti.com/partnerships-and-projects/",
+              "status": 200,
+              "bytes": 68863,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 3.8229
+        }
+      },
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-911.json",
+      "capture_sha256": "7bcc739613dd55df8f8f62bcc489abb46a2f69d6738849a5472b762c88eae764",
+      "capture_omitted": []
+    },
+    {
+      "id": "simpleqa-516",
+      "answer_ok": false,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the age range of the drivers whose EEG data was collected in the 2021 research paper titled \"EEG-Based Driving Fatigue Detection Using a Two-Level Learning Hierarchy Radial Basis Function\" by Ziwu Ren et al.?",
+            "url": "https://www.researchgate.net/publication/349291260_EEG-Based_Driving_Fatigue_Detection_Using_a_Two-Level_Learning_Hierarchy_Radial_Basis_Function",
+            "kind": "text",
+            "terms": [
+              "age",
+              "range",
+              "drivers",
+              "whose",
+              "eeg",
+              "data",
+              "collected",
+              "2021",
+              "research",
+              "paper",
+              "titled",
+              "eeg-based",
+              "driving",
+              "fatigue",
+              "detection",
+              "two-level",
+              "learning",
+              "hierarchy",
+              "radial",
+              "basis",
+              "function",
+              "ziwu",
+              "ren",
+              "et",
+              "al",
+              "based",
+              "two",
+              "level"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "age",
+              "range",
+              "drivers",
+              "whose",
+              "eeg",
+              "data",
+              "collected",
+              "research",
+              "paper",
+              "titled",
+              "eeg-based",
+              "driving",
+              "fatigue",
+              "detection",
+              "two-level",
+              "learning",
+              "hierarchy",
+              "radial",
+              "basis",
+              "function",
+              "ziwu",
+              "ren",
+              "et",
+              "al",
+              "based",
+              "two",
+              "level"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "www.researchgate.net",
+            "focus": "what was the age range ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [
+            {
+              "url": "https://www.researchgate.net/publication/349291260_EEG-Based_Driving_Fatigue_Detection_Using_a_Two-Level_Learning_Hierarchy_Radial_Basis_Function",
+              "error": "http_403"
+            },
+            {
+              "url": "https://www.sciencedirect.com/science/article/pii/S1746809421001889",
+              "error": "http_403"
+            },
+            {
+              "url": "https://wires.onlinelibrary.wiley.com/doi/10.1002/widm.70099",
+              "error": "http_403"
+            },
+            {
+              "url": "https://www.sciencedirect.com/science/article/pii/S0924424726005273",
+              "error": "http_403"
+            },
+            {
+              "url": "https://onlinelibrary.wiley.com/doi/full/10.1155/2022/1885677",
+              "error": "http_403"
+            },
+            {
+              "url": "https://link.springer.com/article/10.1007/s11571-025-10320-3",
+              "error": "redirect_loop"
+            },
+            {
+              "url": "https://link.springer.com/content/pdf/10.1007/s11571-025-10320-3.pdf",
+              "error": "redirect_loop"
+            }
+          ],
+          "selector": [
+            "abstain",
+            "abstain"
+          ],
+          "timings": {
+            "resolver": 1.7600017599761486e-05
+          },
+          "search_requests": 7,
+          "llm_calls": 3,
+          "content_pages": 2,
+          "search_recovery": "starting_url_unavailable_or_exhausted",
+          "search_recovery_depth": 0,
+          "search_hints": [
+            "eeg driving fatigue age range",
+            "driver age eeg study"
+          ],
+          "search_hint_state": "expanded",
+          "browser": [
+            {
+              "state": "rendered",
+              "requests": 3,
+              "blocked": 2,
+              "blocked_analytics": 0,
+              "bytes": 689832,
+              "browser_version": "156.0.8078.4",
+              "seconds": 3.1965
+            },
+            {
+              "state": "rendered",
+              "requests": 7,
+              "blocked": 1,
+              "blocked_analytics": 0,
+              "bytes": 1244203,
+              "browser_version": "156.0.8078.4",
+              "seconds": 1.6088
+            }
+          ],
+          "discovery_refill": [
+            {
+              "depth": 1,
+              "urls": [
+                "https://pmc.ncbi.nlm.nih.gov/articles/PMC8970926/",
+                "https://onlinelibrary.wiley.com/doi/full/10.1155/2022/1885677",
+                "https://link.springer.com/article/10.1007/s11571-025-10320-3",
+                "https://link.springer.com/content/pdf/10.1007/s11571-025-10320-3.pdf"
+              ]
+            }
+          ],
+          "reader_state": "no_evidence",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "https://www.researchgate.net/publication/349291260_EEG-Based_Driving_Fatigue_Detection_Using_a_Two-Level_Learning_Hierarchy_Radial_Basis_Function",
+              "final": "https://www.researchgate.net/publication/349291260_EEG-Based_Driving_Fatigue_Detection_Using_a_Two-Level_Learning_Hierarchy_Radial_Basis_Function",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?q=age+range+drivers+whose+eeg+data+collected+2021+research+paper+titled+eeg-based+driving+fatigue+detection+two-level+learning+hierarchy+radial+basis+function+ziwu+ren+et+al+based+two+level+eeg+driving+fatigue+age+range+driver+age+eeg+study",
+              "final": "https://www.bing.com/search?q=age+range+drivers+whose+eeg+data+collected+2021+research+paper+titled+eeg-based+driving+fatigue+detection+two-level+learning+hierarchy+radial+basis+function+ziwu+ren+et+al+based+two+level+eeg+driving+fatigue+age+range+driver+age+eeg+study",
+              "status": 200,
+              "bytes": 123331,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?q=age+range+drivers+whose+eeg+data+collected+2021+research+paper+titled+eeg-based+driving+fatigue+detection+two-level+learning+hierarchy+radial+basis+function+ziwu+ren+et+al+based+two+level",
+              "final": "https://www.bing.com/search?q=age+range+drivers+whose+eeg+data+collected+2021+research+paper+titled+eeg-based+driving+fatigue+detection+two-level+learning+hierarchy+radial+basis+function+ziwu+ren+et+al+based+two+level",
+              "status": 200,
+              "bytes": 124010,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://html.duckduckgo.com/html/?q=age+range+drivers+whose+eeg+data+collected+2021+research+paper+titled+eeg-based+driving+fatigue+detection+two-level+learning+hierarchy+radial+basis+function+ziwu+ren+et+al+based+two+level+eeg+driving+fatigue+age+range+driver+age+eeg+study",
+              "final": "https://html.duckduckgo.com/html/?q=age+range+drivers+whose+eeg+data+collected+2021+research+paper+titled+eeg-based+driving+fatigue+detection+two-level+learning+hierarchy+radial+basis+function+ziwu+ren+et+al+based+two+level+eeg+driving+fatigue+age+range+driver+age+eeg+study",
+              "status": 202,
+              "bytes": 14692,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://html.duckduckgo.com/html/?q=age+range+drivers+whose+eeg+data+collected+2021+research+paper+titled+eeg-based+driving+fatigue+detection+two-level+learning+hierarchy+radial+basis+function+ziwu+ren+et+al+based+two+level",
+              "final": "https://html.duckduckgo.com/html/?q=age+range+drivers+whose+eeg+data+collected+2021+research+paper+titled+eeg-based+driving+fatigue+detection+two-level+learning+hierarchy+radial+basis+function+ziwu+ren+et+al+based+two+level",
+              "status": 202,
+              "bytes": 14596,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?format=rss&q=age+range+drivers+whose+eeg+data+collected+2021+research+paper+titled+eeg-based+driving+fatigue+detection+two-level+learning+hierarchy+radial+basis+function+ziwu+ren+et+al+based+two+level+eeg+driving+fatigue+age+range+driver+age+eeg+study",
+              "final": "https://www.bing.com/search?format=rss&q=age+range+drivers+whose+eeg+data+collected+2021+research+paper+titled+eeg-based+driving+fatigue+detection+two-level+learning+hierarchy+radial+basis+function+ziwu+ren+et+al+based+two+level+eeg+driving+fatigue+age+range+driver+age+eeg+study",
+              "status": 200,
+              "bytes": 5257,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://lite.duckduckgo.com/lite/?q=age+range+drivers+whose+eeg+data+collected+2021+research+paper+titled+eeg-based+driving+fatigue+detection+two-level+learning+hierarchy+radial+basis+function+ziwu+ren+et+al+based+two+level+eeg+driving+fatigue+age+range+driver+age+eeg+study",
+              "final": "https://lite.duckduckgo.com/lite/?q=age+range+drivers+whose+eeg+data+collected+2021+research+paper+titled+eeg-based+driving+fatigue+detection+two-level+learning+hierarchy+radial+basis+function+ziwu+ren+et+al+based+two+level+eeg+driving+fatigue+age+range+driver+age+eeg+study",
+              "status": 202,
+              "bytes": 14698,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://lite.duckduckgo.com/lite/?q=eeg+driving+fatigue+age+range",
+              "final": "https://lite.duckduckgo.com/lite/?q=eeg+driving+fatigue+age+range",
+              "status": 200,
+              "bytes": 25340,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://ieeexplore.ieee.org/document/10361706",
+              "final": "https://ieeexplore.ieee.org/document/10361706",
+              "status": 202,
+              "bytes": 2060,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://wires.onlinelibrary.wiley.com/doi/10.1002/widm.70099",
+              "final": "https://wires.onlinelibrary.wiley.com/doi/10.1002/widm.70099",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.sciencedirect.com/science/article/pii/S1746809421001889",
+              "final": "https://www.sciencedirect.com/science/article/pii/S1746809421001889",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.sciencedirect.com/science/article/pii/S0924424726005273",
+              "final": "https://www.sciencedirect.com/science/article/pii/S0924424726005273",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://f321f3b23f09.e9817652.ap-northeast-1.token.awswaf.com/f321f3b23f09/7311181d7708/27944042042b/challenge.js",
+              "final": "https://f321f3b23f09.e9817652.ap-northeast-1.token.awswaf.com/f321f3b23f09/7311181d7708/27944042042b/challenge.js",
+              "status": 200,
+              "bytes": 687070,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://f321f3b23f09.e9817652.ap-northeast-1.token.awswaf.com/f321f3b23f09/7311181d7708/27944042042b/inputs?client=browser",
+              "final": "https://f321f3b23f09.e9817652.ap-northeast-1.token.awswaf.com/f321f3b23f09/7311181d7708/27944042042b/inputs?client=browser",
+              "status": 200,
+              "bytes": 702,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://onlinelibrary.wiley.com/doi/full/10.1155/2022/1885677",
+              "final": "https://onlinelibrary.wiley.com/doi/full/10.1155/2022/1885677",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8970926/",
+              "final": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8970926/",
+              "status": 200,
+              "bytes": 21431,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://link.springer.com/content/pdf/10.1007/s11571-025-10320-3.pdf",
+              "final": "https://link.springer.com/content/pdf/10.1007/s11571-025-10320-3.pdf",
+              "status": 0,
+              "bytes": 0,
+              "error": "redirect_loop",
+              "redirects": [
+                "https://link.springer.com/content/pdf/10.1007/s11571-025-10320-3.pdf",
+                "https://idp.springer.com/authorize?response_type=cookie&client_id=springerlink&redirect_uri=https%3A%2F%2Flink.springer.com%2Fcontent%2Fpdf%2F10.1007%2Fs11571-025-10320-3.pdf"
+              ],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://link.springer.com/article/10.1007/s11571-025-10320-3",
+              "final": "https://link.springer.com/article/10.1007/s11571-025-10320-3",
+              "status": 0,
+              "bytes": 0,
+              "error": "redirect_loop",
+              "redirects": [
+                "https://link.springer.com/article/10.1007/s11571-025-10320-3",
+                "https://idp.springer.com/authorize?response_type=cookie&client_id=springerlink&redirect_uri=https%3A%2F%2Flink.springer.com%2Farticle%2F10.1007%2Fs11571-025-10320-3"
+              ],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.google.com/recaptcha/enterprise.js?onload=onLoad&trustedtypes=true&hl=en-US",
+              "final": "https://www.google.com/recaptcha/enterprise.js?onload=onLoad&trustedtypes=true&hl=en-US",
+              "status": 200,
+              "bytes": 1265,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.gstatic.com/_/mss/boq-recaptcha/_/js/k=boq-recaptcha.RecaptchaChallengePageUi.en_US.4H7Ihnrc1LA.2018.O/am=AAAAADIB/d=1/excm=_b,_tp,challengeview/ed=1/dg=0/wt=2/ujg=1/rs=AP105ZipN1Xr1YRaSRYN8yZERuxs_UdTgw/dti=1/m=_b,_tp",
+              "final": "https://www.gstatic.com/_/mss/boq-recaptcha/_/js/k=boq-recaptcha.RecaptchaChallengePageUi.en_US.4H7Ihnrc1LA.2018.O/am=AAAAADIB/d=1/excm=_b,_tp,challengeview/ed=1/dg=0/wt=2/ujg=1/rs=AP105ZipN1Xr1YRaSRYN8yZERuxs_UdTgw/dti=1/m=_b,_tp",
+              "status": 200,
+              "bytes": 154438,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.gstatic.com/_/mss/boq-recaptcha/_/js/k=boq-recaptcha.RecaptchaChallengePageUi.en_US.4H7Ihnrc1LA.2018.O/ck=boq-recaptcha.RecaptchaChallengePageUi.KAEZTecyDKY.L.X.O/am=AAAAADIB/d=1/exm=_b,_tp/excm=_b,_tp,challengeview/ed=1/wt=2/ujg=1/rs=AP105ZhKxk7S70gacozDhxCDWuSb6BYYaw/ee=EmZ2Bf:zr1jrb;JsbNhc:Xd8iUd;LBgRLc:SdcwHb;NJ1rfe:yGfSdd;NPKaK:SdcwHb;NSEoX:lazG7b;SNUn3:ZwDk9d;cEt90b:ws9Tlc;dIoSBb:SpsfSb;eBAeSb:zbML3c;iFQyKf:vfuNJf;oGtAuc:sOXFj;pXdRYb:MdUzUe;qQEoOc:KUM7Z;qddgKe:xQtZb;wR5FRb:O1Gjze;xqZiqf:BBI74;yxTchf:KUM7Z;zxnPse:GkRiKb/dti=1/m=ws9Tlc,O6y8ed,aW3pY,GkRiKb,e5qFLc,IZT63,YYmHzb,vfuNJf,n73qwf,UUJqVe,KUM7Z,O1Gjze,byfTOb,lsjVmc,xUdipf,ZwDk9d,V3dDOb,PrPYRd,MpJwZc,LEikZe,NwH0H,XVMNvd,hc6Ubd,xQtZb,lwddkf,gychg,w9hDv,RMhBfe,SdcwHb,SpsfSb,EFQ78c,Ulmmrd,Z5uLle,JNoxi,BVgquf,BBI74,MdUzUe,zbML3c,zr1jrb,Uas9Hd,pjICDe",
+              "final": "https://www.gstatic.com/_/mss/boq-recaptcha/_/js/k=boq-recaptcha.RecaptchaChallengePageUi.en_US.4H7Ihnrc1LA.2018.O/ck=boq-recaptcha.RecaptchaChallengePageUi.KAEZTecyDKY.L.X.O/am=AAAAADIB/d=1/exm=_b,_tp/excm=_b,_tp,challengeview/ed=1/wt=2/ujg=1/rs=AP105ZhKxk7S70gacozDhxCDWuSb6BYYaw/ee=EmZ2Bf:zr1jrb;JsbNhc:Xd8iUd;LBgRLc:SdcwHb;NJ1rfe:yGfSdd;NPKaK:SdcwHb;NSEoX:lazG7b;SNUn3:ZwDk9d;cEt90b:ws9Tlc;dIoSBb:SpsfSb;eBAeSb:zbML3c;iFQyKf:vfuNJf;oGtAuc:sOXFj;pXdRYb:MdUzUe;qQEoOc:KUM7Z;qddgKe:xQtZb;wR5FRb:O1Gjze;xqZiqf:BBI74;yxTchf:KUM7Z;zxnPse:GkRiKb/dti=1/m=ws9Tlc,O6y8ed,aW3pY,GkRiKb,e5qFLc,IZT63,YYmHzb,vfuNJf,n73qwf,UUJqVe,KUM7Z,O1Gjze,byfTOb,lsjVmc,xUdipf,ZwDk9d,V3dDOb,PrPYRd,MpJwZc,LEikZe,NwH0H,XVMNvd,hc6Ubd,xQtZb,lwddkf,gychg,w9hDv,RMhBfe,SdcwHb,SpsfSb,EFQ78c,Ulmmrd,Z5uLle,JNoxi,BVgquf,BBI74,MdUzUe,zbML3c,zr1jrb,Uas9Hd,pjICDe",
+              "status": 200,
+              "bytes": 212840,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.gstatic.com/_/mss/boq-recaptcha/_/js/k=boq-recaptcha.RecaptchaChallengePageUi.en_US.4H7Ihnrc1LA.2018.O/ck=boq-recaptcha.RecaptchaChallengePageUi.KAEZTecyDKY.L.X.O/am=AAAAADIB/d=1/exm=BBI74,BVgquf,EFQ78c,GkRiKb,IZT63,JNoxi,KUM7Z,LEikZe,MdUzUe,MpJwZc,NwH0H,O1Gjze,O6y8ed,PrPYRd,RMhBfe,SdcwHb,SpsfSb,UUJqVe,Uas9Hd,Ulmmrd,V3dDOb,XVMNvd,YYmHzb,Z5uLle,ZwDk9d,_b,_tp,aW3pY,byfTOb,e5qFLc,gychg,hc6Ubd,lsjVmc,lwddkf,n73qwf,pjICDe,vfuNJf,w9hDv,ws9Tlc,xQtZb,xUdipf,zbML3c,zr1jrb/excm=_b,_tp,challengeview/ed=1/wt=2/ujg=1/rs=AP105ZhKxk7S70gacozDhxCDWuSb6BYYaw/ee=EmZ2Bf:zr1jrb;JsbNhc:Xd8iUd;LBgRLc:SdcwHb;NJ1rfe:yGfSdd;NPKaK:SdcwHb;NSEoX:lazG7b;SNUn3:ZwDk9d;cEt90b:ws9Tlc;dIoSBb:SpsfSb;eBAeSb:zbML3c;iFQyKf:vfuNJf;oGtAuc:sOXFj;pXdRYb:MdUzUe;qQEoOc:KUM7Z;qddgKe:xQtZb;wR5FRb:O1Gjze;xqZiqf:BBI74;yxTchf:KUM7Z;zxnPse:GkRiKb/dti=1/m=WrNmtf",
+              "final": "https://www.gstatic.com/_/mss/boq-recaptcha/_/js/k=boq-recaptcha.RecaptchaChallengePageUi.en_US.4H7Ihnrc1LA.2018.O/ck=boq-recaptcha.RecaptchaChallengePageUi.KAEZTecyDKY.L.X.O/am=AAAAADIB/d=1/exm=BBI74,BVgquf,EFQ78c,GkRiKb,IZT63,JNoxi,KUM7Z,LEikZe,MdUzUe,MpJwZc,NwH0H,O1Gjze,O6y8ed,PrPYRd,RMhBfe,SdcwHb,SpsfSb,UUJqVe,Uas9Hd,Ulmmrd,V3dDOb,XVMNvd,YYmHzb,Z5uLle,ZwDk9d,_b,_tp,aW3pY,byfTOb,e5qFLc,gychg,hc6Ubd,lsjVmc,lwddkf,n73qwf,pjICDe,vfuNJf,w9hDv,ws9Tlc,xQtZb,xUdipf,zbML3c,zr1jrb/excm=_b,_tp,challengeview/ed=1/wt=2/ujg=1/rs=AP105ZhKxk7S70gacozDhxCDWuSb6BYYaw/ee=EmZ2Bf:zr1jrb;JsbNhc:Xd8iUd;LBgRLc:SdcwHb;NJ1rfe:yGfSdd;NPKaK:SdcwHb;NSEoX:lazG7b;SNUn3:ZwDk9d;cEt90b:ws9Tlc;dIoSBb:SpsfSb;eBAeSb:zbML3c;iFQyKf:vfuNJf;oGtAuc:sOXFj;pXdRYb:MdUzUe;qQEoOc:KUM7Z;qddgKe:xQtZb;wR5FRb:O1Gjze;xqZiqf:BBI74;yxTchf:KUM7Z;zxnPse:GkRiKb/dti=1/m=WrNmtf",
+              "status": 200,
+              "bytes": 385,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.gstatic.com/recaptcha/releases/NhfdZHzre16wrc2m6BxEdu7J/recaptcha__en.js",
+              "final": "https://www.gstatic.com/recaptcha/releases/NhfdZHzre16wrc2m6BxEdu7J/recaptcha__en.js",
+              "status": 200,
+              "bytes": 848898,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.gstatic.com/_/mss/boq-recaptcha/_/js/k=boq-recaptcha.RecaptchaChallengePageUi.en_US.4H7Ihnrc1LA.2018.O/ck=boq-recaptcha.RecaptchaChallengePageUi.KAEZTecyDKY.L.X.O/am=AAAAADIB/d=1/exm=BBI74,BVgquf,EFQ78c,GkRiKb,IZT63,JNoxi,KUM7Z,LEikZe,MdUzUe,MpJwZc,NwH0H,O1Gjze,O6y8ed,PrPYRd,RMhBfe,SdcwHb,SpsfSb,UUJqVe,Uas9Hd,Ulmmrd,V3dDOb,WrNmtf,XVMNvd,YYmHzb,Z5uLle,ZwDk9d,_b,_tp,aW3pY,byfTOb,e5qFLc,gychg,hc6Ubd,lsjVmc,lwddkf,n73qwf,pjICDe,vfuNJf,w9hDv,ws9Tlc,xQtZb,xUdipf,zbML3c,zr1jrb/excm=_b,_tp,challengeview/ed=1/wt=2/ujg=1/rs=AP105ZhKxk7S70gacozDhxCDWuSb6BYYaw/ee=EmZ2Bf:zr1jrb;JsbNhc:Xd8iUd;LBgRLc:SdcwHb;NJ1rfe:yGfSdd;NPKaK:SdcwHb;NSEoX:lazG7b;SNUn3:ZwDk9d;cEt90b:ws9Tlc;dIoSBb:SpsfSb;eBAeSb:zbML3c;iFQyKf:vfuNJf;oGtAuc:sOXFj;pXdRYb:MdUzUe;qQEoOc:KUM7Z;qddgKe:xQtZb;wR5FRb:O1Gjze;xqZiqf:BBI74;yxTchf:KUM7Z;zxnPse:GkRiKb/dti=1/m=Wt6vjf,hhhU8,FCpbqb,WhJNk",
+              "final": "https://www.gstatic.com/_/mss/boq-recaptcha/_/js/k=boq-recaptcha.RecaptchaChallengePageUi.en_US.4H7Ihnrc1LA.2018.O/ck=boq-recaptcha.RecaptchaChallengePageUi.KAEZTecyDKY.L.X.O/am=AAAAADIB/d=1/exm=BBI74,BVgquf,EFQ78c,GkRiKb,IZT63,JNoxi,KUM7Z,LEikZe,MdUzUe,MpJwZc,NwH0H,O1Gjze,O6y8ed,PrPYRd,RMhBfe,SdcwHb,SpsfSb,UUJqVe,Uas9Hd,Ulmmrd,V3dDOb,WrNmtf,XVMNvd,YYmHzb,Z5uLle,ZwDk9d,_b,_tp,aW3pY,byfTOb,e5qFLc,gychg,hc6Ubd,lsjVmc,lwddkf,n73qwf,pjICDe,vfuNJf,w9hDv,ws9Tlc,xQtZb,xUdipf,zbML3c,zr1jrb/excm=_b,_tp,challengeview/ed=1/wt=2/ujg=1/rs=AP105ZhKxk7S70gacozDhxCDWuSb6BYYaw/ee=EmZ2Bf:zr1jrb;JsbNhc:Xd8iUd;LBgRLc:SdcwHb;NJ1rfe:yGfSdd;NPKaK:SdcwHb;NSEoX:lazG7b;SNUn3:ZwDk9d;cEt90b:ws9Tlc;dIoSBb:SpsfSb;eBAeSb:zbML3c;iFQyKf:vfuNJf;oGtAuc:sOXFj;pXdRYb:MdUzUe;qQEoOc:KUM7Z;qddgKe:xQtZb;wR5FRb:O1Gjze;xqZiqf:BBI74;yxTchf:KUM7Z;zxnPse:GkRiKb/dti=1/m=Wt6vjf,hhhU8,FCpbqb,WhJNk",
+              "status": 200,
+              "bytes": 4946,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 17,
+          "pages_fetched": 2,
+          "seconds": 10.5719
+        }
+      },
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-516.json",
+      "capture_sha256": "1878ae1c533af61eb2e0ccbc7cb9af019362ef819c196015e86861b55feed6a6",
+      "capture_omitted": []
+    },
+    {
+      "id": "simpleqa-1013",
+      "answer_ok": false,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_budget_exhausted",
+        "diagnostics": {
+          "plan": {
+            "question": "How many children did Swiss painter Johann Caspar Füssli have with his wife, Elisabeth?",
+            "url": "https://en.wikipedia.org/wiki/Johann_Caspar_F%C3%BCssli",
+            "kind": "number",
+            "terms": [
+              "children",
+              "swiss",
+              "painter",
+              "johann",
+              "caspar",
+              "füssli",
+              "his",
+              "wife",
+              "elisabeth"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "children",
+              "swiss",
+              "painter",
+              "johann",
+              "caspar",
+              "füssli",
+              "his",
+              "wife",
+              "elisabeth"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "en.wikipedia.org",
+            "focus": "how many children did swiss painter johann caspar füssli have with his wife, elisabeth",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Johann_Caspar_F%C3%BCssli",
+              "error": "http_403"
+            },
+            {
+              "url": "https://de.wikipedia.org/wiki/Johann_Kaspar_F%C3%BCssli",
+              "error": "http_403"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Johann_Kaspar_F%C3%BCssli",
+              "error": "http_403"
+            }
+          ],
+          "selector": [
+            "model_deadline",
+            "model_deadline"
+          ],
+          "timings": {
+            "resolver": 2.0200037397444248e-05
+          },
+          "search_requests": 4,
+          "llm_calls": 3,
+          "content_pages": 4,
+          "search_recovery": "starting_url_unavailable_or_exhausted",
+          "search_recovery_depth": 0,
+          "search_hints": [
+            "füssli children with elisabeth",
+            "johann caspar füssli family"
+          ],
+          "search_hint_state": "expanded",
+          "discovery_refill": [
+            {
+              "depth": 1,
+              "urls": [
+                "https://www.geni.com/people/Anna-Waser/6000000057827466885",
+                "https://www.geni.com/people/Hans-F%C3%BCssli/6000000057827530906"
+              ]
+            }
+          ],
+          "reader_state": "budget_exhausted",
+          "top_candidates": [
+            {
+              "raw": "9",
+              "answer": "9",
+              "source": "https://historydata.com/person/johann-kaspar-fussli",
+              "evidence": "Johann Kaspar Füssli (9 March 1743 – 4 May 1786) was a Swiss painter, entomologist, and publisher from Zurich. He was the son of Johann Caspar Füssli (1706–1782), a well-known portrait painter and art historian, and Anna Elisabeth Waser. His family was closely connected to the cultural and intellectual circles of Zurich. Johann Kaspar was the older brother of famous Romantic painter Henry Fuseli, born Johann Heinrich Füssli (1745–1825), whose powerful and imaginative works later gained him international fame. Johann Kaspar married twice: first to Verena Störi in 1770, and then to Anna Elisabeth Kilchsperger in 1774.",
+              "label": "",
+              "section": "Biography",
+              "kind": "number",
+              "score": 9.095026654476806,
+              "signals": {
+                "locator": "p[5]:0",
+                "page_title": "Johann Kaspar Füssli (1743–1786) — Biography & Historical Data - HistoryData",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "1743 – 4",
+              "answer": "1743 – 4",
+              "source": "https://historydata.com/person/johann-kaspar-fussli",
+              "evidence": "Johann Kaspar Füssli (9 March 1743 – 4 May 1786) was a Swiss painter, entomologist, and publisher from Zurich. He was the son of Johann Caspar Füssli (1706–1782), a well-known portrait painter and art historian, and Anna Elisabeth Waser. His family was closely connected to the cultural and intellectual circles of Zurich. Johann Kaspar was the older brother of famous Romantic painter Henry Fuseli, born Johann Heinrich Füssli (1745–1825), whose powerful and imaginative works later gained him international fame. Johann Kaspar married twice: first to Verena Störi in 1770, and then to Anna Elisabeth Kilchsperger in 1774.",
+              "label": "",
+              "section": "Biography",
+              "kind": "number",
+              "score": 9.095026654476806,
+              "signals": {
+                "locator": "p[5]:0",
+                "page_title": "Johann Kaspar Füssli (1743–1786) — Biography & Historical Data - HistoryData",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "1786",
+              "answer": "1786",
+              "source": "https://historydata.com/person/johann-kaspar-fussli",
+              "evidence": "Johann Kaspar Füssli (9 March 1743 – 4 May 1786) was a Swiss painter, entomologist, and publisher from Zurich. He was the son of Johann Caspar Füssli (1706–1782), a well-known portrait painter and art historian, and Anna Elisabeth Waser. His family was closely connected to the cultural and intellectual circles of Zurich. Johann Kaspar was the older brother of famous Romantic painter Henry Fuseli, born Johann Heinrich Füssli (1745–1825), whose powerful and imaginative works later gained him international fame. Johann Kaspar married twice: first to Verena Störi in 1770, and then to Anna Elisabeth Kilchsperger in 1774.",
+              "label": "",
+              "section": "Biography",
+              "kind": "number",
+              "score": 9.095026654476806,
+              "signals": {
+                "locator": "p[5]:0",
+                "page_title": "Johann Kaspar Füssli (1743–1786) — Biography & Historical Data - HistoryData",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "1706–1782",
+              "answer": "1706–1782",
+              "source": "https://historydata.com/person/johann-kaspar-fussli",
+              "evidence": "Johann Kaspar Füssli (9 March 1743 – 4 May 1786) was a Swiss painter, entomologist, and publisher from Zurich. He was the son of Johann Caspar Füssli (1706–1782), a well-known portrait painter and art historian, and Anna Elisabeth Waser. His family was closely connected to the cultural and intellectual circles of Zurich. Johann Kaspar was the older brother of famous Romantic painter Henry Fuseli, born Johann Heinrich Füssli (1745–1825), whose powerful and imaginative works later gained him international fame. Johann Kaspar married twice: first to Verena Störi in 1770, and then to Anna Elisabeth Kilchsperger in 1774.",
+              "label": "",
+              "section": "Biography",
+              "kind": "number",
+              "score": 9.095026654476806,
+              "signals": {
+                "locator": "p[5]:0",
+                "page_title": "Johann Kaspar Füssli (1743–1786) — Biography & Historical Data - HistoryData",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "1745–1825",
+              "answer": "1745–1825",
+              "source": "https://historydata.com/person/johann-kaspar-fussli",
+              "evidence": "Johann Kaspar Füssli (9 March 1743 – 4 May 1786) was a Swiss painter, entomologist, and publisher from Zurich. He was the son of Johann Caspar Füssli (1706–1782), a well-known portrait painter and art historian, and Anna Elisabeth Waser. His family was closely connected to the cultural and intellectual circles of Zurich. Johann Kaspar was the older brother of famous Romantic painter Henry Fuseli, born Johann Heinrich Füssli (1745–1825), whose powerful and imaginative works later gained him international fame. Johann Kaspar married twice: first to Verena Störi in 1770, and then to Anna Elisabeth Kilchsperger in 1774.",
+              "label": "",
+              "section": "Biography",
+              "kind": "number",
+              "score": 9.095026654476806,
+              "signals": {
+                "locator": "p[5]:0",
+                "page_title": "Johann Kaspar Füssli (1743–1786) — Biography & Historical Data - HistoryData",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "1770",
+              "answer": "1770",
+              "source": "https://historydata.com/person/johann-kaspar-fussli",
+              "evidence": "Johann Kaspar Füssli (9 March 1743 – 4 May 1786) was a Swiss painter, entomologist, and publisher from Zurich. He was the son of Johann Caspar Füssli (1706–1782), a well-known portrait painter and art historian, and Anna Elisabeth Waser. His family was closely connected to the cultural and intellectual circles of Zurich. Johann Kaspar was the older brother of famous Romantic painter Henry Fuseli, born Johann Heinrich Füssli (1745–1825), whose powerful and imaginative works later gained him international fame. Johann Kaspar married twice: first to Verena Störi in 1770, and then to Anna Elisabeth Kilchsperger in 1774.",
+              "label": "",
+              "section": "Biography",
+              "kind": "number",
+              "score": 9.095026654476806,
+              "signals": {
+                "locator": "p[5]:0",
+                "page_title": "Johann Kaspar Füssli (1743–1786) — Biography & Historical Data - HistoryData",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "1774",
+              "answer": "1774",
+              "source": "https://historydata.com/person/johann-kaspar-fussli",
+              "evidence": "Johann Kaspar Füssli (9 March 1743 – 4 May 1786) was a Swiss painter, entomologist, and publisher from Zurich. He was the son of Johann Caspar Füssli (1706–1782), a well-known portrait painter and art historian, and Anna Elisabeth Waser. His family was closely connected to the cultural and intellectual circles of Zurich. Johann Kaspar was the older brother of famous Romantic painter Henry Fuseli, born Johann Heinrich Füssli (1745–1825), whose powerful and imaginative works later gained him international fame. Johann Kaspar married twice: first to Verena Störi in 1770, and then to Anna Elisabeth Kilchsperger in 1774.",
+              "label": "",
+              "section": "Biography",
+              "kind": "number",
+              "score": 9.095026654476806,
+              "signals": {
+                "locator": "p[5]:0",
+                "page_title": "Johann Kaspar Füssli (1743–1786) — Biography & Historical Data - HistoryData",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "02",
+              "answer": "02",
+              "source": "https://historydata.com/person/johann-kaspar-fussli",
+              "evidence": "02 . Füssli was the older brother of Henry Fuseli, the Swiss-British Romantic painter best known for his painting 'The Nightmare' (1781).",
+              "label": "",
+              "section": "Did You Know?",
+              "kind": "number",
+              "score": 6.4,
+              "signals": {
+                "locator": "li[19]:0",
+                "page_title": "Johann Kaspar Füssli (1743–1786) — Biography & Historical Data - HistoryData",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [
+            {
+              "a": "9",
+              "b": "1743 – 4",
+              "sources": [
+                "https://historydata.com/person/johann-kaspar-fussli",
+                "https://historydata.com/person/johann-kaspar-fussli"
+              ],
+              "margin": 0.0
+            },
+            {
+              "a": "9",
+              "b": "1786",
+              "sources": [
+                "https://historydata.com/person/johann-kaspar-fussli",
+                "https://historydata.com/person/johann-kaspar-fussli"
+              ],
+              "margin": 0.0
+            },
+            {
+              "a": "9",
+              "b": "1706–1782",
+              "sources": [
+                "https://historydata.com/person/johann-kaspar-fussli",
+                "https://historydata.com/person/johann-kaspar-fussli"
+              ],
+              "margin": 0.0
+            },
+            {
+              "a": "9",
+              "b": "1745–1825",
+              "sources": [
+                "https://historydata.com/person/johann-kaspar-fussli",
+                "https://historydata.com/person/johann-kaspar-fussli"
+              ],
+              "margin": 0.0
+            },
+            {
+              "a": "9",
+              "b": "1770",
+              "sources": [
+                "https://historydata.com/person/johann-kaspar-fussli",
+                "https://historydata.com/person/johann-kaspar-fussli"
+              ],
+              "margin": 0.0
+            },
+            {
+              "a": "9",
+              "b": "1774",
+              "sources": [
+                "https://historydata.com/person/johann-kaspar-fussli",
+                "https://historydata.com/person/johann-kaspar-fussli"
+              ],
+              "margin": 0.0
+            }
+          ],
+          "fetches": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Johann_Caspar_F%C3%BCssli",
+              "final": "https://en.wikipedia.org/wiki/Johann_Caspar_F%C3%BCssli",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?q=children+swiss+painter+johann+caspar+f%C3%BCssli+his+wife+elisabeth+f%C3%BCssli+children+with+elisabeth+johann+caspar+f%C3%BCssli+family",
+              "final": "https://www.bing.com/search?q=children+swiss+painter+johann+caspar+f%C3%BCssli+his+wife+elisabeth+f%C3%BCssli+children+with+elisabeth+johann+caspar+f%C3%BCssli+family",
+              "status": 200,
+              "bytes": 92090,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?q=children+swiss+painter+johann+caspar+f%C3%BCssli+his+wife+elisabeth",
+              "final": "https://www.bing.com/search?q=children+swiss+painter+johann+caspar+f%C3%BCssli+his+wife+elisabeth",
+              "status": 200,
+              "bytes": 123800,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://html.duckduckgo.com/html/?q=children+swiss+painter+johann+caspar+f%C3%BCssli+his+wife+elisabeth+f%C3%BCssli+children+with+elisabeth+johann+caspar+f%C3%BCssli+family",
+              "final": "https://html.duckduckgo.com/html/?q=children+swiss+painter+johann+caspar+f%C3%BCssli+his+wife+elisabeth+f%C3%BCssli+children+with+elisabeth+johann+caspar+f%C3%BCssli+family",
+              "status": 202,
+              "bytes": 14463,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://html.duckduckgo.com/html/?q=children+swiss+painter+johann+caspar+f%C3%BCssli+his+wife+elisabeth",
+              "final": "https://html.duckduckgo.com/html/?q=children+swiss+painter+johann+caspar+f%C3%BCssli+his+wife+elisabeth",
+              "status": 200,
+              "bytes": 35077,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://de.wikipedia.org/wiki/Johann_Kaspar_F%C3%BCssli",
+              "final": "https://de.wikipedia.org/wiki/Johann_Kaspar_F%C3%BCssli",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://ancestors.familysearch.org/en/9MF8-T95/johann-caspar-f%C3%BCssli-1706-1782",
+              "final": "https://ancestors.familysearch.org/en/9MF8-T95/johann-caspar-f%C3%BCssli-1706-1782",
+              "status": 200,
+              "bytes": 19132,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://historydata.com/person/johann-kaspar-fussli",
+              "final": "https://historydata.com/person/johann-kaspar-fussli",
+              "status": 200,
+              "bytes": 139753,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.portraitarchiv.ch/index.php/portrait/show/481564",
+              "final": "https://www.portraitarchiv.ch/index.php/portrait/show/481564",
+              "status": 200,
+              "bytes": 40853,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Johann_Kaspar_F%C3%BCssli",
+              "final": "https://en.wikipedia.org/wiki/Johann_Kaspar_F%C3%BCssli",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.geni.com/people/Hans-F%C3%BCssli/6000000057827530906",
+              "final": "https://www.geni.com/login",
+              "status": 200,
+              "bytes": 56132,
+              "error": "",
+              "redirects": [
+                "https://www.geni.com/people/Hans-F%C3%BCssli/6000000057827530906"
+              ],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.geni.com/people/Anna-Waser/6000000057827466885",
+              "final": "https://www.geni.com/login",
+              "status": 200,
+              "bytes": 56132,
+              "error": "",
+              "redirects": [
+                "https://www.geni.com/people/Anna-Waser/6000000057827466885"
+              ],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 9,
+          "pages_fetched": 4,
+          "seconds": 13.2667
+        }
+      },
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-1013.json",
+      "capture_sha256": "71ea4be5da2aa66fb49b9f1293dcfb86252299c5ccd7b0c7233b4891c4bf6817",
+      "capture_omitted": []
+    },
+    {
+      "id": "simpleqa-1076",
+      "answer_ok": false,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_not_run",
+        "diagnostics": {
+          "plan": {
+            "question": "How many goals did the Selkirk Fishermen score in Game 2 of the 1920 Memorial Cup against the Toronto Canoe Club Paddlers?",
+            "url": "https://en-academic.com/dic.nsf/enwiki/4707620",
+            "kind": "number",
+            "terms": [
+              "goals",
+              "selkirk",
+              "fishermen",
+              "score",
+              "game",
+              "2",
+              "1920",
+              "memorial",
+              "cup",
+              "against",
+              "toronto",
+              "canoe",
+              "club",
+              "paddlers"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "goals",
+              "selkirk",
+              "fishermen",
+              "score",
+              "game",
+              "2",
+              "memorial",
+              "cup",
+              "against",
+              "toronto",
+              "canoe",
+              "club",
+              "paddlers"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "en-academic.com",
+            "focus": "how many goals did the selkirk fishermen score ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [
+            {
+              "url": "https://en-academic.com/dic.nsf/enwiki/4707620",
+              "error": "ClientConnectorCertificateError: Cannot connect to host en-academic.com:443 ssl:True [SSLCertVerificationError: (5, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certifica"
+            }
+          ],
+          "selector": [],
+          "timings": {
+            "resolver": 1.3399985618889332e-05
+          },
+          "search_requests": 8,
+          "llm_calls": 1,
+          "content_pages": 0,
+          "search_recovery": "starting_url_unavailable_or_exhausted",
+          "search_recovery_depth": 0,
+          "search_hints": [],
+          "search_hint_state": "TimeoutError",
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "https://en-academic.com/dic.nsf/enwiki/4707620",
+              "final": "https://en-academic.com/dic.nsf/enwiki/4707620",
+              "status": 0,
+              "bytes": 0,
+              "error": "ClientConnectorCertificateError: Cannot connect to host en-academic.com:443 ssl:True [SSLCertVerificationError: (5, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certifica",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?q=How+many+goals+did+the+Selkirk+Fishermen+score+in+Game+2+of+the+1920+Memorial+Cup+against+the+Toronto+Canoe+Club+Paddlers%3F",
+              "final": "https://www.bing.com/search?q=How+many+goals+did+the+Selkirk+Fishermen+score+in+Game+2+of+the+1920+Memorial+Cup+against+the+Toronto+Canoe+Club+Paddlers%3F",
+              "status": 200,
+              "bytes": 125162,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?q=goals+selkirk+fishermen+score+game+2+1920+memorial+cup+against+toronto+canoe+club+paddlers",
+              "final": "https://www.bing.com/search?q=goals+selkirk+fishermen+score+game+2+1920+memorial+cup+against+toronto+canoe+club+paddlers",
+              "status": 200,
+              "bytes": 120751,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://html.duckduckgo.com/html/?q=How+many+goals+did+the+Selkirk+Fishermen+score+in+Game+2+of+the+1920+Memorial+Cup+against+the+Toronto+Canoe+Club+Paddlers%3F",
+              "final": "https://html.duckduckgo.com/html/?q=How+many+goals+did+the+Selkirk+Fishermen+score+in+Game+2+of+the+1920+Memorial+Cup+against+the+Toronto+Canoe+Club+Paddlers%3F",
+              "status": 202,
+              "bytes": 14454,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://html.duckduckgo.com/html/?q=goals+selkirk+fishermen+score+game+2+1920+memorial+cup+against+toronto+canoe+club+paddlers",
+              "final": "https://html.duckduckgo.com/html/?q=goals+selkirk+fishermen+score+game+2+1920+memorial+cup+against+toronto+canoe+club+paddlers",
+              "status": 202,
+              "bytes": 14402,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?format=rss&q=goals+selkirk+fishermen+score+game+2+1920+memorial+cup+against+toronto+canoe+club+paddlers",
+              "final": "https://www.bing.com/search?format=rss&q=goals+selkirk+fishermen+score+game+2+1920+memorial+cup+against+toronto+canoe+club+paddlers",
+              "status": 200,
+              "bytes": 5743,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://lite.duckduckgo.com/lite/?q=goals+selkirk+fishermen+score+game+2+1920+memorial+cup+against+toronto+canoe+club+paddlers",
+              "final": "https://lite.duckduckgo.com/lite/?q=goals+selkirk+fishermen+score+game+2+1920+memorial+cup+against+toronto+canoe+club+paddlers",
+              "status": 202,
+              "bytes": 14396,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.google.com/search?q=goals+selkirk+fishermen+score+game+2+1920+memorial+cup+against+toronto+canoe+club+paddlers",
+              "final": "https://www.google.com/search?q=goals+selkirk+fishermen+score+game+2+1920+memorial+cup+against+toronto+canoe+club+paddlers",
+              "status": 200,
+              "bytes": 93229,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=How%20many%20goals%20did%20the%20Selkirk%20Fishermen%20score%20in%20Game%202%20of%20the%201920%20Memorial%20Cup%20against%20the%20Toronto%20Canoe%20Club%20Paddlers%3F",
+              "final": "https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=How%20many%20goals%20did%20the%20Selkirk%20Fishermen%20score%20in%20Game%202%20of%20the%201920%20Memorial%20Cup%20against%20the%20Toronto%20Canoe%20Club%20Paddlers%3F",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 7,
+          "pages_fetched": 0,
+          "seconds": 5.7969
+        }
+      },
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-1076.json",
+      "capture_sha256": "9e6f2616668cffc6c53e2546782661a5a6525bad915dfdb24c14a3da2bc8a542",
+      "capture_omitted": []
+    },
+    {
+      "id": "simpleqa-483",
+      "answer_ok": false,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_not_run",
+        "diagnostics": {
+          "plan": {
+            "question": "Specify the month, and year in which Activision Blizzard announced the upcoming establishment of a new esports division.",
+            "url": "https://en.wikipedia.org/wiki/Activision_Blizzard",
+            "kind": "text",
+            "terms": [
+              "specify",
+              "month",
+              "year",
+              "activision",
+              "blizzard",
+              "announced",
+              "upcoming",
+              "establishment",
+              "new",
+              "esports",
+              "division"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "specify",
+              "month",
+              "year",
+              "activision",
+              "blizzard",
+              "announced",
+              "upcoming",
+              "establishment",
+              "new",
+              "esports",
+              "division"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "en.wikipedia.org",
+            "focus": "specify the month, and year ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Activision_Blizzard",
+              "error": "http_403"
+            }
+          ],
+          "selector": [],
+          "timings": {
+            "resolver": 1.179997343569994e-05
+          },
+          "search_requests": 8,
+          "llm_calls": 1,
+          "content_pages": 0,
+          "search_recovery": "starting_url_unavailable_or_exhausted",
+          "search_recovery_depth": 0,
+          "search_hints": [],
+          "search_hint_state": "http_503",
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Activision_Blizzard",
+              "final": "https://en.wikipedia.org/wiki/Activision_Blizzard",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://html.duckduckgo.com/html/?q=Specify+the+month%2C+and+year+in+which+Activision+Blizzard+announced+the+upcoming+establishment+of+a+new+esports+division.",
+              "final": "https://html.duckduckgo.com/html/?q=Specify+the+month%2C+and+year+in+which+Activision+Blizzard+announced+the+upcoming+establishment+of+a+new+esports+division.",
+              "status": 202,
+              "bytes": 14456,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://html.duckduckgo.com/html/?q=specify+month+year+activision+blizzard+announced+upcoming+establishment+new+esports+division",
+              "final": "https://html.duckduckgo.com/html/?q=specify+month+year+activision+blizzard+announced+upcoming+establishment+new+esports+division",
+              "status": 202,
+              "bytes": 14400,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?q=Specify+the+month%2C+and+year+in+which+Activision+Blizzard+announced+the+upcoming+establishment+of+a+new+esports+division.",
+              "final": "https://www.bing.com/search?q=Specify+the+month%2C+and+year+in+which+Activision+Blizzard+announced+the+upcoming+establishment+of+a+new+esports+division.",
+              "status": 200,
+              "bytes": 124478,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?q=specify+month+year+activision+blizzard+announced+upcoming+establishment+new+esports+division",
+              "final": "https://www.bing.com/search?q=specify+month+year+activision+blizzard+announced+upcoming+establishment+new+esports+division",
+              "status": 200,
+              "bytes": 126409,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?format=rss&q=specify+month+year+activision+blizzard+announced+upcoming+establishment+new+esports+division",
+              "final": "https://www.bing.com/search?format=rss&q=specify+month+year+activision+blizzard+announced+upcoming+establishment+new+esports+division",
+              "status": 200,
+              "bytes": 5418,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://lite.duckduckgo.com/lite/?q=specify+month+year+activision+blizzard+announced+upcoming+establishment+new+esports+division",
+              "final": "https://lite.duckduckgo.com/lite/?q=specify+month+year+activision+blizzard+announced+upcoming+establishment+new+esports+division",
+              "status": 202,
+              "bytes": 14406,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.google.com/search?q=specify+month+year+activision+blizzard+announced+upcoming+establishment+new+esports+division",
+              "final": "https://www.google.com/search?q=specify+month+year+activision+blizzard+announced+upcoming+establishment+new+esports+division",
+              "status": 200,
+              "bytes": 93495,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=Specify%20the%20month%2C%20and%20year%20in%20which%20Activision%20Blizzard%20announced%20the%20upcoming%20establishment%20of%20a%20new%20esports%20division.",
+              "final": "https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=Specify%20the%20month%2C%20and%20year%20in%20which%20Activision%20Blizzard%20announced%20the%20upcoming%20establishment%20of%20a%20new%20esports%20division.",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 7,
+          "pages_fetched": 0,
+          "seconds": 1.0116
+        }
+      },
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-483.json",
+      "capture_sha256": "f8871d6e6c123834ae2c0c217978f2e3630a43764e960afaa4464cfdf43b0580",
+      "capture_omitted": []
+    },
+    {
+      "id": "simpleqa-1232",
+      "answer_ok": false,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_not_run",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the population of Konaruiyeh, a village in Esfandaqeh Rural District, in the Central District of Jiroft County, Kerman Province, Iran, at the 2006 census?",
+            "url": "https://en.wikipedia.org/wiki/Konaruiyeh",
+            "kind": "text",
+            "terms": [
+              "population",
+              "konaruiyeh",
+              "village",
+              "esfandaqeh",
+              "rural",
+              "district",
+              "central",
+              "jiroft",
+              "county",
+              "kerman",
+              "province",
+              "iran",
+              "2006",
+              "census"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "population",
+              "konaruiyeh",
+              "village",
+              "esfandaqeh",
+              "rural",
+              "district",
+              "central",
+              "jiroft",
+              "county",
+              "kerman",
+              "province",
+              "iran",
+              "census"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "en.wikipedia.org",
+            "focus": "what was the population ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Konaruiyeh",
+              "error": "http_403"
+            }
+          ],
+          "selector": [],
+          "timings": {
+            "resolver": 1.479999627918005e-05
+          },
+          "search_requests": 8,
+          "llm_calls": 1,
+          "content_pages": 0,
+          "search_recovery": "starting_url_unavailable_or_exhausted",
+          "search_recovery_depth": 0,
+          "search_hints": [],
+          "search_hint_state": "http_503",
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Konaruiyeh",
+              "final": "https://en.wikipedia.org/wiki/Konaruiyeh",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?q=What+was+the+population+of+Konaruiyeh%2C+a+village+in+Esfandaqeh+Rural+District%2C+in+the+Central+District+of+Jiroft+County%2C+Kerman+Province%2C+Iran%2C+at+the+2006+census%3F",
+              "final": "https://www.bing.com/search?q=What+was+the+population+of+Konaruiyeh%2C+a+village+in+Esfandaqeh+Rural+District%2C+in+the+Central+District+of+Jiroft+County%2C+Kerman+Province%2C+Iran%2C+at+the+2006+census%3F",
+              "status": 200,
+              "bytes": 125746,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://html.duckduckgo.com/html/?q=What+was+the+population+of+Konaruiyeh%2C+a+village+in+Esfandaqeh+Rural+District%2C+in+the+Central+District+of+Jiroft+County%2C+Kerman+Province%2C+Iran%2C+at+the+2006+census%3F",
+              "final": "https://html.duckduckgo.com/html/?q=What+was+the+population+of+Konaruiyeh%2C+a+village+in+Esfandaqeh+Rural+District%2C+in+the+Central+District+of+Jiroft+County%2C+Kerman+Province%2C+Iran%2C+at+the+2006+census%3F",
+              "status": 202,
+              "bytes": 14541,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://html.duckduckgo.com/html/?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census",
+              "final": "https://html.duckduckgo.com/html/?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census",
+              "status": 202,
+              "bytes": 14430,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census",
+              "final": "https://www.bing.com/search?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census",
+              "status": 200,
+              "bytes": 119254,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?format=rss&q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census",
+              "final": "https://www.bing.com/search?format=rss&q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census",
+              "status": 200,
+              "bytes": 5727,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://lite.duckduckgo.com/lite/?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census",
+              "final": "https://lite.duckduckgo.com/lite/?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census",
+              "status": 202,
+              "bytes": 14448,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.google.com/search?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census",
+              "final": "https://www.google.com/search?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census",
+              "status": 200,
+              "bytes": 93327,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=What%20was%20the%20population%20of%20Konaruiyeh%2C%20a%20village%20in%20Esfandaqeh%20Rural%20District%2C%20in%20the%20Central%20District%20of%20Jiroft%20County%2C%20Kerman%20Province%2C%20Iran%2C%20at%20the%202006%20census%3F",
+              "final": "https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=What%20was%20the%20population%20of%20Konaruiyeh%2C%20a%20village%20in%20Esfandaqeh%20Rural%20District%2C%20in%20the%20Central%20District%20of%20Jiroft%20County%2C%20Kerman%20Province%2C%20Iran%2C%20at%20the%202006%20census%3F",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 7,
+          "pages_fetched": 0,
+          "seconds": 1.0317
+        }
+      },
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-1232.json",
+      "capture_sha256": "cd18e95ec94a639230b64256b1b500a2a37a63e10a02b5ea07b22f4bccda3506",
+      "capture_omitted": []
+    },
+    {
+      "id": "simpleqa-2010",
+      "answer_ok": false,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_not_run",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the name of the sculptor who created the c. 1680 sculpture depicting Ceres in the Belvoir Castle Sculpture Garden in Leicestershire, England?",
+            "url": "https://britishlistedbuildings.co.uk/101180136-sculpture-depicting-ceres-in-belvoir-castle-sculpture-garden-one-of-seven-statues-belvoir",
+            "kind": "text",
+            "terms": [
+              "name",
+              "sculptor",
+              "created",
+              "c",
+              "1680",
+              "sculpture",
+              "depicting",
+              "ceres",
+              "belvoir",
+              "castle",
+              "garden",
+              "leicestershire",
+              "england"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "sculptor",
+              "created",
+              "c",
+              "sculpture",
+              "depicting",
+              "ceres",
+              "belvoir",
+              "castle",
+              "garden",
+              "leicestershire",
+              "england"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "britishlistedbuildings.co.uk",
+            "focus": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [
+            {
+              "url": "https://britishlistedbuildings.co.uk/101180136-sculpture-depicting-ceres-in-belvoir-castle-sculpture-garden-one-of-seven-statues-belvoir",
+              "error": "http_403"
+            }
+          ],
+          "selector": [],
+          "timings": {
+            "resolver": 1.3499986380338669e-05
+          },
+          "search_requests": 8,
+          "llm_calls": 1,
+          "content_pages": 0,
+          "search_recovery": "starting_url_unavailable_or_exhausted",
+          "search_recovery_depth": 0,
+          "search_hints": [],
+          "search_hint_state": "http_503",
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "https://britishlistedbuildings.co.uk/101180136-sculpture-depicting-ceres-in-belvoir-castle-sculpture-garden-one-of-seven-statues-belvoir",
+              "final": "https://britishlistedbuildings.co.uk/101180136-sculpture-depicting-ceres-in-belvoir-castle-sculpture-garden-one-of-seven-statues-belvoir",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?q=What+is+the+name+of+the+sculptor+who+created+the+c.+1680+sculpture+depicting+Ceres+in+the+Belvoir+Castle+Sculpture+Garden+in+Leicestershire%2C+England%3F",
+              "final": "https://www.bing.com/search?q=What+is+the+name+of+the+sculptor+who+created+the+c.+1680+sculpture+depicting+Ceres+in+the+Belvoir+Castle+Sculpture+Garden+in+Leicestershire%2C+England%3F",
+              "status": 200,
+              "bytes": 124156,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?q=name+sculptor+created+c+1680+sculpture+depicting+ceres+belvoir+castle+garden+leicestershire+england",
+              "final": "https://www.bing.com/search?q=name+sculptor+created+c+1680+sculpture+depicting+ceres+belvoir+castle+garden+leicestershire+england",
+              "status": 200,
+              "bytes": 125253,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://html.duckduckgo.com/html/?q=What+is+the+name+of+the+sculptor+who+created+the+c.+1680+sculpture+depicting+Ceres+in+the+Belvoir+Castle+Sculpture+Garden+in+Leicestershire%2C+England%3F",
+              "final": "https://html.duckduckgo.com/html/?q=What+is+the+name+of+the+sculptor+who+created+the+c.+1680+sculpture+depicting+Ceres+in+the+Belvoir+Castle+Sculpture+Garden+in+Leicestershire%2C+England%3F",
+              "status": 202,
+              "bytes": 14514,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://html.duckduckgo.com/html/?q=name+sculptor+created+c+1680+sculpture+depicting+ceres+belvoir+castle+garden+leicestershire+england",
+              "final": "https://html.duckduckgo.com/html/?q=name+sculptor+created+c+1680+sculpture+depicting+ceres+belvoir+castle+garden+leicestershire+england",
+              "status": 202,
+              "bytes": 14438,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?format=rss&q=name+sculptor+created+c+1680+sculpture+depicting+ceres+belvoir+castle+garden+leicestershire+england",
+              "final": "https://www.bing.com/search?format=rss&q=name+sculptor+created+c+1680+sculpture+depicting+ceres+belvoir+castle+garden+leicestershire+england",
+              "status": 200,
+              "bytes": 6437,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://lite.duckduckgo.com/lite/?q=name+sculptor+created+c+1680+sculpture+depicting+ceres+belvoir+castle+garden+leicestershire+england",
+              "final": "https://lite.duckduckgo.com/lite/?q=name+sculptor+created+c+1680+sculpture+depicting+ceres+belvoir+castle+garden+leicestershire+england",
+              "status": 202,
+              "bytes": 14420,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.google.com/search?q=name+sculptor+created+c+1680+sculpture+depicting+ceres+belvoir+castle+garden+leicestershire+england",
+              "final": "https://www.google.com/search?q=name+sculptor+created+c+1680+sculpture+depicting+ceres+belvoir+castle+garden+leicestershire+england",
+              "status": 200,
+              "bytes": 93354,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=What%20is%20the%20name%20of%20the%20sculptor%20who%20created%20the%20c.%201680%20sculpture%20depicting%20Ceres%20in%20the%20Belvoir%20Castle%20Sculpture%20Garden%20in%20Leicestershire%2C%20England%3F",
+              "final": "https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=What%20is%20the%20name%20of%20the%20sculptor%20who%20created%20the%20c.%201680%20sculpture%20depicting%20Ceres%20in%20the%20Belvoir%20Castle%20Sculpture%20Garden%20in%20Leicestershire%2C%20England%3F",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 7,
+          "pages_fetched": 0,
+          "seconds": 1.3436
+        }
+      },
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-2010.json",
+      "capture_sha256": "aefa6f6f23b3972e2c75184b8e8d8cc6684926647eabcddde04eb903f554bb8b",
+      "capture_omitted": []
+    },
+    {
+      "id": "simpleqa-2215",
+      "answer_ok": false,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_not_run",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the name of the individual known as \"The Horse\" who won eight running events over three Olympics between 81 and 89 CE?",
+            "url": "https://en.wikipedia.org/wiki/Hermogenes_of_Xanthos",
+            "kind": "text",
+            "terms": [
+              "name",
+              "individual",
+              "known",
+              "horse",
+              "won",
+              "eight",
+              "running",
+              "events",
+              "over",
+              "three",
+              "olympics",
+              "between",
+              "81",
+              "89",
+              "ce"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "individual",
+              "known",
+              "horse",
+              "won",
+              "eight",
+              "running",
+              "events",
+              "over",
+              "three",
+              "olympics",
+              "between",
+              "81",
+              "89",
+              "ce"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "en.wikipedia.org",
+            "focus": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Hermogenes_of_Xanthos",
+              "error": "http_403"
+            }
+          ],
+          "selector": [],
+          "timings": {
+            "resolver": 1.4599994756281376e-05
+          },
+          "search_requests": 9,
+          "llm_calls": 1,
+          "content_pages": 0,
+          "search_recovery": "starting_url_unavailable_or_exhausted",
+          "search_recovery_depth": 0,
+          "search_hints": [],
+          "search_hint_state": "http_503",
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Hermogenes_of_Xanthos",
+              "final": "https://en.wikipedia.org/wiki/Hermogenes_of_Xanthos",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?q=name+individual+known+horse+won+eight+running+events+over+three+olympics+between+81+89+ce",
+              "final": "https://www.bing.com/search?q=name+individual+known+horse+won+eight+running+events+over+three+olympics+between+81+89+ce",
+              "status": 200,
+              "bytes": 127507,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?q=What+is+the+name+of+the+individual+known+as+%22The+Horse%22+who+won+eight+running+events+over+three+Olympics+between+81+and+89+CE%3F",
+              "final": "https://www.bing.com/search?q=What+is+the+name+of+the+individual+known+as+%22The+Horse%22+who+won+eight+running+events+over+three+Olympics+between+81+and+89+CE%3F",
+              "status": 200,
+              "bytes": 128232,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://html.duckduckgo.com/html/?q=name+individual+known+horse+won+eight+running+events+over+three+olympics+between+81+89+ce",
+              "final": "https://html.duckduckgo.com/html/?q=name+individual+known+horse+won+eight+running+events+over+three+olympics+between+81+89+ce",
+              "status": 202,
+              "bytes": 14394,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://html.duckduckgo.com/html/?q=What+is+the+name+of+the+individual+known+as+%22The+Horse%22+who+won+eight+running+events+over+three+Olympics+between+81+and+89+CE%3F",
+              "final": "https://html.duckduckgo.com/html/?q=What+is+the+name+of+the+individual+known+as+%22The+Horse%22+who+won+eight+running+events+over+three+Olympics+between+81+and+89+CE%3F",
+              "status": 202,
+              "bytes": 14488,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?format=rss&q=name+individual+known+horse+won+eight+running+events+over+three+olympics+between+81+89+ce",
+              "final": "https://www.bing.com/search?format=rss&q=name+individual+known+horse+won+eight+running+events+over+three+olympics+between+81+89+ce",
+              "status": 200,
+              "bytes": 6397,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://lite.duckduckgo.com/lite/?q=name+individual+known+horse+won+eight+running+events+over+three+olympics+between+81+89+ce",
+              "final": "https://lite.duckduckgo.com/lite/?q=name+individual+known+horse+won+eight+running+events+over+three+olympics+between+81+89+ce",
+              "status": 202,
+              "bytes": 14406,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://lite.duckduckgo.com/lite/?q=%22The+Horse%22+individual+known",
+              "final": "https://lite.duckduckgo.com/lite/?q=%22The+Horse%22+individual+known",
+              "status": 202,
+              "bytes": 14241,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.google.com/search?q=name+individual+known+horse+won+eight+running+events+over+three+olympics+between+81+89+ce",
+              "final": "https://www.google.com/search?q=name+individual+known+horse+won+eight+running+events+over+three+olympics+between+81+89+ce",
+              "status": 200,
+              "bytes": 93298,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=What%20is%20the%20name%20of%20the%20individual%20known%20as%20%22The%20Horse%22%20who%20won%20eight%20running%20events%20over%20three%20Olympics%20between%2081%20and%2089%20CE%3F",
+              "final": "https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=What%20is%20the%20name%20of%20the%20individual%20known%20as%20%22The%20Horse%22%20who%20won%20eight%20running%20events%20over%20three%20Olympics%20between%2081%20and%2089%20CE%3F",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 8,
+          "pages_fetched": 0,
+          "seconds": 1.0459
+        }
+      },
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-2215.json",
+      "capture_sha256": "9c91f4be9a7c11191aa5b89ebb54eed6d33e45e249b8b2bd00593852c6397066",
+      "capture_omitted": []
+    },
+    {
+      "id": "simpleqa-3120",
+      "answer_ok": false,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_service_unavailable",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the full name of the Colombian soccer player Juan Guzmán born in 1988?",
+            "url": "https://en.wikipedia.org/wiki/Juan_Guzm%C3%A1n_(footballer)",
+            "kind": "text",
+            "terms": [
+              "full",
+              "name",
+              "colombian",
+              "soccer",
+              "player",
+              "juan",
+              "guzmán",
+              "born",
+              "1988"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "full",
+              "colombian",
+              "soccer",
+              "player",
+              "juan",
+              "guzmán",
+              "born"
+            ],
+            "versions": [],
+            "year": "1988",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "en.wikipedia.org",
+            "focus": "what is the full name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Juan_Guzm%C3%A1n_(footballer)",
+              "error": "http_403"
+            }
+          ],
+          "selector": [
+            "http_503",
+            "http_503"
+          ],
+          "timings": {
+            "resolver": 1.1299969628453255e-05
+          },
+          "search_requests": 4,
+          "llm_calls": 3,
+          "content_pages": 8,
+          "search_recovery": "starting_url_unavailable_or_exhausted",
+          "search_recovery_depth": 0,
+          "search_hints": [],
+          "search_hint_state": "http_503",
+          "browser": [
+            {
+              "state": "rendered",
+              "requests": 3,
+              "blocked": 1,
+              "blocked_analytics": 0,
+              "bytes": 690208,
+              "browser_version": "156.0.8078.4",
+              "seconds": 1.644
+            }
+          ],
+          "reader_state": "service_unavailable",
+          "top_candidates": [
+            {
+              "raw": "J. Guzmán",
+              "answer": "J. Guzmán",
+              "source": "https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/",
+              "evidence": "name: J. Guzmán | $ { @context: https://schema.org | @type: Person | name: J. Guzmán | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+              "label": "name",
+              "section": "$ { @context: https://schema.org | @type: Person | name: J. Guzmán | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+              "kind": "text",
+              "score": 14.242055845832018,
+              "signals": {
+                "locator": "script[13]/name",
+                "page_title": "J. Guzmán - Soccer Player Profile & Career Stats",
+                "structure": "jsonld",
+                "qualifiers": {
+                  "identity": [
+                    "J. Guzmán"
+                  ],
+                  "structured": true,
+                  "bindings": {
+                    "@context": "https://schema.org",
+                    "@type": "Person",
+                    "name": "J. Guzmán",
+                    "url": "https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/",
+                    "birthDate": "31/08/1988",
+                    "height": "173 cm"
+                  },
+                  "schema_types": [
+                    "Person"
+                  ],
+                  "value_type": "scalar"
+                },
+                "field_value": "J. Guzmán",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "Colombia",
+              "answer": "Colombia",
+              "source": "https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/",
+              "evidence": "nationality.name: Colombia | nationality { @type: Country | name: Colombia } | parent $ { @context: https://schema.org | @type: Person | name: J. Guzmán | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+              "label": "nationality.name",
+              "section": "nationality { @type: Country | name: Colombia } | parent $ { @context: https://schema.org | @type: Person | name: J. Guzmán | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+              "kind": "text",
+              "score": 14.016926665971368,
+              "signals": {
+                "locator": "script[13]/nationality.name",
+                "page_title": "J. Guzmán - Soccer Player Profile & Career Stats",
+                "structure": "jsonld",
+                "qualifiers": {
+                  "identity": [
+                    "Colombia"
+                  ],
+                  "structured": true,
+                  "schema_types": [
+                    "Country"
+                  ],
+                  "bindings": {
+                    "@type": "Country",
+                    "name": "Colombia"
+                  },
+                  "value_type": "scalar"
+                },
+                "field_value": "Colombia",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "Patriotas Boyacá",
+              "answer": "Patriotas Boyacá",
+              "source": "https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/",
+              "evidence": "member Of.name: Patriotas Boyacá | memberOf { @type: SportsTeam | name: Patriotas Boyacá } | parent $ { @context: https://schema.org | @type: Person | name: J. Guzmán | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+              "label": "member Of.name",
+              "section": "memberOf { @type: SportsTeam | name: Patriotas Boyacá } | parent $ { @context: https://schema.org | @type: Person | name: J. Guzmán | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+              "kind": "text",
+              "score": 14.000019032966975,
+              "signals": {
+                "locator": "script[13]/memberOf.name",
+                "page_title": "J. Guzmán - Soccer Player Profile & Career Stats",
+                "structure": "jsonld",
+                "qualifiers": {
+                  "identity": [
+                    "Patriotas Boyacá"
+                  ],
+                  "structured": true,
+                  "schema_types": [
+                    "SportsTeam"
+                  ],
+                  "bindings": {
+                    "@type": "SportsTeam",
+                    "name": "Patriotas Boyacá"
+                  },
+                  "value_type": "scalar"
+                },
+                "field_value": "Patriotas Boyacá",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "J. Guzmán | $ { @context: https://schema.org | @type: Person | name: J. Guzmán | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+              "answer": "J. Guzmán | $ { @context: https://schema.org | @type: Person | name: J. Guzmán | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+              "source": "https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/",
+              "evidence": "name: J. Guzmán | $ { @context: https://schema.org | @type: Person | name: J. Guzmán | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+              "label": "name",
+              "section": "$ { @context: https://schema.org | @type: Person | name: J. Guzmán | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+              "kind": "text",
+              "score": 12.942055845832018,
+              "signals": {
+                "locator": "script[13]/name",
+                "page_title": "J. Guzmán - Soccer Player Profile & Career Stats",
+                "structure": "jsonld",
+                "qualifiers": {
+                  "identity": [
+                    "J. Guzmán"
+                  ],
+                  "structured": true,
+                  "bindings": {
+                    "@context": "https://schema.org",
+                    "@type": "Person",
+                    "name": "J. Guzmán",
+                    "url": "https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/",
+                    "birthDate": "31/08/1988",
+                    "height": "173 cm"
+                  },
+                  "schema_types": [
+                    "Person"
+                  ],
+                  "value_type": "scalar"
+                },
+                "field_value": "J. Guzmán",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "Colombia | nationality { @type: Country | name: Colombia } | parent $ { @context: https://schema.org | @type: Person | name: J. Guzmán | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+              "answer": "Colombia | nationality { @type: Country | name: Colombia } | parent $ { @context: https://schema.org | @type: Person | name: J. Guzmán | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+              "source": "https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/",
+              "evidence": "nationality.name: Colombia | nationality { @type: Country | name: Colombia } | parent $ { @context: https://schema.org | @type: Person | name: J. Guzmán | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+              "label": "nationality.name",
+              "section": "nationality { @type: Country | name: Colombia } | parent $ { @context: https://schema.org | @type: Person | name: J. Guzmán | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+              "kind": "text",
+              "score": 12.716926665971368,
+              "signals": {
+                "locator": "script[13]/nationality.name",
+                "page_title": "J. Guzmán - Soccer Player Profile & Career Stats",
+                "structure": "jsonld",
+                "qualifiers": {
+                  "identity": [
+                    "Colombia"
+                  ],
+                  "structured": true,
+                  "schema_types": [
+                    "Country"
+                  ],
+                  "bindings": {
+                    "@type": "Country",
+                    "name": "Colombia"
+                  },
+                  "value_type": "scalar"
+                },
+                "field_value": "Colombia",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "Patriotas Boyacá | memberOf { @type: SportsTeam | name: Patriotas Boyacá } | parent $ { @context: https://schema.org | @type: Person | name: J. Guzmán | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+              "answer": "Patriotas Boyacá | memberOf { @type: SportsTeam | name: Patriotas Boyacá } | parent $ { @context: https://schema.org | @type: Person | name: J. Guzmán | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+              "source": "https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/",
+              "evidence": "member Of.name: Patriotas Boyacá | memberOf { @type: SportsTeam | name: Patriotas Boyacá } | parent $ { @context: https://schema.org | @type: Person | name: J. Guzmán | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+              "label": "member Of.name",
+              "section": "memberOf { @type: SportsTeam | name: Patriotas Boyacá } | parent $ { @context: https://schema.org | @type: Person | name: J. Guzmán | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+              "kind": "text",
+              "score": 12.700019032966974,
+              "signals": {
+                "locator": "script[13]/memberOf.name",
+                "page_title": "J. Guzmán - Soccer Player Profile & Career Stats",
+                "structure": "jsonld",
+                "qualifiers": {
+                  "identity": [
+                    "Patriotas Boyacá"
+                  ],
+                  "structured": true,
+                  "schema_types": [
+                    "SportsTeam"
+                  ],
+                  "bindings": {
+                    "@type": "SportsTeam",
+                    "name": "Patriotas Boyacá"
+                  },
+                  "value_type": "scalar"
+                },
+                "field_value": "Patriotas Boyacá",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "Tyler Blackett",
+              "answer": "Tyler Blackett",
+              "source": "https://en.soccerwiki.org/player.php?pid=85733",
+              "evidence": "#: 24 | Nat:  | :  | Player: Tyler Blackett | Pos: D(LC),DM(L) | Age: 32 | Rt: 76",
+              "label": "Player",
+              "section": "New Mexico United Squad",
+              "kind": "text",
+              "score": 7.7,
+              "signals": {
+                "locator": "table[34]/row[0]/cell[3]",
+                "page_title": "Juan Guzmán - Soccer Wiki: for the fans, by the fans",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 34,
+                  "row": 0,
+                  "columns": [
+                    "#",
+                    "Nat",
+                    "",
+                    "Player",
+                    "Pos",
+                    "Age",
+                    "Rt"
+                  ],
+                  "cells": [
+                    "24",
+                    "",
+                    "",
+                    "Tyler Blackett",
+                    "D(LC),DM(L)",
+                    "32",
+                    "76"
+                  ],
+                  "column": 3
+                },
+                "field_value": "Tyler Blackett",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "Gedion Zelalem",
+              "answer": "Gedion Zelalem",
+              "source": "https://en.soccerwiki.org/player.php?pid=85733",
+              "evidence": "#: 6 | Nat:  | :  | Player: Gedion Zelalem | Pos: DM,M,AM(C) | Age: 29 | Rt: 78",
+              "label": "Player",
+              "section": "New Mexico United Squad",
+              "kind": "text",
+              "score": 7.7,
+              "signals": {
+                "locator": "table[34]/row[1]/cell[3]",
+                "page_title": "Juan Guzmán - Soccer Wiki: for the fans, by the fans",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 34,
+                  "row": 1,
+                  "columns": [
+                    "#",
+                    "Nat",
+                    "",
+                    "Player",
+                    "Pos",
+                    "Age",
+                    "Rt"
+                  ],
+                  "cells": [
+                    "6",
+                    "",
+                    "",
+                    "Gedion Zelalem",
+                    "DM,M,AM(C)",
+                    "29",
+                    "78"
+                  ],
+                  "column": 3
+                },
+                "field_value": "Gedion Zelalem",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [
+            {
+              "a": "J. Guzmán",
+              "b": "Colombia",
+              "sources": [
+                "https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/",
+                "https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/"
+              ],
+              "margin": 0.225
+            },
+            {
+              "a": "J. Guzmán",
+              "b": "Patriotas Boyacá",
+              "sources": [
+                "https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/",
+                "https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/"
+              ],
+              "margin": 0.242
+            }
+          ],
+          "fetches": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Juan_Guzm%C3%A1n_(footballer)",
+              "final": "https://en.wikipedia.org/wiki/Juan_Guzm%C3%A1n_(footballer)",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://html.duckduckgo.com/html/?q=What+is+the+full+name+of+the+Colombian+soccer+player+Juan+Guzm%C3%A1n+born+in+1988%3F",
+              "final": "https://html.duckduckgo.com/html/?q=What+is+the+full+name+of+the+Colombian+soccer+player+Juan+Guzm%C3%A1n+born+in+1988%3F",
+              "status": 202,
+              "bytes": 14380,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?q=What+is+the+full+name+of+the+Colombian+soccer+player+Juan+Guzm%C3%A1n+born+in+1988%3F",
+              "final": "https://www.bing.com/search?q=What+is+the+full+name+of+the+Colombian+soccer+player+Juan+Guzm%C3%A1n+born+in+1988%3F",
+              "status": 200,
+              "bytes": 116922,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?q=full+name+colombian+soccer+player+juan+guzm%C3%A1n+born+1988",
+              "final": "https://www.bing.com/search?q=full+name+colombian+soccer+player+juan+guzm%C3%A1n+born+1988",
+              "status": 200,
+              "bytes": 123134,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://html.duckduckgo.com/html/?q=full+name+colombian+soccer+player+juan+guzm%C3%A1n+born+1988",
+              "final": "https://html.duckduckgo.com/html/?q=full+name+colombian+soccer+player+juan+guzm%C3%A1n+born+1988",
+              "status": 200,
+              "bytes": 33303,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.transfermarkt.com/juan-pablo-guzman/profil/spieler/170543",
+              "final": "https://www.transfermarkt.com/juan-pablo-guzman/profil/spieler/170543",
+              "status": 202,
+              "bytes": 2436,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/",
+              "final": "https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/",
+              "status": 200,
+              "bytes": 57495,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.footballdatabase.eu/en/player/details/204458-juan-guzman",
+              "final": "https://www.footballdatabase.eu/en/player/details/204458-juan-guzman",
+              "status": 200,
+              "bytes": 1485066,
+              "error": "",
+              "redirects": [],
+              "truncated": true,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://en.soccerwiki.org/player.php?pid=85733",
+              "final": "https://en.soccerwiki.org/player.php?pid=85733",
+              "status": 200,
+              "bytes": 103924,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://6cb07a88f2ca.fc036b3b.ap-northeast-1.token.awswaf.com/6cb07a88f2ca/9fd9b1ce341a/b4b3dc80406c/challenge.js",
+              "final": "https://6cb07a88f2ca.fc036b3b.ap-northeast-1.token.awswaf.com/6cb07a88f2ca/9fd9b1ce341a/b4b3dc80406c/challenge.js",
+              "status": 200,
+              "bytes": 687070,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://6cb07a88f2ca.fc036b3b.ap-northeast-1.token.awswaf.com/6cb07a88f2ca/9fd9b1ce341a/b4b3dc80406c/inputs?client=browser",
+              "final": "https://6cb07a88f2ca.fc036b3b.ap-northeast-1.token.awswaf.com/6cb07a88f2ca/9fd9b1ce341a/b4b3dc80406c/inputs?client=browser",
+              "status": 200,
+              "bytes": 702,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://en.soccerwiki.org/player.php?pid=99150",
+              "final": "https://en.soccerwiki.org/player.php?pid=99150",
+              "status": 200,
+              "bytes": 106064,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://en.soccerwiki.org/player.php?pid=83418",
+              "final": "https://en.soccerwiki.org/player.php?pid=83418",
+              "status": 200,
+              "bytes": 106854,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://en.soccerwiki.org/player.php?pid=99619",
+              "final": "https://en.soccerwiki.org/player.php?pid=99619",
+              "status": 200,
+              "bytes": 106764,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://en.soccerwiki.org/player.php?pid=82573",
+              "final": "https://en.soccerwiki.org/player.php?pid=82573",
+              "status": 200,
+              "bytes": 107773,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 14,
+          "pages_fetched": 8,
+          "seconds": 7.1334
+        }
+      },
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-3120.json",
+      "capture_sha256": "dd4de2064f5cbe0f42dfc81ba0af5d8fb7e5c01929951296c8dc79a98466b0f6",
+      "capture_omitted": []
+    },
+    {
+      "id": "simpleqa-4145",
+      "answer_ok": false,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_service_unavailable",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the architectural style of the Odd Fellows Hall building in Eureka, California?",
+            "url": "https://en.wikipedia.org/wiki/Odd_Fellows_Hall_(Eureka",
+            "kind": "text",
+            "terms": [
+              "architectural",
+              "style",
+              "odd",
+              "fellows",
+              "hall",
+              "building",
+              "eureka",
+              "california"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "architectural",
+              "style",
+              "odd",
+              "fellows",
+              "hall",
+              "building",
+              "eureka",
+              "california"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "en.wikipedia.org",
+            "focus": "what is the architectural style ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Odd_Fellows_Hall_(Eureka",
+              "error": "http_403"
+            },
+            {
+              "url": "https://www.wikiwand.com/en/Odd_Fellows_Hall_(Eureka,_California)",
+              "error": "http_403"
+            },
+            {
+              "url": "https://www.wikiwand.com/en/articles/Odd_Fellows_Hall_(Eureka,_California)",
+              "error": "http_403"
+            },
+            {
+              "url": "https://www.heritageindex.org/historic-places/l/84460/odd-fellows-hall-eureka-california-78000673",
+              "error": "http_403"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Independent_Order_of_Odd_Fellows",
+              "error": "http_403"
+            }
+          ],
+          "selector": [
+            "http_503",
+            "http_503"
+          ],
+          "timings": {
+            "resolver": 1.2699980288743973e-05
+          },
+          "search_requests": 4,
+          "llm_calls": 3,
+          "content_pages": 4,
+          "search_recovery": "starting_url_unavailable_or_exhausted",
+          "search_recovery_depth": 0,
+          "search_hints": [],
+          "search_hint_state": "http_503",
+          "reader_state": "service_unavailable",
+          "top_candidates": [
+            {
+              "raw": "List | Map Western States: List | Map",
+              "answer": "List | Map Western States: List | Map",
+              "source": "https://noehill.com/california/default.asp",
+              "evidence": "California Counties: List | Map Western States: List | Map",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 1.6,
+              "signals": {
+                "locator": "block[12]",
+                "page_title": "Historic Sites and Points of Interest in California",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Odd_Fellows_Hall_(Eureka",
+              "final": "https://en.wikipedia.org/wiki/Odd_Fellows_Hall_(Eureka",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?q=What+is+the+architectural+style+of+the+Odd+Fellows+Hall+building+in+Eureka%2C+California%3F",
+              "final": "https://www.bing.com/search?q=What+is+the+architectural+style+of+the+Odd+Fellows+Hall+building+in+Eureka%2C+California%3F",
+              "status": 200,
+              "bytes": 126234,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?q=architectural+style+odd+fellows+hall+building+eureka+california",
+              "final": "https://www.bing.com/search?q=architectural+style+odd+fellows+hall+building+eureka+california",
+              "status": 200,
+              "bytes": 120782,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://html.duckduckgo.com/html/?q=What+is+the+architectural+style+of+the+Odd+Fellows+Hall+building+in+Eureka%2C+California%3F",
+              "final": "https://html.duckduckgo.com/html/?q=What+is+the+architectural+style+of+the+Odd+Fellows+Hall+building+in+Eureka%2C+California%3F",
+              "status": 202,
+              "bytes": 14396,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://html.duckduckgo.com/html/?q=architectural+style+odd+fellows+hall+building+eureka+california",
+              "final": "https://html.duckduckgo.com/html/?q=architectural+style+odd+fellows+hall+building+eureka+california",
+              "status": 200,
+              "bytes": 34708,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.wikiwand.com/en/Odd_Fellows_Hall_(Eureka,_California)",
+              "final": "https://www.wikiwand.com/en/Odd_Fellows_Hall_(Eureka,_California)",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.wikiwand.com/en/articles/Odd_Fellows_Hall_(Eureka,_California)",
+              "final": "https://www.wikiwand.com/en/articles/Odd_Fellows_Hall_(Eureka,_California)",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.heritageindex.org/historic-places/l/84460/odd-fellows-hall-eureka-california-78000673",
+              "final": "https://www.heritageindex.org/historic-places/l/84460/odd-fellows-hall-eureka-california-78000673",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://noehill.com/humboldt/nat1978000673.asp",
+              "final": "https://noehill.com/humboldt/nat1978000673.asp",
+              "status": 200,
+              "bytes": 10309,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://noehill.com/california/default.asp",
+              "final": "https://noehill.com/california/default.asp",
+              "status": 200,
+              "bytes": 8532,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://en.wikipedia.org/wiki/Independent_Order_of_Odd_Fellows",
+              "final": "https://en.wikipedia.org/wiki/Independent_Order_of_Odd_Fellows",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [
+                "http://en.wikipedia.org/wiki/Independent_Order_of_Odd_Fellows"
+              ],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://noehill.com/merced/poi_snelling_odd_fellows.asp",
+              "final": "https://noehill.com/merced/poi_snelling_odd_fellows.asp",
+              "status": 200,
+              "bytes": 9550,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://noehill.com/mariposa/poi_coulterville_odd_fellows_hall.asp",
+              "final": "https://noehill.com/mariposa/poi_coulterville_odd_fellows_hall.asp",
+              "status": 200,
+              "bytes": 10901,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 8,
+          "pages_fetched": 4,
+          "seconds": 2.6284
+        }
+      },
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-4145.json",
+      "capture_sha256": "186861463adbfb19b5603222343f72fa1a229b967c69ff24493c747ae6993c24",
+      "capture_omitted": []
+    },
+    {
+      "id": "simpleqa-2811",
+      "answer_ok": false,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_service_unavailable",
+        "diagnostics": {
+          "plan": {
+            "question": "In which city was John Gilbert Layton raised?",
+            "url": "https://www.britannica.com/biography/Jack-Layton",
+            "kind": "text",
+            "terms": [
+              "city",
+              "john",
+              "gilbert",
+              "layton",
+              "raised"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "city",
+              "john",
+              "gilbert",
+              "layton",
+              "raised"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "www.britannica.com",
+            "focus": "in which city was john gilbert layton raised?",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [
+            {
+              "url": "https://www.britannica.com/biography/Jack-Layton",
+              "error": "http_403"
+            },
+            {
+              "url": "https://www.findagrave.com/memorial/75306490/john_gilbert-layton",
+              "error": "http_403"
+            },
+            {
+              "url": "https://prod10.mountpleasantgroup.com/en-CA/General-Information/Our-Monthly-Story/story-archives/toronto-necropolis/john-jack-gilbert-layton.aspx",
+              "error": "http_404"
+            },
+            {
+              "url": "https://www.findagrave.com/memorial/115912044/john_gilbert-layton",
+              "error": "http_403"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Jack_Layton",
+              "error": "http_403"
+            },
+            {
+              "url": "https://mabumbe.com/people/jack-layton-age-net-worth-life-story-biography-legacy/",
+              "error": "http_403"
+            }
+          ],
+          "selector": [
+            "http_503"
+          ],
+          "timings": {
+            "resolver": 1.1399970389902592e-05
+          },
+          "search_requests": 4,
+          "llm_calls": 2,
+          "content_pages": 3,
+          "search_recovery": "starting_url_unavailable_or_exhausted",
+          "search_recovery_depth": 0,
+          "search_hints": [],
+          "search_hint_state": "http_503",
+          "discovery_refill": [
+            {
+              "depth": 1,
+              "urls": [
+                "https://www.laytonlegacy.ca/jack",
+                "https://www.douglascoldwelllayton.ca/jacklayton",
+                "https://www.cabbagetownpeople.ca/person/jack-layton/",
+                "https://mabumbe.com/people/jack-layton-age-net-worth-life-story-biography-legacy/"
+              ]
+            }
+          ],
+          "reader_state": "service_unavailable",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "https://www.britannica.com/biography/Jack-Layton",
+              "final": "https://www.britannica.com/biography/Jack-Layton",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?q=city+john+gilbert+layton+raised",
+              "final": "https://www.bing.com/search?q=city+john+gilbert+layton+raised",
+              "status": 200,
+              "bytes": 123611,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?q=In+which+city+was+John+Gilbert+Layton+raised%3F",
+              "final": "https://www.bing.com/search?q=In+which+city+was+John+Gilbert+Layton+raised%3F",
+              "status": 200,
+              "bytes": 121729,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://html.duckduckgo.com/html/?q=city+john+gilbert+layton+raised",
+              "final": "https://html.duckduckgo.com/html/?q=city+john+gilbert+layton+raised",
+              "status": 200,
+              "bytes": 34978,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://html.duckduckgo.com/html/?q=In+which+city+was+John+Gilbert+Layton+raised%3F",
+              "final": "https://html.duckduckgo.com/html/?q=In+which+city+was+John+Gilbert+Layton+raised%3F",
+              "status": 200,
+              "bytes": 34756,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.findagrave.com/memorial/115912044/john_gilbert-layton",
+              "final": "https://www.findagrave.com/memorial/115912044/john_gilbert-layton",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.findagrave.com/memorial/75306490/john_gilbert-layton",
+              "final": "https://www.findagrave.com/memorial/75306490/john_gilbert-layton",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Jack_Layton",
+              "final": "https://en.wikipedia.org/wiki/Jack_Layton",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://prod10.mountpleasantgroup.com/en-CA/General-Information/Our-Monthly-Story/story-archives/toronto-necropolis/john-jack-gilbert-layton.aspx",
+              "final": "https://prod10.mountpleasantgroup.com/en-CA/General-Information/Our-Monthly-Story/story-archives/toronto-necropolis/john-jack-gilbert-layton.aspx",
+              "status": 404,
+              "bytes": 0,
+              "error": "http_404",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://mabumbe.com/people/jack-layton-age-net-worth-life-story-biography-legacy/",
+              "final": "https://mabumbe.com/people/jack-layton-age-net-worth-life-story-biography-legacy/",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.cabbagetownpeople.ca/person/jack-layton/",
+              "final": "https://www.cabbagetownpeople.ca/person/jack-layton/",
+              "status": 200,
+              "bytes": 34100,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.douglascoldwelllayton.ca/jacklayton",
+              "final": "https://www.douglascoldwelllayton.ca/jacklayton",
+              "status": 200,
+              "bytes": 75471,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.laytonlegacy.ca/jack",
+              "final": "https://www.laytonlegacy.ca/jack",
+              "status": 200,
+              "bytes": 128314,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 7,
+          "pages_fetched": 3,
+          "seconds": 4.0636
+        }
+      },
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-2811.json",
+      "capture_sha256": "19c95b414ecb9031239aa913a93304b9d4b3d680bca355087b5f4034ace9c062",
+      "capture_omitted": []
+    },
+    {
+      "id": "simpleqa-415",
+      "answer_ok": false,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_service_unavailable",
+        "diagnostics": {
+          "plan": {
+            "question": "Off of what coast of Morrowind does the DLC Dragonborn take place?",
+            "url": "https://ztgd.com/reviews/the-elder-scrolls-v-skyrim-dragonborn-dlc/",
+            "kind": "text",
+            "terms": [
+              "off",
+              "coast",
+              "morrowind",
+              "dlc",
+              "dragonborn",
+              "take",
+              "place"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "off",
+              "coast",
+              "morrowind",
+              "dlc",
+              "dragonborn",
+              "take",
+              "place"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "ztgd.com",
+            "focus": "off ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [
+            {
+              "url": "https://en.wikipedia.org/wiki/The_Elder_Scrolls_V:_Skyrim_%E2%80%93_Dragonborn",
+              "error": "http_403"
+            }
+          ],
+          "selector": [
+            "http_503",
+            "http_503",
+            "http_503"
+          ],
+          "timings": {
+            "resolver": 1.0699965059757233e-05
+          },
+          "search_requests": 4,
+          "llm_calls": 3,
+          "content_pages": 8,
+          "search_recovery": "starting_url_unavailable_or_exhausted",
+          "search_recovery_depth": 0,
+          "browser": [
+            {
+              "state": "rendered",
+              "requests": 11,
+              "blocked": 4,
+              "blocked_analytics": 0,
+              "bytes": 3314500,
+              "browser_version": "156.0.8078.4",
+              "seconds": 1.9432
+            },
+            {
+              "state": "rendered",
+              "requests": 2,
+              "blocked": 1,
+              "blocked_analytics": 0,
+              "bytes": 8412,
+              "browser_version": "156.0.8078.4",
+              "seconds": 1.6297
+            },
+            {
+              "state": "rendered",
+              "requests": 4,
+              "blocked": 4,
+              "blocked_analytics": 0,
+              "bytes": 32556,
+              "browser_version": "156.0.8078.4",
+              "seconds": 1.9761
+            }
+          ],
+          "discovery_refill": [
+            {
+              "depth": 1,
+              "urls": [
+                "https://steamcommunity.com/app/489830/discussions/0/3844431603855189893/",
+                "https://en.uesp.net/wiki/Skyrim:Dragonborn",
+                "https://en.wikipedia.org/wiki/The_Elder_Scrolls_V:_Skyrim_%E2%80%93_Dragonborn"
+              ]
+            }
+          ],
+          "reader_state": "service_unavailable",
+          "top_candidates": [
+            {
+              "raw": "Released",
+              "answer": "Released",
+              "source": "https://en.uesp.net/wiki/Skyrim:Dragonborn",
+              "evidence": "Add-on : Dragonborn: Released | Add-on : Dragonborn: 4 December 2012 (Xbox 360) 5 February 2013 (PC) 12 February 2013 (PS3, US) 13 February 2013 (PS3, English-speaking EU)",
+              "label": "Add-on : Dragonborn",
+              "section": "Skyrim:Dragonborn",
+              "kind": "text",
+              "score": 6.2,
+              "signals": {
+                "locator": "table[2]/row[0]/cell[0]",
+                "page_title": "Skyrim:Dragonborn - UESP Wiki - The Unofficial Elder Scrolls Pages",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 2,
+                  "row": 0,
+                  "columns": [
+                    "Add-on : Dragonborn",
+                    "Add-on : Dragonborn"
+                  ],
+                  "cells": [
+                    "Released",
+                    "4 December 2012 (Xbox 360) 5 February 2013 (PC) 12 February 2013 (PS3, US) 13 February 2013 (PS3, English-speaking EU)"
+                  ],
+                  "column": 0
+                },
+                "field_value": "Released",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "4 December 2012 (Xbox 360) 5 February 2013 (PC) 12 February 2013 (PS3, US) 13 February 2013 (PS3, English-speaking EU)",
+              "answer": "4 December 2012 (Xbox 360) 5 February 2013 (PC) 12 February 2013 (PS3, US) 13 February 2013 (PS3, English-speaking EU)",
+              "source": "https://en.uesp.net/wiki/Skyrim:Dragonborn",
+              "evidence": "Add-on : Dragonborn: Released | Add-on : Dragonborn: 4 December 2012 (Xbox 360) 5 February 2013 (PC) 12 February 2013 (PS3, US) 13 February 2013 (PS3, English-speaking EU)",
+              "label": "Add-on : Dragonborn",
+              "section": "Skyrim:Dragonborn",
+              "kind": "text",
+              "score": 6.2,
+              "signals": {
+                "locator": "table[2]/row[0]/cell[1]",
+                "page_title": "Skyrim:Dragonborn - UESP Wiki - The Unofficial Elder Scrolls Pages",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 2,
+                  "row": 0,
+                  "columns": [
+                    "Add-on : Dragonborn",
+                    "Add-on : Dragonborn"
+                  ],
+                  "cells": [
+                    "Released",
+                    "4 December 2012 (Xbox 360) 5 February 2013 (PC) 12 February 2013 (PS3, US) 13 February 2013 (PS3, English-speaking EU)"
+                  ],
+                  "column": 1
+                },
+                "field_value": "4 December 2012 (Xbox 360) 5 February 2013 (PC) 12 February 2013 (PS3, US) 13 February 2013 (PS3, English-speaking EU)",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "Availability",
+              "answer": "Availability",
+              "source": "https://en.uesp.net/wiki/Skyrim:Dragonborn",
+              "evidence": "Add-on : Dragonborn: Availability | Add-on : Dragonborn: Availability",
+              "label": "Add-on : Dragonborn",
+              "section": "Skyrim:Dragonborn",
+              "kind": "text",
+              "score": 6.2,
+              "signals": {
+                "locator": "table[2]/row[1]/cell[0]",
+                "page_title": "Skyrim:Dragonborn - UESP Wiki - The Unofficial Elder Scrolls Pages",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 2,
+                  "row": 1,
+                  "columns": [
+                    "Add-on : Dragonborn",
+                    "Add-on : Dragonborn"
+                  ],
+                  "cells": [
+                    "Availability",
+                    "Availability"
+                  ],
+                  "column": 0
+                },
+                "field_value": "Availability",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "PC",
+              "answer": "PC",
+              "source": "https://en.uesp.net/wiki/Skyrim:Dragonborn",
+              "evidence": "Add-on : Dragonborn: PC | Add-on : Dragonborn: Available from Steam ($19.99/€19.99/£13.99/¥2499/$24.23 AUD/429 RUB)",
+              "label": "Add-on : Dragonborn",
+              "section": "Skyrim:Dragonborn",
+              "kind": "text",
+              "score": 6.2,
+              "signals": {
+                "locator": "table[2]/row[2]/cell[0]",
+                "page_title": "Skyrim:Dragonborn - UESP Wiki - The Unofficial Elder Scrolls Pages",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 2,
+                  "row": 2,
+                  "columns": [
+                    "Add-on : Dragonborn",
+                    "Add-on : Dragonborn"
+                  ],
+                  "cells": [
+                    "PC",
+                    "Available from Steam ($19.99/€19.99/£13.99/¥2499/$24.23 AUD/429 RUB)"
+                  ],
+                  "column": 0
+                },
+                "field_value": "PC",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "Available from Steam ($19.99/€19.99/£13.99/¥2499/$24.23 AUD/429 RUB)",
+              "answer": "Available from Steam ($19.99/€19.99/£13.99/¥2499/$24.23 AUD/429 RUB)",
+              "source": "https://en.uesp.net/wiki/Skyrim:Dragonborn",
+              "evidence": "Add-on : Dragonborn: PC | Add-on : Dragonborn: Available from Steam ($19.99/€19.99/£13.99/¥2499/$24.23 AUD/429 RUB)",
+              "label": "Add-on : Dragonborn",
+              "section": "Skyrim:Dragonborn",
+              "kind": "text",
+              "score": 6.2,
+              "signals": {
+                "locator": "table[2]/row[2]/cell[1]",
+                "page_title": "Skyrim:Dragonborn - UESP Wiki - The Unofficial Elder Scrolls Pages",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 2,
+                  "row": 2,
+                  "columns": [
+                    "Add-on : Dragonborn",
+                    "Add-on : Dragonborn"
+                  ],
+                  "cells": [
+                    "PC",
+                    "Available from Steam ($19.99/€19.99/£13.99/¥2499/$24.23 AUD/429 RUB)"
+                  ],
+                  "column": 1
+                },
+                "field_value": "Available from Steam ($19.99/€19.99/£13.99/¥2499/$24.23 AUD/429 RUB)",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "Xbox 360",
+              "answer": "Xbox 360",
+              "source": "https://en.uesp.net/wiki/Skyrim:Dragonborn",
+              "evidence": "Add-on : Dragonborn: Xbox 360 | Add-on : Dragonborn: Available from Xbox Marketplace ($19.99 US & Canada, was 1600 MS Points)",
+              "label": "Add-on : Dragonborn",
+              "section": "Skyrim:Dragonborn",
+              "kind": "text",
+              "score": 6.2,
+              "signals": {
+                "locator": "table[2]/row[3]/cell[0]",
+                "page_title": "Skyrim:Dragonborn - UESP Wiki - The Unofficial Elder Scrolls Pages",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 2,
+                  "row": 3,
+                  "columns": [
+                    "Add-on : Dragonborn",
+                    "Add-on : Dragonborn"
+                  ],
+                  "cells": [
+                    "Xbox 360",
+                    "Available from Xbox Marketplace ($19.99 US & Canada, was 1600 MS Points)"
+                  ],
+                  "column": 0
+                },
+                "field_value": "Xbox 360",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "Available from Xbox Marketplace ($19.99 US & Canada, was 1600 MS Points)",
+              "answer": "Available from Xbox Marketplace ($19.99 US & Canada, was 1600 MS Points)",
+              "source": "https://en.uesp.net/wiki/Skyrim:Dragonborn",
+              "evidence": "Add-on : Dragonborn: Xbox 360 | Add-on : Dragonborn: Available from Xbox Marketplace ($19.99 US & Canada, was 1600 MS Points)",
+              "label": "Add-on : Dragonborn",
+              "section": "Skyrim:Dragonborn",
+              "kind": "text",
+              "score": 6.2,
+              "signals": {
+                "locator": "table[2]/row[3]/cell[1]",
+                "page_title": "Skyrim:Dragonborn - UESP Wiki - The Unofficial Elder Scrolls Pages",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 2,
+                  "row": 3,
+                  "columns": [
+                    "Add-on : Dragonborn",
+                    "Add-on : Dragonborn"
+                  ],
+                  "cells": [
+                    "Xbox 360",
+                    "Available from Xbox Marketplace ($19.99 US & Canada, was 1600 MS Points)"
+                  ],
+                  "column": 1
+                },
+                "field_value": "Available from Xbox Marketplace ($19.99 US & Canada, was 1600 MS Points)",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "PS3",
+              "answer": "PS3",
+              "source": "https://en.uesp.net/wiki/Skyrim:Dragonborn",
+              "evidence": "Add-on : Dragonborn: PS3 | Add-on : Dragonborn: Available from the Playstation Store ($20/$25 AUD/¥2400)",
+              "label": "Add-on : Dragonborn",
+              "section": "Skyrim:Dragonborn",
+              "kind": "text",
+              "score": 6.2,
+              "signals": {
+                "locator": "table[2]/row[4]/cell[0]",
+                "page_title": "Skyrim:Dragonborn - UESP Wiki - The Unofficial Elder Scrolls Pages",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 2,
+                  "row": 4,
+                  "columns": [
+                    "Add-on : Dragonborn",
+                    "Add-on : Dragonborn"
+                  ],
+                  "cells": [
+                    "PS3",
+                    "Available from the Playstation Store ($20/$25 AUD/¥2400)"
+                  ],
+                  "column": 0
+                },
+                "field_value": "PS3",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [
+            {
+              "a": "Released",
+              "b": "4 December 2012 (Xbox 360) 5 February 2013 (PC) 12 February 2013 (PS3, US) 13 February 2013 (PS3, English-speaking EU)",
+              "sources": [
+                "https://en.uesp.net/wiki/Skyrim:Dragonborn",
+                "https://en.uesp.net/wiki/Skyrim:Dragonborn"
+              ],
+              "margin": 0.0
+            },
+            {
+              "a": "Released",
+              "b": "Availability",
+              "sources": [
+                "https://en.uesp.net/wiki/Skyrim:Dragonborn",
+                "https://en.uesp.net/wiki/Skyrim:Dragonborn"
+              ],
+              "margin": 0.0
+            },
+            {
+              "a": "Released",
+              "b": "PC",
+              "sources": [
+                "https://en.uesp.net/wiki/Skyrim:Dragonborn",
+                "https://en.uesp.net/wiki/Skyrim:Dragonborn"
+              ],
+              "margin": 0.0
+            },
+            {
+              "a": "Released",
+              "b": "Available from Steam ($19.99/€19.99/£13.99/¥2499/$24.23 AUD/429 RUB)",
+              "sources": [
+                "https://en.uesp.net/wiki/Skyrim:Dragonborn",
+                "https://en.uesp.net/wiki/Skyrim:Dragonborn"
+              ],
+              "margin": 0.0
+            },
+            {
+              "a": "Released",
+              "b": "Xbox 360",
+              "sources": [
+                "https://en.uesp.net/wiki/Skyrim:Dragonborn",
+                "https://en.uesp.net/wiki/Skyrim:Dragonborn"
+              ],
+              "margin": 0.0
+            },
+            {
+              "a": "Released",
+              "b": "Available from Xbox Marketplace ($19.99 US & Canada, was 1600 MS Points)",
+              "sources": [
+                "https://en.uesp.net/wiki/Skyrim:Dragonborn",
+                "https://en.uesp.net/wiki/Skyrim:Dragonborn"
+              ],
+              "margin": 0.0
+            },
+            {
+              "a": "Released",
+              "b": "PS3",
+              "sources": [
+                "https://en.uesp.net/wiki/Skyrim:Dragonborn",
+                "https://en.uesp.net/wiki/Skyrim:Dragonborn"
+              ],
+              "margin": 0.0
+            }
+          ],
+          "fetches": [
+            {
+              "url": "https://ztgd.com/reviews/the-elder-scrolls-v-skyrim-dragonborn-dlc/",
+              "final": "https://ztgd.com/reviews/the-elder-scrolls-v-skyrim-dragonborn-dlc/",
+              "status": 200,
+              "bytes": 88255,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?q=off+coast+morrowind+dlc+dragonborn+take+place",
+              "final": "https://www.bing.com/search?q=off+coast+morrowind+dlc+dragonborn+take+place",
+              "status": 200,
+              "bytes": 124656,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?q=site%3Aztgd.com+Off+of+what+coast+of+Morrowind+does+the+DLC+Dragonborn+take+place%3F",
+              "final": "https://www.bing.com/search?q=site%3Aztgd.com+Off+of+what+coast+of+Morrowind+does+the+DLC+Dragonborn+take+place%3F",
+              "status": 200,
+              "bytes": 124828,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://html.duckduckgo.com/html/?q=site%3Aztgd.com+Off+of+what+coast+of+Morrowind+does+the+DLC+Dragonborn+take+place%3F",
+              "final": "https://html.duckduckgo.com/html/?q=site%3Aztgd.com+Off+of+what+coast+of+Morrowind+does+the+DLC+Dragonborn+take+place%3F",
+              "status": 202,
+              "bytes": 14382,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://html.duckduckgo.com/html/?q=off+coast+morrowind+dlc+dragonborn+take+place",
+              "final": "https://html.duckduckgo.com/html/?q=off+coast+morrowind+dlc+dragonborn+take+place",
+              "status": 200,
+              "bytes": 34846,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://orbispatches.com/gaming-faq/is-the-dragonborn-dlc-in-morrowind",
+              "final": "https://orbispatches.com/gaming-faq/is-the-dragonborn-dlc-in-morrowind",
+              "status": 200,
+              "bytes": 76115,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://orbispatches.com/gaming-faq/does-dragonborn-dlc-take-place-in-morrowind",
+              "final": "https://orbispatches.com/gaming-faq/does-dragonborn-dlc-take-place-in-morrowind",
+              "status": 200,
+              "bytes": 76269,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://ztgd.com/reviews/the-elder-scrolls-v-skyrim-dragonborn-dlc/?share=reddit",
+              "final": "https://www.reddit.com/submit?url=https%3A%2F%2Fztgd.com%2Freviews%2Fthe-elder-scrolls-v-skyrim-dragonborn-dlc%2F&title=The%20Elder%20Scrolls%20V%3A%20Skyrim%20-%20Dragonborn%20%28DLC%29%20Review",
+              "status": 200,
+              "bytes": 8412,
+              "error": "",
+              "redirects": [
+                "https://ztgd.com/reviews/the-elder-scrolls-v-skyrim-dragonborn-dlc/?share=reddit",
+                "https://reddit.com/submit?url=https%3A%2F%2Fztgd.com%2Freviews%2Fthe-elder-scrolls-v-skyrim-dragonborn-dlc%2F&title=The%20Elder%20Scrolls%20V%3A%20Skyrim%20-%20Dragonborn%20%28DLC%29%20Review"
+              ],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://ztgd.com/reviews/the-elder-scrolls-v-skyrim-dragonborn-dlc/?share=x",
+              "final": "https://x.com/i/jf/onboarding/web?redirect_after_login=%2Fintent%2Ftweet%3Frelated%3DZTGD%253APlay%2Bgames%252C%2Bnot%2Bconsoles.%2BGame%2Breviews%252C%2Bpodcasts%2Band%2Bvideos.%26text%3DThe%2BElder%2BScrolls%2BV%253A%2BSkyrim%2B-%2BDragonborn%2B%2528DLC%2529%2BReview%26url%3Dhttps%253A%252F%252Fztgd.com%252Freviews%252Fthe-elder-scrolls-v-skyrim-dragonborn-dlc%252F&mode=login",
+              "status": 200,
+              "bytes": 23301,
+              "error": "",
+              "redirects": [
+                "https://ztgd.com/reviews/the-elder-scrolls-v-skyrim-dragonborn-dlc/?share=x",
+                "https://x.com/intent/tweet?related=ZTGD%3APlay%20games%2C%20not%20consoles.%20Game%20reviews%2C%20podcasts%20and%20videos.&text=The%20Elder%20Scrolls%20V%3A%20Skyrim%20-%20Dragonborn%20%28DLC%29%20Review&url=https%3A%2F%2Fztgd.com%2Freviews%2Fthe-elder-scrolls-v-skyrim-dragonborn-dlc%2F"
+              ],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://x.com/i/jf/onboarding/web?redirect_after_login=%2Fintent%2Ftweet%3Frelated%3DZTGD%253APlay%2Bgames%252C%2Bnot%2Bconsoles.%2BGame%2Breviews%252C%2Bpodcasts%2Band%2Bvideos.%26text%3DThe%2BElder%2BScrolls%2BV%253A%2BSkyrim%2B-%2BDragonborn%2B%2528DLC%2529%2BReview%26url%3Dhttps%253A%252F%252Fztgd.com%252Freviews%252Fthe-elder-scrolls-v-skyrim-dragonborn-dlc%252F&mode=login",
+              "final": "https://x.com/i/jf/onboarding/web?redirect_after_login=%2Fintent%2Ftweet%3Frelated%3DZTGD%253APlay%2Bgames%252C%2Bnot%2Bconsoles.%2BGame%2Breviews%252C%2Bpodcasts%2Band%2Bvideos.%26text%3DThe%2BElder%2BScrolls%2BV%253A%2BSkyrim%2B-%2BDragonborn%2B%2528DLC%2529%2BReview%26url%3Dhttps%253A%252F%252Fztgd.com%252Freviews%252Fthe-elder-scrolls-v-skyrim-dragonborn-dlc%252F&mode=login",
+              "status": 200,
+              "bytes": 23301,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://abs.twimg.com/x-web/x-web/entry-client-logged-out-BCx8IcJG.js",
+              "final": "https://abs.twimg.com/x-web/x-web/entry-client-logged-out-BCx8IcJG.js",
+              "status": 200,
+              "bytes": 30503,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://abs.twimg.com/x-web/x-web/assets/rolldown-runtime-TDXjjWaw.js",
+              "final": "https://abs.twimg.com/x-web/x-web/assets/rolldown-runtime-TDXjjWaw.js",
+              "status": 200,
+              "bytes": 1452,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://abs.twimg.com/x-web/x-web/assets/icon-reply-DrlQ_dis.js",
+              "final": "https://abs.twimg.com/x-web/x-web/assets/icon-reply-DrlQ_dis.js",
+              "status": 200,
+              "bytes": 1014,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://abs.twimg.com/x-web/x-web/assets/scan-to-get-app-qr-B2ZUm495.js",
+              "final": "https://abs.twimg.com/x-web/x-web/assets/scan-to-get-app-qr-B2ZUm495.js",
+              "status": 200,
+              "bytes": 23645,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://abs.twimg.com/x-web/x-web/assets/icon-heart-Cf0J4_e-.js",
+              "final": "https://abs.twimg.com/x-web/x-web/assets/icon-heart-Cf0J4_e-.js",
+              "status": 200,
+              "bytes": 1288,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://abs.twimg.com/x-web/x-web/assets/use-jetfuel-modal-state-6uCeWx2h.js",
+              "final": "https://abs.twimg.com/x-web/x-web/assets/use-jetfuel-modal-state-6uCeWx2h.js",
+              "status": 200,
+              "bytes": 624,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://abs.twimg.com/x-web/x-web/assets/is-external-relative-path-JGHmmJ9c.js",
+              "final": "https://abs.twimg.com/x-web/x-web/assets/is-external-relative-path-JGHmmJ9c.js",
+              "status": 200,
+              "bytes": 3658,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://abs.twimg.com/x-web/x-web/assets/startup-vendor-CXPz1GpT.js",
+              "final": "https://abs.twimg.com/x-web/x-web/assets/startup-vendor-CXPz1GpT.js",
+              "status": 200,
+              "bytes": 1352725,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://abs.twimg.com/x-web/x-web/assets/startup-CsG4Fsuu.js",
+              "final": "https://abs.twimg.com/x-web/x-web/assets/startup-CsG4Fsuu.js",
+              "status": 200,
+              "bytes": 1222702,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://abs.twimg.com/x-web/x-web/assets/startup-dynamic-BPdm_w07.js",
+              "final": "https://abs.twimg.com/x-web/x-web/assets/startup-dynamic-BPdm_w07.js",
+              "status": 200,
+              "bytes": 653588,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.reddit.com/submit?url=https%3A%2F%2Fztgd.com%2Freviews%2Fthe-elder-scrolls-v-skyrim-dragonborn-dlc%2F&title=The%20Elder%20Scrolls%20V%3A%20Skyrim%20-%20Dragonborn%20%28DLC%29%20Review",
+              "final": "https://www.reddit.com/submit?url=https%3A%2F%2Fztgd.com%2Freviews%2Fthe-elder-scrolls-v-skyrim-dragonborn-dlc%2F&title=The%20Elder%20Scrolls%20V%3A%20Skyrim%20-%20Dragonborn%20%28DLC%29%20Review",
+              "status": 200,
+              "bytes": 8412,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.reddit.com/submit?solution=ea9666e57adedfb8ea9666e57adedfb8&js_challenge=1&jsc_token=2824be10929bdc604753c70a67a1c33111eee1d54a5468762199215ac53e5f0b&jsc_orig_r=&url=https%3A%2F%2Fztgd.com%2Freviews%2Fthe-elder-scrolls-v-skyrim-dragonborn-dlc%2F&title=The+Elder+Scrolls+V%3A+Skyrim+-+Dragonborn+%28DLC%29+Review",
+              "final": "https://www.reddit.com/submit?solution=ea9666e57adedfb8ea9666e57adedfb8&js_challenge=1&jsc_token=2824be10929bdc604753c70a67a1c33111eee1d54a5468762199215ac53e5f0b&jsc_orig_r=&url=https%3A%2F%2Fztgd.com%2Freviews%2Fthe-elder-scrolls-v-skyrim-dragonborn-dlc%2F&title=The+Elder+Scrolls+V%3A+Skyrim+-+Dragonborn+%28DLC%29+Review",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://steamcommunity.com/app/489830/discussions/0/3844431603855189893/",
+              "final": "https://steamcommunity.com/app/489830/discussions/0/3844431603855189893/",
+              "status": 200,
+              "bytes": 27745,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/The_Elder_Scrolls_V:_Skyrim_%E2%80%93_Dragonborn",
+              "final": "https://en.wikipedia.org/wiki/The_Elder_Scrolls_V:_Skyrim_%E2%80%93_Dragonborn",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://en.uesp.net/wiki/Skyrim:Dragonborn",
+              "final": "https://en.uesp.net/wiki/Skyrim:Dragonborn",
+              "status": 200,
+              "bytes": 37221,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://ztgd.com/reviews/the-elder-scrolls-v-skyrim-dragonborn-dlc/?share=bluesky",
+              "final": "https://bsky.app/intent/compose?text=The%20Elder%20Scrolls%20V%3A%20Skyrim%20-%20Dragonborn%20%28DLC%29%20Review%20https%3A%2F%2Fztgd.com%2Freviews%2Fthe-elder-scrolls-v-skyrim-dragonborn-dlc%2F",
+              "status": 200,
+              "bytes": 27003,
+              "error": "",
+              "redirects": [
+                "https://ztgd.com/reviews/the-elder-scrolls-v-skyrim-dragonborn-dlc/?share=bluesky"
+              ],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://bsky.app/intent/compose?text=The%20Elder%20Scrolls%20V%3A%20Skyrim%20-%20Dragonborn%20%28DLC%29%20Review%20https%3A%2F%2Fztgd.com%2Freviews%2Fthe-elder-scrolls-v-skyrim-dragonborn-dlc%2F",
+              "final": "https://bsky.app/intent/compose?text=The%20Elder%20Scrolls%20V%3A%20Skyrim%20-%20Dragonborn%20%28DLC%29%20Review%20https%3A%2F%2Fztgd.com%2Freviews%2Fthe-elder-scrolls-v-skyrim-dragonborn-dlc%2F",
+              "status": 200,
+              "bytes": 27003,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://web-cdn.bsky.app/static/_expo/static/js/web/__common-fbd5d0116c9c2852753b30ca6e1a8c6a.js",
+              "final": "https://web-cdn.bsky.app/static/_expo/static/js/web/__common-fbd5d0116c9c2852753b30ca6e1a8c6a.js",
+              "status": 200,
+              "bytes": 843,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://web-cdn.bsky.app/static/_expo/static/js/web/__expo-metro-runtime-9187168ea77d1235d4b528a16bf5e029.js",
+              "final": "https://web-cdn.bsky.app/static/_expo/static/js/web/__expo-metro-runtime-9187168ea77d1235d4b528a16bf5e029.js",
+              "status": 200,
+              "bytes": 4710,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://web-cdn.bsky.app/static/_expo/static/js/web/index-5f662c1d4e4cd4315b6fe7aa2563468c.js",
+              "final": "https://web-cdn.bsky.app/static/_expo/static/js/web/index-5f662c1d4e4cd4315b6fe7aa2563468c.js",
+              "status": 200,
+              "bytes": 0,
+              "error": "body_limit",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 27,
+          "pages_fetched": 8,
+          "seconds": 10.1734
+        }
+      },
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-415.json",
+      "capture_sha256": "4934bb519db839fde410d7d5d63a463bf0e38c5d69bf143200faeed8c4dde509",
+      "capture_omitted": []
+    }
+  ],
+  "assessment_freeze_path": "benchmarks/external-disjoint12b-20261023-freeze.json",
+  "assessment_freeze_sha256": "52f50aa96a7b22c1a4be5d3edf7340de01219cec0a71cadad3d90a63ab73dbe7",
+  "assessment_selection": "Uniform sample of rows excluding previously exposed assessments; no source/topic/difficulty/answerability filtering.",
+  "runner_sha256": "b255c61f8fb7dcbe1636e193b990f33bcf63d3afae06eae1e4502d1d23cbfeb9",
+  "health_before": {
+    "ready": true,
+    "device": "cuda",
+    "hip": null,
+    "pid": 36100,
+    "startup_token": "84c51b5906c94e2494ee534bb6e301da",
+    "backend_source_sha256": {
+      "model_server.py": "8d326a696942d259697a6fba8586441bbbe4874042ea900c6d7788a2a0e9fd22",
+      "model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+      "selector.py": "be7c0fce11c10921d5cd4e3d1072d5a2ca5a62f1c328730384d19b0fecd19566",
+      "model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+      "members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+      "model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+      "normalize.py": "05e48fa0be8384aa656bf1280ba0be44545efa51b7d4451f0716d836d39a1973",
+      "types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512"
+    },
+    "software": {
+      "torch": "2.9.1+cu128",
+      "transformers": "4.57.1",
+      "tokenizers": "0.22.1",
+      "safetensors": "0.6.2",
+      "accelerate": "1.11.0"
+    },
+    "parameters": 4022468096,
+    "assets": {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "verified_files": 12,
+      "full_sha256": false,
+      "weight_shards": 3
+    },
+    "warmup_reply": {
+      "candidate": -1,
+      "passage": 0,
+      "answer": "7"
+    },
+    "torch": "2.9.1+cu128",
+    "startup_seconds": 6.8961423999862745,
+    "calls": 0,
+    "outcomes": {},
+    "active_request": null,
+    "busy_rejections": 0,
+    "recent_requests": [
+      {
+        "request_id": "warmup",
+        "mode": "select",
+        "input_tokens": 268,
+        "packing_seconds": 0.017163399956189096,
+        "transfer_seconds": 0.0008218000875785947,
+        "generated_tokens": 14,
+        "stop_reason": "completed",
+        "generation_seconds": 1.3738033999688923,
+        "prefill_and_first_token_seconds": 0.6323827999876812
+      }
+    ],
+    "context_limit": 1536,
+    "token_stats": {
+      "max_input": 268,
+      "generated": 14,
+      "pruned_requests": 0
+    },
+    "device_memory_bytes": 12878086144,
+    "peak_vram_bytes": 8141605888,
+    "allocated_vram_bytes": 8053474816,
+    "reserved_vram_bytes": 8185184256
+  },
+  "health_after": {
+    "ready": true,
+    "device": "cuda",
+    "hip": null,
+    "pid": 36100,
+    "startup_token": "84c51b5906c94e2494ee534bb6e301da",
+    "backend_source_sha256": {
+      "model_server.py": "8d326a696942d259697a6fba8586441bbbe4874042ea900c6d7788a2a0e9fd22",
+      "model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+      "selector.py": "be7c0fce11c10921d5cd4e3d1072d5a2ca5a62f1c328730384d19b0fecd19566",
+      "model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+      "members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+      "model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+      "normalize.py": "05e48fa0be8384aa656bf1280ba0be44545efa51b7d4451f0716d836d39a1973",
+      "types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512"
+    },
+    "software": {
+      "torch": "2.9.1+cu128",
+      "transformers": "4.57.1",
+      "tokenizers": "0.22.1",
+      "safetensors": "0.6.2",
+      "accelerate": "1.11.0"
+    },
+    "parameters": 4022468096,
+    "assets": {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "verified_files": 12,
+      "full_sha256": false,
+      "weight_shards": 3
+    },
+    "warmup_reply": {
+      "candidate": -1,
+      "passage": 0,
+      "answer": "7"
+    },
+    "torch": "2.9.1+cu128",
+    "startup_seconds": 6.8961423999862745,
+    "calls": 8,
+    "outcomes": {
+      "selected": 1,
+      "supported": 1,
+      "expanded": 2,
+      "abstained": 2,
+      "deadline": 2
+    },
+    "active_request": "7f9c26f351ba46d8b8cb7f24368c35bf",
+    "busy_rejections": 15,
+    "recent_requests": [
+      {
+        "request_id": "warmup",
+        "mode": "select",
+        "input_tokens": 268,
+        "packing_seconds": 0.017163399956189096,
+        "transfer_seconds": 0.0008218000875785947,
+        "generated_tokens": 14,
+        "stop_reason": "completed",
+        "generation_seconds": 1.3738033999688923,
+        "prefill_and_first_token_seconds": 0.6323827999876812
+      },
+      {
+        "request_id": "d1c951b0d63d48d6a77953d7c852bfdf",
+        "mode": "select",
+        "input_tokens": 1374,
+        "packing_seconds": 0.02110580005683005,
+        "transfer_seconds": 0.002464400022290647,
+        "generated_tokens": 19,
+        "stop_reason": "completed",
+        "generation_seconds": 1.420484000002034,
+        "prefill_and_first_token_seconds": 0.3283936999505386
+      },
+      {
+        "request_id": "1512b33ca0a7450ea84a7a0c3a68f93a",
+        "mode": "verify",
+        "input_tokens": 1317,
+        "packing_seconds": 0.020614500041119754,
+        "transfer_seconds": 0.002215599990449846,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.6972225999925286,
+        "prefill_and_first_token_seconds": 0.3079585999948904
+      },
+      {
+        "request_id": "8b064159900e4dfb9ca3e553c69157ce",
+        "mode": "expand",
+        "input_tokens": 160,
+        "packing_seconds": 0.0011958000250160694,
+        "transfer_seconds": 0.0006637999322265387,
+        "generated_tokens": 17,
+        "stop_reason": "completed",
+        "generation_seconds": 0.9484933000057936,
+        "prefill_and_first_token_seconds": 0.05638269998598844
+      },
+      {
+        "request_id": "15697eae1c8d48bb8fc9ae408e662590",
+        "mode": "select",
+        "input_tokens": 477,
+        "packing_seconds": 0.003974099992774427,
+        "transfer_seconds": 0.0019582000095397234,
+        "generated_tokens": 13,
+        "stop_reason": "completed",
+        "generation_seconds": 0.8050968999741599,
+        "prefill_and_first_token_seconds": 0.0826604999601841
+      },
+      {
+        "request_id": "ac9bfe3a9aa2466c8730116fd8910e5c",
+        "mode": "select",
+        "input_tokens": 750,
+        "packing_seconds": 0.003216200042515993,
+        "transfer_seconds": 0.0015214999439194798,
+        "generated_tokens": 13,
+        "stop_reason": "completed",
+        "generation_seconds": 0.7965239000041038,
+        "prefill_and_first_token_seconds": 0.14326709997840226
+      },
+      {
+        "request_id": "a61eba885b7b4f828124f951da44d72e",
+        "mode": "expand",
+        "input_tokens": 128,
+        "packing_seconds": 0.0019854999845847487,
+        "transfer_seconds": 0.0009101000614464283,
+        "generated_tokens": 23,
+        "stop_reason": "completed",
+        "generation_seconds": 1.2724213999463245,
+        "prefill_and_first_token_seconds": 0.06343440001364797
+      },
+      {
+        "request_id": "055e379f4dce41f991b01393f7fb3827",
+        "mode": "select",
+        "input_tokens": 1462,
+        "packing_seconds": 0.02334840002004057,
+        "transfer_seconds": 0.005411999998614192,
+        "generated_tokens": 72,
+        "stop_reason": "deadline",
+        "generation_seconds": 3.9893836999544874,
+        "prefill_and_first_token_seconds": 0.35992660000920296
+      },
+      {
+        "request_id": "e264128e85484c00b8224a0866934bbb",
+        "mode": "select",
+        "input_tokens": 1462,
+        "packing_seconds": 0.010671500000171363,
+        "transfer_seconds": 0.002347899950109422,
+        "generated_tokens": 31,
+        "stop_reason": "deadline",
+        "generation_seconds": 4.478123700013384,
+        "prefill_and_first_token_seconds": 0.341195399989374
+      },
+      {
+        "request_id": "7f9c26f351ba46d8b8cb7f24368c35bf",
+        "mode": "expand",
+        "input_tokens": 142,
+        "packing_seconds": 0.001353300060145557,
+        "transfer_seconds": 0.0057351000141352415
+      }
+    ],
+    "context_limit": 1536,
+    "token_stats": {
+      "max_input": 1462,
+      "generated": 208,
+      "pruned_requests": 4
+    },
+    "device_memory_bytes": 12878086144,
+    "peak_vram_bytes": 9047448064,
+    "allocated_vram_bytes": 8076036096,
+    "reserved_vram_bytes": 9690939392
+  },
+  "memory_after_run": {
+    "used_mib": 11765,
+    "total_mib": 12282
+  },
+  "memory_after_shutdown": {
+    "used_mib": 2437,
+    "total_mib": 12282
+  },
+  "production_after_sha256": {
+    "app.py": "c0267c0441330bd30559f48d2f33916418992b8e21ec8dd1d09ae4773c23b73b",
+    "agent\\browser.py": "53ac9a99f3afcefcdb197cd9b2296c2d380910a782178fadb65235e548efc353",
+    "agent\\candidates.py": "c55cd074f50d1b0c944cf5552bd604caf4b313bada23accd73674d5d1d93d116",
+    "agent\\currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent\\engine.py": "01464cb276814f2d7c845c269da2522c285a7a7e28051abd7e36ad0ec62b41ff",
+    "agent\\evidence.py": "09da13b3f2fb17de30734c44ddad1c89b856ec682ff2e88a78a57773409c0089",
+    "agent\\knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent\\members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "agent\\model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+    "agent\\model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent\\model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+    "agent\\model_server.py": "8d326a696942d259697a6fba8586441bbbe4874042ea900c6d7788a2a0e9fd22",
+    "agent\\navigation.py": "0f849c0c570720114c45c14b0a5286fe409e5d26c2945fdc9f6c1a6922bb7718",
+    "agent\\network.py": "def1be3752f81423c313c2dfa83f6703ee063d7e98652cf0d816b423d0e2d9cb",
+    "agent\\normalize.py": "05e48fa0be8384aa656bf1280ba0be44545efa51b7d4451f0716d836d39a1973",
+    "agent\\output.py": "b983ab2efe31707b1c974344a32dc4b40b708541257695de89cac9e343b073eb",
+    "agent\\oyez.py": "8475f248d78925522e0742b13518be2c4f4db11eae0d8391a8002da7d4e3b67d",
+    "agent\\parser.py": "60f4199ea41c63376ad347793e8b517b38557dcc238e266621cddef27481124e",
+    "agent\\planner.py": "8a617d26e724e8ebc5e604892e867ebcc9e417aa97cbd7e0feda4954cd5a1d2b",
+    "agent\\processes.py": "677c4372b40d1da0ffc0cf4120ca5b6be2fcf6b6c30f6ec17d0d8fae19e198c1",
+    "agent\\proofs.py": "0d7ae78df6ea9949c29f33c7b817dda352c75b3d99c960c3e987e37c7401faab",
+    "agent\\qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent\\resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent\\search.py": "6a4173e80dbe0e178056de5d0a4dd3d54560d140f0b3ffbb52f488566732636b",
+    "agent\\selector.py": "be7c0fce11c10921d5cd4e3d1072d5a2ca5a62f1c328730384d19b0fecd19566",
+    "agent\\signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent\\types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent\\urls.py": "3a6b8a380f6d7966f1f79b97ccdedab5a5959ffbe5a1aa244e3477a0fe6110f4",
+    "agent\\worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f",
+    "agent\\__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41"
+  },
+  "production_changed_during_run": false,
+  "passed": 0,
+  "total": 12
+}

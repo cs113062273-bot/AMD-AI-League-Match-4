@@ -1,0 +1,182 @@
+{
+  "scope": "Actual HTTP readiness waits and fail-closed sequencing; no GPU/model restart.",
+  "passed": 7,
+  "total": 7,
+  "rows": [
+    {
+      "id": "idle",
+      "passed": true,
+      "state": {
+        "ready": true,
+        "reason": "idle",
+        "active_request": null,
+        "pid": 42,
+        "busy_rejections": 0,
+        "observations": 1,
+        "wait_seconds": 0.0015224999515339732
+      },
+      "methods": [
+        [
+          "GET",
+          "/health"
+        ]
+      ]
+    },
+    {
+      "id": "delayed",
+      "passed": true,
+      "state": {
+        "ready": true,
+        "reason": "idle",
+        "active_request": null,
+        "pid": 42,
+        "busy_rejections": 0,
+        "observations": 3,
+        "wait_seconds": 0.22731710004154593
+      },
+      "methods": [
+        [
+          "GET",
+          "/health"
+        ],
+        [
+          "GET",
+          "/health"
+        ],
+        [
+          "GET",
+          "/health"
+        ]
+      ]
+    },
+    {
+      "id": "busy",
+      "passed": true,
+      "state": {
+        "ready": false,
+        "reason": "active_request",
+        "active_request": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "pid": 42,
+        "busy_rejections": 0,
+        "observations": 4,
+        "wait_seconds": 0.3622480999911204
+      },
+      "methods": [
+        [
+          "GET",
+          "/health"
+        ],
+        [
+          "GET",
+          "/health"
+        ],
+        [
+          "GET",
+          "/health"
+        ],
+        [
+          "GET",
+          "/health"
+        ]
+      ]
+    },
+    {
+      "id": "unavailable",
+      "passed": true,
+      "state": {
+        "ready": false,
+        "reason": "health_http_503",
+        "active_request": null,
+        "observations": 4,
+        "wait_seconds": 0.36132779996842146
+      },
+      "methods": [
+        [
+          "GET",
+          "/health"
+        ],
+        [
+          "GET",
+          "/health"
+        ],
+        [
+          "GET",
+          "/health"
+        ],
+        [
+          "GET",
+          "/health"
+        ]
+      ]
+    },
+    {
+      "id": "invalid",
+      "passed": true,
+      "state": {
+        "ready": false,
+        "reason": "ValueError",
+        "active_request": null,
+        "observations": 4,
+        "wait_seconds": 0.36144789995159954
+      },
+      "methods": [
+        [
+          "GET",
+          "/health"
+        ],
+        [
+          "GET",
+          "/health"
+        ],
+        [
+          "GET",
+          "/health"
+        ],
+        [
+          "GET",
+          "/health"
+        ]
+      ]
+    },
+    {
+      "id": "stop-before-next-case",
+      "passed": true,
+      "retained_rows": 1,
+      "engine_calls": [
+        "Question 0"
+      ],
+      "failure": {
+        "case_id": "1",
+        "ready": false,
+        "reason": "active_request",
+        "active_request": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "pid": 42,
+        "busy_rejections": 0,
+        "observations": 3,
+        "wait_seconds": 0.26390759996138513
+      },
+      "methods": [
+        [
+          "GET",
+          "/health"
+        ],
+        [
+          "GET",
+          "/health"
+        ],
+        [
+          "GET",
+          "/health"
+        ],
+        [
+          "GET",
+          "/health"
+        ]
+      ]
+    },
+    {
+      "id": "observation-only",
+      "passed": true
+    }
+  ]
+}

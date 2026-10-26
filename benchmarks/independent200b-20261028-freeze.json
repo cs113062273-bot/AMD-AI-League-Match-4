@@ -1,0 +1,131 @@
+{
+  "status": "FROZEN_BEFORE_FIRST_RUN",
+  "selection_seed": 20261028,
+  "n": 200,
+  "eligible_rows": 460,
+  "selection": "Uniform sample of rows excluding previously exposed assessments; no source/topic/difficulty/answerability filtering.",
+  "excluded_assessments": [
+    {
+      "path": "benchmarks/expansion-20261023-live-cases.json",
+      "sha256": "cc07562445c59e1a1f0c208f571ab47939486f91e13db39942505aefb0e405b9",
+      "n": 3
+    },
+    {
+      "path": "benchmarks/external-disjoint12-20261023.json",
+      "sha256": "7a944d63a878df44c9b8117c92b9b8c42fec98201d8d76cfa39007c5b68afdc0",
+      "n": 12
+    },
+    {
+      "path": "benchmarks/external-disjoint12b-20261023.json",
+      "sha256": "1af9b4a1921becccb2304adb7ffbac424f7e2b21dea4941f9e01b27e053c34f9",
+      "n": 12
+    },
+    {
+      "path": "benchmarks/external-simpleqa100.json",
+      "sha256": "4a875aeb98d499d373c66ea03640c105f675d412d7e05aa5ca49c80080f1af64",
+      "n": 100
+    },
+    {
+      "path": "benchmarks/external-simpleqa20.json",
+      "sha256": "d94cd8ccdec7aceedc9895571aa9365ac60a1b5bceeb908b95013974dafdcebf",
+      "n": 20
+    },
+    {
+      "path": "benchmarks/external-transfer100-v2.json",
+      "sha256": "9cc11a2c15cb304e9e711f04485c0624561e04612c6a24b82a0bcb6abf7af6be",
+      "n": 100
+    },
+    {
+      "path": "benchmarks/external-transfer100.json",
+      "sha256": "9cc11a2c15cb304e9e711f04485c0624561e04612c6a24b82a0bcb6abf7af6be",
+      "n": 100
+    },
+    {
+      "path": "benchmarks/fulltest-20261025-independent12.json",
+      "sha256": "649ee3e12e2c90eba478963f09e9d08106767ffeadca96f887c6733a2b7f0b84",
+      "n": 12
+    },
+    {
+      "path": "benchmarks/independent200-20261027.json",
+      "sha256": "6bb812b9c418c6d1e91df50e1992297edddd60591d4e6bea96cf69c8211d0b5c",
+      "n": 200
+    },
+    {
+      "path": "benchmarks/independent60-20261026.json",
+      "sha256": "96bc6c839b4c815bfcd7d5ee136214149c2bb7be848b960e4fd8d226d2af251f",
+      "n": 60
+    },
+    {
+      "path": "benchmarks/live-pipeline-20261023-cases.json",
+      "sha256": "73ce774ba80320a85843f294732aabbee169d0f32c3fc764ba64fd4d7d4831ca",
+      "n": 3
+    },
+    {
+      "path": "benchmarks/main-pipeline-20261025-fresh24-v1.json",
+      "sha256": "4b5ada521c93995e4cfb1b45745ed7caa851134e1208f69306af9b652c25ffa1",
+      "n": 24
+    }
+  ],
+  "url_preprocessing": "Split comma-delimited HTTP URLs including individually quoted entries; remove matching list quotes; preserve path spelling and punctuation. Deduplicate exact canonical URLs.",
+  "upstream": "google/simpleqa-verified",
+  "revision": "0dc97e0d28d8233463e005cdc4475cc2a13ba2dc",
+  "upstream_license": "mit",
+  "csv_sha256": "b5db21155444763543fe31b67e7cf28ce2bb225742a5b889421c5f182e2f92f5",
+  "cases_sha256": "481a6c513a6461b71a41b532bb99f33841d0573f24191eb92d61bad5bf38233e",
+  "production_sha256": {
+    "app.py": "c0267c0441330bd30559f48d2f33916418992b8e21ec8dd1d09ae4773c23b73b",
+    "agent/browser.py": "53ac9a99f3afcefcdb197cd9b2296c2d380910a782178fadb65235e548efc353",
+    "agent/candidates.py": "db8ed80a2e58facc287fcb7d08dc83a2370d990671f28883524d7bf92e56da70",
+    "agent/cardinals.py": "54bcfb476ee7f5e1d21ec7d2763caa34fc4d8f3df0c16812aedc5445044099a3",
+    "agent/challenges.py": "b6f51c720f332671725e08127a5d1c163ca0542d2a550bf3c980a6d4c49bf6a1",
+    "agent/chunk_prefill.py": "fe2484f128dfc7d947fd511af6cc9b81773b400bba3d6150750541258de60eff",
+    "agent/crates_history.py": "8644c651c54fffecf5347c2408554948a8b4b59613830e9c67bf0caea3ddb81a",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/engine.py": "f255f127e83e1209294af3467d03c5062bb9297d2133a51c4cd2fefaadc1e772",
+    "agent/evidence.py": "9eebc1c4afcaf2ce56863ace3fa603866b68a252aaf9e60b1115823c2196af8f",
+    "agent/evidence_binding.py": "2151ff22497bf084a21d4ca4d476f3a51a2d36e4cf51b3e3030a63adadef030d",
+    "agent/familysearch.py": "682c5ed3afa4c1186b78c74cd78d742fa9f2128e4f404e58085cb1cce73fdb81",
+    "agent/family_counts.py": "1d86edd46f3ece8477539bca20bacba68dbe164019e77e5269f3894791715cea",
+    "agent/field_groups.py": "52a54989253c59e9836dec4aaec4944b688376e79548b9336887558a454e9162",
+    "agent/github_history.py": "26d3a2655f9d33ef9fb8aead1b6031c4b1b2fe0775c39824b5ae6f3ecad7f071",
+    "agent/gpu_memory.py": "a984ccd368f3a68cba572e5ac555f303bcdf5e74919656ad638729dd7e9d2fb6",
+    "agent/html_paragraphs.py": "fd2efd7286fd9bff67a9439a2e864ad729f90b28404316f3fb83cc2657053595",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/license_expressions.py": "aed3ee70c0253e00ea81bebd6c9719d4c643cf7c48df8146d94b0fb59978c000",
+    "agent/literature.py": "9b871500ab1ebaf88e8fca2c70bd7ade7eb81774412fa85a1f4be7d2fb06263f",
+    "agent/magnitudes.py": "bf4a970386bd25332b813e0aab91dd28cda05047ca5af5d9e7b861760f5942d7",
+    "agent/members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "agent/model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+    "agent/model_client.py": "07f16cb173444af03917c3548456a80bf7eb3504d08b6cb5e5b4bbaba5ad1703",
+    "agent/model_protocol.py": "e8d4b86e0727be8c7db621f9205741a0e1e65ec0f3688fea5b090a835251a2a7",
+    "agent/model_server.py": "d68b1547b2226d008d2b978f622e83ca851bd030eb3ece776c6f65938b7f0032",
+    "agent/navigation.py": "0f849c0c570720114c45c14b0a5286fe409e5d26c2945fdc9f6c1a6922bb7718",
+    "agent/network.py": "1d43884c4945458175b1dc5102fcf66458fafe1798b803f17c25f53e9bdfcc32",
+    "agent/normalize.py": "93f9147f5b09f8567ddac860e6b37b13f1f1d6c99bbd3c9c9a7da402d5dc64fa",
+    "agent/number_atoms.py": "0fc737af6f98af5b962cf0656b28a7a3b037e4113731b460fb63a2f5a22eb768",
+    "agent/output.py": "b983ab2efe31707b1c974344a32dc4b40b708541257695de89cac9e343b073eb",
+    "agent/oyez.py": "8475f248d78925522e0742b13518be2c4f4db11eae0d8391a8002da7d4e3b67d",
+    "agent/parser.py": "e2855a2f49ccbcde4fa860200497eb814b56ba17967cfa415152ccee903cd2f4",
+    "agent/phones.py": "88ee7806a9e69811e173228074aea714b4bb0e2c40abf5541887478b8d6cf7bb",
+    "agent/planner.py": "f272c83dea8a48e7150edaad5a2d83ddb936c88454ff4764d76d4bd71fc3fca9",
+    "agent/population.py": "d134655302bc76a4e58ac45e7f2d20fc73ed5cefce26f63f67b58cc25d3bc504",
+    "agent/processes.py": "677c4372b40d1da0ffc0cf4120ca5b6be2fcf6b6c30f6ec17d0d8fae19e198c1",
+    "agent/proofs.py": "17a1bbbe2664fc5cab20886eb658d0dfba26908e1eeaaa99496ed3572b843247",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/registry_history.py": "eb6c41b0b3c92192cecc23c7f4ba147b57bb99be8e3990ae77ed0e7feaecd85b",
+    "agent/request_pacing.py": "dc9af13c9c4af1c6555442ba9adeb7824a63685c676924d1fbdd20318e23f274",
+    "agent/resolvers.py": "990a9097481cce6b2b90805aedb7f5a6996b7caad290fbf44424bf7d93101866",
+    "agent/search.py": "340e7740a7fd174bdaa4824c2e1275877506b0755fb66879e0456f16fbefe6fb",
+    "agent/selector.py": "c6783627a8463d93ff212a08ab9131a9e2b872d204c025378caf8f51c41a88bf",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/source_excerpts.py": "aeb44460c54f4ea7301fe6917e695fcdb20d6c0a63a9f025936ac67f64764f4c",
+    "agent/table_scales.py": "7cdd8bedf0987a819b5ff84260222a051475cb91feffc75f63915b853f812acd",
+    "agent/temporal.py": "f520ada0a6ea9f810225887080a495a4a47a0371cd6f613a9c5648587509012a",
+    "agent/types.py": "ff29b729032273366c64cde113e425c34084b4ad7450ad48a0c2dd3c82b878e8",
+    "agent/urls.py": "ef9eaf10187050ab44f9f2c19ef889fb3c2fb29757c1009471f0f07735f6cc3c",
+    "agent/worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f",
+    "agent/__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41"
+  },
+  "starting_url_mode": "none",
+  "adaptation": "Question-only engine input; no starting URL is supplied from gold sources. Exact answer/source scoring with predeclared ISO-date and integer grouping aliases; not the official SimpleQA autorater."
+}

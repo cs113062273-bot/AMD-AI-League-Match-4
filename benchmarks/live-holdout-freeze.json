@@ -1,0 +1,29 @@
+{
+  "created_at_utc": "2026-10-20T01:40:08Z",
+  "cases": 14,
+  "limits": "Same author, two WCAG questions and two repeated facts with discovery; 9 source domains. Not representative hidden data.",
+  "dataset_sha256": "f916e10ddd92f2c4205f665c41bc403ce6d4d5a9fae73ef9fd2ca638926f6480",
+  "production_sha256": {
+    "app.py": "23fc5de9bb1d06fbb36d2cd6cd2d7df17e89dccd4d19d0d9a20d8117d52a369f",
+    "agent\\browser.py": "7b73b0aad99ce55b5f5bc921a4f1ef9e4aacdeadd718ac4220f558ba4a093c49",
+    "agent\\candidates.py": "1eefd0825855343ab7e97534d5ddd78e9059ee3d7209a736336f39ca302e47d3",
+    "agent\\engine.py": "273a06d1aeeb7514a407d0d3395aafbe68d3877e71fe70c8c5f2ce6c083bb35e",
+    "agent\\knowledge.py": "b3ee97cf1b5e80f5ed0ffdb0e164f2ac91157f1fe2fd52e678298b73f28a9ee4",
+    "agent\\model_assets.py": "0bc9dfb878b74912a23dec1ffca3456dcc7ea6c909e790a078d2f6409f410295",
+    "agent\\model_protocol.py": "c390920c0eefe151ed791ef8dbaefcf2757d898bc4f19d5505a35cc495f9100d",
+    "agent\\model_server.py": "9aa1a99e339a4667cdd2fe46ac6a8a0ac7440c141fc51453fe00e8a12af318af",
+    "agent\\network.py": "38edebefbbdc0674d701cf75b8c90d1724b806959fa098ea9e6d9fb2346170c2",
+    "agent\\normalize.py": "3520fd95271bae030786b5b30c40a68062dfdc94870e48a676c0cafbb9f5d886",
+    "agent\\output.py": "fbd6d8626f123e2fd29b929aa80cb4c289f4f3b745ba38167b38bcd32867e868",
+    "agent\\parser.py": "fddb79d97a5a9306b2a00069ca5e2a9fbf020e5bd31f421ffdd25f6fd45ecd6e",
+    "agent\\planner.py": "16ddab89cc8c297391ce7290868783957335a3fe2501515f0601ef58c26442a8",
+    "agent\\processes.py": "df474be2e3d923867374a420d2b0920b1be9505ef80c42dbbe34ce41fbb303e2",
+    "agent\\resolvers.py": "837eb7e5f90374f004772a27c98e3cdc857a6d77fd253ec4bc3f8f376ea3e447",
+    "agent\\search.py": "7d41968211cd65d6e70b11ddab69e4dd91685861e469a2d63f6ce4ccd89a35d8",
+    "agent\\selector.py": "f452990c111eca4f29a025ec944d82004cb9ecf11b28a3f03ccccf7c2905663e",
+    "agent\\types.py": "f54b6d192b51cf7bd5ce4e3d479234905960781336ccc5a1ea07423293e15a72",
+    "agent\\urls.py": "d4f285f9d225fcd22ad4415d9b03ccba6e2d5cdd8d7faff184151cbe9c1044c4",
+    "agent\\worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f",
+    "agent\\__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41"
+  }
+}

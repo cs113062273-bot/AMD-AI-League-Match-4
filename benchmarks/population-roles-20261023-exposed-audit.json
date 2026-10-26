@@ -1,0 +1,141 @@
+{
+  "scope": "CPU-only planning audit of244 already exposed cases; same saved readable census paragraph literal-role checks, not an accuracy run.",
+  "baseline_revision": "f68287f9798fa777ea1eb66a9f38fc412e645cee",
+  "baseline_source_sha256": {
+    "agent/engine.py": "1bf6108bb913480ce4bd2e7b0a32a1cc75df60fff66273e4c1d4067d8c43fb25",
+    "agent/types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent/planner.py": "8ee6e9dc255c73840582af0f438331a16a3023cfe886b562fbb7681b1e74ae90",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "agent/normalize.py": "05e48fa0be8384aa656bf1280ba0be44545efa51b7d4451f0716d836d39a1973",
+    "agent/urls.py": "6bbf58adf3c55cf3787edf4b6607a7db8eea987f0c02dd6cdfea48f6c38e031f",
+    "agent/network.py": "c37ecb5b4b0fba4fac737954eda24952059922ed620c94b99bcb17daed8c5155",
+    "agent/parser.py": "92fc37b32045b8c7f25d7d161c2ca00e9e49c82d2460616ef84d66fe31442069",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/challenges.py": "b6f51c720f332671725e08127a5d1c163ca0542d2a550bf3c980a6d4c49bf6a1",
+    "agent/field_groups.py": "52a54989253c59e9836dec4aaec4944b688376e79548b9336887558a454e9162",
+    "agent/resolvers.py": "312d776118c6c6f0421939df58cf6bcaec8740a7fd341136c17a33f284a03ef2",
+    "agent/search.py": "64ebf971ea4dd0f8a34bc0bdd2d3678f54edab80d6112328fefeede84687ec55",
+    "agent/literature.py": "9b871500ab1ebaf88e8fca2c70bd7ade7eb81774412fa85a1f4be7d2fb06263f",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/candidates.py": "87173f13cc7d21edc209e3c84235418c62cd5027057097102922c5eb059734b6",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/evidence.py": "a298cd93f6a36cb238acf1a406deb9057b059caa2ef1ab9f38aaa438e5274845",
+    "agent/selector.py": "a693a62781fcb76dd11bc6d29eb19770b48dc7e2e29bd7619cc189b62bf70e1b",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+    "agent/proofs.py": "0d7ae78df6ea9949c29f33c7b817dda352c75b3d99c960c3e987e37c7401faab",
+    "agent/oyez.py": "8475f248d78925522e0742b13518be2c4f4db11eae0d8391a8002da7d4e3b67d"
+  },
+  "case_inputs_sha256": {
+    "benchmarks/external-simpleqa20.json": "d94cd8ccdec7aceedc9895571aa9365ac60a1b5bceeb908b95013974dafdcebf",
+    "benchmarks/external-simpleqa100.json": "4a875aeb98d499d373c66ea03640c105f675d412d7e05aa5ca49c80080f1af64",
+    "benchmarks/external-transfer100-v2.json": "9cc11a2c15cb304e9e711f04485c0624561e04612c6a24b82a0bcb6abf7af6be",
+    "benchmarks/external-disjoint12-20261023.json": "7a944d63a878df44c9b8117c92b9b8c42fec98201d8d76cfa39007c5b68afdc0",
+    "benchmarks/external-disjoint12b-20261023.json": "1af9b4a1921becccb2304adb7ffbac424f7e2b21dea4941f9e01b27e053c34f9"
+  },
+  "source_inputs_sha256": {
+    "research\\external-disjoint12b-20261023-repeat\\simpleqa-1232.json": "6b4daa0e12221eb4b8effade5af1ef0bd975ff44792b111bdaf9f5249c059006",
+    "research/village-20261023-discovery.json": "3c3d9f8b0def9ff7e45138711089dc073330cd60caebef69a67eefa0a6a9e4a3",
+    "research/village-20261023-probe/0.json": "e9b09eebaea8a1255bb2e8cbd95367e16ad19aefddc0ad8196188d749cc6eece",
+    "research/village-20261023-probe/1.json": "a2563df732f46cc8879475361be99a81977a730b7df446ceb093cab33ca0dd76",
+    "research/village-20261023-probe/2.json": "2f677d946e08de104e0a207a04330752e9fa30395eace9e1beb740d16ce0cd20"
+  },
+  "plans": 244,
+  "changed_plans": [
+    {
+      "id": "simpleqa-2934",
+      "changes": {
+        "kind": {
+          "before": "text",
+          "after": "number"
+        }
+      }
+    },
+    {
+      "id": "simpleqa-262",
+      "changes": {
+        "kind": {
+          "before": "text",
+          "after": "number"
+        }
+      }
+    },
+    {
+      "id": "simpleqa-1726",
+      "changes": {
+        "year": {
+          "before": "",
+          "after": "2021"
+        }
+      }
+    },
+    {
+      "id": "simpleqa-1232",
+      "changes": {
+        "kind": {
+          "before": "text",
+          "after": "number"
+        },
+        "year": {
+          "before": "",
+          "after": "2006"
+        }
+      }
+    }
+  ],
+  "paragraph": "Konaruiyeh ( Persian : \u0643\u0646\u0627\u0631\u0648\u064a\u064a\u0647 \u200e\u200e, also Romanized as Kon\u0101r\u016b\u2019\u012byeh ; also known as Ken\u0101r\u016b and Kon\u0101r\u016b ) is a village in Esfandaqeh Rural District , in the Central District of Jiroft County , Kerman Province , Iran . At the 2006 census, its population was 219, in 44 families.",
+  "source_literal_checks": [
+    {
+      "literal": "2006",
+      "before": true,
+      "after": false
+    },
+    {
+      "literal": "219",
+      "before": true,
+      "after": true
+    },
+    {
+      "literal": "44",
+      "before": true,
+      "after": false
+    }
+  ],
+  "production_sha256": {
+    "app.py": "c0267c0441330bd30559f48d2f33916418992b8e21ec8dd1d09ae4773c23b73b",
+    "agent/__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41",
+    "agent/browser.py": "53ac9a99f3afcefcdb197cd9b2296c2d380910a782178fadb65235e548efc353",
+    "agent/candidates.py": "f4882197e55a061d42601cef56d6bbb2b9a37a76e10947bf424c943ee4057e8c",
+    "agent/challenges.py": "b6f51c720f332671725e08127a5d1c163ca0542d2a550bf3c980a6d4c49bf6a1",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/engine.py": "1bf6108bb913480ce4bd2e7b0a32a1cc75df60fff66273e4c1d4067d8c43fb25",
+    "agent/evidence.py": "a298cd93f6a36cb238acf1a406deb9057b059caa2ef1ab9f38aaa438e5274845",
+    "agent/field_groups.py": "52a54989253c59e9836dec4aaec4944b688376e79548b9336887558a454e9162",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/literature.py": "9b871500ab1ebaf88e8fca2c70bd7ade7eb81774412fa85a1f4be7d2fb06263f",
+    "agent/members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "agent/model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+    "agent/model_server.py": "8d326a696942d259697a6fba8586441bbbe4874042ea900c6d7788a2a0e9fd22",
+    "agent/navigation.py": "0f849c0c570720114c45c14b0a5286fe409e5d26c2945fdc9f6c1a6922bb7718",
+    "agent/network.py": "def1be3752f81423c313c2dfa83f6703ee063d7e98652cf0d816b423d0e2d9cb",
+    "agent/normalize.py": "05e48fa0be8384aa656bf1280ba0be44545efa51b7d4451f0716d836d39a1973",
+    "agent/output.py": "b983ab2efe31707b1c974344a32dc4b40b708541257695de89cac9e343b073eb",
+    "agent/oyez.py": "8475f248d78925522e0742b13518be2c4f4db11eae0d8391a8002da7d4e3b67d",
+    "agent/parser.py": "16741c809d33fbe08d5c9a69515decd4f8bc5546ed00afa9a3bb9c55bfb26e7b",
+    "agent/planner.py": "9666528f61db53a5aaae741c914690b5fdeb5fb1bea47ae1efeead4bb137e974",
+    "agent/population.py": "8b456aeb5e03f9e2f9f6ec82055d09595f7a3083710640be0ddc251e469bd24c",
+    "agent/processes.py": "677c4372b40d1da0ffc0cf4120ca5b6be2fcf6b6c30f6ec17d0d8fae19e198c1",
+    "agent/proofs.py": "0d7ae78df6ea9949c29f33c7b817dda352c75b3d99c960c3e987e37c7401faab",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/resolvers.py": "312d776118c6c6f0421939df58cf6bcaec8740a7fd341136c17a33f284a03ef2",
+    "agent/search.py": "64ebf971ea4dd0f8a34bc0bdd2d3678f54edab80d6112328fefeede84687ec55",
+    "agent/selector.py": "be7c0fce11c10921d5cd4e3d1072d5a2ca5a62f1c328730384d19b0fecd19566",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent/urls.py": "6bbf58adf3c55cf3787edf4b6607a7db8eea987f0c02dd6cdfea48f6c38e031f",
+    "agent/worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f"
+  }
+}

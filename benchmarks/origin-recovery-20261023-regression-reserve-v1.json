@@ -1,0 +1,4339 @@
+{
+  "scope": "CPU-only real-capture replay and HTTP checks for navigation starving discovery.\n\nModel endpoints are explicit stubs. This tests engine scheduling and literal\nevidence flow, not actual model answers, unseen accuracy or source-gold gains.\n",
+  "baseline_revision": "ed6436c83b6a0d1afed904073be05f06142115b1",
+  "baseline_source_sha256": {
+    "agent/engine.py": "01464cb276814f2d7c845c269da2522c285a7a7e28051abd7e36ad0ec62b41ff",
+    "agent/types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent/planner.py": "8ee6e9dc255c73840582af0f438331a16a3023cfe886b562fbb7681b1e74ae90",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "agent/normalize.py": "05e48fa0be8384aa656bf1280ba0be44545efa51b7d4451f0716d836d39a1973",
+    "agent/urls.py": "6bbf58adf3c55cf3787edf4b6607a7db8eea987f0c02dd6cdfea48f6c38e031f",
+    "agent/network.py": "c37ecb5b4b0fba4fac737954eda24952059922ed620c94b99bcb17daed8c5155",
+    "agent/parser.py": "92fc37b32045b8c7f25d7d161c2ca00e9e49c82d2460616ef84d66fe31442069",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/challenges.py": "b6f51c720f332671725e08127a5d1c163ca0542d2a550bf3c980a6d4c49bf6a1",
+    "agent/field_groups.py": "52a54989253c59e9836dec4aaec4944b688376e79548b9336887558a454e9162",
+    "agent/resolvers.py": "312d776118c6c6f0421939df58cf6bcaec8740a7fd341136c17a33f284a03ef2",
+    "agent/search.py": "64ebf971ea4dd0f8a34bc0bdd2d3678f54edab80d6112328fefeede84687ec55",
+    "agent/literature.py": "9b871500ab1ebaf88e8fca2c70bd7ade7eb81774412fa85a1f4be7d2fb06263f",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/candidates.py": "87173f13cc7d21edc209e3c84235418c62cd5027057097102922c5eb059734b6",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/evidence.py": "56994f2e5046668e33630fbc2330cfac35c8971f3c4d4e25f22547f1d99feba2",
+    "agent/selector.py": "a693a62781fcb76dd11bc6d29eb19770b48dc7e2e29bd7619cc189b62bf70e1b",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+    "agent/proofs.py": "0d7ae78df6ea9949c29f33c7b817dda352c75b3d99c960c3e987e37c7401faab",
+    "agent/oyez.py": "8475f248d78925522e0742b13518be2c4f4db11eae0d8391a8002da7d4e3b67d",
+    "agent/navigation.py": "0f849c0c570720114c45c14b0a5286fe409e5d26c2945fdc9f6c1a6922bb7718"
+  },
+  "input_sha256": {
+    "research\\external-disjoint12b-20261023-repeat\\simpleqa-1232.json": "6b4daa0e12221eb4b8effade5af1ef0bd975ff44792b111bdaf9f5249c059006",
+    "research/village-20261023-discovery.json": "3c3d9f8b0def9ff7e45138711089dc073330cd60caebef69a67eefa0a6a9e4a3",
+    "research/village-20261023-probe/0.json": "e9b09eebaea8a1255bb2e8cbd95367e16ad19aefddc0ad8196188d749cc6eece",
+    "research/village-20261023-probe/1.json": "a2563df732f46cc8879475361be99a81977a730b7df446ceb093cab33ca0dd76",
+    "research/village-20261023-probe/2.json": "2f677d946e08de104e0a207a04330752e9fa30395eace9e1beb740d16ce0cd20"
+  },
+  "before": {
+    "result": {
+      "answer": "",
+      "sources": [],
+      "confidence": 0.0,
+      "evidence": "",
+      "reason": "model_no_evidence",
+      "diagnostics": {
+        "plan": {
+          "question": "What was the population of Konaruiyeh, a village in Esfandaqeh Rural District, in the Central District of Jiroft County, Kerman Province, Iran, at the 2006 census?",
+          "url": "https://en.wikipedia.org/wiki/Konaruiyeh",
+          "kind": "text",
+          "terms": [
+            "population",
+            "konaruiyeh",
+            "village",
+            "esfandaqeh",
+            "rural",
+            "district",
+            "central",
+            "jiroft",
+            "county",
+            "kerman",
+            "province",
+            "iran",
+            "2006",
+            "census"
+          ],
+          "attributes": [],
+          "entity_terms": [
+            "population",
+            "konaruiyeh",
+            "village",
+            "esfandaqeh",
+            "rural",
+            "district",
+            "central",
+            "jiroft",
+            "county",
+            "kerman",
+            "province",
+            "iran",
+            "census"
+          ],
+          "versions": [],
+          "year": "",
+          "as_of": "",
+          "latest": false,
+          "stable": false,
+          "first": false,
+          "currency": "",
+          "cardinality": 1,
+          "negations": [],
+          "domain": "en.wikipedia.org",
+          "focus": "what was the population ",
+          "choices": [],
+          "operation": "single",
+          "required_fields": [],
+          "date_precision": ""
+        },
+        "errors": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Konaruiyeh",
+            "error": "http_403"
+          },
+          {
+            "url": "https://mapcarta.com/12599014",
+            "error": "http_403"
+          },
+          {
+            "url": "https://www.wikiwand.com/en/Konaruiyeh",
+            "error": "http_403"
+          },
+          {
+            "url": "https://www.wikidata.org/wiki/Q5831163",
+            "error": "http_403"
+          }
+        ],
+        "selector": [
+          "abstain",
+          "abstain"
+        ],
+        "timings": {
+          "resolver": 0.00011300004553049803
+        },
+        "search_requests": 7,
+        "llm_calls": 4,
+        "content_pages": 5,
+        "search_recovery": "starting_url_unavailable_or_exhausted",
+        "search_recovery_depth": 0,
+        "search_hints": [
+          "konaruiyeh census data"
+        ],
+        "search_hint_state": "expanded",
+        "navigation": [
+          {
+            "state": "span",
+            "chosen": "https://irandataportal.syr.edu/2006-census"
+          }
+        ],
+        "reader_state": "no_evidence",
+        "top_candidates": [],
+        "conflicts": [],
+        "fetches": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Konaruiyeh",
+            "final": "https://en.wikipedia.org/wiki/Konaruiyeh",
+            "status": 403,
+            "bytes": 0,
+            "error": "http_403",
+            "redirects": [],
+            "truncated": false,
+            "truncation_reason": ""
+          },
+          {
+            "url": "https://www.bing.com/search?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census+konaruiyeh+census+data",
+            "final": "https://www.bing.com/search?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census+konaruiyeh+census+data",
+            "status": 200,
+            "bytes": 123763,
+            "error": "",
+            "redirects": [],
+            "truncated": false,
+            "truncation_reason": ""
+          },
+          {
+            "url": "https://www.bing.com/search?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census",
+            "final": "https://www.bing.com/search?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census",
+            "status": 200,
+            "bytes": 123011,
+            "error": "",
+            "redirects": [],
+            "truncated": false,
+            "truncation_reason": ""
+          },
+          {
+            "url": "https://html.duckduckgo.com/html/?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census+konaruiyeh+census+data",
+            "final": "https://html.duckduckgo.com/html/?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census+konaruiyeh+census+data",
+            "status": 202,
+            "bytes": 14506,
+            "error": "",
+            "redirects": [],
+            "truncated": false,
+            "truncation_reason": ""
+          },
+          {
+            "url": "https://html.duckduckgo.com/html/?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census",
+            "final": "https://html.duckduckgo.com/html/?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census",
+            "status": 202,
+            "bytes": 14429,
+            "error": "",
+            "redirects": [],
+            "truncated": false,
+            "truncation_reason": ""
+          },
+          {
+            "url": "https://www.bing.com/search?format=rss&q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census+konaruiyeh+census+data",
+            "final": "https://www.bing.com/search?format=rss&q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census+konaruiyeh+census+data",
+            "status": 200,
+            "bytes": 5819,
+            "error": "",
+            "redirects": [],
+            "truncated": false,
+            "truncation_reason": ""
+          },
+          {
+            "url": "https://lite.duckduckgo.com/lite/?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census+konaruiyeh+census+data",
+            "final": "https://lite.duckduckgo.com/lite/?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census+konaruiyeh+census+data",
+            "status": 202,
+            "bytes": 14482,
+            "error": "",
+            "redirects": [],
+            "truncated": false,
+            "truncation_reason": ""
+          },
+          {
+            "url": "https://lite.duckduckgo.com/lite/?q=konaruiyeh+census+data",
+            "final": "https://lite.duckduckgo.com/lite/?q=konaruiyeh+census+data",
+            "status": 200,
+            "bytes": 23669,
+            "error": "",
+            "redirects": [],
+            "truncated": false,
+            "truncation_reason": ""
+          },
+          {
+            "url": "https://mapcarta.com/12599014",
+            "final": "https://mapcarta.com/12599014",
+            "status": 403,
+            "bytes": 0,
+            "error": "http_403",
+            "redirects": [],
+            "truncated": false,
+            "truncation_reason": ""
+          },
+          {
+            "url": "https://irandataportal.syr.edu/census",
+            "final": "https://irandataportal.syr.edu/census",
+            "status": 200,
+            "bytes": 53681,
+            "error": "",
+            "redirects": [],
+            "truncated": false,
+            "truncation_reason": ""
+          },
+          {
+            "url": "https://www.wikiwand.com/en/Konaruiyeh",
+            "final": "https://www.wikiwand.com/en/Konaruiyeh",
+            "status": 403,
+            "bytes": 0,
+            "error": "http_403",
+            "redirects": [],
+            "truncated": false,
+            "truncation_reason": ""
+          },
+          {
+            "url": "https://www.wikidata.org/wiki/Q5831163",
+            "final": "https://www.wikidata.org/wiki/Q5831163",
+            "status": 403,
+            "bytes": 0,
+            "error": "http_403",
+            "redirects": [],
+            "truncated": false,
+            "truncation_reason": ""
+          },
+          {
+            "url": "https://irandataportal.syr.edu/2006-census",
+            "final": "https://irandataportal.syr.edu/2006-census",
+            "status": 200,
+            "bytes": 70959,
+            "error": "",
+            "redirects": [],
+            "truncated": false,
+            "truncation_reason": ""
+          },
+          {
+            "url": "https://irandataportal.syr.edu/2011-census",
+            "final": "https://irandataportal.syr.edu/2011-census",
+            "status": 200,
+            "bytes": 54415,
+            "error": "",
+            "redirects": [],
+            "truncated": false,
+            "truncation_reason": ""
+          },
+          {
+            "url": "https://irandataportal.syr.edu/1996-census",
+            "final": "https://irandataportal.syr.edu/1996-census",
+            "status": 200,
+            "bytes": 53170,
+            "error": "",
+            "redirects": [],
+            "truncated": false,
+            "truncation_reason": ""
+          },
+          {
+            "url": "https://irandataportal.syr.edu/1986-census",
+            "final": "https://irandataportal.syr.edu/1986-census",
+            "status": 200,
+            "bytes": 51601,
+            "error": "",
+            "redirects": [],
+            "truncated": false,
+            "truncation_reason": ""
+          }
+        ],
+        "http_responses_success": 12,
+        "pages_fetched": 5,
+        "seconds": 0.3584
+      }
+    },
+    "missing_captures": [],
+    "content_requests": [
+      "https://en.wikipedia.org/wiki/Konaruiyeh",
+      "https://mapcarta.com/12599014",
+      "https://irandataportal.syr.edu/census",
+      "https://www.wikiwand.com/en/Konaruiyeh",
+      "https://www.wikidata.org/wiki/Q5831163",
+      "https://irandataportal.syr.edu/2006-census",
+      "https://irandataportal.syr.edu/2011-census",
+      "https://irandataportal.syr.edu/1996-census",
+      "https://irandataportal.syr.edu/1986-census"
+    ],
+    "unique_content_requests": 9,
+    "sent_payloads": [
+      {
+        "question": "What was the population of Konaruiyeh, a village in Esfandaqeh Rural District, in the Central District of Jiroft County, Kerman Province, Iran, at the 2006 census?",
+        "starting_url": "https://en.wikipedia.org/wiki/Konaruiyeh",
+        "constraints": {
+          "kind": "text",
+          "year": "",
+          "as_of": "",
+          "versions": [],
+          "stable": false,
+          "cardinality": 1,
+          "target": "what was the population ",
+          "choices": [],
+          "operation": "single",
+          "required_fields": [],
+          "date_precision": ""
+        },
+        "candidates": [],
+        "passages": [
+          {
+            "id": 0,
+            "text": "Since 1956, Iran has conducted seven censuses. The Statistical Center of Iran (SCI) conducted the census every ten years until 2006, when it was decided a five year interval would be established. All of the following census data was released by the Statistical Center of Iran (Markaz-e Amar-e Iran).",
+            "section": "Census",
+            "source": "https://irandataportal.syr.edu/census",
+            "locator": "p[2]:0",
+            "document_title": "Census - Iran Data Portal \u2013 Syracuse University"
+          },
+          {
+            "id": 1,
+            "text": "2006 Census",
+            "section": "Census",
+            "source": "https://irandataportal.syr.edu/census",
+            "locator": "li[8]:0",
+            "document_title": "Census - Iran Data Portal \u2013 Syracuse University"
+          },
+          {
+            "id": 2,
+            "text": "Census",
+            "section": "Census",
+            "source": "https://irandataportal.syr.edu/census",
+            "locator": "h1[0]",
+            "document_title": "Census - Iran Data Portal \u2013 Syracuse University"
+          },
+          {
+            "id": 3,
+            "text": "1956 Census",
+            "section": "Census",
+            "source": "https://irandataportal.syr.edu/census",
+            "locator": "li[3]:0",
+            "document_title": "Census - Iran Data Portal \u2013 Syracuse University"
+          },
+          {
+            "id": 4,
+            "text": "1966 Census",
+            "section": "Census",
+            "source": "https://irandataportal.syr.edu/census",
+            "locator": "li[4]:0",
+            "document_title": "Census - Iran Data Portal \u2013 Syracuse University"
+          },
+          {
+            "id": 5,
+            "text": "1976 Census",
+            "section": "Census",
+            "source": "https://irandataportal.syr.edu/census",
+            "locator": "li[5]:0",
+            "document_title": "Census - Iran Data Portal \u2013 Syracuse University"
+          },
+          {
+            "id": 6,
+            "text": "1986 Census",
+            "section": "Census",
+            "source": "https://irandataportal.syr.edu/census",
+            "locator": "li[6]:0",
+            "document_title": "Census - Iran Data Portal \u2013 Syracuse University"
+          },
+          {
+            "id": 7,
+            "text": "1996 Census",
+            "section": "Census",
+            "source": "https://irandataportal.syr.edu/census",
+            "locator": "li[7]:0",
+            "document_title": "Census - Iran Data Portal \u2013 Syracuse University"
+          }
+        ]
+      },
+      {
+        "question": "What was the population of Konaruiyeh, a village in Esfandaqeh Rural District, in the Central District of Jiroft County, Kerman Province, Iran, at the 2006 census?",
+        "starting_url": "https://en.wikipedia.org/wiki/Konaruiyeh",
+        "constraints": {
+          "kind": "text",
+          "year": "",
+          "as_of": "",
+          "versions": [],
+          "stable": false,
+          "cardinality": 1,
+          "target": "what was the population ",
+          "choices": [],
+          "operation": "single",
+          "required_fields": [],
+          "date_precision": ""
+        },
+        "candidates": [],
+        "passages": [
+          {
+            "id": 0,
+            "text": "More specific data gathered from the 2006 census regarding issues such as education, health, and female heads of household can be found under the \u201cData\u201d section and are also translated into English. The following attachments contain census data by province in Persian.",
+            "section": "2006 Census",
+            "source": "https://irandataportal.syr.edu/2006-census",
+            "locator": "p[2]:0",
+            "document_title": "2006 Census - Iran Data Portal \u2013 Syracuse University"
+          },
+          {
+            "id": 1,
+            "text": "2006 Census",
+            "section": "2006 Census",
+            "source": "https://irandataportal.syr.edu/2006-census",
+            "locator": "h1[0]",
+            "document_title": "2006 Census - Iran Data Portal \u2013 Syracuse University"
+          },
+          {
+            "id": 2,
+            "text": "Since 1956, Iran has conducted seven censuses. The Statistical Center of Iran (SCI) conducted the census every ten years until 2006, when it was decided a five year interval would be established. All of the following census data was released by the Statistical Center of Iran (Markaz-e Amar-e Iran).",
+            "section": "Census",
+            "source": "https://irandataportal.syr.edu/census",
+            "locator": "p[2]:0",
+            "document_title": "Census - Iran Data Portal \u2013 Syracuse University"
+          },
+          {
+            "id": 3,
+            "text": "\u00bb National Housing and Population Census",
+            "section": "",
+            "source": "https://irandataportal.syr.edu/2011-census",
+            "locator": "block[36]",
+            "document_title": "2011 Census - Iran Data Portal \u2013 Syracuse University"
+          },
+          {
+            "id": 4,
+            "text": "\u00bb Selected Findings of the National Housing and Population Census",
+            "section": "",
+            "source": "https://irandataportal.syr.edu/2011-census",
+            "locator": "block[52]",
+            "document_title": "2011 Census - Iran Data Portal \u2013 Syracuse University"
+          },
+          {
+            "id": 5,
+            "text": "\u00bb Selected Findings of the National Housing and Population Census (Persian)",
+            "section": "",
+            "source": "https://irandataportal.syr.edu/1996-census",
+            "locator": "block[35]",
+            "document_title": "1996 Census - Iran Data Portal \u2013 Syracuse University"
+          },
+          {
+            "id": 6,
+            "text": "\u00bb National Housing and Population Census_Tehran (Persian)",
+            "section": "",
+            "source": "https://irandataportal.syr.edu/1996-census",
+            "locator": "block[48]",
+            "document_title": "1996 Census - Iran Data Portal \u2013 Syracuse University"
+          },
+          {
+            "id": 7,
+            "text": "2006 Census",
+            "section": "Census",
+            "source": "https://irandataportal.syr.edu/census",
+            "locator": "li[8]:0",
+            "document_title": "Census - Iran Data Portal \u2013 Syracuse University"
+          }
+        ]
+      }
+    ]
+  },
+  "after": {
+    "result": {
+      "answer": "219",
+      "sources": [
+        "https://alchetron.com/Konaruiyeh"
+      ],
+      "confidence": 0.97,
+      "evidence": "description: Konaruiyeh ( Persian : \u0643\u0646\u0627\u0631\u0648\u064a\u064a\u0647 \u200e\u200e, also Romanized as Kon\u0101r\u016b\u2019\u012byeh ; also known as Ken\u0101r\u016b and Kon\u0101r\u016b ) is a village in Esfandaqeh Rural District , in the Central District of Jiroft County , Kerman Province , Iran . At the 2006 census, its population was 219, in 44 families.",
+      "reason": "model_verified",
+      "diagnostics": {
+        "plan": {
+          "question": "What was the population of Konaruiyeh, a village in Esfandaqeh Rural District, in the Central District of Jiroft County, Kerman Province, Iran, at the 2006 census?",
+          "url": "https://en.wikipedia.org/wiki/Konaruiyeh",
+          "kind": "number",
+          "terms": [
+            "population",
+            "konaruiyeh",
+            "village",
+            "esfandaqeh",
+            "rural",
+            "district",
+            "central",
+            "jiroft",
+            "county",
+            "kerman",
+            "province",
+            "iran",
+            "2006",
+            "census"
+          ],
+          "attributes": [],
+          "entity_terms": [
+            "population",
+            "konaruiyeh",
+            "village",
+            "esfandaqeh",
+            "rural",
+            "district",
+            "central",
+            "jiroft",
+            "county",
+            "kerman",
+            "province",
+            "iran",
+            "census"
+          ],
+          "versions": [],
+          "year": "2006",
+          "as_of": "",
+          "latest": false,
+          "stable": false,
+          "first": false,
+          "currency": "",
+          "cardinality": 1,
+          "negations": [],
+          "domain": "en.wikipedia.org",
+          "focus": "what was the population ",
+          "choices": [],
+          "operation": "single",
+          "required_fields": [],
+          "date_precision": "",
+          "temporal_issue": "",
+          "temporal_raw": []
+        },
+        "errors": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Konaruiyeh",
+            "error": "http_403"
+          },
+          {
+            "url": "https://mapcarta.com/12599014",
+            "error": "http_403"
+          },
+          {
+            "url": "https://www.wikiwand.com/en/Konaruiyeh",
+            "error": "http_403"
+          },
+          {
+            "url": "https://www.wikidata.org/wiki/Q5831163",
+            "error": "http_403"
+          },
+          {
+            "url": "https://everything.explained.today/Konaruiyeh/",
+            "error": "http_403"
+          }
+        ],
+        "selector": [
+          "abstain",
+          "span"
+        ],
+        "timings": {
+          "resolver": 1.5099998563528061e-05
+        },
+        "search_requests": 7,
+        "llm_calls": 5,
+        "content_pages": 4,
+        "search_recovery": "starting_url_unavailable_or_exhausted",
+        "search_recovery_depth": 0,
+        "search_hints": [
+          "konaruiyeh census data"
+        ],
+        "search_hint_state": "expanded",
+        "navigation": [
+          {
+            "state": "span",
+            "chosen": "https://irandataportal.syr.edu/2006-census"
+          }
+        ],
+        "discovery_reserve": [
+          {
+            "depth": 1,
+            "urls": [
+              "https://everything.explained.today/Konaruiyeh/",
+              "https://alchetron.com/Konaruiyeh"
+            ]
+          }
+        ],
+        "origin_recovery": [
+          {
+            "depth": 1,
+            "denied_origins": [
+              "https://en.wikipedia.org",
+              "https://mapcarta.com",
+              "https://www.wikidata.org",
+              "https://www.wikiwand.com"
+            ],
+            "previous_batch": [
+              "https://everything.explained.today/Konaruiyeh/",
+              "https://alchetron.com/Konaruiyeh",
+              "https://irandataportal.syr.edu/2006-census",
+              "https://irandataportal.syr.edu/2011-census"
+            ],
+            "next_batch": [
+              "https://irandataportal.syr.edu/2006-census",
+              "https://everything.explained.today/Konaruiyeh/",
+              "https://alchetron.com/Konaruiyeh",
+              "https://irandataportal.syr.edu/2011-census"
+            ],
+            "pending_count": 1,
+            "navigation_target": "https://irandataportal.syr.edu/2006-census"
+          }
+        ],
+        "model_selections": [
+          {
+            "raw": "219",
+            "answer": "219",
+            "source": "https://alchetron.com/Konaruiyeh",
+            "evidence": "description: Konaruiyeh ( Persian : \u0643\u0646\u0627\u0631\u0648\u064a\u064a\u0647 \u200e\u200e, also Romanized as Kon\u0101r\u016b\u2019\u012byeh ; also known as Ken\u0101r\u016b and Kon\u0101r\u016b ) is a village in Esfandaqeh Rural District , in the Central District of Jiroft County , Kerman Province , Iran . At the 2006 census, its population was 219, in 44 families.",
+            "label": "description",
+            "section": "",
+            "kind": "number",
+            "score": 24.953409188134543,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "",
+              "structure": "field",
+              "qualifiers": {},
+              "field_value": "Konaruiyeh ( Persian : \u0643\u0646\u0627\u0631\u0648\u064a\u064a\u0647 \u200e\u200e, also Romanized as Kon\u0101r\u016b\u2019\u012byeh ; also known as Ken\u0101r\u016b and Kon\u0101r\u016b ) is a village in Esfandaqeh Rural District , in the Central District of Jiroft County , Kerman Province , Iran . At the 2006 census, its population was 219, in 44 families."
+            }
+          }
+        ],
+        "verification": [
+          "supported"
+        ],
+        "reader_state": "answered",
+        "selection": {
+          "raw": "219",
+          "answer": "219",
+          "source": "https://alchetron.com/Konaruiyeh",
+          "evidence": "description: Konaruiyeh ( Persian : \u0643\u0646\u0627\u0631\u0648\u064a\u064a\u0647 \u200e\u200e, also Romanized as Kon\u0101r\u016b\u2019\u012byeh ; also known as Ken\u0101r\u016b and Kon\u0101r\u016b ) is a village in Esfandaqeh Rural District , in the Central District of Jiroft County , Kerman Province , Iran . At the 2006 census, its population was 219, in 44 families.",
+          "label": "description",
+          "section": "",
+          "kind": "number",
+          "score": 24.953409188134543,
+          "signals": {
+            "selector": "literal_span",
+            "locator": "",
+            "structure": "field",
+            "qualifiers": {},
+            "field_value": "Konaruiyeh ( Persian : \u0643\u0646\u0627\u0631\u0648\u064a\u064a\u0647 \u200e\u200e, also Romanized as Kon\u0101r\u016b\u2019\u012byeh ; also known as Ken\u0101r\u016b and Kon\u0101r\u016b ) is a village in Esfandaqeh Rural District , in the Central District of Jiroft County , Kerman Province , Iran . At the 2006 census, its population was 219, in 44 families."
+          }
+        },
+        "fetches": [
+          {
+            "url": "https://en.wikipedia.org/wiki/Konaruiyeh",
+            "final": "https://en.wikipedia.org/wiki/Konaruiyeh",
+            "status": 403,
+            "bytes": 0,
+            "error": "http_403",
+            "redirects": [],
+            "truncated": false,
+            "truncation_reason": ""
+          },
+          {
+            "url": "https://www.bing.com/search?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census+konaruiyeh+census+data",
+            "final": "https://www.bing.com/search?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census+konaruiyeh+census+data",
+            "status": 200,
+            "bytes": 123763,
+            "error": "",
+            "redirects": [],
+            "truncated": false,
+            "truncation_reason": ""
+          },
+          {
+            "url": "https://www.bing.com/search?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census",
+            "final": "https://www.bing.com/search?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census",
+            "status": 200,
+            "bytes": 123011,
+            "error": "",
+            "redirects": [],
+            "truncated": false,
+            "truncation_reason": ""
+          },
+          {
+            "url": "https://html.duckduckgo.com/html/?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census+konaruiyeh+census+data",
+            "final": "https://html.duckduckgo.com/html/?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census+konaruiyeh+census+data",
+            "status": 202,
+            "bytes": 14506,
+            "error": "",
+            "redirects": [],
+            "truncated": false,
+            "truncation_reason": ""
+          },
+          {
+            "url": "https://html.duckduckgo.com/html/?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census",
+            "final": "https://html.duckduckgo.com/html/?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census",
+            "status": 202,
+            "bytes": 14429,
+            "error": "",
+            "redirects": [],
+            "truncated": false,
+            "truncation_reason": ""
+          },
+          {
+            "url": "https://www.bing.com/search?format=rss&q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census+konaruiyeh+census+data",
+            "final": "https://www.bing.com/search?format=rss&q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census+konaruiyeh+census+data",
+            "status": 200,
+            "bytes": 5819,
+            "error": "",
+            "redirects": [],
+            "truncated": false,
+            "truncation_reason": ""
+          },
+          {
+            "url": "https://lite.duckduckgo.com/lite/?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census+konaruiyeh+census+data",
+            "final": "https://lite.duckduckgo.com/lite/?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census+konaruiyeh+census+data",
+            "status": 202,
+            "bytes": 14482,
+            "error": "",
+            "redirects": [],
+            "truncated": false,
+            "truncation_reason": ""
+          },
+          {
+            "url": "https://lite.duckduckgo.com/lite/?q=konaruiyeh+census+data",
+            "final": "https://lite.duckduckgo.com/lite/?q=konaruiyeh+census+data",
+            "status": 200,
+            "bytes": 23669,
+            "error": "",
+            "redirects": [],
+            "truncated": false,
+            "truncation_reason": ""
+          },
+          {
+            "url": "https://mapcarta.com/12599014",
+            "final": "https://mapcarta.com/12599014",
+            "status": 403,
+            "bytes": 0,
+            "error": "http_403",
+            "redirects": [],
+            "truncated": false,
+            "truncation_reason": ""
+          },
+          {
+            "url": "https://irandataportal.syr.edu/census",
+            "final": "https://irandataportal.syr.edu/census",
+            "status": 200,
+            "bytes": 53681,
+            "error": "",
+            "redirects": [],
+            "truncated": false,
+            "truncation_reason": ""
+          },
+          {
+            "url": "https://www.wikiwand.com/en/Konaruiyeh",
+            "final": "https://www.wikiwand.com/en/Konaruiyeh",
+            "status": 403,
+            "bytes": 0,
+            "error": "http_403",
+            "redirects": [],
+            "truncated": false,
+            "truncation_reason": ""
+          },
+          {
+            "url": "https://www.wikidata.org/wiki/Q5831163",
+            "final": "https://www.wikidata.org/wiki/Q5831163",
+            "status": 403,
+            "bytes": 0,
+            "error": "http_403",
+            "redirects": [],
+            "truncated": false,
+            "truncation_reason": ""
+          },
+          {
+            "url": "https://irandataportal.syr.edu/2006-census",
+            "final": "https://irandataportal.syr.edu/2006-census",
+            "status": 200,
+            "bytes": 70959,
+            "error": "",
+            "redirects": [],
+            "truncated": false,
+            "truncation_reason": ""
+          },
+          {
+            "url": "https://everything.explained.today/Konaruiyeh/",
+            "final": "https://everything.explained.today/Konaruiyeh/",
+            "status": 403,
+            "bytes": 0,
+            "error": "http_403",
+            "redirects": [],
+            "truncated": false,
+            "truncation_reason": ""
+          },
+          {
+            "url": "https://alchetron.com/Konaruiyeh",
+            "final": "https://alchetron.com/Konaruiyeh",
+            "status": 200,
+            "bytes": 92054,
+            "error": "",
+            "redirects": [],
+            "truncated": false,
+            "truncation_reason": ""
+          },
+          {
+            "url": "https://irandataportal.syr.edu/2011-census",
+            "final": "https://irandataportal.syr.edu/2011-census",
+            "status": 200,
+            "bytes": 54415,
+            "error": "",
+            "redirects": [],
+            "truncated": false,
+            "truncation_reason": ""
+          }
+        ],
+        "http_responses_success": 11,
+        "pages_fetched": 4,
+        "seconds": 0.3224
+      }
+    },
+    "missing_captures": [],
+    "content_requests": [
+      "https://en.wikipedia.org/wiki/Konaruiyeh",
+      "https://mapcarta.com/12599014",
+      "https://irandataportal.syr.edu/census",
+      "https://www.wikiwand.com/en/Konaruiyeh",
+      "https://www.wikidata.org/wiki/Q5831163",
+      "https://irandataportal.syr.edu/2006-census",
+      "https://everything.explained.today/Konaruiyeh/",
+      "https://alchetron.com/Konaruiyeh",
+      "https://irandataportal.syr.edu/2011-census"
+    ],
+    "unique_content_requests": 9,
+    "sent_payloads": [
+      {
+        "question": "What was the population of Konaruiyeh, a village in Esfandaqeh Rural District, in the Central District of Jiroft County, Kerman Province, Iran, at the 2006 census?",
+        "starting_url": "https://en.wikipedia.org/wiki/Konaruiyeh",
+        "constraints": {
+          "kind": "number",
+          "year": "2006",
+          "as_of": "",
+          "versions": [],
+          "stable": false,
+          "cardinality": 1,
+          "target": "what was the population ",
+          "choices": [],
+          "operation": "single",
+          "required_fields": [],
+          "date_precision": ""
+        },
+        "candidates": [],
+        "passages": [
+          {
+            "id": 0,
+            "text": "Since 1956, Iran has conducted seven censuses. The Statistical Center of Iran (SCI) conducted the census every ten years until 2006, when it was decided a five year interval would be established. All of the following census data was released by the Statistical Center of Iran (Markaz-e Amar-e Iran).",
+            "section": "Census",
+            "source": "https://irandataportal.syr.edu/census",
+            "locator": "p[2]:0",
+            "document_title": "Census - Iran Data Portal \u2013 Syracuse University"
+          },
+          {
+            "id": 1,
+            "text": "2006 Census",
+            "section": "Census",
+            "source": "https://irandataportal.syr.edu/census",
+            "locator": "li[8]:0",
+            "document_title": "Census - Iran Data Portal \u2013 Syracuse University"
+          },
+          {
+            "id": 2,
+            "text": "Census",
+            "section": "Census",
+            "source": "https://irandataportal.syr.edu/census",
+            "locator": "h1[0]",
+            "document_title": "Census - Iran Data Portal \u2013 Syracuse University"
+          },
+          {
+            "id": 3,
+            "text": "Iran Data Portal",
+            "section": "",
+            "source": "https://irandataportal.syr.edu/census",
+            "locator": "block[11]",
+            "document_title": "Census - Iran Data Portal \u2013 Syracuse University"
+          },
+          {
+            "id": 4,
+            "text": "Open Close primary navigation",
+            "section": "",
+            "source": "https://irandataportal.syr.edu/census",
+            "locator": "block[12]",
+            "document_title": "Census - Iran Data Portal \u2013 Syracuse University"
+          },
+          {
+            "id": 5,
+            "text": "Open",
+            "section": "",
+            "source": "https://irandataportal.syr.edu/census",
+            "locator": "block[13]",
+            "document_title": "Census - Iran Data Portal \u2013 Syracuse University"
+          },
+          {
+            "id": 6,
+            "text": "Close",
+            "section": "",
+            "source": "https://irandataportal.syr.edu/census",
+            "locator": "block[14]",
+            "document_title": "Census - Iran Data Portal \u2013 Syracuse University"
+          },
+          {
+            "id": 7,
+            "text": "In this Section",
+            "section": "",
+            "source": "https://irandataportal.syr.edu/census",
+            "locator": "block[23]",
+            "document_title": "Census - Iran Data Portal \u2013 Syracuse University"
+          }
+        ]
+      },
+      {
+        "question": "What was the population of Konaruiyeh, a village in Esfandaqeh Rural District, in the Central District of Jiroft County, Kerman Province, Iran, at the 2006 census?",
+        "starting_url": "https://en.wikipedia.org/wiki/Konaruiyeh",
+        "constraints": {
+          "kind": "number",
+          "year": "2006",
+          "as_of": "",
+          "versions": [],
+          "stable": false,
+          "cardinality": 1,
+          "target": "what was the population ",
+          "choices": [],
+          "operation": "single",
+          "required_fields": [],
+          "date_precision": ""
+        },
+        "candidates": [],
+        "passages": [
+          {
+            "id": 0,
+            "text": "description: Konaruiyeh ( Persian : \u0643\u0646\u0627\u0631\u0648\u064a\u064a\u0647 \u200e\u200e, also Romanized as Kon\u0101r\u016b\u2019\u012byeh ; also known as Ken\u0101r\u016b and Kon\u0101r\u016b ) is a village in Esfandaqeh Rural District , in the Central District of Jiroft County , Kerman Province , Iran . At the 2006 census, its population was 219, in 44 families.",
+            "section": "",
+            "source": "https://alchetron.com/Konaruiyeh",
+            "locator": "",
+            "document_title": "Konaruiyeh - Alchetron, The Free Social Encyclopedia"
+          },
+          {
+            "id": 1,
+            "text": "articleBody: Country Iran County Jiroft Rural District Esfandaqeh Population 219 (2006) Province Kerman Bakhsh Central Time zone IRST (UTC+3:30) Konaruiyeh ( Persian : \u0643\u0646\u0627\u0631\u0648\u064a\u064a\u0647 \u200e\u200e, also Romanized as Kon\u0101r\u016b\u2019\u012byeh ; also known as Ken\u0101r\u016b and Kon\u0101r\u016b ) is a village in Esfandaqeh Rural District , in the Central District of Jiroft County , Kerman Province , Iran . At the 2006 census, its population was 219, in 44 families. More Alchetron Topics References Konaruiyeh Wikipedia (Text) CC BY-SA",
+            "section": "",
+            "source": "https://alchetron.com/Konaruiyeh",
+            "locator": "",
+            "document_title": "Konaruiyeh - Alchetron, The Free Social Encyclopedia"
+          },
+          {
+            "id": 2,
+            "text": "Konaruiyeh ( Persian : \u0643\u0646\u0627\u0631\u0648\u064a\u064a\u0647 \u200e\u200e, also Romanized as Kon\u0101r\u016b\u2019\u012byeh ; also known as Ken\u0101r\u016b and Kon\u0101r\u016b ) is a village in Esfandaqeh Rural District , in the Central District of Jiroft County , Kerman Province , Iran . At the 2006 census, its population was 219, in 44 families.",
+            "section": "Konaruiyeh",
+            "source": "https://alchetron.com/Konaruiyeh",
+            "locator": "p[3]:0",
+            "document_title": "Konaruiyeh - Alchetron, The Free Social Encyclopedia"
+          },
+          {
+            "id": 3,
+            "text": "description: Konaruiyeh (Persian , also Romanized as Konryeh also known as Kenr and Konr) is a village in Esfandaqeh Rural District, in the Central District of Jiroft County, Kerman Province, Iran. At the 2006 census, its population was 219, in 44 families. Konaruiyeh Wikipedia (Text) CC BYS",
+            "section": "",
+            "source": "https://alchetron.com/Konaruiyeh",
+            "locator": "meta[0]",
+            "document_title": "Konaruiyeh - Alchetron, The Free Social Encyclopedia"
+          },
+          {
+            "id": 4,
+            "text": "og:description: Konaruiyeh (Persian , also Romanized as Konryeh also known as Kenr and Konr) is a village in Esfandaqeh Rural District, in the Central District of Jiroft County, Kerman Province, Iran. At the 2006 census, its population was 219, in 44 families. Konaruiyeh Wikipedia (Text) CC BYS",
+            "section": "",
+            "source": "https://alchetron.com/Konaruiyeh",
+            "locator": "meta[15]",
+            "document_title": "Konaruiyeh - Alchetron, The Free Social Encyclopedia"
+          },
+          {
+            "id": 5,
+            "text": "twitter:description: Konaruiyeh (Persian , also Romanized as Konryeh also known as Kenr and Konr) is a village in Esfandaqeh Rural District, in the Central District of Jiroft County, Kerman Province, Iran. At the 2006 census, its population was 219, in 44 families. Konaruiyeh Wikipedia (Text) CC BYS",
+            "section": "",
+            "source": "https://alchetron.com/Konaruiyeh",
+            "locator": "meta[24]",
+            "document_title": "Konaruiyeh - Alchetron, The Free Social Encyclopedia"
+          },
+          {
+            "id": 6,
+            "text": "Country Iran County Jiroft Rural District Esfandaqeh Population 219 (2006) |  | Province Kerman Bakhsh Central Time zone IRST (UTC+3:30)",
+            "section": "Konaruiyeh",
+            "source": "https://alchetron.com/Konaruiyeh",
+            "locator": "table[2]/row[0]",
+            "document_title": "Konaruiyeh - Alchetron, The Free Social Encyclopedia"
+          },
+          {
+            "id": 7,
+            "text": "Since 1956, Iran has conducted seven censuses. The Statistical Center of Iran (SCI) conducted the census every ten years until 2006, when it was decided a five year interval would be established. All of the following census data was released by the Statistical Center of Iran (Markaz-e Amar-e Iran).",
+            "section": "Census",
+            "source": "https://irandataportal.syr.edu/census",
+            "locator": "p[2]:0",
+            "document_title": "Census - Iran Data Portal \u2013 Syracuse University"
+          }
+        ]
+      }
+    ]
+  },
+  "before_controls": [
+    {
+      "id": "crowded-navigation",
+      "passed": false,
+      "hits": [
+        "/start",
+        "/provider",
+        "/provider",
+        "/archive",
+        "/blocked/0",
+        "/blocked/2",
+        "/blocked/1",
+        "/old/0",
+        "/old/3",
+        "/old/2",
+        "/old/1"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the support phone of Boreal Instruments?",
+            "url": "http://127.0.0.1:7467/start",
+            "kind": "phone",
+            "terms": [
+              "support",
+              "phone",
+              "boreal",
+              "instruments"
+            ],
+            "attributes": [
+              "phone",
+              "telephone",
+              "tel",
+              "contact",
+              "support",
+              "hotline",
+              "toll-free"
+            ],
+            "entity_terms": [
+              "boreal",
+              "instruments"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the support phone ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [
+            {
+              "url": "http://127.0.0.1:7467/blocked/0",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:7467/blocked/1",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:7467/blocked/2",
+              "error": "http_403"
+            }
+          ],
+          "selector": [
+            "abstain",
+            "abstain",
+            "abstain"
+          ],
+          "timings": {
+            "resolver": 1.1599971912801266e-05
+          },
+          "search_requests": 2,
+          "llm_calls": 5,
+          "content_pages": 6,
+          "search_recovery": "starting_url_unavailable_or_exhausted",
+          "search_recovery_depth": 0,
+          "search_hints": [],
+          "search_hint_state": "expanded",
+          "navigation": [
+            {
+              "state": "span",
+              "chosen": "http://127.0.0.1:7467/old/0"
+            }
+          ],
+          "reader_state": "no_evidence",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:7467/start",
+              "final": "http://127.0.0.1:7467/start",
+              "status": 200,
+              "bytes": 66,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/provider?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "final": "http://127.0.0.1:7467/provider?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "status": 200,
+              "bytes": 625,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/provider?q=support+phone+boreal+instruments",
+              "final": "http://127.0.0.1:7467/provider?q=support+phone+boreal+instruments",
+              "status": 200,
+              "bytes": 625,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/archive",
+              "final": "http://127.0.0.1:7467/archive",
+              "status": 200,
+              "bytes": 487,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/blocked/0",
+              "final": "http://127.0.0.1:7467/blocked/0",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/blocked/2",
+              "final": "http://127.0.0.1:7467/blocked/2",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/blocked/1",
+              "final": "http://127.0.0.1:7467/blocked/1",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/old/0",
+              "final": "http://127.0.0.1:7467/old/0",
+              "status": 200,
+              "bytes": 58,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/old/3",
+              "final": "http://127.0.0.1:7467/old/3",
+              "status": 200,
+              "bytes": 58,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/old/2",
+              "final": "http://127.0.0.1:7467/old/2",
+              "status": 200,
+              "bytes": 58,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/old/1",
+              "final": "http://127.0.0.1:7467/old/1",
+              "status": 200,
+              "bytes": 58,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 8,
+          "pages_fetched": 6,
+          "seconds": 0.039
+        }
+      }
+    },
+    {
+      "id": "navigation-answer",
+      "passed": true,
+      "hits": [
+        "/start",
+        "/provider",
+        "/provider",
+        "/archive",
+        "/blocked/0",
+        "/blocked/2",
+        "/blocked/1",
+        "/old/0",
+        "/old/3",
+        "/old/2",
+        "/old/1"
+      ],
+      "result": {
+        "answer": "+1 202-555-0186",
+        "sources": [
+          "http://127.0.0.1:7467/old/0"
+        ],
+        "confidence": 0.85,
+        "evidence": "Support phone: +1 202-555-0186",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the support phone of Boreal Instruments?",
+            "url": "http://127.0.0.1:7467/start",
+            "kind": "phone",
+            "terms": [
+              "support",
+              "phone",
+              "boreal",
+              "instruments"
+            ],
+            "attributes": [
+              "phone",
+              "telephone",
+              "tel",
+              "contact",
+              "support",
+              "hotline",
+              "toll-free"
+            ],
+            "entity_terms": [
+              "boreal",
+              "instruments"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the support phone ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [
+            {
+              "url": "http://127.0.0.1:7467/blocked/0",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:7467/blocked/1",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:7467/blocked/2",
+              "error": "http_403"
+            }
+          ],
+          "selector": [
+            "abstain",
+            "abstain",
+            "span"
+          ],
+          "timings": {
+            "resolver": 9.00006853044033e-06
+          },
+          "search_requests": 2,
+          "llm_calls": 6,
+          "content_pages": 6,
+          "search_recovery": "starting_url_unavailable_or_exhausted",
+          "search_recovery_depth": 0,
+          "search_hints": [],
+          "search_hint_state": "expanded",
+          "navigation": [
+            {
+              "state": "span",
+              "chosen": "http://127.0.0.1:7467/old/0"
+            }
+          ],
+          "model_selections": [
+            {
+              "raw": "+1 202-555-0186",
+              "answer": "+1 202-555-0186",
+              "source": "http://127.0.0.1:7467/old/0",
+              "evidence": "Support phone: +1 202-555-0186",
+              "label": "",
+              "section": "Boreal Instruments support",
+              "kind": "phone",
+              "score": 12.0,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[1]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "+1 202-555-0186",
+            "answer": "+1 202-555-0186",
+            "source": "http://127.0.0.1:7467/old/0",
+            "evidence": "Support phone: +1 202-555-0186",
+            "label": "",
+            "section": "Boreal Instruments support",
+            "kind": "phone",
+            "score": 12.0,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[1]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:7467/start",
+              "final": "http://127.0.0.1:7467/start",
+              "status": 200,
+              "bytes": 66,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/provider?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "final": "http://127.0.0.1:7467/provider?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "status": 200,
+              "bytes": 625,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/provider?q=support+phone+boreal+instruments",
+              "final": "http://127.0.0.1:7467/provider?q=support+phone+boreal+instruments",
+              "status": 200,
+              "bytes": 625,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/archive",
+              "final": "http://127.0.0.1:7467/archive",
+              "status": 200,
+              "bytes": 487,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/blocked/0",
+              "final": "http://127.0.0.1:7467/blocked/0",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/blocked/2",
+              "final": "http://127.0.0.1:7467/blocked/2",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/blocked/1",
+              "final": "http://127.0.0.1:7467/blocked/1",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/old/0",
+              "final": "http://127.0.0.1:7467/old/0",
+              "status": 200,
+              "bytes": 72,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/old/3",
+              "final": "http://127.0.0.1:7467/old/3",
+              "status": 200,
+              "bytes": 58,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/old/2",
+              "final": "http://127.0.0.1:7467/old/2",
+              "status": 200,
+              "bytes": 58,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/old/1",
+              "final": "http://127.0.0.1:7467/old/1",
+              "status": 200,
+              "bytes": 58,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 8,
+          "pages_fetched": 6,
+          "seconds": 0.0333
+        }
+      }
+    },
+    {
+      "id": "no-pending",
+      "passed": true,
+      "hits": [
+        "/start",
+        "/provider",
+        "/provider",
+        "/archive",
+        "/blocked/0",
+        "/blocked/2",
+        "/blocked/1",
+        "/old/0",
+        "/old/3",
+        "/old/2",
+        "/old/1"
+      ],
+      "result": {
+        "answer": "+1 202-555-0186",
+        "sources": [
+          "http://127.0.0.1:7467/old/0"
+        ],
+        "confidence": 0.85,
+        "evidence": "Support phone: +1 202-555-0186",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the support phone of Boreal Instruments?",
+            "url": "http://127.0.0.1:7467/start",
+            "kind": "phone",
+            "terms": [
+              "support",
+              "phone",
+              "boreal",
+              "instruments"
+            ],
+            "attributes": [
+              "phone",
+              "telephone",
+              "tel",
+              "contact",
+              "support",
+              "hotline",
+              "toll-free"
+            ],
+            "entity_terms": [
+              "boreal",
+              "instruments"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the support phone ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [
+            {
+              "url": "http://127.0.0.1:7467/blocked/0",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:7467/blocked/1",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:7467/blocked/2",
+              "error": "http_403"
+            }
+          ],
+          "selector": [
+            "abstain",
+            "abstain",
+            "span"
+          ],
+          "timings": {
+            "resolver": 9.599956683814526e-06
+          },
+          "search_requests": 2,
+          "llm_calls": 6,
+          "content_pages": 6,
+          "search_recovery": "starting_url_unavailable_or_exhausted",
+          "search_recovery_depth": 0,
+          "search_hints": [],
+          "search_hint_state": "expanded",
+          "navigation": [
+            {
+              "state": "span",
+              "chosen": "http://127.0.0.1:7467/old/0"
+            }
+          ],
+          "model_selections": [
+            {
+              "raw": "+1 202-555-0186",
+              "answer": "+1 202-555-0186",
+              "source": "http://127.0.0.1:7467/old/0",
+              "evidence": "Support phone: +1 202-555-0186",
+              "label": "",
+              "section": "Boreal Instruments support",
+              "kind": "phone",
+              "score": 12.0,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[1]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "+1 202-555-0186",
+            "answer": "+1 202-555-0186",
+            "source": "http://127.0.0.1:7467/old/0",
+            "evidence": "Support phone: +1 202-555-0186",
+            "label": "",
+            "section": "Boreal Instruments support",
+            "kind": "phone",
+            "score": 12.0,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[1]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:7467/start",
+              "final": "http://127.0.0.1:7467/start",
+              "status": 200,
+              "bytes": 66,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/provider?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "final": "http://127.0.0.1:7467/provider?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "status": 200,
+              "bytes": 418,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/provider?q=support+phone+boreal+instruments",
+              "final": "http://127.0.0.1:7467/provider?q=support+phone+boreal+instruments",
+              "status": 200,
+              "bytes": 418,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/archive",
+              "final": "http://127.0.0.1:7467/archive",
+              "status": 200,
+              "bytes": 487,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/blocked/0",
+              "final": "http://127.0.0.1:7467/blocked/0",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/blocked/2",
+              "final": "http://127.0.0.1:7467/blocked/2",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/blocked/1",
+              "final": "http://127.0.0.1:7467/blocked/1",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/old/0",
+              "final": "http://127.0.0.1:7467/old/0",
+              "status": 200,
+              "bytes": 72,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/old/3",
+              "final": "http://127.0.0.1:7467/old/3",
+              "status": 200,
+              "bytes": 58,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/old/2",
+              "final": "http://127.0.0.1:7467/old/2",
+              "status": 200,
+              "bytes": 58,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/old/1",
+              "final": "http://127.0.0.1:7467/old/1",
+              "status": 200,
+              "bytes": 58,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 8,
+          "pages_fetched": 6,
+          "seconds": 0.0218
+        }
+      }
+    },
+    {
+      "id": "one-pending",
+      "passed": false,
+      "hits": [
+        "/start",
+        "/provider",
+        "/provider",
+        "/archive",
+        "/blocked/0",
+        "/blocked/2",
+        "/blocked/1",
+        "/old/0",
+        "/old/3",
+        "/old/2",
+        "/old/1"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the support phone of Boreal Instruments?",
+            "url": "http://127.0.0.1:7467/start",
+            "kind": "phone",
+            "terms": [
+              "support",
+              "phone",
+              "boreal",
+              "instruments"
+            ],
+            "attributes": [
+              "phone",
+              "telephone",
+              "tel",
+              "contact",
+              "support",
+              "hotline",
+              "toll-free"
+            ],
+            "entity_terms": [
+              "boreal",
+              "instruments"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the support phone ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [
+            {
+              "url": "http://127.0.0.1:7467/blocked/0",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:7467/blocked/1",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:7467/blocked/2",
+              "error": "http_403"
+            }
+          ],
+          "selector": [
+            "abstain",
+            "abstain",
+            "abstain"
+          ],
+          "timings": {
+            "resolver": 1.0300078429281712e-05
+          },
+          "search_requests": 2,
+          "llm_calls": 5,
+          "content_pages": 6,
+          "search_recovery": "starting_url_unavailable_or_exhausted",
+          "search_recovery_depth": 0,
+          "search_hints": [],
+          "search_hint_state": "expanded",
+          "navigation": [
+            {
+              "state": "span",
+              "chosen": "http://127.0.0.1:7467/old/0"
+            }
+          ],
+          "reader_state": "no_evidence",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:7467/start",
+              "final": "http://127.0.0.1:7467/start",
+              "status": 200,
+              "bytes": 66,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/provider?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "final": "http://127.0.0.1:7467/provider?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "status": 200,
+              "bytes": 520,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/provider?q=support+phone+boreal+instruments",
+              "final": "http://127.0.0.1:7467/provider?q=support+phone+boreal+instruments",
+              "status": 200,
+              "bytes": 520,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/archive",
+              "final": "http://127.0.0.1:7467/archive",
+              "status": 200,
+              "bytes": 487,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/blocked/0",
+              "final": "http://127.0.0.1:7467/blocked/0",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/blocked/2",
+              "final": "http://127.0.0.1:7467/blocked/2",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/blocked/1",
+              "final": "http://127.0.0.1:7467/blocked/1",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/old/0",
+              "final": "http://127.0.0.1:7467/old/0",
+              "status": 200,
+              "bytes": 58,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/old/3",
+              "final": "http://127.0.0.1:7467/old/3",
+              "status": 200,
+              "bytes": 58,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/old/2",
+              "final": "http://127.0.0.1:7467/old/2",
+              "status": 200,
+              "bytes": 58,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/old/1",
+              "final": "http://127.0.0.1:7467/old/1",
+              "status": 200,
+              "bytes": 58,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 8,
+          "pages_fetched": 6,
+          "seconds": 0.04
+        }
+      }
+    },
+    {
+      "id": "no-url",
+      "passed": false,
+      "hits": [
+        "/provider",
+        "/provider",
+        "/archive",
+        "/blocked/0",
+        "/blocked/2",
+        "/blocked/1",
+        "/old/0",
+        "/old/3",
+        "/old/2",
+        "/old/1"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the support phone of Boreal Instruments?",
+            "url": "",
+            "kind": "phone",
+            "terms": [
+              "support",
+              "phone",
+              "boreal",
+              "instruments"
+            ],
+            "attributes": [
+              "phone",
+              "telephone",
+              "tel",
+              "contact",
+              "support",
+              "hotline",
+              "toll-free"
+            ],
+            "entity_terms": [
+              "boreal",
+              "instruments"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "",
+            "focus": "what is the support phone ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [
+            {
+              "url": "http://127.0.0.1:7467/blocked/0",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:7467/blocked/1",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:7467/blocked/2",
+              "error": "http_403"
+            }
+          ],
+          "selector": [
+            "abstain",
+            "abstain"
+          ],
+          "timings": {
+            "resolver": 0.0002785999095067382
+          },
+          "search_requests": 3,
+          "llm_calls": 4,
+          "content_pages": 5,
+          "search_hints": [],
+          "search_hint_state": "expanded",
+          "navigation": [
+            {
+              "state": "span",
+              "chosen": "http://127.0.0.1:7467/old/0"
+            }
+          ],
+          "reader_state": "no_evidence",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:7467/provider?q=What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "final": "http://127.0.0.1:7467/provider?q=What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "status": 200,
+              "bytes": 625,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/provider?q=support+phone+boreal+instruments",
+              "final": "http://127.0.0.1:7467/provider?q=support+phone+boreal+instruments",
+              "status": 200,
+              "bytes": 625,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&language=en&format=json&maxlag=5&limit=3&search=What%20is%20the%20support%20phone%20of%20Boreal%20Instruments",
+              "final": "https://www.wikidata.org/w/api.php?action=wbsearchentities&language=en&format=json&maxlag=5&limit=3&search=What%20is%20the%20support%20phone%20of%20Boreal%20Instruments",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/archive",
+              "final": "http://127.0.0.1:7467/archive",
+              "status": 200,
+              "bytes": 487,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/blocked/0",
+              "final": "http://127.0.0.1:7467/blocked/0",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/blocked/2",
+              "final": "http://127.0.0.1:7467/blocked/2",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/blocked/1",
+              "final": "http://127.0.0.1:7467/blocked/1",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/old/0",
+              "final": "http://127.0.0.1:7467/old/0",
+              "status": 200,
+              "bytes": 58,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/old/3",
+              "final": "http://127.0.0.1:7467/old/3",
+              "status": 200,
+              "bytes": 58,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/old/2",
+              "final": "http://127.0.0.1:7467/old/2",
+              "status": 200,
+              "bytes": 58,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/old/1",
+              "final": "http://127.0.0.1:7467/old/1",
+              "status": 200,
+              "bytes": 58,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 7,
+          "pages_fetched": 5,
+          "seconds": 2.4314
+        }
+      }
+    },
+    {
+      "id": "page-cap",
+      "passed": true,
+      "hits": [
+        "/start",
+        "/provider",
+        "/provider",
+        "/archive",
+        "/blocked/0",
+        "/blocked/2",
+        "/blocked/1"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the support phone of Boreal Instruments?",
+            "url": "http://127.0.0.1:7467/start",
+            "kind": "phone",
+            "terms": [
+              "support",
+              "phone",
+              "boreal",
+              "instruments"
+            ],
+            "attributes": [
+              "phone",
+              "telephone",
+              "tel",
+              "contact",
+              "support",
+              "hotline",
+              "toll-free"
+            ],
+            "entity_terms": [
+              "boreal",
+              "instruments"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the support phone ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [
+            {
+              "url": "http://127.0.0.1:7467/blocked/0",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:7467/blocked/1",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:7467/blocked/2",
+              "error": "http_403"
+            }
+          ],
+          "selector": [
+            "abstain",
+            "abstain"
+          ],
+          "timings": {
+            "resolver": 2.8199981898069382e-05
+          },
+          "search_requests": 2,
+          "llm_calls": 4,
+          "content_pages": 2,
+          "search_recovery": "starting_url_unavailable_or_exhausted",
+          "search_recovery_depth": 0,
+          "search_hints": [],
+          "search_hint_state": "expanded",
+          "navigation": [
+            {
+              "state": "span",
+              "chosen": "http://127.0.0.1:7467/old/0"
+            }
+          ],
+          "reader_state": "no_evidence",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:7467/start",
+              "final": "http://127.0.0.1:7467/start",
+              "status": 200,
+              "bytes": 66,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/provider?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "final": "http://127.0.0.1:7467/provider?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "status": 200,
+              "bytes": 625,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/provider?q=support+phone+boreal+instruments",
+              "final": "http://127.0.0.1:7467/provider?q=support+phone+boreal+instruments",
+              "status": 200,
+              "bytes": 625,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/archive",
+              "final": "http://127.0.0.1:7467/archive",
+              "status": 200,
+              "bytes": 487,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/blocked/0",
+              "final": "http://127.0.0.1:7467/blocked/0",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/blocked/2",
+              "final": "http://127.0.0.1:7467/blocked/2",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/blocked/1",
+              "final": "http://127.0.0.1:7467/blocked/1",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 4,
+          "pages_fetched": 2,
+          "seconds": 0.0281
+        }
+      }
+    },
+    {
+      "id": "depth-cap",
+      "passed": true,
+      "hits": [
+        "/start",
+        "/provider",
+        "/provider",
+        "/archive",
+        "/blocked/0",
+        "/blocked/2",
+        "/blocked/1"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the support phone of Boreal Instruments?",
+            "url": "http://127.0.0.1:7467/start",
+            "kind": "phone",
+            "terms": [
+              "support",
+              "phone",
+              "boreal",
+              "instruments"
+            ],
+            "attributes": [
+              "phone",
+              "telephone",
+              "tel",
+              "contact",
+              "support",
+              "hotline",
+              "toll-free"
+            ],
+            "entity_terms": [
+              "boreal",
+              "instruments"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the support phone ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [
+            {
+              "url": "http://127.0.0.1:7467/blocked/0",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:7467/blocked/1",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:7467/blocked/2",
+              "error": "http_403"
+            }
+          ],
+          "selector": [
+            "abstain",
+            "abstain"
+          ],
+          "timings": {
+            "resolver": 8.300063200294971e-06
+          },
+          "search_requests": 2,
+          "llm_calls": 3,
+          "content_pages": 2,
+          "search_recovery": "starting_url_unavailable_or_exhausted",
+          "search_recovery_depth": 0,
+          "search_hints": [],
+          "search_hint_state": "expanded",
+          "reader_state": "no_evidence",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:7467/start",
+              "final": "http://127.0.0.1:7467/start",
+              "status": 200,
+              "bytes": 66,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/provider?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "final": "http://127.0.0.1:7467/provider?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "status": 200,
+              "bytes": 625,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/provider?q=support+phone+boreal+instruments",
+              "final": "http://127.0.0.1:7467/provider?q=support+phone+boreal+instruments",
+              "status": 200,
+              "bytes": 625,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/archive",
+              "final": "http://127.0.0.1:7467/archive",
+              "status": 200,
+              "bytes": 487,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/blocked/0",
+              "final": "http://127.0.0.1:7467/blocked/0",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/blocked/2",
+              "final": "http://127.0.0.1:7467/blocked/2",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7467/blocked/1",
+              "final": "http://127.0.0.1:7467/blocked/1",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 4,
+          "pages_fetched": 2,
+          "seconds": 0.0106
+        }
+      }
+    }
+  ],
+  "after_controls": [
+    {
+      "id": "crowded-navigation",
+      "passed": true,
+      "hits": [
+        "/start",
+        "/provider",
+        "/provider",
+        "/archive",
+        "/blocked/0",
+        "/blocked/2",
+        "/blocked/1",
+        "/old/0",
+        "/blocked/4",
+        "/answer",
+        "/old/3"
+      ],
+      "result": {
+        "answer": "+1 202-555-0186",
+        "sources": [
+          "http://127.0.0.1:7535/answer"
+        ],
+        "confidence": 0.85,
+        "evidence": "Support phone: +1 202-555-0186",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the support phone of Boreal Instruments?",
+            "url": "http://127.0.0.1:7535/start",
+            "kind": "phone",
+            "terms": [
+              "support",
+              "phone",
+              "boreal",
+              "instruments"
+            ],
+            "attributes": [
+              "phone",
+              "telephone",
+              "tel",
+              "contact",
+              "support",
+              "hotline",
+              "toll-free"
+            ],
+            "entity_terms": [
+              "boreal",
+              "instruments"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the support phone ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [
+            {
+              "url": "http://127.0.0.1:7535/blocked/0",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/1",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/2",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/4",
+              "error": "http_403"
+            }
+          ],
+          "selector": [
+            "abstain",
+            "abstain",
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.0999967344105244e-05
+          },
+          "search_requests": 2,
+          "llm_calls": 6,
+          "content_pages": 5,
+          "search_recovery": "starting_url_unavailable_or_exhausted",
+          "search_recovery_depth": 0,
+          "search_hints": [],
+          "search_hint_state": "expanded",
+          "navigation": [
+            {
+              "state": "span",
+              "chosen": "http://127.0.0.1:7535/old/0"
+            }
+          ],
+          "discovery_reserve": [
+            {
+              "depth": 1,
+              "urls": [
+                "http://127.0.0.1:7535/blocked/4",
+                "http://127.0.0.1:7535/answer"
+              ]
+            }
+          ],
+          "origin_recovery": [
+            {
+              "depth": 1,
+              "denied_origins": [
+                "http://127.0.0.1:7535"
+              ],
+              "previous_batch": [
+                "http://127.0.0.1:7535/blocked/4",
+                "http://127.0.0.1:7535/answer",
+                "http://127.0.0.1:7535/old/0",
+                "http://127.0.0.1:7535/old/3"
+              ],
+              "next_batch": [
+                "http://127.0.0.1:7535/old/0",
+                "http://127.0.0.1:7535/blocked/4",
+                "http://127.0.0.1:7535/answer",
+                "http://127.0.0.1:7535/old/3"
+              ],
+              "pending_count": 0,
+              "navigation_target": "http://127.0.0.1:7535/old/0"
+            }
+          ],
+          "model_selections": [
+            {
+              "raw": "+1 202-555-0186",
+              "answer": "+1 202-555-0186",
+              "source": "http://127.0.0.1:7535/answer",
+              "evidence": "Support phone: +1 202-555-0186",
+              "label": "",
+              "section": "Boreal Instruments support",
+              "kind": "phone",
+              "score": 12.0,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[1]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "+1 202-555-0186",
+            "answer": "+1 202-555-0186",
+            "source": "http://127.0.0.1:7535/answer",
+            "evidence": "Support phone: +1 202-555-0186",
+            "label": "",
+            "section": "Boreal Instruments support",
+            "kind": "phone",
+            "score": 12.0,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[1]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:7535/start",
+              "final": "http://127.0.0.1:7535/start",
+              "status": 200,
+              "bytes": 66,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/provider?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "final": "http://127.0.0.1:7535/provider?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "status": 200,
+              "bytes": 625,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/provider?q=support+phone+boreal+instruments",
+              "final": "http://127.0.0.1:7535/provider?q=support+phone+boreal+instruments",
+              "status": 200,
+              "bytes": 625,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/archive",
+              "final": "http://127.0.0.1:7535/archive",
+              "status": 200,
+              "bytes": 487,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/0",
+              "final": "http://127.0.0.1:7535/blocked/0",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/2",
+              "final": "http://127.0.0.1:7535/blocked/2",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/1",
+              "final": "http://127.0.0.1:7535/blocked/1",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/old/0",
+              "final": "http://127.0.0.1:7535/old/0",
+              "status": 200,
+              "bytes": 58,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/4",
+              "final": "http://127.0.0.1:7535/blocked/4",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/answer",
+              "final": "http://127.0.0.1:7535/answer",
+              "status": 200,
+              "bytes": 72,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/old/3",
+              "final": "http://127.0.0.1:7535/old/3",
+              "status": 200,
+              "bytes": 58,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 7,
+          "pages_fetched": 5,
+          "seconds": 0.0296
+        }
+      }
+    },
+    {
+      "id": "navigation-answer",
+      "passed": true,
+      "hits": [
+        "/start",
+        "/provider",
+        "/provider",
+        "/archive",
+        "/blocked/0",
+        "/blocked/2",
+        "/blocked/1",
+        "/old/0",
+        "/blocked/4",
+        "/answer",
+        "/old/3"
+      ],
+      "result": {
+        "answer": "+1 202-555-0186",
+        "sources": [
+          "http://127.0.0.1:7535/old/0"
+        ],
+        "confidence": 0.85,
+        "evidence": "Support phone: +1 202-555-0186",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the support phone of Boreal Instruments?",
+            "url": "http://127.0.0.1:7535/start",
+            "kind": "phone",
+            "terms": [
+              "support",
+              "phone",
+              "boreal",
+              "instruments"
+            ],
+            "attributes": [
+              "phone",
+              "telephone",
+              "tel",
+              "contact",
+              "support",
+              "hotline",
+              "toll-free"
+            ],
+            "entity_terms": [
+              "boreal",
+              "instruments"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the support phone ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [
+            {
+              "url": "http://127.0.0.1:7535/blocked/0",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/1",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/2",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/4",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:7535/answer",
+              "error": "http_403"
+            }
+          ],
+          "selector": [
+            "abstain",
+            "abstain",
+            "span"
+          ],
+          "timings": {
+            "resolver": 9.200070053339005e-06
+          },
+          "search_requests": 2,
+          "llm_calls": 6,
+          "content_pages": 4,
+          "search_recovery": "starting_url_unavailable_or_exhausted",
+          "search_recovery_depth": 0,
+          "search_hints": [],
+          "search_hint_state": "expanded",
+          "navigation": [
+            {
+              "state": "span",
+              "chosen": "http://127.0.0.1:7535/old/0"
+            }
+          ],
+          "discovery_reserve": [
+            {
+              "depth": 1,
+              "urls": [
+                "http://127.0.0.1:7535/blocked/4",
+                "http://127.0.0.1:7535/answer"
+              ]
+            }
+          ],
+          "origin_recovery": [
+            {
+              "depth": 1,
+              "denied_origins": [
+                "http://127.0.0.1:7535"
+              ],
+              "previous_batch": [
+                "http://127.0.0.1:7535/blocked/4",
+                "http://127.0.0.1:7535/answer",
+                "http://127.0.0.1:7535/old/0",
+                "http://127.0.0.1:7535/old/3"
+              ],
+              "next_batch": [
+                "http://127.0.0.1:7535/old/0",
+                "http://127.0.0.1:7535/blocked/4",
+                "http://127.0.0.1:7535/answer",
+                "http://127.0.0.1:7535/old/3"
+              ],
+              "pending_count": 0,
+              "navigation_target": "http://127.0.0.1:7535/old/0"
+            }
+          ],
+          "model_selections": [
+            {
+              "raw": "+1 202-555-0186",
+              "answer": "+1 202-555-0186",
+              "source": "http://127.0.0.1:7535/old/0",
+              "evidence": "Support phone: +1 202-555-0186",
+              "label": "",
+              "section": "Boreal Instruments support",
+              "kind": "phone",
+              "score": 12.0,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[1]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "+1 202-555-0186",
+            "answer": "+1 202-555-0186",
+            "source": "http://127.0.0.1:7535/old/0",
+            "evidence": "Support phone: +1 202-555-0186",
+            "label": "",
+            "section": "Boreal Instruments support",
+            "kind": "phone",
+            "score": 12.0,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[1]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:7535/start",
+              "final": "http://127.0.0.1:7535/start",
+              "status": 200,
+              "bytes": 66,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/provider?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "final": "http://127.0.0.1:7535/provider?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "status": 200,
+              "bytes": 625,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/provider?q=support+phone+boreal+instruments",
+              "final": "http://127.0.0.1:7535/provider?q=support+phone+boreal+instruments",
+              "status": 200,
+              "bytes": 625,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/archive",
+              "final": "http://127.0.0.1:7535/archive",
+              "status": 200,
+              "bytes": 487,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/0",
+              "final": "http://127.0.0.1:7535/blocked/0",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/2",
+              "final": "http://127.0.0.1:7535/blocked/2",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/1",
+              "final": "http://127.0.0.1:7535/blocked/1",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/old/0",
+              "final": "http://127.0.0.1:7535/old/0",
+              "status": 200,
+              "bytes": 72,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/4",
+              "final": "http://127.0.0.1:7535/blocked/4",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/answer",
+              "final": "http://127.0.0.1:7535/answer",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/old/3",
+              "final": "http://127.0.0.1:7535/old/3",
+              "status": 200,
+              "bytes": 58,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 6,
+          "pages_fetched": 4,
+          "seconds": 0.0166
+        }
+      }
+    },
+    {
+      "id": "no-pending",
+      "passed": true,
+      "hits": [
+        "/start",
+        "/provider",
+        "/provider",
+        "/archive",
+        "/blocked/0",
+        "/blocked/2",
+        "/blocked/1",
+        "/old/0",
+        "/old/3",
+        "/old/2",
+        "/old/1"
+      ],
+      "result": {
+        "answer": "+1 202-555-0186",
+        "sources": [
+          "http://127.0.0.1:7535/old/0"
+        ],
+        "confidence": 0.85,
+        "evidence": "Support phone: +1 202-555-0186",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the support phone of Boreal Instruments?",
+            "url": "http://127.0.0.1:7535/start",
+            "kind": "phone",
+            "terms": [
+              "support",
+              "phone",
+              "boreal",
+              "instruments"
+            ],
+            "attributes": [
+              "phone",
+              "telephone",
+              "tel",
+              "contact",
+              "support",
+              "hotline",
+              "toll-free"
+            ],
+            "entity_terms": [
+              "boreal",
+              "instruments"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the support phone ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [
+            {
+              "url": "http://127.0.0.1:7535/blocked/0",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/1",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/2",
+              "error": "http_403"
+            }
+          ],
+          "selector": [
+            "abstain",
+            "abstain",
+            "span"
+          ],
+          "timings": {
+            "resolver": 9.199953638017178e-06
+          },
+          "search_requests": 2,
+          "llm_calls": 6,
+          "content_pages": 6,
+          "search_recovery": "starting_url_unavailable_or_exhausted",
+          "search_recovery_depth": 0,
+          "search_hints": [],
+          "search_hint_state": "expanded",
+          "navigation": [
+            {
+              "state": "span",
+              "chosen": "http://127.0.0.1:7535/old/0"
+            }
+          ],
+          "model_selections": [
+            {
+              "raw": "+1 202-555-0186",
+              "answer": "+1 202-555-0186",
+              "source": "http://127.0.0.1:7535/old/0",
+              "evidence": "Support phone: +1 202-555-0186",
+              "label": "",
+              "section": "Boreal Instruments support",
+              "kind": "phone",
+              "score": 12.0,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[1]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "+1 202-555-0186",
+            "answer": "+1 202-555-0186",
+            "source": "http://127.0.0.1:7535/old/0",
+            "evidence": "Support phone: +1 202-555-0186",
+            "label": "",
+            "section": "Boreal Instruments support",
+            "kind": "phone",
+            "score": 12.0,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[1]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:7535/start",
+              "final": "http://127.0.0.1:7535/start",
+              "status": 200,
+              "bytes": 66,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/provider?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "final": "http://127.0.0.1:7535/provider?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "status": 200,
+              "bytes": 418,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/provider?q=support+phone+boreal+instruments",
+              "final": "http://127.0.0.1:7535/provider?q=support+phone+boreal+instruments",
+              "status": 200,
+              "bytes": 418,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/archive",
+              "final": "http://127.0.0.1:7535/archive",
+              "status": 200,
+              "bytes": 487,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/0",
+              "final": "http://127.0.0.1:7535/blocked/0",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/2",
+              "final": "http://127.0.0.1:7535/blocked/2",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/1",
+              "final": "http://127.0.0.1:7535/blocked/1",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/old/0",
+              "final": "http://127.0.0.1:7535/old/0",
+              "status": 200,
+              "bytes": 72,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/old/3",
+              "final": "http://127.0.0.1:7535/old/3",
+              "status": 200,
+              "bytes": 58,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/old/2",
+              "final": "http://127.0.0.1:7535/old/2",
+              "status": 200,
+              "bytes": 58,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/old/1",
+              "final": "http://127.0.0.1:7535/old/1",
+              "status": 200,
+              "bytes": 58,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 8,
+          "pages_fetched": 6,
+          "seconds": 0.0186
+        }
+      }
+    },
+    {
+      "id": "one-pending",
+      "passed": true,
+      "hits": [
+        "/start",
+        "/provider",
+        "/provider",
+        "/archive",
+        "/blocked/0",
+        "/blocked/2",
+        "/blocked/1",
+        "/old/0",
+        "/answer",
+        "/old/3",
+        "/old/2"
+      ],
+      "result": {
+        "answer": "+1 202-555-0186",
+        "sources": [
+          "http://127.0.0.1:7535/answer"
+        ],
+        "confidence": 0.85,
+        "evidence": "Support phone: +1 202-555-0186",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the support phone of Boreal Instruments?",
+            "url": "http://127.0.0.1:7535/start",
+            "kind": "phone",
+            "terms": [
+              "support",
+              "phone",
+              "boreal",
+              "instruments"
+            ],
+            "attributes": [
+              "phone",
+              "telephone",
+              "tel",
+              "contact",
+              "support",
+              "hotline",
+              "toll-free"
+            ],
+            "entity_terms": [
+              "boreal",
+              "instruments"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the support phone ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [
+            {
+              "url": "http://127.0.0.1:7535/blocked/0",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/1",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/2",
+              "error": "http_403"
+            }
+          ],
+          "selector": [
+            "abstain",
+            "abstain",
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.009996049106121e-05
+          },
+          "search_requests": 2,
+          "llm_calls": 6,
+          "content_pages": 6,
+          "search_recovery": "starting_url_unavailable_or_exhausted",
+          "search_recovery_depth": 0,
+          "search_hints": [],
+          "search_hint_state": "expanded",
+          "navigation": [
+            {
+              "state": "span",
+              "chosen": "http://127.0.0.1:7535/old/0"
+            }
+          ],
+          "discovery_reserve": [
+            {
+              "depth": 1,
+              "urls": [
+                "http://127.0.0.1:7535/answer"
+              ]
+            }
+          ],
+          "origin_recovery": [
+            {
+              "depth": 1,
+              "denied_origins": [
+                "http://127.0.0.1:7535"
+              ],
+              "previous_batch": [
+                "http://127.0.0.1:7535/answer",
+                "http://127.0.0.1:7535/old/0",
+                "http://127.0.0.1:7535/old/3",
+                "http://127.0.0.1:7535/old/2"
+              ],
+              "next_batch": [
+                "http://127.0.0.1:7535/old/0",
+                "http://127.0.0.1:7535/answer",
+                "http://127.0.0.1:7535/old/3",
+                "http://127.0.0.1:7535/old/2"
+              ],
+              "pending_count": 0,
+              "navigation_target": "http://127.0.0.1:7535/old/0"
+            }
+          ],
+          "model_selections": [
+            {
+              "raw": "+1 202-555-0186",
+              "answer": "+1 202-555-0186",
+              "source": "http://127.0.0.1:7535/answer",
+              "evidence": "Support phone: +1 202-555-0186",
+              "label": "",
+              "section": "Boreal Instruments support",
+              "kind": "phone",
+              "score": 12.0,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[1]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "+1 202-555-0186",
+            "answer": "+1 202-555-0186",
+            "source": "http://127.0.0.1:7535/answer",
+            "evidence": "Support phone: +1 202-555-0186",
+            "label": "",
+            "section": "Boreal Instruments support",
+            "kind": "phone",
+            "score": 12.0,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[1]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:7535/start",
+              "final": "http://127.0.0.1:7535/start",
+              "status": 200,
+              "bytes": 66,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/provider?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "final": "http://127.0.0.1:7535/provider?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "status": 200,
+              "bytes": 520,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/provider?q=support+phone+boreal+instruments",
+              "final": "http://127.0.0.1:7535/provider?q=support+phone+boreal+instruments",
+              "status": 200,
+              "bytes": 520,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/archive",
+              "final": "http://127.0.0.1:7535/archive",
+              "status": 200,
+              "bytes": 487,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/0",
+              "final": "http://127.0.0.1:7535/blocked/0",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/2",
+              "final": "http://127.0.0.1:7535/blocked/2",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/1",
+              "final": "http://127.0.0.1:7535/blocked/1",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/old/0",
+              "final": "http://127.0.0.1:7535/old/0",
+              "status": 200,
+              "bytes": 58,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/answer",
+              "final": "http://127.0.0.1:7535/answer",
+              "status": 200,
+              "bytes": 72,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/old/3",
+              "final": "http://127.0.0.1:7535/old/3",
+              "status": 200,
+              "bytes": 58,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/old/2",
+              "final": "http://127.0.0.1:7535/old/2",
+              "status": 200,
+              "bytes": 58,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 8,
+          "pages_fetched": 6,
+          "seconds": 0.0394
+        }
+      }
+    },
+    {
+      "id": "no-url",
+      "passed": true,
+      "hits": [
+        "/provider",
+        "/provider",
+        "/archive",
+        "/blocked/0",
+        "/blocked/2",
+        "/blocked/1",
+        "/old/0",
+        "/blocked/4",
+        "/answer",
+        "/old/3"
+      ],
+      "result": {
+        "answer": "+1 202-555-0186",
+        "sources": [
+          "http://127.0.0.1:7535/answer"
+        ],
+        "confidence": 0.8,
+        "evidence": "Support phone: +1 202-555-0186",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the support phone of Boreal Instruments?",
+            "url": "",
+            "kind": "phone",
+            "terms": [
+              "support",
+              "phone",
+              "boreal",
+              "instruments"
+            ],
+            "attributes": [
+              "phone",
+              "telephone",
+              "tel",
+              "contact",
+              "support",
+              "hotline",
+              "toll-free"
+            ],
+            "entity_terms": [
+              "boreal",
+              "instruments"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "",
+            "focus": "what is the support phone ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [
+            {
+              "url": "http://127.0.0.1:7535/blocked/0",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/1",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/2",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/4",
+              "error": "http_403"
+            }
+          ],
+          "selector": [
+            "abstain",
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.9499915651977062e-05
+          },
+          "search_requests": 3,
+          "llm_calls": 5,
+          "content_pages": 4,
+          "search_hints": [],
+          "search_hint_state": "expanded",
+          "navigation": [
+            {
+              "state": "span",
+              "chosen": "http://127.0.0.1:7535/old/0"
+            }
+          ],
+          "discovery_reserve": [
+            {
+              "depth": 0,
+              "urls": [
+                "http://127.0.0.1:7535/blocked/4",
+                "http://127.0.0.1:7535/answer"
+              ]
+            }
+          ],
+          "origin_recovery": [
+            {
+              "depth": 0,
+              "denied_origins": [
+                "http://127.0.0.1:7535"
+              ],
+              "previous_batch": [
+                "http://127.0.0.1:7535/blocked/4",
+                "http://127.0.0.1:7535/answer",
+                "http://127.0.0.1:7535/old/0",
+                "http://127.0.0.1:7535/old/3"
+              ],
+              "next_batch": [
+                "http://127.0.0.1:7535/old/0",
+                "http://127.0.0.1:7535/blocked/4",
+                "http://127.0.0.1:7535/answer",
+                "http://127.0.0.1:7535/old/3"
+              ],
+              "pending_count": 0,
+              "navigation_target": "http://127.0.0.1:7535/old/0"
+            }
+          ],
+          "model_selections": [
+            {
+              "raw": "+1 202-555-0186",
+              "answer": "+1 202-555-0186",
+              "source": "http://127.0.0.1:7535/answer",
+              "evidence": "Support phone: +1 202-555-0186",
+              "label": "",
+              "section": "Boreal Instruments support",
+              "kind": "phone",
+              "score": 10.0,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[1]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "+1 202-555-0186",
+            "answer": "+1 202-555-0186",
+            "source": "http://127.0.0.1:7535/answer",
+            "evidence": "Support phone: +1 202-555-0186",
+            "label": "",
+            "section": "Boreal Instruments support",
+            "kind": "phone",
+            "score": 10.0,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[1]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:7535/provider?q=What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "final": "http://127.0.0.1:7535/provider?q=What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "status": 200,
+              "bytes": 625,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/provider?q=support+phone+boreal+instruments",
+              "final": "http://127.0.0.1:7535/provider?q=support+phone+boreal+instruments",
+              "status": 200,
+              "bytes": 625,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&language=en&format=json&maxlag=5&limit=3&search=What%20is%20the%20support%20phone%20of%20Boreal%20Instruments",
+              "final": "https://www.wikidata.org/w/api.php?action=wbsearchentities&language=en&format=json&maxlag=5&limit=3&search=What%20is%20the%20support%20phone%20of%20Boreal%20Instruments",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/archive",
+              "final": "http://127.0.0.1:7535/archive",
+              "status": 200,
+              "bytes": 487,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/0",
+              "final": "http://127.0.0.1:7535/blocked/0",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/2",
+              "final": "http://127.0.0.1:7535/blocked/2",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/1",
+              "final": "http://127.0.0.1:7535/blocked/1",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/old/0",
+              "final": "http://127.0.0.1:7535/old/0",
+              "status": 200,
+              "bytes": 58,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/4",
+              "final": "http://127.0.0.1:7535/blocked/4",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/answer",
+              "final": "http://127.0.0.1:7535/answer",
+              "status": 200,
+              "bytes": 72,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/old/3",
+              "final": "http://127.0.0.1:7535/old/3",
+              "status": 200,
+              "bytes": 58,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 6,
+          "pages_fetched": 4,
+          "seconds": 0.5071
+        }
+      }
+    },
+    {
+      "id": "page-cap",
+      "passed": true,
+      "hits": [
+        "/start",
+        "/provider",
+        "/provider",
+        "/archive",
+        "/blocked/0",
+        "/blocked/2",
+        "/blocked/1"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the support phone of Boreal Instruments?",
+            "url": "http://127.0.0.1:7535/start",
+            "kind": "phone",
+            "terms": [
+              "support",
+              "phone",
+              "boreal",
+              "instruments"
+            ],
+            "attributes": [
+              "phone",
+              "telephone",
+              "tel",
+              "contact",
+              "support",
+              "hotline",
+              "toll-free"
+            ],
+            "entity_terms": [
+              "boreal",
+              "instruments"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the support phone ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [
+            {
+              "url": "http://127.0.0.1:7535/blocked/0",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/1",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/2",
+              "error": "http_403"
+            }
+          ],
+          "selector": [
+            "abstain",
+            "abstain"
+          ],
+          "timings": {
+            "resolver": 1.109996810555458e-05
+          },
+          "search_requests": 2,
+          "llm_calls": 4,
+          "content_pages": 2,
+          "search_recovery": "starting_url_unavailable_or_exhausted",
+          "search_recovery_depth": 0,
+          "search_hints": [],
+          "search_hint_state": "expanded",
+          "navigation": [
+            {
+              "state": "span",
+              "chosen": "http://127.0.0.1:7535/old/0"
+            }
+          ],
+          "discovery_reserve": [
+            {
+              "depth": 1,
+              "urls": [
+                "http://127.0.0.1:7535/blocked/4",
+                "http://127.0.0.1:7535/answer"
+              ]
+            }
+          ],
+          "origin_recovery": [
+            {
+              "depth": 1,
+              "denied_origins": [
+                "http://127.0.0.1:7535"
+              ],
+              "previous_batch": [
+                "http://127.0.0.1:7535/blocked/4",
+                "http://127.0.0.1:7535/answer",
+                "http://127.0.0.1:7535/old/0",
+                "http://127.0.0.1:7535/old/3"
+              ],
+              "next_batch": [
+                "http://127.0.0.1:7535/old/0",
+                "http://127.0.0.1:7535/blocked/4",
+                "http://127.0.0.1:7535/answer",
+                "http://127.0.0.1:7535/old/3"
+              ],
+              "pending_count": 0,
+              "navigation_target": "http://127.0.0.1:7535/old/0"
+            }
+          ],
+          "reader_state": "no_evidence",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:7535/start",
+              "final": "http://127.0.0.1:7535/start",
+              "status": 200,
+              "bytes": 66,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/provider?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "final": "http://127.0.0.1:7535/provider?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "status": 200,
+              "bytes": 625,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/provider?q=support+phone+boreal+instruments",
+              "final": "http://127.0.0.1:7535/provider?q=support+phone+boreal+instruments",
+              "status": 200,
+              "bytes": 625,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/archive",
+              "final": "http://127.0.0.1:7535/archive",
+              "status": 200,
+              "bytes": 487,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/0",
+              "final": "http://127.0.0.1:7535/blocked/0",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/2",
+              "final": "http://127.0.0.1:7535/blocked/2",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/1",
+              "final": "http://127.0.0.1:7535/blocked/1",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 4,
+          "pages_fetched": 2,
+          "seconds": 0.0144
+        }
+      }
+    },
+    {
+      "id": "depth-cap",
+      "passed": true,
+      "hits": [
+        "/start",
+        "/provider",
+        "/provider",
+        "/archive",
+        "/blocked/0",
+        "/blocked/2",
+        "/blocked/1"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the support phone of Boreal Instruments?",
+            "url": "http://127.0.0.1:7535/start",
+            "kind": "phone",
+            "terms": [
+              "support",
+              "phone",
+              "boreal",
+              "instruments"
+            ],
+            "attributes": [
+              "phone",
+              "telephone",
+              "tel",
+              "contact",
+              "support",
+              "hotline",
+              "toll-free"
+            ],
+            "entity_terms": [
+              "boreal",
+              "instruments"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the support phone ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [
+            {
+              "url": "http://127.0.0.1:7535/blocked/0",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/1",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/2",
+              "error": "http_403"
+            }
+          ],
+          "selector": [
+            "abstain",
+            "abstain"
+          ],
+          "timings": {
+            "resolver": 1.079996582120657e-05
+          },
+          "search_requests": 2,
+          "llm_calls": 3,
+          "content_pages": 2,
+          "search_recovery": "starting_url_unavailable_or_exhausted",
+          "search_recovery_depth": 0,
+          "search_hints": [],
+          "search_hint_state": "expanded",
+          "reader_state": "no_evidence",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:7535/start",
+              "final": "http://127.0.0.1:7535/start",
+              "status": 200,
+              "bytes": 66,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/provider?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "final": "http://127.0.0.1:7535/provider?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "status": 200,
+              "bytes": 625,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/provider?q=support+phone+boreal+instruments",
+              "final": "http://127.0.0.1:7535/provider?q=support+phone+boreal+instruments",
+              "status": 200,
+              "bytes": 625,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/archive",
+              "final": "http://127.0.0.1:7535/archive",
+              "status": 200,
+              "bytes": 487,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/0",
+              "final": "http://127.0.0.1:7535/blocked/0",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/2",
+              "final": "http://127.0.0.1:7535/blocked/2",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:7535/blocked/1",
+              "final": "http://127.0.0.1:7535/blocked/1",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 4,
+          "pages_fetched": 2,
+          "seconds": 0.0214
+        }
+      }
+    }
+  ],
+  "all_passed": true
+}

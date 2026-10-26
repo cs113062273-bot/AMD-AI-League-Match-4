@@ -1,0 +1,99 @@
+{
+  "scope": "Executable proof checks with real source spans, including adversarial literal premises.",
+  "rows": [
+    {
+      "id": "07-doc-cross-version-comparison",
+      "passed": true,
+      "proof_answer": "from 40 to 80 requests per minute",
+      "required": true
+    },
+    {
+      "id": "09-web-table-cell",
+      "passed": true,
+      "proof_answer": "First Saturday of each month, 09:00\u201312:00",
+      "required": true
+    },
+    {
+      "id": "16-web-two-source-mapping",
+      "passed": true,
+      "proof_answer": "$18",
+      "required": true
+    },
+    {
+      "id": "missing-version",
+      "passed": true,
+      "proof_answer": null,
+      "required": true
+    },
+    {
+      "id": "ambiguous-map",
+      "passed": true,
+      "proof_answer": null,
+      "required": true
+    },
+    {
+      "id": "incomplete-row",
+      "passed": true,
+      "proof_answer": null,
+      "required": true
+    },
+    {
+      "id": "single-fee",
+      "passed": true,
+      "proof_answer": null,
+      "required": false
+    },
+    {
+      "id": "single-table",
+      "passed": true,
+      "proof_answer": null,
+      "required": false
+    },
+    {
+      "id": "literal_parts_from_different_rows",
+      "passed": true
+    },
+    {
+      "id": "missing_required_component",
+      "passed": true
+    },
+    {
+      "id": "wrong_requested_version",
+      "passed": true
+    },
+    {
+      "id": "incompatible_units",
+      "passed": true
+    },
+    {
+      "id": "conflicting_same_version",
+      "passed": true
+    },
+    {
+      "id": "different_join_key",
+      "passed": true
+    },
+    {
+      "id": "fabricated_mapping_value",
+      "passed": true
+    },
+    {
+      "id": "unrelated_origin",
+      "passed": true
+    },
+    {
+      "id": "conflicting_mapping_proof",
+      "passed": true
+    },
+    {
+      "id": "join_cannot_replace_comparison",
+      "passed": true
+    },
+    {
+      "id": "join_cannot_answer_person",
+      "passed": true
+    }
+  ],
+  "passed": 19,
+  "total": 19
+}

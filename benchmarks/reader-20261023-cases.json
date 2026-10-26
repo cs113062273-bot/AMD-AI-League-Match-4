@@ -1,0 +1,141 @@
+[
+  {
+    "id": "01-doc-old-distractor",
+    "query": "What is the default retry policy in AsterQueue version 4?",
+    "path": "/01-doc-old-distractor/v4.html",
+    "answer": "adaptive",
+    "answers": [
+      "adaptive",
+      "adaptive retry policy"
+    ],
+    "source_path": "/01-doc-old-distractor/v4.html",
+    "origin": "Existing SourceTrail fixture; oracle starting page; development only"
+  },
+  {
+    "id": "03-doc-renamed-configuration",
+    "query": "Which QuartzSite version 3 configuration option replaces route_cache?",
+    "path": "/03-doc-renamed-configuration/migration-v3.html",
+    "answer": "page_cache",
+    "answers": [
+      "page_cache"
+    ],
+    "source_path": "/03-doc-renamed-configuration/migration-v3.html",
+    "origin": "Existing SourceTrail fixture; oracle starting page; development only"
+  },
+  {
+    "id": "04-doc-conditional-default",
+    "query": "In LumenServe version 3 production mode with cold starts enabled, is the result cache enabled or disabled by default?",
+    "path": "/04-doc-conditional-default/cache-v3.html",
+    "answer": "disabled",
+    "answers": [
+      "disabled"
+    ],
+    "source_path": "/04-doc-conditional-default/cache-v3.html",
+    "origin": "Existing SourceTrail fixture; oracle starting page; development only"
+  },
+  {
+    "id": "08-doc-prerelease-distractor",
+    "query": "What is the default request timeout in BirchClient stable version 4?",
+    "path": "/08-doc-prerelease-distractor/v4.html",
+    "answer": "8 seconds",
+    "answers": [
+      "8 seconds",
+      "eight seconds"
+    ],
+    "source_path": "/08-doc-prerelease-distractor/v4.html",
+    "origin": "Existing SourceTrail fixture; oracle starting page; development only"
+  },
+  {
+    "id": "14-web-conditional-route",
+    "query": "When does the first Wren Island ferry leave North Dock on a weekday?",
+    "path": "/14-web-conditional-route/north.html",
+    "answer": "06:20",
+    "answers": [
+      "06:20",
+      "6:20 am",
+      "6:20 in the morning"
+    ],
+    "source_path": "/14-web-conditional-route/north.html",
+    "origin": "Existing SourceTrail fixture; oracle starting page; development only"
+  },
+  {
+    "id": "15-web-effective-date-policy",
+    "query": "Under Juniper Workshop’s current repair policy effective 2026-07-01, how long is the warranty for completed repairs?",
+    "path": "/15-web-effective-date-policy/warranty-2026.html",
+    "answer": "90-day",
+    "answers": [
+      "90-day",
+      "90 days",
+      "ninety days"
+    ],
+    "source_path": "/15-web-effective-date-policy/warranty-2026.html",
+    "origin": "Existing SourceTrail fixture; oracle starting page; development only"
+  },
+  {
+    "id": "h05-multiple-table-context",
+    "query": "What is the operator entry limit for Turnstone Hall’s Studio plan?",
+    "path": "/h05-multiple-table-context/index.html",
+    "answer": "12 entries",
+    "answers": [
+      "12 entries",
+      "12"
+    ],
+    "source_path": "/h05-multiple-table-context/index.html",
+    "origin": "Existing SourceTrail fixture; oracle starting page; development only"
+  },
+  {
+    "id": "h06-missing-query-qualifiers",
+    "query": "What monthly Docklight Museum membership price applies to Quail County resident students in 2027?",
+    "path": "/h06-missing-query-qualifiers/index.html",
+    "answer": "",
+    "answers": [
+      ""
+    ],
+    "source_path": "",
+    "origin": "Existing SourceTrail fixture; oracle starting page; development only"
+  },
+  {
+    "id": "jsonld-author",
+    "query": "Who wrote the Alder essay?",
+    "path": "/reader/jsonld-author",
+    "answer": "Mira Chen",
+    "answers": [
+      "Mira Chen"
+    ],
+    "source_path": "/reader/jsonld-author",
+    "origin": "Authored diagnostic; not an untouched holdout"
+  },
+  {
+    "id": "jsonld-product",
+    "query": "What is the capacity of the Cedar drive?",
+    "path": "/reader/jsonld-product",
+    "answer": "24 GB",
+    "answers": [
+      "24 GB"
+    ],
+    "source_path": "/reader/jsonld-product",
+    "origin": "Authored diagnostic; not an untouched holdout"
+  },
+  {
+    "id": "ui-metadata",
+    "query": "Who is the author of Alder?",
+    "path": "/reader/ui-metadata",
+    "answer": "",
+    "answers": [
+      ""
+    ],
+    "source_path": "",
+    "origin": "Authored diagnostic; not an untouched holdout"
+  },
+  {
+    "id": "literal-false",
+    "query": "What is the default value of the `enable_cache` field?",
+    "path": "/reader/literal-false",
+    "answer": "false",
+    "answers": [
+      "false"
+    ],
+    "source_path": "/reader/literal-false",
+    "origin": "Authored diagnostic; not an untouched holdout"
+  }
+]

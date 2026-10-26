@@ -1,0 +1,84 @@
+{
+  "scope": "Incomplete development repeat of the same exposed12; 10 completed, memory guard before11. Not a full12 score, not a new holdout, not a causal accuracy estimate.",
+  "expected_cases": 12,
+  "completed_cases": 10,
+  "not_run": [
+    "simpleqa-2811",
+    "simpleqa-415"
+  ],
+  "error": "RuntimeError: Dedicated memory guard during diagnosis",
+  "exact_answer_completed": 0,
+  "exact_source_completed": 2,
+  "joint_completed": 0,
+  "all_completed_preflight_idle": true,
+  "same_observed_model_pid": true,
+  "http_503_in_completed_model_states": 0,
+  "checks": [
+    {
+      "id": "simpleqa-911",
+      "ready_before_case": true,
+      "capture_sha256_verified": true,
+      "no_omission": true
+    },
+    {
+      "id": "simpleqa-516",
+      "ready_before_case": true,
+      "capture_sha256_verified": true,
+      "no_omission": true
+    },
+    {
+      "id": "simpleqa-1013",
+      "ready_before_case": true,
+      "capture_sha256_verified": true,
+      "no_omission": true
+    },
+    {
+      "id": "simpleqa-1076",
+      "ready_before_case": true,
+      "capture_sha256_verified": true,
+      "no_omission": true
+    },
+    {
+      "id": "simpleqa-483",
+      "ready_before_case": true,
+      "capture_sha256_verified": true,
+      "no_omission": true
+    },
+    {
+      "id": "simpleqa-1232",
+      "ready_before_case": true,
+      "capture_sha256_verified": true,
+      "no_omission": true
+    },
+    {
+      "id": "simpleqa-2010",
+      "ready_before_case": true,
+      "capture_sha256_verified": true,
+      "no_omission": true
+    },
+    {
+      "id": "simpleqa-2215",
+      "ready_before_case": true,
+      "capture_sha256_verified": true,
+      "no_omission": true
+    },
+    {
+      "id": "simpleqa-3120",
+      "ready_before_case": true,
+      "capture_sha256_verified": true,
+      "no_omission": true
+    },
+    {
+      "id": "simpleqa-4145",
+      "ready_before_case": true,
+      "capture_sha256_verified": true,
+      "no_omission": true
+    }
+  ],
+  "gold_unchanged": true,
+  "production_unchanged": true,
+  "memory_after_shutdown": {
+    "used_mib": 3483,
+    "total_mib": 12282
+  }
+}

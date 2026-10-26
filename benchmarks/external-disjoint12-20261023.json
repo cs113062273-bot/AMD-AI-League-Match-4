@@ -1,0 +1,217 @@
+[
+  {
+    "id": "simpleqa-3292",
+    "family": "external-Other",
+    "query": "What was the name of the CIA contractor whose documents for the \"UMBRAGE Component Library\" (UCL) project were published by WikiLeaks?",
+    "url": "https://wikileaks.org/vault7/",
+    "answer": "Raytheon Blackbird Technologies",
+    "answers": [
+      "Raytheon Blackbird Technologies"
+    ],
+    "sources": [
+      "https://wikileaks.org/vault7/",
+      "https://www.infosecinstitute.com/resources/threat-intelligence/vault-7-leaks-inside-cia-secret-kingdom-july-august-07/",
+      "https://en.wikipedia.org/wiki/Vault_7"
+    ],
+    "upstream_row": 760,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3263",
+    "family": "external-Other",
+    "query": "Which Bard subclass was included in the 2022 Expert Classes Unearthed Arcana for Dungeons & Dragons?",
+    "url": "https://media.dndbeyond.com/compendium-images/one-dnd/expert-classes/kpx0MvyfBGHe0XKk/UA2022-Expert-Classes.pdf",
+    "answer": "College of Lore",
+    "answers": [
+      "College of Lore"
+    ],
+    "sources": [
+      "https://media.dndbeyond.com/compendium-images/one-dnd/expert-classes/kpx0MvyfBGHe0XKk/UA2022-Expert-Classes.pdf",
+      "https://media.dndbeyond.com/compendium-images/one-dnd/expert-classes/kpx0MvyfBGHe0XKk/UA2022-Expert-Classes.pdf?icid_source=house-ads&icid_medium=crosspromo&icid_campaign=playtest2",
+      "https://thekindgm.com/2022/10/19/unearthed-arcana-2022-expert-classes-analysis/",
+      "https://www.tribality.com/2022/09/30/unearthed-arcana-2022-expert-classes-breakdown/"
+    ],
+    "upstream_row": 747,
+    "upstream_topic": "Video games",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-37",
+    "family": "external-Person",
+    "query": "What is the first and last name of the woman whom the British linguist Bernard Comrie married in 1985?",
+    "url": "https://en.wikipedia.org/wiki/Bernard_Comrie",
+    "answer": "Akiko Kumahira",
+    "answers": [
+      "Akiko Kumahira"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bernard_Comrie",
+      "https://alchetron.com/Bernard-Comrie"
+    ],
+    "upstream_row": 11,
+    "upstream_topic": "Other",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1838",
+    "family": "external-Person",
+    "query": "What Liverpool player scored the most goals in the 2021-2022 season of the FA Cup?",
+    "url": "https://www.transfermarkt.com/liverpool-fc/leistungsdaten/verein/31/plus/0?reldata=FAC%262021",
+    "answer": "Takumi Minamino",
+    "answers": [
+      "Takumi Minamino"
+    ],
+    "sources": [
+      "https://www.transfermarkt.com/liverpool-fc/leistungsdaten/verein/31/plus/0?reldata=FAC%262021",
+      "https://fbref.com/en/squads/822bd0ba/2021-2022/c514/Liverpool-Stats-FA-Cup",
+      "https://en.wikipedia.org/wiki/2021%E2%80%9322_Liverpool_F.C._season",
+      "https://www.lfchistory.net/SeasonArchive/Goalscorers/131"
+    ],
+    "upstream_row": 416,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-4013",
+    "family": "external-Date",
+    "query": "What year was Nigerian artist Uzo Njoku born?",
+    "url": "https://www.uzonjoku.com/contact",
+    "answer": "1996",
+    "answers": [
+      "1996",
+      "1,996"
+    ],
+    "sources": [
+      "https://www.uzonjoku.com/contact",
+      "https://voltzclarke.com/artists/uzo-njoku/bio/"
+    ],
+    "upstream_row": 926,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-395",
+    "family": "external-Other",
+    "query": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+    "url": "https://en.wikipedia.org/wiki/Curtis_Publishing_Co._v._Butts",
+    "answer": "University of Georgia and University of Alabama",
+    "answers": [
+      "University of Georgia and University of Alabama"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Curtis_Publishing_Co._v._Butts",
+      "https://en.wikipedia.org/wiki/The_Saturday_Evening_Post",
+      "https://www.oyez.org/cases/1966/37",
+      "https://www.saturdayeveningpost.com/2013/03/curtis-publishing-butts/"
+    ],
+    "upstream_row": 94,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3207",
+    "family": "external-Number",
+    "query": "How many households were there in Weston, Ohio, as of the 2000 census?",
+    "url": "https://en.wikipedia.org/wiki/Weston",
+    "answer": "638 (acceptable range: anything between 631 and 645)",
+    "answers": [
+      "638 (acceptable range: anything between 631 and 645)"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Weston",
+      "https://www2.census.gov/library/publications/2002/dec/phc-1-37.pdf"
+    ],
+    "upstream_row": 730,
+    "upstream_topic": "Geography",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-73",
+    "family": "external-Number",
+    "query": "What is the length in meters of Abdullah Bridge in Srinagar including the fly-over and viaduct?",
+    "url": "https://alchetron.com/Abdullah-Bridge",
+    "answer": "390 metres (acceptable range: anything between 386 and 394 metres)",
+    "answers": [
+      "390 metres (acceptable range: anything between 386 and 394 metres)"
+    ],
+    "sources": [
+      "https://alchetron.com/Abdullah-Bridge",
+      "https://en.wikipedia.org/wiki/Abdullah_Bridge"
+    ],
+    "upstream_row": 21,
+    "upstream_topic": "Geography",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-779",
+    "family": "external-Other",
+    "query": "What river borders the west of Goldsboro, NC?",
+    "url": "https://en.wikipedia.org/wiki/Goldsboro",
+    "answer": "The Little River",
+    "answers": [
+      "The Little River"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Goldsboro",
+      "https://www.mapquest.com/us/north-carolina/goldsboro-nc-282030899"
+    ],
+    "upstream_row": 173,
+    "upstream_topic": "Geography",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-32",
+    "family": "external-Date",
+    "query": "What day, month, and year was Carrie Underwood's album \"Cry Pretty\" certified Gold by the RIAA?",
+    "url": "https://www.riaa.com/gold-platinum/?tab_active=default-award&se=cry+pretty",
+    "answer": "Oct 23, 2018",
+    "answers": [
+      "Oct 23, 2018",
+      "2018-10-23"
+    ],
+    "sources": [
+      "https://www.riaa.com/gold-platinum/?tab_active=default-award&se=cry+pretty",
+      "https://en.wikipedia.org/wiki/Cry_Pretty"
+    ],
+    "upstream_row": 9,
+    "upstream_topic": "Music",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1031",
+    "family": "external-Person",
+    "query": "Who played baritone saxophone on the 1958 album *Basie Reunion*?",
+    "url": "https://en.wikipedia.org/wiki/Basie_Reunion",
+    "answer": "Jack Washington",
+    "answers": [
+      "Jack Washington"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Basie_Reunion",
+      "https://www.discogs.com/release/2802201-Paul-Quinichette-Basie-Reunion",
+      "https://www.allmusic.com/album/basie-reunion-mw0000105921"
+    ],
+    "upstream_row": 226,
+    "upstream_topic": "Music",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1507",
+    "family": "external-Other",
+    "query": "What is the first line in Mariah Carey's \"Hero\" song?",
+    "url": "https://www.musicgateway.com/song-lyrics/mariah-carey/hero",
+    "answer": "There's a hero (if you look inside your heart)",
+    "answers": [
+      "There's a hero (if you look inside your heart)"
+    ],
+    "sources": [
+      "https://www.musicgateway.com/song-lyrics/mariah-carey/hero",
+      "https://songmeanings.com/songs/view/8769/",
+      "https://genius.com/Mariah-carey-hero-lyrics"
+    ],
+    "upstream_row": 342,
+    "upstream_topic": "Music",
+    "multi_step": "False"
+  }
+]

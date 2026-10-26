@@ -1,0 +1,142 @@
+{
+  "scope": "Exposed four-case live-captured correct-page replay, not web discovery or holdout. Raw exact-string score and separate case-insensitive answer/source score both retained. Gold aliases unchanged. Final replay precedes an equivalent intent regex extension for are/were/the, covered by structural-v2 checks.",
+  "same_cases": true,
+  "same_fixtures": true,
+  "stages": {
+    "before": {
+      "raw_joint": 1,
+      "casefold_joint": 2,
+      "total": 4,
+      "rows": [
+        {
+          "id": "simpleqa-491",
+          "answer": "",
+          "raw_joint": false,
+          "casefold_joint": false,
+          "reason": "model_no_evidence"
+        },
+        {
+          "id": "simpleqa-3382",
+          "answer": "2010",
+          "raw_joint": true,
+          "casefold_joint": true,
+          "reason": "model_verified"
+        },
+        {
+          "id": "simpleqa-4197",
+          "answer": "Lagrange",
+          "raw_joint": false,
+          "casefold_joint": true,
+          "reason": "model_verified"
+        },
+        {
+          "id": "simpleqa-969",
+          "answer": "",
+          "raw_joint": false,
+          "casefold_joint": false,
+          "reason": "model_evidence_rejected"
+        }
+      ],
+      "mean_seconds": 1.688325,
+      "token_stats": {
+        "max_input": 1526,
+        "generated": 95,
+        "pruned_requests": 3
+      },
+      "shutdown_memory": {
+        "used_mib": 1722,
+        "total_mib": 12282
+      }
+    },
+    "after": {
+      "raw_joint": 2,
+      "casefold_joint": 3,
+      "total": 4,
+      "rows": [
+        {
+          "id": "simpleqa-491",
+          "answer": "",
+          "raw_joint": false,
+          "casefold_joint": false,
+          "reason": "model_no_evidence"
+        },
+        {
+          "id": "simpleqa-3382",
+          "answer": "2010",
+          "raw_joint": true,
+          "casefold_joint": true,
+          "reason": "model_verified"
+        },
+        {
+          "id": "simpleqa-4197",
+          "answer": "Lagrange",
+          "raw_joint": false,
+          "casefold_joint": true,
+          "reason": "model_verified"
+        },
+        {
+          "id": "simpleqa-969",
+          "answer": "February 1942",
+          "raw_joint": true,
+          "casefold_joint": true,
+          "reason": "model_verified"
+        }
+      ],
+      "mean_seconds": 3.1994000000000002,
+      "token_stats": {
+        "max_input": 1479,
+        "generated": 108,
+        "pruned_requests": 2
+      },
+      "shutdown_memory": {
+        "used_mib": 1705,
+        "total_mib": 12282
+      }
+    },
+    "final": {
+      "raw_joint": 2,
+      "casefold_joint": 3,
+      "total": 4,
+      "rows": [
+        {
+          "id": "simpleqa-491",
+          "answer": "",
+          "raw_joint": false,
+          "casefold_joint": false,
+          "reason": "model_no_evidence"
+        },
+        {
+          "id": "simpleqa-3382",
+          "answer": "2010",
+          "raw_joint": true,
+          "casefold_joint": true,
+          "reason": "model_verified"
+        },
+        {
+          "id": "simpleqa-4197",
+          "answer": "Lagrange",
+          "raw_joint": false,
+          "casefold_joint": true,
+          "reason": "model_verified"
+        },
+        {
+          "id": "simpleqa-969",
+          "answer": "February 1942",
+          "raw_joint": true,
+          "casefold_joint": true,
+          "reason": "model_verified"
+        }
+      ],
+      "mean_seconds": 1.934025,
+      "token_stats": {
+        "max_input": 1479,
+        "generated": 111,
+        "pruned_requests": 2
+      },
+      "shutdown_memory": {
+        "used_mib": 1550,
+        "total_mib": 12282
+      }
+    }
+  }
+}

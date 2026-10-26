@@ -1,0 +1,8 @@
+{
+  "dataset": "live-holdout.json",
+  "status": "DEVELOPMENT_AFTER_FIRST_RUN",
+  "reason": "First transfer run exposed general search, default-value ranking and network failures. This set will be used for engineering and must not be reported as untuned final holdout.",
+  "first_run": "live-holdout-rule.json",
+  "scoring_correction": "Original evaluator accepted source but not sources in benchmark truth. Retained answers are re-scored separately; no expected answer or URL is changed.",
+  "untuned_synthetic_holdout": "holdout.json remains separate; its four failing semantic families have no matching rule patches."
+}

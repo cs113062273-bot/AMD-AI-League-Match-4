@@ -1,0 +1,2975 @@
+{
+  "scope": "Measure saved actual requests through Runtime.infer with the real local tokenizer.\n\nStops at tensor construction: no model load, generation or GPU allocation.\nThis establishes input capacity, not answer accuracy at alternative capacities.\n",
+  "rows": [
+    {
+      "case_id": "simpleqa-3480",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/000-simpleqa-3480.json",
+      "receipt_sha256": "666045020be9866a0c2ce3b614eb12deec89d72e9f879dbe871168551eb1d384",
+      "request": 0,
+      "path": "/expand",
+      "observed_state": "ok",
+      "data_sha256": "b930b948ac4cad2a778162f481b671aec2bb72bb4b6bade4bc612bee755dc4f9",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 135,
+          "last_encoded_tokens": 135,
+          "packed": {
+            "tokens": 135,
+            "text_sha256": "fe7dc667714082edc720a92403580e6df635bc3bfbe058eea7360e9bf62d528c"
+          }
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 135,
+          "last_encoded_tokens": 135,
+          "packed": {
+            "tokens": 135,
+            "text_sha256": "fe7dc667714082edc720a92403580e6df635bc3bfbe058eea7360e9bf62d528c"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 135,
+          "last_encoded_tokens": 135,
+          "packed": {
+            "tokens": 135,
+            "text_sha256": "fe7dc667714082edc720a92403580e6df635bc3bfbe058eea7360e9bf62d528c"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-3480",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/000-simpleqa-3480.json",
+      "receipt_sha256": "666045020be9866a0c2ce3b614eb12deec89d72e9f879dbe871168551eb1d384",
+      "request": 1,
+      "path": "/select",
+      "observed_state": "ok",
+      "data_sha256": "403a543ba4e129eb02a21d7c4b0f2e7fc04cc0203f087f316bb3474cdf22cdce",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1118,
+          "last_encoded_tokens": 1118,
+          "packed": {
+            "tokens": 1118,
+            "text_sha256": "007654f26bd3b4a392a9648316d1cabbf65f8c377e3d1a4ca7a0fa66abec33a7"
+          }
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1118,
+          "last_encoded_tokens": 1118,
+          "packed": {
+            "tokens": 1118,
+            "text_sha256": "007654f26bd3b4a392a9648316d1cabbf65f8c377e3d1a4ca7a0fa66abec33a7"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1118,
+          "last_encoded_tokens": 1118,
+          "packed": {
+            "tokens": 1118,
+            "text_sha256": "007654f26bd3b4a392a9648316d1cabbf65f8c377e3d1a4ca7a0fa66abec33a7"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-3480",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/000-simpleqa-3480.json",
+      "receipt_sha256": "666045020be9866a0c2ce3b614eb12deec89d72e9f879dbe871168551eb1d384",
+      "request": 2,
+      "path": "/select",
+      "observed_state": "ok",
+      "data_sha256": "c4eb3df8ca5307a3d7761d0df0b02f695d996ad5837c75b32d4b5a5d3970ce81",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1513,
+          "last_encoded_tokens": 1513,
+          "packed": {
+            "tokens": 1513,
+            "text_sha256": "9371322d0839a196c716c2f9be5c021b386664f9ac36ddde225826fca3318108"
+          }
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1513,
+          "last_encoded_tokens": 1513,
+          "packed": {
+            "tokens": 1513,
+            "text_sha256": "9371322d0839a196c716c2f9be5c021b386664f9ac36ddde225826fca3318108"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1513,
+          "last_encoded_tokens": 1513,
+          "packed": {
+            "tokens": 1513,
+            "text_sha256": "9371322d0839a196c716c2f9be5c021b386664f9ac36ddde225826fca3318108"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-3480",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/000-simpleqa-3480.json",
+      "receipt_sha256": "666045020be9866a0c2ce3b614eb12deec89d72e9f879dbe871168551eb1d384",
+      "request": 3,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "0df7504bc4ad616287420af3c6bc30adf9a36f3dc73766a37e549df3156c7067",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 1736,
+          "last_encoded_tokens": 1588,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1736,
+          "last_encoded_tokens": 1736,
+          "packed": {
+            "tokens": 1736,
+            "text_sha256": "27f347d07c8049227cc2a6bfb4043e9e4410d206fd85ff2df4a8c6bb6ca66843"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1736,
+          "last_encoded_tokens": 1736,
+          "packed": {
+            "tokens": 1736,
+            "text_sha256": "27f347d07c8049227cc2a6bfb4043e9e4410d206fd85ff2df4a8c6bb6ca66843"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-3480",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/000-simpleqa-3480.json",
+      "receipt_sha256": "666045020be9866a0c2ce3b614eb12deec89d72e9f879dbe871168551eb1d384",
+      "request": 4,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "7312ac251552ebb263afc427e85d4d3f852486399333d2f2d83b782020b56519",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 2019,
+          "last_encoded_tokens": 1916,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2019,
+          "last_encoded_tokens": 2019,
+          "packed": {
+            "tokens": 2019,
+            "text_sha256": "35c49358d221684d94fc2dfe4db3151fb0f34b1a34cd7cc2fec67a89d691ef73"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2019,
+          "last_encoded_tokens": 2019,
+          "packed": {
+            "tokens": 2019,
+            "text_sha256": "35c49358d221684d94fc2dfe4db3151fb0f34b1a34cd7cc2fec67a89d691ef73"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-3480",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/000-simpleqa-3480.json",
+      "receipt_sha256": "666045020be9866a0c2ce3b614eb12deec89d72e9f879dbe871168551eb1d384",
+      "request": 5,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "df6d22eaaf59d847e71971e3be5010f92728f3e34b00ca01f180e4a024c88380",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 1785,
+          "last_encoded_tokens": 1638,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1785,
+          "last_encoded_tokens": 1785,
+          "packed": {
+            "tokens": 1785,
+            "text_sha256": "9d1b2c4757e502ae571ea5091289494a677e7ec439e28b98b718affef743e59b"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1785,
+          "last_encoded_tokens": 1785,
+          "packed": {
+            "tokens": 1785,
+            "text_sha256": "9d1b2c4757e502ae571ea5091289494a677e7ec439e28b98b718affef743e59b"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-1075",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/001-simpleqa-1075.json",
+      "receipt_sha256": "b27f3a460cc2edf843f2507ac2e836b194bb31c73cd33d2356929de2e89f2dc9",
+      "request": 0,
+      "path": "/expand",
+      "observed_state": "ok",
+      "data_sha256": "a3278849a4147ca0dce234b1dd9eb1f6b4b997b9de2873ca528fd0027a6a8cb5",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 133,
+          "last_encoded_tokens": 133,
+          "packed": {
+            "tokens": 133,
+            "text_sha256": "461ba218144ac4642a2f32dc9726528579d4f07c5c2457604ead9f6a456f26f9"
+          }
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 133,
+          "last_encoded_tokens": 133,
+          "packed": {
+            "tokens": 133,
+            "text_sha256": "461ba218144ac4642a2f32dc9726528579d4f07c5c2457604ead9f6a456f26f9"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 133,
+          "last_encoded_tokens": 133,
+          "packed": {
+            "tokens": 133,
+            "text_sha256": "461ba218144ac4642a2f32dc9726528579d4f07c5c2457604ead9f6a456f26f9"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-1075",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/001-simpleqa-1075.json",
+      "receipt_sha256": "b27f3a460cc2edf843f2507ac2e836b194bb31c73cd33d2356929de2e89f2dc9",
+      "request": 1,
+      "path": "/select",
+      "observed_state": "ok",
+      "data_sha256": "b757b4ab7d069ec7538339bf383c2af25e9665084afe0e99bd4aa1165146e14f",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1264,
+          "last_encoded_tokens": 1264,
+          "packed": {
+            "tokens": 1264,
+            "text_sha256": "ba9b223217cf661a90afd995bbb654dd0d1aad8797cd132ea4f0953c8abc9840"
+          }
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1264,
+          "last_encoded_tokens": 1264,
+          "packed": {
+            "tokens": 1264,
+            "text_sha256": "ba9b223217cf661a90afd995bbb654dd0d1aad8797cd132ea4f0953c8abc9840"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1264,
+          "last_encoded_tokens": 1264,
+          "packed": {
+            "tokens": 1264,
+            "text_sha256": "ba9b223217cf661a90afd995bbb654dd0d1aad8797cd132ea4f0953c8abc9840"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-1075",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/001-simpleqa-1075.json",
+      "receipt_sha256": "b27f3a460cc2edf843f2507ac2e836b194bb31c73cd33d2356929de2e89f2dc9",
+      "request": 2,
+      "path": "/select",
+      "observed_state": "ok",
+      "data_sha256": "b757b4ab7d069ec7538339bf383c2af25e9665084afe0e99bd4aa1165146e14f",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1264,
+          "last_encoded_tokens": 1264,
+          "packed": {
+            "tokens": 1264,
+            "text_sha256": "ba9b223217cf661a90afd995bbb654dd0d1aad8797cd132ea4f0953c8abc9840"
+          }
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1264,
+          "last_encoded_tokens": 1264,
+          "packed": {
+            "tokens": 1264,
+            "text_sha256": "ba9b223217cf661a90afd995bbb654dd0d1aad8797cd132ea4f0953c8abc9840"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1264,
+          "last_encoded_tokens": 1264,
+          "packed": {
+            "tokens": 1264,
+            "text_sha256": "ba9b223217cf661a90afd995bbb654dd0d1aad8797cd132ea4f0953c8abc9840"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-1075",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/001-simpleqa-1075.json",
+      "receipt_sha256": "b27f3a460cc2edf843f2507ac2e836b194bb31c73cd33d2356929de2e89f2dc9",
+      "request": 3,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "c94a84e6c6d4df5c6f2d71d710597ca6591681136f599a19ee662c2d75a2e297",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 2179,
+          "last_encoded_tokens": 2092,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2179,
+          "last_encoded_tokens": 2179,
+          "packed": {
+            "tokens": 2179,
+            "text_sha256": "f5c802fe60595d4093d8dbc55f1267795db9c977bd5013c6957825207b5f9d3c"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2179,
+          "last_encoded_tokens": 2179,
+          "packed": {
+            "tokens": 2179,
+            "text_sha256": "f5c802fe60595d4093d8dbc55f1267795db9c977bd5013c6957825207b5f9d3c"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-1075",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/001-simpleqa-1075.json",
+      "receipt_sha256": "b27f3a460cc2edf843f2507ac2e836b194bb31c73cd33d2356929de2e89f2dc9",
+      "request": 4,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "6973f85839f1cd51010190077563a26bdc4b906c065d7aa125a666062849cd9e",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 2757,
+          "last_encoded_tokens": 2613,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2757,
+          "last_encoded_tokens": 2757,
+          "packed": {
+            "tokens": 2757,
+            "text_sha256": "5ff8ef81fdd4644d30772a56326377b8b2e7ae3f5aab66ff216c2ef279debdec"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2757,
+          "last_encoded_tokens": 2757,
+          "packed": {
+            "tokens": 2757,
+            "text_sha256": "5ff8ef81fdd4644d30772a56326377b8b2e7ae3f5aab66ff216c2ef279debdec"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-4248",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/002-simpleqa-4248.json",
+      "receipt_sha256": "b8855eed42a1aebd8f9aa7695c45bd46900cd7161a85a3d004d40bbe07f7649c",
+      "request": 0,
+      "path": "/expand",
+      "observed_state": "ok",
+      "data_sha256": "c401f60ee8e62f4dca904f03126553011dade5b977470053024adbf4a5a2b7f6",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 127,
+          "last_encoded_tokens": 127,
+          "packed": {
+            "tokens": 127,
+            "text_sha256": "4991f760ec75ff192bec59b83a3eee7bae0e2ba367629e1d232166f3412d44d1"
+          }
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 127,
+          "last_encoded_tokens": 127,
+          "packed": {
+            "tokens": 127,
+            "text_sha256": "4991f760ec75ff192bec59b83a3eee7bae0e2ba367629e1d232166f3412d44d1"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 127,
+          "last_encoded_tokens": 127,
+          "packed": {
+            "tokens": 127,
+            "text_sha256": "4991f760ec75ff192bec59b83a3eee7bae0e2ba367629e1d232166f3412d44d1"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-4248",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/002-simpleqa-4248.json",
+      "receipt_sha256": "b8855eed42a1aebd8f9aa7695c45bd46900cd7161a85a3d004d40bbe07f7649c",
+      "request": 1,
+      "path": "/select",
+      "observed_state": "ok",
+      "data_sha256": "d903952316c57349659ec3001104e37331fd7aa951aae348adaba2fbf7cf791b",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1349,
+          "last_encoded_tokens": 1349,
+          "packed": {
+            "tokens": 1349,
+            "text_sha256": "e8065aea74cd44b7d1aff7bd37f8a7eae7b214a2a4ac104eb6a74e6342300cff"
+          }
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1349,
+          "last_encoded_tokens": 1349,
+          "packed": {
+            "tokens": 1349,
+            "text_sha256": "e8065aea74cd44b7d1aff7bd37f8a7eae7b214a2a4ac104eb6a74e6342300cff"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1349,
+          "last_encoded_tokens": 1349,
+          "packed": {
+            "tokens": 1349,
+            "text_sha256": "e8065aea74cd44b7d1aff7bd37f8a7eae7b214a2a4ac104eb6a74e6342300cff"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-4248",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/002-simpleqa-4248.json",
+      "receipt_sha256": "b8855eed42a1aebd8f9aa7695c45bd46900cd7161a85a3d004d40bbe07f7649c",
+      "request": 2,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "10642733f1b2204bbac1467092e973ccdd545a3671b34b80fdd58b205d3e6286",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 2425,
+          "last_encoded_tokens": 2306,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2425,
+          "last_encoded_tokens": 2425,
+          "packed": {
+            "tokens": 2425,
+            "text_sha256": "5ece0fae32c5742e3e99f3f236d04acaf0d695ec683269ec3bf88a231ed1a66d"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2425,
+          "last_encoded_tokens": 2425,
+          "packed": {
+            "tokens": 2425,
+            "text_sha256": "5ece0fae32c5742e3e99f3f236d04acaf0d695ec683269ec3bf88a231ed1a66d"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-4248",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/002-simpleqa-4248.json",
+      "receipt_sha256": "b8855eed42a1aebd8f9aa7695c45bd46900cd7161a85a3d004d40bbe07f7649c",
+      "request": 3,
+      "path": "/select",
+      "observed_state": "ok",
+      "data_sha256": "8be4e95197df1e083e2a7012e32619fbdc3f0fc356a98312c0b1067ebf5a7a34",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1463,
+          "last_encoded_tokens": 1463,
+          "packed": {
+            "tokens": 1463,
+            "text_sha256": "c7cf5c0277b427384dfb9ecc9b31cb4d6d2dbc16b3f0a759070d58718aa8098f"
+          }
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1463,
+          "last_encoded_tokens": 1463,
+          "packed": {
+            "tokens": 1463,
+            "text_sha256": "c7cf5c0277b427384dfb9ecc9b31cb4d6d2dbc16b3f0a759070d58718aa8098f"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1463,
+          "last_encoded_tokens": 1463,
+          "packed": {
+            "tokens": 1463,
+            "text_sha256": "c7cf5c0277b427384dfb9ecc9b31cb4d6d2dbc16b3f0a759070d58718aa8098f"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-509",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/003-simpleqa-509.json",
+      "receipt_sha256": "4d05c3d29295b507674b72a24cfc021e34d032e668d33410b7c923cf1a4fdef6",
+      "request": 0,
+      "path": "/expand",
+      "observed_state": "ok",
+      "data_sha256": "fdb72d0691b47a2298ae9432db69645d8222699320536b5ff21e098156b7449c",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 138,
+          "last_encoded_tokens": 138,
+          "packed": {
+            "tokens": 138,
+            "text_sha256": "b0b5f3410038339bf38a8a2990509d342ce3772afaf40703d3ce814405800640"
+          }
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 138,
+          "last_encoded_tokens": 138,
+          "packed": {
+            "tokens": 138,
+            "text_sha256": "b0b5f3410038339bf38a8a2990509d342ce3772afaf40703d3ce814405800640"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 138,
+          "last_encoded_tokens": 138,
+          "packed": {
+            "tokens": 138,
+            "text_sha256": "b0b5f3410038339bf38a8a2990509d342ce3772afaf40703d3ce814405800640"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-509",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/003-simpleqa-509.json",
+      "receipt_sha256": "4d05c3d29295b507674b72a24cfc021e34d032e668d33410b7c923cf1a4fdef6",
+      "request": 1,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "b9a506e6a5f8a4a2cc44450215e163cbdfda8f2fa26eddba4a670db020887a49",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 3232,
+          "last_encoded_tokens": 3084,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 3232,
+          "last_encoded_tokens": 3084,
+          "packed": null
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 3232,
+          "last_encoded_tokens": 3232,
+          "packed": {
+            "tokens": 3232,
+            "text_sha256": "bf7fe5d1556f11e5cf599e62171ffc80b12a7bd4306f9176975b9eecc54e2ee4"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-509",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/003-simpleqa-509.json",
+      "receipt_sha256": "4d05c3d29295b507674b72a24cfc021e34d032e668d33410b7c923cf1a4fdef6",
+      "request": 2,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "2bb52df19b689ce6e4721cff54c4dd8c36a6e0af59b4e0a7a2accd962737a225",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 2364,
+          "last_encoded_tokens": 2261,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2364,
+          "last_encoded_tokens": 2364,
+          "packed": {
+            "tokens": 2364,
+            "text_sha256": "b7f13090d3528a46407676d56096ba02c754fe1557b94ea55862570baf252348"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2364,
+          "last_encoded_tokens": 2364,
+          "packed": {
+            "tokens": 2364,
+            "text_sha256": "b7f13090d3528a46407676d56096ba02c754fe1557b94ea55862570baf252348"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-509",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/003-simpleqa-509.json",
+      "receipt_sha256": "4d05c3d29295b507674b72a24cfc021e34d032e668d33410b7c923cf1a4fdef6",
+      "request": 3,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "bd0f6d24c846a5ee2e50c4b57478bd7d1a0b1171e600fc35676df8a13774b0d7",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 2644,
+          "last_encoded_tokens": 2498,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2644,
+          "last_encoded_tokens": 2644,
+          "packed": {
+            "tokens": 2644,
+            "text_sha256": "5e0be3afdb9152fd83151ab58205fba35b5c9a441348a1c3eae5b5246d169ad5"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2644,
+          "last_encoded_tokens": 2644,
+          "packed": {
+            "tokens": 2644,
+            "text_sha256": "5e0be3afdb9152fd83151ab58205fba35b5c9a441348a1c3eae5b5246d169ad5"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-509",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/003-simpleqa-509.json",
+      "receipt_sha256": "4d05c3d29295b507674b72a24cfc021e34d032e668d33410b7c923cf1a4fdef6",
+      "request": 4,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "a7c696dc671c9087523afdaf29bcd5113e30723d31a70a778a9cc31365648d38",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 2753,
+          "last_encoded_tokens": 2650,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2753,
+          "last_encoded_tokens": 2753,
+          "packed": {
+            "tokens": 2753,
+            "text_sha256": "835a62d46069a7e0e09bce08653032718f721f295be04d787278e215c941c5d0"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2753,
+          "last_encoded_tokens": 2753,
+          "packed": {
+            "tokens": 2753,
+            "text_sha256": "835a62d46069a7e0e09bce08653032718f721f295be04d787278e215c941c5d0"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-509",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/003-simpleqa-509.json",
+      "receipt_sha256": "4d05c3d29295b507674b72a24cfc021e34d032e668d33410b7c923cf1a4fdef6",
+      "request": 5,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "bd0f6d24c846a5ee2e50c4b57478bd7d1a0b1171e600fc35676df8a13774b0d7",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 2644,
+          "last_encoded_tokens": 2498,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2644,
+          "last_encoded_tokens": 2644,
+          "packed": {
+            "tokens": 2644,
+            "text_sha256": "5e0be3afdb9152fd83151ab58205fba35b5c9a441348a1c3eae5b5246d169ad5"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2644,
+          "last_encoded_tokens": 2644,
+          "packed": {
+            "tokens": 2644,
+            "text_sha256": "5e0be3afdb9152fd83151ab58205fba35b5c9a441348a1c3eae5b5246d169ad5"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-1848",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/004-simpleqa-1848.json",
+      "receipt_sha256": "e14679d6c547b1b1b4bd74cfcd836b31b79375a0d158b780dc3826877896aa1a",
+      "request": 0,
+      "path": "/expand",
+      "observed_state": "ok",
+      "data_sha256": "fdc5efab2677bed0721cb99ad4a4ef5921f3e704295ac4aae7f1e94f63bf908e",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 129,
+          "last_encoded_tokens": 129,
+          "packed": {
+            "tokens": 129,
+            "text_sha256": "057f550c3e86f6733c30b8c703cfbd0a8be33704d69b8dd69aeea86911184bc0"
+          }
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 129,
+          "last_encoded_tokens": 129,
+          "packed": {
+            "tokens": 129,
+            "text_sha256": "057f550c3e86f6733c30b8c703cfbd0a8be33704d69b8dd69aeea86911184bc0"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 129,
+          "last_encoded_tokens": 129,
+          "packed": {
+            "tokens": 129,
+            "text_sha256": "057f550c3e86f6733c30b8c703cfbd0a8be33704d69b8dd69aeea86911184bc0"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-1848",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/004-simpleqa-1848.json",
+      "receipt_sha256": "e14679d6c547b1b1b4bd74cfcd836b31b79375a0d158b780dc3826877896aa1a",
+      "request": 1,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "ff09fa1628e80ca3660a237c401b1aa288e7ebce73eb774b3be7870191efcbc3",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 1835,
+          "last_encoded_tokens": 1694,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1835,
+          "last_encoded_tokens": 1835,
+          "packed": {
+            "tokens": 1835,
+            "text_sha256": "0b011cea141ec8da468e0529b4ec17643ef2920d81fc71ab6af104b94b9a71a5"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1835,
+          "last_encoded_tokens": 1835,
+          "packed": {
+            "tokens": 1835,
+            "text_sha256": "0b011cea141ec8da468e0529b4ec17643ef2920d81fc71ab6af104b94b9a71a5"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-1848",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/004-simpleqa-1848.json",
+      "receipt_sha256": "e14679d6c547b1b1b4bd74cfcd836b31b79375a0d158b780dc3826877896aa1a",
+      "request": 2,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "695790007909209c8da342af8ab25fdc077acf0eb6f8fe679ee6a595b41d9d39",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 1800,
+          "last_encoded_tokens": 1714,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1800,
+          "last_encoded_tokens": 1800,
+          "packed": {
+            "tokens": 1800,
+            "text_sha256": "2cb13cd62e287aa115c6e0ed6d4859f6218b12d2224b5ad4af5bdea84d25a448"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1800,
+          "last_encoded_tokens": 1800,
+          "packed": {
+            "tokens": 1800,
+            "text_sha256": "2cb13cd62e287aa115c6e0ed6d4859f6218b12d2224b5ad4af5bdea84d25a448"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-1848",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/004-simpleqa-1848.json",
+      "receipt_sha256": "e14679d6c547b1b1b4bd74cfcd836b31b79375a0d158b780dc3826877896aa1a",
+      "request": 3,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "ab7eec02050cfb46edb3e3ec64359f6f1dae396846ced7481b9de9b027079a36",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 1809,
+          "last_encoded_tokens": 1667,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1809,
+          "last_encoded_tokens": 1809,
+          "packed": {
+            "tokens": 1809,
+            "text_sha256": "c1e0d720c637434f90e478c121f1aaa27c405508e4c1340f8aee613fdcfd5fe4"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1809,
+          "last_encoded_tokens": 1809,
+          "packed": {
+            "tokens": 1809,
+            "text_sha256": "c1e0d720c637434f90e478c121f1aaa27c405508e4c1340f8aee613fdcfd5fe4"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-1848",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/004-simpleqa-1848.json",
+      "receipt_sha256": "e14679d6c547b1b1b4bd74cfcd836b31b79375a0d158b780dc3826877896aa1a",
+      "request": 4,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "0753e37244a435e7a452b7f1ce643200257e81e7a8c9db6d2392e4254ebf5e66",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 2010,
+          "last_encoded_tokens": 1908,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2010,
+          "last_encoded_tokens": 2010,
+          "packed": {
+            "tokens": 2010,
+            "text_sha256": "a7348ccc27d6ff5e38b58865b6929ac64066a4a302f2c055971c92b22133d31c"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2010,
+          "last_encoded_tokens": 2010,
+          "packed": {
+            "tokens": 2010,
+            "text_sha256": "a7348ccc27d6ff5e38b58865b6929ac64066a4a302f2c055971c92b22133d31c"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-1848",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/004-simpleqa-1848.json",
+      "receipt_sha256": "e14679d6c547b1b1b4bd74cfcd836b31b79375a0d158b780dc3826877896aa1a",
+      "request": 5,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "ab7eec02050cfb46edb3e3ec64359f6f1dae396846ced7481b9de9b027079a36",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 1809,
+          "last_encoded_tokens": 1667,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1809,
+          "last_encoded_tokens": 1809,
+          "packed": {
+            "tokens": 1809,
+            "text_sha256": "c1e0d720c637434f90e478c121f1aaa27c405508e4c1340f8aee613fdcfd5fe4"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1809,
+          "last_encoded_tokens": 1809,
+          "packed": {
+            "tokens": 1809,
+            "text_sha256": "c1e0d720c637434f90e478c121f1aaa27c405508e4c1340f8aee613fdcfd5fe4"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-3763",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/005-simpleqa-3763.json",
+      "receipt_sha256": "453df44f3c4569685a28d8d7c589abe8a8d579147f4fcf225252387237140e5c",
+      "request": 0,
+      "path": "/expand",
+      "observed_state": "ok",
+      "data_sha256": "e4210404386855388e0491f17ec610955a420e83a62f931612ce5a1144e9ad22",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 132,
+          "last_encoded_tokens": 132,
+          "packed": {
+            "tokens": 132,
+            "text_sha256": "7ac41ed448a6e0c9d65a559fc8c4f1ba7d743e8f9b6869c065ed268c5bae91ec"
+          }
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 132,
+          "last_encoded_tokens": 132,
+          "packed": {
+            "tokens": 132,
+            "text_sha256": "7ac41ed448a6e0c9d65a559fc8c4f1ba7d743e8f9b6869c065ed268c5bae91ec"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 132,
+          "last_encoded_tokens": 132,
+          "packed": {
+            "tokens": 132,
+            "text_sha256": "7ac41ed448a6e0c9d65a559fc8c4f1ba7d743e8f9b6869c065ed268c5bae91ec"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-3763",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/005-simpleqa-3763.json",
+      "receipt_sha256": "453df44f3c4569685a28d8d7c589abe8a8d579147f4fcf225252387237140e5c",
+      "request": 1,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "68cd81d98c6524ec1816d199662f0d28ff53e3a8e496b2b867c5315166dc06db",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 1802,
+          "last_encoded_tokens": 1663,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1802,
+          "last_encoded_tokens": 1802,
+          "packed": {
+            "tokens": 1802,
+            "text_sha256": "96a93731b19c38d1d5befa826c7709eb08632aed15cb90affc34ad493bb7e642"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1802,
+          "last_encoded_tokens": 1802,
+          "packed": {
+            "tokens": 1802,
+            "text_sha256": "96a93731b19c38d1d5befa826c7709eb08632aed15cb90affc34ad493bb7e642"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-3763",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/005-simpleqa-3763.json",
+      "receipt_sha256": "453df44f3c4569685a28d8d7c589abe8a8d579147f4fcf225252387237140e5c",
+      "request": 2,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "e4c89182d1b8174e4b3309ba975c576c5f7db842cb58762b0f1c64c9ed0e2a69",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 1875,
+          "last_encoded_tokens": 1788,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1875,
+          "last_encoded_tokens": 1875,
+          "packed": {
+            "tokens": 1875,
+            "text_sha256": "4dfe31b2aa72e498db88aba0413fba90de8b0e5bd1f819fd50199a784b2aa7aa"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1875,
+          "last_encoded_tokens": 1875,
+          "packed": {
+            "tokens": 1875,
+            "text_sha256": "4dfe31b2aa72e498db88aba0413fba90de8b0e5bd1f819fd50199a784b2aa7aa"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-3763",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/005-simpleqa-3763.json",
+      "receipt_sha256": "453df44f3c4569685a28d8d7c589abe8a8d579147f4fcf225252387237140e5c",
+      "request": 3,
+      "path": "/select",
+      "observed_state": "ok",
+      "data_sha256": "14eefd4db6383ae2b1f7a21c12da25f8cc775b046f8b999cda5027030bfab85f",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1389,
+          "last_encoded_tokens": 1389,
+          "packed": {
+            "tokens": 1389,
+            "text_sha256": "b006a38359f0b6ac6c52449b079f21310b606846fac1988a99af4242f81db4e6"
+          }
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1389,
+          "last_encoded_tokens": 1389,
+          "packed": {
+            "tokens": 1389,
+            "text_sha256": "b006a38359f0b6ac6c52449b079f21310b606846fac1988a99af4242f81db4e6"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1389,
+          "last_encoded_tokens": 1389,
+          "packed": {
+            "tokens": 1389,
+            "text_sha256": "b006a38359f0b6ac6c52449b079f21310b606846fac1988a99af4242f81db4e6"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-3763",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/005-simpleqa-3763.json",
+      "receipt_sha256": "453df44f3c4569685a28d8d7c589abe8a8d579147f4fcf225252387237140e5c",
+      "request": 4,
+      "path": "/verify",
+      "observed_state": "ok",
+      "data_sha256": "ec6458087957b4b86854274ee3591d97c0d7494164cf360a875f4abb81ece89e",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1328,
+          "last_encoded_tokens": 1328,
+          "packed": {
+            "tokens": 1328,
+            "text_sha256": "581ab0c32981b3300b686fd1aaeec97b5ea5975016bfea5c3e58c977fdcabeb7"
+          }
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1328,
+          "last_encoded_tokens": 1328,
+          "packed": {
+            "tokens": 1328,
+            "text_sha256": "581ab0c32981b3300b686fd1aaeec97b5ea5975016bfea5c3e58c977fdcabeb7"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1328,
+          "last_encoded_tokens": 1328,
+          "packed": {
+            "tokens": 1328,
+            "text_sha256": "581ab0c32981b3300b686fd1aaeec97b5ea5975016bfea5c3e58c977fdcabeb7"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-109",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/006-simpleqa-109.json",
+      "receipt_sha256": "96fae444df2e574708ec97c516fb12b82daec0c2aa8b74ec05739777d293eb23",
+      "request": 0,
+      "path": "/expand",
+      "observed_state": "ok",
+      "data_sha256": "3ce8baa3bbb4df6129bf0c68cc52b65fc0d9a29b128aece5205c289628a99f85",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 121,
+          "last_encoded_tokens": 121,
+          "packed": {
+            "tokens": 121,
+            "text_sha256": "06f663fc62661984efb8cece246b680b33b570c54f98286998ec82b35b32e228"
+          }
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 121,
+          "last_encoded_tokens": 121,
+          "packed": {
+            "tokens": 121,
+            "text_sha256": "06f663fc62661984efb8cece246b680b33b570c54f98286998ec82b35b32e228"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 121,
+          "last_encoded_tokens": 121,
+          "packed": {
+            "tokens": 121,
+            "text_sha256": "06f663fc62661984efb8cece246b680b33b570c54f98286998ec82b35b32e228"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-109",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/006-simpleqa-109.json",
+      "receipt_sha256": "96fae444df2e574708ec97c516fb12b82daec0c2aa8b74ec05739777d293eb23",
+      "request": 1,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "e4da8861eebe8b0cd689c45d3c4786d33adb4a54e3ffe57f7eef1dc8270d5f66",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 1806,
+          "last_encoded_tokens": 1661,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1806,
+          "last_encoded_tokens": 1806,
+          "packed": {
+            "tokens": 1806,
+            "text_sha256": "ad422e07007c9defda9944e4da09ded5eb8174f77005049304ac3e7f7810e663"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1806,
+          "last_encoded_tokens": 1806,
+          "packed": {
+            "tokens": 1806,
+            "text_sha256": "ad422e07007c9defda9944e4da09ded5eb8174f77005049304ac3e7f7810e663"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-109",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/006-simpleqa-109.json",
+      "receipt_sha256": "96fae444df2e574708ec97c516fb12b82daec0c2aa8b74ec05739777d293eb23",
+      "request": 2,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "2a27bb37290d2fa544fb90a5973743ef99a0528d448727ac45853c4ca2fb442f",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 2719,
+          "last_encoded_tokens": 2600,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2719,
+          "last_encoded_tokens": 2719,
+          "packed": {
+            "tokens": 2719,
+            "text_sha256": "e24dcc98dbe59eff0c76d74abe5687dd36bbb507d5f038ed1600d3c8fe96315e"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2719,
+          "last_encoded_tokens": 2719,
+          "packed": {
+            "tokens": 2719,
+            "text_sha256": "e24dcc98dbe59eff0c76d74abe5687dd36bbb507d5f038ed1600d3c8fe96315e"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-109",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/006-simpleqa-109.json",
+      "receipt_sha256": "96fae444df2e574708ec97c516fb12b82daec0c2aa8b74ec05739777d293eb23",
+      "request": 3,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "96c21d7f6753fa63d2d40ccba9268995766c42a2f3a01a75b4d2424c0abdb34f",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 2027,
+          "last_encoded_tokens": 1880,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2027,
+          "last_encoded_tokens": 2027,
+          "packed": {
+            "tokens": 2027,
+            "text_sha256": "6a2848e15079240ae2cff037905bf0111ac694d28df434a9fc4915c682e8ff8f"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2027,
+          "last_encoded_tokens": 2027,
+          "packed": {
+            "tokens": 2027,
+            "text_sha256": "6a2848e15079240ae2cff037905bf0111ac694d28df434a9fc4915c682e8ff8f"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-109",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/006-simpleqa-109.json",
+      "receipt_sha256": "96fae444df2e574708ec97c516fb12b82daec0c2aa8b74ec05739777d293eb23",
+      "request": 4,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "92f73e3261219b4bd8c5e855a3eea874015dbd3722d15545b3b7ff8bf82b6f8d",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 3383,
+          "last_encoded_tokens": 3248,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 3383,
+          "last_encoded_tokens": 3248,
+          "packed": null
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 3383,
+          "last_encoded_tokens": 3383,
+          "packed": {
+            "tokens": 3383,
+            "text_sha256": "5546ac7815633f513881a887377c92416dd72395b4521218f693e9eb02a2d538"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-109",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/006-simpleqa-109.json",
+      "receipt_sha256": "96fae444df2e574708ec97c516fb12b82daec0c2aa8b74ec05739777d293eb23",
+      "request": 5,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "1ac418f17f77eb7394a31629af905be4ae71067f5c277bc384ff3c82f5fe245f",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 2074,
+          "last_encoded_tokens": 1928,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2074,
+          "last_encoded_tokens": 2074,
+          "packed": {
+            "tokens": 2074,
+            "text_sha256": "b58f84c1ed2ed912ea9d691e3d4c84eeed06bd138884e5ab6f4706466aebd013"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2074,
+          "last_encoded_tokens": 2074,
+          "packed": {
+            "tokens": 2074,
+            "text_sha256": "b58f84c1ed2ed912ea9d691e3d4c84eeed06bd138884e5ab6f4706466aebd013"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-1157",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/007-simpleqa-1157.json",
+      "receipt_sha256": "0c19490a6f97bebca372a3c61490edb96479117866b33d850da70eecec68249e",
+      "request": 0,
+      "path": "/expand",
+      "observed_state": "ok",
+      "data_sha256": "6d6fe19548c5090434407f984390281824a130d904958412ea1cbd9e3069a610",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 126,
+          "last_encoded_tokens": 126,
+          "packed": {
+            "tokens": 126,
+            "text_sha256": "d51752968826d733625e3c359293fa0e33509d470b212cce9ba79a68b36d9b52"
+          }
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 126,
+          "last_encoded_tokens": 126,
+          "packed": {
+            "tokens": 126,
+            "text_sha256": "d51752968826d733625e3c359293fa0e33509d470b212cce9ba79a68b36d9b52"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 126,
+          "last_encoded_tokens": 126,
+          "packed": {
+            "tokens": 126,
+            "text_sha256": "d51752968826d733625e3c359293fa0e33509d470b212cce9ba79a68b36d9b52"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-1157",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/007-simpleqa-1157.json",
+      "receipt_sha256": "0c19490a6f97bebca372a3c61490edb96479117866b33d850da70eecec68249e",
+      "request": 1,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "7830366d6b905e7fb9d685dd3f062585b06d0d7faed884e8166c2d36340d0262",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 1864,
+          "last_encoded_tokens": 1718,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1864,
+          "last_encoded_tokens": 1864,
+          "packed": {
+            "tokens": 1864,
+            "text_sha256": "4f3b3df18d4db0b058eecc9500030f450281c2c8affaf2e77a8019dc78de8b54"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1864,
+          "last_encoded_tokens": 1864,
+          "packed": {
+            "tokens": 1864,
+            "text_sha256": "4f3b3df18d4db0b058eecc9500030f450281c2c8affaf2e77a8019dc78de8b54"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-1157",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/007-simpleqa-1157.json",
+      "receipt_sha256": "0c19490a6f97bebca372a3c61490edb96479117866b33d850da70eecec68249e",
+      "request": 2,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "4cd1a187df9028fc5902a40b9c03a759209bc610046f6c7c19a9c7f182adad25",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 3161,
+          "last_encoded_tokens": 3010,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 3161,
+          "last_encoded_tokens": 3010,
+          "packed": {
+            "tokens": 3010,
+            "text_sha256": "f66a61d5fa292e5dd5ce968013e6638f9586feb138ec98e7f51d2807f5df0b53"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 3161,
+          "last_encoded_tokens": 3161,
+          "packed": {
+            "tokens": 3161,
+            "text_sha256": "666178d46ba1884ff76579ce26ccf9802423b5f59e3f71207faf8e5fa6ba0316"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-1157",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/007-simpleqa-1157.json",
+      "receipt_sha256": "0c19490a6f97bebca372a3c61490edb96479117866b33d850da70eecec68249e",
+      "request": 3,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "f77fcbe9db5d2839d86c7ba29a7fdc46a5ac23da2f5f901bfcb6e7e382a7fe98",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 2072,
+          "last_encoded_tokens": 1925,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2072,
+          "last_encoded_tokens": 2072,
+          "packed": {
+            "tokens": 2072,
+            "text_sha256": "41a09970929d6b8e728c5fe64f0c7d47dfbb17425c88eadc3aea4bddca90cc65"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2072,
+          "last_encoded_tokens": 2072,
+          "packed": {
+            "tokens": 2072,
+            "text_sha256": "41a09970929d6b8e728c5fe64f0c7d47dfbb17425c88eadc3aea4bddca90cc65"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-1157",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/007-simpleqa-1157.json",
+      "receipt_sha256": "0c19490a6f97bebca372a3c61490edb96479117866b33d850da70eecec68249e",
+      "request": 4,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "ada6c5893d2eed623bb76e2606456c98f330cc0e24ba48a258470d276a2470b1",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 3172,
+          "last_encoded_tokens": 3021,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 3172,
+          "last_encoded_tokens": 3021,
+          "packed": {
+            "tokens": 3021,
+            "text_sha256": "514740af5265a92d350304570e47378736bdd00cd651a413bef13dabed5753c0"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 3172,
+          "last_encoded_tokens": 3172,
+          "packed": {
+            "tokens": 3172,
+            "text_sha256": "4b03d089a6af2e4e4e72ecaa0d63da6043628bf6425108d28f8cb37e12709329"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-3153",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/008-simpleqa-3153.json",
+      "receipt_sha256": "22052cfa9346b40ff00b6c85c2efa360952cd98ca843be31b9cd65defdbf31bb",
+      "request": 0,
+      "path": "/expand",
+      "observed_state": "ok",
+      "data_sha256": "1fb115b88bd49cc8b6bf7b9a54bd663649702d97a046e6524cf7d1e0897e2b52",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 135,
+          "last_encoded_tokens": 135,
+          "packed": {
+            "tokens": 135,
+            "text_sha256": "ba9f864277c2072018080c677b2071597ee83e909b057e11f25d750d402b4447"
+          }
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 135,
+          "last_encoded_tokens": 135,
+          "packed": {
+            "tokens": 135,
+            "text_sha256": "ba9f864277c2072018080c677b2071597ee83e909b057e11f25d750d402b4447"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 135,
+          "last_encoded_tokens": 135,
+          "packed": {
+            "tokens": 135,
+            "text_sha256": "ba9f864277c2072018080c677b2071597ee83e909b057e11f25d750d402b4447"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-3153",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/008-simpleqa-3153.json",
+      "receipt_sha256": "22052cfa9346b40ff00b6c85c2efa360952cd98ca843be31b9cd65defdbf31bb",
+      "request": 1,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "831c4f3470dba95ac1559cf84a17e39458ba4c40b86a2e7a8aa8e66346b4f315",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 1787,
+          "last_encoded_tokens": 1638,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1787,
+          "last_encoded_tokens": 1787,
+          "packed": {
+            "tokens": 1787,
+            "text_sha256": "e3474de74d56462b6ff20ddd11eaf36abc6b8aa9d5324b7e963af2aebe9fb72f"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1787,
+          "last_encoded_tokens": 1787,
+          "packed": {
+            "tokens": 1787,
+            "text_sha256": "e3474de74d56462b6ff20ddd11eaf36abc6b8aa9d5324b7e963af2aebe9fb72f"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-3153",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/008-simpleqa-3153.json",
+      "receipt_sha256": "22052cfa9346b40ff00b6c85c2efa360952cd98ca843be31b9cd65defdbf31bb",
+      "request": 2,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "7ac917c5f5856e4ca5d739227a987fd8d4e1fc30109ff493bc4e42cbbcc78292",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 2655,
+          "last_encoded_tokens": 2552,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2655,
+          "last_encoded_tokens": 2655,
+          "packed": {
+            "tokens": 2655,
+            "text_sha256": "e25a6e584e36ee40241c223cfdd05ad16f7d87d20d44813329b7b0ef3eb41443"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2655,
+          "last_encoded_tokens": 2655,
+          "packed": {
+            "tokens": 2655,
+            "text_sha256": "e25a6e584e36ee40241c223cfdd05ad16f7d87d20d44813329b7b0ef3eb41443"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-3153",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/008-simpleqa-3153.json",
+      "receipt_sha256": "22052cfa9346b40ff00b6c85c2efa360952cd98ca843be31b9cd65defdbf31bb",
+      "request": 3,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "6308726853650a42ed6f7e20692f5e13661cbd81cf7b9e701cf25622fa4f06f9",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 1825,
+          "last_encoded_tokens": 1677,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1825,
+          "last_encoded_tokens": 1825,
+          "packed": {
+            "tokens": 1825,
+            "text_sha256": "cb3a3866bce63ae27708012184dde7cc8e3379e76a7eb98d5244500e3f4f87ec"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1825,
+          "last_encoded_tokens": 1825,
+          "packed": {
+            "tokens": 1825,
+            "text_sha256": "cb3a3866bce63ae27708012184dde7cc8e3379e76a7eb98d5244500e3f4f87ec"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-3153",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/008-simpleqa-3153.json",
+      "receipt_sha256": "22052cfa9346b40ff00b6c85c2efa360952cd98ca843be31b9cd65defdbf31bb",
+      "request": 4,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "a194e7061bd507b4008c876bb5c93ad354cee8988d20a3378c0098e16bc79b77",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 2737,
+          "last_encoded_tokens": 2618,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2737,
+          "last_encoded_tokens": 2737,
+          "packed": {
+            "tokens": 2737,
+            "text_sha256": "1afd45f4405db6545d548824d0d3a03281a6ea4caa2f840fda7648f556bc6ed2"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2737,
+          "last_encoded_tokens": 2737,
+          "packed": {
+            "tokens": 2737,
+            "text_sha256": "1afd45f4405db6545d548824d0d3a03281a6ea4caa2f840fda7648f556bc6ed2"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-3153",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/008-simpleqa-3153.json",
+      "receipt_sha256": "22052cfa9346b40ff00b6c85c2efa360952cd98ca843be31b9cd65defdbf31bb",
+      "request": 5,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "c51b8e292aa94efb50e8481aba908b21db775502fb74739bfaae9518fa78ddc6",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 2107,
+          "last_encoded_tokens": 1960,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2107,
+          "last_encoded_tokens": 2107,
+          "packed": {
+            "tokens": 2107,
+            "text_sha256": "726606bb2a13f260f7900b93d863339d2def40c4f72c9283ba64d84d74918d86"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2107,
+          "last_encoded_tokens": 2107,
+          "packed": {
+            "tokens": 2107,
+            "text_sha256": "726606bb2a13f260f7900b93d863339d2def40c4f72c9283ba64d84d74918d86"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-410",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/009-simpleqa-410.json",
+      "receipt_sha256": "77afb912a99a35e9b9832ca31693d2a8720ae1dfd307f22bb7ecae60dc80c388",
+      "request": 0,
+      "path": "/expand",
+      "observed_state": "ok",
+      "data_sha256": "9ee83c7fba25c58330f16c6c8f6af31d35b8dde1eaf210db31ddd37d4dc6b9e8",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 124,
+          "last_encoded_tokens": 124,
+          "packed": {
+            "tokens": 124,
+            "text_sha256": "73347a1296302ec74d5320932387172dea9c85a47cc8ad5efa88935a11996ab3"
+          }
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 124,
+          "last_encoded_tokens": 124,
+          "packed": {
+            "tokens": 124,
+            "text_sha256": "73347a1296302ec74d5320932387172dea9c85a47cc8ad5efa88935a11996ab3"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 124,
+          "last_encoded_tokens": 124,
+          "packed": {
+            "tokens": 124,
+            "text_sha256": "73347a1296302ec74d5320932387172dea9c85a47cc8ad5efa88935a11996ab3"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-410",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/009-simpleqa-410.json",
+      "receipt_sha256": "77afb912a99a35e9b9832ca31693d2a8720ae1dfd307f22bb7ecae60dc80c388",
+      "request": 1,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "ea64e17ce2ed2e1634fa72325288968012e5b2596da94929cdde9a7b840edc07",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 1675,
+          "last_encoded_tokens": 1537,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1675,
+          "last_encoded_tokens": 1675,
+          "packed": {
+            "tokens": 1675,
+            "text_sha256": "069e9a6615c36ff2ba390abac06b4d9d135f56cb9af33b9d2439d6782ff42efe"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1675,
+          "last_encoded_tokens": 1675,
+          "packed": {
+            "tokens": 1675,
+            "text_sha256": "069e9a6615c36ff2ba390abac06b4d9d135f56cb9af33b9d2439d6782ff42efe"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-410",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/009-simpleqa-410.json",
+      "receipt_sha256": "77afb912a99a35e9b9832ca31693d2a8720ae1dfd307f22bb7ecae60dc80c388",
+      "request": 2,
+      "path": "/select",
+      "observed_state": "ok",
+      "data_sha256": "c0fe4ad3beb9b227b01f3860e559c74326ed5f8c88370711f3241a80ffa7448d",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1494,
+          "last_encoded_tokens": 1494,
+          "packed": {
+            "tokens": 1494,
+            "text_sha256": "deccd5d4857f26a2e126b048856077c616d1460e059728e1c6d91797fd529076"
+          }
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1494,
+          "last_encoded_tokens": 1494,
+          "packed": {
+            "tokens": 1494,
+            "text_sha256": "deccd5d4857f26a2e126b048856077c616d1460e059728e1c6d91797fd529076"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1494,
+          "last_encoded_tokens": 1494,
+          "packed": {
+            "tokens": 1494,
+            "text_sha256": "deccd5d4857f26a2e126b048856077c616d1460e059728e1c6d91797fd529076"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-410",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/009-simpleqa-410.json",
+      "receipt_sha256": "77afb912a99a35e9b9832ca31693d2a8720ae1dfd307f22bb7ecae60dc80c388",
+      "request": 3,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "43a4d3a5872bb4e06c9b45f7e14563984456a8b84dfa4566619ef966f07b19bd",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 1692,
+          "last_encoded_tokens": 1550,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1692,
+          "last_encoded_tokens": 1692,
+          "packed": {
+            "tokens": 1692,
+            "text_sha256": "3f7ae8ac550e7d966e37bd01e7a738518957543f29a0576fa1cd18f649de2780"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1692,
+          "last_encoded_tokens": 1692,
+          "packed": {
+            "tokens": 1692,
+            "text_sha256": "3f7ae8ac550e7d966e37bd01e7a738518957543f29a0576fa1cd18f649de2780"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-410",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/009-simpleqa-410.json",
+      "receipt_sha256": "77afb912a99a35e9b9832ca31693d2a8720ae1dfd307f22bb7ecae60dc80c388",
+      "request": 4,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "873442719332a6e166e29df6df3b5750a2f6db5f189953186013f7b9ed0c8d91",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 2141,
+          "last_encoded_tokens": 2039,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2141,
+          "last_encoded_tokens": 2141,
+          "packed": {
+            "tokens": 2141,
+            "text_sha256": "1a4ce409c8f5f44002c7341ce9a51a182a88261878c7599046397dfb446e2fa4"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2141,
+          "last_encoded_tokens": 2141,
+          "packed": {
+            "tokens": 2141,
+            "text_sha256": "1a4ce409c8f5f44002c7341ce9a51a182a88261878c7599046397dfb446e2fa4"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-410",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/009-simpleqa-410.json",
+      "receipt_sha256": "77afb912a99a35e9b9832ca31693d2a8720ae1dfd307f22bb7ecae60dc80c388",
+      "request": 5,
+      "path": "/select",
+      "observed_state": "ok",
+      "data_sha256": "d0a5c1d7156c862c3e7b19f41ac10a4303b151b483a4d329fcd89ec816f5be56",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1617,
+          "last_encoded_tokens": 1475,
+          "packed": {
+            "tokens": 1475,
+            "text_sha256": "8a769ea13e20efed3175af606dec5d5ce08d6a0083f23f6ff7d8482b499fb28d"
+          }
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1617,
+          "last_encoded_tokens": 1617,
+          "packed": {
+            "tokens": 1617,
+            "text_sha256": "0605253ae95ea41b2fe35b73f6573f4d55c552e24d75cdca06d00c12f05557c3"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1617,
+          "last_encoded_tokens": 1617,
+          "packed": {
+            "tokens": 1617,
+            "text_sha256": "0605253ae95ea41b2fe35b73f6573f4d55c552e24d75cdca06d00c12f05557c3"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-410",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/009-simpleqa-410.json",
+      "receipt_sha256": "77afb912a99a35e9b9832ca31693d2a8720ae1dfd307f22bb7ecae60dc80c388",
+      "request": 6,
+      "path": "/verify",
+      "observed_state": "ok",
+      "data_sha256": "70c8486b358d86b90b90b6c5c7579aa51417310b487c6ad6611b78cad20598c4",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1564,
+          "last_encoded_tokens": 1418,
+          "packed": {
+            "tokens": 1418,
+            "text_sha256": "fad7967053e9d33772f36e0d29eb165b614b1477e8a655d42df6d6147a8f66bb"
+          }
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1564,
+          "last_encoded_tokens": 1564,
+          "packed": {
+            "tokens": 1564,
+            "text_sha256": "a2b877ae98779e79d02fa2f81726ab9cfd3677a8547add359979a72566d87a82"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1564,
+          "last_encoded_tokens": 1564,
+          "packed": {
+            "tokens": 1564,
+            "text_sha256": "a2b877ae98779e79d02fa2f81726ab9cfd3677a8547add359979a72566d87a82"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-3797",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/010-simpleqa-3797.json",
+      "receipt_sha256": "02f23c9239d175a478c888d9b5f43fdf53889d88153515205f94d76d54986f85",
+      "request": 0,
+      "path": "/expand",
+      "observed_state": "ok",
+      "data_sha256": "1be36616a38ea7f3de36f5d4f60dcbdd01135e8a8b4c023d0ca6ee79035642e1",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 123,
+          "last_encoded_tokens": 123,
+          "packed": {
+            "tokens": 123,
+            "text_sha256": "a99617cf22add55410ac6bf23951d9930a324a0ee5320e09c1d2a13c2e053430"
+          }
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 123,
+          "last_encoded_tokens": 123,
+          "packed": {
+            "tokens": 123,
+            "text_sha256": "a99617cf22add55410ac6bf23951d9930a324a0ee5320e09c1d2a13c2e053430"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 123,
+          "last_encoded_tokens": 123,
+          "packed": {
+            "tokens": 123,
+            "text_sha256": "a99617cf22add55410ac6bf23951d9930a324a0ee5320e09c1d2a13c2e053430"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-3797",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/010-simpleqa-3797.json",
+      "receipt_sha256": "02f23c9239d175a478c888d9b5f43fdf53889d88153515205f94d76d54986f85",
+      "request": 1,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "7ae8767e86671ac633025a5a57f098c0f9762aac7a37158349a247801ee03da7",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 1925,
+          "last_encoded_tokens": 1780,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1925,
+          "last_encoded_tokens": 1925,
+          "packed": {
+            "tokens": 1925,
+            "text_sha256": "47e04a1a6e97de561604ca98f2c3aa70775fb17c902535fb61b1e46c0b755e24"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1925,
+          "last_encoded_tokens": 1925,
+          "packed": {
+            "tokens": 1925,
+            "text_sha256": "47e04a1a6e97de561604ca98f2c3aa70775fb17c902535fb61b1e46c0b755e24"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-3797",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/010-simpleqa-3797.json",
+      "receipt_sha256": "02f23c9239d175a478c888d9b5f43fdf53889d88153515205f94d76d54986f85",
+      "request": 2,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "a2cbe2498a66da7929e869eb9c938cfd5981d0f7539c134d0876d0f836741322",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 2519,
+          "last_encoded_tokens": 2384,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2519,
+          "last_encoded_tokens": 2519,
+          "packed": {
+            "tokens": 2519,
+            "text_sha256": "59aac49847b24829258c532fe029d9d04f966102f0c1e5cc8bc0a51ae4c27d3c"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2519,
+          "last_encoded_tokens": 2519,
+          "packed": {
+            "tokens": 2519,
+            "text_sha256": "59aac49847b24829258c532fe029d9d04f966102f0c1e5cc8bc0a51ae4c27d3c"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-3797",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/010-simpleqa-3797.json",
+      "receipt_sha256": "02f23c9239d175a478c888d9b5f43fdf53889d88153515205f94d76d54986f85",
+      "request": 3,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "1ae86dea97aa1b0d2a02e451f076f72b3afaabd546a6d77e6de3a08492bd51a2",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 1962,
+          "last_encoded_tokens": 1820,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1962,
+          "last_encoded_tokens": 1962,
+          "packed": {
+            "tokens": 1962,
+            "text_sha256": "f60435792691c343301b572882ff79645ed7fa457e2be09f07e5d67ec8a6e34b"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1962,
+          "last_encoded_tokens": 1962,
+          "packed": {
+            "tokens": 1962,
+            "text_sha256": "f60435792691c343301b572882ff79645ed7fa457e2be09f07e5d67ec8a6e34b"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-3797",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/010-simpleqa-3797.json",
+      "receipt_sha256": "02f23c9239d175a478c888d9b5f43fdf53889d88153515205f94d76d54986f85",
+      "request": 4,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "539c683ad64469de45570cf32457ebd12cfac88938f71d5b29bfc40c68bd235f",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 2865,
+          "last_encoded_tokens": 2730,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2865,
+          "last_encoded_tokens": 2865,
+          "packed": {
+            "tokens": 2865,
+            "text_sha256": "5494e596ccc5474d6c10df1ea79868d982ec91bbf76bc2ad5397e882bfb4b022"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2865,
+          "last_encoded_tokens": 2865,
+          "packed": {
+            "tokens": 2865,
+            "text_sha256": "5494e596ccc5474d6c10df1ea79868d982ec91bbf76bc2ad5397e882bfb4b022"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-3797",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/010-simpleqa-3797.json",
+      "receipt_sha256": "02f23c9239d175a478c888d9b5f43fdf53889d88153515205f94d76d54986f85",
+      "request": 5,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "a477dc2a545c0462cdb9428ed70e0589a3e1aeeb1ffb112c7ee18d70139adeec",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 2019,
+          "last_encoded_tokens": 1877,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2019,
+          "last_encoded_tokens": 2019,
+          "packed": {
+            "tokens": 2019,
+            "text_sha256": "e682f04344a97388a1f432867190823b10da96ae188a82b0486363133775314b"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2019,
+          "last_encoded_tokens": 2019,
+          "packed": {
+            "tokens": 2019,
+            "text_sha256": "e682f04344a97388a1f432867190823b10da96ae188a82b0486363133775314b"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-3290",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/011-simpleqa-3290.json",
+      "receipt_sha256": "88b40322d44d8ff995dc14f1230c14e8426b58e93feb35a443646d61a259220e",
+      "request": 0,
+      "path": "/expand",
+      "observed_state": "ok",
+      "data_sha256": "944e11660a036111578abfb297e2756dabfcda8bb577453eaa625c514b1527a5",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 122,
+          "last_encoded_tokens": 122,
+          "packed": {
+            "tokens": 122,
+            "text_sha256": "7dc2d405f24ce2270452bd728c34cc62d91fdeca1cf42140a4146648b26f2e11"
+          }
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 122,
+          "last_encoded_tokens": 122,
+          "packed": {
+            "tokens": 122,
+            "text_sha256": "7dc2d405f24ce2270452bd728c34cc62d91fdeca1cf42140a4146648b26f2e11"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 122,
+          "last_encoded_tokens": 122,
+          "packed": {
+            "tokens": 122,
+            "text_sha256": "7dc2d405f24ce2270452bd728c34cc62d91fdeca1cf42140a4146648b26f2e11"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-3290",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/011-simpleqa-3290.json",
+      "receipt_sha256": "88b40322d44d8ff995dc14f1230c14e8426b58e93feb35a443646d61a259220e",
+      "request": 1,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "8cf525c0df286a2ae12eedcf213c9d95e8d264789aec538cd9c02397f8a02dcc",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 1907,
+          "last_encoded_tokens": 1767,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1907,
+          "last_encoded_tokens": 1907,
+          "packed": {
+            "tokens": 1907,
+            "text_sha256": "e8839ac640f7e28c4fac78911cd9ca01fcfd1bdc4276a51cb91f170182128ff9"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 1907,
+          "last_encoded_tokens": 1907,
+          "packed": {
+            "tokens": 1907,
+            "text_sha256": "e8839ac640f7e28c4fac78911cd9ca01fcfd1bdc4276a51cb91f170182128ff9"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-3290",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/011-simpleqa-3290.json",
+      "receipt_sha256": "88b40322d44d8ff995dc14f1230c14e8426b58e93feb35a443646d61a259220e",
+      "request": 2,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "22584475b8625261fbcd0d6b01f9795968aec31a2a0171502354765891467991",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 2275,
+          "last_encoded_tokens": 2173,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2275,
+          "last_encoded_tokens": 2275,
+          "packed": {
+            "tokens": 2275,
+            "text_sha256": "f17d720d9236e442df3a016fafea48084d3949f6e402753fd36201731b8f1345"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2275,
+          "last_encoded_tokens": 2275,
+          "packed": {
+            "tokens": 2275,
+            "text_sha256": "f17d720d9236e442df3a016fafea48084d3949f6e402753fd36201731b8f1345"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-3290",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/011-simpleqa-3290.json",
+      "receipt_sha256": "88b40322d44d8ff995dc14f1230c14e8426b58e93feb35a443646d61a259220e",
+      "request": 3,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "0c5802579d305128eb8c347fafea13723552b3269736b0a5570e18981c1fbb1f",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 2174,
+          "last_encoded_tokens": 2034,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2174,
+          "last_encoded_tokens": 2174,
+          "packed": {
+            "tokens": 2174,
+            "text_sha256": "ffd68bafab180acb3a14887bc6a65115f02a0a97580cdeaccd02f684f3a46308"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2174,
+          "last_encoded_tokens": 2174,
+          "packed": {
+            "tokens": 2174,
+            "text_sha256": "ffd68bafab180acb3a14887bc6a65115f02a0a97580cdeaccd02f684f3a46308"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-3290",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/011-simpleqa-3290.json",
+      "receipt_sha256": "88b40322d44d8ff995dc14f1230c14e8426b58e93feb35a443646d61a259220e",
+      "request": 4,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "8cf45f561b828c8ad8d8b624e2dfb70aadac6e93ef8a855f5a89bdb7c9b4c37c",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 2954,
+          "last_encoded_tokens": 2836,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2954,
+          "last_encoded_tokens": 2954,
+          "packed": {
+            "tokens": 2954,
+            "text_sha256": "3fa5e10c80eb73ed22fadc30b7ddffcbf6f578396db07c08781a9e485a9c4c0b"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2954,
+          "last_encoded_tokens": 2954,
+          "packed": {
+            "tokens": 2954,
+            "text_sha256": "3fa5e10c80eb73ed22fadc30b7ddffcbf6f578396db07c08781a9e485a9c4c0b"
+          }
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-3290",
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/011-simpleqa-3290.json",
+      "receipt_sha256": "88b40322d44d8ff995dc14f1230c14e8426b58e93feb35a443646d61a259220e",
+      "request": 5,
+      "path": "/select",
+      "observed_state": "model_context_limit",
+      "data_sha256": "0c5802579d305128eb8c347fafea13723552b3269736b0a5570e18981c1fbb1f",
+      "capacities": [
+        {
+          "cap": 1536,
+          "fits": false,
+          "reply": {
+            "error": "context_limit"
+          },
+          "original_tokens": 2174,
+          "last_encoded_tokens": 2034,
+          "packed": null
+        },
+        {
+          "cap": 3072,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2174,
+          "last_encoded_tokens": 2174,
+          "packed": {
+            "tokens": 2174,
+            "text_sha256": "ffd68bafab180acb3a14887bc6a65115f02a0a97580cdeaccd02f684f3a46308"
+          }
+        },
+        {
+          "cap": 5800,
+          "fits": true,
+          "reply": null,
+          "original_tokens": 2174,
+          "last_encoded_tokens": 2174,
+          "packed": {
+            "tokens": 2174,
+            "text_sha256": "ffd68bafab180acb3a14887bc6a65115f02a0a97580cdeaccd02f684f3a46308"
+          }
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "1536": {
+      "fits": 23,
+      "total": 68,
+      "overflow": 45
+    },
+    "3072": {
+      "fits": 66,
+      "total": 68,
+      "overflow": 2
+    },
+    "5800": {
+      "fits": 68,
+      "total": 68,
+      "overflow": 0
+    }
+  },
+  "diagnostic_sha256": "baee981250e589296dc53a9a7feb373934a09c45375a321bdb2416804bb30318",
+  "runtime_sha256": "5e68ed9d8df5d3a264b0fda1a085a79daaabd4d56977b651a9c1764f5808f570",
+  "tokenizer_files_sha256": {
+    "tokenizer_config.json": "a62ff0a2472a0fa1b8eaabcb57c59b58afa42a22831dc141400b6e0cf2b65ce3",
+    "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+  },
+  "model_loaded": false,
+  "generation_performed": false
+}

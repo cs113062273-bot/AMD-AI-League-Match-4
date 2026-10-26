@@ -1,0 +1,3488 @@
+{
+  "scope": "Small paired CPU fixture regression for parser/field/type changes; not model accuracy.",
+  "baseline_note": "81d7a9e parser/planner/candidates; these were unchanged through P0. CPU fixture paths only.",
+  "before_passed": 15,
+  "after_passed": 15,
+  "total": 15,
+  "wins": [],
+  "losses": [],
+  "rows": [
+    {
+      "id": "support-phone-0",
+      "before": {
+        "id": "support-phone-0",
+        "family": "support-phone",
+        "answer": "+1 800 555 2146",
+        "sources": [
+          "http://127.0.0.1:25509/dev/support-phone-0"
+        ],
+        "expected_answer": [
+          "+1 800 555 2146"
+        ],
+        "expected_source": "http://127.0.0.1:25509/dev/support-phone-0",
+        "answer_ok": true,
+        "source_ok": true,
+        "joint_ok": true,
+        "seconds": 0.0224212000011903,
+        "error": "",
+        "failure_category": "",
+        "confidence": 0.97,
+        "reason": "deterministic_verified",
+        "malformed_output": false,
+        "diagnostics": {
+          "plan": {
+            "question": "What is the support phone number for Orion-891?",
+            "url": "http://127.0.0.1:25509/dev/support-phone-0",
+            "kind": "phone",
+            "terms": [
+              "support",
+              "phone",
+              "orion-891",
+              "orion",
+              "891"
+            ],
+            "attributes": [
+              "phone",
+              "telephone",
+              "tel",
+              "contact",
+              "support",
+              "hotline",
+              "toll-free"
+            ],
+            "entity_terms": [
+              "orion-891",
+              "orion",
+              "891"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the support phone number ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.0001405000002705492
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "+1 800 555 2146",
+            "answer": "+1 800 555 2146",
+            "source": "http://127.0.0.1:25509/dev/support-phone-0",
+            "evidence": "Support phone: +1 800 555 2146",
+            "label": "Support phone",
+            "section": "Orion-891",
+            "kind": "phone",
+            "score": 17.099999999999998,
+            "signals": {
+              "locator": "dl[3]",
+              "page_title": "",
+              "structure": "field",
+              "qualifiers": {},
+              "field_value": "+1 800 555 2146",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:25509/dev/support-phone-0",
+              "final": "http://127.0.0.1:25509/dev/support-phone-0",
+              "status": 200,
+              "bytes": 205,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0223
+        }
+      },
+      "after": {
+        "id": "support-phone-0",
+        "family": "support-phone",
+        "answer": "+1 800 555 2146",
+        "sources": [
+          "http://127.0.0.1:25509/dev/support-phone-0"
+        ],
+        "expected_answer": [
+          "+1 800 555 2146"
+        ],
+        "expected_source": "http://127.0.0.1:25509/dev/support-phone-0",
+        "answer_ok": true,
+        "source_ok": true,
+        "joint_ok": true,
+        "seconds": 0.033222800000658026,
+        "error": "",
+        "failure_category": "",
+        "confidence": 0.97,
+        "reason": "deterministic_verified",
+        "malformed_output": false,
+        "diagnostics": {
+          "plan": {
+            "question": "What is the support phone number for Orion-891?",
+            "url": "http://127.0.0.1:25509/dev/support-phone-0",
+            "kind": "phone",
+            "terms": [
+              "support",
+              "phone",
+              "orion-891",
+              "orion",
+              "891"
+            ],
+            "attributes": [
+              "phone",
+              "telephone",
+              "tel",
+              "contact",
+              "support",
+              "hotline",
+              "toll-free"
+            ],
+            "entity_terms": [
+              "orion-891",
+              "orion",
+              "891"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the support phone number ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 4.499999886320438e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "+1 800 555 2146",
+            "answer": "+1 800 555 2146",
+            "source": "http://127.0.0.1:25509/dev/support-phone-0",
+            "evidence": "Support phone: +1 800 555 2146",
+            "label": "Support phone",
+            "section": "Orion-891",
+            "kind": "phone",
+            "score": 17.099999999999998,
+            "signals": {
+              "locator": "dl[3]",
+              "page_title": "",
+              "structure": "field",
+              "qualifiers": {},
+              "field_value": "+1 800 555 2146",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:25509/dev/support-phone-0",
+              "final": "http://127.0.0.1:25509/dev/support-phone-0",
+              "status": 200,
+              "bytes": 205,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0331
+        }
+      }
+    },
+    {
+      "id": "price-0",
+      "before": {
+        "id": "price-0",
+        "family": "price",
+        "answer": "USD 25.95",
+        "sources": [
+          "http://127.0.0.1:25509/dev/price-0"
+        ],
+        "expected_answer": [
+          "USD 25.95"
+        ],
+        "expected_source": "http://127.0.0.1:25509/dev/price-0",
+        "answer_ok": true,
+        "source_ok": true,
+        "joint_ok": true,
+        "seconds": 0.008951799998612842,
+        "error": "",
+        "failure_category": "",
+        "confidence": 0.933,
+        "reason": "deterministic_verified",
+        "malformed_output": false,
+        "diagnostics": {
+          "plan": {
+            "question": "What is the current price of Orion-891 in USD?",
+            "url": "http://127.0.0.1:25509/dev/price-0",
+            "kind": "price",
+            "terms": [
+              "price",
+              "orion-891",
+              "usd",
+              "orion",
+              "891"
+            ],
+            "attributes": [
+              "price",
+              "cost",
+              "sale",
+              "discount",
+              "current",
+              "offer",
+              "amount",
+              "currency"
+            ],
+            "entity_terms": [
+              "orion-891",
+              "usd",
+              "orion",
+              "891"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "USD",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the current price ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.2400001651258208e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "USD 25.95",
+            "answer": "USD 25.95",
+            "source": "http://127.0.0.1:25509/dev/price-0",
+            "evidence": "Current price | USD 25.95",
+            "label": "Current price",
+            "section": "Orion-891",
+            "kind": "price",
+            "score": 15.3,
+            "signals": {
+              "locator": "table[1]/row[1]/1",
+              "page_title": "",
+              "structure": "field",
+              "qualifiers": {},
+              "field_value": "USD 25.95",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:25509/dev/price-0",
+              "final": "http://127.0.0.1:25509/dev/price-0",
+              "status": 200,
+              "bytes": 152,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0085
+        }
+      },
+      "after": {
+        "id": "price-0",
+        "family": "price",
+        "answer": "USD 25.95",
+        "sources": [
+          "http://127.0.0.1:25509/dev/price-0"
+        ],
+        "expected_answer": [
+          "USD 25.95"
+        ],
+        "expected_source": "http://127.0.0.1:25509/dev/price-0",
+        "answer_ok": true,
+        "source_ok": true,
+        "joint_ok": true,
+        "seconds": 0.010823200000231736,
+        "error": "",
+        "failure_category": "",
+        "confidence": 0.933,
+        "reason": "deterministic_verified",
+        "malformed_output": false,
+        "diagnostics": {
+          "plan": {
+            "question": "What is the current price of Orion-891 in USD?",
+            "url": "http://127.0.0.1:25509/dev/price-0",
+            "kind": "price",
+            "terms": [
+              "price",
+              "orion-891",
+              "usd",
+              "orion",
+              "891"
+            ],
+            "attributes": [
+              "price",
+              "cost",
+              "sale",
+              "discount",
+              "current",
+              "offer",
+              "amount",
+              "currency"
+            ],
+            "entity_terms": [
+              "orion-891",
+              "usd",
+              "orion",
+              "891"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "USD",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the current price ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.0599998859106563e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "USD 25.95",
+            "answer": "USD 25.95",
+            "source": "http://127.0.0.1:25509/dev/price-0",
+            "evidence": "Current price | USD 25.95",
+            "label": "Current price",
+            "section": "Orion-891",
+            "kind": "price",
+            "score": 15.3,
+            "signals": {
+              "locator": "table[1]/row[1]/1",
+              "page_title": "",
+              "structure": "field",
+              "qualifiers": {},
+              "field_value": "USD 25.95",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:25509/dev/price-0",
+              "final": "http://127.0.0.1:25509/dev/price-0",
+              "status": 200,
+              "bytes": 152,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0107
+        }
+      }
+    },
+    {
+      "id": "history-0",
+      "before": {
+        "id": "history-0",
+        "family": "history",
+        "answer": "$25",
+        "sources": [
+          "http://127.0.0.1:25509/dev/history-0"
+        ],
+        "expected_answer": [
+          "$25"
+        ],
+        "expected_source": "http://127.0.0.1:25509/dev/history-0",
+        "answer_ok": true,
+        "source_ok": true,
+        "joint_ok": true,
+        "seconds": 0.012569800001074327,
+        "error": "",
+        "failure_category": "",
+        "confidence": 0.97,
+        "reason": "deterministic_verified",
+        "malformed_output": false,
+        "diagnostics": {
+          "plan": {
+            "question": "What was the price of Orion-891 in 2024?",
+            "url": "http://127.0.0.1:25509/dev/history-0",
+            "kind": "price",
+            "terms": [
+              "price",
+              "orion-891",
+              "2024",
+              "orion",
+              "891"
+            ],
+            "attributes": [
+              "price",
+              "cost",
+              "sale",
+              "discount",
+              "current",
+              "offer",
+              "amount",
+              "currency"
+            ],
+            "entity_terms": [
+              "orion-891",
+              "orion",
+              "891"
+            ],
+            "versions": [],
+            "year": "2024",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what was the price ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 2.6300000172341242e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "$25",
+            "answer": "$25",
+            "source": "http://127.0.0.1:25509/dev/history-0",
+            "evidence": "Year: 2024 | Price: $25",
+            "label": "Price",
+            "section": "Orion-891",
+            "kind": "price",
+            "score": 17.2,
+            "signals": {
+              "locator": "table[1]/row[1]/cell[1]",
+              "page_title": "",
+              "structure": "cell",
+              "qualifiers": {},
+              "field_value": "$25",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:25509/dev/history-0",
+              "final": "http://127.0.0.1:25509/dev/history-0",
+              "status": 200,
+              "bytes": 138,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0124
+        }
+      },
+      "after": {
+        "id": "history-0",
+        "family": "history",
+        "answer": "$25",
+        "sources": [
+          "http://127.0.0.1:25509/dev/history-0"
+        ],
+        "expected_answer": [
+          "$25"
+        ],
+        "expected_source": "http://127.0.0.1:25509/dev/history-0",
+        "answer_ok": true,
+        "source_ok": true,
+        "joint_ok": true,
+        "seconds": 0.004662100000132341,
+        "error": "",
+        "failure_category": "",
+        "confidence": 0.97,
+        "reason": "deterministic_verified",
+        "malformed_output": false,
+        "diagnostics": {
+          "plan": {
+            "question": "What was the price of Orion-891 in 2024?",
+            "url": "http://127.0.0.1:25509/dev/history-0",
+            "kind": "price",
+            "terms": [
+              "price",
+              "orion-891",
+              "2024",
+              "orion",
+              "891"
+            ],
+            "attributes": [
+              "price",
+              "cost",
+              "sale",
+              "discount",
+              "current",
+              "offer",
+              "amount",
+              "currency"
+            ],
+            "entity_terms": [
+              "orion-891",
+              "orion",
+              "891"
+            ],
+            "versions": [],
+            "year": "2024",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what was the price ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.0300000212737359e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "$25",
+            "answer": "$25",
+            "source": "http://127.0.0.1:25509/dev/history-0",
+            "evidence": "Year: 2024 | Price: $25",
+            "label": "Price",
+            "section": "Orion-891",
+            "kind": "price",
+            "score": 17.2,
+            "signals": {
+              "locator": "table[1]/row[1]/cell[1]",
+              "page_title": "",
+              "structure": "cell",
+              "qualifiers": {
+                "table": 1,
+                "row": 1,
+                "columns": [
+                  "Year",
+                  "Price"
+                ],
+                "cells": [
+                  "2024",
+                  "$25"
+                ],
+                "column": 1
+              },
+              "field_value": "$25",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:25509/dev/history-0",
+              "final": "http://127.0.0.1:25509/dev/history-0",
+              "status": 200,
+              "bytes": 138,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0046
+        }
+      }
+    },
+    {
+      "id": "spec-0",
+      "before": {
+        "id": "spec-0",
+        "family": "spec",
+        "answer": "25 GB",
+        "sources": [
+          "http://127.0.0.1:25509/dev/spec-0"
+        ],
+        "expected_answer": [
+          "25 GB"
+        ],
+        "expected_source": "http://127.0.0.1:25509/dev/spec-0",
+        "answer_ok": true,
+        "source_ok": true,
+        "joint_ok": true,
+        "seconds": 0.007740799999737646,
+        "error": "",
+        "failure_category": "",
+        "confidence": 0.97,
+        "reason": "deterministic_verified",
+        "malformed_output": false,
+        "diagnostics": {
+          "plan": {
+            "question": "What is the memory capacity of Orion-891?",
+            "url": "http://127.0.0.1:25509/dev/spec-0",
+            "kind": "measurement",
+            "terms": [
+              "memory",
+              "capacity",
+              "orion-891",
+              "orion",
+              "891"
+            ],
+            "attributes": [
+              "capacity",
+              "memory",
+              "storage",
+              "vram",
+              "size"
+            ],
+            "entity_terms": [
+              "orion-891",
+              "orion",
+              "891"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the memory capacity ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.0800000382005237e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "25 GB",
+            "answer": "25 GB",
+            "source": "http://127.0.0.1:25509/dev/spec-0",
+            "evidence": "Model: Orion-891 | Memory capacity: 25 GB",
+            "label": "Memory capacity",
+            "section": "Model comparison",
+            "kind": "measurement",
+            "score": 17.099999999999998,
+            "signals": {
+              "locator": "table[1]/row[1]/cell[1]",
+              "page_title": "",
+              "structure": "cell",
+              "qualifiers": {},
+              "field_value": "25 GB",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:25509/dev/spec-0",
+              "final": "http://127.0.0.1:25509/dev/spec-0",
+              "status": 200,
+              "bytes": 170,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0073
+        }
+      },
+      "after": {
+        "id": "spec-0",
+        "family": "spec",
+        "answer": "25 GB",
+        "sources": [
+          "http://127.0.0.1:25509/dev/spec-0"
+        ],
+        "expected_answer": [
+          "25 GB"
+        ],
+        "expected_source": "http://127.0.0.1:25509/dev/spec-0",
+        "answer_ok": true,
+        "source_ok": true,
+        "joint_ok": true,
+        "seconds": 0.005186600001252373,
+        "error": "",
+        "failure_category": "",
+        "confidence": 0.97,
+        "reason": "deterministic_verified",
+        "malformed_output": false,
+        "diagnostics": {
+          "plan": {
+            "question": "What is the memory capacity of Orion-891?",
+            "url": "http://127.0.0.1:25509/dev/spec-0",
+            "kind": "measurement",
+            "terms": [
+              "memory",
+              "capacity",
+              "orion-891",
+              "orion",
+              "891"
+            ],
+            "attributes": [
+              "capacity",
+              "memory",
+              "storage",
+              "vram",
+              "size"
+            ],
+            "entity_terms": [
+              "orion-891",
+              "orion",
+              "891"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the memory capacity ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 9.20000093174167e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "25 GB",
+            "answer": "25 GB",
+            "source": "http://127.0.0.1:25509/dev/spec-0",
+            "evidence": "Model: Orion-891 | Memory capacity: 25 GB",
+            "label": "Memory capacity",
+            "section": "Model comparison",
+            "kind": "measurement",
+            "score": 17.099999999999998,
+            "signals": {
+              "locator": "table[1]/row[1]/cell[1]",
+              "page_title": "",
+              "structure": "cell",
+              "qualifiers": {
+                "table": 1,
+                "row": 1,
+                "columns": [
+                  "Model",
+                  "Memory capacity"
+                ],
+                "cells": [
+                  "Orion-891",
+                  "25 GB"
+                ],
+                "column": 1
+              },
+              "field_value": "25 GB",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:25509/dev/spec-0",
+              "final": "http://127.0.0.1:25509/dev/spec-0",
+              "status": 200,
+              "bytes": 170,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0051
+        }
+      }
+    },
+    {
+      "id": "jsonld-0",
+      "before": {
+        "id": "jsonld-0",
+        "family": "jsonld",
+        "answer": "+1 800 555 2146",
+        "sources": [
+          "http://127.0.0.1:25509/dev/jsonld-0"
+        ],
+        "expected_answer": [
+          "+1 800 555 2146"
+        ],
+        "expected_source": "http://127.0.0.1:25509/dev/jsonld-0",
+        "answer_ok": true,
+        "source_ok": true,
+        "joint_ok": true,
+        "seconds": 0.014621399999668938,
+        "error": "",
+        "failure_category": "",
+        "confidence": 0.846,
+        "reason": "deterministic_verified",
+        "malformed_output": false,
+        "diagnostics": {
+          "plan": {
+            "question": "What is the telephone number for Orion-891?",
+            "url": "http://127.0.0.1:25509/dev/jsonld-0",
+            "kind": "phone",
+            "terms": [
+              "telephone",
+              "orion-891",
+              "orion",
+              "891"
+            ],
+            "attributes": [
+              "phone",
+              "telephone",
+              "tel",
+              "contact",
+              "support",
+              "hotline",
+              "toll-free"
+            ],
+            "entity_terms": [
+              "orion-891",
+              "orion",
+              "891"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the telephone number ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 3.730000025825575e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "+1 800 555 2146",
+            "answer": "+1 800 555 2146",
+            "source": "http://127.0.0.1:25509/dev/jsonld-0",
+            "evidence": "telephone: +1 800 555 2146 | $ { @type: Organization | name: Orion-891 | telephone: +1 800 555 2146 }",
+            "label": "telephone",
+            "section": "$ { @type: Organization | name: Orion-891 | telephone: +1 800 555 2146 }",
+            "kind": "phone",
+            "score": 11.850000000000001,
+            "signals": {
+              "locator": "script[0]/telephone",
+              "page_title": "",
+              "structure": "jsonld",
+              "qualifiers": {
+                "identity": [
+                  "Orion-891"
+                ],
+                "structured": true,
+                "bindings": {
+                  "@type": "Organization",
+                  "name": "Orion-891",
+                  "telephone": "+1 800 555 2146"
+                }
+              },
+              "field_value": "+1 800 555 2146",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:25509/dev/jsonld-0",
+              "final": "http://127.0.0.1:25509/dev/jsonld-0",
+              "status": 200,
+              "bytes": 153,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0145
+        }
+      },
+      "after": {
+        "id": "jsonld-0",
+        "family": "jsonld",
+        "answer": "+1 800 555 2146",
+        "sources": [
+          "http://127.0.0.1:25509/dev/jsonld-0"
+        ],
+        "expected_answer": [
+          "+1 800 555 2146"
+        ],
+        "expected_source": "http://127.0.0.1:25509/dev/jsonld-0",
+        "answer_ok": true,
+        "source_ok": true,
+        "joint_ok": true,
+        "seconds": 0.004769099999975879,
+        "error": "",
+        "failure_category": "",
+        "confidence": 0.846,
+        "reason": "deterministic_verified",
+        "malformed_output": false,
+        "diagnostics": {
+          "plan": {
+            "question": "What is the telephone number for Orion-891?",
+            "url": "http://127.0.0.1:25509/dev/jsonld-0",
+            "kind": "phone",
+            "terms": [
+              "telephone",
+              "orion-891",
+              "orion",
+              "891"
+            ],
+            "attributes": [
+              "phone",
+              "telephone",
+              "tel",
+              "contact",
+              "support",
+              "hotline",
+              "toll-free"
+            ],
+            "entity_terms": [
+              "orion-891",
+              "orion",
+              "891"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the telephone number ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 8.300001354655251e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "+1 800 555 2146",
+            "answer": "+1 800 555 2146",
+            "source": "http://127.0.0.1:25509/dev/jsonld-0",
+            "evidence": "telephone: +1 800 555 2146 | $ { @type: Organization | name: Orion-891 | telephone: +1 800 555 2146 }",
+            "label": "telephone",
+            "section": "$ { @type: Organization | name: Orion-891 | telephone: +1 800 555 2146 }",
+            "kind": "phone",
+            "score": 11.850000000000001,
+            "signals": {
+              "locator": "script[0]/telephone",
+              "page_title": "",
+              "structure": "jsonld",
+              "qualifiers": {
+                "identity": [
+                  "Orion-891"
+                ],
+                "structured": true,
+                "bindings": {
+                  "@type": "Organization",
+                  "name": "Orion-891",
+                  "telephone": "+1 800 555 2146"
+                },
+                "schema_types": [
+                  "Organization"
+                ],
+                "value_type": "scalar"
+              },
+              "field_value": "+1 800 555 2146",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:25509/dev/jsonld-0",
+              "final": "http://127.0.0.1:25509/dev/jsonld-0",
+              "status": 200,
+              "bytes": 153,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0043
+        }
+      }
+    },
+    {
+      "id": "json-0",
+      "before": {
+        "id": "json-0",
+        "family": "json",
+        "answer": "25 seconds",
+        "sources": [
+          "http://127.0.0.1:25509/dev/json-0"
+        ],
+        "expected_answer": [
+          "25 seconds"
+        ],
+        "expected_source": "http://127.0.0.1:25509/dev/json-0",
+        "answer_ok": true,
+        "source_ok": true,
+        "joint_ok": true,
+        "seconds": 0.0031183000010059914,
+        "error": "",
+        "failure_category": "",
+        "confidence": 0.893,
+        "reason": "deterministic_verified",
+        "malformed_output": false,
+        "diagnostics": {
+          "plan": {
+            "question": "What is the timeout duration for Orion-891?",
+            "url": "http://127.0.0.1:25509/dev/json-0",
+            "kind": "duration",
+            "terms": [
+              "timeout",
+              "duration",
+              "orion-891",
+              "orion",
+              "891"
+            ],
+            "attributes": [
+              "duration",
+              "timeout",
+              "lead",
+              "time",
+              "delivery",
+              "days",
+              "hours",
+              "minutes",
+              "seconds"
+            ],
+            "entity_terms": [
+              "orion-891",
+              "orion",
+              "891"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the timeout duration ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 9.299999874201603e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "25 seconds",
+            "answer": "25 seconds",
+            "source": "http://127.0.0.1:25509/dev/json-0",
+            "evidence": "timeout: 25 seconds | $ { name: Orion-891 | timeout: 25 seconds | retry_delay: 2 seconds }",
+            "label": "timeout",
+            "section": "$ { name: Orion-891 | timeout: 25 seconds | retry_delay: 2 seconds }",
+            "kind": "duration",
+            "score": 13.700000000000001,
+            "signals": {
+              "locator": "timeout",
+              "page_title": "",
+              "structure": "json",
+              "qualifiers": {
+                "identity": [
+                  "Orion-891"
+                ],
+                "structured": true,
+                "bindings": {
+                  "name": "Orion-891",
+                  "timeout": "25 seconds",
+                  "retry_delay": "2 seconds"
+                }
+              },
+              "field_value": "25 seconds",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:25509/dev/json-0",
+              "final": "http://127.0.0.1:25509/dev/json-0",
+              "status": 200,
+              "bytes": 74,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.003
+        }
+      },
+      "after": {
+        "id": "json-0",
+        "family": "json",
+        "answer": "25 seconds",
+        "sources": [
+          "http://127.0.0.1:25509/dev/json-0"
+        ],
+        "expected_answer": [
+          "25 seconds"
+        ],
+        "expected_source": "http://127.0.0.1:25509/dev/json-0",
+        "answer_ok": true,
+        "source_ok": true,
+        "joint_ok": true,
+        "seconds": 0.024148200000126963,
+        "error": "",
+        "failure_category": "",
+        "confidence": 0.893,
+        "reason": "deterministic_verified",
+        "malformed_output": false,
+        "diagnostics": {
+          "plan": {
+            "question": "What is the timeout duration for Orion-891?",
+            "url": "http://127.0.0.1:25509/dev/json-0",
+            "kind": "duration",
+            "terms": [
+              "timeout",
+              "duration",
+              "orion-891",
+              "orion",
+              "891"
+            ],
+            "attributes": [
+              "duration",
+              "timeout",
+              "lead",
+              "time",
+              "delivery",
+              "days",
+              "hours",
+              "minutes",
+              "seconds"
+            ],
+            "entity_terms": [
+              "orion-891",
+              "orion",
+              "891"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the timeout duration ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 3.6100000215810724e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "25 seconds",
+            "answer": "25 seconds",
+            "source": "http://127.0.0.1:25509/dev/json-0",
+            "evidence": "timeout: 25 seconds | $ { name: Orion-891 | timeout: 25 seconds | retry_delay: 2 seconds }",
+            "label": "timeout",
+            "section": "$ { name: Orion-891 | timeout: 25 seconds | retry_delay: 2 seconds }",
+            "kind": "duration",
+            "score": 13.700000000000001,
+            "signals": {
+              "locator": "timeout",
+              "page_title": "",
+              "structure": "json",
+              "qualifiers": {
+                "identity": [
+                  "Orion-891"
+                ],
+                "structured": true,
+                "bindings": {
+                  "name": "Orion-891",
+                  "timeout": "25 seconds",
+                  "retry_delay": "2 seconds"
+                },
+                "value_type": "scalar"
+              },
+              "field_value": "25 seconds",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:25509/dev/json-0",
+              "final": "http://127.0.0.1:25509/dev/json-0",
+              "status": 200,
+              "bytes": 74,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.024
+        }
+      }
+    },
+    {
+      "id": "count-0",
+      "before": {
+        "id": "count-0",
+        "family": "count",
+        "answer": "25",
+        "sources": [
+          "http://127.0.0.1:25509/dev/count-0"
+        ],
+        "expected_answer": [
+          "25"
+        ],
+        "expected_source": "http://127.0.0.1:25509/dev/count-0",
+        "answer_ok": true,
+        "source_ok": true,
+        "joint_ok": true,
+        "seconds": 0.0036419000007299474,
+        "error": "",
+        "failure_category": "",
+        "confidence": 0.875,
+        "reason": "deterministic_verified",
+        "malformed_output": false,
+        "diagnostics": {
+          "plan": {
+            "question": "How many workers does Orion-891 support?",
+            "url": "http://127.0.0.1:25509/dev/count-0",
+            "kind": "number",
+            "terms": [
+              "workers",
+              "orion-891",
+              "support",
+              "orion",
+              "891"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "workers",
+              "orion-891",
+              "support",
+              "orion",
+              "891"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "how many workers does orion-891 support",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 9.699999282020144e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "25",
+            "answer": "25",
+            "source": "http://127.0.0.1:25509/dev/count-0",
+            "evidence": "Maximum workers: 25",
+            "label": "Maximum workers",
+            "section": "Orion-891",
+            "kind": "number",
+            "score": 13.0,
+            "signals": {
+              "locator": "dl[1]",
+              "page_title": "",
+              "structure": "field",
+              "qualifiers": {},
+              "field_value": "25",
+              "agreement_domains": 1
+            }
+          },
+          "top_candidates": [
+            {
+              "raw": "25",
+              "answer": "25",
+              "source": "http://127.0.0.1:25509/dev/count-0",
+              "evidence": "Maximum workers: 25",
+              "label": "Maximum workers",
+              "section": "Orion-891",
+              "kind": "number",
+              "score": 13.0,
+              "signals": {
+                "locator": "dl[1]",
+                "page_title": "",
+                "structure": "field",
+                "qualifiers": {},
+                "field_value": "25",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2",
+              "answer": "2",
+              "source": "http://127.0.0.1:25509/dev/count-0",
+              "evidence": "Default workers: 2",
+              "label": "Default workers",
+              "section": "Orion-891",
+              "kind": "number",
+              "score": 13.0,
+              "signals": {
+                "locator": "dl[2]",
+                "page_title": "",
+                "structure": "field",
+                "qualifiers": {},
+                "field_value": "2",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "891",
+              "answer": "891",
+              "source": "http://127.0.0.1:25509/dev/count-0",
+              "evidence": "Orion-891",
+              "label": "title",
+              "section": "Orion-891",
+              "kind": "number",
+              "score": 7.800000000000001,
+              "signals": {
+                "locator": "h1[0]",
+                "page_title": "",
+                "structure": "field",
+                "qualifiers": {},
+                "field_value": "Orion-891",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [
+            {
+              "a": "25",
+              "b": "2",
+              "sources": [
+                "http://127.0.0.1:25509/dev/count-0",
+                "http://127.0.0.1:25509/dev/count-0"
+              ],
+              "margin": 0.0
+            }
+          ],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:25509/dev/count-0",
+              "final": "http://127.0.0.1:25509/dev/count-0",
+              "status": 200,
+              "bytes": 96,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0035
+        }
+      },
+      "after": {
+        "id": "count-0",
+        "family": "count",
+        "answer": "25",
+        "sources": [
+          "http://127.0.0.1:25509/dev/count-0"
+        ],
+        "expected_answer": [
+          "25"
+        ],
+        "expected_source": "http://127.0.0.1:25509/dev/count-0",
+        "answer_ok": true,
+        "source_ok": true,
+        "joint_ok": true,
+        "seconds": 0.00965619999988121,
+        "error": "",
+        "failure_category": "",
+        "confidence": 0.875,
+        "reason": "deterministic_verified",
+        "malformed_output": false,
+        "diagnostics": {
+          "plan": {
+            "question": "How many workers does Orion-891 support?",
+            "url": "http://127.0.0.1:25509/dev/count-0",
+            "kind": "number",
+            "terms": [
+              "workers",
+              "orion-891",
+              "support",
+              "orion",
+              "891"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "workers",
+              "orion-891",
+              "support",
+              "orion",
+              "891"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "how many workers does orion-891 support",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.0300000212737359e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "25",
+            "answer": "25",
+            "source": "http://127.0.0.1:25509/dev/count-0",
+            "evidence": "Maximum workers: 25",
+            "label": "Maximum workers",
+            "section": "Orion-891",
+            "kind": "number",
+            "score": 13.0,
+            "signals": {
+              "locator": "dl[1]",
+              "page_title": "",
+              "structure": "field",
+              "qualifiers": {},
+              "field_value": "25",
+              "agreement_domains": 1
+            }
+          },
+          "reader_state": "not_run",
+          "top_candidates": [
+            {
+              "raw": "25",
+              "answer": "25",
+              "source": "http://127.0.0.1:25509/dev/count-0",
+              "evidence": "Maximum workers: 25",
+              "label": "Maximum workers",
+              "section": "Orion-891",
+              "kind": "number",
+              "score": 13.0,
+              "signals": {
+                "locator": "dl[1]",
+                "page_title": "",
+                "structure": "field",
+                "qualifiers": {},
+                "field_value": "25",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2",
+              "answer": "2",
+              "source": "http://127.0.0.1:25509/dev/count-0",
+              "evidence": "Default workers: 2",
+              "label": "Default workers",
+              "section": "Orion-891",
+              "kind": "number",
+              "score": 13.0,
+              "signals": {
+                "locator": "dl[2]",
+                "page_title": "",
+                "structure": "field",
+                "qualifiers": {},
+                "field_value": "2",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "891",
+              "answer": "891",
+              "source": "http://127.0.0.1:25509/dev/count-0",
+              "evidence": "Orion-891",
+              "label": "title",
+              "section": "Orion-891",
+              "kind": "number",
+              "score": 7.800000000000001,
+              "signals": {
+                "locator": "h1[0]",
+                "page_title": "",
+                "structure": "field",
+                "qualifiers": {},
+                "field_value": "Orion-891",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [
+            {
+              "a": "25",
+              "b": "2",
+              "sources": [
+                "http://127.0.0.1:25509/dev/count-0",
+                "http://127.0.0.1:25509/dev/count-0"
+              ],
+              "margin": 0.0
+            }
+          ],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:25509/dev/count-0",
+              "final": "http://127.0.0.1:25509/dev/count-0",
+              "status": 200,
+              "bytes": 96,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0091
+        }
+      }
+    },
+    {
+      "id": "csv-0",
+      "before": {
+        "id": "csv-0",
+        "family": "csv",
+        "answer": "25 GB",
+        "sources": [
+          "http://127.0.0.1:25509/dev/csv-0"
+        ],
+        "expected_answer": [
+          "25 GB"
+        ],
+        "expected_source": "http://127.0.0.1:25509/dev/csv-0",
+        "answer_ok": true,
+        "source_ok": true,
+        "joint_ok": true,
+        "seconds": 0.014269399998738663,
+        "error": "",
+        "failure_category": "",
+        "confidence": 0.97,
+        "reason": "deterministic_verified",
+        "malformed_output": false,
+        "diagnostics": {
+          "plan": {
+            "question": "What is the memory capacity of Orion-891?",
+            "url": "http://127.0.0.1:25509/dev/csv-0",
+            "kind": "measurement",
+            "terms": [
+              "memory",
+              "capacity",
+              "orion-891",
+              "orion",
+              "891"
+            ],
+            "attributes": [
+              "capacity",
+              "memory",
+              "storage",
+              "vram",
+              "size"
+            ],
+            "entity_terms": [
+              "orion-891",
+              "orion",
+              "891"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the memory capacity ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.590000101714395e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "25 GB",
+            "answer": "25 GB",
+            "source": "http://127.0.0.1:25509/dev/csv-0",
+            "evidence": "Model: Orion-891 | Memory capacity: 25 GB",
+            "label": "Memory capacity",
+            "section": "",
+            "kind": "measurement",
+            "score": 17.099999999999998,
+            "signals": {
+              "locator": "row[1]",
+              "page_title": "",
+              "structure": "cell",
+              "qualifiers": {},
+              "field_value": "25 GB",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:25509/dev/csv-0",
+              "final": "http://127.0.0.1:25509/dev/csv-0",
+              "status": 200,
+              "bytes": 51,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0139
+        }
+      },
+      "after": {
+        "id": "csv-0",
+        "family": "csv",
+        "answer": "25 GB",
+        "sources": [
+          "http://127.0.0.1:25509/dev/csv-0"
+        ],
+        "expected_answer": [
+          "25 GB"
+        ],
+        "expected_source": "http://127.0.0.1:25509/dev/csv-0",
+        "answer_ok": true,
+        "source_ok": true,
+        "joint_ok": true,
+        "seconds": 0.008229799999753595,
+        "error": "",
+        "failure_category": "",
+        "confidence": 0.97,
+        "reason": "deterministic_verified",
+        "malformed_output": false,
+        "diagnostics": {
+          "plan": {
+            "question": "What is the memory capacity of Orion-891?",
+            "url": "http://127.0.0.1:25509/dev/csv-0",
+            "kind": "measurement",
+            "terms": [
+              "memory",
+              "capacity",
+              "orion-891",
+              "orion",
+              "891"
+            ],
+            "attributes": [
+              "capacity",
+              "memory",
+              "storage",
+              "vram",
+              "size"
+            ],
+            "entity_terms": [
+              "orion-891",
+              "orion",
+              "891"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the memory capacity ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 4.079999962414149e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "25 GB",
+            "answer": "25 GB",
+            "source": "http://127.0.0.1:25509/dev/csv-0",
+            "evidence": "Model: Orion-891 | Memory capacity: 25 GB",
+            "label": "Memory capacity",
+            "section": "",
+            "kind": "measurement",
+            "score": 17.099999999999998,
+            "signals": {
+              "locator": "row[1]",
+              "page_title": "",
+              "structure": "cell",
+              "qualifiers": {},
+              "field_value": "25 GB",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:25509/dev/csv-0",
+              "final": "http://127.0.0.1:25509/dev/csv-0",
+              "status": 200,
+              "bytes": 51,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.008
+        }
+      }
+    },
+    {
+      "id": "date-0",
+      "before": {
+        "id": "date-0",
+        "family": "date",
+        "answer": "2025-06-01",
+        "sources": [
+          "http://127.0.0.1:25509/dev/date-0"
+        ],
+        "expected_answer": [
+          "2025-06-01"
+        ],
+        "expected_source": "http://127.0.0.1:25509/dev/date-0",
+        "answer_ok": true,
+        "source_ok": true,
+        "joint_ok": true,
+        "seconds": 0.004094199999599368,
+        "error": "",
+        "failure_category": "",
+        "confidence": 0.97,
+        "reason": "deterministic_verified",
+        "malformed_output": false,
+        "diagnostics": {
+          "plan": {
+            "question": "What is the release date of Orion-891?",
+            "url": "http://127.0.0.1:25509/dev/date-0",
+            "kind": "date",
+            "terms": [
+              "release",
+              "date",
+              "orion-891",
+              "orion",
+              "891"
+            ],
+            "attributes": [
+              "version",
+              "release",
+              "stable",
+              "latest",
+              "download",
+              "date",
+              "released",
+              "submitted",
+              "published",
+              "updated",
+              "launched"
+            ],
+            "entity_terms": [
+              "orion-891",
+              "orion",
+              "891"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the release date ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.0400000974186696e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "2025-06-01",
+            "answer": "2025-06-01",
+            "source": "http://127.0.0.1:25509/dev/date-0",
+            "evidence": "Release date: 2025-06-01",
+            "label": "Release date",
+            "section": "Orion-891",
+            "kind": "date",
+            "score": 17.099999999999998,
+            "signals": {
+              "locator": "dl[2]",
+              "page_title": "",
+              "structure": "field",
+              "qualifiers": {},
+              "field_value": "2025-06-01",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:25509/dev/date-0",
+              "final": "http://127.0.0.1:25509/dev/date-0",
+              "status": 200,
+              "bytes": 119,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.004
+        }
+      },
+      "after": {
+        "id": "date-0",
+        "family": "date",
+        "answer": "2025-06-01",
+        "sources": [
+          "http://127.0.0.1:25509/dev/date-0"
+        ],
+        "expected_answer": [
+          "2025-06-01"
+        ],
+        "expected_source": "http://127.0.0.1:25509/dev/date-0",
+        "answer_ok": true,
+        "source_ok": true,
+        "joint_ok": true,
+        "seconds": 0.0032059999994089594,
+        "error": "",
+        "failure_category": "",
+        "confidence": 0.97,
+        "reason": "deterministic_verified",
+        "malformed_output": false,
+        "diagnostics": {
+          "plan": {
+            "question": "What is the release date of Orion-891?",
+            "url": "http://127.0.0.1:25509/dev/date-0",
+            "kind": "date",
+            "terms": [
+              "release",
+              "date",
+              "orion-891",
+              "orion",
+              "891"
+            ],
+            "attributes": [
+              "version",
+              "release",
+              "stable",
+              "latest",
+              "download",
+              "date",
+              "released",
+              "submitted",
+              "published",
+              "updated",
+              "launched"
+            ],
+            "entity_terms": [
+              "orion-891",
+              "orion",
+              "891"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the release date ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 9.40000063565094e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "2025-06-01",
+            "answer": "2025-06-01",
+            "source": "http://127.0.0.1:25509/dev/date-0",
+            "evidence": "Release date: 2025-06-01",
+            "label": "Release date",
+            "section": "Orion-891",
+            "kind": "date",
+            "score": 17.099999999999998,
+            "signals": {
+              "locator": "dl[2]",
+              "page_title": "",
+              "structure": "field",
+              "qualifiers": {},
+              "field_value": "2025-06-01",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:25509/dev/date-0",
+              "final": "http://127.0.0.1:25509/dev/date-0",
+              "status": 200,
+              "bytes": 119,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0031
+        }
+      }
+    },
+    {
+      "id": "asof-release-0",
+      "before": {
+        "id": "asof-release-0",
+        "family": "asof-release",
+        "answer": "2.0.3",
+        "sources": [
+          "http://127.0.0.1:25555/holdout/asof-release/0"
+        ],
+        "expected_answer": [
+          "2.0.3"
+        ],
+        "expected_source": "http://127.0.0.1:25555/holdout/asof-release/0",
+        "answer_ok": true,
+        "source_ok": true,
+        "joint_ok": true,
+        "seconds": 0.007797500000378932,
+        "error": "",
+        "failure_category": "",
+        "confidence": 0.82,
+        "reason": "dated_release_table",
+        "malformed_output": false,
+        "diagnostics": {
+          "plan": {
+            "question": "What was the latest stable version of Vega-9218 as of 2024-05-01?",
+            "url": "http://127.0.0.1:25555/holdout/asof-release/0",
+            "kind": "version",
+            "terms": [
+              "vega-9218",
+              "2024-05-01",
+              "vega",
+              "9218",
+              "2024",
+              "05",
+              "01"
+            ],
+            "attributes": [
+              "version",
+              "release",
+              "stable",
+              "latest",
+              "download"
+            ],
+            "entity_terms": [
+              "vega-9218",
+              "2024-05-01",
+              "vega",
+              "05",
+              "01"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2024-05-01",
+            "latest": true,
+            "stable": true,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what was the latest stable version ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.3199998647905886e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "2.0.3",
+            "answer": "2.0.3",
+            "source": "http://127.0.0.1:25555/holdout/asof-release/0",
+            "evidence": "Version: 2.0.3 | Released: 2023-12-01",
+            "label": "Version",
+            "section": "Vega-9218",
+            "kind": "version",
+            "score": 10.8,
+            "signals": {
+              "locator": "table[1]/row[0]/cell[0]",
+              "page_title": "",
+              "structure": "cell",
+              "qualifiers": {},
+              "field_value": "2.0.3",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:25555/holdout/asof-release/0",
+              "final": "http://127.0.0.1:25555/holdout/asof-release/0",
+              "status": 200,
+              "bytes": 204,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0074
+        }
+      },
+      "after": {
+        "id": "asof-release-0",
+        "family": "asof-release",
+        "answer": "2.0.3",
+        "sources": [
+          "http://127.0.0.1:25555/holdout/asof-release/0"
+        ],
+        "expected_answer": [
+          "2.0.3"
+        ],
+        "expected_source": "http://127.0.0.1:25555/holdout/asof-release/0",
+        "answer_ok": true,
+        "source_ok": true,
+        "joint_ok": true,
+        "seconds": 0.008184299998902134,
+        "error": "",
+        "failure_category": "",
+        "confidence": 0.82,
+        "reason": "dated_release_table",
+        "malformed_output": false,
+        "diagnostics": {
+          "plan": {
+            "question": "What was the latest stable version of Vega-9218 as of 2024-05-01?",
+            "url": "http://127.0.0.1:25555/holdout/asof-release/0",
+            "kind": "version",
+            "terms": [
+              "vega-9218",
+              "2024-05-01",
+              "vega",
+              "9218",
+              "2024",
+              "05",
+              "01"
+            ],
+            "attributes": [
+              "version",
+              "release",
+              "stable",
+              "latest",
+              "download"
+            ],
+            "entity_terms": [
+              "vega-9218",
+              "2024-05-01",
+              "vega",
+              "05",
+              "01"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2024-05-01",
+            "latest": true,
+            "stable": true,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what was the latest stable version ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.1899999663000926e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "2.0.3",
+            "answer": "2.0.3",
+            "source": "http://127.0.0.1:25555/holdout/asof-release/0",
+            "evidence": "Version: 2.0.3 | Released: 2023-12-01",
+            "label": "Version",
+            "section": "Vega-9218",
+            "kind": "version",
+            "score": 10.8,
+            "signals": {
+              "locator": "table[1]/row[0]/cell[0]",
+              "page_title": "",
+              "structure": "cell",
+              "qualifiers": {
+                "table": 1,
+                "row": 0,
+                "columns": [
+                  "Version",
+                  "Released"
+                ],
+                "cells": [
+                  "2.0.3",
+                  "2023-12-01"
+                ],
+                "column": 0
+              },
+              "field_value": "2.0.3",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:25555/holdout/asof-release/0",
+              "final": "http://127.0.0.1:25555/holdout/asof-release/0",
+              "status": 200,
+              "bytes": 204,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0079
+        }
+      }
+    },
+    {
+      "id": "rowspan-0",
+      "before": {
+        "id": "rowspan-0",
+        "family": "rowspan",
+        "answer": "81 GB",
+        "sources": [
+          "http://127.0.0.1:25555/holdout/rowspan/0"
+        ],
+        "expected_answer": [
+          "81 GB"
+        ],
+        "expected_source": "http://127.0.0.1:25555/holdout/rowspan/0",
+        "answer_ok": true,
+        "source_ok": true,
+        "joint_ok": true,
+        "seconds": 0.013075100001515239,
+        "error": "",
+        "failure_category": "",
+        "confidence": 0.97,
+        "reason": "deterministic_verified",
+        "malformed_output": false,
+        "diagnostics": {
+          "plan": {
+            "question": "What is the memory capacity of Vega-9218 Pro?",
+            "url": "http://127.0.0.1:25555/holdout/rowspan/0",
+            "kind": "measurement",
+            "terms": [
+              "memory",
+              "capacity",
+              "vega-9218",
+              "pro",
+              "vega",
+              "9218"
+            ],
+            "attributes": [
+              "capacity",
+              "memory",
+              "storage",
+              "vram",
+              "size"
+            ],
+            "entity_terms": [
+              "vega-9218",
+              "pro",
+              "vega"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the memory capacity ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 6.25000011496013e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "81 GB",
+            "answer": "81 GB",
+            "source": "http://127.0.0.1:25555/holdout/rowspan/0",
+            "evidence": "Model: Vega-9218 | Edition: Pro | Memory capacity: 81 GB",
+            "label": "Memory capacity",
+            "section": "",
+            "kind": "measurement",
+            "score": 18.2,
+            "signals": {
+              "locator": "table[0]/row[1]/cell[2]",
+              "page_title": "",
+              "structure": "cell",
+              "qualifiers": {},
+              "field_value": "81 GB",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:25555/holdout/rowspan/0",
+              "final": "http://127.0.0.1:25555/holdout/rowspan/0",
+              "status": 200,
+              "bytes": 179,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.013
+        }
+      },
+      "after": {
+        "id": "rowspan-0",
+        "family": "rowspan",
+        "answer": "81 GB",
+        "sources": [
+          "http://127.0.0.1:25555/holdout/rowspan/0"
+        ],
+        "expected_answer": [
+          "81 GB"
+        ],
+        "expected_source": "http://127.0.0.1:25555/holdout/rowspan/0",
+        "answer_ok": true,
+        "source_ok": true,
+        "joint_ok": true,
+        "seconds": 0.015942500000164728,
+        "error": "",
+        "failure_category": "",
+        "confidence": 0.97,
+        "reason": "deterministic_verified",
+        "malformed_output": false,
+        "diagnostics": {
+          "plan": {
+            "question": "What is the memory capacity of Vega-9218 Pro?",
+            "url": "http://127.0.0.1:25555/holdout/rowspan/0",
+            "kind": "measurement",
+            "terms": [
+              "memory",
+              "capacity",
+              "vega-9218",
+              "pro",
+              "vega",
+              "9218"
+            ],
+            "attributes": [
+              "capacity",
+              "memory",
+              "storage",
+              "vram",
+              "size"
+            ],
+            "entity_terms": [
+              "vega-9218",
+              "pro",
+              "vega"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the memory capacity ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 5.549999877985101e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "81 GB",
+            "answer": "81 GB",
+            "source": "http://127.0.0.1:25555/holdout/rowspan/0",
+            "evidence": "Model: Vega-9218 | Edition: Pro | Memory capacity: 81 GB",
+            "label": "Memory capacity",
+            "section": "",
+            "kind": "measurement",
+            "score": 18.2,
+            "signals": {
+              "locator": "table[0]/row[1]/cell[2]",
+              "page_title": "",
+              "structure": "cell",
+              "qualifiers": {
+                "table": 0,
+                "row": 1,
+                "columns": [
+                  "Model",
+                  "Edition",
+                  "Memory capacity"
+                ],
+                "cells": [
+                  "Vega-9218",
+                  "Pro",
+                  "81 GB"
+                ],
+                "column": 2
+              },
+              "field_value": "81 GB",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:25555/holdout/rowspan/0",
+              "final": "http://127.0.0.1:25555/holdout/rowspan/0",
+              "status": 200,
+              "bytes": 179,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0155
+        }
+      }
+    },
+    {
+      "id": "meta-author-0",
+      "before": {
+        "id": "meta-author-0",
+        "family": "meta-author",
+        "answer": "Nora Weber",
+        "sources": [
+          "http://127.0.0.1:25555/holdout/meta-author/0"
+        ],
+        "expected_answer": [
+          "Nora Weber"
+        ],
+        "expected_source": "http://127.0.0.1:25555/holdout/meta-author/0",
+        "answer_ok": true,
+        "source_ok": true,
+        "joint_ok": true,
+        "seconds": 0.016894200000024284,
+        "error": "",
+        "failure_category": "",
+        "confidence": 0.939,
+        "reason": "deterministic_verified",
+        "malformed_output": false,
+        "diagnostics": {
+          "plan": {
+            "question": "Who is the first author of the Vega-9218 paper?",
+            "url": "http://127.0.0.1:25555/holdout/meta-author/0",
+            "kind": "text",
+            "terms": [
+              "first",
+              "author",
+              "vega-9218",
+              "paper",
+              "vega",
+              "9218"
+            ],
+            "attributes": [
+              "author",
+              "authors",
+              "creator",
+              "maintainer",
+              "written"
+            ],
+            "entity_terms": [
+              "first",
+              "vega-9218",
+              "paper",
+              "vega"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "who is the first author ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 9.599998520570807e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "Nora Weber",
+            "answer": "Nora Weber",
+            "source": "http://127.0.0.1:25555/holdout/meta-author/0",
+            "evidence": "citation_author: Nora Weber",
+            "label": "citation_author",
+            "section": "citation_author metadata entry 1",
+            "kind": "text",
+            "score": 15.55,
+            "signals": {
+              "locator": "meta[0]",
+              "page_title": "Vega-9218 paper",
+              "structure": "meta",
+              "qualifiers": {},
+              "field_value": "Nora Weber",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:25555/holdout/meta-author/0",
+              "final": "http://127.0.0.1:25555/holdout/meta-author/0",
+              "status": 200,
+              "bytes": 148,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0168
+        }
+      },
+      "after": {
+        "id": "meta-author-0",
+        "family": "meta-author",
+        "answer": "Nora Weber",
+        "sources": [
+          "http://127.0.0.1:25555/holdout/meta-author/0"
+        ],
+        "expected_answer": [
+          "Nora Weber"
+        ],
+        "expected_source": "http://127.0.0.1:25555/holdout/meta-author/0",
+        "answer_ok": true,
+        "source_ok": true,
+        "joint_ok": true,
+        "seconds": 0.016301399999065325,
+        "error": "",
+        "failure_category": "",
+        "confidence": 0.939,
+        "reason": "deterministic_verified",
+        "malformed_output": false,
+        "diagnostics": {
+          "plan": {
+            "question": "Who is the first author of the Vega-9218 paper?",
+            "url": "http://127.0.0.1:25555/holdout/meta-author/0",
+            "kind": "text",
+            "terms": [
+              "first",
+              "author",
+              "vega-9218",
+              "paper",
+              "vega",
+              "9218"
+            ],
+            "attributes": [
+              "author",
+              "authors",
+              "creator",
+              "maintainer",
+              "written"
+            ],
+            "entity_terms": [
+              "first",
+              "vega-9218",
+              "paper",
+              "vega"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "who is the first author ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 3.580000156944152e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "Nora Weber",
+            "answer": "Nora Weber",
+            "source": "http://127.0.0.1:25555/holdout/meta-author/0",
+            "evidence": "citation_author: Nora Weber",
+            "label": "citation_author",
+            "section": "citation_author metadata entry 1",
+            "kind": "text",
+            "score": 15.55,
+            "signals": {
+              "locator": "meta[0]",
+              "page_title": "Vega-9218 paper",
+              "structure": "meta",
+              "qualifiers": {},
+              "field_value": "Nora Weber",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:25555/holdout/meta-author/0",
+              "final": "http://127.0.0.1:25555/holdout/meta-author/0",
+              "status": 200,
+              "bytes": 148,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0162
+        }
+      }
+    },
+    {
+      "id": "schema-conflict-0",
+      "before": {
+        "id": "schema-conflict-0",
+        "family": "schema-conflict",
+        "answer": "USD 81.00",
+        "sources": [
+          "http://127.0.0.1:25555/holdout/schema-conflict/0"
+        ],
+        "expected_answer": [
+          "USD 81.00"
+        ],
+        "expected_source": "http://127.0.0.1:25555/holdout/schema-conflict/0",
+        "answer_ok": true,
+        "source_ok": true,
+        "joint_ok": true,
+        "seconds": 0.003610800000387826,
+        "error": "",
+        "failure_category": "",
+        "confidence": 0.92,
+        "reason": "deterministic_verified",
+        "malformed_output": false,
+        "diagnostics": {
+          "plan": {
+            "question": "What is the current price of Vega-9218 in USD?",
+            "url": "http://127.0.0.1:25555/holdout/schema-conflict/0",
+            "kind": "price",
+            "terms": [
+              "price",
+              "vega-9218",
+              "usd",
+              "vega",
+              "9218"
+            ],
+            "attributes": [
+              "price",
+              "cost",
+              "sale",
+              "discount",
+              "current",
+              "offer",
+              "amount",
+              "currency"
+            ],
+            "entity_terms": [
+              "vega-9218",
+              "usd",
+              "vega"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "USD",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the current price ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 9.100000170292333e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "USD 81.00",
+            "answer": "USD 81.00",
+            "source": "http://127.0.0.1:25555/holdout/schema-conflict/0",
+            "evidence": "Current price: USD 81.00",
+            "label": "Current price",
+            "section": "Vega-9218",
+            "kind": "price",
+            "score": 14.8,
+            "signals": {
+              "locator": "dl[1]",
+              "page_title": "",
+              "structure": "field",
+              "qualifiers": {},
+              "field_value": "USD 81.00",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:25555/holdout/schema-conflict/0",
+              "final": "http://127.0.0.1:25555/holdout/schema-conflict/0",
+              "status": 200,
+              "bytes": 210,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0035
+        }
+      },
+      "after": {
+        "id": "schema-conflict-0",
+        "family": "schema-conflict",
+        "answer": "USD 81.00",
+        "sources": [
+          "http://127.0.0.1:25555/holdout/schema-conflict/0"
+        ],
+        "expected_answer": [
+          "USD 81.00"
+        ],
+        "expected_source": "http://127.0.0.1:25555/holdout/schema-conflict/0",
+        "answer_ok": true,
+        "source_ok": true,
+        "joint_ok": true,
+        "seconds": 0.005556899999646703,
+        "error": "",
+        "failure_category": "",
+        "confidence": 0.92,
+        "reason": "deterministic_verified",
+        "malformed_output": false,
+        "diagnostics": {
+          "plan": {
+            "question": "What is the current price of Vega-9218 in USD?",
+            "url": "http://127.0.0.1:25555/holdout/schema-conflict/0",
+            "kind": "price",
+            "terms": [
+              "price",
+              "vega-9218",
+              "usd",
+              "vega",
+              "9218"
+            ],
+            "attributes": [
+              "price",
+              "cost",
+              "sale",
+              "discount",
+              "current",
+              "offer",
+              "amount",
+              "currency"
+            ],
+            "entity_terms": [
+              "vega-9218",
+              "usd",
+              "vega"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "USD",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the current price ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 9.899998985929415e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "USD 81.00",
+            "answer": "USD 81.00",
+            "source": "http://127.0.0.1:25555/holdout/schema-conflict/0",
+            "evidence": "Current price: USD 81.00",
+            "label": "Current price",
+            "section": "Vega-9218",
+            "kind": "price",
+            "score": 14.8,
+            "signals": {
+              "locator": "dl[1]",
+              "page_title": "",
+              "structure": "field",
+              "qualifiers": {},
+              "field_value": "USD 81.00",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:25555/holdout/schema-conflict/0",
+              "final": "http://127.0.0.1:25555/holdout/schema-conflict/0",
+              "status": 200,
+              "bytes": 210,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0051
+        }
+      }
+    },
+    {
+      "id": "hidden-duplicate-0",
+      "before": {
+        "id": "hidden-duplicate-0",
+        "family": "hidden-duplicate",
+        "answer": "$81.50",
+        "sources": [
+          "http://127.0.0.1:25555/holdout/hidden-duplicate/0"
+        ],
+        "expected_answer": [
+          "$81.50"
+        ],
+        "expected_source": "http://127.0.0.1:25555/holdout/hidden-duplicate/0",
+        "answer_ok": true,
+        "source_ok": true,
+        "joint_ok": true,
+        "seconds": 0.017394500000591506,
+        "error": "",
+        "failure_category": "",
+        "confidence": 0.88,
+        "reason": "deterministic_verified",
+        "malformed_output": false,
+        "diagnostics": {
+          "plan": {
+            "question": "What is the current price of Vega-9218?",
+            "url": "http://127.0.0.1:25555/holdout/hidden-duplicate/0",
+            "kind": "price",
+            "terms": [
+              "price",
+              "vega-9218",
+              "vega",
+              "9218"
+            ],
+            "attributes": [
+              "price",
+              "cost",
+              "sale",
+              "discount",
+              "current",
+              "offer",
+              "amount",
+              "currency"
+            ],
+            "entity_terms": [
+              "vega-9218",
+              "vega"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the current price ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 4.1599998439778574e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "$81.50",
+            "answer": "$81.50",
+            "source": "http://127.0.0.1:25555/holdout/hidden-duplicate/0",
+            "evidence": "Current price: $81.50",
+            "label": "Current price",
+            "section": "Vega-9218",
+            "kind": "price",
+            "score": 13.200000000000001,
+            "signals": {
+              "locator": "dl[1]",
+              "page_title": "",
+              "structure": "field",
+              "qualifiers": {},
+              "field_value": "$81.50",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:25555/holdout/hidden-duplicate/0",
+              "final": "http://127.0.0.1:25555/holdout/hidden-duplicate/0",
+              "status": 200,
+              "bytes": 125,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0173
+        }
+      },
+      "after": {
+        "id": "hidden-duplicate-0",
+        "family": "hidden-duplicate",
+        "answer": "$81.50",
+        "sources": [
+          "http://127.0.0.1:25555/holdout/hidden-duplicate/0"
+        ],
+        "expected_answer": [
+          "$81.50"
+        ],
+        "expected_source": "http://127.0.0.1:25555/holdout/hidden-duplicate/0",
+        "answer_ok": true,
+        "source_ok": true,
+        "joint_ok": true,
+        "seconds": 0.024237000001448905,
+        "error": "",
+        "failure_category": "",
+        "confidence": 0.88,
+        "reason": "deterministic_verified",
+        "malformed_output": false,
+        "diagnostics": {
+          "plan": {
+            "question": "What is the current price of Vega-9218?",
+            "url": "http://127.0.0.1:25555/holdout/hidden-duplicate/0",
+            "kind": "price",
+            "terms": [
+              "price",
+              "vega-9218",
+              "vega",
+              "9218"
+            ],
+            "attributes": [
+              "price",
+              "cost",
+              "sale",
+              "discount",
+              "current",
+              "offer",
+              "amount",
+              "currency"
+            ],
+            "entity_terms": [
+              "vega-9218",
+              "vega"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the current price ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 3.879999894706998e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "$81.50",
+            "answer": "$81.50",
+            "source": "http://127.0.0.1:25555/holdout/hidden-duplicate/0",
+            "evidence": "Current price: $81.50",
+            "label": "Current price",
+            "section": "Vega-9218",
+            "kind": "price",
+            "score": 13.200000000000001,
+            "signals": {
+              "locator": "dl[1]",
+              "page_title": "",
+              "structure": "field",
+              "qualifiers": {},
+              "field_value": "$81.50",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:25555/holdout/hidden-duplicate/0",
+              "final": "http://127.0.0.1:25555/holdout/hidden-duplicate/0",
+              "status": 200,
+              "bytes": 125,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0237
+        }
+      }
+    },
+    {
+      "id": "duration-0",
+      "before": {
+        "id": "duration-0",
+        "family": "duration",
+        "answer": "3 business days",
+        "sources": [
+          "http://127.0.0.1:25555/holdout/duration/0"
+        ],
+        "expected_answer": [
+          "3 business days"
+        ],
+        "expected_source": "http://127.0.0.1:25555/holdout/duration/0",
+        "answer_ok": true,
+        "source_ok": true,
+        "joint_ok": true,
+        "seconds": 0.002722600000197417,
+        "error": "",
+        "failure_category": "",
+        "confidence": 0.97,
+        "reason": "deterministic_verified",
+        "malformed_output": false,
+        "diagnostics": {
+          "plan": {
+            "question": "How long is the delivery lead time for Vega-9218?",
+            "url": "http://127.0.0.1:25555/holdout/duration/0",
+            "kind": "duration",
+            "terms": [
+              "long",
+              "delivery",
+              "lead",
+              "time",
+              "vega-9218",
+              "vega",
+              "9218"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "long",
+              "delivery",
+              "lead",
+              "time",
+              "vega-9218",
+              "vega"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "how long is the delivery lead time ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 9.999999747378752e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "3 business days",
+            "answer": "3 business days",
+            "source": "http://127.0.0.1:25555/holdout/duration/0",
+            "evidence": "Delivery lead time: 3 business days",
+            "label": "Delivery lead time",
+            "section": "Vega-9218",
+            "kind": "duration",
+            "score": 19.8,
+            "signals": {
+              "locator": "dl[2]",
+              "page_title": "",
+              "structure": "field",
+              "qualifiers": {},
+              "field_value": "3 business days",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:25555/holdout/duration/0",
+              "final": "http://127.0.0.1:25555/holdout/duration/0",
+              "status": 200,
+              "bytes": 120,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0026
+        }
+      },
+      "after": {
+        "id": "duration-0",
+        "family": "duration",
+        "answer": "3 business days",
+        "sources": [
+          "http://127.0.0.1:25555/holdout/duration/0"
+        ],
+        "expected_answer": [
+          "3 business days"
+        ],
+        "expected_source": "http://127.0.0.1:25555/holdout/duration/0",
+        "answer_ok": true,
+        "source_ok": true,
+        "joint_ok": true,
+        "seconds": 0.00793830000111484,
+        "error": "",
+        "failure_category": "",
+        "confidence": 0.97,
+        "reason": "deterministic_verified",
+        "malformed_output": false,
+        "diagnostics": {
+          "plan": {
+            "question": "How long is the delivery lead time for Vega-9218?",
+            "url": "http://127.0.0.1:25555/holdout/duration/0",
+            "kind": "duration",
+            "terms": [
+              "long",
+              "delivery",
+              "lead",
+              "time",
+              "vega-9218",
+              "vega",
+              "9218"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "long",
+              "delivery",
+              "lead",
+              "time",
+              "vega-9218",
+              "vega"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "how long is the delivery lead time ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 2.209999911428895e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "3 business days",
+            "answer": "3 business days",
+            "source": "http://127.0.0.1:25555/holdout/duration/0",
+            "evidence": "Delivery lead time: 3 business days",
+            "label": "Delivery lead time",
+            "section": "Vega-9218",
+            "kind": "duration",
+            "score": 19.8,
+            "signals": {
+              "locator": "dl[2]",
+              "page_title": "",
+              "structure": "field",
+              "qualifiers": {},
+              "field_value": "3 business days",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:25555/holdout/duration/0",
+              "final": "http://127.0.0.1:25555/holdout/duration/0",
+              "status": 200,
+              "bytes": 120,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0078
+        }
+      }
+    }
+  ]
+}

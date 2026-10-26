@@ -1,0 +1,119 @@
+{
+  "scope": "CPU budget/cleanup controls using actual failed memory snapshots; not accuracy.",
+  "passed": 25,
+  "total": 25,
+  "rows": [
+    {
+      "id": "default-budget",
+      "passed": true
+    },
+    {
+      "id": "preserve-other-process-headroom",
+      "passed": true
+    },
+    {
+      "id": "reject-budget-0",
+      "passed": true
+    },
+    {
+      "id": "reject-budget--1",
+      "passed": true
+    },
+    {
+      "id": "reject-budget-1.1",
+      "passed": true
+    },
+    {
+      "id": "reject-budget-nan",
+      "passed": true
+    },
+    {
+      "id": "reject-budget-inf",
+      "passed": true
+    },
+    {
+      "id": "reject-budget-bad",
+      "passed": true
+    },
+    {
+      "id": "cpu-does-not-touch-gpu",
+      "passed": true
+    },
+    {
+      "id": "no-usable-free-memory",
+      "passed": true
+    },
+    {
+      "id": "actual-2179-stall",
+      "passed": true,
+      "trimmed": true
+    },
+    {
+      "id": "actual-mixed-guard",
+      "passed": true,
+      "trimmed": true
+    },
+    {
+      "id": "normal-short-cache",
+      "passed": true,
+      "trimmed": false
+    },
+    {
+      "id": "no-unused-blocks",
+      "passed": true,
+      "trimmed": false
+    },
+    {
+      "id": "single_active_request",
+      "passed": true
+    },
+    {
+      "id": "cancel_different_id_is_noop",
+      "passed": true
+    },
+    {
+      "id": "explicit_cancel_releases_worker",
+      "passed": true,
+      "seconds": 0.0013245999871287495
+    },
+    {
+      "id": "next_request_after_cancel",
+      "passed": true
+    },
+    {
+      "id": "deadline_releases_worker",
+      "passed": true,
+      "seconds": 0.10231260000728071
+    },
+    {
+      "id": "cancelled_client_cancels_server",
+      "passed": true,
+      "seconds": 0.015637900010915473
+    },
+    {
+      "id": "next_client_request_succeeds",
+      "passed": true
+    },
+    {
+      "id": "expired_request_does_not_start",
+      "passed": true
+    },
+    {
+      "id": "http-trim-before-idle",
+      "passed": true
+    },
+    {
+      "id": "cleanup-error-releases-admission",
+      "passed": true
+    },
+    {
+      "id": "next-after-cleanup-error",
+      "passed": true
+    }
+  ],
+  "source_sha256": {
+    "C:\\Users\\chinh\\Desktop\\AMD AI League\uff1aMatch 4\\eval\\diagnose_gpu_memory_budget.py": "f99a64901302b251429f43ae783cac07df92857e461b5538a2a883218696fba9",
+    "C:\\Users\\chinh\\Desktop\\AMD AI League\uff1aMatch 4\\agent\\model_server.py": "9a83f33af0f214d4205b19eabe942c3ee81a3a5422ae7ce2120aabf0d30a1adc",
+    "C:\\Users\\chinh\\Desktop\\AMD AI League\uff1aMatch 4\\agent\\gpu_memory.py": "a984ccd368f3a68cba572e5ac555f303bcdf5e74919656ad638729dd7e9d2fb6"
+  }
+}

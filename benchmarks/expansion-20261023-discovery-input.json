@@ -1,0 +1,174 @@
+{
+  "scope": "Query-only input for live retrieval, actual completed newmodelhints copied unchanged. No answer gold/alternate source supplied. Originalquestion+startingURL retained.",
+  "expansion_report_sha256": "3aabd64828a3b63ea87dfeec0c3ab7f6ab4bd157d2eecc1578f08386d3a61d37",
+  "rows": [
+    {
+      "id": "simpleqa-37",
+      "diagnostics": {
+        "plan": {
+          "question": "What is the first and last name of the woman whom the British linguist Bernard Comrie married in 1985?",
+          "url": "https://en.wikipedia.org/wiki/Bernard_Comrie",
+          "kind": "text",
+          "terms": [
+            "first",
+            "last",
+            "name",
+            "woman",
+            "whom",
+            "british",
+            "linguist",
+            "bernard",
+            "comrie",
+            "married",
+            "1985"
+          ],
+          "attributes": [
+            "title",
+            "name"
+          ],
+          "entity_terms": [
+            "first",
+            "last",
+            "woman",
+            "whom",
+            "british",
+            "linguist",
+            "bernard",
+            "comrie",
+            "married"
+          ],
+          "versions": [],
+          "year": "1985",
+          "as_of": "",
+          "latest": false,
+          "stable": false,
+          "first": true,
+          "currency": "",
+          "cardinality": 1,
+          "negations": [],
+          "domain": "en.wikipedia.org",
+          "focus": "what is the first and last name ",
+          "choices": [],
+          "operation": "single",
+          "required_fields": [],
+          "date_precision": ""
+        },
+        "search_hints": [
+          "bernard comrie spouse"
+        ]
+      }
+    },
+    {
+      "id": "simpleqa-395",
+      "diagnostics": {
+        "plan": {
+          "question": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+          "url": "https://en.wikipedia.org/wiki/Curtis_Publishing_Co._v._Butts",
+          "kind": "text",
+          "terms": [
+            "two",
+            "football",
+            "teams",
+            "mentioned",
+            "libel",
+            "case",
+            "against",
+            "saturday",
+            "evening",
+            "post",
+            "1963"
+          ],
+          "attributes": [],
+          "entity_terms": [
+            "two",
+            "football",
+            "teams",
+            "mentioned",
+            "libel",
+            "case",
+            "against",
+            "saturday",
+            "evening",
+            "post"
+          ],
+          "versions": [],
+          "year": "1963",
+          "as_of": "",
+          "latest": false,
+          "stable": false,
+          "first": false,
+          "currency": "",
+          "cardinality": 1,
+          "negations": [],
+          "domain": "en.wikipedia.org",
+          "focus": "what two football teams were mentioned ",
+          "choices": [],
+          "operation": "single",
+          "required_fields": [],
+          "date_precision": ""
+        },
+        "search_hints": [
+          "saturday evening post libel teams"
+        ]
+      }
+    },
+    {
+      "id": "simpleqa-32",
+      "diagnostics": {
+        "plan": {
+          "question": "What day, month, and year was Carrie Underwood's album \"Cry Pretty\" certified Gold by the RIAA?",
+          "url": "https://www.riaa.com/gold-platinum/?tab_active=default-award&se=cry+pretty",
+          "kind": "date",
+          "terms": [
+            "day",
+            "month",
+            "year",
+            "carrie",
+            "underwood",
+            "s",
+            "album",
+            "cry",
+            "pretty",
+            "certified",
+            "gold",
+            "riaa"
+          ],
+          "attributes": [],
+          "entity_terms": [
+            "day",
+            "month",
+            "year",
+            "carrie",
+            "underwood",
+            "s",
+            "album",
+            "cry",
+            "pretty",
+            "certified",
+            "gold",
+            "riaa"
+          ],
+          "versions": [],
+          "year": "",
+          "as_of": "",
+          "latest": false,
+          "stable": false,
+          "first": false,
+          "currency": "",
+          "cardinality": 1,
+          "negations": [],
+          "domain": "www.riaa.com",
+          "focus": "what day, month, and year was carrie underwood's album \"cry pretty\" certified gold by the riaa",
+          "choices": [],
+          "operation": "single",
+          "required_fields": [],
+          "date_precision": ""
+        },
+        "search_hints": [
+          "carrie underwood cry pretty gold certification date",
+          "cry pretty riaa gold date"
+        ]
+      }
+    }
+  ]
+}

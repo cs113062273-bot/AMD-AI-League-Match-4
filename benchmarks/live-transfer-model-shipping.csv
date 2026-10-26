@@ -1,0 +1,15 @@
+id,family,answer,sources,expected_answer,expected_source,answer_ok,source_ok,joint_ok,seconds,error,failure_category,malformed_output
+curl-connect,curl,,[],['300'],https://curl.se/libcurl/c/CURLOPT_CONNECTTIMEOUT.html,False,False,False,12.200113200000487,,ABS,False
+nginx-keepalive,nginx,75s,['https://nginx.org/en/docs/http/ngx_http_core_module.html'],['75s'],https://nginx.org/en/docs/http/ngx_http_core_module.html,True,True,True,3.439130299957469,,,False
+postgres-connections,postgres,100,['https://www.postgresql.org/docs/current/runtime-config-connection.html'],['100'],https://www.postgresql.org/docs/current/runtime-config-connection.html,True,True,True,3.5342449999880046,,,False
+sshd-port,openssh,22,['https://man.openbsd.org/sshd_config'],['22'],https://man.openbsd.org/sshd_config,True,True,True,3.6677976000355557,,,False
+pi-header,pi,,[],['40'],https://www.raspberrypi.com/products/raspberry-pi-5/,False,False,False,0.40350300003774464,,ABS,False
+sqlite-columns,sqlite,2000,['https://www.sqlite.org/limits.html'],['2000'],https://www.sqlite.org/limits.html,True,True,True,4.013755299965851,,,False
+json-ensure-ascii,python,True,['https://docs.python.org/3/library/json.html'],['True'],https://docs.python.org/3/library/json.html,True,True,True,0.5297057999996468,,,False
+wcag-normal-aa,wcag,4.5:1,['https://www.w3.org/TR/WCAG22/'],['4.5:1'],https://www.w3.org/TR/WCAG22/,True,True,True,3.19203400000697,,,False
+wcag-normal-aaa,wcag,7:1,['https://www.w3.org/TR/WCAG22/'],['7:1'],https://www.w3.org/TR/WCAG22/,True,True,True,2.76686219999101,,,False
+rfc-title,ietf,HTTP Semantics,['https://datatracker.ietf.org/api/v1/doc/document/rfc9110/'],['HTTP Semantics'],https://datatracker.ietf.org/api/v1/doc/document/rfc9110/,True,True,True,5.139969499956351,,,False
+sqlite-missing-email,sqlite,,[],[''],,True,True,True,9.723314900009427,,,False
+curl-false-premise,curl,,[],[''],,True,True,True,10.152894600003492,,,False
+sqlite-discovery,discovery-sqlite,,[],['2000'],https://www.sqlite.org/limits.html,False,False,False,11.84128839999903,,ABS,False
+sshd-discovery,discovery-openssh,"Contains configuration data for sshd(8) . This file should be writable by root only, but it is recommended (though not necessary) that it be world-readable.",['https://man.openbsd.org/sshd_config.5'],['22'],https://man.openbsd.org/sshd_config,False,False,False,16.52689699997427,,RANK,False

@@ -1,0 +1,15 @@
+id,family,answer,sources,expected_answer,expected_source,answer_ok,source_ok,joint_ok,seconds,error,failure_category,malformed_output
+curl-connect,curl,"//example.com""); /* complete connection within 10 seconds */ curl_easy_setopt (curl, CURLOPT_CONNECTTIMEOUT , 10L); result = curl_easy_perform (curl); curl_easy_cleanup (curl); } }",['https://curl.se/libcurl/c/CURLOPT_CONNECTTIMEOUT.html'],['300'],https://curl.se/libcurl/c/CURLOPT_CONNECTTIMEOUT.html,False,True,False,0.7203946000081487,,RANK,False
+nginx-keepalive,nginx,,[],['75s'],https://nginx.org/en/docs/http/ngx_http_core_module.html,False,False,False,5.1097558999899775,,ABS,False
+postgres-connections,postgres,100,['https://www.postgresql.org/docs/current/runtime-config-connection.html'],['100'],https://www.postgresql.org/docs/current/runtime-config-connection.html,True,True,True,3.7395451000193134,,,False
+sshd-port,openssh,,[],['22'],https://man.openbsd.org/sshd_config,False,False,False,5.104311499977484,,ABS,False
+pi-header,pi,,[],['40'],https://www.raspberrypi.com/products/raspberry-pi-5/,False,False,False,1.3945862000109628,,ABS,False
+sqlite-columns,sqlite,,[],['2000'],https://www.sqlite.org/limits.html,False,False,False,5.042284599971026,,ABS,False
+json-ensure-ascii,python,True,['https://docs.python.org/3/library/json.html'],['True'],https://docs.python.org/3/library/json.html,True,True,True,2.690606700023636,,,False
+wcag-normal-aa,wcag,,[],['4.5:1'],https://www.w3.org/TR/WCAG22/,False,False,False,5.103144399996381,,ABS,False
+wcag-normal-aaa,wcag,,[],['7:1'],https://www.w3.org/TR/WCAG22/,False,False,False,18.156658500025515,,ABS,False
+rfc-title,ietf,HTTP Semantics,['https://datatracker.ietf.org/api/v1/doc/document/rfc9110/'],['HTTP Semantics'],https://datatracker.ietf.org/api/v1/doc/document/rfc9110/,True,True,True,1.0807805999647826,,,False
+sqlite-missing-email,sqlite,drh@hwaci.com,['https://www.sqlite.org/support.html'],[''],,False,False,False,6.695698799972888,,RANK,False
+curl-false-premise,curl,5 seconds,['https://curl.se/libcurl/c/CURLOPT_CONNECTTIMEOUT.html'],[''],,False,False,False,9.20077619998483,,RANK,False
+sqlite-discovery,discovery-sqlite,The maximum number of columns in a table definition or in the result set of a SELECT or the maximum number of columns in an index or in an ORDER BY or GROUP BY clause.,['https://sqlite.org/draft/c3ref/c_limit_attached.html'],['2000'],https://www.sqlite.org/limits.html,False,False,False,15.316881000006106,,RANK,False
+sshd-discovery,discovery-openssh,"any , inet (IPv4 only), inet6 (IPv6 only).",['https://www.ssh.com/academy/ssh/sshd_config'],['22'],https://man.openbsd.org/sshd_config,False,False,False,9.822000899992418,,RANK,False

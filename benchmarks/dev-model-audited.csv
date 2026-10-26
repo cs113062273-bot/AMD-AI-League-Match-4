@@ -1,0 +1,181 @@
+id,family,answer,sources,expected_answer,expected_source,answer_ok,source_ok,joint_ok,seconds,error,failure_category,malformed_output
+support-phone-0,support-phone,+1 800 555 2146,['http://127.0.0.1:61513/dev/support-phone-0'],['+1 800 555 2146'],http://127.0.0.1:61513/dev/support-phone-0,True,True,True,1.7822596000041813,,,False
+email-0,email,help0@orion.example,['http://127.0.0.1:61513/dev/email-0'],['help0@orion.example'],http://127.0.0.1:61513/dev/email-0,True,True,True,1.3393896999768913,,,False
+price-0,price,USD 25.95,['http://127.0.0.1:61513/dev/price-0'],['USD 25.95'],http://127.0.0.1:61513/dev/price-0,True,True,True,1.4284182999981567,,,False
+stable-0,stable,3.0.7,['http://127.0.0.1:61513/dev/stable-0'],['3.0.7'],http://127.0.0.1:61513/dev/stable-0,True,True,True,1.362588100018911,,,False
+history-0,history,$25,['http://127.0.0.1:61513/dev/history-0'],['$25'],http://127.0.0.1:61513/dev/history-0,True,True,True,1.2318673999980092,,,False
+spec-0,spec,25 GB,['http://127.0.0.1:61513/dev/spec-0'],['25 GB'],http://127.0.0.1:61513/dev/spec-0,True,True,True,1.2737273999955505,,,False
+jsonld-0,jsonld,+1 800 555 2146,['http://127.0.0.1:61513/dev/jsonld-0'],['+1 800 555 2146'],http://127.0.0.1:61513/dev/jsonld-0,True,True,True,1.8152416000375524,,,False
+json-0,json,25 seconds,['http://127.0.0.1:61513/dev/json-0'],['25 seconds'],http://127.0.0.1:61513/dev/json-0,True,True,True,1.316086400009226,,,False
+count-0,count,25,['http://127.0.0.1:61513/dev/count-0'],['25'],http://127.0.0.1:61513/dev/count-0,True,True,True,1.1500994000234641,,,False
+license-0,license,MIT,['http://127.0.0.1:61513/dev/license-0'],['MIT'],http://127.0.0.1:61513/dev/license-0,True,True,True,1.0694865999976173,,,False
+no-answer-0,no-answer,,[],[''],http://127.0.0.1:61513/dev/no-answer-0,True,True,True,0.6521687000058591,,,False
+injection-0,injection,25 GB,['http://127.0.0.1:61513/dev/injection-0'],['25 GB'],http://127.0.0.1:61513/dev/injection-0,True,True,True,1.1833327999920584,,,False
+csv-0,csv,25 GB,['http://127.0.0.1:61513/dev/csv-0'],['25 GB'],http://127.0.0.1:61513/dev/csv-0,True,True,True,1.1094997000182047,,,False
+date-0,date,2025-06-01,['http://127.0.0.1:61513/dev/date-0'],['2025-06-01'],http://127.0.0.1:61513/dev/date-0,True,True,True,1.4936492000124417,,,False
+navigation-0,navigation,help0@orion.example,['http://127.0.0.1:61513/dev/navigation-0/support'],['help0@orion.example'],http://127.0.0.1:61513/dev/navigation-0/support,True,True,True,3.5788104999810457,,,False
+support-phone-1,support-phone,+1 800 555 5989,['http://127.0.0.1:61513/dev/support-phone-1'],['+1 800 555 5989'],http://127.0.0.1:61513/dev/support-phone-1,True,True,True,1.7401988999918103,,,False
+email-1,email,help1@orion.example,['http://127.0.0.1:61513/dev/email-1'],['help1@orion.example'],http://127.0.0.1:61513/dev/email-1,True,True,True,1.2947090999805368,,,False
+price-1,price,USD 26.95,['http://127.0.0.1:61513/dev/price-1'],['USD 26.95'],http://127.0.0.1:61513/dev/price-1,True,True,True,1.3134517000289634,,,False
+stable-1,stable,3.1.7,['http://127.0.0.1:61513/dev/stable-1'],['3.1.7'],http://127.0.0.1:61513/dev/stable-1,True,True,True,1.4335401999996975,,,False
+history-1,history,$26,['http://127.0.0.1:61513/dev/history-1'],['$26'],http://127.0.0.1:61513/dev/history-1,True,True,True,1.2110189000377432,,,False
+spec-1,spec,26 GB,['http://127.0.0.1:61513/dev/spec-1'],['26 GB'],http://127.0.0.1:61513/dev/spec-1,True,True,True,1.1790272000362165,,,False
+jsonld-1,jsonld,+1 800 555 5989,['http://127.0.0.1:61513/dev/jsonld-1'],['+1 800 555 5989'],http://127.0.0.1:61513/dev/jsonld-1,True,True,True,1.9083451999467798,,,False
+json-1,json,26 seconds,['http://127.0.0.1:61513/dev/json-1'],['26 seconds'],http://127.0.0.1:61513/dev/json-1,True,True,True,1.2014104000409134,,,False
+count-1,count,26,['http://127.0.0.1:61513/dev/count-1'],['26'],http://127.0.0.1:61513/dev/count-1,True,True,True,1.097273999999743,,,False
+license-1,license,MIT,['http://127.0.0.1:61513/dev/license-1'],['MIT'],http://127.0.0.1:61513/dev/license-1,True,True,True,1.2563226000056602,,,False
+no-answer-1,no-answer,,[],[''],http://127.0.0.1:61513/dev/no-answer-1,True,True,True,0.7490649999817833,,,False
+injection-1,injection,26 GB,['http://127.0.0.1:61513/dev/injection-1'],['26 GB'],http://127.0.0.1:61513/dev/injection-1,True,True,True,1.2127432000124827,,,False
+csv-1,csv,26 GB,['http://127.0.0.1:61513/dev/csv-1'],['26 GB'],http://127.0.0.1:61513/dev/csv-1,True,True,True,1.1087585999630392,,,False
+date-1,date,2025-06-02,['http://127.0.0.1:61513/dev/date-1'],['2025-06-02'],http://127.0.0.1:61513/dev/date-1,True,True,True,1.5432350999908522,,,False
+navigation-1,navigation,help1@orion.example,['http://127.0.0.1:61513/dev/navigation-1/support'],['help1@orion.example'],http://127.0.0.1:61513/dev/navigation-1/support,True,True,True,3.593860700028017,,,False
+support-phone-2,support-phone,+1 800 555 1951,['http://127.0.0.1:61513/dev/support-phone-2'],['+1 800 555 1951'],http://127.0.0.1:61513/dev/support-phone-2,True,True,True,1.8307220000424422,,,False
+email-2,email,help2@orion.example,['http://127.0.0.1:61513/dev/email-2'],['help2@orion.example'],http://127.0.0.1:61513/dev/email-2,True,True,True,1.2965726999682374,,,False
+price-2,price,USD 20.95,['http://127.0.0.1:61513/dev/price-2'],['USD 20.95'],http://127.0.0.1:61513/dev/price-2,True,True,True,1.4443768999772146,,,False
+stable-2,stable,3.2.7,['http://127.0.0.1:61513/dev/stable-2'],['3.2.7'],http://127.0.0.1:61513/dev/stable-2,True,True,True,1.364318199979607,,,False
+history-2,history,$20,['http://127.0.0.1:61513/dev/history-2'],['$20'],http://127.0.0.1:61513/dev/history-2,True,True,True,1.1633042999892496,,,False
+spec-2,spec,20 GB,['http://127.0.0.1:61513/dev/spec-2'],['20 GB'],http://127.0.0.1:61513/dev/spec-2,True,True,True,1.2585874000214972,,,False
+jsonld-2,jsonld,+1 800 555 1951,['http://127.0.0.1:61513/dev/jsonld-2'],['+1 800 555 1951'],http://127.0.0.1:61513/dev/jsonld-2,True,True,True,1.7744697000016458,,,False
+json-2,json,20 seconds,['http://127.0.0.1:61513/dev/json-2'],['20 seconds'],http://127.0.0.1:61513/dev/json-2,True,True,True,1.258425800013356,,,False
+count-2,count,20,['http://127.0.0.1:61513/dev/count-2'],['20'],http://127.0.0.1:61513/dev/count-2,True,True,True,1.1702891999739222,,,False
+license-2,license,MIT,['http://127.0.0.1:61513/dev/license-2'],['MIT'],http://127.0.0.1:61513/dev/license-2,True,True,True,1.104679899988696,,,False
+no-answer-2,no-answer,,[],[''],http://127.0.0.1:61513/dev/no-answer-2,True,True,True,0.699519700021483,,,False
+injection-2,injection,20 GB,['http://127.0.0.1:61513/dev/injection-2'],['20 GB'],http://127.0.0.1:61513/dev/injection-2,True,True,True,1.2983974000089802,,,False
+csv-2,csv,20 GB,['http://127.0.0.1:61513/dev/csv-2'],['20 GB'],http://127.0.0.1:61513/dev/csv-2,True,True,True,1.1498042999883182,,,False
+date-2,date,2025-06-03,['http://127.0.0.1:61513/dev/date-2'],['2025-06-03'],http://127.0.0.1:61513/dev/date-2,True,True,True,1.526118999987375,,,False
+navigation-2,navigation,help2@orion.example,['http://127.0.0.1:61513/dev/navigation-2/support'],['help2@orion.example'],http://127.0.0.1:61513/dev/navigation-2/support,True,True,True,3.63157530000899,,,False
+support-phone-3,support-phone,+1 800 555 3315,['http://127.0.0.1:61513/dev/support-phone-3'],['+1 800 555 3315'],http://127.0.0.1:61513/dev/support-phone-3,True,True,True,1.8467996999970637,,,False
+email-3,email,help3@orion.example,['http://127.0.0.1:61513/dev/email-3'],['help3@orion.example'],http://127.0.0.1:61513/dev/email-3,True,True,True,1.3094573999987915,,,False
+price-3,price,USD 33.95,['http://127.0.0.1:61513/dev/price-3'],['USD 33.95'],http://127.0.0.1:61513/dev/price-3,True,True,True,1.3832162999897264,,,False
+stable-3,stable,3.3.7,['http://127.0.0.1:61513/dev/stable-3'],['3.3.7'],http://127.0.0.1:61513/dev/stable-3,True,True,True,1.4238745999755338,,,False
+history-3,history,$33,['http://127.0.0.1:61513/dev/history-3'],['$33'],http://127.0.0.1:61513/dev/history-3,True,True,True,1.130194399971515,,,False
+spec-3,spec,33 GB,['http://127.0.0.1:61513/dev/spec-3'],['33 GB'],http://127.0.0.1:61513/dev/spec-3,True,True,True,1.228234699985478,,,False
+jsonld-3,jsonld,+1 800 555 3315,['http://127.0.0.1:61513/dev/jsonld-3'],['+1 800 555 3315'],http://127.0.0.1:61513/dev/jsonld-3,True,True,True,1.8930882000131533,,,False
+json-3,json,33 seconds,['http://127.0.0.1:61513/dev/json-3'],['33 seconds'],http://127.0.0.1:61513/dev/json-3,True,True,True,1.2949622999876738,,,False
+count-3,count,33,['http://127.0.0.1:61513/dev/count-3'],['33'],http://127.0.0.1:61513/dev/count-3,True,True,True,1.2006626999936998,,,False
+license-3,license,MIT,['http://127.0.0.1:61513/dev/license-3'],['MIT'],http://127.0.0.1:61513/dev/license-3,True,True,True,1.110490099992603,,,False
+no-answer-3,no-answer,,[],[''],http://127.0.0.1:61513/dev/no-answer-3,True,True,True,0.6974163999548182,,,False
+injection-3,injection,33 GB,['http://127.0.0.1:61513/dev/injection-3'],['33 GB'],http://127.0.0.1:61513/dev/injection-3,True,True,True,1.2008013000013307,,,False
+csv-3,csv,33 GB,['http://127.0.0.1:61513/dev/csv-3'],['33 GB'],http://127.0.0.1:61513/dev/csv-3,True,True,True,1.121842699998524,,,False
+date-3,date,2025-06-04,['http://127.0.0.1:61513/dev/date-3'],['2025-06-04'],http://127.0.0.1:61513/dev/date-3,True,True,True,1.544575999956578,,,False
+navigation-3,navigation,help3@orion.example,['http://127.0.0.1:61513/dev/navigation-3/support'],['help3@orion.example'],http://127.0.0.1:61513/dev/navigation-3/support,True,True,True,3.796545099990908,,,False
+support-phone-4,support-phone,+1 800 555 7810,['http://127.0.0.1:61513/dev/support-phone-4'],['+1 800 555 7810'],http://127.0.0.1:61513/dev/support-phone-4,True,True,True,1.8440835000365041,,,False
+email-4,email,help4@orion.example,['http://127.0.0.1:61513/dev/email-4'],['help4@orion.example'],http://127.0.0.1:61513/dev/email-4,True,True,True,1.3986995000159368,,,False
+price-4,price,USD 97.95,['http://127.0.0.1:61513/dev/price-4'],['USD 97.95'],http://127.0.0.1:61513/dev/price-4,True,True,True,1.439437800028827,,,False
+stable-4,stable,3.4.7,['http://127.0.0.1:61513/dev/stable-4'],['3.4.7'],http://127.0.0.1:61513/dev/stable-4,True,True,True,1.3750632000155747,,,False
+history-4,history,$97,['http://127.0.0.1:61513/dev/history-4'],['$97'],http://127.0.0.1:61513/dev/history-4,True,True,True,1.2825205000117421,,,False
+spec-4,spec,97 GB,['http://127.0.0.1:61513/dev/spec-4'],['97 GB'],http://127.0.0.1:61513/dev/spec-4,True,True,True,1.2784894000506029,,,False
+jsonld-4,jsonld,+1 800 555 7810,['http://127.0.0.1:61513/dev/jsonld-4'],['+1 800 555 7810'],http://127.0.0.1:61513/dev/jsonld-4,True,True,True,1.9115261000115424,,,False
+json-4,json,97 seconds,['http://127.0.0.1:61513/dev/json-4'],['97 seconds'],http://127.0.0.1:61513/dev/json-4,True,True,True,1.3359156000078656,,,False
+count-4,count,97,['http://127.0.0.1:61513/dev/count-4'],['97'],http://127.0.0.1:61513/dev/count-4,True,True,True,1.1682201999938115,,,False
+license-4,license,MIT,['http://127.0.0.1:61513/dev/license-4'],['MIT'],http://127.0.0.1:61513/dev/license-4,True,True,True,1.103789400018286,,,False
+no-answer-4,no-answer,,[],[''],http://127.0.0.1:61513/dev/no-answer-4,True,True,True,0.6816786000272259,,,False
+injection-4,injection,97 GB,['http://127.0.0.1:61513/dev/injection-4'],['97 GB'],http://127.0.0.1:61513/dev/injection-4,True,True,True,1.2734155000071041,,,False
+csv-4,csv,97 GB,['http://127.0.0.1:61513/dev/csv-4'],['97 GB'],http://127.0.0.1:61513/dev/csv-4,True,True,True,1.193590899987612,,,False
+date-4,date,2025-06-05,['http://127.0.0.1:61513/dev/date-4'],['2025-06-05'],http://127.0.0.1:61513/dev/date-4,True,True,True,1.521570699987933,,,False
+navigation-4,navigation,help4@orion.example,['http://127.0.0.1:61513/dev/navigation-4/support'],['help4@orion.example'],http://127.0.0.1:61513/dev/navigation-4/support,True,True,True,3.8129678000113927,,,False
+support-phone-5,support-phone,+1 800 555 3860,['http://127.0.0.1:61513/dev/support-phone-5'],['+1 800 555 3860'],http://127.0.0.1:61513/dev/support-phone-5,True,True,True,1.8520141000044532,,,False
+email-5,email,help5@orion.example,['http://127.0.0.1:61513/dev/email-5'],['help5@orion.example'],http://127.0.0.1:61513/dev/email-5,True,True,True,1.3998912999522872,,,False
+price-5,price,USD 87.95,['http://127.0.0.1:61513/dev/price-5'],['USD 87.95'],http://127.0.0.1:61513/dev/price-5,True,True,True,1.5023234999971464,,,False
+stable-5,stable,3.5.7,['http://127.0.0.1:61513/dev/stable-5'],['3.5.7'],http://127.0.0.1:61513/dev/stable-5,True,True,True,1.44981610000832,,,False
+history-5,history,$87,['http://127.0.0.1:61513/dev/history-5'],['$87'],http://127.0.0.1:61513/dev/history-5,True,True,True,1.1714212999795564,,,False
+spec-5,spec,87 GB,['http://127.0.0.1:61513/dev/spec-5'],['87 GB'],http://127.0.0.1:61513/dev/spec-5,True,True,True,1.2550139999948442,,,False
+jsonld-5,jsonld,+1 800 555 3860,['http://127.0.0.1:61513/dev/jsonld-5'],['+1 800 555 3860'],http://127.0.0.1:61513/dev/jsonld-5,True,True,True,2.0592204999993555,,,False
+json-5,json,87 seconds,['http://127.0.0.1:61513/dev/json-5'],['87 seconds'],http://127.0.0.1:61513/dev/json-5,True,True,True,1.2603497999953106,,,False
+count-5,count,87,['http://127.0.0.1:61513/dev/count-5'],['87'],http://127.0.0.1:61513/dev/count-5,True,True,True,1.3536107999971136,,,False
+license-5,license,MIT,['http://127.0.0.1:61513/dev/license-5'],['MIT'],http://127.0.0.1:61513/dev/license-5,True,True,True,1.144248199998401,,,False
+no-answer-5,no-answer,,[],[''],http://127.0.0.1:61513/dev/no-answer-5,True,True,True,0.7016467999783345,,,False
+injection-5,injection,87 GB,['http://127.0.0.1:61513/dev/injection-5'],['87 GB'],http://127.0.0.1:61513/dev/injection-5,True,True,True,1.2419871999882162,,,False
+csv-5,csv,87 GB,['http://127.0.0.1:61513/dev/csv-5'],['87 GB'],http://127.0.0.1:61513/dev/csv-5,True,True,True,1.190819500014186,,,False
+date-5,date,2025-06-06,['http://127.0.0.1:61513/dev/date-5'],['2025-06-06'],http://127.0.0.1:61513/dev/date-5,True,True,True,1.5564017999568023,,,False
+navigation-5,navigation,help5@orion.example,['http://127.0.0.1:61513/dev/navigation-5/support'],['help5@orion.example'],http://127.0.0.1:61513/dev/navigation-5/support,True,True,True,3.7577431999961846,,,False
+support-phone-6,support-phone,+1 800 555 1456,['http://127.0.0.1:61513/dev/support-phone-6'],['+1 800 555 1456'],http://127.0.0.1:61513/dev/support-phone-6,True,True,True,1.9057263000286184,,,False
+email-6,email,help6@orion.example,['http://127.0.0.1:61513/dev/email-6'],['help6@orion.example'],http://127.0.0.1:61513/dev/email-6,True,True,True,1.3193494000006467,,,False
+price-6,price,USD 24.95,['http://127.0.0.1:61513/dev/price-6'],['USD 24.95'],http://127.0.0.1:61513/dev/price-6,True,True,True,1.397785700042732,,,False
+stable-6,stable,3.6.7,['http://127.0.0.1:61513/dev/stable-6'],['3.6.7'],http://127.0.0.1:61513/dev/stable-6,True,True,True,1.4493145000305958,,,False
+history-6,history,$24,['http://127.0.0.1:61513/dev/history-6'],['$24'],http://127.0.0.1:61513/dev/history-6,True,True,True,1.163998099975288,,,False
+spec-6,spec,24 GB,['http://127.0.0.1:61513/dev/spec-6'],['24 GB'],http://127.0.0.1:61513/dev/spec-6,True,True,True,1.23217079997994,,,False
+jsonld-6,jsonld,+1 800 555 1456,['http://127.0.0.1:61513/dev/jsonld-6'],['+1 800 555 1456'],http://127.0.0.1:61513/dev/jsonld-6,True,True,True,1.9073192999931052,,,False
+json-6,json,24 seconds,['http://127.0.0.1:61513/dev/json-6'],['24 seconds'],http://127.0.0.1:61513/dev/json-6,True,True,True,1.2824724999954924,,,False
+count-6,count,24,['http://127.0.0.1:61513/dev/count-6'],['24'],http://127.0.0.1:61513/dev/count-6,True,True,True,1.2120750999893062,,,False
+license-6,license,MIT,['http://127.0.0.1:61513/dev/license-6'],['MIT'],http://127.0.0.1:61513/dev/license-6,True,True,True,1.1530057999771088,,,False
+no-answer-6,no-answer,,[],[''],http://127.0.0.1:61513/dev/no-answer-6,True,True,True,0.6836209999746643,,,False
+injection-6,injection,24 GB,['http://127.0.0.1:61513/dev/injection-6'],['24 GB'],http://127.0.0.1:61513/dev/injection-6,True,True,True,1.1891046999953687,,,False
+csv-6,csv,24 GB,['http://127.0.0.1:61513/dev/csv-6'],['24 GB'],http://127.0.0.1:61513/dev/csv-6,True,True,True,1.2147206999943592,,,False
+date-6,date,2025-06-07,['http://127.0.0.1:61513/dev/date-6'],['2025-06-07'],http://127.0.0.1:61513/dev/date-6,True,True,True,1.623125499987509,,,False
+navigation-6,navigation,help6@orion.example,['http://127.0.0.1:61513/dev/navigation-6/support'],['help6@orion.example'],http://127.0.0.1:61513/dev/navigation-6/support,True,True,True,3.998395700007677,,,False
+support-phone-7,support-phone,+1 800 555 7613,['http://127.0.0.1:61513/dev/support-phone-7'],['+1 800 555 7613'],http://127.0.0.1:61513/dev/support-phone-7,True,True,True,1.8010019999928772,,,False
+email-7,email,help7@orion.example,['http://127.0.0.1:61513/dev/email-7'],['help7@orion.example'],http://127.0.0.1:61513/dev/email-7,True,True,True,1.3687093999469653,,,False
+price-7,price,USD 23.95,['http://127.0.0.1:61513/dev/price-7'],['USD 23.95'],http://127.0.0.1:61513/dev/price-7,True,True,True,1.4826134000322782,,,False
+stable-7,stable,3.7.7,['http://127.0.0.1:61513/dev/stable-7'],['3.7.7'],http://127.0.0.1:61513/dev/stable-7,True,True,True,1.4399883999722078,,,False
+history-7,history,$23,['http://127.0.0.1:61513/dev/history-7'],['$23'],http://127.0.0.1:61513/dev/history-7,True,True,True,1.2797407999751158,,,False
+spec-7,spec,23 GB,['http://127.0.0.1:61513/dev/spec-7'],['23 GB'],http://127.0.0.1:61513/dev/spec-7,True,True,True,1.2348419000045396,,,False
+jsonld-7,jsonld,+1 800 555 7613,['http://127.0.0.1:61513/dev/jsonld-7'],['+1 800 555 7613'],http://127.0.0.1:61513/dev/jsonld-7,True,True,True,1.8920363999786787,,,False
+json-7,json,23 seconds,['http://127.0.0.1:61513/dev/json-7'],['23 seconds'],http://127.0.0.1:61513/dev/json-7,True,True,True,1.3426453999709338,,,False
+count-7,count,23,['http://127.0.0.1:61513/dev/count-7'],['23'],http://127.0.0.1:61513/dev/count-7,True,True,True,1.1875784000148997,,,False
+license-7,license,MIT,['http://127.0.0.1:61513/dev/license-7'],['MIT'],http://127.0.0.1:61513/dev/license-7,True,True,True,1.144461699994281,,,False
+no-answer-7,no-answer,,[],[''],http://127.0.0.1:61513/dev/no-answer-7,True,True,True,0.7391234999522567,,,False
+injection-7,injection,23 GB,['http://127.0.0.1:61513/dev/injection-7'],['23 GB'],http://127.0.0.1:61513/dev/injection-7,True,True,True,1.2387833000393584,,,False
+csv-7,csv,23 GB,['http://127.0.0.1:61513/dev/csv-7'],['23 GB'],http://127.0.0.1:61513/dev/csv-7,True,True,True,1.1745195999974385,,,False
+date-7,date,2025-06-08,['http://127.0.0.1:61513/dev/date-7'],['2025-06-08'],http://127.0.0.1:61513/dev/date-7,True,True,True,1.6151719000190496,,,False
+navigation-7,navigation,help7@orion.example,['http://127.0.0.1:61513/dev/navigation-7/support'],['help7@orion.example'],http://127.0.0.1:61513/dev/navigation-7/support,True,True,True,3.780735399981495,,,False
+support-phone-8,support-phone,+1 800 555 4138,['http://127.0.0.1:61513/dev/support-phone-8'],['+1 800 555 4138'],http://127.0.0.1:61513/dev/support-phone-8,True,True,True,1.9153399000060745,,,False
+email-8,email,help8@orion.example,['http://127.0.0.1:61513/dev/email-8'],['help8@orion.example'],http://127.0.0.1:61513/dev/email-8,True,True,True,1.3821295999805443,,,False
+price-8,price,USD 24.95,['http://127.0.0.1:61513/dev/price-8'],['USD 24.95'],http://127.0.0.1:61513/dev/price-8,True,True,True,1.4578373999684118,,,False
+stable-8,stable,3.8.7,['http://127.0.0.1:61513/dev/stable-8'],['3.8.7'],http://127.0.0.1:61513/dev/stable-8,True,True,True,1.3904609000310302,,,False
+history-8,history,$24,['http://127.0.0.1:61513/dev/history-8'],['$24'],http://127.0.0.1:61513/dev/history-8,True,True,True,1.277932500001043,,,False
+spec-8,spec,24 GB,['http://127.0.0.1:61513/dev/spec-8'],['24 GB'],http://127.0.0.1:61513/dev/spec-8,True,True,True,1.3559530000202358,,,False
+jsonld-8,jsonld,+1 800 555 4138,['http://127.0.0.1:61513/dev/jsonld-8'],['+1 800 555 4138'],http://127.0.0.1:61513/dev/jsonld-8,True,True,True,1.8802298999507912,,,False
+json-8,json,24 seconds,['http://127.0.0.1:61513/dev/json-8'],['24 seconds'],http://127.0.0.1:61513/dev/json-8,True,True,True,1.2503259000368416,,,False
+count-8,count,24,['http://127.0.0.1:61513/dev/count-8'],['24'],http://127.0.0.1:61513/dev/count-8,True,True,True,1.2584706000052392,,,False
+license-8,license,MIT,['http://127.0.0.1:61513/dev/license-8'],['MIT'],http://127.0.0.1:61513/dev/license-8,True,True,True,1.119765900017228,,,False
+no-answer-8,no-answer,,[],[''],http://127.0.0.1:61513/dev/no-answer-8,True,True,True,0.6664162999950349,,,False
+injection-8,injection,24 GB,['http://127.0.0.1:61513/dev/injection-8'],['24 GB'],http://127.0.0.1:61513/dev/injection-8,True,True,True,1.2850300000282004,,,False
+csv-8,csv,24 GB,['http://127.0.0.1:61513/dev/csv-8'],['24 GB'],http://127.0.0.1:61513/dev/csv-8,True,True,True,1.1815422999789007,,,False
+date-8,date,2025-06-09,['http://127.0.0.1:61513/dev/date-8'],['2025-06-09'],http://127.0.0.1:61513/dev/date-8,True,True,True,1.5627166000194848,,,False
+navigation-8,navigation,help8@orion.example,['http://127.0.0.1:61513/dev/navigation-8/support'],['help8@orion.example'],http://127.0.0.1:61513/dev/navigation-8/support,True,True,True,3.8174050000379793,,,False
+support-phone-9,support-phone,+1 800 555 9958,['http://127.0.0.1:61513/dev/support-phone-9'],['+1 800 555 9958'],http://127.0.0.1:61513/dev/support-phone-9,True,True,True,1.9077653999556787,,,False
+email-9,email,help9@orion.example,['http://127.0.0.1:61513/dev/email-9'],['help9@orion.example'],http://127.0.0.1:61513/dev/email-9,True,True,True,1.373771900020074,,,False
+price-9,price,USD 11.95,['http://127.0.0.1:61513/dev/price-9'],['USD 11.95'],http://127.0.0.1:61513/dev/price-9,True,True,True,1.4409674999769777,,,False
+stable-9,stable,3.9.7,['http://127.0.0.1:61513/dev/stable-9'],['3.9.7'],http://127.0.0.1:61513/dev/stable-9,True,True,True,1.4906718999845907,,,False
+history-9,history,$11,['http://127.0.0.1:61513/dev/history-9'],['$11'],http://127.0.0.1:61513/dev/history-9,True,True,True,1.1932589000207372,,,False
+spec-9,spec,11 GB,['http://127.0.0.1:61513/dev/spec-9'],['11 GB'],http://127.0.0.1:61513/dev/spec-9,True,True,True,1.2283313000225462,,,False
+jsonld-9,jsonld,+1 800 555 9958,['http://127.0.0.1:61513/dev/jsonld-9'],['+1 800 555 9958'],http://127.0.0.1:61513/dev/jsonld-9,True,True,True,2.002017299993895,,,False
+json-9,json,11 seconds,['http://127.0.0.1:61513/dev/json-9'],['11 seconds'],http://127.0.0.1:61513/dev/json-9,True,True,True,1.2743910999852233,,,False
+count-9,count,11,['http://127.0.0.1:61513/dev/count-9'],['11'],http://127.0.0.1:61513/dev/count-9,True,True,True,1.2207418999751098,,,False
+license-9,license,MIT,['http://127.0.0.1:61513/dev/license-9'],['MIT'],http://127.0.0.1:61513/dev/license-9,True,True,True,1.1536464000237174,,,False
+no-answer-9,no-answer,,[],[''],http://127.0.0.1:61513/dev/no-answer-9,True,True,True,0.7027454000199214,,,False
+injection-9,injection,11 GB,['http://127.0.0.1:61513/dev/injection-9'],['11 GB'],http://127.0.0.1:61513/dev/injection-9,True,True,True,1.2648120999801904,,,False
+csv-9,csv,11 GB,['http://127.0.0.1:61513/dev/csv-9'],['11 GB'],http://127.0.0.1:61513/dev/csv-9,True,True,True,1.191412499989383,,,False
+date-9,date,2025-06-10,['http://127.0.0.1:61513/dev/date-9'],['2025-06-10'],http://127.0.0.1:61513/dev/date-9,True,True,True,1.6114041000255384,,,False
+navigation-9,navigation,help9@orion.example,['http://127.0.0.1:61513/dev/navigation-9/support'],['help9@orion.example'],http://127.0.0.1:61513/dev/navigation-9/support,True,True,True,3.7799746000091545,,,False
+support-phone-10,support-phone,+1 800 555 3235,['http://127.0.0.1:61513/dev/support-phone-10'],['+1 800 555 3235'],http://127.0.0.1:61513/dev/support-phone-10,True,True,True,1.8218554999912158,,,False
+email-10,email,help10@orion.example,['http://127.0.0.1:61513/dev/email-10'],['help10@orion.example'],http://127.0.0.1:61513/dev/email-10,True,True,True,1.4875632000039332,,,False
+price-10,price,USD 72.95,['http://127.0.0.1:61513/dev/price-10'],['USD 72.95'],http://127.0.0.1:61513/dev/price-10,True,True,True,1.4713557999930345,,,False
+stable-10,stable,3.10.7,['http://127.0.0.1:61513/dev/stable-10'],['3.10.7'],http://127.0.0.1:61513/dev/stable-10,True,True,True,1.4756749999942258,,,False
+history-10,history,$72,['http://127.0.0.1:61513/dev/history-10'],['$72'],http://127.0.0.1:61513/dev/history-10,True,True,True,1.314554999989923,,,False
+spec-10,spec,72 GB,['http://127.0.0.1:61513/dev/spec-10'],['72 GB'],http://127.0.0.1:61513/dev/spec-10,True,True,True,1.2819765999447554,,,False
+jsonld-10,jsonld,+1 800 555 3235,['http://127.0.0.1:61513/dev/jsonld-10'],['+1 800 555 3235'],http://127.0.0.1:61513/dev/jsonld-10,True,True,True,1.9704166000010446,,,False
+json-10,json,72 seconds,['http://127.0.0.1:61513/dev/json-10'],['72 seconds'],http://127.0.0.1:61513/dev/json-10,True,True,True,1.2918494999757968,,,False
+count-10,count,72,['http://127.0.0.1:61513/dev/count-10'],['72'],http://127.0.0.1:61513/dev/count-10,True,True,True,1.1821420000051148,,,False
+license-10,license,MIT,['http://127.0.0.1:61513/dev/license-10'],['MIT'],http://127.0.0.1:61513/dev/license-10,True,True,True,1.1323084000032395,,,False
+no-answer-10,no-answer,,[],[''],http://127.0.0.1:61513/dev/no-answer-10,True,True,True,1.37035320000723,,,False
+injection-10,injection,72 GB,['http://127.0.0.1:61513/dev/injection-10'],['72 GB'],http://127.0.0.1:61513/dev/injection-10,True,True,True,1.204403400013689,,,False
+csv-10,csv,72 GB,['http://127.0.0.1:61513/dev/csv-10'],['72 GB'],http://127.0.0.1:61513/dev/csv-10,True,True,True,1.1807430000044405,,,False
+date-10,date,2025-06-11,['http://127.0.0.1:61513/dev/date-10'],['2025-06-11'],http://127.0.0.1:61513/dev/date-10,True,True,True,1.630453999969177,,,False
+navigation-10,navigation,help10@orion.example,['http://127.0.0.1:61513/dev/navigation-10/support'],['help10@orion.example'],http://127.0.0.1:61513/dev/navigation-10/support,True,True,True,3.9188880000147037,,,False
+support-phone-11,support-phone,+1 800 555 4382,['http://127.0.0.1:61513/dev/support-phone-11'],['+1 800 555 4382'],http://127.0.0.1:61513/dev/support-phone-11,True,True,True,1.8342789000016637,,,False
+email-11,email,help11@orion.example,['http://127.0.0.1:61513/dev/email-11'],['help11@orion.example'],http://127.0.0.1:61513/dev/email-11,True,True,True,1.4680412000161596,,,False
+price-11,price,USD 79.95,['http://127.0.0.1:61513/dev/price-11'],['USD 79.95'],http://127.0.0.1:61513/dev/price-11,True,True,True,1.459876200009603,,,False
+stable-11,stable,3.11.7,['http://127.0.0.1:61513/dev/stable-11'],['3.11.7'],http://127.0.0.1:61513/dev/stable-11,True,True,True,1.4891564000281505,,,False
+history-11,history,$79,['http://127.0.0.1:61513/dev/history-11'],['$79'],http://127.0.0.1:61513/dev/history-11,True,True,True,1.2707382999942638,,,False
+spec-11,spec,79 GB,['http://127.0.0.1:61513/dev/spec-11'],['79 GB'],http://127.0.0.1:61513/dev/spec-11,True,True,True,1.2187564999912865,,,False
+jsonld-11,jsonld,+1 800 555 4382,['http://127.0.0.1:61513/dev/jsonld-11'],['+1 800 555 4382'],http://127.0.0.1:61513/dev/jsonld-11,True,True,True,1.921855799970217,,,False
+json-11,json,79 seconds,['http://127.0.0.1:61513/dev/json-11'],['79 seconds'],http://127.0.0.1:61513/dev/json-11,True,True,True,1.3340136000188068,,,False
+count-11,count,79,['http://127.0.0.1:61513/dev/count-11'],['79'],http://127.0.0.1:61513/dev/count-11,True,True,True,1.1314373000059277,,,False
+license-11,license,MIT,['http://127.0.0.1:61513/dev/license-11'],['MIT'],http://127.0.0.1:61513/dev/license-11,True,True,True,1.1189893999835476,,,False
+no-answer-11,no-answer,,[],[''],http://127.0.0.1:61513/dev/no-answer-11,True,True,True,0.7376689999946393,,,False
+injection-11,injection,79 GB,['http://127.0.0.1:61513/dev/injection-11'],['79 GB'],http://127.0.0.1:61513/dev/injection-11,True,True,True,1.2003894000081345,,,False
+csv-11,csv,79 GB,['http://127.0.0.1:61513/dev/csv-11'],['79 GB'],http://127.0.0.1:61513/dev/csv-11,True,True,True,1.179431399970781,,,False
+date-11,date,2025-06-12,['http://127.0.0.1:61513/dev/date-11'],['2025-06-12'],http://127.0.0.1:61513/dev/date-11,True,True,True,1.5545542999752797,,,False
+navigation-11,navigation,help11@orion.example,['http://127.0.0.1:61513/dev/navigation-11/support'],['help11@orion.example'],http://127.0.0.1:61513/dev/navigation-11/support,True,True,True,3.8259315000032075,,,False

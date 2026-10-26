@@ -1,0 +1,17 @@
+id,family,answer,sources,expected_answer,expected_source,answer_ok,source_ok,joint_ok,seconds,error,failure_category,malformed_output
+pypi-httpx-license,registry,BSD-3-Clause,['https://pypi.org/pypi/httpx/json'],['BSD-3-Clause'],https://pypi.org/pypi/httpx/json,True,True,True,1.3583540999679826,,,False
+pypi-flask-requires_python,registry,>=3.9,['https://pypi.org/pypi/flask/json'],['>=3.9'],https://pypi.org/pypi/flask/json,True,True,True,1.5213257999857888,,,False
+pypi-pydantic-version,registry,2.14.1,['https://pypi.org/pypi/pydantic/json'],['2.14.1'],https://pypi.org/pypi/pydantic/json,True,True,True,0.7167008999967948,,,False
+pypi-beautifulsoup4-requires_python,registry,>=3.7.0,['https://pypi.org/pypi/beautifulsoup4/json'],['>=3.7.0'],https://pypi.org/pypi/beautifulsoup4/json,True,True,True,1.6706615000148304,,,False
+pypi-packaging-version,registry,26.3,['https://pypi.org/pypi/packaging/json'],['26.3'],https://pypi.org/pypi/packaging/json,True,True,True,0.5039372000028379,,,False
+pypi-pytest-requires_python,registry,>=3.10,['https://pypi.org/pypi/pytest/json'],['>=3.10'],https://pypi.org/pypi/pytest/json,True,True,True,1.5534144999692217,,,False
+github-encode-httpx,registry,Python,['https://api.github.com/repos/encode/httpx'],['Python'],https://api.github.com/repos/encode/httpx,True,True,True,1.6353590000071563,,,False
+github-pallets-flask,registry,main,['https://api.github.com/repos/pallets/flask'],['main'],https://api.github.com/repos/pallets/flask,True,True,True,1.572924599982798,,,False
+github-psf-requests,registry,Apache-2.0,['https://api.github.com/repos/psf/requests'],['Apache-2.0'],https://api.github.com/repos/psf/requests,True,True,True,1.7706753999809735,,,False
+github-pytest-dev-pytest,registry,MIT,['https://api.github.com/repos/pytest-dev/pytest'],['MIT'],https://api.github.com/repos/pytest-dev/pytest,True,True,True,1.5965618999907747,,,False
+pep-440,docs,Version Identification and Dependency Specification,['https://peps.python.org/pep-0440/'],['Version Identification and Dependency Specification'],https://peps.python.org/pep-0440/,True,True,True,2.616364999965299,,,False
+pep-498,docs,Literal String Interpolation,['https://peps.python.org/pep-0498/'],['Literal String Interpolation'],https://peps.python.org/pep-0498/,True,True,True,2.7246846000198275,,,False
+pep-750,docs,Template Strings,['https://peps.python.org/pep-0750/'],['Template Strings'],https://peps.python.org/pep-0750/,True,True,True,2.538659200014081,,,False
+arxiv-title,paper,BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding,['https://arxiv.org/abs/1810.04805'],['BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding'],https://arxiv.org/abs/1810.04805,True,True,True,2.150706199987326,,,False
+arxiv-first-author,paper,Jacob Devlin,['https://arxiv.org/abs/1810.04805'],['Jacob Devlin'],https://arxiv.org/abs/1810.04805,True,True,True,1.8311784999677911,,,False
+python-docs,docs,True,['https://docs.python.org/3/library/urllib.parse.html'],['True'],https://docs.python.org/3/library/urllib.parse.html,True,True,True,0.6117769000120461,,,False

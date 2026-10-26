@@ -1,0 +1,4543 @@
+{
+  "source_result": "benchmarks\\external-simpleqa100-first.json",
+  "n": 100,
+  "failed": 95,
+  "interpretation": "Signals may coexist. They are observations, not mutually exclusive proven root causes. Exact-scoring mismatches may require manual answer/source review.",
+  "signal_counts": {
+    "NET_SOURCE_FAILURE": 74,
+    "ABS_UNANSWERED": 58,
+    "RANK_OR_ANSWER_FORMAT_MISMATCH": 32,
+    "CIT_EXACT_SOURCE_MISMATCH": 5,
+    "SEA_PROVIDER_FAILURE": 15
+  },
+  "failures": [
+    {
+      "id": "simpleqa-3626",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/S%C3%BCleymaniye_Mosque,'https://en.wikipedia.org/wiki/S%C3%BCleymaniye_Mosque'",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/year",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/year",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://everything.explained.today/%5C/S%C3%BCleymaniye_Mosque/",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.ancient-history-sites.com/sites/suleymaniye-mosque/",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://baike.baidu.com/item/year/9562778",
+          "error": "http_403",
+          "status": 403
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/S%C3%BCleymaniye_Mosque,'https://en.wikipedia.org/wiki/S%C3%BCleymaniye_Mosque'",
+          "error": "http_403"
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/year",
+          "error": "http_403"
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/year",
+          "error": "http_403"
+        },
+        {
+          "url": "https://baike.baidu.com/item/year/9562778",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.ancient-history-sites.com/sites/suleymaniye-mosque/",
+          "error": "http_403"
+        },
+        {
+          "url": "https://everything.explained.today/%5C/S%C3%BCleymaniye_Mosque/",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "abstain",
+        "abstain"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-3796",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "RANK_OR_ANSWER_FORMAT_MISMATCH"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bandipore",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.distancesfrom.com/distance-from-Aloosa-193221-to-Bandipore/DistanceHistory/45339947.aspx",
+          "error": "TimeoutError: ",
+          "status": 0
+        },
+        {
+          "url": "https://www.distancesfrom.com/how-far-is-bandipore-from-aloosa-193221/howfarhistory/45339947.aspx",
+          "error": "TimeoutError: ",
+          "status": 0
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bandipore",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.distancesfrom.com/distance-from-Aloosa-193221-to-Bandipore/DistanceHistory/45339947.aspx",
+          "error": "TimeoutError: "
+        },
+        {
+          "url": "https://www.distancesfrom.com/how-far-is-bandipore-from-aloosa-193221/howfarhistory/45339947.aspx",
+          "error": "TimeoutError: "
+        }
+      ],
+      "selector": [
+        "TimeoutError",
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-1426",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Comair_(South_Africa)",
+          "error": "http_403",
+          "status": 403
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Comair_(South_Africa)",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "http_503",
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-1821",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Kow_Nkensen_Arkaah",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://hk.investing.com/indices/indices-futures",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.cmoney.tw/usfinance/ym",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.cmoney.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c",
+          "status": 0
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Kow_Nkensen_Arkaah",
+          "error": "http_403"
+        },
+        {
+          "url": "https://hk.investing.com/indices/indices-futures",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.cmoney.tw/usfinance/ym",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.cmoney.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c"
+        }
+      ],
+      "selector": [
+        "http_503",
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-3669",
+      "signals": [
+        "RANK_OR_ANSWER_FORMAT_MISMATCH"
+      ],
+      "source_errors": [],
+      "search_failure_count": 0,
+      "engine_errors": [],
+      "selector": [
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-2313",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "RANK_OR_ANSWER_FORMAT_MISMATCH"
+      ],
+      "source_errors": [
+        {
+          "url": "https://wp.medicine-opera.com/wp-content/uploads/2019/05/Scotti-and-Tibbett.jpg",
+          "error": "http_403",
+          "status": 403
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://wp.medicine-opera.com/wp-content/uploads/2019/05/Scotti-and-Tibbett.jpg",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "http_503",
+        "http_503",
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-394",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "RANK_OR_ANSWER_FORMAT_MISMATCH"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Coppa_Italia_Serie_C",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.wikiwand.com/it/Coppa_Italia_Serie_C_1981-1982",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://it.wikipedia.org/wiki/Coppa_Italia_Serie_C_1981-1982",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://zh.wikipedia.org/zh-tw/%26TEAM",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://zh.wikipedia.org/wiki/%26TEAM",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://baike.baidu.com/item/Team/1434925",
+          "error": "http_403",
+          "status": 403
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Coppa_Italia_Serie_C",
+          "error": "http_403"
+        },
+        {
+          "url": "https://it.wikipedia.org/wiki/Coppa_Italia_Serie_C_1981-1982",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.wikiwand.com/it/Coppa_Italia_Serie_C_1981-1982",
+          "error": "http_403"
+        },
+        {
+          "url": "https://zh.wikipedia.org/zh-tw/%26TEAM",
+          "error": "http_403"
+        },
+        {
+          "url": "https://baike.baidu.com/item/Team/1434925",
+          "error": "http_403"
+        },
+        {
+          "url": "https://zh.wikipedia.org/wiki/%26TEAM",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "http_503",
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-2855",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "RANK_OR_ANSWER_FORMAT_MISMATCH"
+      ],
+      "source_errors": [
+        {
+          "url": "https://www.findagrave.com/memorial/69486715/charles-allan_parker-bartlett",
+          "error": "http_403",
+          "status": 403
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://www.findagrave.com/memorial/69486715/charles-allan_parker-bartlett",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "http_503",
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-2489",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "RANK_OR_ANSWER_FORMAT_MISMATCH"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Swami_Vivekananda_Planetarium",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://thebetterindia.com/133237/indias-first-3d-planetarium-will-let-experience-universe-like-never/",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://everything.explained.today/Swami_Vivekananda_Planetarium/",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.famousfix.com/list/planetaria-in-india",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.indiascienceandtechnology.gov.in/sciencecentres/swami-vivekananda-planetarium",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.indiascienceandtechnology.gov.in:443 ssl:True [SSLCertVerificationError: (5, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed cer",
+          "status": 0
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Swami_Vivekananda_Planetarium",
+          "error": "http_403"
+        },
+        {
+          "url": "https://thebetterindia.com/133237/indias-first-3d-planetarium-will-let-experience-universe-like-never/",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.indiascienceandtechnology.gov.in/sciencecentres/swami-vivekananda-planetarium",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.indiascienceandtechnology.gov.in:443 ssl:True [SSLCertVerificationError: (5, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed cer"
+        },
+        {
+          "url": "https://everything.explained.today/Swami_Vivekananda_Planetarium/",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.famousfix.com/list/planetaria-in-india",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "http_503",
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-3852",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "RANK_OR_ANSWER_FORMAT_MISMATCH"
+      ],
+      "source_errors": [
+        {
+          "url": "https://medium.com/meet-meenamma/story-of-the-himalayan-hero-sonam-wangchuk-5c1a08a0d771",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/year",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/year",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Year",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://baike.baidu.com/item/year/9562778",
+          "error": "http_403",
+          "status": 403
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://medium.com/meet-meenamma/story-of-the-himalayan-hero-sonam-wangchuk-5c1a08a0d771",
+          "error": "http_403"
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/year",
+          "error": "http_403"
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/year",
+          "error": "http_403"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Year",
+          "error": "http_403"
+        },
+        {
+          "url": "https://baike.baidu.com/item/year/9562778",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "http_503",
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-71",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/IMx",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.discogs.com/artist/108944-Immature",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.discogs.com/es/artist/108944-Immature",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://baike.baidu.com/item/Replaced/67404661",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://new-jack-swing.fandom.com/wiki/Immature",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://boybands.fandom.com/wiki/Immature",
+          "error": "http_403",
+          "status": 403
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/IMx",
+          "error": "http_403"
+        },
+        {
+          "url": "https://baike.baidu.com/item/Replaced/67404661",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.discogs.com/artist/108944-Immature",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.discogs.com/es/artist/108944-Immature",
+          "error": "http_403"
+        },
+        {
+          "url": "https://new-jack-swing.fandom.com/wiki/Immature",
+          "error": "http_403"
+        },
+        {
+          "url": "https://boybands.fandom.com/wiki/Immature",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "http_503",
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-1263",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://digitalcommons.usf.edu/cgi/viewcontent.cgi?article=1007&context=inside_earth",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/month",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.timeanddate.com/calendar/months/",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://uptogo.com.tw/%e6%95%99%e8%82%b2/%e8%8b%b1%e8%aa%9e%e5%ad%b8%e7%bf%92/mth%e4%bb%80%e9%ba%bc%e6%84%8f%e6%80%9d%ef%bc%9f/",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://baike.baidu.com/item/Month/2949174",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://opus.analytics.yahoo.com/tag/opus.js",
+          "error": "ClientConnectorCertificateError: Cannot connect to host opus.analytics.yahoo.com:443 ssl:True [SSLCertVerificationError: (5, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer ",
+          "status": 0
+        },
+        {
+          "url": "https://opus.analytics.yahoo.com/tag/opus.js",
+          "error": "ClientConnectorCertificateError: Cannot connect to host opus.analytics.yahoo.com:443 ssl:True [SSLCertVerificationError: (5, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer ",
+          "status": 0
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://digitalcommons.usf.edu/cgi/viewcontent.cgi?article=1007&context=inside_earth",
+          "error": "http_403"
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/month",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.timeanddate.com/calendar/months/",
+          "error": "http_403"
+        },
+        {
+          "url": "https://baike.baidu.com/item/Month/2949174",
+          "error": "http_403"
+        },
+        {
+          "url": "https://uptogo.com.tw/%e6%95%99%e8%82%b2/%e8%8b%b1%e8%aa%9e%e5%ad%b8%e7%bf%92/mth%e4%bb%80%e9%ba%bc%e6%84%8f%e6%80%9d%ef%bc%9f/",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "http_503",
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-693",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://www.zhihu.com/question/1906110628365566118",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.zhihu.com/question/1903231775980913051",
+          "error": "http_403",
+          "status": 403
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://www.zhihu.com/question/1903231775980913051",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.zhihu.com/question/1906110628365566118",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "http_503",
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-3117",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Stanford_University_centers_and_institutes",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.gsb.stanford.edu/faculty-research/faculty/shelley-correll",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.mobile01.com/topicdetail.php?f=261&t=6563979",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.zhihu.com/question/1906110628365566118",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.zhihu.com/question/1903231775980913051",
+          "error": "http_403",
+          "status": 403
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Stanford_University_centers_and_institutes",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.gsb.stanford.edu/faculty-research/faculty/shelley-correll",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.zhihu.com/question/1903231775980913051",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.zhihu.com/question/1906110628365566118",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.mobile01.com/topicdetail.php?f=261&t=6563979",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "span",
+        "span"
+      ],
+      "verification": [
+        "unsupported",
+        "unsupported"
+      ]
+    },
+    {
+      "id": "simpleqa-3594",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/2010_FIFA_World_Cup",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.ettoday.net/news/20261020/3257513.htm",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.ettoday.net:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl",
+          "status": 0
+        },
+        {
+          "url": "https://fc.bnext.com.tw/articles/view/4984",
+          "error": "redirect_loop",
+          "status": 0
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/2010_FIFA_World_Cup",
+          "error": "http_403"
+        },
+        {
+          "url": "https://fc.bnext.com.tw/articles/view/4984",
+          "error": "redirect_loop"
+        },
+        {
+          "url": "https://www.ettoday.net/news/20261020/3257513.htm",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.ettoday.net:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl"
+        }
+      ],
+      "selector": [
+        "abstain",
+        "abstain"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-29",
+      "signals": [
+        "RANK_OR_ANSWER_FORMAT_MISMATCH"
+      ],
+      "source_errors": [],
+      "search_failure_count": 0,
+      "engine_errors": [],
+      "selector": [
+        "span"
+      ],
+      "verification": [
+        "supported"
+      ]
+    },
+    {
+      "id": "simpleqa-3343",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "RANK_OR_ANSWER_FORMAT_MISMATCH"
+      ],
+      "source_errors": [
+        {
+          "url": "https://localwiki.org/la/Getty_Center_Los_Angeles",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Getty_Center",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://simple.wikipedia.org/wiki/Getty_Center",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Height_above_mean_sea_level",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.wikipedia.org/",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://zh.wikipedia.org/zh-tw/Wikipedia:%E9%A6%96%E9%A1%B5",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Wikipedia",
+          "error": "http_403",
+          "status": 403
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://localwiki.org/la/Getty_Center_Los_Angeles",
+          "error": "http_403"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Height_above_mean_sea_level",
+          "error": "http_403"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Getty_Center",
+          "error": "http_403"
+        },
+        {
+          "url": "https://simple.wikipedia.org/wiki/Getty_Center",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.wikipedia.org/",
+          "error": "http_403"
+        },
+        {
+          "url": "https://zh.wikipedia.org/zh-tw/Wikipedia:%E9%A6%96%E9%A1%B5",
+          "error": "http_403"
+        },
+        {
+          "url": "https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5",
+          "error": "http_403"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Wikipedia",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "span"
+      ],
+      "verification": [
+        "supported"
+      ]
+    },
+    {
+      "id": "simpleqa-2878",
+      "signals": [
+        "RANK_OR_ANSWER_FORMAT_MISMATCH"
+      ],
+      "source_errors": [],
+      "search_failure_count": 0,
+      "engine_errors": [],
+      "selector": [
+        "span"
+      ],
+      "verification": [
+        "supported"
+      ]
+    },
+    {
+      "id": "simpleqa-2885",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Himachal_Pradesh",
+          "error": "http_403",
+          "status": 403
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Himachal_Pradesh",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "model_invalid_selection"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-2859",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://ninos.kiddle.co/index.php?title=Barry_Goldwater&oldid=4795496",
+          "error": "http_404",
+          "status": 404
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://ninos.kiddle.co/index.php?title=Barry_Goldwater&oldid=4795496",
+          "error": "http_404"
+        }
+      ],
+      "selector": [
+        "abstain",
+        "abstain",
+        "abstain"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-2796",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Pakistan_International_Airlines",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://hr.sumika.com.tw/JoinUS_Detail.aspx?JobID=202006120002",
+          "error": "ClientConnectorDNSError: Cannot connect to host hr.sumika.com.tw:443 ssl:default [getaddrinfo failed]",
+          "status": 0
+        },
+        {
+          "url": "https://www.sumika.com.tw/Upload/FTP/SUMIKA-CSR-Report-2019.pdf",
+          "error": "body_limit",
+          "status": 200
+        },
+        {
+          "url": "https://www.zhihu.com/question/1903231775980913051",
+          "error": "http_403",
+          "status": 403
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Pakistan_International_Airlines",
+          "error": "http_403"
+        },
+        {
+          "url": "https://hr.sumika.com.tw/JoinUS_Detail.aspx?JobID=202006120002",
+          "error": "ClientConnectorDNSError: Cannot connect to host hr.sumika.com.tw:443 ssl:default [getaddrinfo failed]"
+        },
+        {
+          "url": "https://www.sumika.com.tw/Upload/FTP/SUMIKA-CSR-Report-2019.pdf",
+          "error": "body_limit"
+        },
+        {
+          "url": "https://www.zhihu.com/question/1903231775980913051",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "abstain",
+        "abstain"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-1369",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Joan_Berkowitz",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.cmoney.tw/forum/stock/2884?s=technical-analysis",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.cmoney.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c",
+          "status": 0
+        },
+        {
+          "url": "https://www.cmoney.tw/forum/stock/2884?s=dividend",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.cmoney.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c",
+          "status": 0
+        },
+        {
+          "url": "https://www.cmoney.tw/forum/stock/6682",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.cmoney.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c",
+          "status": 0
+        },
+        {
+          "url": "https://www.cmoney.tw/forum/stock/2884",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.cmoney.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c",
+          "status": 0
+        },
+        {
+          "url": "https://www.cmoney.tw/forum/stock/2887",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.cmoney.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c",
+          "status": 0
+        },
+        {
+          "url": "https://www.cmoney.tw/forum/stock/2890",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.cmoney.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c",
+          "status": 0
+        },
+        {
+          "url": "https://www.cmoney.tw/forum/stock/2892",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.cmoney.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c",
+          "status": 0
+        },
+        {
+          "url": "https://www.cmoney.tw/forum/stock/00900",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.cmoney.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c",
+          "status": 0
+        },
+        {
+          "url": "https://www.famousfix.com/list/presidents-of-the-electrochemical-society",
+          "error": "http_403",
+          "status": 403
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Joan_Berkowitz",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.famousfix.com/list/presidents-of-the-electrochemical-society",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.cmoney.tw/forum/stock/2884",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.cmoney.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c"
+        },
+        {
+          "url": "https://www.cmoney.tw/forum/stock/2884?s=dividend",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.cmoney.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c"
+        },
+        {
+          "url": "https://www.cmoney.tw/forum/stock/6682",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.cmoney.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c"
+        },
+        {
+          "url": "https://www.cmoney.tw/forum/stock/2884?s=technical-analysis",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.cmoney.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c"
+        },
+        {
+          "url": "https://www.cmoney.tw/forum/stock/2887",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.cmoney.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c"
+        },
+        {
+          "url": "https://www.cmoney.tw/forum/stock/2890",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.cmoney.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c"
+        },
+        {
+          "url": "https://www.cmoney.tw/forum/stock/2892",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.cmoney.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c"
+        },
+        {
+          "url": "https://www.cmoney.tw/forum/stock/00900",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.cmoney.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c"
+        }
+      ],
+      "selector": [],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-277",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/International_Association_for_Engineering_Geology_and_the_Environment",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/0013795271900226",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/0013795271900226",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.sciencegate.app/document/10.1007/bf02635388",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://link.springer.com/article/10.1007/BF02635341",
+          "error": "redirect_loop",
+          "status": 0
+        },
+        {
+          "url": "https://link.springer.com/article/10.1007/BF02635328",
+          "error": "redirect_loop",
+          "status": 0
+        },
+        {
+          "url": "https://spot-on-parking.com/assets/index-CWIJgKdY.js",
+          "error": "body_limit",
+          "status": 200
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/International_Association_for_Engineering_Geology_and_the_Environment",
+          "error": "http_403"
+        },
+        {
+          "url": "https://link.springer.com/article/10.1007/BF02635328",
+          "error": "redirect_loop"
+        },
+        {
+          "url": "https://www.sciencegate.app/document/10.1007/bf02635388",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/0013795271900226",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/0013795271900226",
+          "error": "http_403"
+        },
+        {
+          "url": "https://link.springer.com/article/10.1007/BF02635341",
+          "error": "redirect_loop"
+        }
+      ],
+      "selector": [
+        "abstain",
+        "abstain"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-74",
+      "signals": [
+        "RANK_OR_ANSWER_FORMAT_MISMATCH"
+      ],
+      "source_errors": [],
+      "search_failure_count": 0,
+      "engine_errors": [],
+      "selector": [
+        "span"
+      ],
+      "verification": [
+        "supported"
+      ]
+    },
+    {
+      "id": "simpleqa-1866",
+      "signals": [
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [],
+      "search_failure_count": 0,
+      "engine_errors": [],
+      "selector": [
+        "span",
+        "span",
+        "span"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-353",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "CIT_EXACT_SOURCE_MISMATCH"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Hindupur_Lok_Sabha_constituency",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://nehruarchive.in/people/n-sanjiva-reddy",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/year",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://en-academic.com/dic.nsf/enwiki/518761",
+          "error": "ClientConnectorCertificateError: Cannot connect to host en-academic.com:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1028",
+          "status": 0
+        },
+        {
+          "url": "https://sansad.in/uploads/04022022_163646_1021206200_15397042d1.pdf?updated_at=2022-11-14T05:34:44.230Z",
+          "error": "body_limit",
+          "status": 200
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Hindupur_Lok_Sabha_constituency",
+          "error": "http_403"
+        },
+        {
+          "url": "https://en-academic.com/dic.nsf/enwiki/518761",
+          "error": "ClientConnectorCertificateError: Cannot connect to host en-academic.com:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1028"
+        },
+        {
+          "url": "https://sansad.in/uploads/04022022_163646_1021206200_15397042d1.pdf?updated_at=2022-11-14T05:34:44.230Z",
+          "error": "body_limit"
+        },
+        {
+          "url": "https://nehruarchive.in/people/n-sanjiva-reddy",
+          "error": "http_403"
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/year",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "span"
+      ],
+      "verification": [
+        "supported"
+      ]
+    },
+    {
+      "id": "simpleqa-2119",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Tuai",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/year",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/year",
+          "error": "http_403",
+          "status": 403
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Tuai",
+          "error": "http_403"
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/year",
+          "error": "http_403"
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/year",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "span",
+        "span"
+      ],
+      "verification": [
+        "unsupported",
+        "unsupported"
+      ]
+    },
+    {
+      "id": "simpleqa-8",
+      "signals": [
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [],
+      "search_failure_count": 0,
+      "engine_errors": [],
+      "selector": [
+        "model_invalid_selection",
+        "abstain",
+        "abstain"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-3502",
+      "signals": [
+        "RANK_OR_ANSWER_FORMAT_MISMATCH"
+      ],
+      "source_errors": [],
+      "search_failure_count": 0,
+      "engine_errors": [],
+      "selector": [
+        "model_invalid_selection"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-3644",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "CIT_EXACT_SOURCE_MISMATCH"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Gustav_Holst",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://static.xx.fbcdn.net/rsrc.php/v4ig704/yO/l/zh_TW-j/FjJXoN-krs0IMyShCyRsne0pvGhic02RWDyM2JsewnzxnpjnrLkuHLI8u0gHd1B2Ty5tasDmEAkisKkAUqAF8VgvmuZuW6B824hnCDMPhhlFe-vRBdEggqe-Hs960K9kW-igsithtz-xbzws8iKaFvlAkFUIGyw5OgXwRDOVdwxQW-DADssElxBA9IKo444dPwK5j6-aBr4hUguC7eYlIbF0IDWJ6ksuRPkBabOc6Yoz05BWr-O6tp1RxhvItC-FXmonGdGo6cPWoOY1QjBbGCd82Q7_XSilv6e_LMT6Np4DmB9RBloXCG2qhRV40I0gcyqIqqyZaG.js",
+          "error": "body_limit",
+          "status": 200
+        },
+        {
+          "url": "https://static.xx.fbcdn.net/rsrc.php/v4iLJw4/yU/l/zh_TW-j/MGfSk7f_pojgnaW3LRDg0VTLtRlJs3cle-QRxAOrTyCM5mInPOE2ExSamDtdguyUED9ssx_aaYc_EXptxL3faKf-YieWfF6PfYQhbYzXRPynYoeYrsrUpiDVdcwzRAh0Dv8jy9O1o_2ncJ1E_BfDODH3P482Yz_4vfOJLJ8_wgwP0xAGtxkevC5AzVBv_kkAv_-wGQ.js",
+          "error": "body_limit",
+          "status": 200
+        },
+        {
+          "url": "https://static.xx.fbcdn.net/rsrc.php/v4iUWo4/yO/l/zh_TW-j/1Z1tmdvjtSCuzKgkM6lWbBFjJXoN-krs0IMyShCyRsne7ivQfkck4KU0pvGhic02RWDyM2JsewnzxnpjnrLkuHLI8u0gHd1B2Ty.js",
+          "error": "body_limit",
+          "status": 200
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Gustav_Holst",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "span"
+      ],
+      "verification": [
+        "supported"
+      ]
+    },
+    {
+      "id": "simpleqa-2897",
+      "signals": [
+        "RANK_OR_ANSWER_FORMAT_MISMATCH"
+      ],
+      "source_errors": [],
+      "search_failure_count": 0,
+      "engine_errors": [],
+      "selector": [
+        "span"
+      ],
+      "verification": [
+        "supported"
+      ]
+    },
+    {
+      "id": "simpleqa-1131",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Barium_sulfate",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://go.drugbank.com/drugs/DB11150",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://go.drugbank.com/drugs/DB12481",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.drugs.com/ingredient/barium-sulfate.html",
+          "error": "http_403",
+          "status": 403
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://go.drugbank.com/drugs/DB11150",
+          "error": "http_403"
+        },
+        {
+          "url": "https://go.drugbank.com/drugs/DB12481",
+          "error": "http_403"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Barium_sulfate",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.drugs.com/ingredient/barium-sulfate.html",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "abstain",
+        "abstain",
+        "abstain"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-144",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://www.cars24.com/rto-vehicle-registration-details-sikkim-sk-06/",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://tw.yahoo.com/game-center/",
+          "error": "http_429",
+          "status": 429
+        },
+        {
+          "url": "https://tw.yahoo.com/appdownload",
+          "error": "http_429",
+          "status": 429
+        },
+        {
+          "url": "https://tw.yahoo.com/member",
+          "error": "http_429",
+          "status": 429
+        },
+        {
+          "url": "https://tw.yahoo.com/",
+          "error": "http_429",
+          "status": 429
+        },
+        {
+          "url": "https://tw.yahoo.com/member/invite",
+          "error": "http_429",
+          "status": 429
+        },
+        {
+          "url": "https://tw.yahoo.com/member/rewardcenter",
+          "error": "http_429",
+          "status": 429
+        },
+        {
+          "url": "https://tw.yahoo.com/?_guc_consent_skip=1763429465",
+          "error": "http_429",
+          "status": 429
+        },
+        {
+          "url": "https://tw.yahoo.com/member/tree",
+          "error": "http_429",
+          "status": 429
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://www.cars24.com/rto-vehicle-registration-details-sikkim-sk-06/",
+          "error": "http_403"
+        },
+        {
+          "url": "https://tw.yahoo.com/",
+          "error": "http_429"
+        },
+        {
+          "url": "https://tw.yahoo.com/member",
+          "error": "http_429"
+        },
+        {
+          "url": "https://tw.yahoo.com/member/rewardcenter",
+          "error": "http_429"
+        },
+        {
+          "url": "https://tw.yahoo.com/appdownload",
+          "error": "http_429"
+        },
+        {
+          "url": "https://tw.yahoo.com/game-center/",
+          "error": "http_429"
+        },
+        {
+          "url": "https://tw.yahoo.com/member/invite",
+          "error": "http_429"
+        },
+        {
+          "url": "https://tw.yahoo.com/member/tree",
+          "error": "http_429"
+        },
+        {
+          "url": "https://tw.yahoo.com/?_guc_consent_skip=1763429465",
+          "error": "http_429"
+        }
+      ],
+      "selector": [
+        "abstain",
+        "abstain"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-3944",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "RANK_OR_ANSWER_FORMAT_MISMATCH"
+      ],
+      "source_errors": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/Category:Boronia_ramosa",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://everything.explained.today/Cyanothamnus_ramosus/",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Cyanothamnus_ramosus",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Cyanothamnus",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.zhihu.com/question/1903231775980913051",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://db.cngb.org/js/vendor.7a668827.js",
+          "error": "body_limit",
+          "status": 200
+        },
+        {
+          "url": "https://db.cngb.org/lib/react-linear-genome-view.umd.production.min.js",
+          "error": "body_limit",
+          "status": 200
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://commons.wikimedia.org/wiki/Category:Boronia_ramosa",
+          "error": "http_403"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Cyanothamnus_ramosus",
+          "error": "http_403"
+        },
+        {
+          "url": "https://everything.explained.today/Cyanothamnus_ramosus/",
+          "error": "http_403"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Cyanothamnus",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.zhihu.com/question/1903231775980913051",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "span"
+      ],
+      "verification": [
+        "supported"
+      ]
+    },
+    {
+      "id": "simpleqa-762",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "RANK_OR_ANSWER_FORMAT_MISMATCH"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Sicily_Sewell",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://everything.explained.today/Sicily_(actress)/",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://disneyfanon.fandom.com/wiki/Sicily_Sewell",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.wikiwand.com/en/Sicily_Sewell",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://prabook.com/web/sicily.sewell/1889254",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://en-academic.com/dic.nsf/enwiki/1620000",
+          "error": "ClientConnectorCertificateError: Cannot connect to host en-academic.com:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1028",
+          "status": 0
+        },
+        {
+          "url": "https://static.xx.fbcdn.net/rsrc.php/v4iLJw4/yU/l/zh_TW-j/MGfSk7f_pojgnaW3LRDg0VTLtRlJs3cle-QRxAOrTyCM5mInPOE2ExSamDtdguyUED9ssx_aaYc_EXptxL3faKf-YieWfF6PfYQhbYzXRPynYoeYrsrUpiDVdcwzRAh0Dv8jy9O1o_2ncJ1E_BfDODH3P482Yz_4vfOJLJ8_wgwP0xAGtxkevC5AzVBv_kkAv_-wGQ.js",
+          "error": "body_limit",
+          "status": 200
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Sicily_Sewell",
+          "error": "http_403"
+        },
+        {
+          "url": "https://everything.explained.today/Sicily_(actress)/",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.wikiwand.com/en/Sicily_Sewell",
+          "error": "http_403"
+        },
+        {
+          "url": "https://prabook.com/web/sicily.sewell/1889254",
+          "error": "http_403"
+        },
+        {
+          "url": "https://disneyfanon.fandom.com/wiki/Sicily_Sewell",
+          "error": "http_403"
+        },
+        {
+          "url": "https://en-academic.com/dic.nsf/enwiki/1620000",
+          "error": "ClientConnectorCertificateError: Cannot connect to host en-academic.com:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1028"
+        }
+      ],
+      "selector": [
+        "span"
+      ],
+      "verification": [
+        "supported"
+      ]
+    },
+    {
+      "id": "simpleqa-3021",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://metalinjection.net/lists/best-of-2011/the-top-15-metal-viral-videos-of-the-year",
+          "error": "http_403",
+          "status": 403
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://metalinjection.net/lists/best-of-2011/the-top-15-metal-viral-videos-of-the-year",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "abstain",
+        "abstain"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-4287",
+      "signals": [
+        "RANK_OR_ANSWER_FORMAT_MISMATCH"
+      ],
+      "source_errors": [],
+      "search_failure_count": 0,
+      "engine_errors": [],
+      "selector": [
+        "span"
+      ],
+      "verification": [
+        "supported"
+      ]
+    },
+    {
+      "id": "simpleqa-14",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://www.hdut.edu.tw/",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.hdut.edu.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl",
+          "status": 0
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://www.hdut.edu.tw/",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.hdut.edu.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl"
+        }
+      ],
+      "selector": [
+        "abstain",
+        "abstain",
+        "abstain"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-1355",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "RANK_OR_ANSWER_FORMAT_MISMATCH"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Cannibal_Corpse",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://metalinjection.net/shocking-revelations/did-you-know-that-founding-cannibal-corpse-guitarist-bob-rusay-is-a-golf-instructor-now",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/month",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.metal-archives.com/artists/Bob_Rusay/54042",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.youtube.com/s/player/c271e571/player_ias.vflset/zh_TW/base.js",
+          "error": "body_limit",
+          "status": 200
+        },
+        {
+          "url": "https://www.youtube.com/s/_/ytmainappweb/_/js/k=ytmainappweb.kevlar_base.en_US.Yr8Cp34MrMI.es5.O/am=AAAAEAAACEBq/d=1/rs=AGKMywH3mCh5OfQClgBwkW3RG1NjEmuGYA/m=kevlar_base_module,kevlar_main_module,kevlar_base_sync_mod_chunk?cb=abc",
+          "error": "body_limit",
+          "status": 200
+        },
+        {
+          "url": "https://static.xx.fbcdn.net/rsrc.php/v4i3iN4/yd/l/zh_TW-j/FjJXoN-krs0IMyShCyRsne0pvGhic02RWDyM2JsewnzxnpjnrLkuHLI8u0gHd1B2Ty5tasDmEAkisKkAUqAF8VgvmuZuW6B824hnCDMPhhlFe-vRBdEggqe-Hs960K9kW-igsithtz-xbzws8iKaFvlAkFUIGyw5OgXwRDssElxBA9IKo444dPwK5j6-aBr4hUguC7EuSF_p3kfdReYlIbF0IDWJ6ksuRPkBabOc6Yoz05BWr-O6tp1RxhvItC-FXmonGdGo6cPWoOY1QjBbGCd82Q7_XSilv6e_LMT6N.js",
+          "error": "body_limit",
+          "status": 200
+        },
+        {
+          "url": "https://static.xx.fbcdn.net/rsrc.php/v4iLJw4/yU/l/zh_TW-j/MGfSk7f_pojgnaW3LRDg0VTLtRlJs3cle-QRxAOrTyCM5mInPOE2ExSamDtdguyUED9ssx_aaYc_EXptxL3faKf-YieWfF6PfYQhbYzXRPynYoeYrsrUpiDVdcwzRAh0Dv8jy9O1o_2ncJ1E_BfDODH3P482Yz_4vfOJLJ8_wgwP0xAGtxkevC5AzVBv_kkAv_-wGQ.js",
+          "error": "body_limit",
+          "status": 200
+        },
+        {
+          "url": "https://static.xx.fbcdn.net/rsrc.php/v4i3iN4/yd/l/zh_TW-j/FjJXoN-krs0IMyShCyRsne0pvGhic02RWDyM2JsewnzxnpjnrLkuHLI8u0gHd1B2Ty5tasDmEAkisKkAUqAF8VgvmuZuW6B824hnCDMPhhlFe-vRBdEggqe-Hs960K9kW-igsithtz-xbzws8iKaFvlAkFUIGyw5OgXwRDssElxBA9IKo444dPwK5j6-aBr4hUguC7EuSF_p3kfdReYlIbF0IDWJ6ksuRPkBabOc6Yoz05BWr-O6tp1RxhvItC-FXmonGdGo6cPWoOY1QjBbGCd82Q7_XSilv6e_LMT6N.js",
+          "error": "body_limit",
+          "status": 200
+        },
+        {
+          "url": "https://static.xx.fbcdn.net/rsrc.php/v4iLJw4/yU/l/zh_TW-j/MGfSk7f_pojgnaW3LRDg0VTLtRlJs3cle-QRxAOrTyCM5mInPOE2ExSamDtdguyUED9ssx_aaYc_EXptxL3faKf-YieWfF6PfYQhbYzXRPynYoeYrsrUpiDVdcwzRAh0Dv8jy9O1o_2ncJ1E_BfDODH3P482Yz_4vfOJLJ8_wgwP0xAGtxkevC5AzVBv_kkAv_-wGQ.js",
+          "error": "body_limit",
+          "status": 200
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Cannibal_Corpse",
+          "error": "http_403"
+        },
+        {
+          "url": "https://metalinjection.net/shocking-revelations/did-you-know-that-founding-cannibal-corpse-guitarist-bob-rusay-is-a-golf-instructor-now",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.metal-archives.com/artists/Bob_Rusay/54042",
+          "error": "http_403"
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/month",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "span"
+      ],
+      "verification": [
+        "supported"
+      ]
+    },
+    {
+      "id": "simpleqa-185",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Maharaj_Kishan_Bhan",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/year",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/year",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Year",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://baike.baidu.com/item/year/9562778",
+          "error": "http_403",
+          "status": 403
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Maharaj_Kishan_Bhan",
+          "error": "http_403"
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/year",
+          "error": "http_403"
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/year",
+          "error": "http_403"
+        },
+        {
+          "url": "https://baike.baidu.com/item/year/9562778",
+          "error": "http_403"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Year",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "abstain",
+        "abstain"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-3543",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Die_Toten_Hosen_discography",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.wikiwand.com/en/Die_Toten_Hosen_discography",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://de.wikipedia.org/wiki/Die_Toten_Hosen/Diskografie",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.offiziellecharts.de/suche?artist_search=Toten+Hosen&do_search=do",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://chart-history.net/cc/ccd-tote-hosen.pdf",
+          "error": "body_limit",
+          "status": 200
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Die_Toten_Hosen_discography",
+          "error": "http_403"
+        },
+        {
+          "url": "https://de.wikipedia.org/wiki/Die_Toten_Hosen/Diskografie",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.wikiwand.com/en/Die_Toten_Hosen_discography",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.offiziellecharts.de/suche?artist_search=Toten+Hosen&do_search=do",
+          "error": "http_403"
+        },
+        {
+          "url": "https://chart-history.net/cc/ccd-tote-hosen.pdf",
+          "error": "body_limit"
+        }
+      ],
+      "selector": [
+        "span",
+        "span"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-1367",
+      "signals": [
+        "RANK_OR_ANSWER_FORMAT_MISMATCH"
+      ],
+      "source_errors": [],
+      "search_failure_count": 0,
+      "engine_errors": [],
+      "selector": [
+        "span"
+      ],
+      "verification": [
+        "supported"
+      ]
+    },
+    {
+      "id": "simpleqa-1268",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "RANK_OR_ANSWER_FORMAT_MISMATCH"
+      ],
+      "source_errors": [
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/month",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.modernghana.com/news/1262870/ghana-mourns-death-of-former-first-lady-theresa.html",
+          "error": "http_403",
+          "status": 403
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://www.modernghana.com/news/1262870/ghana-mourns-death-of-former-first-lady-theresa.html",
+          "error": "http_403"
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/month",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "abstain",
+        "span"
+      ],
+      "verification": [
+        "supported"
+      ]
+    },
+    {
+      "id": "simpleqa-608",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Jeffrey_Epstein",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.tripadvisor.com.tw/Attractions-g60880-Activities-Anchorage_Alaska.html",
+          "error": "http_403",
+          "status": 403
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Jeffrey_Epstein",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.tripadvisor.com.tw/Attractions-g60880-Activities-Anchorage_Alaska.html",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "abstain",
+        "abstain"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-2406",
+      "signals": [
+        "RANK_OR_ANSWER_FORMAT_MISMATCH"
+      ],
+      "source_errors": [],
+      "search_failure_count": 0,
+      "engine_errors": [],
+      "selector": [
+        "span"
+      ],
+      "verification": [
+        "supported"
+      ]
+    },
+    {
+      "id": "simpleqa-297",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "CIT_EXACT_SOURCE_MISMATCH"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/List_of_In_Living_Color_cast_members",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/one",
+          "error": "http_403",
+          "status": 403
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/List_of_In_Living_Color_cast_members",
+          "error": "http_403"
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/one",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "span"
+      ],
+      "verification": [
+        "supported"
+      ]
+    },
+    {
+      "id": "simpleqa-2808",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Ministry_of_Power_(India)",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/date",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E/date",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.timeanddate.com/",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.timeanddate.com/date/dateadd.html",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://baike.baidu.com/item/date/16190419",
+          "error": "http_403",
+          "status": 403
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Ministry_of_Power_(India)",
+          "error": "http_403"
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/date",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.timeanddate.com/",
+          "error": "http_403"
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E/date",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.timeanddate.com/date/dateadd.html",
+          "error": "http_403"
+        },
+        {
+          "url": "https://baike.baidu.com/item/date/16190419",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "TimeoutError",
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-247",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "RANK_OR_ANSWER_FORMAT_MISMATCH"
+      ],
+      "source_errors": [
+        {
+          "url": "https://www.theolivepress.es/spain-news/2023/11/09/birthday-celebrations-for-first-elephant-born-in-spains-valencia-region/",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.theolivepress.es/spain-news/tag/baby-elephant-first-birthday/",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Makena_(elephant)",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://market.591.com.tw/38854",
+          "error": "ClientConnectorDNSError: Cannot connect to host market.591.com.tw:443 ssl:default [None]",
+          "status": 0
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://www.theolivepress.es/spain-news/2023/11/09/birthday-celebrations-for-first-elephant-born-in-spains-valencia-region/",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.theolivepress.es/spain-news/tag/baby-elephant-first-birthday/",
+          "error": "http_403"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Makena_(elephant)",
+          "error": "http_403"
+        },
+        {
+          "url": "https://market.591.com.tw/38854",
+          "error": "ClientConnectorDNSError: Cannot connect to host market.591.com.tw:443 ssl:default [None]"
+        }
+      ],
+      "selector": [
+        "http_503",
+        "http_503",
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-3266",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Mario_Echandi_Jim%C3%A9nez",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://es.wikipedia.org/wiki/Anexo:Presidentes_de_Costa_Rica",
+          "error": "http_403",
+          "status": 403
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Mario_Echandi_Jim%C3%A9nez",
+          "error": "http_403"
+        },
+        {
+          "url": "https://es.wikipedia.org/wiki/Anexo:Presidentes_de_Costa_Rica",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "http_503",
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-855",
+      "signals": [
+        "RANK_OR_ANSWER_FORMAT_MISMATCH"
+      ],
+      "source_errors": [],
+      "search_failure_count": 0,
+      "engine_errors": [],
+      "selector": [
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-3501",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Dangui_Oduber",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://everything.explained.today/Dangui_Oduber/",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.phocuswrightconference.com/Whos-Coming/Speakers/2023/Dangui-Oduber",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://pap.wikipedia.org/wiki/Dangui_Oduber",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://aw.linkedin.com/in/danguillaume-oduber-84274a295",
+          "error": "http_999",
+          "status": 999
+        },
+        {
+          "url": "https://static.xx.fbcdn.net/rsrc.php/v4imnN4/ym/l/zh_TW-j/MGfSk7f_pojgnaW3LRDg0VTLtRlJs3cle-QRxAOrTyCM5mInPOE2ExSamDtdguyUED9ssx_aaYc_EXptxL3faKf-YieWfF6PfYQhbYzXRPynYoogkEb0r1adGy9O1o_2ncJ182Yz_4vfOJL.js",
+          "error": "TimeoutError: ",
+          "status": 0
+        },
+        {
+          "url": "https://static.xx.fbcdn.net/rsrc.php/v4iviF4/y0/l/zh_TW-j/FjJXoN-krs00pvGhic02RWDyM2Jsewnzx8u0gHd1B2Ty7enLl0MSxr95tasDmEAkismuZuW6B824hvRBdEggqe-Hs960K9kW-igsithtz-xbzwUIGyw5OgXwREuSF_p3kfdR6ksuRPkBabOc6Yoz05BWr-fz6SeNubNMeNXURzZVh3CZbGCd82Q7_XSilv6e_LMT6N.js",
+          "error": "TimeoutError: ",
+          "status": 0
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Dangui_Oduber",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.phocuswrightconference.com/Whos-Coming/Speakers/2023/Dangui-Oduber",
+          "error": "http_403"
+        },
+        {
+          "url": "https://pap.wikipedia.org/wiki/Dangui_Oduber",
+          "error": "http_403"
+        },
+        {
+          "url": "https://everything.explained.today/Dangui_Oduber/",
+          "error": "http_403"
+        },
+        {
+          "url": "https://aw.linkedin.com/in/danguillaume-oduber-84274a295",
+          "error": "http_999"
+        }
+      ],
+      "selector": [
+        "http_503",
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-3529",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Band_of_Joy",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://everything.explained.today/Band_of_Joy/",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://heavymetal.fandom.com/wiki/Band_of_Joy",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://dictionary.cambridge.org/dictionary/english/originally",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/originally",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://reference.org/facts/Band_of_Joy/pwfX3BHz",
+          "error": "http_523",
+          "status": 523
+        },
+        {
+          "url": "https://cdn.taboola.com/libtrc/yahootwhk-network/loader.js",
+          "error": "ClientConnectionError: Connector is closed.",
+          "status": 0
+        },
+        {
+          "url": "https://loc.yahoo.com/geo/v1/user/location/current?optionalfields=connection",
+          "error": "ClientConnectionError: Connector is closed.",
+          "status": 0
+        },
+        {
+          "url": "https://securepubads.g.doubleclick.net/tag/js/gpt.js",
+          "error": "TimeoutError: ",
+          "status": 0
+        },
+        {
+          "url": "https://s.yimg.com/eh/prebid-config/bp-search.json",
+          "error": "TimeoutError: ",
+          "status": 0
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Band_of_Joy",
+          "error": "http_403"
+        },
+        {
+          "url": "https://reference.org/facts/Band_of_Joy/pwfX3BHz",
+          "error": "http_523"
+        },
+        {
+          "url": "https://everything.explained.today/Band_of_Joy/",
+          "error": "http_403"
+        },
+        {
+          "url": "https://heavymetal.fandom.com/wiki/Band_of_Joy",
+          "error": "http_403"
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/originally",
+          "error": "http_403"
+        },
+        {
+          "url": "https://dictionary.cambridge.org/dictionary/english/originally",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "http_503",
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-685",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://prabook.com/web/jean.preudhomme/2201366",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Jean_Preudhomme",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://everything.explained.today/Jean_Preudhomme/",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://commons.m.wikimedia.org/wiki/Jean_Preudhomme",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://fr.wikipedia.org/wiki/Jean_Preudhomme",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://wikiland.org/fr/Jean_Preudhomme",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.mahmah.ch/collection/artistes/preudhomme-jean",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.mahmah.ch:443 ssl:True [SSLCertVerificationError: (5, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate",
+          "status": 0
+        },
+        {
+          "url": "https://www.zhihu.com/question/2080688697410852069",
+          "error": "http_403",
+          "status": 403
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://prabook.com/web/jean.preudhomme/2201366",
+          "error": "http_403"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Jean_Preudhomme",
+          "error": "http_403"
+        },
+        {
+          "url": "https://commons.m.wikimedia.org/wiki/Jean_Preudhomme",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.mahmah.ch/collection/artistes/preudhomme-jean",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.mahmah.ch:443 ssl:True [SSLCertVerificationError: (5, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate"
+        },
+        {
+          "url": "https://everything.explained.today/Jean_Preudhomme/",
+          "error": "http_403"
+        },
+        {
+          "url": "https://fr.wikipedia.org/wiki/Jean_Preudhomme",
+          "error": "http_403"
+        },
+        {
+          "url": "https://wikiland.org/fr/Jean_Preudhomme",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.zhihu.com/question/2080688697410852069",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "http_503",
+        "http_503",
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-2307",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "SEA_PROVIDER_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://www.veethi.com/india-people/p._n._bhagwati-profile-9617-18.htm",
+          "error": "http_500",
+          "status": 500
+        }
+      ],
+      "search_failure_count": 1,
+      "engine_errors": [
+        {
+          "url": "https://www.veethi.com/india-people/p._n._bhagwati-profile-9617-18.htm",
+          "error": "http_500"
+        }
+      ],
+      "selector": [
+        "http_503",
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-2419",
+      "signals": [
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [],
+      "search_failure_count": 0,
+      "engine_errors": [],
+      "selector": [
+        "http_503",
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-3915",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "SEA_PROVIDER_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Battle_of_the_Nations_(Medieval_Tournament)",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://zh.wikipedia.org/wiki/%26TEAM",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://baike.baidu.com/item/%26TEAM/61987975",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://zh.wikipedia.org/zh-tw/%26TEAM",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://baike.baidu.com/item/Team/1434925",
+          "error": "http_403",
+          "status": 403
+        }
+      ],
+      "search_failure_count": 2,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Battle_of_the_Nations_(Medieval_Tournament)",
+          "error": "http_403"
+        },
+        {
+          "url": "https://zh.wikipedia.org/zh-tw/%26TEAM",
+          "error": "http_403"
+        },
+        {
+          "url": "https://baike.baidu.com/item/Team/1434925",
+          "error": "http_403"
+        },
+        {
+          "url": "https://zh.wikipedia.org/wiki/%26TEAM",
+          "error": "http_403"
+        },
+        {
+          "url": "https://baike.baidu.com/item/%26TEAM/61987975",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "http_503",
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-1230",
+      "signals": [
+        "CIT_EXACT_SOURCE_MISMATCH"
+      ],
+      "source_errors": [],
+      "search_failure_count": 0,
+      "engine_errors": [],
+      "selector": [
+        "span"
+      ],
+      "verification": [
+        "supported"
+      ]
+    },
+    {
+      "id": "simpleqa-2429",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "SEA_PROVIDER_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://sophiessuitcase.com/a-guide-to-tivoli-gardens/",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://crv.momoshop.com.tw/main",
+          "error": "ClientConnectorCertificateError: Cannot connect to host crv.momoshop.com.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (",
+          "status": 0
+        },
+        {
+          "url": "https://apple.momoshop.com.tw/main",
+          "error": "ClientConnectorCertificateError: Cannot connect to host apple.momoshop.com.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier",
+          "status": 0
+        },
+        {
+          "url": "https://lrp.momoshop.com.tw/main",
+          "error": "ClientConnectorCertificateError: Cannot connect to host lrp.momoshop.com.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (",
+          "status": 0
+        },
+        {
+          "url": "https://android.momoshop.com.tw/main",
+          "error": "ClientConnectorCertificateError: Cannot connect to host android.momoshop.com.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifi",
+          "status": 0
+        },
+        {
+          "url": "https://google.momoshop.com.tw/main",
+          "error": "ClientConnectorCertificateError: Cannot connect to host google.momoshop.com.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifie",
+          "status": 0
+        },
+        {
+          "url": "https://www.cmoney.tw/forum/futures/TXF1?s=p",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.cmoney.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c",
+          "status": 0
+        },
+        {
+          "url": "https://img4.momoshop.com.tw/ecm/img/online/account/20260924001/ErrorPage.31621d038a6ccc2e8e67d1500d35aa74e290a734.js",
+          "error": "ClientConnectorCertificateError: Cannot connect to host img4.momoshop.com.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier ",
+          "status": 0
+        },
+        {
+          "url": "https://img4.momoshop.com.tw/ecm/img/online/account/20260924001/933.31621d038a6ccc2e8e67d1500d35aa74e290a734.js",
+          "error": "ClientConnectorCertificateError: Cannot connect to host img4.momoshop.com.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier ",
+          "status": 0
+        }
+      ],
+      "search_failure_count": 2,
+      "engine_errors": [
+        {
+          "url": "https://sophiessuitcase.com/a-guide-to-tivoli-gardens/",
+          "error": "http_403"
+        },
+        {
+          "url": "https://lrp.momoshop.com.tw/main",
+          "error": "ClientConnectorCertificateError: Cannot connect to host lrp.momoshop.com.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier ("
+        },
+        {
+          "url": "https://apple.momoshop.com.tw/main",
+          "error": "ClientConnectorCertificateError: Cannot connect to host apple.momoshop.com.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier"
+        },
+        {
+          "url": "https://crv.momoshop.com.tw/main",
+          "error": "ClientConnectorCertificateError: Cannot connect to host crv.momoshop.com.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier ("
+        },
+        {
+          "url": "https://android.momoshop.com.tw/main",
+          "error": "ClientConnectorCertificateError: Cannot connect to host android.momoshop.com.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifi"
+        },
+        {
+          "url": "https://google.momoshop.com.tw/main",
+          "error": "ClientConnectorCertificateError: Cannot connect to host google.momoshop.com.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifie"
+        },
+        {
+          "url": "https://www.cmoney.tw/forum/futures/TXF1?s=p",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.cmoney.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c"
+        }
+      ],
+      "selector": [
+        "abstain",
+        "abstain"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-1146",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "SEA_PROVIDER_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://in.hellomagazine.com/lifestyle/20231119303703/indian-cricket-lesser-known-facts/",
+          "error": "http_404",
+          "status": 404
+        },
+        {
+          "url": "https://www.cmoney.tw/forum/stock/2344",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.cmoney.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c",
+          "status": 0
+        },
+        {
+          "url": "https://www.cmoney.tw/forum/stock/2344?s=technical-analysis",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.cmoney.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c",
+          "status": 0
+        },
+        {
+          "url": "https://zh.wikipedia.org/zh-tw/%E8%8F%AF%E9%82%A6%E9%9B%BB%E5%AD%90",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.104.com.tw/company/a5haxqo",
+          "error": "http_403",
+          "status": 403
+        }
+      ],
+      "search_failure_count": 2,
+      "engine_errors": [
+        {
+          "url": "https://in.hellomagazine.com/lifestyle/20231119303703/indian-cricket-lesser-known-facts/",
+          "error": "http_404"
+        },
+        {
+          "url": "https://www.cmoney.tw/forum/stock/2344?s=technical-analysis",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.cmoney.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c"
+        },
+        {
+          "url": "https://www.cmoney.tw/forum/stock/2344",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.cmoney.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c"
+        },
+        {
+          "url": "https://zh.wikipedia.org/zh-tw/%E8%8F%AF%E9%82%A6%E9%9B%BB%E5%AD%90",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.104.com.tw/company/a5haxqo",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "abstain",
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-3341",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "SEA_PROVIDER_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Daya_Ram_Thapar",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.104.com.tw/jobs/apply/analysis/7kvq3",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://static.xx.fbcdn.net/rsrc.php/v4imnN4/ym/l/zh_TW-j/MGfSk7f_pojgnaW3LRDg0VTLtRlJs3cle-QRxAOrTyCM5mInPOE2ExSamDtdguyUED9ssx_aaYc_EXptxL3faKf-YieWfF6PfYQhbYzXRPynYoogkEb0r1adGy9O1o_2ncJ182Yz_4vfOJL.js",
+          "error": "TimeoutError: ",
+          "status": 0
+        }
+      ],
+      "search_failure_count": 2,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Daya_Ram_Thapar",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.104.com.tw/jobs/apply/analysis/7kvq3",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "abstain",
+        "abstain"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-2095",
+      "signals": [
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [],
+      "search_failure_count": 0,
+      "engine_errors": [],
+      "selector": [
+        "abstain",
+        "abstain",
+        "abstain"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-1269",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "SEA_PROVIDER_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/World_Senior_Chess_Championship",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://pchome.megatime.com.tw/market/sto0",
+          "error": "ClientConnectorCertificateError: Cannot connect to host pchome.megatime.com.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifie",
+          "status": 0
+        },
+        {
+          "url": "https://pchome.megatime.com.tw/tse/",
+          "error": "ClientConnectorCertificateError: Cannot connect to host pchome.megatime.com.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifie",
+          "status": 0
+        },
+        {
+          "url": "https://pchome.megatime.com.tw/",
+          "error": "ClientConnectorCertificateError: Cannot connect to host pchome.megatime.com.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifie",
+          "status": 0
+        },
+        {
+          "url": "https://pchome.megatime.com.tw/prot/sto3/com0",
+          "error": "ClientConnectorCertificateError: Cannot connect to host pchome.megatime.com.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifie",
+          "status": 0
+        },
+        {
+          "url": "https://pchome.megatime.com.tw/group/",
+          "error": "ClientConnectorCertificateError: Cannot connect to host pchome.megatime.com.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifie",
+          "status": 0
+        },
+        {
+          "url": "https://pchome.megatime.com.tw/news/cat1",
+          "error": "ClientConnectorCertificateError: Cannot connect to host pchome.megatime.com.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifie",
+          "status": 0
+        }
+      ],
+      "search_failure_count": 2,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/World_Senior_Chess_Championship",
+          "error": "http_403"
+        },
+        {
+          "url": "https://pchome.megatime.com.tw/",
+          "error": "ClientConnectorCertificateError: Cannot connect to host pchome.megatime.com.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifie"
+        },
+        {
+          "url": "https://pchome.megatime.com.tw/tse/",
+          "error": "ClientConnectorCertificateError: Cannot connect to host pchome.megatime.com.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifie"
+        },
+        {
+          "url": "https://pchome.megatime.com.tw/market/sto0",
+          "error": "ClientConnectorCertificateError: Cannot connect to host pchome.megatime.com.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifie"
+        },
+        {
+          "url": "https://pchome.megatime.com.tw/prot/sto3/com0",
+          "error": "ClientConnectorCertificateError: Cannot connect to host pchome.megatime.com.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifie"
+        },
+        {
+          "url": "https://pchome.megatime.com.tw/group/",
+          "error": "ClientConnectorCertificateError: Cannot connect to host pchome.megatime.com.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifie"
+        },
+        {
+          "url": "https://pchome.megatime.com.tw/news/cat1",
+          "error": "ClientConnectorCertificateError: Cannot connect to host pchome.megatime.com.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifie"
+        }
+      ],
+      "selector": [
+        "abstain",
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-2967",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "SEA_PROVIDER_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Communist_League_(Denmark)",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://zh.wikipedia.org/zh-tw/%E8%94%A1%E8%A9%A9%E8%90%8D",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://s1.hdslb.com/bfs/static/cm/effect-ads/44770.4772e7f19217efbe.js",
+          "error": "body_limit",
+          "status": 200
+        },
+        {
+          "url": "https://s1.hdslb.com/bfs/static/shanks/fresh-space/assets/index-76bd2e5f.js",
+          "error": "body_limit",
+          "status": 200
+        },
+        {
+          "url": "https://s1.hdslb.com/bfs/seed/laputa-header/bili-header.umd.js",
+          "error": "body_limit",
+          "status": 200
+        },
+        {
+          "url": "https://api.vc.bilibili.com/link_draw/v2/Doc/index?type=recommend&page_num=0&page_size=20",
+          "error": "http_404",
+          "status": 404
+        },
+        {
+          "url": "https://s1.hdslb.com/bfs/static/shanks/laputa-search/assets/index-9c8665e7.js",
+          "error": "body_limit",
+          "status": 200
+        },
+        {
+          "url": "https://s1.hdslb.com/bfs/static/stone-free/dyn-home/1.dyn-home.d66ac1ce439d39e19433310996402fb128c0f617.js",
+          "error": "body_limit",
+          "status": 200
+        }
+      ],
+      "search_failure_count": 2,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Communist_League_(Denmark)",
+          "error": "http_403"
+        },
+        {
+          "url": "https://zh.wikipedia.org/zh-tw/%E8%94%A1%E8%A9%A9%E8%90%8D",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-333",
+      "signals": [
+        "RANK_OR_ANSWER_FORMAT_MISMATCH"
+      ],
+      "source_errors": [],
+      "search_failure_count": 0,
+      "engine_errors": [],
+      "selector": [
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-2693",
+      "signals": [
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [],
+      "search_failure_count": 0,
+      "engine_errors": [],
+      "selector": [
+        "http_503",
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-397",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "SEA_PROVIDER_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Nuwakot_District",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://tw.yahoo.com/",
+          "error": "http_429",
+          "status": 429
+        },
+        {
+          "url": "https://img.yec.tw/zq/auc/frontend/vendor.ab54ed8619172aa65aad.js",
+          "error": "body_limit",
+          "status": 200
+        }
+      ],
+      "search_failure_count": 2,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Nuwakot_District",
+          "error": "http_403"
+        },
+        {
+          "url": "https://tw.yahoo.com/",
+          "error": "http_429"
+        }
+      ],
+      "selector": [
+        "http_503",
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-2921",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "SEA_PROVIDER_FAILURE",
+        "RANK_OR_ANSWER_FORMAT_MISMATCH"
+      ],
+      "source_errors": [
+        {
+          "url": "https://aldeilis.net/terror/1333.pdf",
+          "error": "http_404",
+          "status": 404
+        },
+        {
+          "url": "https://zh.wikipedia.org/wiki/MD5",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://zh.wikipedia.org/zh-tw/MD5",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://baike.baidu.com/item/MD5/212708",
+          "error": "http_403",
+          "status": 403
+        }
+      ],
+      "search_failure_count": 2,
+      "engine_errors": [
+        {
+          "url": "https://aldeilis.net/terror/1333.pdf",
+          "error": "http_404"
+        },
+        {
+          "url": "https://zh.wikipedia.org/zh-tw/MD5",
+          "error": "http_403"
+        },
+        {
+          "url": "https://zh.wikipedia.org/wiki/MD5",
+          "error": "http_403"
+        },
+        {
+          "url": "https://baike.baidu.com/item/MD5/212708",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-15",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://museumofbadart.org/poor-traits/_wp_link_placeholder",
+          "error": "http_404",
+          "status": 404
+        },
+        {
+          "url": "https://www.youtube.com/s/_/ytmainappweb/_/js/k=ytmainappweb.kevlar_base.en_US.Yr8Cp34MrMI.es5.O/am=AAAAAAgACEBK/d=1/rs=AGKMywGFmTRdHK4hC_PVLMSSCtwidW6O-A/m=kevlar_base_module,kevlar_main_module,kevlar_base_sync_mod_chunk",
+          "error": "body_limit",
+          "status": 200
+        },
+        {
+          "url": "https://www.youtube.com/s/player/c271e571/player_ias.vflset/zh_TW/base.js",
+          "error": "body_limit",
+          "status": 200
+        },
+        {
+          "url": "https://www.youtube.com/s/_/ytmainappweb/_/js/k=ytmainappweb.kevlar_base.en_US.Yr8Cp34MrMI.es5.O/am=AAAAABAACEBK/d=1/rs=AGKMywG-VS3J26iXz0Mmw4E7WA9KIYE2Zw/m=kevlar_base_module,kevlar_main_module,kevlar_base_sync_mod_chunk",
+          "error": "body_limit",
+          "status": 200
+        },
+        {
+          "url": "https://www.youtube.com/s/player/67288f35/player_ias.vflset/zh_TW/base.js",
+          "error": "body_limit",
+          "status": 200
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://museumofbadart.org/poor-traits/_wp_link_placeholder",
+          "error": "http_404"
+        }
+      ],
+      "selector": [
+        "http_503",
+        "http_503",
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-1592",
+      "signals": [
+        "RANK_OR_ANSWER_FORMAT_MISMATCH"
+      ],
+      "source_errors": [],
+      "search_failure_count": 0,
+      "engine_errors": [],
+      "selector": [
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-4141",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://www.lynmuseum.ca/tag/leeds-and-grenville-county-ontario/",
+          "error": "TimeoutError: ",
+          "status": 0
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://www.lynmuseum.ca/tag/leeds-and-grenville-county-ontario/",
+          "error": "TimeoutError: "
+        }
+      ],
+      "selector": [
+        "http_503",
+        "http_503",
+        "span"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-1640",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "SEA_PROVIDER_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Miriam_A._Ferguson",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.387.com.tw/",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.387.com.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.",
+          "status": 0
+        }
+      ],
+      "search_failure_count": 2,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Miriam_A._Ferguson",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.387.com.tw/",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.387.com.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl."
+        }
+      ],
+      "selector": [
+        "abstain",
+        "abstain"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-3503",
+      "signals": [
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [],
+      "search_failure_count": 0,
+      "engine_errors": [],
+      "selector": [
+        "span",
+        "span"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-4040",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "SEA_PROVIDER_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://vgmdb.net/album/530",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.macromicro.me/cds",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://hk.investing.com/rates-bonds/world-cds",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.fsc.gov.tw/fckdowndoc?file=/%E5%AF%A6%E5%8B%99%E6%96%B0%E7%9F%A530-11.pdf&flag=doc",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.fsc.gov.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.",
+          "status": 0
+        },
+        {
+          "url": "https://www.wwpkg.com.hk/info/greece_travel",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.wwpkg.com.hk:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certific",
+          "status": 0
+        }
+      ],
+      "search_failure_count": 2,
+      "engine_errors": [
+        {
+          "url": "https://vgmdb.net/album/530",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.macromicro.me/cds",
+          "error": "http_403"
+        },
+        {
+          "url": "https://hk.investing.com/rates-bonds/world-cds",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.fsc.gov.tw/fckdowndoc?file=/%E5%AF%A6%E5%8B%99%E6%96%B0%E7%9F%A530-11.pdf&flag=doc",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.fsc.gov.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl."
+        },
+        {
+          "url": "https://www.wwpkg.com.hk/info/greece_travel",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.wwpkg.com.hk:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certific"
+        }
+      ],
+      "selector": [
+        "abstain",
+        "abstain"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-1898",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "SEA_PROVIDER_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Busbie_Castle",
+          "error": "http_403",
+          "status": 403
+        }
+      ],
+      "search_failure_count": 2,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Busbie_Castle",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "abstain",
+        "abstain"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-477",
+      "signals": [
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [],
+      "search_failure_count": 0,
+      "engine_errors": [],
+      "selector": [
+        "abstain",
+        "abstain",
+        "abstain"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-1040",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "SEA_PROVIDER_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://www.zhihu.com/question/2076037772641562816",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.zhihu.com/question/1979512454548512922",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.zhihu.com/question/2049899564811773860",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.zhihu.com/question/2079918542762334135",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.zhihu.com/question/2083952279225423307",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.zhihu.com/question/384174013",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.zhihu.com/question/2084674456329495646",
+          "error": "http_403",
+          "status": 403
+        }
+      ],
+      "search_failure_count": 2,
+      "engine_errors": [
+        {
+          "url": "https://www.zhihu.com/question/384174013",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.zhihu.com/question/1979512454548512922",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.zhihu.com/question/2083952279225423307",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.zhihu.com/question/2076037772641562816",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.zhihu.com/question/2049899564811773860",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.zhihu.com/question/2084674456329495646",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.zhihu.com/question/2079918542762334135",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "abstain",
+        "abstain",
+        "abstain"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-1742",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "SEA_PROVIDER_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://www.youtube.com/s/_/ytmainappweb/_/js/k=ytmainappweb.kevlar_base.en_US.Yr8Cp34MrMI.es5.O/am=AAAAEAAACEBK/d=1/rs=AGKMywFGZA1NJgRNc2nIqUXooapKF4E2hg/m=kevlar_base_module,kevlar_main_module,kevlar_base_sync_mod_chunk",
+          "error": "body_limit",
+          "status": 200
+        },
+        {
+          "url": "https://www.zhihu.com/question/1906110628365566118",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.zhihu.com/question/1903231775980913051",
+          "error": "http_403",
+          "status": 403
+        }
+      ],
+      "search_failure_count": 2,
+      "engine_errors": [
+        {
+          "url": "https://www.zhihu.com/question/1903231775980913051",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.zhihu.com/question/1906110628365566118",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "abstain",
+        "abstain",
+        "abstain"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-669",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "SEA_PROVIDER_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/streamer",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Online_streamer",
+          "error": "http_403",
+          "status": 403
+        }
+      ],
+      "search_failure_count": 2,
+      "engine_errors": [
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/streamer",
+          "error": "http_403"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Online_streamer",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "abstain",
+        "model_invalid_json",
+        "abstain"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-488",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://www.jambase.com/festival/cape-town-international-jazz-festival-2019",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.concertarchives.org/venues/cape-town-international-jazz-festival?year=2019",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://static.cdninstagram.com/rsrc.php/v4iHGP4/yO/l/en_US/6YWlNidjzRdrUkXQLjUI6XOW2lhI5De4qZNyC5hJisfF3AXB7xnq9W5qdW7o-7YY0u-0RIVibATJIVtRgMno9IpLIZcjetPOp92Nu2WBjDe5VquTPV4YS0_cuEcpPYRW7WQ26WLK0vAtfWu.js",
+          "error": "body_limit",
+          "status": 200
+        },
+        {
+          "url": "https://www.youtube.com/s/_/ytmainappweb/_/js/k=ytmainappweb.kevlar_base.en_US.Yr8Cp34MrMI.es5.O/am=AAAAABAACEBK/d=1/rs=AGKMywG-VS3J26iXz0Mmw4E7WA9KIYE2Zw/m=kevlar_base_module,kevlar_main_module,kevlar_base_sync_mod_chunk?cb=abc",
+          "error": "body_limit",
+          "status": 200
+        },
+        {
+          "url": "https://www.youtube.com/s/player/c271e571/player_ias.vflset/zh_TW/base.js",
+          "error": "body_limit",
+          "status": 200
+        },
+        {
+          "url": "https://cms-static.cdn.91app.com/lib/cms-theme-core/3.106.15/js/nineyi.themeCore.desktop.category.vendor-91app.module.js?timestamp=1693903690",
+          "error": "body_limit",
+          "status": 200
+        },
+        {
+          "url": "https://cms-static.cdn.91app.com/lib/cms-theme-core/3.106.15/js/nineyi.themeCore.desktop.cms.vendor.module.js?timestamp=1693903690",
+          "error": "body_limit",
+          "status": 200
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://www.jambase.com/festival/cape-town-international-jazz-festival-2019",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.concertarchives.org/venues/cape-town-international-jazz-festival?year=2019",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "abstain"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-3958",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "RANK_OR_ANSWER_FORMAT_MISMATCH"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Honda_RC143",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://everything.explained.today/Honda_RC143/",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/dry",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E/dry",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://baike.baidu.com/item/dry/6356866",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://reference.org/facts/Honda_RC143/GQKgsL5f",
+          "error": "TimeoutError: ",
+          "status": 0
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Honda_RC143",
+          "error": "http_403"
+        },
+        {
+          "url": "https://everything.explained.today/Honda_RC143/",
+          "error": "http_403"
+        },
+        {
+          "url": "https://reference.org/facts/Honda_RC143/GQKgsL5f",
+          "error": "TimeoutError: "
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/dry",
+          "error": "http_403"
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E/dry",
+          "error": "http_403"
+        },
+        {
+          "url": "https://baike.baidu.com/item/dry/6356866",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "span"
+      ],
+      "verification": [
+        "supported"
+      ]
+    },
+    {
+      "id": "simpleqa-2277",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "RANK_OR_ANSWER_FORMAT_MISMATCH"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Togo",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://everything.explained.today/Languages_of_Togo/",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/indigenous",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://livebreathedigital.net/Resources/36JXne/5TW226/togo-indigenous__languages__designated-1975.pdf",
+          "error": "TimeoutError: ",
+          "status": 0
+        },
+        {
+          "url": "https://reference.org/facts/Languages_of_Togo/caEAT4FS",
+          "error": "TimeoutError: ",
+          "status": 0
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Togo",
+          "error": "http_403"
+        },
+        {
+          "url": "https://livebreathedigital.net/Resources/36JXne/5TW226/togo-indigenous__languages__designated-1975.pdf",
+          "error": "TimeoutError: "
+        },
+        {
+          "url": "https://everything.explained.today/Languages_of_Togo/",
+          "error": "http_403"
+        },
+        {
+          "url": "https://reference.org/facts/Languages_of_Togo/caEAT4FS",
+          "error": "TimeoutError: "
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/indigenous",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "model_invalid_selection",
+        "model_invalid_selection"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-1400",
+      "signals": [
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [],
+      "search_failure_count": 0,
+      "engine_errors": [],
+      "selector": [
+        "span",
+        "span"
+      ],
+      "verification": [
+        "unsupported",
+        "unsupported"
+      ]
+    },
+    {
+      "id": "simpleqa-1971",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://historicengland.org.uk/listing/the-list/list-entry/1090695",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Stonehouse,_Gloucestershire",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/list",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://britishlistedbuildings.co.uk/101090695-bede-cottage-stonehouse",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://britishlistedbuildings.co.uk/england/stonehouse-stroud-gloucestershire",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E/list",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://mapservices.historicengland.org.uk/printwebservicehle/StatutoryPrint.svc/89976/HLE_A4L_Grade%7CHLE_A3L_Grade.pdf",
+          "error": "http_404",
+          "status": 404
+        },
+        {
+          "url": "https://mapservices.historicengland.org.uk/printwebservicehle/StatutoryPrint.svc/308436/HLE_A4L_Grade%7CHLE_A3L_Grade.pdf",
+          "error": "http_404",
+          "status": 404
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://historicengland.org.uk/listing/the-list/list-entry/1090695",
+          "error": "http_403"
+        },
+        {
+          "url": "https://britishlistedbuildings.co.uk/england/stonehouse-stroud-gloucestershire",
+          "error": "http_403"
+        },
+        {
+          "url": "https://mapservices.historicengland.org.uk/printwebservicehle/StatutoryPrint.svc/89976/HLE_A4L_Grade%7CHLE_A3L_Grade.pdf",
+          "error": "http_404"
+        },
+        {
+          "url": "https://mapservices.historicengland.org.uk/printwebservicehle/StatutoryPrint.svc/308436/HLE_A4L_Grade%7CHLE_A3L_Grade.pdf",
+          "error": "http_404"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Stonehouse,_Gloucestershire",
+          "error": "http_403"
+        },
+        {
+          "url": "https://britishlistedbuildings.co.uk/101090695-bede-cottage-stonehouse",
+          "error": "http_403"
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/list",
+          "error": "http_403"
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E/list",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "abstain",
+        "abstain"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-36",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://www.dawn.com/news/1489714",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/month",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.timeanddate.com/calendar/months/",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://uptogo.com.tw/%e6%95%99%e8%82%b2/%e8%8b%b1%e8%aa%9e%e5%ad%b8%e7%bf%92/mth%e4%bb%80%e9%ba%bc%e6%84%8f%e6%80%9d%ef%bc%9f/",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://baike.baidu.com/item/Month/2949174",
+          "error": "http_403",
+          "status": 403
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://www.dawn.com/news/1489714",
+          "error": "http_403"
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/month",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.timeanddate.com/calendar/months/",
+          "error": "http_403"
+        },
+        {
+          "url": "https://baike.baidu.com/item/Month/2949174",
+          "error": "http_403"
+        },
+        {
+          "url": "https://uptogo.com.tw/%e6%95%99%e8%82%b2/%e8%8b%b1%e8%aa%9e%e5%ad%b8%e7%bf%92/mth%e4%bb%80%e9%ba%bc%e6%84%8f%e6%80%9d%ef%bc%9f/",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "abstain",
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-1061",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "RANK_OR_ANSWER_FORMAT_MISMATCH"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/List_of_mayors_of_Toronto",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://everything.explained.today/List_of_mayors_of_Toronto/",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://canadacommons.ca/artifacts/11762209/toronto-mayors/12653501/",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.wikiwand.com/en/List_of_mayors_of_Toronto",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://static.xx.fbcdn.net/rsrc.php/v4imnN4/ym/l/zh_TW-j/MGfSk7f_pojgnaW3LRDg0VTLtRlJs3cle-QRxAOrTyCM5mInPOE2ExSamDtdguyUED9ssx_aaYc_EXptxL3faKf-YieWfF6PfYQhbYzXRPynYoogkEb0r1adGy9O1o_2ncJ182Yz_4vfOJL.js",
+          "error": "body_limit",
+          "status": 200
+        },
+        {
+          "url": "https://static.xx.fbcdn.net/rsrc.php/v4/yV/r/uKOp7QGpVDd.js",
+          "error": "TimeoutError: ",
+          "status": 0
+        },
+        {
+          "url": "https://static.xx.fbcdn.net/rsrc.php/v4iEON4/yJ/l/zh_TW-j/FjJXoN-krs00pvGhic02RWDyM2JsewnzxpOvgJsv7oUa8u0gHd1B2Ty7enLl0MSxr95tasDmEAkismuZuW6B824hBd_zfsd93rYvRBdEggqe-Hs960K9kW-igsithtz-xbzwUIGyw5OgXwRkyNBgXwqXfPzGw1kBxSHPo-aBr4hUguC7iUkXRQWpuiTc6Yoz05BWr-hXxMuoJnLStD7ovRAk9ANCfz6SeNubNMeFtterFAppL7NXURzZVh3CZbGCd82Q7_XSiIBc-pnSJHF.js",
+          "error": "TimeoutError: ",
+          "status": 0
+        },
+        {
+          "url": "https://static.xx.fbcdn.net/rsrc.php/v4iZDi4/y-/l/zh_TW-j/npjnrLkuHLI5wIzmfoZ3vCeYrsrUpiDVdcwzRAh0Dv8jFTEn82ATrsKnCDMPhhlFe-COc4897tU7DE_BfDODH3P4GQr1MoMibJu5LLpd-T4dARs8iKaFvlAkF5oCP3I-99kStxkevC5AzVBDssElxBA9IKxrCLwMnLV2-UBC-AdTQJOPomKlkhxKM6u3Xv8fkrLta4vwyBBkHyDaseYlIbF0IDWJnbAP0mpmgszEovd9EblpWPg_kjLLoWFVTPkn3QsczGffC-FXmonGdGo6cPWoOY1QjBG4ZIZnWW_m7yd0bHLXcaSH_-YClju8OFixPjc0P_X2v5.js",
+          "error": "TimeoutError: ",
+          "status": 0
+        },
+        {
+          "url": "https://static.xx.fbcdn.net/rsrc.php/v4icYL4/yn/l/zh_TW-j/HWKeSghJUKL.js",
+          "error": "TimeoutError: ",
+          "status": 0
+        },
+        {
+          "url": "https://static.xx.fbcdn.net/rsrc.php/v4/yk/r/1Z1tmdvjtSC.js",
+          "error": "TimeoutError: ",
+          "status": 0
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/List_of_mayors_of_Toronto",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.wikiwand.com/en/List_of_mayors_of_Toronto",
+          "error": "http_403"
+        },
+        {
+          "url": "https://canadacommons.ca/artifacts/11762209/toronto-mayors/12653501/",
+          "error": "http_403"
+        },
+        {
+          "url": "https://everything.explained.today/List_of_mayors_of_Toronto/",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "http_503",
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-765",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/K%C3%B6ln_Frankfurter_Stra%C3%9Fe_station",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://everything.explained.today/K%C3%B6ln-Frankfurter_Stra%C3%9Fe_station/",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.routeyou.com/en-de/location/view/47882399",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/month",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q2410431",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://de.wikipedia.org/wiki/Bahnhof_K%C3%B6ln_Frankfurter_Stra%C3%9Fe",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://nl.wikipedia.org/wiki/Station_K%C3%B6ln_Frankfurter_Stra%C3%9Fe",
+          "error": "http_403",
+          "status": 403
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/K%C3%B6ln_Frankfurter_Stra%C3%9Fe_station",
+          "error": "http_403"
+        },
+        {
+          "url": "https://everything.explained.today/K%C3%B6ln-Frankfurter_Stra%C3%9Fe_station/",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.routeyou.com/en-de/location/view/47882399",
+          "error": "http_403"
+        },
+        {
+          "url": "https://nl.wikipedia.org/wiki/Station_K%C3%B6ln_Frankfurter_Stra%C3%9Fe",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.wikidata.org/wiki/Q2410431",
+          "error": "http_403"
+        },
+        {
+          "url": "https://de.wikipedia.org/wiki/Bahnhof_K%C3%B6ln_Frankfurter_Stra%C3%9Fe",
+          "error": "http_403"
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/month",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "http_503",
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-202",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "RANK_OR_ANSWER_FORMAT_MISMATCH"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/List_of_sole_survivors_of_aviation_accidents_and_incidents",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://everything.explained.today/2019_Saha_Airlines_Boeing_707_crash/",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://independent.ng/sole-survivor-on-the-boeing-707-military-cargo-plane-crash/",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.zhihu.com/question/52850317",
+          "error": "http_403",
+          "status": 403
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/List_of_sole_survivors_of_aviation_accidents_and_incidents",
+          "error": "http_403"
+        },
+        {
+          "url": "https://everything.explained.today/2019_Saha_Airlines_Boeing_707_crash/",
+          "error": "http_403"
+        },
+        {
+          "url": "https://independent.ng/sole-survivor-on-the-boeing-707-military-cargo-plane-crash/",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.zhihu.com/question/52850317",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "http_503",
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-2218",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Risen_Christ_%28Michelangelo",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/year",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/year",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Year",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://baike.baidu.com/item/year/9562778",
+          "error": "http_403",
+          "status": 403
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Risen_Christ_%28Michelangelo",
+          "error": "http_403"
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/year",
+          "error": "http_403"
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/year",
+          "error": "http_403"
+        },
+        {
+          "url": "https://baike.baidu.com/item/year/9562778",
+          "error": "http_403"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Year",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "http_503",
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-3342",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://ia801308.us.archive.org/19/items/historickingston03kinguoft/historickingston03kinguoft.pdf",
+          "error": "TimeoutError: ",
+          "status": 0
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://ia801308.us.archive.org/19/items/historickingston03kinguoft/historickingston03kinguoft.pdf",
+          "error": "TimeoutError: "
+        }
+      ],
+      "selector": [
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-59",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://www.livefutbol.com/goleadores/copa-libertadores-1967/",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.worldfootball.net/competition/co24/conmebol-copa-libertadores/se4893/1967/statistics-scorers/",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/1967_Copa_Libertadores_Finals",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/1967_Copa_Libertadores",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.worldfootball.net/competition/co24/conmebol-copa-libertadores/se4893/1967/statistics-goals",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://es.wikipedia.org/wiki/Copa_Libertadores_1967",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.cmoney.tw/forum/stock/8358?s=technical-analysis",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.cmoney.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c",
+          "status": 0
+        },
+        {
+          "url": "https://es.wikipedia.org/wiki/Anexo:Final_de_la_Copa_Libertadores_1967",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.youtube.com/s/player/c271e571/player_ias.vflset/zh_TW/base.js",
+          "error": "body_limit",
+          "status": 200
+        },
+        {
+          "url": "https://www.youtube.com/s/_/ytmainappweb/_/js/k=ytmainappweb.kevlar_base.en_US.Yr8Cp34MrMI.es5.O/am=AAAAAAgACEBK/d=1/rs=AGKMywGFmTRdHK4hC_PVLMSSCtwidW6O-A/m=kevlar_base_module,kevlar_main_module,kevlar_base_sync_mod_chunk",
+          "error": "body_limit",
+          "status": 200
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://www.livefutbol.com/goleadores/copa-libertadores-1967/",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.worldfootball.net/competition/co24/conmebol-copa-libertadores/se4893/1967/statistics-scorers/",
+          "error": "http_403"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/1967_Copa_Libertadores",
+          "error": "http_403"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/1967_Copa_Libertadores_Finals",
+          "error": "http_403"
+        },
+        {
+          "url": "https://es.wikipedia.org/wiki/Copa_Libertadores_1967",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.worldfootball.net/competition/co24/conmebol-copa-libertadores/se4893/1967/statistics-goals",
+          "error": "http_403"
+        },
+        {
+          "url": "https://es.wikipedia.org/wiki/Anexo:Final_de_la_Copa_Libertadores_1967",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.cmoney.tw/forum/stock/8358?s=technical-analysis",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.cmoney.tw:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Subject Key Identifier (_ssl.c"
+        }
+      ],
+      "selector": [
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-4165",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "RANK_OR_ANSWER_FORMAT_MISMATCH"
+      ],
+      "source_errors": [
+        {
+          "url": "https://www.learnedsociety.wales/fellow/mari-lloyd-williams-2/",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.zhihu.com/question/2073956446673422218",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.zhihu.com/question/583232012",
+          "error": "http_403",
+          "status": 403
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://www.learnedsociety.wales/fellow/mari-lloyd-williams-2/",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.zhihu.com/question/2073956446673422218",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.zhihu.com/question/583232012",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "http_503",
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-427",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "RANK_OR_ANSWER_FORMAT_MISMATCH"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Kazakh_Soviet_Socialist_Republic",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://247tempo.com/the-15-republics-that-made-up-the-soviet-union-and-where-they-are-today/",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://simple.wikipedia.org/wiki/Soviet_Union",
+          "error": "http_403",
+          "status": 403
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Kazakh_Soviet_Socialist_Republic",
+          "error": "http_403"
+        },
+        {
+          "url": "https://247tempo.com/the-15-republics-that-made-up-the-soviet-union-and-where-they-are-today/",
+          "error": "http_403"
+        },
+        {
+          "url": "https://simple.wikipedia.org/wiki/Soviet_Union",
+          "error": "http_403"
+        }
+      ],
+      "selector": [
+        "http_503",
+        "http_503"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-1975",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "RANK_OR_ANSWER_FORMAT_MISMATCH"
+      ],
+      "source_errors": [
+        {
+          "url": "https://assets.pingone.com/davinci/latest/davinci.js",
+          "error": "body_limit",
+          "status": 200
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [],
+      "selector": [
+        "http_503",
+        "model_invalid_json",
+        "TimeoutError"
+      ],
+      "verification": []
+    },
+    {
+      "id": "simpleqa-2326",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "CIT_EXACT_SOURCE_MISMATCH"
+      ],
+      "source_errors": [
+        {
+          "url": "https://gw.geneanet.org/comrade28?lang=en&n=anhalt+dessau&p=princess+bathildis+of",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Princess_Bathildis_of_Anhalt-Dessau",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://da.wikipedia.org/wiki/Prinsesse_Bathildis_af_Anhalt-Dessau",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://nl.wikipedia.org/wiki/Bathildis_van_Anhalt-Dessau",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://fr.wikipedia.org/wiki/Bathilde_d%27Anhalt-Dessau",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.deutsche-biographie.de/gnd1269610872.html",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.deutsche-biographie.de:443 ssl:True [SSLCertVerificationError: (5, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issue",
+          "status": 0
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://gw.geneanet.org/comrade28?lang=en&n=anhalt+dessau&p=princess+bathildis+of",
+          "error": "http_403"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Princess_Bathildis_of_Anhalt-Dessau",
+          "error": "http_403"
+        },
+        {
+          "url": "https://nl.wikipedia.org/wiki/Bathildis_van_Anhalt-Dessau",
+          "error": "http_403"
+        },
+        {
+          "url": "https://da.wikipedia.org/wiki/Prinsesse_Bathildis_af_Anhalt-Dessau",
+          "error": "http_403"
+        },
+        {
+          "url": "https://fr.wikipedia.org/wiki/Bathilde_d%27Anhalt-Dessau",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.deutsche-biographie.de/gnd1269610872.html",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.deutsche-biographie.de:443 ssl:True [SSLCertVerificationError: (5, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issue"
+        }
+      ],
+      "selector": [
+        "span"
+      ],
+      "verification": [
+        "supported"
+      ]
+    },
+    {
+      "id": "simpleqa-1889",
+      "signals": [
+        "NET_SOURCE_FAILURE",
+        "ABS_UNANSWERED"
+      ],
+      "source_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Third_Day",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://elpee.jp/artist/Third%20Day/",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.musicvf.com/song.php?id=85399",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.twt.com.tw/",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.twt.com.tw:443 ssl:True [SSLCertVerificationError: (5, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificat",
+          "status": 0
+        },
+        {
+          "url": "https://www.musicvf.com/Third+Day.songs",
+          "error": "http_403",
+          "status": 403
+        },
+        {
+          "url": "https://www.twt.com.tw/page.aspx?id=175",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.twt.com.tw:443 ssl:True [SSLCertVerificationError: (5, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificat",
+          "status": 0
+        },
+        {
+          "url": "https://payment.twt.com.tw/",
+          "error": "ClientConnectorCertificateError: Cannot connect to host payment.twt.com.tw:443 ssl:True [SSLCertVerificationError: (5, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certif",
+          "status": 0
+        }
+      ],
+      "search_failure_count": 0,
+      "engine_errors": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Third_Day",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.musicvf.com/song.php?id=85399",
+          "error": "http_403"
+        },
+        {
+          "url": "https://elpee.jp/artist/Third%20Day/",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.musicvf.com/Third+Day.songs",
+          "error": "http_403"
+        },
+        {
+          "url": "https://www.twt.com.tw/",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.twt.com.tw:443 ssl:True [SSLCertVerificationError: (5, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificat"
+        },
+        {
+          "url": "https://www.twt.com.tw/page.aspx?id=175",
+          "error": "ClientConnectorCertificateError: Cannot connect to host www.twt.com.tw:443 ssl:True [SSLCertVerificationError: (5, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificat"
+        },
+        {
+          "url": "https://payment.twt.com.tw/",
+          "error": "ClientConnectorCertificateError: Cannot connect to host payment.twt.com.tw:443 ssl:True [SSLCertVerificationError: (5, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certif"
+        }
+      ],
+      "selector": [
+        "abstain",
+        "abstain"
+      ],
+      "verification": []
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "scope": "Actual current title discovery + guarded public GETs from original question, URL, recorded hints; free official API only; no model/browser; retrieval evidence only.",
+  "case_id": "simpleqa-516",
+  "question": "What was the age range of the drivers whose EEG data was collected in the 2021 research paper titled \"EEG-Based Driving Fatigue Detection Using a Two-Level Learning Hierarchy Radial Basis Function\" by Ziwu Ren et al.?",
+  "starting_url": "https://www.researchgate.net/publication/349291260_EEG-Based_Driving_Fatigue_Detection_Using_a_Two-Level_Learning_Hierarchy_Radial_Basis_Function",
+  "links": [
+    [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC7905350/",
+      "EEG-Based Driving Fatigue Detection Using a Two-Level Learning Hierarchy Radial Basis Function."
+    ]
+  ],
+  "events": [
+    {
+      "url": "https://www.researchgate.net/publication/349291260_EEG-Based_Driving_Fatigue_Detection_Using_a_Two-Level_Learning_Hierarchy_Radial_Basis_Function",
+      "final": "https://www.researchgate.net/publication/349291260_EEG-Based_Driving_Fatigue_Detection_Using_a_Two-Level_Learning_Hierarchy_Radial_Basis_Function",
+      "status": 403,
+      "bytes": 0,
+      "error": "http_403",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://www.bing.com/search?q=age+range+drivers+whose+eeg+data+collected+2021+research+paper+titled+eeg-based+driving+fatigue+detection+two-level+learning+hierarchy+radial+basis+function+ziwu+ren+et+al+based+two+level+eeg+driving+fatigue+age+range+driver+age+eeg+study",
+      "final": "https://www.bing.com/search?q=age+range+drivers+whose+eeg+data+collected+2021+research+paper+titled+eeg-based+driving+fatigue+detection+two-level+learning+hierarchy+radial+basis+function+ziwu+ren+et+al+based+two+level+eeg+driving+fatigue+age+range+driver+age+eeg+study",
+      "status": 200,
+      "bytes": 116268,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://www.bing.com/search?q=age+range+drivers+whose+eeg+data+collected+2021+research+paper+titled+eeg-based+driving+fatigue+detection+two-level+learning+hierarchy+radial+basis+function+ziwu+ren+et+al+based+two+level",
+      "final": "https://www.bing.com/search?q=age+range+drivers+whose+eeg+data+collected+2021+research+paper+titled+eeg-based+driving+fatigue+detection+two-level+learning+hierarchy+radial+basis+function+ziwu+ren+et+al+based+two+level",
+      "status": 200,
+      "bytes": 120607,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://html.duckduckgo.com/html/?q=age+range+drivers+whose+eeg+data+collected+2021+research+paper+titled+eeg-based+driving+fatigue+detection+two-level+learning+hierarchy+radial+basis+function+ziwu+ren+et+al+based+two+level+eeg+driving+fatigue+age+range+driver+age+eeg+study",
+      "final": "https://html.duckduckgo.com/html/?q=age+range+drivers+whose+eeg+data+collected+2021+research+paper+titled+eeg-based+driving+fatigue+detection+two-level+learning+hierarchy+radial+basis+function+ziwu+ren+et+al+based+two+level+eeg+driving+fatigue+age+range+driver+age+eeg+study",
+      "status": 202,
+      "bytes": 14686,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://html.duckduckgo.com/html/?q=age+range+drivers+whose+eeg+data+collected+2021+research+paper+titled+eeg-based+driving+fatigue+detection+two-level+learning+hierarchy+radial+basis+function+ziwu+ren+et+al+based+two+level",
+      "final": "https://html.duckduckgo.com/html/?q=age+range+drivers+whose+eeg+data+collected+2021+research+paper+titled+eeg-based+driving+fatigue+detection+two-level+learning+hierarchy+radial+basis+function+ziwu+ren+et+al+based+two+level",
+      "status": 202,
+      "bytes": 14608,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22EEG-Based%20Driving%20Fatigue%20Detection%20Using%20a%20Two-Level%20Learning%20Hierarchy%20Radial%20Basis%20Function%22&format=json&pageSize=3&resultType=core",
+      "final": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22EEG-Based%20Driving%20Fatigue%20Detection%20Using%20a%20Two-Level%20Learning%20Hierarchy%20Radial%20Basis%20Function%22&format=json&pageSize=3&resultType=core",
+      "status": 200,
+      "bytes": 6754,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7905350/",
+      "final": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7905350/",
+      "status": 200,
+      "bytes": 224706,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7905350/",
+      "title": "EEG-Based Driving Fatigue Detection Using a Two-Level Learning Hierarchy Radial Basis Function - PMC",
+      "error": "",
+      "passages": 331
+    }
+  ],
+  "payload": {
+    "question": "What was the age range of the drivers whose EEG data was collected in the 2021 research paper titled \"EEG-Based Driving Fatigue Detection Using a Two-Level Learning Hierarchy Radial Basis Function\" by Ziwu Ren et al.?",
+    "starting_url": "https://www.researchgate.net/publication/349291260_EEG-Based_Driving_Fatigue_Detection_Using_a_Two-Level_Learning_Hierarchy_Radial_Basis_Function",
+    "constraints": {
+      "kind": "text",
+      "year": "",
+      "as_of": "",
+      "versions": [],
+      "stable": false,
+      "cardinality": 1,
+      "target": "what was the age range ",
+      "choices": [],
+      "operation": "single",
+      "required_fields": [],
+      "date_precision": ""
+    },
+    "candidates": [],
+    "passages": [
+      {
+        "id": 0,
+        "text": "Electroencephalography (EEG)-based driving fatigue detection has gained increasing attention recently due to the non-invasive, low-cost, and potable nature of the EEG technology, but it is still challenging to extract informative features from noisy EEG signals for driving fatigue detection. Radial basis function (RBF) neural network has drawn lots of attention as a promising classifier due to its linear-in-the-parameters network structure, strong non-linear approximation ability, and desired generalization property. The RBF network performance heavily relies on network parameters such as the number of the hidden nodes, number of the center vectors, width, and output weights. However, global optimization methods that directly optimize all the network parameters often result in high evaluation cost and slow convergence. To enhance the accuracy and efficiency of EEG-based driving fatigue detection model, this study aims to develop a two-level learning hierarchy RBF network (RBF-TLLH) which allows for global optimization of the key network parameters. Experimental EEG data were collecte",
+        "section": "Abstract",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7905350/",
+        "locator": "p[13]:0",
+        "document_title": "EEG-Based Driving Fatigue Detection Using a Two-Level Learning Hierarchy Radial Basis Function - PMC"
+      },
+      {
+        "id": 1,
+        "text": "EEG-Based Driving Fatigue Detection Using a Two-Level Learning Hierarchy Radial Basis Function",
+        "section": "EEG-Based Driving Fatigue Detection Using a Two-Level Learning Hierarchy Radial Basis Function",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7905350/",
+        "locator": "h1[8]",
+        "document_title": "EEG-Based Driving Fatigue Detection Using a Two-Level Learning Hierarchy Radial Basis Function - PMC"
+      },
+      {
+        "id": 2,
+        "text": "Author information",
+        "section": "EEG-Based Driving Fatigue Detection Using a Two-Level Learning Hierarchy Radial Basis Function",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7905350/",
+        "locator": "li[9]:0",
+        "document_title": "EEG-Based Driving Fatigue Detection Using a Two-Level Learning Hierarchy Radial Basis Function - PMC"
+      },
+      {
+        "id": 3,
+        "text": "Article notes",
+        "section": "EEG-Based Driving Fatigue Detection Using a Two-Level Learning Hierarchy Radial Basis Function",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7905350/",
+        "locator": "li[10]:0",
+        "document_title": "EEG-Based Driving Fatigue Detection Using a Two-Level Learning Hierarchy Radial Basis Function - PMC"
+      },
+      {
+        "id": 4,
+        "text": "Copyright and License information",
+        "section": "EEG-Based Driving Fatigue Detection Using a Two-Level Learning Hierarchy Radial Basis Function",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7905350/",
+        "locator": "li[11]:0",
+        "document_title": "EEG-Based Driving Fatigue Detection Using a Two-Level Learning Hierarchy Radial Basis Function - PMC"
+      },
+      {
+        "id": 5,
+        "text": "citation_title: EEG-Based Driving Fatigue Detection Using a Two-Level Learning Hierarchy Radial Basis Function",
+        "section": "",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7905350/",
+        "locator": "meta[18]",
+        "document_title": "EEG-Based Driving Fatigue Detection Using a Two-Level Learning Hierarchy Radial Basis Function - PMC"
+      },
+      {
+        "id": 6,
+        "text": "og:title: EEG-Based Driving Fatigue Detection Using a Two-Level Learning Hierarchy Radial Basis Function",
+        "section": "",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7905350/",
+        "locator": "meta[44]",
+        "document_title": "EEG-Based Driving Fatigue Detection Using a Two-Level Learning Hierarchy Radial Basis Function - PMC"
+      },
+      {
+        "id": 7,
+        "text": "In this study, a two-level learning hierarchy RBF network (RBF-TLLH) is developed to enhance the performance of the RBF classification. In the proposed RBF-TLLH, only three key RBF network parameters need to be optimized and, as such, can be easily optimized globally and efficiently. Specifically, the RBF-TLLH is constructed by employing the ROLS+D-opt algorithm, which combines the regularized orthogonal least squares (ROLS) and the D-optimality experimental design (D-opt) at the lower level and the particle swarm optimization (PSO) at the upper level. The PSO algorithm is used to globally optimize the three core parameters of the ROLS+D-opt algorithm to enhance the classification performance. As EEG signals are usually measured with multiple channels at a high sampling rate, principal component analysis (PCA) (Hotelling, 1933 ) is employed to reduce the dimensionality of the original data space (Lever et al., 2017 ; Artoni et al., 2018 ) before the application of the RBF-TLLH. The performance of the proposed approach is evaluated on driving fatigue detection and compared against sev",
+        "section": "Introduction",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7905350/",
+        "locator": "p[19]:0",
+        "document_title": "EEG-Based Driving Fatigue Detection Using a Two-Level Learning Hierarchy Radial Basis Function - PMC"
+      }
+    ]
+  },
+  "cohort_ranks": [
+    65
+  ],
+  "capture_path": "research/literature-20261023-live.json",
+  "sha256": "6a9cbd2017dad190a5104291e2471812340948d6318e0ffb1ec1b91e68a77748"
+}

@@ -1,0 +1,371 @@
+{
+  "scope": "CPU-only month-request precision and actual captured announcement protocol.\n\nSelector responses are stubs. This tests source-backed projection, not model\naccuracy, discovery success, or the immutable benchmark's exact-string score.\n",
+  "baseline_revision": "e2115bf4277f5df9acbe640351e9012b21ce825e",
+  "baseline_source_sha256": {
+    "agent/engine.py": "01464cb276814f2d7c845c269da2522c285a7a7e28051abd7e36ad0ec62b41ff",
+    "agent/types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent/planner.py": "62118ad9b39d72201d3783e43042108b54eb66b951bdcab8b5c0da5dba93031a",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "agent/normalize.py": "05e48fa0be8384aa656bf1280ba0be44545efa51b7d4451f0716d836d39a1973",
+    "agent/urls.py": "6bbf58adf3c55cf3787edf4b6607a7db8eea987f0c02dd6cdfea48f6c38e031f",
+    "agent/network.py": "c37ecb5b4b0fba4fac737954eda24952059922ed620c94b99bcb17daed8c5155",
+    "agent/parser.py": "92fc37b32045b8c7f25d7d161c2ca00e9e49c82d2460616ef84d66fe31442069",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/challenges.py": "b6f51c720f332671725e08127a5d1c163ca0542d2a550bf3c980a6d4c49bf6a1",
+    "agent/field_groups.py": "52a54989253c59e9836dec4aaec4944b688376e79548b9336887558a454e9162",
+    "agent/resolvers.py": "312d776118c6c6f0421939df58cf6bcaec8740a7fd341136c17a33f284a03ef2",
+    "agent/search.py": "28e2454682bc8af4ef10b06f62b66117d39194fddc9ec218b9bc82cad96767fd",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/candidates.py": "16dd310d36390f5cb0323f0d81d7630542b116693dd0ee0b1e9fe015a80cb1d0",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/evidence.py": "56994f2e5046668e33630fbc2330cfac35c8971f3c4d4e25f22547f1d99feba2",
+    "agent/selector.py": "a693a62781fcb76dd11bc6d29eb19770b48dc7e2e29bd7619cc189b62bf70e1b",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+    "agent/proofs.py": "0d7ae78df6ea9949c29f33c7b817dda352c75b3d99c960c3e987e37c7401faab",
+    "agent/oyez.py": "8475f248d78925522e0742b13518be2c4f4db11eae0d8391a8002da7d4e3b67d"
+  },
+  "capture_sha256": "707d2283ee7d5c7e638f5c9a5626e6d9ca65ad3eeef71f8ea6adb22258f3e811",
+  "before": [
+    {
+      "question": "Specify the month, and year in which Activision Blizzard announced the upcoming establishment of a new esports division.",
+      "kind": "text",
+      "precision": "",
+      "passed": false
+    },
+    {
+      "question": "Specify the month and year of the announcement.",
+      "kind": "text",
+      "precision": "",
+      "passed": false
+    },
+    {
+      "question": "State the year, and month of the announcement.",
+      "kind": "text",
+      "precision": "",
+      "passed": false
+    },
+    {
+      "question": "Give the month and year of the announcement.",
+      "kind": "text",
+      "precision": "",
+      "passed": false
+    },
+    {
+      "question": "Provide the year and month of the announcement.",
+      "kind": "text",
+      "precision": "",
+      "passed": false
+    },
+    {
+      "question": "Tell me the month, and year of the announcement.",
+      "kind": "text",
+      "precision": "",
+      "passed": false
+    },
+    {
+      "question": "What month and year was it announced?",
+      "kind": "date",
+      "precision": "month",
+      "passed": true
+    },
+    {
+      "question": "Which year, and month was it announced?",
+      "kind": "year",
+      "precision": "",
+      "passed": false
+    },
+    {
+      "question": "What day, month, and year was it announced?",
+      "kind": "date",
+      "precision": "",
+      "passed": true
+    },
+    {
+      "question": "Specify the day, month, and year of the announcement.",
+      "kind": "date",
+      "precision": "",
+      "passed": true
+    },
+    {
+      "question": "How many months and years elapsed?",
+      "kind": "number",
+      "precision": "",
+      "passed": true
+    },
+    {
+      "question": "What are the monthly and yearly sales?",
+      "kind": "text",
+      "precision": "",
+      "passed": true
+    },
+    {
+      "question": "Who wrote Month and Year?",
+      "kind": "text",
+      "precision": "",
+      "passed": true
+    },
+    {
+      "question": "What year was it announced?",
+      "kind": "year",
+      "precision": "",
+      "passed": true
+    }
+  ],
+  "after": [
+    {
+      "question": "Specify the month, and year in which Activision Blizzard announced the upcoming establishment of a new esports division.",
+      "kind": "date",
+      "precision": "month",
+      "passed": true
+    },
+    {
+      "question": "Specify the month and year of the announcement.",
+      "kind": "date",
+      "precision": "month",
+      "passed": true
+    },
+    {
+      "question": "State the year, and month of the announcement.",
+      "kind": "date",
+      "precision": "month",
+      "passed": true
+    },
+    {
+      "question": "Give the month and year of the announcement.",
+      "kind": "date",
+      "precision": "month",
+      "passed": true
+    },
+    {
+      "question": "Provide the year and month of the announcement.",
+      "kind": "date",
+      "precision": "month",
+      "passed": true
+    },
+    {
+      "question": "Tell me the month, and year of the announcement.",
+      "kind": "date",
+      "precision": "month",
+      "passed": true
+    },
+    {
+      "question": "What month and year was it announced?",
+      "kind": "date",
+      "precision": "month",
+      "passed": true
+    },
+    {
+      "question": "Which year, and month was it announced?",
+      "kind": "date",
+      "precision": "month",
+      "passed": true
+    },
+    {
+      "question": "What day, month, and year was it announced?",
+      "kind": "date",
+      "precision": "",
+      "passed": true
+    },
+    {
+      "question": "Specify the day, month, and year of the announcement.",
+      "kind": "date",
+      "precision": "",
+      "passed": true
+    },
+    {
+      "question": "How many months and years elapsed?",
+      "kind": "number",
+      "precision": "",
+      "passed": true
+    },
+    {
+      "question": "What are the monthly and yearly sales?",
+      "kind": "text",
+      "precision": "",
+      "passed": true
+    },
+    {
+      "question": "Who wrote Month and Year?",
+      "kind": "text",
+      "precision": "",
+      "passed": true
+    },
+    {
+      "question": "What year was it announced?",
+      "kind": "year",
+      "precision": "",
+      "passed": true
+    }
+  ],
+  "before_protocol": {
+    "kind": "text",
+    "precision": "",
+    "state": "span",
+    "raw": "October 22, 2015",
+    "answer": "October 22, 2015",
+    "source": "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/",
+    "verified": true,
+    "passed": false,
+    "sent_passages": [
+      {
+        "id": 0,
+        "text": "@graph[0].copyright Year: 2015 | @graph[0] { @type: Article | @id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article | headline: Activision Blizzard creates new esports division on the eve of BlizzCon&#8217;s championships | datePublished: 2015-10-22T22:41:39+00:00 | dateModified: 2025-06-19T06:42:47+00:00 | wordCount: 354 | thumbnailUrl: https://gamesbeat.com/wp-content/uploads/2025/05/cod-champs-day-3_alpha-stage-2-1.jpg | inLanguage: en-US | copyrightYear: 2015 } | parent $ { @context: https://schema.org }",
+        "section": "@graph[0] { @type: Article | @id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article | headline: Activision Blizzard creates new esports division on the eve of BlizzCon&#8217;s championships | datePublished: 2015-10-22T22:41:39+00:00 | dateModified: 2025-06-19T06:42:47+00:00 | wordCount: 354 | thumbnailUrl: https://gamesbeat.co",
+        "source": "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/",
+        "locator": "script[2]/@graph[0].copyrightYear",
+        "document_title": "Activision Blizzard creates new esports division on the eve of BlizzCon's championships - GamesBeat"
+      },
+      {
+        "id": 1,
+        "text": "Actvision Blizzard announced this morning that it\u2019s creating a new division focused on its \u201cesports ecosystem.\u201d",
+        "section": "Activision Blizzard creates new esports division on the eve of BlizzCon\u2019s championships",
+        "source": "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/",
+        "locator": "p[18]:0",
+        "document_title": "Activision Blizzard creates new esports division on the eve of BlizzCon's championships - GamesBeat"
+      },
+      {
+        "id": 2,
+        "text": "Activision Blizzard creates new esports division on the eve of BlizzCon\u2019s championships",
+        "section": "Activision Blizzard creates new esports division on the eve of BlizzCon\u2019s championships",
+        "source": "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/",
+        "locator": "h1[8]",
+        "document_title": "Activision Blizzard creates new esports division on the eve of BlizzCon's championships - GamesBeat"
+      },
+      {
+        "id": 3,
+        "text": "The company created gaming that was viewed and played by more than 150 million people for more than 13 billion hours last year, the release said. That\u2019s people playing and watching Hearthstone: Heroes of Warcraft, Heroes of the Storm, and StarCraft II, all which have large (and growing) esports scenes. It quoted Bornstein, who said, \u201cThis dwarfs the engagement that fans spend on all other sports.\u201d",
+        "section": "Activision Blizzard creates new esports division on the eve of BlizzCon\u2019s championships",
+        "source": "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/",
+        "locator": "p[22]:0",
+        "document_title": "Activision Blizzard creates new esports division on the eve of BlizzCon's championships - GamesBeat"
+      },
+      {
+        "id": 4,
+        "text": "Posted by by GamesBeat",
+        "section": "Activision Blizzard creates new esports division on the eve of BlizzCon\u2019s championships",
+        "source": "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/",
+        "locator": "li[9]:0",
+        "document_title": "Activision Blizzard creates new esports division on the eve of BlizzCon's championships - GamesBeat"
+      },
+      {
+        "id": 5,
+        "text": "October 22, 2015",
+        "section": "Activision Blizzard creates new esports division on the eve of BlizzCon\u2019s championships",
+        "source": "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/",
+        "locator": "li[10]:0",
+        "document_title": "Activision Blizzard creates new esports division on the eve of BlizzCon's championships - GamesBeat"
+      },
+      {
+        "id": 6,
+        "text": "Updated June 18, 2025",
+        "section": "Activision Blizzard creates new esports division on the eve of BlizzCon\u2019s championships",
+        "source": "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/",
+        "locator": "li[11]:0",
+        "document_title": "Activision Blizzard creates new esports division on the eve of BlizzCon's championships - GamesBeat"
+      },
+      {
+        "id": 7,
+        "text": "2 min",
+        "section": "Activision Blizzard creates new esports division on the eve of BlizzCon\u2019s championships",
+        "source": "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/",
+        "locator": "li[12]:0",
+        "document_title": "Activision Blizzard creates new esports division on the eve of BlizzCon's championships - GamesBeat"
+      }
+    ]
+  },
+  "after_protocol": {
+    "kind": "date",
+    "precision": "month",
+    "state": "span",
+    "raw": "October 22, 2015",
+    "answer": "October 2015",
+    "source": "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/",
+    "verified": true,
+    "passed": true,
+    "sent_passages": [
+      {
+        "id": 0,
+        "text": "October 22, 2015",
+        "source_start": 0,
+        "source_end": 16,
+        "section": "Activision Blizzard creates new esports division on the eve of BlizzCon\u2019s championships",
+        "source": "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/",
+        "locator": "li[10]:0",
+        "document_title": "Activision Blizzard creates new esports division on the eve of BlizzCon's championships - GamesBeat"
+      },
+      {
+        "id": 1,
+        "text": "Updated June 18, 2025",
+        "source_start": 0,
+        "source_end": 21,
+        "section": "Activision Blizzard creates new esports division on the eve of BlizzCon\u2019s championships",
+        "source": "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/",
+        "locator": "li[11]:0",
+        "document_title": "Activision Blizzard creates new esports division on the eve of BlizzCon's championships - GamesBeat"
+      },
+      {
+        "id": 2,
+        "text": "@graph[0].copyright Year: 2015 | @graph[0] { @type: Article | @id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article | headline: Activision Blizzard creates new esports division on the eve of BlizzCon&#8217;s championships | datePublished: 2015-10-22T22:41:39+00:00 | dateModified: 2025-06-19T06:42:47+00:00 | wordCount: 354 | thumbnailUrl: https://gamesbeat.com/wp-content/uploads/2025/05/cod-champs-day-3_alpha-stage-2-1.jpg | inLanguage: en-US | copyrightYear: 2015 } | parent $ { @context: https://schema.org }",
+        "source_start": 0,
+        "source_end": 586,
+        "section": "@graph[0] { @type: Article | @id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article | headline: Activision Blizzard creates new esports division on the eve of BlizzCon&#8217;s championships | datePublished: 2015-10-22T22:41:39+00:00 | dateModified: 2025-06-19T06:42:47+00:00 | wordCount: 354 | thumbnailUrl: https://gamesbeat.co",
+        "source": "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/",
+        "locator": "script[2]/@graph[0].copyrightYear",
+        "document_title": "Activision Blizzard creates new esports division on the eve of BlizzCon's championships - GamesBeat"
+      },
+      {
+        "id": 3,
+        "text": "Actvision Blizzard announced this morning that it\u2019s creating a new division focused on its \u201cesports ecosystem.\u201d",
+        "source_start": 0,
+        "source_end": 111,
+        "section": "Activision Blizzard creates new esports division on the eve of BlizzCon\u2019s championships",
+        "source": "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/",
+        "locator": "p[18]:0",
+        "document_title": "Activision Blizzard creates new esports division on the eve of BlizzCon's championships - GamesBeat"
+      },
+      {
+        "id": 4,
+        "text": "Activision Blizzard creates new esports division on the eve of BlizzCon\u2019s championships",
+        "source_start": 0,
+        "source_end": 87,
+        "section": "Activision Blizzard creates new esports division on the eve of BlizzCon\u2019s championships",
+        "source": "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/",
+        "locator": "h1[8]",
+        "document_title": "Activision Blizzard creates new esports division on the eve of BlizzCon's championships - GamesBeat"
+      },
+      {
+        "id": 5,
+        "text": "The company created gaming that was viewed and played by more than 150 million people for more than 13 billion hours last year, the release said. That\u2019s people playing and watching Hearthstone: Heroes of Warcraft, Heroes of the Storm, and StarCraft II, all which have large (and growing) esports scenes. It quoted Bornstein, who said, \u201cThis dwarfs the engagement that fans spend on all other sports.\u201d",
+        "source_start": 0,
+        "source_end": 400,
+        "section": "Activision Blizzard creates new esports division on the eve of BlizzCon\u2019s championships",
+        "source": "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/",
+        "locator": "p[22]:0",
+        "document_title": "Activision Blizzard creates new esports division on the eve of BlizzCon's championships - GamesBeat"
+      },
+      {
+        "id": 6,
+        "text": "Posted by by GamesBeat",
+        "source_start": 0,
+        "source_end": 22,
+        "section": "Activision Blizzard creates new esports division on the eve of BlizzCon\u2019s championships",
+        "source": "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/",
+        "locator": "li[9]:0",
+        "document_title": "Activision Blizzard creates new esports division on the eve of BlizzCon's championships - GamesBeat"
+      },
+      {
+        "id": 7,
+        "text": "2 min",
+        "source_start": 0,
+        "source_end": 5,
+        "section": "Activision Blizzard creates new esports division on the eve of BlizzCon\u2019s championships",
+        "source": "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/",
+        "locator": "li[12]:0",
+        "document_title": "Activision Blizzard creates new esports division on the eve of BlizzCon's championships - GamesBeat"
+      }
+    ]
+  },
+  "all_passed": true
+}

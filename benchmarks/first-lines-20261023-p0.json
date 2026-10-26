@@ -1,0 +1,1189 @@
+{
+  "scope": "fixed evidence, actual local HTTP, injected model faults; no public-web accuracy claim",
+  "passed": 16,
+  "total": 16,
+  "rows": [
+    {
+      "id": "metadata_busy",
+      "expected": "",
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_service_unavailable",
+        "diagnostics": {
+          "plan": {
+            "question": "Who is the author of Alder?",
+            "url": "http://127.0.0.1:44222/metadata",
+            "kind": "text",
+            "terms": [
+              "author",
+              "alder"
+            ],
+            "attributes": [
+              "author",
+              "authors",
+              "creator",
+              "maintainer",
+              "written"
+            ],
+            "entity_terms": [
+              "alder"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "who is the author ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "http_503"
+          ],
+          "timings": {
+            "resolver": 0.00011679995805025101
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "reader_state": "service_unavailable",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:44222/metadata",
+              "final": "http://127.0.0.1:44222/metadata",
+              "status": 200,
+              "bytes": 92,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0134
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "metadata_invalid_json",
+      "expected": "",
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_invalid_reply",
+        "diagnostics": {
+          "plan": {
+            "question": "Who is the author of Alder?",
+            "url": "http://127.0.0.1:44222/metadata",
+            "kind": "text",
+            "terms": [
+              "author",
+              "alder"
+            ],
+            "attributes": [
+              "author",
+              "authors",
+              "creator",
+              "maintainer",
+              "written"
+            ],
+            "entity_terms": [
+              "alder"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "who is the author ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "invalid_json"
+          ],
+          "timings": {
+            "resolver": 1.5199999324977398e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "reader_state": "invalid_reply",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:44222/metadata",
+              "final": "http://127.0.0.1:44222/metadata",
+              "status": 200,
+              "bytes": 92,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0036
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "metadata_invalid_schema",
+      "expected": "",
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_invalid_reply",
+        "diagnostics": {
+          "plan": {
+            "question": "Who is the author of Alder?",
+            "url": "http://127.0.0.1:44222/metadata",
+            "kind": "text",
+            "terms": [
+              "author",
+              "alder"
+            ],
+            "attributes": [
+              "author",
+              "authors",
+              "creator",
+              "maintainer",
+              "written"
+            ],
+            "entity_terms": [
+              "alder"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "who is the author ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "invalid_schema"
+          ],
+          "timings": {
+            "resolver": 7.800059393048286e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "reader_state": "invalid_reply",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:44222/metadata",
+              "final": "http://127.0.0.1:44222/metadata",
+              "status": 200,
+              "bytes": 92,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.003
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "metadata_timeout",
+      "expected": "",
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_budget_exhausted",
+        "diagnostics": {
+          "plan": {
+            "question": "Who is the author of Alder?",
+            "url": "http://127.0.0.1:44222/metadata",
+            "kind": "text",
+            "terms": [
+              "author",
+              "alder"
+            ],
+            "attributes": [
+              "author",
+              "authors",
+              "creator",
+              "maintainer",
+              "written"
+            ],
+            "entity_terms": [
+              "alder"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "who is the author ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "TimeoutError"
+          ],
+          "timings": {
+            "resolver": 8.299946784973145e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "reader_state": "budget_exhausted",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:44222/metadata",
+              "final": "http://127.0.0.1:44222/metadata",
+              "status": 200,
+              "bytes": 92,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.3557
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "metadata_abstain",
+      "expected": "",
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "Who is the author of Alder?",
+            "url": "http://127.0.0.1:44222/metadata",
+            "kind": "text",
+            "terms": [
+              "author",
+              "alder"
+            ],
+            "attributes": [
+              "author",
+              "authors",
+              "creator",
+              "maintainer",
+              "written"
+            ],
+            "entity_terms": [
+              "alder"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "who is the author ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "abstain"
+          ],
+          "timings": {
+            "resolver": 1.4399993233382702e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "reader_state": "no_evidence",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:44222/metadata",
+              "final": "http://127.0.0.1:44222/metadata",
+              "status": 200,
+              "bytes": 92,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0055
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "bound_signature_busy",
+      "expected": "30",
+      "result": {
+        "answer": "30",
+        "sources": [
+          "http://127.0.0.1:44222/signature"
+        ],
+        "confidence": 0.868,
+        "evidence": "connect(timeout=30)",
+        "reason": "literal_parameter_binding",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the default value of timeout parameter in connect?",
+            "url": "http://127.0.0.1:44222/signature",
+            "kind": "text",
+            "terms": [
+              "default",
+              "timeout",
+              "parameter",
+              "connect"
+            ],
+            "attributes": [
+              "duration",
+              "timeout",
+              "lead",
+              "time",
+              "delivery",
+              "days",
+              "hours",
+              "minutes",
+              "seconds"
+            ],
+            "entity_terms": [
+              "default",
+              "parameter",
+              "connect"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the default value ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 9.499955922365189e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "30",
+            "answer": "30",
+            "source": "http://127.0.0.1:44222/signature",
+            "evidence": "connect(timeout=30)",
+            "label": "",
+            "section": "connect",
+            "kind": "text",
+            "score": 12.7,
+            "signals": {
+              "locator": "signature[1]",
+              "page_title": "",
+              "structure": "signature",
+              "qualifiers": {},
+              "field_value": "",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:44222/signature",
+              "final": "http://127.0.0.1:44222/signature",
+              "status": 200,
+              "bytes": 65,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0041
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "reader_supported",
+      "expected": "Mira Chen",
+      "result": {
+        "answer": "Mira Chen",
+        "sources": [
+          "http://127.0.0.1:44222/author"
+        ],
+        "confidence": 0.64,
+        "evidence": "Alder was authored by Mira Chen.",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "Who is the author of Alder?",
+            "url": "http://127.0.0.1:44222/author",
+            "kind": "text",
+            "terms": [
+              "author",
+              "alder"
+            ],
+            "attributes": [
+              "author",
+              "authors",
+              "creator",
+              "maintainer",
+              "written"
+            ],
+            "entity_terms": [
+              "alder"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "who is the author ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 7.900060154497623e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Mira Chen",
+              "answer": "Mira Chen",
+              "source": "http://127.0.0.1:44222/author",
+              "evidence": "Alder was authored by Mira Chen.",
+              "label": "",
+              "section": "Alder",
+              "kind": "text",
+              "score": 3.6,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[1]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "Mira Chen",
+            "answer": "Mira Chen",
+            "source": "http://127.0.0.1:44222/author",
+            "evidence": "Alder was authored by Mira Chen.",
+            "label": "",
+            "section": "Alder",
+            "kind": "text",
+            "score": 3.6,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[1]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:44222/author",
+              "final": "http://127.0.0.1:44222/author",
+              "status": 200,
+              "bytes": 53,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0047
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "reader_verify_unavailable",
+      "expected": "",
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_service_unavailable",
+        "diagnostics": {
+          "plan": {
+            "question": "Who is the author of Alder?",
+            "url": "http://127.0.0.1:44222/author",
+            "kind": "text",
+            "terms": [
+              "author",
+              "alder"
+            ],
+            "attributes": [
+              "author",
+              "authors",
+              "creator",
+              "maintainer",
+              "written"
+            ],
+            "entity_terms": [
+              "alder"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "who is the author ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 9.00006853044033e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Mira Chen",
+              "answer": "Mira Chen",
+              "source": "http://127.0.0.1:44222/author",
+              "evidence": "Alder was authored by Mira Chen.",
+              "label": "",
+              "section": "Alder",
+              "kind": "text",
+              "score": 3.6,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[1]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "http_503"
+          ],
+          "reader_state": "service_unavailable",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:44222/author",
+              "final": "http://127.0.0.1:44222/author",
+              "status": 200,
+              "bytes": 53,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0041
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "reader_verify_invalid",
+      "expected": "",
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_invalid_reply",
+        "diagnostics": {
+          "plan": {
+            "question": "Who is the author of Alder?",
+            "url": "http://127.0.0.1:44222/author",
+            "kind": "text",
+            "terms": [
+              "author",
+              "alder"
+            ],
+            "attributes": [
+              "author",
+              "authors",
+              "creator",
+              "maintainer",
+              "written"
+            ],
+            "entity_terms": [
+              "alder"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "who is the author ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 7.300055585801601e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Mira Chen",
+              "answer": "Mira Chen",
+              "source": "http://127.0.0.1:44222/author",
+              "evidence": "Alder was authored by Mira Chen.",
+              "label": "",
+              "section": "Alder",
+              "kind": "text",
+              "score": 3.6,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[1]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "invalid_verification"
+          ],
+          "reader_state": "invalid_reply",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:44222/author",
+              "final": "http://127.0.0.1:44222/author",
+              "status": 200,
+              "bytes": 53,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0042
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "pypi_nonexistent",
+      "expected": "",
+      "requested": [
+        "https://pypi.org/pypi/zzqx-nonexistent-pkg-4821/json"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "authoritative_not_found_or_identity_mismatch",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the latest version of the PyPI package zzqx-nonexistent-pkg-4821?",
+            "url": "",
+            "kind": "version",
+            "terms": [
+              "pypi",
+              "package",
+              "zzqx-nonexistent-pkg-4821",
+              "zzqx",
+              "nonexistent",
+              "pkg",
+              "4821"
+            ],
+            "attributes": [
+              "version",
+              "release",
+              "stable",
+              "latest",
+              "download"
+            ],
+            "entity_terms": [
+              "pypi",
+              "package",
+              "zzqx-nonexistent-pkg-4821",
+              "zzqx",
+              "nonexistent",
+              "pkg"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": true,
+            "stable": true,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "",
+            "focus": "what is the latest version ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.0013250999618321657
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 0,
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:44222/pypi/zzqx-nonexistent-pkg-4821/json",
+              "final": "http://127.0.0.1:44222/pypi/zzqx-nonexistent-pkg-4821/json",
+              "status": 404,
+              "bytes": 0,
+              "error": "http_404",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 0,
+          "pages_fetched": 0,
+          "seconds": 0.0017
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "pypi_version",
+      "expected": "0.28.1",
+      "requested": [
+        "https://pypi.org/pypi/httpx/json"
+      ],
+      "result": {
+        "answer": "0.28.1",
+        "sources": [
+          "https://pypi.org/pypi/httpx/json"
+        ],
+        "confidence": 0.775,
+        "evidence": "current stable version: 0.28.1 | package httpx",
+        "reason": "direct_source",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the latest version of the PyPI package httpx?",
+            "url": "",
+            "kind": "version",
+            "terms": [
+              "pypi",
+              "package",
+              "httpx"
+            ],
+            "attributes": [
+              "version",
+              "release",
+              "stable",
+              "latest",
+              "download"
+            ],
+            "entity_terms": [
+              "pypi",
+              "package",
+              "httpx"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": true,
+            "stable": true,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "",
+            "focus": "what is the latest version ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.001220199977979064
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "0.28.1",
+            "answer": "0.28.1",
+            "source": "https://pypi.org/pypi/httpx/json",
+            "evidence": "current stable version: 0.28.1 | package httpx",
+            "label": "current stable version",
+            "section": "package httpx",
+            "kind": "version",
+            "score": 9.0,
+            "signals": {
+              "locator": "adapter/current stable version",
+              "page_title": "PyPI httpx",
+              "structure": "field",
+              "qualifiers": {},
+              "field_value": "0.28.1",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:44222/pypi/httpx/json",
+              "final": "http://127.0.0.1:44222/pypi/httpx/json",
+              "status": 200,
+              "bytes": 91,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0023
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "pypi_license",
+      "expected": "BSD-3-Clause",
+      "requested": [
+        "https://pypi.org/pypi/httpx/json"
+      ],
+      "result": {
+        "answer": "BSD-3-Clause",
+        "sources": [
+          "https://pypi.org/pypi/httpx/json"
+        ],
+        "confidence": 0.845,
+        "evidence": "license: BSD-3-Clause | package httpx",
+        "reason": "direct_source",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the license of the httpx package on PyPI?",
+            "url": "",
+            "kind": "license",
+            "terms": [
+              "license",
+              "httpx",
+              "package",
+              "pypi"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "httpx",
+              "package",
+              "pypi"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "",
+            "focus": "what is the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.0011211999226361513
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "BSD-3-Clause",
+            "answer": "BSD-3-Clause",
+            "source": "https://pypi.org/pypi/httpx/json",
+            "evidence": "license: BSD-3-Clause | package httpx",
+            "label": "license",
+            "section": "package httpx",
+            "kind": "license",
+            "score": 11.8,
+            "signals": {
+              "locator": "adapter/license",
+              "page_title": "PyPI httpx",
+              "structure": "field",
+              "qualifiers": {},
+              "field_value": "BSD-3-Clause",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:44222/pypi/httpx/json",
+              "final": "http://127.0.0.1:44222/pypi/httpx/json",
+              "status": 200,
+              "bytes": 91,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0018
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "pypi_mismatched",
+      "expected": "",
+      "requested": [
+        "https://pypi.org/pypi/mismatched/json"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "authoritative_not_found_or_identity_mismatch",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the latest version of the PyPI package mismatched?",
+            "url": "",
+            "kind": "version",
+            "terms": [
+              "pypi",
+              "package",
+              "mismatched"
+            ],
+            "attributes": [
+              "version",
+              "release",
+              "stable",
+              "latest",
+              "download"
+            ],
+            "entity_terms": [
+              "pypi",
+              "package",
+              "mismatched"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": true,
+            "stable": true,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "",
+            "focus": "what is the latest version ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.0009416000684723258
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 0,
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:44222/pypi/mismatched/json",
+              "final": "http://127.0.0.1:44222/pypi/mismatched/json",
+              "status": 200,
+              "bytes": 98,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 0,
+          "seconds": 0.0012
+        }
+      },
+      "passed": true
+    },
+    {
+      "id": "route_What is the latest version of PyPI package httpx?",
+      "actual": [
+        "pypi",
+        "httpx"
+      ],
+      "expected": [
+        "pypi",
+        "httpx"
+      ],
+      "passed": true
+    },
+    {
+      "id": "route_What is the version of package `httpx` on PyPI?",
+      "actual": [
+        "pypi",
+        "httpx"
+      ],
+      "expected": [
+        "pypi",
+        "httpx"
+      ],
+      "passed": true
+    },
+    {
+      "id": "route_What is the version of the npm package @scope/tool?",
+      "actual": [
+        "npm",
+        "@scope/tool"
+      ],
+      "expected": [
+        "npm",
+        "@scope/tool"
+      ],
+      "passed": true
+    }
+  ],
+  "baseline_revision": null
+}

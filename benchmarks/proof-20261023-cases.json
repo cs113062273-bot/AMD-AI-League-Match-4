@@ -1,0 +1,111 @@
+[
+  {
+    "id": "07-doc-cross-version-comparison",
+    "query": "How did the FernAPI per-client request quota change from version 2 to version 3?",
+    "path": "/07-doc-cross-version-comparison/index.html",
+    "answer": "from 40 to 80 requests per minute",
+    "answers": [
+      "from 40 to 80 requests per minute",
+      "40 requests per minute to 80 requests per minute",
+      "40 to 80",
+      "doubled from 40",
+      "The per-client request quota increased from 40 requests per minute in version 2 to 80 requests per minute in version 3."
+    ],
+    "source_paths": [
+      "/07-doc-cross-version-comparison/v2.html",
+      "/07-doc-cross-version-comparison/v3.html"
+    ],
+    "origin": "Existing SourceTrail development fixture; real starting index and complete source set"
+  },
+  {
+    "id": "09-web-table-cell",
+    "query": "On what day and during which hours does Amber Bay collect electronics?",
+    "path": "/09-web-table-cell/index.html",
+    "answer": "First Saturday of each month, 09:00–12:00",
+    "answers": [
+      "First Saturday of each month, 09:00–12:00",
+      "first Saturday 09:00 to 12:00",
+      "first Saturday of each month from 09:00 to 12:00",
+      "first Saturday of each month from 9 am to noon"
+    ],
+    "source_paths": [
+      "/09-web-table-cell/schedule.html"
+    ],
+    "origin": "Existing SourceTrail development fixture; real starting index and complete source set"
+  },
+  {
+    "id": "16-web-two-source-mapping",
+    "query": "What is the Blue Lantern market daily permit fee for a book vendor?",
+    "path": "/16-web-two-source-mapping/index.html",
+    "answer": "$18",
+    "answers": [
+      "$18",
+      "18 dollars",
+      "eighteen dollars"
+    ],
+    "source_paths": [
+      "/16-web-two-source-mapping/categories.html",
+      "/16-web-two-source-mapping/fees.html"
+    ],
+    "origin": "Existing SourceTrail development fixture; real starting index and complete source set"
+  },
+  {
+    "id": "missing-version",
+    "query": "How did the FinchAPI per-client request quota change from version 2 to version 3?",
+    "path": "/proof/missing-version/index.html",
+    "answer": "",
+    "answers": [
+      ""
+    ],
+    "source_paths": [],
+    "origin": "Authored development diagnosis, frozen before proof implementation"
+  },
+  {
+    "id": "ambiguous-map",
+    "query": "What is the Pine Harbor market daily permit fee for a book vendor?",
+    "path": "/proof/ambiguous-map/index.html",
+    "answer": "",
+    "answers": [
+      ""
+    ],
+    "source_paths": [],
+    "origin": "Authored development diagnosis, frozen before proof implementation"
+  },
+  {
+    "id": "incomplete-row",
+    "query": "On what day and during which hours does Maple Bay collect electronics?",
+    "path": "/proof/incomplete-row/index.html",
+    "answer": "",
+    "answers": [
+      ""
+    ],
+    "source_paths": [],
+    "origin": "Authored development diagnosis, frozen before proof implementation"
+  },
+  {
+    "id": "single-fee",
+    "query": "What is the Rowan Grove festival permit application fee?",
+    "path": "/proof/single-fee/index.html",
+    "answer": "$28",
+    "answers": [
+      "$28"
+    ],
+    "source_paths": [
+      "/proof/single-fee/index.html"
+    ],
+    "origin": "Authored development diagnosis, frozen before proof implementation"
+  },
+  {
+    "id": "single-table",
+    "query": "On what day does Maple Bay collect electronics?",
+    "path": "/proof/single-table/index.html",
+    "answer": "Every Saturday",
+    "answers": [
+      "Every Saturday"
+    ],
+    "source_paths": [
+      "/proof/single-table/index.html"
+    ],
+    "origin": "Authored development diagnosis, frozen before proof implementation"
+  }
+]

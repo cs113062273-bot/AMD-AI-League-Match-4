@@ -1,0 +1,759 @@
+{
+  "scope": "CPU/loopback HTTP checks of concise-hint choice and existing recovery gates.\n\nRecorded public GETs are replayed, never interpreted as answer evidence.\nNo model, GPU or browser launch; not an answer-accuracy assessment.\n",
+  "baseline_revision": "50fcaa13b1d4074277ab1102b60b721846963f5f",
+  "baseline_source_sha256": {
+    "agent/engine.py": "01464cb276814f2d7c845c269da2522c285a7a7e28051abd7e36ad0ec62b41ff",
+    "agent/types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent/planner.py": "7f6277fe3431951f068059756c8ed66fbed68f2105355e060ff48e6ed767fa44",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "agent/normalize.py": "05e48fa0be8384aa656bf1280ba0be44545efa51b7d4451f0716d836d39a1973",
+    "agent/network.py": "c37ecb5b4b0fba4fac737954eda24952059922ed620c94b99bcb17daed8c5155",
+    "agent/urls.py": "3a6b8a380f6d7966f1f79b97ccdedab5a5959ffbe5a1aa244e3477a0fe6110f4",
+    "agent/parser.py": "16d707bad4db2747d32bfae722d26bae91a8fd102e31883bd3e7ad9df561bd90",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/challenges.py": "b6f51c720f332671725e08127a5d1c163ca0542d2a550bf3c980a6d4c49bf6a1",
+    "agent/resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent/search.py": "6a4173e80dbe0e178056de5d0a4dd3d54560d140f0b3ffbb52f488566732636b",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/candidates.py": "16dd310d36390f5cb0323f0d81d7630542b116693dd0ee0b1e9fe015a80cb1d0",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/evidence.py": "09da13b3f2fb17de30734c44ddad1c89b856ec682ff2e88a78a57773409c0089",
+    "agent/selector.py": "a693a62781fcb76dd11bc6d29eb19770b48dc7e2e29bd7619cc189b62bf70e1b",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+    "agent/proofs.py": "0d7ae78df6ea9949c29f33c7b817dda352c75b3d99c960c3e987e37c7401faab",
+    "agent/oyez.py": "8475f248d78925522e0742b13518be2c4f4db11eae0d8391a8002da7d4e3b67d"
+  },
+  "before": [
+    {
+      "id": "later-specific",
+      "passed": false,
+      "actual": "optics division announcement",
+      "expected": "boreal instruments optics division"
+    },
+    {
+      "id": "first-specific",
+      "passed": true,
+      "actual": "boreal instruments optics division",
+      "expected": "boreal instruments optics division"
+    },
+    {
+      "id": "tie-order",
+      "passed": true,
+      "actual": "boreal instruments founder",
+      "expected": "boreal instruments founder"
+    },
+    {
+      "id": "tie-reversed",
+      "passed": true,
+      "actual": "boreal instruments biography",
+      "expected": "boreal instruments biography"
+    },
+    {
+      "id": "more-specific-person",
+      "passed": false,
+      "actual": "mira vale full name",
+      "expected": "canadian swimmer mira vale"
+    },
+    {
+      "id": "duplicate-tokens",
+      "passed": true,
+      "actual": "boreal instruments founder",
+      "expected": "boreal instruments founder"
+    },
+    {
+      "id": "unicode",
+      "passed": true,
+      "actual": "fj\u00e4ll optik founder",
+      "expected": "fj\u00e4ll optik founder"
+    },
+    {
+      "id": "whitespace",
+      "passed": true,
+      "actual": "boreal instruments founder",
+      "expected": "boreal instruments founder"
+    },
+    {
+      "id": "unrelated",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "id": "url-not-query",
+      "passed": true,
+      "actual": "boreal instruments founder",
+      "expected": "boreal instruments founder"
+    },
+    {
+      "id": "model-year-denied",
+      "passed": true,
+      "actual": "boreal instruments founder",
+      "expected": "boreal instruments founder"
+    },
+    {
+      "id": "multiline-denied",
+      "passed": true,
+      "actual": "boreal instruments founder",
+      "expected": "boreal instruments founder"
+    },
+    {
+      "id": "long-hint-denied",
+      "passed": true,
+      "actual": "boreal instruments founder",
+      "expected": "boreal instruments founder"
+    },
+    {
+      "id": "word-limit",
+      "passed": true,
+      "actual": "boreal instruments founder",
+      "expected": "boreal instruments founder"
+    },
+    {
+      "id": "schema-denied",
+      "passed": true,
+      "actual": "boreal instruments founder",
+      "expected": "boreal instruments founder"
+    },
+    {
+      "id": "quoted-fallback",
+      "passed": true,
+      "actual": "\"Amber Journal\" lawsuit against",
+      "expected": "\"Amber Journal\" lawsuit against"
+    },
+    {
+      "id": "no-entity",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "id": "http-fallback",
+      "passed": false,
+      "short_calls": 0,
+      "requests": [
+        [
+          "/empty",
+          "boreal instruments announce optics division"
+        ],
+        [
+          "/empty",
+          "boreal instruments announce optics division optics division announcement boreal instruments optics division"
+        ],
+        [
+          "/empty",
+          "boreal instruments announce optics division optics division announcement boreal instruments optics division"
+        ],
+        [
+          "/empty",
+          "boreal instruments announce optics division"
+        ],
+        [
+          "/rss",
+          "boreal instruments announce optics division optics division announcement boreal instruments optics division"
+        ],
+        [
+          "/lite",
+          "boreal instruments announce optics division optics division announcement boreal instruments optics division"
+        ],
+        [
+          "/lite",
+          "optics division announcement"
+        ],
+        [
+          "/empty",
+          "When did Boreal Instruments announce its optics division?"
+        ],
+        [
+          "/wiki",
+          "When did Boreal Instruments announce its optics division?"
+        ]
+      ],
+      "actual": []
+    },
+    {
+      "id": "http-initial-usable",
+      "passed": true,
+      "short_calls": 0,
+      "requests": [
+        [
+          "/empty",
+          "boreal instruments announce optics division"
+        ],
+        [
+          "/empty",
+          "boreal instruments announce optics division optics division announcement boreal instruments optics division"
+        ],
+        [
+          "/empty",
+          "boreal instruments announce optics division optics division announcement boreal instruments optics division"
+        ],
+        [
+          "/empty",
+          "boreal instruments announce optics division"
+        ]
+      ],
+      "actual": [
+        [
+          "http://127.0.0.1:51088/company",
+          "Boreal Instruments optics division"
+        ]
+      ]
+    },
+    {
+      "id": "http-low-budget",
+      "passed": true,
+      "short_calls": 0,
+      "requests": [
+        [
+          "/empty",
+          "boreal instruments announce optics division"
+        ],
+        [
+          "/empty",
+          "boreal instruments announce optics division optics division announcement boreal instruments optics division"
+        ],
+        [
+          "/empty",
+          "boreal instruments announce optics division optics division announcement boreal instruments optics division"
+        ],
+        [
+          "/empty",
+          "boreal instruments announce optics division"
+        ],
+        [
+          "/wiki",
+          "When did Boreal Instruments announce its optics division?"
+        ]
+      ],
+      "actual": []
+    }
+  ],
+  "after": [
+    {
+      "id": "later-specific",
+      "passed": true,
+      "actual": "boreal instruments optics division",
+      "expected": "boreal instruments optics division"
+    },
+    {
+      "id": "first-specific",
+      "passed": true,
+      "actual": "boreal instruments optics division",
+      "expected": "boreal instruments optics division"
+    },
+    {
+      "id": "tie-order",
+      "passed": true,
+      "actual": "boreal instruments founder",
+      "expected": "boreal instruments founder"
+    },
+    {
+      "id": "tie-reversed",
+      "passed": true,
+      "actual": "boreal instruments biography",
+      "expected": "boreal instruments biography"
+    },
+    {
+      "id": "more-specific-person",
+      "passed": true,
+      "actual": "canadian swimmer mira vale",
+      "expected": "canadian swimmer mira vale"
+    },
+    {
+      "id": "duplicate-tokens",
+      "passed": true,
+      "actual": "boreal instruments founder",
+      "expected": "boreal instruments founder"
+    },
+    {
+      "id": "unicode",
+      "passed": true,
+      "actual": "fj\u00e4ll optik founder",
+      "expected": "fj\u00e4ll optik founder"
+    },
+    {
+      "id": "whitespace",
+      "passed": true,
+      "actual": "boreal instruments founder",
+      "expected": "boreal instruments founder"
+    },
+    {
+      "id": "unrelated",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "id": "url-not-query",
+      "passed": true,
+      "actual": "boreal instruments founder",
+      "expected": "boreal instruments founder"
+    },
+    {
+      "id": "model-year-denied",
+      "passed": true,
+      "actual": "boreal instruments founder",
+      "expected": "boreal instruments founder"
+    },
+    {
+      "id": "multiline-denied",
+      "passed": true,
+      "actual": "boreal instruments founder",
+      "expected": "boreal instruments founder"
+    },
+    {
+      "id": "long-hint-denied",
+      "passed": true,
+      "actual": "boreal instruments founder",
+      "expected": "boreal instruments founder"
+    },
+    {
+      "id": "word-limit",
+      "passed": true,
+      "actual": "boreal instruments founder",
+      "expected": "boreal instruments founder"
+    },
+    {
+      "id": "schema-denied",
+      "passed": true,
+      "actual": "boreal instruments founder",
+      "expected": "boreal instruments founder"
+    },
+    {
+      "id": "quoted-fallback",
+      "passed": true,
+      "actual": "\"Amber Journal\" lawsuit against",
+      "expected": "\"Amber Journal\" lawsuit against"
+    },
+    {
+      "id": "no-entity",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "id": "http-fallback",
+      "passed": true,
+      "short_calls": 1,
+      "requests": [
+        [
+          "/empty",
+          "boreal instruments announce optics division"
+        ],
+        [
+          "/empty",
+          "boreal instruments announce optics division optics division announcement boreal instruments optics division"
+        ],
+        [
+          "/empty",
+          "boreal instruments announce optics division optics division announcement boreal instruments optics division"
+        ],
+        [
+          "/empty",
+          "boreal instruments announce optics division"
+        ],
+        [
+          "/rss",
+          "boreal instruments announce optics division optics division announcement boreal instruments optics division"
+        ],
+        [
+          "/lite",
+          "boreal instruments announce optics division optics division announcement boreal instruments optics division"
+        ],
+        [
+          "/lite",
+          "boreal instruments optics division"
+        ]
+      ],
+      "actual": [
+        [
+          "http://127.0.0.1:51104/company",
+          "Boreal Instruments optics division"
+        ]
+      ]
+    },
+    {
+      "id": "http-initial-usable",
+      "passed": true,
+      "short_calls": 0,
+      "requests": [
+        [
+          "/empty",
+          "boreal instruments announce optics division"
+        ],
+        [
+          "/empty",
+          "boreal instruments announce optics division optics division announcement boreal instruments optics division"
+        ],
+        [
+          "/empty",
+          "boreal instruments announce optics division optics division announcement boreal instruments optics division"
+        ],
+        [
+          "/empty",
+          "boreal instruments announce optics division"
+        ]
+      ],
+      "actual": [
+        [
+          "http://127.0.0.1:51104/company",
+          "Boreal Instruments optics division"
+        ]
+      ]
+    },
+    {
+      "id": "http-low-budget",
+      "passed": true,
+      "short_calls": 0,
+      "requests": [
+        [
+          "/empty",
+          "boreal instruments announce optics division"
+        ],
+        [
+          "/empty",
+          "boreal instruments announce optics division optics division announcement boreal instruments optics division"
+        ],
+        [
+          "/empty",
+          "boreal instruments announce optics division optics division announcement boreal instruments optics division"
+        ],
+        [
+          "/empty",
+          "boreal instruments announce optics division"
+        ],
+        [
+          "/wiki",
+          "When did Boreal Instruments announce its optics division?"
+        ]
+      ],
+      "actual": []
+    }
+  ],
+  "recorded": {
+    "probe_sha256": "64003788a771ecd363aaeb662f96c882877103ecd0e5583db40393047918697d",
+    "choices": [
+      {
+        "id": "simpleqa-516",
+        "before": "eeg driving fatigue age range",
+        "after": "eeg driving fatigue age range",
+        "matched_measured_proposal": true
+      },
+      {
+        "id": "simpleqa-1013",
+        "before": "f\u00fcssli children with elisabeth",
+        "after": "f\u00fcssli children with elisabeth",
+        "matched_measured_proposal": true
+      },
+      {
+        "id": "simpleqa-483",
+        "before": "esports division announcement",
+        "after": "activision blizzard esports launch",
+        "matched_measured_proposal": true
+      },
+      {
+        "id": "simpleqa-1232",
+        "before": "konaruiyeh census data",
+        "after": "konaruiyeh census data",
+        "matched_measured_proposal": true
+      },
+      {
+        "id": "simpleqa-2010",
+        "before": "sculptor of ceres sculpture",
+        "after": "sculptor of ceres sculpture",
+        "matched_measured_proposal": true
+      },
+      {
+        "id": "simpleqa-2215",
+        "before": "\"The Horse\" individual known",
+        "after": "\"The Horse\" individual known",
+        "matched_measured_proposal": true
+      },
+      {
+        "id": "simpleqa-3120",
+        "before": "juan guzm\u00e1n full name",
+        "after": "colombian player juan guzm\u00e1n",
+        "matched_measured_proposal": true
+      },
+      {
+        "id": "simpleqa-4145",
+        "before": "odd fellows hall architecture",
+        "after": "odd fellows hall architecture",
+        "matched_measured_proposal": true
+      },
+      {
+        "id": "simpleqa-37",
+        "before": "bernard comrie spouse",
+        "after": "bernard comrie spouse",
+        "matched_measured_proposal": true
+      },
+      {
+        "id": "simpleqa-395",
+        "before": "saturday evening post libel teams",
+        "after": "saturday evening post libel teams",
+        "matched_measured_proposal": true
+      },
+      {
+        "id": "simpleqa-32",
+        "before": "carrie underwood cry pretty gold certification date",
+        "after": "carrie underwood cry pretty gold certification date",
+        "matched_measured_proposal": true
+      }
+    ],
+    "changed": 2,
+    "replays": [
+      {
+        "id": "simpleqa-483",
+        "query": "esports division announcement",
+        "capture_sha256": "6e1c300bcbab7e439d705812a6b3e14edb8c77b4a1a4acfba6084dfb06b78d72",
+        "identical_candidates": true,
+        "links": [
+          [
+            "https://www.kambi.com/investors/news-pr/kambi-groups-esports-division-abios-signs-data-partnership-with-google/",
+            "Kambi Group's esports division Abios signs data partnership with Google"
+          ],
+          [
+            "https://saiganak.com/event/vantan-zetadivision-gaming-academy-announcement/",
+            "ZETA DIVISION to Open Next-Generation Esports Human Resource ..."
+          ],
+          [
+            "https://x.com/tyloogaming/status/2009475219464048914",
+            "\u3010TYLOO Esports Club CS2 Division Personnel Changes Announcement ..."
+          ],
+          [
+            "https://saiganak.com/news/zetadivision-ntt-east-sponsorship-announcement/",
+            "ZETA DIVISION Announces Sponsorship Agreement with NTT East! Special ..."
+          ],
+          [
+            "https://www.strafe.com/news/read/evil-geniuses-to-shut-down-esports-operations/",
+            "Evil Geniuses to Shut Down Esports Operations - strafe.com"
+          ],
+          [
+            "https://x.com/LGDgaming/status/2086349692229881896",
+            "LGD Gaming on X: \"LGD Dota2 division announcement\""
+          ],
+          [
+            "https://esportsinsider.com/latest-news",
+            "Latest News Archives - Esports Insider"
+          ],
+          [
+            "https://www.philstar.com/sports/2026/10/22/2565015/global-esports-among-teams-exiting-vct-pacific-riot-unveils-partner-organizations-2027",
+            "Global Esports among teams exiting VCT Pacific as Riot unveils partner ..."
+          ]
+        ]
+      },
+      {
+        "id": "simpleqa-483",
+        "query": "activision blizzard esports launch",
+        "capture_sha256": "4d59c37f81f15c8f15c1aebfea6c94fd270c78e4d53426e643a783b849985d25",
+        "identical_candidates": true,
+        "links": [
+          [
+            "https://newsroom.activisionblizzard.com/p/following-a-huge-year-for-esports",
+            "Following a Huge Year for Esports, The Call of ... - Activision Blizzard"
+          ],
+          [
+            "https://www.activisionblizzard.com/",
+            "Activision Blizzard | Home"
+          ],
+          [
+            "https://en.wikipedia.org/wiki/Activision_Blizzard",
+            "Activision Blizzard - Wikipedia"
+          ],
+          [
+            "https://www.activisionblizzard.com/who-we-are",
+            "Who We Are - Activision Blizzard"
+          ],
+          [
+            "https://www.activisionblizzard.com/about-us",
+            "About - Activision Blizzard"
+          ],
+          [
+            "https://en.wikipedia.org/wiki/Major_League_Gaming",
+            "Major League Gaming - Wikipedia"
+          ],
+          [
+            "https://en.wikipedia.org/wiki/Overwatch_League",
+            "Overwatch League - Wikipedia"
+          ],
+          [
+            "https://overwatch.blizzard.com/en-us/news/24246297/",
+            "OWCS 2026 Season: Competitive Details - News - Overwatch"
+          ]
+        ]
+      },
+      {
+        "id": "simpleqa-3120",
+        "query": "juan guzm\u00e1n full name",
+        "capture_sha256": "72379e1b192fa48072dbf41e4c66a453fa09aed866a6b6a9ec4dd5b7972dfc70",
+        "identical_candidates": true,
+        "links": [
+          [
+            "https://en.soccerwiki.org/player.php?pid=85733",
+            "Juan Guzm\u00e1n - Soccer Wiki: for the fans, by the fans"
+          ],
+          [
+            "https://www.baseball-reference.com/register/player.fcgi?id=guzman001jua",
+            "Juan Guzm\u00e1n Minor Leagues Statistics | Baseball-Reference.com"
+          ],
+          [
+            "https://en.wikipedia.org/wiki/Juan_Guzm%C3%A1n",
+            "Juan Guzm\u00e1n - Wikipedia"
+          ],
+          [
+            "https://www.baseball-reference.com/players/g/guzmaju01.shtml",
+            "Juan Guzm\u00e1n Stats, Height, Weight, Position, Rookie Status & More ..."
+          ],
+          [
+            "https://doblaje.fandom.com/es/wiki/Juan_Guzm%C3%A1n",
+            "Juan Guzm\u00e1n | Doblaje Wiki | Fandom"
+          ],
+          [
+            "https://dubdb.fandom.com/wiki/Juan_Guzm%C3%A1n",
+            "Juan Guzm\u00e1n | The Dubbing Database | Fandom"
+          ],
+          [
+            "https://es.wikipedia.org/wiki/Juan_Guzm%C3%A1n",
+            "Juan Guzm\u00e1n - Wikipedia, la enciclopedia libre"
+          ],
+          [
+            "https://en.wikipedia.org/wiki/El_Chapo",
+            "El Chapo - Wikipedia"
+          ]
+        ]
+      },
+      {
+        "id": "simpleqa-3120",
+        "query": "colombian player juan guzm\u00e1n",
+        "capture_sha256": "43adc1fd4cce23f9f61f42627f6e32c969af380fd472e2362fce5fed1f74751a",
+        "identical_candidates": true,
+        "links": [
+          [
+            "https://www.transfermarkt.com/juan-pablo-guzman/profil/spieler/170543",
+            "Juan Pablo Guzm\u00e1n - Player profile | Transfermarkt"
+          ],
+          [
+            "https://www.footballdatabase.eu/en/player/details/204458-juan-guzman",
+            "Juan Guzm\u00e1n - Stats and titles won - FootballDatabase"
+          ],
+          [
+            "https://en.wikipedia.org/wiki/Juan_Guzm%C3%A1n_(footballer)",
+            "Juan Guzm\u00e1n (footballer) - Wikipedia"
+          ],
+          [
+            "https://es.wikipedia.org/wiki/Juan_Guzm%C3%A1n_(futbolista)",
+            "Juan Guzm\u00e1n (futbolista) - Wikipedia, la enciclopedia libre"
+          ],
+          [
+            "https://www.wikiwand.com/en/Juan_Guzm%C3%A1n_(footballer)",
+            "Juan Guzm\u00e1n (footballer) - Wikiwand"
+          ],
+          [
+            "https://everything.explained.today/Juan_Guzm%C3%A1n_(footballer)/",
+            "Juan Guzm\u00e1n (footballer) explained"
+          ],
+          [
+            "https://www.worldfootball.net/person/pe240832/juan-guzman/",
+            "Juan Guzm\u00e1n \u00bb Profile - worldfootball.net"
+          ],
+          [
+            "https://en.wikipedia.org/wiki/Juan_Cuadrado",
+            "Juan Cuadrado - Wikipedia"
+          ]
+        ]
+      },
+      {
+        "id": "simpleqa-4145",
+        "query": "odd fellows hall architecture",
+        "capture_sha256": "d11b4a8a9cb2312faca55864175f960717bd1c143b5b05cc2ed94e00b9eaedd2",
+        "identical_candidates": true,
+        "links": [
+          [
+            "https://www.landmarksapp.com/landmarks/odd-fellows-hall/",
+            "Odd Fellows Hall: History & Architecture | Landmarks"
+          ],
+          [
+            "https://en.wikipedia.org/wiki/Odd_Fellows_Hall_(New_York_City)",
+            "Odd Fellows Hall (New York City) - Wikipedia"
+          ],
+          [
+            "https://s-media.nyc.gov/agencies/lpc/lp/1293.pdf",
+            "PDF Odd Fellows Hall - s-media.nyc.gov"
+          ],
+          [
+            "https://hdc.org/buildings/odd-fellows-hall/",
+            "Odd Fellows Hall | HDC"
+          ],
+          [
+            "https://theclio.com/entry/28134",
+            "Odd Fellows Hall - Clio"
+          ],
+          [
+            "https://www.thing.net/~lina/oddends/odd_fellows.html",
+            "L I N A | Odd Fellows Hall"
+          ],
+          [
+            "https://en.wikipedia.org/wiki/List_of_Odd_Fellows_buildings",
+            "List of Odd Fellows buildings - Wikipedia"
+          ],
+          [
+            "https://loc.getarchive.net/topics/fellows/architecture",
+            "Fellows, Architecture Images \u2014 Public Domain Photos & Prints"
+          ]
+        ]
+      },
+      {
+        "id": "simpleqa-4145",
+        "query": "eureka ca building style",
+        "capture_sha256": "44a7b57257b8816bc5dcf86effb30708ee80a989522cc33a47ff68e0656b9f60",
+        "identical_candidates": true,
+        "links": [
+          [
+            "https://www.eurekaheritage.com/architectural_legacy/Legacy3.pdf",
+            "PDF Exploring Eureka's historic neighborhoods Architectural EGACY"
+          ],
+          [
+            "https://eurekaheritage.com/architectural_legacy/Legacy%206.pdf",
+            "PDF Exploring Eureka's historic neighborhoods A EGACY"
+          ],
+          [
+            "https://www.visiteureka.com/architecture-in-eureka/",
+            "Architecture in Eureka"
+          ],
+          [
+            "https://en.wikipedia.org/wiki/Carson_Mansion",
+            "Carson Mansion - Wikipedia"
+          ],
+          [
+            "https://en.wikipedia.org/wiki/Old_Town_Eureka",
+            "Old Town Eureka - Wikipedia"
+          ],
+          [
+            "https://www.visiteureka.com/history-and-architecture/",
+            "History and Architecture - Visit Eureka"
+          ],
+          [
+            "https://llywindatravels.com/2020/11/08/eureka-architecture-and-art/",
+            "Eureka: Architecture and Art - Llywindatravels 2026"
+          ],
+          [
+            "https://www.eurekaca.gov/444/Historic-Eureka",
+            "Historic Eureka | Eureka, CA"
+          ]
+        ]
+      }
+    ]
+  },
+  "before_passed": 17,
+  "after_passed": 20,
+  "total": 20,
+  "wins": [
+    "later-specific",
+    "more-specific-person",
+    "http-fallback"
+  ],
+  "losses": [],
+  "search_sha256": "c78ea9648af7e05d6fcc42302cdd1b6887926037ee3f0f3cb86c8e17b5e8f498"
+}

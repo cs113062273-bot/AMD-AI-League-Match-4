@@ -1,0 +1,1671 @@
+{
+  "scope": "CPU population/year role controls; authored variants and local HTTP, not accuracy.",
+  "revision": "working-tree",
+  "baseline_source_sha256": {},
+  "diagnostic_sha256": "99cfcd582d52ac55618b64c8457fa8d208278dbc1062dd4fe2df063ce29cd6c9",
+  "production_sha256": {
+    "app.py": "c0267c0441330bd30559f48d2f33916418992b8e21ec8dd1d09ae4773c23b73b",
+    "agent/__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41",
+    "agent/browser.py": "53ac9a99f3afcefcdb197cd9b2296c2d380910a782178fadb65235e548efc353",
+    "agent/candidates.py": "f4882197e55a061d42601cef56d6bbb2b9a37a76e10947bf424c943ee4057e8c",
+    "agent/challenges.py": "b6f51c720f332671725e08127a5d1c163ca0542d2a550bf3c980a6d4c49bf6a1",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/engine.py": "1bf6108bb913480ce4bd2e7b0a32a1cc75df60fff66273e4c1d4067d8c43fb25",
+    "agent/evidence.py": "a298cd93f6a36cb238acf1a406deb9057b059caa2ef1ab9f38aaa438e5274845",
+    "agent/field_groups.py": "52a54989253c59e9836dec4aaec4944b688376e79548b9336887558a454e9162",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/literature.py": "9b871500ab1ebaf88e8fca2c70bd7ade7eb81774412fa85a1f4be7d2fb06263f",
+    "agent/members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "agent/model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+    "agent/model_server.py": "8d326a696942d259697a6fba8586441bbbe4874042ea900c6d7788a2a0e9fd22",
+    "agent/navigation.py": "0f849c0c570720114c45c14b0a5286fe409e5d26c2945fdc9f6c1a6922bb7718",
+    "agent/network.py": "def1be3752f81423c313c2dfa83f6703ee063d7e98652cf0d816b423d0e2d9cb",
+    "agent/normalize.py": "582d9ef7b1ec775e5171c92e1ae96be746fd5d1dcd43ee588fee9a9aa6abc706",
+    "agent/output.py": "b983ab2efe31707b1c974344a32dc4b40b708541257695de89cac9e343b073eb",
+    "agent/oyez.py": "8475f248d78925522e0742b13518be2c4f4db11eae0d8391a8002da7d4e3b67d",
+    "agent/parser.py": "16741c809d33fbe08d5c9a69515decd4f8bc5546ed00afa9a3bb9c55bfb26e7b",
+    "agent/planner.py": "f68568775b5b7a7c360e2c743f2620fd417053601744d0fefa28644718437d1b",
+    "agent/population.py": "c9a2b2c59dc1bc90da68036545605b4c882043b09541687de253bb54e6a5ea75",
+    "agent/processes.py": "677c4372b40d1da0ffc0cf4120ca5b6be2fcf6b6c30f6ec17d0d8fae19e198c1",
+    "agent/proofs.py": "0d7ae78df6ea9949c29f33c7b817dda352c75b3d99c960c3e987e37c7401faab",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/resolvers.py": "312d776118c6c6f0421939df58cf6bcaec8740a7fd341136c17a33f284a03ef2",
+    "agent/search.py": "64ebf971ea4dd0f8a34bc0bdd2d3678f54edab80d6112328fefeede84687ec55",
+    "agent/selector.py": "be7c0fce11c10921d5cd4e3d1072d5a2ca5a62f1c328730384d19b0fecd19566",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent/urls.py": "6bbf58adf3c55cf3787edf4b6607a7db8eea987f0c02dd6cdfea48f6c38e031f",
+    "agent/worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f"
+  },
+  "passed": 90,
+  "total": 90,
+  "rows": [
+    {
+      "id": "plan-census",
+      "passed": true,
+      "expected": [
+        "number",
+        "2004"
+      ],
+      "actual": [
+        "number",
+        "2004"
+      ]
+    },
+    {
+      "id": "plan-ordinary-year",
+      "passed": true,
+      "expected": [
+        "number",
+        "2004"
+      ],
+      "actual": [
+        "number",
+        "2004"
+      ]
+    },
+    {
+      "id": "plan-inhabitants",
+      "passed": true,
+      "expected": [
+        "number",
+        "2004"
+      ],
+      "actual": [
+        "number",
+        "2004"
+      ]
+    },
+    {
+      "id": "plan-multiple-censuses",
+      "passed": true,
+      "expected": [
+        "number",
+        ""
+      ],
+      "actual": [
+        "number",
+        ""
+      ]
+    },
+    {
+      "id": "plan-negated-census",
+      "passed": true,
+      "expected": [
+        "number",
+        ""
+      ],
+      "actual": [
+        "number",
+        ""
+      ]
+    },
+    {
+      "id": "plan-density",
+      "passed": true,
+      "expected": [
+        "text",
+        "2004"
+      ],
+      "actual": [
+        "text",
+        "2004"
+      ]
+    },
+    {
+      "id": "plan-growth",
+      "passed": true,
+      "expected": [
+        "text",
+        "2004"
+      ],
+      "actual": [
+        "text",
+        "2004"
+      ]
+    },
+    {
+      "id": "plan-percentage",
+      "passed": true,
+      "expected": [
+        "percentage",
+        ""
+      ],
+      "actual": [
+        "percentage",
+        ""
+      ]
+    },
+    {
+      "id": "plan-label",
+      "passed": true,
+      "expected": [
+        "text",
+        ""
+      ],
+      "actual": [
+        "text",
+        ""
+      ]
+    },
+    {
+      "id": "plan-population-type",
+      "passed": true,
+      "expected": [
+        "text",
+        "2004"
+      ],
+      "actual": [
+        "text",
+        "2004"
+      ]
+    },
+    {
+      "id": "plan-contraction",
+      "passed": true,
+      "expected": [
+        "number",
+        "2004"
+      ],
+      "actual": [
+        "number",
+        "2004"
+      ]
+    },
+    {
+      "id": "plan-curly-contraction",
+      "passed": true,
+      "expected": [
+        "number",
+        "2004"
+      ],
+      "actual": [
+        "number",
+        "2004"
+      ]
+    },
+    {
+      "id": "plan-not-a-calendar-year",
+      "passed": true,
+      "expected": [
+        "number",
+        ""
+      ],
+      "actual": [
+        "number",
+        ""
+      ]
+    },
+    {
+      "id": "plan-url-not-a-census-year",
+      "passed": true,
+      "expected": [
+        "number",
+        ""
+      ],
+      "actual": [
+        "number",
+        ""
+      ]
+    },
+    {
+      "id": "plan-who",
+      "passed": true,
+      "expected": [
+        "text",
+        "2004"
+      ],
+      "actual": [
+        "text",
+        "2004"
+      ]
+    },
+    {
+      "id": "main-617",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "main-142",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "main-2004",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "main-839",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "main-2014",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "subject-617",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "subject-142",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "subject-2004",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "year-after-617",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "year-after-2004",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "coordinated-617",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "coordinated-839",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "updated-year-839",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "residents-617",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "residents-142",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "residents-2004",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "label-years-617",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "label-years-839",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "label-years-2004",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "label-years-2014",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "same-number-two-roles-617",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "population-is-year-like-2004",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "population-is-year-like-142",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "four-digit-families-7617",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "four-digit-families-1423",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "four-digit-families-2004",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "comma-grouping-1,234",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "comma-grouping-1,111",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "no-population-142",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "no-population-2004",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "unknown-wording-617",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "unclassified-64",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "unresolved-years-617",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "unresolved-years-839",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "non-population-question-142",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "density-not-count-142",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "irrelevant-url-year-142",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "irrelevant-url-year-617",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "substitution-0-237",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "substitution-0-682",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "substitution-0-135",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "substitution-0-1969",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "substitution-1-825",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "substitution-1-892",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "substitution-1-358",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "substitution-1-1959",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "substitution-2-119",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "substitution-2-245",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "substitution-2-498",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "substitution-2-1976",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "substitution-3-465",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "substitution-3-725",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "substitution-3-790",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "substitution-3-1962",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "substitution-4-299",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "substitution-4-854",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "substitution-4-114",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "substitution-4-1943",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "substitution-5-372",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "substitution-5-465",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "substitution-5-123",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "substitution-5-1945",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "substitution-6-549",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "substitution-6-300",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "substitution-6-553",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "substitution-6-1940",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "substitution-7-771",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "substitution-7-258",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "substitution-7-869",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "substitution-7-1976",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "http-stub-617",
+      "passed": true,
+      "expected": "617",
+      "actual": "617",
+      "calls": [
+        "/select",
+        "/verify"
+      ],
+      "result": {
+        "answer": "617",
+        "sources": [
+          "http://127.0.0.1:11596/population"
+        ],
+        "confidence": 0.963,
+        "evidence": "At the 2004 census, its population was 617, in 142 families. In 2014 its population was 839.",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the population of Maple Harbour at the 2004 census?",
+            "url": "http://127.0.0.1:11596/population",
+            "kind": "number",
+            "terms": [
+              "population",
+              "maple",
+              "harbour",
+              "2004",
+              "census"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "population",
+              "maple",
+              "harbour",
+              "census"
+            ],
+            "versions": [],
+            "year": "2004",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what was the population ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 0.000161800067871809
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "617",
+              "answer": "617",
+              "source": "http://127.0.0.1:11596/population",
+              "evidence": "At the 2004 census, its population was 617, in 142 families. In 2014 its population was 839.",
+              "label": "",
+              "section": "Maple Harbour",
+              "kind": "number",
+              "score": 16.5,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[1]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "617",
+            "answer": "617",
+            "source": "http://127.0.0.1:11596/population",
+            "evidence": "At the 2004 census, its population was 617, in 142 families. In 2014 its population was 839.",
+            "label": "",
+            "section": "Maple Harbour",
+            "kind": "number",
+            "score": 16.5,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[1]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:11596/population",
+              "final": "http://127.0.0.1:11596/population",
+              "status": 200,
+              "bytes": 121,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0129
+        }
+      }
+    },
+    {
+      "id": "http-stub-142",
+      "passed": true,
+      "expected": "",
+      "actual": "",
+      "calls": [
+        "/select"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_evidence_rejected",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the population of Maple Harbour at the 2004 census?",
+            "url": "http://127.0.0.1:11596/population",
+            "kind": "number",
+            "terms": [
+              "population",
+              "maple",
+              "harbour",
+              "2004",
+              "census"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "population",
+              "maple",
+              "harbour",
+              "census"
+            ],
+            "versions": [],
+            "year": "2004",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what was the population ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.3699987903237343e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "142",
+              "answer": "142",
+              "source": "http://127.0.0.1:11596/population",
+              "evidence": "At the 2004 census, its population was 617, in 142 families. In 2014 its population was 839.",
+              "label": "",
+              "section": "Maple Harbour",
+              "kind": "number",
+              "score": 16.5,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[1]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "reader_state": "evidence_rejected",
+          "top_candidates": [
+            {
+              "raw": "2004",
+              "answer": "2004",
+              "source": "http://127.0.0.1:11596/population",
+              "evidence": "At the 2004 census, its population was 617, in 142 families. In 2014 its population was 839.",
+              "label": "",
+              "section": "Maple Harbour",
+              "kind": "number",
+              "score": 12.5,
+              "signals": {
+                "locator": "p[1]:0",
+                "page_title": "",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "617",
+              "answer": "617",
+              "source": "http://127.0.0.1:11596/population",
+              "evidence": "At the 2004 census, its population was 617, in 142 families. In 2014 its population was 839.",
+              "label": "",
+              "section": "Maple Harbour",
+              "kind": "number",
+              "score": 12.5,
+              "signals": {
+                "locator": "p[1]:0",
+                "page_title": "",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "142",
+              "answer": "142",
+              "source": "http://127.0.0.1:11596/population",
+              "evidence": "At the 2004 census, its population was 617, in 142 families. In 2014 its population was 839.",
+              "label": "",
+              "section": "Maple Harbour",
+              "kind": "number",
+              "score": 12.5,
+              "signals": {
+                "locator": "p[1]:0",
+                "page_title": "",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2014",
+              "answer": "2014",
+              "source": "http://127.0.0.1:11596/population",
+              "evidence": "At the 2004 census, its population was 617, in 142 families. In 2014 its population was 839.",
+              "label": "",
+              "section": "Maple Harbour",
+              "kind": "number",
+              "score": 12.5,
+              "signals": {
+                "locator": "p[1]:0",
+                "page_title": "",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "839",
+              "answer": "839",
+              "source": "http://127.0.0.1:11596/population",
+              "evidence": "At the 2004 census, its population was 617, in 142 families. In 2014 its population was 839.",
+              "label": "",
+              "section": "Maple Harbour",
+              "kind": "number",
+              "score": 12.5,
+              "signals": {
+                "locator": "p[1]:0",
+                "page_title": "",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [
+            {
+              "a": "2004",
+              "b": "617",
+              "sources": [
+                "http://127.0.0.1:11596/population",
+                "http://127.0.0.1:11596/population"
+              ],
+              "margin": 0.0
+            },
+            {
+              "a": "2004",
+              "b": "142",
+              "sources": [
+                "http://127.0.0.1:11596/population",
+                "http://127.0.0.1:11596/population"
+              ],
+              "margin": 0.0
+            },
+            {
+              "a": "2004",
+              "b": "2014",
+              "sources": [
+                "http://127.0.0.1:11596/population",
+                "http://127.0.0.1:11596/population"
+              ],
+              "margin": 0.0
+            },
+            {
+              "a": "2004",
+              "b": "839",
+              "sources": [
+                "http://127.0.0.1:11596/population",
+                "http://127.0.0.1:11596/population"
+              ],
+              "margin": 0.0
+            }
+          ],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:11596/population",
+              "final": "http://127.0.0.1:11596/population",
+              "status": 200,
+              "bytes": 121,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0057
+        }
+      }
+    },
+    {
+      "id": "http-stub-2004",
+      "passed": true,
+      "expected": "",
+      "actual": "",
+      "calls": [
+        "/select"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_evidence_rejected",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the population of Maple Harbour at the 2004 census?",
+            "url": "http://127.0.0.1:11596/population",
+            "kind": "number",
+            "terms": [
+              "population",
+              "maple",
+              "harbour",
+              "2004",
+              "census"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "population",
+              "maple",
+              "harbour",
+              "census"
+            ],
+            "versions": [],
+            "year": "2004",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what was the population ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 9.200070053339005e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "2004",
+              "answer": "2004",
+              "source": "http://127.0.0.1:11596/population",
+              "evidence": "At the 2004 census, its population was 617, in 142 families. In 2014 its population was 839.",
+              "label": "",
+              "section": "Maple Harbour",
+              "kind": "number",
+              "score": 16.5,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[1]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "reader_state": "evidence_rejected",
+          "top_candidates": [
+            {
+              "raw": "2004",
+              "answer": "2004",
+              "source": "http://127.0.0.1:11596/population",
+              "evidence": "At the 2004 census, its population was 617, in 142 families. In 2014 its population was 839.",
+              "label": "",
+              "section": "Maple Harbour",
+              "kind": "number",
+              "score": 12.5,
+              "signals": {
+                "locator": "p[1]:0",
+                "page_title": "",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "617",
+              "answer": "617",
+              "source": "http://127.0.0.1:11596/population",
+              "evidence": "At the 2004 census, its population was 617, in 142 families. In 2014 its population was 839.",
+              "label": "",
+              "section": "Maple Harbour",
+              "kind": "number",
+              "score": 12.5,
+              "signals": {
+                "locator": "p[1]:0",
+                "page_title": "",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "142",
+              "answer": "142",
+              "source": "http://127.0.0.1:11596/population",
+              "evidence": "At the 2004 census, its population was 617, in 142 families. In 2014 its population was 839.",
+              "label": "",
+              "section": "Maple Harbour",
+              "kind": "number",
+              "score": 12.5,
+              "signals": {
+                "locator": "p[1]:0",
+                "page_title": "",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2014",
+              "answer": "2014",
+              "source": "http://127.0.0.1:11596/population",
+              "evidence": "At the 2004 census, its population was 617, in 142 families. In 2014 its population was 839.",
+              "label": "",
+              "section": "Maple Harbour",
+              "kind": "number",
+              "score": 12.5,
+              "signals": {
+                "locator": "p[1]:0",
+                "page_title": "",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "839",
+              "answer": "839",
+              "source": "http://127.0.0.1:11596/population",
+              "evidence": "At the 2004 census, its population was 617, in 142 families. In 2014 its population was 839.",
+              "label": "",
+              "section": "Maple Harbour",
+              "kind": "number",
+              "score": 12.5,
+              "signals": {
+                "locator": "p[1]:0",
+                "page_title": "",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [
+            {
+              "a": "2004",
+              "b": "617",
+              "sources": [
+                "http://127.0.0.1:11596/population",
+                "http://127.0.0.1:11596/population"
+              ],
+              "margin": 0.0
+            },
+            {
+              "a": "2004",
+              "b": "142",
+              "sources": [
+                "http://127.0.0.1:11596/population",
+                "http://127.0.0.1:11596/population"
+              ],
+              "margin": 0.0
+            },
+            {
+              "a": "2004",
+              "b": "2014",
+              "sources": [
+                "http://127.0.0.1:11596/population",
+                "http://127.0.0.1:11596/population"
+              ],
+              "margin": 0.0
+            },
+            {
+              "a": "2004",
+              "b": "839",
+              "sources": [
+                "http://127.0.0.1:11596/population",
+                "http://127.0.0.1:11596/population"
+              ],
+              "margin": 0.0
+            }
+          ],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:11596/population",
+              "final": "http://127.0.0.1:11596/population",
+              "status": 200,
+              "bytes": 121,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0048
+        }
+      }
+    },
+    {
+      "id": "http-stub-839",
+      "passed": true,
+      "expected": "",
+      "actual": "",
+      "calls": [
+        "/select"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_evidence_rejected",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the population of Maple Harbour at the 2004 census?",
+            "url": "http://127.0.0.1:11596/population",
+            "kind": "number",
+            "terms": [
+              "population",
+              "maple",
+              "harbour",
+              "2004",
+              "census"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "population",
+              "maple",
+              "harbour",
+              "census"
+            ],
+            "versions": [],
+            "year": "2004",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what was the population ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 9.900075383484364e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "839",
+              "answer": "839",
+              "source": "http://127.0.0.1:11596/population",
+              "evidence": "At the 2004 census, its population was 617, in 142 families. In 2014 its population was 839.",
+              "label": "",
+              "section": "Maple Harbour",
+              "kind": "number",
+              "score": 16.5,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[1]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "reader_state": "evidence_rejected",
+          "top_candidates": [
+            {
+              "raw": "2004",
+              "answer": "2004",
+              "source": "http://127.0.0.1:11596/population",
+              "evidence": "At the 2004 census, its population was 617, in 142 families. In 2014 its population was 839.",
+              "label": "",
+              "section": "Maple Harbour",
+              "kind": "number",
+              "score": 12.5,
+              "signals": {
+                "locator": "p[1]:0",
+                "page_title": "",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "617",
+              "answer": "617",
+              "source": "http://127.0.0.1:11596/population",
+              "evidence": "At the 2004 census, its population was 617, in 142 families. In 2014 its population was 839.",
+              "label": "",
+              "section": "Maple Harbour",
+              "kind": "number",
+              "score": 12.5,
+              "signals": {
+                "locator": "p[1]:0",
+                "page_title": "",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "142",
+              "answer": "142",
+              "source": "http://127.0.0.1:11596/population",
+              "evidence": "At the 2004 census, its population was 617, in 142 families. In 2014 its population was 839.",
+              "label": "",
+              "section": "Maple Harbour",
+              "kind": "number",
+              "score": 12.5,
+              "signals": {
+                "locator": "p[1]:0",
+                "page_title": "",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2014",
+              "answer": "2014",
+              "source": "http://127.0.0.1:11596/population",
+              "evidence": "At the 2004 census, its population was 617, in 142 families. In 2014 its population was 839.",
+              "label": "",
+              "section": "Maple Harbour",
+              "kind": "number",
+              "score": 12.5,
+              "signals": {
+                "locator": "p[1]:0",
+                "page_title": "",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "839",
+              "answer": "839",
+              "source": "http://127.0.0.1:11596/population",
+              "evidence": "At the 2004 census, its population was 617, in 142 families. In 2014 its population was 839.",
+              "label": "",
+              "section": "Maple Harbour",
+              "kind": "number",
+              "score": 12.5,
+              "signals": {
+                "locator": "p[1]:0",
+                "page_title": "",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [
+            {
+              "a": "2004",
+              "b": "617",
+              "sources": [
+                "http://127.0.0.1:11596/population",
+                "http://127.0.0.1:11596/population"
+              ],
+              "margin": 0.0
+            },
+            {
+              "a": "2004",
+              "b": "142",
+              "sources": [
+                "http://127.0.0.1:11596/population",
+                "http://127.0.0.1:11596/population"
+              ],
+              "margin": 0.0
+            },
+            {
+              "a": "2004",
+              "b": "2014",
+              "sources": [
+                "http://127.0.0.1:11596/population",
+                "http://127.0.0.1:11596/population"
+              ],
+              "margin": 0.0
+            },
+            {
+              "a": "2004",
+              "b": "839",
+              "sources": [
+                "http://127.0.0.1:11596/population",
+                "http://127.0.0.1:11596/population"
+              ],
+              "margin": 0.0
+            }
+          ],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:11596/population",
+              "final": "http://127.0.0.1:11596/population",
+              "status": 200,
+              "bytes": 121,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0051
+        }
+      }
+    },
+    {
+      "id": "http-no-model",
+      "passed": true,
+      "expected": "617",
+      "actual": "617",
+      "calls": [],
+      "result": {
+        "answer": "617",
+        "sources": [
+          "http://127.0.0.1:11596/population"
+        ],
+        "confidence": 0.863,
+        "evidence": "At the 2004 census, its population was 617, in 142 families. In 2014 its population was 839.",
+        "reason": "deterministic_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the population of Maple Harbour at the 2004 census?",
+            "url": "http://127.0.0.1:11596/population",
+            "kind": "number",
+            "terms": [
+              "population",
+              "maple",
+              "harbour",
+              "2004",
+              "census"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "population",
+              "maple",
+              "harbour",
+              "census"
+            ],
+            "versions": [],
+            "year": "2004",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what was the population ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.0400079190731049e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "617",
+            "answer": "617",
+            "source": "http://127.0.0.1:11596/population",
+            "evidence": "At the 2004 census, its population was 617, in 142 families. In 2014 its population was 839.",
+            "label": "",
+            "section": "Maple Harbour",
+            "kind": "number",
+            "score": 12.5,
+            "signals": {
+              "locator": "p[1]:0",
+              "page_title": "",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": "",
+              "agreement_domains": 1
+            }
+          },
+          "reader_state": "not_run",
+          "top_candidates": [
+            {
+              "raw": "2004",
+              "answer": "2004",
+              "source": "http://127.0.0.1:11596/population",
+              "evidence": "At the 2004 census, its population was 617, in 142 families. In 2014 its population was 839.",
+              "label": "",
+              "section": "Maple Harbour",
+              "kind": "number",
+              "score": 12.5,
+              "signals": {
+                "locator": "p[1]:0",
+                "page_title": "",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "617",
+              "answer": "617",
+              "source": "http://127.0.0.1:11596/population",
+              "evidence": "At the 2004 census, its population was 617, in 142 families. In 2014 its population was 839.",
+              "label": "",
+              "section": "Maple Harbour",
+              "kind": "number",
+              "score": 12.5,
+              "signals": {
+                "locator": "p[1]:0",
+                "page_title": "",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "142",
+              "answer": "142",
+              "source": "http://127.0.0.1:11596/population",
+              "evidence": "At the 2004 census, its population was 617, in 142 families. In 2014 its population was 839.",
+              "label": "",
+              "section": "Maple Harbour",
+              "kind": "number",
+              "score": 12.5,
+              "signals": {
+                "locator": "p[1]:0",
+                "page_title": "",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2014",
+              "answer": "2014",
+              "source": "http://127.0.0.1:11596/population",
+              "evidence": "At the 2004 census, its population was 617, in 142 families. In 2014 its population was 839.",
+              "label": "",
+              "section": "Maple Harbour",
+              "kind": "number",
+              "score": 12.5,
+              "signals": {
+                "locator": "p[1]:0",
+                "page_title": "",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "839",
+              "answer": "839",
+              "source": "http://127.0.0.1:11596/population",
+              "evidence": "At the 2004 census, its population was 617, in 142 families. In 2014 its population was 839.",
+              "label": "",
+              "section": "Maple Harbour",
+              "kind": "number",
+              "score": 12.5,
+              "signals": {
+                "locator": "p[1]:0",
+                "page_title": "",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [
+            {
+              "a": "2004",
+              "b": "617",
+              "sources": [
+                "http://127.0.0.1:11596/population",
+                "http://127.0.0.1:11596/population"
+              ],
+              "margin": 0.0
+            },
+            {
+              "a": "2004",
+              "b": "142",
+              "sources": [
+                "http://127.0.0.1:11596/population",
+                "http://127.0.0.1:11596/population"
+              ],
+              "margin": 0.0
+            },
+            {
+              "a": "2004",
+              "b": "2014",
+              "sources": [
+                "http://127.0.0.1:11596/population",
+                "http://127.0.0.1:11596/population"
+              ],
+              "margin": 0.0
+            },
+            {
+              "a": "2004",
+              "b": "839",
+              "sources": [
+                "http://127.0.0.1:11596/population",
+                "http://127.0.0.1:11596/population"
+              ],
+              "margin": 0.0
+            }
+          ],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:11596/population",
+              "final": "http://127.0.0.1:11596/population",
+              "status": 200,
+              "bytes": 121,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0045
+        }
+      }
+    }
+  ]
+}

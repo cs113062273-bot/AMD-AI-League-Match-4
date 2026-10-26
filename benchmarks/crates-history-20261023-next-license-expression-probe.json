@@ -1,0 +1,147 @@
+{
+  "scope": "Next issue outside historical metadata binding: same captured actual API body, authored partial selector and always-positive verifier over loopback CPU. Not actual-model performance. The complete release field is MIT OR Apache-2.0; review whether full-field questions should reject partial expression selections before verification.",
+  "source_license_expression": "MIT OR Apache-2.0",
+  "cpu_stub_selection": "MIT",
+  "cpu_stub_calls": [
+    "/select",
+    "/verify"
+  ],
+  "result": {
+    "answer": "MIT",
+    "sources": [
+      "https://crates.io/api/v1/crates/itoa"
+    ],
+    "confidence": 0.88,
+    "evidence": "license: MIT OR Apache-2.0 | crate itoa version 0.4.5 published 2020-01-24",
+    "reason": "model_verified",
+    "diagnostics": {
+      "plan": {
+        "question": "What was the license of the crates.io crate itoa as of 2020-01-31?",
+        "url": "",
+        "kind": "license",
+        "terms": [
+          "license",
+          "crates.io",
+          "crate",
+          "itoa",
+          "2020-01-31",
+          "crates",
+          "io",
+          "2020",
+          "01",
+          "31"
+        ],
+        "attributes": [
+          "license",
+          "licence",
+          "licensing",
+          "spdx"
+        ],
+        "entity_terms": [
+          "crates.io",
+          "crate",
+          "itoa",
+          "2020-01-31",
+          "crates",
+          "io",
+          "01",
+          "31"
+        ],
+        "versions": [],
+        "year": "",
+        "as_of": "2020-01-31",
+        "latest": true,
+        "stable": false,
+        "first": false,
+        "currency": "",
+        "cardinality": 1,
+        "negations": [],
+        "domain": "",
+        "focus": "what was the license ",
+        "choices": [],
+        "operation": "single",
+        "required_fields": [],
+        "date_precision": "",
+        "temporal_issue": "",
+        "temporal_raw": []
+      },
+      "errors": [],
+      "selector": [
+        "span"
+      ],
+      "timings": {
+        "resolver": 0.006596100050956011
+      },
+      "search_requests": 0,
+      "llm_calls": 2,
+      "content_pages": 1,
+      "model_selections": [
+        {
+          "raw": "MIT",
+          "answer": "MIT",
+          "source": "https://crates.io/api/v1/crates/itoa",
+          "evidence": "license: MIT OR Apache-2.0 | crate itoa version 0.4.5 published 2020-01-24",
+          "label": "license",
+          "section": "crate itoa version 0.4.5 published 2020-01-24",
+          "kind": "license",
+          "score": 13.200000000000001,
+          "signals": {
+            "selector": "literal_span",
+            "locator": "versions[22].license",
+            "structure": "field",
+            "qualifiers": {
+              "registry_release": {
+                "version": "0.4.5",
+                "date": "2020-01-24",
+                "name": "itoa"
+              }
+            },
+            "field_value": "MIT OR Apache-2.0"
+          }
+        }
+      ],
+      "verification": [
+        "supported"
+      ],
+      "reader_state": "answered",
+      "selection": {
+        "raw": "MIT",
+        "answer": "MIT",
+        "source": "https://crates.io/api/v1/crates/itoa",
+        "evidence": "license: MIT OR Apache-2.0 | crate itoa version 0.4.5 published 2020-01-24",
+        "label": "license",
+        "section": "crate itoa version 0.4.5 published 2020-01-24",
+        "kind": "license",
+        "score": 13.200000000000001,
+        "signals": {
+          "selector": "literal_span",
+          "locator": "versions[22].license",
+          "structure": "field",
+          "qualifiers": {
+            "registry_release": {
+              "version": "0.4.5",
+              "date": "2020-01-24",
+              "name": "itoa"
+            }
+          },
+          "field_value": "MIT OR Apache-2.0"
+        }
+      },
+      "fetches": [
+        {
+          "url": "https://crates.io/api/v1/crates/itoa",
+          "final": "https://crates.io/api/v1/crates/itoa",
+          "status": 200,
+          "bytes": 52491,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        }
+      ],
+      "http_responses_success": 1,
+      "pages_fetched": 1,
+      "seconds": 0.0189
+    }
+  }
+}

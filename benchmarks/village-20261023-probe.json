@@ -1,0 +1,46 @@
+{
+  "scope": "CPU-only guarded public GET of URLs from saved original village question query; no model/browser or answer in queries.",
+  "rows": [
+    {
+      "url": "https://everything.explained.today/Konaruiyeh/",
+      "status": 403,
+      "error": "http_403",
+      "bytes": 0,
+      "title": "",
+      "passages": 0,
+      "matches": [],
+      "capture_path": "research/village-20261023-probe/0.json",
+      "sha256": "e9b09eebaea8a1255bb2e8cbd95367e16ad19aefddc0ad8196188d749cc6eece"
+    },
+    {
+      "url": "https://zh-min-nan.wikipedia.org/wiki/Konaruiyeh",
+      "status": 403,
+      "error": "http_403",
+      "bytes": 0,
+      "title": "",
+      "passages": 0,
+      "matches": [],
+      "capture_path": "research/village-20261023-probe/1.json",
+      "sha256": "a2563df732f46cc8879475361be99a81977a730b7df446ceb093cab33ca0dd76"
+    },
+    {
+      "url": "https://alchetron.com/Konaruiyeh",
+      "status": 200,
+      "error": "",
+      "bytes": 92054,
+      "title": "Konaruiyeh - Alchetron, The Free Social Encyclopedia",
+      "passages": 53,
+      "matches": [
+        "description: Konaruiyeh (Persian , also Romanized as Konryeh also known as Kenr and Konr) is a village in Esfandaqeh Rural District, in the Central District of Jiroft County, Kerman Province, Iran. At the 2006 census, its population was 219, in 44 families. Konaruiyeh Wikipedia (Text) CC BYS",
+        "og:description: Konaruiyeh (Persian , also Romanized as Konryeh also known as Kenr and Konr) is a village in Esfandaqeh Rural District, in the Central District of Jiroft County, Kerman Province, Iran. At the 2006 census, its population was 219, in 44 families. Konaruiyeh Wikipedia (Text) CC BYS",
+        "twitter:description: Konaruiyeh (Persian , also Romanized as Konryeh also known as Kenr and Konr) is a village in Esfandaqeh Rural District, in the Central District of Jiroft County, Kerman Province, Iran. At the 2006 census, its population was 219, in 44 families. Konaruiyeh Wikipedia (Text) CC BYS",
+        "Country Iran County Jiroft Rural District Esfandaqeh Population 219 (2006) |  | Province Kerman Bakhsh Central Time zone IRST (UTC+3:30)",
+        "Konaruiyeh ( Persian : \u0643\u0646\u0627\u0631\u0648\u064a\u064a\u0647 \u200e\u200e, also Romanized as Kon\u0101r\u016b\u2019\u012byeh ; also known as Ken\u0101r\u016b and Kon\u0101r\u016b ) is a village in Esfandaqeh Rural District , in the Central District of Jiroft County , Kerman Province , Iran . At the 2006 census, its population was 219, in 44 families.",
+        "articleBody: Country Iran County Jiroft Rural District Esfandaqeh Population 219 (2006) Province Kerman Bakhsh Central Time zone IRST (UTC+3:30) Konaruiyeh ( Persian : \u0643\u0646\u0627\u0631\u0648\u064a\u064a\u0647 \u200e\u200e, also Romanized as Kon\u0101r\u016b\u2019\u012byeh ; also known as Ken\u0101r\u016b and Kon\u0101r\u016b ) is a village in Esfandaqeh Rural District , in the Central District of Jiroft County , Kerman Province , Iran . At the 2006 census, its population was 219, in 44 families. More Alchetron Topics References Konaruiyeh Wikipedia (Text) CC BY-SA",
+        "description: Konaruiyeh ( Persian : \u0643\u0646\u0627\u0631\u0648\u064a\u064a\u0647 \u200e\u200e, also Romanized as Kon\u0101r\u016b\u2019\u012byeh ; also known as Ken\u0101r\u016b and Kon\u0101r\u016b ) is a village in Esfandaqeh Rural District , in the Central District of Jiroft County , Kerman Province , Iran . At the 2006 census, its population was 219, in 44 families."
+      ],
+      "capture_path": "research/village-20261023-probe/2.json",
+      "sha256": "2f677d946e08de104e0a207a04330752e9fa30395eace9e1beb740d16ce0cd20"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+[
+  {
+    "id": "real-name",
+    "query": "What is the first and last name of the woman whom the British linguist Bernard Comrie married in 1985?",
+    "path": "/real-name.html",
+    "answer": "Akiko Kumahira",
+    "answers": [
+      "Akiko Kumahira"
+    ],
+    "source_path": "/real-name.html",
+    "origin": "Actual exposed source capture"
+  },
+  {
+    "id": "prose-name",
+    "query": "What is the first and last name of the person whom Orin Vale married in 1998?",
+    "path": "/prose-name.html",
+    "answer": "Mira Chen",
+    "answers": [
+      "Mira Chen"
+    ],
+    "source_path": "/prose-name.html",
+    "origin": "Authored controlled reader case"
+  },
+  {
+    "id": "family-name",
+    "query": "What is the given and family name of the person whom Orin Vale married in 1998?",
+    "path": "/family-name.html",
+    "answer": "Mira Chen",
+    "answers": [
+      "Mira Chen"
+    ],
+    "source_path": "/family-name.html",
+    "origin": "Authored controlled reader case"
+  },
+  {
+    "id": "missing-family",
+    "query": "What is the first and last name of the person whom Orin Vale married in 1998?",
+    "path": "/missing-family.html",
+    "answer": "",
+    "answers": [
+      ""
+    ],
+    "source_path": "/missing-family.html",
+    "origin": "Authored controlled reader case"
+  },
+  {
+    "id": "wrong-year",
+    "query": "What is the first and last name of the person whom Orin Vale married in 1998?",
+    "path": "/wrong-year.html",
+    "answer": "",
+    "answers": [
+      ""
+    ],
+    "source_path": "/wrong-year.html",
+    "origin": "Authored controlled reader case"
+  },
+  {
+    "id": "day-time",
+    "query": "What day and time does Pine Harbor collect glass?",
+    "path": "/day-time.html",
+    "answer": "Wednesday, 09:00-12:00",
+    "answers": [
+      "Wednesday, 09:00-12:00"
+    ],
+    "source_path": "/day-time.html",
+    "origin": "Authored controlled reader case"
+  },
+  {
+    "id": "name-email",
+    "query": "What are the first name and email of Orin Vale?",
+    "path": "/name-email.html",
+    "answer": "Orin, orin@example.org",
+    "answers": [
+      "Orin, orin@example.org"
+    ],
+    "source_path": "/name-email.html",
+    "origin": "Authored controlled reader case"
+  }
+]

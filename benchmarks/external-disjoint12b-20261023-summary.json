@@ -1,0 +1,101 @@
+{
+  "scope": "First frozen disjoint12b actualHTTP/search/browser/full4B observed execution; degraded by sustained busy service. Not official scoring, not a normal-service capability estimate or causal comparison.",
+  "selection_seed": 940221,
+  "excluded_rows": 232,
+  "eligible_rows": 768,
+  "n": 12,
+  "exact_answer": 0,
+  "exact_source": 1,
+  "joint": 0,
+  "coverage": 1,
+  "mean_seconds": 5.1575,
+  "service_after": {
+    "ready": true,
+    "active_request": "7f9c26f351ba46d8b8cb7f24368c35bf",
+    "busy_rejections": 15,
+    "outcomes": {
+      "selected": 1,
+      "supported": 1,
+      "expanded": 2,
+      "abstained": 2,
+      "deadline": 2
+    }
+  },
+  "infrastructure_affected_rows": [
+    "simpleqa-1076",
+    "simpleqa-483",
+    "simpleqa-1232",
+    "simpleqa-2010",
+    "simpleqa-2215",
+    "simpleqa-3120",
+    "simpleqa-4145",
+    "simpleqa-2811",
+    "simpleqa-415"
+  ],
+  "production_unchanged": true,
+  "all_captures_verified": true,
+  "checks": [
+    {
+      "id": "simpleqa-911",
+      "capture_sha256_verified": true,
+      "no_omission": true
+    },
+    {
+      "id": "simpleqa-516",
+      "capture_sha256_verified": true,
+      "no_omission": true
+    },
+    {
+      "id": "simpleqa-1013",
+      "capture_sha256_verified": true,
+      "no_omission": true
+    },
+    {
+      "id": "simpleqa-1076",
+      "capture_sha256_verified": true,
+      "no_omission": true
+    },
+    {
+      "id": "simpleqa-483",
+      "capture_sha256_verified": true,
+      "no_omission": true
+    },
+    {
+      "id": "simpleqa-1232",
+      "capture_sha256_verified": true,
+      "no_omission": true
+    },
+    {
+      "id": "simpleqa-2010",
+      "capture_sha256_verified": true,
+      "no_omission": true
+    },
+    {
+      "id": "simpleqa-2215",
+      "capture_sha256_verified": true,
+      "no_omission": true
+    },
+    {
+      "id": "simpleqa-3120",
+      "capture_sha256_verified": true,
+      "no_omission": true
+    },
+    {
+      "id": "simpleqa-4145",
+      "capture_sha256_verified": true,
+      "no_omission": true
+    },
+    {
+      "id": "simpleqa-2811",
+      "capture_sha256_verified": true,
+      "no_omission": true
+    },
+    {
+      "id": "simpleqa-415",
+      "capture_sha256_verified": true,
+      "no_omission": true
+    }
+  ],
+  "future_first_sample_must_exclude_total": 244,
+  "repeat_policy": "Now exposed. Any repeat uses same gold and is development regression, not a new holdout. Do not overwrite first report."
+}

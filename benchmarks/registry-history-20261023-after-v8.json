@@ -1,0 +1,5128 @@
+{
+  "scope": "CPU registry release metadata: local HTTP with logical API identities, no live score.",
+  "revision": "working-tree",
+  "baseline_source_sha256": {},
+  "diagnostic_sha256": "9712a109ffc15e4d31c6a425a915242edab9bf192129dc214ab7f4b669618fed",
+  "production_sha256": {
+    "app.py": "c0267c0441330bd30559f48d2f33916418992b8e21ec8dd1d09ae4773c23b73b",
+    "agent/__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41",
+    "agent/browser.py": "53ac9a99f3afcefcdb197cd9b2296c2d380910a782178fadb65235e548efc353",
+    "agent/candidates.py": "7ed5862f43246cfb738497553d94b5d6dfcb23f299f281c85a310cb0ca40a2e2",
+    "agent/challenges.py": "b6f51c720f332671725e08127a5d1c163ca0542d2a550bf3c980a6d4c49bf6a1",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/engine.py": "26c95e0e153190fe8335c625ec2bfdfcd4552c8e6598f650f020cac1f8992bb5",
+    "agent/evidence.py": "842de8eca754fbfa471b1be1f54b38fbc76f590ef89d87ba153a915bc4295c05",
+    "agent/field_groups.py": "52a54989253c59e9836dec4aaec4944b688376e79548b9336887558a454e9162",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/literature.py": "9b871500ab1ebaf88e8fca2c70bd7ade7eb81774412fa85a1f4be7d2fb06263f",
+    "agent/members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "agent/model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+    "agent/model_server.py": "8d326a696942d259697a6fba8586441bbbe4874042ea900c6d7788a2a0e9fd22",
+    "agent/navigation.py": "0f849c0c570720114c45c14b0a5286fe409e5d26c2945fdc9f6c1a6922bb7718",
+    "agent/network.py": "def1be3752f81423c313c2dfa83f6703ee063d7e98652cf0d816b423d0e2d9cb",
+    "agent/normalize.py": "582d9ef7b1ec775e5171c92e1ae96be746fd5d1dcd43ee588fee9a9aa6abc706",
+    "agent/output.py": "b983ab2efe31707b1c974344a32dc4b40b708541257695de89cac9e343b073eb",
+    "agent/oyez.py": "8475f248d78925522e0742b13518be2c4f4db11eae0d8391a8002da7d4e3b67d",
+    "agent/parser.py": "16741c809d33fbe08d5c9a69515decd4f8bc5546ed00afa9a3bb9c55bfb26e7b",
+    "agent/planner.py": "1514fb67d20b061da8116e3086b315fdc5f3d819613330098ab9d948844a4211",
+    "agent/population.py": "c9a2b2c59dc1bc90da68036545605b4c882043b09541687de253bb54e6a5ea75",
+    "agent/processes.py": "677c4372b40d1da0ffc0cf4120ca5b6be2fcf6b6c30f6ec17d0d8fae19e198c1",
+    "agent/proofs.py": "0d7ae78df6ea9949c29f33c7b817dda352c75b3d99c960c3e987e37c7401faab",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/registry_history.py": "8e6edf13141ebdc53cb8259f3e4fb83288d5cd129d856ad9e8393e7d434bcd15",
+    "agent/resolvers.py": "06ee5d639933d27f385699f2c2ced298798ee37a5a06f79f426437bfc55014dc",
+    "agent/search.py": "64ebf971ea4dd0f8a34bc0bdd2d3678f54edab80d6112328fefeede84687ec55",
+    "agent/selector.py": "be7c0fce11c10921d5cd4e3d1072d5a2ca5a62f1c328730384d19b0fecd19566",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/temporal.py": "f520ada0a6ea9f810225887080a495a4a47a0371cd6f613a9c5648587509012a",
+    "agent/types.py": "1bc24b341d11e9bd0da4a288ba843728f831897cf5222e51f43fa1265b740f30",
+    "agent/urls.py": "6bbf58adf3c55cf3787edf4b6607a7db8eea987f0c02dd6cdfea48f6c38e031f",
+    "agent/worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f"
+  },
+  "passed": 41,
+  "total": 41,
+  "rows": [
+    {
+      "id": "pypi-snapshot",
+      "passed": true,
+      "expected": "BSD-3-Clause",
+      "actual": "BSD-3-Clause",
+      "local_hits": [
+        "/pypi/river-sample/json",
+        "/pypi/river-sample/1.0/json"
+      ],
+      "logical_requests": [
+        "https://pypi.org/pypi/river-sample/json",
+        "https://pypi.org/pypi/river-sample/1.0/json",
+        "https://pypi.org/pypi/river-sample/json"
+      ],
+      "model_calls": [
+        "/select",
+        "/verify"
+      ],
+      "result": {
+        "answer": "BSD-3-Clause",
+        "sources": [
+          "https://pypi.org/pypi/river-sample/1.0/json"
+        ],
+        "confidence": 0.885,
+        "evidence": "license: BSD-3-Clause | package river-sample version 1.0 file uploaded 2019-01-02",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of the pypi package river-sample as of 2020-12-31?",
+            "url": "https://pypi.org/pypi/river-sample/json",
+            "kind": "license",
+            "terms": [
+              "license",
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "12",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "pypi.org",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 0.00697240000590682
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 2,
+          "model_selections": [
+            {
+              "raw": "BSD-3-Clause",
+              "answer": "BSD-3-Clause",
+              "source": "https://pypi.org/pypi/river-sample/1.0/json",
+              "evidence": "license: BSD-3-Clause | package river-sample version 1.0 file uploaded 2019-01-02",
+              "label": "license",
+              "section": "package river-sample version 1.0 file uploaded 2019-01-02",
+              "kind": "license",
+              "score": 13.4,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "adapter/license",
+                "structure": "field",
+                "qualifiers": {
+                  "registry_release": {
+                    "version": "1.0",
+                    "date": "2019-01-02"
+                  }
+                },
+                "field_value": "BSD-3-Clause"
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "BSD-3-Clause",
+            "answer": "BSD-3-Clause",
+            "source": "https://pypi.org/pypi/river-sample/1.0/json",
+            "evidence": "license: BSD-3-Clause | package river-sample version 1.0 file uploaded 2019-01-02",
+            "label": "license",
+            "section": "package river-sample version 1.0 file uploaded 2019-01-02",
+            "kind": "license",
+            "score": 13.4,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "adapter/license",
+              "structure": "field",
+              "qualifiers": {
+                "registry_release": {
+                  "version": "1.0",
+                  "date": "2019-01-02"
+                }
+              },
+              "field_value": "BSD-3-Clause"
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "final": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "status": 200,
+              "bytes": 381,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:45732/pypi/river-sample/1.0/json",
+              "final": "http://127.0.0.1:45732/pypi/river-sample/1.0/json",
+              "status": 200,
+              "bytes": 222,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 2,
+          "pages_fetched": 2,
+          "seconds": 0.0192
+        }
+      }
+    },
+    {
+      "id": "pypi-current",
+      "passed": true,
+      "expected": "MIT",
+      "actual": "MIT",
+      "local_hits": [
+        "/pypi/river-sample/json"
+      ],
+      "logical_requests": [
+        "https://pypi.org/pypi/river-sample/json"
+      ],
+      "model_calls": [],
+      "result": {
+        "answer": "MIT",
+        "sources": [
+          "https://pypi.org/pypi/river-sample/json"
+        ],
+        "confidence": 0.918,
+        "evidence": "license: MIT | package river-sample",
+        "reason": "direct_source",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of the pypi package river-sample?",
+            "url": "https://pypi.org/pypi/river-sample/json",
+            "kind": "license",
+            "terms": [
+              "license",
+              "pypi",
+              "package",
+              "river-sample",
+              "river",
+              "sample"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "pypi",
+              "package",
+              "river-sample",
+              "river",
+              "sample"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "pypi.org",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.001003999961540103
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "MIT",
+            "answer": "MIT",
+            "source": "https://pypi.org/pypi/river-sample/json",
+            "evidence": "license: MIT | package river-sample",
+            "label": "license",
+            "section": "package river-sample",
+            "kind": "license",
+            "score": 14.700000000000001,
+            "signals": {
+              "locator": "adapter/license",
+              "page_title": "PyPI river-sample",
+              "structure": "field",
+              "qualifiers": {},
+              "field_value": "MIT",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "final": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "status": 200,
+              "bytes": 381,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.002
+        }
+      }
+    },
+    {
+      "id": "pypi-already-current",
+      "passed": true,
+      "expected": "BSD-3-Clause",
+      "actual": "BSD-3-Clause",
+      "local_hits": [
+        "/pypi/river-sample/json"
+      ],
+      "logical_requests": [
+        "https://pypi.org/pypi/river-sample/json",
+        "https://pypi.org/pypi/river-sample/json"
+      ],
+      "model_calls": [
+        "/select",
+        "/verify"
+      ],
+      "result": {
+        "answer": "BSD-3-Clause",
+        "sources": [
+          "https://pypi.org/pypi/river-sample/json"
+        ],
+        "confidence": 0.885,
+        "evidence": "license: BSD-3-Clause | package river-sample version 1.0 file uploaded 2019-01-02",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of the pypi package river-sample as of 2020-12-31?",
+            "url": "https://pypi.org/pypi/river-sample/json",
+            "kind": "license",
+            "terms": [
+              "license",
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "12",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "pypi.org",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 0.0011260999599471688
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "BSD-3-Clause",
+              "answer": "BSD-3-Clause",
+              "source": "https://pypi.org/pypi/river-sample/json",
+              "evidence": "license: BSD-3-Clause | package river-sample version 1.0 file uploaded 2019-01-02",
+              "label": "license",
+              "section": "package river-sample version 1.0 file uploaded 2019-01-02",
+              "kind": "license",
+              "score": 13.4,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "adapter/license",
+                "structure": "field",
+                "qualifiers": {
+                  "registry_release": {
+                    "version": "1.0",
+                    "date": "2019-01-02"
+                  }
+                },
+                "field_value": "BSD-3-Clause"
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "BSD-3-Clause",
+            "answer": "BSD-3-Clause",
+            "source": "https://pypi.org/pypi/river-sample/json",
+            "evidence": "license: BSD-3-Clause | package river-sample version 1.0 file uploaded 2019-01-02",
+            "label": "license",
+            "section": "package river-sample version 1.0 file uploaded 2019-01-02",
+            "kind": "license",
+            "score": 13.4,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "adapter/license",
+              "structure": "field",
+              "qualifiers": {
+                "registry_release": {
+                  "version": "1.0",
+                  "date": "2019-01-02"
+                }
+              },
+              "field_value": "BSD-3-Clause"
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "final": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "status": 200,
+              "bytes": 312,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.006
+        }
+      }
+    },
+    {
+      "id": "pypi-empty-history",
+      "passed": true,
+      "expected": "",
+      "actual": "",
+      "local_hits": [
+        "/pypi/river-sample/json"
+      ],
+      "logical_requests": [
+        "https://pypi.org/pypi/river-sample/json",
+        "https://pypi.org/pypi/river-sample/json"
+      ],
+      "model_calls": [],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_not_run",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of the pypi package river-sample as of 2020-12-31?",
+            "url": "https://pypi.org/pypi/river-sample/json",
+            "kind": "license",
+            "terms": [
+              "license",
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "12",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "pypi.org",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.0011225000489503145
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "final": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "status": 200,
+              "bytes": 154,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0017
+        }
+      }
+    },
+    {
+      "id": "pypi-unknown-higher",
+      "passed": true,
+      "expected": "",
+      "actual": "",
+      "local_hits": [
+        "/pypi/river-sample/json"
+      ],
+      "logical_requests": [
+        "https://pypi.org/pypi/river-sample/json",
+        "https://pypi.org/pypi/river-sample/json"
+      ],
+      "model_calls": [],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_not_run",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of the pypi package river-sample as of 2020-12-31?",
+            "url": "https://pypi.org/pypi/river-sample/json",
+            "kind": "license",
+            "terms": [
+              "license",
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "12",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "pypi.org",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.0011958000250160694
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "final": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "status": 200,
+              "bytes": 316,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.002
+        }
+      }
+    },
+    {
+      "id": "pypi-missing-field",
+      "passed": true,
+      "expected": "",
+      "actual": "",
+      "local_hits": [
+        "/pypi/river-sample/json",
+        "/pypi/river-sample/1.0/json"
+      ],
+      "logical_requests": [
+        "https://pypi.org/pypi/river-sample/json",
+        "https://pypi.org/pypi/river-sample/1.0/json",
+        "https://pypi.org/pypi/river-sample/json"
+      ],
+      "model_calls": [
+        "/select"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of the pypi package river-sample as of 2020-12-31?",
+            "url": "https://pypi.org/pypi/river-sample/json",
+            "kind": "license",
+            "terms": [
+              "license",
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "12",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "pypi.org",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "abstain"
+          ],
+          "timings": {
+            "resolver": 0.027238599956035614
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 2,
+          "reader_state": "no_evidence",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "final": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "status": 200,
+              "bytes": 381,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:45732/pypi/river-sample/1.0/json",
+              "final": "http://127.0.0.1:45732/pypi/river-sample/1.0/json",
+              "status": 200,
+              "bytes": 195,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 2,
+          "pages_fetched": 2,
+          "seconds": 0.0329
+        }
+      }
+    },
+    {
+      "id": "pypi-missing-date",
+      "passed": true,
+      "expected": "",
+      "actual": "",
+      "local_hits": [
+        "/pypi/river-sample/json",
+        "/pypi/river-sample/1.0/json"
+      ],
+      "logical_requests": [
+        "https://pypi.org/pypi/river-sample/json",
+        "https://pypi.org/pypi/river-sample/1.0/json",
+        "https://pypi.org/pypi/river-sample/json"
+      ],
+      "model_calls": [],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_not_run",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of the pypi package river-sample as of 2020-12-31?",
+            "url": "https://pypi.org/pypi/river-sample/json",
+            "kind": "license",
+            "terms": [
+              "license",
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "12",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "pypi.org",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.003113199956715107
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "final": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "status": 200,
+              "bytes": 381,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:45732/pypi/river-sample/1.0/json",
+              "final": "http://127.0.0.1:45732/pypi/river-sample/1.0/json",
+              "status": 200,
+              "bytes": 157,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 2,
+          "pages_fetched": 1,
+          "seconds": 0.0048
+        }
+      }
+    },
+    {
+      "id": "pypi-wrong-name",
+      "passed": true,
+      "expected": "",
+      "actual": "",
+      "local_hits": [
+        "/pypi/river-sample/json",
+        "/pypi/river-sample/1.0/json"
+      ],
+      "logical_requests": [
+        "https://pypi.org/pypi/river-sample/json",
+        "https://pypi.org/pypi/river-sample/1.0/json",
+        "https://pypi.org/pypi/river-sample/json"
+      ],
+      "model_calls": [],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_not_run",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of the pypi package river-sample as of 2020-12-31?",
+            "url": "https://pypi.org/pypi/river-sample/json",
+            "kind": "license",
+            "terms": [
+              "license",
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "12",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "pypi.org",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.0024730999721214175
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "final": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "status": 200,
+              "bytes": 381,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:45732/pypi/river-sample/1.0/json",
+              "final": "http://127.0.0.1:45732/pypi/river-sample/1.0/json",
+              "status": 200,
+              "bytes": 223,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 2,
+          "pages_fetched": 1,
+          "seconds": 0.0039
+        }
+      }
+    },
+    {
+      "id": "pypi-wrong-version",
+      "passed": true,
+      "expected": "",
+      "actual": "",
+      "local_hits": [
+        "/pypi/river-sample/json",
+        "/pypi/river-sample/1.0/json"
+      ],
+      "logical_requests": [
+        "https://pypi.org/pypi/river-sample/json",
+        "https://pypi.org/pypi/river-sample/1.0/json",
+        "https://pypi.org/pypi/river-sample/json"
+      ],
+      "model_calls": [],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_not_run",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of the pypi package river-sample as of 2020-12-31?",
+            "url": "https://pypi.org/pypi/river-sample/json",
+            "kind": "license",
+            "terms": [
+              "license",
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "12",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "pypi.org",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.0032633000519126654
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "final": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "status": 200,
+              "bytes": 381,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:45732/pypi/river-sample/1.0/json",
+              "final": "http://127.0.0.1:45732/pypi/river-sample/1.0/json",
+              "status": 200,
+              "bytes": 222,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 2,
+          "pages_fetched": 1,
+          "seconds": 0.0077
+        }
+      }
+    },
+    {
+      "id": "pypi-author",
+      "passed": true,
+      "expected": "Early Author",
+      "actual": "Early Author",
+      "local_hits": [
+        "/pypi/river-sample/json",
+        "/pypi/river-sample/1.0/json"
+      ],
+      "logical_requests": [
+        "https://pypi.org/pypi/river-sample/json",
+        "https://pypi.org/pypi/river-sample/1.0/json",
+        "https://pypi.org/pypi/river-sample/json"
+      ],
+      "model_calls": [
+        "/select",
+        "/verify"
+      ],
+      "result": {
+        "answer": "Early Author",
+        "sources": [
+          "https://pypi.org/pypi/river-sample/1.0/json"
+        ],
+        "confidence": 0.97,
+        "evidence": "author: Early Author | package river-sample version 1.0 file uploaded 2019-01-02",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the author of the pypi package river-sample as of 2020-12-31?",
+            "url": "https://pypi.org/pypi/river-sample/json",
+            "kind": "text",
+            "terms": [
+              "author",
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "author",
+              "authors",
+              "creator",
+              "maintainer",
+              "written"
+            ],
+            "entity_terms": [
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "12",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "pypi.org",
+            "focus": "what was the author ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 0.0031024999916553497
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 2,
+          "model_selections": [
+            {
+              "raw": "Early Author",
+              "answer": "Early Author",
+              "source": "https://pypi.org/pypi/river-sample/1.0/json",
+              "evidence": "author: Early Author | package river-sample version 1.0 file uploaded 2019-01-02",
+              "label": "author",
+              "section": "package river-sample version 1.0 file uploaded 2019-01-02",
+              "kind": "text",
+              "score": 19.4,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "adapter/author",
+                "structure": "field",
+                "qualifiers": {
+                  "registry_release": {
+                    "version": "1.0",
+                    "date": "2019-01-02"
+                  }
+                },
+                "field_value": "Early Author"
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "Early Author",
+            "answer": "Early Author",
+            "source": "https://pypi.org/pypi/river-sample/1.0/json",
+            "evidence": "author: Early Author | package river-sample version 1.0 file uploaded 2019-01-02",
+            "label": "author",
+            "section": "package river-sample version 1.0 file uploaded 2019-01-02",
+            "kind": "text",
+            "score": 19.4,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "adapter/author",
+              "structure": "field",
+              "qualifiers": {
+                "registry_release": {
+                  "version": "1.0",
+                  "date": "2019-01-02"
+                }
+              },
+              "field_value": "Early Author"
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "final": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "status": 200,
+              "bytes": 381,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:45732/pypi/river-sample/1.0/json",
+              "final": "http://127.0.0.1:45732/pypi/river-sample/1.0/json",
+              "status": 200,
+              "bytes": 222,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 2,
+          "pages_fetched": 2,
+          "seconds": 0.0113
+        }
+      }
+    },
+    {
+      "id": "pypi-description-author",
+      "passed": true,
+      "expected": "Early Author",
+      "actual": "Early Author",
+      "local_hits": [
+        "/pypi/river-sample/json",
+        "/pypi/river-sample/1.0/json"
+      ],
+      "logical_requests": [
+        "https://pypi.org/pypi/river-sample/json",
+        "https://pypi.org/pypi/river-sample/1.0/json",
+        "https://pypi.org/pypi/river-sample/json"
+      ],
+      "model_calls": [
+        "/select",
+        "/verify"
+      ],
+      "result": {
+        "answer": "Early Author",
+        "sources": [
+          "https://pypi.org/pypi/river-sample/1.0/json"
+        ],
+        "confidence": 0.788,
+        "evidence": "package river-sample version 1.0 file uploaded 2019-01-02 | author: Early Author",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the author of the pypi package river-sample as of 2020-12-31?",
+            "url": "https://pypi.org/pypi/river-sample/json",
+            "kind": "text",
+            "terms": [
+              "author",
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "author",
+              "authors",
+              "creator",
+              "maintainer",
+              "written"
+            ],
+            "entity_terms": [
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "12",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "pypi.org",
+            "focus": "what was the author ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 0.0014757999451830983
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 2,
+          "model_selections": [
+            {
+              "raw": "Early Author",
+              "answer": "Early Author",
+              "source": "https://pypi.org/pypi/river-sample/1.0/json",
+              "evidence": "package river-sample version 1.0 file uploaded 2019-01-02 | author: Early Author",
+              "label": "",
+              "section": "Project description",
+              "kind": "text",
+              "score": 9.5,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "info.description:0",
+                "structure": "prose",
+                "qualifiers": {
+                  "registry_release": {
+                    "version": "1.0",
+                    "date": "2019-01-02"
+                  }
+                },
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "Early Author",
+            "answer": "Early Author",
+            "source": "https://pypi.org/pypi/river-sample/1.0/json",
+            "evidence": "package river-sample version 1.0 file uploaded 2019-01-02 | author: Early Author",
+            "label": "",
+            "section": "Project description",
+            "kind": "text",
+            "score": 9.5,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "info.description:0",
+              "structure": "prose",
+              "qualifiers": {
+                "registry_release": {
+                  "version": "1.0",
+                  "date": "2019-01-02"
+                }
+              },
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "final": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "status": 200,
+              "bytes": 381,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:45732/pypi/river-sample/1.0/json",
+              "final": "http://127.0.0.1:45732/pypi/river-sample/1.0/json",
+              "status": 200,
+              "bytes": 235,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 2,
+          "pages_fetched": 2,
+          "seconds": 0.0066
+        }
+      }
+    },
+    {
+      "id": "pypi-invalid-time",
+      "passed": true,
+      "expected": "",
+      "actual": "",
+      "local_hits": [
+        "/pypi/river-sample/json",
+        "/pypi/river-sample/1.0/json"
+      ],
+      "logical_requests": [
+        "https://pypi.org/pypi/river-sample/json",
+        "https://pypi.org/pypi/river-sample/1.0/json",
+        "https://pypi.org/pypi/river-sample/json"
+      ],
+      "model_calls": [],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_not_run",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of the pypi package river-sample as of 2020-12-31?",
+            "url": "https://pypi.org/pypi/river-sample/json",
+            "kind": "license",
+            "terms": [
+              "license",
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "12",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "pypi.org",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.0016496999887749553
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "final": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "status": 200,
+              "bytes": 381,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:45732/pypi/river-sample/1.0/json",
+              "final": "http://127.0.0.1:45732/pypi/river-sample/1.0/json",
+              "status": 200,
+              "bytes": 205,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 2,
+          "pages_fetched": 1,
+          "seconds": 0.0025
+        }
+      }
+    },
+    {
+      "id": "pypi-future-own-date",
+      "passed": true,
+      "expected": "",
+      "actual": "",
+      "local_hits": [
+        "/pypi/river-sample/json",
+        "/pypi/river-sample/1.0/json"
+      ],
+      "logical_requests": [
+        "https://pypi.org/pypi/river-sample/json",
+        "https://pypi.org/pypi/river-sample/1.0/json",
+        "https://pypi.org/pypi/river-sample/json"
+      ],
+      "model_calls": [],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_not_run",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of the pypi package river-sample as of 2020-12-31?",
+            "url": "https://pypi.org/pypi/river-sample/json",
+            "kind": "license",
+            "terms": [
+              "license",
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "12",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "pypi.org",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.0016305999597534537
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "final": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "status": 200,
+              "bytes": 381,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:45732/pypi/river-sample/1.0/json",
+              "final": "http://127.0.0.1:45732/pypi/river-sample/1.0/json",
+              "status": 200,
+              "bytes": 222,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 2,
+          "pages_fetched": 1,
+          "seconds": 0.0024
+        }
+      }
+    },
+    {
+      "id": "pypi-redirect-lookalike",
+      "passed": true,
+      "expected": "",
+      "actual": "",
+      "local_hits": [
+        "/pypi/river-sample/json",
+        "/pypi/river-sample/1.0/json"
+      ],
+      "logical_requests": [
+        "https://pypi.org/pypi/river-sample/json",
+        "https://pypi.org/pypi/river-sample/1.0/json",
+        "https://pypi.org/pypi/river-sample/json"
+      ],
+      "model_calls": [],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_not_run",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of the pypi package river-sample as of 2020-12-31?",
+            "url": "https://pypi.org/pypi/river-sample/json",
+            "kind": "license",
+            "terms": [
+              "license",
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "12",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "pypi.org",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.0019089000998064876
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "final": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "status": 200,
+              "bytes": 381,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:45732/pypi/river-sample/1.0/json",
+              "final": "http://127.0.0.1:45732/pypi/river-sample/1.0/json",
+              "status": 200,
+              "bytes": 222,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 2,
+          "pages_fetched": 1,
+          "seconds": 0.003
+        }
+      }
+    },
+    {
+      "id": "pypi-truncated",
+      "passed": true,
+      "expected": "",
+      "actual": "",
+      "local_hits": [
+        "/pypi/river-sample/json"
+      ],
+      "logical_requests": [
+        "https://pypi.org/pypi/river-sample/json",
+        "https://pypi.org/pypi/river-sample/json"
+      ],
+      "model_calls": [],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_not_run",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of the pypi package river-sample as of 2020-12-31?",
+            "url": "https://pypi.org/pypi/river-sample/json",
+            "kind": "license",
+            "terms": [
+              "license",
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "12",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "pypi.org",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.0012089000083506107
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "final": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "status": 200,
+              "bytes": 381,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0022
+        }
+      }
+    },
+    {
+      "id": "pypi-low-budget",
+      "passed": true,
+      "expected": "",
+      "actual": "",
+      "local_hits": [
+        "/pypi/river-sample/json"
+      ],
+      "logical_requests": [
+        "https://pypi.org/pypi/river-sample/json",
+        "https://pypi.org/pypi/river-sample/json"
+      ],
+      "model_calls": [],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_not_run",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of the pypi package river-sample as of 2020-12-31?",
+            "url": "https://pypi.org/pypi/river-sample/json",
+            "kind": "license",
+            "terms": [
+              "license",
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "12",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "pypi.org",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.0011594999814406037
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "final": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "status": 200,
+              "bytes": 381,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.002
+        }
+      }
+    },
+    {
+      "id": "pypi-frontend-bypass",
+      "passed": true,
+      "expected": "",
+      "actual": "",
+      "local_hits": [
+        "/pypi/river-sample/json",
+        "/project/river-sample/"
+      ],
+      "logical_requests": [
+        "https://pypi.org/pypi/river-sample/json",
+        "https://pypi.org/project/river-sample/"
+      ],
+      "model_calls": [],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_not_run",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of the pypi package river-sample as of 2020-12-31?",
+            "url": "https://pypi.org/project/river-sample/",
+            "kind": "license",
+            "terms": [
+              "license",
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "12",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "pypi.org",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.0009101999457925558
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 2,
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "final": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "status": 200,
+              "bytes": 154,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:45732/project/river-sample/",
+              "final": "http://127.0.0.1:45732/project/river-sample/",
+              "status": 200,
+              "bytes": 40,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 2,
+          "pages_fetched": 2,
+          "seconds": 0.0079
+        }
+      }
+    },
+    {
+      "id": "pypi-alias-collision",
+      "passed": true,
+      "expected": "",
+      "actual": "",
+      "local_hits": [
+        "/pypi/river-sample/json"
+      ],
+      "logical_requests": [
+        "https://pypi.org/pypi/river-sample/json",
+        "https://pypi.org/pypi/river-sample/json"
+      ],
+      "model_calls": [],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_not_run",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of the pypi package river-sample as of 2020-12-31?",
+            "url": "https://pypi.org/pypi/river-sample/json",
+            "kind": "license",
+            "terms": [
+              "license",
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "12",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "pypi.org",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.0012236000038683414
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "final": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "status": 200,
+              "bytes": 459,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0021
+        }
+      }
+    },
+    {
+      "id": "pypi-no-model",
+      "passed": true,
+      "expected": "BSD-3-Clause",
+      "actual": "BSD-3-Clause",
+      "logical_requests": [
+        "https://pypi.org/pypi/river-sample/json",
+        "https://pypi.org/pypi/river-sample/1.0/json",
+        "https://pypi.org/pypi/river-sample/json"
+      ],
+      "model_calls": [],
+      "result": {
+        "answer": "BSD-3-Clause",
+        "sources": [
+          "https://pypi.org/pypi/river-sample/1.0/json"
+        ],
+        "confidence": 0.918,
+        "evidence": "license: BSD-3-Clause | package river-sample version 1.0 file uploaded 2019-01-02",
+        "reason": "deterministic_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of the pypi package river-sample as of 2020-12-31?",
+            "url": "https://pypi.org/pypi/river-sample/json",
+            "kind": "license",
+            "terms": [
+              "license",
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "12",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "pypi.org",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.0015779000241309404
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 2,
+          "selection": {
+            "raw": "BSD-3-Clause",
+            "answer": "BSD-3-Clause",
+            "source": "https://pypi.org/pypi/river-sample/1.0/json",
+            "evidence": "license: BSD-3-Clause | package river-sample version 1.0 file uploaded 2019-01-02",
+            "label": "license",
+            "section": "package river-sample version 1.0 file uploaded 2019-01-02",
+            "kind": "license",
+            "score": 14.700000000000001,
+            "signals": {
+              "locator": "adapter/license",
+              "page_title": "PyPI river-sample",
+              "structure": "field",
+              "qualifiers": {
+                "registry_release": {
+                  "version": "1.0",
+                  "date": "2019-01-02"
+                }
+              },
+              "field_value": "BSD-3-Clause",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "final": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "status": 200,
+              "bytes": 381,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:45732/pypi/river-sample/1.0/json",
+              "final": "http://127.0.0.1:45732/pypi/river-sample/1.0/json",
+              "status": 200,
+              "bytes": 222,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 2,
+          "pages_fetched": 2,
+          "seconds": 0.0045
+        }
+      }
+    },
+    {
+      "id": "pypi-year",
+      "passed": true,
+      "expected": "BSD-3-Clause",
+      "actual": "BSD-3-Clause",
+      "logical_requests": [
+        "https://pypi.org/pypi/river-sample/json",
+        "https://pypi.org/pypi/river-sample/1.0/json",
+        "https://pypi.org/pypi/river-sample/json"
+      ],
+      "model_calls": [
+        "/select",
+        "/verify"
+      ],
+      "result": {
+        "answer": "BSD-3-Clause",
+        "sources": [
+          "https://pypi.org/pypi/river-sample/1.0/json"
+        ],
+        "confidence": 0.97,
+        "evidence": "license: BSD-3-Clause | package river-sample version 1.0 file uploaded 2019-01-02",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of the pypi package river-sample in 2019?",
+            "url": "https://pypi.org/pypi/river-sample/json",
+            "kind": "license",
+            "terms": [
+              "license",
+              "pypi",
+              "package",
+              "river-sample",
+              "2019",
+              "river",
+              "sample"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "pypi",
+              "package",
+              "river-sample",
+              "river",
+              "sample"
+            ],
+            "versions": [],
+            "year": "2019",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "pypi.org",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 0.0016979000065475702
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 2,
+          "model_selections": [
+            {
+              "raw": "BSD-3-Clause",
+              "answer": "BSD-3-Clause",
+              "source": "https://pypi.org/pypi/river-sample/1.0/json",
+              "evidence": "license: BSD-3-Clause | package river-sample version 1.0 file uploaded 2019-01-02",
+              "label": "license",
+              "section": "package river-sample version 1.0 file uploaded 2019-01-02",
+              "kind": "license",
+              "score": 17.5,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "adapter/license",
+                "structure": "field",
+                "qualifiers": {
+                  "registry_release": {
+                    "version": "1.0",
+                    "date": "2019-01-02"
+                  }
+                },
+                "field_value": "BSD-3-Clause"
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "BSD-3-Clause",
+            "answer": "BSD-3-Clause",
+            "source": "https://pypi.org/pypi/river-sample/1.0/json",
+            "evidence": "license: BSD-3-Clause | package river-sample version 1.0 file uploaded 2019-01-02",
+            "label": "license",
+            "section": "package river-sample version 1.0 file uploaded 2019-01-02",
+            "kind": "license",
+            "score": 17.5,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "adapter/license",
+              "structure": "field",
+              "qualifiers": {
+                "registry_release": {
+                  "version": "1.0",
+                  "date": "2019-01-02"
+                }
+              },
+              "field_value": "BSD-3-Clause"
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "final": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "status": 200,
+              "bytes": 381,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:45732/pypi/river-sample/1.0/json",
+              "final": "http://127.0.0.1:45732/pypi/river-sample/1.0/json",
+              "status": 200,
+              "bytes": 222,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 2,
+          "pages_fetched": 2,
+          "seconds": 0.0069
+        }
+      }
+    },
+    {
+      "id": "npm-snapshot",
+      "passed": true,
+      "expected": "BSD-3-Clause",
+      "actual": "BSD-3-Clause",
+      "local_hits": [
+        "/river-sample"
+      ],
+      "logical_requests": [
+        "https://registry.npmjs.org/river-sample",
+        "https://registry.npmjs.org/river-sample"
+      ],
+      "model_calls": [
+        "/select",
+        "/verify"
+      ],
+      "result": {
+        "answer": "BSD-3-Clause",
+        "sources": [
+          "https://registry.npmjs.org/river-sample"
+        ],
+        "confidence": 0.858,
+        "evidence": "license: BSD-3-Clause | river-sample version 1.0.0 published 2019-01-02",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of the npm package river-sample as of 2020-12-31?",
+            "url": "https://registry.npmjs.org/river-sample",
+            "kind": "license",
+            "terms": [
+              "license",
+              "npm",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "npm",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "12",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "registry.npmjs.org",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 0.0014933000784367323
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "BSD-3-Clause",
+              "answer": "BSD-3-Clause",
+              "source": "https://registry.npmjs.org/river-sample",
+              "evidence": "license: BSD-3-Clause | river-sample version 1.0.0 published 2019-01-02",
+              "label": "license",
+              "section": "river-sample version 1.0.0 published 2019-01-02",
+              "kind": "license",
+              "score": 12.3,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "adapter/license",
+                "structure": "field",
+                "qualifiers": {
+                  "registry_release": {
+                    "version": "1.0.0",
+                    "date": "2019-01-02"
+                  }
+                },
+                "field_value": "BSD-3-Clause"
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "BSD-3-Clause",
+            "answer": "BSD-3-Clause",
+            "source": "https://registry.npmjs.org/river-sample",
+            "evidence": "license: BSD-3-Clause | river-sample version 1.0.0 published 2019-01-02",
+            "label": "license",
+            "section": "river-sample version 1.0.0 published 2019-01-02",
+            "kind": "license",
+            "score": 12.3,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "adapter/license",
+              "structure": "field",
+              "qualifiers": {
+                "registry_release": {
+                  "version": "1.0.0",
+                  "date": "2019-01-02"
+                }
+              },
+              "field_value": "BSD-3-Clause"
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/river-sample",
+              "final": "http://127.0.0.1:45732/river-sample",
+              "status": 200,
+              "bytes": 395,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0058
+        }
+      }
+    },
+    {
+      "id": "npm-current",
+      "passed": true,
+      "expected": "MIT",
+      "actual": "MIT",
+      "local_hits": [
+        "/river-sample/latest"
+      ],
+      "logical_requests": [
+        "https://registry.npmjs.org/river-sample/latest"
+      ],
+      "model_calls": [],
+      "result": {
+        "answer": "MIT",
+        "sources": [
+          "https://registry.npmjs.org/river-sample/latest"
+        ],
+        "confidence": 0.89,
+        "evidence": "license: MIT | river-sample",
+        "reason": "direct_source",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of the npm package river-sample?",
+            "url": "https://registry.npmjs.org/river-sample",
+            "kind": "license",
+            "terms": [
+              "license",
+              "npm",
+              "package",
+              "river-sample",
+              "river",
+              "sample"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "npm",
+              "package",
+              "river-sample",
+              "river",
+              "sample"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "registry.npmjs.org",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.0008705999935045838
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "MIT",
+            "answer": "MIT",
+            "source": "https://registry.npmjs.org/river-sample/latest",
+            "evidence": "license: MIT | river-sample",
+            "label": "license",
+            "section": "river-sample",
+            "kind": "license",
+            "score": 13.600000000000001,
+            "signals": {
+              "locator": "adapter/license",
+              "page_title": "npm river-sample",
+              "structure": "field",
+              "qualifiers": {},
+              "field_value": "MIT",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/river-sample/latest",
+              "final": "http://127.0.0.1:45732/river-sample/latest",
+              "status": 200,
+              "bytes": 395,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0014
+        }
+      }
+    },
+    {
+      "id": "npm-already-current",
+      "passed": true,
+      "expected": "BSD-3-Clause",
+      "actual": "BSD-3-Clause",
+      "local_hits": [
+        "/river-sample"
+      ],
+      "logical_requests": [
+        "https://registry.npmjs.org/river-sample",
+        "https://registry.npmjs.org/river-sample"
+      ],
+      "model_calls": [
+        "/select",
+        "/verify"
+      ],
+      "result": {
+        "answer": "BSD-3-Clause",
+        "sources": [
+          "https://registry.npmjs.org/river-sample"
+        ],
+        "confidence": 0.858,
+        "evidence": "license: BSD-3-Clause | river-sample version 1.0.0 published 2019-01-02",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of the npm package river-sample as of 2020-12-31?",
+            "url": "https://registry.npmjs.org/river-sample",
+            "kind": "license",
+            "terms": [
+              "license",
+              "npm",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "npm",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "12",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "registry.npmjs.org",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 0.0009625999955460429
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "BSD-3-Clause",
+              "answer": "BSD-3-Clause",
+              "source": "https://registry.npmjs.org/river-sample",
+              "evidence": "license: BSD-3-Clause | river-sample version 1.0.0 published 2019-01-02",
+              "label": "license",
+              "section": "river-sample version 1.0.0 published 2019-01-02",
+              "kind": "license",
+              "score": 12.3,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "adapter/license",
+                "structure": "field",
+                "qualifiers": {
+                  "registry_release": {
+                    "version": "1.0.0",
+                    "date": "2019-01-02"
+                  }
+                },
+                "field_value": "BSD-3-Clause"
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "BSD-3-Clause",
+            "answer": "BSD-3-Clause",
+            "source": "https://registry.npmjs.org/river-sample",
+            "evidence": "license: BSD-3-Clause | river-sample version 1.0.0 published 2019-01-02",
+            "label": "license",
+            "section": "river-sample version 1.0.0 published 2019-01-02",
+            "kind": "license",
+            "score": 12.3,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "adapter/license",
+              "structure": "field",
+              "qualifiers": {
+                "registry_release": {
+                  "version": "1.0.0",
+                  "date": "2019-01-02"
+                }
+              },
+              "field_value": "BSD-3-Clause"
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/river-sample",
+              "final": "http://127.0.0.1:45732/river-sample",
+              "status": 200,
+              "bytes": 260,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0049
+        }
+      }
+    },
+    {
+      "id": "npm-empty-history",
+      "passed": true,
+      "expected": "",
+      "actual": "",
+      "local_hits": [
+        "/river-sample"
+      ],
+      "logical_requests": [
+        "https://registry.npmjs.org/river-sample",
+        "https://registry.npmjs.org/river-sample"
+      ],
+      "model_calls": [],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_not_run",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of the npm package river-sample as of 2020-12-31?",
+            "url": "https://registry.npmjs.org/river-sample",
+            "kind": "license",
+            "terms": [
+              "license",
+              "npm",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "npm",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "12",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "registry.npmjs.org",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.0008330000564455986
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/river-sample",
+              "final": "http://127.0.0.1:45732/river-sample",
+              "status": 200,
+              "bytes": 104,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0013
+        }
+      }
+    },
+    {
+      "id": "npm-unknown-higher",
+      "passed": true,
+      "expected": "",
+      "actual": "",
+      "local_hits": [
+        "/river-sample"
+      ],
+      "logical_requests": [
+        "https://registry.npmjs.org/river-sample",
+        "https://registry.npmjs.org/river-sample"
+      ],
+      "model_calls": [],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_not_run",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of the npm package river-sample as of 2020-12-31?",
+            "url": "https://registry.npmjs.org/river-sample",
+            "kind": "license",
+            "terms": [
+              "license",
+              "npm",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "npm",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "12",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "registry.npmjs.org",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.0009082000469788909
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/river-sample",
+              "final": "http://127.0.0.1:45732/river-sample",
+              "status": 200,
+              "bytes": 362,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0015
+        }
+      }
+    },
+    {
+      "id": "npm-missing-field",
+      "passed": true,
+      "expected": "",
+      "actual": "",
+      "local_hits": [
+        "/river-sample"
+      ],
+      "logical_requests": [
+        "https://registry.npmjs.org/river-sample",
+        "https://registry.npmjs.org/river-sample"
+      ],
+      "model_calls": [
+        "/select"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of the npm package river-sample as of 2020-12-31?",
+            "url": "https://registry.npmjs.org/river-sample",
+            "kind": "license",
+            "terms": [
+              "license",
+              "npm",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "npm",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "12",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "registry.npmjs.org",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "abstain"
+          ],
+          "timings": {
+            "resolver": 0.0009923999896273017
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "reader_state": "no_evidence",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/river-sample",
+              "final": "http://127.0.0.1:45732/river-sample",
+              "status": 200,
+              "bytes": 368,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.003
+        }
+      }
+    },
+    {
+      "id": "npm-missing-date",
+      "passed": true,
+      "expected": "",
+      "actual": "",
+      "local_hits": [
+        "/river-sample"
+      ],
+      "logical_requests": [
+        "https://registry.npmjs.org/river-sample",
+        "https://registry.npmjs.org/river-sample"
+      ],
+      "model_calls": [],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_not_run",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of the npm package river-sample as of 2020-12-31?",
+            "url": "https://registry.npmjs.org/river-sample",
+            "kind": "license",
+            "terms": [
+              "license",
+              "npm",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "npm",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "12",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "registry.npmjs.org",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.0009267000714316964
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/river-sample",
+              "final": "http://127.0.0.1:45732/river-sample",
+              "status": 200,
+              "bytes": 362,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0015
+        }
+      }
+    },
+    {
+      "id": "npm-wrong-name",
+      "passed": true,
+      "expected": "",
+      "actual": "",
+      "local_hits": [
+        "/river-sample"
+      ],
+      "logical_requests": [
+        "https://registry.npmjs.org/river-sample",
+        "https://registry.npmjs.org/river-sample"
+      ],
+      "model_calls": [],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_not_run",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of the npm package river-sample as of 2020-12-31?",
+            "url": "https://registry.npmjs.org/river-sample",
+            "kind": "license",
+            "terms": [
+              "license",
+              "npm",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "npm",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "12",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "registry.npmjs.org",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.0009423999581485987
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/river-sample",
+              "final": "http://127.0.0.1:45732/river-sample",
+              "status": 200,
+              "bytes": 396,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0016
+        }
+      }
+    },
+    {
+      "id": "npm-wrong-version",
+      "passed": true,
+      "expected": "",
+      "actual": "",
+      "local_hits": [
+        "/river-sample"
+      ],
+      "logical_requests": [
+        "https://registry.npmjs.org/river-sample",
+        "https://registry.npmjs.org/river-sample"
+      ],
+      "model_calls": [],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_not_run",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of the npm package river-sample as of 2020-12-31?",
+            "url": "https://registry.npmjs.org/river-sample",
+            "kind": "license",
+            "terms": [
+              "license",
+              "npm",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "npm",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "12",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "registry.npmjs.org",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.0009648998966440558
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/river-sample",
+              "final": "http://127.0.0.1:45732/river-sample",
+              "status": 200,
+              "bytes": 395,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0016
+        }
+      }
+    },
+    {
+      "id": "npm-author",
+      "passed": true,
+      "expected": "Early Author",
+      "actual": "Early Author",
+      "local_hits": [
+        "/river-sample"
+      ],
+      "logical_requests": [
+        "https://registry.npmjs.org/river-sample",
+        "https://registry.npmjs.org/river-sample"
+      ],
+      "model_calls": [
+        "/select",
+        "/verify"
+      ],
+      "result": {
+        "answer": "Early Author",
+        "sources": [
+          "https://registry.npmjs.org/river-sample"
+        ],
+        "confidence": 0.97,
+        "evidence": "author: Early Author | river-sample version 1.0.0 published 2019-01-02",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the author of the npm package river-sample as of 2020-12-31?",
+            "url": "https://registry.npmjs.org/river-sample",
+            "kind": "text",
+            "terms": [
+              "author",
+              "npm",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "author",
+              "authors",
+              "creator",
+              "maintainer",
+              "written"
+            ],
+            "entity_terms": [
+              "npm",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "12",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "registry.npmjs.org",
+            "focus": "what was the author ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 0.0009694000473245978
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Early Author",
+              "answer": "Early Author",
+              "source": "https://registry.npmjs.org/river-sample",
+              "evidence": "author: Early Author | river-sample version 1.0.0 published 2019-01-02",
+              "label": "author",
+              "section": "river-sample version 1.0.0 published 2019-01-02",
+              "kind": "text",
+              "score": 18.3,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "adapter/author",
+                "structure": "field",
+                "qualifiers": {
+                  "registry_release": {
+                    "version": "1.0.0",
+                    "date": "2019-01-02"
+                  }
+                },
+                "field_value": "Early Author"
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "Early Author",
+            "answer": "Early Author",
+            "source": "https://registry.npmjs.org/river-sample",
+            "evidence": "author: Early Author | river-sample version 1.0.0 published 2019-01-02",
+            "label": "author",
+            "section": "river-sample version 1.0.0 published 2019-01-02",
+            "kind": "text",
+            "score": 18.3,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "adapter/author",
+              "structure": "field",
+              "qualifiers": {
+                "registry_release": {
+                  "version": "1.0.0",
+                  "date": "2019-01-02"
+                }
+              },
+              "field_value": "Early Author"
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/river-sample",
+              "final": "http://127.0.0.1:45732/river-sample",
+              "status": 200,
+              "bytes": 395,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0049
+        }
+      }
+    },
+    {
+      "id": "npm-description-author",
+      "passed": true,
+      "expected": "Early Author",
+      "actual": "Early Author",
+      "local_hits": [
+        "/river-sample"
+      ],
+      "logical_requests": [
+        "https://registry.npmjs.org/river-sample",
+        "https://registry.npmjs.org/river-sample"
+      ],
+      "model_calls": [
+        "/select",
+        "/verify"
+      ],
+      "result": {
+        "answer": "Early Author",
+        "sources": [
+          "https://registry.npmjs.org/river-sample"
+        ],
+        "confidence": 0.785,
+        "evidence": "description: author: Early Author | river-sample version 1.0.0 published 2019-01-02",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the author of the npm package river-sample as of 2020-12-31?",
+            "url": "https://registry.npmjs.org/river-sample",
+            "kind": "text",
+            "terms": [
+              "author",
+              "npm",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "author",
+              "authors",
+              "creator",
+              "maintainer",
+              "written"
+            ],
+            "entity_terms": [
+              "npm",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "12",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "registry.npmjs.org",
+            "focus": "what was the author ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 0.0009540999308228493
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Early Author",
+              "answer": "Early Author",
+              "source": "https://registry.npmjs.org/river-sample",
+              "evidence": "description: author: Early Author | river-sample version 1.0.0 published 2019-01-02",
+              "label": "description",
+              "section": "river-sample version 1.0.0 published 2019-01-02",
+              "kind": "text",
+              "score": 9.4,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "adapter/description",
+                "structure": "field",
+                "qualifiers": {
+                  "registry_release": {
+                    "version": "1.0.0",
+                    "date": "2019-01-02"
+                  }
+                },
+                "field_value": "author: Early Author"
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "Early Author",
+            "answer": "Early Author",
+            "source": "https://registry.npmjs.org/river-sample",
+            "evidence": "description: author: Early Author | river-sample version 1.0.0 published 2019-01-02",
+            "label": "description",
+            "section": "river-sample version 1.0.0 published 2019-01-02",
+            "kind": "text",
+            "score": 9.4,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "adapter/description",
+              "structure": "field",
+              "qualifiers": {
+                "registry_release": {
+                  "version": "1.0.0",
+                  "date": "2019-01-02"
+                }
+              },
+              "field_value": "author: Early Author"
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/river-sample",
+              "final": "http://127.0.0.1:45732/river-sample",
+              "status": 200,
+              "bytes": 398,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0287
+        }
+      }
+    },
+    {
+      "id": "npm-invalid-time",
+      "passed": true,
+      "expected": "",
+      "actual": "",
+      "local_hits": [
+        "/river-sample"
+      ],
+      "logical_requests": [
+        "https://registry.npmjs.org/river-sample",
+        "https://registry.npmjs.org/river-sample"
+      ],
+      "model_calls": [],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_not_run",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of the npm package river-sample as of 2020-12-31?",
+            "url": "https://registry.npmjs.org/river-sample",
+            "kind": "license",
+            "terms": [
+              "license",
+              "npm",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "npm",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "12",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "registry.npmjs.org",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.001136499922722578
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/river-sample",
+              "final": "http://127.0.0.1:45732/river-sample",
+              "status": 200,
+              "bytes": 395,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0019
+        }
+      }
+    },
+    {
+      "id": "npm-build-tie",
+      "passed": true,
+      "expected": "",
+      "actual": "",
+      "local_hits": [
+        "/river-sample"
+      ],
+      "logical_requests": [
+        "https://registry.npmjs.org/river-sample",
+        "https://registry.npmjs.org/river-sample"
+      ],
+      "model_calls": [],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_not_run",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of the npm package river-sample as of 2020-12-31?",
+            "url": "https://registry.npmjs.org/river-sample",
+            "kind": "license",
+            "terms": [
+              "license",
+              "npm",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "npm",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "12",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "registry.npmjs.org",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.0010967999696731567
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/river-sample",
+              "final": "http://127.0.0.1:45732/river-sample",
+              "status": 200,
+              "bytes": 647,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0019
+        }
+      }
+    },
+    {
+      "id": "npm-preview",
+      "passed": true,
+      "expected": "Apache-2.0",
+      "actual": "Apache-2.0",
+      "local_hits": [
+        "/river-sample"
+      ],
+      "logical_requests": [
+        "https://registry.npmjs.org/river-sample",
+        "https://registry.npmjs.org/river-sample"
+      ],
+      "model_calls": [
+        "/select",
+        "/verify"
+      ],
+      "result": {
+        "answer": "Apache-2.0",
+        "sources": [
+          "https://registry.npmjs.org/river-sample"
+        ],
+        "confidence": 0.873,
+        "evidence": "license: Apache-2.0 | river-sample version 1.1.0-custom.10 published 2019-06-01",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of the preview release of the npm package river-sample as of 2020-12-31?",
+            "url": "https://registry.npmjs.org/river-sample",
+            "kind": "license",
+            "terms": [
+              "license",
+              "preview",
+              "release",
+              "npm",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "version",
+              "release",
+              "stable",
+              "latest",
+              "download",
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "preview",
+              "npm",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "12",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "registry.npmjs.org",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 0.0011045999126508832
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Apache-2.0",
+              "answer": "Apache-2.0",
+              "source": "https://registry.npmjs.org/river-sample",
+              "evidence": "license: Apache-2.0 | river-sample version 1.1.0-custom.10 published 2019-06-01",
+              "label": "license",
+              "section": "river-sample version 1.1.0-custom.10 published 2019-06-01",
+              "kind": "license",
+              "score": 12.9,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "adapter/license",
+                "structure": "field",
+                "qualifiers": {
+                  "registry_release": {
+                    "version": "1.1.0-custom.10",
+                    "date": "2019-06-01"
+                  }
+                },
+                "field_value": "Apache-2.0"
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "Apache-2.0",
+            "answer": "Apache-2.0",
+            "source": "https://registry.npmjs.org/river-sample",
+            "evidence": "license: Apache-2.0 | river-sample version 1.1.0-custom.10 published 2019-06-01",
+            "label": "license",
+            "section": "river-sample version 1.1.0-custom.10 published 2019-06-01",
+            "kind": "license",
+            "score": 12.9,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "adapter/license",
+              "structure": "field",
+              "qualifiers": {
+                "registry_release": {
+                  "version": "1.1.0-custom.10",
+                  "date": "2019-06-01"
+                }
+              },
+              "field_value": "Apache-2.0"
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/river-sample",
+              "final": "http://127.0.0.1:45732/river-sample",
+              "status": 200,
+              "bytes": 680,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0055
+        }
+      }
+    },
+    {
+      "id": "npm-default-stable",
+      "passed": true,
+      "expected": "BSD-3-Clause",
+      "actual": "BSD-3-Clause",
+      "local_hits": [
+        "/river-sample"
+      ],
+      "logical_requests": [
+        "https://registry.npmjs.org/river-sample",
+        "https://registry.npmjs.org/river-sample"
+      ],
+      "model_calls": [
+        "/select",
+        "/verify"
+      ],
+      "result": {
+        "answer": "BSD-3-Clause",
+        "sources": [
+          "https://registry.npmjs.org/river-sample"
+        ],
+        "confidence": 0.858,
+        "evidence": "license: BSD-3-Clause | river-sample version 1.0.0 published 2019-01-02",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of the npm package river-sample as of 2020-12-31?",
+            "url": "https://registry.npmjs.org/river-sample",
+            "kind": "license",
+            "terms": [
+              "license",
+              "npm",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "npm",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "12",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "registry.npmjs.org",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 0.0010891000274568796
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "BSD-3-Clause",
+              "answer": "BSD-3-Clause",
+              "source": "https://registry.npmjs.org/river-sample",
+              "evidence": "license: BSD-3-Clause | river-sample version 1.0.0 published 2019-01-02",
+              "label": "license",
+              "section": "river-sample version 1.0.0 published 2019-01-02",
+              "kind": "license",
+              "score": 12.3,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "adapter/license",
+                "structure": "field",
+                "qualifiers": {
+                  "registry_release": {
+                    "version": "1.0.0",
+                    "date": "2019-01-02"
+                  }
+                },
+                "field_value": "BSD-3-Clause"
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "BSD-3-Clause",
+            "answer": "BSD-3-Clause",
+            "source": "https://registry.npmjs.org/river-sample",
+            "evidence": "license: BSD-3-Clause | river-sample version 1.0.0 published 2019-01-02",
+            "label": "license",
+            "section": "river-sample version 1.0.0 published 2019-01-02",
+            "kind": "license",
+            "score": 12.3,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "adapter/license",
+              "structure": "field",
+              "qualifiers": {
+                "registry_release": {
+                  "version": "1.0.0",
+                  "date": "2019-01-02"
+                }
+              },
+              "field_value": "BSD-3-Clause"
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/river-sample",
+              "final": "http://127.0.0.1:45732/river-sample",
+              "status": 200,
+              "bytes": 680,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0055
+        }
+      }
+    },
+    {
+      "id": "npm-numeric-order",
+      "passed": true,
+      "expected": "Apache-2.0",
+      "actual": "Apache-2.0",
+      "local_hits": [
+        "/river-sample"
+      ],
+      "logical_requests": [
+        "https://registry.npmjs.org/river-sample",
+        "https://registry.npmjs.org/river-sample"
+      ],
+      "model_calls": [
+        "/select",
+        "/verify"
+      ],
+      "result": {
+        "answer": "Apache-2.0",
+        "sources": [
+          "https://registry.npmjs.org/river-sample"
+        ],
+        "confidence": 0.858,
+        "evidence": "license: Apache-2.0 | river-sample version 1.10.0 published 2019-06-01",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of the npm package river-sample as of 2020-12-31?",
+            "url": "https://registry.npmjs.org/river-sample",
+            "kind": "license",
+            "terms": [
+              "license",
+              "npm",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "npm",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "12",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "registry.npmjs.org",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 0.0010867000091820955
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Apache-2.0",
+              "answer": "Apache-2.0",
+              "source": "https://registry.npmjs.org/river-sample",
+              "evidence": "license: Apache-2.0 | river-sample version 1.10.0 published 2019-06-01",
+              "label": "license",
+              "section": "river-sample version 1.10.0 published 2019-06-01",
+              "kind": "license",
+              "score": 12.3,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "adapter/license",
+                "structure": "field",
+                "qualifiers": {
+                  "registry_release": {
+                    "version": "1.10.0",
+                    "date": "2019-06-01"
+                  }
+                },
+                "field_value": "Apache-2.0"
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "Apache-2.0",
+            "answer": "Apache-2.0",
+            "source": "https://registry.npmjs.org/river-sample",
+            "evidence": "license: Apache-2.0 | river-sample version 1.10.0 published 2019-06-01",
+            "label": "license",
+            "section": "river-sample version 1.10.0 published 2019-06-01",
+            "kind": "license",
+            "score": 12.3,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "adapter/license",
+              "structure": "field",
+              "qualifiers": {
+                "registry_release": {
+                  "version": "1.10.0",
+                  "date": "2019-06-01"
+                }
+              },
+              "field_value": "Apache-2.0"
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/river-sample",
+              "final": "http://127.0.0.1:45732/river-sample",
+              "status": 200,
+              "bytes": 626,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0048
+        }
+      }
+    },
+    {
+      "id": "npm-no-model",
+      "passed": true,
+      "expected": "BSD-3-Clause",
+      "actual": "BSD-3-Clause",
+      "logical_requests": [
+        "https://registry.npmjs.org/river-sample",
+        "https://registry.npmjs.org/river-sample"
+      ],
+      "model_calls": [],
+      "result": {
+        "answer": "BSD-3-Clause",
+        "sources": [
+          "https://registry.npmjs.org/river-sample"
+        ],
+        "confidence": 0.89,
+        "evidence": "license: BSD-3-Clause | river-sample version 1.0.0 published 2019-01-02",
+        "reason": "deterministic_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of the npm package river-sample as of 2020-12-31?",
+            "url": "https://registry.npmjs.org/river-sample",
+            "kind": "license",
+            "terms": [
+              "license",
+              "npm",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "npm",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "12",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "registry.npmjs.org",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.0009206000249832869
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "BSD-3-Clause",
+            "answer": "BSD-3-Clause",
+            "source": "https://registry.npmjs.org/river-sample",
+            "evidence": "license: BSD-3-Clause | river-sample version 1.0.0 published 2019-01-02",
+            "label": "license",
+            "section": "river-sample version 1.0.0 published 2019-01-02",
+            "kind": "license",
+            "score": 13.600000000000001,
+            "signals": {
+              "locator": "adapter/license",
+              "page_title": "npm river-sample",
+              "structure": "field",
+              "qualifiers": {
+                "registry_release": {
+                  "version": "1.0.0",
+                  "date": "2019-01-02"
+                }
+              },
+              "field_value": "BSD-3-Clause",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/river-sample",
+              "final": "http://127.0.0.1:45732/river-sample",
+              "status": 200,
+              "bytes": 395,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0027
+        }
+      }
+    },
+    {
+      "id": "npm-year",
+      "passed": true,
+      "expected": "BSD-3-Clause",
+      "actual": "BSD-3-Clause",
+      "logical_requests": [
+        "https://registry.npmjs.org/river-sample",
+        "https://registry.npmjs.org/river-sample"
+      ],
+      "model_calls": [
+        "/select",
+        "/verify"
+      ],
+      "result": {
+        "answer": "BSD-3-Clause",
+        "sources": [
+          "https://registry.npmjs.org/river-sample"
+        ],
+        "confidence": 0.96,
+        "evidence": "license: BSD-3-Clause | river-sample version 1.0.0 published 2019-01-02",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of the npm package river-sample in 2019?",
+            "url": "https://registry.npmjs.org/river-sample",
+            "kind": "license",
+            "terms": [
+              "license",
+              "npm",
+              "package",
+              "river-sample",
+              "2019",
+              "river",
+              "sample"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "npm",
+              "package",
+              "river-sample",
+              "river",
+              "sample"
+            ],
+            "versions": [],
+            "year": "2019",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "registry.npmjs.org",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 0.0011281000915914774
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "BSD-3-Clause",
+              "answer": "BSD-3-Clause",
+              "source": "https://registry.npmjs.org/river-sample",
+              "evidence": "license: BSD-3-Clause | river-sample version 1.0.0 published 2019-01-02",
+              "label": "license",
+              "section": "river-sample version 1.0.0 published 2019-01-02",
+              "kind": "license",
+              "score": 16.4,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "adapter/license",
+                "structure": "field",
+                "qualifiers": {
+                  "registry_release": {
+                    "version": "1.0.0",
+                    "date": "2019-01-02"
+                  }
+                },
+                "field_value": "BSD-3-Clause"
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "BSD-3-Clause",
+            "answer": "BSD-3-Clause",
+            "source": "https://registry.npmjs.org/river-sample",
+            "evidence": "license: BSD-3-Clause | river-sample version 1.0.0 published 2019-01-02",
+            "label": "license",
+            "section": "river-sample version 1.0.0 published 2019-01-02",
+            "kind": "license",
+            "score": 16.4,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "adapter/license",
+              "structure": "field",
+              "qualifiers": {
+                "registry_release": {
+                  "version": "1.0.0",
+                  "date": "2019-01-02"
+                }
+              },
+              "field_value": "BSD-3-Clause"
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/river-sample",
+              "final": "http://127.0.0.1:45732/river-sample",
+              "status": 200,
+              "bytes": 395,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0051
+        }
+      }
+    },
+    {
+      "id": "explicit-1.0",
+      "passed": true,
+      "expected": "BSD-3-Clause",
+      "actual": "BSD-3-Clause",
+      "logical_requests": [
+        "https://pypi.org/pypi/river-sample/1.0/json",
+        "https://pypi.org/pypi/river-sample/json"
+      ],
+      "result": {
+        "answer": "BSD-3-Clause",
+        "sources": [
+          "https://pypi.org/pypi/river-sample/1.0/json"
+        ],
+        "confidence": 0.927,
+        "evidence": "license: BSD-3-Clause | package river-sample version 1.0 file uploaded 2019-01-02",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of version 1.0 of the PyPI package river-sample as of 2020-12-31?",
+            "url": "https://pypi.org/pypi/river-sample/json",
+            "kind": "license",
+            "terms": [
+              "license",
+              "1.0",
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "version",
+              "release",
+              "stable",
+              "latest",
+              "download",
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "1.0",
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "12",
+              "31"
+            ],
+            "versions": [
+              "1.0"
+            ],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "pypi.org",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 0.0010174999479204416
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 2,
+          "model_selections": [
+            {
+              "raw": "BSD-3-Clause",
+              "answer": "BSD-3-Clause",
+              "source": "https://pypi.org/pypi/river-sample/1.0/json",
+              "evidence": "license: BSD-3-Clause | package river-sample version 1.0 file uploaded 2019-01-02",
+              "label": "license",
+              "section": "package river-sample version 1.0 file uploaded 2019-01-02",
+              "kind": "license",
+              "score": 15.1,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "adapter/license",
+                "structure": "field",
+                "qualifiers": {
+                  "registry_release": {
+                    "version": "1.0",
+                    "date": "2019-01-02"
+                  }
+                },
+                "field_value": "BSD-3-Clause"
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "BSD-3-Clause",
+            "answer": "BSD-3-Clause",
+            "source": "https://pypi.org/pypi/river-sample/1.0/json",
+            "evidence": "license: BSD-3-Clause | package river-sample version 1.0 file uploaded 2019-01-02",
+            "label": "license",
+            "section": "package river-sample version 1.0 file uploaded 2019-01-02",
+            "kind": "license",
+            "score": 15.1,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "adapter/license",
+              "structure": "field",
+              "qualifiers": {
+                "registry_release": {
+                  "version": "1.0",
+                  "date": "2019-01-02"
+                }
+              },
+              "field_value": "BSD-3-Clause"
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/pypi/river-sample/1.0/json",
+              "final": "http://127.0.0.1:45732/pypi/river-sample/1.0/json",
+              "status": 200,
+              "bytes": 222,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "final": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "status": 200,
+              "bytes": 381,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 2,
+          "pages_fetched": 2,
+          "seconds": 0.0068
+        }
+      }
+    },
+    {
+      "id": "explicit-2.0",
+      "passed": true,
+      "expected": "",
+      "actual": "",
+      "logical_requests": [
+        "https://pypi.org/pypi/river-sample/2.0/json",
+        "https://pypi.org/pypi/river-sample/json"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_not_run",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of version 2.0 of the PyPI package river-sample as of 2020-12-31?",
+            "url": "https://pypi.org/pypi/river-sample/json",
+            "kind": "license",
+            "terms": [
+              "license",
+              "2.0",
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "version",
+              "release",
+              "stable",
+              "latest",
+              "download",
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "2.0",
+              "pypi",
+              "package",
+              "river-sample",
+              "2020-12-31",
+              "river",
+              "sample",
+              "12",
+              "31"
+            ],
+            "versions": [
+              "2.0"
+            ],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "pypi.org",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.014061399968340993
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 2,
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/pypi/river-sample/2.0/json",
+              "final": "http://127.0.0.1:45732/pypi/river-sample/2.0/json",
+              "status": 200,
+              "bytes": 381,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "final": "http://127.0.0.1:45732/pypi/river-sample/json",
+              "status": 200,
+              "bytes": 381,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 2,
+          "pages_fetched": 2,
+          "seconds": 0.0169
+        }
+      }
+    },
+    {
+      "id": "external-dated-source",
+      "passed": true,
+      "expected": "BSD-3-Clause",
+      "actual": "BSD-3-Clause",
+      "result": {
+        "answer": "BSD-3-Clause",
+        "sources": [
+          "http://127.0.0.1:45732/external"
+        ],
+        "confidence": 0.858,
+        "evidence": "On 2020-12-31, license: BSD-3-Clause",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of River Sample as of 2020-12-31?",
+            "url": "http://127.0.0.1:45732/external",
+            "kind": "license",
+            "terms": [
+              "license",
+              "river",
+              "sample",
+              "2020-12-31",
+              "2020",
+              "12",
+              "31"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "river",
+              "sample",
+              "2020-12-31",
+              "12",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 0.00015490001533180475
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "BSD-3-Clause",
+              "answer": "BSD-3-Clause",
+              "source": "http://127.0.0.1:45732/external",
+              "evidence": "On 2020-12-31, license: BSD-3-Clause",
+              "label": "",
+              "section": "River Sample historical license",
+              "kind": "license",
+              "score": 12.3,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[1]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "BSD-3-Clause",
+            "answer": "BSD-3-Clause",
+            "source": "http://127.0.0.1:45732/external",
+            "evidence": "On 2020-12-31, license: BSD-3-Clause",
+            "label": "",
+            "section": "River Sample historical license",
+            "kind": "license",
+            "score": 12.3,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[1]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:45732/external",
+              "final": "http://127.0.0.1:45732/external",
+              "status": 200,
+              "bytes": 83,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0098
+        }
+      }
+    }
+  ]
+}

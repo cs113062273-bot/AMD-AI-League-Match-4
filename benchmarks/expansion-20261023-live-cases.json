@@ -1,0 +1,56 @@
+[
+  {
+    "id": "simpleqa-37",
+    "family": "external-Person",
+    "query": "What is the first and last name of the woman whom the British linguist Bernard Comrie married in 1985?",
+    "url": "https://en.wikipedia.org/wiki/Bernard_Comrie",
+    "answer": "Akiko Kumahira",
+    "answers": [
+      "Akiko Kumahira"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bernard_Comrie",
+      "https://alchetron.com/Bernard-Comrie"
+    ],
+    "upstream_row": 11,
+    "upstream_topic": "Other",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-395",
+    "family": "external-Other",
+    "query": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+    "url": "https://en.wikipedia.org/wiki/Curtis_Publishing_Co._v._Butts",
+    "answer": "University of Georgia and University of Alabama",
+    "answers": [
+      "University of Georgia and University of Alabama"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Curtis_Publishing_Co._v._Butts",
+      "https://en.wikipedia.org/wiki/The_Saturday_Evening_Post",
+      "https://www.oyez.org/cases/1966/37",
+      "https://www.saturdayeveningpost.com/2013/03/curtis-publishing-butts/"
+    ],
+    "upstream_row": 94,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-32",
+    "family": "external-Date",
+    "query": "What day, month, and year was Carrie Underwood's album \"Cry Pretty\" certified Gold by the RIAA?",
+    "url": "https://www.riaa.com/gold-platinum/?tab_active=default-award&se=cry+pretty",
+    "answer": "Oct 23, 2018",
+    "answers": [
+      "Oct 23, 2018",
+      "2018-10-23"
+    ],
+    "sources": [
+      "https://www.riaa.com/gold-platinum/?tab_active=default-award&se=cry+pretty",
+      "https://en.wikipedia.org/wiki/Cry_Pretty"
+    ],
+    "upstream_row": 9,
+    "upstream_topic": "Music",
+    "multi_step": "False"
+  }
+]

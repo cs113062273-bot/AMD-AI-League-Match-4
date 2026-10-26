@@ -1,0 +1,2342 @@
+{
+  "scope": "Local starting-page end-to-end diagnosis with bounded navigation; exposed development cases.",
+  "context_limit": 1024,
+  "baseline_revision": "838b7adcca1f75187092f9474b607c07ee8866d5",
+  "baseline_source_sha256": {
+    "agent/engine.py": "ce6929493a1020f654e6881b3f56a3f188b0f95bf5e1e3a36c96450b5b8d7c71",
+    "agent/types.py": "42d14170127f88a247c0092e6a65b8151496cc46e7e02d7fee8c7317ffa011f2",
+    "agent/planner.py": "07700e3ff3efa41a3aae9558d281a5a4f3925206fb5f90c6e97fb7fce86120b2",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/network.py": "c37ecb5b4b0fba4fac737954eda24952059922ed620c94b99bcb17daed8c5155",
+    "agent/urls.py": "fa57403f16921c7341c6edc6241cd3957012de426a07538b14c5aaa5d1425a76",
+    "agent/parser.py": "cf9562f0071e58bc66abd6eeebea9cd8cccaf4b9cc5af4ba3a0f3f42033b0798",
+    "agent/normalize.py": "5120ed91dc0c70eff61c41f0242388e45be357d6fdd251042e437a1ccc5f34ff",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent/search.py": "36e8a39132f3afc2b34f0db4ad89cafba085adaf4882fff02bfa821f6fedbfd2",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/candidates.py": "34db65b75ef6e0da54230a39b1d11542f3f942bf79d8fc8cbe6076eaf3bb6507",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/evidence.py": "775e9a55848b710375d34b92cdda8357562a4ed2beb39183277a59438d2f9c0d",
+    "agent/selector.py": "b98605e9c31d93b1486aee4d6e6ab207a70dd9b35e6300ae7bea5b949c7c346d",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/proofs.py": "8d6fa55d0ffbf449bbf9cdb675c41d1e3226919358ad26e579d7bd111ba450ab",
+    "agent/navigation.py": "0f849c0c570720114c45c14b0a5286fe409e5d26c2945fdc9f6c1a6922bb7718"
+  },
+  "case_path": "benchmarks/transfer-20261023-v2-cases.json",
+  "fixture_path": "fixtures/transfer-20261023-v2.json",
+  "max_depth": 2,
+  "budget": 20.0,
+  "production_sha256": {
+    "app.py": "c0267c0441330bd30559f48d2f33916418992b8e21ec8dd1d09ae4773c23b73b",
+    "agent\\browser.py": "f7a3d9479ec2ae9bc9fbbcb27efbddaeba9b5dd8639016e827840cc1c7e33cea",
+    "agent\\candidates.py": "003a1335fa31baf0255361292556f66c6c80307ddf20343c5c0be0385d78442a",
+    "agent\\currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent\\engine.py": "ce6929493a1020f654e6881b3f56a3f188b0f95bf5e1e3a36c96450b5b8d7c71",
+    "agent\\evidence.py": "756d35bc17919c32bc8db1ce2b8e609eaae5042bc376466fae862a0792b969cb",
+    "agent\\knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent\\model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+    "agent\\model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent\\model_protocol.py": "8ba6730e160eac47d8231985e1293bb981a5a63ef9b475cf46daf31ef17bdfb0",
+    "agent\\model_server.py": "14e840e32fe34ca594eb4fb0dadd89fc67768fb9026ac3359734a021c5190fc2",
+    "agent\\navigation.py": "0f849c0c570720114c45c14b0a5286fe409e5d26c2945fdc9f6c1a6922bb7718",
+    "agent\\network.py": "def1be3752f81423c313c2dfa83f6703ee063d7e98652cf0d816b423d0e2d9cb",
+    "agent\\normalize.py": "5120ed91dc0c70eff61c41f0242388e45be357d6fdd251042e437a1ccc5f34ff",
+    "agent\\output.py": "b983ab2efe31707b1c974344a32dc4b40b708541257695de89cac9e343b073eb",
+    "agent\\parser.py": "cf9562f0071e58bc66abd6eeebea9cd8cccaf4b9cc5af4ba3a0f3f42033b0798",
+    "agent\\planner.py": "e4192860ce13ee1d1a16765a948409c8c3a9e354b79844a6d6908530d2c2cb47",
+    "agent\\processes.py": "677c4372b40d1da0ffc0cf4120ca5b6be2fcf6b6c30f6ec17d0d8fae19e198c1",
+    "agent\\proofs.py": "42920966e3cae090d8a0d53f17270f607a4a6dcb8a96a1af20382d2785e64b74",
+    "agent\\qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent\\resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent\\search.py": "36e8a39132f3afc2b34f0db4ad89cafba085adaf4882fff02bfa821f6fedbfd2",
+    "agent\\selector.py": "b98605e9c31d93b1486aee4d6e6ab207a70dd9b35e6300ae7bea5b949c7c346d",
+    "agent\\signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent\\types.py": "42d14170127f88a247c0092e6a65b8151496cc46e7e02d7fee8c7317ffa011f2",
+    "agent\\urls.py": "fa57403f16921c7341c6edc6241cd3957012de426a07538b14c5aaa5d1425a76",
+    "agent\\worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f",
+    "agent\\__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41"
+  },
+  "cases_sha256": "8bbb525ec35bf769307dd36a59d12004a1442bf29f0909a1b58b427defc12e95",
+  "fixtures_sha256": "2b09ea69164664b52c2f693074307caf4c46a2cb29a8f77843f918cbb5e7b2e2",
+  "rows": [
+    {
+      "id": "version-table",
+      "answer_ok": false,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "proof_incomplete",
+        "diagnostics": {
+          "plan": {
+            "question": "How did the BriarQueue worker quota change from version 1 to version 2?",
+            "url": "http://127.0.0.1:46994/transfer/version-table/index.html",
+            "kind": "text",
+            "terms": [
+              "briarqueue",
+              "worker",
+              "quota",
+              "change",
+              "1",
+              "2"
+            ],
+            "attributes": [
+              "version",
+              "release",
+              "stable",
+              "latest",
+              "download"
+            ],
+            "entity_terms": [
+              "briarqueue",
+              "worker",
+              "quota",
+              "change",
+              "1",
+              "2"
+            ],
+            "versions": [
+              "1",
+              "2"
+            ],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "how did the briarqueue worker quota change ",
+            "choices": [],
+            "operation": "compare_versions",
+            "required_fields": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.00012400001287460327
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "proof_state": "incomplete",
+          "reader_state": "not_run",
+          "top_candidates": [
+            {
+              "raw": "24 jobs",
+              "answer": "24 jobs",
+              "source": "http://127.0.0.1:46994/transfer/version-table/index.html",
+              "evidence": "Version: 1 | Worker quota: 24 jobs",
+              "label": "Worker quota",
+              "section": "BriarQueue worker quotas",
+              "kind": "text",
+              "score": 15.3,
+              "signals": {
+                "locator": "table[1]/row[0]/cell[1]",
+                "page_title": "BriarQueue worker quotas",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Version",
+                    "Worker quota"
+                  ],
+                  "cells": [
+                    "1",
+                    "24 jobs"
+                  ],
+                  "column": 1
+                },
+                "field_value": "24 jobs",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "48 jobs",
+              "answer": "48 jobs",
+              "source": "http://127.0.0.1:46994/transfer/version-table/index.html",
+              "evidence": "Version: 2 | Worker quota: 48 jobs",
+              "label": "Worker quota",
+              "section": "BriarQueue worker quotas",
+              "kind": "text",
+              "score": 15.3,
+              "signals": {
+                "locator": "table[1]/row[1]/cell[1]",
+                "page_title": "BriarQueue worker quotas",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 1,
+                  "columns": [
+                    "Version",
+                    "Worker quota"
+                  ],
+                  "cells": [
+                    "2",
+                    "48 jobs"
+                  ],
+                  "column": 1
+                },
+                "field_value": "48 jobs",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "1 | Worker quota: 24 jobs",
+              "answer": "1 | Worker quota: 24 jobs",
+              "source": "http://127.0.0.1:46994/transfer/version-table/index.html",
+              "evidence": "Version: 1 | Worker quota: 24 jobs",
+              "label": "Worker quota",
+              "section": "BriarQueue worker quotas",
+              "kind": "text",
+              "score": 14.0,
+              "signals": {
+                "locator": "table[1]/row[0]/cell[1]",
+                "page_title": "BriarQueue worker quotas",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Version",
+                    "Worker quota"
+                  ],
+                  "cells": [
+                    "1",
+                    "24 jobs"
+                  ],
+                  "column": 1
+                },
+                "field_value": "24 jobs",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2 | Worker quota: 48 jobs",
+              "answer": "2 | Worker quota: 48 jobs",
+              "source": "http://127.0.0.1:46994/transfer/version-table/index.html",
+              "evidence": "Version: 2 | Worker quota: 48 jobs",
+              "label": "Worker quota",
+              "section": "BriarQueue worker quotas",
+              "kind": "text",
+              "score": 14.0,
+              "signals": {
+                "locator": "table[1]/row[1]/cell[1]",
+                "page_title": "BriarQueue worker quotas",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 1,
+                  "columns": [
+                    "Version",
+                    "Worker quota"
+                  ],
+                  "cells": [
+                    "2",
+                    "48 jobs"
+                  ],
+                  "column": 1
+                },
+                "field_value": "48 jobs",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "1",
+              "answer": "1",
+              "source": "http://127.0.0.1:46994/transfer/version-table/index.html",
+              "evidence": "Version: 1 | Worker quota: 24 jobs",
+              "label": "Version",
+              "section": "BriarQueue worker quotas",
+              "kind": "text",
+              "score": 11.3,
+              "signals": {
+                "locator": "table[1]/row[0]/cell[0]",
+                "page_title": "BriarQueue worker quotas",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Version",
+                    "Worker quota"
+                  ],
+                  "cells": [
+                    "1",
+                    "24 jobs"
+                  ],
+                  "column": 0
+                },
+                "field_value": "1",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2",
+              "answer": "2",
+              "source": "http://127.0.0.1:46994/transfer/version-table/index.html",
+              "evidence": "Version: 2 | Worker quota: 48 jobs",
+              "label": "Version",
+              "section": "BriarQueue worker quotas",
+              "kind": "text",
+              "score": 11.3,
+              "signals": {
+                "locator": "table[1]/row[1]/cell[0]",
+                "page_title": "BriarQueue worker quotas",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 1,
+                  "columns": [
+                    "Version",
+                    "Worker quota"
+                  ],
+                  "cells": [
+                    "2",
+                    "48 jobs"
+                  ],
+                  "column": 0
+                },
+                "field_value": "2",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [
+            {
+              "a": "24 jobs",
+              "b": "48 jobs",
+              "sources": [
+                "http://127.0.0.1:46994/transfer/version-table/index.html",
+                "http://127.0.0.1:46994/transfer/version-table/index.html"
+              ],
+              "margin": 0.0
+            }
+          ],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:46994/transfer/version-table/index.html",
+              "final": "http://127.0.0.1:46994/transfer/version-table/index.html",
+              "status": 200,
+              "bytes": 203,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0133
+        }
+      }
+    },
+    {
+      "id": "reordered-fields",
+      "answer_ok": false,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "proof_incomplete",
+        "diagnostics": {
+          "plan": {
+            "question": "What day and time does Moss Bay collect batteries?",
+            "url": "http://127.0.0.1:46994/transfer/reordered-fields/index.html",
+            "kind": "text",
+            "terms": [
+              "day",
+              "time",
+              "moss",
+              "bay",
+              "collect",
+              "batteries"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "day",
+              "time",
+              "moss",
+              "bay",
+              "collect",
+              "batteries"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what day and time does moss bay collect batteries",
+            "choices": [],
+            "operation": "compose_fields",
+            "required_fields": [
+              "day",
+              "time"
+            ]
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.2399978004395962e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "proof_state": "incomplete",
+          "reader_state": "not_run",
+          "top_candidates": [
+            {
+              "raw": "Every Wednesday",
+              "answer": "Every Wednesday",
+              "source": "http://127.0.0.1:46994/transfer/reordered-fields/index.html",
+              "evidence": "Hours: 11:30–14:00 | Material: Batteries | Day: Every Wednesday",
+              "label": "Day",
+              "section": "Moss Bay pickup schedule",
+              "kind": "text",
+              "score": 13.0,
+              "signals": {
+                "locator": "table[1]/row[1]/cell[2]",
+                "page_title": "Moss Bay pickup schedule",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 1,
+                  "columns": [
+                    "Hours",
+                    "Material",
+                    "Day"
+                  ],
+                  "cells": [
+                    "11:30–14:00",
+                    "Batteries",
+                    "Every Wednesday"
+                  ],
+                  "column": 2
+                },
+                "field_value": "Every Wednesday",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "Every Friday",
+              "answer": "Every Friday",
+              "source": "http://127.0.0.1:46994/transfer/reordered-fields/index.html",
+              "evidence": "Hours: 08:00–09:00 | Material: Glass | Day: Every Friday",
+              "label": "Day",
+              "section": "Moss Bay pickup schedule",
+              "kind": "text",
+              "score": 11.4,
+              "signals": {
+                "locator": "table[1]/row[0]/cell[2]",
+                "page_title": "Moss Bay pickup schedule",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Hours",
+                    "Material",
+                    "Day"
+                  ],
+                  "cells": [
+                    "08:00–09:00",
+                    "Glass",
+                    "Every Friday"
+                  ],
+                  "column": 2
+                },
+                "field_value": "Every Friday",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:46994/transfer/reordered-fields/index.html",
+              "final": "http://127.0.0.1:46994/transfer/reordered-fields/index.html",
+              "status": 200,
+              "bytes": 278,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0041
+        }
+      }
+    },
+    {
+      "id": "category-tables",
+      "answer_ok": false,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the Cedar Market daily permit fee for a ceramic seller?",
+            "url": "http://127.0.0.1:46994/transfer/category-tables/index.html",
+            "kind": "price",
+            "terms": [
+              "cedar",
+              "market",
+              "daily",
+              "permit",
+              "fee",
+              "ceramic",
+              "seller"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "cedar",
+              "market",
+              "daily",
+              "permit",
+              "fee",
+              "ceramic",
+              "seller"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the cedar market daily permit fee ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": []
+          },
+          "errors": [],
+          "selector": [
+            "span",
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.1300086043775082e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 4,
+          "content_pages": 3,
+          "model_selections": [
+            {
+              "raw": "Ceramic seller category bands Daily permit fee table",
+              "answer": "Ceramic seller category bands Daily permit fee table",
+              "source": "http://127.0.0.1:46994/transfer/category-tables/index.html",
+              "evidence": "Cedar Market permit information Cedar Market permit information Ceramic seller category bands Daily permit fee table",
+              "label": "",
+              "section": "Cedar Market permit information",
+              "kind": "price",
+              "score": 11.700000000000001,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "body:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            },
+            {
+              "raw": "$38",
+              "answer": "$38",
+              "source": "http://127.0.0.1:46994/transfer/category-tables/fees.html",
+              "evidence": "Fee: $38 | Band: F1",
+              "label": "Fee",
+              "section": "Cedar Market daily permit fees",
+              "kind": "price",
+              "score": 16.8,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "table[1]/row[0]/cell[0]",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Fee",
+                    "Band"
+                  ],
+                  "cells": [
+                    "$38",
+                    "F1"
+                  ],
+                  "column": 0
+                },
+                "field_value": "$38"
+              }
+            }
+          ],
+          "navigation": [
+            {
+              "state": "span",
+              "chosen": "http://127.0.0.1:46994/transfer/category-tables/fees.html"
+            }
+          ],
+          "verification": [
+            "unsupported"
+          ],
+          "reader_state": "no_evidence",
+          "top_candidates": [
+            {
+              "raw": "$38",
+              "answer": "$38",
+              "source": "http://127.0.0.1:46994/transfer/category-tables/fees.html",
+              "evidence": "Fee: $38 | Band: F1",
+              "label": "Fee",
+              "section": "Cedar Market daily permit fees",
+              "kind": "price",
+              "score": 14.100000000000001,
+              "signals": {
+                "locator": "table[1]/row[0]/cell[0]",
+                "page_title": "Cedar Market daily permit fees",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Fee",
+                    "Band"
+                  ],
+                  "cells": [
+                    "$38",
+                    "F1"
+                  ],
+                  "column": 0
+                },
+                "field_value": "$38",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "$21",
+              "answer": "$21",
+              "source": "http://127.0.0.1:46994/transfer/category-tables/fees.html",
+              "evidence": "Fee: $21 | Band: B2",
+              "label": "Fee",
+              "section": "Cedar Market daily permit fees",
+              "kind": "price",
+              "score": 14.100000000000001,
+              "signals": {
+                "locator": "table[1]/row[1]/cell[0]",
+                "page_title": "Cedar Market daily permit fees",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 1,
+                  "columns": [
+                    "Fee",
+                    "Band"
+                  ],
+                  "cells": [
+                    "$21",
+                    "B2"
+                  ],
+                  "column": 0
+                },
+                "field_value": "$21",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [
+            {
+              "a": "$38",
+              "b": "$21",
+              "sources": [
+                "http://127.0.0.1:46994/transfer/category-tables/fees.html",
+                "http://127.0.0.1:46994/transfer/category-tables/fees.html"
+              ],
+              "margin": 0.0
+            }
+          ],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:46994/transfer/category-tables/index.html",
+              "final": "http://127.0.0.1:46994/transfer/category-tables/index.html",
+              "status": 200,
+              "bytes": 186,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:46994/transfer/category-tables/fees.html",
+              "final": "http://127.0.0.1:46994/transfer/category-tables/fees.html",
+              "status": 200,
+              "bytes": 197,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:46994/transfer/category-tables/bands.html",
+              "final": "http://127.0.0.1:46994/transfer/category-tables/bands.html",
+              "status": 200,
+              "bytes": 216,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 3,
+          "pages_fetched": 3,
+          "seconds": 4.5046
+        }
+      }
+    },
+    {
+      "id": "classification-paraphrase",
+      "answer_ok": true,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "$23",
+        "sources": [
+          "http://127.0.0.1:46994/transfer/classification-paraphrase/fees.html"
+        ],
+        "confidence": 0.888,
+        "evidence": "Band P carries a daily permit fee of $23.",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the Alder Bazaar daily permit fee for a ceramic seller?",
+            "url": "http://127.0.0.1:46994/transfer/classification-paraphrase/index.html",
+            "kind": "price",
+            "terms": [
+              "alder",
+              "bazaar",
+              "daily",
+              "permit",
+              "fee",
+              "ceramic",
+              "seller"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "alder",
+              "bazaar",
+              "daily",
+              "permit",
+              "fee",
+              "ceramic",
+              "seller"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the alder bazaar daily permit fee ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": []
+          },
+          "errors": [],
+          "selector": [
+            "span",
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.2199976481497288e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 4,
+          "content_pages": 3,
+          "model_selections": [
+            {
+              "raw": "Daily permit fees",
+              "answer": "Daily permit fees",
+              "source": "http://127.0.0.1:46994/transfer/classification-paraphrase/index.html",
+              "evidence": "Alder Bazaar permit information Alder Bazaar permit information Ceramic seller bands Daily permit fees",
+              "label": "",
+              "section": "Alder Bazaar permit information",
+              "kind": "price",
+              "score": 10.600000000000001,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "body:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            },
+            {
+              "raw": "$23",
+              "answer": "$23",
+              "source": "http://127.0.0.1:46994/transfer/classification-paraphrase/fees.html",
+              "evidence": "Band P carries a daily permit fee of $23.",
+              "label": "",
+              "section": "Alder Bazaar daily permit fees",
+              "kind": "price",
+              "score": 13.5,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[1]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "navigation": [
+            {
+              "state": "span",
+              "chosen": "http://127.0.0.1:46994/transfer/classification-paraphrase/fees.html"
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "$23",
+            "answer": "$23",
+            "source": "http://127.0.0.1:46994/transfer/classification-paraphrase/fees.html",
+            "evidence": "Band P carries a daily permit fee of $23.",
+            "label": "",
+            "section": "Alder Bazaar daily permit fees",
+            "kind": "price",
+            "score": 13.5,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[1]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:46994/transfer/classification-paraphrase/index.html",
+              "final": "http://127.0.0.1:46994/transfer/classification-paraphrase/index.html",
+              "status": 200,
+              "bytes": 172,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:46994/transfer/classification-paraphrase/fees.html",
+              "final": "http://127.0.0.1:46994/transfer/classification-paraphrase/fees.html",
+              "status": 200,
+              "bytes": 180,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:46994/transfer/classification-paraphrase/bands.html",
+              "final": "http://127.0.0.1:46994/transfer/classification-paraphrase/bands.html",
+              "status": 200,
+              "bytes": 154,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 3,
+          "pages_fetched": 3,
+          "seconds": 4.2113
+        }
+      }
+    },
+    {
+      "id": "comparison-control",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "from 20 to 32 messages per second",
+        "sources": [
+          "http://127.0.0.1:46994/transfer/comparison-control/v4.html",
+          "http://127.0.0.1:46994/transfer/comparison-control/v5.html"
+        ],
+        "confidence": 0.0,
+        "evidence": "The per-client message quota in version 4 is 20 messages per second.\nThe per-client message quota in version 5 is 32 messages per second.",
+        "reason": "proof_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "How did the QuartzRelay per-client message quota change from version 4 to version 5?",
+            "url": "http://127.0.0.1:46994/transfer/comparison-control/index.html",
+            "kind": "text",
+            "terms": [
+              "quartzrelay",
+              "per-client",
+              "message",
+              "quota",
+              "change",
+              "4",
+              "5",
+              "client"
+            ],
+            "attributes": [
+              "version",
+              "release",
+              "stable",
+              "latest",
+              "download"
+            ],
+            "entity_terms": [
+              "quartzrelay",
+              "per-client",
+              "message",
+              "quota",
+              "change",
+              "4",
+              "5",
+              "client"
+            ],
+            "versions": [
+              "4",
+              "5"
+            ],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "how did the quartzrelay per-client message quota change ",
+            "choices": [],
+            "operation": "compare_versions",
+            "required_fields": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.479999627918005e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 3,
+          "proof_state": "verified",
+          "navigation": [
+            {
+              "state": "span",
+              "chosen": "http://127.0.0.1:46994/transfer/comparison-control/v5.html"
+            }
+          ],
+          "proposed_proof": {
+            "operation": "compare_versions",
+            "atoms": [
+              {
+                "source": "http://127.0.0.1:46994/transfer/comparison-control/v4.html",
+                "locator": "p[1]:0",
+                "span": "The per-client message quota in version 4 is 20 messages per second.",
+                "value": "20 messages per second",
+                "role": "4",
+                "version": "4",
+                "key": "",
+                "relation": ""
+              },
+              {
+                "source": "http://127.0.0.1:46994/transfer/comparison-control/v5.html",
+                "locator": "p[1]:0",
+                "span": "The per-client message quota in version 5 is 32 messages per second.",
+                "value": "32 messages per second",
+                "role": "5",
+                "version": "5",
+                "key": "",
+                "relation": ""
+              }
+            ]
+          },
+          "proof_verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:46994/transfer/comparison-control/index.html",
+              "final": "http://127.0.0.1:46994/transfer/comparison-control/index.html",
+              "status": 200,
+              "bytes": 166,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:46994/transfer/comparison-control/v5.html",
+              "final": "http://127.0.0.1:46994/transfer/comparison-control/v5.html",
+              "status": 200,
+              "bytes": 157,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:46994/transfer/comparison-control/v4.html",
+              "final": "http://127.0.0.1:46994/transfer/comparison-control/v4.html",
+              "status": 200,
+              "bytes": 157,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 3,
+          "pages_fetched": 3,
+          "seconds": 2.2295
+        }
+      }
+    },
+    {
+      "id": "missing-reordered-field",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "proof_incomplete",
+        "diagnostics": {
+          "plan": {
+            "question": "What day and time does Slate Bay collect batteries?",
+            "url": "http://127.0.0.1:46994/transfer/missing-reordered-field/index.html",
+            "kind": "text",
+            "terms": [
+              "day",
+              "time",
+              "slate",
+              "bay",
+              "collect",
+              "batteries"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "day",
+              "time",
+              "slate",
+              "bay",
+              "collect",
+              "batteries"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what day and time does slate bay collect batteries",
+            "choices": [],
+            "operation": "compose_fields",
+            "required_fields": [
+              "day",
+              "time"
+            ]
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.1500087566673756e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "proof_state": "incomplete",
+          "reader_state": "not_run",
+          "top_candidates": [
+            {
+              "raw": "Every Wednesday",
+              "answer": "Every Wednesday",
+              "source": "http://127.0.0.1:46994/transfer/missing-reordered-field/index.html",
+              "evidence": "Hours: Not announced | Material: Batteries | Day: Every Wednesday",
+              "label": "Day",
+              "section": "Slate Bay pickup schedule",
+              "kind": "text",
+              "score": 13.0,
+              "signals": {
+                "locator": "table[1]/row[1]/cell[2]",
+                "page_title": "Slate Bay pickup schedule",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 1,
+                  "columns": [
+                    "Hours",
+                    "Material",
+                    "Day"
+                  ],
+                  "cells": [
+                    "Not announced",
+                    "Batteries",
+                    "Every Wednesday"
+                  ],
+                  "column": 2
+                },
+                "field_value": "Every Wednesday",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "Every Friday",
+              "answer": "Every Friday",
+              "source": "http://127.0.0.1:46994/transfer/missing-reordered-field/index.html",
+              "evidence": "Hours: 08:00–09:00 | Material: Glass | Day: Every Friday",
+              "label": "Day",
+              "section": "Slate Bay pickup schedule",
+              "kind": "text",
+              "score": 11.4,
+              "signals": {
+                "locator": "table[1]/row[0]/cell[2]",
+                "page_title": "Slate Bay pickup schedule",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Hours",
+                    "Material",
+                    "Day"
+                  ],
+                  "cells": [
+                    "08:00–09:00",
+                    "Glass",
+                    "Every Friday"
+                  ],
+                  "column": 2
+                },
+                "field_value": "Every Friday",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:46994/transfer/missing-reordered-field/index.html",
+              "final": "http://127.0.0.1:46994/transfer/missing-reordered-field/index.html",
+              "status": 200,
+              "bytes": 280,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0037
+        }
+      }
+    },
+    {
+      "id": "missing-table-version",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "proof_incomplete",
+        "diagnostics": {
+          "plan": {
+            "question": "How did the LinenQueue worker quota change from version 1 to version 2?",
+            "url": "http://127.0.0.1:46994/transfer/missing-table-version/index.html",
+            "kind": "text",
+            "terms": [
+              "linenqueue",
+              "worker",
+              "quota",
+              "change",
+              "1",
+              "2"
+            ],
+            "attributes": [
+              "version",
+              "release",
+              "stable",
+              "latest",
+              "download"
+            ],
+            "entity_terms": [
+              "linenqueue",
+              "worker",
+              "quota",
+              "change",
+              "1",
+              "2"
+            ],
+            "versions": [
+              "1",
+              "2"
+            ],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "how did the linenqueue worker quota change ",
+            "choices": [],
+            "operation": "compare_versions",
+            "required_fields": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.1499971151351929e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "proof_state": "incomplete",
+          "reader_state": "not_run",
+          "top_candidates": [
+            {
+              "raw": "24 jobs",
+              "answer": "24 jobs",
+              "source": "http://127.0.0.1:46994/transfer/missing-table-version/index.html",
+              "evidence": "Version: 1 | Worker quota: 24 jobs",
+              "label": "Worker quota",
+              "section": "LinenQueue worker quotas",
+              "kind": "text",
+              "score": 15.3,
+              "signals": {
+                "locator": "table[1]/row[0]/cell[1]",
+                "page_title": "LinenQueue worker quotas",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Version",
+                    "Worker quota"
+                  ],
+                  "cells": [
+                    "1",
+                    "24 jobs"
+                  ],
+                  "column": 1
+                },
+                "field_value": "24 jobs",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "1 | Worker quota: 24 jobs",
+              "answer": "1 | Worker quota: 24 jobs",
+              "source": "http://127.0.0.1:46994/transfer/missing-table-version/index.html",
+              "evidence": "Version: 1 | Worker quota: 24 jobs",
+              "label": "Worker quota",
+              "section": "LinenQueue worker quotas",
+              "kind": "text",
+              "score": 14.0,
+              "signals": {
+                "locator": "table[1]/row[0]/cell[1]",
+                "page_title": "LinenQueue worker quotas",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Version",
+                    "Worker quota"
+                  ],
+                  "cells": [
+                    "1",
+                    "24 jobs"
+                  ],
+                  "column": 1
+                },
+                "field_value": "24 jobs",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "72 jobs",
+              "answer": "72 jobs",
+              "source": "http://127.0.0.1:46994/transfer/missing-table-version/index.html",
+              "evidence": "Version: 3 | Worker quota: 72 jobs",
+              "label": "Worker quota",
+              "section": "LinenQueue worker quotas",
+              "kind": "text",
+              "score": 13.700000000000001,
+              "signals": {
+                "locator": "table[1]/row[1]/cell[1]",
+                "page_title": "LinenQueue worker quotas",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 1,
+                  "columns": [
+                    "Version",
+                    "Worker quota"
+                  ],
+                  "cells": [
+                    "3",
+                    "72 jobs"
+                  ],
+                  "column": 1
+                },
+                "field_value": "72 jobs",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "3 | Worker quota: 72 jobs",
+              "answer": "3 | Worker quota: 72 jobs",
+              "source": "http://127.0.0.1:46994/transfer/missing-table-version/index.html",
+              "evidence": "Version: 3 | Worker quota: 72 jobs",
+              "label": "Worker quota",
+              "section": "LinenQueue worker quotas",
+              "kind": "text",
+              "score": 12.4,
+              "signals": {
+                "locator": "table[1]/row[1]/cell[1]",
+                "page_title": "LinenQueue worker quotas",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 1,
+                  "columns": [
+                    "Version",
+                    "Worker quota"
+                  ],
+                  "cells": [
+                    "3",
+                    "72 jobs"
+                  ],
+                  "column": 1
+                },
+                "field_value": "72 jobs",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "1",
+              "answer": "1",
+              "source": "http://127.0.0.1:46994/transfer/missing-table-version/index.html",
+              "evidence": "Version: 1 | Worker quota: 24 jobs",
+              "label": "Version",
+              "section": "LinenQueue worker quotas",
+              "kind": "text",
+              "score": 11.3,
+              "signals": {
+                "locator": "table[1]/row[0]/cell[0]",
+                "page_title": "LinenQueue worker quotas",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Version",
+                    "Worker quota"
+                  ],
+                  "cells": [
+                    "1",
+                    "24 jobs"
+                  ],
+                  "column": 0
+                },
+                "field_value": "1",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "3",
+              "answer": "3",
+              "source": "http://127.0.0.1:46994/transfer/missing-table-version/index.html",
+              "evidence": "Version: 3 | Worker quota: 72 jobs",
+              "label": "Version",
+              "section": "LinenQueue worker quotas",
+              "kind": "text",
+              "score": 9.700000000000001,
+              "signals": {
+                "locator": "table[1]/row[1]/cell[0]",
+                "page_title": "LinenQueue worker quotas",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 1,
+                  "columns": [
+                    "Version",
+                    "Worker quota"
+                  ],
+                  "cells": [
+                    "3",
+                    "72 jobs"
+                  ],
+                  "column": 0
+                },
+                "field_value": "3",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:46994/transfer/missing-table-version/index.html",
+              "final": "http://127.0.0.1:46994/transfer/missing-table-version/index.html",
+              "status": 200,
+              "bytes": 203,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0035
+        }
+      }
+    },
+    {
+      "id": "conflicting-table-band",
+      "answer_ok": false,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "$29",
+        "sources": [
+          "http://127.0.0.1:46994/transfer/conflicting-table-band/fees.html"
+        ],
+        "confidence": 0.97,
+        "evidence": "Fee: $29 | Band: A2",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the Aspen Market daily permit fee for a ceramic seller?",
+            "url": "http://127.0.0.1:46994/transfer/conflicting-table-band/index.html",
+            "kind": "price",
+            "terms": [
+              "aspen",
+              "market",
+              "daily",
+              "permit",
+              "fee",
+              "ceramic",
+              "seller"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "aspen",
+              "market",
+              "daily",
+              "permit",
+              "fee",
+              "ceramic",
+              "seller"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the aspen market daily permit fee ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": []
+          },
+          "errors": [],
+          "selector": [
+            "span",
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.079996582120657e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 4,
+          "content_pages": 3,
+          "model_selections": [
+            {
+              "raw": "Ceramic seller category bands Daily permit fee table",
+              "answer": "Ceramic seller category bands Daily permit fee table",
+              "source": "http://127.0.0.1:46994/transfer/conflicting-table-band/index.html",
+              "evidence": "Aspen Market permit information Aspen Market permit information Ceramic seller category bands Daily permit fee table",
+              "label": "",
+              "section": "Aspen Market permit information",
+              "kind": "price",
+              "score": 11.700000000000001,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "body:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            },
+            {
+              "raw": "$29",
+              "answer": "$29",
+              "source": "http://127.0.0.1:46994/transfer/conflicting-table-band/fees.html",
+              "evidence": "Fee: $29 | Band: A2",
+              "label": "Fee",
+              "section": "Aspen Market daily permit fees",
+              "kind": "price",
+              "score": 16.8,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "table[1]/row[0]/cell[0]",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Fee",
+                    "Band"
+                  ],
+                  "cells": [
+                    "$29",
+                    "A2"
+                  ],
+                  "column": 0
+                },
+                "field_value": "$29"
+              }
+            }
+          ],
+          "navigation": [
+            {
+              "state": "span",
+              "chosen": "http://127.0.0.1:46994/transfer/conflicting-table-band/fees.html"
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "$29",
+            "answer": "$29",
+            "source": "http://127.0.0.1:46994/transfer/conflicting-table-band/fees.html",
+            "evidence": "Fee: $29 | Band: A2",
+            "label": "Fee",
+            "section": "Aspen Market daily permit fees",
+            "kind": "price",
+            "score": 16.8,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "table[1]/row[0]/cell[0]",
+              "structure": "cell",
+              "qualifiers": {
+                "table": 1,
+                "row": 0,
+                "columns": [
+                  "Fee",
+                  "Band"
+                ],
+                "cells": [
+                  "$29",
+                  "A2"
+                ],
+                "column": 0
+              },
+              "field_value": "$29"
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:46994/transfer/conflicting-table-band/index.html",
+              "final": "http://127.0.0.1:46994/transfer/conflicting-table-band/index.html",
+              "status": 200,
+              "bytes": 186,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:46994/transfer/conflicting-table-band/fees.html",
+              "final": "http://127.0.0.1:46994/transfer/conflicting-table-band/fees.html",
+              "status": 200,
+              "bytes": 197,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:46994/transfer/conflicting-table-band/bands.html",
+              "final": "http://127.0.0.1:46994/transfer/conflicting-table-band/bands.html",
+              "status": 200,
+              "bytes": 220,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 3,
+          "pages_fetched": 3,
+          "seconds": 4.5543
+        }
+      }
+    },
+    {
+      "id": "incompatible-table-units",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "proof_incomplete",
+        "diagnostics": {
+          "plan": {
+            "question": "How did the SilkQueue worker quota change from version 1 to version 2?",
+            "url": "http://127.0.0.1:46994/transfer/incompatible-table-units/index.html",
+            "kind": "text",
+            "terms": [
+              "silkqueue",
+              "worker",
+              "quota",
+              "change",
+              "1",
+              "2"
+            ],
+            "attributes": [
+              "version",
+              "release",
+              "stable",
+              "latest",
+              "download"
+            ],
+            "entity_terms": [
+              "silkqueue",
+              "worker",
+              "quota",
+              "change",
+              "1",
+              "2"
+            ],
+            "versions": [
+              "1",
+              "2"
+            ],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "how did the silkqueue worker quota change ",
+            "choices": [],
+            "operation": "compare_versions",
+            "required_fields": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.209997572004795e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "proof_state": "incomplete",
+          "reader_state": "not_run",
+          "top_candidates": [
+            {
+              "raw": "20 jobs per hour",
+              "answer": "20 jobs per hour",
+              "source": "http://127.0.0.1:46994/transfer/incompatible-table-units/index.html",
+              "evidence": "Version: 1 | Worker quota: 20 jobs per hour",
+              "label": "Worker quota",
+              "section": "SilkQueue worker quotas",
+              "kind": "text",
+              "score": 15.3,
+              "signals": {
+                "locator": "table[1]/row[0]/cell[1]",
+                "page_title": "SilkQueue worker quotas",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Version",
+                    "Worker quota"
+                  ],
+                  "cells": [
+                    "1",
+                    "20 jobs per hour"
+                  ],
+                  "column": 1
+                },
+                "field_value": "20 jobs per hour",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "30 jobs per day",
+              "answer": "30 jobs per day",
+              "source": "http://127.0.0.1:46994/transfer/incompatible-table-units/index.html",
+              "evidence": "Version: 2 | Worker quota: 30 jobs per day",
+              "label": "Worker quota",
+              "section": "SilkQueue worker quotas",
+              "kind": "text",
+              "score": 15.3,
+              "signals": {
+                "locator": "table[1]/row[1]/cell[1]",
+                "page_title": "SilkQueue worker quotas",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 1,
+                  "columns": [
+                    "Version",
+                    "Worker quota"
+                  ],
+                  "cells": [
+                    "2",
+                    "30 jobs per day"
+                  ],
+                  "column": 1
+                },
+                "field_value": "30 jobs per day",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "1 | Worker quota: 20 jobs per hour",
+              "answer": "1 | Worker quota: 20 jobs per hour",
+              "source": "http://127.0.0.1:46994/transfer/incompatible-table-units/index.html",
+              "evidence": "Version: 1 | Worker quota: 20 jobs per hour",
+              "label": "Worker quota",
+              "section": "SilkQueue worker quotas",
+              "kind": "text",
+              "score": 14.0,
+              "signals": {
+                "locator": "table[1]/row[0]/cell[1]",
+                "page_title": "SilkQueue worker quotas",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Version",
+                    "Worker quota"
+                  ],
+                  "cells": [
+                    "1",
+                    "20 jobs per hour"
+                  ],
+                  "column": 1
+                },
+                "field_value": "20 jobs per hour",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2 | Worker quota: 30 jobs per day",
+              "answer": "2 | Worker quota: 30 jobs per day",
+              "source": "http://127.0.0.1:46994/transfer/incompatible-table-units/index.html",
+              "evidence": "Version: 2 | Worker quota: 30 jobs per day",
+              "label": "Worker quota",
+              "section": "SilkQueue worker quotas",
+              "kind": "text",
+              "score": 14.0,
+              "signals": {
+                "locator": "table[1]/row[1]/cell[1]",
+                "page_title": "SilkQueue worker quotas",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 1,
+                  "columns": [
+                    "Version",
+                    "Worker quota"
+                  ],
+                  "cells": [
+                    "2",
+                    "30 jobs per day"
+                  ],
+                  "column": 1
+                },
+                "field_value": "30 jobs per day",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "1",
+              "answer": "1",
+              "source": "http://127.0.0.1:46994/transfer/incompatible-table-units/index.html",
+              "evidence": "Version: 1 | Worker quota: 20 jobs per hour",
+              "label": "Version",
+              "section": "SilkQueue worker quotas",
+              "kind": "text",
+              "score": 11.3,
+              "signals": {
+                "locator": "table[1]/row[0]/cell[0]",
+                "page_title": "SilkQueue worker quotas",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Version",
+                    "Worker quota"
+                  ],
+                  "cells": [
+                    "1",
+                    "20 jobs per hour"
+                  ],
+                  "column": 0
+                },
+                "field_value": "1",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2",
+              "answer": "2",
+              "source": "http://127.0.0.1:46994/transfer/incompatible-table-units/index.html",
+              "evidence": "Version: 2 | Worker quota: 30 jobs per day",
+              "label": "Version",
+              "section": "SilkQueue worker quotas",
+              "kind": "text",
+              "score": 11.3,
+              "signals": {
+                "locator": "table[1]/row[1]/cell[0]",
+                "page_title": "SilkQueue worker quotas",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 1,
+                  "columns": [
+                    "Version",
+                    "Worker quota"
+                  ],
+                  "cells": [
+                    "2",
+                    "30 jobs per day"
+                  ],
+                  "column": 0
+                },
+                "field_value": "2",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [
+            {
+              "a": "20 jobs per hour",
+              "b": "30 jobs per day",
+              "sources": [
+                "http://127.0.0.1:46994/transfer/incompatible-table-units/index.html",
+                "http://127.0.0.1:46994/transfer/incompatible-table-units/index.html"
+              ],
+              "margin": 0.0
+            }
+          ],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:46994/transfer/incompatible-table-units/index.html",
+              "final": "http://127.0.0.1:46994/transfer/incompatible-table-units/index.html",
+              "status": 200,
+              "bytes": 218,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0036
+        }
+      }
+    },
+    {
+      "id": "single-control",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "$35",
+        "sources": [
+          "http://127.0.0.1:46994/transfer/single-control/index.html"
+        ],
+        "confidence": 0.86,
+        "evidence": "The Junco Park entry fee is $35.",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the Junco Park entry fee?",
+            "url": "http://127.0.0.1:46994/transfer/single-control/index.html",
+            "kind": "price",
+            "terms": [
+              "junco",
+              "park",
+              "entry",
+              "fee"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "junco",
+              "park",
+              "entry",
+              "fee"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the junco park entry fee",
+            "choices": [],
+            "operation": "single",
+            "required_fields": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.0999967344105244e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "$35",
+              "answer": "$35",
+              "source": "http://127.0.0.1:46994/transfer/single-control/index.html",
+              "evidence": "The Junco Park entry fee is $35.",
+              "label": "",
+              "section": "Junco Park admissions",
+              "kind": "price",
+              "score": 12.4,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[1]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "$35",
+            "answer": "$35",
+            "source": "http://127.0.0.1:46994/transfer/single-control/index.html",
+            "evidence": "The Junco Park entry fee is $35.",
+            "label": "",
+            "section": "Junco Park admissions",
+            "kind": "price",
+            "score": 12.4,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[1]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:46994/transfer/single-control/index.html",
+              "final": "http://127.0.0.1:46994/transfer/single-control/index.html",
+              "status": 200,
+              "bytes": 105,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 1.0779
+        }
+      }
+    }
+  ],
+  "health_before": {
+    "ready": true,
+    "device": "cuda",
+    "hip": null,
+    "pid": 37172,
+    "startup_token": "f40bf070e0074a9a890b46ae58592ba8",
+    "backend_source_sha256": {
+      "model_server.py": "14e840e32fe34ca594eb4fb0dadd89fc67768fb9026ac3359734a021c5190fc2",
+      "model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+      "selector.py": "b98605e9c31d93b1486aee4d6e6ab207a70dd9b35e6300ae7bea5b949c7c346d",
+      "model_protocol.py": "8ba6730e160eac47d8231985e1293bb981a5a63ef9b475cf46daf31ef17bdfb0",
+      "model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+      "normalize.py": "5120ed91dc0c70eff61c41f0242388e45be357d6fdd251042e437a1ccc5f34ff",
+      "types.py": "42d14170127f88a247c0092e6a65b8151496cc46e7e02d7fee8c7317ffa011f2"
+    },
+    "software": {
+      "torch": "2.9.1+cu128",
+      "transformers": "4.57.1",
+      "tokenizers": "0.22.1",
+      "safetensors": "0.6.2",
+      "accelerate": "1.11.0"
+    },
+    "parameters": 4022468096,
+    "assets": {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "verified_files": 12,
+      "full_sha256": false,
+      "weight_shards": 3
+    },
+    "warmup_reply": {
+      "candidate": -1,
+      "passage": 0,
+      "answer": "7"
+    },
+    "torch": "2.9.1+cu128",
+    "startup_seconds": 12.127440799959004,
+    "calls": 0,
+    "outcomes": {},
+    "active_request": null,
+    "busy_rejections": 0,
+    "recent_requests": [
+      {
+        "request_id": "warmup",
+        "mode": "select",
+        "input_tokens": 268,
+        "packing_seconds": 0.011715300031937659,
+        "transfer_seconds": 0.0008467000443488359,
+        "generated_tokens": 14,
+        "stop_reason": "completed",
+        "generation_seconds": 1.0432767999591306,
+        "prefill_and_first_token_seconds": 0.4521768999984488
+      }
+    ],
+    "context_limit": 1024,
+    "token_stats": {
+      "max_input": 268,
+      "generated": 14,
+      "pruned_requests": 0
+    },
+    "device_memory_bytes": 12878086144,
+    "peak_vram_bytes": 8141605888,
+    "allocated_vram_bytes": 8053474816,
+    "reserved_vram_bytes": 8185184256
+  },
+  "health_after": {
+    "ready": true,
+    "device": "cuda",
+    "hip": null,
+    "pid": 37172,
+    "startup_token": "f40bf070e0074a9a890b46ae58592ba8",
+    "backend_source_sha256": {
+      "model_server.py": "14e840e32fe34ca594eb4fb0dadd89fc67768fb9026ac3359734a021c5190fc2",
+      "model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+      "selector.py": "b98605e9c31d93b1486aee4d6e6ab207a70dd9b35e6300ae7bea5b949c7c346d",
+      "model_protocol.py": "8ba6730e160eac47d8231985e1293bb981a5a63ef9b475cf46daf31ef17bdfb0",
+      "model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+      "normalize.py": "5120ed91dc0c70eff61c41f0242388e45be357d6fdd251042e437a1ccc5f34ff",
+      "types.py": "42d14170127f88a247c0092e6a65b8151496cc46e7e02d7fee8c7317ffa011f2"
+    },
+    "software": {
+      "torch": "2.9.1+cu128",
+      "transformers": "4.57.1",
+      "tokenizers": "0.22.1",
+      "safetensors": "0.6.2",
+      "accelerate": "1.11.0"
+    },
+    "parameters": 4022468096,
+    "assets": {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "verified_files": 12,
+      "full_sha256": false,
+      "weight_shards": 3
+    },
+    "warmup_reply": {
+      "candidate": -1,
+      "passage": 0,
+      "answer": "7"
+    },
+    "torch": "2.9.1+cu128",
+    "startup_seconds": 12.127440799959004,
+    "calls": 16,
+    "outcomes": {
+      "selected": 11,
+      "unsupported": 1,
+      "supported": 4
+    },
+    "active_request": null,
+    "busy_rejections": 0,
+    "recent_requests": [
+      {
+        "request_id": "warmup",
+        "mode": "select",
+        "input_tokens": 268,
+        "packing_seconds": 0.011715300031937659,
+        "transfer_seconds": 0.0008467000443488359,
+        "generated_tokens": 14,
+        "stop_reason": "completed",
+        "generation_seconds": 1.0432767999591306,
+        "prefill_and_first_token_seconds": 0.4521768999984488
+      },
+      {
+        "request_id": "37d96726a976483d896da6edae25f15c",
+        "mode": "select",
+        "input_tokens": 513,
+        "packing_seconds": 0.00300330005120486,
+        "transfer_seconds": 0.001309499959461391,
+        "generated_tokens": 23,
+        "stop_reason": "completed",
+        "generation_seconds": 1.1337858999613672,
+        "prefill_and_first_token_seconds": 0.08598550001624972
+      },
+      {
+        "request_id": "a0353953a67f4ffa9a7c1b017cf6d722",
+        "mode": "select",
+        "input_tokens": 486,
+        "packing_seconds": 0.0024802000261843204,
+        "transfer_seconds": 0.001269000000320375,
+        "generated_tokens": 39,
+        "stop_reason": "completed",
+        "generation_seconds": 1.9235022000502795,
+        "prefill_and_first_token_seconds": 0.08277750003617257
+      },
+      {
+        "request_id": "669696234bcc43c7a4c19e4630399c28",
+        "mode": "select",
+        "input_tokens": 938,
+        "packing_seconds": 0.005406700074672699,
+        "transfer_seconds": 0.0016777999699115753,
+        "generated_tokens": 15,
+        "stop_reason": "completed",
+        "generation_seconds": 0.8835280999774113,
+        "prefill_and_first_token_seconds": 0.182642100029625
+      },
+      {
+        "request_id": "3ee10287ac2641b29af97c414da2f2a0",
+        "mode": "verify",
+        "input_tokens": 964,
+        "packing_seconds": 0.0038397000171244144,
+        "transfer_seconds": 0.0017523999558761716,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.4966936999699101,
+        "prefill_and_first_token_seconds": 0.18677599995862693
+      },
+      {
+        "request_id": "2f5536e9f2c74b8ab95551f3eb3e2f03",
+        "mode": "select",
+        "input_tokens": 529,
+        "packing_seconds": 0.0025311000645160675,
+        "transfer_seconds": 0.0011999999405816197,
+        "generated_tokens": 16,
+        "stop_reason": "completed",
+        "generation_seconds": 0.8209354999708012,
+        "prefill_and_first_token_seconds": 0.09201010002288967
+      },
+      {
+        "request_id": "2d478fb64ba241c38114d0e944c80bf2",
+        "mode": "select",
+        "input_tokens": 494,
+        "packing_seconds": 0.0022678000386804342,
+        "transfer_seconds": 0.0010291000362485647,
+        "generated_tokens": 41,
+        "stop_reason": "completed",
+        "generation_seconds": 1.9301849999465048,
+        "prefill_and_first_token_seconds": 0.07151919999159873
+      },
+      {
+        "request_id": "3d7a2b77dbda44caa7b8013d3f9450ac",
+        "mode": "select",
+        "input_tokens": 959,
+        "packing_seconds": 0.005866799969226122,
+        "transfer_seconds": 0.0017776000313460827,
+        "generated_tokens": 15,
+        "stop_reason": "completed",
+        "generation_seconds": 0.8812328999629244,
+        "prefill_and_first_token_seconds": 0.1799686000449583
+      },
+      {
+        "request_id": "aa721305119c462f946c453f5feac839",
+        "mode": "verify",
+        "input_tokens": 980,
+        "packing_seconds": 0.0037704999558627605,
+        "transfer_seconds": 0.0018731000600382686,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.5445108999265358,
+        "prefill_and_first_token_seconds": 0.20034569990821183
+      },
+      {
+        "request_id": "5f9217f26a644396b39c83854d41123c",
+        "mode": "select",
+        "input_tokens": 499,
+        "packing_seconds": 0.0032189000630751252,
+        "transfer_seconds": 0.0014711999101564288,
+        "generated_tokens": 38,
+        "stop_reason": "completed",
+        "generation_seconds": 1.8135223999852315,
+        "prefill_and_first_token_seconds": 0.07398089999333024
+      },
+      {
+        "request_id": "83abfcb9d0814721af16fac554f96a14",
+        "mode": "verify",
+        "input_tokens": 631,
+        "packing_seconds": 0.0032401999924331903,
+        "transfer_seconds": 0.0016408999217674136,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.3906528000952676,
+        "prefill_and_first_token_seconds": 0.10398560005705804
+      },
+      {
+        "request_id": "2db7c702f2d24d678764b42c1758117b",
+        "mode": "select",
+        "input_tokens": 517,
+        "packing_seconds": 0.0024218999315053225,
+        "transfer_seconds": 0.0011964000295847654,
+        "generated_tokens": 23,
+        "stop_reason": "completed",
+        "generation_seconds": 1.1306224999716505,
+        "prefill_and_first_token_seconds": 0.0877745000179857
+      },
+      {
+        "request_id": "0f339c97d71c42bb8cff9499bc99442e",
+        "mode": "select",
+        "input_tokens": 490,
+        "packing_seconds": 0.0024130999809131026,
+        "transfer_seconds": 0.001160199986770749,
+        "generated_tokens": 40,
+        "stop_reason": "completed",
+        "generation_seconds": 1.9503671999555081,
+        "prefill_and_first_token_seconds": 0.07784089993219823
+      },
+      {
+        "request_id": "5684a928ff7b423c8dd51282edb847b2",
+        "mode": "select",
+        "input_tokens": 958,
+        "packing_seconds": 0.00541230000089854,
+        "transfer_seconds": 0.0020234999246895313,
+        "generated_tokens": 15,
+        "stop_reason": "completed",
+        "generation_seconds": 0.9437099000206217,
+        "prefill_and_first_token_seconds": 0.1904792001005262
+      },
+      {
+        "request_id": "4c734abe224242a6b609972ab30cfe66",
+        "mode": "verify",
+        "input_tokens": 974,
+        "packing_seconds": 0.004177000024355948,
+        "transfer_seconds": 0.0018851000349968672,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.49316720000933856,
+        "prefill_and_first_token_seconds": 0.19879409996792674
+      },
+      {
+        "request_id": "2e8371b2fc794f7fa48eab9d890af0e4",
+        "mode": "select",
+        "input_tokens": 496,
+        "packing_seconds": 0.0023302999325096607,
+        "transfer_seconds": 0.0012313000624999404,
+        "generated_tokens": 15,
+        "stop_reason": "completed",
+        "generation_seconds": 0.7416259999154136,
+        "prefill_and_first_token_seconds": 0.0838077999651432
+      },
+      {
+        "request_id": "bd3a15a21e504570bfa793ffed05c0b2",
+        "mode": "verify",
+        "input_tokens": 435,
+        "packing_seconds": 0.0021162000484764576,
+        "transfer_seconds": 0.0009790000040084124,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.3238876999821514,
+        "prefill_and_first_token_seconds": 0.0695603999774903
+      }
+    ],
+    "context_limit": 1024,
+    "token_stats": {
+      "max_input": 980,
+      "generated": 324,
+      "pruned_requests": 3
+    },
+    "device_memory_bytes": 12878086144,
+    "peak_vram_bytes": 8606652928,
+    "allocated_vram_bytes": 8061994496,
+    "reserved_vram_bytes": 9225371648
+  },
+  "memory_after_run": {
+    "used_mib": 10657,
+    "total_mib": 12282
+  },
+  "memory_after_shutdown": {
+    "used_mib": 1644,
+    "total_mib": 12282
+  },
+  "passed": 5,
+  "total": 10
+}

@@ -1,0 +1,2376 @@
+{
+  "scope": "CPU/HTTP checks of birth-year bindings from actual parsed structured fields.\n\nA controlled semantic endpoint copies an existing name and says supported,\nisolating the literal guard. No GPU/model weights/browser or accuracy claim.\n",
+  "baseline_revision": "a85ec14c6584d34f0b9014da22d48f9979226be2",
+  "baseline_source_sha256": {
+    "agent/engine.py": "01464cb276814f2d7c845c269da2522c285a7a7e28051abd7e36ad0ec62b41ff",
+    "agent/types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent/planner.py": "7f6277fe3431951f068059756c8ed66fbed68f2105355e060ff48e6ed767fa44",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "agent/normalize.py": "05e48fa0be8384aa656bf1280ba0be44545efa51b7d4451f0716d836d39a1973",
+    "agent/network.py": "c37ecb5b4b0fba4fac737954eda24952059922ed620c94b99bcb17daed8c5155",
+    "agent/urls.py": "3a6b8a380f6d7966f1f79b97ccdedab5a5959ffbe5a1aa244e3477a0fe6110f4",
+    "agent/parser.py": "16d707bad4db2747d32bfae722d26bae91a8fd102e31883bd3e7ad9df561bd90",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/challenges.py": "b6f51c720f332671725e08127a5d1c163ca0542d2a550bf3c980a6d4c49bf6a1",
+    "agent/resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent/search.py": "28e2454682bc8af4ef10b06f62b66117d39194fddc9ec218b9bc82cad96767fd",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/candidates.py": "16dd310d36390f5cb0323f0d81d7630542b116693dd0ee0b1e9fe015a80cb1d0",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/evidence.py": "09da13b3f2fb17de30734c44ddad1c89b856ec682ff2e88a78a57773409c0089",
+    "agent/selector.py": "a693a62781fcb76dd11bc6d29eb19770b48dc7e2e29bd7619cc189b62bf70e1b",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+    "agent/proofs.py": "0d7ae78df6ea9949c29f33c7b817dda352c75b3d99c960c3e987e37c7401faab",
+    "agent/oyez.py": "8475f248d78925522e0742b13518be2c4f4db11eae0d8391a8002da7d4e3b67d"
+  },
+  "before": [
+    {
+      "id": "camel-date-json",
+      "passed": false,
+      "expected": true,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | birthDate: 1998-03-04 | lastUpdated: 2026-01-01 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "birthDate": "1998-03-04",
+        "lastUpdated": "2026-01-01"
+      }
+    },
+    {
+      "id": "camel-date-jsonld",
+      "passed": false,
+      "expected": true,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | birthDate: 1998-03-04 | lastUpdated: 2026-01-01 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "birthDate": "1998-03-04",
+        "lastUpdated": "2026-01-01"
+      }
+    },
+    {
+      "id": "underscore-date-json",
+      "passed": false,
+      "expected": true,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | date_of_birth: 04/03/1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "date_of_birth": "04/03/1998"
+      }
+    },
+    {
+      "id": "underscore-date-jsonld",
+      "passed": false,
+      "expected": true,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | date_of_birth: 04/03/1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "date_of_birth": "04/03/1998"
+      }
+    },
+    {
+      "id": "spaced-date-json",
+      "passed": true,
+      "expected": true,
+      "actual": true,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | Date of Birth: March 4, 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "Date of Birth": "March 4, 1998"
+      }
+    },
+    {
+      "id": "spaced-date-jsonld",
+      "passed": true,
+      "expected": true,
+      "actual": true,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | Date of Birth: March 4, 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "Date of Birth": "March 4, 1998"
+      }
+    },
+    {
+      "id": "upper-key-json",
+      "passed": false,
+      "expected": true,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | BIRTHDATE: 1998-03-04 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "BIRTHDATE": "1998-03-04"
+      }
+    },
+    {
+      "id": "upper-key-jsonld",
+      "passed": false,
+      "expected": true,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | BIRTHDATE: 1998-03-04 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "BIRTHDATE": "1998-03-04"
+      }
+    },
+    {
+      "id": "year-field-json",
+      "passed": false,
+      "expected": true,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | birthYear: 1998 | lastUpdated: 2026 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "birthYear": "1998",
+        "lastUpdated": "2026"
+      }
+    },
+    {
+      "id": "year-field-jsonld",
+      "passed": false,
+      "expected": true,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | birthYear: 1998 | lastUpdated: 2026 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "birthYear": "1998",
+        "lastUpdated": "2026"
+      }
+    },
+    {
+      "id": "year-of-birth-json",
+      "passed": false,
+      "expected": true,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | yearOfBirth: 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "yearOfBirth": "1998"
+      }
+    },
+    {
+      "id": "year-of-birth-jsonld",
+      "passed": false,
+      "expected": true,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | yearOfBirth: 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "yearOfBirth": "1998"
+      }
+    },
+    {
+      "id": "dob-json",
+      "passed": false,
+      "expected": true,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | DOB: 1998-03-04 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "DOB": "1998-03-04"
+      }
+    },
+    {
+      "id": "dob-jsonld",
+      "passed": false,
+      "expected": true,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | DOB: 1998-03-04 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "DOB": "1998-03-04"
+      }
+    },
+    {
+      "id": "explicit-born-json",
+      "passed": true,
+      "expected": true,
+      "actual": true,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | Born: 1998 | lastUpdated: 2026 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "Born": "1998",
+        "lastUpdated": "2026"
+      }
+    },
+    {
+      "id": "explicit-born-jsonld",
+      "passed": true,
+      "expected": true,
+      "actual": true,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | Born: 1998 | lastUpdated: 2026 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "Born": "1998",
+        "lastUpdated": "2026"
+      }
+    },
+    {
+      "id": "wrong-born-update-json",
+      "passed": false,
+      "expected": false,
+      "actual": true,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | Born: 1970 | lastUpdated: 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "Born": "1970",
+        "lastUpdated": "1998"
+      }
+    },
+    {
+      "id": "wrong-born-update-jsonld",
+      "passed": false,
+      "expected": false,
+      "actual": true,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | Born: 1970 | lastUpdated: 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "Born": "1970",
+        "lastUpdated": "1998"
+      }
+    },
+    {
+      "id": "wrong-date-update-json",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | birthDate: 1970-03-04 | lastUpdated: 1998-01-01 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "birthDate": "1970-03-04",
+        "lastUpdated": "1998-01-01"
+      }
+    },
+    {
+      "id": "wrong-date-update-jsonld",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | birthDate: 1970-03-04 | lastUpdated: 1998-01-01 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "birthDate": "1970-03-04",
+        "lastUpdated": "1998-01-01"
+      }
+    },
+    {
+      "id": "wrong-year-field-json",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | birthYear: 1970 | lastUpdated: 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "birthYear": "1970",
+        "lastUpdated": "1998"
+      }
+    },
+    {
+      "id": "wrong-year-field-jsonld",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | birthYear: 1970 | lastUpdated: 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "birthYear": "1970",
+        "lastUpdated": "1998"
+      }
+    },
+    {
+      "id": "missing-birth-field-json",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | lastUpdated: 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "lastUpdated": "1998"
+      }
+    },
+    {
+      "id": "missing-birth-field-jsonld",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | lastUpdated: 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "lastUpdated": "1998"
+      }
+    },
+    {
+      "id": "empty-date-json",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | birthDate:  | lastUpdated: 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "birthDate": "",
+        "lastUpdated": "1998"
+      }
+    },
+    {
+      "id": "empty-date-jsonld",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | birthDate:  | lastUpdated: 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "birthDate": "",
+        "lastUpdated": "1998"
+      }
+    },
+    {
+      "id": "unknown-date-json",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | birthDate: unknown | lastUpdated: 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "birthDate": "unknown",
+        "lastUpdated": "1998"
+      }
+    },
+    {
+      "id": "unknown-date-jsonld",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | birthDate: unknown | lastUpdated: 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "birthDate": "unknown",
+        "lastUpdated": "1998"
+      }
+    },
+    {
+      "id": "conflicting-date-fields-json",
+      "passed": false,
+      "expected": false,
+      "actual": true,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | Born: 1998 | birthDate: 1970-03-04 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "Born": "1998",
+        "birthDate": "1970-03-04"
+      }
+    },
+    {
+      "id": "conflicting-date-fields-jsonld",
+      "passed": false,
+      "expected": false,
+      "actual": true,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | Born: 1998 | birthDate: 1970-03-04 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "Born": "1998",
+        "birthDate": "1970-03-04"
+      }
+    },
+    {
+      "id": "matching-date-fields-json",
+      "passed": true,
+      "expected": true,
+      "actual": true,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | Born: 1998 | birthDate: 1998-03-04 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "Born": "1998",
+        "birthDate": "1998-03-04"
+      }
+    },
+    {
+      "id": "matching-date-fields-jsonld",
+      "passed": true,
+      "expected": true,
+      "actual": true,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | Born: 1998 | birthDate: 1998-03-04 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "Born": "1998",
+        "birthDate": "1998-03-04"
+      }
+    },
+    {
+      "id": "date-range-json",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | birthDate: 1970 or 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "birthDate": "1970 or 1998"
+      }
+    },
+    {
+      "id": "date-range-jsonld",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | birthDate: 1970 or 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "birthDate": "1970 or 1998"
+      }
+    },
+    {
+      "id": "version-not-year-json",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | birthDate: 1998.2 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "birthDate": "1998.2"
+      }
+    },
+    {
+      "id": "version-not-year-jsonld",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | birthDate: 1998.2 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "birthDate": "1998.2"
+      }
+    },
+    {
+      "id": "other-entity-json",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | lastUpdated: 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "lastUpdated": "1998"
+      }
+    },
+    {
+      "id": "other-entity-jsonld",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | lastUpdated: 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "lastUpdated": "1998"
+      }
+    },
+    {
+      "id": "child-no-inheritance-json",
+      "passed": false,
+      "expected": false,
+      "actual": true,
+      "evidence": "child.name: Mira Vale | child { name: Mira Vale | lastUpdated: 1998 } | parent $ { name: Rowan North | Born: 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "lastUpdated": "1998"
+      }
+    },
+    {
+      "id": "child-no-inheritance-jsonld",
+      "passed": false,
+      "expected": false,
+      "actual": true,
+      "evidence": "child.name: Mira Vale | child { name: Mira Vale | lastUpdated: 1998 } | parent $ { name: Rowan North | Born: 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "lastUpdated": "1998"
+      }
+    },
+    {
+      "id": "local-biography-json",
+      "passed": true,
+      "expected": true,
+      "actual": true,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | biography: Mira Vale was born in 1998. }",
+      "bindings": {
+        "name": "Mira Vale",
+        "biography": "Mira Vale was born in 1998."
+      }
+    },
+    {
+      "id": "local-biography-jsonld",
+      "passed": true,
+      "expected": true,
+      "actual": true,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | biography: Mira Vale was born in 1998. }",
+      "bindings": {
+        "name": "Mira Vale",
+        "biography": "Mira Vale was born in 1998."
+      }
+    },
+    {
+      "id": "long-local-biography-json",
+      "passed": true,
+      "expected": true,
+      "actual": true,
+      "evidence": "biography: Mira Vale was born in 1998. She writes about nature. She writes about nature. She writes about nature. She writes about nature. She writes about nature. She writes about nature. She writes about nature. She writes about nature. She writes about nature. She writes about nature. She writes about nature. She writes about nature. | $ { name: Mira Vale }",
+      "bindings": {
+        "name": "Mira Vale"
+      }
+    },
+    {
+      "id": "long-local-biography-jsonld",
+      "passed": true,
+      "expected": true,
+      "actual": true,
+      "evidence": "biography: Mira Vale was born in 1998. She writes about nature. She writes about nature. She writes about nature. She writes about nature. She writes about nature. She writes about nature. She writes about nature. She writes about nature. She writes about nature. She writes about nature. She writes about nature. She writes about nature. | $ { name: Mira Vale }",
+      "bindings": {
+        "name": "Mira Vale"
+      }
+    },
+    {
+      "id": "date-must-be-in-literal-passage",
+      "passed": true
+    },
+    {
+      "id": "timeless-unchanged",
+      "passed": true
+    },
+    {
+      "id": "http-camel-date",
+      "passed": false,
+      "calls": [
+        "/select"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_evidence_rejected",
+        "diagnostics": {
+          "plan": {
+            "question": "Who was born in 1998?",
+            "url": "http://127.0.0.1:48951/source",
+            "kind": "text",
+            "terms": [
+              "born",
+              "1998"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "born"
+            ],
+            "versions": [],
+            "year": "1998",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "who was born ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 0.00019809999503195286
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Mira Vale",
+              "answer": "Mira Vale",
+              "source": "http://127.0.0.1:48951/source",
+              "evidence": "name: Mira Vale | $ { name: Mira Vale | birthDate: 1998-03-04 | lastUpdated: 2026-01-01 }",
+              "label": "name",
+              "section": "$ { name: Mira Vale | birthDate: 1998-03-04 | lastUpdated: 2026-01-01 }",
+              "kind": "text",
+              "score": 7.1,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "name",
+                "structure": "json",
+                "qualifiers": {
+                  "identity": [
+                    "Mira Vale"
+                  ],
+                  "structured": true,
+                  "bindings": {
+                    "name": "Mira Vale",
+                    "birthDate": "1998-03-04",
+                    "lastUpdated": "2026-01-01"
+                  },
+                  "value_type": "scalar"
+                },
+                "field_value": "Mira Vale"
+              }
+            }
+          ],
+          "reader_state": "evidence_rejected",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:48951/source",
+              "final": "http://127.0.0.1:48951/source",
+              "status": 200,
+              "bytes": 77,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0072
+        }
+      }
+    },
+    {
+      "id": "http-explicit-born",
+      "passed": true,
+      "calls": [
+        "/select",
+        "/verify"
+      ],
+      "result": {
+        "answer": "Mira Vale",
+        "sources": [
+          "http://127.0.0.1:48951/source"
+        ],
+        "confidence": 0.768,
+        "evidence": "name: Mira Vale | $ { name: Mira Vale | Born: 1998 | lastUpdated: 2026 }",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "Who was born in 1998?",
+            "url": "http://127.0.0.1:48951/source",
+            "kind": "text",
+            "terms": [
+              "born",
+              "1998"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "born"
+            ],
+            "versions": [],
+            "year": "1998",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "who was born ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.2699980288743973e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Mira Vale",
+              "answer": "Mira Vale",
+              "source": "http://127.0.0.1:48951/source",
+              "evidence": "name: Mira Vale | $ { name: Mira Vale | Born: 1998 | lastUpdated: 2026 }",
+              "label": "name",
+              "section": "$ { name: Mira Vale | Born: 1998 | lastUpdated: 2026 }",
+              "kind": "text",
+              "score": 8.7,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "name",
+                "structure": "json",
+                "qualifiers": {
+                  "identity": [
+                    "Mira Vale"
+                  ],
+                  "structured": true,
+                  "bindings": {
+                    "name": "Mira Vale",
+                    "Born": "1998",
+                    "lastUpdated": "2026"
+                  },
+                  "value_type": "scalar"
+                },
+                "field_value": "Mira Vale"
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "Mira Vale",
+            "answer": "Mira Vale",
+            "source": "http://127.0.0.1:48951/source",
+            "evidence": "name: Mira Vale | $ { name: Mira Vale | Born: 1998 | lastUpdated: 2026 }",
+            "label": "name",
+            "section": "$ { name: Mira Vale | Born: 1998 | lastUpdated: 2026 }",
+            "kind": "text",
+            "score": 8.7,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "name",
+              "structure": "json",
+              "qualifiers": {
+                "identity": [
+                  "Mira Vale"
+                ],
+                "structured": true,
+                "bindings": {
+                  "name": "Mira Vale",
+                  "Born": "1998",
+                  "lastUpdated": "2026"
+                },
+                "value_type": "scalar"
+              },
+              "field_value": "Mira Vale"
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:48951/source",
+              "final": "http://127.0.0.1:48951/source",
+              "status": 200,
+              "bytes": 60,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0062
+        }
+      }
+    },
+    {
+      "id": "http-wrong-born-update",
+      "passed": false,
+      "calls": [
+        "/select",
+        "/verify"
+      ],
+      "result": {
+        "answer": "Mira Vale",
+        "sources": [
+          "http://127.0.0.1:48951/source"
+        ],
+        "confidence": 0.768,
+        "evidence": "name: Mira Vale | $ { name: Mira Vale | Born: 1970 | lastUpdated: 1998 }",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "Who was born in 1998?",
+            "url": "http://127.0.0.1:48951/source",
+            "kind": "text",
+            "terms": [
+              "born",
+              "1998"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "born"
+            ],
+            "versions": [],
+            "year": "1998",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "who was born ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 9.70007386058569e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Mira Vale",
+              "answer": "Mira Vale",
+              "source": "http://127.0.0.1:48951/source",
+              "evidence": "name: Mira Vale | $ { name: Mira Vale | Born: 1970 | lastUpdated: 1998 }",
+              "label": "name",
+              "section": "$ { name: Mira Vale | Born: 1970 | lastUpdated: 1998 }",
+              "kind": "text",
+              "score": 8.7,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "name",
+                "structure": "json",
+                "qualifiers": {
+                  "identity": [
+                    "Mira Vale"
+                  ],
+                  "structured": true,
+                  "bindings": {
+                    "name": "Mira Vale",
+                    "Born": "1970",
+                    "lastUpdated": "1998"
+                  },
+                  "value_type": "scalar"
+                },
+                "field_value": "Mira Vale"
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "Mira Vale",
+            "answer": "Mira Vale",
+            "source": "http://127.0.0.1:48951/source",
+            "evidence": "name: Mira Vale | $ { name: Mira Vale | Born: 1970 | lastUpdated: 1998 }",
+            "label": "name",
+            "section": "$ { name: Mira Vale | Born: 1970 | lastUpdated: 1998 }",
+            "kind": "text",
+            "score": 8.7,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "name",
+              "structure": "json",
+              "qualifiers": {
+                "identity": [
+                  "Mira Vale"
+                ],
+                "structured": true,
+                "bindings": {
+                  "name": "Mira Vale",
+                  "Born": "1970",
+                  "lastUpdated": "1998"
+                },
+                "value_type": "scalar"
+              },
+              "field_value": "Mira Vale"
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:48951/source",
+              "final": "http://127.0.0.1:48951/source",
+              "status": 200,
+              "bytes": 60,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0059
+        }
+      }
+    },
+    {
+      "id": "http-conflicting-date-fields",
+      "passed": false,
+      "calls": [
+        "/select",
+        "/verify"
+      ],
+      "result": {
+        "answer": "Mira Vale",
+        "sources": [
+          "http://127.0.0.1:48951/source"
+        ],
+        "confidence": 0.768,
+        "evidence": "name: Mira Vale | $ { name: Mira Vale | Born: 1998 | birthDate: 1970-03-04 }",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "Who was born in 1998?",
+            "url": "http://127.0.0.1:48951/source",
+            "kind": "text",
+            "terms": [
+              "born",
+              "1998"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "born"
+            ],
+            "versions": [],
+            "year": "1998",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "who was born ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 9.299954399466515e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Mira Vale",
+              "answer": "Mira Vale",
+              "source": "http://127.0.0.1:48951/source",
+              "evidence": "name: Mira Vale | $ { name: Mira Vale | Born: 1998 | birthDate: 1970-03-04 }",
+              "label": "name",
+              "section": "$ { name: Mira Vale | Born: 1998 | birthDate: 1970-03-04 }",
+              "kind": "text",
+              "score": 8.7,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "name",
+                "structure": "json",
+                "qualifiers": {
+                  "identity": [
+                    "Mira Vale"
+                  ],
+                  "structured": true,
+                  "bindings": {
+                    "name": "Mira Vale",
+                    "Born": "1998",
+                    "birthDate": "1970-03-04"
+                  },
+                  "value_type": "scalar"
+                },
+                "field_value": "Mira Vale"
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "Mira Vale",
+            "answer": "Mira Vale",
+            "source": "http://127.0.0.1:48951/source",
+            "evidence": "name: Mira Vale | $ { name: Mira Vale | Born: 1998 | birthDate: 1970-03-04 }",
+            "label": "name",
+            "section": "$ { name: Mira Vale | Born: 1998 | birthDate: 1970-03-04 }",
+            "kind": "text",
+            "score": 8.7,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "name",
+              "structure": "json",
+              "qualifiers": {
+                "identity": [
+                  "Mira Vale"
+                ],
+                "structured": true,
+                "bindings": {
+                  "name": "Mira Vale",
+                  "Born": "1998",
+                  "birthDate": "1970-03-04"
+                },
+                "value_type": "scalar"
+              },
+              "field_value": "Mira Vale"
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:48951/source",
+              "final": "http://127.0.0.1:48951/source",
+              "status": 200,
+              "bytes": 64,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0062
+        }
+      }
+    },
+    {
+      "id": "http-other-entity",
+      "passed": true,
+      "calls": [
+        "/select"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_evidence_rejected",
+        "diagnostics": {
+          "plan": {
+            "question": "Who was born in 1998?",
+            "url": "http://127.0.0.1:48951/source",
+            "kind": "text",
+            "terms": [
+              "born",
+              "1998"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "born"
+            ],
+            "versions": [],
+            "year": "1998",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "who was born ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.079996582120657e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Mira Vale",
+              "answer": "Mira Vale",
+              "source": "http://127.0.0.1:48951/source",
+              "evidence": "name: Mira Vale | $ { name: Mira Vale | lastUpdated: 1998 }",
+              "label": "name",
+              "section": "$ { name: Mira Vale | lastUpdated: 1998 }",
+              "kind": "text",
+              "score": 7.1,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "name",
+                "structure": "json",
+                "qualifiers": {
+                  "identity": [
+                    "Mira Vale"
+                  ],
+                  "structured": true,
+                  "bindings": {
+                    "name": "Mira Vale",
+                    "lastUpdated": "1998"
+                  },
+                  "value_type": "scalar"
+                },
+                "field_value": "Mira Vale"
+              }
+            }
+          ],
+          "reader_state": "evidence_rejected",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:48951/source",
+              "final": "http://127.0.0.1:48951/source",
+              "status": 200,
+              "bytes": 105,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0051
+        }
+      }
+    }
+  ],
+  "after": [
+    {
+      "id": "camel-date-json",
+      "passed": true,
+      "expected": true,
+      "actual": true,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | birthDate: 1998-03-04 | lastUpdated: 2026-01-01 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "birthDate": "1998-03-04",
+        "lastUpdated": "2026-01-01"
+      }
+    },
+    {
+      "id": "camel-date-jsonld",
+      "passed": true,
+      "expected": true,
+      "actual": true,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | birthDate: 1998-03-04 | lastUpdated: 2026-01-01 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "birthDate": "1998-03-04",
+        "lastUpdated": "2026-01-01"
+      }
+    },
+    {
+      "id": "underscore-date-json",
+      "passed": true,
+      "expected": true,
+      "actual": true,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | date_of_birth: 04/03/1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "date_of_birth": "04/03/1998"
+      }
+    },
+    {
+      "id": "underscore-date-jsonld",
+      "passed": true,
+      "expected": true,
+      "actual": true,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | date_of_birth: 04/03/1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "date_of_birth": "04/03/1998"
+      }
+    },
+    {
+      "id": "spaced-date-json",
+      "passed": true,
+      "expected": true,
+      "actual": true,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | Date of Birth: March 4, 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "Date of Birth": "March 4, 1998"
+      }
+    },
+    {
+      "id": "spaced-date-jsonld",
+      "passed": true,
+      "expected": true,
+      "actual": true,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | Date of Birth: March 4, 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "Date of Birth": "March 4, 1998"
+      }
+    },
+    {
+      "id": "upper-key-json",
+      "passed": true,
+      "expected": true,
+      "actual": true,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | BIRTHDATE: 1998-03-04 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "BIRTHDATE": "1998-03-04"
+      }
+    },
+    {
+      "id": "upper-key-jsonld",
+      "passed": true,
+      "expected": true,
+      "actual": true,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | BIRTHDATE: 1998-03-04 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "BIRTHDATE": "1998-03-04"
+      }
+    },
+    {
+      "id": "year-field-json",
+      "passed": true,
+      "expected": true,
+      "actual": true,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | birthYear: 1998 | lastUpdated: 2026 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "birthYear": "1998",
+        "lastUpdated": "2026"
+      }
+    },
+    {
+      "id": "year-field-jsonld",
+      "passed": true,
+      "expected": true,
+      "actual": true,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | birthYear: 1998 | lastUpdated: 2026 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "birthYear": "1998",
+        "lastUpdated": "2026"
+      }
+    },
+    {
+      "id": "year-of-birth-json",
+      "passed": true,
+      "expected": true,
+      "actual": true,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | yearOfBirth: 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "yearOfBirth": "1998"
+      }
+    },
+    {
+      "id": "year-of-birth-jsonld",
+      "passed": true,
+      "expected": true,
+      "actual": true,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | yearOfBirth: 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "yearOfBirth": "1998"
+      }
+    },
+    {
+      "id": "dob-json",
+      "passed": true,
+      "expected": true,
+      "actual": true,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | DOB: 1998-03-04 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "DOB": "1998-03-04"
+      }
+    },
+    {
+      "id": "dob-jsonld",
+      "passed": true,
+      "expected": true,
+      "actual": true,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | DOB: 1998-03-04 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "DOB": "1998-03-04"
+      }
+    },
+    {
+      "id": "explicit-born-json",
+      "passed": true,
+      "expected": true,
+      "actual": true,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | Born: 1998 | lastUpdated: 2026 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "Born": "1998",
+        "lastUpdated": "2026"
+      }
+    },
+    {
+      "id": "explicit-born-jsonld",
+      "passed": true,
+      "expected": true,
+      "actual": true,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | Born: 1998 | lastUpdated: 2026 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "Born": "1998",
+        "lastUpdated": "2026"
+      }
+    },
+    {
+      "id": "wrong-born-update-json",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | Born: 1970 | lastUpdated: 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "Born": "1970",
+        "lastUpdated": "1998"
+      }
+    },
+    {
+      "id": "wrong-born-update-jsonld",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | Born: 1970 | lastUpdated: 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "Born": "1970",
+        "lastUpdated": "1998"
+      }
+    },
+    {
+      "id": "wrong-date-update-json",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | birthDate: 1970-03-04 | lastUpdated: 1998-01-01 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "birthDate": "1970-03-04",
+        "lastUpdated": "1998-01-01"
+      }
+    },
+    {
+      "id": "wrong-date-update-jsonld",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | birthDate: 1970-03-04 | lastUpdated: 1998-01-01 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "birthDate": "1970-03-04",
+        "lastUpdated": "1998-01-01"
+      }
+    },
+    {
+      "id": "wrong-year-field-json",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | birthYear: 1970 | lastUpdated: 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "birthYear": "1970",
+        "lastUpdated": "1998"
+      }
+    },
+    {
+      "id": "wrong-year-field-jsonld",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | birthYear: 1970 | lastUpdated: 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "birthYear": "1970",
+        "lastUpdated": "1998"
+      }
+    },
+    {
+      "id": "missing-birth-field-json",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | lastUpdated: 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "lastUpdated": "1998"
+      }
+    },
+    {
+      "id": "missing-birth-field-jsonld",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | lastUpdated: 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "lastUpdated": "1998"
+      }
+    },
+    {
+      "id": "empty-date-json",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | birthDate:  | lastUpdated: 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "birthDate": "",
+        "lastUpdated": "1998"
+      }
+    },
+    {
+      "id": "empty-date-jsonld",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | birthDate:  | lastUpdated: 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "birthDate": "",
+        "lastUpdated": "1998"
+      }
+    },
+    {
+      "id": "unknown-date-json",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | birthDate: unknown | lastUpdated: 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "birthDate": "unknown",
+        "lastUpdated": "1998"
+      }
+    },
+    {
+      "id": "unknown-date-jsonld",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | birthDate: unknown | lastUpdated: 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "birthDate": "unknown",
+        "lastUpdated": "1998"
+      }
+    },
+    {
+      "id": "conflicting-date-fields-json",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | Born: 1998 | birthDate: 1970-03-04 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "Born": "1998",
+        "birthDate": "1970-03-04"
+      }
+    },
+    {
+      "id": "conflicting-date-fields-jsonld",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | Born: 1998 | birthDate: 1970-03-04 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "Born": "1998",
+        "birthDate": "1970-03-04"
+      }
+    },
+    {
+      "id": "matching-date-fields-json",
+      "passed": true,
+      "expected": true,
+      "actual": true,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | Born: 1998 | birthDate: 1998-03-04 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "Born": "1998",
+        "birthDate": "1998-03-04"
+      }
+    },
+    {
+      "id": "matching-date-fields-jsonld",
+      "passed": true,
+      "expected": true,
+      "actual": true,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | Born: 1998 | birthDate: 1998-03-04 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "Born": "1998",
+        "birthDate": "1998-03-04"
+      }
+    },
+    {
+      "id": "date-range-json",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | birthDate: 1970 or 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "birthDate": "1970 or 1998"
+      }
+    },
+    {
+      "id": "date-range-jsonld",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | birthDate: 1970 or 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "birthDate": "1970 or 1998"
+      }
+    },
+    {
+      "id": "version-not-year-json",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | birthDate: 1998.2 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "birthDate": "1998.2"
+      }
+    },
+    {
+      "id": "version-not-year-jsonld",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | birthDate: 1998.2 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "birthDate": "1998.2"
+      }
+    },
+    {
+      "id": "other-entity-json",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | lastUpdated: 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "lastUpdated": "1998"
+      }
+    },
+    {
+      "id": "other-entity-jsonld",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | lastUpdated: 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "lastUpdated": "1998"
+      }
+    },
+    {
+      "id": "child-no-inheritance-json",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "child.name: Mira Vale | child { name: Mira Vale | lastUpdated: 1998 } | parent $ { name: Rowan North | Born: 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "lastUpdated": "1998"
+      }
+    },
+    {
+      "id": "child-no-inheritance-jsonld",
+      "passed": true,
+      "expected": false,
+      "actual": false,
+      "evidence": "child.name: Mira Vale | child { name: Mira Vale | lastUpdated: 1998 } | parent $ { name: Rowan North | Born: 1998 }",
+      "bindings": {
+        "name": "Mira Vale",
+        "lastUpdated": "1998"
+      }
+    },
+    {
+      "id": "local-biography-json",
+      "passed": true,
+      "expected": true,
+      "actual": true,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | biography: Mira Vale was born in 1998. }",
+      "bindings": {
+        "name": "Mira Vale",
+        "biography": "Mira Vale was born in 1998."
+      }
+    },
+    {
+      "id": "local-biography-jsonld",
+      "passed": true,
+      "expected": true,
+      "actual": true,
+      "evidence": "name: Mira Vale | $ { name: Mira Vale | biography: Mira Vale was born in 1998. }",
+      "bindings": {
+        "name": "Mira Vale",
+        "biography": "Mira Vale was born in 1998."
+      }
+    },
+    {
+      "id": "long-local-biography-json",
+      "passed": true,
+      "expected": true,
+      "actual": true,
+      "evidence": "biography: Mira Vale was born in 1998. She writes about nature. She writes about nature. She writes about nature. She writes about nature. She writes about nature. She writes about nature. She writes about nature. She writes about nature. She writes about nature. She writes about nature. She writes about nature. She writes about nature. | $ { name: Mira Vale }",
+      "bindings": {
+        "name": "Mira Vale"
+      }
+    },
+    {
+      "id": "long-local-biography-jsonld",
+      "passed": true,
+      "expected": true,
+      "actual": true,
+      "evidence": "biography: Mira Vale was born in 1998. She writes about nature. She writes about nature. She writes about nature. She writes about nature. She writes about nature. She writes about nature. She writes about nature. She writes about nature. She writes about nature. She writes about nature. She writes about nature. She writes about nature. | $ { name: Mira Vale }",
+      "bindings": {
+        "name": "Mira Vale"
+      }
+    },
+    {
+      "id": "date-must-be-in-literal-passage",
+      "passed": true
+    },
+    {
+      "id": "timeless-unchanged",
+      "passed": true
+    },
+    {
+      "id": "http-camel-date",
+      "passed": true,
+      "calls": [
+        "/select",
+        "/verify"
+      ],
+      "result": {
+        "answer": "Mira Vale",
+        "sources": [
+          "http://127.0.0.1:48967/source"
+        ],
+        "confidence": 0.728,
+        "evidence": "name: Mira Vale | $ { name: Mira Vale | birthDate: 1998-03-04 | lastUpdated: 2026-01-01 }",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "Who was born in 1998?",
+            "url": "http://127.0.0.1:48967/source",
+            "kind": "text",
+            "terms": [
+              "born",
+              "1998"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "born"
+            ],
+            "versions": [],
+            "year": "1998",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "who was born ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.4299992471933365e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Mira Vale",
+              "answer": "Mira Vale",
+              "source": "http://127.0.0.1:48967/source",
+              "evidence": "name: Mira Vale | $ { name: Mira Vale | birthDate: 1998-03-04 | lastUpdated: 2026-01-01 }",
+              "label": "name",
+              "section": "$ { name: Mira Vale | birthDate: 1998-03-04 | lastUpdated: 2026-01-01 }",
+              "kind": "text",
+              "score": 7.1,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "name",
+                "structure": "json",
+                "qualifiers": {
+                  "identity": [
+                    "Mira Vale"
+                  ],
+                  "structured": true,
+                  "bindings": {
+                    "name": "Mira Vale",
+                    "birthDate": "1998-03-04",
+                    "lastUpdated": "2026-01-01"
+                  },
+                  "value_type": "scalar"
+                },
+                "field_value": "Mira Vale"
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "Mira Vale",
+            "answer": "Mira Vale",
+            "source": "http://127.0.0.1:48967/source",
+            "evidence": "name: Mira Vale | $ { name: Mira Vale | birthDate: 1998-03-04 | lastUpdated: 2026-01-01 }",
+            "label": "name",
+            "section": "$ { name: Mira Vale | birthDate: 1998-03-04 | lastUpdated: 2026-01-01 }",
+            "kind": "text",
+            "score": 7.1,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "name",
+              "structure": "json",
+              "qualifiers": {
+                "identity": [
+                  "Mira Vale"
+                ],
+                "structured": true,
+                "bindings": {
+                  "name": "Mira Vale",
+                  "birthDate": "1998-03-04",
+                  "lastUpdated": "2026-01-01"
+                },
+                "value_type": "scalar"
+              },
+              "field_value": "Mira Vale"
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:48967/source",
+              "final": "http://127.0.0.1:48967/source",
+              "status": 200,
+              "bytes": 77,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0053
+        }
+      }
+    },
+    {
+      "id": "http-explicit-born",
+      "passed": true,
+      "calls": [
+        "/select",
+        "/verify"
+      ],
+      "result": {
+        "answer": "Mira Vale",
+        "sources": [
+          "http://127.0.0.1:48967/source"
+        ],
+        "confidence": 0.768,
+        "evidence": "name: Mira Vale | $ { name: Mira Vale | Born: 1998 | lastUpdated: 2026 }",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "Who was born in 1998?",
+            "url": "http://127.0.0.1:48967/source",
+            "kind": "text",
+            "terms": [
+              "born",
+              "1998"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "born"
+            ],
+            "versions": [],
+            "year": "1998",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "who was born ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.0399962775409222e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Mira Vale",
+              "answer": "Mira Vale",
+              "source": "http://127.0.0.1:48967/source",
+              "evidence": "name: Mira Vale | $ { name: Mira Vale | Born: 1998 | lastUpdated: 2026 }",
+              "label": "name",
+              "section": "$ { name: Mira Vale | Born: 1998 | lastUpdated: 2026 }",
+              "kind": "text",
+              "score": 8.7,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "name",
+                "structure": "json",
+                "qualifiers": {
+                  "identity": [
+                    "Mira Vale"
+                  ],
+                  "structured": true,
+                  "bindings": {
+                    "name": "Mira Vale",
+                    "Born": "1998",
+                    "lastUpdated": "2026"
+                  },
+                  "value_type": "scalar"
+                },
+                "field_value": "Mira Vale"
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "Mira Vale",
+            "answer": "Mira Vale",
+            "source": "http://127.0.0.1:48967/source",
+            "evidence": "name: Mira Vale | $ { name: Mira Vale | Born: 1998 | lastUpdated: 2026 }",
+            "label": "name",
+            "section": "$ { name: Mira Vale | Born: 1998 | lastUpdated: 2026 }",
+            "kind": "text",
+            "score": 8.7,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "name",
+              "structure": "json",
+              "qualifiers": {
+                "identity": [
+                  "Mira Vale"
+                ],
+                "structured": true,
+                "bindings": {
+                  "name": "Mira Vale",
+                  "Born": "1998",
+                  "lastUpdated": "2026"
+                },
+                "value_type": "scalar"
+              },
+              "field_value": "Mira Vale"
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:48967/source",
+              "final": "http://127.0.0.1:48967/source",
+              "status": 200,
+              "bytes": 60,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0042
+        }
+      }
+    },
+    {
+      "id": "http-wrong-born-update",
+      "passed": true,
+      "calls": [
+        "/select"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_evidence_rejected",
+        "diagnostics": {
+          "plan": {
+            "question": "Who was born in 1998?",
+            "url": "http://127.0.0.1:48967/source",
+            "kind": "text",
+            "terms": [
+              "born",
+              "1998"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "born"
+            ],
+            "versions": [],
+            "year": "1998",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "who was born ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 9.299954399466515e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Mira Vale",
+              "answer": "Mira Vale",
+              "source": "http://127.0.0.1:48967/source",
+              "evidence": "name: Mira Vale | $ { name: Mira Vale | Born: 1970 | lastUpdated: 1998 }",
+              "label": "name",
+              "section": "$ { name: Mira Vale | Born: 1970 | lastUpdated: 1998 }",
+              "kind": "text",
+              "score": 8.7,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "name",
+                "structure": "json",
+                "qualifiers": {
+                  "identity": [
+                    "Mira Vale"
+                  ],
+                  "structured": true,
+                  "bindings": {
+                    "name": "Mira Vale",
+                    "Born": "1970",
+                    "lastUpdated": "1998"
+                  },
+                  "value_type": "scalar"
+                },
+                "field_value": "Mira Vale"
+              }
+            }
+          ],
+          "reader_state": "evidence_rejected",
+          "top_candidates": [
+            {
+              "raw": "1970",
+              "answer": "1970",
+              "source": "http://127.0.0.1:48967/source",
+              "evidence": "Born: 1970 | $ { name: Mira Vale | Born: 1970 | lastUpdated: 1998 }",
+              "label": "Born",
+              "section": "$ { name: Mira Vale | Born: 1970 | lastUpdated: 1998 }",
+              "kind": "text",
+              "score": 12.3,
+              "signals": {
+                "locator": "Born",
+                "page_title": "",
+                "structure": "json",
+                "qualifiers": {
+                  "identity": [
+                    "Mira Vale"
+                  ],
+                  "structured": true,
+                  "bindings": {
+                    "name": "Mira Vale",
+                    "Born": "1970",
+                    "lastUpdated": "1998"
+                  },
+                  "value_type": "scalar"
+                },
+                "field_value": "1970",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "1970 | $ { name: Mira Vale | Born: 1970 | lastUpdated: 1998 }",
+              "answer": "1970 | $ { name: Mira Vale | Born: 1970 | lastUpdated: 1998 }",
+              "source": "http://127.0.0.1:48967/source",
+              "evidence": "Born: 1970 | $ { name: Mira Vale | Born: 1970 | lastUpdated: 1998 }",
+              "label": "Born",
+              "section": "$ { name: Mira Vale | Born: 1970 | lastUpdated: 1998 }",
+              "kind": "text",
+              "score": 11.0,
+              "signals": {
+                "locator": "Born",
+                "page_title": "",
+                "structure": "json",
+                "qualifiers": {
+                  "identity": [
+                    "Mira Vale"
+                  ],
+                  "structured": true,
+                  "bindings": {
+                    "name": "Mira Vale",
+                    "Born": "1970",
+                    "lastUpdated": "1998"
+                  },
+                  "value_type": "scalar"
+                },
+                "field_value": "1970",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:48967/source",
+              "final": "http://127.0.0.1:48967/source",
+              "status": 200,
+              "bytes": 60,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.003
+        }
+      }
+    },
+    {
+      "id": "http-conflicting-date-fields",
+      "passed": true,
+      "calls": [
+        "/select"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_evidence_rejected",
+        "diagnostics": {
+          "plan": {
+            "question": "Who was born in 1998?",
+            "url": "http://127.0.0.1:48967/source",
+            "kind": "text",
+            "terms": [
+              "born",
+              "1998"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "born"
+            ],
+            "versions": [],
+            "year": "1998",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "who was born ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 9.200070053339005e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Mira Vale",
+              "answer": "Mira Vale",
+              "source": "http://127.0.0.1:48967/source",
+              "evidence": "name: Mira Vale | $ { name: Mira Vale | Born: 1998 | birthDate: 1970-03-04 }",
+              "label": "name",
+              "section": "$ { name: Mira Vale | Born: 1998 | birthDate: 1970-03-04 }",
+              "kind": "text",
+              "score": 8.7,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "name",
+                "structure": "json",
+                "qualifiers": {
+                  "identity": [
+                    "Mira Vale"
+                  ],
+                  "structured": true,
+                  "bindings": {
+                    "name": "Mira Vale",
+                    "Born": "1998",
+                    "birthDate": "1970-03-04"
+                  },
+                  "value_type": "scalar"
+                },
+                "field_value": "Mira Vale"
+              }
+            }
+          ],
+          "reader_state": "evidence_rejected",
+          "top_candidates": [
+            {
+              "raw": "1998",
+              "answer": "1998",
+              "source": "http://127.0.0.1:48967/source",
+              "evidence": "Born: 1998 | $ { name: Mira Vale | Born: 1998 | birthDate: 1970-03-04 }",
+              "label": "Born",
+              "section": "$ { name: Mira Vale | Born: 1998 | birthDate: 1970-03-04 }",
+              "kind": "text",
+              "score": 12.3,
+              "signals": {
+                "locator": "Born",
+                "page_title": "",
+                "structure": "json",
+                "qualifiers": {
+                  "identity": [
+                    "Mira Vale"
+                  ],
+                  "structured": true,
+                  "bindings": {
+                    "name": "Mira Vale",
+                    "Born": "1998",
+                    "birthDate": "1970-03-04"
+                  },
+                  "value_type": "scalar"
+                },
+                "field_value": "1998",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "1998 | $ { name: Mira Vale | Born: 1998 | birthDate: 1970-03-04 }",
+              "answer": "1998 | $ { name: Mira Vale | Born: 1998 | birthDate: 1970-03-04 }",
+              "source": "http://127.0.0.1:48967/source",
+              "evidence": "Born: 1998 | $ { name: Mira Vale | Born: 1998 | birthDate: 1970-03-04 }",
+              "label": "Born",
+              "section": "$ { name: Mira Vale | Born: 1998 | birthDate: 1970-03-04 }",
+              "kind": "text",
+              "score": 11.0,
+              "signals": {
+                "locator": "Born",
+                "page_title": "",
+                "structure": "json",
+                "qualifiers": {
+                  "identity": [
+                    "Mira Vale"
+                  ],
+                  "structured": true,
+                  "bindings": {
+                    "name": "Mira Vale",
+                    "Born": "1998",
+                    "birthDate": "1970-03-04"
+                  },
+                  "value_type": "scalar"
+                },
+                "field_value": "1998",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:48967/source",
+              "final": "http://127.0.0.1:48967/source",
+              "status": 200,
+              "bytes": 64,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0031
+        }
+      }
+    },
+    {
+      "id": "http-other-entity",
+      "passed": true,
+      "calls": [
+        "/select"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_evidence_rejected",
+        "diagnostics": {
+          "plan": {
+            "question": "Who was born in 1998?",
+            "url": "http://127.0.0.1:48967/source",
+            "kind": "text",
+            "terms": [
+              "born",
+              "1998"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "born"
+            ],
+            "versions": [],
+            "year": "1998",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "who was born ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 9.00006853044033e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Mira Vale",
+              "answer": "Mira Vale",
+              "source": "http://127.0.0.1:48967/source",
+              "evidence": "name: Mira Vale | $ { name: Mira Vale | lastUpdated: 1998 }",
+              "label": "name",
+              "section": "$ { name: Mira Vale | lastUpdated: 1998 }",
+              "kind": "text",
+              "score": 7.1,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "name",
+                "structure": "json",
+                "qualifiers": {
+                  "identity": [
+                    "Mira Vale"
+                  ],
+                  "structured": true,
+                  "bindings": {
+                    "name": "Mira Vale",
+                    "lastUpdated": "1998"
+                  },
+                  "value_type": "scalar"
+                },
+                "field_value": "Mira Vale"
+              }
+            }
+          ],
+          "reader_state": "evidence_rejected",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:48967/source",
+              "final": "http://127.0.0.1:48967/source",
+              "status": 200,
+              "bytes": 105,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0037
+        }
+      }
+    }
+  ],
+  "before_passed": 30,
+  "after_passed": 51,
+  "total": 51,
+  "wins": [
+    "camel-date-json",
+    "camel-date-jsonld",
+    "underscore-date-json",
+    "underscore-date-jsonld",
+    "upper-key-json",
+    "upper-key-jsonld",
+    "year-field-json",
+    "year-field-jsonld",
+    "year-of-birth-json",
+    "year-of-birth-jsonld",
+    "dob-json",
+    "dob-jsonld",
+    "wrong-born-update-json",
+    "wrong-born-update-jsonld",
+    "conflicting-date-fields-json",
+    "conflicting-date-fields-jsonld",
+    "child-no-inheritance-json",
+    "child-no-inheritance-jsonld",
+    "http-camel-date",
+    "http-wrong-born-update",
+    "http-conflicting-date-fields"
+  ],
+  "losses": [],
+  "evidence_sha256": "a298cd93f6a36cb238acf1a406deb9057b059caa2ef1ab9f38aaa438e5274845"
+}

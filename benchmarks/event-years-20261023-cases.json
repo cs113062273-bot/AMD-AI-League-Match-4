@@ -1,0 +1,123 @@
+[
+  {
+    "id": "real-undated",
+    "query": "What is the first and last name of the woman whom the British linguist Bernard Comrie married in 1985?",
+    "path": "/real-undated.html",
+    "answer": "",
+    "answers": [
+      ""
+    ],
+    "source_path": "/real-undated.html",
+    "origin": "Previously exposed actual page; unsupported-source control abstains, original upstream gold unchanged"
+  },
+  {
+    "id": "real-positive",
+    "query": "What is the first and last name of the woman whom the British linguist Bernard Comrie married in 1985?",
+    "path": "/real-positive.html",
+    "answer": "Akiko Kumahira",
+    "answers": [
+      "Akiko Kumahira"
+    ],
+    "source_path": "/real-positive.html",
+    "origin": "Previously exposed actual page; unsupported-source control abstains, original upstream gold unchanged"
+  },
+  {
+    "id": "dated",
+    "query": "What is the first and last name of the person whom Orin Vale married in 1998?",
+    "path": "/dated.html",
+    "answer": "Mira Chen",
+    "answers": [
+      "Mira Chen"
+    ],
+    "source_path": "/dated.html",
+    "origin": "Authored event/date reader control"
+  },
+  {
+    "id": "undated",
+    "query": "What is the first and last name of the person whom Orin Vale married in 1998?",
+    "path": "/undated.html",
+    "answer": "",
+    "answers": [
+      ""
+    ],
+    "source_path": "/undated.html",
+    "origin": "Authored event/date reader control"
+  },
+  {
+    "id": "unrelated-date",
+    "query": "What is the first and last name of the person whom Orin Vale married in 1998?",
+    "path": "/unrelated-date.html",
+    "answer": "",
+    "answers": [
+      ""
+    ],
+    "source_path": "/unrelated-date.html",
+    "origin": "Authored event/date reader control"
+  },
+  {
+    "id": "other-person",
+    "query": "What is the first and last name of the person whom Orin Vale married in 1998?",
+    "path": "/other-person.html",
+    "answer": "",
+    "answers": [
+      ""
+    ],
+    "source_path": "/other-person.html",
+    "origin": "Authored event/date reader control"
+  },
+  {
+    "id": "birth-year",
+    "query": "What is the first and last name of the person whom Orin Vale married in 1998?",
+    "path": "/birth-year.html",
+    "answer": "",
+    "answers": [
+      ""
+    ],
+    "source_path": "/birth-year.html",
+    "origin": "Authored event/date reader control"
+  },
+  {
+    "id": "two-events",
+    "query": "What is the first and last name of the person whom Orin Vale married in 1998?",
+    "path": "/two-events.html",
+    "answer": "Mira Chen",
+    "answers": [
+      "Mira Chen"
+    ],
+    "source_path": "/two-events.html",
+    "origin": "Authored event/date reader control"
+  },
+  {
+    "id": "adjacent-coreference",
+    "query": "What is the first and last name of the person whom Orin Vale married in 1998?",
+    "path": "/adjacent-coreference.html",
+    "answer": "Mira Chen",
+    "answers": [
+      "Mira Chen"
+    ],
+    "source_path": "/adjacent-coreference.html",
+    "origin": "Authored event/date reader control"
+  },
+  {
+    "id": "heading-year",
+    "query": "What is the first and last name of the person whom Orin Vale married in 1998?",
+    "path": "/heading-year.html",
+    "answer": "Mira Chen",
+    "answers": [
+      "Mira Chen"
+    ],
+    "source_path": "/heading-year.html",
+    "origin": "Authored event/date reader control"
+  },
+  {
+    "id": "ordinary-person",
+    "query": "Who is Orin Vale married to?",
+    "path": "/ordinary-person.html",
+    "answer": "Mira Chen",
+    "answers": [
+      "Mira Chen"
+    ],
+    "source_path": "/ordinary-person.html",
+    "origin": "Authored event/date reader control"
+  }
+]

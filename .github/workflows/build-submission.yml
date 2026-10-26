@@ -1,0 +1,46 @@
+name: Build submission container
+on:
+  workflow_dispatch:
+    inputs:
+      package_name:
+        description: Operational package identifier; keep the registry reference outside public source
+        required: true
+        type: string
+permissions:
+  contents: read
+  packages: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - name: Free hosted runner space
+        run: |
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache /usr/local/share/boost /usr/local/graalvm /usr/local/share/powershell
+          docker system prune --all --force
+          df -h /
+      - name: Prepare model
+        run: |
+          python3 -m pip install 'huggingface-hub==0.36.0'
+          python3 scripts/fetch_model.py
+      - name: Build and check container
+        run: |
+          docker build --tag aperture-submission:local .
+          python3 scripts/check_image.py aperture-submission:local > image-check.json
+          docker run --rm --entrypoint python3 aperture-submission:local /app/scripts/runtime_compat_smoke.py --cpu
+      - name: Publish container
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PACKAGE_NAME: ${{ inputs.package_name }}
+        run: |
+          set -euo pipefail
+          [[ "$PACKAGE_NAME" =~ ^[a-z0-9][a-z0-9-]{5,62}$ ]]
+          owner="${GITHUB_REPOSITORY_OWNER,,}"
+          image="ghcr.io/$owner/$PACKAGE_NAME"
+          echo "::add-mask::$image"
+          printf '%s' "$GH_TOKEN" | docker login ghcr.io --username "$GITHUB_REPOSITORY_OWNER" --password-stdin
+          docker tag aperture-submission:local "$image:submission"
+          docker push "$image:submission"
+          docker logout ghcr.io
+          echo 'Container pushed. Package visibility and anonymous access must be verified before official submission.' >> "$GITHUB_STEP_SUMMARY"

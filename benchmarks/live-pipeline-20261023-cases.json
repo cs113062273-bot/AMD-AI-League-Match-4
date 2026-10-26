@@ -1,0 +1,69 @@
+[
+  {
+    "id": "simpleqa-462",
+    "family": "external-Number",
+    "query": "What is the height of Vickerman Hill in New York in feet?",
+    "url": "https://trailsnh.com/weather/n/357594518/Vickerman-Hill-NY-Summit-Forecast",
+    "answer": "1142 feet (acceptable range: anything between 1130 and 1154 feet)",
+    "answers": [
+      "1142 feet (acceptable range: anything between 1130 and 1154 feet)"
+    ],
+    "sources": [
+      "https://trailsnh.com/weather/n/357594518/Vickerman-Hill-NY-Summit-Forecast",
+      "https://en.wikipedia.org/wiki/Vickerman_Hill",
+      "https://www.mountainzone.com/mountains/new-york/herkimer-ny/summits/vickerman-hill/"
+    ],
+    "upstream_row": 108,
+    "upstream_topic": "Geography",
+    "multi_step": "False",
+    "upstream_answers": [
+      "1142 feet (acceptable range: anything between 1130 and 1154 feet)"
+    ],
+    "origin": "Exposed failure; question/start URL/sources from original v2 input, exact answer aliases copied unchanged from retained2026-10-21 execution report. Not a holdout. Upstream range/description remains separately recorded."
+  },
+  {
+    "id": "simpleqa-3081",
+    "family": "external-Date",
+    "query": "What year did Ren\u00e9 Laennec claim that tubercles were the cause of pulmonary tuberculosis?",
+    "url": "https://en.wikipedia.org/wiki/Tuberculosis",
+    "answer": "1819",
+    "answers": [
+      "1819",
+      "1,819"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tuberculosis",
+      "https://www.sciencedirect.com/science/article/pii/S095461110600401X",
+      "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5432783/"
+    ],
+    "upstream_row": 702,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False",
+    "upstream_answers": [
+      "1819",
+      "1,819"
+    ],
+    "origin": "Exposed failure; question/start URL/sources from original v2 input, exact answer aliases copied unchanged from retained2026-10-21 execution report. Not a holdout. Upstream range/description remains separately recorded."
+  },
+  {
+    "id": "simpleqa-3598",
+    "family": "external-Other",
+    "query": "Who composed the music for the song \"We Rollin\" by Punjabi singer Shubh?",
+    "url": "https://en.wikipedia.org/wiki/We_Rollin",
+    "answer": "Anabolic Beatz.",
+    "answers": [
+      "Anabolic Beatz."
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/We_Rollin",
+      "https://raag.fm/album/we-rollin-songs-mofko.html"
+    ],
+    "upstream_row": 837,
+    "upstream_topic": "Music",
+    "multi_step": "False",
+    "upstream_answers": [
+      "Anabolic Beatz."
+    ],
+    "origin": "Exposed failure; question/start URL/sources from original v2 input, exact answer aliases copied unchanged from retained2026-10-21 execution report. Not a holdout. Upstream range/description remains separately recorded."
+  }
+]

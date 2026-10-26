@@ -1,0 +1,16 @@
+{
+  "scope": "Unpromoted record-source-field proposal. Structural checks passed27/27, full4B before/after not run because other user GPU work currently uses about5.8GiB. Never claim model accuracy from structural checks.",
+  "baseline_revision": "fbed467",
+  "base_for_patch": "a4e671bacbbb25530d7d796a70653176311ebc1d",
+  "proposal_sha256": {
+    "agent/parser.py": "dd9a00a57da470e34f407890ce376281463b7b515b22754df89d8739b2815f42",
+    "agent/selector.py": "5062c84043b76cf9275df0fa08b5009d0555592c1ad94a5bdeb44e59d9cc9150",
+    "eval/diagnose_temporal_records.py": "9fcebbf3ce14d82ae42929df97e98c729556e485f9cb071a53d3070c64a9b5f6"
+  },
+  "patch_sha256": "3d8ad75bd93789b8268edffca0f87801fc8f09134be1baa5589a32b734ce0a82",
+  "cases_sha256": "1c562933ddac36c1b7b05eea06ff0485a058422e447f701a249f78a2247fd933",
+  "fixtures_path": "research/recordfields-20261023/fixtures.json",
+  "fixtures_sha256": "2a235281a98092796847ba4ff83bf6a82104c3f87eb3d833c685564fc2f958c5",
+  "validation_command": ".venv/Scripts/python.exe eval/diagnose_reader.py --cases benchmarks/recordfields-20261023-cases.json --fixtures research/recordfields-20261023/fixtures.json --compare-baseline fbed467 --context-tokens 1536 --out benchmarks/recordfields-20261023-paired.json",
+  "note": "The context-tokens argument in the command must be passed as two tokens: --context-tokens 1536. Raw real-award page is locally retained, synthetic pages tracked. Apply patch only when ready to evaluate, retain existing VRAM/listener guards."
+}

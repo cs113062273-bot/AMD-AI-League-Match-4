@@ -1,0 +1,3618 @@
+[
+  {
+    "id": "simpleqa-3009",
+    "family": "external-Number",
+    "query": "From 1st January 2015 to 5th February 2019, how many hectares of forest land were diverted in Goa for non-forestry purposes under the Forest Conservation Act of 1980 (MoEF&CC, 2019)?",
+    "url": "",
+    "answer": "42.75 (acceptable range: anything between 42.32 and 43.18 hectares)",
+    "answers": [
+      "42.75 (acceptable range: anything between 42.32 and 43.18 hectares)"
+    ],
+    "sources": [
+      "https://www.heraldgoa.in/Goa/Tree-cover-in-State-reduces-by-50-sq-kms-in-2-yrs/155253",
+      "https://fsi.nic.in/isfr19/vol2/isfr-2019-vol-ii-goa.pdf"
+    ],
+    "upstream_row": 686,
+    "upstream_topic": "Geography",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2726",
+    "family": "external-Date",
+    "query": "In 2022, on which date and month was the news channel 'World Is One News' (WION) blocked from YouTube for \"violating YouTube's community guidelines\" regarding the \"Russia-Ukraine War\"?",
+    "url": "",
+    "answer": "22 March",
+    "answers": [
+      "22 March"
+    ],
+    "sources": [
+      "https://en.bharatpedia.org/wiki/WION",
+      "https://www.aimlexchange.com/search/wiki/page/Wion_Tv",
+      "https://en.wikipedia.org/wiki/WION"
+    ],
+    "upstream_row": 620,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3278",
+    "family": "external-Other",
+    "query": "What is the chemical formula of atogepant, a class of medications called calcitonin gene-related peptide receptor antagonists?",
+    "url": "",
+    "answer": "C29H23F6N5O3",
+    "answers": [
+      "C29H23F6N5O3"
+    ],
+    "sources": [
+      "https://pubchem.ncbi.nlm.nih.gov/compound/Atogepant",
+      "https://go.drugbank.com/drugs/DB16098",
+      "https://en.wikipedia.org/wiki/Atogepant"
+    ],
+    "upstream_row": 754,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3443",
+    "family": "external-Person",
+    "query": "What was the first and last name of the president of the Society of Illustrators from 1929 to 1936?",
+    "url": "",
+    "answer": "Wallace Morgan",
+    "answers": [
+      "Wallace Morgan"
+    ],
+    "sources": [
+      "https://kids.kiddle.co/Society_of_Illustrators",
+      "https://societyillustrators.org/about/board-and-staff/",
+      "https://en.wikipedia.org/wiki/Society_of_Illustrators"
+    ],
+    "upstream_row": 789,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2836",
+    "family": "external-Person",
+    "query": "Who created the cover artwork for Heavatar's \"All My Kingdoms\"?",
+    "url": "",
+    "answer": "Kerem Beyit",
+    "answers": [
+      "Kerem Beyit"
+    ],
+    "sources": [
+      "https://kerembeyit.artstation.com/resume",
+      "https://en.wikipedia.org/wiki/Heavatar",
+      "https://useum.org/artwork/All-my-Kingdoms-Cover-Kerem-Beyit-2013"
+    ],
+    "upstream_row": 647,
+    "upstream_topic": "Music",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-237",
+    "family": "external-Other",
+    "query": "What was the name of the minor planet discovered by the Soviet astronomer in the name of Pyotr Kapitsa in 1982?",
+    "url": "",
+    "answer": "3437 Kapitsa",
+    "answers": [
+      "3437 Kapitsa"
+    ],
+    "sources": [
+      "https://naturehabitats.org/?rdp_we_resource=https%3A%2F%2Fen.wikipedia.org%2Fw%2Findex.php%3Ftitle%3DPyotr_Kapitsa%26diff%3Dprev%26oldid%3D311439504",
+      "https://en.wikipedia.org/wiki/Pyotr_Kapitsa",
+      "https://timenote.info/en/Pyotr-Kapitsa"
+    ],
+    "upstream_row": 55,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2831",
+    "family": "external-Date",
+    "query": "In which year did The MOI! Project (Museums of Impact), a part of the Creative Europe program, finish?",
+    "url": "",
+    "answer": "2022",
+    "answers": [
+      "2022",
+      "2,022"
+    ],
+    "sources": [
+      "https://www.ne-mo.org/cooperation-funding/networking-cooperation/previous-projects/moi-museums-of-impact",
+      "https://europeanmuseumacademy.eu/projects/",
+      "https://www.museumsofimpact.eu/en/news/new-tool-moi-framework-helps-museum-increase-their-social-impact",
+      "https://ifacca.org/news/2022/12/09/new-tool-moi-framework-helps-museums-increase-thei/"
+    ],
+    "upstream_row": 644,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3271",
+    "family": "external-Other",
+    "query": "In which industry did painter William Moore Davis work before he became a full-time painter?",
+    "url": "",
+    "answer": "In the shipbuilding industry.",
+    "answers": [
+      "In the shipbuilding industry."
+    ],
+    "sources": [
+      "https://tfaoi.org/aa/3aa/3aa383.htm",
+      "https://www.questroyalfineart.com/artist/william-m-davis/",
+      "https://en.wikipedia.org/wiki/William_Moore_Davis"
+    ],
+    "upstream_row": 752,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1081",
+    "family": "external-Other",
+    "query": "What was the halftime score between Liverpool and Leicester in the game from December 30, 2022?",
+    "url": "",
+    "answer": "Liverpool 2 - 1 Leicester",
+    "answers": [
+      "Liverpool 2 - 1 Leicester"
+    ],
+    "sources": [
+      "https://www.espn.com/soccer/commentary/_/gameId/637995",
+      "https://www.espn.co.uk/football/match/_/gameId/637995/leicester-city-liverpool",
+      "https://www.espn.co.uk/football/report/_/gameId/637995",
+      "https://www.transfermarkt.co.uk/liverpool-fc_leicester-city/index/spielbericht/3838265"
+    ],
+    "upstream_row": 246,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-200",
+    "family": "external-Date",
+    "query": "What year did Australian politician William Lawrence Morrison graduate from the University of Sydney?",
+    "url": "",
+    "answer": "1949",
+    "answers": [
+      "1949",
+      "1,949"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bill_Morrison_(politician)",
+      "https://www.eoas.info/biogs/P005870b.htm"
+    ],
+    "upstream_row": 45,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2484",
+    "family": "external-Other",
+    "query": "Three years after joining Comme des Garçons, Junya Watanabe started designing which CdG line?",
+    "url": "",
+    "answer": "Tricot line",
+    "answers": [
+      "Tricot line"
+    ],
+    "sources": [
+      "https://milenaolesinska77.medium.com/exposition-art-blog-art-fashion-junya-watanabe-5573f2dfe84c",
+      "https://www.showstudio.com/contributors/junya_watanabe",
+      "https://www.pirelli.com/global/en-ww/life/lifestyle/design/junya-watanabe-s-hymn-to-the-italian-man-52578/"
+    ],
+    "upstream_row": 558,
+    "upstream_topic": "Art",
+    "multi_step": "True"
+  },
+  {
+    "id": "simpleqa-2659",
+    "family": "external-Number",
+    "query": "Which district did Mary Ann Arty serve in the Pennsylvania House of Representatives in 1981?",
+    "url": "",
+    "answer": "165",
+    "answers": [
+      "165"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mary_Ann_Arty",
+      "https://staffweb.wilkes.edu/harold.cox/legis/165H.pdf",
+      "https://archives.house.state.pa.us/people/member-biography?ID=465"
+    ],
+    "upstream_row": 604,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-768",
+    "family": "external-Other",
+    "query": "What was the name of New York's National Academy of Design in 1825?",
+    "url": "",
+    "answer": "The New York Drawing Association",
+    "answers": [
+      "The New York Drawing Association"
+    ],
+    "sources": [
+      "https://www.aaa.si.edu/collections/national-academy-design-records-9080",
+      "https://www.jstor.org/stable/25608025?seq=2",
+      "https://en.wikipedia.org/wiki/National_Academy_of_Design"
+    ],
+    "upstream_row": 172,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3961",
+    "family": "external-Date",
+    "query": "What year did the singer-songwriter Stella Jang become an Innisfree cosmetics model?",
+    "url": "",
+    "answer": "2021",
+    "answers": [
+      "2021",
+      "2,021"
+    ],
+    "sources": [
+      "https://www.edaily.co.kr/news/read?newsId=01318566628984632&mediaCodeNo=258",
+      "https://en.wikipedia.org/wiki/Innisfree_(brand)"
+    ],
+    "upstream_row": 917,
+    "upstream_topic": "Music",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1294",
+    "family": "external-Other",
+    "query": "In the 2016 World Rugby Nations Cup, what was the final score of the match between Namibia and Emerging Italy?",
+    "url": "",
+    "answer": "Namibia 38 - 26 Emerging Italy",
+    "answers": [
+      "Namibia 38 - 26 Emerging Italy"
+    ],
+    "sources": [
+      "https://archive.ph/20201019191835/https://www.world.rugby/match/23378",
+      "https://www.world.rugby/news/170315",
+      "https://en.wikipedia.org/wiki/2016_World_Rugby_Nations_Cup"
+    ],
+    "upstream_row": 297,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-31",
+    "family": "external-Number",
+    "query": "In 1810, François Aimé Louis Dumoulin published a collection of how many engravings themed on the journey of \"Robinson Crusoe\"?",
+    "url": "",
+    "answer": "150 (acceptable range: anything between 148 and 152)",
+    "answers": [
+      "150 (acceptable range: anything between 148 and 152)"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fran%C3%A7ois_Aim%C3%A9_Louis_Dumoulin",
+      "https://www.theseus.fi/bitstream/handle/10024/510799/Payne_Sam.pdf;jsessionid=4E7D0553C98F587885B7F5A1C2BECF59?sequence=4"
+    ],
+    "upstream_row": 8,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2279",
+    "family": "external-Date",
+    "query": "What day, month, and year did Panama decide to use DVB-T?",
+    "url": "",
+    "answer": "May 19, 2009",
+    "answers": [
+      "May 19, 2009",
+      "2009-05-19"
+    ],
+    "sources": [
+      "https://web.archive.org/web/20130903055251/http://dvb.org/news_events/news/panama-adopts-dvb-t/index.xml",
+      "https://www.tvtechnology.com/news/panama-selects-dvbt-digital-tv-standard",
+      "https://dvb.org/news/panama-adopts-dvb-t-2/"
+    ],
+    "upstream_row": 516,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1164",
+    "family": "external-Person",
+    "query": "Who were the runners-up for the 2000 doubles competition for the WTA Finals?",
+    "url": "",
+    "answer": "Nicole Arendt and Manon Bollegraf.",
+    "answers": [
+      "Nicole Arendt and Manon Bollegraf."
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/2000_WTA_Tour_Championships_%E2%80%93_Doubles",
+      "https://www.wtatennis.com/tournament/808/wta-finals/past-winners",
+      "https://www.flashscore.ca/tennis/wta-doubles/olympic-games-2000/"
+    ],
+    "upstream_row": 267,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2923",
+    "family": "external-Date",
+    "query": "In what year was Glipodes dietrichi described by Franciscolo?",
+    "url": "",
+    "answer": "1962",
+    "answers": [
+      "1962",
+      "1,962"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Glipodes_dietrichi",
+      "https://en.wikipedia.org/wiki/Glipodes",
+      "https://www.gbif.org/species/7003367"
+    ],
+    "upstream_row": 665,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-4019",
+    "family": "external-Number",
+    "query": "What is the basin size of the Koshi River in square kilometers?",
+    "url": "",
+    "answer": "74,500 km2 (acceptable range: anything between 70,775 and 78,225 km2)",
+    "answers": [
+      "74,500 km2 (acceptable range: anything between 70,775 and 78,225 km2)"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kosi_River",
+      "https://indiawris.gov.in/wiki/doku.php?id=kosi_basin"
+    ],
+    "upstream_row": 927,
+    "upstream_topic": "Geography",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1084",
+    "family": "external-Number",
+    "query": "According to the 2011 Nepal census, what percentage of the population of Nepal speaks Urdu?",
+    "url": "",
+    "answer": "2.61% (acceptable range: anything between 2.58% and 2.64%)",
+    "answers": [
+      "2.61% (acceptable range: anything between 2.58% and 2.64%)"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Demographics_of_Nepal",
+      "https://unstats.un.org/unsd/demographic-social/census/documents/Nepal/Nepal-Census-2011-Vol1.pdf",
+      "https://www.indexmundi.com/nepal/demographics_profile.html",
+      "https://en.wikipedia.org/wiki/Languages_of_Nepal"
+    ],
+    "upstream_row": 248,
+    "upstream_topic": "Geography",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2849",
+    "family": "external-Place",
+    "query": "Which village in Ontario was first settled in 1824 by Mr. A. Hurd, and had the Post Office established in 1836, with Mr. J. Leach being the first Postmaster, according to \"Conner & Coltson's Directory of the County of Ontario for 1869-70\"?",
+    "url": "",
+    "answer": "Prince Albert.",
+    "answers": [
+      "Prince Albert."
+    ],
+    "sources": [
+      "https://www.canadiana.ca/view/oocihm.33815/74",
+      "https://freepages.rootsweb.com/~wjmartin/genealogy/ontario.htm"
+    ],
+    "upstream_row": 649,
+    "upstream_topic": "Geography",
+    "multi_step": "True"
+  },
+  {
+    "id": "simpleqa-3176",
+    "family": "external-Person",
+    "query": "Who was Christopher Hornsrud's Minister of Justice and the Police when he formed his Labour Party cabinet in 1928?",
+    "url": "",
+    "answer": "Cornelius Holmboe",
+    "answers": [
+      "Cornelius Holmboe"
+    ],
+    "sources": [
+      "https://www.regjeringen.no/en/the-government/previous-governments/regjeringer-siden-1814/historiske-regjeringer/ministries-1905---1940/christopher-hornsruds-government-1928/id507322/?expand=factboxRegjeringsmedlemmer",
+      "https://en.wikipedia.org/wiki/Hornsrud%27s_Cabinet",
+      "https://en-academic.com/dic.nsf/enwiki/1924944"
+    ],
+    "upstream_row": 720,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3698",
+    "family": "external-Number",
+    "query": "How many siblings did Pauline LaFon Gore have?",
+    "url": "",
+    "answer": "5",
+    "answers": [
+      "5"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pauline_LaFon_Gore",
+      "https://www.findagrave.com/memorial/10125248/pauline-gore",
+      "https://ancestors.familysearch.org/en/K2J3-JXN/pauline-lafon-1912-2004"
+    ],
+    "upstream_row": 865,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3520",
+    "family": "external-Person",
+    "query": "What is the name of the naturalist who first described the sharpbill under the binomial name *Oxyrhuncus cristatus* in 1821?",
+    "url": "",
+    "answer": "William John Swainson",
+    "answers": [
+      "William John Swainson"
+    ],
+    "sources": [
+      "https://app.birdweather.com/species/sharpbill",
+      "https://en.wikipedia.org/wiki/Sharpbill"
+    ],
+    "upstream_row": 810,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3691",
+    "family": "external-Date",
+    "query": "In which month and year did Arch Linux installation images start including installation scripts by default?",
+    "url": "",
+    "answer": "April 2021",
+    "answers": [
+      "April 2021"
+    ],
+    "sources": [
+      "https://archlinux.org/news/installation-medium-with-installer/",
+      "https://en.wikipedia.org/wiki/Arch_Linux"
+    ],
+    "upstream_row": 861,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-162",
+    "family": "external-Other",
+    "query": "What prize was El Anatsui awarded in 1998 in Osaka?",
+    "url": "",
+    "answer": "Bronze Prize",
+    "answers": [
+      "Bronze Prize"
+    ],
+    "sources": [
+      "https://www.kunstmuseumbern.ch/admin/data/hosts/kmb/files/page_editorial_paragraph_file/file_en/1583/biography-el-anatsui.pdf?lm=1583758068",
+      "https://en.wikipedia.org/wiki/El_Anatsui",
+      "https://www.okayafrica.com/youssou-ndour-el-anatsui-japanese-award/"
+    ],
+    "upstream_row": 40,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-4142",
+    "family": "external-Number",
+    "query": "What percentage of the electoral vote did Georges Marrane win in the 1958 French Presidential election?",
+    "url": "",
+    "answer": "13.03% (acceptable range: anything between 12.90 and 13.16%)",
+    "answers": [
+      "13.03% (acceptable range: anything between 12.90 and 13.16%)"
+    ],
+    "sources": [
+      "https://p2k.stekom.ac.id/ensiklopedia/Pemilihan_umum_Presiden_Prancis_1958",
+      "https://en.wikipedia.org/wiki/1958_French_presidential_election",
+      "https://www.politiquemania.com/fiche-4582.html"
+    ],
+    "upstream_row": 952,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-9",
+    "family": "external-Person",
+    "query": "To whom did Mehbooba Mufti Sayed contest the 2019 Lok Sabha elections and lose?",
+    "url": "",
+    "answer": "Hasnain Masoodi",
+    "answers": [
+      "Hasnain Masoodi"
+    ],
+    "sources": [
+      "https://www.indiatoday.in/elections/lok-sabha-2019/story/j-k-lok-sabha-results-2019-pdp-chief-mehbooba-mufti-loses-anantnag-seat-to-nc-hasnain-masoodi-1533245-2019-05-23",
+      "https://timesofindia.indiatimes.com/elections/lok-sabha-constituencies/jammu-kashmir/anantnag",
+      "https://en.wikipedia.org/wiki/Mehbooba_Mufti"
+    ],
+    "upstream_row": 2,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-4237",
+    "family": "external-Person",
+    "query": "What were the first, middle, and last names of the second son of Amadeus Mozart?",
+    "url": "",
+    "answer": "Karl Thomas Mozart.",
+    "answers": [
+      "Karl Thomas Mozart."
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Karl_Thomas_Mozart",
+      "https://artsandculture.google.com/entity/karl-thomas-mozart/m0289c10?hl=en",
+      "https://en.wikipedia.org/wiki/Wolfgang_Amadeus_Mozart"
+    ],
+    "upstream_row": 981,
+    "upstream_topic": "Music",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-4188",
+    "family": "external-Person",
+    "query": "While Henri d'Angoulême served as the governor of Provence, who was his secretary?",
+    "url": "",
+    "answer": "François de Malherbe.",
+    "answers": [
+      "François de Malherbe."
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Henri_d'Angoulême",
+      "https://en.wikipedia.org/wiki/Henri_d%27Angoul%C3%AAme",
+      "https://en.wikipedia.org/wiki/Fran%C3%A7ois_de_Malherbe",
+      "https://www.britannica.com/biography/Francois-de-Malherbe"
+    ],
+    "upstream_row": 964,
+    "upstream_topic": "History",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1965",
+    "family": "external-Other",
+    "query": "What is the name of the political communications firm where New York State Representative Mike Lawler was a partner from 2018 to 2022?",
+    "url": "",
+    "answer": "Checkmate Strategies",
+    "answers": [
+      "Checkmate Strategies"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mike_Lawler",
+      "https://commongroundscorecard.org/mike-lawler/"
+    ],
+    "upstream_row": 449,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1750",
+    "family": "external-Person",
+    "query": "Who was the first Tunisian president to be elected by universal suffrage after the 2011 revolution?",
+    "url": "",
+    "answer": "Beji Caid Essebsi",
+    "answers": [
+      "Beji Caid Essebsi"
+    ],
+    "sources": [
+      "https://www.france24.com/en/20191023-tunisia-s-new-president-sworn-in-after-surprise-election-win",
+      "https://en.wikipedia.org/wiki/List_of_presidents_of_Tunisia",
+      "https://www.lowyinstitute.org/the-interpreter/real-tunisian-spring",
+      "https://en.wikipedia.org/wiki/President_of_Tunisia"
+    ],
+    "upstream_row": 393,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-4245",
+    "family": "external-Person",
+    "query": "Who lent Salvador Dalí a villa for several months in 1938 so he could work?",
+    "url": "",
+    "answer": "Gabrielle Coco Chanel",
+    "answers": [
+      "Gabrielle Coco Chanel"
+    ],
+    "sources": [
+      "https://www.chanel.com/us/about-chanel/the-founder/",
+      "https://www.theartstory.org/artist/dali-salvador/",
+      "https://www.fairheadfineart.com/biographies/salvador-dali",
+      "https://en.wikipedia.org/wiki/Salvador_Dal%C3%AD"
+    ],
+    "upstream_row": 983,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3181",
+    "family": "external-Number",
+    "query": "How many players on the Winnipeg Falcons hockey team died in WWI?",
+    "url": "",
+    "answer": "2",
+    "answers": [
+      "2"
+    ],
+    "sources": [
+      "https://valourcanada.ca/military-history-library/winnipeg-falcons-champions/",
+      "https://en.wikipedia.org/wiki/Winnipeg_Falcons",
+      "https://parks.canada.ca/culture/designation/evenement-event/winnipeg-falcons",
+      "https://globalnews.ca/news/1659197/olympic-hockey-heroes-honoured-in-war-themed-heritage-minute/"
+    ],
+    "upstream_row": 721,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1050",
+    "family": "external-Date",
+    "query": "What day, month, and year was the article \"An Electric Self-Sensing and Variable-Stiffness Artificial Muscle\" by Chen Liu, James J. C. Busfield, and Ketao Zhang first published?",
+    "url": "",
+    "answer": "08 July 2023",
+    "answers": [
+      "08 July 2023",
+      "2023-07-08"
+    ],
+    "sources": [
+      "https://onlinelibrary.wiley.com/doi/full/10.1002/aisy.202300131",
+      "https://onlinelibrary.wiley.com/doi/10.1002/aisy.202300131",
+      "https://scitechdaily.com/bionic-breakthrough-revolutionary-self-sensing-electric-artificial-muscles/",
+      "https://www.x-mol.net/paper/article/1677897304393891840"
+    ],
+    "upstream_row": 234,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1083",
+    "family": "external-Person",
+    "query": "What was the name of the Andalusi poet Mansa Musa met on his return journey from his pilgrimage to Mecca between 1324 and 1325?",
+    "url": "",
+    "answer": "Abu Ishaq al-Sahili.",
+    "answers": [
+      "Abu Ishaq al-Sahili."
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mansa_Musa",
+      "https://kids.kiddle.co/Mansa_Musa",
+      "https://www.jstor.org/stable/40732660"
+    ],
+    "upstream_row": 247,
+    "upstream_topic": "History",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2294",
+    "family": "external-Person",
+    "query": "What was the name of the sculptor who created the war memorial, a twenty-two-and-a-half-foot statue of bronze and granite depicting a Canadian soldier in battle dress, in Brockville, Ontario, that was unveiled in 1924?",
+    "url": "",
+    "answer": "Nicholas Pirotton",
+    "answers": [
+      "Nicholas Pirotton"
+    ],
+    "sources": [
+      "https://hometowntv12.ca/2024/05/23/100-years-ago-brockville-cenotaph-was-unveiled/",
+      "https://www.veterans.gc.ca/en/remembrance/memorials/national-inventory-canadian-memorials/details/5435",
+      "https://www.heritagebrockville.ca/warmemorial",
+      "https://digitalcollections.ucalgary.ca/archive/Discovering-old-Brockville--Ontario---the-historic-core-2R3BF1OL44GGO.html"
+    ],
+    "upstream_row": 518,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-452",
+    "family": "external-Other",
+    "query": "Which newspaper did György Lukács write, \"The possession of the power of the state is also a moment for the destruction of the oppressing classes. A moment we have to use\"?",
+    "url": "",
+    "answer": "Népszava",
+    "answers": [
+      "Népszava"
+    ],
+    "sources": [
+      "https://kids.kiddle.co/Gy%C3%B6rgy_Luk%C3%A1cs",
+      "https://en.wikipedia.org/wiki/Gy%C3%B6rgy_Luk%C3%A1cs",
+      "https://alchetron.com/Gy%C3%B6rgy-Luk%C3%A1cs"
+    ],
+    "upstream_row": 104,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2975",
+    "family": "external-Person",
+    "query": "Who was Raúl Alfonsín's first Minister of Health and Social Development?",
+    "url": "",
+    "answer": "Aldo Carlos Neri",
+    "answers": [
+      "Aldo Carlos Neri"
+    ],
+    "sources": [
+      "https://web.archive.org/web/20160808213020/http://cippec.org/files/documents/Libros/capitulos%20salud/Aldo_Neri.pdf",
+      "https://en.wikipedia.org/wiki/Ra%C3%BAl_Alfons%C3%ADn",
+      "https://en.wikipedia.org/wiki/Presidency_of_Ra%C3%BAl_Alfons%C3%ADn"
+    ],
+    "upstream_row": 678,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1073",
+    "family": "external-Number",
+    "query": "At what age did Kichizo Yoshida start learning to craft fine bags?",
+    "url": "",
+    "answer": "12",
+    "answers": [
+      "12"
+    ],
+    "sources": [
+      "https://www.yoshidakaban.com/en/story/1470.html?ncat=5",
+      "https://www.heddels.com/2018/10/yoshida-co-brand-profile/",
+      "https://www.highsnobiety.com/p/porter-yoshida-history/"
+    ],
+    "upstream_row": 242,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-4226",
+    "family": "external-Place",
+    "query": "What city and country was the engraver George Cooke's father from?",
+    "url": "",
+    "answer": "Frankfurt, Germany.",
+    "answers": [
+      "Frankfurt, Germany."
+    ],
+    "sources": [
+      "https://www.abebooks.it/arte-stampe/Lulworth-Castle-J-M-W-Turner/31516396934/bd",
+      "https://en.wikipedia.org/wiki/George_Cooke_(engraver)"
+    ],
+    "upstream_row": 977,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3267",
+    "family": "external-Date",
+    "query": "In which year did the top religious body in Saudi Arabia give the green light for codification of Sharia law?",
+    "url": "",
+    "answer": "2010",
+    "answers": [
+      "2010",
+      "2,010"
+    ],
+    "sources": [
+      "https://www.thenationalnews.com/world/mena/saudi-to-codify-sharia-for-clarity-1.518063",
+      "https://en.wikipedia.org/wiki/Contract_law_in_Saudi_Arabia",
+      "https://www.sciencedirect.com/topics/social-sciences/sharia-law"
+    ],
+    "upstream_row": 750,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-432",
+    "family": "external-Number",
+    "query": "Le Chatelier's thermoelectric pyrometer, as discussed in the 1900 report \"Clays of New York, Their Properties and Uses,\" was considered accurate within how many degrees Fahrenheit?",
+    "url": "",
+    "answer": "10 (acceptable range: anything between 9 and 11 degrees Fahrenheit)",
+    "answers": [
+      "10 (acceptable range: anything between 9 and 11 degrees Fahrenheit)"
+    ],
+    "sources": [
+      "https://www.google.com/books/edition/Clays_of_New_York/GygZAAAAYAAJ?hl=en&gbpv=1&bsq=thermoelectric%20pyrometer",
+      "https://nysl.ptfs.com/aw-server/rest/product/purl/NYSL/s/798ba2cb-27ae-4093-889c-926799428dc1"
+    ],
+    "upstream_row": 99,
+    "upstream_topic": "Science and technology",
+    "multi_step": "True"
+  },
+  {
+    "id": "simpleqa-1032",
+    "family": "external-Place",
+    "query": "From which Israeli university did Judith Feist Hemmendinger receive her master's degree?",
+    "url": "",
+    "answer": "Bar-Ilan University",
+    "answers": [
+      "Bar-Ilan University"
+    ],
+    "sources": [
+      "https://books.google.com/books?id=vIcdOOt5p-gC&pg=PA19",
+      "https://en.wikipedia.org/wiki/Judith_Hemmendinger"
+    ],
+    "upstream_row": 227,
+    "upstream_topic": "Other",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2444",
+    "family": "external-Date",
+    "query": "Which year was Leonard P. Zakim first involved in the reelection campaign of Michael Dukakis?",
+    "url": "",
+    "answer": "1978",
+    "answers": [
+      "1978",
+      "1,978"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Leonard_P._Zakim",
+      "http://learntoquestion.org/seevak/groups/2000/sites/zakim/MainDirect/framesets/f_life.html"
+    ],
+    "upstream_row": 549,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-283",
+    "family": "external-Place",
+    "query": "According to the 2021 World Bank data, which country has the largest renewable freshwater resources per capita?",
+    "url": "",
+    "answer": "Iceland",
+    "answers": [
+      "Iceland"
+    ],
+    "sources": [
+      "https://data.worldbank.org/indicator/ER.H2O.INTR.PC",
+      "https://www.statista.com/statistics/269361/worldwide-renewable-water-resources/"
+    ],
+    "upstream_row": 67,
+    "upstream_topic": "Geography",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3173",
+    "family": "external-Person",
+    "query": "Who is discovered to be alive at the end of Season 1 of Motherland: Fort Salem?",
+    "url": "",
+    "answer": "Willa Collar",
+    "answers": [
+      "Willa Collar"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Motherland:_Fort_Salem",
+      "https://tvtropes.org/pmwiki/pmwiki.php/Recap/MotherlandFortSalemS1E10Witchbomb",
+      "https://www.tvinsider.com/gallery/motherland-fort-salem-season-2-burning-questions-freeform/"
+    ],
+    "upstream_row": 719,
+    "upstream_topic": "TV shows",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2658",
+    "family": "external-Date",
+    "query": "On what date, month, and year was the Indian politician T. M. Selvaganapathy acquitted by the High Court in connection to the Pleasant Stay hotel case?",
+    "url": "",
+    "answer": "4 December 2001",
+    "answers": [
+      "4 December 2001",
+      "2001-12-04"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/T._M._Selvaganapathy",
+      "https://dbpedia.org/page/Pleasant_Stay_hotel_case",
+      "https://en.wikipedia.org/wiki/Pleasant_Stay_hotel_case"
+    ],
+    "upstream_row": 603,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1738",
+    "family": "external-Person",
+    "query": "What was the full birth name of American activist and writer Yolo Akili?",
+    "url": "",
+    "answer": "Michael Todd Robinson Jr.",
+    "answers": [
+      "Michael Todd Robinson Jr."
+    ],
+    "sources": [
+      "https://www.astro.com/astro-databank/Akili",
+      "https://www.famousbirthdays.com/people/yolo-akili.html",
+      "https://en.wikipedia.org/wiki/Yolo_Akili"
+    ],
+    "upstream_row": 387,
+    "upstream_topic": "Other",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-829",
+    "family": "external-Date",
+    "query": "What was the year when the Express Tribune (newspaper) reported, \"The Aga Khan University Hospital has become the first medical center to introduce the new advanced brain surgery technology, Neuro-Robotic Exoscope, in Pakistan\"?",
+    "url": "",
+    "answer": "2016",
+    "answers": [
+      "2016",
+      "2,016"
+    ],
+    "sources": [
+      "https://tribune.com.pk/story/1083560/medical-development-aku-becomes-countrys-first-hospital-to-introduce-neuro-robotic-exoscope",
+      "https://en.wikipedia.org/wiki/Aga_Khan_University_Hospital"
+    ],
+    "upstream_row": 182,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3862",
+    "family": "external-Number",
+    "query": "By 1913, how many stars could astronomer Annie Jump Cannon classify per hour?",
+    "url": "",
+    "answer": "200 (acceptable range: anything between 198 and 202)",
+    "answers": [
+      "200 (acceptable range: anything between 198 and 202)"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Annie_Jump_Cannon",
+      "https://princetonastronomy.com/2021/02/01/annie-jump-cannon-and-the-creation-of-stellar-classification/",
+      "https://kids.kiddle.co/Annie_Jump_Cannon"
+    ],
+    "upstream_row": 897,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3627",
+    "family": "external-Other",
+    "query": "From which Long Island high school did New York State Representative Nick LaLota graduate?",
+    "url": "",
+    "answer": "St. Anthony's High School",
+    "answers": [
+      "St. Anthony's High School"
+    ],
+    "sources": [
+      "https://www.nicklalota.com/about-nick",
+      "https://en.wikipedia.org/wiki/Nick_LaLota",
+      "https://lalota.house.gov/about"
+    ],
+    "upstream_row": 843,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-4211",
+    "family": "external-Person",
+    "query": "What was the first and last name of the person who designed the historic Emil J. Oberhoffer House in Lakeville, Minnesota, United States?",
+    "url": "",
+    "answer": "Paul Haugen",
+    "answers": [
+      "Paul Haugen"
+    ],
+    "sources": [
+      "https://www.dakotahistory.org/historical-sites/116-emil-oberhoffer-house",
+      "https://npgallery.nps.gov/GetAsset/214a34bb-adf4-4ded-a1f3-0a2a354ce843",
+      "https://en.wikipedia.org/wiki/Emil_J._Oberhoffer_House"
+    ],
+    "upstream_row": 972,
+    "upstream_topic": "History",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-4118",
+    "family": "external-Other",
+    "query": "What was the name of the company that sponsored BraviSEAmo! at Tokyo DisneySea from 2004 to 2010?",
+    "url": "",
+    "answer": "NTT DoCoMo",
+    "answers": [
+      "NTT DoCoMo"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/BraviSEAmo!",
+      "http://glouproductions.com/tokyo_disney_sea.html",
+      "https://triplydb.com/DBpedia-association/snapshot-2021-06/browser?resource=http%3A%2F%2Fdbpedia.org%2Fresource%2FBraviSEAmo%21"
+    ],
+    "upstream_row": 947,
+    "upstream_topic": "Other",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3526",
+    "family": "external-Other",
+    "query": "Which interstate is located near Ramby Avenue, where the KTCZ-FM transmitter on the KMSP Tower is located?",
+    "url": "",
+    "answer": "Interstate 694",
+    "answers": [
+      "Interstate 694"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/KEEY-FM",
+      "https://en.wikipedia.org/wiki/KTCZ-FM",
+      "https://radiostationwika.fandom.com/wiki/KTCZ"
+    ],
+    "upstream_row": 812,
+    "upstream_topic": "Geography",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1890",
+    "family": "external-Other",
+    "query": "What was the name of the official newsletter of the Internal Foundation for Internal Freedom organization founded by Timothy Leary?",
+    "url": "",
+    "answer": "The Psychedelic Review",
+    "answers": [
+      "The Psychedelic Review"
+    ],
+    "sources": [
+      "https://galacticjourney.org/stories/psychreview01.pdf",
+      "https://maps.org/wp-content/uploads/2007/11/0116sta.pdf",
+      "https://archives.nypl.org/mss/18400"
+    ],
+    "upstream_row": 433,
+    "upstream_topic": "Other",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3413",
+    "family": "external-Place",
+    "query": "In which country was Robert “Bob” Guy Walls, a painter born in 1927, born?",
+    "url": "",
+    "answer": "New Zealand",
+    "answers": [
+      "New Zealand"
+    ],
+    "sources": [
+      "https://www.mutualart.com/Artist/Robert-Walls/F1175F9016037D5D",
+      "https://en.wikipedia.org/wiki/Bob_Walls",
+      "https://contemporaryartsociety.org/artists/robert-bob-guy-walls"
+    ],
+    "upstream_row": 780,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-926",
+    "family": "external-Person",
+    "query": "Who served as the first Deputy Commissioner of the Pherzawl District, located in the southern part of Manipur, India?",
+    "url": "",
+    "answer": "Shri A.Tombikanta Singh",
+    "answers": [
+      "Shri A.Tombikanta Singh"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Pherzawl_district",
+      "https://pherzawl.nic.in/about-district/"
+    ],
+    "upstream_row": 205,
+    "upstream_topic": "Geography",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1205",
+    "family": "external-Other",
+    "query": "What is the accession number given by the Metropolitan Museum of Art for Hendrick Goltzius' \"Farnese Hercules\"?",
+    "url": "",
+    "answer": "17.37.59",
+    "answers": [
+      "17.37.59"
+    ],
+    "sources": [
+      "https://commons.wikimedia.org/wiki/File:Farnese_Hercules_MET_MM2664.jpg",
+      "https://www.metmuseum.org/art/collection/search/343588",
+      "https://www.lookandlearn.com/history-images/YM0343588/Farnese-Hercules?t=4&n=554226"
+    ],
+    "upstream_row": 278,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2461",
+    "family": "external-Place",
+    "query": "In what city in England was James Brain, an English football manager and player born in 1900, born?",
+    "url": "",
+    "answer": "Bristol",
+    "answers": [
+      "Bristol"
+    ],
+    "sources": [
+      "https://arsenalarsenal.net/tag/jimmy-brain/",
+      "https://spartacus-educational.com/ARSEbrain.htm",
+      "https://en.wikipedia.org/wiki/Jimmy_Brain"
+    ],
+    "upstream_row": 554,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-882",
+    "family": "external-Number",
+    "query": "What are the dimensions in centimeters of the painting \"Holy Mount Athos\" from The Slav Epic?",
+    "url": "",
+    "answer": "405 x 480 cm (acceptable range: [400-409] x [475-485] cm)",
+    "answers": [
+      "405 x 480 cm (acceptable range: [400-409] x [475-485] cm)"
+    ],
+    "sources": [
+      "https://www.muchafoundation.org/en/gallery/browse-works/object/230",
+      "https://en.m.wikipedia.org/wiki/File:Mucha",
+      "https://www.muchafoundation.org/en/gallery/themes/theme/slav-epic/object/230"
+    ],
+    "upstream_row": 197,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1176",
+    "family": "external-Date",
+    "query": "In what year did Carlo Alberto Galluzzi serve as Vice-Chair of the Delegation for Relations with the Member States of ASEAN, the ASEAN Interparliamentary Organization (AIPO), and the Republic of Korea?",
+    "url": "",
+    "answer": "1989",
+    "answers": [
+      "1989",
+      "1,989"
+    ],
+    "sources": [
+      "https://www.europarl.europa.eu/meps/en/1652/CARLO+ALBERTO_GALLUZZI/history/2",
+      "https://en.wikipedia.org/wiki/Carlo_Alberto_Galluzzi"
+    ],
+    "upstream_row": 269,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1491",
+    "family": "external-Number",
+    "query": "How many children did Hank Williams have?",
+    "url": "",
+    "answer": "2",
+    "answers": [
+      "2"
+    ],
+    "sources": [
+      "https://www.bustle.com/articles/149115-where-are-hank-williams-children-now-i-saw-the-light-puts-the-singers-family-in-the",
+      "https://media.al.com/mcolurso/other/101HANKTREE.pdf",
+      "https://en.wikipedia.org/wiki/Hank_Williams"
+    ],
+    "upstream_row": 335,
+    "upstream_topic": "Music",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1856",
+    "family": "external-Date",
+    "query": "In what year did Tülay Adalı become a Fellow of the American Institute for Medical and Biological Engineering?",
+    "url": "",
+    "answer": "2008",
+    "answers": [
+      "2008",
+      "2,008"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/T%C3%BClay_Adal%C4%B1",
+      "https://redirect.cs.umbc.edu/2013/06/csee-professor-dr-tulay-adali-receives-usm-regents-faculty-award-for-scholarshipresearchcreative-activity/"
+    ],
+    "upstream_row": 425,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3071",
+    "family": "external-Number",
+    "query": "What is the total number of passengers that died when KLM Flight 4805 and Pan Am Flight 1736 collided?",
+    "url": "",
+    "answer": "583 (acceptable range: anything between 577 and 589)",
+    "answers": [
+      "583 (acceptable range: anything between 577 and 589)"
+    ],
+    "sources": [
+      "https://www.faa.gov/lessons_learned/transport_airplane/accidents/PH-BUF",
+      "https://en.wikipedia.org/wiki/Tenerife_airport_disaster"
+    ],
+    "upstream_row": 699,
+    "upstream_topic": "History",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1994",
+    "family": "external-Number",
+    "query": "How many tracks are there on the album Memeza by Brenda Fassie?",
+    "url": "",
+    "answer": "8",
+    "answers": [
+      "8"
+    ],
+    "sources": [
+      "https://www.last.fm/music/Brenda+Fassie/Memeza",
+      "https://www.discogs.com/release/6503660-Brenda-Memeza",
+      "https://en.wikipedia.org/wiki/Memeza"
+    ],
+    "upstream_row": 458,
+    "upstream_topic": "Music",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1529",
+    "family": "external-Other",
+    "query": "Which company launched India’s first commercial MCU chip?",
+    "url": "",
+    "answer": "Mindgrove",
+    "answers": [
+      "Mindgrove"
+    ],
+    "sources": [
+      "https://economictimes.indiatimes.com/tech/technology/semiconductor-company-mindgrove-launches-indias-first-commercial-mcu-chip/articleshow/109862909.cms?from=mdr",
+      "https://www.eetindia.co.in/mindgrove-launches-indias-first-indigenously-designed-mcu-chip/",
+      "https://www.constructionworld.in/latest-construction-technology/mindgrove-launches-indias-first-commercial-mcu-chip/55085",
+      "https://www.autocarpro.in/news/volvo-to-launch-worlds-first-ev-battery-passport-report--120895"
+    ],
+    "upstream_row": 345,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3285",
+    "family": "external-Date",
+    "query": "Which year was Audrey McLaughlin sworn in as a member of the Queen's Privy Council for Canada?",
+    "url": "",
+    "answer": "1991",
+    "answers": [
+      "1991",
+      "1,991"
+    ],
+    "sources": [
+      "https://www.encyclopedia.com/international/encyclopedias-almanacs-transcripts-and-maps/mclaughlin-hon-audrey-pc-ba-msw",
+      "https://en.wikipedia.org/wiki/Audrey_McLaughlin",
+      "https://en.wikipedia.org/wiki/List_of_current_members_of_the_King%27s_Privy_Council_for_Canada"
+    ],
+    "upstream_row": 756,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1818",
+    "family": "external-Date",
+    "query": "What year did Nicholas Biwott, a Kenyan politician, return to the University of Melbourne to study for a master's degree in economics under a Commonwealth scholarship?",
+    "url": "",
+    "answer": "1966",
+    "answers": [
+      "1966",
+      "1,966"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Nicholas_Biwott",
+      "https://alchetron.com/Nicholas-Biwott",
+      "https://nation.africa/kenya/news/the-life-and-times-of-nicholas-biwott-423352"
+    ],
+    "upstream_row": 411,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-862",
+    "family": "external-Place",
+    "query": "What is the name of the first Catholic church in The Woodlands, Texas?",
+    "url": "",
+    "answer": "Sts. Simon and Jude",
+    "answers": [
+      "Sts. Simon and Jude"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/The_Woodlands",
+      "https://en.wikipedia.org/wiki/List_of_churches_in_the_Roman_Catholic_Archdiocese_of_Galveston%E2%80%93Houston",
+      "https://www.ssjwoodlands.com/about",
+      "https://communityimpact.com/houston/the-woodlands/2019/11/18/sts-simon-and-jude-catholic-parish-marks-40-years-in-the-woodlands/"
+    ],
+    "upstream_row": 190,
+    "upstream_topic": "Geography",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1155",
+    "family": "external-Place",
+    "query": "Which Singapore island is the nation's easternmost point?",
+    "url": "",
+    "answer": "Pedra Branca",
+    "answers": [
+      "Pedra Branca"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/List_of_countries_by_easternmost_point",
+      "https://en.wikipedia.org/wiki/Singapore",
+      "https://worldpopulationreview.com/country-rankings/easternmost-point-by-country"
+    ],
+    "upstream_row": 265,
+    "upstream_topic": "Geography",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1695",
+    "family": "external-Other",
+    "query": "What is the color of the boy's hair depicted in the illustration \"Backfence Graffiti\" by Norman Rockwell?",
+    "url": "",
+    "answer": "Red / Auburn",
+    "answers": [
+      "Red / Auburn"
+    ],
+    "sources": [
+      "https://www.art.com/gallery/id--a32-b18293/norman-rockwell-vintage-saturday-evening-post-posters.htm?page=5",
+      "https://www.saturdayeveningpost.com/2011/05/rockwell-changed-illustration/",
+      "https://www.ebay.com/itm/125955908111"
+    ],
+    "upstream_row": 375,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-537",
+    "family": "external-Person",
+    "query": "The Arvida Theatre, built in 1927 in Saguenay, Québec, was built according to the plans of which architect?",
+    "url": "",
+    "answer": "Alfred Lamontagne",
+    "answers": [
+      "Alfred Lamontagne"
+    ],
+    "sources": [
+      "https://ville.saguenay.ca/files/activites_et_loisirs/histoire_et_patrimoine/batiments_et_lieux_d_interet/jonquiere/16_le_theatre_palace_arvida.pdf",
+      "https://www.citedelaluminium.ca/en/life-in-arvida/",
+      "https://arvida.saguenay.ca/en/the-city-of-aluminum/history-br-and-profile-of-arvida/ligne-du-temps",
+      "https://baladodecouverte.com/circuits/774/poi/8875/the-palace-theatre-in-arvida"
+    ],
+    "upstream_row": 124,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1717",
+    "family": "external-Number",
+    "query": "How many people were killed when a tractor-trolley returning from a temple fell into a pond in Kanpur on October 2, 2022?",
+    "url": "",
+    "answer": "27",
+    "answers": [
+      "27"
+    ],
+    "sources": [
+      "https://www.newindianexpress.com/nation/2022/Oct/01/27devotees-returning-after-mundan-ceremony-killed-in-road-mishap-in-ups-kanpur-2503992.html",
+      "https://en.wikipedia.org/wiki/2022_Kanpur_road_accident",
+      "https://www.indiatoday.in/india/story/kanpur-road-accident-cm-yogi-meets-survivors-uttar-pradesh-2007448-2022-10-02",
+      "https://en.wikipedia.org/wiki/2022_in_India"
+    ],
+    "upstream_row": 379,
+    "upstream_topic": "Other",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2443",
+    "family": "external-Other",
+    "query": "From what undergraduate college did Lt. Gen. (Ret.) Ronald Ray Blanck, D.O., graduate?",
+    "url": "",
+    "answer": "Juniata College",
+    "answers": [
+      "Juniata College"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ronald_R._Blanck",
+      "https://www.usuhs.edu/sites/default/files/2019-11/ronaldblanckbio.pdf",
+      "http://www.martin-blanck.com/bio_ronald-blanck.php",
+      "https://achh.army.mil/history/surgeongenerals-r-blanck"
+    ],
+    "upstream_row": 548,
+    "upstream_topic": "Other",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1990",
+    "family": "external-Other",
+    "query": "Under what section of CRPC was Omar Abdullah placed under preventive detention by the Indian government on the 4th and 5th of August 2019?",
+    "url": "",
+    "answer": "107",
+    "answers": [
+      "107"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Omar_Abdullah",
+      "https://thewire.in/rights/omar-abdullah-psa-detention-supreme-court",
+      "https://www.ndtv.com/india-news/omar-abdullahs-sister-challenges-his-detention-in-supreme-court-after-hes-charged-under-stringent-pu-2177695",
+      "https://www.hindustantimes.com/india-news/omar-abdullah-detained-under-psa-due-to-past-conduct-j-k-govt-tells-supreme-court/story-8tLhtDHlLTtSGlb8tBKaqJ.html"
+    ],
+    "upstream_row": 457,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-659",
+    "family": "external-Other",
+    "query": "Other than being a choreographer for the TV series In Living Color, what other job did Rosie Perez do on the show?",
+    "url": "",
+    "answer": "segment producer",
+    "answers": [
+      "segment producer"
+    ],
+    "sources": [
+      "https://voiceactorsplacesmediaandmore.fandom.com/wiki/Rosie_Perez",
+      "https://en.wikipedia.org/wiki/Rosie_Perez",
+      "https://www.rogerebert.com/interviews/rosie-perez-on-a-roll"
+    ],
+    "upstream_row": 146,
+    "upstream_topic": "TV shows",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-330",
+    "family": "external-Person",
+    "query": "Who designed Buenos Aires's Palais de Glace?",
+    "url": "",
+    "answer": "J. L. Ruiz Basadre",
+    "answers": [
+      "J. L. Ruiz Basadre"
+    ],
+    "sources": [
+      "https://www.gpsmycity.com/attractions/palais-de-glace-(ice-palace)-19461.html",
+      "https://en.wikipedia.org/wiki/Palais_de_Glace"
+    ],
+    "upstream_row": 79,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3712",
+    "family": "external-Number",
+    "query": "How many yellow cards did Arsenal get in the Champions League Final match between Barcelona and Arsenal on May 18, 2006?",
+    "url": "",
+    "answer": "2",
+    "answers": [
+      "2"
+    ],
+    "sources": [
+      "https://www.espn.co.uk/football/match/_/gameId/197123/arsenal-barcelona",
+      "https://en.wikipedia.org/wiki/2006_UEFA_Champions_League_final",
+      "https://www.uefa.com/uefachampionsleague/match/84101--barcelona-vs-arsenal/"
+    ],
+    "upstream_row": 869,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2497",
+    "family": "external-Person",
+    "query": "Who was the person who spoke out against naming a new Imperial Lord Privy Seal, which put him in direct conflict with the regime's de facto prime minister, Émile Ollivier?",
+    "url": "",
+    "answer": "Léon Gambetta",
+    "answers": [
+      "Léon Gambetta"
+    ],
+    "sources": [
+      "https://kids.kiddle.co/L%C3%A9on_Gambetta",
+      "https://en.wikipedia.org/wiki/L%C3%A9on_Gambetta"
+    ],
+    "upstream_row": 562,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2551",
+    "family": "external-Number",
+    "query": "According to the last population update in 2010, the rural locality of Taz Russky in the Klyapovskoye Rural Settlement of Russia has a population of what?",
+    "url": "",
+    "answer": "175 (acceptable range: anything between 173 and 177)",
+    "answers": [
+      "175 (acceptable range: anything between 173 and 177)"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Taz_Russky",
+      "https://mapcarta.com/13313466"
+    ],
+    "upstream_row": 574,
+    "upstream_topic": "Geography",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3671",
+    "family": "external-Date",
+    "query": "What year was Jerry Lee Lewis's 13th album released on Mercury Records?",
+    "url": "",
+    "answer": "1970",
+    "answers": [
+      "1970",
+      "1,970"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/She_Even_Woke_Me_Up_to_Say_Goodbye_(album)",
+      "https://www.allmusic.com/album/she-even-woke-me-up-to-say-goodbye-mw0000838334",
+      "https://www.discogs.com/release/2806294-Jerry-Lee-Lewis-She-Even-Woke-Me-Up-To-Say-Goodbye"
+    ],
+    "upstream_row": 855,
+    "upstream_topic": "Music",
+    "multi_step": "True"
+  },
+  {
+    "id": "simpleqa-3086",
+    "family": "external-Date",
+    "query": "In which year did Anil Biswas (an Indian communist politician) join the Krishnagar Government College, come under the influence of Marxist leaders like Harinarayan Adhikari and Dinesh Mazumdar, and also become an active member of the Students' Federation of India?",
+    "url": "",
+    "answer": "1961",
+    "answers": [
+      "1961",
+      "1,961"
+    ],
+    "sources": [
+      "https://alchetron.com/Anil-Biswas-(politician)",
+      "https://en.wikipedia.org/wiki/Anil_Biswas_(politician)"
+    ],
+    "upstream_row": 703,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-744",
+    "family": "external-Number",
+    "query": "What is the maximum depth of the Mediterranean Sea in meters?",
+    "url": "",
+    "answer": "5109 m (acceptable range: anything between 5057 and 5161 m)",
+    "answers": [
+      "5109 m (acceptable range: anything between 5057 and 5161 m)"
+    ],
+    "sources": [
+      "https://blitztest.com/geography/seas/mediterranean-sea",
+      "https://en.wikipedia.org/wiki/Calypso_Deep",
+      "https://en.wikipedia.org/wiki/Mediterranean_Sea"
+    ],
+    "upstream_row": 163,
+    "upstream_topic": "Geography",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-281",
+    "family": "external-Other",
+    "query": "What is the name of the seminal film that Lygia Pape made in 1975 focusing on gender and sexuality?",
+    "url": "",
+    "answer": "Eat Me",
+    "answers": [
+      "Eat Me"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Lygia_Pape",
+      "https://www.frieze.com/article/lygia-pape",
+      "https://theartsdesk.com/visual-arts/lygia-pape-magnetised-space-serpentine-gallery"
+    ],
+    "upstream_row": 66,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3038",
+    "family": "external-Other",
+    "query": "Which school did Carl Van Vechten graduate from in 1898?",
+    "url": "",
+    "answer": "Washington High School.",
+    "answers": [
+      "Washington High School."
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Carl_Van_Vechten",
+      "https://kids.kiddle.co/Carl_Van_Vechten"
+    ],
+    "upstream_row": 695,
+    "upstream_topic": "Other",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-141",
+    "family": "external-Person",
+    "query": "The \"Un'alma innamorata\" was written by what composer in 1707?",
+    "url": "",
+    "answer": "George Frideric Handel",
+    "answers": [
+      "George Frideric Handel"
+    ],
+    "sources": [
+      "https://www.naxos.com/CatalogueDetail/?id=CDR90000-057",
+      "https://en.wikipedia.org/wiki/Un%27alma_innamorata",
+      "https://imslp.org/wiki/Un%27_alma_innamorata"
+    ],
+    "upstream_row": 34,
+    "upstream_topic": "Music",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1502",
+    "family": "external-Date",
+    "query": "In which year did Dina Nath Walli (an Indian watercolor artist and poet from Srinagar city) return to Srinagar, where he concentrated on landscape painting in watercolors?",
+    "url": "",
+    "answer": "1936",
+    "answers": [
+      "1936",
+      "1,936"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Dina_Nath_Walli",
+      "http://m.koausa.org/dnwalli/index.html",
+      "https://en.wikipedia-on-ipfs.org/wiki/Dina_Nath_Walli"
+    ],
+    "upstream_row": 340,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-983",
+    "family": "external-Number",
+    "query": "What are the stud dimensions of the LEGO part with ID 54093?",
+    "url": "",
+    "answer": "20 x 56 in studs",
+    "answers": [
+      "20 x 56 in studs"
+    ],
+    "sources": [
+      "https://www.bricklink.com/v2/catalog/catalogitem.page?P=54093",
+      "https://www.brickowl.com/catalog/lego-white-wing-20-x-56-with-cutout-no-holes-54093",
+      "https://bricker.info/parts/54093/"
+    ],
+    "upstream_row": 216,
+    "upstream_topic": "Video games",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2604",
+    "family": "external-Other",
+    "query": "What was the nickname of Wiley Lee Griggs III, an American Negro League infielder?",
+    "url": "",
+    "answer": "Diamond Jim",
+    "answers": [
+      "Diamond Jim"
+    ],
+    "sources": [
+      "https://sabr.org/bioproj/person/wiley-griggs/",
+      "https://en.wikipedia.org/wiki/Wiley_Griggs",
+      "https://www.bhamwiki.com/w/Wiley_Griggs"
+    ],
+    "upstream_row": 589,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-4055",
+    "family": "external-Other",
+    "query": "In August 1974, the Cary High School band performed at which Switzerland event?",
+    "url": "",
+    "answer": "Fêtes de Genève",
+    "answers": [
+      "Fêtes de Genève"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Cary_High_School",
+      "https://www.wcpss.net/cms/lib/NC01911451/Centricity/Domain/264/100%20Cary%20Years.pdf"
+    ],
+    "upstream_row": 934,
+    "upstream_topic": "Music",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-751",
+    "family": "external-Other",
+    "query": "What is the name of the drug previously known to treat bacterial infections that Dr. William Schwartz discovered also acts as a diuretic in people with congestive heart failure?",
+    "url": "",
+    "answer": "Sulfanilamide (also know as para-aminobenzenesulfonamide)",
+    "answers": [
+      "Sulfanilamide (also know as para-aminobenzenesulfonamide)"
+    ],
+    "sources": [
+      "https://www.heart.org/-/media/files/about-us/history/history-of-the-american-heart-association.pdf",
+      "https://www.medinfo.co.nz/doc/newsletter%20June%2008.pdf",
+      "https://en.wikipedia.org/wiki/William_Schwartz_(physician)"
+    ],
+    "upstream_row": 166,
+    "upstream_topic": "Science and technology",
+    "multi_step": "True"
+  },
+  {
+    "id": "simpleqa-1497",
+    "family": "external-Date",
+    "query": "In what month and year was Nikolai Talyzin dismissed from Nikolai Ryzhkov's government, along with many other conservatives, during the period of perestroika?",
+    "url": "",
+    "answer": "September 1989",
+    "answers": [
+      "September 1989"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Nikolai_Talyzin",
+      "https://demokratizatsiya.pub/archives/07-2_arias.pdf"
+    ],
+    "upstream_row": 338,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-76",
+    "family": "external-Place",
+    "query": "In which district of Uttarakhand was Ila Pant (an Indian politician) born?",
+    "url": "",
+    "answer": "Nainital district",
+    "answers": [
+      "Nainital district"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ila_Pant",
+      "https://abhipedia.abhimanu.com/Article/State/MTIzNjA3/Women-in-Uttarakhand-politics-Uttarakhand-State",
+      "https://prabook.com/web/ila.pant/2361780"
+    ],
+    "upstream_row": 24,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-598",
+    "family": "external-Date",
+    "query": "In which month and year did Jose Maria Canlas Sison marry his wife, Julie de Lima, in a Catholic church?",
+    "url": "",
+    "answer": "January 1960",
+    "answers": [
+      "January 1960"
+    ],
+    "sources": [
+      "https://frosh.s3.uk.io.cloud.ovh.net/how-did-cpp-founder-die-meet-his-wife.html",
+      "https://en.wikipedia.org/wiki/Jose_Maria_Sison"
+    ],
+    "upstream_row": 138,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1259",
+    "family": "external-Number",
+    "query": "When holding the Crescent Axe from Demon's Souls (2009) in two hands, what is the physical damage reduction when blocking?",
+    "url": "",
+    "answer": "55% (acceptable range: anything between 54% and 56%)",
+    "answers": [
+      "55% (acceptable range: anything between 54% and 56%)"
+    ],
+    "sources": [
+      "http://demonssouls.wikidot.com/crescent-axe",
+      "https://www.demonssouls.com/index.php?title=Crescent_Axe&mobileaction=toggle_view_desktop"
+    ],
+    "upstream_row": 291,
+    "upstream_topic": "Video games",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1953",
+    "family": "external-Date",
+    "query": "In which year did Gary Schreider, the Canadian football player, die?",
+    "url": "",
+    "answer": "2011",
+    "answers": [
+      "2011",
+      "2,011"
+    ],
+    "sources": [
+      "https://gogaelsgo.com/news/2011/1/26/FB_0126115617.aspx",
+      "https://en.wikipedia.org/wiki/Gary_Schreider",
+      "https://en.wikipedia.org/wiki/Schreider",
+      "https://www.legacy.com/ca/obituaries/thestar/name/gary-schreider-obituary?id=42680072"
+    ],
+    "upstream_row": 444,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2026",
+    "family": "external-Other",
+    "query": "What was the first-generation, four-speed manual transmission gearbox type of the Mazda R360 officially called in Japan?",
+    "url": "",
+    "answer": "KRBB",
+    "answers": [
+      "KRBB"
+    ],
+    "sources": [
+      "https://www.mazdar360.com/information/specification",
+      "https://en.wikipedia.org/wiki/Mazda_R360",
+      "https://www.mazdar360.com/history",
+      "https://www.below-the-radar.com/mazda-r360/"
+    ],
+    "upstream_row": 463,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1688",
+    "family": "external-Other",
+    "query": "What is the scientific name of the first reported sexually dichromatic snake from the Indian subcontinent?",
+    "url": "",
+    "answer": "Ahaetulla anomala",
+    "answers": [
+      "Ahaetulla anomala"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ahaetulla_anomala",
+      "https://www.newindianexpress.com/states/odisha/2017/May/11/researchers-validate-indias-first-dichromatic-snake-species-1603571.html",
+      "https://reptile-database.reptarium.cz/species?genus=Ahaetulla&species=anomala"
+    ],
+    "upstream_row": 373,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2751",
+    "family": "external-Other",
+    "query": "What cabinet position did Sir Hector-Louis Langevin hold in 1870?",
+    "url": "",
+    "answer": "Minister of Public Works",
+    "answers": [
+      "Minister of Public Works"
+    ],
+    "sources": [
+      "https://guide-ministries.canada.ca/dtail.php?id=1&lang=en&min=1",
+      "https://en.wikipedia.org/wiki/Hector-Louis_Langevin"
+    ],
+    "upstream_row": 627,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3199",
+    "family": "external-Person",
+    "query": "To whom was A. Wallis Myers married?",
+    "url": "",
+    "answer": "Lilian Gentry",
+    "answers": [
+      "Lilian Gentry"
+    ],
+    "sources": [
+      "https://tt.tennis-warehouse.com/index.php?threads/arthur-w-myers-%E2%80%93-a-testament-to-tennis.576159/",
+      "https://prabook.com/web/arthur.myers/2601989",
+      "https://en.wikipedia.org/wiki/A._Wallis_Myers"
+    ],
+    "upstream_row": 727,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1851",
+    "family": "external-Date",
+    "query": "On what day, month, and year was the 2021 research paper titled \"Classification of Relaxation and Concentration Mental States with EEG\" by Shingchern D. You accepted for publication in the scientific journal \"Information\"?",
+    "url": "",
+    "answer": "23 April 2021",
+    "answers": [
+      "23 April 2021",
+      "2021-04-23"
+    ],
+    "sources": [
+      "https://www.researchgate.net/publication/351143684_Classification_of_Relaxation_and_Concentration_Mental_States_with_EEG",
+      "https://www.mdpi.com/2078-2489/12/5/187"
+    ],
+    "upstream_row": 423,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2674",
+    "family": "external-Other",
+    "query": "What was Yangyi Yu's score in the 2020 Tata Steel Masters?",
+    "url": "",
+    "answer": "4.5/13",
+    "answers": [
+      "4.5/13"
+    ],
+    "sources": [
+      "https://www.chessgames.com/perl/chess.pl?tid=98367&kpage=45",
+      "https://en.wikipedia.org/wiki/Tata_Steel_Chess_Tournament_2020",
+      "https://www.chessgames.com/perl/chess.pl?tid=98367",
+      "https://www.chess.com/events/2020-tata-steel-masters/results"
+    ],
+    "upstream_row": 609,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1392",
+    "family": "external-Place",
+    "query": "In which stadium was the IPL 2015 20th match played?",
+    "url": "",
+    "answer": "M. Chinnaswamy Stadium",
+    "answers": [
+      "M. Chinnaswamy Stadium"
+    ],
+    "sources": [
+      "https://www.mykhel.com/cricket/ipl-2015-scorecard-s9978-818660/",
+      "https://www.iplt20.com/matches/results/2015",
+      "https://www.cricwaves.com/cricket/news/articles/piAp1WZkkB_drh-sevawcirc/ipl-8-indian-premier-league-2015-schedule-fixtures-time-table.html",
+      "https://m.cricbuzz.com/cricket-match-facts/14614/rcb-vs-csk-20th-match-indian-premier-league-2015"
+    ],
+    "upstream_row": 321,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-4319",
+    "family": "external-Person",
+    "query": "What is the name of the settler who selected the name of Aloha Township, Michigan?",
+    "url": "",
+    "answer": "James B. Patterson",
+    "answers": [
+      "James B. Patterson"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Aloha_Township",
+      "https://www.alohatownship.org/",
+      "https://99wfmk.com/aloha-michigan/"
+    ],
+    "upstream_row": 999,
+    "upstream_topic": "Geography",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1119",
+    "family": "external-Person",
+    "query": "What is the name of the 10th King of Nepal?",
+    "url": "",
+    "answer": "Birendra Bir Bikram Shah Dev",
+    "answers": [
+      "Birendra Bir Bikram Shah Dev"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Birendra_of_Nepal",
+      "https://www.britannica.com/biography/Birendra-Bir-Bikram-Shah-Dev"
+    ],
+    "upstream_row": 255,
+    "upstream_topic": "History",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1749",
+    "family": "external-Date",
+    "query": "In what year did the U.S. Congress approve the Compact of Free Association relating to the Marshall Islands and Micronesia?",
+    "url": "",
+    "answer": "1985",
+    "answers": [
+      "1985",
+      "1,985"
+    ],
+    "sources": [
+      "https://crsreports.congress.gov/product/pdf/IF/IF12194",
+      "https://www.reaganlibrary.gov/archives/speech/message-congress-transmitting-proposed-legislation-approve-compact-free-0",
+      "https://www.everycrsreport.com/reports/IF12194.html"
+    ],
+    "upstream_row": 392,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3017",
+    "family": "external-Person",
+    "query": "What was the name of the composer of the opening theme song for the radio program \"The American Album of Familiar Music\"?",
+    "url": "",
+    "answer": "Walter Gustave \"Gus\" Haenschen",
+    "answers": [
+      "Walter Gustave \"Gus\" Haenschen"
+    ],
+    "sources": [
+      "https://www.onesmedia.com/music-c-10_65/american-album-of-familiar-music-p-958.html",
+      "https://books.google.com/books?id=UJP2VwJf9icC&dq=%22American+Album+of+Familiar+Music%22&pg=PA51",
+      "https://en.wikipedia.org/wiki/The_American_Album_of_Familiar_Music"
+    ],
+    "upstream_row": 690,
+    "upstream_topic": "Music",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-815",
+    "family": "external-Other",
+    "query": "What school was Aleister Crowley first sent to at the age of 8?",
+    "url": "",
+    "answer": "H. T. Habershon's evangelical Christian boarding school",
+    "answers": [
+      "H. T. Habershon's evangelical Christian boarding school"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Aleister_Crowley",
+      "https://rickontheater.blogspot.com/2019/09/the-wickedest-man-in-world-aleister.html",
+      "https://www.occult.live/index.php?title=Aleister_Crowley&mobileaction=toggle_view_desktop"
+    ],
+    "upstream_row": 181,
+    "upstream_topic": "Other",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3417",
+    "family": "external-Other",
+    "query": "What was the title of Thomas Callister Hales' Ph.D. dissertation from Princeton University in 1986?",
+    "url": "",
+    "answer": "The Subregular Germ of Orbital Integrals",
+    "answers": [
+      "The Subregular Germ of Orbital Integrals"
+    ],
+    "sources": [
+      "https://alchetron.com/Thomas-Callister-Hales",
+      "https://en.wikipedia.org/wiki/Thomas_Callister_Hales",
+      "https://www.genealogy.math.ndsu.nodak.edu/id.php?id=77593"
+    ],
+    "upstream_row": 782,
+    "upstream_topic": "Other",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1756",
+    "family": "external-Number",
+    "query": "What was the gun time to the hour, minute, and second that Justin Kemboi Chesire finished in the Old Mutual 56km Ultra Two Oceans Marathon in 2019?",
+    "url": "",
+    "answer": "3:11:22 (acceptable range: anything between 3:11:21 and 3:11:23)",
+    "answers": [
+      "3:11:22 (acceptable range: anything between 3:11:21 and 3:11:23)"
+    ],
+    "sources": [
+      "https://www.sportsplits.com/races/15435",
+      "https://results.finishtime.co.za/results.aspx?CId=35&RId=30350&EId=1&dt=0&so=1&st=sL0P6hT17GLleRsNVn9WeQ3DvvGYdQhgYyrdMCyXuj5xbqkfgZjrgH6DkEiqalOh"
+    ],
+    "upstream_row": 396,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3858",
+    "family": "external-Other",
+    "query": "For what magazine did artist J.C. Leyendecker win a magazine cover competition in 1896?",
+    "url": "",
+    "answer": "The Century Magazine",
+    "answers": [
+      "The Century Magazine"
+    ],
+    "sources": [
+      "https://www.saturdayeveningpost.com/artists/j-c-leyendecker/",
+      "https://www.shuru-art.com/blogs/news/j-c-leyendecker-the-iconic-illustrator-of-modern-magazines",
+      "https://en.wikipedia.org/wiki/J._C._Leyendecker"
+    ],
+    "upstream_row": 896,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1937",
+    "family": "external-Place",
+    "query": "In what city did Rachel Carson and Dorothy Freeman first meet in 1953?",
+    "url": "",
+    "answer": "Southport Island",
+    "answers": [
+      "Southport Island"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Rachel_Carson",
+      "https://libraries.mit.edu/150books/2011/05/21/1995/",
+      "https://blogs.ntu.edu.sg/hp3203-1718-s2-08/dorothy-freeman/"
+    ],
+    "upstream_row": 442,
+    "upstream_topic": "Other",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2242",
+    "family": "external-Other",
+    "query": "According to Medland, Sarah E.; Loesch, Danuta Z.; Mdzewski, Bogdan; Zhu, Gu; Montgomery, Grant W.; Martin, Nicholas G. (September 28, 2007), what chromosome location was identified as linked to the finger ridge counts of the ring, index, and middle fingers through multivariate linkage analysis?",
+    "url": "",
+    "answer": "5q14.1",
+    "answers": [
+      "5q14.1"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Fingerprint",
+      "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1994711/",
+      "https://www.ncbi.nlm.nih.gov/clinvar/RCV000744893/"
+    ],
+    "upstream_row": 506,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-700",
+    "family": "external-Date",
+    "query": "In which year was the Kangri cancer effect first studied?",
+    "url": "",
+    "answer": "1866",
+    "answers": [
+      "1866",
+      "1,866"
+    ],
+    "sources": [
+      "https://researchoutput.csu.edu.au/ws/portalfiles/portal/182665577/141960578_published_article.pdf",
+      "https://en.wikipedia.org/wiki/Kanger",
+      "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4949346/"
+    ],
+    "upstream_row": 154,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3801",
+    "family": "external-Number",
+    "query": "How many children did actress Camille Clifford have with her second husband, Captain John Meredyth Jones-Evans?",
+    "url": "",
+    "answer": "1",
+    "answers": [
+      "1"
+    ],
+    "sources": [
+      "https://aboutcards.blogspot.com/2007/01/camille-clifford-gibson-girl-family.html",
+      "https://en.wikipedia.org/wiki/Camille_Clifford",
+      "https://quellochepiaceavaleria.com/en/camille-clifford-perfect-body-and-iconic-gibson-girl/"
+    ],
+    "upstream_row": 889,
+    "upstream_topic": "Other",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2914",
+    "family": "external-Other",
+    "query": "What was John Graham Lough's cause of death?",
+    "url": "",
+    "answer": "Pneumonia",
+    "answers": [
+      "Pneumonia"
+    ],
+    "sources": [
+      "https://www.wikidata.org/wiki/Q6235982",
+      "https://en.wikipedia.org/wiki/John_Graham_Lough",
+      "https://en.wikipedia.org/wiki/Campbell_De_Morgan"
+    ],
+    "upstream_row": 661,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3957",
+    "family": "external-Other",
+    "query": "What was the crater on Mercury named after Kurt Vonnegut referred to in scientific literature prior to its naming?",
+    "url": "",
+    "answer": "e5",
+    "answers": [
+      "e5"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Vonnegut_(crater)",
+      "http://www.enjoyed.today/Vonnegut_(crater)/",
+      "https://dbpedia.org/page/Vonnegut_(crater)"
+    ],
+    "upstream_row": 914,
+    "upstream_topic": "Science and technology",
+    "multi_step": "True"
+  },
+  {
+    "id": "simpleqa-299",
+    "family": "external-Place",
+    "query": "Which specific ocean was the asteroid 224 Oceana named after?",
+    "url": "",
+    "answer": "Pacific Ocean",
+    "answers": [
+      "Pacific Ocean"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/224_Oceana",
+      "https://graphsearch.epfl.ch/en/concept/1524880",
+      "https://markandrewholmes.com/oceana.html"
+    ],
+    "upstream_row": 72,
+    "upstream_topic": "Geography",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-580",
+    "family": "external-Other",
+    "query": "What were the original names of the first three ships in the Sea Organization associated with the Church of Scientology?",
+    "url": "",
+    "answer": "Avon River, Enchanter, and HMS Royal Scotsman",
+    "answers": [
+      "Avon River, Enchanter, and HMS Royal Scotsman"
+    ],
+    "sources": [
+      "https://therevealer.org/the-last-twentieth-century-book-club-power-of-source/",
+      "https://en.wikipedia.org/wiki/Sea_Org"
+    ],
+    "upstream_row": 133,
+    "upstream_topic": "Other",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2634",
+    "family": "external-Place",
+    "query": "In which city of Pakistan is Gasho Lake located?",
+    "url": "",
+    "answer": "Gilgit",
+    "answers": [
+      "Gilgit"
+    ],
+    "sources": [
+      "https://mcqsplanet.com/2024/01/30/gashoo-lake-is-located-in___/",
+      "https://www.dawn.com/news/1701628",
+      "https://wikimapia.org/35280391/Gasho-Lake-Sai-Bala-Juglote"
+    ],
+    "upstream_row": 596,
+    "upstream_topic": "Geography",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-308",
+    "family": "external-Person",
+    "query": "What coach was Mike Young an assistant to at Radford University?",
+    "url": "",
+    "answer": "Oliver Purnell",
+    "answers": [
+      "Oliver Purnell"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mike_Young_(basketball)",
+      "https://hof.ehc.edu/members/mike-young/",
+      "https://hokiesports.com/sports/mens-basketball/roster/season/2024-25/staff/mike-young"
+    ],
+    "upstream_row": 74,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1000",
+    "family": "external-Date",
+    "query": "Specify the day, month, and year Canon introduced two new UHDgc 2/3-inch Portable Zoom Lenses designed for 4K UHD broadcast cameras.",
+    "url": "",
+    "answer": "April 2, 2019",
+    "answers": [
+      "April 2, 2019",
+      "2019-04-02"
+    ],
+    "sources": [
+      "https://www.canonwatch.com/canon-introduces-two-new-uhdgc-2-3-inch-portable-zoom-lenses-for-4k-uhd-broadcast/",
+      "https://www.canonrumors.com/forum/threads/canon-introduces-two-new-uhdgc-2-3-inch-portable-zoom-lenses-designed-for-4k-uhd-broadcast-cameras.36962/",
+      "https://www.photoxels.com/canon-cj18ex28b-56-1000mm-with-built-in-2x-extender-and-cj15ex8-5b-vari-angle-prism-image-stabilization-uhdgc-2-3-inch-portable-4k-broadcast-zoom-lenses-compact-portable-lightweight-affordable/",
+      "https://en.wikipedia.org/wiki/Canon_Inc."
+    ],
+    "upstream_row": 217,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2933",
+    "family": "external-Number",
+    "query": "What was the Sky EPG number of Game Network when it launched in the United Kingdom in May 2001?",
+    "url": "",
+    "answer": "223",
+    "answers": [
+      "223"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Game_Network",
+      "https://xiv.pages.dev/0xLy9lbi53aWtpcGVkaWEub3JnLy9HYW1lX05ldHdvcms"
+    ],
+    "upstream_row": 667,
+    "upstream_topic": "TV shows",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3304",
+    "family": "external-Date",
+    "query": "What month, day, and year was James V. Allred nominated by President Franklin D. Roosevelt to the United States District Court for the Southern District of Texas?",
+    "url": "",
+    "answer": "5 January 1939",
+    "answers": [
+      "5 January 1939",
+      "1939-01-05"
+    ],
+    "sources": [
+      "https://www.fjc.gov/history/judges/allred-james-v",
+      "https://en.wikipedia.org/wiki/James_V._Allred",
+      "https://www.govinfo.gov/content/pkg/GPO-CRECB-1939-pt1-v84/pdf/GPO-CRECB-1939-pt1-v84-3-1.pdf"
+    ],
+    "upstream_row": 763,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1054",
+    "family": "external-Date",
+    "query": "On which day, month, and year was the SROSS-C satellite launched from the Satish Dhawan Space Centre in India?",
+    "url": "",
+    "answer": "20 May 1992",
+    "answers": [
+      "20 May 1992",
+      "1992-05-20"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Stretched_Rohini_Satellite_Series",
+      "https://www.isro.gov.in/SROSS_C.html?timeline=timeline",
+      "https://www.satnow.com/space-mission-details/isro/sross-c"
+    ],
+    "upstream_row": 235,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3955",
+    "family": "external-Other",
+    "query": "What was the name of the journal that Gloria Niemeyer Francke was the associate editor of from 1944 to 1964?",
+    "url": "",
+    "answer": "American Journal of Hospital Pharmacy",
+    "answers": [
+      "American Journal of Hospital Pharmacy"
+    ],
+    "sources": [
+      "https://getsol.app/profile/Gloria-Niemeyer-Francke-1922",
+      "https://en.wikipedia.org/wiki/Gloria_Niemeyer_Francke"
+    ],
+    "upstream_row": 913,
+    "upstream_topic": "Other",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3484",
+    "family": "external-Number",
+    "query": "At what age in years and months did the American professional tennis player Coco Gauff win the title of \"USTA Clay Court National 12-and-under\"?",
+    "url": "",
+    "answer": "10 years 3 months (acceptable range: 10 years and between 2-4 months)",
+    "answers": [
+      "10 years 3 months (acceptable range: 10 years and between 2-4 months)"
+    ],
+    "sources": [
+      "https://tennis-infinity.com/coco-gauff",
+      "https://www.espn.com/tennis/story/_/id/18401434/tennis-why-12-year-old-cori-gauff-thinks-greatest-all",
+      "https://tennispredict.com/coco-gauff/",
+      "https://en.wikipedia.org/wiki/Coco_Gauff"
+    ],
+    "upstream_row": 798,
+    "upstream_topic": "Sports",
+    "multi_step": "True"
+  },
+  {
+    "id": "simpleqa-1419",
+    "family": "external-Person",
+    "query": "Who was the medalist at the V. M. Goldschmidt Award in 2015?",
+    "url": "",
+    "answer": "Miriam Kastner",
+    "answers": [
+      "Miriam Kastner"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/V._M._Goldschmidt_Award",
+      "https://www.geochemsoc.org/honors/awards/vmgoldschmidtaward",
+      "https://en.wikipedia.org/wiki/Miriam_Kastner"
+    ],
+    "upstream_row": 324,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1952",
+    "family": "external-Other",
+    "query": "In 1881, Edward S. Morse of Salem, Massachusetts, patented a way of warming and ventilating apartments using what?",
+    "url": "",
+    "answer": "sun's rays",
+    "answers": [
+      "sun's rays"
+    ],
+    "sources": [
+      "https://patents.google.com/patent/US246626A/en?before=priority:18811231&after=priority:18810101&oq=1881",
+      "https://patents.google.com/patent/US246626A/en",
+      "https://pem.as.atlas-sys.com/repositories/2/archival_objects/10032",
+      "https://www.frameapatent.com/everything-else-c-75/warming-and-ventilating-apartments-by-the-suns-rays-patent-print-p-4434.html"
+    ],
+    "upstream_row": 443,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3148",
+    "family": "external-Person",
+    "query": "Which musician became Louis Armstrong's first teacher and chose him as the bandleader?",
+    "url": "",
+    "answer": "Peter Davis.",
+    "answers": [
+      "Peter Davis."
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Louis_Armstrong",
+      "https://64parishes.org/entry/louis-armstrong-adaptation",
+      "https://www.javatpoint.com/louis-armstrong",
+      "https://thejazzvnu.com/louis-armstrong-vocal-classic-jazz/"
+    ],
+    "upstream_row": 713,
+    "upstream_topic": "Music",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2176",
+    "family": "external-Date",
+    "query": "What were the day, month, and year when President Bush signed into law the resolution authorizing the Iraq War?",
+    "url": "",
+    "answer": "October 16, 2002",
+    "answers": [
+      "October 16, 2002",
+      "2002-10-16"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Authorization_for_Use_of_Military_Force_Against_Iraq_Resolution_of_2002",
+      "https://www.foreign.senate.gov/imo/media/doc/GlennonTestimony080410a.pdf",
+      "https://en.wikipedia.org/wiki/Barack_Obama",
+      "https://www.govinfo.gov/content/pkg/PPP-2002-book2/html/PPP-2002-book2-doc-pg1707.htm",
+      "https://en.wikipedia.org/wiki/Rationale_for_the_Iraq_War",
+      "https://en.wikipedia.org/wiki/Iraq_War"
+    ],
+    "upstream_row": 494,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-4264",
+    "family": "external-Person",
+    "query": "Who won the Benjamin Franklin Medal for Computer and Cognitive Science in 2002?",
+    "url": "",
+    "answer": "Lucy Suchman",
+    "answers": [
+      "Lucy Suchman"
+    ],
+    "sources": [
+      "https://publish.illinois.edu/prairiefutures/files/2017/02/Suchman-poster-28final29.pdf",
+      "https://fi.edu/en/awards/laureates/lucy-suchman",
+      "https://en.wikipedia.org/wiki/Franklin_Institute_Awards",
+      "https://www.sciencedirect.com/science/article/abs/pii/S0016003203000462"
+    ],
+    "upstream_row": 989,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3404",
+    "family": "external-Person",
+    "query": "What is the surname of the U.S. President who attended the 66th birthday of Kenneth Stanley \"Boots\" Adams, former president of Phillips Petroleum Company?",
+    "url": "",
+    "answer": "Eisenhower",
+    "answers": [
+      "Eisenhower"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Boots_Adams",
+      "https://archive.ph/20140726204034/http://examiner-enterprise.com/sections/opinion/columnists/lost-bartlesville-day-president-came-town-and-love-lifetime%E2%80%A6.html",
+      "https://books.google.co.in/books?id=w7vUH72TB2IC&pg=PA495&redir_esc=y"
+    ],
+    "upstream_row": 779,
+    "upstream_topic": "Politics",
+    "multi_step": "True"
+  },
+  {
+    "id": "simpleqa-728",
+    "family": "external-Place",
+    "query": "For which garden was the \"Neptune and Triton\" sculpture carved?",
+    "url": "",
+    "answer": "Garden of the Villa Montalto",
+    "answers": [
+      "Garden of the Villa Montalto"
+    ],
+    "sources": [
+      "https://www.vam.ac.uk/articles/neptune-and-triton-by-gian-lorenzo-bernini",
+      "https://en.wikipedia.org/wiki/Neptune_and_Triton",
+      "https://collections.vam.ac.uk/item/O17204/neptune-and-triton-figure-group-bernini-gian-lorenzo/"
+    ],
+    "upstream_row": 162,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2710",
+    "family": "external-Person",
+    "query": "What relation is David W. Duclon to Cherie Johnson?",
+    "url": "",
+    "answer": "Maternal uncle.",
+    "answers": [
+      "Maternal uncle."
+    ],
+    "sources": [
+      "https://therealcherie.com/pages/about-cherie",
+      "https://en.wikipedia.org/wiki/Cherie_Johnson",
+      "https://upscalemagazine.com/family-matters-cherie-johnson-is-doing-what-now/"
+    ],
+    "upstream_row": 617,
+    "upstream_topic": "TV shows",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1870",
+    "family": "external-Date",
+    "query": "In which year was the stool \"Nkosuostool\" (Development stool) created by Asantehene, Otumfuo Opoku Ware II?",
+    "url": "",
+    "answer": "1985",
+    "answers": [
+      "1985",
+      "1,985"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Opoku_Ware_II",
+      "https://myinfo.com.gh/2022/07/statues-of-ghana-the-asantehene-who-maintained-a-good-relationship-between-acheampong-rawlings/"
+    ],
+    "upstream_row": 429,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1174",
+    "family": "external-Number",
+    "query": "How many photographs comprise Isa Genzken's Der Spiegel?",
+    "url": "",
+    "answer": "121 (acceptable range: anything between 119 and 123)",
+    "answers": [
+      "121 (acceptable range: anything between 119 and 123)"
+    ],
+    "sources": [
+      "https://fashionpluslifestyle.wordpress.com/2013/10/15/isa-genzken-retrospective-at-the-museum-of-modern-art/",
+      "https://en.wikipedia.org/wiki/Isa_Genzken",
+      "https://thephotographersgallery.org.uk/whats-on/isa-genzken-der-spiegel"
+    ],
+    "upstream_row": 268,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-4149",
+    "family": "external-Other",
+    "query": "What opera did Walt Whitman and Peter Doyle travel to New York to see in May of 1870?",
+    "url": "",
+    "answer": "Poliuto",
+    "answers": [
+      "Poliuto"
+    ],
+    "sources": [
+      "https://whitman-prod.unl.edu/criticism/current/anc.00155.html",
+      "https://en.wikipedia.org/wiki/Peter_Doyle_(transit_worker)",
+      "https://whitmanarchive.org/item/anc.00155"
+    ],
+    "upstream_row": 954,
+    "upstream_topic": "Music",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3193",
+    "family": "external-Other",
+    "query": "According to the 2011 census of India, after Hindi, which is the second fastest growing language of India, followed by Meitei (Manipuri) in third place and Bengali in fourth place?",
+    "url": "",
+    "answer": "Kashmiri",
+    "answers": [
+      "Kashmiri"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Kashmiri_language",
+      "https://www.jagranjosh.com/general-knowledge/list-of-fastest-growing-languages-in-india-other-than-hindi-1708433736-1",
+      "https://en.wikipedia.org/wiki/Languages_of_India",
+      "https://commons.wikimedia.org/wiki/File:Fastest_growing_languages_of_India_%E2%80%94_Hindi_(first)"
+    ],
+    "upstream_row": 725,
+    "upstream_topic": "Geography",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1108",
+    "family": "external-Other",
+    "query": "What was Granat, an X- and gamma-ray astronomical observatory studying high-energy emissions from galactic and extragalactic sources, originally called?",
+    "url": "",
+    "answer": "Astron 2",
+    "answers": [
+      "Astron 2"
+    ],
+    "sources": [
+      "http://astro.vaporia.com/start/granat.html",
+      "https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1989-096A",
+      "https://en.wikipedia.org/wiki/Granat"
+    ],
+    "upstream_row": 252,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1641",
+    "family": "external-Person",
+    "query": "Who holds the record for the fastest marathon dressed as an elf (male), with a time of 2 hours, 58 minutes, and 16 seconds, achieved at the 2017 Virgin Money London Marathon in London, UK, on April 23, 2017?",
+    "url": "",
+    "answer": "Ashley Payne",
+    "answers": [
+      "Ashley Payne"
+    ],
+    "sources": [
+      "https://www.guinnessworldrecords.com/world-records/372384-fastest-marathon-dressed-as-an-elf-male",
+      "https://www.vercalendario.info/en/what/guinness-records-for-fastest_marathon_dressed_as_an_elf_male.html"
+    ],
+    "upstream_row": 364,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3228",
+    "family": "external-Person",
+    "query": "What are the first name and surname of the woman who was voted 17th in the Top 100 Great South Africans in 2004?",
+    "url": "",
+    "answer": "Brenda Fassie",
+    "answers": [
+      "Brenda Fassie"
+    ],
+    "sources": [
+      "https://www.funtimesmagazine.com/2020/12/16/339275/the-queen-of-african-pop-brenda-fassie",
+      "https://en.wikipedia.org/wiki/Brenda_Fassie",
+      "https://www.geni.com/projects/Great-South-Africans-Top-100-2004/50874"
+    ],
+    "upstream_row": 735,
+    "upstream_topic": "Music",
+    "multi_step": "True"
+  },
+  {
+    "id": "simpleqa-2563",
+    "family": "external-Other",
+    "query": "What was the name of the gallery at Blenheim Palace that was destroyed by fire in 1861?",
+    "url": "",
+    "answer": "Titian Gallery",
+    "answers": [
+      "Titian Gallery"
+    ],
+    "sources": [
+      "https://ia801600.us.archive.org/24/items/cu31924015423340/cu31924015423340.pdf",
+      "https://www.diomedia.com/stock-photo-fire-at-blenheim-palace---destruction-of-the-titian-gallery-image18080130.html",
+      "https://books.google.ca/books/about/Etched_reminiscences_of_the_original_pai.html?id=M_gGAAAAQAAJ&redir_esc=y",
+      "https://www.npg.org.uk/collections/research/programmes/early-history-of-mezzotint/john-smith-mezzotint-printmaker-biography.php"
+    ],
+    "upstream_row": 578,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2668",
+    "family": "external-Other",
+    "query": "What did Norman Rockwell name his first assignment for \"Look\" magazine?",
+    "url": "",
+    "answer": "The Problem We All Live With",
+    "answers": [
+      "The Problem We All Live With"
+    ],
+    "sources": [
+      "https://prints.nrm.org/detail/274852/rockwell-the-problem-we-all-live-with-1964",
+      "https://www.hydecollection.org/blog/2016/norman-rockwell-1960s-thursday-jan-7-2016/",
+      "https://speeches.byu.edu/talks/robert-barrett/illuminated-stories/"
+    ],
+    "upstream_row": 607,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-23",
+    "family": "external-Other",
+    "query": "On which U.S. TV station did the Canadian reality series *To Serve and Protect* debut?",
+    "url": "",
+    "answer": "KVOS-TV",
+    "answers": [
+      "KVOS-TV"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/To_Serve_and_Protect",
+      "https://play.google.com/store/tv/show/To_Serve_and_Protect?id=2D702407ED20EE6ASH&hl=ur&gl=US&pli=1",
+      "https://en.wikipedia.org/wiki/KVOS-TV"
+    ],
+    "upstream_row": 6,
+    "upstream_topic": "TV shows",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1869",
+    "family": "external-Number",
+    "query": "What is the horsepower of the Pratt & Whitney R-1340-30 Wasp?",
+    "url": "",
+    "answer": "550 hp (acceptable range: anything between 544 and 556 hp)",
+    "answers": [
+      "550 hp (acceptable range: anything between 544 and 556 hp)"
+    ],
+    "sources": [
+      "http://powerplants.warbirdsresourcegroup.org/unitedstates_powerplants_P-W_R-1340_Wasp.html",
+      "https://en.wikipedia.org/wiki/Pratt_%26_Whitney_R-1340_Wasp"
+    ],
+    "upstream_row": 428,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-517",
+    "family": "external-Other",
+    "query": "Which medal in the 1932 Summer Olympics art competition did Frederick William MacMonnies receive?",
+    "url": "",
+    "answer": "Silver",
+    "answers": [
+      "Silver"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Frederick_William_MacMonnies",
+      "https://www.olympedia.org/athletes/921564",
+      "https://www.sport-olympic.gr/sp/index.php/olympic-games/modern-olympic-games/summer-olympic-games/1932-los-angeles-summer-olympics/1649-1932-summer-olympics-the-results-art-competitions",
+      "https://olympics.com/en/athletes/frederick-william-macmonnies"
+    ],
+    "upstream_row": 120,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3422",
+    "family": "external-Place",
+    "query": "In which Nebraska city was painter Kathleen Gemberling Adkison born in 1917?",
+    "url": "",
+    "answer": "Beatrice",
+    "answers": [
+      "Beatrice"
+    ],
+    "sources": [
+      "https://www.northwestmuseum.org/exhibitions/online-exhibitions/northwest-art-collection-works-on-paper/northwest-modernists/kathleen-gemberling-adkison/",
+      "https://www.annexgalleries.com/artists/biography/3830/Adkinson/Kathleen",
+      "https://en.wikipedia.org/wiki/Kathleen_Gemberling_Adkison"
+    ],
+    "upstream_row": 783,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-813",
+    "family": "external-Other",
+    "query": "What two other events did Phanas of Pellene manage to win in the Olympics of 512 BCE, besides the race in armor, also known as the hoplitodromos?",
+    "url": "",
+    "answer": "The stadion, and the double race (Diaulos).",
+    "answers": [
+      "The stadion, and the double race (Diaulos)."
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Phanas_of_Pellene",
+      "https://www.worldhistory.org/Olympic_Games/"
+    ],
+    "upstream_row": 180,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3959",
+    "family": "external-Number",
+    "query": "What is the boiling point of the element cerium in Fahrenheit?",
+    "url": "",
+    "answer": "6229 °F (acceptable range: anything between 6166 and 6292 °F)",
+    "answers": [
+      "6229 °F (acceptable range: anything between 6166 and 6292 °F)"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Cerium",
+      "https://www.rsc.org/periodic-table/element/58/cerium",
+      "https://www.britannica.com/science/cerium"
+    ],
+    "upstream_row": 916,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-386",
+    "family": "external-Other",
+    "query": "Which digits of the forefeet are vestigial and tiny on the Isoodon obesulus?",
+    "url": "",
+    "answer": "the first digits",
+    "answers": [
+      "the first digits"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Southern_brown_bandicoot",
+      "https://carnivora.net/southern-brown-bandicoot-isoodon-obesulus-t1968.html",
+      "https://www.youtube.com/watch?v=-cLtuk22hoE"
+    ],
+    "upstream_row": 92,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1335",
+    "family": "external-Other",
+    "query": "What is the second song on Side Two of the album Rewind by Johnny Rivers?",
+    "url": "",
+    "answer": "\"For Emily, Whenever I May Find Her\"",
+    "answers": [
+      "\"For Emily, Whenever I May Find Her\""
+    ],
+    "sources": [
+      "https://www.discogs.com/release/13199258-Johnny-Rivers-Rewind",
+      "https://en.wikipedia.org/wiki/Rewind_(Johnny_Rivers_album)",
+      "https://rateyourmusic.com/release/album/johnny_rivers/rewind/"
+    ],
+    "upstream_row": 306,
+    "upstream_topic": "Music",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3255",
+    "family": "external-Number",
+    "query": "Which version of Mozilla Firefox was released with this patch note: \"Smooth pinch-zooming using a touchpad is now supported on Linux\"?",
+    "url": "",
+    "answer": "88",
+    "answers": [
+      "88"
+    ],
+    "sources": [
+      "https://www.reddit.com/r/firefox/comments/mu0iy7/firefox_880_see_all_new_features_updates_and_fixes/",
+      "https://www.mozilla.org/en-US/firefox/88.0/releasenotes/",
+      "https://gitlab.gnome.org/GNOME/eog/-/issues/191"
+    ],
+    "upstream_row": 743,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-4021",
+    "family": "external-Date",
+    "query": "In what date, month, and year did Ronald Reagan nominate Jean Galloway Bissell, the U.S. circuit judge, to a new seat?",
+    "url": "",
+    "answer": "24 May 1984",
+    "answers": [
+      "24 May 1984",
+      "1984-05-24"
+    ],
+    "sources": [
+      "https://www.congress.gov/nomination/98th-congress/907",
+      "https://en.wikipedia.org/wiki/List_of_federal_judges_appointed_by_Ronald_Reagan",
+      "https://wikiroulette.co/?p=Adam_Hayden",
+      "https://en.wikipedia.org/wiki/Jean_Galloway_Bissell"
+    ],
+    "upstream_row": 928,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-83",
+    "family": "external-Number",
+    "query": "According to Henry Scadding, author of \"Toronto of Old,\" how many people died on the HMS Ontario in 1780?",
+    "url": "",
+    "answer": "172 (acceptable range: anything between 170 and 174)",
+    "answers": [
+      "172 (acceptable range: anything between 170 and 174)"
+    ],
+    "sources": [
+      "https://archive.org/details/historyoftoronto01mulvuoft/page/217/mode/1up",
+      "https://www.gutenberg.ca/ebooks/scadding-torontoofold/scadding-torontoofold-00-h-dir/scadding-torontoofold-00-h.html"
+    ],
+    "upstream_row": 27,
+    "upstream_topic": "History",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2623",
+    "family": "external-Person",
+    "query": "Which two architects built the Pizzurno Palace?",
+    "url": "",
+    "answer": "Carlos Adolfo Altgelt and Hans Altgelt",
+    "answers": [
+      "Carlos Adolfo Altgelt and Hans Altgelt"
+    ],
+    "sources": [
+      "https://hive.blog/hive-178708/@dimascastillo90/sarmiento-palace-pizzurno-palace-engesp",
+      "https://en.wikipedia.org/wiki/Pizzurno_Palace"
+    ],
+    "upstream_row": 593,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3681",
+    "family": "external-Other",
+    "query": "What is the name of the primary performance by Marina Abramović and Uwe Laysiepen that was re-enacted in 2010?",
+    "url": "",
+    "answer": "Imponderabilia",
+    "answers": [
+      "Imponderabilia"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ulay",
+      "https://en.wikipedia.org/wiki/Marina_Abramovi%C4%87",
+      "https://www.moma.org/audio/playlist/243/3119"
+    ],
+    "upstream_row": 858,
+    "upstream_topic": "Art",
+    "multi_step": "True"
+  },
+  {
+    "id": "simpleqa-13",
+    "family": "external-Date",
+    "query": "In which year did Melbourne's Monash Gallery of Art (MGA) rebrand and become the Museum of Australian Photography (MAPh)?",
+    "url": "",
+    "answer": "2023",
+    "answers": [
+      "2023",
+      "2,023"
+    ],
+    "sources": [
+      "https://www.monash.vic.gov.au/About-Us/News/Monash-Gallery-of-Art-rebrands-as-MAPh-Museum-of-Australian-Photography",
+      "https://www.australianphotography.com/news/monash-gallery-of-art-to-rebrand-as-museum-of-australian-photography",
+      "https://maph.org.au/about/"
+    ],
+    "upstream_row": 3,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2966",
+    "family": "external-Person",
+    "query": "With which scientist did Vincent Joseph Schaefer issue the U.S. patent for the \"Electrical Indicator of Mechanical Expansion\" in 1947?",
+    "url": "",
+    "answer": "Katharine B. Blodgett",
+    "answers": [
+      "Katharine B. Blodgett"
+    ],
+    "sources": [
+      "http://www.lamptech.co.uk/Documents/People%20-%20Blodgett%20KB.htm",
+      "https://en.wikipedia.org/wiki/Vincent_Schaefer",
+      "https://patents.google.com/patent/US2589983",
+      "https://encyclopedia.pub/entry/35183"
+    ],
+    "upstream_row": 674,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-706",
+    "family": "external-Place",
+    "query": "From what university did Bill Brown (professor at the University of Chicago and critical theorist) receive his B.A.?",
+    "url": "",
+    "answer": "Duke University",
+    "answers": [
+      "Duke University"
+    ],
+    "sources": [
+      "https://magazine.uchicago.edu/9906/CollegeReport/interview.htm",
+      "https://en.wikipedia.org/wiki/Bill_Brown_(critical_theory)"
+    ],
+    "upstream_row": 157,
+    "upstream_topic": "Other",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-4194",
+    "family": "external-Number",
+    "query": "At the 2006 National Census, what was the population of Sonqorabad, Alborz, in 337 households?",
+    "url": "",
+    "answer": "1376 (acceptable range: anything between 1362 and 1390)",
+    "answers": [
+      "1376 (acceptable range: anything between 1362 and 1390)"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sonqorabad",
+      "https://www.wikidata.org/wiki/Q5828162",
+      "https://datacommons.iitm.ac.in/place/wikidataId/Q5828162"
+    ],
+    "upstream_row": 967,
+    "upstream_topic": "Geography",
+    "multi_step": "True"
+  },
+  {
+    "id": "simpleqa-716",
+    "family": "external-Other",
+    "query": "What neologism, which gained widespread use in the 21st century, identifies the date on which the day and night are exactly the same?",
+    "url": "",
+    "answer": "equilux",
+    "answers": [
+      "equilux"
+    ],
+    "sources": [
+      "https://dictionary.cambridge.org/us/dictionary/english/equilux",
+      "https://www.metoffice.gov.uk/weather/learn-about/weather/seasons/equinox-and-solstice",
+      "https://en.wikipedia.org/wiki/Equinox"
+    ],
+    "upstream_row": 160,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2409",
+    "family": "external-Place",
+    "query": "In which U.S. state was painter Davyd Whaley born?",
+    "url": "",
+    "answer": "Tennessee",
+    "answers": [
+      "Tennessee"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Davyd_Whaley",
+      "https://artsmeme.com/2016/07/10/whaley-foundation-grants-to-support-los-angeles-visual-artists/",
+      "https://www.prweb.com/releases/remembering_the_life_of_los_angeles_artist_davyd_whaley/prweb12259930.htm"
+    ],
+    "upstream_row": 541,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2174",
+    "family": "external-Place",
+    "query": "At what baseball field did the Bluff City Bombers of the Central Illinois Collegiate League play their home games from 1998 to 2004?",
+    "url": "",
+    "answer": "Lloyd Hopkins Field",
+    "answers": [
+      "Lloyd Hopkins Field"
+    ],
+    "sources": [
+      "https://www.altonbaseball.com/custom_pages/98260/lloyd-hopkins-field",
+      "https://en.wikipedia.org/wiki/Lloyd_Hopkins_Field"
+    ],
+    "upstream_row": 493,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2960",
+    "family": "external-Other",
+    "query": "Which team won the 2016–17 Championnat LNA season (86th season of the top-tier basketball league in Switzerland)?",
+    "url": "",
+    "answer": "Monthey",
+    "answers": [
+      "Monthey"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/2016%E2%80%9317_Championnat_LNA_season",
+      "https://atozwiki.com/2016%E2%80%9317_Championnat_LNA_season"
+    ],
+    "upstream_row": 673,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2666",
+    "family": "external-Person",
+    "query": "The Community Hall (23 Grenville Street), purchased in 1935 by a group of residents in Burritts Rapids, Ontario, was built as a general store by a man named what?",
+    "url": "",
+    "answer": "John Strahan French",
+    "answers": [
+      "John Strahan French"
+    ],
+    "sources": [
+      "https://www.northgrenville.ca/component/mtree/walking-tours/burritts-rapids",
+      "https://rideautwphistory.org/wp-content/uploads/2022/08/2022-08-09-BR-Walking-Tour-small.pdf",
+      "https://www.northgrenville.ca/things-to-do/history-heritage/historical-walking-tours/burritts-rapids",
+      "https://www.rideau-info.com/canal/history/burritts-tour/index.html"
+    ],
+    "upstream_row": 606,
+    "upstream_topic": "History",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-4120",
+    "family": "external-Other",
+    "query": "What was the title of the thesis of the Indian mathematician Amalendu Krishna?",
+    "url": "",
+    "answer": "Zero Cycles and K-theory on normal surfaces",
+    "answers": [
+      "Zero Cycles and K-theory on normal surfaces"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Amalendu_Krishna",
+      "https://annals.math.princeton.edu/2002/156-1/p05",
+      "https://www.jstor.org/stable/3597187"
+    ],
+    "upstream_row": 948,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1149",
+    "family": "external-Person",
+    "query": "Which architect designed the old post office at the corner of Jacques-Cartier and Saint-Jacques streets in Saint-Jean-sur-Richelieu, which was completed in 1909?",
+    "url": "",
+    "answer": "J. E. H. Benoît",
+    "answers": [
+      "J. E. H. Benoît"
+    ],
+    "sources": [
+      "https://www.patrimoine-culturel.gouv.qc.ca/rpcq/detail.do?methode=consulter&id=172110&type=bien",
+      "https://www.allnumis.com/postcards-catalog/canada/p-quebec-monteregie/st-jean-sur-richelieu-old-post-office-18634"
+    ],
+    "upstream_row": 264,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2939",
+    "family": "external-Number",
+    "query": "What place did the album \"I Am... Sasha Fierce\" by Beyoncé place in the year-end 2010 Australian Albums (ARIA) charts?",
+    "url": "",
+    "answer": "61",
+    "answers": [
+      "61"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/I_Am..._Sasha_Fierce",
+      "https://webarchive.nla.gov.au/awa/20110127031819/http://pandora.nla.gov.au/pan/23790/20110121-0000/EOY2010.pdf"
+    ],
+    "upstream_row": 669,
+    "upstream_topic": "Music",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-970",
+    "family": "external-Number",
+    "query": "What was the magnitude of the solar eclipse that occurred on June 21, 2001?",
+    "url": "",
+    "answer": "1.0495 (acceptable range: anything between 1.04 and 1.06)",
+    "answers": [
+      "1.0495 (acceptable range: anything between 1.04 and 1.06)"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Solar_eclipse_of_June_21",
+      "https://www.astron-soc.in/bulletin/asics_vol010/137-prabhakar.pdf",
+      "https://eclipse.gsfc.nasa.gov/SEpubs/20010621/TP209484.pdf"
+    ],
+    "upstream_row": 214,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2686",
+    "family": "external-Number",
+    "query": "How many new subclasses were introduced in Tasha's Cauldron of Everything (not including reprints from previous books)?",
+    "url": "",
+    "answer": "22",
+    "answers": [
+      "22"
+    ],
+    "sources": [
+      "https://dmdon.wordpress.com/2020/08/26/tashas-cauldron-of-everything/",
+      "http://deborahzcass.org/index-764.html",
+      "https://screenrant.com/dungeons-dragons-new-subclass-returning-tasha-cauldron-everything/"
+    ],
+    "upstream_row": 612,
+    "upstream_topic": "Video games",
+    "multi_step": "True"
+  },
+  {
+    "id": "simpleqa-1731",
+    "family": "external-Place",
+    "query": "In which district is the Draj Bridge located?",
+    "url": "",
+    "answer": "Rajouri",
+    "answers": [
+      "Rajouri"
+    ],
+    "sources": [
+      "https://www.tnpscthervupettagam.com/currentaffairs-detail/draj-bridge-in-rajouri-jandk?cat=state",
+      "https://www.newindianexpress.com/nation/2019/Dec/09/jks-rajouri-gets-important-draj-bridge-for-all-weather-connectivity-2073754.html",
+      "https://www.projectstoday.com/News/Draj-bridge-inaugurated-in-Jammu--Kashmir",
+      "https://www.gktoday.in/question/draj-bridge-has-been-recently-opened-for-its-opera"
+    ],
+    "upstream_row": 383,
+    "upstream_topic": "Geography",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2592",
+    "family": "external-Number",
+    "query": "How many lamps did the original Cape Hatteras Lighthouse contain?",
+    "url": "",
+    "answer": "18",
+    "answers": [
+      "18"
+    ],
+    "sources": [
+      "https://www.keesouterbanks.com/4-facts-you-should-know-about-cape-hatteras-lighthouse",
+      "https://en.wikipedia.org/wiki/Cape_Hatteras_Lighthouse",
+      "https://www.lighthousefriends.com/light.asp?ID=356"
+    ],
+    "upstream_row": 587,
+    "upstream_topic": "Geography",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2817",
+    "family": "external-Place",
+    "query": "Which hotel was awarded World's Leading Adventure Hotel 2022?",
+    "url": "",
+    "answer": "Pikaia Lodge",
+    "answers": [
+      "Pikaia Lodge"
+    ],
+    "sources": [
+      "https://pikaialodge.com/",
+      "https://www.pikaialodge.com/awards.php",
+      "https://www.worldtravelawards.com/profile-31715-pikaia-lodge",
+      "https://www.worldtravelawards.com/award-worlds-leading-adventure-hotel-2022"
+    ],
+    "upstream_row": 640,
+    "upstream_topic": "Other",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3968",
+    "family": "external-Place",
+    "query": "In what city and country was the 2003 Badminton Asia Championships held?",
+    "url": "",
+    "answer": "Jakarta, Indonesia",
+    "answers": [
+      "Jakarta, Indonesia"
+    ],
+    "sources": [
+      "https://memim.com/2003-asian-badminton-championships.html",
+      "https://en.wikipedia.org/wiki/2003_Asian_Badminton_Championships",
+      "https://en.wikipedia.org/wiki/Badminton_Asia_Championships"
+    ],
+    "upstream_row": 919,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1049",
+    "family": "external-Date",
+    "query": "What day, month, and year did the original ActRaiser soundtrack come out in Japan?",
+    "url": "",
+    "answer": "January 25, 1991",
+    "answers": [
+      "January 25, 1991",
+      "1991-01-25"
+    ],
+    "sources": [
+      "https://vgmdb.net/album/120",
+      "https://en.wikipedia.org/wiki/ActRaiser"
+    ],
+    "upstream_row": 233,
+    "upstream_topic": "Music",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3005",
+    "family": "external-Person",
+    "query": "What is Donnie McClurkin's son's name?",
+    "url": "",
+    "answer": "Matthew McClurkin",
+    "answers": [
+      "Matthew McClurkin"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Donnie_McClurkin",
+      "https://answersafrica.com/who-is-matthew-mcclurkin-donnie-mcclurkins-son.html"
+    ],
+    "upstream_row": 683,
+    "upstream_topic": "Music",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-834",
+    "family": "external-Other",
+    "query": "What was Darnell's occupation before he was a mechanic in the series \"Girlfriends\"?",
+    "url": "",
+    "answer": "airport baggage handler",
+    "answers": [
+      "airport baggage handler"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Girlfriends_(American_TV_series)",
+      "https://www.distractify.com/p/why-did-flex-leave-girlfriends"
+    ],
+    "upstream_row": 183,
+    "upstream_topic": "TV shows",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-79",
+    "family": "external-Person",
+    "query": "Who replaced Bradie Tennell in the 2021 Skate America?",
+    "url": "",
+    "answer": "Starr Andrews",
+    "answers": [
+      "Starr Andrews"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Starr_Andrews",
+      "https://www.usfigureskating.org/news/press-release/starr-andrews-added-2021-guaranteed-rate-skate-america"
+    ],
+    "upstream_row": 25,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1757",
+    "family": "external-Place",
+    "query": "What body of water located near the Blue Ridge Parkway is known as \"the River of Many Cliffs\" by the Cherokee?",
+    "url": "",
+    "answer": "Linville River",
+    "answers": [
+      "Linville River"
+    ],
+    "sources": [
+      "https://www.climbing.com/places/the-daddy/",
+      "https://hikinginthesmokys.com/linville-gorge-wilderness-area/",
+      "https://en.wikipedia.org/wiki/Linville_Gorge_Wilderness",
+      "https://www.nps.gov/blri/planyourvisit/linville-falls-mp-316.htm"
+    ],
+    "upstream_row": 397,
+    "upstream_topic": "Geography",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2447",
+    "family": "external-Person",
+    "query": "What is the name of the man who became the third Black man to serve as a Portland city commissioner in Oregon?",
+    "url": "",
+    "answer": "Mingus Ulysses Mapps",
+    "answers": [
+      "Mingus Ulysses Mapps"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chloe_Eudaly",
+      "https://www.kgw.com/article/entertainment/television/programs/straight-talk/straight-talk-portland-oregon-mingus-mapps-city-council/283-c294f104-d0fb-4ab2-a2f8-3503b849366f",
+      "https://www.opb.org/article/2021/12/16/mingus-mapps-denies-ties-people-for-portland/",
+      "https://en.wikipedia.org/wiki/Mingus_Mapps"
+    ],
+    "upstream_row": 550,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3092",
+    "family": "external-Place",
+    "query": "In what church was the organ installed in 2000 at St. John's Church, Gateshead Fell, previously located?",
+    "url": "",
+    "answer": "St Aidan's Church, Blackhill, Consett",
+    "answers": [
+      "St Aidan's Church, Blackhill, Consett"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/St_John%27s_Church",
+      "https://www.geocaching.com/geocache/GC7PCWM",
+      "https://www.harrisonorgans.com/wp-content/uploads/2019/04/Catalogue-of-HH-Organs-2019.pdf"
+    ],
+    "upstream_row": 704,
+    "upstream_topic": "Music",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3750",
+    "family": "external-Number",
+    "query": "How many people won the Arab Creativity Oscar before Mishary Alafasy?",
+    "url": "",
+    "answer": "0",
+    "answers": [
+      "0"
+    ],
+    "sources": [
+      "https://www.tuko.co.ke/facts-lifehacks/celebrity-biographies/503354-who-mishary-rashid-alafasy-wife-children-mosque/",
+      "https://en.wikipedia.org/wiki/Mishari_bin_Rashid_Alafasy",
+      "https://thecognate.com/shaikh-mishary-bin-rashid-alafasy/"
+    ],
+    "upstream_row": 876,
+    "upstream_topic": "Music",
+    "multi_step": "True"
+  },
+  {
+    "id": "simpleqa-2892",
+    "family": "external-Date",
+    "query": "In what year was Phillip Paul Bliss, famous Christian songwriter, appointed as a teacher in the Rome, Pennsylvania Academy?",
+    "url": "",
+    "answer": "1858",
+    "answers": [
+      "1858",
+      "1,858"
+    ],
+    "sources": [
+      "https://www.hymnologyarchive.com/philip-p-bliss",
+      "https://www.wholesomewords.org/biography/biobliss.html",
+      "https://en.wikipedia.org/wiki/Philip_Bliss"
+    ],
+    "upstream_row": 658,
+    "upstream_topic": "Music",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-952",
+    "family": "external-Date",
+    "query": "Which year did Emmanuel Radnitzky, an American visual artist, enroll in the Ferrer School?",
+    "url": "",
+    "answer": "1912",
+    "answers": [
+      "1912",
+      "1,912"
+    ],
+    "sources": [
+      "https://manray.weebly.com/",
+      "https://en.wikipedia.org/wiki/Man_Ray",
+      "https://www.theartstory.org/artist/ray-man/"
+    ],
+    "upstream_row": 210,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2283",
+    "family": "external-Number",
+    "query": "For how many years did Mohamed Abdelaziz Djaït serve as the Mufti of the Republic of Tunisia?",
+    "url": "",
+    "answer": "3",
+    "answers": [
+      "3"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mohamed_Abdelaziz_Dja%C3%AFt",
+      "https://commons.wikimedia.org/wiki/Category:Mohamed_Abdelaziz_Djait"
+    ],
+    "upstream_row": 517,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1626",
+    "family": "external-Place",
+    "query": "Which high school did the former Archbishop of Cape Town, Njongonkulu Winston Hugh Ndungane, attend when he completed his schooling in December 1958?",
+    "url": "",
+    "answer": "Lovedale High School",
+    "answers": [
+      "Lovedale High School"
+    ],
+    "sources": [
+      "https://historicschools.org.za/view.asp?ItemID=2&tname=tblComponent3&oname=People&pg=front&subm=About",
+      "https://en.wikipedia.org/wiki/Njongonkulu_Ndungane",
+      "https://www.thepresidency.gov.za/winston-njongonkulu-ndungane-1941"
+    ],
+    "upstream_row": 359,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-240",
+    "family": "external-Place",
+    "query": "Which peninsular plateau of India extends 900 km, with many peaks rising above 1,000 m?",
+    "url": "",
+    "answer": "Satpura Range",
+    "answers": [
+      "Satpura Range"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Geography_of_India",
+      "http://indiansaga.com/others/index1.html",
+      "https://dlab.epfl.ch/wikispeedia/wpcd/wp/g/Geography_of_India.htm"
+    ],
+    "upstream_row": 56,
+    "upstream_topic": "Geography",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2341",
+    "family": "external-Other",
+    "query": "What is the state highway road number of the Kancheepuram-Thiruvathipuram Road under the Cheyyar division of Tamil Nadu, India?",
+    "url": "",
+    "answer": "SH 5A",
+    "answers": [
+      "SH 5A"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/List_of_state_highways_in_Tamil_Nadu",
+      "https://en.wikipedia.org/wiki/Cheyyar_Division_(Highways)",
+      "https://wiki.openstreetmap.org/wiki/Tamil_Nadu-MDR"
+    ],
+    "upstream_row": 528,
+    "upstream_topic": "Geography",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2534",
+    "family": "external-Date",
+    "query": "For which years did the Kenyan politician Amason Kingi Jeffah serve as Minister for Fisheries Development?",
+    "url": "",
+    "answer": "2010-2013",
+    "answers": [
+      "2010-2013"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Amason_Kingi",
+      "https://www.kenyans.co.ke/news/79358-amason-kingi-little-known-lawyer-ruto-pointman",
+      "https://www.pulselive.co.ke/news/counties-amason-jeffah-kingi-profile/d1zjt9z"
+    ],
+    "upstream_row": 569,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-97",
+    "family": "external-Date",
+    "query": "What day, month, and year was Notepad++ version 7.8.8 released?",
+    "url": "",
+    "answer": "June 28, 2020",
+    "answers": [
+      "June 28, 2020",
+      "2020-06-28"
+    ],
+    "sources": [
+      "https://notepad-plus-plus.org/news/v788-released/",
+      "https://notepad-plus-plus.org/downloads/v7.8.8/",
+      "https://github.com/notepad-plus-plus/notepad-plus-plus/wiki/Changes"
+    ],
+    "upstream_row": 29,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3424",
+    "family": "external-Place",
+    "query": "What is the name of the city where Sangtarashan Cave is located?",
+    "url": "",
+    "answer": "Jahrom",
+    "answers": [
+      "Jahrom"
+    ],
+    "sources": [
+      "https://ouriranphotos.com/en/photo/1212",
+      "https://en.wikipedia.org/wiki/Sangtarashan_cave",
+      "https://www.eavartravel.com/blog/category/shiraz/"
+    ],
+    "upstream_row": 784,
+    "upstream_topic": "Geography",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3442",
+    "family": "external-Date",
+    "query": "In which year did George Bentham change the name of *Hedaroma pinifolium* to *Pimelea pinifolia*?",
+    "url": "",
+    "answer": "1865",
+    "answers": [
+      "1865",
+      "1,865"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Darwinia_pinifolia",
+      "https://biodiversity.org.au/nsl/services/rest/instance/apni/496609"
+    ],
+    "upstream_row": 788,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2622",
+    "family": "external-Person",
+    "query": "Who was the 2018 ACM Eugene L. Lawler Award recipient?",
+    "url": "",
+    "answer": "Meenakshi Balakrishnan",
+    "answers": [
+      "Meenakshi Balakrishnan"
+    ],
+    "sources": [
+      "https://awards.acm.org/award-recipients/balakrishnan_4440475",
+      "https://en.wikipedia.org/wiki/ACM_Eugene_L._Lawler_Award"
+    ],
+    "upstream_row": 592,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1691",
+    "family": "external-Place",
+    "query": "At which art school was Will Hicok Low an instructor in 1890?",
+    "url": "",
+    "answer": "National Academy of Design",
+    "answers": [
+      "National Academy of Design"
+    ],
+    "sources": [
+      "https://www.hellenicaworld.com/Art/Paintings/en/WillHicokLow.html",
+      "https://www.invaluable.com/auction-lot/will-hicok-low-ny-french-1853-1932-oil-painting-a-293-c-1374c919de",
+      "https://en.wikipedia.org/wiki/Will_Hicok_Low"
+    ],
+    "upstream_row": 374,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1872",
+    "family": "external-Date",
+    "query": "What were the date, month, and year when Saddam’s government laid out its combined objections to the Arab League, including that policy moves were costing Iraq $1 billion a year, that Kuwait was still using the Rumaila oil field, and that loans made by the UAE and Kuwait could not be considered debts to its \"Arab brothers\"?",
+    "url": "",
+    "answer": "15 July 1990",
+    "answers": [
+      "15 July 1990",
+      "1990-07-15"
+    ],
+    "sources": [
+      "https://citizen-burger-disorder.fandom.com/wiki/Operation_Desert_Storm",
+      "https://en.wikipedia.org/wiki/Gulf_War",
+      "https://historydraft.com/story/gulf-war/timeline/333"
+    ],
+    "upstream_row": 430,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1740",
+    "family": "external-Person",
+    "query": "Who did Richard Neutra design the Elkay Apartments for?",
+    "url": "",
+    "answer": "Louis Kievman",
+    "answers": [
+      "Louis Kievman"
+    ],
+    "sources": [
+      "https://usmodernist.org/neutra.htm",
+      "https://en.wikipedia.org/wiki/Elkay_Apartments"
+    ],
+    "upstream_row": 389,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2483",
+    "family": "external-Number",
+    "query": "What was the voter participation percentage in the 1971 Federal elections in the Canton of the Grisons, also known as the Canton of Graubünden, in Switzerland?",
+    "url": "",
+    "answer": "56.70% (acceptable range: anything between 56.13% and 57.27%)",
+    "answers": [
+      "56.70% (acceptable range: anything between 56.13% and 57.27%)"
+    ],
+    "sources": [
+      "https://www.atlas.bfs.admin.ch/maps/12/de/1140_1128_1127_242/2810.html",
+      "https://en.wikipedia.org/wiki/Grisons"
+    ],
+    "upstream_row": 557,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  }
+]

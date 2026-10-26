@@ -1,0 +1,3616 @@
+{
+  "scope": "CPU census-reference planning and HTTP binding; authored controls, not accuracy.",
+  "revision": "working-tree",
+  "baseline_source_sha256": {},
+  "diagnostic_sha256": "9ba97979fd19a8b9fb25f9c1ee87cecd63cc70f9b89e35cb9a91c0261ff991e2",
+  "production_sha256": {
+    "app.py": "c0267c0441330bd30559f48d2f33916418992b8e21ec8dd1d09ae4773c23b73b",
+    "agent/__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41",
+    "agent/browser.py": "53ac9a99f3afcefcdb197cd9b2296c2d380910a782178fadb65235e548efc353",
+    "agent/candidates.py": "7ed5862f43246cfb738497553d94b5d6dfcb23f299f281c85a310cb0ca40a2e2",
+    "agent/challenges.py": "b6f51c720f332671725e08127a5d1c163ca0542d2a550bf3c980a6d4c49bf6a1",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/engine.py": "26c95e0e153190fe8335c625ec2bfdfcd4552c8e6598f650f020cac1f8992bb5",
+    "agent/evidence.py": "a298cd93f6a36cb238acf1a406deb9057b059caa2ef1ab9f38aaa438e5274845",
+    "agent/field_groups.py": "52a54989253c59e9836dec4aaec4944b688376e79548b9336887558a454e9162",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/literature.py": "9b871500ab1ebaf88e8fca2c70bd7ade7eb81774412fa85a1f4be7d2fb06263f",
+    "agent/members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "agent/model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+    "agent/model_server.py": "8d326a696942d259697a6fba8586441bbbe4874042ea900c6d7788a2a0e9fd22",
+    "agent/navigation.py": "0f849c0c570720114c45c14b0a5286fe409e5d26c2945fdc9f6c1a6922bb7718",
+    "agent/network.py": "def1be3752f81423c313c2dfa83f6703ee063d7e98652cf0d816b423d0e2d9cb",
+    "agent/normalize.py": "582d9ef7b1ec775e5171c92e1ae96be746fd5d1dcd43ee588fee9a9aa6abc706",
+    "agent/output.py": "b983ab2efe31707b1c974344a32dc4b40b708541257695de89cac9e343b073eb",
+    "agent/oyez.py": "8475f248d78925522e0742b13518be2c4f4db11eae0d8391a8002da7d4e3b67d",
+    "agent/parser.py": "16741c809d33fbe08d5c9a69515decd4f8bc5546ed00afa9a3bb9c55bfb26e7b",
+    "agent/planner.py": "1514fb67d20b061da8116e3086b315fdc5f3d819613330098ab9d948844a4211",
+    "agent/population.py": "c9a2b2c59dc1bc90da68036545605b4c882043b09541687de253bb54e6a5ea75",
+    "agent/processes.py": "677c4372b40d1da0ffc0cf4120ca5b6be2fcf6b6c30f6ec17d0d8fae19e198c1",
+    "agent/proofs.py": "0d7ae78df6ea9949c29f33c7b817dda352c75b3d99c960c3e987e37c7401faab",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/resolvers.py": "312d776118c6c6f0421939df58cf6bcaec8740a7fd341136c17a33f284a03ef2",
+    "agent/search.py": "64ebf971ea4dd0f8a34bc0bdd2d3678f54edab80d6112328fefeede84687ec55",
+    "agent/selector.py": "be7c0fce11c10921d5cd4e3d1072d5a2ca5a62f1c328730384d19b0fecd19566",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/temporal.py": "4738b2215315050e3bee3a56ac04e67705f19285e8490dd1af33a87648ca37b4",
+    "agent/types.py": "1bc24b341d11e9bd0da4a288ba843728f831897cf5222e51f43fa1265b740f30",
+    "agent/urls.py": "6bbf58adf3c55cf3787edf4b6607a7db8eea987f0c02dd6cdfea48f6c38e031f",
+    "agent/worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f"
+  },
+  "passed": 59,
+  "total": 59,
+  "rows": [
+    {
+      "id": "census-1973-0",
+      "passed": true,
+      "query": "In the 1973 census, what was the population of Maple Harbour?",
+      "expected": [
+        "1973",
+        "",
+        false
+      ],
+      "actual": [
+        "1973",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "census-1973-1",
+      "passed": true,
+      "query": "During the 1973 census, what was the population of Maple Harbour?",
+      "expected": [
+        "1973",
+        "",
+        false
+      ],
+      "actual": [
+        "1973",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "census-1973-2",
+      "passed": true,
+      "query": "As of the 1973 Census, what was the population of Maple Harbour?",
+      "expected": [
+        "1973",
+        "",
+        false
+      ],
+      "actual": [
+        "1973",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "census-1973-3",
+      "passed": true,
+      "query": "As of 1973 Census, what was the population of Maple Harbour?",
+      "expected": [
+        "1973",
+        "",
+        false
+      ],
+      "actual": [
+        "1973",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "census-1973-4",
+      "passed": true,
+      "query": "According to the 1973 national census, what was the population of Maple Harbour?",
+      "expected": [
+        "1973",
+        "",
+        false
+      ],
+      "actual": [
+        "1973",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "trailing-1973-0",
+      "passed": true,
+      "query": "What was the population of Maple Harbour in the 1973 census?",
+      "expected": [
+        "1973",
+        "",
+        false
+      ],
+      "actual": [
+        "1973",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "trailing-1973-1",
+      "passed": true,
+      "query": "What was the population of Maple Harbour during the 1973 census?",
+      "expected": [
+        "1973",
+        "",
+        false
+      ],
+      "actual": [
+        "1973",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "trailing-1973-2",
+      "passed": true,
+      "query": "What was the population of Maple Harbour as of the 1973 census?",
+      "expected": [
+        "1973",
+        "",
+        false
+      ],
+      "actual": [
+        "1973",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "trailing-1973-3",
+      "passed": true,
+      "query": "What was the population of Maple Harbour according to the 1973 census?",
+      "expected": [
+        "1973",
+        "",
+        false
+      ],
+      "actual": [
+        "1973",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "generic-cutoff-1973",
+      "passed": true,
+      "query": "As of 1973, what was the population of Maple Harbour?",
+      "expected": [
+        "",
+        "1973-12-31",
+        true
+      ],
+      "actual": [
+        "",
+        "1973-12-31",
+        true
+      ]
+    },
+    {
+      "id": "generic-year-1973",
+      "passed": true,
+      "query": "What was the population of Maple Harbour in 1973?",
+      "expected": [
+        "1973",
+        "",
+        false
+      ],
+      "actual": [
+        "1973",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "census-2004-0",
+      "passed": true,
+      "query": "In the 2004 census, what was the population of Maple Harbour?",
+      "expected": [
+        "2004",
+        "",
+        false
+      ],
+      "actual": [
+        "2004",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "census-2004-1",
+      "passed": true,
+      "query": "During the 2004 census, what was the population of Maple Harbour?",
+      "expected": [
+        "2004",
+        "",
+        false
+      ],
+      "actual": [
+        "2004",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "census-2004-2",
+      "passed": true,
+      "query": "As of the 2004 Census, what was the population of Maple Harbour?",
+      "expected": [
+        "2004",
+        "",
+        false
+      ],
+      "actual": [
+        "2004",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "census-2004-3",
+      "passed": true,
+      "query": "As of 2004 Census, what was the population of Maple Harbour?",
+      "expected": [
+        "2004",
+        "",
+        false
+      ],
+      "actual": [
+        "2004",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "census-2004-4",
+      "passed": true,
+      "query": "According to the 2004 national census, what was the population of Maple Harbour?",
+      "expected": [
+        "2004",
+        "",
+        false
+      ],
+      "actual": [
+        "2004",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "trailing-2004-0",
+      "passed": true,
+      "query": "What was the population of Maple Harbour in the 2004 census?",
+      "expected": [
+        "2004",
+        "",
+        false
+      ],
+      "actual": [
+        "2004",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "trailing-2004-1",
+      "passed": true,
+      "query": "What was the population of Maple Harbour during the 2004 census?",
+      "expected": [
+        "2004",
+        "",
+        false
+      ],
+      "actual": [
+        "2004",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "trailing-2004-2",
+      "passed": true,
+      "query": "What was the population of Maple Harbour as of the 2004 census?",
+      "expected": [
+        "2004",
+        "",
+        false
+      ],
+      "actual": [
+        "2004",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "trailing-2004-3",
+      "passed": true,
+      "query": "What was the population of Maple Harbour according to the 2004 census?",
+      "expected": [
+        "2004",
+        "",
+        false
+      ],
+      "actual": [
+        "2004",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "generic-cutoff-2004",
+      "passed": true,
+      "query": "As of 2004, what was the population of Maple Harbour?",
+      "expected": [
+        "",
+        "2004-12-31",
+        true
+      ],
+      "actual": [
+        "",
+        "2004-12-31",
+        true
+      ]
+    },
+    {
+      "id": "generic-year-2004",
+      "passed": true,
+      "query": "What was the population of Maple Harbour in 2004?",
+      "expected": [
+        "2004",
+        "",
+        false
+      ],
+      "actual": [
+        "2004",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "census-2020-0",
+      "passed": true,
+      "query": "In the 2020 census, what was the population of Maple Harbour?",
+      "expected": [
+        "2020",
+        "",
+        false
+      ],
+      "actual": [
+        "2020",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "census-2020-1",
+      "passed": true,
+      "query": "During the 2020 census, what was the population of Maple Harbour?",
+      "expected": [
+        "2020",
+        "",
+        false
+      ],
+      "actual": [
+        "2020",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "census-2020-2",
+      "passed": true,
+      "query": "As of the 2020 Census, what was the population of Maple Harbour?",
+      "expected": [
+        "2020",
+        "",
+        false
+      ],
+      "actual": [
+        "2020",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "census-2020-3",
+      "passed": true,
+      "query": "As of 2020 Census, what was the population of Maple Harbour?",
+      "expected": [
+        "2020",
+        "",
+        false
+      ],
+      "actual": [
+        "2020",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "census-2020-4",
+      "passed": true,
+      "query": "According to the 2020 national census, what was the population of Maple Harbour?",
+      "expected": [
+        "2020",
+        "",
+        false
+      ],
+      "actual": [
+        "2020",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "trailing-2020-0",
+      "passed": true,
+      "query": "What was the population of Maple Harbour in the 2020 census?",
+      "expected": [
+        "2020",
+        "",
+        false
+      ],
+      "actual": [
+        "2020",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "trailing-2020-1",
+      "passed": true,
+      "query": "What was the population of Maple Harbour during the 2020 census?",
+      "expected": [
+        "2020",
+        "",
+        false
+      ],
+      "actual": [
+        "2020",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "trailing-2020-2",
+      "passed": true,
+      "query": "What was the population of Maple Harbour as of the 2020 census?",
+      "expected": [
+        "2020",
+        "",
+        false
+      ],
+      "actual": [
+        "2020",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "trailing-2020-3",
+      "passed": true,
+      "query": "What was the population of Maple Harbour according to the 2020 census?",
+      "expected": [
+        "2020",
+        "",
+        false
+      ],
+      "actual": [
+        "2020",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "generic-cutoff-2020",
+      "passed": true,
+      "query": "As of 2020, what was the population of Maple Harbour?",
+      "expected": [
+        "",
+        "2020-12-31",
+        true
+      ],
+      "actual": [
+        "",
+        "2020-12-31",
+        true
+      ]
+    },
+    {
+      "id": "generic-year-2020",
+      "passed": true,
+      "query": "What was the population of Maple Harbour in 2020?",
+      "expected": [
+        "2020",
+        "",
+        false
+      ],
+      "actual": [
+        "2020",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "calendar-cutoff",
+      "passed": true,
+      "query": "As of 2020-02-29, what was the population of Maple Harbour?",
+      "expected": [
+        "",
+        "2020-02-29",
+        true
+      ],
+      "actual": [
+        "",
+        "2020-02-29",
+        true
+      ]
+    },
+    {
+      "id": "household-census",
+      "passed": true,
+      "query": "How many households were there in Maple Harbour, as of the 2000 census?",
+      "expected": [
+        "2000",
+        "",
+        false
+      ],
+      "actual": [
+        "2000",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "separate-cutoff",
+      "passed": true,
+      "query": "As of 2020, what was the population according to the 2020 census?",
+      "expected": [
+        "",
+        "2020-12-31",
+        true
+      ],
+      "actual": [
+        "",
+        "2020-12-31",
+        true
+      ]
+    },
+    {
+      "id": "negated-0",
+      "passed": true,
+      "query": "What was the population of Maple Harbour, not in the 2020 census?",
+      "expected": [
+        "",
+        "",
+        false
+      ],
+      "actual": [
+        "",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "negated-1",
+      "passed": true,
+      "query": "What was the population of Maple Harbour, excluding during the 2020 census?",
+      "expected": [
+        "",
+        "",
+        false
+      ],
+      "actual": [
+        "",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "negated-2",
+      "passed": true,
+      "query": "What was the population of Maple Harbour, not as of the 2020 census?",
+      "expected": [
+        "",
+        "",
+        false
+      ],
+      "actual": [
+        "",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "negated-3",
+      "passed": true,
+      "query": "What was the population of Maple Harbour, except according to the 2020 census?",
+      "expected": [
+        "",
+        "",
+        false
+      ],
+      "actual": [
+        "",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "multi-census",
+      "passed": true,
+      "query": "What was the population in the 2004 census or in the 2020 census?",
+      "expected": [
+        "",
+        "",
+        false
+      ],
+      "actual": [
+        "",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "version-not-year",
+      "passed": true,
+      "query": "What was the population in the 2020.2 census?",
+      "expected": [
+        "",
+        "",
+        false
+      ],
+      "actual": [
+        "",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "url-not-constraint",
+      "passed": true,
+      "query": "What was the population? See https://example.org/in-the-2020-census",
+      "expected": [
+        "",
+        "",
+        false
+      ],
+      "actual": [
+        "",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "quoted-title",
+      "passed": true,
+      "query": "What is the title of the book \"In the 2020 census\"?",
+      "expected": [
+        "",
+        "",
+        false
+      ],
+      "actual": [
+        "",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "backtick-title",
+      "passed": true,
+      "query": "What is the title of the book `In the 2020 census`?",
+      "expected": [
+        "",
+        "",
+        false
+      ],
+      "actual": [
+        "",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "quoted-unrelated-year",
+      "passed": true,
+      "query": "What was the population in the 2020 census? Ignore the title \"City of 2004\".",
+      "expected": [
+        "",
+        "",
+        false
+      ],
+      "actual": [
+        "",
+        "",
+        false
+      ]
+    },
+    {
+      "id": "http-stub-0-617",
+      "passed": true,
+      "expected": "617",
+      "actual": "617",
+      "calls": [
+        "/select",
+        "/verify"
+      ],
+      "result": {
+        "answer": "617",
+        "sources": [
+          "http://127.0.0.1:43271/population"
+        ],
+        "confidence": 0.97,
+        "evidence": "Year: 2020 | Town: Maple Harbour | Population: 617",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "In the 2020 census, what was the population of Maple Harbour?",
+            "url": "http://127.0.0.1:43271/population",
+            "kind": "number",
+            "terms": [
+              "2020",
+              "census",
+              "population",
+              "maple",
+              "harbour"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "census",
+              "population",
+              "maple",
+              "harbour"
+            ],
+            "versions": [],
+            "year": "2020",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what was the population ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 0.00015959993470460176
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "617",
+              "answer": "617",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2020 | Town: Maple Harbour | Population: 617",
+              "label": "Population",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 18.2,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "table[1]/row[1]/cell[2]",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 1,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2020",
+                    "Maple Harbour",
+                    "617"
+                  ],
+                  "column": 2
+                },
+                "field_value": "617"
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "617",
+            "answer": "617",
+            "source": "http://127.0.0.1:43271/population",
+            "evidence": "Year: 2020 | Town: Maple Harbour | Population: 617",
+            "label": "Population",
+            "section": "Maple Harbour population in 2004 and 2020",
+            "kind": "number",
+            "score": 18.2,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "table[1]/row[1]/cell[2]",
+              "structure": "cell",
+              "qualifiers": {
+                "table": 1,
+                "row": 1,
+                "columns": [
+                  "Year",
+                  "Town",
+                  "Population"
+                ],
+                "cells": [
+                  "2020",
+                  "Maple Harbour",
+                  "617"
+                ],
+                "column": 2
+              },
+              "field_value": "617"
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:43271/population",
+              "final": "http://127.0.0.1:43271/population",
+              "status": 200,
+              "bytes": 231,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0199
+        }
+      }
+    },
+    {
+      "id": "http-stub-0-361",
+      "passed": true,
+      "expected": "",
+      "actual": "",
+      "calls": [
+        "/select"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_evidence_rejected",
+        "diagnostics": {
+          "plan": {
+            "question": "In the 2020 census, what was the population of Maple Harbour?",
+            "url": "http://127.0.0.1:43271/population",
+            "kind": "number",
+            "terms": [
+              "2020",
+              "census",
+              "population",
+              "maple",
+              "harbour"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "census",
+              "population",
+              "maple",
+              "harbour"
+            ],
+            "versions": [],
+            "year": "2020",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what was the population ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.2299977242946625e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "361",
+              "answer": "361",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2004 | Town: Maple Harbour | Population: 361",
+              "label": "Population",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 14.2,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "table[1]/row[0]/cell[2]",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2004",
+                    "Maple Harbour",
+                    "361"
+                  ],
+                  "column": 2
+                },
+                "field_value": "361"
+              }
+            }
+          ],
+          "reader_state": "evidence_rejected",
+          "top_candidates": [
+            {
+              "raw": "361",
+              "answer": "361",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2004 | Town: Maple Harbour | Population: 361",
+              "label": "Population",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 15.5,
+              "signals": {
+                "locator": "table[1]/row[0]/cell[2]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2004",
+                    "Maple Harbour",
+                    "361"
+                  ],
+                  "column": 2
+                },
+                "field_value": "361",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "617",
+              "answer": "617",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2020 | Town: Maple Harbour | Population: 617",
+              "label": "Population",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 15.5,
+              "signals": {
+                "locator": "table[1]/row[1]/cell[2]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 1,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2020",
+                    "Maple Harbour",
+                    "617"
+                  ],
+                  "column": 2
+                },
+                "field_value": "617",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2004",
+              "answer": "2004",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2004 | Town: Maple Harbour | Population: 361",
+              "label": "Year",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 13.200000000000001,
+              "signals": {
+                "locator": "table[1]/row[0]/cell[0]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2004",
+                    "Maple Harbour",
+                    "361"
+                  ],
+                  "column": 0
+                },
+                "field_value": "2004",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2020",
+              "answer": "2020",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2020 | Town: Maple Harbour | Population: 617",
+              "label": "Year",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 13.200000000000001,
+              "signals": {
+                "locator": "table[1]/row[1]/cell[0]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 1,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2020",
+                    "Maple Harbour",
+                    "617"
+                  ],
+                  "column": 0
+                },
+                "field_value": "2020",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [
+            {
+              "a": "361",
+              "b": "617",
+              "sources": [
+                "http://127.0.0.1:43271/population",
+                "http://127.0.0.1:43271/population"
+              ],
+              "margin": 0.0
+            }
+          ],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:43271/population",
+              "final": "http://127.0.0.1:43271/population",
+              "status": 200,
+              "bytes": 231,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0057
+        }
+      }
+    },
+    {
+      "id": "http-no-model-0",
+      "passed": true,
+      "expected": "617",
+      "actual": "617",
+      "calls": [],
+      "result": {
+        "answer": "617",
+        "sources": [
+          "http://127.0.0.1:43271/population"
+        ],
+        "confidence": 0.938,
+        "evidence": "Year: 2020 | Town: Maple Harbour | Population: 617",
+        "reason": "deterministic_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "In the 2020 census, what was the population of Maple Harbour?",
+            "url": "http://127.0.0.1:43271/population",
+            "kind": "number",
+            "terms": [
+              "2020",
+              "census",
+              "population",
+              "maple",
+              "harbour"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "census",
+              "population",
+              "maple",
+              "harbour"
+            ],
+            "versions": [],
+            "year": "2020",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what was the population ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.0699965059757233e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "617",
+            "answer": "617",
+            "source": "http://127.0.0.1:43271/population",
+            "evidence": "Year: 2020 | Town: Maple Harbour | Population: 617",
+            "label": "Population",
+            "section": "Maple Harbour population in 2004 and 2020",
+            "kind": "number",
+            "score": 15.5,
+            "signals": {
+              "locator": "table[1]/row[1]/cell[2]",
+              "page_title": "",
+              "structure": "cell",
+              "qualifiers": {
+                "table": 1,
+                "row": 1,
+                "columns": [
+                  "Year",
+                  "Town",
+                  "Population"
+                ],
+                "cells": [
+                  "2020",
+                  "Maple Harbour",
+                  "617"
+                ],
+                "column": 2
+              },
+              "field_value": "617",
+              "agreement_domains": 1
+            }
+          },
+          "reader_state": "not_run",
+          "top_candidates": [
+            {
+              "raw": "361",
+              "answer": "361",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2004 | Town: Maple Harbour | Population: 361",
+              "label": "Population",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 15.5,
+              "signals": {
+                "locator": "table[1]/row[0]/cell[2]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2004",
+                    "Maple Harbour",
+                    "361"
+                  ],
+                  "column": 2
+                },
+                "field_value": "361",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "617",
+              "answer": "617",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2020 | Town: Maple Harbour | Population: 617",
+              "label": "Population",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 15.5,
+              "signals": {
+                "locator": "table[1]/row[1]/cell[2]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 1,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2020",
+                    "Maple Harbour",
+                    "617"
+                  ],
+                  "column": 2
+                },
+                "field_value": "617",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2004",
+              "answer": "2004",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2004 | Town: Maple Harbour | Population: 361",
+              "label": "Year",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 13.200000000000001,
+              "signals": {
+                "locator": "table[1]/row[0]/cell[0]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2004",
+                    "Maple Harbour",
+                    "361"
+                  ],
+                  "column": 0
+                },
+                "field_value": "2004",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2020",
+              "answer": "2020",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2020 | Town: Maple Harbour | Population: 617",
+              "label": "Year",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 13.200000000000001,
+              "signals": {
+                "locator": "table[1]/row[1]/cell[0]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 1,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2020",
+                    "Maple Harbour",
+                    "617"
+                  ],
+                  "column": 0
+                },
+                "field_value": "2020",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [
+            {
+              "a": "361",
+              "b": "617",
+              "sources": [
+                "http://127.0.0.1:43271/population",
+                "http://127.0.0.1:43271/population"
+              ],
+              "margin": 0.0
+            }
+          ],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:43271/population",
+              "final": "http://127.0.0.1:43271/population",
+              "status": 200,
+              "bytes": 231,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0044
+        }
+      }
+    },
+    {
+      "id": "http-stub-1-617",
+      "passed": true,
+      "expected": "617",
+      "actual": "617",
+      "calls": [
+        "/select",
+        "/verify"
+      ],
+      "result": {
+        "answer": "617",
+        "sources": [
+          "http://127.0.0.1:43271/population"
+        ],
+        "confidence": 0.97,
+        "evidence": "Year: 2020 | Town: Maple Harbour | Population: 617",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "During the 2020 census, what was the population of Maple Harbour?",
+            "url": "http://127.0.0.1:43271/population",
+            "kind": "number",
+            "terms": [
+              "during",
+              "2020",
+              "census",
+              "population",
+              "maple",
+              "harbour"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "during",
+              "census",
+              "population",
+              "maple",
+              "harbour"
+            ],
+            "versions": [],
+            "year": "2020",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what was the population ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.00000761449337e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "617",
+              "answer": "617",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2020 | Town: Maple Harbour | Population: 617",
+              "label": "Population",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 18.2,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "table[1]/row[1]/cell[2]",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 1,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2020",
+                    "Maple Harbour",
+                    "617"
+                  ],
+                  "column": 2
+                },
+                "field_value": "617"
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "617",
+            "answer": "617",
+            "source": "http://127.0.0.1:43271/population",
+            "evidence": "Year: 2020 | Town: Maple Harbour | Population: 617",
+            "label": "Population",
+            "section": "Maple Harbour population in 2004 and 2020",
+            "kind": "number",
+            "score": 18.2,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "table[1]/row[1]/cell[2]",
+              "structure": "cell",
+              "qualifiers": {
+                "table": 1,
+                "row": 1,
+                "columns": [
+                  "Year",
+                  "Town",
+                  "Population"
+                ],
+                "cells": [
+                  "2020",
+                  "Maple Harbour",
+                  "617"
+                ],
+                "column": 2
+              },
+              "field_value": "617"
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:43271/population",
+              "final": "http://127.0.0.1:43271/population",
+              "status": 200,
+              "bytes": 231,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0081
+        }
+      }
+    },
+    {
+      "id": "http-stub-1-361",
+      "passed": true,
+      "expected": "",
+      "actual": "",
+      "calls": [
+        "/select"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_evidence_rejected",
+        "diagnostics": {
+          "plan": {
+            "question": "During the 2020 census, what was the population of Maple Harbour?",
+            "url": "http://127.0.0.1:43271/population",
+            "kind": "number",
+            "terms": [
+              "during",
+              "2020",
+              "census",
+              "population",
+              "maple",
+              "harbour"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "during",
+              "census",
+              "population",
+              "maple",
+              "harbour"
+            ],
+            "versions": [],
+            "year": "2020",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what was the population ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.0899966582655907e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "361",
+              "answer": "361",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2004 | Town: Maple Harbour | Population: 361",
+              "label": "Population",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 14.2,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "table[1]/row[0]/cell[2]",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2004",
+                    "Maple Harbour",
+                    "361"
+                  ],
+                  "column": 2
+                },
+                "field_value": "361"
+              }
+            }
+          ],
+          "reader_state": "evidence_rejected",
+          "top_candidates": [
+            {
+              "raw": "361",
+              "answer": "361",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2004 | Town: Maple Harbour | Population: 361",
+              "label": "Population",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 15.5,
+              "signals": {
+                "locator": "table[1]/row[0]/cell[2]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2004",
+                    "Maple Harbour",
+                    "361"
+                  ],
+                  "column": 2
+                },
+                "field_value": "361",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "617",
+              "answer": "617",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2020 | Town: Maple Harbour | Population: 617",
+              "label": "Population",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 15.5,
+              "signals": {
+                "locator": "table[1]/row[1]/cell[2]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 1,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2020",
+                    "Maple Harbour",
+                    "617"
+                  ],
+                  "column": 2
+                },
+                "field_value": "617",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2004",
+              "answer": "2004",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2004 | Town: Maple Harbour | Population: 361",
+              "label": "Year",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 13.200000000000001,
+              "signals": {
+                "locator": "table[1]/row[0]/cell[0]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2004",
+                    "Maple Harbour",
+                    "361"
+                  ],
+                  "column": 0
+                },
+                "field_value": "2004",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2020",
+              "answer": "2020",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2020 | Town: Maple Harbour | Population: 617",
+              "label": "Year",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 13.200000000000001,
+              "signals": {
+                "locator": "table[1]/row[1]/cell[0]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 1,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2020",
+                    "Maple Harbour",
+                    "617"
+                  ],
+                  "column": 0
+                },
+                "field_value": "2020",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [
+            {
+              "a": "361",
+              "b": "617",
+              "sources": [
+                "http://127.0.0.1:43271/population",
+                "http://127.0.0.1:43271/population"
+              ],
+              "margin": 0.0
+            }
+          ],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:43271/population",
+              "final": "http://127.0.0.1:43271/population",
+              "status": 200,
+              "bytes": 231,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0068
+        }
+      }
+    },
+    {
+      "id": "http-no-model-1",
+      "passed": true,
+      "expected": "617",
+      "actual": "617",
+      "calls": [],
+      "result": {
+        "answer": "617",
+        "sources": [
+          "http://127.0.0.1:43271/population"
+        ],
+        "confidence": 0.938,
+        "evidence": "Year: 2020 | Town: Maple Harbour | Population: 617",
+        "reason": "deterministic_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "During the 2020 census, what was the population of Maple Harbour?",
+            "url": "http://127.0.0.1:43271/population",
+            "kind": "number",
+            "terms": [
+              "during",
+              "2020",
+              "census",
+              "population",
+              "maple",
+              "harbour"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "during",
+              "census",
+              "population",
+              "maple",
+              "harbour"
+            ],
+            "versions": [],
+            "year": "2020",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what was the population ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.9799917936325073e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "617",
+            "answer": "617",
+            "source": "http://127.0.0.1:43271/population",
+            "evidence": "Year: 2020 | Town: Maple Harbour | Population: 617",
+            "label": "Population",
+            "section": "Maple Harbour population in 2004 and 2020",
+            "kind": "number",
+            "score": 15.5,
+            "signals": {
+              "locator": "table[1]/row[1]/cell[2]",
+              "page_title": "",
+              "structure": "cell",
+              "qualifiers": {
+                "table": 1,
+                "row": 1,
+                "columns": [
+                  "Year",
+                  "Town",
+                  "Population"
+                ],
+                "cells": [
+                  "2020",
+                  "Maple Harbour",
+                  "617"
+                ],
+                "column": 2
+              },
+              "field_value": "617",
+              "agreement_domains": 1
+            }
+          },
+          "reader_state": "not_run",
+          "top_candidates": [
+            {
+              "raw": "361",
+              "answer": "361",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2004 | Town: Maple Harbour | Population: 361",
+              "label": "Population",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 15.5,
+              "signals": {
+                "locator": "table[1]/row[0]/cell[2]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2004",
+                    "Maple Harbour",
+                    "361"
+                  ],
+                  "column": 2
+                },
+                "field_value": "361",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "617",
+              "answer": "617",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2020 | Town: Maple Harbour | Population: 617",
+              "label": "Population",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 15.5,
+              "signals": {
+                "locator": "table[1]/row[1]/cell[2]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 1,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2020",
+                    "Maple Harbour",
+                    "617"
+                  ],
+                  "column": 2
+                },
+                "field_value": "617",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2004",
+              "answer": "2004",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2004 | Town: Maple Harbour | Population: 361",
+              "label": "Year",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 13.200000000000001,
+              "signals": {
+                "locator": "table[1]/row[0]/cell[0]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2004",
+                    "Maple Harbour",
+                    "361"
+                  ],
+                  "column": 0
+                },
+                "field_value": "2004",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2020",
+              "answer": "2020",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2020 | Town: Maple Harbour | Population: 617",
+              "label": "Year",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 13.200000000000001,
+              "signals": {
+                "locator": "table[1]/row[1]/cell[0]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 1,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2020",
+                    "Maple Harbour",
+                    "617"
+                  ],
+                  "column": 0
+                },
+                "field_value": "2020",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [
+            {
+              "a": "361",
+              "b": "617",
+              "sources": [
+                "http://127.0.0.1:43271/population",
+                "http://127.0.0.1:43271/population"
+              ],
+              "margin": 0.0
+            }
+          ],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:43271/population",
+              "final": "http://127.0.0.1:43271/population",
+              "status": 200,
+              "bytes": 231,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0053
+        }
+      }
+    },
+    {
+      "id": "http-stub-2-617",
+      "passed": true,
+      "expected": "617",
+      "actual": "617",
+      "calls": [
+        "/select",
+        "/verify"
+      ],
+      "result": {
+        "answer": "617",
+        "sources": [
+          "http://127.0.0.1:43271/population"
+        ],
+        "confidence": 0.97,
+        "evidence": "Year: 2020 | Town: Maple Harbour | Population: 617",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "As of the 2020 Census, what was the population of Maple Harbour?",
+            "url": "http://127.0.0.1:43271/population",
+            "kind": "number",
+            "terms": [
+              "2020",
+              "census",
+              "population",
+              "maple",
+              "harbour"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "census",
+              "population",
+              "maple",
+              "harbour"
+            ],
+            "versions": [],
+            "year": "2020",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what was the population ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.1699972674250603e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "617",
+              "answer": "617",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2020 | Town: Maple Harbour | Population: 617",
+              "label": "Population",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 18.2,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "table[1]/row[1]/cell[2]",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 1,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2020",
+                    "Maple Harbour",
+                    "617"
+                  ],
+                  "column": 2
+                },
+                "field_value": "617"
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "617",
+            "answer": "617",
+            "source": "http://127.0.0.1:43271/population",
+            "evidence": "Year: 2020 | Town: Maple Harbour | Population: 617",
+            "label": "Population",
+            "section": "Maple Harbour population in 2004 and 2020",
+            "kind": "number",
+            "score": 18.2,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "table[1]/row[1]/cell[2]",
+              "structure": "cell",
+              "qualifiers": {
+                "table": 1,
+                "row": 1,
+                "columns": [
+                  "Year",
+                  "Town",
+                  "Population"
+                ],
+                "cells": [
+                  "2020",
+                  "Maple Harbour",
+                  "617"
+                ],
+                "column": 2
+              },
+              "field_value": "617"
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:43271/population",
+              "final": "http://127.0.0.1:43271/population",
+              "status": 200,
+              "bytes": 231,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0089
+        }
+      }
+    },
+    {
+      "id": "http-stub-2-361",
+      "passed": true,
+      "expected": "",
+      "actual": "",
+      "calls": [
+        "/select"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_evidence_rejected",
+        "diagnostics": {
+          "plan": {
+            "question": "As of the 2020 Census, what was the population of Maple Harbour?",
+            "url": "http://127.0.0.1:43271/population",
+            "kind": "number",
+            "terms": [
+              "2020",
+              "census",
+              "population",
+              "maple",
+              "harbour"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "census",
+              "population",
+              "maple",
+              "harbour"
+            ],
+            "versions": [],
+            "year": "2020",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what was the population ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.0299962013959885e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "361",
+              "answer": "361",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2004 | Town: Maple Harbour | Population: 361",
+              "label": "Population",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 14.2,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "table[1]/row[0]/cell[2]",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2004",
+                    "Maple Harbour",
+                    "361"
+                  ],
+                  "column": 2
+                },
+                "field_value": "361"
+              }
+            }
+          ],
+          "reader_state": "evidence_rejected",
+          "top_candidates": [
+            {
+              "raw": "361",
+              "answer": "361",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2004 | Town: Maple Harbour | Population: 361",
+              "label": "Population",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 15.5,
+              "signals": {
+                "locator": "table[1]/row[0]/cell[2]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2004",
+                    "Maple Harbour",
+                    "361"
+                  ],
+                  "column": 2
+                },
+                "field_value": "361",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "617",
+              "answer": "617",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2020 | Town: Maple Harbour | Population: 617",
+              "label": "Population",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 15.5,
+              "signals": {
+                "locator": "table[1]/row[1]/cell[2]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 1,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2020",
+                    "Maple Harbour",
+                    "617"
+                  ],
+                  "column": 2
+                },
+                "field_value": "617",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2004",
+              "answer": "2004",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2004 | Town: Maple Harbour | Population: 361",
+              "label": "Year",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 13.200000000000001,
+              "signals": {
+                "locator": "table[1]/row[0]/cell[0]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2004",
+                    "Maple Harbour",
+                    "361"
+                  ],
+                  "column": 0
+                },
+                "field_value": "2004",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2020",
+              "answer": "2020",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2020 | Town: Maple Harbour | Population: 617",
+              "label": "Year",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 13.200000000000001,
+              "signals": {
+                "locator": "table[1]/row[1]/cell[0]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 1,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2020",
+                    "Maple Harbour",
+                    "617"
+                  ],
+                  "column": 0
+                },
+                "field_value": "2020",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [
+            {
+              "a": "361",
+              "b": "617",
+              "sources": [
+                "http://127.0.0.1:43271/population",
+                "http://127.0.0.1:43271/population"
+              ],
+              "margin": 0.0
+            }
+          ],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:43271/population",
+              "final": "http://127.0.0.1:43271/population",
+              "status": 200,
+              "bytes": 231,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.006
+        }
+      }
+    },
+    {
+      "id": "http-no-model-2",
+      "passed": true,
+      "expected": "617",
+      "actual": "617",
+      "calls": [],
+      "result": {
+        "answer": "617",
+        "sources": [
+          "http://127.0.0.1:43271/population"
+        ],
+        "confidence": 0.938,
+        "evidence": "Year: 2020 | Town: Maple Harbour | Population: 617",
+        "reason": "deterministic_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "As of the 2020 Census, what was the population of Maple Harbour?",
+            "url": "http://127.0.0.1:43271/population",
+            "kind": "number",
+            "terms": [
+              "2020",
+              "census",
+              "population",
+              "maple",
+              "harbour"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "census",
+              "population",
+              "maple",
+              "harbour"
+            ],
+            "versions": [],
+            "year": "2020",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what was the population ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.1300086043775082e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "617",
+            "answer": "617",
+            "source": "http://127.0.0.1:43271/population",
+            "evidence": "Year: 2020 | Town: Maple Harbour | Population: 617",
+            "label": "Population",
+            "section": "Maple Harbour population in 2004 and 2020",
+            "kind": "number",
+            "score": 15.5,
+            "signals": {
+              "locator": "table[1]/row[1]/cell[2]",
+              "page_title": "",
+              "structure": "cell",
+              "qualifiers": {
+                "table": 1,
+                "row": 1,
+                "columns": [
+                  "Year",
+                  "Town",
+                  "Population"
+                ],
+                "cells": [
+                  "2020",
+                  "Maple Harbour",
+                  "617"
+                ],
+                "column": 2
+              },
+              "field_value": "617",
+              "agreement_domains": 1
+            }
+          },
+          "reader_state": "not_run",
+          "top_candidates": [
+            {
+              "raw": "361",
+              "answer": "361",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2004 | Town: Maple Harbour | Population: 361",
+              "label": "Population",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 15.5,
+              "signals": {
+                "locator": "table[1]/row[0]/cell[2]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2004",
+                    "Maple Harbour",
+                    "361"
+                  ],
+                  "column": 2
+                },
+                "field_value": "361",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "617",
+              "answer": "617",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2020 | Town: Maple Harbour | Population: 617",
+              "label": "Population",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 15.5,
+              "signals": {
+                "locator": "table[1]/row[1]/cell[2]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 1,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2020",
+                    "Maple Harbour",
+                    "617"
+                  ],
+                  "column": 2
+                },
+                "field_value": "617",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2004",
+              "answer": "2004",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2004 | Town: Maple Harbour | Population: 361",
+              "label": "Year",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 13.200000000000001,
+              "signals": {
+                "locator": "table[1]/row[0]/cell[0]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2004",
+                    "Maple Harbour",
+                    "361"
+                  ],
+                  "column": 0
+                },
+                "field_value": "2004",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2020",
+              "answer": "2020",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2020 | Town: Maple Harbour | Population: 617",
+              "label": "Year",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 13.200000000000001,
+              "signals": {
+                "locator": "table[1]/row[1]/cell[0]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 1,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2020",
+                    "Maple Harbour",
+                    "617"
+                  ],
+                  "column": 0
+                },
+                "field_value": "2020",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [
+            {
+              "a": "361",
+              "b": "617",
+              "sources": [
+                "http://127.0.0.1:43271/population",
+                "http://127.0.0.1:43271/population"
+              ],
+              "margin": 0.0
+            }
+          ],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:43271/population",
+              "final": "http://127.0.0.1:43271/population",
+              "status": 200,
+              "bytes": 231,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0051
+        }
+      }
+    },
+    {
+      "id": "http-stub-3-617",
+      "passed": true,
+      "expected": "617",
+      "actual": "617",
+      "calls": [
+        "/select",
+        "/verify"
+      ],
+      "result": {
+        "answer": "617",
+        "sources": [
+          "http://127.0.0.1:43271/population"
+        ],
+        "confidence": 0.97,
+        "evidence": "Year: 2020 | Town: Maple Harbour | Population: 617",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "As of 2020 Census, what was the population of Maple Harbour?",
+            "url": "http://127.0.0.1:43271/population",
+            "kind": "number",
+            "terms": [
+              "2020",
+              "census",
+              "population",
+              "maple",
+              "harbour"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "census",
+              "population",
+              "maple",
+              "harbour"
+            ],
+            "versions": [],
+            "year": "2020",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what was the population ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.0699965059757233e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "617",
+              "answer": "617",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2020 | Town: Maple Harbour | Population: 617",
+              "label": "Population",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 18.2,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "table[1]/row[1]/cell[2]",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 1,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2020",
+                    "Maple Harbour",
+                    "617"
+                  ],
+                  "column": 2
+                },
+                "field_value": "617"
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "617",
+            "answer": "617",
+            "source": "http://127.0.0.1:43271/population",
+            "evidence": "Year: 2020 | Town: Maple Harbour | Population: 617",
+            "label": "Population",
+            "section": "Maple Harbour population in 2004 and 2020",
+            "kind": "number",
+            "score": 18.2,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "table[1]/row[1]/cell[2]",
+              "structure": "cell",
+              "qualifiers": {
+                "table": 1,
+                "row": 1,
+                "columns": [
+                  "Year",
+                  "Town",
+                  "Population"
+                ],
+                "cells": [
+                  "2020",
+                  "Maple Harbour",
+                  "617"
+                ],
+                "column": 2
+              },
+              "field_value": "617"
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:43271/population",
+              "final": "http://127.0.0.1:43271/population",
+              "status": 200,
+              "bytes": 231,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0116
+        }
+      }
+    },
+    {
+      "id": "http-stub-3-361",
+      "passed": true,
+      "expected": "",
+      "actual": "",
+      "calls": [
+        "/select"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_evidence_rejected",
+        "diagnostics": {
+          "plan": {
+            "question": "As of 2020 Census, what was the population of Maple Harbour?",
+            "url": "http://127.0.0.1:43271/population",
+            "kind": "number",
+            "terms": [
+              "2020",
+              "census",
+              "population",
+              "maple",
+              "harbour"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "census",
+              "population",
+              "maple",
+              "harbour"
+            ],
+            "versions": [],
+            "year": "2020",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what was the population ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 9.400071576237679e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "361",
+              "answer": "361",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2004 | Town: Maple Harbour | Population: 361",
+              "label": "Population",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 14.2,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "table[1]/row[0]/cell[2]",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2004",
+                    "Maple Harbour",
+                    "361"
+                  ],
+                  "column": 2
+                },
+                "field_value": "361"
+              }
+            }
+          ],
+          "reader_state": "evidence_rejected",
+          "top_candidates": [
+            {
+              "raw": "361",
+              "answer": "361",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2004 | Town: Maple Harbour | Population: 361",
+              "label": "Population",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 15.5,
+              "signals": {
+                "locator": "table[1]/row[0]/cell[2]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2004",
+                    "Maple Harbour",
+                    "361"
+                  ],
+                  "column": 2
+                },
+                "field_value": "361",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "617",
+              "answer": "617",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2020 | Town: Maple Harbour | Population: 617",
+              "label": "Population",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 15.5,
+              "signals": {
+                "locator": "table[1]/row[1]/cell[2]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 1,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2020",
+                    "Maple Harbour",
+                    "617"
+                  ],
+                  "column": 2
+                },
+                "field_value": "617",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2004",
+              "answer": "2004",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2004 | Town: Maple Harbour | Population: 361",
+              "label": "Year",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 13.200000000000001,
+              "signals": {
+                "locator": "table[1]/row[0]/cell[0]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2004",
+                    "Maple Harbour",
+                    "361"
+                  ],
+                  "column": 0
+                },
+                "field_value": "2004",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2020",
+              "answer": "2020",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2020 | Town: Maple Harbour | Population: 617",
+              "label": "Year",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 13.200000000000001,
+              "signals": {
+                "locator": "table[1]/row[1]/cell[0]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 1,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2020",
+                    "Maple Harbour",
+                    "617"
+                  ],
+                  "column": 0
+                },
+                "field_value": "2020",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [
+            {
+              "a": "361",
+              "b": "617",
+              "sources": [
+                "http://127.0.0.1:43271/population",
+                "http://127.0.0.1:43271/population"
+              ],
+              "margin": 0.0
+            }
+          ],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:43271/population",
+              "final": "http://127.0.0.1:43271/population",
+              "status": 200,
+              "bytes": 231,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.005
+        }
+      }
+    },
+    {
+      "id": "http-no-model-3",
+      "passed": true,
+      "expected": "617",
+      "actual": "617",
+      "calls": [],
+      "result": {
+        "answer": "617",
+        "sources": [
+          "http://127.0.0.1:43271/population"
+        ],
+        "confidence": 0.938,
+        "evidence": "Year: 2020 | Town: Maple Harbour | Population: 617",
+        "reason": "deterministic_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "As of 2020 Census, what was the population of Maple Harbour?",
+            "url": "http://127.0.0.1:43271/population",
+            "kind": "number",
+            "terms": [
+              "2020",
+              "census",
+              "population",
+              "maple",
+              "harbour"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "census",
+              "population",
+              "maple",
+              "harbour"
+            ],
+            "versions": [],
+            "year": "2020",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what was the population ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.0399962775409222e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "617",
+            "answer": "617",
+            "source": "http://127.0.0.1:43271/population",
+            "evidence": "Year: 2020 | Town: Maple Harbour | Population: 617",
+            "label": "Population",
+            "section": "Maple Harbour population in 2004 and 2020",
+            "kind": "number",
+            "score": 15.5,
+            "signals": {
+              "locator": "table[1]/row[1]/cell[2]",
+              "page_title": "",
+              "structure": "cell",
+              "qualifiers": {
+                "table": 1,
+                "row": 1,
+                "columns": [
+                  "Year",
+                  "Town",
+                  "Population"
+                ],
+                "cells": [
+                  "2020",
+                  "Maple Harbour",
+                  "617"
+                ],
+                "column": 2
+              },
+              "field_value": "617",
+              "agreement_domains": 1
+            }
+          },
+          "reader_state": "not_run",
+          "top_candidates": [
+            {
+              "raw": "361",
+              "answer": "361",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2004 | Town: Maple Harbour | Population: 361",
+              "label": "Population",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 15.5,
+              "signals": {
+                "locator": "table[1]/row[0]/cell[2]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2004",
+                    "Maple Harbour",
+                    "361"
+                  ],
+                  "column": 2
+                },
+                "field_value": "361",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "617",
+              "answer": "617",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2020 | Town: Maple Harbour | Population: 617",
+              "label": "Population",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 15.5,
+              "signals": {
+                "locator": "table[1]/row[1]/cell[2]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 1,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2020",
+                    "Maple Harbour",
+                    "617"
+                  ],
+                  "column": 2
+                },
+                "field_value": "617",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2004",
+              "answer": "2004",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2004 | Town: Maple Harbour | Population: 361",
+              "label": "Year",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 13.200000000000001,
+              "signals": {
+                "locator": "table[1]/row[0]/cell[0]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2004",
+                    "Maple Harbour",
+                    "361"
+                  ],
+                  "column": 0
+                },
+                "field_value": "2004",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2020",
+              "answer": "2020",
+              "source": "http://127.0.0.1:43271/population",
+              "evidence": "Year: 2020 | Town: Maple Harbour | Population: 617",
+              "label": "Year",
+              "section": "Maple Harbour population in 2004 and 2020",
+              "kind": "number",
+              "score": 13.200000000000001,
+              "signals": {
+                "locator": "table[1]/row[1]/cell[0]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 1,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Population"
+                  ],
+                  "cells": [
+                    "2020",
+                    "Maple Harbour",
+                    "617"
+                  ],
+                  "column": 0
+                },
+                "field_value": "2020",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [
+            {
+              "a": "361",
+              "b": "617",
+              "sources": [
+                "http://127.0.0.1:43271/population",
+                "http://127.0.0.1:43271/population"
+              ],
+              "margin": 0.0
+            }
+          ],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:43271/population",
+              "final": "http://127.0.0.1:43271/population",
+              "status": 200,
+              "bytes": 231,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0044
+        }
+      }
+    },
+    {
+      "id": "http-no-model-households",
+      "passed": true,
+      "expected": "617",
+      "actual": "617",
+      "calls": [],
+      "result": {
+        "answer": "617",
+        "sources": [
+          "http://127.0.0.1:43271/households"
+        ],
+        "confidence": 0.938,
+        "evidence": "Year: 2000 | Town: Maple Harbour | Households: 617",
+        "reason": "deterministic_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "How many households were there in Maple Harbour, as of the 2000 census?",
+            "url": "http://127.0.0.1:43271/households",
+            "kind": "number",
+            "terms": [
+              "households",
+              "there",
+              "maple",
+              "harbour",
+              "2000",
+              "census"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "households",
+              "there",
+              "maple",
+              "harbour",
+              "census"
+            ],
+            "versions": [],
+            "year": "2000",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "how many households were there ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.009996049106121e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "617",
+            "answer": "617",
+            "source": "http://127.0.0.1:43271/households",
+            "evidence": "Year: 2000 | Town: Maple Harbour | Households: 617",
+            "label": "Households",
+            "section": "Maple Harbour households in 1990 and 2000",
+            "kind": "number",
+            "score": 15.5,
+            "signals": {
+              "locator": "table[1]/row[1]/cell[2]",
+              "page_title": "",
+              "structure": "cell",
+              "qualifiers": {
+                "table": 1,
+                "row": 1,
+                "columns": [
+                  "Year",
+                  "Town",
+                  "Households"
+                ],
+                "cells": [
+                  "2000",
+                  "Maple Harbour",
+                  "617"
+                ],
+                "column": 2
+              },
+              "field_value": "617",
+              "agreement_domains": 1
+            }
+          },
+          "reader_state": "not_run",
+          "top_candidates": [
+            {
+              "raw": "361",
+              "answer": "361",
+              "source": "http://127.0.0.1:43271/households",
+              "evidence": "Year: 1990 | Town: Maple Harbour | Households: 361",
+              "label": "Households",
+              "section": "Maple Harbour households in 1990 and 2000",
+              "kind": "number",
+              "score": 15.5,
+              "signals": {
+                "locator": "table[1]/row[0]/cell[2]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Households"
+                  ],
+                  "cells": [
+                    "1990",
+                    "Maple Harbour",
+                    "361"
+                  ],
+                  "column": 2
+                },
+                "field_value": "361",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "617",
+              "answer": "617",
+              "source": "http://127.0.0.1:43271/households",
+              "evidence": "Year: 2000 | Town: Maple Harbour | Households: 617",
+              "label": "Households",
+              "section": "Maple Harbour households in 1990 and 2000",
+              "kind": "number",
+              "score": 15.5,
+              "signals": {
+                "locator": "table[1]/row[1]/cell[2]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 1,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Households"
+                  ],
+                  "cells": [
+                    "2000",
+                    "Maple Harbour",
+                    "617"
+                  ],
+                  "column": 2
+                },
+                "field_value": "617",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "1990",
+              "answer": "1990",
+              "source": "http://127.0.0.1:43271/households",
+              "evidence": "Year: 1990 | Town: Maple Harbour | Households: 361",
+              "label": "Year",
+              "section": "Maple Harbour households in 1990 and 2000",
+              "kind": "number",
+              "score": 13.200000000000001,
+              "signals": {
+                "locator": "table[1]/row[0]/cell[0]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Households"
+                  ],
+                  "cells": [
+                    "1990",
+                    "Maple Harbour",
+                    "361"
+                  ],
+                  "column": 0
+                },
+                "field_value": "1990",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2000",
+              "answer": "2000",
+              "source": "http://127.0.0.1:43271/households",
+              "evidence": "Year: 2000 | Town: Maple Harbour | Households: 617",
+              "label": "Year",
+              "section": "Maple Harbour households in 1990 and 2000",
+              "kind": "number",
+              "score": 13.200000000000001,
+              "signals": {
+                "locator": "table[1]/row[1]/cell[0]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 1,
+                  "columns": [
+                    "Year",
+                    "Town",
+                    "Households"
+                  ],
+                  "cells": [
+                    "2000",
+                    "Maple Harbour",
+                    "617"
+                  ],
+                  "column": 0
+                },
+                "field_value": "2000",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [
+            {
+              "a": "361",
+              "b": "617",
+              "sources": [
+                "http://127.0.0.1:43271/households",
+                "http://127.0.0.1:43271/households"
+              ],
+              "margin": 0.0
+            }
+          ],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:43271/households",
+              "final": "http://127.0.0.1:43271/households",
+              "status": 200,
+              "bytes": 231,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0046
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "scope": "Eight actual HTTP expansion requests per implementation, identical full4Bweights, alternatingmethodorder, original3.8sclientcap retained. Completion+queryanchor only, no answeraccuracy.",
+  "cases_sha256": "23b72ece1dd466261fc45db4929d5b03e331a566205f6ff3c480bdfb5b0c219c",
+  "before": {
+    "completed": 3,
+    "completed_with_anchored_hint": 3,
+    "usable_concise_query_including_quoted_fallback": 4,
+    "mean_seconds": 3.1628579499956686,
+    "mean_generated_tokens": 62.375,
+    "total": 8
+  },
+  "after": {
+    "completed": 8,
+    "completed_with_anchored_hint": 8,
+    "usable_concise_query_including_quoted_fallback": 8,
+    "mean_seconds": 1.0488587375439238,
+    "mean_generated_tokens": 21,
+    "total": 8
+  },
+  "next_request_passed": true,
+  "note": "Raw paired anchored count includes original-question quoted fallback even after failed expansion; completed_with_anchored_hint separately requires an actual emitted hint. One new hint exceeds prompt target5words(7words) but within existing client/search limits; no hard5word constraint claimed."
+}

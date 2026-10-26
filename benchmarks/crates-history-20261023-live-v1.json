@@ -1,0 +1,121 @@
+{
+  "scope": "One actual free public keyless crates.io API compatibility probe; question-only, CPU/model/browser disabled, no accuracy assessment. Saved response envelope and body hashes. No fallback network requests.",
+  "captures": [
+    {
+      "url": "https://crates.io/api/v1/crates/itoa",
+      "status": 200,
+      "error": "",
+      "capture_path": "research/crates-history-20261023-probe/0.json",
+      "capture_sha256": "3a505214965fc4888d69b01fa12773460831161a19af1982fb3adc63f80b3392",
+      "body_sha256": "e9158acf9b3199ec756e61e9d7111495cdb674e0344468bb9f4a67fba4942d57"
+    }
+  ],
+  "result": {
+    "answer": "MIT OR Apache-2.0",
+    "sources": [
+      "https://crates.io/api/v1/crates/itoa"
+    ],
+    "confidence": 0.913,
+    "evidence": "license: MIT OR Apache-2.0 | crate itoa version 0.4.5 published 2020-01-24",
+    "reason": "deterministic_verified",
+    "diagnostics": {
+      "plan": {
+        "question": "What was the license of the crates.io crate itoa as of 2020-01-31?",
+        "url": "",
+        "kind": "license",
+        "terms": [
+          "license",
+          "crates.io",
+          "crate",
+          "itoa",
+          "2020-01-31",
+          "crates",
+          "io",
+          "2020",
+          "01",
+          "31"
+        ],
+        "attributes": [
+          "license",
+          "licence",
+          "licensing",
+          "spdx"
+        ],
+        "entity_terms": [
+          "crates.io",
+          "crate",
+          "itoa",
+          "2020-01-31",
+          "crates",
+          "io",
+          "01",
+          "31"
+        ],
+        "versions": [],
+        "year": "",
+        "as_of": "2020-01-31",
+        "latest": true,
+        "stable": false,
+        "first": false,
+        "currency": "",
+        "cardinality": 1,
+        "negations": [],
+        "domain": "",
+        "focus": "what was the license ",
+        "choices": [],
+        "operation": "single",
+        "required_fields": [],
+        "date_precision": "",
+        "temporal_issue": "",
+        "temporal_raw": []
+      },
+      "errors": [],
+      "selector": [],
+      "timings": {
+        "resolver": 0.459023000090383
+      },
+      "search_requests": 0,
+      "llm_calls": 0,
+      "content_pages": 1,
+      "selection": {
+        "raw": "MIT OR Apache-2.0",
+        "answer": "MIT OR Apache-2.0",
+        "source": "https://crates.io/api/v1/crates/itoa",
+        "evidence": "license: MIT OR Apache-2.0 | crate itoa version 0.4.5 published 2020-01-24",
+        "label": "license",
+        "section": "crate itoa version 0.4.5 published 2020-01-24",
+        "kind": "license",
+        "score": 14.500000000000002,
+        "signals": {
+          "locator": "versions[22].license",
+          "page_title": "crates.io itoa",
+          "structure": "field",
+          "qualifiers": {
+            "registry_release": {
+              "version": "0.4.5",
+              "date": "2020-01-24",
+              "name": "itoa"
+            }
+          },
+          "field_value": "MIT OR Apache-2.0",
+          "agreement_domains": 1
+        }
+      },
+      "fetches": [
+        {
+          "url": "https://crates.io/api/v1/crates/itoa",
+          "final": "https://crates.io/api/v1/crates/itoa",
+          "status": 200,
+          "bytes": 52491,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        }
+      ],
+      "http_responses_success": 1,
+      "pages_fetched": 1,
+      "seconds": 0.4685
+    }
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "scope": "Cross-process crates API pacing against loopback HTTP; no public requests or model.\n\nAuthored transport controls, not competition questions or model accuracy.\n",
+  "baseline": "365a162",
+  "platform": "win32",
+  "source_sha256": {
+    "agent/network.py": "d4670408f74d8b861c85f965a8c8ee12e018418ecd29d44c4337325f1b8f818f"
+  },
+  "diagnostic_sha256": "13f4bd334fd5ab3f8e93e37a485cc291384c5354521d53ef4b1e10d33eafc40c",
+  "passed": 3,
+  "total": 19,
+  "rows": [
+    {
+      "id": "three-workers-shared-bucket",
+      "passed": false,
+      "gaps": [
+        0.0003032000004168367,
+        0.0007006999985605944
+      ],
+      "outputs": [
+        {
+          "status": 429,
+          "error": "http_429",
+          "torch_imported": false
+        },
+        {
+          "status": 429,
+          "error": "http_429",
+          "torch_imported": false
+        },
+        {
+          "status": 200,
+          "error": "",
+          "torch_imported": false
+        }
+      ]
+    },
+    {
+      "id": "independent-fetchers-and-response-completion",
+      "passed": false,
+      "hits": [
+        {
+          "path": "/api/v1/crates/1",
+          "start": 11523.5914259,
+          "status": 200,
+          "end": 11523.7420391
+        },
+        {
+          "path": "/api/v1/crates/0",
+          "start": 11523.5914523,
+          "status": 200,
+          "end": 11523.7428165
+        }
+      ]
+    },
+    {
+      "id": "cache-needs-no-slot",
+      "passed": true
+    },
+    {
+      "id": "waiting-counts-against-query-deadline",
+      "passed": false,
+      "error": ""
+    },
+    {
+      "id": "deadline-releases-lock",
+      "passed": false
+    },
+    {
+      "id": "waiting-counts-against-request-timeout",
+      "passed": false,
+      "error": ""
+    },
+    {
+      "id": "cancel-waiter-sends-no-http",
+      "passed": false
+    },
+    {
+      "id": "cancel-releases-lock",
+      "passed": false
+    },
+    {
+      "id": "frontend-not-in-api-bucket",
+      "passed": true
+    },
+    {
+      "id": "other-origin-unaffected",
+      "passed": true
+    },
+    {
+      "id": "each-api-redirect-hop-paced",
+      "passed": false,
+      "hits": [
+        {
+          "path": "/api/v1/crates/first",
+          "start": 11523.8283037,
+          "status": 200,
+          "end": 11523.828308
+        },
+        {
+          "path": "/api/v1/crates/second",
+          "start": 11523.8286922,
+          "status": 200,
+          "end": 11523.8286958
+        }
+      ]
+    },
+    {
+      "id": "redirect-into-api-paced",
+      "passed": false
+    },
+    {
+      "id": "429-no-retry-and-counted",
+      "passed": false
+    },
+    {
+      "id": "state-failure-no-unpaced-request",
+      "passed": false,
+      "error": ""
+    },
+    {
+      "id": "corrupt-record-cooldown",
+      "passed": false
+    },
+    {
+      "id": "killed-owner-lock-recovers",
+      "passed": false,
+      "hits": [
+        {
+          "path": "/api/v1/crates/held",
+          "start": 11525.9272435,
+          "status": 200,
+          "end": 11525.9325366
+        },
+        {
+          "path": "/api/v1/crates/after-kill",
+          "start": 11525.9303243,
+          "status": 200,
+          "end": 11525.9303293
+        }
+      ]
+    },
+    {
+      "id": "incomplete-old-owner-full-cooldown",
+      "passed": false
+    },
+    {
+      "id": "cancel-contending-waiter-keeps-owner",
+      "passed": false
+    },
+    {
+      "id": "cancel-active-owner-full-cooldown",
+      "passed": false
+    }
+  ],
+  "torch_imported": false
+}

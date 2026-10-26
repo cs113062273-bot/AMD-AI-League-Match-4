@@ -1,0 +1,2811 @@
+{
+  "hardware": "actual local execution",
+  "started_at_utc": "2026-10-20T04:10:40Z",
+  "runs": [
+    {
+      "command": [
+        "scripts/gpu_smoke_test.py",
+        "--server"
+      ],
+      "returncode": 0,
+      "seconds": 2.0948467000271194
+    },
+    {
+      "command": [
+        "eval/run.py",
+        "benchmarks/dev.json",
+        "--fixtures",
+        "fixtures/dev.json",
+        "--budget",
+        "24",
+        "--model",
+        "--out",
+        "benchmarks/dev-model-shipping"
+      ],
+      "returncode": 0,
+      "seconds": 247.20780979999108
+    },
+    {
+      "command": [
+        "eval/run.py",
+        "benchmarks/holdout.json",
+        "--fixtures",
+        "fixtures/holdout.json",
+        "--budget",
+        "24",
+        "--model",
+        "--out",
+        "benchmarks/holdout-model-shipping"
+      ],
+      "returncode": 0,
+      "seconds": 132.16053990001092
+    },
+    {
+      "command": [
+        "eval/run.py",
+        "benchmarks/final-holdout.json",
+        "--fixtures",
+        "fixtures/final-holdout.json",
+        "--budget",
+        "24",
+        "--model",
+        "--out",
+        "benchmarks/final-holdout-model-shipping"
+      ],
+      "returncode": 0,
+      "seconds": 33.113564700004645
+    },
+    {
+      "command": [
+        "eval/run.py",
+        "benchmarks/transfer-frozen.json",
+        "--fixtures",
+        "fixtures/transfer-frozen.json",
+        "--budget",
+        "24",
+        "--model",
+        "--out",
+        "benchmarks/transfer-frozen-model-shipping"
+      ],
+      "returncode": 0,
+      "seconds": 21.394806600001175
+    },
+    {
+      "command": [
+        "eval/run.py",
+        "benchmarks/live.json",
+        "--budget",
+        "24",
+        "--model",
+        "--out",
+        "benchmarks/live-model-shipping"
+      ],
+      "returncode": 0,
+      "seconds": 26.92693789995974
+    },
+    {
+      "command": [
+        "eval/run.py",
+        "benchmarks/live-holdout.json",
+        "--budget",
+        "24",
+        "--model",
+        "--out",
+        "benchmarks/live-transfer-model-shipping"
+      ],
+      "returncode": 0,
+      "seconds": 87.65726130001713
+    },
+    {
+      "command": [
+        "eval/run_public_baseline.py",
+        "--out",
+        "benchmarks/public-pinpoint-comparison-shipping"
+      ],
+      "returncode": 0,
+      "seconds": 83.73279840004398
+    }
+  ],
+  "cold_start_seconds": 15.425184199993964,
+  "health_before": {
+    "ready": true,
+    "device": "cuda",
+    "hip": null,
+    "pid": 13056,
+    "backend_source_sha256": {
+      "model_server.py": "ef0a80fc04887a0451230245d8c974b5daf99520eba06b611906527c9953f01d",
+      "selector.py": "76869894eac6376995d23319f13c459dbc688f94034292f0528ec3e2514000df",
+      "model_protocol.py": "8ba6730e160eac47d8231985e1293bb981a5a63ef9b475cf46daf31ef17bdfb0",
+      "model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+      "normalize.py": "d8af191a952253de47420cecf6b4bbd36fd0f8e9938cd56ae16dfc3f5cb95f28",
+      "types.py": "f54b6d192b51cf7bd5ce4e3d479234905960781336ccc5a1ea07423293e15a72"
+    },
+    "software": {
+      "torch": "2.9.1+cu128",
+      "transformers": "4.57.1",
+      "tokenizers": "0.22.1",
+      "safetensors": "0.6.2",
+      "accelerate": "1.11.0"
+    },
+    "parameters": 4022468096,
+    "assets": {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "verified_files": 12,
+      "full_sha256": true,
+      "weight_shards": 3
+    },
+    "warmup_reply": {
+      "candidate": -1,
+      "passage": 0,
+      "answer": "7"
+    },
+    "torch": "2.9.1+cu128",
+    "startup_seconds": 10.185060300049372,
+    "calls": 0,
+    "outcomes": {},
+    "context_limit": 3072,
+    "token_stats": {
+      "max_input": 268,
+      "generated": 14,
+      "pruned_requests": 0
+    },
+    "device_memory_bytes": 12878086144,
+    "peak_vram_bytes": 8141605888
+  },
+  "protocol_checks": {
+    "invalid_schema": {
+      "status": 400,
+      "reply": {}
+    },
+    "cross_origin": {
+      "status": 403,
+      "reply": {
+        "error": "local_json_clients_only"
+      }
+    }
+  },
+  "concurrent_requests": [
+    {
+      "status": 200,
+      "reply": {
+        "candidate": -1,
+        "passage": 0,
+        "answer": "7"
+      }
+    },
+    {
+      "status": 503,
+      "reply": {
+        "error": "busy"
+      }
+    },
+    {
+      "status": 503,
+      "reply": {
+        "error": "busy"
+      }
+    },
+    {
+      "status": 503,
+      "reply": {
+        "error": "busy"
+      }
+    },
+    {
+      "status": 503,
+      "reply": {
+        "error": "busy"
+      }
+    },
+    {
+      "status": 503,
+      "reply": {
+        "error": "busy"
+      }
+    }
+  ],
+  "long_context": {
+    "status": 200,
+    "reply": {
+      "candidate": -1,
+      "passage": 0,
+      "answer": "19"
+    }
+  },
+  "process_contract": [
+    {
+      "id": "pypi-flask-requires_python",
+      "returncode": 0,
+      "answer_ok": true,
+      "source_ok": true,
+      "sources": [
+        "https://pypi.org/pypi/flask/json"
+      ]
+    },
+    {
+      "id": "pep-440",
+      "returncode": 0,
+      "answer_ok": true,
+      "source_ok": true,
+      "sources": [
+        "https://peps.python.org/pep-0440/"
+      ]
+    },
+    {
+      "id": "arxiv-first-author",
+      "returncode": 0,
+      "answer_ok": true,
+      "source_ok": true,
+      "sources": [
+        "https://arxiv.org/abs/1810.04805"
+      ]
+    }
+  ],
+  "health_after": {
+    "ready": true,
+    "device": "cuda",
+    "hip": null,
+    "pid": 13056,
+    "backend_source_sha256": {
+      "model_server.py": "ef0a80fc04887a0451230245d8c974b5daf99520eba06b611906527c9953f01d",
+      "selector.py": "76869894eac6376995d23319f13c459dbc688f94034292f0528ec3e2514000df",
+      "model_protocol.py": "8ba6730e160eac47d8231985e1293bb981a5a63ef9b475cf46daf31ef17bdfb0",
+      "model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+      "normalize.py": "d8af191a952253de47420cecf6b4bbd36fd0f8e9938cd56ae16dfc3f5cb95f28",
+      "types.py": "f54b6d192b51cf7bd5ce4e3d479234905960781336ccc5a1ea07423293e15a72"
+    },
+    "software": {
+      "torch": "2.9.1+cu128",
+      "transformers": "4.57.1",
+      "tokenizers": "0.22.1",
+      "safetensors": "0.6.2",
+      "accelerate": "1.11.0"
+    },
+    "parameters": 4022468096,
+    "assets": {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "verified_files": 12,
+      "full_sha256": true,
+      "weight_shards": 3
+    },
+    "warmup_reply": {
+      "candidate": -1,
+      "passage": 0,
+      "answer": "7"
+    },
+    "torch": "2.9.1+cu128",
+    "startup_seconds": 10.185060300049372,
+    "calls": 767,
+    "outcomes": {
+      "selected": 385,
+      "supported": 319,
+      "abstained": 48,
+      "unsupported": 3,
+      "invalid_selection": 3,
+      "expanded": 9
+    },
+    "context_limit": 3072,
+    "token_stats": {
+      "max_input": 2967,
+      "generated": 10697,
+      "pruned_requests": 3
+    },
+    "device_memory_bytes": 12878086144,
+    "peak_vram_bytes": 11360367616
+  },
+  "launcher_pid": 7988,
+  "server_pid_stable": true,
+  "device_samples": [
+    {
+      "seconds": 0.046245799981988966,
+      "device_used_mib": 463
+    },
+    {
+      "seconds": 1.0999751999625005,
+      "device_used_mib": 464
+    },
+    {
+      "seconds": 2.1453602999681607,
+      "device_used_mib": 464
+    },
+    {
+      "seconds": 3.1913195999804884,
+      "device_used_mib": 468
+    },
+    {
+      "seconds": 4.235757699992973,
+      "device_used_mib": 466
+    },
+    {
+      "seconds": 5.2822040999890305,
+      "device_used_mib": 465
+    },
+    {
+      "seconds": 6.330088799993973,
+      "device_used_mib": 465
+    },
+    {
+      "seconds": 7.376832899986766,
+      "device_used_mib": 461
+    },
+    {
+      "seconds": 8.42294049996417,
+      "device_used_mib": 462
+    },
+    {
+      "seconds": 9.474995399999898,
+      "device_used_mib": 462
+    },
+    {
+      "seconds": 10.5165444999584,
+      "device_used_mib": 8295
+    },
+    {
+      "seconds": 11.560284700011835,
+      "device_used_mib": 8297
+    },
+    {
+      "seconds": 12.608106600004248,
+      "device_used_mib": 8298
+    },
+    {
+      "seconds": 13.649642799980938,
+      "device_used_mib": 8298
+    },
+    {
+      "seconds": 14.696309899969492,
+      "device_used_mib": 8475
+    },
+    {
+      "seconds": 15.745720300008543,
+      "device_used_mib": 8483
+    },
+    {
+      "seconds": 16.793203499983065,
+      "device_used_mib": 11606
+    },
+    {
+      "seconds": 17.836522099969443,
+      "device_used_mib": 11812
+    },
+    {
+      "seconds": 18.883029699965846,
+      "device_used_mib": 11811
+    },
+    {
+      "seconds": 19.924173899984453,
+      "device_used_mib": 11811
+    },
+    {
+      "seconds": 20.97099399997387,
+      "device_used_mib": 11722
+    },
+    {
+      "seconds": 22.01661900000181,
+      "device_used_mib": 11722
+    },
+    {
+      "seconds": 23.057754400011618,
+      "device_used_mib": 11722
+    },
+    {
+      "seconds": 24.097260000009555,
+      "device_used_mib": 11722
+    },
+    {
+      "seconds": 25.13897969998652,
+      "device_used_mib": 11746
+    },
+    {
+      "seconds": 26.18737279996276,
+      "device_used_mib": 11750
+    },
+    {
+      "seconds": 27.23370879999129,
+      "device_used_mib": 11750
+    },
+    {
+      "seconds": 28.27600109996274,
+      "device_used_mib": 11750
+    },
+    {
+      "seconds": 29.318777100008447,
+      "device_used_mib": 11750
+    },
+    {
+      "seconds": 30.37933460000204,
+      "device_used_mib": 11750
+    },
+    {
+      "seconds": 31.446215000003576,
+      "device_used_mib": 11795
+    },
+    {
+      "seconds": 32.51591439999174,
+      "device_used_mib": 11806
+    },
+    {
+      "seconds": 33.56917049997719,
+      "device_used_mib": 11806
+    },
+    {
+      "seconds": 34.618699399987236,
+      "device_used_mib": 11806
+    },
+    {
+      "seconds": 35.67131259996677,
+      "device_used_mib": 11804
+    },
+    {
+      "seconds": 36.71298209996894,
+      "device_used_mib": 11802
+    },
+    {
+      "seconds": 37.775649999966845,
+      "device_used_mib": 11802
+    },
+    {
+      "seconds": 38.83956549997674,
+      "device_used_mib": 11814
+    },
+    {
+      "seconds": 39.8808793000062,
+      "device_used_mib": 11814
+    },
+    {
+      "seconds": 40.92141119996086,
+      "device_used_mib": 11814
+    },
+    {
+      "seconds": 41.971791599993594,
+      "device_used_mib": 11814
+    },
+    {
+      "seconds": 43.01774639997166,
+      "device_used_mib": 11814
+    },
+    {
+      "seconds": 44.0748678999953,
+      "device_used_mib": 11814
+    },
+    {
+      "seconds": 45.11952179996297,
+      "device_used_mib": 11814
+    },
+    {
+      "seconds": 46.17224260000512,
+      "device_used_mib": 11814
+    },
+    {
+      "seconds": 47.21373869996751,
+      "device_used_mib": 11814
+    },
+    {
+      "seconds": 48.278094800014514,
+      "device_used_mib": 11814
+    },
+    {
+      "seconds": 49.32502950000344,
+      "device_used_mib": 11814
+    },
+    {
+      "seconds": 50.37844880000921,
+      "device_used_mib": 11814
+    },
+    {
+      "seconds": 51.4309153999784,
+      "device_used_mib": 11814
+    },
+    {
+      "seconds": 52.4974592999788,
+      "device_used_mib": 11814
+    },
+    {
+      "seconds": 53.56112269998994,
+      "device_used_mib": 11814
+    },
+    {
+      "seconds": 54.611924099968746,
+      "device_used_mib": 11814
+    },
+    {
+      "seconds": 55.661195199994836,
+      "device_used_mib": 11814
+    },
+    {
+      "seconds": 56.73021319997497,
+      "device_used_mib": 11814
+    },
+    {
+      "seconds": 57.776320400007535,
+      "device_used_mib": 11814
+    },
+    {
+      "seconds": 58.82169359998079,
+      "device_used_mib": 11814
+    },
+    {
+      "seconds": 59.8730760999606,
+      "device_used_mib": 11814
+    },
+    {
+      "seconds": 60.91725860000588,
+      "device_used_mib": 11814
+    },
+    {
+      "seconds": 61.96309829998063,
+      "device_used_mib": 11817
+    },
+    {
+      "seconds": 63.003184799978044,
+      "device_used_mib": 11817
+    },
+    {
+      "seconds": 64.04525119997561,
+      "device_used_mib": 11817
+    },
+    {
+      "seconds": 65.10721829999238,
+      "device_used_mib": 11817
+    },
+    {
+      "seconds": 66.16842770000221,
+      "device_used_mib": 11817
+    },
+    {
+      "seconds": 67.21517539996421,
+      "device_used_mib": 11817
+    },
+    {
+      "seconds": 68.27996209997218,
+      "device_used_mib": 11817
+    },
+    {
+      "seconds": 69.32216009998228,
+      "device_used_mib": 11817
+    },
+    {
+      "seconds": 70.36319209996145,
+      "device_used_mib": 11817
+    },
+    {
+      "seconds": 71.42703419999452,
+      "device_used_mib": 11817
+    },
+    {
+      "seconds": 72.47045979998074,
+      "device_used_mib": 11817
+    },
+    {
+      "seconds": 73.53448309999658,
+      "device_used_mib": 11817
+    },
+    {
+      "seconds": 74.5947135000024,
+      "device_used_mib": 11817
+    },
+    {
+      "seconds": 75.6616151999915,
+      "device_used_mib": 11817
+    },
+    {
+      "seconds": 76.72783639997942,
+      "device_used_mib": 11817
+    },
+    {
+      "seconds": 77.77934509998886,
+      "device_used_mib": 11817
+    },
+    {
+      "seconds": 78.82128420000663,
+      "device_used_mib": 11944
+    },
+    {
+      "seconds": 79.88902070000768,
+      "device_used_mib": 11952
+    },
+    {
+      "seconds": 80.94833019998623,
+      "device_used_mib": 11959
+    },
+    {
+      "seconds": 82.00664269999834,
+      "device_used_mib": 11959
+    },
+    {
+      "seconds": 83.06990120001137,
+      "device_used_mib": 11959
+    },
+    {
+      "seconds": 84.14462639996782,
+      "device_used_mib": 11959
+    },
+    {
+      "seconds": 85.19315100001404,
+      "device_used_mib": 11959
+    },
+    {
+      "seconds": 86.23780539998552,
+      "device_used_mib": 11961
+    },
+    {
+      "seconds": 87.30367009999463,
+      "device_used_mib": 11973
+    },
+    {
+      "seconds": 88.37178439996205,
+      "device_used_mib": 11985
+    },
+    {
+      "seconds": 89.42959959997097,
+      "device_used_mib": 11985
+    },
+    {
+      "seconds": 90.47393460001331,
+      "device_used_mib": 11852
+    },
+    {
+      "seconds": 91.53623089997564,
+      "device_used_mib": 11852
+    },
+    {
+      "seconds": 92.57945449999534,
+      "device_used_mib": 11852
+    },
+    {
+      "seconds": 93.63834599999245,
+      "device_used_mib": 11852
+    },
+    {
+      "seconds": 94.70258759998251,
+      "device_used_mib": 11852
+    },
+    {
+      "seconds": 95.81341170001542,
+      "device_used_mib": 11851
+    },
+    {
+      "seconds": 96.863475799968,
+      "device_used_mib": 11851
+    },
+    {
+      "seconds": 97.92182899999898,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 98.9809218000155,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 100.03131719998783,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 101.09176939999452,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 102.1550133000128,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 103.2195967999869,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 104.26280059997225,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 105.31169409997528,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 106.3742510000011,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 107.4218824999989,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 108.47713139996631,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 109.53683559998171,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 110.58192839997355,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 111.62420159997419,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 112.69035589997657,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 113.76045299996622,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 114.83461680001346,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 115.88921799999662,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 116.93399389996193,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 117.97872279997682,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 119.01745899999514,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 120.05901359999552,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 121.10282159998314,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 122.14948829996865,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 123.21190619998379,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 124.2524679999915,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 125.31567509996239,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 126.381929199968,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 127.45194980001543,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 128.4959154999815,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 129.53915699996287,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 130.59890119999181,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 131.66058530000737,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 132.72853049996775,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 133.77664009999717,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 134.8221651999629,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 135.86788199999137,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 136.91176350001479,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 137.98056170000928,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 139.0332879999769,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 140.08426370000234,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 141.14416029996937,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 142.20550779998302,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 143.24575989996083,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 144.3069603999611,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 145.3487892000121,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 146.3958091000095,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 147.44782920001308,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 148.49567809997825,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 149.55469049996464,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 150.61843649996445,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 151.66140789998462,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 152.7050589999999,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 153.77141469996423,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 154.8136983999866,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 155.8607547999709,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 156.90381619997788,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 157.96867199998815,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 159.02737899997737,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 160.0875172999804,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 161.12796879996313,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 162.1889260999742,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 163.2393366000033,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 164.30055789998733,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 165.36623970000073,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 166.41458739998052,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 167.46537170000374,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 168.5050642999704,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 169.55922769999597,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 170.60874180000974,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 171.6532285999856,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 172.70488879998447,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 173.80445419996977,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 174.84889169997768,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 175.9045666999882,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 176.9508720000158,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 178.01586699998006,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 179.07928679999895,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 180.1377068000147,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 181.1843628999777,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 182.24259470001562,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 183.30527939996682,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 184.36633200000506,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 185.41983139998047,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 186.4821837999625,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 187.54599800001597,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 188.60812749998877,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 189.67450319998898,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 190.72314259997802,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 191.7786607000162,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 192.8322679999983,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 193.87286619999213,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 194.9207797999843,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 195.9713465999812,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 197.01106049999362,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 198.07586049998645,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 199.12214099999983,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 200.16564630001085,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 201.22926699998789,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 202.27064509998308,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 203.32780629995978,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 204.3929325999925,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 205.4366774999653,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 206.49466590001248,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 207.54563429998234,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 208.60584119998384,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 209.65314309997484,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 210.71013109997148,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 211.7701415999909,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 212.8181008999818,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 213.85839850001503,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 214.90685119997943,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 215.95202109997626,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 216.995607299963,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 218.06282619998092,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 219.12209479999729,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 220.16790339996805,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 221.22368789999746,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 222.28269570000703,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 223.32922449999023,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 224.37736429995857,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 225.42150910000782,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 226.4828280999791,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 227.54822960001184,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 228.59274240001105,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 229.65332919999491,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 230.7114286000142,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 231.85563760000514,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 232.89999060000991,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 233.9499380000052,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 234.99039940000512,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 236.05189489998156,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 237.0959884999902,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 238.15338390000397,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 239.1965584999998,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 240.24422200000845,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 241.2906622000155,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 242.35765459999675,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 243.40350149996812,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 244.4621187999728,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 245.5264001999749,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 246.58627570001408,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 247.64019880001433,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 248.69719639996765,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 249.75904360000277,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 250.81537299999036,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 251.85670740000205,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 252.9036836999585,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 253.94958159996895,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 255.01229230000172,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 256.0723711999599,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 257.1176764999982,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 258.1823783,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 259.25153439998394,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 260.29582289996324,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 261.3506566999713,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 262.4163095999975,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 263.46006929996656,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 264.5044528999715,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 265.5625919000013,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 266.603574400011,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 267.66455079999287,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 268.70869830000447,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 269.7545465999865,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 270.8238394999644,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 271.8938690999639,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 272.9602268000017,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 274.0118861999945,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 275.08303340000566,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 276.1433206999791,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 277.2072396000149,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 278.2695035999641,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 279.34058199997526,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 280.3855898999609,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 281.4442237999756,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 282.50770989997545,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 283.56322820001515,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 284.6270695999847,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 285.68481249996694,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 286.7600128999911,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 287.86714779998874,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 288.934498699964,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 290.00524399999995,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 291.0973038999946,
+      "device_used_mib": 11849
+    },
+    {
+      "seconds": 292.1611453999649,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 293.220582799986,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 294.28942250000546,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 295.3515473000007,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 296.408291300002,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 297.46529299998656,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 298.5289992999751,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 299.57762090000324,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 300.62605259998236,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 301.68983509996906,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 302.7549121999764,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 303.83487729995977,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 304.90046939998865,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 305.9682097999612,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 307.0288932999829,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 308.0935899000033,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 309.1556792999618,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 310.25476659997366,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 311.30904459999874,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 312.3568154000095,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 313.41818099998636,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 314.4780746999895,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 315.5416838999954,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 316.6001220999751,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 317.6671342999907,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 318.7289279999677,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 319.79559649998555,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 320.83456950000254,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 321.90166390000377,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 322.96414039999945,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 324.01767319999635,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 325.08289469999727,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 326.1540432999609,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 327.2112192999921,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 328.29193730000407,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 329.37259370001266,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 330.4132452000049,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 331.47070329997223,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 332.5147929000086,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 333.55577219999395,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 334.6173211999703,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 335.6694051999948,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 336.72555589996045,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 337.77743289998034,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 338.8330655999598,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 339.89014579996,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 340.9534846000024,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 342.006269000005,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 343.0500774999964,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 344.09914770000614,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 345.14640769996913,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 346.20857799996156,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 347.2612040999811,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 348.32559009996476,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 349.3804053000058,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 350.4235131999594,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 351.48757220001426,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 352.5474167999928,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 353.59240729996236,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 354.6396848000004,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 355.70483629999217,
+      "device_used_mib": 11848
+    },
+    {
+      "seconds": 356.7997455999721,
+      "device_used_mib": 11847
+    },
+    {
+      "seconds": 357.840755000012,
+      "device_used_mib": 11847
+    },
+    {
+      "seconds": 358.8829284000094,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 359.945564499998,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 361.01638370001456,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 362.0767812000122,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 363.1403159999754,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 364.1814763000002,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 365.2425607999903,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 366.30738919996656,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 367.375368900015,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 368.4338563999627,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 369.49769009999,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 370.5374509000103,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 371.59870969998883,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 372.66462349996436,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 373.7080914999824,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 374.8028434999869,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 375.8606696999632,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 376.9072515000007,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 377.953466499981,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 379.00163839996094,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 380.06996649998473,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 381.1175291999825,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 382.16561729996465,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 383.233854399994,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 384.2817593999789,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 385.33995930000674,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 386.40557349997107,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 387.4476151000126,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 388.4953128999914,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 389.5348930999753,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 390.5955023000133,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 391.6583074000082,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 392.7028266999987,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 393.74469979997957,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 394.80939489998855,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 395.858814599982,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 396.92287229996873,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 397.98426779999863,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 399.02986389998114,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 400.0901731000049,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 401.13570859999163,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 402.20141159999184,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 403.26092119998066,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 404.301294600009,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 405.3646898000152,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 406.4239324000082,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 407.4789505999652,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 408.52392559999134,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 409.5677032999811,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 410.63120150001487,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 411.67073879996315,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 412.7198697999702,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 413.77692530001514,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 414.8350464999676,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 415.8956337000127,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 416.95025150000583,
+      "device_used_mib": 11846
+    },
+    {
+      "seconds": 418.0038479999639,
+      "device_used_mib": 11845
+    },
+    {
+      "seconds": 419.0539715999621,
+      "device_used_mib": 11844
+    },
+    {
+      "seconds": 420.14693260000786,
+      "device_used_mib": 11843
+    },
+    {
+      "seconds": 421.2405866999761,
+      "device_used_mib": 11837
+    },
+    {
+      "seconds": 422.2964819999761,
+      "device_used_mib": 11837
+    },
+    {
+      "seconds": 423.3507120999857,
+      "device_used_mib": 11837
+    },
+    {
+      "seconds": 424.418628000014,
+      "device_used_mib": 11837
+    },
+    {
+      "seconds": 425.46388739999384,
+      "device_used_mib": 11837
+    },
+    {
+      "seconds": 426.523326799972,
+      "device_used_mib": 11837
+    },
+    {
+      "seconds": 427.56650209997315,
+      "device_used_mib": 11837
+    },
+    {
+      "seconds": 428.6149474999984,
+      "device_used_mib": 11837
+    },
+    {
+      "seconds": 429.67644660000224,
+      "device_used_mib": 11837
+    },
+    {
+      "seconds": 430.7272467999719,
+      "device_used_mib": 11837
+    },
+    {
+      "seconds": 431.78466629999457,
+      "device_used_mib": 11837
+    },
+    {
+      "seconds": 432.84016959997825,
+      "device_used_mib": 11837
+    },
+    {
+      "seconds": 433.8809647000162,
+      "device_used_mib": 11837
+    },
+    {
+      "seconds": 434.9262605999829,
+      "device_used_mib": 11837
+    },
+    {
+      "seconds": 435.97699190001003,
+      "device_used_mib": 11837
+    },
+    {
+      "seconds": 437.03657369996654,
+      "device_used_mib": 11837
+    },
+    {
+      "seconds": 438.0885898999986,
+      "device_used_mib": 11837
+    },
+    {
+      "seconds": 439.1498800999834,
+      "device_used_mib": 11837
+    },
+    {
+      "seconds": 440.22412829997484,
+      "device_used_mib": 11837
+    },
+    {
+      "seconds": 441.2703196000075,
+      "device_used_mib": 11837
+    },
+    {
+      "seconds": 442.31075469998177,
+      "device_used_mib": 11837
+    },
+    {
+      "seconds": 443.3817628999823,
+      "device_used_mib": 11837
+    },
+    {
+      "seconds": 444.4207169999718,
+      "device_used_mib": 11837
+    },
+    {
+      "seconds": 445.4837004999863,
+      "device_used_mib": 11837
+    },
+    {
+      "seconds": 446.52446709998185,
+      "device_used_mib": 11837
+    },
+    {
+      "seconds": 447.5704298999626,
+      "device_used_mib": 11837
+    },
+    {
+      "seconds": 448.6268369999598,
+      "device_used_mib": 11837
+    },
+    {
+      "seconds": 449.6927393999649,
+      "device_used_mib": 11837
+    },
+    {
+      "seconds": 450.7398221999756,
+      "device_used_mib": 11837
+    },
+    {
+      "seconds": 451.78095980000217,
+      "device_used_mib": 11837
+    },
+    {
+      "seconds": 452.8253097999841,
+      "device_used_mib": 11837
+    },
+    {
+      "seconds": 453.88861249998445,
+      "device_used_mib": 11837
+    },
+    {
+      "seconds": 454.9367363000056,
+      "device_used_mib": 11837
+    },
+    {
+      "seconds": 455.98004840000067,
+      "device_used_mib": 11837
+    },
+    {
+      "seconds": 457.02324149996275,
+      "device_used_mib": 11831
+    },
+    {
+      "seconds": 458.08722059999127,
+      "device_used_mib": 11831
+    },
+    {
+      "seconds": 459.13413939997554,
+      "device_used_mib": 11831
+    },
+    {
+      "seconds": 460.19560269999783,
+      "device_used_mib": 11831
+    },
+    {
+      "seconds": 461.239985799999,
+      "device_used_mib": 11831
+    },
+    {
+      "seconds": 462.2845754000009,
+      "device_used_mib": 11831
+    },
+    {
+      "seconds": 463.32709589996375,
+      "device_used_mib": 11831
+    },
+    {
+      "seconds": 464.36712089995854,
+      "device_used_mib": 11831
+    },
+    {
+      "seconds": 465.4152812999673,
+      "device_used_mib": 11831
+    },
+    {
+      "seconds": 466.46412149997195,
+      "device_used_mib": 11831
+    },
+    {
+      "seconds": 467.52533849998144,
+      "device_used_mib": 11831
+    },
+    {
+      "seconds": 468.586235499999,
+      "device_used_mib": 11831
+    },
+    {
+      "seconds": 469.65006760001415,
+      "device_used_mib": 11831
+    },
+    {
+      "seconds": 470.6941214000108,
+      "device_used_mib": 11831
+    },
+    {
+      "seconds": 471.79449040000327,
+      "device_used_mib": 11831
+    },
+    {
+      "seconds": 472.84590610000305,
+      "device_used_mib": 11831
+    },
+    {
+      "seconds": 473.9122449000133,
+      "device_used_mib": 11831
+    },
+    {
+      "seconds": 474.9552255999879,
+      "device_used_mib": 11831
+    },
+    {
+      "seconds": 476.01826489996165,
+      "device_used_mib": 11831
+    },
+    {
+      "seconds": 477.0705923999776,
+      "device_used_mib": 11831
+    },
+    {
+      "seconds": 478.1342660000082,
+      "device_used_mib": 11831
+    },
+    {
+      "seconds": 479.18636280001374,
+      "device_used_mib": 11831
+    },
+    {
+      "seconds": 480.23666850000154,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 481.288506300014,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 482.3517789999605,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 483.39005409996025,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 484.4353515999974,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 485.4947879000101,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 486.5398795999936,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 487.5902835999732,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 488.6388474999694,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 489.70459370000754,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 490.7675809999928,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 491.8341695999843,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 492.87745540001197,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 493.92426339996746,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 494.9743050999823,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 496.03942679998,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 497.0958301000064,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 498.1387483999715,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 499.1888967999839,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 500.2431493999902,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 501.29432980000274,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 502.3407665999839,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 503.3844824999687,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 504.4338020000141,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 505.4834401999833,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 506.52940309996484,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 507.57764779997524,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 508.62419319996843,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 509.6742958999821,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 510.723055200011,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 511.78550749999704,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 512.8343787000049,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 513.8793908999651,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 514.916607399995,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 515.9660299000097,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 517.0137272999855,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 518.0633477999945,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 519.1152440999867,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 520.1792465999606,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 521.2474046999705,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 522.2932472999673,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 523.3446355999913,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 524.4105717999628,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 525.4627593999612,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 526.5151362000033,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 527.5745006999932,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 528.6246929999907,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 529.6741281999857,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 530.7224961000029,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 531.8209965999704,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 532.8734052999644,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 533.9331519000116,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 534.9760626999778,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 536.0462805000134,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 537.0994569999748,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 538.1401640999829,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 539.1958591999719,
+      "device_used_mib": 11828
+    },
+    {
+      "seconds": 540.2451133999857,
+      "device_used_mib": 11827
+    },
+    {
+      "seconds": 541.2979242000147,
+      "device_used_mib": 11827
+    },
+    {
+      "seconds": 542.3440555999987,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 543.3844050999614,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 544.4315887999837,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 545.4797430000035,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 546.5202664000099,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 547.5861263999832,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 548.6340570999891,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 549.6886818999774,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 550.7351282999734,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 551.8026895999792,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 552.8412309999694,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 553.8912937999703,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 554.9386767999968,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 555.9929068000056,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 557.0627578999847,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 558.1128098999616,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 559.1583429999882,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 560.204599699995,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 561.2516194999916,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 562.2986881000106,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 563.3600736999651,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 564.4112247999874,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 565.4591723000049,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 566.5005837999634,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 567.5459426000016,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 568.5954238999984,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 569.6468565000105,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 570.698981900001,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 571.7452066999977,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 572.7899617999792,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 573.8311640999746,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 574.8776603000006,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 575.9257420999929,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 576.9712380999699,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 578.0159936000127,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 579.067169899994,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 580.1453679999686,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 581.1951515999972,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 582.2412101000082,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 583.2884721999872,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 584.3308215999859,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 585.3783075999818,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 586.4220938999788,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 587.4687577000004,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 588.5165825000149,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 589.5631781999837,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 590.6305509000085,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 591.6830987000139,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 592.7284898000071,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 593.7758253999637,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 594.8222393000033,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 595.868716099998,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 596.9137995999772,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 597.9738135999651,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 599.0229257000028,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 600.0619035999989,
+      "device_used_mib": 11826
+    },
+    {
+      "seconds": 601.1095273999963,
+      "device_used_mib": 11825
+    },
+    {
+      "seconds": 602.1526958000031,
+      "device_used_mib": 11824
+    },
+    {
+      "seconds": 603.2070466000005,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 604.2529451000155,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 605.3024218999781,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 606.3556014999631,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 607.397575800016,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 608.4487404999672,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 609.494509799988,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 610.5531764999614,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 611.6063089999952,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 612.6649717999971,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 613.7163733000052,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 614.7765366999665,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 615.8454568999587,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 616.9144551999634,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 617.9632635000162,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 619.0095504999626,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 620.0711297999951,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 621.1367083999794,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 622.1997072999948,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 623.2644549999968,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 624.3178314999677,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 625.3670779999811,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 626.4165780000039,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 627.4668257000158,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 628.5184189999709,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 629.5654624999734,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 630.6029397000093,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 631.6667372999946,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 632.7119811999728,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 633.7783911000006,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 634.8273956999765,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 635.8728038999834,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 636.9233525000163,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 637.967254499963,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 639.0127556999796,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 640.0580131000024,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 641.1091669999878,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 642.1678201999748,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 643.213389099983,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 644.2794303999981,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 645.3231689999811,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 646.3687607999891,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 647.4377495999797,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 648.4825662999647,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 649.5292760999873,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 650.5740908000153,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 651.6172806000104,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 652.6698810000089,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 653.7178329000017,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 654.7980153000099,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 655.8511789999902,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 656.9030914999894,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 657.9423702000058,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 658.9834572999971,
+      "device_used_mib": 11819
+    },
+    {
+      "seconds": 660.0364605999785,
+      "device_used_mib": 11819
+    }
+  ],
+  "peak_total_device_mib": 11985
+}

@@ -1,0 +1,34 @@
+{
+  "scope": "CPU text inspection of the 24 already exposed first-attempt source captures, excluding discovery pages and duplicate bodies. No model/public requests/gold access or new score.",
+  "files": 24,
+  "unique_bodies": 150,
+  "rows": [
+    {
+      "capture_path": "research/external-disjoint12b-20261023/simpleqa-1013.json",
+      "capture_sha256": "71ea4be5da2aa66fb49b9f1293dcfb86252299c5ccd7b0c7233b4891c4bf6817",
+      "url": "https://www.geni.com/login",
+      "body_sha256": "9ffaa817c8a48c745a43728aa96d80513c9e683d20052b8a4edd28e3010af8bd",
+      "locator": "meta[2]",
+      "text": "description: Create your family tree and invite relatives to share. Search 285 million profiles and discover new ancestors. Share photos, videos and more at Geni.com.",
+      "quantity": "285 million"
+    },
+    {
+      "capture_path": "research/external-disjoint12b-20261023/simpleqa-1013.json",
+      "capture_sha256": "71ea4be5da2aa66fb49b9f1293dcfb86252299c5ccd7b0c7233b4891c4bf6817",
+      "url": "https://www.geni.com/login",
+      "body_sha256": "bd93f5fe1fb15848f8d02487b4560a456ef2bc34ec701a7cf41c00678b3e321e",
+      "locator": "meta[2]",
+      "text": "description: Create your family tree and invite relatives to share. Search 285 million profiles and discover new ancestors. Share photos, videos and more at Geni.com.",
+      "quantity": "285 million"
+    },
+    {
+      "capture_path": "research/external-disjoint12-20261023/simpleqa-3207.json",
+      "capture_sha256": "b6a095572cb8803afe8b240d390cae74f0d83a085174ee78ba9013c985db65c0",
+      "url": "https://www2.census.gov/census_2000/census2000/states/oh.html",
+      "body_sha256": "2d966b05d3603c1ae5f7d4eb035ed26262a263f706f3eec8606fdc8909e64b4b",
+      "locator": "table[14]/row[0]",
+      "text": " | Summary File 3 consists of 813 detailed tables of Census 2000 social, economic and housing characteristics compiled from a sample of approximately 19 million housing units (about 1 in 6 households) that received the Census 2000 long-form questionnaire. Fifty-one tables are repeated for nine major race and Hispanic or Latino groups: White alone; Black or African American alone; American Indian and Alaska Native alone; Asian alone; Native Hawaiian and Other Pacific Islander alone; Some other race alone; Two or more races; Hispanic or Latino; and White alone, not Hispanic or Latino. Summary File 3 presents data for the United States, the 50 states, the District of Columbia and Puerto Rico in a hierarchical sequence down to the block group for many tabulations, but only to the census tract levels for others. Summaries are included for other geographic areas such as Zip Code Tabulation Areas (ZCTAs TM ) and Congressional districts (106 th Congress). Summary File 3 includes 484 population tables and 329 housing tables that are identified according to geographic coverage: Population (P) and Housing (H) tables are available to the block group Population (PCT) and Housing (HCT) tables are available to the census tract level only | Summary File 3 consists of 813 detailed tables of Census 2000 social, economic and housing characteristics compiled from a sample of approximately 19 million housing units (about 1 in 6 households) that received the Census 2000 long-form questionnaire. Fifty-one tables are repeated for nine major race and Hispanic or Latino groups: White alone; Black or African American alone; American Indian and Alaska Native alone; Asian alone; Native Hawaiian and Other Pacific Islander alone; Some other race alone; Two or more races; Hispanic or Latino; and White alone, not Hispanic or Latino. Summary File 3 presents data for the United States, the 50 states, the District of Columbia and Puerto Rico in a hierarchical sequence down to the block group for many tabulations, but only to the census tract levels for others. Summaries are included for other geographic areas such as Zip Code Tabulation Areas (ZCTAs TM ) and Congressional districts (106 th Congress). Summary File 3 includes 484 population tables and 329 housing tables that are identified according to geographic coverage: Population (P) and Housing (H) tables are available to the block group Population (PCT) and Housing (HCT) tables are available to the census tract level only",
+      "quantity": "19 million"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "scope": "Actual official keyless GET, no third-party wrapper/account/payment. Source availability and parsed-content parity only; not a live model or accuracy run.",
+  "api_status": 200,
+  "error": "",
+  "source": "https://api.oyez.org/cases/1966/37?labels=true",
+  "events": [
+    {
+      "url": "https://www.oyez.org/cases/1966/37",
+      "final": "https://www.oyez.org/cases/1966/37",
+      "status": 200,
+      "bytes": 2453,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://api.oyez.org/cases/1966/37?labels=true",
+      "final": "https://api.oyez.org/cases/1966/37?labels=true",
+      "status": 200,
+      "bytes": 31699,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    }
+  ],
+  "passage_count": 11,
+  "same_parsed_page": true,
+  "same_body": true,
+  "body_sha256": "8c1463967a6a4ae0bd50ac10be8d50911b58eafcd6cc3337c3240aeadc8bb91c",
+  "capture_sha256": "f7e921adef5833387c8bb37d0f5b3e0f424030ec0eba4133703794becfdf249b",
+  "capture_path": "research/case-members-20261023/live-response.json"
+}

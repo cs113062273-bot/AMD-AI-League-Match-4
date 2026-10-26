@@ -1,0 +1,103 @@
+{
+  "scope": "CPU-only free public GETs of query variants built from original question; no answer name/gold injected.",
+  "rows": [
+    {
+      "query": "sculptor of ceres sculpture Belvoir Castle",
+      "status": 200,
+      "error": "",
+      "links": [
+        [
+          "https://historicengland.org.uk/listing/the-list/list-entry/1180136",
+          "Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of ..."
+        ],
+        [
+          "https://britishlistedbuildings.co.uk/101180136-sculpture-depicting-ceres-in-belvoir-castle-sculpture-garden-one-of-seven-statues-belvoir",
+          "Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of ..."
+        ],
+        [
+          "https://www.thewrennreport.co.uk/building/E60000089-f0faa82c-704f-448a-adfe-17278c2ad71c/sculpture-depicting-ceres-in-belvoir-castle-sculpture-garden-one-of-seven-statue",
+          "Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of ..."
+        ],
+        [
+          "https://www.wikidata.org/wiki/Q17541704",
+          "Sculpture Depicting Ceres In Belvoir Castle Sculpture Garden (one Of ..."
+        ],
+        [
+          "https://www.flickr.com/photos/30120216@N07/52245858101",
+          "[111137] Belvoir Castle : Gardens - Ceres - Flickr"
+        ],
+        [
+          "https://historicengland.org.uk/images-books/photos/item/IOE01/04527/03",
+          "Sculpture Depicting Ceres In Belvoir Castle Sculpture Garden (One Of ..."
+        ],
+        [
+          "https://www.geograph.org.uk/photo/7174153",
+          "Belvoir Castle and gardens [18] &copy; Michael Dibb"
+        ],
+        [
+          "https://en.wikipedia.org/wiki/Belvoir_Castle",
+          "Belvoir Castle - Wikipedia"
+        ]
+      ],
+      "capture_path": "research/location-hints-20261023-variants/0.json",
+      "sha256": "3393ed3a6a0cee18a9042208f04673259fd39596281bb2f29efc62cfe75a14e4"
+    },
+    {
+      "query": "Ceres Belvoir Castle sculpture sculptor",
+      "status": 200,
+      "error": "",
+      "links": [
+        [
+          "https://historicengland.org.uk/listing/the-list/list-entry/1180136",
+          "Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of ..."
+        ],
+        [
+          "https://britishlistedbuildings.co.uk/101180136-sculpture-depicting-ceres-in-belvoir-castle-sculpture-garden-one-of-seven-statues-belvoir",
+          "Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of ..."
+        ],
+        [
+          "https://www.thewrennreport.co.uk/building/E60000089-f0faa82c-704f-448a-adfe-17278c2ad71c/sculpture-depicting-ceres-in-belvoir-castle-sculpture-garden-one-of-seven-statue",
+          "Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of ..."
+        ],
+        [
+          "https://www.wikidata.org/wiki/Q17541704",
+          "Sculpture Depicting Ceres In Belvoir Castle Sculpture Garden (one Of ..."
+        ],
+        [
+          "https://historicengland.org.uk/images-books/photos/item/IOE01/04527/03",
+          "Sculpture Depicting Ceres In Belvoir Castle Sculpture Garden (One Of ..."
+        ],
+        [
+          "https://www.flickr.com/photos/30120216@N07/52245858101",
+          "[111137] Belvoir Castle : Gardens - Ceres - Flickr"
+        ],
+        [
+          "https://www.geograph.org.uk/photo/7174153",
+          "Belvoir Castle and gardens [18] &copy; Michael Dibb"
+        ],
+        [
+          "https://heritagecheck.co.uk/conservation-area/belvoir-castle/listed-buildings?focus=SCULPTURE%20DEPICTING%20CERES%20IN%20BELVOIR%20CASTLE%20SCULPTURE%20GARDEN%20(ONE%20OF%20SEVEN%20STATUES)&lat=52.89414940172593&lng=-0.7839048332939766&grade=II*",
+          "Listed Buildings in Belvoir Castle Conservation Area"
+        ]
+      ],
+      "capture_path": "research/location-hints-20261023-variants/1.json",
+      "sha256": "b1d1a758e0e063cc0a99b3b1d8bb29eec19d4bd0b9772a157656b86a15978e9b"
+    },
+    {
+      "query": "\"Belvoir Castle\" \"Ceres\"",
+      "status": 202,
+      "error": "",
+      "links": [],
+      "capture_path": "research/location-hints-20261023-variants/2.json",
+      "sha256": "4717d9469aa0f4123d0b0a1a84f5eacd0f18ad5f99ca00fcbfbb1f99ae05cf9a"
+    },
+    {
+      "query": "\"Belvoir Castle\" sculpture 1680",
+      "status": 202,
+      "error": "",
+      "links": [],
+      "capture_path": "research/location-hints-20261023-variants/3.json",
+      "sha256": "e11e97c466319daa42cbb2c69f2b7623fc669c42ae0c8c4c531a315526ff6fb9"
+    }
+  ]
+}

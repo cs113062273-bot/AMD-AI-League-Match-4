@@ -1,0 +1,424 @@
+{
+  "scope": "CPU-only frozen actual retrieval replay for empty-hint historical questions.\n\nNo GPU, model or browser. A selector stub tests literal protocol only; it is\nnot an actual model answer, unseen accuracy or a strict joint-score result.\n",
+  "baseline_revision": "f95c6178b8747cecac9c7ebb2a8ce603dd012cad",
+  "baseline_source_sha256": {
+    "agent/engine.py": "01464cb276814f2d7c845c269da2522c285a7a7e28051abd7e36ad0ec62b41ff",
+    "agent/types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent/planner.py": "8ee6e9dc255c73840582af0f438331a16a3023cfe886b562fbb7681b1e74ae90",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "agent/normalize.py": "05e48fa0be8384aa656bf1280ba0be44545efa51b7d4451f0716d836d39a1973",
+    "agent/urls.py": "6bbf58adf3c55cf3787edf4b6607a7db8eea987f0c02dd6cdfea48f6c38e031f",
+    "agent/network.py": "c37ecb5b4b0fba4fac737954eda24952059922ed620c94b99bcb17daed8c5155",
+    "agent/parser.py": "92fc37b32045b8c7f25d7d161c2ca00e9e49c82d2460616ef84d66fe31442069",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/challenges.py": "b6f51c720f332671725e08127a5d1c163ca0542d2a550bf3c980a6d4c49bf6a1",
+    "agent/field_groups.py": "52a54989253c59e9836dec4aaec4944b688376e79548b9336887558a454e9162",
+    "agent/resolvers.py": "312d776118c6c6f0421939df58cf6bcaec8740a7fd341136c17a33f284a03ef2",
+    "agent/search.py": "83cf05195060a04b16903c7950de4cf66f9e908e916ae3e66844307d7a2fbd3d",
+    "agent/literature.py": "9b871500ab1ebaf88e8fca2c70bd7ade7eb81774412fa85a1f4be7d2fb06263f",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/candidates.py": "12f10d438849721c2dcad6b74b92682f9971b8eece3fd44f23f76c4ccefaa021",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/evidence.py": "56994f2e5046668e33630fbc2330cfac35c8971f3c4d4e25f22547f1d99feba2",
+    "agent/selector.py": "a693a62781fcb76dd11bc6d29eb19770b48dc7e2e29bd7619cc189b62bf70e1b",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+    "agent/proofs.py": "0d7ae78df6ea9949c29f33c7b817dda352c75b3d99c960c3e987e37c7401faab",
+    "agent/oyez.py": "8475f248d78925522e0742b13518be2c4f4db11eae0d8391a8002da7d4e3b67d"
+  },
+  "input_sha256": {
+    "research\\external-disjoint12b-20261023-repeat\\simpleqa-1076.json": "af0d98ae7bcbcfa0cfabc91fd99f359f2f31edcbf092e7f8f573f9dc7b421a6e",
+    "research/named-year-20261023-live.json": "02bf02d05bf974c98cfc3cc11fac832f0de96cee533baa14fa76e06193b3abb8"
+  },
+  "before": {
+    "links": [],
+    "missing_captures": [],
+    "requests": [
+      {
+        "url": "https://en-academic.com/dic.nsf/enwiki/4707620",
+        "error": "ClientConnectorCertificateError: Cannot connect to host en-academic.com:443 ssl:True [SSLCertVerificationError: (5, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certifica"
+      },
+      {
+        "url": "https://www.bing.com/search?q=goals+selkirk+fishermen+score+game+2+1920+memorial+cup+against+toronto+canoe+club+paddlers",
+        "error": ""
+      },
+      {
+        "url": "https://www.bing.com/search?q=How+many+goals+did+the+Selkirk+Fishermen+score+in+Game+2+of+the+1920+Memorial+Cup+against+the+Toronto+Canoe+Club+Paddlers%3F",
+        "error": ""
+      },
+      {
+        "url": "https://html.duckduckgo.com/html/?q=goals+selkirk+fishermen+score+game+2+1920+memorial+cup+against+toronto+canoe+club+paddlers",
+        "error": ""
+      },
+      {
+        "url": "https://html.duckduckgo.com/html/?q=How+many+goals+did+the+Selkirk+Fishermen+score+in+Game+2+of+the+1920+Memorial+Cup+against+the+Toronto+Canoe+Club+Paddlers%3F",
+        "error": ""
+      },
+      {
+        "url": "https://www.bing.com/search?format=rss&q=goals+selkirk+fishermen+score+game+2+1920+memorial+cup+against+toronto+canoe+club+paddlers",
+        "error": ""
+      },
+      {
+        "url": "https://lite.duckduckgo.com/lite/?q=goals+selkirk+fishermen+score+game+2+1920+memorial+cup+against+toronto+canoe+club+paddlers",
+        "error": ""
+      },
+      {
+        "url": "https://www.google.com/search?q=goals+selkirk+fishermen+score+game+2+1920+memorial+cup+against+toronto+canoe+club+paddlers",
+        "error": ""
+      },
+      {
+        "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=How%20many%20goals%20did%20the%20Selkirk%20Fishermen%20score%20in%20Game%202%20of%20the%201920%20Memorial%20Cup%20against%20the%20Toronto%20Canoe%20Club%20Paddlers%3F",
+        "error": "http_403"
+      }
+    ],
+    "complete_witness": false,
+    "payload": {
+      "question": "How many goals did the Selkirk Fishermen score in Game 2 of the 1920 Memorial Cup against the Toronto Canoe Club Paddlers?",
+      "starting_url": "https://en-academic.com/dic.nsf/enwiki/4707620",
+      "constraints": {
+        "kind": "number",
+        "year": "",
+        "as_of": "",
+        "versions": [],
+        "stable": false,
+        "cardinality": 1,
+        "target": "how many goals did the selkirk fishermen score ",
+        "choices": [],
+        "operation": "single",
+        "required_fields": [],
+        "date_precision": ""
+      },
+      "candidates": [],
+      "passages": []
+    }
+  },
+  "after": {
+    "links": [
+      [
+        "https://en.wikipedia.org/wiki/1920_Memorial_Cup",
+        "1920 Memorial Cup - Wikipedia"
+      ],
+      [
+        "https://grokipedia.com/page/1920_memorial_cup",
+        "1920 Memorial Cup \u2014 Grokipedia"
+      ],
+      [
+        "https://en.wikipedia.org/wiki/Selkirk_Fishermen",
+        "Selkirk Fishermen - Wikipedia"
+      ],
+      [
+        "https://mbhockeyhalloffame.ca/teams/191920-selkirk-fishermen/",
+        "1919/20 SELKIRK FISHERMEN | Manitoba Hockey Hall of Fame"
+      ],
+      [
+        "https://www.wikiwand.com/en/1920_Memorial_Cup",
+        "1920 Memorial Cup - Wikiwand"
+      ],
+      [
+        "https://icehockey.fandom.com/wiki/1919-20_Memorial_Cup_Final",
+        "1919-20 Memorial Cup Final | Ice Hockey Wiki | Fandom"
+      ],
+      [
+        "https://internationalhockey.fandom.com/wiki/1919-20_Memorial_Cup_Final",
+        "1919-20 Memorial Cup Final | International Hockey Wiki | Fandom"
+      ],
+      [
+        "https://everything.explained.today/1920_Memorial_Cup/",
+        "1920 Memorial Cup Explained"
+      ]
+    ],
+    "missing_captures": [],
+    "requests": [
+      {
+        "url": "https://en-academic.com/dic.nsf/enwiki/4707620",
+        "error": "ClientConnectorCertificateError: Cannot connect to host en-academic.com:443 ssl:True [SSLCertVerificationError: (5, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certifica"
+      },
+      {
+        "url": "https://www.bing.com/search?q=goals+selkirk+fishermen+score+game+2+1920+memorial+cup+against+toronto+canoe+club+paddlers",
+        "error": ""
+      },
+      {
+        "url": "https://www.bing.com/search?q=How+many+goals+did+the+Selkirk+Fishermen+score+in+Game+2+of+the+1920+Memorial+Cup+against+the+Toronto+Canoe+Club+Paddlers%3F",
+        "error": ""
+      },
+      {
+        "url": "https://html.duckduckgo.com/html/?q=goals+selkirk+fishermen+score+game+2+1920+memorial+cup+against+toronto+canoe+club+paddlers",
+        "error": ""
+      },
+      {
+        "url": "https://html.duckduckgo.com/html/?q=How+many+goals+did+the+Selkirk+Fishermen+score+in+Game+2+of+the+1920+Memorial+Cup+against+the+Toronto+Canoe+Club+Paddlers%3F",
+        "error": ""
+      },
+      {
+        "url": "https://www.bing.com/search?format=rss&q=goals+selkirk+fishermen+score+game+2+1920+memorial+cup+against+toronto+canoe+club+paddlers",
+        "error": ""
+      },
+      {
+        "url": "https://lite.duckduckgo.com/lite/?q=goals+selkirk+fishermen+score+game+2+1920+memorial+cup+against+toronto+canoe+club+paddlers",
+        "error": ""
+      },
+      {
+        "url": "https://lite.duckduckgo.com/lite/?q=Selkirk+Fishermen+Memorial+Cup+1920",
+        "error": ""
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/1920_Memorial_Cup",
+        "error": "http_403"
+      },
+      {
+        "url": "https://grokipedia.com/page/1920_memorial_cup",
+        "error": ""
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Selkirk_Fishermen",
+        "error": "http_403"
+      },
+      {
+        "url": "https://mbhockeyhalloffame.ca/teams/191920-selkirk-fishermen/",
+        "error": ""
+      }
+    ],
+    "complete_witness": true,
+    "payload": {
+      "question": "How many goals did the Selkirk Fishermen score in Game 2 of the 1920 Memorial Cup against the Toronto Canoe Club Paddlers?",
+      "starting_url": "https://en-academic.com/dic.nsf/enwiki/4707620",
+      "constraints": {
+        "kind": "number",
+        "year": "",
+        "as_of": "",
+        "versions": [],
+        "stable": false,
+        "cardinality": 1,
+        "target": "how many goals did the selkirk fishermen score ",
+        "choices": [],
+        "operation": "single",
+        "required_fields": [],
+        "date_precision": ""
+      },
+      "candidates": [],
+      "passages": [
+        {
+          "id": 0,
+          "text": "The 1920 Memorial Cup championship series between the Toronto Canoe Club Paddlers and the Selkirk Fishermen was a two-game, total-goals format contested at the Arena Gardens in Toronto, resulting in a decisive 15\u20135 aggregate victory for Toronto. Game 1 ended 10\u20131 in favor of the Paddlers on March 23, showcasing their offensive dominance with six goals in the third period alone, while Game 2 concluded 5\u20134 on March 25 in a closer but still controlled affair. This lopsided outcome highlighted Toronto's superior size, skill, and combination play against the plucky but outmatched Selkirk squad. [4]",
+          "section": "",
+          "source": "https://grokipedia.com/page/1920_memorial_cup",
+          "locator": "block[61]",
+          "document_title": "1920 Memorial Cup \u2014 Grokipedia"
+        },
+        {
+          "id": 1,
+          "text": "The first game of the 1920 Memorial Cup final was held on March 23, 1920, at Arena Gardens in Toronto, Ontario, drawing an attendance of approximately 3,000 spectators. [4] The matchup featured the Toronto Canoe Club Paddlers, coached by Dick Carroll and captained by Billy Burch, against the Selkirk Fishermen from Manitoba, led by coach Stan Kennedy. [4] Played under the two-game total-goals format, the contest showcased Toronto's superior speed and combination play against Selkirk's resilient but travel-weary squad. [12]",
+          "section": "",
+          "source": "https://grokipedia.com/page/1920_memorial_cup",
+          "locator": "block[52]",
+          "document_title": "1920 Memorial Cup \u2014 Grokipedia"
+        },
+        {
+          "id": 2,
+          "text": "articleBody: 1919/20 SELKIRK FISHERMEN ABBOTT CUP TROPHY MANITOBA/SASKATCHEWAN CHAMPIONS TURNBULL MEMORIAL TROPHY The Selkirk Fishermen are the longest running junior hockey team in Canada. The franchise was founded in 1917, and joined the Winnipeg and District Junior League inaugural season in 1918. The league changed its name to the Manitoba Junior Hockey League in 1931. In its first year, the WDJL had nine teams in two divisions; each team played six games with the Fishermen taking the first league title in 1918. In 1920 the team won the league title again, claiming the new Turnbull Memorial Trophy. The team advanced to the Western Canada playdowns in Regina where they defeated the hometown Vics to claim the Manitoba/Saskatchewan title. Knocking off the Alberta/BC champion Calgary Monarchs earned Selkirk the Abbott Cup and the Junior hockey championship of Western Canada. This earned the Fishermen a crack at the Memorial Cup against the Eastern Champion, Toronto Canoe Club Paddlers. The popular Fishermen were small and success for them came from a fast, skilled offence. The Paddle",
+          "section": "",
+          "source": "https://mbhockeyhalloffame.ca/teams/191920-selkirk-fishermen/",
+          "locator": "",
+          "document_title": "1919/20 SELKIRK FISHERMEN | Manitoba Hockey Hall of Fame"
+        },
+        {
+          "id": 3,
+          "text": "The 1920 Memorial Cup was the second edition of the Canadian junior ice hockey championship, contested as a two-game, total-goal series at Toronto's Arena Gardens between the Eastern champions, the Toronto Canoe Club Paddlers, and the Western champions, the Selkirk Fishermen. [1] The Paddlers dominated the series, winning 10\u20131 in Game 1 on March 23 and 5\u20134 in Game 2 on March 25, for a 15\u20135 aggregate victory and their first national title. [1] [2]",
+          "section": "",
+          "source": "https://grokipedia.com/page/1920_memorial_cup",
+          "locator": "block[29]",
+          "document_title": "1920 Memorial Cup \u2014 Grokipedia"
+        },
+        {
+          "id": 4,
+          "text": "The 1920 Memorial Cup featured a matchup between the eastern and western junior hockey champions of Canada, with the Toronto Canoe Club Paddlers representing the Ontario Hockey Association (OHA) and the Selkirk Fishermen representing the Manitoba Junior Hockey League (MJHL) through the western playdowns. Qualification occurred via regional playoffs culminating in the George Richardson Trophy for the east and the Abbott Cup for the west, using a total-goal series format across multiple games to determine advancement. [6] [2]",
+          "section": "",
+          "source": "https://grokipedia.com/page/1920_memorial_cup",
+          "locator": "block[37]",
+          "document_title": "1920 Memorial Cup \u2014 Grokipedia"
+        },
+        {
+          "id": 5,
+          "text": "The Selkirk Fishermen, representing Western Canada as Manitoba Junior Hockey League champions, fielded a roster of local junior players for the 1920 Memorial Cup final against the Toronto Canoe Club. Historical records indicate a team primarily composed of players from Selkirk and surrounding Manitoba areas, emphasizing speed and skill despite their smaller stature compared to Eastern opponents. The roster below is reconstructed from contemporary league and playoff documentation, focusing on those who appeared in the Memorial Cup games; additional players like Frank Lockhart and H. Wolwin were part of the broader season squad but did not feature in the final series. [22] [2]",
+          "section": "",
+          "source": "https://grokipedia.com/page/1920_memorial_cup",
+          "locator": "block[136]",
+          "document_title": "1920 Memorial Cup \u2014 Grokipedia"
+        },
+        {
+          "id": 6,
+          "text": "Following their victory in the 1920 Memorial Cup final against the Selkirk Fishermen, the Toronto Canoe Club Paddlers received a challenge from the Fort William Beavers, champions of the Thunder Bay Junior League, who sought to contest the title. [6] The Canoe Club accepted the invitation, leading to a single challenge match organized by the Canadian Amateur Hockey Association. [14]",
+          "section": "",
+          "source": "https://grokipedia.com/page/1920_memorial_cup",
+          "locator": "block[67]",
+          "document_title": "1920 Memorial Cup \u2014 Grokipedia"
+        },
+        {
+          "id": 7,
+          "text": "Player Name: Bill Beresford | Position: F | Memorial Cup Stats (GP/G/A/TP/PIM): 2/0/0/0/2",
+          "section": "Memorial Cup Game Participants",
+          "source": "https://grokipedia.com/page/1920_memorial_cup",
+          "locator": "table[29]/row[0]/cell[2]",
+          "document_title": "1920 Memorial Cup \u2014 Grokipedia"
+        }
+      ]
+    }
+  },
+  "before_controls": [
+    {
+      "id": "empty-hints",
+      "passed": false,
+      "actual": "",
+      "expected": "River Academy Harbor School 1992"
+    },
+    {
+      "id": "invalid-hint",
+      "passed": false,
+      "actual": "",
+      "expected": "River Academy Harbor School 1992"
+    },
+    {
+      "id": "existing-hint",
+      "passed": true,
+      "actual": "river academy goals",
+      "expected": "river academy goals"
+    },
+    {
+      "id": "quoted-first",
+      "passed": true,
+      "actual": "\"Pine Award\" river academy",
+      "expected": "\"Pine Award\" river academy"
+    },
+    {
+      "id": "no-year",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "id": "two-years",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "id": "one-name",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "id": "duplicate-name",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "id": "all-lowercase",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "id": "url-year",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "id": "identifier-year",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "id": "version-year",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    }
+  ],
+  "after_controls": [
+    {
+      "id": "empty-hints",
+      "passed": true,
+      "actual": "River Academy Harbor School 1992",
+      "expected": "River Academy Harbor School 1992"
+    },
+    {
+      "id": "invalid-hint",
+      "passed": true,
+      "actual": "River Academy Harbor School 1992",
+      "expected": "River Academy Harbor School 1992"
+    },
+    {
+      "id": "existing-hint",
+      "passed": true,
+      "actual": "river academy goals",
+      "expected": "river academy goals"
+    },
+    {
+      "id": "quoted-first",
+      "passed": true,
+      "actual": "\"Pine Award\" river academy",
+      "expected": "\"Pine Award\" river academy"
+    },
+    {
+      "id": "no-year",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "id": "two-years",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "id": "one-name",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "id": "duplicate-name",
+      "passed": false,
+      "actual": "Did River Academy River Academy 1992",
+      "expected": ""
+    },
+    {
+      "id": "all-lowercase",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "id": "url-year",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "id": "identifier-year",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "id": "version-year",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    }
+  ],
+  "stub_protocol": {
+    "state": "span",
+    "raw": "4",
+    "source": "https://grokipedia.com/page/1920_memorial_cup",
+    "literal_verified": true,
+    "score_without_footnote_literal": true
+  },
+  "all_passed": false
+}

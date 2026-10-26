@@ -1,0 +1,39 @@
+{
+  "scope": "After the full4B pair, stopped stripping leading pre newlines: blank first line now refuses. All8 original fixed input pages parse identically to the exact archived paired parser; separate blank-line controls cover the new edge. No repeated GPU run.",
+  "paired_parser_sha256": "cc18d6d0d7f62c5a311d65c933533cdac7cd39161859ab7414e6346c8078aa04",
+  "final_parser_sha256": "60f4199ea41c63376ad347793e8b517b38557dcc238e266621cddef27481124e",
+  "rows": [
+    {
+      "path": "/inline-br.html",
+      "parsed_pages_identical": true
+    },
+    {
+      "path": "/pre.html",
+      "parsed_pages_identical": true
+    },
+    {
+      "path": "/plain.txt",
+      "parsed_pages_identical": true
+    },
+    {
+      "path": "/preview-only.html",
+      "parsed_pages_identical": true
+    },
+    {
+      "path": "/fake-line.html",
+      "parsed_pages_identical": true
+    },
+    {
+      "path": "/hidden.html",
+      "parsed_pages_identical": true
+    },
+    {
+      "path": "/complete-line.html",
+      "parsed_pages_identical": true
+    },
+    {
+      "path": "/description.html",
+      "parsed_pages_identical": true
+    }
+  ]
+}

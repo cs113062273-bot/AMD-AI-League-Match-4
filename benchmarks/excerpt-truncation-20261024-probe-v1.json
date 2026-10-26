@@ -1,0 +1,202 @@
+{
+  "scope": "Reproduce count information lost at the reader's 1,100-character cut.\n\nAuthored CPU HTTP reader and verifier, no model or public web. A probe of\nvisible evidence fidelity, not model accuracy or a new competition score.\n",
+  "input_sha256": "6956c969b211c3c94dbaef64e93687df2478e61dd82030140e664c2bf25a5687",
+  "paragraph_length": 1116,
+  "actual_target_phrase": "Elm Hall has 4 million chairs.",
+  "result": {
+    "answer": "4",
+    "sources": [
+      "http://127.0.0.1:5961/source"
+    ],
+    "confidence": 0.803,
+    "evidence": "Oak Hall has 4 chairs. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Elm Hall has 4 million chairs.",
+    "reason": "model_verified",
+    "diagnostics": {
+      "plan": {
+        "question": "How many chairs does Elm Hall have?",
+        "url": "http://127.0.0.1:5961/source",
+        "kind": "number",
+        "terms": [
+          "chairs",
+          "elm",
+          "hall"
+        ],
+        "attributes": [],
+        "entity_terms": [
+          "chairs",
+          "elm",
+          "hall"
+        ],
+        "versions": [],
+        "year": "",
+        "as_of": "",
+        "latest": false,
+        "stable": false,
+        "first": false,
+        "currency": "",
+        "cardinality": 1,
+        "negations": [],
+        "domain": "127.0.0.1",
+        "focus": "how many chairs does elm hall have",
+        "choices": [],
+        "operation": "single",
+        "required_fields": [],
+        "date_precision": "",
+        "temporal_issue": "",
+        "temporal_raw": []
+      },
+      "errors": [],
+      "selector": [
+        "span"
+      ],
+      "timings": {
+        "resolver": 0.00017010000010486692
+      },
+      "search_requests": 0,
+      "llm_calls": 2,
+      "content_pages": 1,
+      "model_selections": [
+        {
+          "raw": "4",
+          "answer": "4",
+          "source": "http://127.0.0.1:5961/source",
+          "evidence": "Oak Hall has 4 chairs. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Elm Hall has 4 million chairs.",
+          "label": "",
+          "section": "Elm Hall",
+          "kind": "number",
+          "score": 10.117889252774354,
+          "signals": {
+            "selector": "literal_span",
+            "locator": "p[1]:0",
+            "structure": "prose",
+            "qualifiers": {},
+            "field_value": ""
+          }
+        }
+      ],
+      "verification": [
+        "supported"
+      ],
+      "reader_state": "answered",
+      "selection": {
+        "raw": "4",
+        "answer": "4",
+        "source": "http://127.0.0.1:5961/source",
+        "evidence": "Oak Hall has 4 chairs. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Elm Hall has 4 million chairs.",
+        "label": "",
+        "section": "Elm Hall",
+        "kind": "number",
+        "score": 10.117889252774354,
+        "signals": {
+          "selector": "literal_span",
+          "locator": "p[1]:0",
+          "structure": "prose",
+          "qualifiers": {},
+          "field_value": ""
+        }
+      },
+      "fetches": [
+        {
+          "url": "http://127.0.0.1:5961/source",
+          "final": "http://127.0.0.1:5961/source",
+          "status": 200,
+          "bytes": 1140,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        }
+      ],
+      "http_responses_success": 1,
+      "pages_fetched": 1,
+      "seconds": 0.0218
+    }
+  },
+  "calls": [
+    {
+      "path": "/select",
+      "data": {
+        "question": "How many chairs does Elm Hall have?",
+        "starting_url": "http://127.0.0.1:5961/source",
+        "constraints": {
+          "kind": "number",
+          "year": "",
+          "as_of": "",
+          "versions": [],
+          "stable": false,
+          "cardinality": 1,
+          "target": "how many chairs does elm hall have",
+          "choices": [],
+          "operation": "single",
+          "required_fields": [],
+          "date_precision": ""
+        },
+        "candidates": [],
+        "passages": [
+          {
+            "id": 0,
+            "text": "Oak Hall has 4 chairs. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Elm Hall has 4",
+            "section": "Elm Hall",
+            "source": "http://127.0.0.1:5961/source",
+            "locator": "p[1]:0",
+            "document_title": "Elm Hall"
+          },
+          {
+            "id": 1,
+            "text": "Elm Hall",
+            "section": "Elm Hall",
+            "source": "http://127.0.0.1:5961/source",
+            "locator": "h1[0]",
+            "document_title": "Elm Hall"
+          }
+        ]
+      }
+    },
+    {
+      "path": "/verify",
+      "data": {
+        "question": "How many chairs does Elm Hall have?",
+        "starting_url": "http://127.0.0.1:5961/source",
+        "constraints": {
+          "kind": "number",
+          "year": "",
+          "as_of": "",
+          "versions": [],
+          "stable": false,
+          "cardinality": 1,
+          "target": "how many chairs does elm hall have",
+          "choices": [],
+          "operation": "single",
+          "required_fields": [],
+          "date_precision": ""
+        },
+        "candidates": [],
+        "passages": [
+          {
+            "id": 0,
+            "text": "Oak Hall has 4 chairs. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Elm Hall has 4",
+            "section": "Elm Hall",
+            "source": "http://127.0.0.1:5961/source",
+            "locator": "p[1]:0",
+            "document_title": "Elm Hall"
+          },
+          {
+            "id": 1,
+            "text": "Elm Hall",
+            "section": "Elm Hall",
+            "source": "http://127.0.0.1:5961/source",
+            "locator": "h1[0]",
+            "document_title": "Elm Hall"
+          }
+        ],
+        "proposed": "4"
+      }
+    }
+  ],
+  "defect_reproduced": true,
+  "torch_imported": false,
+  "source_hashes": {
+    "agent\\selector.py": "d82a750da37d6348175ef0b2ff7c02be978da231445834060069ab4238e2f55e",
+    "agent\\candidates.py": "a4307cfed75f897c3c1f4e3b8357e822fc7e893600055a4dd03ed694e2b3e3ce"
+  }
+}

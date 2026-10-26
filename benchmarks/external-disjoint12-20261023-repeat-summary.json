@@ -1,0 +1,47 @@
+{
+  "scope": "Same original frozen12 cases, now exposed live regression. Dynamic network and several accumulated changes; not paired causal comparison or fresh holdout.",
+  "cases_sha256": "7a944d63a878df44c9b8117c92b9b8c42fec98201d8d76cfa39007c5b68afdc0",
+  "production_changed_during_run": false,
+  "first": {
+    "answer_exact": 4,
+    "source_exact": 3,
+    "joint_exact": 2,
+    "answered": 7,
+    "n": 12,
+    "mean_seconds": 9.3775,
+    "model_calls": 37,
+    "errors": null,
+    "capture_omitted": 0
+  },
+  "repeat": {
+    "answer_exact": 4,
+    "source_exact": 3,
+    "joint_exact": 2,
+    "answered": 5,
+    "n": 12,
+    "mean_seconds": 10.551658333333334,
+    "model_calls": 32,
+    "errors": null,
+    "capture_omitted": 0
+  },
+  "answer_wins": [],
+  "answer_losses": [],
+  "joint_wins": [],
+  "joint_losses": [],
+  "new_abstentions": [
+    "simpleqa-779",
+    "simpleqa-1507"
+  ],
+  "repeat_search_hint_failures": {
+    "simpleqa-37": "model_deadline",
+    "simpleqa-1838": "model_deadline",
+    "simpleqa-395": "model_deadline",
+    "simpleqa-3207": "model_deadline",
+    "simpleqa-779": "TimeoutError",
+    "simpleqa-32": "model_deadline"
+  },
+  "repeat_memory_after_shutdown": {
+    "used_mib": 898,
+    "total_mib": 12282
+  }
+}

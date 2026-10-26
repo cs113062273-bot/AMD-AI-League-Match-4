@@ -1,0 +1,25 @@
+{
+  "scope": "Same8 authored nonsong sources, same full4Bservice paired reader. First5/8 to8/8, not live/holdout accuracy. Later blank-line refinement has independent parser equivalence attestation on these8 inputs.",
+  "comparison": {
+    "before_passed": 5,
+    "after_passed": 8,
+    "total": 8,
+    "wins": [
+      "inline-br",
+      "preview-only",
+      "fake-line"
+    ],
+    "losses": []
+  },
+  "cases_sha256": "244467148ab532176fbed6436e75773827c5f9d60041b18a0f0e648aab4c8a48",
+  "fixtures_sha256": "53653eca96b4b336d58ce7346a514c9ebfe286fac0da61ec5e0b667a8159821f",
+  "before_calls": 16,
+  "after_calls": 12,
+  "before_mean_seconds": 1.476,
+  "after_mean_seconds": 1.082775,
+  "production_changed_during_run": false,
+  "memory_after_shutdown": {
+    "used_mib": 889,
+    "total_mib": 12282
+  }
+}

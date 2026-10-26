@@ -1,0 +1,37 @@
+{
+  "/award-record.html": [
+    200,
+    "text/html",
+    "<title>Ridge Council records</title><h2>Cedar Prize recipients</h2><h1>Honorees</h1><article data-year=\"1987\" data-surname=\"Voss\"><div>1987</div><div>Elin Voss</div><div>National Science Medal</div></article>"
+  ],
+  "/foundation-record.html": [
+    200,
+    "text/html",
+    "<title>Ridge Council records</title><h1>Founded companies</h1><article data-year=\"1976\" data-name=\"Ridge Works\"><div>1976</div><div>Ridge Works</div><div>Founded in Westport</div></article>"
+  ],
+  "/wrong-person.html": [
+    200,
+    "text/html",
+    "<title>Ridge Council records</title><h2>Cedar Prize recipients</h2><h1>Honorees</h1><article data-year=\"1987\" data-surname=\"Shaw\"><div>1987</div><div>Marin Shaw</div><div>Biochemist</div></article>"
+  ],
+  "/wrong-award.html": [
+    200,
+    "text/html",
+    "<title>Ridge Council records</title><h2>Merit Medal recipients</h2><h1>Honorees</h1><article data-year=\"1987\" data-surname=\"Voss\"><div>1987</div><div>Elin Voss</div><div>Biochemist</div></article>"
+  ],
+  "/unseen-attribute.html": [
+    200,
+    "text/html",
+    "<title>Ridge Council records</title><h2>Cedar Prize recipients</h2><h1>Honorees</h1><article data-year=\"1987\" data-surname=\"Voss\"><div>1994</div><div>Elin Voss</div><div>Biochemist</div></article>"
+  ],
+  "/conflicting-records.html": [
+    200,
+    "text/html",
+    "<title>Ridge Council records</title><h2>Cedar Prize recipients</h2><h1>Honorees</h1><article data-year=\"1987\"><div>1987</div><div>Elin Voss</div><div>Biochemist</div></article><article data-year=\"1994\"><div>1994</div><div>Elin Voss</div><div>Biochemist</div></article>"
+  ],
+  "/wrong-event.html": [
+    200,
+    "text/html",
+    "<title>Ridge Council records</title><h1>Birth records</h1><article data-birth-year=\"1962\"><div>1962</div><div>Elin Voss</div><div>Biochemist</div></article>"
+  ]
+}

@@ -1,0 +1,1580 @@
+{
+  "scope": "Executable proof checks with real source spans, including adversarial literal premises. Plus actual HTTP verification rejection/unavailability/protocol checks.",
+  "rows": [
+    {
+      "id": "07-doc-cross-version-comparison",
+      "passed": true,
+      "proof_answer": "from 40 to 80 requests per minute",
+      "required": true
+    },
+    {
+      "id": "09-web-table-cell",
+      "passed": true,
+      "proof_answer": "First Saturday of each month, 09:00\u201312:00",
+      "required": true
+    },
+    {
+      "id": "16-web-two-source-mapping",
+      "passed": true,
+      "proof_answer": "$18",
+      "required": true
+    },
+    {
+      "id": "missing-version",
+      "passed": true,
+      "proof_answer": null,
+      "required": true
+    },
+    {
+      "id": "ambiguous-map",
+      "passed": true,
+      "proof_answer": null,
+      "required": true
+    },
+    {
+      "id": "incomplete-row",
+      "passed": true,
+      "proof_answer": null,
+      "required": true
+    },
+    {
+      "id": "single-fee",
+      "passed": true,
+      "proof_answer": null,
+      "required": false
+    },
+    {
+      "id": "single-table",
+      "passed": true,
+      "proof_answer": null,
+      "required": false
+    },
+    {
+      "id": "literal_parts_from_different_rows",
+      "passed": true
+    },
+    {
+      "id": "missing_required_component",
+      "passed": true
+    },
+    {
+      "id": "wrong_requested_version",
+      "passed": true
+    },
+    {
+      "id": "incompatible_units",
+      "passed": true
+    },
+    {
+      "id": "conflicting_same_version",
+      "passed": true
+    },
+    {
+      "id": "preview_is_not_requested_release",
+      "passed": true
+    },
+    {
+      "id": "different_join_key",
+      "passed": true
+    },
+    {
+      "id": "fabricated_mapping_value",
+      "passed": true
+    },
+    {
+      "id": "unrelated_origin",
+      "passed": true
+    },
+    {
+      "id": "conflicting_mapping_proof",
+      "passed": true
+    },
+    {
+      "id": "join_cannot_replace_comparison",
+      "passed": true
+    },
+    {
+      "id": "join_cannot_answer_person",
+      "passed": true
+    },
+    {
+      "id": "07-doc-cross-version-comparison_busy",
+      "passed": true,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "proof_service_unavailable",
+        "diagnostics": {
+          "plan": {
+            "question": "How did the FernAPI per-client request quota change from version 2 to version 3?",
+            "url": "http://127.0.0.1:43357/07-doc-cross-version-comparison/index.html",
+            "kind": "text",
+            "terms": [
+              "fernapi",
+              "per-client",
+              "request",
+              "quota",
+              "change",
+              "2",
+              "3",
+              "client"
+            ],
+            "attributes": [
+              "version",
+              "release",
+              "stable",
+              "latest",
+              "download"
+            ],
+            "entity_terms": [
+              "fernapi",
+              "per-client",
+              "request",
+              "quota",
+              "change",
+              "2",
+              "3",
+              "client"
+            ],
+            "versions": [
+              "2",
+              "3"
+            ],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "how did the fernapi per-client request quota change ",
+            "choices": [],
+            "operation": "compare_versions",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.00016559998039156199
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 3,
+          "proof_state": "service_unavailable",
+          "navigation": [
+            {
+              "state": "abstain",
+              "chosen": ""
+            }
+          ],
+          "proposed_proof": {
+            "operation": "compare_versions",
+            "atoms": [
+              {
+                "source": "http://127.0.0.1:43357/07-doc-cross-version-comparison/v2.html",
+                "locator": "p[3]:0",
+                "span": "The per-client request quota in version 2 is 40 requests per minute.",
+                "value": "40 requests per minute",
+                "role": "2",
+                "version": "2",
+                "key": "",
+                "relation": ""
+              },
+              {
+                "source": "http://127.0.0.1:43357/07-doc-cross-version-comparison/v3.html",
+                "locator": "p[3]:0",
+                "span": "The per-client request quota in version 3 is 80 requests per minute.",
+                "value": "80 requests per minute",
+                "role": "3",
+                "version": "3",
+                "key": "",
+                "relation": ""
+              }
+            ]
+          },
+          "proof_verification": [
+            "http_503"
+          ],
+          "reader_state": "service_unavailable",
+          "top_candidates": [
+            {
+              "raw": "3.",
+              "answer": "3.",
+              "source": "http://127.0.0.1:43357/07-doc-cross-version-comparison/v3.html",
+              "evidence": "Documentation version: 3.",
+              "label": "",
+              "section": "FernAPI v3 request quota \u2014 current stable",
+              "kind": "text",
+              "score": 9.0,
+              "signals": {
+                "locator": "p[2]:0",
+                "page_title": "FernAPI v3 request quota \u2014 current stable",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2.",
+              "answer": "2.",
+              "source": "http://127.0.0.1:43357/07-doc-cross-version-comparison/v2.html",
+              "evidence": "Documentation version: 2.",
+              "label": "",
+              "section": "FernAPI v2 request quota \u2014 archived",
+              "kind": "text",
+              "score": 8.4,
+              "signals": {
+                "locator": "p[2]:0",
+                "page_title": "FernAPI v2 request quota \u2014 archived",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "3",
+              "answer": "3",
+              "source": "http://127.0.0.1:43357/07-doc-cross-version-comparison/v3.html",
+              "evidence": "version: 3",
+              "label": "version",
+              "section": "",
+              "kind": "text",
+              "score": 6.75,
+              "signals": {
+                "locator": "meta[1]",
+                "page_title": "FernAPI v3 request quota \u2014 current stable",
+                "structure": "meta",
+                "qualifiers": {},
+                "field_value": "3",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2",
+              "answer": "2",
+              "source": "http://127.0.0.1:43357/07-doc-cross-version-comparison/v2.html",
+              "evidence": "version: 2",
+              "label": "version",
+              "section": "",
+              "kind": "text",
+              "score": 6.75,
+              "signals": {
+                "locator": "meta[1]",
+                "page_title": "FernAPI v2 request quota \u2014 archived",
+                "structure": "meta",
+                "qualifiers": {},
+                "field_value": "2",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [
+            {
+              "a": "3.",
+              "b": "2.",
+              "sources": [
+                "http://127.0.0.1:43357/07-doc-cross-version-comparison/v3.html",
+                "http://127.0.0.1:43357/07-doc-cross-version-comparison/v2.html"
+              ],
+              "margin": 0.6
+            }
+          ],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:43357/07-doc-cross-version-comparison/index.html",
+              "final": "http://127.0.0.1:43357/07-doc-cross-version-comparison/index.html",
+              "status": 200,
+              "bytes": 435,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:43357/07-doc-cross-version-comparison/v2.html",
+              "final": "http://127.0.0.1:43357/07-doc-cross-version-comparison/v2.html",
+              "status": 200,
+              "bytes": 476,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:43357/07-doc-cross-version-comparison/v3.html",
+              "final": "http://127.0.0.1:43357/07-doc-cross-version-comparison/v3.html",
+              "status": 200,
+              "bytes": 488,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 3,
+          "pages_fetched": 3,
+          "seconds": 0.0227
+        }
+      }
+    },
+    {
+      "id": "09-web-table-cell_busy",
+      "passed": true,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "proof_service_unavailable",
+        "diagnostics": {
+          "plan": {
+            "question": "On what day and during which hours does Amber Bay collect electronics?",
+            "url": "http://127.0.0.1:43357/09-web-table-cell/schedule.html",
+            "kind": "text",
+            "terms": [
+              "day",
+              "during",
+              "hours",
+              "amber",
+              "bay",
+              "collect",
+              "electronics"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "day",
+              "during",
+              "hours",
+              "amber",
+              "bay",
+              "collect",
+              "electronics"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "on what day and during which hours does amber bay collect electronics?",
+            "choices": [],
+            "operation": "compose_fields",
+            "required_fields": [
+              "day",
+              "hours"
+            ],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.95999164134264e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "proof_state": "service_unavailable",
+          "proposed_proof": {
+            "operation": "compose_fields",
+            "atoms": [
+              {
+                "source": "http://127.0.0.1:43357/09-web-table-cell/schedule.html",
+                "locator": "table[2]/row[1]",
+                "span": "Material: Electronics | Day: First Saturday of each month | Time: 09:00\u201312:00",
+                "value": "First Saturday of each month",
+                "role": "day",
+                "version": "",
+                "key": "",
+                "relation": ""
+              },
+              {
+                "source": "http://127.0.0.1:43357/09-web-table-cell/schedule.html",
+                "locator": "table[2]/row[1]",
+                "span": "Material: Electronics | Day: First Saturday of each month | Time: 09:00\u201312:00",
+                "value": "09:00\u201312:00",
+                "role": "hours",
+                "version": "",
+                "key": "",
+                "relation": ""
+              }
+            ]
+          },
+          "proof_verification": [
+            "http_503"
+          ],
+          "reader_state": "service_unavailable",
+          "top_candidates": [
+            {
+              "raw": "First Saturday of each month",
+              "answer": "First Saturday of each month",
+              "source": "http://127.0.0.1:43357/09-web-table-cell/schedule.html",
+              "evidence": "Material: Electronics | Day: First Saturday of each month | Time: 09:00\u201312:00",
+              "label": "Day",
+              "section": "Amber Bay collection timetable",
+              "kind": "text",
+              "score": 13.0,
+              "signals": {
+                "locator": "table[2]/row[1]/cell[1]",
+                "page_title": "Amber Bay collection timetable",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 2,
+                  "row": 1,
+                  "columns": [
+                    "Material",
+                    "Day",
+                    "Time"
+                  ],
+                  "cells": [
+                    "Electronics",
+                    "First Saturday of each month",
+                    "09:00\u201312:00"
+                  ],
+                  "column": 1
+                },
+                "field_value": "First Saturday of each month",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "Every Tuesday",
+              "answer": "Every Tuesday",
+              "source": "http://127.0.0.1:43357/09-web-table-cell/schedule.html",
+              "evidence": "Material: Glass | Day: Every Tuesday | Time: 08:00\u201310:00",
+              "label": "Day",
+              "section": "Amber Bay collection timetable",
+              "kind": "text",
+              "score": 11.4,
+              "signals": {
+                "locator": "table[2]/row[0]/cell[1]",
+                "page_title": "Amber Bay collection timetable",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 2,
+                  "row": 0,
+                  "columns": [
+                    "Material",
+                    "Day",
+                    "Time"
+                  ],
+                  "cells": [
+                    "Glass",
+                    "Every Tuesday",
+                    "08:00\u201310:00"
+                  ],
+                  "column": 1
+                },
+                "field_value": "Every Tuesday",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "Every Friday",
+              "answer": "Every Friday",
+              "source": "http://127.0.0.1:43357/09-web-table-cell/schedule.html",
+              "evidence": "Material: Cardboard | Day: Every Friday | Time: 13:00\u201315:00",
+              "label": "Day",
+              "section": "Amber Bay collection timetable",
+              "kind": "text",
+              "score": 11.4,
+              "signals": {
+                "locator": "table[2]/row[2]/cell[1]",
+                "page_title": "Amber Bay collection timetable",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 2,
+                  "row": 2,
+                  "columns": [
+                    "Material",
+                    "Day",
+                    "Time"
+                  ],
+                  "cells": [
+                    "Cardboard",
+                    "Every Friday",
+                    "13:00\u201315:00"
+                  ],
+                  "column": 1
+                },
+                "field_value": "Every Friday",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:43357/09-web-table-cell/schedule.html",
+              "final": "http://127.0.0.1:43357/09-web-table-cell/schedule.html",
+              "status": 200,
+              "bytes": 643,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0089
+        }
+      }
+    },
+    {
+      "id": "16-web-two-source-mapping_busy",
+      "passed": true,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "proof_service_unavailable",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the Blue Lantern market daily permit fee for a book vendor?",
+            "url": "http://127.0.0.1:43357/16-web-two-source-mapping/index.html",
+            "kind": "price",
+            "terms": [
+              "blue",
+              "lantern",
+              "market",
+              "daily",
+              "permit",
+              "fee",
+              "book",
+              "vendor"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "blue",
+              "lantern",
+              "market",
+              "daily",
+              "permit",
+              "fee",
+              "book",
+              "vendor"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the blue lantern market daily permit fee ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "abstain"
+          ],
+          "timings": {
+            "resolver": 1.1599971912801266e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 3,
+          "content_pages": 3,
+          "navigation": [
+            {
+              "state": "abstain",
+              "chosen": ""
+            }
+          ],
+          "proof_state": "service_unavailable",
+          "proposed_proof": {
+            "operation": "join_category",
+            "atoms": [
+              {
+                "source": "http://127.0.0.1:43357/16-web-two-source-mapping/categories.html",
+                "locator": "p[2]:0",
+                "span": "Book vendors are assigned category B.",
+                "value": "B",
+                "role": "mapping",
+                "version": "",
+                "key": "B",
+                "relation": "category"
+              },
+              {
+                "source": "http://127.0.0.1:43357/16-web-two-source-mapping/fees.html",
+                "locator": "p[2]:0",
+                "span": "The daily permit fee for category B is $18.",
+                "value": "$18",
+                "role": "value",
+                "version": "",
+                "key": "B",
+                "relation": "category"
+              }
+            ]
+          },
+          "proof_verification": [
+            "http_503"
+          ],
+          "reader_state": "service_unavailable",
+          "top_candidates": [
+            {
+              "raw": "$18",
+              "answer": "$18",
+              "source": "http://127.0.0.1:43357/16-web-two-source-mapping/fees.html",
+              "evidence": "The daily permit fee for category B is $18.",
+              "label": "",
+              "section": "Blue Lantern market daily permit fees",
+              "kind": "price",
+              "score": 10.600000000000001,
+              "signals": {
+                "locator": "p[2]:0",
+                "page_title": "Blue Lantern market daily permit fees",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "$32",
+              "answer": "$32",
+              "source": "http://127.0.0.1:43357/16-web-two-source-mapping/fees.html",
+              "evidence": "The daily permit fee for category F is $32.",
+              "label": "",
+              "section": "Blue Lantern market daily permit fees",
+              "kind": "price",
+              "score": 10.600000000000001,
+              "signals": {
+                "locator": "p[3]:0",
+                "page_title": "Blue Lantern market daily permit fees",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [
+            {
+              "a": "$18",
+              "b": "$32",
+              "sources": [
+                "http://127.0.0.1:43357/16-web-two-source-mapping/fees.html",
+                "http://127.0.0.1:43357/16-web-two-source-mapping/fees.html"
+              ],
+              "margin": 0.0
+            }
+          ],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:43357/16-web-two-source-mapping/index.html",
+              "final": "http://127.0.0.1:43357/16-web-two-source-mapping/index.html",
+              "status": 200,
+              "bytes": 467,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:43357/16-web-two-source-mapping/fees.html",
+              "final": "http://127.0.0.1:43357/16-web-two-source-mapping/fees.html",
+              "status": 200,
+              "bytes": 436,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:43357/16-web-two-source-mapping/categories.html",
+              "final": "http://127.0.0.1:43357/16-web-two-source-mapping/categories.html",
+              "status": 200,
+              "bytes": 424,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 3,
+          "pages_fetched": 3,
+          "seconds": 0.0207
+        }
+      }
+    },
+    {
+      "id": "07-doc-cross-version-comparison_reject",
+      "passed": true,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "proof_semantic_rejection",
+        "diagnostics": {
+          "plan": {
+            "question": "How did the FernAPI per-client request quota change from version 2 to version 3?",
+            "url": "http://127.0.0.1:43357/07-doc-cross-version-comparison/index.html",
+            "kind": "text",
+            "terms": [
+              "fernapi",
+              "per-client",
+              "request",
+              "quota",
+              "change",
+              "2",
+              "3",
+              "client"
+            ],
+            "attributes": [
+              "version",
+              "release",
+              "stable",
+              "latest",
+              "download"
+            ],
+            "entity_terms": [
+              "fernapi",
+              "per-client",
+              "request",
+              "quota",
+              "change",
+              "2",
+              "3",
+              "client"
+            ],
+            "versions": [
+              "2",
+              "3"
+            ],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "how did the fernapi per-client request quota change ",
+            "choices": [],
+            "operation": "compare_versions",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.6600009985268116e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 3,
+          "proof_state": "semantic_rejection",
+          "navigation": [
+            {
+              "state": "abstain",
+              "chosen": ""
+            }
+          ],
+          "proposed_proof": {
+            "operation": "compare_versions",
+            "atoms": [
+              {
+                "source": "http://127.0.0.1:43357/07-doc-cross-version-comparison/v2.html",
+                "locator": "p[3]:0",
+                "span": "The per-client request quota in version 2 is 40 requests per minute.",
+                "value": "40 requests per minute",
+                "role": "2",
+                "version": "2",
+                "key": "",
+                "relation": ""
+              },
+              {
+                "source": "http://127.0.0.1:43357/07-doc-cross-version-comparison/v3.html",
+                "locator": "p[3]:0",
+                "span": "The per-client request quota in version 3 is 80 requests per minute.",
+                "value": "80 requests per minute",
+                "role": "3",
+                "version": "3",
+                "key": "",
+                "relation": ""
+              }
+            ]
+          },
+          "proof_verification": [
+            "unsupported"
+          ],
+          "reader_state": "no_evidence",
+          "top_candidates": [
+            {
+              "raw": "3.",
+              "answer": "3.",
+              "source": "http://127.0.0.1:43357/07-doc-cross-version-comparison/v3.html",
+              "evidence": "Documentation version: 3.",
+              "label": "",
+              "section": "FernAPI v3 request quota \u2014 current stable",
+              "kind": "text",
+              "score": 9.0,
+              "signals": {
+                "locator": "p[2]:0",
+                "page_title": "FernAPI v3 request quota \u2014 current stable",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2.",
+              "answer": "2.",
+              "source": "http://127.0.0.1:43357/07-doc-cross-version-comparison/v2.html",
+              "evidence": "Documentation version: 2.",
+              "label": "",
+              "section": "FernAPI v2 request quota \u2014 archived",
+              "kind": "text",
+              "score": 8.4,
+              "signals": {
+                "locator": "p[2]:0",
+                "page_title": "FernAPI v2 request quota \u2014 archived",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "3",
+              "answer": "3",
+              "source": "http://127.0.0.1:43357/07-doc-cross-version-comparison/v3.html",
+              "evidence": "version: 3",
+              "label": "version",
+              "section": "",
+              "kind": "text",
+              "score": 6.75,
+              "signals": {
+                "locator": "meta[1]",
+                "page_title": "FernAPI v3 request quota \u2014 current stable",
+                "structure": "meta",
+                "qualifiers": {},
+                "field_value": "3",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2",
+              "answer": "2",
+              "source": "http://127.0.0.1:43357/07-doc-cross-version-comparison/v2.html",
+              "evidence": "version: 2",
+              "label": "version",
+              "section": "",
+              "kind": "text",
+              "score": 6.75,
+              "signals": {
+                "locator": "meta[1]",
+                "page_title": "FernAPI v2 request quota \u2014 archived",
+                "structure": "meta",
+                "qualifiers": {},
+                "field_value": "2",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [
+            {
+              "a": "3.",
+              "b": "2.",
+              "sources": [
+                "http://127.0.0.1:43357/07-doc-cross-version-comparison/v3.html",
+                "http://127.0.0.1:43357/07-doc-cross-version-comparison/v2.html"
+              ],
+              "margin": 0.6
+            }
+          ],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:43357/07-doc-cross-version-comparison/index.html",
+              "final": "http://127.0.0.1:43357/07-doc-cross-version-comparison/index.html",
+              "status": 200,
+              "bytes": 435,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:43357/07-doc-cross-version-comparison/v3.html",
+              "final": "http://127.0.0.1:43357/07-doc-cross-version-comparison/v3.html",
+              "status": 200,
+              "bytes": 488,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:43357/07-doc-cross-version-comparison/v2.html",
+              "final": "http://127.0.0.1:43357/07-doc-cross-version-comparison/v2.html",
+              "status": 200,
+              "bytes": 476,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 3,
+          "pages_fetched": 3,
+          "seconds": 0.0159
+        }
+      }
+    },
+    {
+      "id": "09-web-table-cell_reject",
+      "passed": true,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "proof_semantic_rejection",
+        "diagnostics": {
+          "plan": {
+            "question": "On what day and during which hours does Amber Bay collect electronics?",
+            "url": "http://127.0.0.1:43357/09-web-table-cell/schedule.html",
+            "kind": "text",
+            "terms": [
+              "day",
+              "during",
+              "hours",
+              "amber",
+              "bay",
+              "collect",
+              "electronics"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "day",
+              "during",
+              "hours",
+              "amber",
+              "bay",
+              "collect",
+              "electronics"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "on what day and during which hours does amber bay collect electronics?",
+            "choices": [],
+            "operation": "compose_fields",
+            "required_fields": [
+              "day",
+              "hours"
+            ],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.2899981811642647e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "proof_state": "semantic_rejection",
+          "proposed_proof": {
+            "operation": "compose_fields",
+            "atoms": [
+              {
+                "source": "http://127.0.0.1:43357/09-web-table-cell/schedule.html",
+                "locator": "table[2]/row[1]",
+                "span": "Material: Electronics | Day: First Saturday of each month | Time: 09:00\u201312:00",
+                "value": "First Saturday of each month",
+                "role": "day",
+                "version": "",
+                "key": "",
+                "relation": ""
+              },
+              {
+                "source": "http://127.0.0.1:43357/09-web-table-cell/schedule.html",
+                "locator": "table[2]/row[1]",
+                "span": "Material: Electronics | Day: First Saturday of each month | Time: 09:00\u201312:00",
+                "value": "09:00\u201312:00",
+                "role": "hours",
+                "version": "",
+                "key": "",
+                "relation": ""
+              }
+            ]
+          },
+          "proof_verification": [
+            "unsupported"
+          ],
+          "reader_state": "no_evidence",
+          "top_candidates": [
+            {
+              "raw": "First Saturday of each month",
+              "answer": "First Saturday of each month",
+              "source": "http://127.0.0.1:43357/09-web-table-cell/schedule.html",
+              "evidence": "Material: Electronics | Day: First Saturday of each month | Time: 09:00\u201312:00",
+              "label": "Day",
+              "section": "Amber Bay collection timetable",
+              "kind": "text",
+              "score": 13.0,
+              "signals": {
+                "locator": "table[2]/row[1]/cell[1]",
+                "page_title": "Amber Bay collection timetable",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 2,
+                  "row": 1,
+                  "columns": [
+                    "Material",
+                    "Day",
+                    "Time"
+                  ],
+                  "cells": [
+                    "Electronics",
+                    "First Saturday of each month",
+                    "09:00\u201312:00"
+                  ],
+                  "column": 1
+                },
+                "field_value": "First Saturday of each month",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "Every Tuesday",
+              "answer": "Every Tuesday",
+              "source": "http://127.0.0.1:43357/09-web-table-cell/schedule.html",
+              "evidence": "Material: Glass | Day: Every Tuesday | Time: 08:00\u201310:00",
+              "label": "Day",
+              "section": "Amber Bay collection timetable",
+              "kind": "text",
+              "score": 11.4,
+              "signals": {
+                "locator": "table[2]/row[0]/cell[1]",
+                "page_title": "Amber Bay collection timetable",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 2,
+                  "row": 0,
+                  "columns": [
+                    "Material",
+                    "Day",
+                    "Time"
+                  ],
+                  "cells": [
+                    "Glass",
+                    "Every Tuesday",
+                    "08:00\u201310:00"
+                  ],
+                  "column": 1
+                },
+                "field_value": "Every Tuesday",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "Every Friday",
+              "answer": "Every Friday",
+              "source": "http://127.0.0.1:43357/09-web-table-cell/schedule.html",
+              "evidence": "Material: Cardboard | Day: Every Friday | Time: 13:00\u201315:00",
+              "label": "Day",
+              "section": "Amber Bay collection timetable",
+              "kind": "text",
+              "score": 11.4,
+              "signals": {
+                "locator": "table[2]/row[2]/cell[1]",
+                "page_title": "Amber Bay collection timetable",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 2,
+                  "row": 2,
+                  "columns": [
+                    "Material",
+                    "Day",
+                    "Time"
+                  ],
+                  "cells": [
+                    "Cardboard",
+                    "Every Friday",
+                    "13:00\u201315:00"
+                  ],
+                  "column": 1
+                },
+                "field_value": "Every Friday",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:43357/09-web-table-cell/schedule.html",
+              "final": "http://127.0.0.1:43357/09-web-table-cell/schedule.html",
+              "status": 200,
+              "bytes": 643,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0089
+        }
+      }
+    },
+    {
+      "id": "16-web-two-source-mapping_reject",
+      "passed": true,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "proof_semantic_rejection",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the Blue Lantern market daily permit fee for a book vendor?",
+            "url": "http://127.0.0.1:43357/16-web-two-source-mapping/index.html",
+            "kind": "price",
+            "terms": [
+              "blue",
+              "lantern",
+              "market",
+              "daily",
+              "permit",
+              "fee",
+              "book",
+              "vendor"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "blue",
+              "lantern",
+              "market",
+              "daily",
+              "permit",
+              "fee",
+              "book",
+              "vendor"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the blue lantern market daily permit fee ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "abstain"
+          ],
+          "timings": {
+            "resolver": 1.2199976481497288e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 3,
+          "content_pages": 3,
+          "navigation": [
+            {
+              "state": "abstain",
+              "chosen": ""
+            }
+          ],
+          "proof_state": "semantic_rejection",
+          "proposed_proof": {
+            "operation": "join_category",
+            "atoms": [
+              {
+                "source": "http://127.0.0.1:43357/16-web-two-source-mapping/categories.html",
+                "locator": "p[2]:0",
+                "span": "Book vendors are assigned category B.",
+                "value": "B",
+                "role": "mapping",
+                "version": "",
+                "key": "B",
+                "relation": "category"
+              },
+              {
+                "source": "http://127.0.0.1:43357/16-web-two-source-mapping/fees.html",
+                "locator": "p[2]:0",
+                "span": "The daily permit fee for category B is $18.",
+                "value": "$18",
+                "role": "value",
+                "version": "",
+                "key": "B",
+                "relation": "category"
+              }
+            ]
+          },
+          "proof_verification": [
+            "unsupported"
+          ],
+          "reader_state": "no_evidence",
+          "top_candidates": [
+            {
+              "raw": "$18",
+              "answer": "$18",
+              "source": "http://127.0.0.1:43357/16-web-two-source-mapping/fees.html",
+              "evidence": "The daily permit fee for category B is $18.",
+              "label": "",
+              "section": "Blue Lantern market daily permit fees",
+              "kind": "price",
+              "score": 10.600000000000001,
+              "signals": {
+                "locator": "p[2]:0",
+                "page_title": "Blue Lantern market daily permit fees",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "$32",
+              "answer": "$32",
+              "source": "http://127.0.0.1:43357/16-web-two-source-mapping/fees.html",
+              "evidence": "The daily permit fee for category F is $32.",
+              "label": "",
+              "section": "Blue Lantern market daily permit fees",
+              "kind": "price",
+              "score": 10.600000000000001,
+              "signals": {
+                "locator": "p[3]:0",
+                "page_title": "Blue Lantern market daily permit fees",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [
+            {
+              "a": "$18",
+              "b": "$32",
+              "sources": [
+                "http://127.0.0.1:43357/16-web-two-source-mapping/fees.html",
+                "http://127.0.0.1:43357/16-web-two-source-mapping/fees.html"
+              ],
+              "margin": 0.0
+            }
+          ],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:43357/16-web-two-source-mapping/index.html",
+              "final": "http://127.0.0.1:43357/16-web-two-source-mapping/index.html",
+              "status": 200,
+              "bytes": 467,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:43357/16-web-two-source-mapping/fees.html",
+              "final": "http://127.0.0.1:43357/16-web-two-source-mapping/fees.html",
+              "status": 200,
+              "bytes": 436,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:43357/16-web-two-source-mapping/categories.html",
+              "final": "http://127.0.0.1:43357/16-web-two-source-mapping/categories.html",
+              "status": 200,
+              "bytes": 424,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 3,
+          "pages_fetched": 3,
+          "seconds": 0.0178
+        }
+      }
+    },
+    {
+      "id": "07-doc-cross-version-comparison_invalid",
+      "passed": true,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "proof_invalid_reply",
+        "diagnostics": {
+          "plan": {
+            "question": "How did the FernAPI per-client request quota change from version 2 to version 3?",
+            "url": "http://127.0.0.1:43357/07-doc-cross-version-comparison/index.html",
+            "kind": "text",
+            "terms": [
+              "fernapi",
+              "per-client",
+              "request",
+              "quota",
+              "change",
+              "2",
+              "3",
+              "client"
+            ],
+            "attributes": [
+              "version",
+              "release",
+              "stable",
+              "latest",
+              "download"
+            ],
+            "entity_terms": [
+              "fernapi",
+              "per-client",
+              "request",
+              "quota",
+              "change",
+              "2",
+              "3",
+              "client"
+            ],
+            "versions": [
+              "2",
+              "3"
+            ],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "how did the fernapi per-client request quota change ",
+            "choices": [],
+            "operation": "compare_versions",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.0599964298307896e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 3,
+          "proof_state": "invalid_reply",
+          "navigation": [
+            {
+              "state": "abstain",
+              "chosen": ""
+            }
+          ],
+          "proposed_proof": {
+            "operation": "compare_versions",
+            "atoms": [
+              {
+                "source": "http://127.0.0.1:43357/07-doc-cross-version-comparison/v2.html",
+                "locator": "p[3]:0",
+                "span": "The per-client request quota in version 2 is 40 requests per minute.",
+                "value": "40 requests per minute",
+                "role": "2",
+                "version": "2",
+                "key": "",
+                "relation": ""
+              },
+              {
+                "source": "http://127.0.0.1:43357/07-doc-cross-version-comparison/v3.html",
+                "locator": "p[3]:0",
+                "span": "The per-client request quota in version 3 is 80 requests per minute.",
+                "value": "80 requests per minute",
+                "role": "3",
+                "version": "3",
+                "key": "",
+                "relation": ""
+              }
+            ]
+          },
+          "proof_verification": [
+            "invalid_verification"
+          ],
+          "reader_state": "invalid_reply",
+          "top_candidates": [
+            {
+              "raw": "3.",
+              "answer": "3.",
+              "source": "http://127.0.0.1:43357/07-doc-cross-version-comparison/v3.html",
+              "evidence": "Documentation version: 3.",
+              "label": "",
+              "section": "FernAPI v3 request quota \u2014 current stable",
+              "kind": "text",
+              "score": 9.0,
+              "signals": {
+                "locator": "p[2]:0",
+                "page_title": "FernAPI v3 request quota \u2014 current stable",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2.",
+              "answer": "2.",
+              "source": "http://127.0.0.1:43357/07-doc-cross-version-comparison/v2.html",
+              "evidence": "Documentation version: 2.",
+              "label": "",
+              "section": "FernAPI v2 request quota \u2014 archived",
+              "kind": "text",
+              "score": 8.4,
+              "signals": {
+                "locator": "p[2]:0",
+                "page_title": "FernAPI v2 request quota \u2014 archived",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "3",
+              "answer": "3",
+              "source": "http://127.0.0.1:43357/07-doc-cross-version-comparison/v3.html",
+              "evidence": "version: 3",
+              "label": "version",
+              "section": "",
+              "kind": "text",
+              "score": 6.75,
+              "signals": {
+                "locator": "meta[1]",
+                "page_title": "FernAPI v3 request quota \u2014 current stable",
+                "structure": "meta",
+                "qualifiers": {},
+                "field_value": "3",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2",
+              "answer": "2",
+              "source": "http://127.0.0.1:43357/07-doc-cross-version-comparison/v2.html",
+              "evidence": "version: 2",
+              "label": "version",
+              "section": "",
+              "kind": "text",
+              "score": 6.75,
+              "signals": {
+                "locator": "meta[1]",
+                "page_title": "FernAPI v2 request quota \u2014 archived",
+                "structure": "meta",
+                "qualifiers": {},
+                "field_value": "2",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [
+            {
+              "a": "3.",
+              "b": "2.",
+              "sources": [
+                "http://127.0.0.1:43357/07-doc-cross-version-comparison/v3.html",
+                "http://127.0.0.1:43357/07-doc-cross-version-comparison/v2.html"
+              ],
+              "margin": 0.6
+            }
+          ],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:43357/07-doc-cross-version-comparison/index.html",
+              "final": "http://127.0.0.1:43357/07-doc-cross-version-comparison/index.html",
+              "status": 200,
+              "bytes": 435,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:43357/07-doc-cross-version-comparison/v3.html",
+              "final": "http://127.0.0.1:43357/07-doc-cross-version-comparison/v3.html",
+              "status": 200,
+              "bytes": 488,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:43357/07-doc-cross-version-comparison/v2.html",
+              "final": "http://127.0.0.1:43357/07-doc-cross-version-comparison/v2.html",
+              "status": 200,
+              "bytes": 476,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 3,
+          "pages_fetched": 3,
+          "seconds": 0.014
+        }
+      }
+    }
+  ],
+  "passed": 27,
+  "total": 27
+}

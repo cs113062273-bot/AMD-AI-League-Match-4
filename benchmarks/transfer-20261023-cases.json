@@ -1,0 +1,127 @@
+[
+  {
+    "id": "version-table",
+    "query": "How did the BriarQueue worker quota change from version 1 to version 2?",
+    "path": "/transfer/version-table/index.html",
+    "answer": "from 24 to 48 jobs",
+    "answers": [
+      "from 24 to 48 jobs"
+    ],
+    "source_paths": [
+      "/transfer/version-table/index.html"
+    ],
+    "origin": "Author-created transfer development set, frozen before this iteration; no independent-author/hidden-evaluator claim"
+  },
+  {
+    "id": "reordered-fields",
+    "query": "What day and time does Moss Bay collect batteries?",
+    "path": "/transfer/reordered-fields/index.html",
+    "answer": "Every Wednesday, 11:30?14:00",
+    "answers": [
+      "Every Wednesday, 11:30?14:00"
+    ],
+    "source_paths": [
+      "/transfer/reordered-fields/index.html"
+    ],
+    "origin": "Author-created transfer development set, frozen before this iteration; no independent-author/hidden-evaluator claim"
+  },
+  {
+    "id": "category-tables",
+    "query": "What is the Cedar Market daily permit fee for a ceramic seller?",
+    "path": "/transfer/category-tables/index.html",
+    "answer": "$21",
+    "answers": [
+      "$21"
+    ],
+    "source_paths": [
+      "/transfer/category-tables/bands.html",
+      "/transfer/category-tables/fees.html"
+    ],
+    "origin": "Author-created transfer development set, frozen before this iteration; no independent-author/hidden-evaluator claim"
+  },
+  {
+    "id": "classification-paraphrase",
+    "query": "What is the Alder Bazaar daily permit fee for a ceramic seller?",
+    "path": "/transfer/classification-paraphrase/index.html",
+    "answer": "$23",
+    "answers": [
+      "$23"
+    ],
+    "source_paths": [
+      "/transfer/classification-paraphrase/bands.html",
+      "/transfer/classification-paraphrase/fees.html"
+    ],
+    "origin": "Author-created transfer development set, frozen before this iteration; no independent-author/hidden-evaluator claim"
+  },
+  {
+    "id": "comparison-control",
+    "query": "How did the QuartzRelay per-client message quota change from version 4 to version 5?",
+    "path": "/transfer/comparison-control/index.html",
+    "answer": "from 20 to 32 messages per second",
+    "answers": [
+      "from 20 to 32 messages per second"
+    ],
+    "source_paths": [
+      "/transfer/comparison-control/v4.html",
+      "/transfer/comparison-control/v5.html"
+    ],
+    "origin": "Author-created transfer development set, frozen before this iteration; no independent-author/hidden-evaluator claim"
+  },
+  {
+    "id": "missing-reordered-field",
+    "query": "What day and time does Slate Bay collect batteries?",
+    "path": "/transfer/missing-reordered-field/index.html",
+    "answer": "",
+    "answers": [
+      ""
+    ],
+    "source_paths": [],
+    "origin": "Author-created transfer development set, frozen before this iteration; no independent-author/hidden-evaluator claim"
+  },
+  {
+    "id": "missing-table-version",
+    "query": "How did the LinenQueue worker quota change from version 1 to version 2?",
+    "path": "/transfer/missing-table-version/index.html",
+    "answer": "",
+    "answers": [
+      ""
+    ],
+    "source_paths": [],
+    "origin": "Author-created transfer development set, frozen before this iteration; no independent-author/hidden-evaluator claim"
+  },
+  {
+    "id": "conflicting-table-band",
+    "query": "What is the Aspen Market daily permit fee for a ceramic seller?",
+    "path": "/transfer/conflicting-table-band/index.html",
+    "answer": "",
+    "answers": [
+      ""
+    ],
+    "source_paths": [],
+    "origin": "Author-created transfer development set, frozen before this iteration; no independent-author/hidden-evaluator claim"
+  },
+  {
+    "id": "incompatible-table-units",
+    "query": "How did the SilkQueue worker quota change from version 1 to version 2?",
+    "path": "/transfer/incompatible-table-units/index.html",
+    "answer": "",
+    "answers": [
+      ""
+    ],
+    "source_paths": [],
+    "origin": "Author-created transfer development set, frozen before this iteration; no independent-author/hidden-evaluator claim"
+  },
+  {
+    "id": "single-control",
+    "query": "What is the Junco Park entry fee?",
+    "path": "/transfer/single-control/index.html",
+    "answer": "$35",
+    "answers": [
+      "$35"
+    ],
+    "source_paths": [
+      "/transfer/single-control/index.html"
+    ],
+    "origin": "Author-created transfer development set, frozen before this iteration; no independent-author/hidden-evaluator claim"
+  }
+]

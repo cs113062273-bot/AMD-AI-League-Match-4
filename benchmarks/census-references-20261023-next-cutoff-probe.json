@@ -1,0 +1,29 @@
+{
+  "scope": "CPU planning-only probe of unresolved cutoff parsing; invented inputs, no package lookup or model. Not fixed in census patch.",
+  "rows": [
+    {
+      "query": "What was the latest version of the invented river-sample package as of 2020.2?",
+      "year": "",
+      "as_of": "2020-12-31",
+      "as_of_is_valid_iso": true
+    },
+    {
+      "query": "What was the latest version of the invented river-sample package as of 2020-02?",
+      "year": "",
+      "as_of": "2020-12-31",
+      "as_of_is_valid_iso": true
+    },
+    {
+      "query": "What was the latest version of the invented river-sample package as of 2020-99-99?",
+      "year": "",
+      "as_of": "2020-99-99",
+      "as_of_is_valid_iso": false
+    },
+    {
+      "query": "What was the latest version of the invented river-sample package as of 2020-02-29?",
+      "year": "",
+      "as_of": "2020-02-29",
+      "as_of_is_valid_iso": true
+    }
+  ]
+}

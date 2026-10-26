@@ -1,0 +1,3150 @@
+{
+  "scope": "Paired owned-full4B diagnosis on frozen Oyez responses and authored member controls.\n\nActual source replay, not live discovery, unseen accuracy or official scoring.\nBoth engines share the current backend; member prompting is request-specific.\n",
+  "baseline": "4141065a0ed756fa1e18c8f4f234c6a7293f9cf8",
+  "baseline_source_sha256": {
+    "agent/engine.py": "8a0fa144451d6cf488c12bb248affce0fe9bb1db3f284dabce84f1e97dfc2ca8",
+    "agent/types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent/planner.py": "7135c1bda05839ed7d0e2b73144018e2140bce2a481fcb77c7133077510e4fa4",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/network.py": "c37ecb5b4b0fba4fac737954eda24952059922ed620c94b99bcb17daed8c5155",
+    "agent/urls.py": "2118381f70d0f44174db25833b989cd36dab64b588b83085cddd65cad7412a1f",
+    "agent/parser.py": "795c021d4f29f544958174183b3be53f7295b04a7726642e1aaa90990330e3d5",
+    "agent/normalize.py": "05e48fa0be8384aa656bf1280ba0be44545efa51b7d4451f0716d836d39a1973",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent/search.py": "fadb6dd66114dc2de17edf5dc012d469a3e10ac529ff3b062f43ea137dfaf398",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/candidates.py": "3446ca2e16a7b13548fdead5ade9ba5bbb0d4aa559ca3918012b0f6de7d672b4",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/evidence.py": "09da13b3f2fb17de30734c44ddad1c89b856ec682ff2e88a78a57773409c0089",
+    "agent/selector.py": "89e9246203f8aec04859656b3c405f366d6188cb7684778817df706baafe8baf",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/proofs.py": "0d7ae78df6ea9949c29f33c7b817dda352c75b3d99c960c3e987e37c7401faab"
+  },
+  "freeze_sha256": "bb77454f9768ded696540a0133de960d3709b626d904d4bcc9ccbb42ca5071b3",
+  "production_sha256": {
+    "agent/browser.py": "53ac9a99f3afcefcdb197cd9b2296c2d380910a782178fadb65235e548efc353",
+    "agent/candidates.py": "c55cd074f50d1b0c944cf5552bd604caf4b313bada23accd73674d5d1d93d116",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/engine.py": "763afa6e9897e5d605c364be68c562794594fb1e545ea7ffccca59cb7578f78f",
+    "agent/evidence.py": "09da13b3f2fb17de30734c44ddad1c89b856ec682ff2e88a78a57773409c0089",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "agent/model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+    "agent/model_server.py": "8d326a696942d259697a6fba8586441bbbe4874042ea900c6d7788a2a0e9fd22",
+    "agent/navigation.py": "0f849c0c570720114c45c14b0a5286fe409e5d26c2945fdc9f6c1a6922bb7718",
+    "agent/network.py": "def1be3752f81423c313c2dfa83f6703ee063d7e98652cf0d816b423d0e2d9cb",
+    "agent/normalize.py": "05e48fa0be8384aa656bf1280ba0be44545efa51b7d4451f0716d836d39a1973",
+    "agent/output.py": "b983ab2efe31707b1c974344a32dc4b40b708541257695de89cac9e343b073eb",
+    "agent/oyez.py": "e7a6054e97e602aa49715a42e5ed21609b372af5728d1d2c49ffa7073e7fa81e",
+    "agent/parser.py": "60f4199ea41c63376ad347793e8b517b38557dcc238e266621cddef27481124e",
+    "agent/planner.py": "8a617d26e724e8ebc5e604892e867ebcc9e417aa97cbd7e0feda4954cd5a1d2b",
+    "agent/processes.py": "677c4372b40d1da0ffc0cf4120ca5b6be2fcf6b6c30f6ec17d0d8fae19e198c1",
+    "agent/proofs.py": "0d7ae78df6ea9949c29f33c7b817dda352c75b3d99c960c3e987e37c7401faab",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent/search.py": "fadb6dd66114dc2de17edf5dc012d469a3e10ac529ff3b062f43ea137dfaf398",
+    "agent/selector.py": "be7c0fce11c10921d5cd4e3d1072d5a2ca5a62f1c328730384d19b0fecd19566",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent/urls.py": "2118381f70d0f44174db25833b989cd36dab64b588b83085cddd65cad7412a1f",
+    "agent/worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f",
+    "agent/__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41"
+  },
+  "memory_before": {
+    "used_mib": 871,
+    "total_mib": 12282
+  },
+  "rows": [
+    {
+      "id": "real-case-teams",
+      "before": {
+        "result": {
+          "answer": "",
+          "sources": [],
+          "confidence": 0.0,
+          "evidence": "",
+          "reason": "model_no_evidence",
+          "diagnostics": {
+            "plan": {
+              "question": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+              "url": "https://www.oyez.org/cases/1966/37",
+              "kind": "text",
+              "terms": [
+                "two",
+                "football",
+                "teams",
+                "mentioned",
+                "libel",
+                "case",
+                "against",
+                "saturday",
+                "evening",
+                "post",
+                "1963"
+              ],
+              "attributes": [],
+              "entity_terms": [
+                "two",
+                "football",
+                "teams",
+                "mentioned",
+                "libel",
+                "case",
+                "against",
+                "saturday",
+                "evening",
+                "post"
+              ],
+              "versions": [],
+              "year": "1963",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 1,
+              "negations": [],
+              "domain": "www.oyez.org",
+              "focus": "what two football teams were mentioned ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "abstain"
+            ],
+            "timings": {
+              "resolver": 0.00017899996601045132
+            },
+            "search_requests": 0,
+            "llm_calls": 1,
+            "content_pages": 1,
+            "reader_state": "no_evidence",
+            "top_candidates": [],
+            "conflicts": [],
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:60773/front",
+                "final": "http://127.0.0.1:60773/front",
+                "status": 200,
+                "bytes": 2453,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 1,
+            "pages_fetched": 1,
+            "seconds": 0.7711
+          }
+        },
+        "seconds": 0.7712016999721527,
+        "passed": false
+      },
+      "after": {
+        "result": {
+          "answer": "University of Georgia and University of Alabama",
+          "sources": [
+            "https://api.oyez.org/cases/1966/37?labels=true"
+          ],
+          "confidence": 0.906,
+          "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+          "reason": "model_verified",
+          "diagnostics": {
+            "plan": {
+              "question": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+              "url": "https://www.oyez.org/cases/1966/37",
+              "kind": "text",
+              "terms": [
+                "two",
+                "football",
+                "teams",
+                "mentioned",
+                "libel",
+                "case",
+                "against",
+                "saturday",
+                "evening",
+                "post",
+                "1963"
+              ],
+              "attributes": [],
+              "entity_terms": [
+                "two",
+                "football",
+                "teams",
+                "mentioned",
+                "libel",
+                "case",
+                "against",
+                "saturday",
+                "evening",
+                "post"
+              ],
+              "versions": [],
+              "year": "1963",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 2,
+              "negations": [],
+              "domain": "www.oyez.org",
+              "focus": "what two football teams were mentioned ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "span"
+            ],
+            "timings": {
+              "resolver": 1.71000137925148e-05
+            },
+            "search_requests": 0,
+            "llm_calls": 2,
+            "content_pages": 1,
+            "model_selections": [
+              {
+                "raw": "University of Georgia and University of Alabama",
+                "answer": "University of Georgia and University of Alabama",
+                "source": "https://api.oyez.org/cases/1966/37?labels=true",
+                "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+                "label": "",
+                "section": "facts of the case",
+                "kind": "text",
+                "score": 14.231663905423373,
+                "signals": {
+                  "selector": "literal_spans",
+                  "literal_spans": [
+                    "University of Georgia",
+                    "University of Alabama"
+                  ],
+                  "locator": "oyez/facts_of_the_case/p[0]:0:0",
+                  "structure": "prose",
+                  "qualifiers": {},
+                  "field_value": ""
+                }
+              }
+            ],
+            "verification": [
+              "supported"
+            ],
+            "reader_state": "answered",
+            "selection": {
+              "raw": "University of Georgia and University of Alabama",
+              "answer": "University of Georgia and University of Alabama",
+              "source": "https://api.oyez.org/cases/1966/37?labels=true",
+              "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+              "label": "",
+              "section": "facts of the case",
+              "kind": "text",
+              "score": 14.231663905423373,
+              "signals": {
+                "selector": "literal_spans",
+                "literal_spans": [
+                  "University of Georgia",
+                  "University of Alabama"
+                ],
+                "locator": "oyez/facts_of_the_case/p[0]:0:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            },
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:60773/front",
+                "final": "http://127.0.0.1:60773/front",
+                "status": 200,
+                "bytes": 2453,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:60773/api",
+                "final": "http://127.0.0.1:60773/api",
+                "status": 200,
+                "bytes": 31699,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 2,
+            "pages_fetched": 1,
+            "seconds": 1.954
+          }
+        },
+        "seconds": 1.9541180999949574,
+        "passed": true
+      }
+    },
+    {
+      "id": "real-api-teams",
+      "after": {
+        "result": {
+          "answer": "University of Georgia and University of Alabama",
+          "sources": [
+            "https://api.oyez.org/cases/1966/37?labels=true"
+          ],
+          "confidence": 0.956,
+          "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+          "reason": "model_verified",
+          "diagnostics": {
+            "plan": {
+              "question": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+              "url": "https://api.oyez.org/cases/1966/37?labels=true",
+              "kind": "text",
+              "terms": [
+                "two",
+                "football",
+                "teams",
+                "mentioned",
+                "libel",
+                "case",
+                "against",
+                "saturday",
+                "evening",
+                "post",
+                "1963"
+              ],
+              "attributes": [],
+              "entity_terms": [
+                "two",
+                "football",
+                "teams",
+                "mentioned",
+                "libel",
+                "case",
+                "against",
+                "saturday",
+                "evening",
+                "post"
+              ],
+              "versions": [],
+              "year": "1963",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 2,
+              "negations": [],
+              "domain": "api.oyez.org",
+              "focus": "what two football teams were mentioned ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "span"
+            ],
+            "timings": {
+              "resolver": 1.4599994756281376e-05
+            },
+            "search_requests": 0,
+            "llm_calls": 2,
+            "content_pages": 1,
+            "model_selections": [
+              {
+                "raw": "University of Georgia and University of Alabama",
+                "answer": "University of Georgia and University of Alabama",
+                "source": "https://api.oyez.org/cases/1966/37?labels=true",
+                "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+                "label": "",
+                "section": "facts of the case",
+                "kind": "text",
+                "score": 16.23166390542337,
+                "signals": {
+                  "selector": "literal_spans",
+                  "literal_spans": [
+                    "University of Georgia",
+                    "University of Alabama"
+                  ],
+                  "locator": "oyez/facts_of_the_case/p[0]:0:0",
+                  "structure": "prose",
+                  "qualifiers": {},
+                  "field_value": ""
+                }
+              }
+            ],
+            "verification": [
+              "supported"
+            ],
+            "reader_state": "answered",
+            "selection": {
+              "raw": "University of Georgia and University of Alabama",
+              "answer": "University of Georgia and University of Alabama",
+              "source": "https://api.oyez.org/cases/1966/37?labels=true",
+              "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+              "label": "",
+              "section": "facts of the case",
+              "kind": "text",
+              "score": 16.23166390542337,
+              "signals": {
+                "selector": "literal_spans",
+                "literal_spans": [
+                  "University of Georgia",
+                  "University of Alabama"
+                ],
+                "locator": "oyez/facts_of_the_case/p[0]:0:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            },
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:60783/api",
+                "final": "http://127.0.0.1:60783/api",
+                "status": 200,
+                "bytes": 31699,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 1,
+            "pages_fetched": 1,
+            "seconds": 1.9577
+          }
+        },
+        "seconds": 1.9578129999572411,
+        "passed": true
+      },
+      "before": {
+        "result": {
+          "answer": "",
+          "sources": [],
+          "confidence": 0.0,
+          "evidence": "",
+          "reason": "model_invalid_reply",
+          "diagnostics": {
+            "plan": {
+              "question": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+              "url": "https://api.oyez.org/cases/1966/37?labels=true",
+              "kind": "text",
+              "terms": [
+                "two",
+                "football",
+                "teams",
+                "mentioned",
+                "libel",
+                "case",
+                "against",
+                "saturday",
+                "evening",
+                "post",
+                "1963"
+              ],
+              "attributes": [],
+              "entity_terms": [
+                "two",
+                "football",
+                "teams",
+                "mentioned",
+                "libel",
+                "case",
+                "against",
+                "saturday",
+                "evening",
+                "post"
+              ],
+              "versions": [],
+              "year": "1963",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 1,
+              "negations": [],
+              "domain": "api.oyez.org",
+              "focus": "what two football teams were mentioned ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "model_invalid_selection"
+            ],
+            "timings": {
+              "resolver": 1.4499993994832039e-05
+            },
+            "search_requests": 0,
+            "llm_calls": 1,
+            "content_pages": 1,
+            "reader_state": "invalid_reply",
+            "top_candidates": [
+              {
+                "raw": "null",
+                "answer": "null",
+                "source": "https://api.oyez.org/cases/1966/37?labels=true",
+                "evidence": "related cases: null | $ { ID: 61251 | name: Curtis Publishing Company v. Butts | href: https://api.oyez.org/cases/1966/37 | view_count: 0 | docket_number: 37 | additional_docket_numbers: null | manner_of_jurisdiction: Writ of <i>certiorari</i> | first_party: Curtis Publishing Company | second_party: Wallace Butts | question: <p>In light of the Court's ruling in <em>New York Times Co. v. Sullivan</em>, were the allegations made against Butts and Walker libelous?</p>\n | advocates: null | first_party_label: Petitioner | second_party_label: Respondent | decided_by: null | term: 1966 | opinion_announcement: null | related_cases: null | justia_url: https://supreme.justia.com/cases/federal/us/388/130/ | argument2_url: null }",
+                "label": "related cases",
+                "section": "$ { ID: 61251 | name: Curtis Publishing Company v. Butts | href: https://api.oyez.org/cases/1966/37 | view_count: 0 | docket_number: 37 | additional_docket_numbers: null | manner_of_jurisdiction: Writ of <i>certiorari</i> | first_party: Curtis Publishing Company | second_party: Wallace Butts | question: <p>In light of the Court's ruling in <em>New York Times Co. v. Sullivan</em>, were the allegati",
+                "kind": "text",
+                "score": 2.1730903716293737,
+                "signals": {
+                  "locator": "related_cases",
+                  "page_title": "",
+                  "structure": "json",
+                  "qualifiers": {
+                    "identity": [
+                      "61251",
+                      "Curtis Publishing Company v. Butts"
+                    ],
+                    "structured": true,
+                    "bindings": {
+                      "ID": "61251",
+                      "name": "Curtis Publishing Company v. Butts",
+                      "href": "https://api.oyez.org/cases/1966/37",
+                      "view_count": "0",
+                      "docket_number": "37",
+                      "additional_docket_numbers": "null",
+                      "manner_of_jurisdiction": "Writ of <i>certiorari</i>",
+                      "first_party": "Curtis Publishing Company",
+                      "second_party": "Wallace Butts",
+                      "question": "<p>In light of the Court's ruling in <em>New York Times Co. v. Sullivan</em>, were the allegations made against Butts and Walker libelous?</p>\n",
+                      "advocates": "null",
+                      "first_party_label": "Petitioner",
+                      "second_party_label": "Respondent",
+                      "decided_by": "null",
+                      "term": "1966",
+                      "opinion_announcement": "null",
+                      "related_cases": "null",
+                      "justia_url": "https://supreme.justia.com/cases/federal/us/388/130/",
+                      "argument2_url": "null"
+                    },
+                    "value_type": "null"
+                  },
+                  "field_value": "null",
+                  "agreement_domains": 1
+                }
+              }
+            ],
+            "conflicts": [],
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:60783/api",
+                "final": "http://127.0.0.1:60783/api",
+                "status": 200,
+                "bytes": 31699,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 1,
+            "pages_fetched": 1,
+            "seconds": 2.2397
+          }
+        },
+        "seconds": 2.240093799890019,
+        "passed": false
+      }
+    },
+    {
+      "id": "real-case-informant",
+      "before": {
+        "result": {
+          "answer": "",
+          "sources": [],
+          "confidence": 0.0,
+          "evidence": "",
+          "reason": "model_no_evidence",
+          "diagnostics": {
+            "plan": {
+              "question": "Who was the source of the article in Curtis Publishing v. Butts?",
+              "url": "https://www.oyez.org/cases/1966/37",
+              "kind": "text",
+              "terms": [
+                "source",
+                "article",
+                "curtis",
+                "publishing",
+                "v",
+                "butts"
+              ],
+              "attributes": [],
+              "entity_terms": [
+                "source",
+                "article",
+                "curtis",
+                "publishing",
+                "v",
+                "butts"
+              ],
+              "versions": [],
+              "year": "",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 1,
+              "negations": [],
+              "domain": "www.oyez.org",
+              "focus": "who was the source ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "abstain"
+            ],
+            "timings": {
+              "resolver": 1.1199968867003918e-05
+            },
+            "search_requests": 0,
+            "llm_calls": 1,
+            "content_pages": 1,
+            "reader_state": "no_evidence",
+            "top_candidates": [],
+            "conflicts": [],
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:60795/front",
+                "final": "http://127.0.0.1:60795/front",
+                "status": 200,
+                "bytes": 2453,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 1,
+            "pages_fetched": 1,
+            "seconds": 0.7289
+          }
+        },
+        "seconds": 0.7289871999528259,
+        "passed": false
+      },
+      "after": {
+        "result": {
+          "answer": "George Burnett",
+          "sources": [
+            "https://api.oyez.org/cases/1966/37?labels=true"
+          ],
+          "confidence": 0.748,
+          "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+          "reason": "model_verified",
+          "diagnostics": {
+            "plan": {
+              "question": "Who was the source of the article in Curtis Publishing v. Butts?",
+              "url": "https://www.oyez.org/cases/1966/37",
+              "kind": "text",
+              "terms": [
+                "source",
+                "article",
+                "curtis",
+                "publishing",
+                "v",
+                "butts"
+              ],
+              "attributes": [],
+              "entity_terms": [
+                "source",
+                "article",
+                "curtis",
+                "publishing",
+                "v",
+                "butts"
+              ],
+              "versions": [],
+              "year": "",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 1,
+              "negations": [],
+              "domain": "www.oyez.org",
+              "focus": "who was the source ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "span"
+            ],
+            "timings": {
+              "resolver": 1.2300093658268452e-05
+            },
+            "search_requests": 0,
+            "llm_calls": 2,
+            "content_pages": 1,
+            "model_selections": [
+              {
+                "raw": "George Burnett",
+                "answer": "George Burnett",
+                "source": "https://api.oyez.org/cases/1966/37?labels=true",
+                "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+                "label": "",
+                "section": "facts of the case",
+                "kind": "text",
+                "score": 7.931663905423374,
+                "signals": {
+                  "selector": "literal_span",
+                  "locator": "oyez/facts_of_the_case/p[0]:0:0",
+                  "structure": "prose",
+                  "qualifiers": {},
+                  "field_value": ""
+                }
+              }
+            ],
+            "verification": [
+              "supported"
+            ],
+            "reader_state": "answered",
+            "selection": {
+              "raw": "George Burnett",
+              "answer": "George Burnett",
+              "source": "https://api.oyez.org/cases/1966/37?labels=true",
+              "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+              "label": "",
+              "section": "facts of the case",
+              "kind": "text",
+              "score": 7.931663905423374,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "oyez/facts_of_the_case/p[0]:0:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            },
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:60795/front",
+                "final": "http://127.0.0.1:60795/front",
+                "status": 200,
+                "bytes": 2453,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:60795/api",
+                "final": "http://127.0.0.1:60795/api",
+                "status": 200,
+                "bytes": 31699,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 2,
+            "pages_fetched": 1,
+            "seconds": 1.9313
+          }
+        },
+        "seconds": 1.9313902999274433,
+        "passed": true
+      }
+    },
+    {
+      "id": "wrong-case-identity",
+      "after": {
+        "result": {
+          "answer": "",
+          "sources": [],
+          "confidence": 0.0,
+          "evidence": "",
+          "reason": "model_not_run",
+          "diagnostics": {
+            "plan": {
+              "question": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+              "url": "https://api.oyez.org/cases/1966/37?labels=true",
+              "kind": "text",
+              "terms": [
+                "two",
+                "football",
+                "teams",
+                "mentioned",
+                "libel",
+                "case",
+                "against",
+                "saturday",
+                "evening",
+                "post",
+                "1963"
+              ],
+              "attributes": [],
+              "entity_terms": [
+                "two",
+                "football",
+                "teams",
+                "mentioned",
+                "libel",
+                "case",
+                "against",
+                "saturday",
+                "evening",
+                "post"
+              ],
+              "versions": [],
+              "year": "1963",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 2,
+              "negations": [],
+              "domain": "api.oyez.org",
+              "focus": "what two football teams were mentioned ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [
+              {
+                "url": "https://api.oyez.org/cases/1966/37?labels=true",
+                "error": "oyez_case_identity_mismatch"
+              }
+            ],
+            "selector": [],
+            "timings": {
+              "resolver": 1.3299984857439995e-05
+            },
+            "search_requests": 0,
+            "llm_calls": 0,
+            "content_pages": 0,
+            "reader_state": "not_run",
+            "top_candidates": [],
+            "conflicts": [],
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:60803/api",
+                "final": "http://127.0.0.1:60803/api",
+                "status": 200,
+                "bytes": 32218,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 1,
+            "pages_fetched": 0,
+            "seconds": 0.0022
+          }
+        },
+        "seconds": 0.0022983000380918384,
+        "passed": true
+      },
+      "before": {
+        "result": {
+          "answer": "",
+          "sources": [],
+          "confidence": 0.0,
+          "evidence": "",
+          "reason": "model_invalid_reply",
+          "diagnostics": {
+            "plan": {
+              "question": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+              "url": "https://api.oyez.org/cases/1966/37?labels=true",
+              "kind": "text",
+              "terms": [
+                "two",
+                "football",
+                "teams",
+                "mentioned",
+                "libel",
+                "case",
+                "against",
+                "saturday",
+                "evening",
+                "post",
+                "1963"
+              ],
+              "attributes": [],
+              "entity_terms": [
+                "two",
+                "football",
+                "teams",
+                "mentioned",
+                "libel",
+                "case",
+                "against",
+                "saturday",
+                "evening",
+                "post"
+              ],
+              "versions": [],
+              "year": "1963",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 1,
+              "negations": [],
+              "domain": "api.oyez.org",
+              "focus": "what two football teams were mentioned ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "model_invalid_selection"
+            ],
+            "timings": {
+              "resolver": 1.2299977242946625e-05
+            },
+            "search_requests": 0,
+            "llm_calls": 1,
+            "content_pages": 1,
+            "reader_state": "invalid_reply",
+            "top_candidates": [
+              {
+                "raw": "null",
+                "answer": "null",
+                "source": "https://api.oyez.org/cases/1966/37?labels=true",
+                "evidence": "related cases: null | $ { ID: 61251 | name: Curtis Publishing Company v. Butts | href: https://api.oyez.org/cases/1966/37 | view_count: 0 | docket_number: 38 | additional_docket_numbers: null | manner_of_jurisdiction: Writ of <i>certiorari</i> | first_party: Curtis Publishing Company | second_party: Wallace Butts | question: <p>In light of the Court's ruling in <em>New York Times Co. v. Sullivan</em>, were the allegations made against Butts and Walker libelous?</p>\n | advocates: null | first_party_label: Petitioner | second_party_label: Respondent | decided_by: null | term: 1966 | opinion_announcement: null | related_cases: null | justia_url: https://supreme.justia.com/cases/federal/us/388/130/ | argument2_url: null }",
+                "label": "related cases",
+                "section": "$ { ID: 61251 | name: Curtis Publishing Company v. Butts | href: https://api.oyez.org/cases/1966/37 | view_count: 0 | docket_number: 38 | additional_docket_numbers: null | manner_of_jurisdiction: Writ of <i>certiorari</i> | first_party: Curtis Publishing Company | second_party: Wallace Butts | question: <p>In light of the Court's ruling in <em>New York Times Co. v. Sullivan</em>, were the allegati",
+                "kind": "text",
+                "score": 2.1730903716293737,
+                "signals": {
+                  "locator": "related_cases",
+                  "page_title": "",
+                  "structure": "json",
+                  "qualifiers": {
+                    "identity": [
+                      "61251",
+                      "Curtis Publishing Company v. Butts"
+                    ],
+                    "structured": true,
+                    "bindings": {
+                      "ID": "61251",
+                      "name": "Curtis Publishing Company v. Butts",
+                      "href": "https://api.oyez.org/cases/1966/37",
+                      "view_count": "0",
+                      "docket_number": "38",
+                      "additional_docket_numbers": "null",
+                      "manner_of_jurisdiction": "Writ of <i>certiorari</i>",
+                      "first_party": "Curtis Publishing Company",
+                      "second_party": "Wallace Butts",
+                      "question": "<p>In light of the Court's ruling in <em>New York Times Co. v. Sullivan</em>, were the allegations made against Butts and Walker libelous?</p>\n",
+                      "advocates": "null",
+                      "first_party_label": "Petitioner",
+                      "second_party_label": "Respondent",
+                      "decided_by": "null",
+                      "term": "1966",
+                      "opinion_announcement": "null",
+                      "related_cases": "null",
+                      "justia_url": "https://supreme.justia.com/cases/federal/us/388/130/",
+                      "argument2_url": "null"
+                    },
+                    "value_type": "null"
+                  },
+                  "field_value": "null",
+                  "agreement_domains": 1
+                }
+              }
+            ],
+            "conflicts": [],
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:60803/api",
+                "final": "http://127.0.0.1:60803/api",
+                "status": 200,
+                "bytes": 32218,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 1,
+            "pages_fetched": 1,
+            "seconds": 2.1449
+          }
+        },
+        "seconds": 2.1453606999712065,
+        "passed": true
+      }
+    },
+    {
+      "id": "teams-with-coaches",
+      "before": {
+        "result": {
+          "answer": "",
+          "sources": [],
+          "confidence": 0.0,
+          "evidence": "",
+          "reason": "model_invalid_reply",
+          "diagnostics": {
+            "plan": {
+              "question": "Which two football teams played in the Cedar Cup?",
+              "url": "https://example.org/teams-with-coaches",
+              "kind": "text",
+              "terms": [
+                "two",
+                "football",
+                "teams",
+                "played",
+                "cedar",
+                "cup"
+              ],
+              "attributes": [],
+              "entity_terms": [
+                "two",
+                "football",
+                "teams",
+                "played",
+                "cedar",
+                "cup"
+              ],
+              "versions": [],
+              "year": "",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 1,
+              "negations": [],
+              "domain": "example.org",
+              "focus": "which two football teams played ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "model_invalid_selection"
+            ],
+            "timings": {
+              "resolver": 9.499955922365189e-06
+            },
+            "search_requests": 0,
+            "llm_calls": 1,
+            "content_pages": 1,
+            "reader_state": "invalid_reply",
+            "top_candidates": [],
+            "conflicts": [],
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:60808/landing",
+                "final": "http://127.0.0.1:60808/landing",
+                "status": 200,
+                "bytes": 131,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 1,
+            "pages_fetched": 1,
+            "seconds": 0.9273
+          }
+        },
+        "seconds": 0.9274237001081929,
+        "passed": false
+      },
+      "after": {
+        "result": {
+          "answer": "Maple United and Cedar FC",
+          "sources": [
+            "https://example.org/teams-with-coaches"
+          ],
+          "confidence": 0.68,
+          "evidence": "The Cedar Cup featured Maple United, coached by Mira Chen, against Cedar FC, coached by Orin Vale.",
+          "reason": "model_verified",
+          "diagnostics": {
+            "plan": {
+              "question": "Which two football teams played in the Cedar Cup?",
+              "url": "https://example.org/teams-with-coaches",
+              "kind": "text",
+              "terms": [
+                "two",
+                "football",
+                "teams",
+                "played",
+                "cedar",
+                "cup"
+              ],
+              "attributes": [],
+              "entity_terms": [
+                "two",
+                "football",
+                "teams",
+                "played",
+                "cedar",
+                "cup"
+              ],
+              "versions": [],
+              "year": "",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 2,
+              "negations": [],
+              "domain": "example.org",
+              "focus": "which two football teams played ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "span"
+            ],
+            "timings": {
+              "resolver": 1.2400094419717789e-05
+            },
+            "search_requests": 0,
+            "llm_calls": 2,
+            "content_pages": 1,
+            "model_selections": [
+              {
+                "raw": "Maple United and Cedar FC",
+                "answer": "Maple United and Cedar FC",
+                "source": "https://example.org/teams-with-coaches",
+                "evidence": "The Cedar Cup featured Maple United, coached by Mira Chen, against Cedar FC, coached by Orin Vale.",
+                "label": "",
+                "section": "",
+                "kind": "text",
+                "score": 5.2,
+                "signals": {
+                  "selector": "literal_spans",
+                  "literal_spans": [
+                    "Maple United",
+                    "Cedar FC"
+                  ],
+                  "locator": "p[0]:0",
+                  "structure": "prose",
+                  "qualifiers": {},
+                  "field_value": ""
+                }
+              }
+            ],
+            "verification": [
+              "supported"
+            ],
+            "reader_state": "answered",
+            "selection": {
+              "raw": "Maple United and Cedar FC",
+              "answer": "Maple United and Cedar FC",
+              "source": "https://example.org/teams-with-coaches",
+              "evidence": "The Cedar Cup featured Maple United, coached by Mira Chen, against Cedar FC, coached by Orin Vale.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 5.2,
+              "signals": {
+                "selector": "literal_spans",
+                "literal_spans": [
+                  "Maple United",
+                  "Cedar FC"
+                ],
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            },
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:60808/landing",
+                "final": "http://127.0.0.1:60808/landing",
+                "status": 200,
+                "bytes": 131,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 1,
+            "pages_fetched": 1,
+            "seconds": 1.1286
+          }
+        },
+        "seconds": 1.1286214999854565,
+        "passed": true
+      }
+    },
+    {
+      "id": "one-team-only",
+      "after": {
+        "result": {
+          "answer": "",
+          "sources": [],
+          "confidence": 0.0,
+          "evidence": "",
+          "reason": "model_no_evidence",
+          "diagnostics": {
+            "plan": {
+              "question": "Which two football teams played in the Cedar Cup?",
+              "url": "https://example.org/one-team-only",
+              "kind": "text",
+              "terms": [
+                "two",
+                "football",
+                "teams",
+                "played",
+                "cedar",
+                "cup"
+              ],
+              "attributes": [],
+              "entity_terms": [
+                "two",
+                "football",
+                "teams",
+                "played",
+                "cedar",
+                "cup"
+              ],
+              "versions": [],
+              "year": "",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 2,
+              "negations": [],
+              "domain": "example.org",
+              "focus": "which two football teams played ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "abstain"
+            ],
+            "timings": {
+              "resolver": 1.1399970389902592e-05
+            },
+            "search_requests": 0,
+            "llm_calls": 1,
+            "content_pages": 1,
+            "reader_state": "no_evidence",
+            "top_candidates": [],
+            "conflicts": [],
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:60817/landing",
+                "final": "http://127.0.0.1:60817/landing",
+                "status": 200,
+                "bytes": 95,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 1,
+            "pages_fetched": 1,
+            "seconds": 0.6163
+          }
+        },
+        "seconds": 0.6163915999932215,
+        "passed": true
+      },
+      "before": {
+        "result": {
+          "answer": "",
+          "sources": [],
+          "confidence": 0.0,
+          "evidence": "",
+          "reason": "model_no_evidence",
+          "diagnostics": {
+            "plan": {
+              "question": "Which two football teams played in the Cedar Cup?",
+              "url": "https://example.org/one-team-only",
+              "kind": "text",
+              "terms": [
+                "two",
+                "football",
+                "teams",
+                "played",
+                "cedar",
+                "cup"
+              ],
+              "attributes": [],
+              "entity_terms": [
+                "two",
+                "football",
+                "teams",
+                "played",
+                "cedar",
+                "cup"
+              ],
+              "versions": [],
+              "year": "",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 1,
+              "negations": [],
+              "domain": "example.org",
+              "focus": "which two football teams played ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "abstain"
+            ],
+            "timings": {
+              "resolver": 1.070008147507906e-05
+            },
+            "search_requests": 0,
+            "llm_calls": 1,
+            "content_pages": 1,
+            "reader_state": "no_evidence",
+            "top_candidates": [],
+            "conflicts": [],
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:60817/landing",
+                "final": "http://127.0.0.1:60817/landing",
+                "status": 200,
+                "bytes": 95,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 1,
+            "pages_fetched": 1,
+            "seconds": 0.6768
+          }
+        },
+        "seconds": 0.6768313000211492,
+        "passed": true
+      }
+    },
+    {
+      "id": "different-award-years",
+      "before": {
+        "result": {
+          "answer": "",
+          "sources": [],
+          "confidence": 0.0,
+          "evidence": "",
+          "reason": "model_no_evidence",
+          "diagnostics": {
+            "plan": {
+              "question": "Which two authors won the Cedar Prize in 1998?",
+              "url": "https://example.org/different-award-years",
+              "kind": "text",
+              "terms": [
+                "two",
+                "authors",
+                "won",
+                "cedar",
+                "prize",
+                "1998"
+              ],
+              "attributes": [
+                "author",
+                "authors",
+                "creator",
+                "maintainer",
+                "written"
+              ],
+              "entity_terms": [
+                "two",
+                "won",
+                "cedar",
+                "prize"
+              ],
+              "versions": [],
+              "year": "1998",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 1,
+              "negations": [],
+              "domain": "example.org",
+              "focus": "which two authors won the cedar prize ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "span"
+            ],
+            "timings": {
+              "resolver": 1.079996582120657e-05
+            },
+            "search_requests": 0,
+            "llm_calls": 2,
+            "content_pages": 1,
+            "model_selections": [
+              {
+                "raw": "Mira Chen",
+                "answer": "Mira Chen",
+                "source": "https://example.org/different-award-years",
+                "evidence": "Mira Chen won the Cedar Prize in 1998. Orin Vale won the Cedar Prize in 2001.",
+                "label": "",
+                "section": "",
+                "kind": "text",
+                "score": 10.9,
+                "signals": {
+                  "selector": "literal_span",
+                  "locator": "p[0]:0",
+                  "structure": "prose",
+                  "qualifiers": {},
+                  "field_value": ""
+                }
+              }
+            ],
+            "verification": [
+              "unsupported"
+            ],
+            "reader_state": "no_evidence",
+            "top_candidates": [],
+            "conflicts": [],
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:60823/landing",
+                "final": "http://127.0.0.1:60823/landing",
+                "status": 200,
+                "bytes": 110,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 1,
+            "pages_fetched": 1,
+            "seconds": 1.093
+          }
+        },
+        "seconds": 1.0931332999607548,
+        "passed": true
+      },
+      "after": {
+        "result": {
+          "answer": "",
+          "sources": [],
+          "confidence": 0.0,
+          "evidence": "",
+          "reason": "model_evidence_rejected",
+          "diagnostics": {
+            "plan": {
+              "question": "Which two authors won the Cedar Prize in 1998?",
+              "url": "https://example.org/different-award-years",
+              "kind": "text",
+              "terms": [
+                "two",
+                "authors",
+                "won",
+                "cedar",
+                "prize",
+                "1998"
+              ],
+              "attributes": [
+                "author",
+                "authors",
+                "creator",
+                "maintainer",
+                "written"
+              ],
+              "entity_terms": [
+                "two",
+                "won",
+                "cedar",
+                "prize"
+              ],
+              "versions": [],
+              "year": "1998",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 2,
+              "negations": [],
+              "domain": "example.org",
+              "focus": "which two authors won the cedar prize ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "span"
+            ],
+            "timings": {
+              "resolver": 1.1100084520876408e-05
+            },
+            "search_requests": 0,
+            "llm_calls": 1,
+            "content_pages": 1,
+            "model_selections": [
+              {
+                "raw": "Mira Chen and Orin Vale",
+                "answer": "Mira Chen and Orin Vale",
+                "source": "https://example.org/different-award-years",
+                "evidence": "Mira Chen won the Cedar Prize in 1998. Orin Vale won the Cedar Prize in 2001.",
+                "label": "",
+                "section": "",
+                "kind": "text",
+                "score": 10.9,
+                "signals": {
+                  "selector": "literal_spans",
+                  "literal_spans": [
+                    "Mira Chen",
+                    "Orin Vale"
+                  ],
+                  "locator": "p[0]:0",
+                  "structure": "prose",
+                  "qualifiers": {},
+                  "field_value": ""
+                }
+              }
+            ],
+            "reader_state": "evidence_rejected",
+            "top_candidates": [],
+            "conflicts": [],
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:60823/landing",
+                "final": "http://127.0.0.1:60823/landing",
+                "status": 200,
+                "bytes": 110,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 1,
+            "pages_fetched": 1,
+            "seconds": 0.8221
+          }
+        },
+        "seconds": 0.822208600002341,
+        "passed": true
+      }
+    },
+    {
+      "id": "same-award-year",
+      "after": {
+        "result": {
+          "answer": "Mira Chen and Orin Vale",
+          "sources": [
+            "https://example.org/same-award-year"
+          ],
+          "confidence": 0.823,
+          "evidence": "Mira Chen won the Cedar Prize in 1998. Orin Vale won the Cedar Prize in 1998.",
+          "reason": "model_verified",
+          "diagnostics": {
+            "plan": {
+              "question": "Which two authors won the Cedar Prize in 1998?",
+              "url": "https://example.org/same-award-year",
+              "kind": "text",
+              "terms": [
+                "two",
+                "authors",
+                "won",
+                "cedar",
+                "prize",
+                "1998"
+              ],
+              "attributes": [
+                "author",
+                "authors",
+                "creator",
+                "maintainer",
+                "written"
+              ],
+              "entity_terms": [
+                "two",
+                "won",
+                "cedar",
+                "prize"
+              ],
+              "versions": [],
+              "year": "1998",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 2,
+              "negations": [],
+              "domain": "example.org",
+              "focus": "which two authors won the cedar prize ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "span"
+            ],
+            "timings": {
+              "resolver": 1.2800097465515137e-05
+            },
+            "search_requests": 0,
+            "llm_calls": 2,
+            "content_pages": 1,
+            "model_selections": [
+              {
+                "raw": "Mira Chen and Orin Vale",
+                "answer": "Mira Chen and Orin Vale",
+                "source": "https://example.org/same-award-year",
+                "evidence": "Mira Chen won the Cedar Prize in 1998. Orin Vale won the Cedar Prize in 1998.",
+                "label": "",
+                "section": "",
+                "kind": "text",
+                "score": 10.9,
+                "signals": {
+                  "selector": "literal_spans",
+                  "literal_spans": [
+                    "Mira Chen",
+                    "Orin Vale"
+                  ],
+                  "locator": "p[0]:0",
+                  "structure": "prose",
+                  "qualifiers": {},
+                  "field_value": ""
+                }
+              }
+            ],
+            "verification": [
+              "supported"
+            ],
+            "reader_state": "answered",
+            "selection": {
+              "raw": "Mira Chen and Orin Vale",
+              "answer": "Mira Chen and Orin Vale",
+              "source": "https://example.org/same-award-year",
+              "evidence": "Mira Chen won the Cedar Prize in 1998. Orin Vale won the Cedar Prize in 1998.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 10.9,
+              "signals": {
+                "selector": "literal_spans",
+                "literal_spans": [
+                  "Mira Chen",
+                  "Orin Vale"
+                ],
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            },
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:60829/landing",
+                "final": "http://127.0.0.1:60829/landing",
+                "status": 200,
+                "bytes": 110,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 1,
+            "pages_fetched": 1,
+            "seconds": 1.3372
+          }
+        },
+        "seconds": 1.3372812001034617,
+        "passed": true
+      },
+      "before": {
+        "result": {
+          "answer": "",
+          "sources": [],
+          "confidence": 0.0,
+          "evidence": "",
+          "reason": "model_invalid_reply",
+          "diagnostics": {
+            "plan": {
+              "question": "Which two authors won the Cedar Prize in 1998?",
+              "url": "https://example.org/same-award-year",
+              "kind": "text",
+              "terms": [
+                "two",
+                "authors",
+                "won",
+                "cedar",
+                "prize",
+                "1998"
+              ],
+              "attributes": [
+                "author",
+                "authors",
+                "creator",
+                "maintainer",
+                "written"
+              ],
+              "entity_terms": [
+                "two",
+                "won",
+                "cedar",
+                "prize"
+              ],
+              "versions": [],
+              "year": "1998",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 1,
+              "negations": [],
+              "domain": "example.org",
+              "focus": "which two authors won the cedar prize ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "model_invalid_selection"
+            ],
+            "timings": {
+              "resolver": 1.1199968867003918e-05
+            },
+            "search_requests": 0,
+            "llm_calls": 1,
+            "content_pages": 1,
+            "reader_state": "invalid_reply",
+            "top_candidates": [],
+            "conflicts": [],
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:60829/landing",
+                "final": "http://127.0.0.1:60829/landing",
+                "status": 200,
+                "bytes": 110,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 1,
+            "pages_fetched": 1,
+            "seconds": 0.9617
+          }
+        },
+        "seconds": 0.9617995000444353,
+        "passed": false
+      }
+    },
+    {
+      "id": "scalar-retained",
+      "before": {
+        "result": {
+          "answer": "R8",
+          "sources": [
+            "https://example.org/scalar-retained"
+          ],
+          "confidence": 0.76,
+          "evidence": "The access code of the Cedar Library is R8.",
+          "reason": "model_verified",
+          "diagnostics": {
+            "plan": {
+              "question": "What is the access code of the Cedar Library?",
+              "url": "https://example.org/scalar-retained",
+              "kind": "text",
+              "terms": [
+                "access",
+                "code",
+                "cedar",
+                "library"
+              ],
+              "attributes": [],
+              "entity_terms": [
+                "access",
+                "code",
+                "cedar",
+                "library"
+              ],
+              "versions": [],
+              "year": "",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 1,
+              "negations": [],
+              "domain": "example.org",
+              "focus": "what is the access code ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "span"
+            ],
+            "timings": {
+              "resolver": 1.0199961252510548e-05
+            },
+            "search_requests": 0,
+            "llm_calls": 2,
+            "content_pages": 1,
+            "model_selections": [
+              {
+                "raw": "R8",
+                "answer": "R8",
+                "source": "https://example.org/scalar-retained",
+                "evidence": "The access code of the Cedar Library is R8.",
+                "label": "",
+                "section": "",
+                "kind": "text",
+                "score": 8.4,
+                "signals": {
+                  "selector": "literal_span",
+                  "locator": "p[0]:0",
+                  "structure": "prose",
+                  "qualifiers": {},
+                  "field_value": ""
+                }
+              }
+            ],
+            "verification": [
+              "supported"
+            ],
+            "reader_state": "answered",
+            "selection": {
+              "raw": "R8",
+              "answer": "R8",
+              "source": "https://example.org/scalar-retained",
+              "evidence": "The access code of the Cedar Library is R8.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 8.4,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            },
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:60838/landing",
+                "final": "http://127.0.0.1:60838/landing",
+                "status": 200,
+                "bytes": 76,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 1,
+            "pages_fetched": 1,
+            "seconds": 1.0613
+          }
+        },
+        "seconds": 1.061415300006047,
+        "passed": true
+      },
+      "after": {
+        "result": {
+          "answer": "R8",
+          "sources": [
+            "https://example.org/scalar-retained"
+          ],
+          "confidence": 0.76,
+          "evidence": "The access code of the Cedar Library is R8.",
+          "reason": "model_verified",
+          "diagnostics": {
+            "plan": {
+              "question": "What is the access code of the Cedar Library?",
+              "url": "https://example.org/scalar-retained",
+              "kind": "text",
+              "terms": [
+                "access",
+                "code",
+                "cedar",
+                "library"
+              ],
+              "attributes": [],
+              "entity_terms": [
+                "access",
+                "code",
+                "cedar",
+                "library"
+              ],
+              "versions": [],
+              "year": "",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 1,
+              "negations": [],
+              "domain": "example.org",
+              "focus": "what is the access code ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "span"
+            ],
+            "timings": {
+              "resolver": 1.1199968867003918e-05
+            },
+            "search_requests": 0,
+            "llm_calls": 2,
+            "content_pages": 1,
+            "model_selections": [
+              {
+                "raw": "R8",
+                "answer": "R8",
+                "source": "https://example.org/scalar-retained",
+                "evidence": "The access code of the Cedar Library is R8.",
+                "label": "",
+                "section": "",
+                "kind": "text",
+                "score": 8.4,
+                "signals": {
+                  "selector": "literal_span",
+                  "locator": "p[0]:0",
+                  "structure": "prose",
+                  "qualifiers": {},
+                  "field_value": ""
+                }
+              }
+            ],
+            "verification": [
+              "supported"
+            ],
+            "reader_state": "answered",
+            "selection": {
+              "raw": "R8",
+              "answer": "R8",
+              "source": "https://example.org/scalar-retained",
+              "evidence": "The access code of the Cedar Library is R8.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 8.4,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            },
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:60838/landing",
+                "final": "http://127.0.0.1:60838/landing",
+                "status": 200,
+                "bytes": 76,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 1,
+            "pages_fetched": 1,
+            "seconds": 1.0746
+          }
+        },
+        "seconds": 1.0746936000650749,
+        "passed": true
+      }
+    },
+    {
+      "id": "three-countries",
+      "after": {
+        "result": {
+          "answer": "Canada, Japan and Chile",
+          "sources": [
+            "https://example.org/three-countries"
+          ],
+          "confidence": 0.72,
+          "evidence": "Canada signed the Birch Accord on Monday. Japan signed it on Tuesday. Chile joined the accord on Wednesday.",
+          "reason": "model_verified",
+          "diagnostics": {
+            "plan": {
+              "question": "Which three countries joined the Birch Accord?",
+              "url": "https://example.org/three-countries",
+              "kind": "text",
+              "terms": [
+                "three",
+                "countries",
+                "joined",
+                "birch",
+                "accord"
+              ],
+              "attributes": [],
+              "entity_terms": [
+                "three",
+                "countries",
+                "joined",
+                "birch",
+                "accord"
+              ],
+              "versions": [],
+              "year": "",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 3,
+              "negations": [],
+              "domain": "example.org",
+              "focus": "which three countries joined the birch accord",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "span"
+            ],
+            "timings": {
+              "resolver": 1.3399985618889332e-05
+            },
+            "search_requests": 0,
+            "llm_calls": 2,
+            "content_pages": 1,
+            "model_selections": [
+              {
+                "raw": "Canada, Japan and Chile",
+                "answer": "Canada, Japan and Chile",
+                "source": "https://example.org/three-countries",
+                "evidence": "Canada signed the Birch Accord on Monday. Japan signed it on Tuesday. Chile joined the accord on Wednesday.",
+                "label": "",
+                "section": "",
+                "kind": "text",
+                "score": 6.800000000000001,
+                "signals": {
+                  "selector": "literal_spans",
+                  "literal_spans": [
+                    "Canada",
+                    "Japan",
+                    "Chile"
+                  ],
+                  "locator": "p[0]:0",
+                  "structure": "prose",
+                  "qualifiers": {},
+                  "field_value": ""
+                }
+              }
+            ],
+            "verification": [
+              "supported"
+            ],
+            "reader_state": "answered",
+            "selection": {
+              "raw": "Canada, Japan and Chile",
+              "answer": "Canada, Japan and Chile",
+              "source": "https://example.org/three-countries",
+              "evidence": "Canada signed the Birch Accord on Monday. Japan signed it on Tuesday. Chile joined the accord on Wednesday.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 6.800000000000001,
+              "signals": {
+                "selector": "literal_spans",
+                "literal_spans": [
+                  "Canada",
+                  "Japan",
+                  "Chile"
+                ],
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            },
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:60846/landing",
+                "final": "http://127.0.0.1:60846/landing",
+                "status": 200,
+                "bytes": 140,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 1,
+            "pages_fetched": 1,
+            "seconds": 1.374
+          }
+        },
+        "seconds": 1.3740427000448108,
+        "passed": true
+      },
+      "before": {
+        "result": {
+          "answer": "",
+          "sources": [],
+          "confidence": 0.0,
+          "evidence": "",
+          "reason": "model_invalid_reply",
+          "diagnostics": {
+            "plan": {
+              "question": "Which three countries joined the Birch Accord?",
+              "url": "https://example.org/three-countries",
+              "kind": "text",
+              "terms": [
+                "three",
+                "countries",
+                "joined",
+                "birch",
+                "accord"
+              ],
+              "attributes": [],
+              "entity_terms": [
+                "three",
+                "countries",
+                "joined",
+                "birch",
+                "accord"
+              ],
+              "versions": [],
+              "year": "",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 1,
+              "negations": [],
+              "domain": "example.org",
+              "focus": "which three countries joined the birch accord",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "model_invalid_selection"
+            ],
+            "timings": {
+              "resolver": 1.1500087566673756e-05
+            },
+            "search_requests": 0,
+            "llm_calls": 1,
+            "content_pages": 1,
+            "reader_state": "invalid_reply",
+            "top_candidates": [],
+            "conflicts": [],
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:60846/landing",
+                "final": "http://127.0.0.1:60846/landing",
+                "status": 200,
+                "bytes": 140,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 1,
+            "pages_fetched": 1,
+            "seconds": 0.9982
+          }
+        },
+        "seconds": 0.9982952000573277,
+        "passed": false
+      }
+    },
+    {
+      "id": "aliases-are-one",
+      "before": {
+        "result": {
+          "answer": "",
+          "sources": [],
+          "confidence": 0.0,
+          "evidence": "",
+          "reason": "model_no_evidence",
+          "diagnostics": {
+            "plan": {
+              "question": "Which two football teams played in the Cedar Cup?",
+              "url": "https://example.org/aliases-are-one",
+              "kind": "text",
+              "terms": [
+                "two",
+                "football",
+                "teams",
+                "played",
+                "cedar",
+                "cup"
+              ],
+              "attributes": [],
+              "entity_terms": [
+                "two",
+                "football",
+                "teams",
+                "played",
+                "cedar",
+                "cup"
+              ],
+              "versions": [],
+              "year": "",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 1,
+              "negations": [],
+              "domain": "example.org",
+              "focus": "which two football teams played ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "span"
+            ],
+            "timings": {
+              "resolver": 1.109996810555458e-05
+            },
+            "search_requests": 0,
+            "llm_calls": 2,
+            "content_pages": 1,
+            "model_selections": [
+              {
+                "raw": "Maple United",
+                "answer": "Maple United",
+                "source": "https://example.org/aliases-are-one",
+                "evidence": "Maple United, also known as MUFC, played in the Cedar Cup. No other participating team is identified.",
+                "label": "",
+                "section": "",
+                "kind": "text",
+                "score": 6.800000000000001,
+                "signals": {
+                  "selector": "literal_span",
+                  "locator": "p[0]:0",
+                  "structure": "prose",
+                  "qualifiers": {},
+                  "field_value": ""
+                }
+              }
+            ],
+            "verification": [
+              "unsupported"
+            ],
+            "reader_state": "no_evidence",
+            "top_candidates": [],
+            "conflicts": [],
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:60853/landing",
+                "final": "http://127.0.0.1:60853/landing",
+                "status": 200,
+                "bytes": 134,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 1,
+            "pages_fetched": 1,
+            "seconds": 1.1526
+          }
+        },
+        "seconds": 1.1526533999713138,
+        "passed": true
+      },
+      "after": {
+        "result": {
+          "answer": "",
+          "sources": [],
+          "confidence": 0.0,
+          "evidence": "",
+          "reason": "model_invalid_reply",
+          "diagnostics": {
+            "plan": {
+              "question": "Which two football teams played in the Cedar Cup?",
+              "url": "https://example.org/aliases-are-one",
+              "kind": "text",
+              "terms": [
+                "two",
+                "football",
+                "teams",
+                "played",
+                "cedar",
+                "cup"
+              ],
+              "attributes": [],
+              "entity_terms": [
+                "two",
+                "football",
+                "teams",
+                "played",
+                "cedar",
+                "cup"
+              ],
+              "versions": [],
+              "year": "",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 2,
+              "negations": [],
+              "domain": "example.org",
+              "focus": "which two football teams played ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "model_invalid_selection"
+            ],
+            "timings": {
+              "resolver": 1.1199968867003918e-05
+            },
+            "search_requests": 0,
+            "llm_calls": 1,
+            "content_pages": 1,
+            "reader_state": "invalid_reply",
+            "top_candidates": [],
+            "conflicts": [],
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:60853/landing",
+                "final": "http://127.0.0.1:60853/landing",
+                "status": 200,
+                "bytes": 134,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 1,
+            "pages_fetched": 1,
+            "seconds": 0.6653
+          }
+        },
+        "seconds": 0.6653559999540448,
+        "passed": true
+      }
+    },
+    {
+      "id": "contiguous-pair",
+      "after": {
+        "result": {
+          "answer": "Maple United and Cedar FC",
+          "sources": [
+            "https://example.org/contiguous-pair"
+          ],
+          "confidence": 0.72,
+          "evidence": "Maple United and Cedar FC played in the Cedar Cup.",
+          "reason": "model_verified",
+          "diagnostics": {
+            "plan": {
+              "question": "Which two football teams played in the Cedar Cup?",
+              "url": "https://example.org/contiguous-pair",
+              "kind": "text",
+              "terms": [
+                "two",
+                "football",
+                "teams",
+                "played",
+                "cedar",
+                "cup"
+              ],
+              "attributes": [],
+              "entity_terms": [
+                "two",
+                "football",
+                "teams",
+                "played",
+                "cedar",
+                "cup"
+              ],
+              "versions": [],
+              "year": "",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 2,
+              "negations": [],
+              "domain": "example.org",
+              "focus": "which two football teams played ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "span"
+            ],
+            "timings": {
+              "resolver": 1.0899966582655907e-05
+            },
+            "search_requests": 0,
+            "llm_calls": 2,
+            "content_pages": 1,
+            "model_selections": [
+              {
+                "raw": "Maple United and Cedar FC",
+                "answer": "Maple United and Cedar FC",
+                "source": "https://example.org/contiguous-pair",
+                "evidence": "Maple United and Cedar FC played in the Cedar Cup.",
+                "label": "",
+                "section": "",
+                "kind": "text",
+                "score": 6.800000000000001,
+                "signals": {
+                  "selector": "literal_spans",
+                  "literal_spans": [
+                    "Maple United",
+                    "Cedar FC"
+                  ],
+                  "locator": "p[0]:0",
+                  "structure": "prose",
+                  "qualifiers": {},
+                  "field_value": ""
+                }
+              }
+            ],
+            "verification": [
+              "supported"
+            ],
+            "reader_state": "answered",
+            "selection": {
+              "raw": "Maple United and Cedar FC",
+              "answer": "Maple United and Cedar FC",
+              "source": "https://example.org/contiguous-pair",
+              "evidence": "Maple United and Cedar FC played in the Cedar Cup.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 6.800000000000001,
+              "signals": {
+                "selector": "literal_spans",
+                "literal_spans": [
+                  "Maple United",
+                  "Cedar FC"
+                ],
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            },
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:60862/landing",
+                "final": "http://127.0.0.1:60862/landing",
+                "status": 200,
+                "bytes": 83,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 1,
+            "pages_fetched": 1,
+            "seconds": 1.326
+          }
+        },
+        "seconds": 1.3260917000006884,
+        "passed": true
+      },
+      "before": {
+        "result": {
+          "answer": "Maple United and Cedar FC",
+          "sources": [
+            "https://example.org/contiguous-pair"
+          ],
+          "confidence": 0.72,
+          "evidence": "Maple United and Cedar FC played in the Cedar Cup.",
+          "reason": "model_verified",
+          "diagnostics": {
+            "plan": {
+              "question": "Which two football teams played in the Cedar Cup?",
+              "url": "https://example.org/contiguous-pair",
+              "kind": "text",
+              "terms": [
+                "two",
+                "football",
+                "teams",
+                "played",
+                "cedar",
+                "cup"
+              ],
+              "attributes": [],
+              "entity_terms": [
+                "two",
+                "football",
+                "teams",
+                "played",
+                "cedar",
+                "cup"
+              ],
+              "versions": [],
+              "year": "",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 1,
+              "negations": [],
+              "domain": "example.org",
+              "focus": "which two football teams played ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "span"
+            ],
+            "timings": {
+              "resolver": 1.179997343569994e-05
+            },
+            "search_requests": 0,
+            "llm_calls": 2,
+            "content_pages": 1,
+            "model_selections": [
+              {
+                "raw": "Maple United and Cedar FC",
+                "answer": "Maple United and Cedar FC",
+                "source": "https://example.org/contiguous-pair",
+                "evidence": "Maple United and Cedar FC played in the Cedar Cup.",
+                "label": "",
+                "section": "",
+                "kind": "text",
+                "score": 6.800000000000001,
+                "signals": {
+                  "selector": "literal_span",
+                  "locator": "p[0]:0",
+                  "structure": "prose",
+                  "qualifiers": {},
+                  "field_value": ""
+                }
+              }
+            ],
+            "verification": [
+              "supported"
+            ],
+            "reader_state": "answered",
+            "selection": {
+              "raw": "Maple United and Cedar FC",
+              "answer": "Maple United and Cedar FC",
+              "source": "https://example.org/contiguous-pair",
+              "evidence": "Maple United and Cedar FC played in the Cedar Cup.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 6.800000000000001,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            },
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:60862/landing",
+                "final": "http://127.0.0.1:60862/landing",
+                "status": 200,
+                "bytes": 83,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 1,
+            "pages_fetched": 1,
+            "seconds": 1.2899
+          }
+        },
+        "seconds": 1.289966099895537,
+        "passed": true
+      }
+    }
+  ],
+  "health_before": {
+    "ready": true,
+    "device": "cuda",
+    "hip": null,
+    "pid": 21464,
+    "startup_token": "",
+    "backend_source_sha256": {
+      "model_server.py": "8d326a696942d259697a6fba8586441bbbe4874042ea900c6d7788a2a0e9fd22",
+      "model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+      "selector.py": "be7c0fce11c10921d5cd4e3d1072d5a2ca5a62f1c328730384d19b0fecd19566",
+      "model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+      "members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+      "model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+      "normalize.py": "05e48fa0be8384aa656bf1280ba0be44545efa51b7d4451f0716d836d39a1973",
+      "types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512"
+    },
+    "software": {
+      "torch": "2.9.1+cu128",
+      "transformers": "4.57.1",
+      "tokenizers": "0.22.1",
+      "safetensors": "0.6.2",
+      "accelerate": "1.11.0"
+    },
+    "parameters": 4022468096,
+    "assets": {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "verified_files": 12,
+      "full_sha256": false,
+      "weight_shards": 3
+    },
+    "warmup_reply": {
+      "candidate": -1,
+      "passage": 0,
+      "answer": "7"
+    },
+    "torch": "2.9.1+cu128",
+    "startup_seconds": 5.035660300054587,
+    "calls": 0,
+    "outcomes": {},
+    "active_request": null,
+    "busy_rejections": 0,
+    "recent_requests": [
+      {
+        "request_id": "warmup",
+        "mode": "select",
+        "input_tokens": 268,
+        "packing_seconds": 0.012172200018540025,
+        "transfer_seconds": 0.000897900084964931,
+        "generated_tokens": 14,
+        "stop_reason": "completed",
+        "generation_seconds": 1.0075521999970078,
+        "prefill_and_first_token_seconds": 0.3922147999983281
+      }
+    ],
+    "context_limit": 1536,
+    "token_stats": {
+      "max_input": 268,
+      "generated": 14,
+      "pruned_requests": 0
+    },
+    "device_memory_bytes": 12878086144,
+    "peak_vram_bytes": 8141605888,
+    "allocated_vram_bytes": 8053474816,
+    "reserved_vram_bytes": 8185184256
+  },
+  "health_after": {
+    "ready": true,
+    "device": "cuda",
+    "hip": null,
+    "pid": 21464,
+    "startup_token": "",
+    "backend_source_sha256": {
+      "model_server.py": "8d326a696942d259697a6fba8586441bbbe4874042ea900c6d7788a2a0e9fd22",
+      "model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+      "selector.py": "be7c0fce11c10921d5cd4e3d1072d5a2ca5a62f1c328730384d19b0fecd19566",
+      "model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+      "members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+      "model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+      "normalize.py": "05e48fa0be8384aa656bf1280ba0be44545efa51b7d4451f0716d836d39a1973",
+      "types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512"
+    },
+    "software": {
+      "torch": "2.9.1+cu128",
+      "transformers": "4.57.1",
+      "tokenizers": "0.22.1",
+      "safetensors": "0.6.2",
+      "accelerate": "1.11.0"
+    },
+    "parameters": 4022468096,
+    "assets": {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "verified_files": 12,
+      "full_sha256": false,
+      "weight_shards": 3
+    },
+    "warmup_reply": {
+      "candidate": -1,
+      "passage": 0,
+      "answer": "7"
+    },
+    "torch": "2.9.1+cu128",
+    "startup_seconds": 5.035660300054587,
+    "calls": 35,
+    "outcomes": {
+      "abstained": 4,
+      "selected": 13,
+      "supported": 10,
+      "invalid_selection": 6,
+      "unsupported": 2
+    },
+    "active_request": null,
+    "busy_rejections": 0,
+    "recent_requests": [
+      {
+        "request_id": "0a8bc0d709264d8bbd363c02ccbaa88e",
+        "mode": "select",
+        "input_tokens": 1483,
+        "packing_seconds": 0.008950899937190115,
+        "transfer_seconds": 0.0032233999809250236,
+        "generated_tokens": 17,
+        "stop_reason": "completed",
+        "generation_seconds": 1.2059460000600666,
+        "prefill_and_first_token_seconds": 0.3586294000269845
+      },
+      {
+        "request_id": "0cb9783f49724b909fee3b389ca04d66",
+        "mode": "verify",
+        "input_tokens": 1480,
+        "packing_seconds": 0.007482800050638616,
+        "transfer_seconds": 0.0027421999257057905,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.7169924000045285,
+        "prefill_and_first_token_seconds": 0.3434395999647677
+      },
+      {
+        "request_id": "0a4df3d24b4d49d9a83143cfe90b904d",
+        "mode": "select",
+        "input_tokens": 1189,
+        "packing_seconds": 0.029249300016090274,
+        "transfer_seconds": 0.0022057999158278108,
+        "generated_tokens": 20,
+        "stop_reason": "completed",
+        "generation_seconds": 1.3107458000304177,
+        "prefill_and_first_token_seconds": 0.2544879000633955
+      },
+      {
+        "request_id": "d1b705ac7f444a7a8817f09ae3ba1660",
+        "mode": "select",
+        "input_tokens": 738,
+        "packing_seconds": 0.003595000016503036,
+        "transfer_seconds": 0.002653100062161684,
+        "generated_tokens": 13,
+        "stop_reason": "completed",
+        "generation_seconds": 0.716993699898012,
+        "prefill_and_first_token_seconds": 0.12242899998091161
+      },
+      {
+        "request_id": "6158e926c25a4ecc878f3ab27ec72e10",
+        "mode": "select",
+        "input_tokens": 1511,
+        "packing_seconds": 0.00787009997293353,
+        "transfer_seconds": 0.0030477000400424004,
+        "generated_tokens": 15,
+        "stop_reason": "completed",
+        "generation_seconds": 1.1735009999247268,
+        "prefill_and_first_token_seconds": 0.4095402000239119
+      },
+      {
+        "request_id": "a2d9c6f436d74554a3ce546cac95e23e",
+        "mode": "verify",
+        "input_tokens": 1450,
+        "packing_seconds": 0.006679299985989928,
+        "transfer_seconds": 0.0027625999646261334,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.7258307000156492,
+        "prefill_and_first_token_seconds": 0.3328052000142634
+      },
+      {
+        "request_id": "285400a48e1a4a49ba5b148fc26aca9a",
+        "mode": "select",
+        "input_tokens": 1189,
+        "packing_seconds": 0.027167899999767542,
+        "transfer_seconds": 0.002866000053472817,
+        "generated_tokens": 20,
+        "stop_reason": "completed",
+        "generation_seconds": 1.187210000003688,
+        "prefill_and_first_token_seconds": 0.25025749998167157
+      },
+      {
+        "request_id": "18be4605eeee4ad088496d5a9e8bd5dd",
+        "mode": "select",
+        "input_tokens": 406,
+        "packing_seconds": 0.0025192999746650457,
+        "transfer_seconds": 0.0011644000187516212,
+        "generated_tokens": 19,
+        "stop_reason": "completed",
+        "generation_seconds": 0.9188315999926999,
+        "prefill_and_first_token_seconds": 0.06185659999027848
+      },
+      {
+        "request_id": "3e8941c609f84577adf9402dd77eafd9",
+        "mode": "select",
+        "input_tokens": 400,
+        "packing_seconds": 0.002227799966931343,
+        "transfer_seconds": 0.001133000012487173,
+        "generated_tokens": 17,
+        "stop_reason": "completed",
+        "generation_seconds": 0.8054050999926403,
+        "prefill_and_first_token_seconds": 0.06313650007359684
+      },
+      {
+        "request_id": "fa11059c4b9f4cf6b7faf5e00809cd78",
+        "mode": "verify",
+        "input_tokens": 396,
+        "packing_seconds": 0.0023148999316617846,
+        "transfer_seconds": 0.001024700002744794,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.31025920005049556,
+        "prefill_and_first_token_seconds": 0.07159990002401173
+      },
+      {
+        "request_id": "7b49f480c7de434aa8abea8f39097685",
+        "mode": "select",
+        "input_tokens": 391,
+        "packing_seconds": 0.0022452999837696552,
+        "transfer_seconds": 0.0010915000457316637,
+        "generated_tokens": 13,
+        "stop_reason": "completed",
+        "generation_seconds": 0.608170900028199,
+        "prefill_and_first_token_seconds": 0.06704680004622787
+      },
+      {
+        "request_id": "fb4ec625e3624c2c86fb7f4ce13be841",
+        "mode": "select",
+        "input_tokens": 397,
+        "packing_seconds": 0.0022149999858811498,
+        "transfer_seconds": 0.0012011999497190118,
+        "generated_tokens": 13,
+        "stop_reason": "completed",
+        "generation_seconds": 0.6694208000553772,
+        "prefill_and_first_token_seconds": 0.06534339999780059
+      },
+      {
+        "request_id": "e4deca3b898e4dcab6930569f7b29cae",
+        "mode": "select",
+        "input_tokens": 422,
+        "packing_seconds": 0.002377699944190681,
+        "transfer_seconds": 0.0011425999691709876,
+        "generated_tokens": 16,
+        "stop_reason": "completed",
+        "generation_seconds": 0.7525740000419319,
+        "prefill_and_first_token_seconds": 0.07501380005851388
+      },
+      {
+        "request_id": "b975b1601395464bbae318b1e40284da",
+        "mode": "verify",
+        "input_tokens": 362,
+        "packing_seconds": 0.0022072000429034233,
+        "transfer_seconds": 0.0009482000023126602,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.32697479997295886,
+        "prefill_and_first_token_seconds": 0.05206659995019436
+      },
+      {
+        "request_id": "f8a26389c05e417a846b0e981f4d2360",
+        "mode": "select",
+        "input_tokens": 416,
+        "packing_seconds": 0.002445999998599291,
+        "transfer_seconds": 0.0011412000749260187,
+        "generated_tokens": 17,
+        "stop_reason": "completed",
+        "generation_seconds": 0.8139959999825805,
+        "prefill_and_first_token_seconds": 0.0668446000199765
+      },
+      {
+        "request_id": "1ea1b8ed90f344a3b6ad04c3a59bd937",
+        "mode": "select",
+        "input_tokens": 416,
+        "packing_seconds": 0.002342000021599233,
+        "transfer_seconds": 0.0010352999670431018,
+        "generated_tokens": 21,
+        "stop_reason": "completed",
+        "generation_seconds": 1.0035443000961095,
+        "prefill_and_first_token_seconds": 0.0618572001112625
+      },
+      {
+        "request_id": "c4fc7939cd5e49e1a9221c03b8dd18af",
+        "mode": "verify",
+        "input_tokens": 413,
+        "packing_seconds": 0.0023095000069588423,
+        "transfer_seconds": 0.0012517999857664108,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.3201700000790879,
+        "prefill_and_first_token_seconds": 0.07107950001955032
+      },
+      {
+        "request_id": "a561446dc6774e1dbbd245d52ea922b3",
+        "mode": "select",
+        "input_tokens": 422,
+        "packing_seconds": 0.0023604000452905893,
+        "transfer_seconds": 0.001118200016207993,
+        "generated_tokens": 20,
+        "stop_reason": "completed",
+        "generation_seconds": 0.9542725998908281,
+        "prefill_and_first_token_seconds": 0.0665138999465853
+      },
+      {
+        "request_id": "f87b6a61e8e7403385a5d8e24bf1d197",
+        "mode": "select",
+        "input_tokens": 392,
+        "packing_seconds": 0.002486000070348382,
+        "transfer_seconds": 0.0011534999357536435,
+        "generated_tokens": 15,
+        "stop_reason": "completed",
+        "generation_seconds": 0.7509972000261769,
+        "prefill_and_first_token_seconds": 0.06155620003119111
+      },
+      {
+        "request_id": "b9fef71845964f7e982eab0b767cbf30",
+        "mode": "verify",
+        "input_tokens": 331,
+        "packing_seconds": 0.0019379999721422791,
+        "transfer_seconds": 0.0010244000004604459,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.2978869000216946,
+        "prefill_and_first_token_seconds": 0.05623420001938939
+      },
+      {
+        "request_id": "15d34200d1214008a74e50e4b6228fa9",
+        "mode": "select",
+        "input_tokens": 392,
+        "packing_seconds": 0.002210400067269802,
+        "transfer_seconds": 0.0010792999528348446,
+        "generated_tokens": 15,
+        "stop_reason": "completed",
+        "generation_seconds": 0.7608140000374988,
+        "prefill_and_first_token_seconds": 0.06581309996545315
+      },
+      {
+        "request_id": "c9baddff9c4045da9f0e50b70e3092fe",
+        "mode": "verify",
+        "input_tokens": 331,
+        "packing_seconds": 0.001754299970343709,
+        "transfer_seconds": 0.0009031000081449747,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.3020373999606818,
+        "prefill_and_first_token_seconds": 0.05661099997814745
+      },
+      {
+        "request_id": "1080139e099347c98c056d1d2f4f9eaf",
+        "mode": "select",
+        "input_tokens": 397,
+        "packing_seconds": 0.0031569000566378236,
+        "transfer_seconds": 0.0011986000463366508,
+        "generated_tokens": 21,
+        "stop_reason": "completed",
+        "generation_seconds": 1.0328274999046698,
+        "prefill_and_first_token_seconds": 0.05841349996626377
+      },
+      {
+        "request_id": "f80ad20bd2fc4821ad478f5d9e790d43",
+        "mode": "verify",
+        "input_tokens": 392,
+        "packing_seconds": 0.002292199991643429,
+        "transfer_seconds": 0.0010291000362485647,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.3263428999343887,
+        "prefill_and_first_token_seconds": 0.059341999934986234
+      },
+      {
+        "request_id": "94defe022d214fa9a55467b845c1431e",
+        "mode": "select",
+        "input_tokens": 403,
+        "packing_seconds": 0.002287600073032081,
+        "transfer_seconds": 0.0012261999072507024,
+        "generated_tokens": 18,
+        "stop_reason": "completed",
+        "generation_seconds": 0.9904158000135794,
+        "prefill_and_first_token_seconds": 0.067179000005126
+      },
+      {
+        "request_id": "9e8b65deb2384bcf866aea7f2b774a21",
+        "mode": "select",
+        "input_tokens": 406,
+        "packing_seconds": 0.002333099953830242,
+        "transfer_seconds": 0.0012199999764561653,
+        "generated_tokens": 16,
+        "stop_reason": "completed",
+        "generation_seconds": 0.8462271000025794,
+        "prefill_and_first_token_seconds": 0.07083710003644228
+      },
+      {
+        "request_id": "7ce1305a9abc4be1ab0aa5c92eca718a",
+        "mode": "verify",
+        "input_tokens": 346,
+        "packing_seconds": 0.0021112000104039907,
+        "transfer_seconds": 0.0009401000570505857,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.29362959996797144,
+        "prefill_and_first_token_seconds": 0.05626719992142171
+      },
+      {
+        "request_id": "b0060df8575d4ac2a7cce80e5d340715",
+        "mode": "select",
+        "input_tokens": 400,
+        "packing_seconds": 0.00218990002758801,
+        "transfer_seconds": 0.001274299924261868,
+        "generated_tokens": 13,
+        "stop_reason": "completed",
+        "generation_seconds": 0.656921400106512,
+        "prefill_and_first_token_seconds": 0.12278480001259595
+      },
+      {
+        "request_id": "262e137b3899428aa80bcd1abece8683",
+        "mode": "select",
+        "input_tokens": 389,
+        "packing_seconds": 0.0022125999676063657,
+        "transfer_seconds": 0.001089200028218329,
+        "generated_tokens": 21,
+        "stop_reason": "completed",
+        "generation_seconds": 1.0025442000478506,
+        "prefill_and_first_token_seconds": 0.0634730999590829
+      },
+      {
+        "request_id": "a4b237bd0a614e6fa5acb604f80e3ed0",
+        "mode": "verify",
+        "input_tokens": 385,
+        "packing_seconds": 0.0021362999686971307,
+        "transfer_seconds": 0.0009886000771075487,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.310981799964793,
+        "prefill_and_first_token_seconds": 0.06623070000205189
+      },
+      {
+        "request_id": "14f280e832a34b5fa8ca6f93999fcb4f",
+        "mode": "select",
+        "input_tokens": 395,
+        "packing_seconds": 0.0023080999962985516,
+        "transfer_seconds": 0.001150099909864366,
+        "generated_tokens": 19,
+        "stop_reason": "completed",
+        "generation_seconds": 0.9833730000536889,
+        "prefill_and_first_token_seconds": 0.06654180004261434
+      },
+      {
+        "request_id": "42d4e5f611c04385bebb151f799c7e70",
+        "mode": "verify",
+        "input_tokens": 338,
+        "packing_seconds": 0.002002099994570017,
+        "transfer_seconds": 0.0010798999574035406,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.2940802000230178,
+        "prefill_and_first_token_seconds": 0.05232290003914386
+      }
+    ],
+    "context_limit": 1536,
+    "token_stats": {
+      "max_input": 1511,
+      "generated": 475,
+      "pruned_requests": 6
+    },
+    "device_memory_bytes": 12878086144,
+    "peak_vram_bytes": 9102300160,
+    "allocated_vram_bytes": 8062061056,
+    "reserved_vram_bytes": 10401873920
+  },
+  "memory_after_run": {
+    "used_mib": 11007,
+    "total_mib": 12282
+  },
+  "production_changed_during_run": false,
+  "comparison": {
+    "before_passed": 6,
+    "after_passed": 12,
+    "total": 12,
+    "wins": [
+      "real-case-teams",
+      "real-api-teams",
+      "real-case-informant",
+      "teams-with-coaches",
+      "same-award-year",
+      "three-countries"
+    ],
+    "losses": []
+  }
+}

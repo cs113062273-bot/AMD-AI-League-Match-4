@@ -1,0 +1,27 @@
+{
+  "scope": "First run, frozen12 uniformly sampled among780 previously unselected upstream rows. No source/topic/outcome filtering. Start at first upstream supporting URL. Reclassify as exposed after first run.",
+  "cases_sha256": "7a944d63a878df44c9b8117c92b9b8c42fec98201d8d76cfa39007c5b68afdc0",
+  "freeze_sha256": "14b93fe4b00c7b32db666dfa95aa2ed244ea36c375731eefffd279ef2765f5fc",
+  "primary_metrics": [
+    "Exact answer against predeclared aliases",
+    "Every returned URL belongs to frozen supporting URLs; at least one required",
+    "Joint exact answer and source"
+  ],
+  "secondary": [
+    "answer coverage",
+    "semantic verifier decisions and literal/source errors",
+    "fetch failures, deadlines, latency, GPU lifecycle"
+  ],
+  "conditions": {
+    "context_tokens": 1536,
+    "budget_seconds": 24,
+    "max_depth": 2,
+    "browser": true,
+    "search": true,
+    "model": "local full Qwen3-4B BF16",
+    "max_other_vram_mib": 2000,
+    "in_run_guard_mib": 11800
+  },
+  "no_posthoc_alias_edits": true,
+  "no_public_accuracy_generalization_from_12": true
+}

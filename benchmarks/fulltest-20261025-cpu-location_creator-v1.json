@@ -1,0 +1,480 @@
+{
+  "scope": "CPU-only location discovery and creator-prose ranking on actual captures.\n\nNo model/GPU/browser. Complete evidence in a payload and a literal selector\nstub are not actual model answers or a new strict joint benchmark score.\n",
+  "baseline_revision": "3f3a4b9b5d4bb97ad63e1ee06ec2757729b0027c",
+  "baseline_source_sha256": {
+    "agent/engine.py": "01464cb276814f2d7c845c269da2522c285a7a7e28051abd7e36ad0ec62b41ff",
+    "agent/types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent/planner.py": "8ee6e9dc255c73840582af0f438331a16a3023cfe886b562fbb7681b1e74ae90",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "agent/normalize.py": "05e48fa0be8384aa656bf1280ba0be44545efa51b7d4451f0716d836d39a1973",
+    "agent/urls.py": "6bbf58adf3c55cf3787edf4b6607a7db8eea987f0c02dd6cdfea48f6c38e031f",
+    "agent/network.py": "c37ecb5b4b0fba4fac737954eda24952059922ed620c94b99bcb17daed8c5155",
+    "agent/parser.py": "92fc37b32045b8c7f25d7d161c2ca00e9e49c82d2460616ef84d66fe31442069",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/challenges.py": "b6f51c720f332671725e08127a5d1c163ca0542d2a550bf3c980a6d4c49bf6a1",
+    "agent/field_groups.py": "52a54989253c59e9836dec4aaec4944b688376e79548b9336887558a454e9162",
+    "agent/resolvers.py": "312d776118c6c6f0421939df58cf6bcaec8740a7fd341136c17a33f284a03ef2",
+    "agent/search.py": "c78ea9648af7e05d6fcc42302cdd1b6887926037ee3f0f3cb86c8e17b5e8f498",
+    "agent/literature.py": "9b871500ab1ebaf88e8fca2c70bd7ade7eb81774412fa85a1f4be7d2fb06263f",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/candidates.py": "12f10d438849721c2dcad6b74b92682f9971b8eece3fd44f23f76c4ccefaa021",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/evidence.py": "56994f2e5046668e33630fbc2330cfac35c8971f3c4d4e25f22547f1d99feba2",
+    "agent/selector.py": "a693a62781fcb76dd11bc6d29eb19770b48dc7e2e29bd7619cc189b62bf70e1b",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+    "agent/proofs.py": "0d7ae78df6ea9949c29f33c7b817dda352c75b3d99c960c3e987e37c7401faab",
+    "agent/oyez.py": "8475f248d78925522e0742b13518be2c4f4db11eae0d8391a8002da7d4e3b67d"
+  },
+  "input_sha256": {
+    "research\\external-disjoint12b-20261023-repeat\\simpleqa-2010.json": "ef49b65190f2c5e994fc03abc430cd36cd2106471acfc20e16d2c7cf35619df5",
+    "research/location-hints-20261023-live.json": "29badfcab61d20fd94c75b1cdbe0b40574eb7e760c938ab45a959e316c4b77fa"
+  },
+  "before": {
+    "links": [
+      [
+        "https://en.wikipedia.org/wiki/Ceres_(sculpture)",
+        "Ceres (sculpture) - Wikipedia"
+      ],
+      [
+        "https://grokipedia.com/page/ceres_sculpture",
+        "Ceres (sculpture) \u2014 Grokipedia"
+      ],
+      [
+        "https://www.wikiwand.com/en/Ceres_(sculpture)",
+        "Ceres (sculpture) - Wikiwand"
+      ],
+      [
+        "https://www.wikiwand.com/en/articles/Ceres_(sculpture)",
+        "Ceres (sculpture) - Wikiwand"
+      ],
+      [
+        "https://collections.louvre.fr/ark:/53355/cl010095546",
+        "C\u00e9r\u00e8s - Louvre site des collections"
+      ],
+      [
+        "https://www.metmuseum.org/art/collection/search/206711",
+        "Ceres - French, Paris - The Metropolitan Museum of Art"
+      ],
+      [
+        "https://collections.louvre.fr/ark:/53355/cl010092049",
+        "C\u00e9r\u00e8s - Louvre site des collections"
+      ],
+      [
+        "https://wam.org/our-collection/collection/ceres/",
+        "Ceres - Wichita Art Museum"
+      ]
+    ],
+    "requests": [
+      {
+        "url": "https://britishlistedbuildings.co.uk/101180136-sculpture-depicting-ceres-in-belvoir-castle-sculpture-garden-one-of-seven-statues-belvoir",
+        "error": "http_403"
+      },
+      {
+        "url": "https://www.bing.com/search?q=name+sculptor+created+c+1680+sculpture+depicting+ceres+belvoir+castle+garden+leicestershire+england+sculptor+of+ceres+sculpture+ceres+statue+creator",
+        "error": ""
+      },
+      {
+        "url": "https://www.bing.com/search?q=name+sculptor+created+c+1680+sculpture+depicting+ceres+belvoir+castle+garden+leicestershire+england",
+        "error": ""
+      },
+      {
+        "url": "https://html.duckduckgo.com/html/?q=name+sculptor+created+c+1680+sculpture+depicting+ceres+belvoir+castle+garden+leicestershire+england+sculptor+of+ceres+sculpture+ceres+statue+creator",
+        "error": ""
+      },
+      {
+        "url": "https://html.duckduckgo.com/html/?q=name+sculptor+created+c+1680+sculpture+depicting+ceres+belvoir+castle+garden+leicestershire+england",
+        "error": ""
+      },
+      {
+        "url": "https://www.bing.com/search?format=rss&q=name+sculptor+created+c+1680+sculpture+depicting+ceres+belvoir+castle+garden+leicestershire+england+sculptor+of+ceres+sculpture+ceres+statue+creator",
+        "error": ""
+      },
+      {
+        "url": "https://lite.duckduckgo.com/lite/?q=name+sculptor+created+c+1680+sculpture+depicting+ceres+belvoir+castle+garden+leicestershire+england+sculptor+of+ceres+sculpture+ceres+statue+creator",
+        "error": ""
+      },
+      {
+        "url": "https://lite.duckduckgo.com/lite/?q=sculptor+of+ceres+sculpture",
+        "error": ""
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Ceres_(sculpture)",
+        "error": "http_403"
+      },
+      {
+        "url": "https://grokipedia.com/page/ceres_sculpture",
+        "error": ""
+      },
+      {
+        "url": "https://www.wikiwand.com/en/Ceres_(sculpture)",
+        "error": "http_403"
+      },
+      {
+        "url": "https://www.wikiwand.com/en/articles/Ceres_(sculpture)",
+        "error": "http_403"
+      }
+    ],
+    "missing_captures": [],
+    "creator_found": false
+  },
+  "after": {
+    "links": [
+      [
+        "https://historicengland.org.uk/listing/the-list/list-entry/1180136",
+        "Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of ..."
+      ],
+      [
+        "https://www.thewrennreport.co.uk/building/E60000089-f0faa82c-704f-448a-adfe-17278c2ad71c/sculpture-depicting-ceres-in-belvoir-castle-sculpture-garden-one-of-seven-statue",
+        "Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of ..."
+      ],
+      [
+        "https://www.wikidata.org/wiki/Q17541704",
+        "Sculpture Depicting Ceres In Belvoir Castle Sculpture Garden (one Of ..."
+      ],
+      [
+        "https://historicengland.org.uk/images-books/photos/item/IOE01/04527/03",
+        "Sculpture Depicting Ceres In Belvoir Castle Sculpture Garden (One Of ..."
+      ],
+      [
+        "https://www.flickr.com/photos/30120216@N07/52245858101",
+        "[111137] Belvoir Castle : Gardens - Ceres - Flickr"
+      ],
+      [
+        "https://www.geograph.org.uk/photo/7174153",
+        "Belvoir Castle and gardens [18] &copy; Michael Dibb"
+      ],
+      [
+        "https://en.wikipedia.org/wiki/Ceres_(sculpture)",
+        "Ceres (sculpture) - Wikipedia"
+      ],
+      [
+        "https://britishlistedbuildings.co.uk/101180136-sculpture-depicting-ceres-in-belvoir-castle-sculpture-garden-one-of-seven-statues-belvoir",
+        "Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of ..."
+      ]
+    ],
+    "requests": [
+      {
+        "url": "https://britishlistedbuildings.co.uk/101180136-sculpture-depicting-ceres-in-belvoir-castle-sculpture-garden-one-of-seven-statues-belvoir",
+        "error": "http_403"
+      },
+      {
+        "url": "https://www.bing.com/search?q=name+sculptor+created+c+1680+sculpture+depicting+ceres+belvoir+castle+garden+leicestershire+england+sculptor+of+ceres+sculpture+ceres+statue+creator",
+        "error": ""
+      },
+      {
+        "url": "https://www.bing.com/search?q=name+sculptor+created+c+1680+sculpture+depicting+ceres+belvoir+castle+garden+leicestershire+england",
+        "error": ""
+      },
+      {
+        "url": "https://html.duckduckgo.com/html/?q=name+sculptor+created+c+1680+sculpture+depicting+ceres+belvoir+castle+garden+leicestershire+england+sculptor+of+ceres+sculpture+ceres+statue+creator",
+        "error": ""
+      },
+      {
+        "url": "https://html.duckduckgo.com/html/?q=name+sculptor+created+c+1680+sculpture+depicting+ceres+belvoir+castle+garden+leicestershire+england",
+        "error": ""
+      },
+      {
+        "url": "https://www.bing.com/search?format=rss&q=name+sculptor+created+c+1680+sculpture+depicting+ceres+belvoir+castle+garden+leicestershire+england+sculptor+of+ceres+sculpture+ceres+statue+creator",
+        "error": ""
+      },
+      {
+        "url": "https://lite.duckduckgo.com/lite/?q=name+sculptor+created+c+1680+sculpture+depicting+ceres+belvoir+castle+garden+leicestershire+england+sculptor+of+ceres+sculpture+ceres+statue+creator",
+        "error": ""
+      },
+      {
+        "url": "https://lite.duckduckgo.com/lite/?q=sculptor+of+ceres+sculpture+Belvoir+Castle+Garden",
+        "error": ""
+      },
+      {
+        "url": "https://historicengland.org.uk/listing/the-list/list-entry/1180136",
+        "error": "http_403"
+      },
+      {
+        "url": "https://www.thewrennreport.co.uk/building/E60000089-f0faa82c-704f-448a-adfe-17278c2ad71c/sculpture-depicting-ceres-in-belvoir-castle-sculpture-garden-one-of-seven-statue",
+        "error": ""
+      },
+      {
+        "url": "https://www.wikidata.org/wiki/Q17541704",
+        "error": "http_403"
+      },
+      {
+        "url": "https://historicengland.org.uk/images-books/photos/item/IOE01/04527/03",
+        "error": "http_403"
+      }
+    ],
+    "missing_captures": [],
+    "creator_found": true
+  },
+  "before_creator_ranks": [
+    28
+  ],
+  "after_creator_ranks": [
+    1
+  ],
+  "controls": [
+    {
+      "id": "missing-place",
+      "passed": true,
+      "actual": "ceres sculptor created River Castle Garden",
+      "expected": "ceres sculptor created River Castle Garden"
+    },
+    {
+      "id": "partial-place",
+      "passed": true,
+      "actual": "ceres sculpture river Castle Garden",
+      "expected": "ceres sculpture river Castle Garden"
+    },
+    {
+      "id": "already-anchored",
+      "passed": true,
+      "actual": "river castle garden ceres",
+      "expected": "river castle garden ceres"
+    },
+    {
+      "id": "multiple-places",
+      "passed": true,
+      "actual": "ceres sculpture",
+      "expected": "ceres sculpture"
+    },
+    {
+      "id": "quoted-place",
+      "passed": true,
+      "actual": "ceres sculpture",
+      "expected": "ceres sculpture"
+    },
+    {
+      "id": "negated-place",
+      "passed": true,
+      "actual": "ceres sculpture",
+      "expected": "ceres sculpture"
+    },
+    {
+      "id": "single-word",
+      "passed": true,
+      "actual": "ceres sculpture",
+      "expected": "ceres sculpture"
+    },
+    {
+      "id": "overflow",
+      "passed": true,
+      "actual": "ceres statue sculpture creator artist description catalogue history",
+      "expected": "ceres statue sculpture creator artist description catalogue history"
+    },
+    {
+      "id": "sculptor",
+      "passed": true,
+      "before": 3.2,
+      "after": 9.2
+    },
+    {
+      "id": "architect",
+      "passed": true,
+      "before": 3.2,
+      "after": 9.2
+    },
+    {
+      "id": "painter",
+      "passed": true,
+      "before": 3.2,
+      "after": 9.2
+    },
+    {
+      "id": "author",
+      "passed": true,
+      "before": 1.6,
+      "after": 7.6
+    },
+    {
+      "id": "wrong-relation",
+      "passed": true,
+      "before": 0.0,
+      "after": 0.0
+    },
+    {
+      "id": "different-output",
+      "passed": true,
+      "before": 3.2,
+      "after": 3.2
+    },
+    {
+      "id": "negation",
+      "passed": true,
+      "before": 3.2,
+      "after": 3.2
+    },
+    {
+      "id": "json-parent",
+      "passed": true,
+      "before": 2.95,
+      "after": 2.95
+    }
+  ],
+  "recorded_choices": [
+    {
+      "id": "simpleqa-516",
+      "before": "eeg driving fatigue age range",
+      "after": "eeg driving fatigue age range"
+    },
+    {
+      "id": "simpleqa-1013",
+      "before": "f\u00fcssli children with elisabeth",
+      "after": "f\u00fcssli children with elisabeth"
+    },
+    {
+      "id": "simpleqa-483",
+      "before": "activision blizzard esports launch",
+      "after": "activision blizzard esports launch"
+    },
+    {
+      "id": "simpleqa-1232",
+      "before": "konaruiyeh census data",
+      "after": "konaruiyeh census data"
+    },
+    {
+      "id": "simpleqa-2010",
+      "before": "sculptor of ceres sculpture",
+      "after": "sculptor of ceres sculpture Belvoir Castle Garden"
+    },
+    {
+      "id": "simpleqa-2215",
+      "before": "\"The Horse\" individual known",
+      "after": "\"The Horse\" individual known"
+    },
+    {
+      "id": "simpleqa-3120",
+      "before": "colombian player juan guzm\u00e1n",
+      "after": "colombian player juan guzm\u00e1n"
+    },
+    {
+      "id": "simpleqa-4145",
+      "before": "odd fellows hall architecture",
+      "after": "odd fellows hall architecture"
+    },
+    {
+      "id": "simpleqa-37",
+      "before": "bernard comrie spouse",
+      "after": "bernard comrie spouse"
+    },
+    {
+      "id": "simpleqa-395",
+      "before": "saturday evening post libel teams",
+      "after": "saturday evening post libel teams"
+    },
+    {
+      "id": "simpleqa-32",
+      "before": "carrie underwood cry pretty gold certification date",
+      "after": "carrie underwood cry pretty gold certification date"
+    }
+  ],
+  "changed": [
+    "simpleqa-2010"
+  ],
+  "payload": {
+    "question": "What is the name of the sculptor who created the c. 1680 sculpture depicting Ceres in the Belvoir Castle Sculpture Garden in Leicestershire, England?",
+    "starting_url": "https://britishlistedbuildings.co.uk/101180136-sculpture-depicting-ceres-in-belvoir-castle-sculpture-garden-one-of-seven-statues-belvoir",
+    "constraints": {
+      "kind": "text",
+      "year": "",
+      "as_of": "",
+      "versions": [],
+      "stable": false,
+      "cardinality": 1,
+      "target": "what is the name ",
+      "choices": [],
+      "operation": "single",
+      "required_fields": [],
+      "date_precision": ""
+    },
+    "candidates": [],
+    "passages": [
+      {
+        "id": 0,
+        "text": "This sculpture, believed to represent Ceres, the Goddess of Corn, dates from around 1680 and was created by Caius Gabriel Cibber. It is located in the sculpture garden of Belvoir Castle and is one of seven statues in the collection. The sculpture is made of stone and stands on a square pedestal featuring recessed panels that are intricately carved with high relief heraldic and other emblems, including the Earl's coronet, as the Earls of Rutland became Dukes in 1703. The pedestal is adorned with a dentil course and an egg and dart frieze beneath the cornice. The figure depicted is masculine in appearance and is shown in a striding forward pose, with a large sheaf of corn at its feet.",
+        "source_start": 0,
+        "source_end": 691,
+        "section": "Description",
+        "source": "https://www.thewrennreport.co.uk/building/E60000089-f0faa82c-704f-448a-adfe-17278c2ad71c/sculpture-depicting-ceres-in-belvoir-castle-sculpture-garden-one-of-seven-statue",
+        "locator": "p[14]:0",
+        "document_title": "Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of Seven Statues) \u2014 Grade II* listed building in Melton | The WRENN Report"
+      },
+      {
+        "id": 1,
+        "text": "name: Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of Seven Statues) | $ { @context: https://schema.org | @type: LandmarksOrHistoricalBuildings | name: Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of Seven Statues) | description: Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of Seven Statues) is a Grade II* listed building in the Melton local planning authority area, England. First listed on 15 August 1979. Sculpture. | url: https://www.thewrennreport.co.uk/building/E60000089-f0faa82c-704f-448a-adfe-17278c2ad71c/sculpture-depicting-ceres-in-belvoir-castle-sculpture-garden-one-of-seven-statue | sameAs: https://historicengland.org.uk/listing/the-list/list-entry/1180136 }",
+        "source_start": 0,
+        "source_end": 739,
+        "section": "$ { @context: https://schema.org | @type: LandmarksOrHistoricalBuildings | name: Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of Seven Statues) | description: Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of Seven Statues) is a Grade II* listed building in the Melton local planning authority area, England. First listed on 15 August 1979. Sculpture. | url: h",
+        "source": "https://www.thewrennreport.co.uk/building/E60000089-f0faa82c-704f-448a-adfe-17278c2ad71c/sculpture-depicting-ceres-in-belvoir-castle-sculpture-garden-one-of-seven-statue",
+        "locator": "script[1]/name",
+        "document_title": "Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of Seven Statues) \u2014 Grade II* listed building in Melton | The WRENN Report"
+      },
+      {
+        "id": 2,
+        "text": "additional Property[0].name: Grade | additionalProperty[0] { @type: PropertyValue | name: Grade | value: II* } | parent $ { @context: https://schema.org | @type: LandmarksOrHistoricalBuildings | name: Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of Seven Statues) | description: Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of Seven Statues) is a Grade II* listed building in the Melton local planning authority area, England. First listed on 15 August 1979. Sculpture. | url: https://www.thewrennreport.co.uk/building/E60000089-f0faa82c-704f-448a-adfe-17278c2ad71c/sculpture-depicting-ceres-in-belvoir-castle-sculpture-garden-one-of-seven-statue | sameAs: https://historicengland.org.uk/listing/the-list/list-entry/1180136 }",
+        "source_start": 0,
+        "source_end": 767,
+        "section": "additionalProperty[0] { @type: PropertyValue | name: Grade | value: II* } | parent $ { @context: https://schema.org | @type: LandmarksOrHistoricalBuildings | name: Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of Seven Statues) | description: Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of Seven Statues) is a Grade II* listed building in the Melton local pl",
+        "source": "https://www.thewrennreport.co.uk/building/E60000089-f0faa82c-704f-448a-adfe-17278c2ad71c/sculpture-depicting-ceres-in-belvoir-castle-sculpture-garden-one-of-seven-statue",
+        "locator": "script[1]/additionalProperty[0].name",
+        "document_title": "Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of Seven Statues) \u2014 Grade II* listed building in Melton | The WRENN Report"
+      },
+      {
+        "id": 3,
+        "text": "additional Property[2].name: Building type | additionalProperty[2] { @type: PropertyValue | name: Building type | value: Sculpture } | parent $ { @context: https://schema.org | @type: LandmarksOrHistoricalBuildings | name: Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of Seven Statues) | description: Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of Seven Statues) is a Grade II* listed building in the Melton local planning authority area, England. First listed on 15 August 1979. Sculpture. | url: https://www.thewrennreport.co.uk/building/E60000089-f0faa82c-704f-448a-adfe-17278c2ad71c/sculpture-depicting-ceres-in-belvoir-castle-sculpture-garden-one-of-seven-statue | sameAs: https://historicengland.org.uk/listing/the-list/list-entry/1180136 }",
+        "source_start": 0,
+        "source_end": 789,
+        "section": "additionalProperty[2] { @type: PropertyValue | name: Building type | value: Sculpture } | parent $ { @context: https://schema.org | @type: LandmarksOrHistoricalBuildings | name: Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of Seven Statues) | description: Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of Seven Statues) is a Grade II* listed building in the M",
+        "source": "https://www.thewrennreport.co.uk/building/E60000089-f0faa82c-704f-448a-adfe-17278c2ad71c/sculpture-depicting-ceres-in-belvoir-castle-sculpture-garden-one-of-seven-statue",
+        "locator": "script[1]/additionalProperty[2].name",
+        "document_title": "Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of Seven Statues) \u2014 Grade II* listed building in Melton | The WRENN Report"
+      },
+      {
+        "id": 4,
+        "text": "additional Property[1].name: Date first listed | additionalProperty[1] { @type: PropertyValue | name: Date first listed | value: 1979-08-15 } | parent $ { @context: https://schema.org | @type: LandmarksOrHistoricalBuildings | name: Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of Seven Statues) | description: Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of Seven Statues) is a Grade II* listed building in the Melton local planning authority area, England. First listed on 15 August 1979. Sculpture. | url: https://www.thewrennreport.co.uk/building/E60000089-f0faa82c-704f-448a-adfe-17278c2ad71c/sculpture-depicting-ceres-in-belvoir-castle-sculpture-garden-one-of-seven-statue | sameAs: https://historicengland.org.uk/listing/the-list/list-entry/1180136 }",
+        "source_start": 0,
+        "source_end": 798,
+        "section": "additionalProperty[1] { @type: PropertyValue | name: Date first listed | value: 1979-08-15 } | parent $ { @context: https://schema.org | @type: LandmarksOrHistoricalBuildings | name: Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of Seven Statues) | description: Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of Seven Statues) is a Grade II* listed building in ",
+        "source": "https://www.thewrennreport.co.uk/building/E60000089-f0faa82c-704f-448a-adfe-17278c2ad71c/sculpture-depicting-ceres-in-belvoir-castle-sculpture-garden-one-of-seven-statue",
+        "locator": "script[1]/additionalProperty[1].name",
+        "document_title": "Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of Seven Statues) \u2014 Grade II* listed building in Melton | The WRENN Report"
+      },
+      {
+        "id": 5,
+        "text": "Country: England",
+        "source_start": 0,
+        "source_end": 16,
+        "section": "Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of Seven Statues)",
+        "source": "https://www.thewrennreport.co.uk/building/E60000089-f0faa82c-704f-448a-adfe-17278c2ad71c/sculpture-depicting-ceres-in-belvoir-castle-sculpture-garden-one-of-seven-statue",
+        "locator": "dl[6]",
+        "document_title": "Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of Seven Statues) \u2014 Grade II* listed building in Melton | The WRENN Report"
+      },
+      {
+        "id": 6,
+        "text": "Source: Historic England listing",
+        "source_start": 0,
+        "source_end": 32,
+        "section": "Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of Seven Statues)",
+        "source": "https://www.thewrennreport.co.uk/building/E60000089-f0faa82c-704f-448a-adfe-17278c2ad71c/sculpture-depicting-ceres-in-belvoir-castle-sculpture-garden-one-of-seven-statue",
+        "locator": "dl[11]",
+        "document_title": "Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of Seven Statues) \u2014 Grade II* listed building in Melton | The WRENN Report"
+      },
+      {
+        "id": 7,
+        "text": "same As: https://historicengland.org.uk/listing/the-list/list-entry/1180136 | $ { @context: https://schema.org | @type: LandmarksOrHistoricalBuildings | name: Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of Seven Statues) | description: Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of Seven Statues) is a Grade II* listed building in the Melton local planning authority area, England. First listed on 15 August 1979. Sculpture. | url: https://www.thewrennreport.co.uk/building/E60000089-f0faa82c-704f-448a-adfe-17278c2ad71c/sculpture-depicting-ceres-in-belvoir-castle-sculpture-garden-one-of-seven-statue | sameAs: https://historicengland.org.uk/listing/the-list/list-entry/1180136 }",
+        "source_start": 0,
+        "source_end": 725,
+        "section": "$ { @context: https://schema.org | @type: LandmarksOrHistoricalBuildings | name: Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of Seven Statues) | description: Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of Seven Statues) is a Grade II* listed building in the Melton local planning authority area, England. First listed on 15 August 1979. Sculpture. | url: h",
+        "source": "https://www.thewrennreport.co.uk/building/E60000089-f0faa82c-704f-448a-adfe-17278c2ad71c/sculpture-depicting-ceres-in-belvoir-castle-sculpture-garden-one-of-seven-statue",
+        "locator": "script[1]/sameAs",
+        "document_title": "Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of Seven Statues) \u2014 Grade II* listed building in Melton | The WRENN Report"
+      }
+    ]
+  },
+  "stub_protocol": {
+    "state": "span",
+    "literal_verified": true,
+    "source": "https://www.thewrennreport.co.uk/building/E60000089-f0faa82c-704f-448a-adfe-17278c2ad71c/sculpture-depicting-ceres-in-belvoir-castle-sculpture-garden-one-of-seven-statue"
+  },
+  "all_passed": true
+}

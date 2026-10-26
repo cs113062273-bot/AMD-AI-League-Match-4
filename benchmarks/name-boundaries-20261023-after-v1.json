@@ -1,0 +1,3996 @@
+{
+  "scope": "Facility-name/status boundaries: authored local HTTP, explicit CPU semantic stubs.\n\nRelated controls, not independent held-out questions or actual-model accuracy.\n",
+  "revision": "working-tree",
+  "baseline_source_sha256": {},
+  "diagnostic_sha256": "16be08b8598f53efe52bffa0e22b13c591c4bf4c64b394a13e919e00dd41369c",
+  "production_sha256": {
+    "app.py": "c0267c0441330bd30559f48d2f33916418992b8e21ec8dd1d09ae4773c23b73b",
+    "agent/__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41",
+    "agent/browser.py": "53ac9a99f3afcefcdb197cd9b2296c2d380910a782178fadb65235e548efc353",
+    "agent/candidates.py": "c5a1d9bc5e18a9e0a56d862f416e75411b96e047528ee296674b1ed64348442f",
+    "agent/challenges.py": "b6f51c720f332671725e08127a5d1c163ca0542d2a550bf3c980a6d4c49bf6a1",
+    "agent/crates_history.py": "8644c651c54fffecf5347c2408554948a8b4b59613830e9c67bf0caea3ddb81a",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/engine.py": "e4cc15f3b1e59678afb9458fddafa78b175ef236457218721b62a7b90dc70ce2",
+    "agent/evidence.py": "9eebc1c4afcaf2ce56863ace3fa603866b68a252aaf9e60b1115823c2196af8f",
+    "agent/field_groups.py": "52a54989253c59e9836dec4aaec4944b688376e79548b9336887558a454e9162",
+    "agent/github_history.py": "26d3a2655f9d33ef9fb8aead1b6031c4b1b2fe0775c39824b5ae6f3ecad7f071",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/license_expressions.py": "3b7a85d34a773b19e499708db72cd0da8cbb54161888ebf0df700f62b46de7bb",
+    "agent/literature.py": "9b871500ab1ebaf88e8fca2c70bd7ade7eb81774412fa85a1f4be7d2fb06263f",
+    "agent/members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "agent/model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+    "agent/model_server.py": "8d326a696942d259697a6fba8586441bbbe4874042ea900c6d7788a2a0e9fd22",
+    "agent/name_boundaries.py": "18a29259c378a52a6d4dcdb9f99cf53b4e6dc6e99136c0403e76397f633cff56",
+    "agent/navigation.py": "0f849c0c570720114c45c14b0a5286fe409e5d26c2945fdc9f6c1a6922bb7718",
+    "agent/network.py": "8260972f73f422ddc403aac9d2e31d05cbcec7f87ea46d950d361776a741306f",
+    "agent/normalize.py": "582d9ef7b1ec775e5171c92e1ae96be746fd5d1dcd43ee588fee9a9aa6abc706",
+    "agent/output.py": "b983ab2efe31707b1c974344a32dc4b40b708541257695de89cac9e343b073eb",
+    "agent/oyez.py": "8475f248d78925522e0742b13518be2c4f4db11eae0d8391a8002da7d4e3b67d",
+    "agent/parser.py": "16741c809d33fbe08d5c9a69515decd4f8bc5546ed00afa9a3bb9c55bfb26e7b",
+    "agent/planner.py": "1514fb67d20b061da8116e3086b315fdc5f3d819613330098ab9d948844a4211",
+    "agent/population.py": "c9a2b2c59dc1bc90da68036545605b4c882043b09541687de253bb54e6a5ea75",
+    "agent/processes.py": "677c4372b40d1da0ffc0cf4120ca5b6be2fcf6b6c30f6ec17d0d8fae19e198c1",
+    "agent/proofs.py": "3b15a1c40986ed7bc87f1a89d340facb0ff17d4ef4865dc98096c68944eba763",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/registry_history.py": "eb6c41b0b3c92192cecc23c7f4ba147b57bb99be8e3990ae77ed0e7feaecd85b",
+    "agent/resolvers.py": "990a9097481cce6b2b90805aedb7f5a6996b7caad290fbf44424bf7d93101866",
+    "agent/search.py": "64ebf971ea4dd0f8a34bc0bdd2d3678f54edab80d6112328fefeede84687ec55",
+    "agent/selector.py": "cc6c371e49dd7557c96c313487afa00e04fbc51df33a27ea98a3e593776d9f6d",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/temporal.py": "f520ada0a6ea9f810225887080a495a4a47a0371cd6f613a9c5648587509012a",
+    "agent/types.py": "1bc24b341d11e9bd0da4a288ba843728f831897cf5222e51f43fa1265b740f30",
+    "agent/urls.py": "6bbf58adf3c55cf3787edf4b6607a7db8eea987f0c02dd6cdfea48f6c38e031f",
+    "agent/worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f"
+  },
+  "passed": 21,
+  "total": 21,
+  "rows": [
+    {
+      "id": "former",
+      "passed": true,
+      "source": "The first planting took place at the former Pine Elementary School.",
+      "query": "What is the name of the school where the River Project first planted a tree?",
+      "stub_selection": "former Pine Elementary School",
+      "expected": "Pine Elementary School",
+      "actual": "Pine Elementary School",
+      "cpu_stub_calls": [
+        "/select",
+        "/verify"
+      ],
+      "cpu_stub_payloads": [
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "The first planting took place at the former Pine Elementary School.",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ]
+        },
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "The first planting took place at the former Pine Elementary School.",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ],
+          "proposed": "Pine Elementary School"
+        }
+      ],
+      "result": {
+        "answer": "Pine Elementary School",
+        "sources": [
+          "http://127.0.0.1:35715/source"
+        ],
+        "confidence": 0.693,
+        "evidence": "The first planting took place at the former Pine Elementary School.",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the name of the school where the River Project first planted a tree?",
+            "url": "http://127.0.0.1:35715/source",
+            "kind": "text",
+            "terms": [
+              "name",
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 0.00013649999164044857
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Pine Elementary School",
+              "answer": "Pine Elementary School",
+              "source": "http://127.0.0.1:35715/source",
+              "evidence": "The first planting took place at the former Pine Elementary School.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 5.7,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "name_boundary": {
+                  "selected_span": "former Pine Elementary School",
+                  "locator": "p[0]:0"
+                }
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "Pine Elementary School",
+            "answer": "Pine Elementary School",
+            "source": "http://127.0.0.1:35715/source",
+            "evidence": "The first planting took place at the former Pine Elementary School.",
+            "label": "",
+            "section": "",
+            "kind": "text",
+            "score": 5.7,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[0]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": "",
+              "name_boundary": {
+                "selected_span": "former Pine Elementary School",
+                "locator": "p[0]:0"
+              }
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:35715/source",
+              "final": "http://127.0.0.1:35715/source",
+              "status": 200,
+              "bytes": 102,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0256
+        }
+      }
+    },
+    {
+      "id": "article-status",
+      "passed": true,
+      "source": "The first planting took place at the former Pine Elementary School.",
+      "query": "What is the name of the school where the River Project first planted a tree?",
+      "stub_selection": "the former Pine Elementary School",
+      "expected": "Pine Elementary School",
+      "actual": "Pine Elementary School",
+      "cpu_stub_calls": [
+        "/select",
+        "/verify"
+      ],
+      "cpu_stub_payloads": [
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "The first planting took place at the former Pine Elementary School.",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ]
+        },
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "The first planting took place at the former Pine Elementary School.",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ],
+          "proposed": "Pine Elementary School"
+        }
+      ],
+      "result": {
+        "answer": "Pine Elementary School",
+        "sources": [
+          "http://127.0.0.1:35715/source"
+        ],
+        "confidence": 0.693,
+        "evidence": "The first planting took place at the former Pine Elementary School.",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the name of the school where the River Project first planted a tree?",
+            "url": "http://127.0.0.1:35715/source",
+            "kind": "text",
+            "terms": [
+              "name",
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.3299984857439995e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Pine Elementary School",
+              "answer": "Pine Elementary School",
+              "source": "http://127.0.0.1:35715/source",
+              "evidence": "The first planting took place at the former Pine Elementary School.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 5.7,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "name_boundary": {
+                  "selected_span": "the former Pine Elementary School",
+                  "locator": "p[0]:0"
+                }
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "Pine Elementary School",
+            "answer": "Pine Elementary School",
+            "source": "http://127.0.0.1:35715/source",
+            "evidence": "The first planting took place at the former Pine Elementary School.",
+            "label": "",
+            "section": "",
+            "kind": "text",
+            "score": 5.7,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[0]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": "",
+              "name_boundary": {
+                "selected_span": "the former Pine Elementary School",
+                "locator": "p[0]:0"
+              }
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:35715/source",
+              "final": "http://127.0.0.1:35715/source",
+              "status": 200,
+              "bytes": 102,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.005
+        }
+      }
+    },
+    {
+      "id": "current",
+      "passed": true,
+      "source": "The event took place at the current Cedar High School.",
+      "query": "What is the name of the school where the River Project first planted a tree?",
+      "stub_selection": "current Cedar High School",
+      "expected": "Cedar High School",
+      "actual": "Cedar High School",
+      "cpu_stub_calls": [
+        "/select",
+        "/verify"
+      ],
+      "cpu_stub_payloads": [
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "The event took place at the current Cedar High School.",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ]
+        },
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "The event took place at the current Cedar High School.",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ],
+          "proposed": "Cedar High School"
+        }
+      ],
+      "result": {
+        "answer": "Cedar High School",
+        "sources": [
+          "http://127.0.0.1:35715/source"
+        ],
+        "confidence": 0.653,
+        "evidence": "The event took place at the current Cedar High School.",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the name of the school where the River Project first planted a tree?",
+            "url": "http://127.0.0.1:35715/source",
+            "kind": "text",
+            "terms": [
+              "name",
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.9300030544400215e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Cedar High School",
+              "answer": "Cedar High School",
+              "source": "http://127.0.0.1:35715/source",
+              "evidence": "The event took place at the current Cedar High School.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 4.1,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "name_boundary": {
+                  "selected_span": "current Cedar High School",
+                  "locator": "p[0]:0"
+                }
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "Cedar High School",
+            "answer": "Cedar High School",
+            "source": "http://127.0.0.1:35715/source",
+            "evidence": "The event took place at the current Cedar High School.",
+            "label": "",
+            "section": "",
+            "kind": "text",
+            "score": 4.1,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[0]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": "",
+              "name_boundary": {
+                "selected_span": "current Cedar High School",
+                "locator": "p[0]:0"
+              }
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:35715/source",
+              "final": "http://127.0.0.1:35715/source",
+              "status": 200,
+              "bytes": 89,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0049
+        }
+      }
+    },
+    {
+      "id": "previous",
+      "passed": true,
+      "source": "They met at the previous River Secondary School.",
+      "query": "What is the name of the school where the River Project first planted a tree?",
+      "stub_selection": "previous River Secondary School",
+      "expected": "River Secondary School",
+      "actual": "River Secondary School",
+      "cpu_stub_calls": [
+        "/select",
+        "/verify"
+      ],
+      "cpu_stub_payloads": [
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "They met at the previous River Secondary School.",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ]
+        },
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "They met at the previous River Secondary School.",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ],
+          "proposed": "River Secondary School"
+        }
+      ],
+      "result": {
+        "answer": "River Secondary School",
+        "sources": [
+          "http://127.0.0.1:35715/source"
+        ],
+        "confidence": 0.68,
+        "evidence": "They met at the previous River Secondary School.",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the name of the school where the River Project first planted a tree?",
+            "url": "http://127.0.0.1:35715/source",
+            "kind": "text",
+            "terms": [
+              "name",
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.1299969628453255e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "River Secondary School",
+              "answer": "River Secondary School",
+              "source": "http://127.0.0.1:35715/source",
+              "evidence": "They met at the previous River Secondary School.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 5.2,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "name_boundary": {
+                  "selected_span": "previous River Secondary School",
+                  "locator": "p[0]:0"
+                }
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "River Secondary School",
+            "answer": "River Secondary School",
+            "source": "http://127.0.0.1:35715/source",
+            "evidence": "They met at the previous River Secondary School.",
+            "label": "",
+            "section": "",
+            "kind": "text",
+            "score": 5.2,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[0]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": "",
+              "name_boundary": {
+                "selected_span": "previous River Secondary School",
+                "locator": "p[0]:0"
+              }
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:35715/source",
+              "final": "http://127.0.0.1:35715/source",
+              "status": 200,
+              "bytes": 83,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.004
+        }
+      }
+    },
+    {
+      "id": "already-short",
+      "passed": true,
+      "source": "They met at the former Pine Elementary School.",
+      "query": "What is the name of the school where the River Project first planted a tree?",
+      "stub_selection": "Pine Elementary School",
+      "expected": "Pine Elementary School",
+      "actual": "Pine Elementary School",
+      "cpu_stub_calls": [
+        "/select",
+        "/verify"
+      ],
+      "cpu_stub_payloads": [
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "They met at the former Pine Elementary School.",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ]
+        },
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "They met at the former Pine Elementary School.",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ],
+          "proposed": "Pine Elementary School"
+        }
+      ],
+      "result": {
+        "answer": "Pine Elementary School",
+        "sources": [
+          "http://127.0.0.1:35715/source"
+        ],
+        "confidence": 0.653,
+        "evidence": "They met at the former Pine Elementary School.",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the name of the school where the River Project first planted a tree?",
+            "url": "http://127.0.0.1:35715/source",
+            "kind": "text",
+            "terms": [
+              "name",
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.0399962775409222e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Pine Elementary School",
+              "answer": "Pine Elementary School",
+              "source": "http://127.0.0.1:35715/source",
+              "evidence": "They met at the former Pine Elementary School.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 4.1,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "Pine Elementary School",
+            "answer": "Pine Elementary School",
+            "source": "http://127.0.0.1:35715/source",
+            "evidence": "They met at the former Pine Elementary School.",
+            "label": "",
+            "section": "",
+            "kind": "text",
+            "score": 4.1,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[0]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:35715/source",
+              "final": "http://127.0.0.1:35715/source",
+              "status": 200,
+              "bytes": 81,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0038
+        }
+      }
+    },
+    {
+      "id": "capitalized",
+      "passed": true,
+      "source": "They met at Former Pine Elementary School.",
+      "query": "What is the name of the school where the River Project first planted a tree?",
+      "stub_selection": "Former Pine Elementary School",
+      "expected": "Former Pine Elementary School",
+      "actual": "Former Pine Elementary School",
+      "cpu_stub_calls": [
+        "/select",
+        "/verify"
+      ],
+      "cpu_stub_payloads": [
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "They met at Former Pine Elementary School.",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ]
+        },
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "They met at Former Pine Elementary School.",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ],
+          "proposed": "Former Pine Elementary School"
+        }
+      ],
+      "result": {
+        "answer": "Former Pine Elementary School",
+        "sources": [
+          "http://127.0.0.1:35715/source"
+        ],
+        "confidence": 0.653,
+        "evidence": "They met at Former Pine Elementary School.",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the name of the school where the River Project first planted a tree?",
+            "url": "http://127.0.0.1:35715/source",
+            "kind": "text",
+            "terms": [
+              "name",
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.00000761449337e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Former Pine Elementary School",
+              "answer": "Former Pine Elementary School",
+              "source": "http://127.0.0.1:35715/source",
+              "evidence": "They met at Former Pine Elementary School.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 4.1,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "Former Pine Elementary School",
+            "answer": "Former Pine Elementary School",
+            "source": "http://127.0.0.1:35715/source",
+            "evidence": "They met at Former Pine Elementary School.",
+            "label": "",
+            "section": "",
+            "kind": "text",
+            "score": 4.1,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[0]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:35715/source",
+              "final": "http://127.0.0.1:35715/source",
+              "status": 200,
+              "bytes": 77,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0044
+        }
+      }
+    },
+    {
+      "id": "official-json",
+      "passed": true,
+      "source": "former Pine Elementary School",
+      "query": "What is the name of the school where the River Project first planted a tree?",
+      "stub_selection": "former Pine Elementary School",
+      "expected": "former Pine Elementary School",
+      "actual": "former Pine Elementary School",
+      "cpu_stub_calls": [
+        "/select",
+        "/verify"
+      ],
+      "cpu_stub_payloads": [
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "name: former Pine Elementary School | $ { name: former Pine Elementary School }",
+              "section": "$ { name: former Pine Elementary School }",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "name",
+              "document_title": ""
+            }
+          ]
+        },
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "name: former Pine Elementary School | $ { name: former Pine Elementary School }",
+              "section": "$ { name: former Pine Elementary School }",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "name",
+              "document_title": ""
+            }
+          ],
+          "proposed": "former Pine Elementary School"
+        }
+      ],
+      "result": {
+        "answer": "former Pine Elementary School",
+        "sources": [
+          "http://127.0.0.1:35715/source"
+        ],
+        "confidence": 0.765,
+        "evidence": "name: former Pine Elementary School | $ { name: former Pine Elementary School }",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the name of the school where the River Project first planted a tree?",
+            "url": "http://127.0.0.1:35715/source",
+            "kind": "text",
+            "terms": [
+              "name",
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.209997572004795e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "former Pine Elementary School",
+              "answer": "former Pine Elementary School",
+              "source": "http://127.0.0.1:35715/source",
+              "evidence": "name: former Pine Elementary School | $ { name: former Pine Elementary School }",
+              "label": "name",
+              "section": "$ { name: former Pine Elementary School }",
+              "kind": "text",
+              "score": 8.6,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "name",
+                "structure": "json",
+                "qualifiers": {
+                  "identity": [
+                    "former Pine Elementary School"
+                  ],
+                  "structured": true,
+                  "bindings": {
+                    "name": "former Pine Elementary School"
+                  },
+                  "value_type": "scalar"
+                },
+                "field_value": "former Pine Elementary School"
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "former Pine Elementary School",
+            "answer": "former Pine Elementary School",
+            "source": "http://127.0.0.1:35715/source",
+            "evidence": "name: former Pine Elementary School | $ { name: former Pine Elementary School }",
+            "label": "name",
+            "section": "$ { name: former Pine Elementary School }",
+            "kind": "text",
+            "score": 8.6,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "name",
+              "structure": "json",
+              "qualifiers": {
+                "identity": [
+                  "former Pine Elementary School"
+                ],
+                "structured": true,
+                "bindings": {
+                  "name": "former Pine Elementary School"
+                },
+                "value_type": "scalar"
+              },
+              "field_value": "former Pine Elementary School"
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:35715/source",
+              "final": "http://127.0.0.1:35715/source",
+              "status": 200,
+              "bytes": 41,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.005
+        }
+      }
+    },
+    {
+      "id": "official-field",
+      "passed": true,
+      "source": "former Pine Elementary School",
+      "query": "What is the name of the school where the River Project first planted a tree?",
+      "stub_selection": "former Pine Elementary School",
+      "expected": "former Pine Elementary School",
+      "actual": "former Pine Elementary School",
+      "cpu_stub_calls": [
+        "/select",
+        "/verify"
+      ],
+      "cpu_stub_payloads": [
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "Name: former Pine Elementary School",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "dl[0]",
+              "document_title": "River archive"
+            }
+          ]
+        },
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "Name: former Pine Elementary School",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "dl[0]",
+              "document_title": "River archive"
+            }
+          ],
+          "proposed": "former Pine Elementary School"
+        }
+      ],
+      "result": {
+        "answer": "former Pine Elementary School",
+        "sources": [
+          "http://127.0.0.1:35715/source"
+        ],
+        "confidence": 0.778,
+        "evidence": "Name: former Pine Elementary School",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the name of the school where the River Project first planted a tree?",
+            "url": "http://127.0.0.1:35715/source",
+            "kind": "text",
+            "terms": [
+              "name",
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.3100099749863148e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "former Pine Elementary School",
+              "answer": "former Pine Elementary School",
+              "source": "http://127.0.0.1:35715/source",
+              "evidence": "Name: former Pine Elementary School",
+              "label": "Name",
+              "section": "",
+              "kind": "text",
+              "score": 9.1,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "dl[0]",
+                "structure": "field",
+                "qualifiers": {},
+                "field_value": "former Pine Elementary School"
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "former Pine Elementary School",
+            "answer": "former Pine Elementary School",
+            "source": "http://127.0.0.1:35715/source",
+            "evidence": "Name: former Pine Elementary School",
+            "label": "Name",
+            "section": "",
+            "kind": "text",
+            "score": 9.1,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "dl[0]",
+              "structure": "field",
+              "qualifiers": {},
+              "field_value": "former Pine Elementary School"
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:35715/source",
+              "final": "http://127.0.0.1:35715/source",
+              "status": 200,
+              "bytes": 88,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0046
+        }
+      }
+    },
+    {
+      "id": "quoted",
+      "passed": true,
+      "source": "The school is named \"former Pine Elementary School\".",
+      "query": "What is the name of the school where the River Project first planted a tree?",
+      "stub_selection": "former Pine Elementary School",
+      "expected": "former Pine Elementary School",
+      "actual": "former Pine Elementary School",
+      "cpu_stub_calls": [
+        "/select",
+        "/verify"
+      ],
+      "cpu_stub_payloads": [
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "The school is named \"former Pine Elementary School\".",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ]
+        },
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "The school is named \"former Pine Elementary School\".",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ],
+          "proposed": "former Pine Elementary School"
+        }
+      ],
+      "result": {
+        "answer": "former Pine Elementary School",
+        "sources": [
+          "http://127.0.0.1:35715/source"
+        ],
+        "confidence": 0.653,
+        "evidence": "The school is named \"former Pine Elementary School\".",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the name of the school where the River Project first planted a tree?",
+            "url": "http://127.0.0.1:35715/source",
+            "kind": "text",
+            "terms": [
+              "name",
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.1399970389902592e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "former Pine Elementary School",
+              "answer": "former Pine Elementary School",
+              "source": "http://127.0.0.1:35715/source",
+              "evidence": "The school is named \"former Pine Elementary School\".",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 4.1,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "former Pine Elementary School",
+            "answer": "former Pine Elementary School",
+            "source": "http://127.0.0.1:35715/source",
+            "evidence": "The school is named \"former Pine Elementary School\".",
+            "label": "",
+            "section": "",
+            "kind": "text",
+            "score": 4.1,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[0]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:35715/source",
+              "final": "http://127.0.0.1:35715/source",
+              "status": 200,
+              "bytes": 97,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0292
+        }
+      }
+    },
+    {
+      "id": "smart-quotes",
+      "passed": true,
+      "source": "The school is named \u201cformer Pine Elementary School\u201d.",
+      "query": "What is the name of the school where the River Project first planted a tree?",
+      "stub_selection": "former Pine Elementary School",
+      "expected": "former Pine Elementary School",
+      "actual": "former Pine Elementary School",
+      "cpu_stub_calls": [
+        "/select",
+        "/verify"
+      ],
+      "cpu_stub_payloads": [
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "The school is named \u201cformer Pine Elementary School\u201d.",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ]
+        },
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "The school is named \u201cformer Pine Elementary School\u201d.",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ],
+          "proposed": "former Pine Elementary School"
+        }
+      ],
+      "result": {
+        "answer": "former Pine Elementary School",
+        "sources": [
+          "http://127.0.0.1:35715/source"
+        ],
+        "confidence": 0.653,
+        "evidence": "The school is named \u201cformer Pine Elementary School\u201d.",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the name of the school where the River Project first planted a tree?",
+            "url": "http://127.0.0.1:35715/source",
+            "kind": "text",
+            "terms": [
+              "name",
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.3199984095990658e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "former Pine Elementary School",
+              "answer": "former Pine Elementary School",
+              "source": "http://127.0.0.1:35715/source",
+              "evidence": "The school is named \u201cformer Pine Elementary School\u201d.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 4.1,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "former Pine Elementary School",
+            "answer": "former Pine Elementary School",
+            "source": "http://127.0.0.1:35715/source",
+            "evidence": "The school is named \u201cformer Pine Elementary School\u201d.",
+            "label": "",
+            "section": "",
+            "kind": "text",
+            "score": 4.1,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[0]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:35715/source",
+              "final": "http://127.0.0.1:35715/source",
+              "status": 200,
+              "bytes": 91,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0072
+        }
+      }
+    },
+    {
+      "id": "named",
+      "passed": true,
+      "source": "They attended a school named former Pine Elementary School.",
+      "query": "What is the name of the school where the River Project first planted a tree?",
+      "stub_selection": "former Pine Elementary School",
+      "expected": "former Pine Elementary School",
+      "actual": "former Pine Elementary School",
+      "cpu_stub_calls": [
+        "/select",
+        "/verify"
+      ],
+      "cpu_stub_payloads": [
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "They attended a school named former Pine Elementary School.",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ]
+        },
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "They attended a school named former Pine Elementary School.",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ],
+          "proposed": "former Pine Elementary School"
+        }
+      ],
+      "result": {
+        "answer": "former Pine Elementary School",
+        "sources": [
+          "http://127.0.0.1:35715/source"
+        ],
+        "confidence": 0.653,
+        "evidence": "They attended a school named former Pine Elementary School.",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the name of the school where the River Project first planted a tree?",
+            "url": "http://127.0.0.1:35715/source",
+            "kind": "text",
+            "terms": [
+              "name",
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.8299906514585018e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "former Pine Elementary School",
+              "answer": "former Pine Elementary School",
+              "source": "http://127.0.0.1:35715/source",
+              "evidence": "They attended a school named former Pine Elementary School.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 4.1,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "former Pine Elementary School",
+            "answer": "former Pine Elementary School",
+            "source": "http://127.0.0.1:35715/source",
+            "evidence": "They attended a school named former Pine Elementary School.",
+            "label": "",
+            "section": "",
+            "kind": "text",
+            "score": 4.1,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[0]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:35715/source",
+              "final": "http://127.0.0.1:35715/source",
+              "status": 200,
+              "bytes": 94,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0071
+        }
+      }
+    },
+    {
+      "id": "name-label",
+      "passed": true,
+      "source": "Official name: former Pine Elementary School.",
+      "query": "What is the name of the school where the River Project first planted a tree?",
+      "stub_selection": "former Pine Elementary School",
+      "expected": "former Pine Elementary School",
+      "actual": "former Pine Elementary School",
+      "cpu_stub_calls": [
+        "/select",
+        "/verify"
+      ],
+      "cpu_stub_payloads": [
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "Official name: former Pine Elementary School.",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ]
+        },
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "Official name: former Pine Elementary School.",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ],
+          "proposed": "former Pine Elementary School"
+        }
+      ],
+      "result": {
+        "answer": "former Pine Elementary School",
+        "sources": [
+          "http://127.0.0.1:35715/source"
+        ],
+        "confidence": 0.68,
+        "evidence": "Official name: former Pine Elementary School.",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the name of the school where the River Project first planted a tree?",
+            "url": "http://127.0.0.1:35715/source",
+            "kind": "text",
+            "terms": [
+              "name",
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.109996810555458e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "former Pine Elementary School",
+              "answer": "former Pine Elementary School",
+              "source": "http://127.0.0.1:35715/source",
+              "evidence": "Official name: former Pine Elementary School.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 5.2,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "former Pine Elementary School",
+            "answer": "former Pine Elementary School",
+            "source": "http://127.0.0.1:35715/source",
+            "evidence": "Official name: former Pine Elementary School.",
+            "label": "",
+            "section": "",
+            "kind": "text",
+            "score": 5.2,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[0]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:35715/source",
+              "final": "http://127.0.0.1:35715/source",
+              "status": 200,
+              "bytes": 80,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0077
+        }
+      }
+    },
+    {
+      "id": "not-name-question",
+      "passed": true,
+      "source": "The description is former Pine Elementary School.",
+      "query": "What is the description of the site?",
+      "stub_selection": "former Pine Elementary School",
+      "expected": "former Pine Elementary School",
+      "actual": "former Pine Elementary School",
+      "cpu_stub_calls": [
+        "/select",
+        "/verify"
+      ],
+      "cpu_stub_payloads": [
+        {
+          "question": "What is the description of the site?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the description ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "The description is former Pine Elementary School.",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ]
+        },
+        {
+          "question": "What is the description of the site?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the description ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "The description is former Pine Elementary School.",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ],
+          "proposed": "former Pine Elementary School"
+        }
+      ],
+      "result": {
+        "answer": "former Pine Elementary School",
+        "sources": [
+          "http://127.0.0.1:35715/source"
+        ],
+        "confidence": 0.64,
+        "evidence": "The description is former Pine Elementary School.",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the description of the site?",
+            "url": "http://127.0.0.1:35715/source",
+            "kind": "text",
+            "terms": [
+              "description"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "description"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the description ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 9.399955160915852e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "former Pine Elementary School",
+              "answer": "former Pine Elementary School",
+              "source": "http://127.0.0.1:35715/source",
+              "evidence": "The description is former Pine Elementary School.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 3.6,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "former Pine Elementary School",
+            "answer": "former Pine Elementary School",
+            "source": "http://127.0.0.1:35715/source",
+            "evidence": "The description is former Pine Elementary School.",
+            "label": "",
+            "section": "",
+            "kind": "text",
+            "score": 3.6,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[0]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:35715/source",
+              "final": "http://127.0.0.1:35715/source",
+              "status": 200,
+              "bytes": 84,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0072
+        }
+      }
+    },
+    {
+      "id": "status-question",
+      "passed": true,
+      "source": "The site is described as former Pine Elementary School.",
+      "query": "What is the designation including status of the school?",
+      "stub_selection": "former Pine Elementary School",
+      "expected": "former Pine Elementary School",
+      "actual": "former Pine Elementary School",
+      "cpu_stub_calls": [
+        "/select",
+        "/verify"
+      ],
+      "cpu_stub_payloads": [
+        {
+          "question": "What is the designation including status of the school?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the designation including status ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "The site is described as former Pine Elementary School.",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ]
+        },
+        {
+          "question": "What is the designation including status of the school?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the designation including status ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "The site is described as former Pine Elementary School.",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ],
+          "proposed": "former Pine Elementary School"
+        }
+      ],
+      "result": {
+        "answer": "former Pine Elementary School",
+        "sources": [
+          "http://127.0.0.1:35715/source"
+        ],
+        "confidence": 0.64,
+        "evidence": "The site is described as former Pine Elementary School.",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the designation including status of the school?",
+            "url": "http://127.0.0.1:35715/source",
+            "kind": "text",
+            "terms": [
+              "designation",
+              "including",
+              "status",
+              "school"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "designation",
+              "including",
+              "status",
+              "school"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the designation including status ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.789990346878767e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "former Pine Elementary School",
+              "answer": "former Pine Elementary School",
+              "source": "http://127.0.0.1:35715/source",
+              "evidence": "The site is described as former Pine Elementary School.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 3.6,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "former Pine Elementary School",
+            "answer": "former Pine Elementary School",
+            "source": "http://127.0.0.1:35715/source",
+            "evidence": "The site is described as former Pine Elementary School.",
+            "label": "",
+            "section": "",
+            "kind": "text",
+            "score": 3.6,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[0]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:35715/source",
+              "final": "http://127.0.0.1:35715/source",
+              "status": 200,
+              "bytes": 90,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0141
+        }
+      }
+    },
+    {
+      "id": "lowercase",
+      "passed": true,
+      "source": "The first planting took place at the former pine elementary school.",
+      "query": "What is the name of the school where the River Project first planted a tree?",
+      "stub_selection": "former pine elementary school",
+      "expected": "former pine elementary school",
+      "actual": "former pine elementary school",
+      "cpu_stub_calls": [
+        "/select",
+        "/verify"
+      ],
+      "cpu_stub_payloads": [
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "The first planting took place at the former pine elementary school.",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ]
+        },
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "The first planting took place at the former pine elementary school.",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ],
+          "proposed": "former pine elementary school"
+        }
+      ],
+      "result": {
+        "answer": "former pine elementary school",
+        "sources": [
+          "http://127.0.0.1:35715/source"
+        ],
+        "confidence": 0.693,
+        "evidence": "The first planting took place at the former pine elementary school.",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the name of the school where the River Project first planted a tree?",
+            "url": "http://127.0.0.1:35715/source",
+            "kind": "text",
+            "terms": [
+              "name",
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.170008908957243e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "former pine elementary school",
+              "answer": "former pine elementary school",
+              "source": "http://127.0.0.1:35715/source",
+              "evidence": "The first planting took place at the former pine elementary school.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 5.7,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "former pine elementary school",
+            "answer": "former pine elementary school",
+            "source": "http://127.0.0.1:35715/source",
+            "evidence": "The first planting took place at the former pine elementary school.",
+            "label": "",
+            "section": "",
+            "kind": "text",
+            "score": 5.7,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[0]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:35715/source",
+              "final": "http://127.0.0.1:35715/source",
+              "status": 200,
+              "bytes": 102,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0042
+        }
+      }
+    },
+    {
+      "id": "generic-head",
+      "passed": true,
+      "source": "The first planting took place at the former School.",
+      "query": "What is the name of the school where the River Project first planted a tree?",
+      "stub_selection": "former School",
+      "expected": "former School",
+      "actual": "former School",
+      "cpu_stub_calls": [
+        "/select",
+        "/verify"
+      ],
+      "cpu_stub_payloads": [
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "The first planting took place at the former School.",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ]
+        },
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "The first planting took place at the former School.",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ],
+          "proposed": "former School"
+        }
+      ],
+      "result": {
+        "answer": "former School",
+        "sources": [
+          "http://127.0.0.1:35715/source"
+        ],
+        "confidence": 0.693,
+        "evidence": "The first planting took place at the former School.",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the name of the school where the River Project first planted a tree?",
+            "url": "http://127.0.0.1:35715/source",
+            "kind": "text",
+            "terms": [
+              "name",
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.580000389367342e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "former School",
+              "answer": "former School",
+              "source": "http://127.0.0.1:35715/source",
+              "evidence": "The first planting took place at the former School.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 5.7,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "former School",
+            "answer": "former School",
+            "source": "http://127.0.0.1:35715/source",
+            "evidence": "The first planting took place at the former School.",
+            "label": "",
+            "section": "",
+            "kind": "text",
+            "score": 5.7,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[0]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:35715/source",
+              "final": "http://127.0.0.1:35715/source",
+              "status": 200,
+              "bytes": 86,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0042
+        }
+      }
+    },
+    {
+      "id": "wrong-type",
+      "passed": true,
+      "source": "The first planting took place at the former Pine Hospital.",
+      "query": "What is the name of the school where the River Project first planted a tree?",
+      "stub_selection": "former Pine Hospital",
+      "expected": "former Pine Hospital",
+      "actual": "former Pine Hospital",
+      "cpu_stub_calls": [
+        "/select",
+        "/verify"
+      ],
+      "cpu_stub_payloads": [
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "The first planting took place at the former Pine Hospital.",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ]
+        },
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "The first planting took place at the former Pine Hospital.",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ],
+          "proposed": "former Pine Hospital"
+        }
+      ],
+      "result": {
+        "answer": "former Pine Hospital",
+        "sources": [
+          "http://127.0.0.1:35715/source"
+        ],
+        "confidence": 0.653,
+        "evidence": "The first planting took place at the former Pine Hospital.",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the name of the school where the River Project first planted a tree?",
+            "url": "http://127.0.0.1:35715/source",
+            "kind": "text",
+            "terms": [
+              "name",
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.009996049106121e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "former Pine Hospital",
+              "answer": "former Pine Hospital",
+              "source": "http://127.0.0.1:35715/source",
+              "evidence": "The first planting took place at the former Pine Hospital.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 4.1,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "former Pine Hospital",
+            "answer": "former Pine Hospital",
+            "source": "http://127.0.0.1:35715/source",
+            "evidence": "The first planting took place at the former Pine Hospital.",
+            "label": "",
+            "section": "",
+            "kind": "text",
+            "score": 4.1,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[0]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:35715/source",
+              "final": "http://127.0.0.1:35715/source",
+              "status": 200,
+              "bytes": 93,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0037
+        }
+      }
+    },
+    {
+      "id": "old-is-name",
+      "passed": true,
+      "source": "They met at the Old Pine Elementary School.",
+      "query": "What is the name of the school where the River Project first planted a tree?",
+      "stub_selection": "Old Pine Elementary School",
+      "expected": "Old Pine Elementary School",
+      "actual": "Old Pine Elementary School",
+      "cpu_stub_calls": [
+        "/select",
+        "/verify"
+      ],
+      "cpu_stub_payloads": [
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "They met at the Old Pine Elementary School.",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ]
+        },
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "They met at the Old Pine Elementary School.",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ],
+          "proposed": "Old Pine Elementary School"
+        }
+      ],
+      "result": {
+        "answer": "Old Pine Elementary School",
+        "sources": [
+          "http://127.0.0.1:35715/source"
+        ],
+        "confidence": 0.653,
+        "evidence": "They met at the Old Pine Elementary School.",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the name of the school where the River Project first planted a tree?",
+            "url": "http://127.0.0.1:35715/source",
+            "kind": "text",
+            "terms": [
+              "name",
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.0499963536858559e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Old Pine Elementary School",
+              "answer": "Old Pine Elementary School",
+              "source": "http://127.0.0.1:35715/source",
+              "evidence": "They met at the Old Pine Elementary School.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 4.1,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "Old Pine Elementary School",
+            "answer": "Old Pine Elementary School",
+            "source": "http://127.0.0.1:35715/source",
+            "evidence": "They met at the Old Pine Elementary School.",
+            "label": "",
+            "section": "",
+            "kind": "text",
+            "score": 4.1,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[0]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:35715/source",
+              "final": "http://127.0.0.1:35715/source",
+              "status": 200,
+              "bytes": 78,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0037
+        }
+      }
+    },
+    {
+      "id": "reject",
+      "passed": true,
+      "source": "The first planting took place at the former Pine Elementary School.",
+      "query": "What is the name of the school where the River Project first planted a tree?",
+      "stub_selection": "former Pine Elementary School",
+      "expected": "",
+      "actual": "",
+      "cpu_stub_calls": [
+        "/select",
+        "/verify"
+      ],
+      "cpu_stub_payloads": [
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "The first planting took place at the former Pine Elementary School.",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ]
+        },
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "The first planting took place at the former Pine Elementary School.",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ],
+          "proposed": "Pine Elementary School"
+        }
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the name of the school where the River Project first planted a tree?",
+            "url": "http://127.0.0.1:35715/source",
+            "kind": "text",
+            "terms": [
+              "name",
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.0199961252510548e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Pine Elementary School",
+              "answer": "Pine Elementary School",
+              "source": "http://127.0.0.1:35715/source",
+              "evidence": "The first planting took place at the former Pine Elementary School.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 5.7,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "name_boundary": {
+                  "selected_span": "former Pine Elementary School",
+                  "locator": "p[0]:0"
+                }
+              }
+            }
+          ],
+          "verification": [
+            "unsupported"
+          ],
+          "reader_state": "no_evidence",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:35715/source",
+              "final": "http://127.0.0.1:35715/source",
+              "status": 200,
+              "bytes": 102,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0037
+        }
+      }
+    },
+    {
+      "id": "unavailable",
+      "passed": true,
+      "source": "The first planting took place at the former Pine Elementary School.",
+      "query": "What is the name of the school where the River Project first planted a tree?",
+      "stub_selection": "former Pine Elementary School",
+      "expected": "",
+      "actual": "",
+      "cpu_stub_calls": [
+        "/select",
+        "/verify"
+      ],
+      "cpu_stub_payloads": [
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "The first planting took place at the former Pine Elementary School.",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ]
+        },
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "The first planting took place at the former Pine Elementary School.",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ],
+          "proposed": "Pine Elementary School"
+        }
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_service_unavailable",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the name of the school where the River Project first planted a tree?",
+            "url": "http://127.0.0.1:35715/source",
+            "kind": "text",
+            "terms": [
+              "name",
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.0600080713629723e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Pine Elementary School",
+              "answer": "Pine Elementary School",
+              "source": "http://127.0.0.1:35715/source",
+              "evidence": "The first planting took place at the former Pine Elementary School.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 5.7,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "name_boundary": {
+                  "selected_span": "former Pine Elementary School",
+                  "locator": "p[0]:0"
+                }
+              }
+            }
+          ],
+          "verification": [
+            "http_503"
+          ],
+          "reader_state": "service_unavailable",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:35715/source",
+              "final": "http://127.0.0.1:35715/source",
+              "status": 200,
+              "bytes": 102,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0038
+        }
+      }
+    },
+    {
+      "id": "abstain",
+      "passed": true,
+      "source": "The first planting took place at the former Pine Elementary School.",
+      "query": "What is the name of the school where the River Project first planted a tree?",
+      "stub_selection": "former Pine Elementary School",
+      "expected": "",
+      "actual": "",
+      "cpu_stub_calls": [
+        "/select"
+      ],
+      "cpu_stub_payloads": [
+        {
+          "question": "What is the name of the school where the River Project first planted a tree?",
+          "starting_url": "http://127.0.0.1:35715/source",
+          "constraints": {
+            "kind": "text",
+            "year": "",
+            "as_of": "",
+            "versions": [],
+            "stable": false,
+            "cardinality": 1,
+            "target": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "candidates": [],
+          "passages": [
+            {
+              "id": 0,
+              "text": "The first planting took place at the former Pine Elementary School.",
+              "section": "",
+              "source": "http://127.0.0.1:35715/source",
+              "locator": "p[0]:0",
+              "document_title": "River archive"
+            }
+          ]
+        }
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the name of the school where the River Project first planted a tree?",
+            "url": "http://127.0.0.1:35715/source",
+            "kind": "text",
+            "terms": [
+              "name",
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "school",
+              "river",
+              "project",
+              "first",
+              "planted",
+              "tree"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [
+            "abstain"
+          ],
+          "timings": {
+            "resolver": 1.0500079952180386e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "reader_state": "no_evidence",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:35715/source",
+              "final": "http://127.0.0.1:35715/source",
+              "status": 200,
+              "bytes": 102,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0027
+        }
+      }
+    }
+  ]
+}

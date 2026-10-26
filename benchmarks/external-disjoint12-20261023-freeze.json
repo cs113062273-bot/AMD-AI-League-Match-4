@@ -1,0 +1,61 @@
+{
+  "status": "FROZEN_BEFORE_FIRST_RUN",
+  "selection_seed": 940220,
+  "n": 12,
+  "eligible_rows": 780,
+  "selection": "Uniform sample of rows excluding previously exposed assessments; no source/topic/difficulty/answerability filtering.",
+  "excluded_assessments": [
+    {
+      "path": "benchmarks/external-simpleqa20.json",
+      "sha256": "d94cd8ccdec7aceedc9895571aa9365ac60a1b5bceeb908b95013974dafdcebf",
+      "n": 20
+    },
+    {
+      "path": "benchmarks/external-simpleqa100.json",
+      "sha256": "4a875aeb98d499d373c66ea03640c105f675d412d7e05aa5ca49c80080f1af64",
+      "n": 100
+    },
+    {
+      "path": "benchmarks/external-transfer100-v2.json",
+      "sha256": "9cc11a2c15cb304e9e711f04485c0624561e04612c6a24b82a0bcb6abf7af6be",
+      "n": 100
+    }
+  ],
+  "url_preprocessing": "Split comma-delimited HTTP URLs including individually quoted entries; remove matching list quotes; preserve path spelling and punctuation. Deduplicate exact canonical URLs.",
+  "upstream": "google/simpleqa-verified",
+  "revision": "0dc97e0d28d8233463e005cdc4475cc2a13ba2dc",
+  "upstream_license": "mit",
+  "csv_sha256": "b5db21155444763543fe31b67e7cf28ce2bb225742a5b889421c5f182e2f92f5",
+  "cases_sha256": "7a944d63a878df44c9b8117c92b9b8c42fec98201d8d76cfa39007c5b68afdc0",
+  "production_sha256": {
+    "app.py": "c0267c0441330bd30559f48d2f33916418992b8e21ec8dd1d09ae4773c23b73b",
+    "agent/browser.py": "f7a3d9479ec2ae9bc9fbbcb27efbddaeba9b5dd8639016e827840cc1c7e33cea",
+    "agent/candidates.py": "944c2dfffbd7e0d875c633cb1ee260563cebd88e554181d6ad35914cdf0de8cd",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/engine.py": "8a0fa144451d6cf488c12bb248affce0fe9bb1db3f284dabce84f1e97dfc2ca8",
+    "agent/evidence.py": "3a5b361433e2aac2f8a7d4b292d137b4c80f32183057c0138b852a9190020cbb",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/model_protocol.py": "8ba6730e160eac47d8231985e1293bb981a5a63ef9b475cf46daf31ef17bdfb0",
+    "agent/model_server.py": "14e840e32fe34ca594eb4fb0dadd89fc67768fb9026ac3359734a021c5190fc2",
+    "agent/navigation.py": "0f849c0c570720114c45c14b0a5286fe409e5d26c2945fdc9f6c1a6922bb7718",
+    "agent/network.py": "def1be3752f81423c313c2dfa83f6703ee063d7e98652cf0d816b423d0e2d9cb",
+    "agent/normalize.py": "6a4cb8311c29318d788c97a3e64cffa3c4085e595a0e1e9a2d5c418fa540e41c",
+    "agent/output.py": "b983ab2efe31707b1c974344a32dc4b40b708541257695de89cac9e343b073eb",
+    "agent/parser.py": "adee2e94345415b11b80fb4f38053ed85f1b49b27d1ab73df16264e59cdf2803",
+    "agent/planner.py": "0437ea114784095170a8e4b6d14e139f8fc80a27ab1c37c29ced95059525ca72",
+    "agent/processes.py": "677c4372b40d1da0ffc0cf4120ca5b6be2fcf6b6c30f6ec17d0d8fae19e198c1",
+    "agent/proofs.py": "42920966e3cae090d8a0d53f17270f607a4a6dcb8a96a1af20382d2785e64b74",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent/search.py": "69e505204a79bd130e8c29f1c043c2c0356770d11ad4f905a99a6ff3a2a7b02f",
+    "agent/selector.py": "7427a98f8eac2f36a8d2d736d5065d0ca7894c0c76b929d0458dbc57df74fbbc",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent/urls.py": "2118381f70d0f44174db25833b989cd36dab64b588b83085cddd65cad7412a1f",
+    "agent/worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f",
+    "agent/__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41"
+  },
+  "adaptation": "Starting URL is the first gold URL. Exact answer/source scoring with predeclared ISO-date and integer grouping aliases; not the official SimpleQA autorater."
+}

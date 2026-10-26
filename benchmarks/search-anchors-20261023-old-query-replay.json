@@ -1,0 +1,249 @@
+{
+  "scope": "Paired search parsing on identical recorded public HTTP responses, without network or inference.",
+  "baseline_revision": "c052c78e26d393e00171c1b22b3c74b0061aa210",
+  "baseline_source_sha256": {
+    "agent/engine.py": "8a0fa144451d6cf488c12bb248affce0fe9bb1db3f284dabce84f1e97dfc2ca8",
+    "agent/types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent/planner.py": "b66769c19872bdb46fa83fce9c306bb7747e329d980eed761ff35cd87abb29bb",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/network.py": "c37ecb5b4b0fba4fac737954eda24952059922ed620c94b99bcb17daed8c5155",
+    "agent/urls.py": "2118381f70d0f44174db25833b989cd36dab64b588b83085cddd65cad7412a1f",
+    "agent/parser.py": "a6958b0f53e3b529377c7b5af48b8d5103a93a2ec8206d645c8932144941278a",
+    "agent/normalize.py": "6a4cb8311c29318d788c97a3e64cffa3c4085e595a0e1e9a2d5c418fa540e41c",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent/search.py": "69e505204a79bd130e8c29f1c043c2c0356770d11ad4f905a99a6ff3a2a7b02f",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/candidates.py": "a17fae4f1b8a9d65bce6ea77b4cfbf223eaaaf893bcc1ad7f65a4b1e57f25483",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/evidence.py": "3a5b361433e2aac2f8a7d4b292d137b4c80f32183057c0138b852a9190020cbb",
+    "agent/selector.py": "c985e196b77711845eba76a3694cb07ad8beab074bd65f8a4e8fffaa4eb82ea3",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/proofs.py": "42920966e3cae090d8a0d53f17270f607a4a6dcb8a96a1af20382d2785e64b74"
+  },
+  "current_search_sha256": "489c8fee52ce0775b2e7d29d21f977e3d644a00098f834f736e456f1a34faf87",
+  "rows": [
+    {
+      "id": "simpleqa-462",
+      "before": [
+        [
+          "https://www.topozone.com/new-york/herkimer-ny/summit/vickerman-hill/",
+          "Vickerman Hill Topo Map in Herkimer County NY - Topozone"
+        ],
+        [
+          "https://topoquest.com/place/new-york/summit/vickerman-hill/968529",
+          "Vickerman Hill, NY - TopoQuest"
+        ],
+        [
+          "https://www.getamap.net/maps/united_states/new_york/herkimer/_vickerman_hill/",
+          "Vickerman Hill (Herkimer) Map, Weather and Photos - United States ..."
+        ],
+        [
+          "https://en.wikipedia.org/wiki/Vickerman_Hill",
+          "Vickerman Hill - Wikipedia"
+        ],
+        [
+          "https://www.wikiwand.com/en/Vickerman_Hill",
+          "Vickerman Hill - Wikiwand"
+        ],
+        [
+          "https://kids.kiddle.co/Vickerman_Hill",
+          "Vickerman Hill Facts for Kids"
+        ],
+        [
+          "https://trailsnh.com/hike/n/357594518/Vickerman-Hill-NY",
+          "Vickerman Hill NY - trailsnh.com"
+        ],
+        [
+          "https://peakvisor.com/peak/vickerman-hill.html",
+          "Vickerman Hill (348 m) - Allegheny Plateau, USA | PeakVisor"
+        ]
+      ],
+      "after": [
+        [
+          "https://www.topozone.com/new-york/herkimer-ny/summit/vickerman-hill/",
+          "Vickerman Hill Topo Map in Herkimer County NY - Topozone"
+        ],
+        [
+          "https://topoquest.com/place/new-york/summit/vickerman-hill/968529",
+          "Vickerman Hill, NY - TopoQuest"
+        ],
+        [
+          "https://www.getamap.net/maps/united_states/new_york/herkimer/_vickerman_hill/",
+          "Vickerman Hill (Herkimer) Map, Weather and Photos - United States ..."
+        ],
+        [
+          "https://en.wikipedia.org/wiki/Vickerman_Hill",
+          "Vickerman Hill - Wikipedia"
+        ],
+        [
+          "https://www.wikiwand.com/en/Vickerman_Hill",
+          "Vickerman Hill - Wikiwand"
+        ],
+        [
+          "https://kids.kiddle.co/Vickerman_Hill",
+          "Vickerman Hill Facts for Kids"
+        ],
+        [
+          "https://trailsnh.com/hike/n/357594518/Vickerman-Hill-NY",
+          "Vickerman Hill NY - trailsnh.com"
+        ],
+        [
+          "https://peakvisor.com/peak/vickerman-hill.html",
+          "Vickerman Hill (348 m) - Allegheny Plateau, USA | PeakVisor"
+        ]
+      ],
+      "removed": [],
+      "retained_first_four": true,
+      "snapshot_sha256": "d2b4a96f62860df8a32f9031bbfee54540df196bd1eaa04a6191b88a911bda2b"
+    },
+    {
+      "id": "simpleqa-3081",
+      "before": [
+        [
+          "https://www.sciencedirect.com/science/article/pii/0041387981900210",
+          "Laennec: A great student of tuberculosis - ScienceDirect"
+        ],
+        [
+          "https://www.sciencedirect.com/science/article/pii/S0019570720300822",
+          "\"How was tuberculosis known to the world?\" - ScienceDirect"
+        ],
+        [
+          "https://thorax.bmj.com/content/36/2/91",
+          "Laennec: his medical history. - Thorax"
+        ],
+        [
+          "https://www.scribd.com/document/403074106/rcmb-f293",
+          "History of Tuberculosis Research"
+        ],
+        [
+          "https://rjwave.org/jaafr/papers/JAAFR2511255.pdf",
+          "PDF Tuberculosis a Review of Current Trends"
+        ],
+        [
+          "https://www.resmedjournal.com/article/S0954-6111(06)00401-X/references",
+          "References in The history of tuberculosis - Respiratory Medicine"
+        ],
+        [
+          "https://ntep.in/node/243/CP-discovery-mycobacterium-tb-mtb",
+          "Discovery of Mycobacterium TB [M.tb] | Knowledge Base"
+        ],
+        [
+          "https://en.wikipedia.org/wiki/Ren%C3%A9_Laennec",
+          "Ren\u00e9 Laennec - Wikipedia"
+        ]
+      ],
+      "after": [
+        [
+          "https://www.sciencedirect.com/science/article/pii/0041387981900210",
+          "Laennec: A great student of tuberculosis - ScienceDirect"
+        ],
+        [
+          "https://www.sciencedirect.com/science/article/pii/S0019570720300822",
+          "\"How was tuberculosis known to the world?\" - ScienceDirect"
+        ],
+        [
+          "https://thorax.bmj.com/content/36/2/91",
+          "Laennec: his medical history. - Thorax"
+        ],
+        [
+          "https://www.scribd.com/document/403074106/rcmb-f293",
+          "History of Tuberculosis Research"
+        ],
+        [
+          "https://ntep.in/node/243/CP-discovery-mycobacterium-tb-mtb",
+          "Discovery of Mycobacterium TB [M.tb] | Knowledge Base"
+        ],
+        [
+          "https://rjwave.org/jaafr/papers/JAAFR2511255.pdf",
+          "PDF Tuberculosis a Review of Current Trends"
+        ],
+        [
+          "https://www.resmedjournal.com/article/S0954-6111(06)00401-X/references",
+          "References in The history of tuberculosis - Respiratory Medicine"
+        ],
+        [
+          "https://en.wikipedia.org/wiki/Ren%C3%A9_Laennec",
+          "Ren\u00e9 Laennec - Wikipedia"
+        ]
+      ],
+      "removed": [],
+      "retained_first_four": true,
+      "snapshot_sha256": "f76a5d159d58926c68f4b9e76edde8e1ec9482cc380f7f2363f3ff6fe87212bc"
+    },
+    {
+      "id": "simpleqa-3598",
+      "before": [
+        [
+          "https://www.youtube.com/watch?v=hV8EGTjzD2s",
+          "We Rollin (Official Video) - Shubh | Rubbal GTR - YouTube"
+        ],
+        [
+          "https://www.youtube.com/watch?v=RLhuPD2ASKE",
+          "We Rollin (Official Audio) - Shubh - YouTube"
+        ],
+        [
+          "https://vimeo.com/763661471",
+          "We Rollin (Official Video) - Shubh _ Rubbal GTR.mp4"
+        ],
+        [
+          "https://www.dailymotion.com/video/x8gabun",
+          "Shubh - We Rollin (Official Video) - Dailymotion"
+        ],
+        [
+          "https://en.bharatpedia.org/wiki/We_Rollin",
+          "We Rollin - Bharatpedia"
+        ],
+        [
+          "https://www.wikiwand.com/en/We_Rollin",
+          "We Rollin - Wikiwand"
+        ],
+        [
+          "https://en.wikipedia.org/wiki/We_Rollin",
+          "We Rollin - Wikipedia"
+        ],
+        [
+          "https://en.wikipedia.org/wiki/Shubh",
+          "Shubh - Wikipedia"
+        ]
+      ],
+      "after": [
+        [
+          "https://www.youtube.com/watch?v=hV8EGTjzD2s",
+          "We Rollin (Official Video) - Shubh | Rubbal GTR - YouTube"
+        ],
+        [
+          "https://www.youtube.com/watch?v=RLhuPD2ASKE",
+          "We Rollin (Official Audio) - Shubh - YouTube"
+        ],
+        [
+          "https://vimeo.com/763661471",
+          "We Rollin (Official Video) - Shubh _ Rubbal GTR.mp4"
+        ],
+        [
+          "https://www.dailymotion.com/video/x8gabun",
+          "Shubh - We Rollin (Official Video) - Dailymotion"
+        ],
+        [
+          "https://en.bharatpedia.org/wiki/We_Rollin",
+          "We Rollin - Bharatpedia"
+        ],
+        [
+          "https://www.wikiwand.com/en/We_Rollin",
+          "We Rollin - Wikiwand"
+        ],
+        [
+          "https://en.wikipedia.org/wiki/We_Rollin",
+          "We Rollin - Wikipedia"
+        ],
+        [
+          "https://en.wikipedia.org/wiki/Shubh",
+          "Shubh - Wikipedia"
+        ]
+      ],
+      "removed": [],
+      "retained_first_four": true,
+      "snapshot_sha256": "704dcefe0306ab3cafdc0a98e4ba07ffdc763ff65fba91a399a498409a92ff17"
+    }
+  ]
+}

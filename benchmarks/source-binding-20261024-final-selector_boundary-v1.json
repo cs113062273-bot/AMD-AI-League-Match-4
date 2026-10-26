@@ -1,0 +1,158 @@
+{
+  "scope": "Actual HTTP client check of sent IDs, literal spans and safe abstention; no LLM.",
+  "baseline_revision": "254741ac4ced4d335c12387432ad12b2b49a6ce5",
+  "baseline_source_sha256": {
+    "agent/engine.py": "8a0fa144451d6cf488c12bb248affce0fe9bb1db3f284dabce84f1e97dfc2ca8",
+    "agent/types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent/planner.py": "b66769c19872bdb46fa83fce9c306bb7747e329d980eed761ff35cd87abb29bb",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/network.py": "c37ecb5b4b0fba4fac737954eda24952059922ed620c94b99bcb17daed8c5155",
+    "agent/urls.py": "2118381f70d0f44174db25833b989cd36dab64b588b83085cddd65cad7412a1f",
+    "agent/parser.py": "a6958b0f53e3b529377c7b5af48b8d5103a93a2ec8206d645c8932144941278a",
+    "agent/normalize.py": "6a4cb8311c29318d788c97a3e64cffa3c4085e595a0e1e9a2d5c418fa540e41c",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent/search.py": "69e505204a79bd130e8c29f1c043c2c0356770d11ad4f905a99a6ff3a2a7b02f",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/candidates.py": "a17fae4f1b8a9d65bce6ea77b4cfbf223eaaaf893bcc1ad7f65a4b1e57f25483",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/evidence.py": "3a5b361433e2aac2f8a7d4b292d137b4c80f32183057c0138b852a9190020cbb",
+    "agent/selector.py": "5062c84043b76cf9275df0fa08b5009d0555592c1ad94a5bdeb44e59d9cc9150",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/proofs.py": "42920966e3cae090d8a0d53f17270f607a4a6dcb8a96a1af20382d2785e64b74"
+  },
+  "before": [
+    {
+      "id": "unsent-zero",
+      "passed": false,
+      "state": "candidate",
+      "answer": "Hidden value"
+    },
+    {
+      "id": "unsent-copy",
+      "passed": false,
+      "state": "candidate",
+      "answer": "Hidden value"
+    },
+    {
+      "id": "unsent-second",
+      "passed": false,
+      "state": "candidate",
+      "answer": "Other hidden value"
+    },
+    {
+      "id": "valid-zero",
+      "passed": true,
+      "state": "span",
+      "answer": "R8"
+    },
+    {
+      "id": "valid-last",
+      "passed": true,
+      "state": "span",
+      "answer": "S7"
+    },
+    {
+      "id": "unsent-passage",
+      "passed": true,
+      "state": "invalid_selection",
+      "answer": null
+    },
+    {
+      "id": "unsent-text",
+      "passed": true,
+      "state": "invalid_selection",
+      "answer": null
+    },
+    {
+      "id": "boolean-id",
+      "passed": true,
+      "state": "invalid_schema",
+      "answer": null
+    },
+    {
+      "id": "mixed-mode",
+      "passed": true,
+      "state": "invalid_selection",
+      "answer": null
+    },
+    {
+      "id": "abstain",
+      "passed": true,
+      "state": "abstain",
+      "answer": null
+    }
+  ],
+  "after": [
+    {
+      "id": "unsent-zero",
+      "passed": true,
+      "state": "invalid_selection",
+      "answer": null
+    },
+    {
+      "id": "unsent-copy",
+      "passed": true,
+      "state": "invalid_selection",
+      "answer": null
+    },
+    {
+      "id": "unsent-second",
+      "passed": true,
+      "state": "invalid_selection",
+      "answer": null
+    },
+    {
+      "id": "valid-zero",
+      "passed": true,
+      "state": "span",
+      "answer": "R8"
+    },
+    {
+      "id": "valid-last",
+      "passed": true,
+      "state": "span",
+      "answer": "S7"
+    },
+    {
+      "id": "unsent-passage",
+      "passed": true,
+      "state": "invalid_selection",
+      "answer": null
+    },
+    {
+      "id": "unsent-text",
+      "passed": true,
+      "state": "invalid_selection",
+      "answer": null
+    },
+    {
+      "id": "boolean-id",
+      "passed": true,
+      "state": "invalid_schema",
+      "answer": null
+    },
+    {
+      "id": "mixed-mode",
+      "passed": true,
+      "state": "invalid_selection",
+      "answer": null
+    },
+    {
+      "id": "abstain",
+      "passed": true,
+      "state": "abstain",
+      "answer": null
+    }
+  ],
+  "before_passed": 7,
+  "after_passed": 10,
+  "total": 10,
+  "wins": [
+    "unsent-zero",
+    "unsent-copy",
+    "unsent-second"
+  ],
+  "losses": [],
+  "selector_sha256": "c6783627a8463d93ff212a08ab9131a9e2b872d204c025378caf8f51c41a88bf"
+}

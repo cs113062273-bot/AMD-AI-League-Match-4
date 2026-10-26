@@ -1,0 +1,1520 @@
+{
+  "scope": "Authored CPU source-binding controls, not independent question accuracy.",
+  "baseline": "5c63d23446d28e95f60107b0e56bdfcbccffa489",
+  "baseline_hashes": {
+    "agent/engine.py": "0b80b3b7516ce700fb952a38bcefd5b818fa1edf50cadc65438ecfe7f4a1bb2f",
+    "agent/types.py": "ff29b729032273366c64cde113e425c34084b4ad7450ad48a0c2dd3c82b878e8",
+    "agent/planner.py": "4e446a2bbc54158a722526e3b74d1a890d58c3a22cbac84a8a9c36a8a09919c4",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "agent/normalize.py": "93f9147f5b09f8567ddac860e6b37b13f1f1d6c99bbd3c9c9a7da402d5dc64fa",
+    "agent/number_atoms.py": "0fc737af6f98af5b962cf0656b28a7a3b037e4113731b460fb63a2f5a22eb768",
+    "agent/urls.py": "6bbf58adf3c55cf3787edf4b6607a7db8eea987f0c02dd6cdfea48f6c38e031f",
+    "agent/population.py": "d134655302bc76a4e58ac45e7f2d20fc73ed5cefce26f63f67b58cc25d3bc504",
+    "agent/cardinals.py": "54bcfb476ee7f5e1d21ec7d2763caa34fc4d8f3df0c16812aedc5445044099a3",
+    "agent/magnitudes.py": "bf4a970386bd25332b813e0aab91dd28cda05047ca5af5d9e7b861760f5942d7",
+    "agent/temporal.py": "f520ada0a6ea9f810225887080a495a4a47a0371cd6f613a9c5648587509012a",
+    "agent/network.py": "61e8022642d7b8d377453282b6fa947818d8fe6b8151a4d473832bbaae1aaa4b",
+    "agent/request_pacing.py": "dc9af13c9c4af1c6555442ba9adeb7824a63685c676924d1fbdd20318e23f274",
+    "agent/parser.py": "6a31adb03819c56d50493bac148a87a44d8df3ab15b3833ecc1a3ac3ba2733e0",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/challenges.py": "b6f51c720f332671725e08127a5d1c163ca0542d2a550bf3c980a6d4c49bf6a1",
+    "agent/field_groups.py": "52a54989253c59e9836dec4aaec4944b688376e79548b9336887558a454e9162",
+    "agent/html_paragraphs.py": "fd2efd7286fd9bff67a9439a2e864ad729f90b28404316f3fb83cc2657053595",
+    "agent/resolvers.py": "990a9097481cce6b2b90805aedb7f5a6996b7caad290fbf44424bf7d93101866",
+    "agent/registry_history.py": "eb6c41b0b3c92192cecc23c7f4ba147b57bb99be8e3990ae77ed0e7feaecd85b",
+    "agent/search.py": "64ebf971ea4dd0f8a34bc0bdd2d3678f54edab80d6112328fefeede84687ec55",
+    "agent/literature.py": "9b871500ab1ebaf88e8fca2c70bd7ade7eb81774412fa85a1f4be7d2fb06263f",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/candidates.py": "c12c5f710ef1e2f505bb791ab1498fb96455562dc0ec73268d9da0fb1d146ae8",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/evidence.py": "9eebc1c4afcaf2ce56863ace3fa603866b68a252aaf9e60b1115823c2196af8f",
+    "agent/github_history.py": "26d3a2655f9d33ef9fb8aead1b6031c4b1b2fe0775c39824b5ae6f3ecad7f071",
+    "agent/license_expressions.py": "aed3ee70c0253e00ea81bebd6c9719d4c643cf7c48df8146d94b0fb59978c000",
+    "agent/source_excerpts.py": "aeb44460c54f4ea7301fe6917e695fcdb20d6c0a63a9f025936ac67f64764f4c",
+    "agent/phones.py": "88ee7806a9e69811e173228074aea714b4bb0e2c40abf5541887478b8d6cf7bb",
+    "agent/selector.py": "ca82431b21d6546d26ecca8961e995e3f3480471ebad4bcd06d48536f781fb7d",
+    "agent/model_client.py": "07f16cb173444af03917c3548456a80bf7eb3504d08b6cb5e5b4bbaba5ad1703",
+    "agent/model_protocol.py": "e8d4b86e0727be8c7db621f9205741a0e1e65ec0f3688fea5b090a835251a2a7",
+    "agent/proofs.py": "17a1bbbe2664fc5cab20886eb658d0dfba26908e1eeaaa99496ed3572b843247",
+    "agent/oyez.py": "8475f248d78925522e0742b13518be2c4f4db11eae0d8391a8002da7d4e3b67d",
+    "agent/familysearch.py": "682c5ed3afa4c1186b78c74cd78d742fa9f2128e4f404e58085cb1cce73fdb81",
+    "agent/family_counts.py": "1d86edd46f3ece8477539bca20bacba68dbe164019e77e5269f3894791715cea",
+    "agent/table_scales.py": "7cdd8bedf0987a819b5ff84260222a051475cb91feffc75f63915b853f812acd"
+  },
+  "before": [
+    {
+      "id": "selected-second-year",
+      "passed": false,
+      "actual": false,
+      "expected": true
+    },
+    {
+      "id": "selected-year-order-independent",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "id": "wrong-year-still-rejected",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "id": "forged-locator",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "id": "forged-structure",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "id": "forged-field_value",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "id": "forged-qualifiers",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "id": "forged-section",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "id": "forged-label",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "id": "forged-source",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "id": "errored-source",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "id": "legacy-unique",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "id": "legacy-missing-scope-cannot-bypass-year",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "id": "legacy-ambiguous",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "id": "ambiguous-qualifiers",
+      "passed": false,
+      "actual": true,
+      "expected": false
+    },
+    {
+      "id": "conflicting-page-instances",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "id": "identical-duplicate-record",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "id": "explicit-empty-locator",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "id": "members-selected-second-year",
+      "passed": false,
+      "actual": false,
+      "expected": true
+    },
+    {
+      "id": "members-forged-scope",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "id": "members-wrong-year",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "id": "http-forward",
+      "passed": false,
+      "answer": "",
+      "reason": "model_evidence_rejected",
+      "calls": [
+        {
+          "path": "/select",
+          "data": {
+            "question": "Who won the award in 2024?",
+            "starting_url": "http://127.0.0.1:26899/source",
+            "constraints": {
+              "kind": "text",
+              "year": "2024",
+              "as_of": "",
+              "versions": [],
+              "stable": false,
+              "cardinality": 1,
+              "target": "who won the award ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "candidates": [],
+            "passages": [
+              {
+                "id": 0,
+                "text": "Winner: Elm Choir",
+                "source_start": 0,
+                "source_end": 17,
+                "section": "Awards 2024",
+                "source": "http://127.0.0.1:26899/source",
+                "locator": "inline[3]",
+                "document_title": "Awards 2023"
+              },
+              {
+                "id": 1,
+                "text": "Awards 2024",
+                "source_start": 0,
+                "source_end": 11,
+                "section": "Awards 2024",
+                "source": "http://127.0.0.1:26899/source",
+                "locator": "heading[2]",
+                "document_title": "Awards 2023"
+              },
+              {
+                "id": 2,
+                "text": "Winner: Elm Choir",
+                "source_start": 0,
+                "source_end": 17,
+                "section": "Awards 2023",
+                "source": "http://127.0.0.1:26899/source",
+                "locator": "inline[1]",
+                "document_title": "Awards 2023"
+              },
+              {
+                "id": 3,
+                "text": "Awards 2023",
+                "source_start": 0,
+                "source_end": 11,
+                "section": "Awards 2023",
+                "source": "http://127.0.0.1:26899/source",
+                "locator": "heading[0]",
+                "document_title": "Awards 2023"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "http-reverse",
+      "passed": true,
+      "answer": "Elm Choir",
+      "reason": "model_verified",
+      "calls": [
+        {
+          "path": "/select",
+          "data": {
+            "question": "Who won the award in 2024?",
+            "starting_url": "http://127.0.0.1:26899/source",
+            "constraints": {
+              "kind": "text",
+              "year": "2024",
+              "as_of": "",
+              "versions": [],
+              "stable": false,
+              "cardinality": 1,
+              "target": "who won the award ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "candidates": [],
+            "passages": [
+              {
+                "id": 0,
+                "text": "Winner: Elm Choir",
+                "source_start": 0,
+                "source_end": 17,
+                "section": "Awards 2024",
+                "source": "http://127.0.0.1:26899/source",
+                "locator": "inline[1]",
+                "document_title": "Awards 2024"
+              },
+              {
+                "id": 1,
+                "text": "Awards 2024",
+                "source_start": 0,
+                "source_end": 11,
+                "section": "Awards 2024",
+                "source": "http://127.0.0.1:26899/source",
+                "locator": "heading[0]",
+                "document_title": "Awards 2024"
+              },
+              {
+                "id": 2,
+                "text": "Winner: Elm Choir",
+                "source_start": 0,
+                "source_end": 17,
+                "section": "Awards 2023",
+                "source": "http://127.0.0.1:26899/source",
+                "locator": "inline[3]",
+                "document_title": "Awards 2024"
+              },
+              {
+                "id": 3,
+                "text": "Awards 2023",
+                "source_start": 0,
+                "source_end": 11,
+                "section": "Awards 2023",
+                "source": "http://127.0.0.1:26899/source",
+                "locator": "heading[2]",
+                "document_title": "Awards 2024"
+              }
+            ]
+          }
+        },
+        {
+          "path": "/verify",
+          "data": {
+            "question": "Who won the award in 2024?",
+            "starting_url": "http://127.0.0.1:26899/source",
+            "constraints": {
+              "kind": "text",
+              "year": "2024",
+              "as_of": "",
+              "versions": [],
+              "stable": false,
+              "cardinality": 1,
+              "target": "who won the award ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "candidates": [],
+            "passages": [
+              {
+                "id": 0,
+                "text": "Winner: Elm Choir",
+                "source_start": 0,
+                "source_end": 17,
+                "section": "Awards 2024",
+                "source": "http://127.0.0.1:26899/source",
+                "locator": "inline[1]",
+                "document_title": "Awards 2024"
+              },
+              {
+                "id": 1,
+                "text": "Awards 2024",
+                "source_start": 0,
+                "source_end": 11,
+                "section": "Awards 2024",
+                "source": "http://127.0.0.1:26899/source",
+                "locator": "heading[0]",
+                "document_title": "Awards 2024"
+              },
+              {
+                "id": 2,
+                "text": "Winner: Elm Choir",
+                "source_start": 0,
+                "source_end": 17,
+                "section": "Awards 2023",
+                "source": "http://127.0.0.1:26899/source",
+                "locator": "inline[3]",
+                "document_title": "Awards 2024"
+              },
+              {
+                "id": 3,
+                "text": "Awards 2023",
+                "source_start": 0,
+                "source_end": 11,
+                "section": "Awards 2023",
+                "source": "http://127.0.0.1:26899/source",
+                "locator": "heading[2]",
+                "document_title": "Awards 2024"
+              }
+            ],
+            "proposed": "Elm Choir"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http-semantic-reject",
+      "passed": false,
+      "answer": "",
+      "reason": "model_evidence_rejected",
+      "calls": [
+        {
+          "path": "/select",
+          "data": {
+            "question": "Who won the award in 2024?",
+            "starting_url": "http://127.0.0.1:26899/source",
+            "constraints": {
+              "kind": "text",
+              "year": "2024",
+              "as_of": "",
+              "versions": [],
+              "stable": false,
+              "cardinality": 1,
+              "target": "who won the award ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "candidates": [],
+            "passages": [
+              {
+                "id": 0,
+                "text": "Winner: Elm Choir",
+                "source_start": 0,
+                "source_end": 17,
+                "section": "Awards 2024",
+                "source": "http://127.0.0.1:26899/source",
+                "locator": "inline[3]",
+                "document_title": "Awards 2023"
+              },
+              {
+                "id": 1,
+                "text": "Awards 2024",
+                "source_start": 0,
+                "source_end": 11,
+                "section": "Awards 2024",
+                "source": "http://127.0.0.1:26899/source",
+                "locator": "heading[2]",
+                "document_title": "Awards 2023"
+              },
+              {
+                "id": 2,
+                "text": "Winner: Elm Choir",
+                "source_start": 0,
+                "source_end": 17,
+                "section": "Awards 2023",
+                "source": "http://127.0.0.1:26899/source",
+                "locator": "inline[1]",
+                "document_title": "Awards 2023"
+              },
+              {
+                "id": 3,
+                "text": "Awards 2023",
+                "source_start": 0,
+                "source_end": 11,
+                "section": "Awards 2023",
+                "source": "http://127.0.0.1:26899/source",
+                "locator": "heading[0]",
+                "document_title": "Awards 2023"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "http-wrong-year",
+      "passed": true,
+      "answer": "",
+      "reason": "model_evidence_rejected",
+      "calls": [
+        {
+          "path": "/select",
+          "data": {
+            "question": "Who won the award in 2024?",
+            "starting_url": "http://127.0.0.1:26899/source",
+            "constraints": {
+              "kind": "text",
+              "year": "2024",
+              "as_of": "",
+              "versions": [],
+              "stable": false,
+              "cardinality": 1,
+              "target": "who won the award ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "candidates": [],
+            "passages": [
+              {
+                "id": 0,
+                "text": "Winner: Elm Choir",
+                "source_start": 0,
+                "source_end": 17,
+                "section": "Awards 2024",
+                "source": "http://127.0.0.1:26899/source",
+                "locator": "inline[3]",
+                "document_title": "Awards 2023"
+              },
+              {
+                "id": 1,
+                "text": "Awards 2024",
+                "source_start": 0,
+                "source_end": 11,
+                "section": "Awards 2024",
+                "source": "http://127.0.0.1:26899/source",
+                "locator": "heading[2]",
+                "document_title": "Awards 2023"
+              },
+              {
+                "id": 2,
+                "text": "Winner: Elm Choir",
+                "source_start": 0,
+                "source_end": 17,
+                "section": "Awards 2023",
+                "source": "http://127.0.0.1:26899/source",
+                "locator": "inline[1]",
+                "document_title": "Awards 2023"
+              },
+              {
+                "id": 3,
+                "text": "Awards 2023",
+                "source_start": 0,
+                "source_end": 11,
+                "section": "Awards 2023",
+                "source": "http://127.0.0.1:26899/source",
+                "locator": "heading[0]",
+                "document_title": "Awards 2023"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "semantic-valid",
+      "passed": true,
+      "state": "supported",
+      "supported": true,
+      "calls": [
+        {
+          "path": "/verify",
+          "data": {
+            "question": "Who won the award in 2024?",
+            "starting_url": "",
+            "constraints": {
+              "kind": "text",
+              "year": "2024",
+              "as_of": "",
+              "versions": [],
+              "stable": false,
+              "cardinality": 1,
+              "target": "who won the award ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "candidates": [],
+            "passages": [
+              {
+                "id": 0,
+                "text": "Winner: Elm Choir",
+                "source_start": 0,
+                "source_end": 17,
+                "section": "Awards 2024",
+                "source": "https://example.org/awards",
+                "locator": "row[1]",
+                "document_title": ""
+              },
+              {
+                "id": 1,
+                "text": "Winner: Elm Choir",
+                "source_start": 0,
+                "source_end": 17,
+                "section": "Awards 2023",
+                "source": "https://example.org/awards",
+                "locator": "row[0]",
+                "document_title": ""
+              }
+            ],
+            "proposed": "Elm Choir"
+          }
+        }
+      ]
+    },
+    {
+      "id": "semantic-forged-scope",
+      "passed": false,
+      "state": "supported",
+      "supported": true,
+      "calls": [
+        {
+          "path": "/verify",
+          "data": {
+            "question": "Who won the award in 2024?",
+            "starting_url": "",
+            "constraints": {
+              "kind": "text",
+              "year": "2024",
+              "as_of": "",
+              "versions": [],
+              "stable": false,
+              "cardinality": 1,
+              "target": "who won the award ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "candidates": [],
+            "passages": [
+              {
+                "id": 0,
+                "text": "Winner: Elm Choir",
+                "source_start": 0,
+                "source_end": 17,
+                "section": "Awards 2024",
+                "source": "https://example.org/awards",
+                "locator": "row[1]",
+                "document_title": ""
+              },
+              {
+                "id": 1,
+                "text": "Winner: Elm Choir",
+                "source_start": 0,
+                "source_end": 17,
+                "section": "Awards 2023",
+                "source": "https://example.org/awards",
+                "locator": "row[0]",
+                "document_title": ""
+              }
+            ],
+            "proposed": "Elm Choir"
+          }
+        }
+      ]
+    },
+    {
+      "id": "semantic-forged-field",
+      "passed": false,
+      "state": "supported",
+      "supported": true,
+      "calls": [
+        {
+          "path": "/verify",
+          "data": {
+            "question": "Who won the award in 2024?",
+            "starting_url": "",
+            "constraints": {
+              "kind": "text",
+              "year": "2024",
+              "as_of": "",
+              "versions": [],
+              "stable": false,
+              "cardinality": 1,
+              "target": "who won the award ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "candidates": [],
+            "passages": [
+              {
+                "id": 0,
+                "text": "Winner: Elm Choir",
+                "source_start": 0,
+                "source_end": 17,
+                "section": "Awards 2024",
+                "source": "https://example.org/awards",
+                "locator": "row[1]",
+                "document_title": ""
+              },
+              {
+                "id": 1,
+                "text": "Winner: Elm Choir",
+                "source_start": 0,
+                "source_end": 17,
+                "section": "Awards 2023",
+                "source": "https://example.org/awards",
+                "locator": "row[0]",
+                "document_title": ""
+              }
+            ],
+            "proposed": "Elm Choir"
+          }
+        }
+      ]
+    },
+    {
+      "id": "semantic-forged-locator",
+      "passed": true,
+      "state": "unbound_verification",
+      "supported": false,
+      "calls": []
+    },
+    {
+      "id": "semantic-empty-locator-scopes",
+      "passed": false,
+      "state": "unsupported",
+      "calls": [
+        {
+          "path": "/verify",
+          "data": {
+            "question": "Who won the award in 2024?",
+            "starting_url": "",
+            "constraints": {
+              "kind": "text",
+              "year": "2024",
+              "as_of": "",
+              "versions": [],
+              "stable": false,
+              "cardinality": 1,
+              "target": "who won the award ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "candidates": [],
+            "passages": [
+              {
+                "id": 0,
+                "text": "Winner: Elm Choir",
+                "source_start": 0,
+                "source_end": 17,
+                "section": "Awards 2023",
+                "source": "https://example.org/awards",
+                "locator": "",
+                "document_title": ""
+              }
+            ],
+            "proposed": "Elm Choir"
+          }
+        }
+      ]
+    }
+  ],
+  "after": [
+    {
+      "id": "selected-second-year",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "id": "selected-year-order-independent",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "id": "wrong-year-still-rejected",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "id": "forged-locator",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "id": "forged-structure",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "id": "forged-field_value",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "id": "forged-qualifiers",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "id": "forged-section",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "id": "forged-label",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "id": "forged-source",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "id": "errored-source",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "id": "legacy-unique",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "id": "legacy-missing-scope-cannot-bypass-year",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "id": "legacy-ambiguous",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "id": "ambiguous-qualifiers",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "id": "conflicting-page-instances",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "id": "identical-duplicate-record",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "id": "explicit-empty-locator",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "id": "members-selected-second-year",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "id": "members-forged-scope",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "id": "members-wrong-year",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "id": "http-forward",
+      "passed": true,
+      "answer": "Elm Choir",
+      "reason": "model_verified",
+      "calls": [
+        {
+          "path": "/select",
+          "data": {
+            "question": "Who won the award in 2024?",
+            "starting_url": "http://127.0.0.1:26913/source",
+            "constraints": {
+              "kind": "text",
+              "year": "2024",
+              "as_of": "",
+              "versions": [],
+              "stable": false,
+              "cardinality": 1,
+              "target": "who won the award ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "candidates": [],
+            "passages": [
+              {
+                "id": 0,
+                "text": "Winner: Elm Choir",
+                "source_start": 0,
+                "source_end": 17,
+                "section": "Awards 2024",
+                "source": "http://127.0.0.1:26913/source",
+                "locator": "inline[3]",
+                "document_title": "Awards 2023"
+              },
+              {
+                "id": 1,
+                "text": "Awards 2024",
+                "source_start": 0,
+                "source_end": 11,
+                "section": "Awards 2024",
+                "source": "http://127.0.0.1:26913/source",
+                "locator": "heading[2]",
+                "document_title": "Awards 2023"
+              },
+              {
+                "id": 2,
+                "text": "Winner: Elm Choir",
+                "source_start": 0,
+                "source_end": 17,
+                "section": "Awards 2023",
+                "source": "http://127.0.0.1:26913/source",
+                "locator": "inline[1]",
+                "document_title": "Awards 2023"
+              },
+              {
+                "id": 3,
+                "text": "Awards 2023",
+                "source_start": 0,
+                "source_end": 11,
+                "section": "Awards 2023",
+                "source": "http://127.0.0.1:26913/source",
+                "locator": "heading[0]",
+                "document_title": "Awards 2023"
+              }
+            ]
+          }
+        },
+        {
+          "path": "/verify",
+          "data": {
+            "question": "Who won the award in 2024?",
+            "starting_url": "http://127.0.0.1:26913/source",
+            "constraints": {
+              "kind": "text",
+              "year": "2024",
+              "as_of": "",
+              "versions": [],
+              "stable": false,
+              "cardinality": 1,
+              "target": "who won the award ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "candidates": [],
+            "passages": [
+              {
+                "id": 0,
+                "text": "Winner: Elm Choir",
+                "source_start": 0,
+                "source_end": 17,
+                "section": "Awards 2024",
+                "source": "http://127.0.0.1:26913/source",
+                "locator": "inline[3]",
+                "document_title": "Awards 2023"
+              },
+              {
+                "id": 1,
+                "text": "Awards 2024",
+                "source_start": 0,
+                "source_end": 11,
+                "section": "Awards 2024",
+                "source": "http://127.0.0.1:26913/source",
+                "locator": "heading[2]",
+                "document_title": "Awards 2023"
+              },
+              {
+                "id": 2,
+                "text": "Winner: Elm Choir",
+                "source_start": 0,
+                "source_end": 17,
+                "section": "Awards 2023",
+                "source": "http://127.0.0.1:26913/source",
+                "locator": "inline[1]",
+                "document_title": "Awards 2023"
+              },
+              {
+                "id": 3,
+                "text": "Awards 2023",
+                "source_start": 0,
+                "source_end": 11,
+                "section": "Awards 2023",
+                "source": "http://127.0.0.1:26913/source",
+                "locator": "heading[0]",
+                "document_title": "Awards 2023"
+              }
+            ],
+            "proposed": "Elm Choir"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http-reverse",
+      "passed": true,
+      "answer": "Elm Choir",
+      "reason": "model_verified",
+      "calls": [
+        {
+          "path": "/select",
+          "data": {
+            "question": "Who won the award in 2024?",
+            "starting_url": "http://127.0.0.1:26913/source",
+            "constraints": {
+              "kind": "text",
+              "year": "2024",
+              "as_of": "",
+              "versions": [],
+              "stable": false,
+              "cardinality": 1,
+              "target": "who won the award ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "candidates": [],
+            "passages": [
+              {
+                "id": 0,
+                "text": "Winner: Elm Choir",
+                "source_start": 0,
+                "source_end": 17,
+                "section": "Awards 2024",
+                "source": "http://127.0.0.1:26913/source",
+                "locator": "inline[1]",
+                "document_title": "Awards 2024"
+              },
+              {
+                "id": 1,
+                "text": "Awards 2024",
+                "source_start": 0,
+                "source_end": 11,
+                "section": "Awards 2024",
+                "source": "http://127.0.0.1:26913/source",
+                "locator": "heading[0]",
+                "document_title": "Awards 2024"
+              },
+              {
+                "id": 2,
+                "text": "Winner: Elm Choir",
+                "source_start": 0,
+                "source_end": 17,
+                "section": "Awards 2023",
+                "source": "http://127.0.0.1:26913/source",
+                "locator": "inline[3]",
+                "document_title": "Awards 2024"
+              },
+              {
+                "id": 3,
+                "text": "Awards 2023",
+                "source_start": 0,
+                "source_end": 11,
+                "section": "Awards 2023",
+                "source": "http://127.0.0.1:26913/source",
+                "locator": "heading[2]",
+                "document_title": "Awards 2024"
+              }
+            ]
+          }
+        },
+        {
+          "path": "/verify",
+          "data": {
+            "question": "Who won the award in 2024?",
+            "starting_url": "http://127.0.0.1:26913/source",
+            "constraints": {
+              "kind": "text",
+              "year": "2024",
+              "as_of": "",
+              "versions": [],
+              "stable": false,
+              "cardinality": 1,
+              "target": "who won the award ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "candidates": [],
+            "passages": [
+              {
+                "id": 0,
+                "text": "Winner: Elm Choir",
+                "source_start": 0,
+                "source_end": 17,
+                "section": "Awards 2024",
+                "source": "http://127.0.0.1:26913/source",
+                "locator": "inline[1]",
+                "document_title": "Awards 2024"
+              },
+              {
+                "id": 1,
+                "text": "Awards 2024",
+                "source_start": 0,
+                "source_end": 11,
+                "section": "Awards 2024",
+                "source": "http://127.0.0.1:26913/source",
+                "locator": "heading[0]",
+                "document_title": "Awards 2024"
+              },
+              {
+                "id": 2,
+                "text": "Winner: Elm Choir",
+                "source_start": 0,
+                "source_end": 17,
+                "section": "Awards 2023",
+                "source": "http://127.0.0.1:26913/source",
+                "locator": "inline[3]",
+                "document_title": "Awards 2024"
+              },
+              {
+                "id": 3,
+                "text": "Awards 2023",
+                "source_start": 0,
+                "source_end": 11,
+                "section": "Awards 2023",
+                "source": "http://127.0.0.1:26913/source",
+                "locator": "heading[2]",
+                "document_title": "Awards 2024"
+              }
+            ],
+            "proposed": "Elm Choir"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http-semantic-reject",
+      "passed": true,
+      "answer": "",
+      "reason": "model_no_evidence",
+      "calls": [
+        {
+          "path": "/select",
+          "data": {
+            "question": "Who won the award in 2024?",
+            "starting_url": "http://127.0.0.1:26913/source",
+            "constraints": {
+              "kind": "text",
+              "year": "2024",
+              "as_of": "",
+              "versions": [],
+              "stable": false,
+              "cardinality": 1,
+              "target": "who won the award ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "candidates": [],
+            "passages": [
+              {
+                "id": 0,
+                "text": "Winner: Elm Choir",
+                "source_start": 0,
+                "source_end": 17,
+                "section": "Awards 2024",
+                "source": "http://127.0.0.1:26913/source",
+                "locator": "inline[3]",
+                "document_title": "Awards 2023"
+              },
+              {
+                "id": 1,
+                "text": "Awards 2024",
+                "source_start": 0,
+                "source_end": 11,
+                "section": "Awards 2024",
+                "source": "http://127.0.0.1:26913/source",
+                "locator": "heading[2]",
+                "document_title": "Awards 2023"
+              },
+              {
+                "id": 2,
+                "text": "Winner: Elm Choir",
+                "source_start": 0,
+                "source_end": 17,
+                "section": "Awards 2023",
+                "source": "http://127.0.0.1:26913/source",
+                "locator": "inline[1]",
+                "document_title": "Awards 2023"
+              },
+              {
+                "id": 3,
+                "text": "Awards 2023",
+                "source_start": 0,
+                "source_end": 11,
+                "section": "Awards 2023",
+                "source": "http://127.0.0.1:26913/source",
+                "locator": "heading[0]",
+                "document_title": "Awards 2023"
+              }
+            ]
+          }
+        },
+        {
+          "path": "/verify",
+          "data": {
+            "question": "Who won the award in 2024?",
+            "starting_url": "http://127.0.0.1:26913/source",
+            "constraints": {
+              "kind": "text",
+              "year": "2024",
+              "as_of": "",
+              "versions": [],
+              "stable": false,
+              "cardinality": 1,
+              "target": "who won the award ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "candidates": [],
+            "passages": [
+              {
+                "id": 0,
+                "text": "Winner: Elm Choir",
+                "source_start": 0,
+                "source_end": 17,
+                "section": "Awards 2024",
+                "source": "http://127.0.0.1:26913/source",
+                "locator": "inline[3]",
+                "document_title": "Awards 2023"
+              },
+              {
+                "id": 1,
+                "text": "Awards 2024",
+                "source_start": 0,
+                "source_end": 11,
+                "section": "Awards 2024",
+                "source": "http://127.0.0.1:26913/source",
+                "locator": "heading[2]",
+                "document_title": "Awards 2023"
+              },
+              {
+                "id": 2,
+                "text": "Winner: Elm Choir",
+                "source_start": 0,
+                "source_end": 17,
+                "section": "Awards 2023",
+                "source": "http://127.0.0.1:26913/source",
+                "locator": "inline[1]",
+                "document_title": "Awards 2023"
+              },
+              {
+                "id": 3,
+                "text": "Awards 2023",
+                "source_start": 0,
+                "source_end": 11,
+                "section": "Awards 2023",
+                "source": "http://127.0.0.1:26913/source",
+                "locator": "heading[0]",
+                "document_title": "Awards 2023"
+              }
+            ],
+            "proposed": "Elm Choir"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http-wrong-year",
+      "passed": true,
+      "answer": "",
+      "reason": "model_evidence_rejected",
+      "calls": [
+        {
+          "path": "/select",
+          "data": {
+            "question": "Who won the award in 2024?",
+            "starting_url": "http://127.0.0.1:26913/source",
+            "constraints": {
+              "kind": "text",
+              "year": "2024",
+              "as_of": "",
+              "versions": [],
+              "stable": false,
+              "cardinality": 1,
+              "target": "who won the award ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "candidates": [],
+            "passages": [
+              {
+                "id": 0,
+                "text": "Winner: Elm Choir",
+                "source_start": 0,
+                "source_end": 17,
+                "section": "Awards 2024",
+                "source": "http://127.0.0.1:26913/source",
+                "locator": "inline[3]",
+                "document_title": "Awards 2023"
+              },
+              {
+                "id": 1,
+                "text": "Awards 2024",
+                "source_start": 0,
+                "source_end": 11,
+                "section": "Awards 2024",
+                "source": "http://127.0.0.1:26913/source",
+                "locator": "heading[2]",
+                "document_title": "Awards 2023"
+              },
+              {
+                "id": 2,
+                "text": "Winner: Elm Choir",
+                "source_start": 0,
+                "source_end": 17,
+                "section": "Awards 2023",
+                "source": "http://127.0.0.1:26913/source",
+                "locator": "inline[1]",
+                "document_title": "Awards 2023"
+              },
+              {
+                "id": 3,
+                "text": "Awards 2023",
+                "source_start": 0,
+                "source_end": 11,
+                "section": "Awards 2023",
+                "source": "http://127.0.0.1:26913/source",
+                "locator": "heading[0]",
+                "document_title": "Awards 2023"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "semantic-valid",
+      "passed": true,
+      "state": "supported",
+      "supported": true,
+      "calls": [
+        {
+          "path": "/verify",
+          "data": {
+            "question": "Who won the award in 2024?",
+            "starting_url": "",
+            "constraints": {
+              "kind": "text",
+              "year": "2024",
+              "as_of": "",
+              "versions": [],
+              "stable": false,
+              "cardinality": 1,
+              "target": "who won the award ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "candidates": [],
+            "passages": [
+              {
+                "id": 0,
+                "text": "Winner: Elm Choir",
+                "source_start": 0,
+                "source_end": 17,
+                "section": "Awards 2024",
+                "source": "https://example.org/awards",
+                "locator": "row[1]",
+                "document_title": ""
+              },
+              {
+                "id": 1,
+                "text": "Winner: Elm Choir",
+                "source_start": 0,
+                "source_end": 17,
+                "section": "Awards 2023",
+                "source": "https://example.org/awards",
+                "locator": "row[0]",
+                "document_title": ""
+              }
+            ],
+            "proposed": "Elm Choir"
+          }
+        }
+      ]
+    },
+    {
+      "id": "semantic-forged-scope",
+      "passed": true,
+      "state": "unbound_verification",
+      "supported": false,
+      "calls": []
+    },
+    {
+      "id": "semantic-forged-field",
+      "passed": true,
+      "state": "unbound_verification",
+      "supported": false,
+      "calls": []
+    },
+    {
+      "id": "semantic-forged-locator",
+      "passed": true,
+      "state": "unbound_verification",
+      "supported": false,
+      "calls": []
+    },
+    {
+      "id": "semantic-empty-locator-scopes",
+      "passed": true,
+      "state": "supported",
+      "calls": [
+        {
+          "path": "/verify",
+          "data": {
+            "question": "Who won the award in 2024?",
+            "starting_url": "",
+            "constraints": {
+              "kind": "text",
+              "year": "2024",
+              "as_of": "",
+              "versions": [],
+              "stable": false,
+              "cardinality": 1,
+              "target": "who won the award ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "candidates": [],
+            "passages": [
+              {
+                "id": 0,
+                "text": "Winner: Elm Choir",
+                "source_start": 0,
+                "source_end": 17,
+                "section": "Awards 2024",
+                "source": "https://example.org/awards",
+                "locator": "",
+                "document_title": ""
+              },
+              {
+                "id": 1,
+                "text": "Winner: Elm Choir",
+                "source_start": 0,
+                "source_end": 17,
+                "section": "Awards 2023",
+                "source": "https://example.org/awards",
+                "locator": "",
+                "document_title": ""
+              }
+            ],
+            "proposed": "Elm Choir"
+          }
+        }
+      ]
+    }
+  ],
+  "before_passed": 22,
+  "after_passed": 30,
+  "total": 30,
+  "torch_imported": false,
+  "diagnostic_sha256": "e3230339da3ac49d359e1c5459599a6fde4da7807512142d78c3259eb5795d05",
+  "production_sha256": {
+    "agent/__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41",
+    "agent/browser.py": "53ac9a99f3afcefcdb197cd9b2296c2d380910a782178fadb65235e548efc353",
+    "agent/candidates.py": "db8ed80a2e58facc287fcb7d08dc83a2370d990671f28883524d7bf92e56da70",
+    "agent/cardinals.py": "54bcfb476ee7f5e1d21ec7d2763caa34fc4d8f3df0c16812aedc5445044099a3",
+    "agent/challenges.py": "b6f51c720f332671725e08127a5d1c163ca0542d2a550bf3c980a6d4c49bf6a1",
+    "agent/crates_history.py": "8644c651c54fffecf5347c2408554948a8b4b59613830e9c67bf0caea3ddb81a",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/engine.py": "0b80b3b7516ce700fb952a38bcefd5b818fa1edf50cadc65438ecfe7f4a1bb2f",
+    "agent/evidence.py": "9eebc1c4afcaf2ce56863ace3fa603866b68a252aaf9e60b1115823c2196af8f",
+    "agent/evidence_binding.py": "2151ff22497bf084a21d4ca4d476f3a51a2d36e4cf51b3e3030a63adadef030d",
+    "agent/family_counts.py": "1d86edd46f3ece8477539bca20bacba68dbe164019e77e5269f3894791715cea",
+    "agent/familysearch.py": "682c5ed3afa4c1186b78c74cd78d742fa9f2128e4f404e58085cb1cce73fdb81",
+    "agent/field_groups.py": "52a54989253c59e9836dec4aaec4944b688376e79548b9336887558a454e9162",
+    "agent/github_history.py": "26d3a2655f9d33ef9fb8aead1b6031c4b1b2fe0775c39824b5ae6f3ecad7f071",
+    "agent/html_paragraphs.py": "fd2efd7286fd9bff67a9439a2e864ad729f90b28404316f3fb83cc2657053595",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/license_expressions.py": "aed3ee70c0253e00ea81bebd6c9719d4c643cf7c48df8146d94b0fb59978c000",
+    "agent/literature.py": "9b871500ab1ebaf88e8fca2c70bd7ade7eb81774412fa85a1f4be7d2fb06263f",
+    "agent/magnitudes.py": "bf4a970386bd25332b813e0aab91dd28cda05047ca5af5d9e7b861760f5942d7",
+    "agent/members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "agent/model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+    "agent/model_client.py": "07f16cb173444af03917c3548456a80bf7eb3504d08b6cb5e5b4bbaba5ad1703",
+    "agent/model_protocol.py": "e8d4b86e0727be8c7db621f9205741a0e1e65ec0f3688fea5b090a835251a2a7",
+    "agent/model_server.py": "5e68ed9d8df5d3a264b0fda1a085a79daaabd4d56977b651a9c1764f5808f570",
+    "agent/navigation.py": "0f849c0c570720114c45c14b0a5286fe409e5d26c2945fdc9f6c1a6922bb7718",
+    "agent/network.py": "cf1fa8c64a6d0d9bca14ec2f60b4c0aebc3e0d469c3cb715627f95e553dad588",
+    "agent/normalize.py": "93f9147f5b09f8567ddac860e6b37b13f1f1d6c99bbd3c9c9a7da402d5dc64fa",
+    "agent/number_atoms.py": "0fc737af6f98af5b962cf0656b28a7a3b037e4113731b460fb63a2f5a22eb768",
+    "agent/output.py": "b983ab2efe31707b1c974344a32dc4b40b708541257695de89cac9e343b073eb",
+    "agent/oyez.py": "8475f248d78925522e0742b13518be2c4f4db11eae0d8391a8002da7d4e3b67d",
+    "agent/parser.py": "e2855a2f49ccbcde4fa860200497eb814b56ba17967cfa415152ccee903cd2f4",
+    "agent/phones.py": "88ee7806a9e69811e173228074aea714b4bb0e2c40abf5541887478b8d6cf7bb",
+    "agent/planner.py": "1514fb67d20b061da8116e3086b315fdc5f3d819613330098ab9d948844a4211",
+    "agent/population.py": "d134655302bc76a4e58ac45e7f2d20fc73ed5cefce26f63f67b58cc25d3bc504",
+    "agent/processes.py": "677c4372b40d1da0ffc0cf4120ca5b6be2fcf6b6c30f6ec17d0d8fae19e198c1",
+    "agent/proofs.py": "17a1bbbe2664fc5cab20886eb658d0dfba26908e1eeaaa99496ed3572b843247",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/registry_history.py": "eb6c41b0b3c92192cecc23c7f4ba147b57bb99be8e3990ae77ed0e7feaecd85b",
+    "agent/request_pacing.py": "dc9af13c9c4af1c6555442ba9adeb7824a63685c676924d1fbdd20318e23f274",
+    "agent/resolvers.py": "990a9097481cce6b2b90805aedb7f5a6996b7caad290fbf44424bf7d93101866",
+    "agent/search.py": "64ebf971ea4dd0f8a34bc0bdd2d3678f54edab80d6112328fefeede84687ec55",
+    "agent/selector.py": "c6783627a8463d93ff212a08ab9131a9e2b872d204c025378caf8f51c41a88bf",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/source_excerpts.py": "aeb44460c54f4ea7301fe6917e695fcdb20d6c0a63a9f025936ac67f64764f4c",
+    "agent/table_scales.py": "7cdd8bedf0987a819b5ff84260222a051475cb91feffc75f63915b853f812acd",
+    "agent/temporal.py": "f520ada0a6ea9f810225887080a495a4a47a0371cd6f613a9c5648587509012a",
+    "agent/types.py": "ff29b729032273366c64cde113e425c34084b4ad7450ad48a0c2dd3c82b878e8",
+    "agent/urls.py": "6bbf58adf3c55cf3787edf4b6607a7db8eea987f0c02dd6cdfea48f6c38e031f",
+    "agent/worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f"
+  },
+  "wins": [
+    "selected-second-year",
+    "ambiguous-qualifiers",
+    "members-selected-second-year",
+    "http-forward",
+    "http-semantic-reject",
+    "semantic-forged-scope",
+    "semantic-forged-field",
+    "semantic-empty-locator-scopes"
+  ],
+  "losses": []
+}

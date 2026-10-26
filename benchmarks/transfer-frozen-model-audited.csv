@@ -1,0 +1,21 @@
+id,family,answer,sources,expected_answer,expected_source,answer_ok,source_ok,joint_ok,seconds,error,failure_category,malformed_output
+transfer-01,succession,Elin Costa,['http://127.0.0.1:36926/transfer-frozen/1-ead23e1abb'],['Elin Costa'],http://127.0.0.1:36926/transfer-frozen/1-ead23e1abb,True,True,True,1.2480960999964736,,,False
+transfer-02,absent-location,,[],[''],http://127.0.0.1:36926/transfer-frozen/2-461e999bbb,True,True,True,1.0979245000053197,,,False
+transfer-03,relative-time,6.0.1,['http://127.0.0.1:36926/transfer-frozen/3-88eae51164'],['6.0.1'],http://127.0.0.1:36926/transfer-frozen/3-88eae51164,True,True,True,0.005859400029294193,,,False
+transfer-04,scope-weight,285 g,['http://127.0.0.1:36926/transfer-frozen/4-e81ae6ef04'],['285 g'],http://127.0.0.1:36926/transfer-frozen/4-e81ae6ef04,True,True,True,1.3317009000456892,,,False
+transfer-05,electrical,4800 mAh,['http://127.0.0.1:36926/transfer-frozen/5-87a38bd4b5'],['4800 mAh'],http://127.0.0.1:36926/transfer-frozen/5-87a38bd4b5,True,True,True,1.4023140000062995,,,False
+transfer-06,missing-field,,[],[''],http://127.0.0.1:36926/transfer-frozen/6-335549817f,True,True,True,0.6786918999860063,,,False
+transfer-07,conflict,,[],[''],http://127.0.0.1:36926/transfer-frozen/7-42bb2bed6d,True,True,True,0.8218305000336841,,,False
+transfer-08,injection,46,['http://127.0.0.1:36926/transfer-frozen/8-2e51c4425f'],['46'],http://127.0.0.1:36926/transfer-frozen/8-2e51c4425f,True,True,True,1.2765670000226237,,,False
+transfer-09,json-null,null,['http://127.0.0.1:36926/transfer-frozen/9-56ee14e4e6'],['null'],http://127.0.0.1:36926/transfer-frozen/9-56ee14e4e6,True,True,True,1.230238799995277,,,False
+transfer-10,json-literal,1.20e-7,['http://127.0.0.1:36926/transfer-frozen/10-1ba76df28a'],['1.20e-7'],http://127.0.0.1:36926/transfer-frozen/10-1ba76df28a,True,True,True,1.4169457000098191,,,False
+transfer-11,json-boolean,false,['http://127.0.0.1:36926/transfer-frozen/11-e79fc80157'],['false'],http://127.0.0.1:36926/transfer-frozen/11-e79fc80157,True,True,True,1.140375100017991,,,False
+transfer-12,namespace,dispatch@tamar.example,['http://127.0.0.1:36926/transfer-frozen/12-402c31235b'],['dispatch@tamar.example'],http://127.0.0.1:36926/transfer-frozen/12-402c31235b,True,True,True,1.2721099999616854,,,False
+transfer-13,phone,+358 9 555 0137,['http://127.0.0.1:36926/transfer-frozen/13-00614309d7'],['+358 9 555 0137'],http://127.0.0.1:36926/transfer-frozen/13-00614309d7,True,True,True,1.8019429999985732,,,False
+transfer-14,currency,EUR 67,['http://127.0.0.1:36926/transfer-frozen/14-3d7e3c25ba'],['EUR 67'],http://127.0.0.1:36926/transfer-frozen/14-3d7e3c25ba,True,True,True,1.2841792000108398,,,False
+transfer-15,first-author,Sofia Mendes,['http://127.0.0.1:36926/transfer-frozen/15-3cb5e78fd3'],['Sofia Mendes'],http://127.0.0.1:36926/transfer-frozen/15-3cb5e78fd3,True,True,True,1.306000699987635,,,False
+transfer-16,signature,True,['http://127.0.0.1:36926/transfer-frozen/16-e2069babba'],['True'],http://127.0.0.1:36926/transfer-frozen/16-e2069babba,True,True,True,0.0026085000135935843,,,False
+transfer-17,visibility,NEW-42,['http://127.0.0.1:36926/transfer-frozen/17-89b47cd8fc'],['NEW-42'],http://127.0.0.1:36926/transfer-frozen/17-89b47cd8fc,True,True,True,1.2066904000239447,,,False
+transfer-18,identifier,128,['http://127.0.0.1:36926/transfer-frozen/18-0fdf8bb00a'],['128'],http://127.0.0.1:36926/transfer-frozen/18-0fdf8bb00a,True,True,True,1.2145415999693796,,,False
+transfer-19,citation,admissions@fir.example,['http://127.0.0.1:36926/transfer-frozen/19-93561d4b58'],['admissions@fir.example'],http://127.0.0.1:36926/transfer-frozen/19-93561d4b58,True,True,True,1.2809508999926038,,,False
+transfer-20,title,Paths Through Quiet Systems,['http://127.0.0.1:36926/transfer-frozen/20-2c0e13df1e'],['Paths Through Quiet Systems'],http://127.0.0.1:36926/transfer-frozen/20-2c0e13df1e,True,True,True,1.3051656000316143,,,False

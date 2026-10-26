@@ -1,0 +1,548 @@
+{
+  "scope": "CPU-only explicit inline labels and actual selector payload visibility.\n\nNo model endpoint, GPU, Chromium or public network is used. The observed\nfull-name passage still lacks the local birth-year witness required by the\nquestion, so visibility is not counted as a correct verified answer.\n",
+  "baseline_revision": "5a59ae97f924d772e65ad3db7ce331c1feb1b298",
+  "baseline_source_sha256": {
+    "agent/engine.py": "01464cb276814f2d7c845c269da2522c285a7a7e28051abd7e36ad0ec62b41ff",
+    "agent/types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent/planner.py": "7f6277fe3431951f068059756c8ed66fbed68f2105355e060ff48e6ed767fa44",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "agent/normalize.py": "05e48fa0be8384aa656bf1280ba0be44545efa51b7d4451f0716d836d39a1973",
+    "agent/network.py": "c37ecb5b4b0fba4fac737954eda24952059922ed620c94b99bcb17daed8c5155",
+    "agent/urls.py": "3a6b8a380f6d7966f1f79b97ccdedab5a5959ffbe5a1aa244e3477a0fe6110f4",
+    "agent/parser.py": "5c9dc7a42b332be8e9dc1c87a8769f14164c559c2e8599b5d9dc15f4e7d1995b",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/challenges.py": "b6f51c720f332671725e08127a5d1c163ca0542d2a550bf3c980a6d4c49bf6a1",
+    "agent/resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent/search.py": "6a4173e80dbe0e178056de5d0a4dd3d54560d140f0b3ffbb52f488566732636b",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/candidates.py": "16dd310d36390f5cb0323f0d81d7630542b116693dd0ee0b1e9fe015a80cb1d0",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/evidence.py": "09da13b3f2fb17de30734c44ddad1c89b856ec682ff2e88a78a57773409c0089",
+    "agent/selector.py": "a693a62781fcb76dd11bc6d29eb19770b48dc7e2e29bd7619cc189b62bf70e1b",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+    "agent/proofs.py": "0d7ae78df6ea9949c29f33c7b817dda352c75b3d99c960c3e987e37c7401faab",
+    "agent/oyez.py": "8475f248d78925522e0742b13518be2c4f4db11eae0d8391a8002da7d4e3b67d"
+  },
+  "before": [
+    {
+      "id": "span",
+      "passed": false,
+      "actual": [],
+      "expected": [
+        [
+          "Full Name",
+          "Rowan Vale"
+        ]
+      ]
+    },
+    {
+      "id": "bold",
+      "passed": false,
+      "actual": [],
+      "expected": [
+        [
+          "Access Code",
+          "R8"
+        ]
+      ]
+    },
+    {
+      "id": "strong",
+      "passed": false,
+      "actual": [],
+      "expected": [
+        [
+          "Departure",
+          "17:35"
+        ]
+      ]
+    },
+    {
+      "id": "formatted-value",
+      "passed": false,
+      "actual": [],
+      "expected": [
+        [
+          "Full Name",
+          "Rowan Vale"
+        ]
+      ]
+    },
+    {
+      "id": "comment-before",
+      "passed": false,
+      "actual": [],
+      "expected": [
+        [
+          "Full Name",
+          "Rowan Vale"
+        ]
+      ]
+    },
+    {
+      "id": "hidden-before",
+      "passed": false,
+      "actual": [],
+      "expected": [
+        [
+          "Full Name",
+          "Rowan Vale"
+        ]
+      ]
+    },
+    {
+      "id": "hidden-value",
+      "passed": false,
+      "actual": [],
+      "expected": [
+        [
+          "Access Code",
+          "R8"
+        ]
+      ]
+    },
+    {
+      "id": "not-leading",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "id": "not-marked",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "id": "no-colon",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "id": "inline-formatting",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "id": "empty-label",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "id": "empty-value",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "id": "long-value",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "id": "long-label",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "id": "multiple-fields",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "id": "line-break",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "id": "div-not-paragraph",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "id": "actual-profile-payload",
+      "passed": false,
+      "complete_field_in_first_eight": false,
+      "position": 11,
+      "local_temporal_witness_still_required": true,
+      "passages": [
+        {
+          "id": 0,
+          "text": "name: J. Guzm\u00e1n | $ { @context: https://schema.org | @type: Person | name: J. Guzm\u00e1n | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+          "section": "$ { @context: https://schema.org | @type: Person | name: J. Guzm\u00e1n | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+          "source": "https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/",
+          "locator": "script[13]/name",
+          "document_title": "J. Guzm\u00e1n - Soccer Player Profile & Career Stats"
+        },
+        {
+          "id": 1,
+          "text": "nationality.name: Colombia | nationality { @type: Country | name: Colombia } | parent $ { @context: https://schema.org | @type: Person | name: J. Guzm\u00e1n | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+          "section": "nationality { @type: Country | name: Colombia } | parent $ { @context: https://schema.org | @type: Person | name: J. Guzm\u00e1n | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+          "source": "https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/",
+          "locator": "script[13]/nationality.name",
+          "document_title": "J. Guzm\u00e1n - Soccer Player Profile & Career Stats"
+        },
+        {
+          "id": 2,
+          "text": "member Of.name: Patriotas Boyac\u00e1 | memberOf { @type: SportsTeam | name: Patriotas Boyac\u00e1 } | parent $ { @context: https://schema.org | @type: Person | name: J. Guzm\u00e1n | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+          "section": "memberOf { @type: SportsTeam | name: Patriotas Boyac\u00e1 } | parent $ { @context: https://schema.org | @type: Person | name: J. Guzm\u00e1n | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+          "source": "https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/",
+          "locator": "script[13]/memberOf.name",
+          "document_title": "J. Guzm\u00e1n - Soccer Player Profile & Career Stats"
+        },
+        {
+          "id": 3,
+          "text": "height: 173 cm | $ { @context: https://schema.org | @type: Person | name: J. Guzm\u00e1n | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+          "section": "$ { @context: https://schema.org | @type: Person | name: J. Guzm\u00e1n | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+          "source": "https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/",
+          "locator": "script[13]/height",
+          "document_title": "J. Guzm\u00e1n - Soccer Player Profile & Career Stats"
+        },
+        {
+          "id": 4,
+          "text": "birth Date: 31/08/1988 | $ { @context: https://schema.org | @type: Person | name: J. Guzm\u00e1n | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+          "section": "$ { @context: https://schema.org | @type: Person | name: J. Guzm\u00e1n | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+          "source": "https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/",
+          "locator": "script[13]/birthDate",
+          "document_title": "J. Guzm\u00e1n - Soccer Player Profile & Career Stats"
+        },
+        {
+          "id": 5,
+          "text": "url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | $ { @context: https://schema.org | @type: Person | name: J. Guzm\u00e1n | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+          "section": "$ { @context: https://schema.org | @type: Person | name: J. Guzm\u00e1n | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+          "source": "https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/",
+          "locator": "script[13]/url",
+          "document_title": "J. Guzm\u00e1n - Soccer Player Profile & Career Stats"
+        },
+        {
+          "id": 6,
+          "text": "J. Guzm\u00e1n is a soccer player from Colombia, born on 31/08/1988. J. Guzm\u00e1n is playing in a Midfielder position. J. Guzm\u00e1n has been playing for teams like Patriotas Boyac\u00e1, Charlotte Eagles. Check below for J. Guzm\u00e1n player profile, career statistics and latest football matches.",
+          "section": "",
+          "source": "https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/",
+          "locator": "block[14]",
+          "document_title": "J. Guzm\u00e1n - Soccer Player Profile & Career Stats"
+        },
+        {
+          "id": 7,
+          "text": "Age: 38 (Aug 31, 1988)",
+          "section": "Juan Guzm\u00e1n",
+          "source": "https://en.soccerwiki.org/player.php?pid=85733",
+          "locator": "p[5]:0",
+          "document_title": "Juan Guzm\u00e1n - Soccer Wiki: for the fans, by the fans"
+        }
+      ],
+      "source_capture_sha256": "4df2da7e9962b9bee6f0164c84cf110e28662daa6de6b45bb56594278f0d9e13"
+    }
+  ],
+  "after": [
+    {
+      "id": "span",
+      "passed": true,
+      "actual": [
+        [
+          "Full Name",
+          "Rowan Vale"
+        ]
+      ],
+      "expected": [
+        [
+          "Full Name",
+          "Rowan Vale"
+        ]
+      ]
+    },
+    {
+      "id": "bold",
+      "passed": true,
+      "actual": [
+        [
+          "Access Code",
+          "R8"
+        ]
+      ],
+      "expected": [
+        [
+          "Access Code",
+          "R8"
+        ]
+      ]
+    },
+    {
+      "id": "strong",
+      "passed": true,
+      "actual": [
+        [
+          "Departure",
+          "17:35"
+        ]
+      ],
+      "expected": [
+        [
+          "Departure",
+          "17:35"
+        ]
+      ]
+    },
+    {
+      "id": "formatted-value",
+      "passed": true,
+      "actual": [
+        [
+          "Full Name",
+          "Rowan Vale"
+        ]
+      ],
+      "expected": [
+        [
+          "Full Name",
+          "Rowan Vale"
+        ]
+      ]
+    },
+    {
+      "id": "comment-before",
+      "passed": true,
+      "actual": [
+        [
+          "Full Name",
+          "Rowan Vale"
+        ]
+      ],
+      "expected": [
+        [
+          "Full Name",
+          "Rowan Vale"
+        ]
+      ]
+    },
+    {
+      "id": "hidden-before",
+      "passed": true,
+      "actual": [
+        [
+          "Full Name",
+          "Rowan Vale"
+        ]
+      ],
+      "expected": [
+        [
+          "Full Name",
+          "Rowan Vale"
+        ]
+      ]
+    },
+    {
+      "id": "hidden-value",
+      "passed": true,
+      "actual": [
+        [
+          "Access Code",
+          "R8"
+        ]
+      ],
+      "expected": [
+        [
+          "Access Code",
+          "R8"
+        ]
+      ]
+    },
+    {
+      "id": "not-leading",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "id": "not-marked",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "id": "no-colon",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "id": "inline-formatting",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "id": "empty-label",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "id": "empty-value",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "id": "long-value",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "id": "long-label",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "id": "multiple-fields",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "id": "line-break",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "id": "div-not-paragraph",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "id": "actual-profile-payload",
+      "passed": true,
+      "complete_field_in_first_eight": true,
+      "position": 5,
+      "local_temporal_witness_still_required": true,
+      "passages": [
+        {
+          "id": 0,
+          "text": "Full Name: Juan Pablo Guzm\u00e1n Perd\u00f3mo | Nationality: Colombia | Date of Birth: 31/08/1988 | Age: 34 | Country of Birth: Colombia | Place of Birth: Bogot\u00e1 | Pos: Midfielder | Height: 173 cm | Weight: 70 kg | Last Updated: Jul 27, 2026",
+          "section": "J. Guzm\u00e1n - Soccer Player Profile & Career Stats",
+          "source": "https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/",
+          "locator": "fieldgroup[15]/0",
+          "document_title": "J. Guzm\u00e1n - Soccer Player Profile & Career Stats"
+        },
+        {
+          "id": 1,
+          "text": "name: J. Guzm\u00e1n | $ { @context: https://schema.org | @type: Person | name: J. Guzm\u00e1n | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+          "section": "$ { @context: https://schema.org | @type: Person | name: J. Guzm\u00e1n | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+          "source": "https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/",
+          "locator": "script[13]/name",
+          "document_title": "J. Guzm\u00e1n - Soccer Player Profile & Career Stats"
+        },
+        {
+          "id": 2,
+          "text": "nationality.name: Colombia | nationality { @type: Country | name: Colombia } | parent $ { @context: https://schema.org | @type: Person | name: J. Guzm\u00e1n | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+          "section": "nationality { @type: Country | name: Colombia } | parent $ { @context: https://schema.org | @type: Person | name: J. Guzm\u00e1n | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+          "source": "https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/",
+          "locator": "script[13]/nationality.name",
+          "document_title": "J. Guzm\u00e1n - Soccer Player Profile & Career Stats"
+        },
+        {
+          "id": 3,
+          "text": "member Of.name: Patriotas Boyac\u00e1 | memberOf { @type: SportsTeam | name: Patriotas Boyac\u00e1 } | parent $ { @context: https://schema.org | @type: Person | name: J. Guzm\u00e1n | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+          "section": "memberOf { @type: SportsTeam | name: Patriotas Boyac\u00e1 } | parent $ { @context: https://schema.org | @type: Person | name: J. Guzm\u00e1n | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+          "source": "https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/",
+          "locator": "script[13]/memberOf.name",
+          "document_title": "J. Guzm\u00e1n - Soccer Player Profile & Career Stats"
+        },
+        {
+          "id": 4,
+          "text": "Full Name: Juan Pablo Guzm\u00e1n Perd\u00f3mo",
+          "section": "Juan Guzm\u00e1n",
+          "source": "https://en.soccerwiki.org/player.php?pid=85733",
+          "locator": "inline[1]",
+          "document_title": "Juan Guzm\u00e1n - Soccer Wiki: for the fans, by the fans"
+        },
+        {
+          "id": 5,
+          "text": "height: 173 cm | $ { @context: https://schema.org | @type: Person | name: J. Guzm\u00e1n | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+          "section": "$ { @context: https://schema.org | @type: Person | name: J. Guzm\u00e1n | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+          "source": "https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/",
+          "locator": "script[13]/height",
+          "document_title": "J. Guzm\u00e1n - Soccer Player Profile & Career Stats"
+        },
+        {
+          "id": 6,
+          "text": "birth Date: 31/08/1988 | $ { @context: https://schema.org | @type: Person | name: J. Guzm\u00e1n | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+          "section": "$ { @context: https://schema.org | @type: Person | name: J. Guzm\u00e1n | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+          "source": "https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/",
+          "locator": "script[13]/birthDate",
+          "document_title": "J. Guzm\u00e1n - Soccer Player Profile & Career Stats"
+        },
+        {
+          "id": 7,
+          "text": "url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | $ { @context: https://schema.org | @type: Person | name: J. Guzm\u00e1n | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+          "section": "$ { @context: https://schema.org | @type: Person | name: J. Guzm\u00e1n | url: https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/ | birthDate: 31/08/1988 | height: 173 cm }",
+          "source": "https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/",
+          "locator": "script[13]/url",
+          "document_title": "J. Guzm\u00e1n - Soccer Player Profile & Career Stats"
+        }
+      ],
+      "source_capture_sha256": "4df2da7e9962b9bee6f0164c84cf110e28662daa6de6b45bb56594278f0d9e13"
+    }
+  ],
+  "before_passed": 11,
+  "after_passed": 19,
+  "total": 19,
+  "wins": [
+    "span",
+    "bold",
+    "strong",
+    "formatted-value",
+    "comment-before",
+    "hidden-before",
+    "hidden-value",
+    "actual-profile-payload"
+  ],
+  "losses": [],
+  "production_sha256": {
+    "agent/browser.py": "53ac9a99f3afcefcdb197cd9b2296c2d380910a782178fadb65235e548efc353",
+    "agent/candidates.py": "c55cd074f50d1b0c944cf5552bd604caf4b313bada23accd73674d5d1d93d116",
+    "agent/challenges.py": "b6f51c720f332671725e08127a5d1c163ca0542d2a550bf3c980a6d4c49bf6a1",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/engine.py": "01464cb276814f2d7c845c269da2522c285a7a7e28051abd7e36ad0ec62b41ff",
+    "agent/evidence.py": "89266d8a71e4bc17f735e29a4c8ec7c43c8ca7585332186456f3bb7b547d59e4",
+    "agent/field_groups.py": "31f5a3a1dda229474cc7155988ca1b68caa37dce9b311efc834c194b4a9140b7",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "agent/model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+    "agent/model_server.py": "8d326a696942d259697a6fba8586441bbbe4874042ea900c6d7788a2a0e9fd22",
+    "agent/navigation.py": "0f849c0c570720114c45c14b0a5286fe409e5d26c2945fdc9f6c1a6922bb7718",
+    "agent/network.py": "def1be3752f81423c313c2dfa83f6703ee063d7e98652cf0d816b423d0e2d9cb",
+    "agent/normalize.py": "05e48fa0be8384aa656bf1280ba0be44545efa51b7d4451f0716d836d39a1973",
+    "agent/output.py": "b983ab2efe31707b1c974344a32dc4b40b708541257695de89cac9e343b073eb",
+    "agent/oyez.py": "8475f248d78925522e0742b13518be2c4f4db11eae0d8391a8002da7d4e3b67d",
+    "agent/parser.py": "782bebc6fa89a4869ca007da385cbfc8dfed8102b4600584224e94fc702957f1",
+    "agent/planner.py": "8a617d26e724e8ebc5e604892e867ebcc9e417aa97cbd7e0feda4954cd5a1d2b",
+    "agent/processes.py": "677c4372b40d1da0ffc0cf4120ca5b6be2fcf6b6c30f6ec17d0d8fae19e198c1",
+    "agent/proofs.py": "0d7ae78df6ea9949c29f33c7b817dda352c75b3d99c960c3e987e37c7401faab",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent/search.py": "28e2454682bc8af4ef10b06f62b66117d39194fddc9ec218b9bc82cad96767fd",
+    "agent/selector.py": "be7c0fce11c10921d5cd4e3d1072d5a2ca5a62f1c328730384d19b0fecd19566",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent/urls.py": "3a6b8a380f6d7966f1f79b97ccdedab5a5959ffbe5a1aa244e3477a0fe6110f4",
+    "agent/worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f",
+    "agent/__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41"
+  }
+}

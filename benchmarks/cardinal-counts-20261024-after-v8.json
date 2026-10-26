@@ -1,0 +1,1116 @@
+{
+  "scope": "Source-bound English cardinal count controls, CPU/loopback HTTP only.\n\nAuthored related controls plus one immutable exposed source. Not a model or\nunseen-question score. No public requests or model/tokenizer loads.\n",
+  "baseline": null,
+  "diagnostic_sha256": "8d75bf55a86de2b6a137dc61069727beeeaf8360b55ba920c7c585f387623b0b",
+  "source_hashes": {
+    "agent/cardinals.py": "0d514e6c768335b30eb93671734ff5d96472e04a8ae3d58d09d0cddf7e94e951",
+    "agent/candidates.py": "058643a7cb99eeea612965c3e5826cc3176d92f14e4812eeb0a8f0403a8f273f",
+    "agent/selector.py": "4640b020f8702d7deb8cc481a9809b44bdde4821f6501f9cd743c6d55d621b32",
+    "agent/model_protocol.py": "459849da583e26541668e7bb27b71b6d15f8cc55211fb8e664a0877432aad852",
+    "agent/population.py": "89091e1ed82c0f003665a489ca079e39585abf805a3844615e44561bf11b656d",
+    "agent/model_server.py": "06f87683306854eab91d4607089d2e85187b6cc25ed858d52cc5af9e92655972",
+    "agent/parser.py": "1787ab648446436b3de0d1555cb9ff2528c1ca4bf23296bcbc0becc0ca823cda"
+  },
+  "rows": [
+    {
+      "id": "bound-zero",
+      "passed": true,
+      "verified": true,
+      "candidates": [
+        [
+          "zero",
+          "0"
+        ]
+      ]
+    },
+    {
+      "id": "bound-four",
+      "passed": true,
+      "verified": true,
+      "candidates": [
+        [
+          "four",
+          "4"
+        ]
+      ]
+    },
+    {
+      "id": "bound-nineteen",
+      "passed": true,
+      "verified": true,
+      "candidates": [
+        [
+          "nineteen",
+          "19"
+        ]
+      ]
+    },
+    {
+      "id": "bound-twenty-one",
+      "passed": true,
+      "verified": true,
+      "candidates": [
+        [
+          "twenty-one",
+          "21"
+        ]
+      ]
+    },
+    {
+      "id": "bound-thirty two",
+      "passed": true,
+      "verified": true,
+      "candidates": [
+        [
+          "thirty two",
+          "32"
+        ]
+      ]
+    },
+    {
+      "id": "bound-one hundred",
+      "passed": true,
+      "verified": true,
+      "candidates": [
+        [
+          "one hundred",
+          "100"
+        ]
+      ]
+    },
+    {
+      "id": "bound-one hundred and five",
+      "passed": true,
+      "verified": true,
+      "candidates": [
+        [
+          "one hundred and five",
+          "105"
+        ]
+      ]
+    },
+    {
+      "id": "bound-two thousand three hundred and forty-one",
+      "passed": true,
+      "verified": true,
+      "candidates": [
+        [
+          "two thousand three hundred and forty-one",
+          "2341"
+        ]
+      ]
+    },
+    {
+      "id": "bound-one million two hundred thousand",
+      "passed": true,
+      "verified": true,
+      "candidates": [
+        [
+          "one million two hundred thousand",
+          "1200000"
+        ]
+      ]
+    },
+    {
+      "id": "bound-a hundred",
+      "passed": true,
+      "verified": true,
+      "candidates": [
+        [
+          "a hundred",
+          "100"
+        ]
+      ]
+    },
+    {
+      "id": "bound-Twenty-One",
+      "passed": true,
+      "verified": true,
+      "candidates": [
+        [
+          "Twenty-One",
+          "21"
+        ]
+      ]
+    },
+    {
+      "id": "bound-twenty\u2011one",
+      "passed": true,
+      "verified": true,
+      "candidates": [
+        [
+          "twenty\u2011one",
+          "21"
+        ]
+      ]
+    },
+    {
+      "id": "bound-one thousand, two hundred and three",
+      "passed": true,
+      "verified": true,
+      "candidates": [
+        [
+          "one thousand, two hundred and three",
+          "1203"
+        ]
+      ]
+    },
+    {
+      "id": "bound-one billion and two million",
+      "passed": true,
+      "verified": true,
+      "candidates": [
+        [
+          "one billion and two million",
+          "1002000000"
+        ]
+      ]
+    },
+    {
+      "id": "bound-nine hundred and ninety-nine trillion nine hundred and ninety-nine billion nine hundred and ninety-nine million nine hundred and ninety-nine thousand nine hundred and ninety-nine",
+      "passed": true,
+      "verified": true,
+      "candidates": [
+        [
+          "nine hundred and ninety-nine trillion nine hundred and ninety-nine billion nine hundred and ninety-nine million nine hundred and ninety-nine thousand nine hundred and ninety-nine",
+          "999999999999999"
+        ]
+      ]
+    },
+    {
+      "id": "reject-0",
+      "passed": true,
+      "raw": "four",
+      "text": "Elm Hall has four chairs."
+    },
+    {
+      "id": "reject-1",
+      "passed": true,
+      "raw": "one",
+      "text": "Elm Hall has one hundred chairs."
+    },
+    {
+      "id": "reject-2",
+      "passed": true,
+      "raw": "hundred",
+      "text": "Elm Hall has one hundred chairs."
+    },
+    {
+      "id": "reject-3",
+      "passed": true,
+      "raw": "twenty",
+      "text": "Elm Hall has twenty-one chairs."
+    },
+    {
+      "id": "reject-4",
+      "passed": true,
+      "raw": "four",
+      "text": "Elm Hall has about four chairs."
+    },
+    {
+      "id": "reject-5",
+      "passed": true,
+      "raw": "four",
+      "text": "Elm Hall has at least four chairs."
+    },
+    {
+      "id": "reject-6",
+      "passed": true,
+      "raw": "four",
+      "text": "Elm Hall has four to six chairs."
+    },
+    {
+      "id": "reject-7",
+      "passed": true,
+      "raw": "four",
+      "text": "Elm Hall has between four and six chairs."
+    },
+    {
+      "id": "reject-8",
+      "passed": true,
+      "raw": "four",
+      "text": "Elm Hall has four and a half chairs."
+    },
+    {
+      "id": "reject-9",
+      "passed": true,
+      "raw": "four",
+      "text": "Elm Hall has four point five chairs."
+    },
+    {
+      "id": "reject-10",
+      "passed": true,
+      "raw": "five",
+      "text": "Elm Hall has four point five chairs."
+    },
+    {
+      "id": "reject-11",
+      "passed": true,
+      "raw": "four",
+      "text": "An elm is a four-year-old tree."
+    },
+    {
+      "id": "reject-12",
+      "passed": true,
+      "raw": "one",
+      "text": "Elm Hall won its one hundredth award."
+    },
+    {
+      "id": "reject-13",
+      "passed": true,
+      "raw": "four",
+      "text": "Elm Hall has 2 hundred four chairs."
+    },
+    {
+      "id": "reject-14",
+      "passed": true,
+      "raw": "four",
+      "text": "Elm Hall has four\u2013six chairs."
+    },
+    {
+      "id": "reject-15",
+      "passed": true,
+      "raw": "six",
+      "text": "Elm Hall has four\u2013six chairs."
+    },
+    {
+      "id": "reject-16",
+      "passed": true,
+      "raw": "six",
+      "text": "Elm Hall has four to six chairs."
+    },
+    {
+      "id": "reject-17",
+      "passed": true,
+      "raw": "four",
+      "text": "Elm Hall has four or six chairs."
+    },
+    {
+      "id": "reject-18",
+      "passed": true,
+      "raw": "six",
+      "text": "Elm Hall has four or six chairs."
+    },
+    {
+      "id": "reject-19",
+      "passed": true,
+      "raw": "three",
+      "text": "Elm Hall has three quarters of its chairs."
+    },
+    {
+      "id": "reject-20",
+      "passed": true,
+      "raw": "four",
+      "text": "Elm Hall has four dozen chairs."
+    },
+    {
+      "id": "reject-21",
+      "passed": true,
+      "raw": "one",
+      "text": "Elm Hall has one million chairs."
+    },
+    {
+      "id": "reject-22",
+      "passed": true,
+      "raw": "hundred",
+      "text": "Elm Hall has a hundred chairs."
+    },
+    {
+      "id": "reject-23",
+      "passed": true,
+      "raw": "four",
+      "text": "Elm Hall has four chairs."
+    },
+    {
+      "id": "reject-24",
+      "passed": true,
+      "raw": "one",
+      "text": "Elm Hall has one quadrillion chairs."
+    },
+    {
+      "id": "reject-25",
+      "passed": true,
+      "raw": "one",
+      "text": "Elm Hall has one lakh chairs."
+    },
+    {
+      "id": "reject-26",
+      "passed": true,
+      "raw": "three",
+      "text": "Elm Hall has three fifths of its chairs."
+    },
+    {
+      "id": "reject-27",
+      "passed": true,
+      "raw": "four",
+      "text": "Elm Hall has four hundredths of its chairs."
+    },
+    {
+      "id": "reject-28",
+      "passed": true,
+      "raw": "four",
+      "text": "Elm Hall has < four chairs."
+    },
+    {
+      "id": "reject-29",
+      "passed": true,
+      "raw": "four",
+      "text": "Elm Hall has four/five of its chairs."
+    },
+    {
+      "id": "reject-30",
+      "passed": true,
+      "raw": "five",
+      "text": "Elm Hall has four/five of its chairs."
+    },
+    {
+      "id": "reject-31",
+      "passed": true,
+      "raw": "four",
+      "text": "Elm Hall has four plus one chairs."
+    },
+    {
+      "id": "reject-32",
+      "passed": true,
+      "raw": "one",
+      "text": "Elm Hall has four plus one chairs."
+    },
+    {
+      "id": "population-six hundred and seventeen",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "population-four",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "population-eight hundred and thirty-nine",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "unsupported-grammar-hundred",
+      "passed": true
+    },
+    {
+      "id": "unsupported-grammar-one hundred hundred",
+      "passed": true
+    },
+    {
+      "id": "unsupported-grammar-one thousand million",
+      "passed": true
+    },
+    {
+      "id": "unsupported-grammar-twenty eleven",
+      "passed": true
+    },
+    {
+      "id": "unsupported-grammar-one and two",
+      "passed": true
+    },
+    {
+      "id": "unsupported-grammar-one trillion trillion",
+      "passed": true
+    },
+    {
+      "id": "unsupported-grammar-two, one",
+      "passed": true
+    },
+    {
+      "id": "unsupported-grammar-one thousand,",
+      "passed": true
+    },
+    {
+      "id": "unsupported-grammar-one million and",
+      "passed": true
+    },
+    {
+      "id": "unsupported-grammar-one point two",
+      "passed": true
+    },
+    {
+      "id": "unsupported-grammar-one-hundred",
+      "passed": true
+    },
+    {
+      "id": "unsupported-grammar-two thousand two hundred and zero",
+      "passed": true
+    },
+    {
+      "id": "clipped-text/html",
+      "passed": true,
+      "partial_accepted": false,
+      "full_accepted": true
+    },
+    {
+      "id": "clipped-text/plain",
+      "passed": true,
+      "partial_accepted": false,
+      "full_accepted": true
+    },
+    {
+      "id": "json-own-value-chairs",
+      "passed": true,
+      "actual": true
+    },
+    {
+      "id": "json-own-value-name",
+      "passed": true,
+      "actual": false
+    },
+    {
+      "id": "json-clipped-value",
+      "passed": true,
+      "actual": false
+    },
+    {
+      "id": "protocol-0",
+      "passed": true,
+      "reply": {
+        "candidate": -1,
+        "passage": 0,
+        "answer": "four"
+      },
+      "expected": "four"
+    },
+    {
+      "id": "protocol-1",
+      "passed": true,
+      "reply": {
+        "candidate": -1,
+        "passage": 0,
+        "answer": "four"
+      },
+      "expected": "four"
+    },
+    {
+      "id": "protocol-2",
+      "passed": true,
+      "reply": {
+        "candidate": -1,
+        "passage": -1,
+        "answer": "",
+        "error": "invalid_selection"
+      },
+      "expected": ""
+    },
+    {
+      "id": "protocol-3",
+      "passed": true,
+      "reply": {
+        "candidate": -1,
+        "passage": -1,
+        "answer": "",
+        "error": "invalid_selection"
+      },
+      "expected": ""
+    },
+    {
+      "id": "protocol-4",
+      "passed": true,
+      "reply": {
+        "candidate": -1,
+        "passage": -1,
+        "answer": "",
+        "error": "invalid_selection"
+      },
+      "expected": ""
+    },
+    {
+      "id": "protocol-5",
+      "passed": true,
+      "reply": {
+        "candidate": -1,
+        "passage": 0,
+        "answer": "4"
+      },
+      "expected": "4"
+    },
+    {
+      "id": "protocol-6",
+      "passed": true,
+      "reply": {
+        "candidate": -1,
+        "passage": 0,
+        "answer": "four"
+      },
+      "expected": "four"
+    },
+    {
+      "id": "protocol-7",
+      "passed": true,
+      "reply": {
+        "candidate": -1,
+        "passage": 0,
+        "answer": "four"
+      },
+      "expected": "four"
+    },
+    {
+      "id": "protocol-8",
+      "passed": true,
+      "reply": {
+        "candidate": -1,
+        "passage": -1,
+        "answer": "",
+        "error": "invalid_selection"
+      },
+      "expected": ""
+    },
+    {
+      "id": "protocol-9",
+      "passed": true,
+      "reply": {
+        "candidate": -1,
+        "passage": -1,
+        "answer": "",
+        "error": "invalid_selection"
+      },
+      "expected": ""
+    },
+    {
+      "id": "protocol-10",
+      "passed": true,
+      "reply": {
+        "candidate": -1,
+        "passage": 0,
+        "answer": "10,000"
+      },
+      "expected": "10,000"
+    },
+    {
+      "id": "http-word",
+      "passed": true,
+      "actual": "4",
+      "expected": "4",
+      "reason": "model_verified",
+      "calls": [
+        "/select",
+        "/verify"
+      ],
+      "selection": [
+        {
+          "raw": "four",
+          "answer": "4",
+          "source": "http://127.0.0.1:20865/source",
+          "evidence": "Elm Hall has four chairs.",
+          "label": "",
+          "section": "Elm Hall",
+          "kind": "number",
+          "score": 10.8,
+          "signals": {
+            "selector": "literal_span",
+            "locator": "p[1]:0",
+            "structure": "prose",
+            "qualifiers": {},
+            "field_value": "",
+            "number_projection": {
+              "selected_span": "four",
+              "source_span": "four",
+              "value": "4"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "http-digits",
+      "passed": true,
+      "actual": "4",
+      "expected": "4",
+      "reason": "model_verified",
+      "calls": [
+        "/select",
+        "/verify"
+      ],
+      "selection": [
+        {
+          "raw": "four",
+          "answer": "4",
+          "source": "http://127.0.0.1:20865/source",
+          "evidence": "Elm Hall has four chairs.",
+          "label": "",
+          "section": "Elm Hall",
+          "kind": "number",
+          "score": 10.8,
+          "signals": {
+            "selector": "literal_span",
+            "locator": "p[1]:0",
+            "structure": "prose",
+            "qualifiers": {},
+            "field_value": "",
+            "number_projection": {
+              "selected_span": "4",
+              "source_span": "four",
+              "value": "4"
+            },
+            "canonicalized_from": "4"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http-hyphen",
+      "passed": true,
+      "actual": "21",
+      "expected": "21",
+      "reason": "model_verified",
+      "calls": [
+        "/select",
+        "/verify"
+      ],
+      "selection": [
+        {
+          "raw": "twenty-one",
+          "answer": "21",
+          "source": "http://127.0.0.1:20865/source",
+          "evidence": "Elm Hall has twenty-one chairs.",
+          "label": "",
+          "section": "Elm Hall",
+          "kind": "number",
+          "score": 10.8,
+          "signals": {
+            "selector": "literal_span",
+            "locator": "p[1]:0",
+            "structure": "prose",
+            "qualifiers": {},
+            "field_value": "",
+            "number_projection": {
+              "selected_span": "21",
+              "source_span": "twenty-one",
+              "value": "21"
+            },
+            "canonicalized_from": "21"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http-large",
+      "passed": true,
+      "actual": "1005",
+      "expected": "1005",
+      "reason": "model_verified",
+      "calls": [
+        "/select",
+        "/verify"
+      ],
+      "selection": [
+        {
+          "raw": "one thousand and five",
+          "answer": "1005",
+          "source": "http://127.0.0.1:20865/source",
+          "evidence": "Elm Hall has one thousand and five chairs.",
+          "label": "",
+          "section": "Elm Hall",
+          "kind": "number",
+          "score": 10.8,
+          "signals": {
+            "selector": "literal_span",
+            "locator": "p[1]:0",
+            "structure": "prose",
+            "qualifiers": {},
+            "field_value": "",
+            "number_projection": {
+              "selected_span": "1005",
+              "source_span": "one thousand and five",
+              "value": "1005"
+            },
+            "canonicalized_from": "1005"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http-zero",
+      "passed": true,
+      "actual": "0",
+      "expected": "0",
+      "reason": "model_verified",
+      "calls": [
+        "/select",
+        "/verify"
+      ],
+      "selection": [
+        {
+          "raw": "zero",
+          "answer": "0",
+          "source": "http://127.0.0.1:20865/source",
+          "evidence": "Elm Hall has zero chairs.",
+          "label": "",
+          "section": "Elm Hall",
+          "kind": "number",
+          "score": 10.8,
+          "signals": {
+            "selector": "literal_span",
+            "locator": "p[1]:0",
+            "structure": "prose",
+            "qualifiers": {},
+            "field_value": "",
+            "number_projection": {
+              "selected_span": "0",
+              "source_span": "zero",
+              "value": "0"
+            },
+            "canonicalized_from": "0"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http-semantic-reject",
+      "passed": true,
+      "actual": "",
+      "expected": "",
+      "reason": "model_no_evidence",
+      "calls": [
+        "/select",
+        "/verify"
+      ],
+      "selection": [
+        {
+          "raw": "four",
+          "answer": "4",
+          "source": "http://127.0.0.1:20865/source",
+          "evidence": "Elm Hall has four chairs.",
+          "label": "",
+          "section": "Elm Hall",
+          "kind": "number",
+          "score": 10.8,
+          "signals": {
+            "selector": "literal_span",
+            "locator": "p[1]:0",
+            "structure": "prose",
+            "qualifiers": {},
+            "field_value": "",
+            "number_projection": {
+              "selected_span": "four",
+              "source_span": "four",
+              "value": "4"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "http-fragment",
+      "passed": true,
+      "actual": "",
+      "expected": "",
+      "reason": "model_invalid_reply",
+      "calls": [
+        "/select"
+      ],
+      "selection": null
+    },
+    {
+      "id": "http-wrong-value",
+      "passed": true,
+      "actual": "",
+      "expected": "",
+      "reason": "model_invalid_reply",
+      "calls": [
+        "/select"
+      ],
+      "selection": null
+    },
+    {
+      "id": "http-approximation",
+      "passed": true,
+      "actual": "",
+      "expected": "",
+      "reason": "model_invalid_reply",
+      "calls": [
+        "/select"
+      ],
+      "selection": null
+    },
+    {
+      "id": "http-range",
+      "passed": true,
+      "actual": "",
+      "expected": "",
+      "reason": "model_invalid_reply",
+      "calls": [
+        "/select"
+      ],
+      "selection": null
+    },
+    {
+      "id": "http-fraction",
+      "passed": true,
+      "actual": "",
+      "expected": "",
+      "reason": "model_invalid_reply",
+      "calls": [
+        "/select"
+      ],
+      "selection": null
+    },
+    {
+      "id": "http-ambiguous-binding",
+      "passed": true,
+      "actual": "",
+      "expected": "",
+      "reason": "model_invalid_reply",
+      "calls": [
+        "/select"
+      ],
+      "selection": null
+    },
+    {
+      "id": "http-unavailable",
+      "passed": true,
+      "actual": "",
+      "expected": "",
+      "reason": "model_service_unavailable",
+      "calls": [
+        "/select",
+        "/verify"
+      ],
+      "selection": [
+        {
+          "raw": "four",
+          "answer": "4",
+          "source": "http://127.0.0.1:20865/source",
+          "evidence": "Elm Hall has four chairs.",
+          "label": "",
+          "section": "Elm Hall",
+          "kind": "number",
+          "score": 10.8,
+          "signals": {
+            "selector": "literal_span",
+            "locator": "p[1]:0",
+            "structure": "prose",
+            "qualifiers": {},
+            "field_value": "",
+            "number_projection": {
+              "selected_span": "four",
+              "source_span": "four",
+              "value": "4"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "http-text-copy",
+      "passed": true,
+      "actual": "four",
+      "expected": "four",
+      "reason": "model_verified",
+      "calls": [
+        "/select",
+        "/verify"
+      ],
+      "selection": [
+        {
+          "raw": "four",
+          "answer": "four",
+          "source": "http://127.0.0.1:20865/source",
+          "evidence": "Elm Hall has four chairs.",
+          "label": "",
+          "section": "Elm Hall",
+          "kind": "text",
+          "score": 2.0,
+          "signals": {
+            "selector": "literal_span",
+            "locator": "p[1]:0",
+            "structure": "prose",
+            "qualifiers": {},
+            "field_value": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "http-version-copy",
+      "passed": true,
+      "actual": "four",
+      "expected": "four",
+      "reason": "model_verified",
+      "calls": [
+        "/select",
+        "/verify"
+      ],
+      "selection": [
+        {
+          "raw": "four",
+          "answer": "four",
+          "source": "http://127.0.0.1:20865/source",
+          "evidence": "Elm Hall has four chairs.",
+          "label": "",
+          "section": "Elm Hall",
+          "kind": "text",
+          "score": 2.0,
+          "signals": {
+            "selector": "literal_span",
+            "locator": "p[1]:0",
+            "structure": "prose",
+            "qualifiers": {},
+            "field_value": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "http-count-field",
+      "passed": true,
+      "actual": "",
+      "expected": "",
+      "reason": "model_evidence_rejected",
+      "calls": [
+        "/select"
+      ],
+      "selection": [
+        {
+          "raw": "four",
+          "answer": "four",
+          "source": "http://127.0.0.1:20865/source",
+          "evidence": "Elm Hall has four chairs.",
+          "label": "",
+          "section": "Elm Hall",
+          "kind": "number",
+          "score": 2.0,
+          "signals": {
+            "selector": "literal_span",
+            "locator": "p[1]:0",
+            "structure": "prose",
+            "qualifiers": {},
+            "field_value": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "http-word-unit",
+      "passed": true,
+      "actual": "4",
+      "expected": "4",
+      "reason": "model_verified",
+      "calls": [
+        "/select",
+        "/verify"
+      ],
+      "selection": [
+        {
+          "raw": "four",
+          "answer": "4",
+          "source": "http://127.0.0.1:20865/source",
+          "evidence": "Elm Hall has four chairs.",
+          "label": "",
+          "section": "Elm Hall",
+          "kind": "number",
+          "score": 10.8,
+          "signals": {
+            "selector": "literal_span",
+            "locator": "p[1]:0",
+            "structure": "prose",
+            "qualifiers": {},
+            "field_value": "",
+            "number_projection": {
+              "selected_span": "four chairs",
+              "source_span": "four",
+              "value": "4"
+            },
+            "canonicalized_from": "four chairs"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http-digit-unit",
+      "passed": true,
+      "actual": "4",
+      "expected": "4",
+      "reason": "model_verified",
+      "calls": [
+        "/select",
+        "/verify"
+      ],
+      "selection": [
+        {
+          "raw": "four",
+          "answer": "4",
+          "source": "http://127.0.0.1:20865/source",
+          "evidence": "Elm Hall has four chairs.",
+          "label": "",
+          "section": "Elm Hall",
+          "kind": "number",
+          "score": 10.8,
+          "signals": {
+            "selector": "literal_span",
+            "locator": "p[1]:0",
+            "structure": "prose",
+            "qualifiers": {},
+            "field_value": "",
+            "number_projection": {
+              "selected_span": "4 chairs",
+              "source_span": "four",
+              "value": "4"
+            },
+            "canonicalized_from": "4 chairs"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http-grouped-unit",
+      "passed": true,
+      "actual": "10,000",
+      "expected": "10,000",
+      "reason": "model_verified",
+      "calls": [
+        "/select",
+        "/verify"
+      ],
+      "selection": [
+        {
+          "raw": "10,000",
+          "answer": "10,000",
+          "source": "http://127.0.0.1:20865/source",
+          "evidence": "Elm Hall has 10,000 chairs.",
+          "label": "",
+          "section": "Elm Hall",
+          "kind": "number",
+          "score": 10.8,
+          "signals": {
+            "selector": "literal_span",
+            "locator": "p[1]:0",
+            "structure": "prose",
+            "qualifiers": {},
+            "field_value": "",
+            "canonicalized_from": "10,000 chairs"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http-wrong-unit",
+      "passed": true,
+      "actual": "",
+      "expected": "",
+      "reason": "model_invalid_reply",
+      "calls": [
+        "/select"
+      ],
+      "selection": null
+    },
+    {
+      "id": "saved-literal-count",
+      "passed": true,
+      "capture_sha256": "19c95b414ecb9031239aa913a93304b9d4b3d680bca355087b5f4034ace9c062",
+      "body_sha256": "1bd43b2d7f6ed26e9da7ddf2b077077569cf5915fa54560b9e75803d57655cd6",
+      "literal": "John Gilbert Layton was born in Montreal and raised in nearby Hudson, Quebec. The son of Doris and Progressive Conservative MP Robert Layton, Jack was the first of four children.",
+      "scope": "Authored development count query on an already exposed source; not the original city question or model correctness"
+    }
+  ],
+  "passed": 100,
+  "total": 100,
+  "torch_imported": false
+}

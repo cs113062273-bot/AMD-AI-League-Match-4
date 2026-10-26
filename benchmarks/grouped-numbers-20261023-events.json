@@ -1,0 +1,1755 @@
+{
+  "scope": "Dated-event literal witnesses, including actual unsupported selection and HTTP.\n\nThe HTTP semantic service always supports a chosen literal, isolating the guard.\nThis is development source-binding evidence, not model or public-web accuracy.\n",
+  "baseline_revision": "f6b7d0b1b6143fe138f10f1e3d3a6b1ea0eae9d9",
+  "baseline_source_sha256": {
+    "agent/engine.py": "8a0fa144451d6cf488c12bb248affce0fe9bb1db3f284dabce84f1e97dfc2ca8",
+    "agent/types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent/planner.py": "7135c1bda05839ed7d0e2b73144018e2140bce2a481fcb77c7133077510e4fa4",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/network.py": "c37ecb5b4b0fba4fac737954eda24952059922ed620c94b99bcb17daed8c5155",
+    "agent/urls.py": "2118381f70d0f44174db25833b989cd36dab64b588b83085cddd65cad7412a1f",
+    "agent/parser.py": "795c021d4f29f544958174183b3be53f7295b04a7726642e1aaa90990330e3d5",
+    "agent/normalize.py": "6a4cb8311c29318d788c97a3e64cffa3c4085e595a0e1e9a2d5c418fa540e41c",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent/search.py": "fadb6dd66114dc2de17edf5dc012d469a3e10ac529ff3b062f43ea137dfaf398",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/candidates.py": "85ebef38f1dac71b8899fc10d74c79ece4ba4afbaebd7d147e1f652a04ee930f",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/evidence.py": "53c66e4149780862e70c1628259e6788805c7d11ac403000be13f7149656c556",
+    "agent/selector.py": "89e9246203f8aec04859656b3c405f366d6188cb7684778817df706baafe8baf",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/proofs.py": "0d7ae78df6ea9949c29f33c7b817dda352c75b3d99c960c3e987e37c7401faab"
+  },
+  "before": [
+    {
+      "id": "dated",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "undated",
+      "passed": false,
+      "expected": false,
+      "actual": true
+    },
+    {
+      "id": "period-question",
+      "passed": false,
+      "expected": false,
+      "actual": true
+    },
+    {
+      "id": "period-heading",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "wrong-year",
+      "passed": false,
+      "expected": false,
+      "actual": true
+    },
+    {
+      "id": "unrelated-date",
+      "passed": false,
+      "expected": false,
+      "actual": true
+    },
+    {
+      "id": "other-person",
+      "passed": false,
+      "expected": false,
+      "actual": true
+    },
+    {
+      "id": "semicolon",
+      "passed": false,
+      "expected": false,
+      "actual": true
+    },
+    {
+      "id": "same-clause-other-event",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "year-before",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "birth-year",
+      "passed": false,
+      "expected": false,
+      "actual": true
+    },
+    {
+      "id": "separate-birth",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "two-events",
+      "passed": false,
+      "expected": true,
+      "actual": false
+    },
+    {
+      "id": "adjacent-coreference",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "wrong-coreference-year",
+      "passed": false,
+      "expected": false,
+      "actual": true
+    },
+    {
+      "id": "distant-year",
+      "passed": false,
+      "expected": false,
+      "actual": true
+    },
+    {
+      "id": "heading-year",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "wrong-heading",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "record-year",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "generic-year",
+      "passed": false,
+      "expected": false,
+      "actual": true
+    },
+    {
+      "id": "birth-query",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "birth-undated",
+      "passed": false,
+      "expected": false,
+      "actual": true
+    },
+    {
+      "id": "award-query",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "award-undated",
+      "passed": false,
+      "expected": false,
+      "actual": true
+    },
+    {
+      "id": "release-query",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "release-wrong-event",
+      "passed": false,
+      "expected": false,
+      "actual": true
+    },
+    {
+      "id": "foundation-query",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "ordinary-person",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "timeless-field",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "multiple-events",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "actual-missing-marriage-year",
+      "passed": false,
+      "actual": true,
+      "capture_sha256": "432bf4de05365c1e96deee07ee7fbb442e111c75e9b3e7bea8e7b59ae7cff7f8"
+    },
+    {
+      "id": "calendar-sentence-year",
+      "passed": false,
+      "actual": [],
+      "expected": [
+        "1998"
+      ]
+    },
+    {
+      "id": "calendar-version",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "id": "calendar-version-label",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "id": "calendar-document-id",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "id": "calendar-two-years",
+      "passed": false,
+      "actual": [
+        "1970"
+      ],
+      "expected": [
+        "1970",
+        "1998"
+      ]
+    },
+    {
+      "id": "http-dated",
+      "passed": true,
+      "model_calls": [
+        "/select",
+        "/verify"
+      ],
+      "result": {
+        "answer": "Mira Chen",
+        "sources": [
+          "http://127.0.0.1:32604/dated"
+        ],
+        "confidence": 0.748,
+        "evidence": "Orin Vale married Mira Chen in 1998.",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the first and last name of the person whom Orin Vale married in 1998?",
+            "url": "http://127.0.0.1:32604/dated",
+            "kind": "text",
+            "terms": [
+              "first",
+              "last",
+              "name",
+              "person",
+              "whom",
+              "orin",
+              "vale",
+              "married",
+              "1998"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "first",
+              "last",
+              "person",
+              "whom",
+              "orin",
+              "vale",
+              "married"
+            ],
+            "versions": [],
+            "year": "1998",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the first and last name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 0.0001962999813258648
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Mira Chen",
+              "answer": "Mira Chen",
+              "source": "http://127.0.0.1:32604/dated",
+              "evidence": "Orin Vale married Mira Chen in 1998.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 7.9,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "Mira Chen",
+            "answer": "Mira Chen",
+            "source": "http://127.0.0.1:32604/dated",
+            "evidence": "Orin Vale married Mira Chen in 1998.",
+            "label": "",
+            "section": "",
+            "kind": "text",
+            "score": 7.9,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[0]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:32604/dated",
+              "final": "http://127.0.0.1:32604/dated",
+              "status": 200,
+              "bytes": 77,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0067
+        }
+      }
+    },
+    {
+      "id": "http-undated",
+      "passed": false,
+      "model_calls": [
+        "/select",
+        "/verify"
+      ],
+      "result": {
+        "answer": "Mira Chen",
+        "sources": [
+          "http://127.0.0.1:32604/undated"
+        ],
+        "confidence": 0.72,
+        "evidence": "Orin Vale is married to Mira Chen.",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the first and last name of the person whom Orin Vale married in 1998?",
+            "url": "http://127.0.0.1:32604/undated",
+            "kind": "text",
+            "terms": [
+              "first",
+              "last",
+              "name",
+              "person",
+              "whom",
+              "orin",
+              "vale",
+              "married",
+              "1998"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "first",
+              "last",
+              "person",
+              "whom",
+              "orin",
+              "vale",
+              "married"
+            ],
+            "versions": [],
+            "year": "1998",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the first and last name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.7000013031065464e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Mira Chen",
+              "answer": "Mira Chen",
+              "source": "http://127.0.0.1:32604/undated",
+              "evidence": "Orin Vale is married to Mira Chen.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 6.800000000000001,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "Mira Chen",
+            "answer": "Mira Chen",
+            "source": "http://127.0.0.1:32604/undated",
+            "evidence": "Orin Vale is married to Mira Chen.",
+            "label": "",
+            "section": "",
+            "kind": "text",
+            "score": 6.800000000000001,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[0]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:32604/undated",
+              "final": "http://127.0.0.1:32604/undated",
+              "status": 200,
+              "bytes": 75,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0044
+        }
+      }
+    },
+    {
+      "id": "http-unrelated-date",
+      "passed": false,
+      "model_calls": [
+        "/select",
+        "/verify"
+      ],
+      "result": {
+        "answer": "Mira Chen",
+        "sources": [
+          "http://127.0.0.1:32604/unrelated-date"
+        ],
+        "confidence": 0.748,
+        "evidence": "Orin Vale married Mira Chen. Orin published a book in 1998.",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the first and last name of the person whom Orin Vale married in 1998?",
+            "url": "http://127.0.0.1:32604/unrelated-date",
+            "kind": "text",
+            "terms": [
+              "first",
+              "last",
+              "name",
+              "person",
+              "whom",
+              "orin",
+              "vale",
+              "married",
+              "1998"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "first",
+              "last",
+              "person",
+              "whom",
+              "orin",
+              "vale",
+              "married"
+            ],
+            "versions": [],
+            "year": "1998",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the first and last name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.2400094419717789e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Mira Chen",
+              "answer": "Mira Chen",
+              "source": "http://127.0.0.1:32604/unrelated-date",
+              "evidence": "Orin Vale married Mira Chen. Orin published a book in 1998.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 7.9,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "Mira Chen",
+            "answer": "Mira Chen",
+            "source": "http://127.0.0.1:32604/unrelated-date",
+            "evidence": "Orin Vale married Mira Chen. Orin published a book in 1998.",
+            "label": "",
+            "section": "",
+            "kind": "text",
+            "score": 7.9,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[0]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:32604/unrelated-date",
+              "final": "http://127.0.0.1:32604/unrelated-date",
+              "status": 200,
+              "bytes": 100,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0051
+        }
+      }
+    },
+    {
+      "id": "http-birth-year",
+      "passed": false,
+      "model_calls": [
+        "/select",
+        "/verify"
+      ],
+      "result": {
+        "answer": "Mira Chen",
+        "sources": [
+          "http://127.0.0.1:32604/birth-year"
+        ],
+        "confidence": 0.823,
+        "evidence": "Mira Chen was born in 1998 and later married Orin Vale.",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the first and last name of the person whom Orin Vale married in 1998?",
+            "url": "http://127.0.0.1:32604/birth-year",
+            "kind": "text",
+            "terms": [
+              "first",
+              "last",
+              "name",
+              "person",
+              "whom",
+              "orin",
+              "vale",
+              "married",
+              "1998"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "first",
+              "last",
+              "person",
+              "whom",
+              "orin",
+              "vale",
+              "married"
+            ],
+            "versions": [],
+            "year": "1998",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the first and last name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.009996049106121e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Mira Chen",
+              "answer": "Mira Chen",
+              "source": "http://127.0.0.1:32604/birth-year",
+              "evidence": "Mira Chen was born in 1998 and later married Orin Vale.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 10.9,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "Mira Chen",
+            "answer": "Mira Chen",
+            "source": "http://127.0.0.1:32604/birth-year",
+            "evidence": "Mira Chen was born in 1998 and later married Orin Vale.",
+            "label": "",
+            "section": "",
+            "kind": "text",
+            "score": 10.9,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[0]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:32604/birth-year",
+              "final": "http://127.0.0.1:32604/birth-year",
+              "status": 200,
+              "bytes": 96,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.005
+        }
+      }
+    },
+    {
+      "id": "http-adjacent-coreference",
+      "passed": true,
+      "model_calls": [
+        "/select",
+        "/verify"
+      ],
+      "result": {
+        "answer": "Mira Chen",
+        "sources": [
+          "http://127.0.0.1:32604/adjacent-coreference"
+        ],
+        "confidence": 0.748,
+        "evidence": "Orin Vale married Mira Chen. Their wedding took place in 1998.",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the first and last name of the person whom Orin Vale married in 1998?",
+            "url": "http://127.0.0.1:32604/adjacent-coreference",
+            "kind": "text",
+            "terms": [
+              "first",
+              "last",
+              "name",
+              "person",
+              "whom",
+              "orin",
+              "vale",
+              "married",
+              "1998"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "first",
+              "last",
+              "person",
+              "whom",
+              "orin",
+              "vale",
+              "married"
+            ],
+            "versions": [],
+            "year": "1998",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the first and last name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.0400079190731049e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Mira Chen",
+              "answer": "Mira Chen",
+              "source": "http://127.0.0.1:32604/adjacent-coreference",
+              "evidence": "Orin Vale married Mira Chen. Their wedding took place in 1998.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 7.9,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "Mira Chen",
+            "answer": "Mira Chen",
+            "source": "http://127.0.0.1:32604/adjacent-coreference",
+            "evidence": "Orin Vale married Mira Chen. Their wedding took place in 1998.",
+            "label": "",
+            "section": "",
+            "kind": "text",
+            "score": 7.9,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[0]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:32604/adjacent-coreference",
+              "final": "http://127.0.0.1:32604/adjacent-coreference",
+              "status": 200,
+              "bytes": 103,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0048
+        }
+      }
+    }
+  ],
+  "after": [
+    {
+      "id": "dated",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "undated",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "period-question",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "period-heading",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "wrong-year",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "unrelated-date",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "other-person",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "semicolon",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "same-clause-other-event",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "year-before",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "birth-year",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "separate-birth",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "two-events",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "adjacent-coreference",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "wrong-coreference-year",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "distant-year",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "heading-year",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "wrong-heading",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "record-year",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "generic-year",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "birth-query",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "birth-undated",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "award-query",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "award-undated",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "release-query",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "release-wrong-event",
+      "passed": true,
+      "expected": false,
+      "actual": false
+    },
+    {
+      "id": "foundation-query",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "ordinary-person",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "timeless-field",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "multiple-events",
+      "passed": true,
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "actual-missing-marriage-year",
+      "passed": true,
+      "actual": false,
+      "capture_sha256": "432bf4de05365c1e96deee07ee7fbb442e111c75e9b3e7bea8e7b59ae7cff7f8"
+    },
+    {
+      "id": "calendar-sentence-year",
+      "passed": true,
+      "actual": [
+        "1998"
+      ],
+      "expected": [
+        "1998"
+      ]
+    },
+    {
+      "id": "calendar-version",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "id": "calendar-version-label",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "id": "calendar-document-id",
+      "passed": true,
+      "actual": [],
+      "expected": []
+    },
+    {
+      "id": "calendar-two-years",
+      "passed": true,
+      "actual": [
+        "1970",
+        "1998"
+      ],
+      "expected": [
+        "1970",
+        "1998"
+      ]
+    },
+    {
+      "id": "http-dated",
+      "passed": true,
+      "model_calls": [
+        "/select",
+        "/verify"
+      ],
+      "result": {
+        "answer": "Mira Chen",
+        "sources": [
+          "http://127.0.0.1:32622/dated"
+        ],
+        "confidence": 0.823,
+        "evidence": "Orin Vale married Mira Chen in 1998.",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the first and last name of the person whom Orin Vale married in 1998?",
+            "url": "http://127.0.0.1:32622/dated",
+            "kind": "text",
+            "terms": [
+              "first",
+              "last",
+              "name",
+              "person",
+              "whom",
+              "orin",
+              "vale",
+              "married",
+              "1998"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "first",
+              "last",
+              "person",
+              "whom",
+              "orin",
+              "vale",
+              "married"
+            ],
+            "versions": [],
+            "year": "1998",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the first and last name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 2.0200037397444248e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Mira Chen",
+              "answer": "Mira Chen",
+              "source": "http://127.0.0.1:32622/dated",
+              "evidence": "Orin Vale married Mira Chen in 1998.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 10.9,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "Mira Chen",
+            "answer": "Mira Chen",
+            "source": "http://127.0.0.1:32622/dated",
+            "evidence": "Orin Vale married Mira Chen in 1998.",
+            "label": "",
+            "section": "",
+            "kind": "text",
+            "score": 10.9,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[0]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:32622/dated",
+              "final": "http://127.0.0.1:32622/dated",
+              "status": 200,
+              "bytes": 77,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0076
+        }
+      }
+    },
+    {
+      "id": "http-undated",
+      "passed": true,
+      "model_calls": [
+        "/select"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_evidence_rejected",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the first and last name of the person whom Orin Vale married in 1998?",
+            "url": "http://127.0.0.1:32622/undated",
+            "kind": "text",
+            "terms": [
+              "first",
+              "last",
+              "name",
+              "person",
+              "whom",
+              "orin",
+              "vale",
+              "married",
+              "1998"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "first",
+              "last",
+              "person",
+              "whom",
+              "orin",
+              "vale",
+              "married"
+            ],
+            "versions": [],
+            "year": "1998",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the first and last name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.3499986380338669e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Mira Chen",
+              "answer": "Mira Chen",
+              "source": "http://127.0.0.1:32622/undated",
+              "evidence": "Orin Vale is married to Mira Chen.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 6.800000000000001,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "reader_state": "evidence_rejected",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:32622/undated",
+              "final": "http://127.0.0.1:32622/undated",
+              "status": 200,
+              "bytes": 75,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0037
+        }
+      }
+    },
+    {
+      "id": "http-unrelated-date",
+      "passed": true,
+      "model_calls": [
+        "/select"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_evidence_rejected",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the first and last name of the person whom Orin Vale married in 1998?",
+            "url": "http://127.0.0.1:32622/unrelated-date",
+            "kind": "text",
+            "terms": [
+              "first",
+              "last",
+              "name",
+              "person",
+              "whom",
+              "orin",
+              "vale",
+              "married",
+              "1998"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "first",
+              "last",
+              "person",
+              "whom",
+              "orin",
+              "vale",
+              "married"
+            ],
+            "versions": [],
+            "year": "1998",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the first and last name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.2599979527294636e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Mira Chen",
+              "answer": "Mira Chen",
+              "source": "http://127.0.0.1:32622/unrelated-date",
+              "evidence": "Orin Vale married Mira Chen. Orin published a book in 1998.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 10.9,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "reader_state": "evidence_rejected",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:32622/unrelated-date",
+              "final": "http://127.0.0.1:32622/unrelated-date",
+              "status": 200,
+              "bytes": 100,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0045
+        }
+      }
+    },
+    {
+      "id": "http-birth-year",
+      "passed": true,
+      "model_calls": [
+        "/select"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_evidence_rejected",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the first and last name of the person whom Orin Vale married in 1998?",
+            "url": "http://127.0.0.1:32622/birth-year",
+            "kind": "text",
+            "terms": [
+              "first",
+              "last",
+              "name",
+              "person",
+              "whom",
+              "orin",
+              "vale",
+              "married",
+              "1998"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "first",
+              "last",
+              "person",
+              "whom",
+              "orin",
+              "vale",
+              "married"
+            ],
+            "versions": [],
+            "year": "1998",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the first and last name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.1400086805224419e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Mira Chen",
+              "answer": "Mira Chen",
+              "source": "http://127.0.0.1:32622/birth-year",
+              "evidence": "Mira Chen was born in 1998 and later married Orin Vale.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 10.9,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "reader_state": "evidence_rejected",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:32622/birth-year",
+              "final": "http://127.0.0.1:32622/birth-year",
+              "status": 200,
+              "bytes": 96,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0049
+        }
+      }
+    },
+    {
+      "id": "http-adjacent-coreference",
+      "passed": true,
+      "model_calls": [
+        "/select",
+        "/verify"
+      ],
+      "result": {
+        "answer": "Mira Chen",
+        "sources": [
+          "http://127.0.0.1:32622/adjacent-coreference"
+        ],
+        "confidence": 0.823,
+        "evidence": "Orin Vale married Mira Chen. Their wedding took place in 1998.",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the first and last name of the person whom Orin Vale married in 1998?",
+            "url": "http://127.0.0.1:32622/adjacent-coreference",
+            "kind": "text",
+            "terms": [
+              "first",
+              "last",
+              "name",
+              "person",
+              "whom",
+              "orin",
+              "vale",
+              "married",
+              "1998"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "first",
+              "last",
+              "person",
+              "whom",
+              "orin",
+              "vale",
+              "married"
+            ],
+            "versions": [],
+            "year": "1998",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the first and last name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.7400016076862812e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Mira Chen",
+              "answer": "Mira Chen",
+              "source": "http://127.0.0.1:32622/adjacent-coreference",
+              "evidence": "Orin Vale married Mira Chen. Their wedding took place in 1998.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 10.9,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "Mira Chen",
+            "answer": "Mira Chen",
+            "source": "http://127.0.0.1:32622/adjacent-coreference",
+            "evidence": "Orin Vale married Mira Chen. Their wedding took place in 1998.",
+            "label": "",
+            "section": "",
+            "kind": "text",
+            "score": 10.9,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[0]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:32622/adjacent-coreference",
+              "final": "http://127.0.0.1:32622/adjacent-coreference",
+              "status": 200,
+              "bytes": 103,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0065
+        }
+      }
+    }
+  ],
+  "before_passed": 21,
+  "after_passed": 41,
+  "total": 41,
+  "wins": [
+    "undated",
+    "period-question",
+    "wrong-year",
+    "unrelated-date",
+    "other-person",
+    "semicolon",
+    "birth-year",
+    "two-events",
+    "wrong-coreference-year",
+    "distant-year",
+    "generic-year",
+    "birth-undated",
+    "award-undated",
+    "release-wrong-event",
+    "actual-missing-marriage-year",
+    "calendar-sentence-year",
+    "calendar-two-years",
+    "http-undated",
+    "http-unrelated-date",
+    "http-birth-year"
+  ],
+  "losses": [],
+  "production_sha256": {
+    "browser.py": "53ac9a99f3afcefcdb197cd9b2296c2d380910a782178fadb65235e548efc353",
+    "candidates.py": "f4882197e55a061d42601cef56d6bbb2b9a37a76e10947bf424c943ee4057e8c",
+    "challenges.py": "b6f51c720f332671725e08127a5d1c163ca0542d2a550bf3c980a6d4c49bf6a1",
+    "currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "engine.py": "1bf6108bb913480ce4bd2e7b0a32a1cc75df60fff66273e4c1d4067d8c43fb25",
+    "evidence.py": "a298cd93f6a36cb238acf1a406deb9057b059caa2ef1ab9f38aaa438e5274845",
+    "field_groups.py": "52a54989253c59e9836dec4aaec4944b688376e79548b9336887558a454e9162",
+    "knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "literature.py": "9b871500ab1ebaf88e8fca2c70bd7ade7eb81774412fa85a1f4be7d2fb06263f",
+    "members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+    "model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+    "model_server.py": "8d326a696942d259697a6fba8586441bbbe4874042ea900c6d7788a2a0e9fd22",
+    "navigation.py": "0f849c0c570720114c45c14b0a5286fe409e5d26c2945fdc9f6c1a6922bb7718",
+    "network.py": "def1be3752f81423c313c2dfa83f6703ee063d7e98652cf0d816b423d0e2d9cb",
+    "normalize.py": "582d9ef7b1ec775e5171c92e1ae96be746fd5d1dcd43ee588fee9a9aa6abc706",
+    "output.py": "b983ab2efe31707b1c974344a32dc4b40b708541257695de89cac9e343b073eb",
+    "oyez.py": "8475f248d78925522e0742b13518be2c4f4db11eae0d8391a8002da7d4e3b67d",
+    "parser.py": "16741c809d33fbe08d5c9a69515decd4f8bc5546ed00afa9a3bb9c55bfb26e7b",
+    "planner.py": "9666528f61db53a5aaae741c914690b5fdeb5fb1bea47ae1efeead4bb137e974",
+    "population.py": "dc13885fe08545a5a6362c40d8f051f5c544118a6684178eeb0b1c947271c65e",
+    "processes.py": "677c4372b40d1da0ffc0cf4120ca5b6be2fcf6b6c30f6ec17d0d8fae19e198c1",
+    "proofs.py": "0d7ae78df6ea9949c29f33c7b817dda352c75b3d99c960c3e987e37c7401faab",
+    "qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "resolvers.py": "312d776118c6c6f0421939df58cf6bcaec8740a7fd341136c17a33f284a03ef2",
+    "search.py": "64ebf971ea4dd0f8a34bc0bdd2d3678f54edab80d6112328fefeede84687ec55",
+    "selector.py": "be7c0fce11c10921d5cd4e3d1072d5a2ca5a62f1c328730384d19b0fecd19566",
+    "signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "urls.py": "6bbf58adf3c55cf3787edf4b6607a7db8eea987f0c02dd6cdfea48f6c38e031f",
+    "worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f",
+    "__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41"
+  }
+}

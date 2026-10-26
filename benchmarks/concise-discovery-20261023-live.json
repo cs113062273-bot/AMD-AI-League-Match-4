@@ -1,0 +1,531 @@
+{
+  "scope": "Small live-source availability probe from exposed historical failures.\n\nRuns actual production HTTP/search parsing, without model inference or gold\nanswers in production requests. This reports retrieval, not answer accuracy.\n",
+  "captured_utc": "2026-10-23T01:38:01.363091+00:00",
+  "rows": [
+    {
+      "id": "simpleqa-37",
+      "query": "What is the first and last name of the woman whom the British linguist Bernard Comrie married in 1985?",
+      "starting_url": "https://en.wikipedia.org/wiki/Bernard_Comrie",
+      "starting_status": 403,
+      "starting_error": "http_403",
+      "candidates": [
+        [
+          "https://www.ancestry.com/genealogy/records/bernard-comrie-24-4qsy0r",
+          "Bernard Comrie - Ancestry\u00ae"
+        ],
+        [
+          "https://de.wikipedia.org/wiki/Bernard_Comrie",
+          "Bernard Comrie - Wikipedia"
+        ],
+        [
+          "https://www.linguistics.ucsb.edu/people/bernard-comrie",
+          "Bernard Comrie | Department of Linguistics"
+        ],
+        [
+          "https://www.scribd.com/document/733697997/Agreement-in-Slavic",
+          "Bernard Comrie's Marriage Details | PDF | Grammatical Gender ... - Scribd"
+        ],
+        [
+          "https://notablepeopleproject.org/bernard_comrie",
+          "Bernard Comrie - Notable People"
+        ],
+        [
+          "https://www.geni.com/people/Theresa-Comrie/6000000014465331859",
+          "Theresa Comrie (1948 - 1990) - Genealogy - Geni.com"
+        ],
+        [
+          "https://en.wikipedia.org/wiki/Bernard_Comrie",
+          "Bernard Comrie - Wikipedia"
+        ],
+        [
+          "https://en.wikipedia.org/wiki/Bill_Comrie",
+          "Bill Comrie - Wikipedia"
+        ]
+      ],
+      "search_hints": [
+        "bernard comrie spouse",
+        "bernard comrie wife",
+        "british linguist marriage",
+        "comrie marital partner",
+        "wife of bernard comrie",
+        "comrie personal life"
+      ],
+      "pages": [
+        {
+          "url": "https://www.ancestry.com/genealogy/records/bernard-comrie-24-4qsy0r",
+          "title": "",
+          "error": "http_403",
+          "passages": 0
+        },
+        {
+          "url": "https://de.wikipedia.org/wiki/Bernard_Comrie",
+          "title": "",
+          "error": "http_403",
+          "passages": 0
+        },
+        {
+          "url": "https://www.linguistics.ucsb.edu/people/bernard-comrie",
+          "title": "",
+          "error": "http_403",
+          "passages": 0
+        },
+        {
+          "url": "https://www.scribd.com/document/733697997/Agreement-in-Slavic",
+          "title": "Bernard Comrie's Marriage Details | PDF | Grammatical Gender | Grammatical Number",
+          "error": "",
+          "passages": 104
+        }
+      ],
+      "events": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bernard_Comrie",
+          "final": "https://en.wikipedia.org/wiki/Bernard_Comrie",
+          "status": 403,
+          "bytes": 0,
+          "error": "http_403",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://html.duckduckgo.com/html/?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985",
+          "final": "https://html.duckduckgo.com/html/?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985",
+          "status": 202,
+          "bytes": 14364,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.bing.com/search?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985+bernard+comrie+spouse+bernard+comrie+wife+british+linguist+marriage+comrie+marital+partner",
+          "final": "https://www.bing.com/search?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985+bernard+comrie+spouse+bernard+comrie+wife+british+linguist+marriage+comrie+marital+partner",
+          "status": 200,
+          "bytes": 124393,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://html.duckduckgo.com/html/?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985+bernard+comrie+spouse+bernard+comrie+wife+british+linguist+marriage+comrie+marital+partner",
+          "final": "https://html.duckduckgo.com/html/?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985+bernard+comrie+spouse+bernard+comrie+wife+british+linguist+marriage+comrie+marital+partner",
+          "status": 202,
+          "bytes": 14540,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.bing.com/search?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985",
+          "final": "https://www.bing.com/search?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985",
+          "status": 200,
+          "bytes": 126027,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.bing.com/search?format=rss&q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985+bernard+comrie+spouse+bernard+comrie+wife+british+linguist+marriage+comrie+marital+partner",
+          "final": "https://www.bing.com/search?format=rss&q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985+bernard+comrie+spouse+bernard+comrie+wife+british+linguist+marriage+comrie+marital+partner",
+          "status": 200,
+          "bytes": 2622,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://lite.duckduckgo.com/lite/?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985+bernard+comrie+spouse+bernard+comrie+wife+british+linguist+marriage+comrie+marital+partner",
+          "final": "https://lite.duckduckgo.com/lite/?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985+bernard+comrie+spouse+bernard+comrie+wife+british+linguist+marriage+comrie+marital+partner",
+          "status": 202,
+          "bytes": 14540,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://lite.duckduckgo.com/lite/?q=bernard+comrie+spouse",
+          "final": "https://lite.duckduckgo.com/lite/?q=bernard+comrie+spouse",
+          "status": 200,
+          "bytes": 24405,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.ancestry.com/genealogy/records/bernard-comrie-24-4qsy0r",
+          "final": "https://www.ancestry.com/genealogy/records/bernard-comrie-24-4qsy0r",
+          "status": 403,
+          "bytes": 0,
+          "error": "http_403",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://de.wikipedia.org/wiki/Bernard_Comrie",
+          "final": "https://de.wikipedia.org/wiki/Bernard_Comrie",
+          "status": 403,
+          "bytes": 0,
+          "error": "http_403",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.linguistics.ucsb.edu/people/bernard-comrie",
+          "final": "https://www.linguistics.ucsb.edu/people/bernard-comrie",
+          "status": 403,
+          "bytes": 0,
+          "error": "http_403",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.scribd.com/document/733697997/Agreement-in-Slavic",
+          "final": "https://www.scribd.com/document/733697997/Agreement-in-Slavic",
+          "status": 200,
+          "bytes": 1193132,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        }
+      ],
+      "seconds": 3.1810636000009254,
+      "search_snapshot_path": "research\\concise-discovery-20261023\\simpleqa-37.json",
+      "search_snapshot_sha256": "a793713cd541cf29ec24ae56975aa1ff151706706e779623c9dcf46526eec163"
+    },
+    {
+      "id": "simpleqa-395",
+      "query": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+      "starting_url": "https://en.wikipedia.org/wiki/Curtis_Publishing_Co._v._Butts",
+      "starting_status": 403,
+      "starting_error": "http_403",
+      "candidates": [],
+      "search_hints": [],
+      "pages": [],
+      "events": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Curtis_Publishing_Co._v._Butts",
+          "final": "https://en.wikipedia.org/wiki/Curtis_Publishing_Co._v._Butts",
+          "status": 403,
+          "bytes": 0,
+          "error": "http_403",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.bing.com/search?q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+          "final": "https://www.bing.com/search?q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+          "status": 200,
+          "bytes": 121101,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://html.duckduckgo.com/html/?q=What+two+football+teams+were+mentioned+in+the+libel+case+against+%22The+Saturday+Evening+Post%22+in+1963%3F",
+          "final": "https://html.duckduckgo.com/html/?q=What+two+football+teams+were+mentioned+in+the+libel+case+against+%22The+Saturday+Evening+Post%22+in+1963%3F",
+          "status": 202,
+          "bytes": 14444,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://html.duckduckgo.com/html/?q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+          "final": "https://html.duckduckgo.com/html/?q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+          "status": 202,
+          "bytes": 14358,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.bing.com/search?q=What+two+football+teams+were+mentioned+in+the+libel+case+against+%22The+Saturday+Evening+Post%22+in+1963%3F",
+          "final": "https://www.bing.com/search?q=What+two+football+teams+were+mentioned+in+the+libel+case+against+%22The+Saturday+Evening+Post%22+in+1963%3F",
+          "status": 200,
+          "bytes": 121044,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.bing.com/search?format=rss&q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+          "final": "https://www.bing.com/search?format=rss&q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+          "status": 200,
+          "bytes": 5263,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://lite.duckduckgo.com/lite/?q=%22The+Saturday+Evening+Post%22+libel+case",
+          "final": "https://lite.duckduckgo.com/lite/?q=%22The+Saturday+Evening+Post%22+libel+case",
+          "status": 202,
+          "bytes": 14267,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://lite.duckduckgo.com/lite/?q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+          "final": "https://lite.duckduckgo.com/lite/?q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+          "status": 202,
+          "bytes": 14370,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.google.com/search?q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+          "final": "https://www.google.com/search?q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+          "status": 200,
+          "bytes": 92444,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=What%20two%20football%20teams%20were%20mentioned%20in%20the%20libel%20case%20against%20%22The%20Saturday%20Evening%20Post%22%20in%201963%3F",
+          "final": "https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=What%20two%20football%20teams%20were%20mentioned%20in%20the%20libel%20case%20against%20%22The%20Saturday%20Evening%20Post%22%20in%201963%3F",
+          "status": 403,
+          "bytes": 0,
+          "error": "http_403",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        }
+      ],
+      "seconds": 1.1877086999593303,
+      "search_snapshot_path": "research\\concise-discovery-20261023\\simpleqa-395.json",
+      "search_snapshot_sha256": "371206ccf0e5bc5bc2d7cc2007cde0362046409691ff916273733c5d15602a4f"
+    },
+    {
+      "id": "simpleqa-32",
+      "query": "What day, month, and year was Carrie Underwood's album \"Cry Pretty\" certified Gold by the RIAA?",
+      "starting_url": "https://www.riaa.com/gold-platinum/?tab_active=default-award&se=cry+pretty",
+      "starting_status": 403,
+      "starting_error": "http_403",
+      "candidates": [
+        [
+          "https://www.discogs.com/release/13297187-Carrie-Underwood-Cry-Pretty",
+          "Carrie Underwood - Cry Pretty - CD (Album), 2018 ... - Discogs"
+        ],
+        [
+          "https://www.discogs.com/release/23674781-Carrie-Underwood-Cry-Pretty-Deluxe",
+          "Carrie Underwood - Cry Pretty (Deluxe) - CD (Album ... - Discogs"
+        ],
+        [
+          "https://www.youtube.com/playlist?list=PL6-B652C0OuJkYDY5hjBUPmpLxCSSuLVI",
+          "Carrie Underwood - \"Cry Pretty\" Full Album (2018) [Audio Only]"
+        ],
+        [
+          "https://music.apple.com/us/album/cry-pretty/1432044881",
+          "\u200eCry Pretty - Album by Carrie Underwood - Apple Music"
+        ],
+        [
+          "https://genius.com/albums/Carrie-underwood/Cry-pretty",
+          "Carrie Underwood - Cry Pretty Lyrics and Tracklist | Genius"
+        ],
+        [
+          "https://www.youtube.com/playlist?list=PLZJZOOmVj1q6MkyEQ_1NdrEnJVqO7fM-B",
+          "Carrie Underwood - Cry Pretty Playlist - YouTube"
+        ],
+        [
+          "https://www.carrieunderwood.fm/music/all/cry-pretty/",
+          "Cry Pretty - Carrie Underwood"
+        ],
+        [
+          "https://en.wikipedia.org/wiki/Cry_Pretty",
+          "Cry Pretty - Wikipedia"
+        ]
+      ],
+      "search_hints": [
+        "carrie underwood cry pretty album",
+        "riaa certification gold",
+        "cry pretty certification date",
+        "riaa gold certification timeline",
+        "carrie underwood album release date",
+        "cry pretty riaa certification",
+        "gold certification music album",
+        "riaa certification event date"
+      ],
+      "pages": [
+        {
+          "url": "https://www.discogs.com/release/13297187-Carrie-Underwood-Cry-Pretty",
+          "title": "",
+          "error": "http_403",
+          "passages": 0
+        },
+        {
+          "url": "https://www.discogs.com/release/23674781-Carrie-Underwood-Cry-Pretty-Deluxe",
+          "title": "",
+          "error": "http_403",
+          "passages": 0
+        },
+        {
+          "url": "https://www.youtube.com/playlist?list=PL6-B652C0OuJkYDY5hjBUPmpLxCSSuLVI",
+          "title": "Carrie Underwood - \"Cry Pretty\" Full Album (2018) [Audio Only] - YouTube",
+          "error": "",
+          "passages": 48
+        },
+        {
+          "url": "https://music.apple.com/us/album/cry-pretty/1432044881",
+          "title": "\u200eCry Pretty - Album by Carrie Underwood - Apple Music",
+          "error": "",
+          "passages": 3500
+        }
+      ],
+      "events": [
+        {
+          "url": "https://www.riaa.com/gold-platinum/?tab_active=default-award&se=cry+pretty",
+          "final": "https://www.riaa.com/gold-platinum/?tab_active=default-award&se=cry+pretty",
+          "status": 403,
+          "bytes": 0,
+          "error": "http_403",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://html.duckduckgo.com/html/?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa+carrie+underwood+cry+pretty+album+riaa+certification+gold+cry+pretty+certification+date+riaa+gold+certification+timeline",
+          "final": "https://html.duckduckgo.com/html/?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa+carrie+underwood+cry+pretty+album+riaa+certification+gold+cry+pretty+certification+date+riaa+gold+certification+timeline",
+          "status": 202,
+          "bytes": 14604,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://html.duckduckgo.com/html/?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa",
+          "final": "https://html.duckduckgo.com/html/?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa",
+          "status": 202,
+          "bytes": 14374,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.bing.com/search?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa+carrie+underwood+cry+pretty+album+riaa+certification+gold+cry+pretty+certification+date+riaa+gold+certification+timeline",
+          "final": "https://www.bing.com/search?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa+carrie+underwood+cry+pretty+album+riaa+certification+gold+cry+pretty+certification+date+riaa+gold+certification+timeline",
+          "status": 200,
+          "bytes": 127145,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.bing.com/search?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa",
+          "final": "https://www.bing.com/search?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa",
+          "status": 200,
+          "bytes": 124151,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.bing.com/search?format=rss&q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa+carrie+underwood+cry+pretty+album+riaa+certification+gold+cry+pretty+certification+date+riaa+gold+certification+timeline",
+          "final": "https://www.bing.com/search?format=rss&q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa+carrie+underwood+cry+pretty+album+riaa+certification+gold+cry+pretty+certification+date+riaa+gold+certification+timeline",
+          "status": 200,
+          "bytes": 3751,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://lite.duckduckgo.com/lite/?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa+carrie+underwood+cry+pretty+album+riaa+certification+gold+cry+pretty+certification+date+riaa+gold+certification+timeline",
+          "final": "https://lite.duckduckgo.com/lite/?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa+carrie+underwood+cry+pretty+album+riaa+certification+gold+cry+pretty+certification+date+riaa+gold+certification+timeline",
+          "status": 202,
+          "bytes": 14610,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://lite.duckduckgo.com/lite/?q=carrie+underwood+cry+pretty+album",
+          "final": "https://lite.duckduckgo.com/lite/?q=carrie+underwood+cry+pretty+album",
+          "status": 200,
+          "bytes": 24023,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.discogs.com/release/13297187-Carrie-Underwood-Cry-Pretty",
+          "final": "https://www.discogs.com/release/13297187-Carrie-Underwood-Cry-Pretty",
+          "status": 403,
+          "bytes": 0,
+          "error": "http_403",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.discogs.com/release/23674781-Carrie-Underwood-Cry-Pretty-Deluxe",
+          "final": "https://www.discogs.com/release/23674781-Carrie-Underwood-Cry-Pretty-Deluxe",
+          "status": 403,
+          "bytes": 0,
+          "error": "http_403",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.youtube.com/playlist?list=PL6-B652C0OuJkYDY5hjBUPmpLxCSSuLVI",
+          "final": "https://www.youtube.com/playlist?list=PL6-B652C0OuJkYDY5hjBUPmpLxCSSuLVI",
+          "status": 200,
+          "bytes": 1040975,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://music.apple.com/us/album/cry-pretty/1432044881",
+          "final": "https://music.apple.com/us/album/cry-pretty/1432044881",
+          "status": 200,
+          "bytes": 447752,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        }
+      ],
+      "seconds": 2.9293870999244973,
+      "search_snapshot_path": "research\\concise-discovery-20261023\\simpleqa-32.json",
+      "search_snapshot_sha256": "536d476093894758359dc9f86b065085b3f2b67fc89260c9f6db8a58c7e43303"
+    }
+  ],
+  "source_sha256": {
+    "agent/search.py": "dc0158fce0729edce35d13bb3935de76d94d95f6c9a565427b814ffb787b5fd9",
+    "agent/urls.py": "2118381f70d0f44174db25833b989cd36dab64b588b83085cddd65cad7412a1f",
+    "agent/network.py": "def1be3752f81423c313c2dfa83f6703ee063d7e98652cf0d816b423d0e2d9cb",
+    "agent/planner.py": "56d3747fd466f414800221f35a8f4d3fa25d1c40b484ace1fee7dae66be51921"
+  },
+  "input_report": "benchmarks/external-disjoint12-20261023-first.json",
+  "reused_trace_hints": true
+}

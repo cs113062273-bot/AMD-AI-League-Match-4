@@ -1,0 +1,792 @@
+{
+  "scope": "CPU diagnosis of omitted paragraph end tags, including saved exposed pages.\n\nNo public requests, model, browser, gold/alias changes, or accuracy estimate.\nStructural development expectations; source facts must remain literal.\n",
+  "baseline": null,
+  "rows": [
+    {
+      "id": "omitted-p",
+      "passed": true,
+      "merged": [],
+      "passages": [
+        {
+          "text": "Alpha record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[0]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[1]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Alpha record Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "paragraphs[0]+2",
+          "qualifiers": {
+            "paragraph_window": true,
+            "paragraph_count": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "closed-p",
+      "passed": true,
+      "merged": [],
+      "passages": [
+        {
+          "text": "Alpha record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[0]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[1]:0",
+          "qualifiers": {}
+        }
+      ]
+    },
+    {
+      "id": "mixed-closure",
+      "passed": true,
+      "merged": [],
+      "passages": [
+        {
+          "text": "Alpha record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[0]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[1]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Gamma record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[2]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Alpha record Beta record Gamma record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "paragraphs[0]+3",
+          "qualifiers": {
+            "paragraph_window": true,
+            "paragraph_count": 3
+          }
+        },
+        {
+          "text": "Beta record Gamma record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "paragraphs[1]+2",
+          "qualifiers": {
+            "paragraph_window": true,
+            "paragraph_count": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "uppercase",
+      "passed": true,
+      "merged": [],
+      "passages": [
+        {
+          "text": "Alpha record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[0]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[1]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Alpha record Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "paragraphs[0]+2",
+          "qualifiers": {
+            "paragraph_window": true,
+            "paragraph_count": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "inline-strong",
+      "passed": true,
+      "merged": [],
+      "passages": [
+        {
+          "text": "Alpha record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[0]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[1]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Alpha record Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "paragraphs[0]+2",
+          "qualifiers": {
+            "paragraph_window": true,
+            "paragraph_count": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "comment",
+      "passed": true,
+      "merged": [],
+      "passages": [
+        {
+          "text": "Alpha record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[0]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[1]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Alpha record Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "paragraphs[0]+2",
+          "qualifiers": {
+            "paragraph_window": true,
+            "paragraph_count": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "quoted-attribute",
+      "passed": true,
+      "merged": [],
+      "passages": [
+        {
+          "text": "Alpha record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[0]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[1]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Alpha record Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "paragraphs[0]+2",
+          "qualifiers": {
+            "paragraph_window": true,
+            "paragraph_count": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "div-after-p",
+      "passed": true,
+      "merged": [],
+      "passages": [
+        {
+          "text": "Alpha record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[0]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "block[0]",
+          "qualifiers": {}
+        }
+      ]
+    },
+    {
+      "id": "heading-after-p",
+      "passed": true,
+      "merged": [],
+      "passages": [
+        {
+          "text": "Alpha record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[0]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Beta heading",
+          "label": "",
+          "value": "",
+          "section": "Beta heading",
+          "kind": "heading",
+          "locator": "heading[1]",
+          "qualifiers": {}
+        },
+        {
+          "text": "Gamma record",
+          "label": "",
+          "value": "",
+          "section": "Beta heading",
+          "kind": "prose",
+          "locator": "p[2]:0",
+          "qualifiers": {}
+        }
+      ]
+    },
+    {
+      "id": "footer-after-p",
+      "passed": true,
+      "merged": [],
+      "passages": [
+        {
+          "text": "Alpha record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[0]:0",
+          "qualifiers": {}
+        }
+      ]
+    },
+    {
+      "id": "paragraph-inside-nav",
+      "passed": true,
+      "merged": [],
+      "passages": [
+        {
+          "text": "Alpha record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[0]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[1]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Alpha record Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "paragraphs[0]+2",
+          "qualifiers": {
+            "paragraph_window": true,
+            "paragraph_count": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "script-literals",
+      "passed": true,
+      "merged": [],
+      "passages": [
+        {
+          "text": "Alpha record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[0]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[1]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Alpha record Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "paragraphs[0]+2",
+          "qualifiers": {
+            "paragraph_window": true,
+            "paragraph_count": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "metadata-json",
+      "passed": true,
+      "merged": [],
+      "passages": [
+        {
+          "text": "description: <p>literal | $ { description: <p>literal }",
+          "label": "description",
+          "value": "<p>literal",
+          "section": "$ { description: <p>literal }",
+          "kind": "jsonld",
+          "locator": "script[0]/description",
+          "qualifiers": {
+            "structured": true,
+            "bindings": {
+              "description": "<p>literal"
+            },
+            "value_type": "scalar"
+          }
+        },
+        {
+          "text": "Alpha record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[0]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[1]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Alpha record Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "paragraphs[0]+2",
+          "qualifiers": {
+            "paragraph_window": true,
+            "paragraph_count": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "escaped-tags",
+      "passed": true,
+      "merged": [],
+      "passages": [
+        {
+          "text": "Alpha <p> record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[0]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Beta & record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[1]:0",
+          "qualifiers": {}
+        }
+      ]
+    },
+    {
+      "id": "br-inline",
+      "passed": true,
+      "merged": [],
+      "passages": [
+        {
+          "text": "Alpha record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[0]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[1]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Alpha",
+          "label": "line 1",
+          "value": "",
+          "section": "",
+          "kind": "line",
+          "locator": "lines[0]/line[0]",
+          "qualifiers": {
+            "source_line": 1,
+            "complete_line": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "list-after-p",
+      "passed": true,
+      "merged": [],
+      "passages": [
+        {
+          "text": "Alpha record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[0]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "li[1]:0",
+          "qualifiers": {}
+        }
+      ]
+    },
+    {
+      "id": "table-after-p",
+      "passed": true,
+      "merged": [],
+      "passages": [
+        {
+          "text": "Alpha record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[0]:0",
+          "qualifiers": {}
+        }
+      ]
+    },
+    {
+      "id": "blockquote-after-p",
+      "passed": true,
+      "merged": [],
+      "passages": [
+        {
+          "text": "Alpha record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[0]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "blockquote[1]:0",
+          "qualifiers": {}
+        }
+      ]
+    },
+    {
+      "id": "context-bounds-and-heading-boundary",
+      "passed": true,
+      "windows": [
+        {
+          "text": "Alpha record Beta record Gamma record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "paragraphs[0]+3",
+          "qualifiers": {
+            "paragraph_window": true,
+            "paragraph_count": 3
+          }
+        },
+        {
+          "text": "Beta record Gamma record Delta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "paragraphs[1]+3",
+          "qualifiers": {
+            "paragraph_window": true,
+            "paragraph_count": 3
+          }
+        },
+        {
+          "text": "Gamma record Delta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "paragraphs[2]+2",
+          "qualifiers": {
+            "paragraph_window": true,
+            "paragraph_count": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "context-population-617",
+      "passed": true,
+      "accepted": [
+        true
+      ],
+      "expected": true
+    },
+    {
+      "id": "context-population-142",
+      "passed": true,
+      "accepted": [
+        false
+      ],
+      "expected": false
+    },
+    {
+      "id": "context-population-2004",
+      "passed": true,
+      "accepted": [
+        false
+      ],
+      "expected": false
+    },
+    {
+      "id": "context-population-839",
+      "passed": true,
+      "accepted": [
+        false
+      ],
+      "expected": false
+    },
+    {
+      "id": "saved-source-witness-and-boundary",
+      "passed": true,
+      "scope": "Source context availability only, not model correctness or a new answer win",
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-4145.json",
+      "capture_sha256": "186861463adbfb19b5603222343f72fa1a229b967c69ff24493c747ae6993c24",
+      "witness_first_payload_position": 0,
+      "witness_ranked_positions": [
+        0,
+        18,
+        33,
+        39
+      ],
+      "polluted_witness_passages": 0,
+      "sources": [
+        {
+          "url": "https://noehill.com/humboldt/nat1978000673.asp",
+          "body_sha256": "4cf35051ebc9b25ebfc0e630f2c471f0da6454d759f28a46c3fb7c75991f86b3",
+          "max_nested_paragraphs": 16,
+          "passage_count": 47
+        },
+        {
+          "url": "https://noehill.com/california/default.asp",
+          "body_sha256": "bf49f9bceb9112e8a201ff260812622a8f2d24d62f79a4ec93e65cdadc11042b",
+          "max_nested_paragraphs": 4,
+          "passage_count": 24
+        },
+        {
+          "url": "https://noehill.com/merced/poi_snelling_odd_fellows.asp",
+          "body_sha256": "7e56b17d8afc8cd2d471ffbcd5e61d2081e89d2241a046d79d828945afb9be30",
+          "max_nested_paragraphs": 12,
+          "passage_count": 38
+        },
+        {
+          "url": "https://noehill.com/mariposa/poi_coulterville_odd_fellows_hall.asp",
+          "body_sha256": "a05ef5a4404b968b72f5ac8149612e78114977e5c71c88f449170f70c5ea2fc8",
+          "max_nested_paragraphs": 18,
+          "passage_count": 49
+        }
+      ],
+      "first_payload": [
+        {
+          "id": 0,
+          "text": "The French Empire Mansard Building was constructed by James Simpson, a well known builder who constructed several other large buildings, in 1883 to house the new lodge hall for the Independent Order of Odd Fellows. The large two story building was constructed of brick with an imposing two story entrance pavilion bordered by specially formed iron columns. This is Eureka's finest example of Second Empire architecture.",
+          "section": "",
+          "source": "https://noehill.com/humboldt/nat1978000673.asp",
+          "locator": "paragraphs[1]+3",
+          "document_title": "National Register #78000673: Odd Fellows Hall in Eureka, California"
+        },
+        {
+          "id": 1,
+          "text": "National Register #78000673 Odd Fellows Hall 123 F Street Eureka Built 1883",
+          "section": "",
+          "source": "https://noehill.com/humboldt/nat1978000673.asp",
+          "locator": "block[10]",
+          "document_title": "National Register #78000673: Odd Fellows Hall in Eureka, California"
+        },
+        {
+          "id": 2,
+          "text": "description: This French Empire Mansard building was constructed by James Simpson in 1883 to house the new lodge hall for the Independent Order of Odd Fellows.",
+          "section": "",
+          "source": "https://noehill.com/humboldt/nat1978000673.asp",
+          "locator": "meta[0]",
+          "document_title": "National Register #78000673: Odd Fellows Hall in Eureka, California"
+        },
+        {
+          "id": 3,
+          "text": "The French Empire Mansard Building was constructed by James Simpson, a well known builder who constructed several other large buildings, in 1883 to house the new lodge hall for the Independent Order of Odd Fellows.",
+          "section": "",
+          "source": "https://noehill.com/humboldt/nat1978000673.asp",
+          "locator": "p[9]:0",
+          "document_title": "National Register #78000673: Odd Fellows Hall in Eureka, California"
+        },
+        {
+          "id": 4,
+          "text": "This two-story wood-frame structure in the Greek Revival architectural style was constructed shortly after the fire of 1899 on the site of an earlier lodge building.",
+          "section": "",
+          "source": "https://noehill.com/mariposa/poi_coulterville_odd_fellows_hall.asp",
+          "locator": "p[9]:0",
+          "document_title": "Historic Point of Interest in Coulterville, California: Odd Fellows Hall"
+        },
+        {
+          "id": 5,
+          "text": "The Coulterville Odd Fellows Hall contributes to the National Register Coulterville Historic District .",
+          "section": "",
+          "source": "https://noehill.com/mariposa/poi_coulterville_odd_fellows_hall.asp",
+          "locator": "p[13]:0",
+          "document_title": "Historic Point of Interest in Coulterville, California: Odd Fellows Hall"
+        },
+        {
+          "id": 6,
+          "text": "Coulterville Odd Fellows Hall Main Street Coulterville Built 1900",
+          "section": "",
+          "source": "https://noehill.com/mariposa/poi_coulterville_odd_fellows_hall.asp",
+          "locator": "block[10]",
+          "document_title": "Historic Point of Interest in Coulterville, California: Odd Fellows Hall"
+        },
+        {
+          "id": 7,
+          "text": "The interior of this structure is almost completely intact. A large meeting room surrounded by several smaller meeting rooms is located on the second story. The lower level is a large, open dance hall and meeting room, with a stage and proscenium at the rear. The Coulterville Odd Fellows Hall contributes to the National Register Coulterville Historic District .",
+          "section": "",
+          "source": "https://noehill.com/mariposa/poi_coulterville_odd_fellows_hall.asp",
+          "locator": "paragraphs[4]+2",
+          "document_title": "Historic Point of Interest in Coulterville, California: Odd Fellows Hall"
+        }
+      ]
+    }
+  ],
+  "diagnostic_sha256": "6c90714172add2992d0e16101515ddd359aebabc1b2d03ae2d2255bca4edd135",
+  "passed": 24,
+  "total": 24,
+  "source_sha256": {
+    "agent\\parser.py": "1787ab648446436b3de0d1555cb9ff2528c1ca4bf23296bcbc0becc0ca823cda",
+    "agent\\html_paragraphs.py": "fd2efd7286fd9bff67a9439a2e864ad729f90b28404316f3fb83cc2657053595"
+  },
+  "torch_imported": false
+}

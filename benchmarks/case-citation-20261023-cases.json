@@ -1,0 +1,66 @@
+[
+  {
+    "id": "real-teams",
+    "query": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+    "answer": "University of Georgia and University of Alabama",
+    "source": "https://www.oyez.org/cases/1966/37",
+    "mode": "real"
+  },
+  {
+    "id": "real-informant",
+    "query": "Who was the source of the article in Curtis Publishing v. Butts?",
+    "answer": "George Burnett",
+    "source": "https://www.oyez.org/cases/1966/37",
+    "mode": "real"
+  },
+  {
+    "id": "api-only-docket",
+    "query": "What is the docket number of Curtis Publishing Company v. Butts?",
+    "answer": "37",
+    "source": "https://api.oyez.org/cases/1966/37?labels=true",
+    "mode": "real"
+  },
+  {
+    "id": "direct-api",
+    "query": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+    "answer": "University of Georgia and University of Alabama",
+    "source": "https://api.oyez.org/cases/1966/37?labels=true",
+    "mode": "api"
+  },
+  {
+    "id": "wrong-title",
+    "query": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+    "answer": "University of Georgia and University of Alabama",
+    "source": "https://api.oyez.org/cases/1966/37?labels=true",
+    "mode": "wrong-title"
+  },
+  {
+    "id": "shell-only",
+    "query": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+    "answer": "University of Georgia and University of Alabama",
+    "source": "https://api.oyez.org/cases/1966/37?labels=true",
+    "mode": "shell"
+  },
+  {
+    "id": "browser-off",
+    "query": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+    "answer": "University of Georgia and University of Alabama",
+    "source": "https://api.oyez.org/cases/1966/37?labels=true",
+    "mode": "off"
+  },
+  {
+    "id": "partial-content",
+    "query": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+    "answer": "University of Georgia and University of Alabama",
+    "source": "https://api.oyez.org/cases/1966/37?labels=true",
+    "mode": "partial"
+  },
+  {
+    "id": "reading-reserve",
+    "query": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+    "answer": "University of Georgia and University of Alabama",
+    "source": "https://api.oyez.org/cases/1966/37?labels=true",
+    "mode": "real",
+    "budget": 8
+  }
+]

@@ -1,0 +1,123 @@
+{
+  "scope": "Actual current CPU-only public discovery, same original question/URL/hints; no model/browser.",
+  "question": "What was the population of Konaruiyeh, a village in Esfandaqeh Rural District, in the Central District of Jiroft County, Kerman Province, Iran, at the 2006 census?",
+  "starting_url": "https://en.wikipedia.org/wiki/Konaruiyeh",
+  "links": [
+    [
+      "https://mapcarta.com/12599014",
+      "Konaruiyeh Map - Locality - Kerman, Iran - Mapcarta"
+    ],
+    [
+      "https://irandataportal.syr.edu/census",
+      "Census - Iran Data Portal - Syracuse University"
+    ],
+    [
+      "https://www.wikiwand.com/en/Konaruiyeh",
+      "Konaruiyeh - Wikiwand"
+    ],
+    [
+      "https://www.wikidata.org/wiki/Q5831163",
+      "Konaruiyeh - Wikidata"
+    ],
+    [
+      "https://everything.explained.today/Konaruiyeh/",
+      "Konaruiyeh Explained"
+    ],
+    [
+      "https://alchetron.com/Konaruiyeh",
+      "Konaruiyeh - Alchetron, The Free Social Encyclopedia"
+    ],
+    [
+      "https://zh-min-nan.wikipedia.org/wiki/Konaruiyeh",
+      "Konaruiyeh - Wikipedia"
+    ],
+    [
+      "https://en.wikipedia.org/wiki/Konaruiyeh",
+      "Konaruiyeh - Wikipedia"
+    ]
+  ],
+  "events": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Konaruiyeh",
+      "final": "https://en.wikipedia.org/wiki/Konaruiyeh",
+      "status": 403,
+      "bytes": 0,
+      "error": "http_403",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://www.bing.com/search?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census",
+      "final": "https://www.bing.com/search?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census",
+      "status": 200,
+      "bytes": 123011,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://www.bing.com/search?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census+konaruiyeh+census+data",
+      "final": "https://www.bing.com/search?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census+konaruiyeh+census+data",
+      "status": 200,
+      "bytes": 123763,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://html.duckduckgo.com/html/?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census+konaruiyeh+census+data",
+      "final": "https://html.duckduckgo.com/html/?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census+konaruiyeh+census+data",
+      "status": 202,
+      "bytes": 14506,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://html.duckduckgo.com/html/?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census",
+      "final": "https://html.duckduckgo.com/html/?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census",
+      "status": 202,
+      "bytes": 14429,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://www.bing.com/search?format=rss&q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census+konaruiyeh+census+data",
+      "final": "https://www.bing.com/search?format=rss&q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census+konaruiyeh+census+data",
+      "status": 200,
+      "bytes": 5819,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://lite.duckduckgo.com/lite/?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census+konaruiyeh+census+data",
+      "final": "https://lite.duckduckgo.com/lite/?q=population+konaruiyeh+village+esfandaqeh+rural+district+central+jiroft+county+kerman+province+iran+2006+census+konaruiyeh+census+data",
+      "status": 202,
+      "bytes": 14482,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://lite.duckduckgo.com/lite/?q=konaruiyeh+census+data",
+      "final": "https://lite.duckduckgo.com/lite/?q=konaruiyeh+census+data",
+      "status": 200,
+      "bytes": 23669,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    }
+  ],
+  "capture_path": "research/village-20261023-discovery.json",
+  "sha256": "3c3d9f8b0def9ff7e45138711089dc073330cd60caebef69a67eefa0a6a9e4a3"
+}

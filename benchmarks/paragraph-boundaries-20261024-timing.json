@@ -1,0 +1,31 @@
+{
+  "scope": "Small alternating CPU parsing timing on four immutable saved HTML pages; not end-to-end performance or throughput",
+  "capture_sha256": "186861463adbfb19b5603222343f72fa1a229b967c69ff24493c747ae6993c24",
+  "baseline": "8aa920e386b9cfa2f2a12e68abed2a9a69c69776",
+  "rows": [
+    {
+      "url": "https://noehill.com/humboldt/nat1978000673.asp",
+      "bytes": 10309,
+      "before_median_seconds": 0.02084409999952186,
+      "after_median_seconds": 0.03661699999975099
+    },
+    {
+      "url": "https://noehill.com/california/default.asp",
+      "bytes": 8532,
+      "before_median_seconds": 0.012027500000840519,
+      "after_median_seconds": 0.035814200000459095
+    },
+    {
+      "url": "https://noehill.com/merced/poi_snelling_odd_fellows.asp",
+      "bytes": 9550,
+      "before_median_seconds": 0.031021299999338225,
+      "after_median_seconds": 0.02766220000012254
+    },
+    {
+      "url": "https://noehill.com/mariposa/poi_coulterville_odd_fellows_hall.asp",
+      "bytes": 10901,
+      "before_median_seconds": 0.026334400001360336,
+      "after_median_seconds": 0.04913940000005823
+    }
+  ]
+}

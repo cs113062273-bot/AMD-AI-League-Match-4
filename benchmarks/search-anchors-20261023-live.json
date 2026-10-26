@@ -1,0 +1,675 @@
+{
+  "scope": "Small live-source availability probe from exposed historical failures.\n\nRuns actual production HTTP/search parsing, without model inference or gold\nanswers in production requests. This reports retrieval, not answer accuracy.\n",
+  "captured_utc": "2026-10-23T00:57:10.671555+00:00",
+  "rows": [
+    {
+      "id": "simpleqa-37",
+      "query": "What is the first and last name of the woman whom the British linguist Bernard Comrie married in 1985?",
+      "starting_url": "https://en.wikipedia.org/wiki/Bernard_Comrie",
+      "starting_status": 403,
+      "starting_error": "http_403",
+      "candidates": [
+        [
+          "https://street.febigcity.com/",
+          "Big City \u9060\u6771\u5de8\u57ce\u8cfc\u7269\u4e2d\u5fc3"
+        ],
+        [
+          "https://street.febigcity.com/way",
+          "BigCity\u7b2c\u4e5d\u5c46\u8857\u982d\u85dd\u8853\u7bc0"
+        ],
+        [
+          "https://bcshopec-test.febigcity.com/",
+          "Big City\u7dda\u4e0a\u8cfc\u7269"
+        ],
+        [
+          "https://www.febigcity.com/BigCity/Brand/Brand/1884ed33-f37f-4420-a2be-00cd983aa9e9",
+          "\u54c1\u724c\u8cc7\u8a0a-\u73a9\u5177\u5a1b\u6a02-\u6587\u6559\u73a9\u5177-FUN BOX \u9e97\u5b30\u570b\u969b-Big City \u9060\u6771\u5de8\u57ce\u8cfc \u2026"
+        ],
+        [
+          "https://www.febigcity.com/bigcity/Brand?parent=c1e46c4b-9c52-4d4d-a462-e57d56737637&child=deb54c22-953d-4629-80d1-0044d09083e5",
+          "\u54c1\u724c\u8cc7\u8a0a - \u7f8e\u98df\u9910\u5ef3 -\u6cd5\u5f0f\u5ead\u5712 - Big City \u9060\u6771\u5de8\u57ce\u8cfc\u7269\u4e2d\u5fc3"
+        ],
+        [
+          "https://street.febigcity.com/program",
+          "BigCity\u7b2c\u4e5d\u5c46\u8857\u982d\u85dd\u8853\u7bc0 - Big City \u9060\u6771\u5de8\u57ce\u8cfc\u7269\u4e2d\u5fc3"
+        ],
+        [
+          "https://street.febigcity.com/participation",
+          "BigCity\u7b2c\u4e5d\u5c46\u8857\u982d\u85dd\u8853\u7bc0 - Big City \u9060\u6771\u5de8\u57ce\u8cfc\u7269\u4e2d\u5fc3"
+        ],
+        [
+          "https://street.febigcity.com/news",
+          "BigCity\u7b2c\u4e5d\u5c46\u8857\u982d\u85dd\u8853\u7bc0 - Big City \u9060\u6771\u5de8\u57ce\u8cfc\u7269\u4e2d\u5fc3"
+        ],
+        [
+          "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/first",
+          "FIRST \u4e2d\u6587 (\u7e41\u9ad4)\u7ffb\u8b6f\uff1a\u528d\u6a4b\u8a5e\u5178 - Cambridge Dictionary"
+        ],
+        [
+          "https://tw.dictionary.search.yahoo.com/search?p=first",
+          "first - Yahoo\u5b57\u5178\u641c\u5c0b\u7d50\u679c"
+        ],
+        [
+          "https://dict.zhuaniao.com/en/first/",
+          "first \u4ec0\u4e48\u610f\u601d? first \u7ffb\u8bd1 (\u4e2d\u6587\u82f1\u6587):\u9996\u5148, \u6700\u521d, \u7b2c\u4e00\u2026 \u300a\u6293\u9e1f\u300b\u82f1\u8bed\u8bcd\u5178"
+        ],
+        [
+          "https://dict.zhuaniao.com/en_fanti/first/",
+          "first \u4ec0\u9ebc\u610f\u601d, \u600e\u9ebc\u5538? first \u7ffb\u8b6f (\u4e2d\u6587\u82f1\u6587):\u9996\u5148, \u6700\u521d, \u7b2c\u4e00, \u512a\u5148, \u7b2c \u2026"
+        ]
+      ],
+      "search_hints": [
+        "bernard comrie spouse",
+        "bernard comrie wife",
+        "british linguist marriage",
+        "comrie marital partner",
+        "wife of bernard comrie",
+        "comrie personal life"
+      ],
+      "pages": [
+        {
+          "url": "https://street.febigcity.com/",
+          "title": "BigCity\u7b2c\u4e5d\u5c46\u8857\u982d\u85dd\u8853\u7bc0",
+          "error": "",
+          "passages": 60
+        },
+        {
+          "url": "https://street.febigcity.com/way",
+          "title": "BigCity\u7b2c\u4e5d\u5c46\u8857\u982d\u85dd\u8853\u7bc0",
+          "error": "",
+          "passages": 74
+        },
+        {
+          "url": "https://bcshopec-test.febigcity.com/",
+          "title": "Big City\u7dda\u4e0a\u8cfc\u7269",
+          "error": "",
+          "passages": 64
+        },
+        {
+          "url": "https://www.febigcity.com/BigCity/Brand/Brand/1884ed33-f37f-4420-a2be-00cd983aa9e9",
+          "title": "",
+          "error": "",
+          "passages": 62
+        }
+      ],
+      "events": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bernard_Comrie",
+          "final": "https://en.wikipedia.org/wiki/Bernard_Comrie",
+          "status": 403,
+          "bytes": 0,
+          "error": "http_403",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.bing.com/search?q=bernard+comrie+spouse+bernard+comrie+wife+british+linguist+marriage+comrie+marital+partner+first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985",
+          "final": "https://www.bing.com/search?q=bernard+comrie+spouse+bernard+comrie+wife+british+linguist+marriage+comrie+marital+partner+first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985",
+          "status": 200,
+          "bytes": 126341,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.bing.com/search?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985",
+          "final": "https://www.bing.com/search?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985",
+          "status": 200,
+          "bytes": 126459,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://html.duckduckgo.com/html/?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985",
+          "final": "https://html.duckduckgo.com/html/?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985",
+          "status": 202,
+          "bytes": 14358,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://html.duckduckgo.com/html/?q=bernard+comrie+spouse+bernard+comrie+wife+british+linguist+marriage+comrie+marital+partner+first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985",
+          "final": "https://html.duckduckgo.com/html/?q=bernard+comrie+spouse+bernard+comrie+wife+british+linguist+marriage+comrie+marital+partner+first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985",
+          "status": 202,
+          "bytes": 14534,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.bing.com/search?format=rss&q=bernard+comrie+spouse+bernard+comrie+wife+british+linguist+marriage+comrie+marital+partner+first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985",
+          "final": "https://www.bing.com/search?format=rss&q=bernard+comrie+spouse+bernard+comrie+wife+british+linguist+marriage+comrie+marital+partner+first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985",
+          "status": 200,
+          "bytes": 5897,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://lite.duckduckgo.com/lite/?q=bernard+comrie+spouse+bernard+comrie+wife+british+linguist+marriage+comrie+marital+partner+first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985",
+          "final": "https://lite.duckduckgo.com/lite/?q=bernard+comrie+spouse+bernard+comrie+wife+british+linguist+marriage+comrie+marital+partner+first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985",
+          "status": 202,
+          "bytes": 14546,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.google.com/search?q=bernard+comrie+spouse+bernard+comrie+wife+british+linguist+marriage+comrie+marital+partner+first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985",
+          "final": "https://www.google.com/search?q=bernard+comrie+spouse+bernard+comrie+wife+british+linguist+marriage+comrie+marital+partner+first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985",
+          "status": 200,
+          "bytes": 92681,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=What%20is%20the%20first%20and%20last%20name%20of%20the%20woman%20whom%20the%20British%20linguist%20Bernard%20Comrie%20married%20in%201985%3F",
+          "final": "https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=What%20is%20the%20first%20and%20last%20name%20of%20the%20woman%20whom%20the%20British%20linguist%20Bernard%20Comrie%20married%20in%201985%3F",
+          "status": 403,
+          "bytes": 0,
+          "error": "http_403",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://bcshopec-test.febigcity.com/",
+          "final": "https://bcshopec-test.febigcity.com/",
+          "status": 200,
+          "bytes": 84957,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://street.febigcity.com/",
+          "final": "https://street.febigcity.com/",
+          "status": 200,
+          "bytes": 24379,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://street.febigcity.com/way",
+          "final": "https://street.febigcity.com/way",
+          "status": 200,
+          "bytes": 29537,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.febigcity.com/BigCity/Brand/Brand/1884ed33-f37f-4420-a2be-00cd983aa9e9",
+          "final": "https://www.febigcity.com/BigCity/Brand/Brand/1884ed33-f37f-4420-a2be-00cd983aa9e9",
+          "status": 200,
+          "bytes": 39122,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        }
+      ],
+      "seconds": 3.0130675999680534,
+      "search_snapshot_path": "research\\search-anchors-20261023\\simpleqa-37.json",
+      "search_snapshot_sha256": "cf9a579b20595497d95b8d93d694427b32ad816a68a5ce6d5ee06f9be4156d13"
+    },
+    {
+      "id": "simpleqa-395",
+      "query": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+      "starting_url": "https://en.wikipedia.org/wiki/Curtis_Publishing_Co._v._Butts",
+      "starting_status": 403,
+      "starting_error": "http_403",
+      "candidates": [
+        [
+          "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/two",
+          "TWO \u4e2d\u6587 (\u7e41\u9ad4)\u7ffb\u8b6f\uff1a\u528d\u6a4b\u8a5e\u5178 - Cambridge Dictionary"
+        ],
+        [
+          "https://dictionary.cambridge.org/dictionary/english/two",
+          "TWO | English meaning - Cambridge Dictionary"
+        ],
+        [
+          "https://www.wantgoo.com/index/two",
+          "\u6ac3\u6aaf\u6307\u6578( TWO ) - \u5373\u6642\u8d70\u52e2\uff06\u6280\u8853\u5206\u6790 - \u53f0\u80a1 | \u73a9\u80a1\u7db2"
+        ],
+        [
+          "https://simple.wikipedia.org/wiki/2_(number)",
+          "2 ( number ) - Simple English Wikipedia, the free encyclopedia"
+        ],
+        [
+          "https://www.youtube.com/watch?v=MkEoViReeu0",
+          "II ( TWO ) - Official Trailer #2 (2021) - YouTube"
+        ],
+        [
+          "https://www.merriam-webster.com/dictionary/two",
+          "TWO Definition & Meaning - Merriam-Webster"
+        ],
+        [
+          "https://www.twoplayergames.org/",
+          "2 Player Games - TwoPlayerGames.org"
+        ],
+        [
+          "https://support.google.com/websearch",
+          "\u610f\u898b\u56de\u994b"
+        ],
+        [
+          "https://en.wikipedia.org/wiki/2",
+          "2 - Wikipedia"
+        ]
+      ],
+      "search_hints": [],
+      "pages": [
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/two",
+          "title": "",
+          "error": "http_403",
+          "passages": 0
+        },
+        {
+          "url": "https://dictionary.cambridge.org/dictionary/english/two",
+          "title": "",
+          "error": "http_403",
+          "passages": 0
+        },
+        {
+          "url": "https://www.wantgoo.com/index/two",
+          "title": "\u5373\u6642\u8d70\u52e2\uff06\u6280\u8853\u5206\u6790 - \u53f0\u80a1 | \u73a9\u80a1\u7db2",
+          "error": "",
+          "passages": 1
+        },
+        {
+          "url": "https://simple.wikipedia.org/wiki/2_(number)",
+          "title": "",
+          "error": "http_403",
+          "passages": 0
+        }
+      ],
+      "events": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Curtis_Publishing_Co._v._Butts",
+          "final": "https://en.wikipedia.org/wiki/Curtis_Publishing_Co._v._Butts",
+          "status": 403,
+          "bytes": 0,
+          "error": "http_403",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.bing.com/search?q=What+two+football+teams+were+mentioned+in+the+libel+case+against+%22The+Saturday+Evening+Post%22+in+1963%3F",
+          "final": "https://www.bing.com/search?q=What+two+football+teams+were+mentioned+in+the+libel+case+against+%22The+Saturday+Evening+Post%22+in+1963%3F",
+          "status": 200,
+          "bytes": 128598,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.bing.com/search?q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+          "final": "https://www.bing.com/search?q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+          "status": 200,
+          "bytes": 124399,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://html.duckduckgo.com/html/?q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+          "final": "https://html.duckduckgo.com/html/?q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+          "status": 202,
+          "bytes": 14370,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://html.duckduckgo.com/html/?q=What+two+football+teams+were+mentioned+in+the+libel+case+against+%22The+Saturday+Evening+Post%22+in+1963%3F",
+          "final": "https://html.duckduckgo.com/html/?q=What+two+football+teams+were+mentioned+in+the+libel+case+against+%22The+Saturday+Evening+Post%22+in+1963%3F",
+          "status": 202,
+          "bytes": 14438,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.bing.com/search?format=rss&q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+          "final": "https://www.bing.com/search?format=rss&q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+          "status": 200,
+          "bytes": 5263,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://lite.duckduckgo.com/lite/?q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+          "final": "https://lite.duckduckgo.com/lite/?q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+          "status": 202,
+          "bytes": 14363,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.google.com/search?q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+          "final": "https://www.google.com/search?q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+          "status": 200,
+          "bytes": 92419,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=What%20two%20football%20teams%20were%20mentioned%20in%20the%20libel%20case%20against%20%22The%20Saturday%20Evening%20Post%22%20in%201963%3F",
+          "final": "https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=What%20two%20football%20teams%20were%20mentioned%20in%20the%20libel%20case%20against%20%22The%20Saturday%20Evening%20Post%22%20in%201963%3F",
+          "status": 403,
+          "bytes": 0,
+          "error": "http_403",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/two",
+          "final": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/two",
+          "status": 403,
+          "bytes": 0,
+          "error": "http_403",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://dictionary.cambridge.org/dictionary/english/two",
+          "final": "https://dictionary.cambridge.org/dictionary/english/two",
+          "status": 403,
+          "bytes": 0,
+          "error": "http_403",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.wantgoo.com/index/two",
+          "final": "https://www.wantgoo.com/index/two",
+          "status": 200,
+          "bytes": 55182,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://simple.wikipedia.org/wiki/2_(number)",
+          "final": "https://simple.wikipedia.org/wiki/2_(number)",
+          "status": 403,
+          "bytes": 0,
+          "error": "http_403",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        }
+      ],
+      "seconds": 1.561100299935788,
+      "search_snapshot_path": "research\\search-anchors-20261023\\simpleqa-395.json",
+      "search_snapshot_sha256": "5fd732b1b52ec3ec5c7f5fc0f78dc827a9a9aff3f63b4e5337281f6c83f439ad"
+    },
+    {
+      "id": "simpleqa-32",
+      "query": "What day, month, and year was Carrie Underwood's album \"Cry Pretty\" certified Gold by the RIAA?",
+      "starting_url": "https://www.riaa.com/gold-platinum/?tab_active=default-award&se=cry+pretty",
+      "starting_status": 403,
+      "starting_error": "http_403",
+      "candidates": [
+        [
+          "https://tw.live/work-school/",
+          "\u505c\u73ed\u505c\u8ab2 \u8207\u98b1\u98a8\u5047 \u67e5\u8a62 \uff5c\u5168\u53f0\u7e23\u5e02\u653f\u5e9c\u6700\u65b0\u516c\u544a\u8207\u8def\u6cc1\u5f71\u50cf - \u5373\u6642\u5f71\u50cf \u2026"
+        ],
+        [
+          "https://twtools.cc/typhoon/",
+          "\u505c\u73ed\u505c\u8ab2\u67e5\u8a62 \u2014 \u98b1\u98a8/\u8c6a\u96e8\u5168\u53f0 22 \u7e23\u5e02\u4eca\u660e\u5169\u65e5\u516c\u544a | TWTools"
+        ],
+        [
+          "https://today.line.me/tw/v3/article/mWpwzvn",
+          "\u505c\u73ed\u505c\u8ab2 \u6700\u65b0\u540d\u55ae\uff08\u6efe\u52d5\u66f4\u65b0\uff09\uff5c22\u7e23\u5e02\u98b1\u98a8\u5047 \u67e5\u8a62 \u3001\u653e\u5047\u6a19\u6e96\u8207\u5ba3\u5e03 \u2026"
+        ],
+        [
+          "https://schooloff.site/",
+          "\u505c\u73ed\u505c\u8ab2\u67e5\u8a62 \u2014 \u505c \u4e86\u6c92"
+        ],
+        [
+          "https://www.tycg.gov.tw/typhoon/",
+          "\u6843\u5712\u5e02 \u653f\u5e9c\u707d\u9632\u5c08\u5340"
+        ],
+        [
+          "https://udn.com/search/tagging/2/%E5%81%9C%E7%8F%AD%E5%81%9C%E8%AA%B2",
+          "\u505c\u73ed\u505c\u8ab2 | \u641c\u5c0b\u6a19\u7c64 | \u806f\u5408\u65b0\u805e\u7db2"
+        ],
+        [
+          "https://yololab.net/archives/2026-champi-typhoon-taiwan",
+          "\u8594\u7435\u98b1\u98a8 10/23 \u505c\u73ed\u505c\u8ab2 \u6700\u65b0\u540d\u55ae\uff1a\u5317\u5317\u57fa\u6843\u3001\u65b0\u7af9\u3001\u4e2d\u90e8\u8207\u5609\u7fa9\u5e02\u516c \u2026"
+        ],
+        [
+          "https://en.wikipedia.org/wiki/Day",
+          "Day - Wikipedia"
+        ],
+        [
+          "https://www.daynday.com.tw/dayday",
+          "DAY&DAY | DAY&DAY \u65e5\u65e5\u5bb6\u5c45\u751f\u6d3b\u7cbe\u54c1"
+        ],
+        [
+          "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E-%E6%BC%A2%E8%AA%9E-%E7%B9%81%E9%AB%94/day",
+          "DAY \u4e2d\u6587 (\u7e41\u9ad4)\u7ffb\u8b6f\uff1a\u528d\u6a4b\u8a5e\u5178 - Cambridge Dictionary"
+        ],
+        [
+          "https://tw.dictionary.search.yahoo.com/search?p=day",
+          "day - Yahoo\u5b57\u5178\u641c\u5c0b\u7d50\u679c"
+        ],
+        [
+          "https://dictionary.cambridge.org/dictionary/english/day",
+          "DAY | English meaning - Cambridge Dictionary"
+        ]
+      ],
+      "search_hints": [
+        "carrie underwood cry pretty album",
+        "riaa certification gold",
+        "cry pretty certification date",
+        "riaa gold certification timeline",
+        "carrie underwood album release date",
+        "cry pretty riaa certification",
+        "gold certification music album",
+        "riaa certification event date"
+      ],
+      "pages": [
+        {
+          "url": "https://tw.live/work-school/",
+          "title": "\u505c\u73ed\u505c\u8ab2\u8207\u98b1\u98a8\u5047\u67e5\u8a62\uff5c\u5168\u53f0\u7e23\u5e02\u653f\u5e9c\u6700\u65b0\u516c\u544a\u8207\u8def\u6cc1\u5f71\u50cf - \u5373\u6642\u5f71\u50cf\u76e3\u8996\u5668",
+          "error": "",
+          "passages": 189
+        },
+        {
+          "url": "https://twtools.cc/typhoon/",
+          "title": "\u505c\u73ed\u505c\u8ab2\u67e5\u8a62 \u2014 \u98b1\u98a8/\u8c6a\u96e8\u5168\u53f0 22 \u7e23\u5e02\u4eca\u660e\u5169\u65e5\u516c\u544a | TWTools",
+          "error": "",
+          "passages": 254
+        },
+        {
+          "url": "https://today.line.me/tw/v3/article/mWpwzvn",
+          "title": "\u505c\u73ed\u505c\u8ab2\u6700\u65b0\u540d\u55ae\uff08\u6efe\u52d5\u66f4\u65b0\uff09\uff5c22\u7e23\u5e02\u98b1\u98a8\u5047\u67e5\u8a62\u3001\u653e\u5047\u6a19\u6e96\u8207\u5ba3\u5e03\u6642\u9593\u4e00\u6b21\u770b | \u6578\u4f4d\u6642\u4ee3 | LINE TODAY",
+          "error": "",
+          "passages": 2306
+        },
+        {
+          "url": "https://schooloff.site/",
+          "title": "\u505c\u73ed\u505c\u8ab2\u67e5\u8a62 \u2014 \u505c\u4e86\u6c92",
+          "error": "",
+          "passages": 276
+        }
+      ],
+      "events": [
+        {
+          "url": "https://www.riaa.com/gold-platinum/?tab_active=default-award&se=cry+pretty",
+          "final": "https://www.riaa.com/gold-platinum/?tab_active=default-award&se=cry+pretty",
+          "status": 403,
+          "bytes": 0,
+          "error": "http_403",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.bing.com/search?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa",
+          "final": "https://www.bing.com/search?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa",
+          "status": 200,
+          "bytes": 122948,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.bing.com/search?q=carrie+underwood+cry+pretty+album+riaa+certification+gold+cry+pretty+certification+date+riaa+gold+certification+timeline+day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa",
+          "final": "https://www.bing.com/search?q=carrie+underwood+cry+pretty+album+riaa+certification+gold+cry+pretty+certification+date+riaa+gold+certification+timeline+day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa",
+          "status": 200,
+          "bytes": 116425,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://html.duckduckgo.com/html/?q=carrie+underwood+cry+pretty+album+riaa+certification+gold+cry+pretty+certification+date+riaa+gold+certification+timeline+day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa",
+          "final": "https://html.duckduckgo.com/html/?q=carrie+underwood+cry+pretty+album+riaa+certification+gold+cry+pretty+certification+date+riaa+gold+certification+timeline+day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa",
+          "status": 202,
+          "bytes": 14628,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://html.duckduckgo.com/html/?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa",
+          "final": "https://html.duckduckgo.com/html/?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa",
+          "status": 202,
+          "bytes": 14386,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.bing.com/search?format=rss&q=carrie+underwood+cry+pretty+album+riaa+certification+gold+cry+pretty+certification+date+riaa+gold+certification+timeline+day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa",
+          "final": "https://www.bing.com/search?format=rss&q=carrie+underwood+cry+pretty+album+riaa+certification+gold+cry+pretty+certification+date+riaa+gold+certification+timeline+day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa",
+          "status": 200,
+          "bytes": 6446,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://lite.duckduckgo.com/lite/?q=carrie+underwood+cry+pretty+album+riaa+certification+gold+cry+pretty+certification+date+riaa+gold+certification+timeline+day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa",
+          "final": "https://lite.duckduckgo.com/lite/?q=carrie+underwood+cry+pretty+album+riaa+certification+gold+cry+pretty+certification+date+riaa+gold+certification+timeline+day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa",
+          "status": 202,
+          "bytes": 14610,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.google.com/search?q=carrie+underwood+cry+pretty+album+riaa+certification+gold+cry+pretty+certification+date+riaa+gold+certification+timeline+day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa",
+          "final": "https://www.google.com/search?q=carrie+underwood+cry+pretty+album+riaa+certification+gold+cry+pretty+certification+date+riaa+gold+certification+timeline+day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa",
+          "status": 200,
+          "bytes": 92357,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=What%20day%2C%20month%2C%20and%20year%20was%20Carrie%20Underwood%27s%20album%20%22Cry%20Pretty%22%20certified%20Gold%20by%20the%20RIAA%3F",
+          "final": "https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=What%20day%2C%20month%2C%20and%20year%20was%20Carrie%20Underwood%27s%20album%20%22Cry%20Pretty%22%20certified%20Gold%20by%20the%20RIAA%3F",
+          "status": 403,
+          "bytes": 0,
+          "error": "http_403",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://twtools.cc/typhoon/",
+          "final": "https://twtools.cc/typhoon/",
+          "status": 200,
+          "bytes": 69611,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://today.line.me/tw/v3/article/mWpwzvn",
+          "final": "https://today.line.me/tw/v3/article/mWpwzvn",
+          "status": 200,
+          "bytes": 285092,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://schooloff.site/",
+          "final": "https://schooloff.site/",
+          "status": 200,
+          "bytes": 241596,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://tw.live/work-school/",
+          "final": "https://tw.live/work-school/",
+          "status": 200,
+          "bytes": 61247,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        }
+      ],
+      "seconds": 2.1631409999681637,
+      "search_snapshot_path": "research\\search-anchors-20261023\\simpleqa-32.json",
+      "search_snapshot_sha256": "e072c9236b1045c42b0952536035c46e434e7f9e33f88cf81bfcb09bb7e7ec85"
+    }
+  ],
+  "source_sha256": {
+    "agent/search.py": "1dacfec43fd7a69f96a8aee70bcae64d9d83dc05c78b4f3c6d4786f67752471b",
+    "agent/urls.py": "2118381f70d0f44174db25833b989cd36dab64b588b83085cddd65cad7412a1f",
+    "agent/network.py": "def1be3752f81423c313c2dfa83f6703ee063d7e98652cf0d816b423d0e2d9cb",
+    "agent/planner.py": "0437ea114784095170a8e4b6d14e139f8fc80a27ab1c37c29ced95059525ca72"
+  },
+  "input_report": "benchmarks/external-disjoint12-20261023-first.json",
+  "reused_trace_hints": true
+}

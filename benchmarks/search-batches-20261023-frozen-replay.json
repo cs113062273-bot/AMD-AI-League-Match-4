@@ -1,0 +1,364 @@
+{
+  "scope": "Paired search parsing on identical recorded public HTTP responses, without network or inference.",
+  "baseline_revision": "fbed467abe125c1001de699ba29bc0fb87f51770",
+  "baseline_source_sha256": {
+    "agent/engine.py": "aad82e3f2c962afaaf8578703ac826264a6f9122691be65380b0dd8635f621a4",
+    "agent/types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent/planner.py": "97ae3cbf378d03e9b655fdf0cc05cbc28e66c02da8f1a6424704d8091dc79465",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/network.py": "c37ecb5b4b0fba4fac737954eda24952059922ed620c94b99bcb17daed8c5155",
+    "agent/urls.py": "2118381f70d0f44174db25833b989cd36dab64b588b83085cddd65cad7412a1f",
+    "agent/parser.py": "5395e0b9a105cf294399d03cf0363cbd49fc82651647b0fe6f8855d413784cff",
+    "agent/normalize.py": "6a4cb8311c29318d788c97a3e64cffa3c4085e595a0e1e9a2d5c418fa540e41c",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent/search.py": "ac3e239f6f3b86696877af3e237be0c125e78cebbb6e980060abab2eb3f4db90",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/candidates.py": "0eacf4e17eda25a888c544f3201df3abd7a5d669b4a088e77f1a227564c6e954",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/evidence.py": "756d35bc17919c32bc8db1ce2b8e609eaae5042bc376466fae862a0792b969cb",
+    "agent/selector.py": "a1319028ab2b86e1186dc2422e592c83a9d4fa7c129872c1377c39aa37962f5e",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/proofs.py": "42920966e3cae090d8a0d53f17270f607a4a6dcb8a96a1af20382d2785e64b74"
+  },
+  "current_search_sha256": "69e505204a79bd130e8c29f1c043c2c0356770d11ad4f905a99a6ff3a2a7b02f",
+  "rows": [
+    {
+      "id": "simpleqa-462",
+      "before": [
+        [
+          "https://www.topozone.com/new-york/herkimer-ny/summit/vickerman-hill/",
+          "Vickerman Hill Topo Map in Herkimer County NY - Topozone"
+        ],
+        [
+          "https://topoquest.com/place/new-york/summit/vickerman-hill/968529",
+          "Vickerman Hill, NY - TopoQuest"
+        ],
+        [
+          "https://www.getamap.net/maps/united_states/new_york/herkimer/_vickerman_hill/",
+          "Vickerman Hill (Herkimer) Map, Weather and Photos - United States ..."
+        ],
+        [
+          "https://en.wikipedia.org/wiki/Vickerman_Hill",
+          "Vickerman Hill - Wikipedia"
+        ],
+        [
+          "https://www.wikiwand.com/en/Vickerman_Hill",
+          "Vickerman Hill - Wikiwand"
+        ],
+        [
+          "https://kids.kiddle.co/Vickerman_Hill",
+          "Vickerman Hill Facts for Kids"
+        ],
+        [
+          "https://trailsnh.com/hike/n/357594518/Vickerman-Hill-NY",
+          "Vickerman Hill NY - trailsnh.com"
+        ],
+        [
+          "https://peakvisor.com/peak/vickerman-hill.html",
+          "Vickerman Hill (348 m) - Allegheny Plateau, USA | PeakVisor"
+        ],
+        [
+          "https://www.city.ichikawa.lg.jp/site/zoo/",
+          "\u5e02\u5ddd \u5e02 \u52d5\u690d\u7269\u5712\u30b5\u30a4\u30c8 - \u5e02\u5ddd \u5e02 \u516c\u5f0fWeb\u30b5\u30a4\u30c8"
+        ],
+        [
+          "https://www.city.ichikawa.lg.jp/site/zoo/index-2.html",
+          "\u5e02\u5ddd \u5e02 \u52d5\u690d\u7269\u5712\u30b5\u30a4\u30c8 - \u5e02\u5ddd \u5e02 \u516c\u5f0fWeb\u30b5\u30a4\u30c8"
+        ],
+        [
+          "https://udn.com/news/story/7470/9342278",
+          "\u7f3a\u6bcd\u611b\u65e5\u672c\u5c0f\u7334\u300cPanchi\u541b\u300d\u62b1\u73a9\u5076\u7206\u7d05 \u52d5\u4fdd\u5718\u9ad4\u75db\u6279\u5712\u65b9\uff1a\u5275\u50b7\u7576\u8ce3 \u2026"
+        ],
+        [
+          "https://www.auc-cop.co.jp/gardenoasis",
+          "\u5e02\u5ddd \u5e02 \u52d5\u690d\u7269\u5712MS\uff5c\u30df\u30e5\u30fc\u30b8\u30a2\u30e0\u30b7\u30e7\u30c3\u30d7\u904b\u55b6\uff5c\u682a\u5f0f\u4f1a\u793e\u30aa\u30fc\u30af\u30b3\u2026"
+        ]
+      ],
+      "after": [
+        [
+          "https://www.topozone.com/new-york/herkimer-ny/summit/vickerman-hill/",
+          "Vickerman Hill Topo Map in Herkimer County NY - Topozone"
+        ],
+        [
+          "https://topoquest.com/place/new-york/summit/vickerman-hill/968529",
+          "Vickerman Hill, NY - TopoQuest"
+        ],
+        [
+          "https://www.getamap.net/maps/united_states/new_york/herkimer/_vickerman_hill/",
+          "Vickerman Hill (Herkimer) Map, Weather and Photos - United States ..."
+        ],
+        [
+          "https://en.wikipedia.org/wiki/Vickerman_Hill",
+          "Vickerman Hill - Wikipedia"
+        ],
+        [
+          "https://www.wikiwand.com/en/Vickerman_Hill",
+          "Vickerman Hill - Wikiwand"
+        ],
+        [
+          "https://kids.kiddle.co/Vickerman_Hill",
+          "Vickerman Hill Facts for Kids"
+        ],
+        [
+          "https://trailsnh.com/hike/n/357594518/Vickerman-Hill-NY",
+          "Vickerman Hill NY - trailsnh.com"
+        ],
+        [
+          "https://peakvisor.com/peak/vickerman-hill.html",
+          "Vickerman Hill (348 m) - Allegheny Plateau, USA | PeakVisor"
+        ]
+      ],
+      "removed": [
+        [
+          "https://www.city.ichikawa.lg.jp/site/zoo/",
+          "\u5e02\u5ddd \u5e02 \u52d5\u690d\u7269\u5712\u30b5\u30a4\u30c8 - \u5e02\u5ddd \u5e02 \u516c\u5f0fWeb\u30b5\u30a4\u30c8"
+        ],
+        [
+          "https://www.city.ichikawa.lg.jp/site/zoo/index-2.html",
+          "\u5e02\u5ddd \u5e02 \u52d5\u690d\u7269\u5712\u30b5\u30a4\u30c8 - \u5e02\u5ddd \u5e02 \u516c\u5f0fWeb\u30b5\u30a4\u30c8"
+        ],
+        [
+          "https://udn.com/news/story/7470/9342278",
+          "\u7f3a\u6bcd\u611b\u65e5\u672c\u5c0f\u7334\u300cPanchi\u541b\u300d\u62b1\u73a9\u5076\u7206\u7d05 \u52d5\u4fdd\u5718\u9ad4\u75db\u6279\u5712\u65b9\uff1a\u5275\u50b7\u7576\u8ce3 \u2026"
+        ],
+        [
+          "https://www.auc-cop.co.jp/gardenoasis",
+          "\u5e02\u5ddd \u5e02 \u52d5\u690d\u7269\u5712MS\uff5c\u30df\u30e5\u30fc\u30b8\u30a2\u30e0\u30b7\u30e7\u30c3\u30d7\u904b\u55b6\uff5c\u682a\u5f0f\u4f1a\u793e\u30aa\u30fc\u30af\u30b3\u2026"
+        ]
+      ],
+      "retained_first_four": true,
+      "snapshot_sha256": "d2b4a96f62860df8a32f9031bbfee54540df196bd1eaa04a6191b88a911bda2b"
+    },
+    {
+      "id": "simpleqa-3081",
+      "before": [
+        [
+          "https://www.sciencedirect.com/science/article/pii/0041387981900210",
+          "Laennec: A great student of tuberculosis - ScienceDirect"
+        ],
+        [
+          "https://www.sciencedirect.com/science/article/pii/S0019570720300822",
+          "\"How was tuberculosis known to the world?\" - ScienceDirect"
+        ],
+        [
+          "https://thorax.bmj.com/content/36/2/91",
+          "Laennec: his medical history. - Thorax"
+        ],
+        [
+          "https://www.scribd.com/document/403074106/rcmb-f293",
+          "History of Tuberculosis Research"
+        ],
+        [
+          "https://rjwave.org/jaafr/papers/JAAFR2511255.pdf",
+          "PDF Tuberculosis a Review of Current Trends"
+        ],
+        [
+          "https://www.resmedjournal.com/article/S0954-6111(06)00401-X/references",
+          "References in The history of tuberculosis - Respiratory Medicine"
+        ],
+        [
+          "https://www.dgpa.gov.tw/typh/daily/ndse.html",
+          "\u884c\u653f\u9662\u4eba\u4e8b\u884c\u653f\u7e3d\u8655\u5168\u7403\u8cc7\u8a0a\u7db2"
+        ],
+        [
+          "https://news.pts.org.tw/search/%E5%85%A8%E5%8F%B0%E5%81%9C%E7%8F%AD%E5%81%9C%E8%AA%B2%E6%9F%A5%E8%A9%A2",
+          "\u516c\u8996\u65b0\u805e\u7db2 PNN"
+        ],
+        [
+          "https://www.dgpa.gov.tw/typh/daily/nds.html?uid=31",
+          "\u884c\u653f\u9662\u4eba\u4e8b\u884c\u653f\u7e3d\u8655\u5168\u7403\u8cc7\u8a0a\u7db2"
+        ],
+        [
+          "https://www.dgpa.gov.tw/typh/daily/nds.html?uid=56",
+          "\u884c\u653f\u9662\u4eba\u4e8b\u884c\u653f\u7e3d\u8655\u5168\u7403\u8cc7\u8a0a\u7db2"
+        ],
+        [
+          "https://www.dgpa.gov.tw/typh/daily/nds.html",
+          "\u884c\u653f\u9662\u4eba\u4e8b\u884c\u653f\u7e3d\u8655\u5168\u7403\u8cc7\u8a0a\u7db2"
+        ],
+        [
+          "https://uptogo.com.tw/%e7%a7%91%e5%ad%b8/%e7%92%b0%e5%a2%83%e7%a7%91%e5%ad%b8/%e5%81%9c%e7%8f%ad%e5%81%9c%e8%aa%b2%e6%80%8e%e9%ba%bc%e6%9f%a5%ef%bc%9f/",
+          "\u98b1\u98a8\u4f86\u8972 \u505c\u73ed\u505c\u8ab2 \u600e\u9ebc \u67e5 \uff1f\u638c\u63e1\u6700\u65b0\u9632\u707d\u8cc7\u8a0a\u8207 \u67e5\u8a62 \u7ba1\u9053 - UpToGo"
+        ]
+      ],
+      "after": [
+        [
+          "https://www.sciencedirect.com/science/article/pii/0041387981900210",
+          "Laennec: A great student of tuberculosis - ScienceDirect"
+        ],
+        [
+          "https://www.sciencedirect.com/science/article/pii/S0019570720300822",
+          "\"How was tuberculosis known to the world?\" - ScienceDirect"
+        ],
+        [
+          "https://thorax.bmj.com/content/36/2/91",
+          "Laennec: his medical history. - Thorax"
+        ],
+        [
+          "https://www.scribd.com/document/403074106/rcmb-f293",
+          "History of Tuberculosis Research"
+        ],
+        [
+          "https://rjwave.org/jaafr/papers/JAAFR2511255.pdf",
+          "PDF Tuberculosis a Review of Current Trends"
+        ],
+        [
+          "https://www.resmedjournal.com/article/S0954-6111(06)00401-X/references",
+          "References in The history of tuberculosis - Respiratory Medicine"
+        ],
+        [
+          "https://ntep.in/node/243/CP-discovery-mycobacterium-tb-mtb",
+          "Discovery of Mycobacterium TB [M.tb] | Knowledge Base"
+        ],
+        [
+          "https://en.wikipedia.org/wiki/Ren%C3%A9_Laennec",
+          "Ren\u00e9 Laennec - Wikipedia"
+        ]
+      ],
+      "removed": [
+        [
+          "https://www.dgpa.gov.tw/typh/daily/ndse.html",
+          "\u884c\u653f\u9662\u4eba\u4e8b\u884c\u653f\u7e3d\u8655\u5168\u7403\u8cc7\u8a0a\u7db2"
+        ],
+        [
+          "https://news.pts.org.tw/search/%E5%85%A8%E5%8F%B0%E5%81%9C%E7%8F%AD%E5%81%9C%E8%AA%B2%E6%9F%A5%E8%A9%A2",
+          "\u516c\u8996\u65b0\u805e\u7db2 PNN"
+        ],
+        [
+          "https://www.dgpa.gov.tw/typh/daily/nds.html?uid=31",
+          "\u884c\u653f\u9662\u4eba\u4e8b\u884c\u653f\u7e3d\u8655\u5168\u7403\u8cc7\u8a0a\u7db2"
+        ],
+        [
+          "https://www.dgpa.gov.tw/typh/daily/nds.html?uid=56",
+          "\u884c\u653f\u9662\u4eba\u4e8b\u884c\u653f\u7e3d\u8655\u5168\u7403\u8cc7\u8a0a\u7db2"
+        ],
+        [
+          "https://www.dgpa.gov.tw/typh/daily/nds.html",
+          "\u884c\u653f\u9662\u4eba\u4e8b\u884c\u653f\u7e3d\u8655\u5168\u7403\u8cc7\u8a0a\u7db2"
+        ],
+        [
+          "https://uptogo.com.tw/%e7%a7%91%e5%ad%b8/%e7%92%b0%e5%a2%83%e7%a7%91%e5%ad%b8/%e5%81%9c%e7%8f%ad%e5%81%9c%e8%aa%b2%e6%80%8e%e9%ba%bc%e6%9f%a5%ef%bc%9f/",
+          "\u98b1\u98a8\u4f86\u8972 \u505c\u73ed\u505c\u8ab2 \u600e\u9ebc \u67e5 \uff1f\u638c\u63e1\u6700\u65b0\u9632\u707d\u8cc7\u8a0a\u8207 \u67e5\u8a62 \u7ba1\u9053 - UpToGo"
+        ]
+      ],
+      "retained_first_four": true,
+      "snapshot_sha256": "f76a5d159d58926c68f4b9e76edde8e1ec9482cc380f7f2363f3ff6fe87212bc"
+    },
+    {
+      "id": "simpleqa-3598",
+      "before": [
+        [
+          "https://www.youtube.com/watch?v=hV8EGTjzD2s",
+          "We Rollin (Official Video) - Shubh | Rubbal GTR - YouTube"
+        ],
+        [
+          "https://www.youtube.com/watch?v=RLhuPD2ASKE",
+          "We Rollin (Official Audio) - Shubh - YouTube"
+        ],
+        [
+          "https://vimeo.com/763661471",
+          "We Rollin (Official Video) - Shubh _ Rubbal GTR.mp4"
+        ],
+        [
+          "https://www.dailymotion.com/video/x8gabun",
+          "Shubh - We Rollin (Official Video) - Dailymotion"
+        ],
+        [
+          "https://en.bharatpedia.org/wiki/We_Rollin",
+          "We Rollin - Bharatpedia"
+        ],
+        [
+          "https://www.wikiwand.com/en/We_Rollin",
+          "We Rollin - Wikiwand"
+        ],
+        [
+          "https://www.cmoney.tw/forum/stock/2454",
+          "\u806f\u767c\u79d1 (2454) \u4eca\u65e5\u80a1\u50f9\u8207\u8a0e\u8ad6 - \u80a1\u5e02\u7206\u6599\u540c\u5b78\u6703"
+        ],
+        [
+          "https://www.cmoney.tw/forum/article/184947224",
+          "2454 \u806f\u767c\u79d1 - 9\u6708\u5e95\u806f\u767c\u79d1\u5206\u5272\u80a1\u7968 - \u80a1\u5e02\u7206\u6599\u540c\u5b78\u6703"
+        ],
+        [
+          "https://www.cmoney.tw/forum/stock/2454?s=technical-analysis",
+          "\u806f\u767c\u79d1 (2454)\u6280\u8853\u5206\u6790\u8207K\u7dda\u5716 (MA\u3001KD\u3001MACD) - \u80a1\u5e02\u7206\u6599\u540c\u5b78\u6703"
+        ],
+        [
+          "https://www.cmoney.tw/forum/stock/7749",
+          "\u610f\u9a30-KY (7749) \u4eca\u65e5\u80a1\u50f9\u8207\u8a0e\u8ad6 - \u80a1\u5e02\u7206\u6599\u540c\u5b78\u6703"
+        ],
+        [
+          "https://www.cmoney.tw/forum/stock/2454?s=main-force",
+          "\u806f\u767c\u79d1(2454)\u4e3b\u529b\u9032\u51fa\u3001\u4e3b\u529b\u8cb7\u8ce3\u8d85\u5f35\u6578\u8207\u8cb7\u8ce3\u5bb6\u6578\u5dee - \u80a1\u5e02\u7206\u6599\u540c\u5b78\u6703"
+        ],
+        [
+          "https://www.cmoney.tw/forum/stock/2454?s=dividend",
+          "\u806f\u767c\u79d1 (2454)2025\u80a1\u5229\u767c\u653e\u65e5\u3001\u9664\u6b0a\u606f\u65e5\u8207\u6b77\u5e74\u914d\u606f\u91d1\u984d - \u80a1\u5e02\u7206\u6599\u540c \u2026"
+        ]
+      ],
+      "after": [
+        [
+          "https://www.youtube.com/watch?v=hV8EGTjzD2s",
+          "We Rollin (Official Video) - Shubh | Rubbal GTR - YouTube"
+        ],
+        [
+          "https://www.youtube.com/watch?v=RLhuPD2ASKE",
+          "We Rollin (Official Audio) - Shubh - YouTube"
+        ],
+        [
+          "https://vimeo.com/763661471",
+          "We Rollin (Official Video) - Shubh _ Rubbal GTR.mp4"
+        ],
+        [
+          "https://www.dailymotion.com/video/x8gabun",
+          "Shubh - We Rollin (Official Video) - Dailymotion"
+        ],
+        [
+          "https://en.bharatpedia.org/wiki/We_Rollin",
+          "We Rollin - Bharatpedia"
+        ],
+        [
+          "https://www.wikiwand.com/en/We_Rollin",
+          "We Rollin - Wikiwand"
+        ],
+        [
+          "https://en.wikipedia.org/wiki/We_Rollin",
+          "We Rollin - Wikipedia"
+        ],
+        [
+          "https://en.wikipedia.org/wiki/Shubh",
+          "Shubh - Wikipedia"
+        ]
+      ],
+      "removed": [
+        [
+          "https://www.cmoney.tw/forum/stock/2454",
+          "\u806f\u767c\u79d1 (2454) \u4eca\u65e5\u80a1\u50f9\u8207\u8a0e\u8ad6 - \u80a1\u5e02\u7206\u6599\u540c\u5b78\u6703"
+        ],
+        [
+          "https://www.cmoney.tw/forum/article/184947224",
+          "2454 \u806f\u767c\u79d1 - 9\u6708\u5e95\u806f\u767c\u79d1\u5206\u5272\u80a1\u7968 - \u80a1\u5e02\u7206\u6599\u540c\u5b78\u6703"
+        ],
+        [
+          "https://www.cmoney.tw/forum/stock/2454?s=technical-analysis",
+          "\u806f\u767c\u79d1 (2454)\u6280\u8853\u5206\u6790\u8207K\u7dda\u5716 (MA\u3001KD\u3001MACD) - \u80a1\u5e02\u7206\u6599\u540c\u5b78\u6703"
+        ],
+        [
+          "https://www.cmoney.tw/forum/stock/7749",
+          "\u610f\u9a30-KY (7749) \u4eca\u65e5\u80a1\u50f9\u8207\u8a0e\u8ad6 - \u80a1\u5e02\u7206\u6599\u540c\u5b78\u6703"
+        ],
+        [
+          "https://www.cmoney.tw/forum/stock/2454?s=main-force",
+          "\u806f\u767c\u79d1(2454)\u4e3b\u529b\u9032\u51fa\u3001\u4e3b\u529b\u8cb7\u8ce3\u8d85\u5f35\u6578\u8207\u8cb7\u8ce3\u5bb6\u6578\u5dee - \u80a1\u5e02\u7206\u6599\u540c\u5b78\u6703"
+        ],
+        [
+          "https://www.cmoney.tw/forum/stock/2454?s=dividend",
+          "\u806f\u767c\u79d1 (2454)2025\u80a1\u5229\u767c\u653e\u65e5\u3001\u9664\u6b0a\u606f\u65e5\u8207\u6b77\u5e74\u914d\u606f\u91d1\u984d - \u80a1\u5e02\u7206\u6599\u540c \u2026"
+        ]
+      ],
+      "retained_first_four": true,
+      "snapshot_sha256": "704dcefe0306ab3cafdc0a98e4ba07ffdc763ff65fba91a399a498409a92ff17"
+    }
+  ]
+}

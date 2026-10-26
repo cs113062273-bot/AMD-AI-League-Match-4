@@ -1,0 +1,121 @@
+{
+  "method": "actual fresh Chromium + loopback HTTP; security case injects a public document cache only",
+  "http_only_answer": "",
+  "rows": [
+    {
+      "path": "/",
+      "answer": "24 GB",
+      "sources": [
+        "http://127.0.0.1:17457/"
+      ],
+      "seconds": 1.1001834999769926,
+      "browser": [
+        {
+          "state": "rendered",
+          "requests": 3,
+          "blocked": 0,
+          "blocked_analytics": 0,
+          "bytes": 234,
+          "browser_version": "156.0.8078.4",
+          "seconds": 1.0243
+        }
+      ],
+      "expected": "24 GB",
+      "ok": true
+    },
+    {
+      "path": "/redirect",
+      "answer": "24 GB",
+      "sources": [
+        "http://127.0.0.1:17457/"
+      ],
+      "seconds": 0.9944398999214172,
+      "browser": [
+        {
+          "state": "rendered",
+          "requests": 3,
+          "blocked": 0,
+          "blocked_analytics": 0,
+          "bytes": 234,
+          "browser_version": "156.0.8078.4",
+          "seconds": 0.9907
+        }
+      ],
+      "expected": "24 GB",
+      "ok": true
+    },
+    {
+      "path": "/late",
+      "answer": "24 GB",
+      "sources": [
+        "http://127.0.0.1:17457/late"
+      ],
+      "seconds": 1.6823023000033572,
+      "browser": [
+        {
+          "state": "rendered",
+          "requests": 2,
+          "blocked": 1,
+          "blocked_analytics": 0,
+          "bytes": 142,
+          "browser_version": "156.0.8078.4",
+          "seconds": 1.6783
+        }
+      ],
+      "expected": "24 GB",
+      "ok": true
+    },
+    {
+      "path": "/spin",
+      "answer": "",
+      "sources": [],
+      "seconds": 6.076468899962492,
+      "browser": [
+        {
+          "state": "TimeoutError",
+          "requests": 2,
+          "blocked": 0,
+          "blocked_analytics": 0,
+          "bytes": 63,
+          "browser_version": "156.0.8078.4",
+          "error": "",
+          "seconds": 6.0727
+        }
+      ],
+      "expected": "",
+      "ok": true
+    },
+    {
+      "test": "fresh CLI browser worker with process/memory limits",
+      "ok": true,
+      "answer": "24 GB",
+      "seconds": 1.7868653000332415,
+      "browser": [
+        {
+          "state": "rendered",
+          "requests": 3,
+          "blocked": 0,
+          "blocked_analytics": 0,
+          "bytes": 234,
+          "browser_version": "156.0.8078.4",
+          "seconds": 0.998
+        }
+      ]
+    },
+    {
+      "test": "private destination blocked",
+      "ok": true,
+      "browser": {
+        "state": "rendered",
+        "requests": 2,
+        "blocked": 1,
+        "blocked_analytics": 0,
+        "bytes": 103,
+        "browser_version": "156.0.8078.4",
+        "seconds": 1.0247
+      }
+    }
+  ],
+  "all_passed": true,
+  "unexpected_stderr": ""
+}

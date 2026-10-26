@@ -1,0 +1,198 @@
+{
+  "scope": "Proof transfer and column-permutation checks without model inference.\n\nThis assesses operation construction/validation, not semantic reader accuracy.\nThe ten v2 cases retain the original logical inputs and repair a transport-\ncorrupted time-range dash; original pilot files/results remain unchanged.\n",
+  "baseline_revision": "838b7adcca1f75187092f9474b607c07ee8866d5",
+  "before": [
+    {
+      "id": "version-table",
+      "passed": false,
+      "answer": null,
+      "required": true
+    },
+    {
+      "id": "reordered-fields",
+      "passed": false,
+      "answer": null,
+      "required": true
+    },
+    {
+      "id": "category-tables",
+      "passed": false,
+      "answer": null,
+      "required": false
+    },
+    {
+      "id": "classification-paraphrase",
+      "passed": false,
+      "answer": null,
+      "required": false
+    },
+    {
+      "id": "comparison-control",
+      "passed": true,
+      "answer": "from 20 to 32 messages per second",
+      "required": true
+    },
+    {
+      "id": "missing-reordered-field",
+      "passed": true,
+      "answer": null,
+      "required": true
+    },
+    {
+      "id": "missing-table-version",
+      "passed": true,
+      "answer": null,
+      "required": true
+    },
+    {
+      "id": "conflicting-table-band",
+      "passed": false,
+      "answer": null,
+      "required": false
+    },
+    {
+      "id": "incompatible-table-units",
+      "passed": true,
+      "answer": null,
+      "required": true
+    },
+    {
+      "id": "single-control",
+      "passed": true,
+      "answer": null,
+      "required": false
+    }
+  ],
+  "after": [
+    {
+      "id": "version-table",
+      "passed": true,
+      "answer": "from 24 to 48 jobs",
+      "required": true
+    },
+    {
+      "id": "reordered-fields",
+      "passed": true,
+      "answer": "Every Wednesday, 11:30\u201314:00",
+      "required": true
+    },
+    {
+      "id": "category-tables",
+      "passed": true,
+      "answer": "$21",
+      "required": true
+    },
+    {
+      "id": "classification-paraphrase",
+      "passed": true,
+      "answer": "$23",
+      "required": true
+    },
+    {
+      "id": "comparison-control",
+      "passed": true,
+      "answer": "from 20 to 32 messages per second",
+      "required": true
+    },
+    {
+      "id": "missing-reordered-field",
+      "passed": true,
+      "answer": null,
+      "required": true
+    },
+    {
+      "id": "missing-table-version",
+      "passed": true,
+      "answer": null,
+      "required": true
+    },
+    {
+      "id": "conflicting-table-band",
+      "passed": true,
+      "answer": null,
+      "required": true
+    },
+    {
+      "id": "incompatible-table-units",
+      "passed": true,
+      "answer": null,
+      "required": true
+    },
+    {
+      "id": "single-control",
+      "passed": true,
+      "answer": null,
+      "required": false
+    }
+  ],
+  "metamorphic": [
+    {
+      "id": "column_order_012",
+      "passed": true
+    },
+    {
+      "id": "single_wrong_row_012",
+      "passed": true
+    },
+    {
+      "id": "column_order_021",
+      "passed": true
+    },
+    {
+      "id": "single_wrong_row_021",
+      "passed": true
+    },
+    {
+      "id": "column_order_102",
+      "passed": true
+    },
+    {
+      "id": "single_wrong_row_102",
+      "passed": true
+    },
+    {
+      "id": "column_order_120",
+      "passed": true
+    },
+    {
+      "id": "single_wrong_row_120",
+      "passed": true
+    },
+    {
+      "id": "column_order_201",
+      "passed": true
+    },
+    {
+      "id": "single_wrong_row_201",
+      "passed": true
+    },
+    {
+      "id": "column_order_210",
+      "passed": true
+    },
+    {
+      "id": "single_wrong_row_210",
+      "passed": true
+    },
+    {
+      "id": "version_order_01",
+      "passed": true
+    },
+    {
+      "id": "version_order_10",
+      "passed": true
+    },
+    {
+      "id": "direct_record_needs_no_category_join",
+      "passed": true
+    },
+    {
+      "id": "corrupted_clock_is_not_valid",
+      "passed": true
+    }
+  ],
+  "before_passed": 5,
+  "after_passed": 10,
+  "metamorphic_passed": 16,
+  "metamorphic_total": 16
+}

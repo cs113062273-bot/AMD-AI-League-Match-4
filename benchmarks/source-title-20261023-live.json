@@ -1,0 +1,226 @@
+{
+  "scope": "Actual current search+guarded public GETs from original question, starting URL, recorded hints; no model/browser; retrieval evidence only.",
+  "case_id": "simpleqa-2215",
+  "question": "What is the name of the individual known as \"The Horse\" who won eight running events over three Olympics between 81 and 89 CE?",
+  "starting_url": "https://en.wikipedia.org/wiki/Hermogenes_of_Xanthos",
+  "source_query": "\"Hermogenes of Xanthos\"",
+  "links": [
+    [
+      "https://www.wikiwand.com/en/Hermogenes_of_Xanthos",
+      "Hermogenes of Xanthos - Wikiwand"
+    ],
+    [
+      "https://everything.explained.today/Hermogenes_of_Xanthos/",
+      "Hermogenes of Xanthos explained"
+    ],
+    [
+      "https://grokipedia.com/page/hermogenes_of_xanthos",
+      "Hermogenes of Xanthos \u2014 Grokipedia"
+    ],
+    [
+      "https://wiki2.org/en/Hermogenes_of_Xanthos",
+      "Hermogenes of Xanthos \u2014 Wikipedia Republished // WIKI 2"
+    ],
+    [
+      "https://www.wikiwand.com/en/articles/Hermogenes_of_Xanthos",
+      "Hermogenes of Xanthos - Wikiwand"
+    ],
+    [
+      "https://www.wikidata.org/wiki/Q18691702",
+      "Hermogenes of Xanthos - Wikidata"
+    ],
+    [
+      "https://topostext.org/people/17549",
+      "Hermogenes of Xanthos - ToposText"
+    ],
+    [
+      "https://en.wikipedia.org/wiki/Hermogenes_of_Xanthos",
+      "Hermogenes of Xanthos - Wikipedia"
+    ]
+  ],
+  "events": [
+    {
+      "url": "https://en.wikipedia.org/wiki/Hermogenes_of_Xanthos",
+      "final": "https://en.wikipedia.org/wiki/Hermogenes_of_Xanthos",
+      "status": 403,
+      "bytes": 0,
+      "error": "http_403",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://www.bing.com/search?q=%22Hermogenes+of+Xanthos%22",
+      "final": "https://www.bing.com/search?q=%22Hermogenes+of+Xanthos%22",
+      "status": 200,
+      "bytes": 124910,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://html.duckduckgo.com/html/?q=name+individual+known+horse+won+eight+running+events+over+three+olympics+between+81+89+ce+the+horse+athlete",
+      "final": "https://html.duckduckgo.com/html/?q=name+individual+known+horse+won+eight+running+events+over+three+olympics+between+81+89+ce+the+horse+athlete",
+      "status": 202,
+      "bytes": 14454,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://www.bing.com/search?q=name+individual+known+horse+won+eight+running+events+over+three+olympics+between+81+89+ce+the+horse+athlete",
+      "final": "https://www.bing.com/search?q=name+individual+known+horse+won+eight+running+events+over+three+olympics+between+81+89+ce+the+horse+athlete",
+      "status": 200,
+      "bytes": 127564,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://html.duckduckgo.com/html/?q=%22Hermogenes+of+Xanthos%22",
+      "final": "https://html.duckduckgo.com/html/?q=%22Hermogenes+of+Xanthos%22",
+      "status": 200,
+      "bytes": 29482,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://everything.explained.today/Hermogenes_of_Xanthos/",
+      "final": "https://everything.explained.today/Hermogenes_of_Xanthos/",
+      "status": 403,
+      "bytes": 0,
+      "error": "http_403",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://www.wikiwand.com/en/Hermogenes_of_Xanthos",
+      "final": "https://www.wikiwand.com/en/Hermogenes_of_Xanthos",
+      "status": 403,
+      "bytes": 0,
+      "error": "http_403",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://wiki2.org/en/Hermogenes_of_Xanthos",
+      "final": "https://wiki2.org/en/Hermogenes_of_Xanthos",
+      "status": 403,
+      "bytes": 0,
+      "error": "http_403",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://grokipedia.com/page/hermogenes_of_xanthos",
+      "final": "https://grokipedia.com/page/hermogenes_of_xanthos",
+      "status": 200,
+      "bytes": 229460,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://grokipedia.com/page/hermogenes_of_xanthos",
+      "title": "Hermogenes of Xanthos \u2014 Grokipedia",
+      "passages": 135
+    }
+  ],
+  "payload": {
+    "question": "What is the name of the individual known as \"The Horse\" who won eight running events over three Olympics between 81 and 89 CE?",
+    "starting_url": "https://en.wikipedia.org/wiki/Hermogenes_of_Xanthos",
+    "constraints": {
+      "kind": "text",
+      "year": "",
+      "as_of": "",
+      "versions": [],
+      "stable": false,
+      "cardinality": 1,
+      "target": "what is the name ",
+      "choices": [],
+      "operation": "single",
+      "required_fields": [],
+      "date_precision": ""
+    },
+    "candidates": [],
+    "passages": [
+      {
+        "id": 0,
+        "text": "Hermogenes of Xanthos (fl. 81\u201389 CE), also known as Titus Flavius Hermogenes son of Apollonios, was a celebrated ancient athlete from the Lycian city of Xanthos in Asia Minor, renowned for his extraordinary success in foot racing at the Panhellenic Games during the Flavian era of the Roman Empire. Specializing in the stadion (short sprint), diaulos (double stadion), and hoplitodromos (race in armor), he amassed a record 31 victories across major festivals, including eight Olympic crowns over three consecutive Games, earning him the nickname \"Hippos\" (Horse) from his peers for his unparalleled speed and endurance. [1] [2] [3]",
+        "section": "",
+        "source": "https://grokipedia.com/page/hermogenes_of_xanthos",
+        "locator": "block[29]",
+        "document_title": "Hermogenes of Xanthos \u2014 Grokipedia"
+      },
+      {
+        "id": 1,
+        "text": "Hermogenes of Xanthos likely began his competitive career in local or provincial Lycian games, building the foundation for his ascent to the prestigious Panhellenic circuit. His documented entry into the major festivals occurred at the Olympic Games of 81 CE, where he secured victories in three running events: the stadion, diaulos, and hoplitodromos, marking an immediate and impressive debut on the grand stage. [1]",
+        "section": "",
+        "source": "https://grokipedia.com/page/hermogenes_of_xanthos",
+        "locator": "block[48]",
+        "document_title": "Hermogenes of Xanthos \u2014 Grokipedia"
+      },
+      {
+        "id": 2,
+        "text": "In the 215th Olympiad of 81 CE, held shortly after Domitian's accession as Roman emperor, Hermogenes triumphed in all three running events: the stadion , diaulos , and hoplitodromos . [16] This triple victory marked a strong debut, showcasing his versatility in both speed and endurance disciplines, as recorded in Eusebius' chronological lists. [14] Four years later, at the 216th Olympiad in 85 CE, he defended his titles in the diaulos and hoplitodromos , though he did not compete in or win the stadion that cycle. [1] These successes amid the ongoing Roman imperial era underscored the Games' role in fostering unity across the empire.",
+        "section": "",
+        "source": "https://grokipedia.com/page/hermogenes_of_xanthos",
+        "locator": "block[54]",
+        "document_title": "Hermogenes of Xanthos \u2014 Grokipedia"
+      },
+      {
+        "id": 3,
+        "text": "In 81 CE, Hermogenes claimed gold in the stadion , diaulos , and hoplitodromos at Olympia, repeating the diaulos and hoplitodromos triumphs in 85 CE before securing another sweep of all three events in 89 CE, thus achieving the rare feat of multiple wins in armored racing, which tested both speed and stamina under heavy gear weighing approximately 25\u201330 pounds. [1] These accomplishments, documented in ancient inscriptions and literary accounts, cemented his status as one of antiquity's greatest runners, comparable to earlier legends like Chionis of Sparta. Beyond Olympia, his victories spanned other prestigious venues such as the Pythian, Nemean, and Isthmian Games, underscoring his dominance in the periodos circuit of Panhellenic competitions. [2] [3]",
+        "section": "",
+        "source": "https://grokipedia.com/page/hermogenes_of_xanthos",
+        "locator": "block[31]",
+        "document_title": "Hermogenes of Xanthos \u2014 Grokipedia"
+      },
+      {
+        "id": 4,
+        "text": "Hermogenes of Xanthos achieved remarkable success at the Olympic Games, securing a total of eight victories across three consecutive Olympiads in the late first century CE, establishing him as one of the most prolific non-combat athletes in ancient Greek history. [1] These triumphs, documented primarily through the victor lists compiled by Eusebius of Caesarea and supported by fragmentary inscriptions, spanned the running events of the stadion (short sprint), diaulos (double-stadion race), and hoplitodromos (race in armor). [14] His record as a provincial athlete from Lycia highlighted the integration of eastern Roman subjects into the Panhellenic tradition, with his wins likely contributing to local pride and imperial celebrations under Domitian. [15]",
+        "section": "",
+        "source": "https://grokipedia.com/page/hermogenes_of_xanthos",
+        "locator": "block[53]",
+        "document_title": "Hermogenes of Xanthos \u2014 Grokipedia"
+      },
+      {
+        "id": 5,
+        "text": "Hermogenes, the celebrated athlete known for his sprinting prowess, was likely born in Xanthos around 50\u201360 CE, during this era of Roman stability, as inferred from his documented victories at the Olympic Games in 81, 85, and 89 CE when he would have been in his prime athletic years. [1]",
+        "section": "",
+        "source": "https://grokipedia.com/page/hermogenes_of_xanthos",
+        "locator": "block[36]",
+        "document_title": "Hermogenes of Xanthos \u2014 Grokipedia"
+      },
+      {
+        "id": 6,
+        "text": "description: Hermogenes of Xanthos (fl. 81\u201389 CE), also known as Titus Flavius Hermogenes son of Apollonios, was a celebrated ancient athlete from the Lycian city of Xanthos in Asia Minor, renowned for his extra",
+        "section": "",
+        "source": "https://grokipedia.com/page/hermogenes_of_xanthos",
+        "locator": "meta[2]",
+        "document_title": "Hermogenes of Xanthos \u2014 Grokipedia"
+      },
+      {
+        "id": 7,
+        "text": "og:description: Hermogenes of Xanthos (fl. 81\u201389 CE), also known as Titus Flavius Hermogenes son of Apollonios, was a celebrated ancient athlete from the Lycian city of Xanthos in Asia Minor, renowned for his extra",
+        "section": "",
+        "source": "https://grokipedia.com/page/hermogenes_of_xanthos",
+        "locator": "meta[4]",
+        "document_title": "Hermogenes of Xanthos \u2014 Grokipedia"
+      }
+    ]
+  },
+  "capture_path": "research/source-title-20261023-live.json",
+  "sha256": "c9db8ad8bb6431dcbed9c538ef8f5cafb215b9f065a3cc10c5fafb31e0ccd49c"
+}

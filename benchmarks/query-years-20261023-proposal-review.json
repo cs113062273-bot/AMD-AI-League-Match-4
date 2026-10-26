@@ -1,0 +1,8 @@
+{
+  "proposal": "Append only explicit user year to concise query",
+  "promoted": false,
+  "concise_query_AST_unchanged_from": "5629aaf",
+  "verified_captures": 4,
+  "reason": "The dated name query brought book titles and query/clue lookup pages instead of a verified dated biography. No evidence of answer improvement; keep existing concise-query behavior.",
+  "scope": "Provider-output diagnosis only, not a semantic accuracy score."
+}

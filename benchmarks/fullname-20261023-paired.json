@@ -1,0 +1,2043 @@
+{
+  "scope": "Small fixed-page or actual-public-web diagnosis with an owned full-4B CUDA service.\n\nCases are exposed development data, not a held-out or public-web accuracy claim.\nAn oracle URL supplies the answer page; this separates reading from discovery.\n",
+  "context_limit": 1536,
+  "comparison_mode": true,
+  "baseline_revision": "3fe17ab52ed89e54b2fa940edddec92e0c496ec6",
+  "baseline_source_sha256": {
+    "agent/engine.py": "8a0fa144451d6cf488c12bb248affce0fe9bb1db3f284dabce84f1e97dfc2ca8",
+    "agent/types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent/planner.py": "b66769c19872bdb46fa83fce9c306bb7747e329d980eed761ff35cd87abb29bb",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/network.py": "c37ecb5b4b0fba4fac737954eda24952059922ed620c94b99bcb17daed8c5155",
+    "agent/urls.py": "2118381f70d0f44174db25833b989cd36dab64b588b83085cddd65cad7412a1f",
+    "agent/parser.py": "a6958b0f53e3b529377c7b5af48b8d5103a93a2ec8206d645c8932144941278a",
+    "agent/normalize.py": "6a4cb8311c29318d788c97a3e64cffa3c4085e595a0e1e9a2d5c418fa540e41c",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent/search.py": "489c8fee52ce0775b2e7d29d21f977e3d644a00098f834f736e456f1a34faf87",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/candidates.py": "a17fae4f1b8a9d65bce6ea77b4cfbf223eaaaf893bcc1ad7f65a4b1e57f25483",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/evidence.py": "3a5b361433e2aac2f8a7d4b292d137b4c80f32183057c0138b852a9190020cbb",
+    "agent/selector.py": "c985e196b77711845eba76a3694cb07ad8beab074bd65f8a4e8fffaa4eb82ea3",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/proofs.py": "42920966e3cae090d8a0d53f17270f607a4a6dcb8a96a1af20382d2785e64b74"
+  },
+  "case_path": "benchmarks/fullname-20261023-cases.json",
+  "fixture_path": "research/fullname-20261023/fixtures.json",
+  "max_depth": 0,
+  "budget": 12.0,
+  "live_web": false,
+  "browser": false,
+  "production_sha256": {
+    "app.py": "c0267c0441330bd30559f48d2f33916418992b8e21ec8dd1d09ae4773c23b73b",
+    "agent\\browser.py": "f7a3d9479ec2ae9bc9fbbcb27efbddaeba9b5dd8639016e827840cc1c7e33cea",
+    "agent\\candidates.py": "944c2dfffbd7e0d875c633cb1ee260563cebd88e554181d6ad35914cdf0de8cd",
+    "agent\\currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent\\engine.py": "8a0fa144451d6cf488c12bb248affce0fe9bb1db3f284dabce84f1e97dfc2ca8",
+    "agent\\evidence.py": "3a5b361433e2aac2f8a7d4b292d137b4c80f32183057c0138b852a9190020cbb",
+    "agent\\knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent\\model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+    "agent\\model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent\\model_protocol.py": "8ba6730e160eac47d8231985e1293bb981a5a63ef9b475cf46daf31ef17bdfb0",
+    "agent\\model_server.py": "14e840e32fe34ca594eb4fb0dadd89fc67768fb9026ac3359734a021c5190fc2",
+    "agent\\navigation.py": "0f849c0c570720114c45c14b0a5286fe409e5d26c2945fdc9f6c1a6922bb7718",
+    "agent\\network.py": "def1be3752f81423c313c2dfa83f6703ee063d7e98652cf0d816b423d0e2d9cb",
+    "agent\\normalize.py": "6a4cb8311c29318d788c97a3e64cffa3c4085e595a0e1e9a2d5c418fa540e41c",
+    "agent\\output.py": "b983ab2efe31707b1c974344a32dc4b40b708541257695de89cac9e343b073eb",
+    "agent\\parser.py": "adee2e94345415b11b80fb4f38053ed85f1b49b27d1ab73df16264e59cdf2803",
+    "agent\\planner.py": "56d3747fd466f414800221f35a8f4d3fa25d1c40b484ace1fee7dae66be51921",
+    "agent\\processes.py": "677c4372b40d1da0ffc0cf4120ca5b6be2fcf6b6c30f6ec17d0d8fae19e198c1",
+    "agent\\proofs.py": "42920966e3cae090d8a0d53f17270f607a4a6dcb8a96a1af20382d2785e64b74",
+    "agent\\qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent\\resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent\\search.py": "489c8fee52ce0775b2e7d29d21f977e3d644a00098f834f736e456f1a34faf87",
+    "agent\\selector.py": "7427a98f8eac2f36a8d2d736d5065d0ca7894c0c76b929d0458dbc57df74fbbc",
+    "agent\\signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent\\types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent\\urls.py": "2118381f70d0f44174db25833b989cd36dab64b588b83085cddd65cad7412a1f",
+    "agent\\worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f",
+    "agent\\__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41"
+  },
+  "cases_sha256": "a123083622259cf65c306bc2ab7e0525f9da3e8d52a1ca2a17bbf45603c54131",
+  "fixtures_sha256": "ff0612d5135b03354fe52077a01128d12bb5304459227cd6eabdd4ce5def5cad",
+  "rows": [
+    {
+      "id": "real-name",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "Akiko Kumahira",
+        "sources": [
+          "http://127.0.0.1:13404/real-name.html"
+        ],
+        "confidence": 0.693,
+        "evidence": "He married linguistics professor Akiko Kumahira in 1985.",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the first and last name of the woman whom the British linguist Bernard Comrie married in 1985?",
+            "url": "http://127.0.0.1:13404/real-name.html",
+            "kind": "text",
+            "terms": [
+              "first",
+              "last",
+              "name",
+              "woman",
+              "whom",
+              "british",
+              "linguist",
+              "bernard",
+              "comrie",
+              "married",
+              "1985"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "first",
+              "last",
+              "woman",
+              "whom",
+              "british",
+              "linguist",
+              "bernard",
+              "comrie",
+              "married"
+            ],
+            "versions": [],
+            "year": "1985",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the first and last name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.4399993233382702e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Akiko Kumahira",
+              "answer": "Akiko Kumahira",
+              "source": "http://127.0.0.1:13404/real-name.html",
+              "evidence": "He married linguistics professor Akiko Kumahira in 1985.",
+              "label": "",
+              "section": "Contents",
+              "kind": "text",
+              "score": 5.7,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[11]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "Akiko Kumahira",
+            "answer": "Akiko Kumahira",
+            "source": "http://127.0.0.1:13404/real-name.html",
+            "evidence": "He married linguistics professor Akiko Kumahira in 1985.",
+            "label": "",
+            "section": "Contents",
+            "kind": "text",
+            "score": 5.7,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[11]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:13404/real-name.html",
+              "final": "http://127.0.0.1:13404/real-name.html",
+              "status": 200,
+              "bytes": 97125,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 1.6813
+        }
+      }
+    },
+    {
+      "id": "prose-name",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "Mira Chen",
+        "sources": [
+          "http://127.0.0.1:13404/prose-name.html"
+        ],
+        "confidence": 0.748,
+        "evidence": "Orin Vale married translator Mira Chen in 1998.",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the first and last name of the person whom Orin Vale married in 1998?",
+            "url": "http://127.0.0.1:13404/prose-name.html",
+            "kind": "text",
+            "terms": [
+              "first",
+              "last",
+              "name",
+              "person",
+              "whom",
+              "orin",
+              "vale",
+              "married",
+              "1998"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "first",
+              "last",
+              "person",
+              "whom",
+              "orin",
+              "vale",
+              "married"
+            ],
+            "versions": [],
+            "year": "1998",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the first and last name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.3999990187585354e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Mira Chen",
+              "answer": "Mira Chen",
+              "source": "http://127.0.0.1:13404/prose-name.html",
+              "evidence": "Orin Vale married translator Mira Chen in 1998.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 7.9,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "Mira Chen",
+            "answer": "Mira Chen",
+            "source": "http://127.0.0.1:13404/prose-name.html",
+            "evidence": "Orin Vale married translator Mira Chen in 1998.",
+            "label": "",
+            "section": "",
+            "kind": "text",
+            "score": 7.9,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[0]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:13404/prose-name.html",
+              "final": "http://127.0.0.1:13404/prose-name.html",
+              "status": 200,
+              "bytes": 88,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 1.1748
+        }
+      }
+    },
+    {
+      "id": "family-name",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "Mira Chen",
+        "sources": [
+          "http://127.0.0.1:13404/family-name.html"
+        ],
+        "confidence": 0.748,
+        "evidence": "Orin Vale married translator Mira Chen in 1998.",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the given and family name of the person whom Orin Vale married in 1998?",
+            "url": "http://127.0.0.1:13404/family-name.html",
+            "kind": "text",
+            "terms": [
+              "given",
+              "family",
+              "name",
+              "person",
+              "whom",
+              "orin",
+              "vale",
+              "married",
+              "1998"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "given",
+              "family",
+              "person",
+              "whom",
+              "orin",
+              "vale",
+              "married"
+            ],
+            "versions": [],
+            "year": "1998",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the given and family name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.1599971912801266e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Mira Chen",
+              "answer": "Mira Chen",
+              "source": "http://127.0.0.1:13404/family-name.html",
+              "evidence": "Orin Vale married translator Mira Chen in 1998.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 7.9,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "Mira Chen",
+            "answer": "Mira Chen",
+            "source": "http://127.0.0.1:13404/family-name.html",
+            "evidence": "Orin Vale married translator Mira Chen in 1998.",
+            "label": "",
+            "section": "",
+            "kind": "text",
+            "score": 7.9,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[0]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:13404/family-name.html",
+              "final": "http://127.0.0.1:13404/family-name.html",
+              "status": 200,
+              "bytes": 88,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 1.1308
+        }
+      }
+    },
+    {
+      "id": "missing-family",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the first and last name of the person whom Orin Vale married in 1998?",
+            "url": "http://127.0.0.1:13404/missing-family.html",
+            "kind": "text",
+            "terms": [
+              "first",
+              "last",
+              "name",
+              "person",
+              "whom",
+              "orin",
+              "vale",
+              "married",
+              "1998"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "first",
+              "last",
+              "person",
+              "whom",
+              "orin",
+              "vale",
+              "married"
+            ],
+            "versions": [],
+            "year": "1998",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the first and last name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.3100099749863148e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Mira",
+              "answer": "Mira",
+              "source": "http://127.0.0.1:13404/missing-family.html",
+              "evidence": "Orin Vale married someone known only as Mira in 1998. Her family name is not recorded.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 9.0,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "unsupported"
+          ],
+          "reader_state": "no_evidence",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:13404/missing-family.html",
+              "final": "http://127.0.0.1:13404/missing-family.html",
+              "status": 200,
+              "bytes": 127,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 1.1933
+        }
+      }
+    },
+    {
+      "id": "wrong-year",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the first and last name of the person whom Orin Vale married in 1998?",
+            "url": "http://127.0.0.1:13404/wrong-year.html",
+            "kind": "text",
+            "terms": [
+              "first",
+              "last",
+              "name",
+              "person",
+              "whom",
+              "orin",
+              "vale",
+              "married",
+              "1998"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "first",
+              "last",
+              "person",
+              "whom",
+              "orin",
+              "vale",
+              "married"
+            ],
+            "versions": [],
+            "year": "1998",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the first and last name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.209997572004795e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Mira Chen",
+              "answer": "Mira Chen",
+              "source": "http://127.0.0.1:13404/wrong-year.html",
+              "evidence": "Orin Vale married translator Mira Chen in 2001. No earlier marriage is documented.",
+              "label": "",
+              "section": "",
+              "kind": "text",
+              "score": 6.800000000000001,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[0]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "unsupported"
+          ],
+          "reader_state": "no_evidence",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:13404/wrong-year.html",
+              "final": "http://127.0.0.1:13404/wrong-year.html",
+              "status": 200,
+              "bytes": 123,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 1.1731
+        }
+      }
+    },
+    {
+      "id": "day-time",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "Wednesday, 09:00-12:00",
+        "sources": [
+          "http://127.0.0.1:13404/day-time.html"
+        ],
+        "confidence": 0.0,
+        "evidence": "Material: Glass | Day: Wednesday | Time: 09:00-12:00",
+        "reason": "proof_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What day and time does Pine Harbor collect glass?",
+            "url": "http://127.0.0.1:13404/day-time.html",
+            "kind": "text",
+            "terms": [
+              "day",
+              "time",
+              "pine",
+              "harbor",
+              "collect",
+              "glass"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "day",
+              "time",
+              "pine",
+              "harbor",
+              "collect",
+              "glass"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what day and time does pine harbor collect glass",
+            "choices": [],
+            "operation": "compose_fields",
+            "required_fields": [
+              "day",
+              "time"
+            ],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.0899966582655907e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "proof_state": "verified",
+          "proposed_proof": {
+            "operation": "compose_fields",
+            "atoms": [
+              {
+                "source": "http://127.0.0.1:13404/day-time.html",
+                "locator": "table[0]/row[0]",
+                "span": "Material: Glass | Day: Wednesday | Time: 09:00-12:00",
+                "value": "Wednesday",
+                "role": "day",
+                "version": "",
+                "key": "",
+                "relation": ""
+              },
+              {
+                "source": "http://127.0.0.1:13404/day-time.html",
+                "locator": "table[0]/row[0]",
+                "span": "Material: Glass | Day: Wednesday | Time: 09:00-12:00",
+                "value": "09:00-12:00",
+                "role": "time",
+                "version": "",
+                "key": "",
+                "relation": ""
+              }
+            ]
+          },
+          "proof_verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:13404/day-time.html",
+              "final": "http://127.0.0.1:13404/day-time.html",
+              "status": 200,
+              "bytes": 173,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.4259
+        }
+      }
+    },
+    {
+      "id": "name-email",
+      "answer_ok": false,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "proof_incomplete",
+        "diagnostics": {
+          "plan": {
+            "question": "What are the first name and email of Orin Vale?",
+            "url": "http://127.0.0.1:13404/name-email.html",
+            "kind": "email",
+            "terms": [
+              "first",
+              "name",
+              "email",
+              "orin",
+              "vale"
+            ],
+            "attributes": [
+              "email",
+              "e-mail",
+              "contact",
+              "mail",
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "first",
+              "orin",
+              "vale"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what are the first name and email ",
+            "choices": [],
+            "operation": "compose_fields",
+            "required_fields": [
+              "first name",
+              "email"
+            ],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.009996049106121e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "proof_state": "incomplete",
+          "reader_state": "not_run",
+          "top_candidates": [
+            {
+              "raw": "orin@example.org",
+              "answer": "orin@example.org",
+              "source": "http://127.0.0.1:13404/name-email.html",
+              "evidence": "Name: Orin Vale | First name: Orin | Email: orin@example.org",
+              "label": "Email",
+              "section": "",
+              "kind": "email",
+              "score": 14.200000000000001,
+              "signals": {
+                "locator": "table[0]/row[0]/cell[2]",
+                "page_title": "Orin Vale directory",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 0,
+                  "row": 0,
+                  "columns": [
+                    "Name",
+                    "First name",
+                    "Email"
+                  ],
+                  "cells": [
+                    "Orin Vale",
+                    "Orin",
+                    "orin@example.org"
+                  ],
+                  "column": 2
+                },
+                "field_value": "orin@example.org",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:13404/name-email.html",
+              "final": "http://127.0.0.1:13404/name-email.html",
+              "status": 200,
+              "bytes": 169,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.003
+        }
+      }
+    }
+  ],
+  "runner_sha256": "b255c61f8fb7dcbe1636e193b990f33bcf63d3afae06eae1e4502d1d23cbfeb9",
+  "health_before": {
+    "ready": true,
+    "device": "cuda",
+    "hip": null,
+    "pid": 38040,
+    "startup_token": "6e88a9d173074791a66a2b0e20b9bc04",
+    "backend_source_sha256": {
+      "model_server.py": "14e840e32fe34ca594eb4fb0dadd89fc67768fb9026ac3359734a021c5190fc2",
+      "model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+      "selector.py": "7427a98f8eac2f36a8d2d736d5065d0ca7894c0c76b929d0458dbc57df74fbbc",
+      "model_protocol.py": "8ba6730e160eac47d8231985e1293bb981a5a63ef9b475cf46daf31ef17bdfb0",
+      "model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+      "normalize.py": "6a4cb8311c29318d788c97a3e64cffa3c4085e595a0e1e9a2d5c418fa540e41c",
+      "types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512"
+    },
+    "software": {
+      "torch": "2.9.1+cu128",
+      "transformers": "4.57.1",
+      "tokenizers": "0.22.1",
+      "safetensors": "0.6.2",
+      "accelerate": "1.11.0"
+    },
+    "parameters": 4022468096,
+    "assets": {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "verified_files": 12,
+      "full_sha256": false,
+      "weight_shards": 3
+    },
+    "warmup_reply": {
+      "candidate": -1,
+      "passage": 0,
+      "answer": "7"
+    },
+    "torch": "2.9.1+cu128",
+    "startup_seconds": 5.6716749999905005,
+    "calls": 0,
+    "outcomes": {},
+    "active_request": null,
+    "busy_rejections": 0,
+    "recent_requests": [
+      {
+        "request_id": "warmup",
+        "mode": "select",
+        "input_tokens": 268,
+        "packing_seconds": 0.011836400022730231,
+        "transfer_seconds": 0.0009513999102637172,
+        "generated_tokens": 14,
+        "stop_reason": "completed",
+        "generation_seconds": 1.2158918000059202,
+        "prefill_and_first_token_seconds": 0.5135070000542328
+      }
+    ],
+    "context_limit": 1536,
+    "token_stats": {
+      "max_input": 268,
+      "generated": 14,
+      "pruned_requests": 0
+    },
+    "device_memory_bytes": 12878086144,
+    "peak_vram_bytes": 8141605888,
+    "allocated_vram_bytes": 8053474816,
+    "reserved_vram_bytes": 8185184256
+  },
+  "baseline_rows": [
+    {
+      "id": "real-name",
+      "answer_ok": false,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "proof_incomplete",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the first and last name of the woman whom the British linguist Bernard Comrie married in 1985?",
+            "url": "http://127.0.0.1:13404/real-name.html",
+            "kind": "text",
+            "terms": [
+              "first",
+              "last",
+              "name",
+              "woman",
+              "whom",
+              "british",
+              "linguist",
+              "bernard",
+              "comrie",
+              "married",
+              "1985"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "first",
+              "last",
+              "woman",
+              "whom",
+              "british",
+              "linguist",
+              "bernard",
+              "comrie",
+              "married"
+            ],
+            "versions": [],
+            "year": "1985",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the first and last name ",
+            "choices": [],
+            "operation": "compose_fields",
+            "required_fields": [
+              "first",
+              "last name"
+            ],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.00028639996889978647
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "proof_state": "incomplete",
+          "reader_state": "not_run",
+          "top_candidates": [
+            {
+              "raw": "Bernard Comrie",
+              "answer": "Bernard Comrie",
+              "source": "http://127.0.0.1:13404/real-name.html",
+              "evidence": "name headline: Bernard Comrie",
+              "label": "name headline",
+              "section": "",
+              "kind": "text",
+              "score": 11.5,
+              "signals": {
+                "locator": "",
+                "page_title": "Bernard Comrie - Alchetron, The Free Social Encyclopedia",
+                "structure": "field",
+                "qualifiers": {},
+                "field_value": "Bernard Comrie",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "Dr bernard comrie santa barbara symposium on human origins ii",
+              "answer": "Dr bernard comrie santa barbara symposium on human origins ii",
+              "source": "http://127.0.0.1:13404/real-name.html",
+              "evidence": "name: Dr bernard comrie santa barbara symposium on human origins ii",
+              "label": "name",
+              "section": "",
+              "kind": "text",
+              "score": 10.25,
+              "signals": {
+                "locator": "meta[37]",
+                "page_title": "Bernard Comrie - Alchetron, The Free Social Encyclopedia",
+                "structure": "meta",
+                "qualifiers": {},
+                "field_value": "Dr bernard comrie santa barbara symposium on human origins ii",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "Alchetron.com",
+              "answer": "Alchetron.com",
+              "source": "http://127.0.0.1:13404/real-name.html",
+              "evidence": "og:site_name: Alchetron.com",
+              "label": "og:site_name",
+              "section": "",
+              "kind": "text",
+              "score": 8.05,
+              "signals": {
+                "locator": "meta[17]",
+                "page_title": "Bernard Comrie - Alchetron, The Free Social Encyclopedia",
+                "structure": "meta",
+                "qualifiers": {},
+                "field_value": "Alchetron.com",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "Bernard Comrie - Alchetron, The Free Social Encyclopedia",
+              "answer": "Bernard Comrie - Alchetron, The Free Social Encyclopedia",
+              "source": "http://127.0.0.1:13404/real-name.html",
+              "evidence": "og:title: Bernard Comrie - Alchetron, The Free Social Encyclopedia",
+              "label": "og:title",
+              "section": "",
+              "kind": "text",
+              "score": 6.8500000000000005,
+              "signals": {
+                "locator": "meta[14]",
+                "page_title": "Bernard Comrie - Alchetron, The Free Social Encyclopedia",
+                "structure": "meta",
+                "qualifiers": {},
+                "field_value": "Bernard Comrie - Alchetron, The Free Social Encyclopedia",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:13404/real-name.html",
+              "final": "http://127.0.0.1:13404/real-name.html",
+              "status": 200,
+              "bytes": 97125,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0605
+        }
+      }
+    },
+    {
+      "id": "prose-name",
+      "answer_ok": false,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "proof_incomplete",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the first and last name of the person whom Orin Vale married in 1998?",
+            "url": "http://127.0.0.1:13404/prose-name.html",
+            "kind": "text",
+            "terms": [
+              "first",
+              "last",
+              "name",
+              "person",
+              "whom",
+              "orin",
+              "vale",
+              "married",
+              "1998"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "first",
+              "last",
+              "person",
+              "whom",
+              "orin",
+              "vale",
+              "married"
+            ],
+            "versions": [],
+            "year": "1998",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the first and last name ",
+            "choices": [],
+            "operation": "compose_fields",
+            "required_fields": [
+              "first",
+              "last name"
+            ],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.4400109648704529e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "proof_state": "incomplete",
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:13404/prose-name.html",
+              "final": "http://127.0.0.1:13404/prose-name.html",
+              "status": 200,
+              "bytes": 88,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0028
+        }
+      }
+    },
+    {
+      "id": "family-name",
+      "answer_ok": false,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "proof_incomplete",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the given and family name of the person whom Orin Vale married in 1998?",
+            "url": "http://127.0.0.1:13404/family-name.html",
+            "kind": "text",
+            "terms": [
+              "given",
+              "family",
+              "name",
+              "person",
+              "whom",
+              "orin",
+              "vale",
+              "married",
+              "1998"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "given",
+              "family",
+              "person",
+              "whom",
+              "orin",
+              "vale",
+              "married"
+            ],
+            "versions": [],
+            "year": "1998",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the given and family name ",
+            "choices": [],
+            "operation": "compose_fields",
+            "required_fields": [
+              "given",
+              "family name"
+            ],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.1599971912801266e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "proof_state": "incomplete",
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:13404/family-name.html",
+              "final": "http://127.0.0.1:13404/family-name.html",
+              "status": 200,
+              "bytes": 88,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0024
+        }
+      }
+    },
+    {
+      "id": "missing-family",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "proof_incomplete",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the first and last name of the person whom Orin Vale married in 1998?",
+            "url": "http://127.0.0.1:13404/missing-family.html",
+            "kind": "text",
+            "terms": [
+              "first",
+              "last",
+              "name",
+              "person",
+              "whom",
+              "orin",
+              "vale",
+              "married",
+              "1998"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "first",
+              "last",
+              "person",
+              "whom",
+              "orin",
+              "vale",
+              "married"
+            ],
+            "versions": [],
+            "year": "1998",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the first and last name ",
+            "choices": [],
+            "operation": "compose_fields",
+            "required_fields": [
+              "first",
+              "last name"
+            ],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.1399970389902592e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "proof_state": "incomplete",
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:13404/missing-family.html",
+              "final": "http://127.0.0.1:13404/missing-family.html",
+              "status": 200,
+              "bytes": 127,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0029
+        }
+      }
+    },
+    {
+      "id": "wrong-year",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "proof_incomplete",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the first and last name of the person whom Orin Vale married in 1998?",
+            "url": "http://127.0.0.1:13404/wrong-year.html",
+            "kind": "text",
+            "terms": [
+              "first",
+              "last",
+              "name",
+              "person",
+              "whom",
+              "orin",
+              "vale",
+              "married",
+              "1998"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "first",
+              "last",
+              "person",
+              "whom",
+              "orin",
+              "vale",
+              "married"
+            ],
+            "versions": [],
+            "year": "1998",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the first and last name ",
+            "choices": [],
+            "operation": "compose_fields",
+            "required_fields": [
+              "first",
+              "last name"
+            ],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.7399899661540985e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "proof_state": "incomplete",
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:13404/wrong-year.html",
+              "final": "http://127.0.0.1:13404/wrong-year.html",
+              "status": 200,
+              "bytes": 123,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0034
+        }
+      }
+    },
+    {
+      "id": "day-time",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "Wednesday, 09:00-12:00",
+        "sources": [
+          "http://127.0.0.1:13404/day-time.html"
+        ],
+        "confidence": 0.0,
+        "evidence": "Material: Glass | Day: Wednesday | Time: 09:00-12:00",
+        "reason": "proof_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What day and time does Pine Harbor collect glass?",
+            "url": "http://127.0.0.1:13404/day-time.html",
+            "kind": "text",
+            "terms": [
+              "day",
+              "time",
+              "pine",
+              "harbor",
+              "collect",
+              "glass"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "day",
+              "time",
+              "pine",
+              "harbor",
+              "collect",
+              "glass"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what day and time does pine harbor collect glass",
+            "choices": [],
+            "operation": "compose_fields",
+            "required_fields": [
+              "day",
+              "time"
+            ],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.610000617802143e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "proof_state": "verified",
+          "proposed_proof": {
+            "operation": "compose_fields",
+            "atoms": [
+              {
+                "source": "http://127.0.0.1:13404/day-time.html",
+                "locator": "table[0]/row[0]",
+                "span": "Material: Glass | Day: Wednesday | Time: 09:00-12:00",
+                "value": "Wednesday",
+                "role": "day",
+                "version": "",
+                "key": "",
+                "relation": ""
+              },
+              {
+                "source": "http://127.0.0.1:13404/day-time.html",
+                "locator": "table[0]/row[0]",
+                "span": "Material: Glass | Day: Wednesday | Time: 09:00-12:00",
+                "value": "09:00-12:00",
+                "role": "time",
+                "version": "",
+                "key": "",
+                "relation": ""
+              }
+            ]
+          },
+          "proof_verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:13404/day-time.html",
+              "final": "http://127.0.0.1:13404/day-time.html",
+              "status": 200,
+              "bytes": 173,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.3977
+        }
+      }
+    },
+    {
+      "id": "name-email",
+      "answer_ok": false,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "proof_incomplete",
+        "diagnostics": {
+          "plan": {
+            "question": "What are the first name and email of Orin Vale?",
+            "url": "http://127.0.0.1:13404/name-email.html",
+            "kind": "email",
+            "terms": [
+              "first",
+              "name",
+              "email",
+              "orin",
+              "vale"
+            ],
+            "attributes": [
+              "email",
+              "e-mail",
+              "contact",
+              "mail",
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "first",
+              "orin",
+              "vale"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what are the first name and email ",
+            "choices": [],
+            "operation": "compose_fields",
+            "required_fields": [
+              "first name",
+              "email"
+            ],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.0199961252510548e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "proof_state": "incomplete",
+          "reader_state": "not_run",
+          "top_candidates": [
+            {
+              "raw": "orin@example.org",
+              "answer": "orin@example.org",
+              "source": "http://127.0.0.1:13404/name-email.html",
+              "evidence": "Name: Orin Vale | First name: Orin | Email: orin@example.org",
+              "label": "Email",
+              "section": "",
+              "kind": "email",
+              "score": 14.200000000000001,
+              "signals": {
+                "locator": "table[0]/row[0]/cell[2]",
+                "page_title": "Orin Vale directory",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 0,
+                  "row": 0,
+                  "columns": [
+                    "Name",
+                    "First name",
+                    "Email"
+                  ],
+                  "cells": [
+                    "Orin Vale",
+                    "Orin",
+                    "orin@example.org"
+                  ],
+                  "column": 2
+                },
+                "field_value": "orin@example.org",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:13404/name-email.html",
+              "final": "http://127.0.0.1:13404/name-email.html",
+              "status": 200,
+              "bytes": 169,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0045
+        }
+      }
+    }
+  ],
+  "health_after_baseline": {
+    "ready": true,
+    "device": "cuda",
+    "hip": null,
+    "pid": 38040,
+    "startup_token": "6e88a9d173074791a66a2b0e20b9bc04",
+    "backend_source_sha256": {
+      "model_server.py": "14e840e32fe34ca594eb4fb0dadd89fc67768fb9026ac3359734a021c5190fc2",
+      "model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+      "selector.py": "7427a98f8eac2f36a8d2d736d5065d0ca7894c0c76b929d0458dbc57df74fbbc",
+      "model_protocol.py": "8ba6730e160eac47d8231985e1293bb981a5a63ef9b475cf46daf31ef17bdfb0",
+      "model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+      "normalize.py": "6a4cb8311c29318d788c97a3e64cffa3c4085e595a0e1e9a2d5c418fa540e41c",
+      "types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512"
+    },
+    "software": {
+      "torch": "2.9.1+cu128",
+      "transformers": "4.57.1",
+      "tokenizers": "0.22.1",
+      "safetensors": "0.6.2",
+      "accelerate": "1.11.0"
+    },
+    "parameters": 4022468096,
+    "assets": {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "verified_files": 12,
+      "full_sha256": false,
+      "weight_shards": 3
+    },
+    "warmup_reply": {
+      "candidate": -1,
+      "passage": 0,
+      "answer": "7"
+    },
+    "torch": "2.9.1+cu128",
+    "startup_seconds": 5.6716749999905005,
+    "calls": 1,
+    "outcomes": {
+      "supported": 1
+    },
+    "active_request": null,
+    "busy_rejections": 0,
+    "recent_requests": [
+      {
+        "request_id": "warmup",
+        "mode": "select",
+        "input_tokens": 268,
+        "packing_seconds": 0.011836400022730231,
+        "transfer_seconds": 0.0009513999102637172,
+        "generated_tokens": 14,
+        "stop_reason": "completed",
+        "generation_seconds": 1.2158918000059202,
+        "prefill_and_first_token_seconds": 0.5135070000542328
+      },
+      {
+        "request_id": "c83a205d850c46e68eb838b1c56553f7",
+        "mode": "verify",
+        "input_tokens": 543,
+        "packing_seconds": 0.0033860000548884273,
+        "transfer_seconds": 0.0013203999260440469,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.3868159999838099,
+        "prefill_and_first_token_seconds": 0.10367860004771501
+      }
+    ],
+    "context_limit": 1536,
+    "token_stats": {
+      "max_input": 543,
+      "generated": 20,
+      "pruned_requests": 0
+    },
+    "device_memory_bytes": 12878086144,
+    "peak_vram_bytes": 8295205888,
+    "allocated_vram_bytes": 8061994496,
+    "reserved_vram_bytes": 8386510848
+  },
+  "health_after": {
+    "ready": true,
+    "device": "cuda",
+    "hip": null,
+    "pid": 38040,
+    "startup_token": "6e88a9d173074791a66a2b0e20b9bc04",
+    "backend_source_sha256": {
+      "model_server.py": "14e840e32fe34ca594eb4fb0dadd89fc67768fb9026ac3359734a021c5190fc2",
+      "model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+      "selector.py": "7427a98f8eac2f36a8d2d736d5065d0ca7894c0c76b929d0458dbc57df74fbbc",
+      "model_protocol.py": "8ba6730e160eac47d8231985e1293bb981a5a63ef9b475cf46daf31ef17bdfb0",
+      "model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+      "normalize.py": "6a4cb8311c29318d788c97a3e64cffa3c4085e595a0e1e9a2d5c418fa540e41c",
+      "types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512"
+    },
+    "software": {
+      "torch": "2.9.1+cu128",
+      "transformers": "4.57.1",
+      "tokenizers": "0.22.1",
+      "safetensors": "0.6.2",
+      "accelerate": "1.11.0"
+    },
+    "parameters": 4022468096,
+    "assets": {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "verified_files": 12,
+      "full_sha256": false,
+      "weight_shards": 3
+    },
+    "warmup_reply": {
+      "candidate": -1,
+      "passage": 0,
+      "answer": "7"
+    },
+    "torch": "2.9.1+cu128",
+    "startup_seconds": 5.6716749999905005,
+    "calls": 12,
+    "outcomes": {
+      "supported": 5,
+      "selected": 5,
+      "unsupported": 2
+    },
+    "active_request": null,
+    "busy_rejections": 0,
+    "recent_requests": [
+      {
+        "request_id": "warmup",
+        "mode": "select",
+        "input_tokens": 268,
+        "packing_seconds": 0.011836400022730231,
+        "transfer_seconds": 0.0009513999102637172,
+        "generated_tokens": 14,
+        "stop_reason": "completed",
+        "generation_seconds": 1.2158918000059202,
+        "prefill_and_first_token_seconds": 0.5135070000542328
+      },
+      {
+        "request_id": "c83a205d850c46e68eb838b1c56553f7",
+        "mode": "verify",
+        "input_tokens": 543,
+        "packing_seconds": 0.0033860000548884273,
+        "transfer_seconds": 0.0013203999260440469,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.3868159999838099,
+        "prefill_and_first_token_seconds": 0.10367860004771501
+      },
+      {
+        "request_id": "b9063388af094af19899eae1bff7cba1",
+        "mode": "select",
+        "input_tokens": 1004,
+        "packing_seconds": 0.004077399964444339,
+        "transfer_seconds": 0.0021211999701336026,
+        "generated_tokens": 18,
+        "stop_reason": "completed",
+        "generation_seconds": 1.1102972000371665,
+        "prefill_and_first_token_seconds": 0.20249289995990694
+      },
+      {
+        "request_id": "59aa1746b6f84376b65433aa0106fd61",
+        "mode": "verify",
+        "input_tokens": 946,
+        "packing_seconds": 0.0039836999494582415,
+        "transfer_seconds": 0.001677699969150126,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.5266392000485212,
+        "prefill_and_first_token_seconds": 0.18891739996615797
+      },
+      {
+        "request_id": "95b4d9a01c084a33b882ae50034c47a0",
+        "mode": "select",
+        "input_tokens": 442,
+        "packing_seconds": 0.0025284000439569354,
+        "transfer_seconds": 0.0011825000401586294,
+        "generated_tokens": 16,
+        "stop_reason": "completed",
+        "generation_seconds": 0.848241199972108,
+        "prefill_and_first_token_seconds": 0.07057869993150234
+      },
+      {
+        "request_id": "2024bbb4bedf417da6054eb3011ecbf1",
+        "mode": "verify",
+        "input_tokens": 382,
+        "packing_seconds": 0.0021068999776616693,
+        "transfer_seconds": 0.000965300016105175,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.3134892999660224,
+        "prefill_and_first_token_seconds": 0.06149120000191033
+      },
+      {
+        "request_id": "4ae3171a72a74438895c7a040ee49a71",
+        "mode": "select",
+        "input_tokens": 442,
+        "packing_seconds": 0.002294900012202561,
+        "transfer_seconds": 0.0012688999995589256,
+        "generated_tokens": 16,
+        "stop_reason": "completed",
+        "generation_seconds": 0.8021783999865875,
+        "prefill_and_first_token_seconds": 0.06708799989428371
+      },
+      {
+        "request_id": "205ec6e7bf7d4f278f719a68ccc8450a",
+        "mode": "verify",
+        "input_tokens": 382,
+        "packing_seconds": 0.0019107999978587031,
+        "transfer_seconds": 0.0009849000489339232,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.3160081999376416,
+        "prefill_and_first_token_seconds": 0.05768149998039007
+      },
+      {
+        "request_id": "b841192afb184bdb8fec98989ab665c2",
+        "mode": "select",
+        "input_tokens": 451,
+        "packing_seconds": 0.0025604000547900796,
+        "transfer_seconds": 0.0012456999393180013,
+        "generated_tokens": 15,
+        "stop_reason": "completed",
+        "generation_seconds": 0.83695460006129,
+        "prefill_and_first_token_seconds": 0.08299620007164776
+      },
+      {
+        "request_id": "ff31910cb4714a158286b98af8d0b906",
+        "mode": "verify",
+        "input_tokens": 390,
+        "packing_seconds": 0.002371500013396144,
+        "transfer_seconds": 0.0011709999525919557,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.3432407999644056,
+        "prefill_and_first_token_seconds": 0.06396099994890392
+      },
+      {
+        "request_id": "d8cb8ff5197e442fb8a26294fbfc078d",
+        "mode": "select",
+        "input_tokens": 448,
+        "packing_seconds": 0.0029779999749734998,
+        "transfer_seconds": 0.0013570000883191824,
+        "generated_tokens": 16,
+        "stop_reason": "completed",
+        "generation_seconds": 0.8251698999665678,
+        "prefill_and_first_token_seconds": 0.06652769993524998
+      },
+      {
+        "request_id": "94c7c1d309d54b6fa4c3860f60b06b10",
+        "mode": "verify",
+        "input_tokens": 388,
+        "packing_seconds": 0.002053000032901764,
+        "transfer_seconds": 0.0010559000074863434,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.3345553999533877,
+        "prefill_and_first_token_seconds": 0.06396709999535233
+      },
+      {
+        "request_id": "1fab36ee12a2440eaa0a1e0815d03be8",
+        "mode": "verify",
+        "input_tokens": 543,
+        "packing_seconds": 0.002430399996228516,
+        "transfer_seconds": 0.0016611000755801797,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.4168508999282494,
+        "prefill_and_first_token_seconds": 0.08849989995360374
+      }
+    ],
+    "context_limit": 1536,
+    "token_stats": {
+      "max_input": 1004,
+      "generated": 137,
+      "pruned_requests": 0
+    },
+    "device_memory_bytes": 12878086144,
+    "peak_vram_bytes": 8625619968,
+    "allocated_vram_bytes": 8061994496,
+    "reserved_vram_bytes": 8757706752
+  },
+  "memory_after_run": {
+    "used_mib": 9486,
+    "total_mib": 12282
+  },
+  "memory_after_shutdown": {
+    "used_mib": 919,
+    "total_mib": 12282
+  },
+  "production_after_sha256": {
+    "app.py": "c0267c0441330bd30559f48d2f33916418992b8e21ec8dd1d09ae4773c23b73b",
+    "agent\\browser.py": "f7a3d9479ec2ae9bc9fbbcb27efbddaeba9b5dd8639016e827840cc1c7e33cea",
+    "agent\\candidates.py": "944c2dfffbd7e0d875c633cb1ee260563cebd88e554181d6ad35914cdf0de8cd",
+    "agent\\currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent\\engine.py": "8a0fa144451d6cf488c12bb248affce0fe9bb1db3f284dabce84f1e97dfc2ca8",
+    "agent\\evidence.py": "3a5b361433e2aac2f8a7d4b292d137b4c80f32183057c0138b852a9190020cbb",
+    "agent\\knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent\\model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+    "agent\\model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent\\model_protocol.py": "8ba6730e160eac47d8231985e1293bb981a5a63ef9b475cf46daf31ef17bdfb0",
+    "agent\\model_server.py": "14e840e32fe34ca594eb4fb0dadd89fc67768fb9026ac3359734a021c5190fc2",
+    "agent\\navigation.py": "0f849c0c570720114c45c14b0a5286fe409e5d26c2945fdc9f6c1a6922bb7718",
+    "agent\\network.py": "def1be3752f81423c313c2dfa83f6703ee063d7e98652cf0d816b423d0e2d9cb",
+    "agent\\normalize.py": "6a4cb8311c29318d788c97a3e64cffa3c4085e595a0e1e9a2d5c418fa540e41c",
+    "agent\\output.py": "b983ab2efe31707b1c974344a32dc4b40b708541257695de89cac9e343b073eb",
+    "agent\\parser.py": "adee2e94345415b11b80fb4f38053ed85f1b49b27d1ab73df16264e59cdf2803",
+    "agent\\planner.py": "56d3747fd466f414800221f35a8f4d3fa25d1c40b484ace1fee7dae66be51921",
+    "agent\\processes.py": "677c4372b40d1da0ffc0cf4120ca5b6be2fcf6b6c30f6ec17d0d8fae19e198c1",
+    "agent\\proofs.py": "42920966e3cae090d8a0d53f17270f607a4a6dcb8a96a1af20382d2785e64b74",
+    "agent\\qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent\\resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent\\search.py": "489c8fee52ce0775b2e7d29d21f977e3d644a00098f834f736e456f1a34faf87",
+    "agent\\selector.py": "7427a98f8eac2f36a8d2d736d5065d0ca7894c0c76b929d0458dbc57df74fbbc",
+    "agent\\signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent\\types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent\\urls.py": "2118381f70d0f44174db25833b989cd36dab64b588b83085cddd65cad7412a1f",
+    "agent\\worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f",
+    "agent\\__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41"
+  },
+  "production_changed_during_run": false,
+  "passed": 6,
+  "total": 7,
+  "comparison": {
+    "before_passed": 3,
+    "after_passed": 6,
+    "total": 7,
+    "wins": [
+      "real-name",
+      "prose-name",
+      "family-name"
+    ],
+    "losses": []
+  }
+}

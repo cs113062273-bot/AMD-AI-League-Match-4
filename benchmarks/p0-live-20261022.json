@@ -1,0 +1,50 @@
+{
+  "scope": "Three actual public-registry fresh CLI requests; search disabled, no resident model loaded; not a general-web score",
+  "rows": [
+    {
+      "id": "absent",
+      "query": "What is the latest version of the PyPI package zzqx-nonexistent-pkg-4821?",
+      "expected": "",
+      "result": {
+        "answer": "",
+        "sources": []
+      },
+      "seconds": 1.1692397000733763,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "license",
+      "query": "What is the license of the httpx package on PyPI?",
+      "expected": "BSD-3-Clause",
+      "result": {
+        "answer": "BSD-3-Clause",
+        "sources": [
+          "https://pypi.org/pypi/httpx/json"
+        ]
+      },
+      "seconds": 0.9398892000317574,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": true
+    },
+    {
+      "id": "npm-license",
+      "query": "What is the license of the npm package is-number?",
+      "expected": "MIT",
+      "result": {
+        "answer": "MIT",
+        "sources": [
+          "https://registry.npmjs.org/is-number/latest"
+        ]
+      },
+      "seconds": 0.9377240999601781,
+      "exit_code": 0,
+      "stderr": "",
+      "passed": true
+    }
+  ],
+  "passed": 3,
+  "total": 3
+}

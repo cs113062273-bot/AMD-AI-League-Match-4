@@ -1,0 +1,5 @@
+# Complete accelerator-neutral dependencies shipped by the default competition image.
+# PyTorch is deliberately provided by the mandated ROCm base, never by this file.
+# For retrieval-only development use requirements-core.lock instead.
+-r requirements-runtime.lock
+-r requirements-browser.lock

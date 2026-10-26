@@ -1,0 +1,88 @@
+{
+  "scope": "Final CPU-only planning/HTTP/CLI and affected regressions; all executed commands exit0. No GPU/model/browser/public network. Static244 corpus all uses explicit starts and does not exercise inline extraction.",
+  "main_report": "benchmarks/question-urls-20261023-v3.json",
+  "main_report_sha256": "03c18b624402828a5d9a7e7f92e57c568590b6f0c1fbeedcbc43735b5c60f820",
+  "cli_report": "benchmarks/question-urls-20261023-cli-v2.json",
+  "cli_report_sha256": "0ca5ca277b016869e48f73727f37788ddba2ffd04dfd16a0f8090fb0c95920be",
+  "cli_files_sha_verified": true,
+  "checks": [
+    {
+      "id": "p0",
+      "command": ".venv/Scripts/python.exe eval/diagnose_p0.py --out research/question-urls-20261023-verified/p0.json",
+      "report": "research/question-urls-20261023-verified/p0.json",
+      "report_sha256": "d61a33a941f9623d8d96e372eee63b8d3ac1dcdec09f7db50100007d71188de6",
+      "script_sha256": "5a6ec5d803e96e4917d089cb04503e4d7b96ffbe8405d70205c3ea04caf05c50",
+      "passed": 16,
+      "total": 16
+    },
+    {
+      "id": "reader",
+      "command": ".venv/Scripts/python.exe eval/diagnose_reader_regression.py --out research/question-urls-20261023-verified/reader.json",
+      "report": "research/question-urls-20261023-verified/reader.json",
+      "report_sha256": "14a8bf3ea8157b15f324acf4d6c1b9ea8c8d0a69abf904ed0a6af2e9649c1f4e",
+      "script_sha256": "97b6e2b8f981549108c49cc165d3f5b8adbbc3ee15b0fed6602862b1be114652",
+      "passed": 15,
+      "total": 15
+    },
+    {
+      "id": "discovery",
+      "command": ".venv/Scripts/python.exe eval/diagnose_discovery.py --out research/question-urls-20261023-verified/discovery.json",
+      "report": "research/question-urls-20261023-verified/discovery.json",
+      "report_sha256": "e6f5da2c3d0346157a636b4dc0b8a42d3a41e7d1d1cc41f1c897309c9e8652fb",
+      "script_sha256": "a5321406146650300310c0caaff9fd94faf775488ba2f30c3407eddbd14b497b",
+      "passed": 7,
+      "total": 7
+    },
+    {
+      "id": "concise",
+      "command": ".venv/Scripts/python.exe eval/diagnose_concise_search.py --out research/question-urls-20261023-verified/concise.json",
+      "report": "research/question-urls-20261023-verified/concise.json",
+      "report_sha256": "5ba852a8a9caa7c8f91a1f7fdbdd9424422b3c94b90f58df0bfa315178177a6c",
+      "script_sha256": "213036b35d5f982c97134f90afe97ca679532ccd360fb67346c14823880f76ee",
+      "passed": 9,
+      "total": 9
+    },
+    {
+      "id": "proof",
+      "command": ".venv/Scripts/python.exe eval/diagnose_proofs.py --out research/question-urls-20261023-verified/proof.json",
+      "report": "research/question-urls-20261023-verified/proof.json",
+      "report_sha256": "81acf239d6c2e85785be16d6f4a211de16e0d1c1b77429710bf64045330c3371",
+      "script_sha256": "f6905d00da2acce0852ba7833390bc21cdb79214ab1d984c0252b48c9a70149b",
+      "passed": 27,
+      "total": 27
+    }
+  ],
+  "production_sha256": {
+    "agent/browser.py": "53ac9a99f3afcefcdb197cd9b2296c2d380910a782178fadb65235e548efc353",
+    "agent/candidates.py": "c55cd074f50d1b0c944cf5552bd604caf4b313bada23accd73674d5d1d93d116",
+    "agent/challenges.py": "b6f51c720f332671725e08127a5d1c163ca0542d2a550bf3c980a6d4c49bf6a1",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/engine.py": "01464cb276814f2d7c845c269da2522c285a7a7e28051abd7e36ad0ec62b41ff",
+    "agent/evidence.py": "56994f2e5046668e33630fbc2330cfac35c8971f3c4d4e25f22547f1d99feba2",
+    "agent/field_groups.py": "52a54989253c59e9836dec4aaec4944b688376e79548b9336887558a454e9162",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "agent/model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+    "agent/model_server.py": "8d326a696942d259697a6fba8586441bbbe4874042ea900c6d7788a2a0e9fd22",
+    "agent/navigation.py": "0f849c0c570720114c45c14b0a5286fe409e5d26c2945fdc9f6c1a6922bb7718",
+    "agent/network.py": "def1be3752f81423c313c2dfa83f6703ee063d7e98652cf0d816b423d0e2d9cb",
+    "agent/normalize.py": "05e48fa0be8384aa656bf1280ba0be44545efa51b7d4451f0716d836d39a1973",
+    "agent/output.py": "b983ab2efe31707b1c974344a32dc4b40b708541257695de89cac9e343b073eb",
+    "agent/oyez.py": "8475f248d78925522e0742b13518be2c4f4db11eae0d8391a8002da7d4e3b67d",
+    "agent/parser.py": "782bebc6fa89a4869ca007da385cbfc8dfed8102b4600584224e94fc702957f1",
+    "agent/planner.py": "90e6c02b6773bddb390ee6c6542cc8e4363870a08ce41485369758b90b38cc14",
+    "agent/processes.py": "677c4372b40d1da0ffc0cf4120ca5b6be2fcf6b6c30f6ec17d0d8fae19e198c1",
+    "agent/proofs.py": "0d7ae78df6ea9949c29f33c7b817dda352c75b3d99c960c3e987e37c7401faab",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/resolvers.py": "312d776118c6c6f0421939df58cf6bcaec8740a7fd341136c17a33f284a03ef2",
+    "agent/search.py": "28e2454682bc8af4ef10b06f62b66117d39194fddc9ec218b9bc82cad96767fd",
+    "agent/selector.py": "be7c0fce11c10921d5cd4e3d1072d5a2ca5a62f1c328730384d19b0fecd19566",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent/urls.py": "6bbf58adf3c55cf3787edf4b6607a7db8eea987f0c02dd6cdfea48f6c38e031f",
+    "agent/worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f",
+    "agent/__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41"
+  }
+}

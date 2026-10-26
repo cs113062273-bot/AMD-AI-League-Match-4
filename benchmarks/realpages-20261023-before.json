@@ -1,0 +1,1010 @@
+{
+  "scope": "Small fixed-correct-page reader diagnosis with an owned full-4B CUDA service.\n\nCases are exposed development data, not a held-out or public-web accuracy claim.\nAn oracle URL supplies the answer page; this separates reading from discovery.\n",
+  "context_limit": 1536,
+  "baseline_revision": "c3d7e49f060c21f3aab2dd52925f4b9d632f6f97",
+  "baseline_source_sha256": {
+    "agent/engine.py": "aad82e3f2c962afaaf8578703ac826264a6f9122691be65380b0dd8635f621a4",
+    "agent/types.py": "42d14170127f88a247c0092e6a65b8151496cc46e7e02d7fee8c7317ffa011f2",
+    "agent/planner.py": "07700e3ff3efa41a3aae9558d281a5a4f3925206fb5f90c6e97fb7fce86120b2",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/network.py": "c37ecb5b4b0fba4fac737954eda24952059922ed620c94b99bcb17daed8c5155",
+    "agent/urls.py": "2118381f70d0f44174db25833b989cd36dab64b588b83085cddd65cad7412a1f",
+    "agent/parser.py": "cf9562f0071e58bc66abd6eeebea9cd8cccaf4b9cc5af4ba3a0f3f42033b0798",
+    "agent/normalize.py": "5120ed91dc0c70eff61c41f0242388e45be357d6fdd251042e437a1ccc5f34ff",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent/search.py": "ac3e239f6f3b86696877af3e237be0c125e78cebbb6e980060abab2eb3f4db90",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/candidates.py": "34db65b75ef6e0da54230a39b1d11542f3f942bf79d8fc8cbe6076eaf3bb6507",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/evidence.py": "756d35bc17919c32bc8db1ce2b8e609eaae5042bc376466fae862a0792b969cb",
+    "agent/selector.py": "b98605e9c31d93b1486aee4d6e6ab207a70dd9b35e6300ae7bea5b949c7c346d",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/proofs.py": "42920966e3cae090d8a0d53f17270f607a4a6dcb8a96a1af20382d2785e64b74"
+  },
+  "case_path": "benchmarks/realpages-20261023-cases.json",
+  "fixture_path": "research/realpages-20261023/fixtures.json",
+  "max_depth": 0,
+  "budget": 12,
+  "production_sha256": {
+    "app.py": "c0267c0441330bd30559f48d2f33916418992b8e21ec8dd1d09ae4773c23b73b",
+    "agent\\browser.py": "f7a3d9479ec2ae9bc9fbbcb27efbddaeba9b5dd8639016e827840cc1c7e33cea",
+    "agent\\candidates.py": "003a1335fa31baf0255361292556f66c6c80307ddf20343c5c0be0385d78442a",
+    "agent\\currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent\\engine.py": "aad82e3f2c962afaaf8578703ac826264a6f9122691be65380b0dd8635f621a4",
+    "agent\\evidence.py": "756d35bc17919c32bc8db1ce2b8e609eaae5042bc376466fae862a0792b969cb",
+    "agent\\knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent\\model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+    "agent\\model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent\\model_protocol.py": "8ba6730e160eac47d8231985e1293bb981a5a63ef9b475cf46daf31ef17bdfb0",
+    "agent\\model_server.py": "14e840e32fe34ca594eb4fb0dadd89fc67768fb9026ac3359734a021c5190fc2",
+    "agent\\navigation.py": "0f849c0c570720114c45c14b0a5286fe409e5d26c2945fdc9f6c1a6922bb7718",
+    "agent\\network.py": "def1be3752f81423c313c2dfa83f6703ee063d7e98652cf0d816b423d0e2d9cb",
+    "agent\\normalize.py": "5120ed91dc0c70eff61c41f0242388e45be357d6fdd251042e437a1ccc5f34ff",
+    "agent\\output.py": "b983ab2efe31707b1c974344a32dc4b40b708541257695de89cac9e343b073eb",
+    "agent\\parser.py": "cf9562f0071e58bc66abd6eeebea9cd8cccaf4b9cc5af4ba3a0f3f42033b0798",
+    "agent\\planner.py": "e4192860ce13ee1d1a16765a948409c8c3a9e354b79844a6d6908530d2c2cb47",
+    "agent\\processes.py": "677c4372b40d1da0ffc0cf4120ca5b6be2fcf6b6c30f6ec17d0d8fae19e198c1",
+    "agent\\proofs.py": "42920966e3cae090d8a0d53f17270f607a4a6dcb8a96a1af20382d2785e64b74",
+    "agent\\qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent\\resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent\\search.py": "ac3e239f6f3b86696877af3e237be0c125e78cebbb6e980060abab2eb3f4db90",
+    "agent\\selector.py": "b98605e9c31d93b1486aee4d6e6ab207a70dd9b35e6300ae7bea5b949c7c346d",
+    "agent\\signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent\\types.py": "42d14170127f88a247c0092e6a65b8151496cc46e7e02d7fee8c7317ffa011f2",
+    "agent\\urls.py": "2118381f70d0f44174db25833b989cd36dab64b588b83085cddd65cad7412a1f",
+    "agent\\worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f",
+    "agent\\__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41"
+  },
+  "cases_sha256": "70df37f8cfb49e31bfaa5f161af2ceaa876bea9c9c40d4fb090d2c9abf799a37",
+  "fixtures_sha256": "bfb21c81a47c57a9daf980d96121ef616ad56b83d1e652a0d1b19b6779e60a11",
+  "rows": [
+    {
+      "id": "simpleqa-491",
+      "answer_ok": false,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "In what year did the biochemist Mildred Cohn receive the Golden Plate Award from the American Academy of Achievement?",
+            "url": "http://127.0.0.1:4694/simpleqa-491.html",
+            "kind": "year",
+            "terms": [
+              "year",
+              "biochemist",
+              "mildred",
+              "cohn",
+              "receive",
+              "golden",
+              "plate",
+              "award",
+              "american",
+              "academy",
+              "achievement"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "year",
+              "biochemist",
+              "mildred",
+              "cohn",
+              "receive",
+              "golden",
+              "plate",
+              "award",
+              "american",
+              "academy",
+              "achievement"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "in what year did the biochemist mildred cohn receive the golden plate award from the american academy of achievement?",
+            "choices": [],
+            "operation": "single",
+            "required_fields": []
+          },
+          "errors": [],
+          "selector": [
+            "abstain"
+          ],
+          "timings": {
+            "resolver": 0.00012480001896619797
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "reader_state": "no_evidence",
+          "top_candidates": [
+            {
+              "raw": "1961",
+              "answer": "1961",
+              "source": "http://127.0.0.1:4694/simpleqa-491.html",
+              "evidence": "description: The Golden Plate Award has been presented since 1961 by the American Academy of Achievement to approximately 25 guests of honor at the International Achievement Summit. Chosen by the Academy’s Awards Council and other distinguished authorities, these men and women of exceptional accomplishment in the sciences, the professions, business, industry, arts, literature, sports, entertainment, and public service are acclaimed … not as winners, but as visionaries and achievers who represent the many who excel.",
+              "label": "description",
+              "section": "",
+              "kind": "year",
+              "score": 9.772855887687,
+              "signals": {
+                "locator": "meta[11]",
+                "page_title": "All Honorees | Academy of Achievement",
+                "structure": "meta",
+                "qualifiers": {},
+                "field_value": "The Golden Plate Award has been presented since 1961 by the American Academy of Achievement to approximately 25 guests of honor at the International Achievement Summit. Chosen by the Academy’s Awards Council and other distinguished authorities, these men and women of exceptional accomplishment in the sciences, the professions, business, industry, arts, literature, sports, entertainment, and public service are acclaimed … not as winners, but as visionaries and achievers who represent the many who excel.",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "1200",
+              "answer": "1200",
+              "source": "http://127.0.0.1:4694/simpleqa-491.html",
+              "evidence": "@graph[3].logo.width: 1200 | @graph[3].logo { @type: ImageObject | inLanguage: en-US | @id: https://achievement.org/#/schema/logo/image/ | url: /wp-content/uploads/2019/05/12.png | contentUrl: /wp-content/uploads/2019/05/12.png | width: 1200 | height: 630 | caption: Academy of Achievement } | parent @graph[3] { @type: Organization | @id: https://achievement.org/#organization | name: Academy of Achievement | url: https://achievement.org/ } | parent $ { @context: https://schema.org }",
+              "label": "@graph[3].logo.width",
+              "section": "@graph[3].logo { @type: ImageObject | inLanguage: en-US | @id: https://achievement.org/#/schema/logo/image/ | url: /wp-content/uploads/2019/05/12.png | contentUrl: /wp-content/uploads/2019/05/12.png | width: 1200 | height: 630 | caption: Academy of Achievement } | parent @graph[3] { @type: Organization | @id: https://achievement.org/#organization | name: Academy of Achievement | url: https://achie",
+              "kind": "year",
+              "score": 5.684051778424037,
+              "signals": {
+                "locator": "script[0]/@graph[3].logo.width",
+                "page_title": "All Honorees | Academy of Achievement",
+                "structure": "jsonld",
+                "qualifiers": {
+                  "structured": true,
+                  "identity": [
+                    "https://achievement.org/#/schema/logo/image/"
+                  ],
+                  "schema_types": [
+                    "ImageObject"
+                  ],
+                  "bindings": {
+                    "@type": "ImageObject",
+                    "inLanguage": "en-US",
+                    "@id": "https://achievement.org/#/schema/logo/image/",
+                    "url": "/wp-content/uploads/2019/05/12.png",
+                    "contentUrl": "/wp-content/uploads/2019/05/12.png",
+                    "width": "1200",
+                    "height": "630",
+                    "caption": "Academy of Achievement"
+                  },
+                  "value_type": "scalar"
+                },
+                "field_value": "1200",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2019",
+              "answer": "2019",
+              "source": "http://127.0.0.1:4694/simpleqa-491.html",
+              "evidence": "@graph[3].logo.url: /wp-content/uploads/2019/05/12.png | @graph[3].logo { @type: ImageObject | inLanguage: en-US | @id: https://achievement.org/#/schema/logo/image/ | url: /wp-content/uploads/2019/05/12.png | contentUrl: /wp-content/uploads/2019/05/12.png | width: 1200 | height: 630 | caption: Academy of Achievement } | parent @graph[3] { @type: Organization | @id: https://achievement.org/#organization | name: Academy of Achievement | url: https://achievement.org/ } | parent $ { @context: https://schema.org }",
+              "label": "@graph[3].logo.url",
+              "section": "@graph[3].logo { @type: ImageObject | inLanguage: en-US | @id: https://achievement.org/#/schema/logo/image/ | url: /wp-content/uploads/2019/05/12.png | contentUrl: /wp-content/uploads/2019/05/12.png | width: 1200 | height: 630 | caption: Academy of Achievement } | parent @graph[3] { @type: Organization | @id: https://achievement.org/#organization | name: Academy of Achievement | url: https://achie",
+              "kind": "year",
+              "score": 4.374742736117437,
+              "signals": {
+                "locator": "script[0]/@graph[3].logo.url",
+                "page_title": "All Honorees | Academy of Achievement",
+                "structure": "jsonld",
+                "qualifiers": {
+                  "structured": true,
+                  "identity": [
+                    "https://achievement.org/#/schema/logo/image/"
+                  ],
+                  "schema_types": [
+                    "ImageObject"
+                  ],
+                  "bindings": {
+                    "@type": "ImageObject",
+                    "inLanguage": "en-US",
+                    "@id": "https://achievement.org/#/schema/logo/image/",
+                    "url": "/wp-content/uploads/2019/05/12.png",
+                    "contentUrl": "/wp-content/uploads/2019/05/12.png",
+                    "width": "1200",
+                    "height": "630",
+                    "caption": "Academy of Achievement"
+                  },
+                  "value_type": "scalar"
+                },
+                "field_value": "/wp-content/uploads/2019/05/12.png",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2026",
+              "answer": "2026",
+              "source": "http://127.0.0.1:4694/simpleqa-491.html",
+              "evidence": "The Summit Overview 2026 2024 2022 2019 2017 2014 2012 2010 2009 2008 2007 2006 2005 2004 2003 2002",
+              "label": "",
+              "section": "",
+              "kind": "year",
+              "score": 3.0,
+              "signals": {
+                "locator": "li[9]:0",
+                "page_title": "All Honorees | Academy of Achievement",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2024",
+              "answer": "2024",
+              "source": "http://127.0.0.1:4694/simpleqa-491.html",
+              "evidence": "The Summit Overview 2026 2024 2022 2019 2017 2014 2012 2010 2009 2008 2007 2006 2005 2004 2003 2002",
+              "label": "",
+              "section": "",
+              "kind": "year",
+              "score": 3.0,
+              "signals": {
+                "locator": "li[9]:0",
+                "page_title": "All Honorees | Academy of Achievement",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2022",
+              "answer": "2022",
+              "source": "http://127.0.0.1:4694/simpleqa-491.html",
+              "evidence": "The Summit Overview 2026 2024 2022 2019 2017 2014 2012 2010 2009 2008 2007 2006 2005 2004 2003 2002",
+              "label": "",
+              "section": "",
+              "kind": "year",
+              "score": 3.0,
+              "signals": {
+                "locator": "li[9]:0",
+                "page_title": "All Honorees | Academy of Achievement",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2017",
+              "answer": "2017",
+              "source": "http://127.0.0.1:4694/simpleqa-491.html",
+              "evidence": "The Summit Overview 2026 2024 2022 2019 2017 2014 2012 2010 2009 2008 2007 2006 2005 2004 2003 2002",
+              "label": "",
+              "section": "",
+              "kind": "year",
+              "score": 3.0,
+              "signals": {
+                "locator": "li[9]:0",
+                "page_title": "All Honorees | Academy of Achievement",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2014",
+              "answer": "2014",
+              "source": "http://127.0.0.1:4694/simpleqa-491.html",
+              "evidence": "The Summit Overview 2026 2024 2022 2019 2017 2014 2012 2010 2009 2008 2007 2006 2005 2004 2003 2002",
+              "label": "",
+              "section": "",
+              "kind": "year",
+              "score": 3.0,
+              "signals": {
+                "locator": "li[9]:0",
+                "page_title": "All Honorees | Academy of Achievement",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:4694/simpleqa-491.html",
+              "final": "http://127.0.0.1:4694/simpleqa-491.html",
+              "status": 200,
+              "bytes": 738478,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 1.6103
+        }
+      }
+    },
+    {
+      "id": "simpleqa-3382",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "2010",
+        "sources": [
+          "http://127.0.0.1:4694/simpleqa-3382.html"
+        ],
+        "confidence": 0.955,
+        "evidence": "Gordon Plotkin was elected a Fellow of the Royal Society in 1992, is a Fellow of the Royal Society of Edinburgh and a Member of the Academia Europaea. He is also a winner of the Royal Society Wolfson Research Merit Award. Plotkin received the 2012 Royal Society Milner Award for \"his fundamental research into programming semantics with lasting impact on both the principles and design of programming languages\". He has also received the 2010 ACM SIGPLAN Programming Languages Achievement Award, the 2011 European Academy of Sciences, Blaise Pascal Medal in Computational Sciences and Information, 2011, and the 2014 EATCS Award.",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "In what year did Gordon Plotkin win the ACM SIGPLAN Programming Languages Achievement Award?",
+            "url": "http://127.0.0.1:4694/simpleqa-3382.html",
+            "kind": "year",
+            "terms": [
+              "year",
+              "gordon",
+              "plotkin",
+              "win",
+              "acm",
+              "sigplan",
+              "programming",
+              "languages",
+              "achievement",
+              "award"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "year",
+              "gordon",
+              "plotkin",
+              "win",
+              "acm",
+              "sigplan",
+              "programming",
+              "languages",
+              "achievement",
+              "award"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "in what year did gordon plotkin win the acm sigplan programming languages achievement award?",
+            "choices": [],
+            "operation": "single",
+            "required_fields": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.3499986380338669e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "2010",
+              "answer": "2010",
+              "source": "http://127.0.0.1:4694/simpleqa-3382.html",
+              "evidence": "Gordon Plotkin was elected a Fellow of the Royal Society in 1992, is a Fellow of the Royal Society of Edinburgh and a Member of the Academia Europaea. He is also a winner of the Royal Society Wolfson Research Merit Award. Plotkin received the 2012 Royal Society Milner Award for \"his fundamental research into programming semantics with lasting impact on both the principles and design of programming languages\". He has also received the 2010 ACM SIGPLAN Programming Languages Achievement Award, the 2011 European Academy of Sciences, Blaise Pascal Medal in Computational Sciences and Information, 2011, and the 2014 EATCS Award.",
+              "label": "",
+              "section": "Biography",
+              "kind": "year",
+              "score": 16.193621479131238,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[11]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "2010",
+            "answer": "2010",
+            "source": "http://127.0.0.1:4694/simpleqa-3382.html",
+            "evidence": "Gordon Plotkin was elected a Fellow of the Royal Society in 1992, is a Fellow of the Royal Society of Edinburgh and a Member of the Academia Europaea. He is also a winner of the Royal Society Wolfson Research Merit Award. Plotkin received the 2012 Royal Society Milner Award for \"his fundamental research into programming semantics with lasting impact on both the principles and design of programming languages\". He has also received the 2010 ACM SIGPLAN Programming Languages Achievement Award, the 2011 European Academy of Sciences, Blaise Pascal Medal in Computational Sciences and Information, 2011, and the 2014 EATCS Award.",
+            "label": "",
+            "section": "Biography",
+            "kind": "year",
+            "score": 16.193621479131238,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[11]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:4694/simpleqa-3382.html",
+              "final": "http://127.0.0.1:4694/simpleqa-3382.html",
+              "status": 200,
+              "bytes": 115866,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 2.0674
+        }
+      }
+    },
+    {
+      "id": "simpleqa-4197",
+      "answer_ok": false,
+      "source_ok": true,
+      "joint_ok": false,
+      "result": {
+        "answer": "Lagrange",
+        "sources": [
+          "http://127.0.0.1:4694/simpleqa-4197.html"
+        ],
+        "confidence": 0.815,
+        "evidence": "Name appearing: Lagrange | Full name: Joseph Louis Lagrange | Occupation: mathematician | Location: NW06",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What surname of a mathematician is engraved on the Eiffel Tower at location NW06?",
+            "url": "http://127.0.0.1:4694/simpleqa-4197.html",
+            "kind": "text",
+            "terms": [
+              "surname",
+              "mathematician",
+              "engraved",
+              "eiffel",
+              "tower",
+              "location",
+              "nw06"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "surname",
+              "mathematician",
+              "engraved",
+              "eiffel",
+              "tower",
+              "location",
+              "nw06"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what surname ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.0899966582655907e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Lagrange",
+              "answer": "Lagrange",
+              "source": "http://127.0.0.1:4694/simpleqa-4197.html",
+              "evidence": "Name appearing: Lagrange | Full name: Joseph Louis Lagrange | Occupation: mathematician | Location: NW06",
+              "label": "Location",
+              "section": "",
+              "kind": "text",
+              "score": 10.6,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "table[12]/row[5]/cell[3]",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 12,
+                  "row": 5,
+                  "columns": [
+                    "Name appearing",
+                    "Full name",
+                    "Occupation",
+                    "Location"
+                  ],
+                  "cells": [
+                    "Lagrange",
+                    "Joseph Louis Lagrange",
+                    "mathematician",
+                    "NW06"
+                  ],
+                  "column": 3
+                },
+                "field_value": "NW06"
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "Lagrange",
+            "answer": "Lagrange",
+            "source": "http://127.0.0.1:4694/simpleqa-4197.html",
+            "evidence": "Name appearing: Lagrange | Full name: Joseph Louis Lagrange | Occupation: mathematician | Location: NW06",
+            "label": "Location",
+            "section": "",
+            "kind": "text",
+            "score": 10.6,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "table[12]/row[5]/cell[3]",
+              "structure": "cell",
+              "qualifiers": {
+                "table": 12,
+                "row": 5,
+                "columns": [
+                  "Name appearing",
+                  "Full name",
+                  "Occupation",
+                  "Location"
+                ],
+                "cells": [
+                  "Lagrange",
+                  "Joseph Louis Lagrange",
+                  "mathematician",
+                  "NW06"
+                ],
+                "column": 3
+              },
+              "field_value": "NW06"
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:4694/simpleqa-4197.html",
+              "final": "http://127.0.0.1:4694/simpleqa-4197.html",
+              "status": 200,
+              "bytes": 108815,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 1.7395
+        }
+      }
+    },
+    {
+      "id": "simpleqa-969",
+      "answer_ok": false,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_evidence_rejected",
+        "diagnostics": {
+          "plan": {
+            "question": "Which month and year was William Harrison Standley appointed as the American Ambassador to the USSR?",
+            "url": "http://127.0.0.1:4694/simpleqa-969.html",
+            "kind": "year",
+            "terms": [
+              "month",
+              "year",
+              "william",
+              "harrison",
+              "standley",
+              "appointed",
+              "american",
+              "ambassador",
+              "ussr"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "month",
+              "year",
+              "william",
+              "harrison",
+              "standley",
+              "appointed",
+              "american",
+              "ambassador",
+              "ussr"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "which month and year was william harrison standley appointed as the american ambassador to the ussr",
+            "choices": [],
+            "operation": "single",
+            "required_fields": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.309998333454132e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "February 14, 1942",
+              "answer": "February 14, 1942",
+              "source": "http://127.0.0.1:4694/simpleqa-969.html",
+              "evidence": "Ambassador Extraordinary and Plenipotentiary (Russia) Appointed: February 14, 1942 Presentation of Credentials: April 14, 1942 Termination of Mission: Left post on September 19, 1943 Commissioned to the Union of Soviet Socialist Republics.",
+              "label": "",
+              "section": "NOTE TO READERS",
+              "kind": "year",
+              "score": 9.831112054588607,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "li[4]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "reader_state": "evidence_rejected",
+          "top_candidates": [
+            {
+              "raw": "1872",
+              "answer": "1872",
+              "source": "http://127.0.0.1:4694/simpleqa-969.html",
+              "evidence": "William Harrison Standley (1872–1963)",
+              "label": "title",
+              "section": "William Harrison Standley (1872–1963)",
+              "kind": "year",
+              "score": 7.800000000000001,
+              "signals": {
+                "locator": "h1[0]",
+                "page_title": "William Harrison Standley - People - Department History - Office of the Historian",
+                "structure": "field",
+                "qualifiers": {},
+                "field_value": "William Harrison Standley (1872–1963)",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "1963",
+              "answer": "1963",
+              "source": "http://127.0.0.1:4694/simpleqa-969.html",
+              "evidence": "William Harrison Standley (1872–1963)",
+              "label": "title",
+              "section": "William Harrison Standley (1872–1963)",
+              "kind": "year",
+              "score": 7.800000000000001,
+              "signals": {
+                "locator": "h1[0]",
+                "page_title": "William Harrison Standley - People - Department History - Office of the Historian",
+                "structure": "field",
+                "qualifiers": {},
+                "field_value": "William Harrison Standley (1872–1963)",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "1942",
+              "answer": "1942",
+              "source": "http://127.0.0.1:4694/simpleqa-969.html",
+              "evidence": "Ambassador Extraordinary and Plenipotentiary (Russia) Appointed: February 14, 1942 Presentation of Credentials: April 14, 1942 Termination of Mission: Left post on September 19, 1943 Commissioned to the Union of Soviet Socialist Republics.",
+              "label": "",
+              "section": "NOTE TO READERS",
+              "kind": "year",
+              "score": 5.831112054588607,
+              "signals": {
+                "locator": "li[4]:0",
+                "page_title": "William Harrison Standley - People - Department History - Office of the Historian",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "1943",
+              "answer": "1943",
+              "source": "http://127.0.0.1:4694/simpleqa-969.html",
+              "evidence": "Ambassador Extraordinary and Plenipotentiary (Russia) Appointed: February 14, 1942 Presentation of Credentials: April 14, 1942 Termination of Mission: Left post on September 19, 1943 Commissioned to the Union of Soviet Socialist Republics.",
+              "label": "",
+              "section": "NOTE TO READERS",
+              "kind": "year",
+              "score": 5.831112054588607,
+              "signals": {
+                "locator": "li[4]:0",
+                "page_title": "William Harrison Standley - People - Department History - Office of the Historian",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [
+            {
+              "a": "1872",
+              "b": "1963",
+              "sources": [
+                "http://127.0.0.1:4694/simpleqa-969.html",
+                "http://127.0.0.1:4694/simpleqa-969.html"
+              ],
+              "margin": 0.0
+            }
+          ],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:4694/simpleqa-969.html",
+              "final": "http://127.0.0.1:4694/simpleqa-969.html",
+              "status": 200,
+              "bytes": 22230,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 1.3361
+        }
+      }
+    }
+  ],
+  "health_before": {
+    "ready": true,
+    "device": "cuda",
+    "hip": null,
+    "pid": 33148,
+    "startup_token": "1166c50a2457481fa81642dcb4dad3a9",
+    "backend_source_sha256": {
+      "model_server.py": "14e840e32fe34ca594eb4fb0dadd89fc67768fb9026ac3359734a021c5190fc2",
+      "model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+      "selector.py": "b98605e9c31d93b1486aee4d6e6ab207a70dd9b35e6300ae7bea5b949c7c346d",
+      "model_protocol.py": "8ba6730e160eac47d8231985e1293bb981a5a63ef9b475cf46daf31ef17bdfb0",
+      "model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+      "normalize.py": "5120ed91dc0c70eff61c41f0242388e45be357d6fdd251042e437a1ccc5f34ff",
+      "types.py": "42d14170127f88a247c0092e6a65b8151496cc46e7e02d7fee8c7317ffa011f2"
+    },
+    "software": {
+      "torch": "2.9.1+cu128",
+      "transformers": "4.57.1",
+      "tokenizers": "0.22.1",
+      "safetensors": "0.6.2",
+      "accelerate": "1.11.0"
+    },
+    "parameters": 4022468096,
+    "assets": {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "verified_files": 12,
+      "full_sha256": false,
+      "weight_shards": 3
+    },
+    "warmup_reply": {
+      "candidate": -1,
+      "passage": 0,
+      "answer": "7"
+    },
+    "torch": "2.9.1+cu128",
+    "startup_seconds": 5.246403699973598,
+    "calls": 0,
+    "outcomes": {},
+    "active_request": null,
+    "busy_rejections": 0,
+    "recent_requests": [
+      {
+        "request_id": "warmup",
+        "mode": "select",
+        "input_tokens": 268,
+        "packing_seconds": 0.011775100021623075,
+        "transfer_seconds": 0.000949900015257299,
+        "generated_tokens": 14,
+        "stop_reason": "completed",
+        "generation_seconds": 1.1259063000325114,
+        "prefill_and_first_token_seconds": 0.5137227999512106
+      }
+    ],
+    "context_limit": 1536,
+    "token_stats": {
+      "max_input": 268,
+      "generated": 14,
+      "pruned_requests": 0
+    },
+    "device_memory_bytes": 12878086144,
+    "peak_vram_bytes": 8141605888,
+    "allocated_vram_bytes": 8053474816,
+    "reserved_vram_bytes": 8185184256
+  },
+  "health_after": {
+    "ready": true,
+    "device": "cuda",
+    "hip": null,
+    "pid": 33148,
+    "startup_token": "1166c50a2457481fa81642dcb4dad3a9",
+    "backend_source_sha256": {
+      "model_server.py": "14e840e32fe34ca594eb4fb0dadd89fc67768fb9026ac3359734a021c5190fc2",
+      "model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+      "selector.py": "b98605e9c31d93b1486aee4d6e6ab207a70dd9b35e6300ae7bea5b949c7c346d",
+      "model_protocol.py": "8ba6730e160eac47d8231985e1293bb981a5a63ef9b475cf46daf31ef17bdfb0",
+      "model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+      "normalize.py": "5120ed91dc0c70eff61c41f0242388e45be357d6fdd251042e437a1ccc5f34ff",
+      "types.py": "42d14170127f88a247c0092e6a65b8151496cc46e7e02d7fee8c7317ffa011f2"
+    },
+    "software": {
+      "torch": "2.9.1+cu128",
+      "transformers": "4.57.1",
+      "tokenizers": "0.22.1",
+      "safetensors": "0.6.2",
+      "accelerate": "1.11.0"
+    },
+    "parameters": 4022468096,
+    "assets": {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "verified_files": 12,
+      "full_sha256": false,
+      "weight_shards": 3
+    },
+    "warmup_reply": {
+      "candidate": -1,
+      "passage": 0,
+      "answer": "7"
+    },
+    "torch": "2.9.1+cu128",
+    "startup_seconds": 5.246403699973598,
+    "calls": 6,
+    "outcomes": {
+      "abstained": 1,
+      "selected": 3,
+      "supported": 2
+    },
+    "active_request": null,
+    "busy_rejections": 0,
+    "recent_requests": [
+      {
+        "request_id": "warmup",
+        "mode": "select",
+        "input_tokens": 268,
+        "packing_seconds": 0.011775100021623075,
+        "transfer_seconds": 0.000949900015257299,
+        "generated_tokens": 14,
+        "stop_reason": "completed",
+        "generation_seconds": 1.1259063000325114,
+        "prefill_and_first_token_seconds": 0.5137227999512106
+      },
+      {
+        "request_id": "52580a3837c44393b14fbeda3d8b6d45",
+        "mode": "select",
+        "input_tokens": 1236,
+        "packing_seconds": 0.01781160000246018,
+        "transfer_seconds": 0.0027697000186890364,
+        "generated_tokens": 13,
+        "stop_reason": "completed",
+        "generation_seconds": 0.8985128999920562,
+        "prefill_and_first_token_seconds": 0.2755448999814689
+      },
+      {
+        "request_id": "7f5b7c308854466190340c2593bd2e9f",
+        "mode": "select",
+        "input_tokens": 1526,
+        "packing_seconds": 0.011964700068347156,
+        "transfer_seconds": 0.0023982999846339226,
+        "generated_tokens": 17,
+        "stop_reason": "completed",
+        "generation_seconds": 1.2037037999834865,
+        "prefill_and_first_token_seconds": 0.3731493999948725
+      },
+      {
+        "request_id": "a4a7fa4cd4a34d53b20f1305957c3750",
+        "mode": "verify",
+        "input_tokens": 1467,
+        "packing_seconds": 0.011041500023566186,
+        "transfer_seconds": 0.0027846000157296658,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.748589999973774,
+        "prefill_and_first_token_seconds": 0.3457776999566704
+      },
+      {
+        "request_id": "dab20f1d213b438db1876b78ad5f2327",
+        "mode": "select",
+        "input_tokens": 1225,
+        "packing_seconds": 0.005598100018687546,
+        "transfer_seconds": 0.0027054999954998493,
+        "generated_tokens": 16,
+        "stop_reason": "completed",
+        "generation_seconds": 1.0298488000407815,
+        "prefill_and_first_token_seconds": 0.2584613000508398
+      },
+      {
+        "request_id": "93a6398e478c40018082bc1c2d7ea56c",
+        "mode": "verify",
+        "input_tokens": 1165,
+        "packing_seconds": 0.004629399976693094,
+        "transfer_seconds": 0.0022573000751435757,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.6011143999639899,
+        "prefill_and_first_token_seconds": 0.25419409992173314
+      },
+      {
+        "request_id": "02c671c3aa93441088bfe714129936de",
+        "mode": "select",
+        "input_tokens": 1173,
+        "packing_seconds": 0.005510100047104061,
+        "transfer_seconds": 0.002228099969215691,
+        "generated_tokens": 23,
+        "stop_reason": "completed",
+        "generation_seconds": 1.3141953999875113,
+        "prefill_and_first_token_seconds": 0.25010820000898093
+      }
+    ],
+    "context_limit": 1536,
+    "token_stats": {
+      "max_input": 1526,
+      "generated": 95,
+      "pruned_requests": 3
+    },
+    "device_memory_bytes": 12878086144,
+    "peak_vram_bytes": 9120988672,
+    "allocated_vram_bytes": 8061994496,
+    "reserved_vram_bytes": 9535750144
+  },
+  "memory_after_run": {
+    "used_mib": 11031,
+    "total_mib": 12282
+  },
+  "memory_after_shutdown": {
+    "used_mib": 1722,
+    "total_mib": 12282
+  },
+  "passed": 1,
+  "total": 4
+}

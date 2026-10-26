@@ -1,0 +1,4999 @@
+{
+  "scope": "Actual Runtime.infer packing with authored CPU string counters, no ML loads.\n\nThe counter is not a real tokenizer or an estimate of actual token capacity.\nGeneration is intercepted before tensor construction. This probes evidence\nmutation, not a real-model wrong answer or competition score.\n",
+  "baseline": "229bb5af3880538a345b363ee7d48488eaea4001",
+  "baseline_hashes": {
+    "agent/engine.py": "031a978d94d2846e80a995f34f2bdd4aac137c5e429a979f6f427d1da8dc9140",
+    "agent/types.py": "1bc24b341d11e9bd0da4a288ba843728f831897cf5222e51f43fa1265b740f30",
+    "agent/planner.py": "4e446a2bbc54158a722526e3b74d1a890d58c3a22cbac84a8a9c36a8a09919c4",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "agent/normalize.py": "93f9147f5b09f8567ddac860e6b37b13f1f1d6c99bbd3c9c9a7da402d5dc64fa",
+    "agent/number_atoms.py": "0fc737af6f98af5b962cf0656b28a7a3b037e4113731b460fb63a2f5a22eb768",
+    "agent/urls.py": "6bbf58adf3c55cf3787edf4b6607a7db8eea987f0c02dd6cdfea48f6c38e031f",
+    "agent/population.py": "d134655302bc76a4e58ac45e7f2d20fc73ed5cefce26f63f67b58cc25d3bc504",
+    "agent/cardinals.py": "54bcfb476ee7f5e1d21ec7d2763caa34fc4d8f3df0c16812aedc5445044099a3",
+    "agent/magnitudes.py": "bf4a970386bd25332b813e0aab91dd28cda05047ca5af5d9e7b861760f5942d7",
+    "agent/temporal.py": "f520ada0a6ea9f810225887080a495a4a47a0371cd6f613a9c5648587509012a",
+    "agent/network.py": "61e8022642d7b8d377453282b6fa947818d8fe6b8151a4d473832bbaae1aaa4b",
+    "agent/request_pacing.py": "dc9af13c9c4af1c6555442ba9adeb7824a63685c676924d1fbdd20318e23f274",
+    "agent/parser.py": "97b44d55ad0d687c1aa873d98d77ec8ba0dfb1ce684fc31767c298fc5a23466d",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/challenges.py": "b6f51c720f332671725e08127a5d1c163ca0542d2a550bf3c980a6d4c49bf6a1",
+    "agent/field_groups.py": "52a54989253c59e9836dec4aaec4944b688376e79548b9336887558a454e9162",
+    "agent/html_paragraphs.py": "fd2efd7286fd9bff67a9439a2e864ad729f90b28404316f3fb83cc2657053595",
+    "agent/resolvers.py": "990a9097481cce6b2b90805aedb7f5a6996b7caad290fbf44424bf7d93101866",
+    "agent/registry_history.py": "eb6c41b0b3c92192cecc23c7f4ba147b57bb99be8e3990ae77ed0e7feaecd85b",
+    "agent/search.py": "64ebf971ea4dd0f8a34bc0bdd2d3678f54edab80d6112328fefeede84687ec55",
+    "agent/literature.py": "9b871500ab1ebaf88e8fca2c70bd7ade7eb81774412fa85a1f4be7d2fb06263f",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/candidates.py": "3422186f70ad803ebc0715e358c80d5da9cbd071e590bbaf39d9c8e1ae4996c7",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/evidence.py": "9eebc1c4afcaf2ce56863ace3fa603866b68a252aaf9e60b1115823c2196af8f",
+    "agent/github_history.py": "26d3a2655f9d33ef9fb8aead1b6031c4b1b2fe0775c39824b5ae6f3ecad7f071",
+    "agent/license_expressions.py": "aed3ee70c0253e00ea81bebd6c9719d4c643cf7c48df8146d94b0fb59978c000",
+    "agent/source_excerpts.py": "aeb44460c54f4ea7301fe6917e695fcdb20d6c0a63a9f025936ac67f64764f4c",
+    "agent/selector.py": "5c70081e42932d5787f26d06a40f51e1d35b4f43d5842b64fbc72089e39194e4",
+    "agent/model_client.py": "a19924586e3a7cf9d2babee24f9b64cd53bfb687fb0c41c0bd943264b8b571ee",
+    "agent/model_protocol.py": "459849da583e26541668e7bb27b71b6d15f8cc55211fb8e664a0877432aad852",
+    "agent/proofs.py": "17a1bbbe2664fc5cab20886eb658d0dfba26908e1eeaaa99496ed3572b843247",
+    "agent/oyez.py": "8475f248d78925522e0742b13518be2c4f4db11eae0d8391a8002da7d4e3b67d",
+    "agent/familysearch.py": "682c5ed3afa4c1186b78c74cd78d742fa9f2128e4f404e58085cb1cce73fdb81",
+    "agent/model_server.py": "e89a06289ba74726a4d2cae1a546097cfb04e66f4a86e7c02305014ca481ead0",
+    "agent/model_assets.py": "45d6bc8448ac09d4a7dfb455d9549b25c07a0508bda08bf66c0ab7fe9fd9efec"
+  },
+  "before": [
+    {
+      "id": "select-quantity-boundary-fits-initial",
+      "passed": true,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/source",
+            "locator": "p:1",
+            "text": "Oak Hall has 4 chairs. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/other",
+            "locator": "p:1",
+            "text": "Other ordinary context."
+          }
+        ],
+        "mode": "select"
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/source",
+            "locator": "p:1",
+            "text": "Oak Hall has 4 chairs. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/other",
+            "locator": "p:1",
+            "text": "Other ordinary context."
+          }
+        ],
+        "mode": "select"
+      },
+      "result": null,
+      "intercepted_generation": true,
+      "source_context_unchanged": true,
+      "first_counter_units": 2222,
+      "lost_ids": [],
+      "quantity_prefix_exposed": false
+    },
+    {
+      "id": "select-quantity-boundary-fits-compact",
+      "passed": false,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/source",
+            "locator": "p:1",
+            "text": "Oak Hall has 4 chairs. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/other",
+            "locator": "p:1",
+            "text": "Other ordinary context."
+          }
+        ],
+        "mode": "select"
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/source",
+            "locator": "p:1",
+            "text": "Oak Hall has 4 chairs. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Elm Hall has 4"
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/other",
+            "locator": "p:1",
+            "text": "Other ordinary context."
+          }
+        ],
+        "mode": "select"
+      },
+      "result": null,
+      "intercepted_generation": true,
+      "source_context_unchanged": false,
+      "first_counter_units": 2222,
+      "lost_ids": [],
+      "quantity_prefix_exposed": true
+    },
+    {
+      "id": "select-quantity-boundary-cannot-fit",
+      "passed": false,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/source",
+            "locator": "p:1",
+            "text": "Oak Hall has 4 chairs. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/other",
+            "locator": "p:1",
+            "text": "Other ordinary context."
+          }
+        ],
+        "mode": "select"
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/source",
+            "locator": "p:1",
+            "text": "Oak Hall has 4 chairs. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Elm Hall has 4"
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/other",
+            "locator": "p:1",
+            "text": "Other ordinary context."
+          }
+        ],
+        "mode": "select"
+      },
+      "result": {
+        "candidate": -1,
+        "passage": -1,
+        "answer": "",
+        "error": "context_limit"
+      },
+      "intercepted_generation": false,
+      "source_context_unchanged": false,
+      "first_counter_units": 2222,
+      "lost_ids": [],
+      "quantity_prefix_exposed": true
+    },
+    {
+      "id": "select-eighth-conflict-fits-initial",
+      "passed": true,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "select"
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "select"
+      },
+      "result": null,
+      "intercepted_generation": true,
+      "source_context_unchanged": true,
+      "first_counter_units": 2273,
+      "lost_ids": [],
+      "quantity_prefix_exposed": false
+    },
+    {
+      "id": "select-eighth-conflict-fits-compact",
+      "passed": false,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "select"
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          }
+        ],
+        "mode": "select"
+      },
+      "result": null,
+      "intercepted_generation": true,
+      "source_context_unchanged": false,
+      "first_counter_units": 2273,
+      "lost_ids": [
+        7
+      ],
+      "quantity_prefix_exposed": false
+    },
+    {
+      "id": "select-eighth-conflict-cannot-fit",
+      "passed": false,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "select"
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          }
+        ],
+        "mode": "select"
+      },
+      "result": {
+        "candidate": -1,
+        "passage": -1,
+        "answer": "",
+        "error": "context_limit"
+      },
+      "intercepted_generation": false,
+      "source_context_unchanged": false,
+      "first_counter_units": 2273,
+      "lost_ids": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "quantity_prefix_exposed": false
+    },
+    {
+      "id": "verify-quantity-boundary-fits-initial",
+      "passed": true,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/source",
+            "locator": "p:1",
+            "text": "Oak Hall has 4 chairs. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/other",
+            "locator": "p:1",
+            "text": "Other ordinary context."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4"
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/source",
+            "locator": "p:1",
+            "text": "Oak Hall has 4 chairs. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/other",
+            "locator": "p:1",
+            "text": "Other ordinary context."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4"
+      },
+      "result": null,
+      "intercepted_generation": true,
+      "source_context_unchanged": true,
+      "first_counter_units": 1969,
+      "lost_ids": [],
+      "quantity_prefix_exposed": false
+    },
+    {
+      "id": "verify-quantity-boundary-fits-compact",
+      "passed": false,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/source",
+            "locator": "p:1",
+            "text": "Oak Hall has 4 chairs. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/other",
+            "locator": "p:1",
+            "text": "Other ordinary context."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4"
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/source",
+            "locator": "p:1",
+            "text": "Oak Hall has 4 chairs. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Elm Hall has 4"
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/other",
+            "locator": "p:1",
+            "text": "Other ordinary context."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4"
+      },
+      "result": null,
+      "intercepted_generation": true,
+      "source_context_unchanged": false,
+      "first_counter_units": 1969,
+      "lost_ids": [],
+      "quantity_prefix_exposed": true
+    },
+    {
+      "id": "verify-quantity-boundary-cannot-fit",
+      "passed": false,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/source",
+            "locator": "p:1",
+            "text": "Oak Hall has 4 chairs. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/other",
+            "locator": "p:1",
+            "text": "Other ordinary context."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4"
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/source",
+            "locator": "p:1",
+            "text": "Oak Hall has 4 chairs. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Elm Hall has 4"
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/other",
+            "locator": "p:1",
+            "text": "Other ordinary context."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4"
+      },
+      "result": {
+        "candidate": -1,
+        "passage": -1,
+        "answer": "",
+        "error": "context_limit"
+      },
+      "intercepted_generation": false,
+      "source_context_unchanged": false,
+      "first_counter_units": 1969,
+      "lost_ids": [],
+      "quantity_prefix_exposed": true
+    },
+    {
+      "id": "verify-eighth-conflict-fits-initial",
+      "passed": true,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4000000"
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4000000"
+      },
+      "result": null,
+      "intercepted_generation": true,
+      "source_context_unchanged": true,
+      "first_counter_units": 2026,
+      "lost_ids": [],
+      "quantity_prefix_exposed": false
+    },
+    {
+      "id": "verify-eighth-conflict-fits-compact",
+      "passed": false,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4000000"
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4000000"
+      },
+      "result": null,
+      "intercepted_generation": true,
+      "source_context_unchanged": false,
+      "first_counter_units": 2026,
+      "lost_ids": [
+        7
+      ],
+      "quantity_prefix_exposed": false
+    },
+    {
+      "id": "verify-eighth-conflict-cannot-fit",
+      "passed": false,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4000000"
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4000000"
+      },
+      "result": {
+        "candidate": -1,
+        "passage": -1,
+        "answer": "",
+        "error": "context_limit"
+      },
+      "intercepted_generation": false,
+      "source_context_unchanged": false,
+      "first_counter_units": 2026,
+      "lost_ids": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "quantity_prefix_exposed": false
+    },
+    {
+      "id": "table-proof-eighth-conflict-fits-initial",
+      "passed": true,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4000000",
+        "proof": {
+          "operation": "scale_table_count",
+          "premises": [
+            {
+              "role": "column_header",
+              "value": "Chairs (millions)"
+            },
+            {
+              "role": "coefficient",
+              "value": "4"
+            }
+          ]
+        }
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4000000",
+        "proof": {
+          "operation": "scale_table_count",
+          "premises": [
+            {
+              "role": "column_header",
+              "value": "Chairs (millions)"
+            },
+            {
+              "role": "coefficient",
+              "value": "4"
+            }
+          ]
+        }
+      },
+      "result": null,
+      "intercepted_generation": true,
+      "source_context_unchanged": true,
+      "first_counter_units": 2684,
+      "lost_ids": [],
+      "quantity_prefix_exposed": false
+    },
+    {
+      "id": "table-proof-eighth-conflict-fits-compact",
+      "passed": false,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4000000",
+        "proof": {
+          "operation": "scale_table_count",
+          "premises": [
+            {
+              "role": "column_header",
+              "value": "Chairs (millions)"
+            },
+            {
+              "role": "coefficient",
+              "value": "4"
+            }
+          ]
+        }
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4000000",
+        "proof": {
+          "operation": "scale_table_count",
+          "premises": [
+            {
+              "role": "column_header",
+              "value": "Chairs (millions)"
+            },
+            {
+              "role": "coefficient",
+              "value": "4"
+            }
+          ]
+        }
+      },
+      "result": null,
+      "intercepted_generation": true,
+      "source_context_unchanged": false,
+      "first_counter_units": 2684,
+      "lost_ids": [
+        7
+      ],
+      "quantity_prefix_exposed": false
+    },
+    {
+      "id": "table-proof-eighth-conflict-cannot-fit",
+      "passed": false,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4000000",
+        "proof": {
+          "operation": "scale_table_count",
+          "premises": [
+            {
+              "role": "column_header",
+              "value": "Chairs (millions)"
+            },
+            {
+              "role": "coefficient",
+              "value": "4"
+            }
+          ]
+        }
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4000000",
+        "proof": {
+          "operation": "scale_table_count",
+          "premises": [
+            {
+              "role": "column_header",
+              "value": "Chairs (millions)"
+            },
+            {
+              "role": "coefficient",
+              "value": "4"
+            }
+          ]
+        }
+      },
+      "result": {
+        "candidate": -1,
+        "passage": -1,
+        "answer": "",
+        "error": "context_limit"
+      },
+      "intercepted_generation": false,
+      "source_context_unchanged": false,
+      "first_counter_units": 2684,
+      "lost_ids": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "quantity_prefix_exposed": false
+    },
+    {
+      "id": "member-fields-and-unicode-fits-initial",
+      "passed": true,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "text",
+          "member_count": 2
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Maple United and Cedar FC played in Cedar City.",
+            "source_fields": {
+              "Name": "Cedar City",
+              "Text": "Preserve  two spaces, quotes \" and Unicode: \u6797\u3002"
+            },
+            "source_start": 13,
+            "source_end": 58
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "Maple United and Cedar FC",
+        "selected_spans": [
+          "Maple United",
+          "Cedar FC"
+        ]
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "text",
+          "member_count": 2
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Maple United and Cedar FC played in Cedar City.",
+            "source_fields": {
+              "Name": "Cedar City",
+              "Text": "Preserve  two spaces, quotes \" and Unicode: \u6797\u3002"
+            },
+            "source_start": 13,
+            "source_end": 58
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "Maple United and Cedar FC",
+        "selected_spans": [
+          "Maple United",
+          "Cedar FC"
+        ]
+      },
+      "result": null,
+      "intercepted_generation": true,
+      "source_context_unchanged": true,
+      "first_counter_units": 2398,
+      "lost_ids": [],
+      "quantity_prefix_exposed": false
+    },
+    {
+      "id": "member-fields-and-unicode-fits-compact",
+      "passed": false,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "text",
+          "member_count": 2
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Maple United and Cedar FC played in Cedar City.",
+            "source_fields": {
+              "Name": "Cedar City",
+              "Text": "Preserve  two spaces, quotes \" and Unicode: \u6797\u3002"
+            },
+            "source_start": 13,
+            "source_end": 58
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "Maple United and Cedar FC",
+        "selected_spans": [
+          "Maple United",
+          "Cedar FC"
+        ]
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "text",
+          "member_count": 2
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Maple United and Cedar FC played in Cedar City.",
+            "source_fields": {
+              "Name": "Cedar City",
+              "Text": "Preserve  two spaces, quotes \" and Unicode: \u6797\u3002"
+            },
+            "source_start": 13,
+            "source_end": 58
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          }
+        ],
+        "mode": "verify",
+        "proposed": "Maple United and Cedar FC",
+        "selected_spans": [
+          "Maple United",
+          "Cedar FC"
+        ]
+      },
+      "result": null,
+      "intercepted_generation": true,
+      "source_context_unchanged": false,
+      "first_counter_units": 2398,
+      "lost_ids": [
+        7
+      ],
+      "quantity_prefix_exposed": false
+    },
+    {
+      "id": "member-fields-and-unicode-cannot-fit",
+      "passed": false,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "text",
+          "member_count": 2
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Maple United and Cedar FC played in Cedar City.",
+            "source_fields": {
+              "Name": "Cedar City",
+              "Text": "Preserve  two spaces, quotes \" and Unicode: \u6797\u3002"
+            },
+            "source_start": 13,
+            "source_end": 58
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "Maple United and Cedar FC",
+        "selected_spans": [
+          "Maple United",
+          "Cedar FC"
+        ]
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "text",
+          "member_count": 2
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Maple United and Cedar FC played in Cedar City.",
+            "source_fields": {
+              "Name": "Cedar City",
+              "Text": "Preserve  two spaces, quotes \" and Unicode: \u6797\u3002"
+            },
+            "source_start": 13,
+            "source_end": 58
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          }
+        ],
+        "mode": "verify",
+        "proposed": "Maple United and Cedar FC",
+        "selected_spans": [
+          "Maple United",
+          "Cedar FC"
+        ]
+      },
+      "result": {
+        "candidate": -1,
+        "passage": -1,
+        "answer": "",
+        "error": "context_limit"
+      },
+      "intercepted_generation": false,
+      "source_context_unchanged": false,
+      "first_counter_units": 2398,
+      "lost_ids": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "quantity_prefix_exposed": false
+    },
+    {
+      "id": "literal-proof-premises-fits-initial",
+      "passed": true,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4 million",
+        "proof": {
+          "operation": "compose_fields",
+          "premises": [
+            {
+              "source": "https://example.org/0",
+              "locator": "table[0]/row[0]",
+              "span": "actual  source row",
+              "value": "4",
+              "role": "field"
+            }
+          ]
+        }
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4 million",
+        "proof": {
+          "operation": "compose_fields",
+          "premises": [
+            {
+              "source": "https://example.org/0",
+              "locator": "table[0]/row[0]",
+              "span": "actual  source row",
+              "value": "4",
+              "role": "field"
+            }
+          ]
+        }
+      },
+      "result": null,
+      "intercepted_generation": true,
+      "source_context_unchanged": true,
+      "first_counter_units": 2240,
+      "lost_ids": [],
+      "quantity_prefix_exposed": false
+    },
+    {
+      "id": "literal-proof-premises-fits-compact",
+      "passed": false,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4 million",
+        "proof": {
+          "operation": "compose_fields",
+          "premises": [
+            {
+              "source": "https://example.org/0",
+              "locator": "table[0]/row[0]",
+              "span": "actual  source row",
+              "value": "4",
+              "role": "field"
+            }
+          ]
+        }
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4 million",
+        "proof": {
+          "operation": "compose_fields",
+          "premises": [
+            {
+              "source": "https://example.org/0",
+              "locator": "table[0]/row[0]",
+              "span": "actual  source row",
+              "value": "4",
+              "role": "field"
+            }
+          ]
+        }
+      },
+      "result": null,
+      "intercepted_generation": true,
+      "source_context_unchanged": false,
+      "first_counter_units": 2240,
+      "lost_ids": [
+        7
+      ],
+      "quantity_prefix_exposed": false
+    },
+    {
+      "id": "literal-proof-premises-cannot-fit",
+      "passed": false,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4 million",
+        "proof": {
+          "operation": "compose_fields",
+          "premises": [
+            {
+              "source": "https://example.org/0",
+              "locator": "table[0]/row[0]",
+              "span": "actual  source row",
+              "value": "4",
+              "role": "field"
+            }
+          ]
+        }
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4 million",
+        "proof": {
+          "operation": "compose_fields",
+          "premises": [
+            {
+              "source": "https://example.org/0",
+              "locator": "table[0]/row[0]",
+              "span": "actual  source row",
+              "value": "4",
+              "role": "field"
+            }
+          ]
+        }
+      },
+      "result": {
+        "candidate": -1,
+        "passage": -1,
+        "answer": "",
+        "error": "context_limit"
+      },
+      "intercepted_generation": false,
+      "source_context_unchanged": false,
+      "first_counter_units": 2240,
+      "lost_ids": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "quantity_prefix_exposed": false
+    }
+  ],
+  "after": [
+    {
+      "id": "select-quantity-boundary-fits-initial",
+      "passed": true,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/source",
+            "locator": "p:1",
+            "text": "Oak Hall has 4 chairs. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/other",
+            "locator": "p:1",
+            "text": "Other ordinary context."
+          }
+        ],
+        "mode": "select"
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/source",
+            "locator": "p:1",
+            "text": "Oak Hall has 4 chairs. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/other",
+            "locator": "p:1",
+            "text": "Other ordinary context."
+          }
+        ],
+        "mode": "select"
+      },
+      "result": null,
+      "intercepted_generation": true,
+      "source_context_unchanged": true,
+      "first_counter_units": 2222,
+      "lost_ids": [],
+      "quantity_prefix_exposed": false
+    },
+    {
+      "id": "select-quantity-boundary-fits-compact",
+      "passed": true,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/source",
+            "locator": "p:1",
+            "text": "Oak Hall has 4 chairs. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/other",
+            "locator": "p:1",
+            "text": "Other ordinary context."
+          }
+        ],
+        "mode": "select"
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/source",
+            "locator": "p:1",
+            "text": "Oak Hall has 4 chairs. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/other",
+            "locator": "p:1",
+            "text": "Other ordinary context."
+          }
+        ],
+        "mode": "select"
+      },
+      "result": null,
+      "intercepted_generation": true,
+      "source_context_unchanged": true,
+      "first_counter_units": 2222,
+      "lost_ids": [],
+      "quantity_prefix_exposed": false
+    },
+    {
+      "id": "select-quantity-boundary-cannot-fit",
+      "passed": true,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/source",
+            "locator": "p:1",
+            "text": "Oak Hall has 4 chairs. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/other",
+            "locator": "p:1",
+            "text": "Other ordinary context."
+          }
+        ],
+        "mode": "select"
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/source",
+            "locator": "p:1",
+            "text": "Oak Hall has 4 chairs. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/other",
+            "locator": "p:1",
+            "text": "Other ordinary context."
+          }
+        ],
+        "mode": "select"
+      },
+      "result": {
+        "error": "context_limit"
+      },
+      "intercepted_generation": false,
+      "source_context_unchanged": true,
+      "first_counter_units": 2222,
+      "lost_ids": [],
+      "quantity_prefix_exposed": false
+    },
+    {
+      "id": "select-eighth-conflict-fits-initial",
+      "passed": true,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "select"
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "select"
+      },
+      "result": null,
+      "intercepted_generation": true,
+      "source_context_unchanged": true,
+      "first_counter_units": 2273,
+      "lost_ids": [],
+      "quantity_prefix_exposed": false
+    },
+    {
+      "id": "select-eighth-conflict-fits-compact",
+      "passed": true,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "select"
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "select"
+      },
+      "result": null,
+      "intercepted_generation": true,
+      "source_context_unchanged": true,
+      "first_counter_units": 2273,
+      "lost_ids": [],
+      "quantity_prefix_exposed": false
+    },
+    {
+      "id": "select-eighth-conflict-cannot-fit",
+      "passed": true,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "select"
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "select"
+      },
+      "result": {
+        "error": "context_limit"
+      },
+      "intercepted_generation": false,
+      "source_context_unchanged": true,
+      "first_counter_units": 2273,
+      "lost_ids": [],
+      "quantity_prefix_exposed": false
+    },
+    {
+      "id": "verify-quantity-boundary-fits-initial",
+      "passed": true,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/source",
+            "locator": "p:1",
+            "text": "Oak Hall has 4 chairs. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/other",
+            "locator": "p:1",
+            "text": "Other ordinary context."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4"
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/source",
+            "locator": "p:1",
+            "text": "Oak Hall has 4 chairs. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/other",
+            "locator": "p:1",
+            "text": "Other ordinary context."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4"
+      },
+      "result": null,
+      "intercepted_generation": true,
+      "source_context_unchanged": true,
+      "first_counter_units": 1969,
+      "lost_ids": [],
+      "quantity_prefix_exposed": false
+    },
+    {
+      "id": "verify-quantity-boundary-fits-compact",
+      "passed": true,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/source",
+            "locator": "p:1",
+            "text": "Oak Hall has 4 chairs. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/other",
+            "locator": "p:1",
+            "text": "Other ordinary context."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4"
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/source",
+            "locator": "p:1",
+            "text": "Oak Hall has 4 chairs. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/other",
+            "locator": "p:1",
+            "text": "Other ordinary context."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4"
+      },
+      "result": null,
+      "intercepted_generation": true,
+      "source_context_unchanged": true,
+      "first_counter_units": 1969,
+      "lost_ids": [],
+      "quantity_prefix_exposed": false
+    },
+    {
+      "id": "verify-quantity-boundary-cannot-fit",
+      "passed": true,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/source",
+            "locator": "p:1",
+            "text": "Oak Hall has 4 chairs. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/other",
+            "locator": "p:1",
+            "text": "Other ordinary context."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4"
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/source",
+            "locator": "p:1",
+            "text": "Oak Hall has 4 chairs. xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/other",
+            "locator": "p:1",
+            "text": "Other ordinary context."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4"
+      },
+      "result": {
+        "error": "context_limit"
+      },
+      "intercepted_generation": false,
+      "source_context_unchanged": true,
+      "first_counter_units": 1969,
+      "lost_ids": [],
+      "quantity_prefix_exposed": false
+    },
+    {
+      "id": "verify-eighth-conflict-fits-initial",
+      "passed": true,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4000000"
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4000000"
+      },
+      "result": null,
+      "intercepted_generation": true,
+      "source_context_unchanged": true,
+      "first_counter_units": 2026,
+      "lost_ids": [],
+      "quantity_prefix_exposed": false
+    },
+    {
+      "id": "verify-eighth-conflict-fits-compact",
+      "passed": true,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4000000"
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4000000"
+      },
+      "result": null,
+      "intercepted_generation": true,
+      "source_context_unchanged": true,
+      "first_counter_units": 2026,
+      "lost_ids": [],
+      "quantity_prefix_exposed": false
+    },
+    {
+      "id": "verify-eighth-conflict-cannot-fit",
+      "passed": true,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4000000"
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4000000"
+      },
+      "result": {
+        "error": "context_limit"
+      },
+      "intercepted_generation": false,
+      "source_context_unchanged": true,
+      "first_counter_units": 2026,
+      "lost_ids": [],
+      "quantity_prefix_exposed": false
+    },
+    {
+      "id": "table-proof-eighth-conflict-fits-initial",
+      "passed": true,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4000000",
+        "proof": {
+          "operation": "scale_table_count",
+          "premises": [
+            {
+              "role": "column_header",
+              "value": "Chairs (millions)"
+            },
+            {
+              "role": "coefficient",
+              "value": "4"
+            }
+          ]
+        }
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4000000",
+        "proof": {
+          "operation": "scale_table_count",
+          "premises": [
+            {
+              "role": "column_header",
+              "value": "Chairs (millions)"
+            },
+            {
+              "role": "coefficient",
+              "value": "4"
+            }
+          ]
+        }
+      },
+      "result": null,
+      "intercepted_generation": true,
+      "source_context_unchanged": true,
+      "first_counter_units": 2684,
+      "lost_ids": [],
+      "quantity_prefix_exposed": false
+    },
+    {
+      "id": "table-proof-eighth-conflict-fits-compact",
+      "passed": true,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4000000",
+        "proof": {
+          "operation": "scale_table_count",
+          "premises": [
+            {
+              "role": "column_header",
+              "value": "Chairs (millions)"
+            },
+            {
+              "role": "coefficient",
+              "value": "4"
+            }
+          ]
+        }
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4000000",
+        "proof": {
+          "operation": "scale_table_count",
+          "premises": [
+            {
+              "role": "column_header",
+              "value": "Chairs (millions)"
+            },
+            {
+              "role": "coefficient",
+              "value": "4"
+            }
+          ]
+        }
+      },
+      "result": null,
+      "intercepted_generation": true,
+      "source_context_unchanged": true,
+      "first_counter_units": 2684,
+      "lost_ids": [],
+      "quantity_prefix_exposed": false
+    },
+    {
+      "id": "table-proof-eighth-conflict-cannot-fit",
+      "passed": true,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4000000",
+        "proof": {
+          "operation": "scale_table_count",
+          "premises": [
+            {
+              "role": "column_header",
+              "value": "Chairs (millions)"
+            },
+            {
+              "role": "coefficient",
+              "value": "4"
+            }
+          ]
+        }
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4000000",
+        "proof": {
+          "operation": "scale_table_count",
+          "premises": [
+            {
+              "role": "column_header",
+              "value": "Chairs (millions)"
+            },
+            {
+              "role": "coefficient",
+              "value": "4"
+            }
+          ]
+        }
+      },
+      "result": {
+        "error": "context_limit"
+      },
+      "intercepted_generation": false,
+      "source_context_unchanged": true,
+      "first_counter_units": 2684,
+      "lost_ids": [],
+      "quantity_prefix_exposed": false
+    },
+    {
+      "id": "member-fields-and-unicode-fits-initial",
+      "passed": true,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "text",
+          "member_count": 2
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Maple United and Cedar FC played in Cedar City.",
+            "source_fields": {
+              "Name": "Cedar City",
+              "Text": "Preserve  two spaces, quotes \" and Unicode: \u6797\u3002"
+            },
+            "source_start": 13,
+            "source_end": 58
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "Maple United and Cedar FC",
+        "selected_spans": [
+          "Maple United",
+          "Cedar FC"
+        ]
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "text",
+          "member_count": 2
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Maple United and Cedar FC played in Cedar City.",
+            "source_fields": {
+              "Name": "Cedar City",
+              "Text": "Preserve  two spaces, quotes \" and Unicode: \u6797\u3002"
+            },
+            "source_start": 13,
+            "source_end": 58
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "Maple United and Cedar FC",
+        "selected_spans": [
+          "Maple United",
+          "Cedar FC"
+        ]
+      },
+      "result": null,
+      "intercepted_generation": true,
+      "source_context_unchanged": true,
+      "first_counter_units": 2398,
+      "lost_ids": [],
+      "quantity_prefix_exposed": false
+    },
+    {
+      "id": "member-fields-and-unicode-fits-compact",
+      "passed": true,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "text",
+          "member_count": 2
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Maple United and Cedar FC played in Cedar City.",
+            "source_fields": {
+              "Name": "Cedar City",
+              "Text": "Preserve  two spaces, quotes \" and Unicode: \u6797\u3002"
+            },
+            "source_start": 13,
+            "source_end": 58
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "Maple United and Cedar FC",
+        "selected_spans": [
+          "Maple United",
+          "Cedar FC"
+        ]
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "text",
+          "member_count": 2
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Maple United and Cedar FC played in Cedar City.",
+            "source_fields": {
+              "Name": "Cedar City",
+              "Text": "Preserve  two spaces, quotes \" and Unicode: \u6797\u3002"
+            },
+            "source_start": 13,
+            "source_end": 58
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "Maple United and Cedar FC",
+        "selected_spans": [
+          "Maple United",
+          "Cedar FC"
+        ]
+      },
+      "result": null,
+      "intercepted_generation": true,
+      "source_context_unchanged": true,
+      "first_counter_units": 2398,
+      "lost_ids": [],
+      "quantity_prefix_exposed": false
+    },
+    {
+      "id": "member-fields-and-unicode-cannot-fit",
+      "passed": true,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "text",
+          "member_count": 2
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Maple United and Cedar FC played in Cedar City.",
+            "source_fields": {
+              "Name": "Cedar City",
+              "Text": "Preserve  two spaces, quotes \" and Unicode: \u6797\u3002"
+            },
+            "source_start": 13,
+            "source_end": 58
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "Maple United and Cedar FC",
+        "selected_spans": [
+          "Maple United",
+          "Cedar FC"
+        ]
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "text",
+          "member_count": 2
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Maple United and Cedar FC played in Cedar City.",
+            "source_fields": {
+              "Name": "Cedar City",
+              "Text": "Preserve  two spaces, quotes \" and Unicode: \u6797\u3002"
+            },
+            "source_start": 13,
+            "source_end": 58
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "Maple United and Cedar FC",
+        "selected_spans": [
+          "Maple United",
+          "Cedar FC"
+        ]
+      },
+      "result": {
+        "error": "context_limit"
+      },
+      "intercepted_generation": false,
+      "source_context_unchanged": true,
+      "first_counter_units": 2398,
+      "lost_ids": [],
+      "quantity_prefix_exposed": false
+    },
+    {
+      "id": "literal-proof-premises-fits-initial",
+      "passed": true,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4 million",
+        "proof": {
+          "operation": "compose_fields",
+          "premises": [
+            {
+              "source": "https://example.org/0",
+              "locator": "table[0]/row[0]",
+              "span": "actual  source row",
+              "value": "4",
+              "role": "field"
+            }
+          ]
+        }
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4 million",
+        "proof": {
+          "operation": "compose_fields",
+          "premises": [
+            {
+              "source": "https://example.org/0",
+              "locator": "table[0]/row[0]",
+              "span": "actual  source row",
+              "value": "4",
+              "role": "field"
+            }
+          ]
+        }
+      },
+      "result": null,
+      "intercepted_generation": true,
+      "source_context_unchanged": true,
+      "first_counter_units": 2240,
+      "lost_ids": [],
+      "quantity_prefix_exposed": false
+    },
+    {
+      "id": "literal-proof-premises-fits-compact",
+      "passed": true,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4 million",
+        "proof": {
+          "operation": "compose_fields",
+          "premises": [
+            {
+              "source": "https://example.org/0",
+              "locator": "table[0]/row[0]",
+              "span": "actual  source row",
+              "value": "4",
+              "role": "field"
+            }
+          ]
+        }
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4 million",
+        "proof": {
+          "operation": "compose_fields",
+          "premises": [
+            {
+              "source": "https://example.org/0",
+              "locator": "table[0]/row[0]",
+              "span": "actual  source row",
+              "value": "4",
+              "role": "field"
+            }
+          ]
+        }
+      },
+      "result": null,
+      "intercepted_generation": true,
+      "source_context_unchanged": true,
+      "first_counter_units": 2240,
+      "lost_ids": [],
+      "quantity_prefix_exposed": false
+    },
+    {
+      "id": "literal-proof-premises-cannot-fit",
+      "passed": true,
+      "input": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4 million",
+        "proof": {
+          "operation": "compose_fields",
+          "premises": [
+            {
+              "source": "https://example.org/0",
+              "locator": "table[0]/row[0]",
+              "span": "actual  source row",
+              "value": "4",
+              "role": "field"
+            }
+          ]
+        }
+      },
+      "after_packing": {
+        "question": "How many chairs does Elm Hall have?",
+        "candidates": [],
+        "constraints": {
+          "kind": "number",
+          "operation": "single"
+        },
+        "passages": [
+          {
+            "id": 0,
+            "source": "https://example.org/0",
+            "locator": "p:1",
+            "text": "Elm Hall has 4 million chairs."
+          },
+          {
+            "id": 1,
+            "source": "https://example.org/1",
+            "locator": "p:1",
+            "text": "Other source context 1"
+          },
+          {
+            "id": 2,
+            "source": "https://example.org/2",
+            "locator": "p:1",
+            "text": "Other source context 2"
+          },
+          {
+            "id": 3,
+            "source": "https://example.org/3",
+            "locator": "p:1",
+            "text": "Other source context 3"
+          },
+          {
+            "id": 4,
+            "source": "https://example.org/4",
+            "locator": "p:1",
+            "text": "Other source context 4"
+          },
+          {
+            "id": 5,
+            "source": "https://example.org/5",
+            "locator": "p:1",
+            "text": "Other source context 5"
+          },
+          {
+            "id": 6,
+            "source": "https://example.org/6",
+            "locator": "p:1",
+            "text": "Other source context 6"
+          },
+          {
+            "id": 7,
+            "source": "https://example.org/7",
+            "locator": "p:1",
+            "text": "Elm Hall has 5 million chairs; source conflict."
+          }
+        ],
+        "mode": "verify",
+        "proposed": "4 million",
+        "proof": {
+          "operation": "compose_fields",
+          "premises": [
+            {
+              "source": "https://example.org/0",
+              "locator": "table[0]/row[0]",
+              "span": "actual  source row",
+              "value": "4",
+              "role": "field"
+            }
+          ]
+        }
+      },
+      "result": {
+        "error": "context_limit"
+      },
+      "intercepted_generation": false,
+      "source_context_unchanged": true,
+      "first_counter_units": 2240,
+      "lost_ids": [],
+      "quantity_prefix_exposed": false
+    }
+  ],
+  "before_passed": 7,
+  "after_passed": 21,
+  "total": 21,
+  "torch_imported": false,
+  "diagnostic_sha256": "b173b90c571cfc31a9bc2c693177a717e79b1625daa57276e86ad11b91384970",
+  "production_sha256": {
+    "agent/__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41",
+    "agent/browser.py": "53ac9a99f3afcefcdb197cd9b2296c2d380910a782178fadb65235e548efc353",
+    "agent/candidates.py": "db8ed80a2e58facc287fcb7d08dc83a2370d990671f28883524d7bf92e56da70",
+    "agent/cardinals.py": "54bcfb476ee7f5e1d21ec7d2763caa34fc4d8f3df0c16812aedc5445044099a3",
+    "agent/challenges.py": "b6f51c720f332671725e08127a5d1c163ca0542d2a550bf3c980a6d4c49bf6a1",
+    "agent/chunk_prefill.py": "fe2484f128dfc7d947fd511af6cc9b81773b400bba3d6150750541258de60eff",
+    "agent/crates_history.py": "8644c651c54fffecf5347c2408554948a8b4b59613830e9c67bf0caea3ddb81a",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/engine.py": "0b80b3b7516ce700fb952a38bcefd5b818fa1edf50cadc65438ecfe7f4a1bb2f",
+    "agent/evidence.py": "9eebc1c4afcaf2ce56863ace3fa603866b68a252aaf9e60b1115823c2196af8f",
+    "agent/evidence_binding.py": "2151ff22497bf084a21d4ca4d476f3a51a2d36e4cf51b3e3030a63adadef030d",
+    "agent/family_counts.py": "1d86edd46f3ece8477539bca20bacba68dbe164019e77e5269f3894791715cea",
+    "agent/familysearch.py": "682c5ed3afa4c1186b78c74cd78d742fa9f2128e4f404e58085cb1cce73fdb81",
+    "agent/field_groups.py": "52a54989253c59e9836dec4aaec4944b688376e79548b9336887558a454e9162",
+    "agent/github_history.py": "26d3a2655f9d33ef9fb8aead1b6031c4b1b2fe0775c39824b5ae6f3ecad7f071",
+    "agent/gpu_memory.py": "a984ccd368f3a68cba572e5ac555f303bcdf5e74919656ad638729dd7e9d2fb6",
+    "agent/html_paragraphs.py": "fd2efd7286fd9bff67a9439a2e864ad729f90b28404316f3fb83cc2657053595",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/license_expressions.py": "aed3ee70c0253e00ea81bebd6c9719d4c643cf7c48df8146d94b0fb59978c000",
+    "agent/literature.py": "9b871500ab1ebaf88e8fca2c70bd7ade7eb81774412fa85a1f4be7d2fb06263f",
+    "agent/magnitudes.py": "bf4a970386bd25332b813e0aab91dd28cda05047ca5af5d9e7b861760f5942d7",
+    "agent/members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "agent/model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+    "agent/model_client.py": "07f16cb173444af03917c3548456a80bf7eb3504d08b6cb5e5b4bbaba5ad1703",
+    "agent/model_protocol.py": "e8d4b86e0727be8c7db621f9205741a0e1e65ec0f3688fea5b090a835251a2a7",
+    "agent/model_server.py": "d68b1547b2226d008d2b978f622e83ca851bd030eb3ece776c6f65938b7f0032",
+    "agent/navigation.py": "0f849c0c570720114c45c14b0a5286fe409e5d26c2945fdc9f6c1a6922bb7718",
+    "agent/network.py": "cf1fa8c64a6d0d9bca14ec2f60b4c0aebc3e0d469c3cb715627f95e553dad588",
+    "agent/normalize.py": "93f9147f5b09f8567ddac860e6b37b13f1f1d6c99bbd3c9c9a7da402d5dc64fa",
+    "agent/number_atoms.py": "0fc737af6f98af5b962cf0656b28a7a3b037e4113731b460fb63a2f5a22eb768",
+    "agent/output.py": "b983ab2efe31707b1c974344a32dc4b40b708541257695de89cac9e343b073eb",
+    "agent/oyez.py": "8475f248d78925522e0742b13518be2c4f4db11eae0d8391a8002da7d4e3b67d",
+    "agent/parser.py": "e2855a2f49ccbcde4fa860200497eb814b56ba17967cfa415152ccee903cd2f4",
+    "agent/phones.py": "88ee7806a9e69811e173228074aea714b4bb0e2c40abf5541887478b8d6cf7bb",
+    "agent/planner.py": "1514fb67d20b061da8116e3086b315fdc5f3d819613330098ab9d948844a4211",
+    "agent/population.py": "d134655302bc76a4e58ac45e7f2d20fc73ed5cefce26f63f67b58cc25d3bc504",
+    "agent/processes.py": "677c4372b40d1da0ffc0cf4120ca5b6be2fcf6b6c30f6ec17d0d8fae19e198c1",
+    "agent/proofs.py": "17a1bbbe2664fc5cab20886eb658d0dfba26908e1eeaaa99496ed3572b843247",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/registry_history.py": "eb6c41b0b3c92192cecc23c7f4ba147b57bb99be8e3990ae77ed0e7feaecd85b",
+    "agent/request_pacing.py": "dc9af13c9c4af1c6555442ba9adeb7824a63685c676924d1fbdd20318e23f274",
+    "agent/resolvers.py": "990a9097481cce6b2b90805aedb7f5a6996b7caad290fbf44424bf7d93101866",
+    "agent/search.py": "b19876619e8359f64bf50a89ab516721ebbcfabd41d887db619002e0c69def59",
+    "agent/selector.py": "c6783627a8463d93ff212a08ab9131a9e2b872d204c025378caf8f51c41a88bf",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/source_excerpts.py": "aeb44460c54f4ea7301fe6917e695fcdb20d6c0a63a9f025936ac67f64764f4c",
+    "agent/table_scales.py": "7cdd8bedf0987a819b5ff84260222a051475cb91feffc75f63915b853f812acd",
+    "agent/temporal.py": "f520ada0a6ea9f810225887080a495a4a47a0371cd6f613a9c5648587509012a",
+    "agent/types.py": "ff29b729032273366c64cde113e425c34084b4ad7450ad48a0c2dd3c82b878e8",
+    "agent/urls.py": "ef9eaf10187050ab44f9f2c19ef889fb3c2fb29757c1009471f0f07735f6cc3c",
+    "agent/worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f"
+  },
+  "wins": [
+    "select-quantity-boundary-fits-compact",
+    "select-quantity-boundary-cannot-fit",
+    "select-eighth-conflict-fits-compact",
+    "select-eighth-conflict-cannot-fit",
+    "verify-quantity-boundary-fits-compact",
+    "verify-quantity-boundary-cannot-fit",
+    "verify-eighth-conflict-fits-compact",
+    "verify-eighth-conflict-cannot-fit",
+    "table-proof-eighth-conflict-fits-compact",
+    "table-proof-eighth-conflict-cannot-fit",
+    "member-fields-and-unicode-fits-compact",
+    "member-fields-and-unicode-cannot-fit",
+    "literal-proof-premises-fits-compact",
+    "literal-proof-premises-cannot-fit"
+  ],
+  "losses": []
+}

@@ -1,0 +1,175 @@
+{
+  "scope": "Fresh CLI/isolated worker JSON output; local HTTP only, model/search/browser explicitly disabled in child environment.",
+  "passed": 3,
+  "total": 3,
+  "rows": [
+    {
+      "id": "cli-month",
+      "passed": true,
+      "output": {
+        "answer": "1.2",
+        "sources": [
+          "http://127.0.0.1:55064/history"
+        ]
+      },
+      "reason": "dated_release_table",
+      "local_requests": [
+        "/history"
+      ],
+      "plan": {
+        "question": "What was the latest version of River Sample as of March 2020?",
+        "url": "http://127.0.0.1:55064/history",
+        "kind": "version",
+        "terms": [
+          "river",
+          "sample",
+          "march",
+          "2020"
+        ],
+        "attributes": [
+          "version",
+          "release",
+          "stable",
+          "latest",
+          "download"
+        ],
+        "entity_terms": [
+          "river",
+          "sample",
+          "march"
+        ],
+        "versions": [],
+        "year": "",
+        "as_of": "2020-03-31",
+        "latest": true,
+        "stable": true,
+        "first": false,
+        "currency": "",
+        "cardinality": 1,
+        "negations": [],
+        "domain": "127.0.0.1",
+        "focus": "what was the latest version ",
+        "choices": [],
+        "operation": "single",
+        "required_fields": [],
+        "date_precision": "",
+        "temporal_issue": "",
+        "temporal_raw": []
+      },
+      "trace_path": ".state\\cutoff-cli-20261023\\cli-month_output.trace.json",
+      "trace_sha256": "37c25410535cf84d296f88555927969ff7a384387bbe2430eee0f5872df4ac48"
+    },
+    {
+      "id": "cli-invalid",
+      "passed": true,
+      "output": {
+        "answer": "",
+        "sources": []
+      },
+      "reason": "invalid_cutoff",
+      "local_requests": [],
+      "plan": {
+        "question": "What was the latest version of River Sample as of 2020-99-99?",
+        "url": "http://127.0.0.1:55064/history",
+        "kind": "version",
+        "terms": [
+          "river",
+          "sample",
+          "2020-99-99",
+          "2020",
+          "99"
+        ],
+        "attributes": [
+          "version",
+          "release",
+          "stable",
+          "latest",
+          "download"
+        ],
+        "entity_terms": [
+          "river",
+          "sample",
+          "2020-99-99",
+          "99"
+        ],
+        "versions": [],
+        "year": "",
+        "as_of": "",
+        "latest": true,
+        "stable": true,
+        "first": false,
+        "currency": "",
+        "cardinality": 1,
+        "negations": [],
+        "domain": "127.0.0.1",
+        "focus": "what was the latest version ",
+        "choices": [],
+        "operation": "single",
+        "required_fields": [],
+        "date_precision": "",
+        "temporal_issue": "invalid_cutoff",
+        "temporal_raw": [
+          "2020-99-99"
+        ]
+      },
+      "trace_path": ".state\\cutoff-cli-20261023\\cli-invalid_output.trace.json",
+      "trace_sha256": "9759851fb24909496dd13bbbf50a88e7940840e32d5e8eb30e78f385a5ed561b"
+    },
+    {
+      "id": "cli-ambiguous",
+      "passed": true,
+      "output": {
+        "answer": "",
+        "sources": []
+      },
+      "reason": "ambiguous_cutoff",
+      "local_requests": [],
+      "plan": {
+        "question": "What was the latest version of River Sample as of 03/04/2020?",
+        "url": "http://127.0.0.1:55064/history",
+        "kind": "version",
+        "terms": [
+          "river",
+          "sample",
+          "03",
+          "04",
+          "2020"
+        ],
+        "attributes": [
+          "version",
+          "release",
+          "stable",
+          "latest",
+          "download"
+        ],
+        "entity_terms": [
+          "river",
+          "sample",
+          "03",
+          "04"
+        ],
+        "versions": [],
+        "year": "",
+        "as_of": "",
+        "latest": true,
+        "stable": true,
+        "first": false,
+        "currency": "",
+        "cardinality": 1,
+        "negations": [],
+        "domain": "127.0.0.1",
+        "focus": "what was the latest version ",
+        "choices": [],
+        "operation": "single",
+        "required_fields": [],
+        "date_precision": "",
+        "temporal_issue": "ambiguous_cutoff",
+        "temporal_raw": [
+          "03/04/2020"
+        ]
+      },
+      "trace_path": ".state\\cutoff-cli-20261023\\cli-ambiguous_output.trace.json",
+      "trace_sha256": "88869ced1b3d1f0c14fa0f223d7935774f1be90cb517db6a5bd9ad1137efc648"
+    }
+  ]
+}

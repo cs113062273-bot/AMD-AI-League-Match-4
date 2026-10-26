@@ -1,0 +1,429 @@
+{
+  "scope": "CPU-only concise-hint proposal over recorded expansions and bounded public GETs.\n\nNo LLM, GPU or browser. Hints and search titles are discovery only, never\nanswer evidence. Public responses are dynamic; this is not answer accuracy.\n",
+  "rows": [
+    {
+      "id": "simpleqa-516",
+      "question": "What was the age range of the drivers whose EEG data was collected in the 2021 research paper titled \"EEG-Based Driving Fatigue Detection Using a Two-Level Learning Hierarchy Radial Basis Function\" by Ziwu Ren et al.?",
+      "hints": [
+        "eeg driving fatigue age range",
+        "driver age eeg study"
+      ],
+      "before": "eeg driving fatigue age range",
+      "max_overlap": "eeg driving fatigue age range",
+      "field_then_overlap": "eeg driving fatigue age range"
+    },
+    {
+      "id": "simpleqa-1013",
+      "question": "How many children did Swiss painter Johann Caspar F\u00fcssli have with his wife, Elisabeth?",
+      "hints": [
+        "f\u00fcssli children with elisabeth",
+        "johann caspar f\u00fcssli family"
+      ],
+      "before": "f\u00fcssli children with elisabeth",
+      "max_overlap": "f\u00fcssli children with elisabeth",
+      "field_then_overlap": "f\u00fcssli children with elisabeth"
+    },
+    {
+      "id": "simpleqa-483",
+      "question": "Specify the month, and year in which Activision Blizzard announced the upcoming establishment of a new esports division.",
+      "hints": [
+        "esports division announcement",
+        "activision blizzard esports launch"
+      ],
+      "before": "esports division announcement",
+      "max_overlap": "activision blizzard esports launch",
+      "field_then_overlap": "activision blizzard esports launch"
+    },
+    {
+      "id": "simpleqa-1232",
+      "question": "What was the population of Konaruiyeh, a village in Esfandaqeh Rural District, in the Central District of Jiroft County, Kerman Province, Iran, at the 2006 census?",
+      "hints": [
+        "konaruiyeh census data"
+      ],
+      "before": "konaruiyeh census data",
+      "max_overlap": "konaruiyeh census data",
+      "field_then_overlap": "konaruiyeh census data"
+    },
+    {
+      "id": "simpleqa-2010",
+      "question": "What is the name of the sculptor who created the c. 1680 sculpture depicting Ceres in the Belvoir Castle Sculpture Garden in Leicestershire, England?",
+      "hints": [
+        "sculptor of ceres sculpture",
+        "ceres statue creator"
+      ],
+      "before": "sculptor of ceres sculpture",
+      "max_overlap": "sculptor of ceres sculpture",
+      "field_then_overlap": "sculptor of ceres sculpture"
+    },
+    {
+      "id": "simpleqa-2215",
+      "question": "What is the name of the individual known as \"The Horse\" who won eight running events over three Olympics between 81 and 89 CE?",
+      "hints": [
+        "the horse athlete"
+      ],
+      "before": "\"The Horse\" individual known",
+      "max_overlap": "\"The Horse\" individual known",
+      "field_then_overlap": "\"The Horse\" individual known"
+    },
+    {
+      "id": "simpleqa-3120",
+      "question": "What is the full name of the Colombian soccer player Juan Guzm\u00e1n born in 1988?",
+      "hints": [
+        "juan guzm\u00e1n full name",
+        "colombian player juan guzm\u00e1n"
+      ],
+      "before": "juan guzm\u00e1n full name",
+      "max_overlap": "colombian player juan guzm\u00e1n",
+      "field_then_overlap": "juan guzm\u00e1n full name"
+    },
+    {
+      "id": "simpleqa-4145",
+      "question": "What is the architectural style of the Odd Fellows Hall building in Eureka, California?",
+      "hints": [
+        "odd fellows hall architecture",
+        "eureka ca building style"
+      ],
+      "before": "odd fellows hall architecture",
+      "max_overlap": "odd fellows hall architecture",
+      "field_then_overlap": "eureka ca building style"
+    },
+    {
+      "id": "simpleqa-37",
+      "question": "What is the first and last name of the woman whom the British linguist Bernard Comrie married in 1985?",
+      "hints": [
+        "bernard comrie spouse"
+      ],
+      "before": "bernard comrie spouse",
+      "max_overlap": "bernard comrie spouse",
+      "field_then_overlap": "bernard comrie spouse"
+    },
+    {
+      "id": "simpleqa-395",
+      "question": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+      "hints": [
+        "saturday evening post libel teams"
+      ],
+      "before": "saturday evening post libel teams",
+      "max_overlap": "saturday evening post libel teams",
+      "field_then_overlap": "saturday evening post libel teams"
+    },
+    {
+      "id": "simpleqa-32",
+      "question": "What day, month, and year was Carrie Underwood's album \"Cry Pretty\" certified Gold by the RIAA?",
+      "hints": [
+        "carrie underwood cry pretty gold certification date",
+        "cry pretty riaa gold date"
+      ],
+      "before": "carrie underwood cry pretty gold certification date",
+      "max_overlap": "carrie underwood cry pretty gold certification date",
+      "field_then_overlap": "carrie underwood cry pretty gold certification date"
+    }
+  ],
+  "input_sha256": {
+    "benchmarks/external-disjoint12b-20261023-repeat.json": "8c709ee218ad97a68f7af1ac2aee3dbccfbb1d25f37dd16cf2aa3691ddeee798",
+    "benchmarks/external-disjoint12b-20261023-first.json": "da370539ff810e1787962ae408db1737c4f9e522202b3c327502548fb5f6dd09",
+    "benchmarks/concise-discovery-20261023-live.json": "07114f6bc1c97f629804bc4f32ff6c4219e3d1619a7870e7c8396a673c05f5e5",
+    "benchmarks/case-citation-20261023-final.json": "bc51ec8b3ccaf81b205159257decf91986e3e05389d698228a8921537dde3cac"
+  },
+  "production_sha256": {
+    "agent/browser.py": "53ac9a99f3afcefcdb197cd9b2296c2d380910a782178fadb65235e548efc353",
+    "agent/candidates.py": "c55cd074f50d1b0c944cf5552bd604caf4b313bada23accd73674d5d1d93d116",
+    "agent/challenges.py": "b6f51c720f332671725e08127a5d1c163ca0542d2a550bf3c980a6d4c49bf6a1",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/engine.py": "01464cb276814f2d7c845c269da2522c285a7a7e28051abd7e36ad0ec62b41ff",
+    "agent/evidence.py": "09da13b3f2fb17de30734c44ddad1c89b856ec682ff2e88a78a57773409c0089",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "agent/model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+    "agent/model_server.py": "8d326a696942d259697a6fba8586441bbbe4874042ea900c6d7788a2a0e9fd22",
+    "agent/navigation.py": "0f849c0c570720114c45c14b0a5286fe409e5d26c2945fdc9f6c1a6922bb7718",
+    "agent/network.py": "def1be3752f81423c313c2dfa83f6703ee063d7e98652cf0d816b423d0e2d9cb",
+    "agent/normalize.py": "05e48fa0be8384aa656bf1280ba0be44545efa51b7d4451f0716d836d39a1973",
+    "agent/output.py": "b983ab2efe31707b1c974344a32dc4b40b708541257695de89cac9e343b073eb",
+    "agent/oyez.py": "8475f248d78925522e0742b13518be2c4f4db11eae0d8391a8002da7d4e3b67d",
+    "agent/parser.py": "9a9b817c2dac7355ebba993a32d72741af0672aea3b1a5b5ea3cbe770e2c78d3",
+    "agent/planner.py": "8a617d26e724e8ebc5e604892e867ebcc9e417aa97cbd7e0feda4954cd5a1d2b",
+    "agent/processes.py": "677c4372b40d1da0ffc0cf4120ca5b6be2fcf6b6c30f6ec17d0d8fae19e198c1",
+    "agent/proofs.py": "0d7ae78df6ea9949c29f33c7b817dda352c75b3d99c960c3e987e37c7401faab",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent/search.py": "6a4173e80dbe0e178056de5d0a4dd3d54560d140f0b3ffbb52f488566732636b",
+    "agent/selector.py": "be7c0fce11c10921d5cd4e3d1072d5a2ca5a62f1c328730384d19b0fecd19566",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent/urls.py": "3a6b8a380f6d7966f1f79b97ccdedab5a5959ffbe5a1aa244e3477a0fe6110f4",
+    "agent/worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f",
+    "agent/__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41"
+  },
+  "live": [
+    {
+      "id": "simpleqa-483",
+      "variants": [
+        {
+          "query": "esports division announcement",
+          "status": 200,
+          "error": "",
+          "bytes": 24670,
+          "capture_path": "research/hint-selection-20261023/simpleqa-483-0.json",
+          "capture_sha256": "6e1c300bcbab7e439d705812a6b3e14edb8c77b4a1a4acfba6084dfb06b78d72",
+          "links": [
+            [
+              "https://www.kambi.com/investors/news-pr/kambi-groups-esports-division-abios-signs-data-partnership-with-google/",
+              "Kambi Group's esports division Abios signs data partnership with Google"
+            ],
+            [
+              "https://saiganak.com/event/vantan-zetadivision-gaming-academy-announcement/",
+              "ZETA DIVISION to Open Next-Generation Esports Human Resource ..."
+            ],
+            [
+              "https://x.com/tyloogaming/status/2009475219464048914",
+              "\u3010TYLOO Esports Club CS2 Division Personnel Changes Announcement ..."
+            ],
+            [
+              "https://saiganak.com/news/zetadivision-ntt-east-sponsorship-announcement/",
+              "ZETA DIVISION Announces Sponsorship Agreement with NTT East! Special ..."
+            ],
+            [
+              "https://www.strafe.com/news/read/evil-geniuses-to-shut-down-esports-operations/",
+              "Evil Geniuses to Shut Down Esports Operations - strafe.com"
+            ],
+            [
+              "https://x.com/LGDgaming/status/2086349692229881896",
+              "LGD Gaming on X: \"LGD Dota2 division announcement\""
+            ],
+            [
+              "https://esportsinsider.com/latest-news",
+              "Latest News Archives - Esports Insider"
+            ],
+            [
+              "https://www.philstar.com/sports/2026/10/22/2565015/global-esports-among-teams-exiting-vct-pacific-riot-unveils-partner-organizations-2027",
+              "Global Esports among teams exiting VCT Pacific as Riot unveils partner ..."
+            ]
+          ]
+        },
+        {
+          "query": "activision blizzard esports launch",
+          "status": 200,
+          "error": "",
+          "bytes": 24303,
+          "capture_path": "research/hint-selection-20261023/simpleqa-483-1.json",
+          "capture_sha256": "4d59c37f81f15c8f15c1aebfea6c94fd270c78e4d53426e643a783b849985d25",
+          "links": [
+            [
+              "https://newsroom.activisionblizzard.com/p/following-a-huge-year-for-esports",
+              "Following a Huge Year for Esports, The Call of ... - Activision Blizzard"
+            ],
+            [
+              "https://www.activisionblizzard.com/",
+              "Activision Blizzard | Home"
+            ],
+            [
+              "https://en.wikipedia.org/wiki/Activision_Blizzard",
+              "Activision Blizzard - Wikipedia"
+            ],
+            [
+              "https://www.activisionblizzard.com/who-we-are",
+              "Who We Are - Activision Blizzard"
+            ],
+            [
+              "https://www.activisionblizzard.com/about-us",
+              "About - Activision Blizzard"
+            ],
+            [
+              "https://en.wikipedia.org/wiki/Major_League_Gaming",
+              "Major League Gaming - Wikipedia"
+            ],
+            [
+              "https://en.wikipedia.org/wiki/Overwatch_League",
+              "Overwatch League - Wikipedia"
+            ],
+            [
+              "https://overwatch.blizzard.com/en-us/news/24246297/",
+              "OWCS 2026 Season: Competitive Details - News - Overwatch"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "simpleqa-3120",
+      "variants": [
+        {
+          "query": "juan guzm\u00e1n full name",
+          "status": 200,
+          "error": "",
+          "bytes": 24472,
+          "capture_path": "research/hint-selection-20261023/simpleqa-3120-0.json",
+          "capture_sha256": "72379e1b192fa48072dbf41e4c66a453fa09aed866a6b6a9ec4dd5b7972dfc70",
+          "links": [
+            [
+              "https://en.soccerwiki.org/player.php?pid=85733",
+              "Juan Guzm\u00e1n - Soccer Wiki: for the fans, by the fans"
+            ],
+            [
+              "https://www.baseball-reference.com/register/player.fcgi?id=guzman001jua",
+              "Juan Guzm\u00e1n Minor Leagues Statistics | Baseball-Reference.com"
+            ],
+            [
+              "https://en.wikipedia.org/wiki/Juan_Guzm%C3%A1n",
+              "Juan Guzm\u00e1n - Wikipedia"
+            ],
+            [
+              "https://www.baseball-reference.com/players/g/guzmaju01.shtml",
+              "Juan Guzm\u00e1n Stats, Height, Weight, Position, Rookie Status & More ..."
+            ],
+            [
+              "https://doblaje.fandom.com/es/wiki/Juan_Guzm%C3%A1n",
+              "Juan Guzm\u00e1n | Doblaje Wiki | Fandom"
+            ],
+            [
+              "https://dubdb.fandom.com/wiki/Juan_Guzm%C3%A1n",
+              "Juan Guzm\u00e1n | The Dubbing Database | Fandom"
+            ],
+            [
+              "https://es.wikipedia.org/wiki/Juan_Guzm%C3%A1n",
+              "Juan Guzm\u00e1n - Wikipedia, la enciclopedia libre"
+            ],
+            [
+              "https://en.wikipedia.org/wiki/El_Chapo",
+              "El Chapo - Wikipedia"
+            ]
+          ]
+        },
+        {
+          "query": "colombian player juan guzm\u00e1n",
+          "status": 200,
+          "error": "",
+          "bytes": 23882,
+          "capture_path": "research/hint-selection-20261023/simpleqa-3120-1.json",
+          "capture_sha256": "43adc1fd4cce23f9f61f42627f6e32c969af380fd472e2362fce5fed1f74751a",
+          "links": [
+            [
+              "https://www.transfermarkt.com/juan-pablo-guzman/profil/spieler/170543",
+              "Juan Pablo Guzm\u00e1n - Player profile | Transfermarkt"
+            ],
+            [
+              "https://www.footballdatabase.eu/en/player/details/204458-juan-guzman",
+              "Juan Guzm\u00e1n - Stats and titles won - FootballDatabase"
+            ],
+            [
+              "https://en.wikipedia.org/wiki/Juan_Guzm%C3%A1n_(footballer)",
+              "Juan Guzm\u00e1n (footballer) - Wikipedia"
+            ],
+            [
+              "https://es.wikipedia.org/wiki/Juan_Guzm%C3%A1n_(futbolista)",
+              "Juan Guzm\u00e1n (futbolista) - Wikipedia, la enciclopedia libre"
+            ],
+            [
+              "https://www.wikiwand.com/en/Juan_Guzm%C3%A1n_(footballer)",
+              "Juan Guzm\u00e1n (footballer) - Wikiwand"
+            ],
+            [
+              "https://everything.explained.today/Juan_Guzm%C3%A1n_(footballer)/",
+              "Juan Guzm\u00e1n (footballer) explained"
+            ],
+            [
+              "https://www.worldfootball.net/person/pe240832/juan-guzman/",
+              "Juan Guzm\u00e1n \u00bb Profile - worldfootball.net"
+            ],
+            [
+              "https://en.wikipedia.org/wiki/Juan_Cuadrado",
+              "Juan Cuadrado - Wikipedia"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "simpleqa-4145",
+      "variants": [
+        {
+          "query": "odd fellows hall architecture",
+          "status": 200,
+          "error": "",
+          "bytes": 24835,
+          "capture_path": "research/hint-selection-20261023/simpleqa-4145-0.json",
+          "capture_sha256": "d11b4a8a9cb2312faca55864175f960717bd1c143b5b05cc2ed94e00b9eaedd2",
+          "links": [
+            [
+              "https://www.landmarksapp.com/landmarks/odd-fellows-hall/",
+              "Odd Fellows Hall: History & Architecture | Landmarks"
+            ],
+            [
+              "https://en.wikipedia.org/wiki/Odd_Fellows_Hall_(New_York_City)",
+              "Odd Fellows Hall (New York City) - Wikipedia"
+            ],
+            [
+              "https://s-media.nyc.gov/agencies/lpc/lp/1293.pdf",
+              "PDF Odd Fellows Hall - s-media.nyc.gov"
+            ],
+            [
+              "https://hdc.org/buildings/odd-fellows-hall/",
+              "Odd Fellows Hall | HDC"
+            ],
+            [
+              "https://theclio.com/entry/28134",
+              "Odd Fellows Hall - Clio"
+            ],
+            [
+              "https://www.thing.net/~lina/oddends/odd_fellows.html",
+              "L I N A | Odd Fellows Hall"
+            ],
+            [
+              "https://en.wikipedia.org/wiki/List_of_Odd_Fellows_buildings",
+              "List of Odd Fellows buildings - Wikipedia"
+            ],
+            [
+              "https://loc.getarchive.net/topics/fellows/architecture",
+              "Fellows, Architecture Images \u2014 Public Domain Photos & Prints"
+            ]
+          ]
+        },
+        {
+          "query": "eureka ca building style",
+          "status": 200,
+          "error": "",
+          "bytes": 25229,
+          "capture_path": "research/hint-selection-20261023/simpleqa-4145-1.json",
+          "capture_sha256": "44a7b57257b8816bc5dcf86effb30708ee80a989522cc33a47ff68e0656b9f60",
+          "links": [
+            [
+              "https://www.eurekaheritage.com/architectural_legacy/Legacy3.pdf",
+              "PDF Exploring Eureka's historic neighborhoods Architectural EGACY"
+            ],
+            [
+              "https://eurekaheritage.com/architectural_legacy/Legacy%206.pdf",
+              "PDF Exploring Eureka's historic neighborhoods A EGACY"
+            ],
+            [
+              "https://www.visiteureka.com/architecture-in-eureka/",
+              "Architecture in Eureka"
+            ],
+            [
+              "https://en.wikipedia.org/wiki/Carson_Mansion",
+              "Carson Mansion - Wikipedia"
+            ],
+            [
+              "https://en.wikipedia.org/wiki/Old_Town_Eureka",
+              "Old Town Eureka - Wikipedia"
+            ],
+            [
+              "https://www.visiteureka.com/history-and-architecture/",
+              "History and Architecture - Visit Eureka"
+            ],
+            [
+              "https://llywindatravels.com/2020/11/08/eureka-architecture-and-art/",
+              "Eureka: Architecture and Art - Llywindatravels 2026"
+            ],
+            [
+              "https://www.eurekaca.gov/444/Historic-Eureka",
+              "Historic Eureka | Eureka, CA"
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

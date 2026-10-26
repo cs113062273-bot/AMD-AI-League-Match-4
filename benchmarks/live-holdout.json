@@ -1,0 +1,166 @@
+[
+  {
+    "id": "curl-connect",
+    "family": "curl",
+    "query": "What is the default value of CURLOPT_CONNECTTIMEOUT, expressed as a number of seconds?",
+    "url": "https://curl.se/libcurl/c/CURLOPT_CONNECTTIMEOUT.html",
+    "answer": "300",
+    "sources": [
+      "https://curl.se/libcurl/c/CURLOPT_CONNECTTIMEOUT.html"
+    ],
+    "truth_source": "https://curl.se/libcurl/c/CURLOPT_CONNECTTIMEOUT.html",
+    "truth_checked": "2026-10-20; manually inspected primary documentation before engine run"
+  },
+  {
+    "id": "nginx-keepalive",
+    "family": "nginx",
+    "query": "What is the default timeout value for the nginx keepalive_timeout directive? Include the time unit.",
+    "url": "https://nginx.org/en/docs/http/ngx_http_core_module.html",
+    "answer": "75s",
+    "sources": [
+      "https://nginx.org/en/docs/http/ngx_http_core_module.html"
+    ],
+    "truth_source": "https://nginx.org/en/docs/http/ngx_http_core_module.html",
+    "truth_checked": "2026-10-20; manually inspected primary documentation before engine run"
+  },
+  {
+    "id": "postgres-connections",
+    "family": "postgres",
+    "query": "What is the typical default number for PostgreSQL max_connections?",
+    "url": "https://www.postgresql.org/docs/current/runtime-config-connection.html",
+    "answer": "100",
+    "sources": [
+      "https://www.postgresql.org/docs/current/runtime-config-connection.html"
+    ],
+    "truth_source": "https://www.postgresql.org/docs/current/runtime-config-connection.html",
+    "truth_checked": "2026-10-20; manually inspected primary documentation before engine run"
+  },
+  {
+    "id": "sshd-port",
+    "family": "openssh",
+    "query": "What is the default value of the Port setting in sshd_config?",
+    "url": "https://man.openbsd.org/sshd_config",
+    "answer": "22",
+    "sources": [
+      "https://man.openbsd.org/sshd_config"
+    ],
+    "truth_source": "https://man.openbsd.org/sshd_config",
+    "truth_checked": "2026-10-20; manually inspected primary documentation before engine run"
+  },
+  {
+    "id": "pi-header",
+    "family": "pi",
+    "query": "How many pins are in the Raspberry Pi 5 standard header? Return the pin count.",
+    "url": "https://www.raspberrypi.com/products/raspberry-pi-5/",
+    "answer": "40",
+    "sources": [
+      "https://www.raspberrypi.com/products/raspberry-pi-5/"
+    ],
+    "truth_source": "https://www.raspberrypi.com/products/raspberry-pi-5/",
+    "truth_checked": "2026-10-20; manually inspected primary documentation before engine run"
+  },
+  {
+    "id": "sqlite-columns",
+    "family": "sqlite",
+    "query": "What is the default setting for SQLITE_MAX_COLUMN?",
+    "url": "https://www.sqlite.org/limits.html",
+    "answer": "2000",
+    "sources": [
+      "https://www.sqlite.org/limits.html"
+    ],
+    "truth_source": "https://www.sqlite.org/limits.html",
+    "truth_checked": "2026-10-20; manually inspected primary documentation before engine run"
+  },
+  {
+    "id": "json-ensure-ascii",
+    "family": "python",
+    "query": "What is the default value of ensure_ascii parameter in json.dumps?",
+    "url": "https://docs.python.org/3/library/json.html",
+    "answer": "True",
+    "sources": [
+      "https://docs.python.org/3/library/json.html"
+    ],
+    "truth_source": "https://docs.python.org/3/library/json.html",
+    "truth_checked": "2026-10-20; manually inspected primary documentation before engine run"
+  },
+  {
+    "id": "wcag-normal-aa",
+    "family": "wcag",
+    "query": "In WCAG 2.2 success criterion 1.4.3, what minimum contrast ratio applies to normal text? Return the ratio including the colon.",
+    "url": "https://www.w3.org/TR/WCAG22/",
+    "answer": "4.5:1",
+    "sources": [
+      "https://www.w3.org/TR/WCAG22/"
+    ],
+    "truth_source": "https://www.w3.org/TR/WCAG22/",
+    "truth_checked": "2026-10-20; manually inspected primary documentation before engine run"
+  },
+  {
+    "id": "wcag-normal-aaa",
+    "family": "wcag",
+    "query": "In WCAG 2.2 success criterion 1.4.6, what minimum contrast ratio applies to normal text? Return the ratio including the colon.",
+    "url": "https://www.w3.org/TR/WCAG22/",
+    "answer": "7:1",
+    "sources": [
+      "https://www.w3.org/TR/WCAG22/"
+    ],
+    "truth_source": "https://www.w3.org/TR/WCAG22/",
+    "truth_checked": "2026-10-20; manually inspected primary documentation before engine run"
+  },
+  {
+    "id": "rfc-title",
+    "family": "ietf",
+    "query": "What is the title of RFC 9110?",
+    "url": "",
+    "answer": "HTTP Semantics",
+    "sources": [
+      "https://datatracker.ietf.org/api/v1/doc/document/rfc9110/"
+    ],
+    "truth_source": "https://datatracker.ietf.org/api/v1/doc/document/rfc9110/",
+    "truth_checked": "2026-10-20; manually inspected primary documentation before engine run"
+  },
+  {
+    "id": "sqlite-missing-email",
+    "family": "sqlite",
+    "query": "What is the emergency support email address explicitly listed for SQLITE_MAX_COLUMN?",
+    "url": "https://www.sqlite.org/limits.html",
+    "answer": "",
+    "sources": [],
+    "truth_source": "https://www.sqlite.org/limits.html",
+    "truth_checked": "2026-10-20; manually inspected primary documentation before engine run"
+  },
+  {
+    "id": "curl-false-premise",
+    "family": "curl",
+    "query": "How many NVIDIA GPU cores does CURLOPT_CONNECTTIMEOUT require, according to this document?",
+    "url": "https://curl.se/libcurl/c/CURLOPT_CONNECTTIMEOUT.html",
+    "answer": "",
+    "sources": [],
+    "truth_source": "https://curl.se/libcurl/c/CURLOPT_CONNECTTIMEOUT.html",
+    "truth_checked": "2026-10-20; manually inspected primary documentation before engine run"
+  },
+  {
+    "id": "sqlite-discovery",
+    "family": "discovery-sqlite",
+    "query": "According to the SQLite Implementation Limits page, what is the default setting for SQLITE_MAX_COLUMN?",
+    "url": "",
+    "answer": "2000",
+    "sources": [
+      "https://www.sqlite.org/limits.html"
+    ],
+    "truth_source": "https://www.sqlite.org/limits.html",
+    "truth_checked": "2026-10-20; manually inspected primary documentation before engine run"
+  },
+  {
+    "id": "sshd-discovery",
+    "family": "discovery-openssh",
+    "query": "According to the OpenBSD sshd_config manual, what is the default Port setting?",
+    "url": "",
+    "answer": "22",
+    "sources": [
+      "https://man.openbsd.org/sshd_config"
+    ],
+    "truth_source": "https://man.openbsd.org/sshd_config",
+    "truth_checked": "2026-10-20; manually inspected primary documentation before engine run"
+  }
+]

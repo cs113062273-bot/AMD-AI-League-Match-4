@@ -1,0 +1,89 @@
+{
+  "scope": "Exercise the production HTTP cancellation lifecycle without loading 4B weights.\n\nThe HTTP probe uses a cooperative deterministic worker. The generation probe\nseparately uses Runtime.infer with an actual tiny randomly initialized CPU Qwen3.\nNeither probe measures full-model accuracy, GPU memory, or AMD performance.\n",
+  "passed": 10,
+  "total": 10,
+  "http_health": {
+    "calls": 5,
+    "active_request": null,
+    "outcomes": {
+      "cancelled": 2,
+      "selected": 2,
+      "deadline": 1
+    },
+    "busy_rejections": 1
+  },
+  "rows": [
+    {
+      "id": "single_active_request",
+      "passed": true
+    },
+    {
+      "id": "cancel_different_id_is_noop",
+      "passed": true
+    },
+    {
+      "id": "explicit_cancel_releases_worker",
+      "passed": true,
+      "seconds": 0.0025994000025093555
+    },
+    {
+      "id": "next_request_after_cancel",
+      "passed": true
+    },
+    {
+      "id": "deadline_releases_worker",
+      "passed": true,
+      "seconds": 0.10488750005606562
+    },
+    {
+      "id": "cancelled_client_cancels_server",
+      "passed": true,
+      "seconds": 0.0160608000587672
+    },
+    {
+      "id": "next_client_request_succeeds",
+      "passed": true
+    },
+    {
+      "id": "expired_request_does_not_start",
+      "passed": true
+    },
+    {
+      "id": "actual_cpu_generate_cancels_at_token_boundary",
+      "passed": true,
+      "record": {
+        "request_id": "b5d2a3ef02624287b33f573e36c08a28",
+        "mode": "select",
+        "input_tokens": 263,
+        "packing_seconds": 0.01467519998550415,
+        "transfer_seconds": 0.001022700103931129,
+        "generated_tokens": 1,
+        "stop_reason": "cancelled",
+        "generation_seconds": 0.006950499955564737,
+        "prefill_and_first_token_seconds": 0.0068058999022468925
+      }
+    },
+    {
+      "id": "actual_cpu_generate_runs_after_cancel",
+      "passed": true,
+      "record": {
+        "request_id": "4081bbf2ed4446d89b36c46a2439fc20",
+        "mode": "select",
+        "input_tokens": 263,
+        "packing_seconds": 0.002013599965721369,
+        "transfer_seconds": 0.0006967000663280487,
+        "generated_tokens": 140,
+        "stop_reason": "completed",
+        "generation_seconds": 0.3463923999806866,
+        "prefill_and_first_token_seconds": 0.003775699995458126
+      },
+      "reply": {
+        "candidate": -1,
+        "passage": -1,
+        "answer": "",
+        "error": "invalid_json"
+      },
+      "note": "Random tiny weights are not expected to answer; invalid JSON is an explicit protocol error."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "scope": "CPU-only public GET of URLs discovered from question-only probes; no model/browser; exact source text, no gold injection.",
+  "rows": [
+    {
+      "requested": "https://www.wikiwand.com/en/articles/Johann_Caspar_F%C3%BCssli",
+      "url": "https://www.wikiwand.com/en/articles/Johann_Caspar_F%C3%BCssli",
+      "status": 403,
+      "error": "http_403",
+      "bytes": 0,
+      "title": "",
+      "dynamic": false,
+      "passages": 0,
+      "matches": [],
+      "capture_path": "research/children-20261023-sources/0.json",
+      "sha256": "93eabad0f3f8e9959d862193afe86b81c4ab827dfee9b2c8cbe30758a70306be"
+    },
+    {
+      "requested": "https://de.wikipedia.org/wiki/Johann_Caspar_F%C3%BCssli",
+      "url": "https://de.wikipedia.org/wiki/Johann_Caspar_F%C3%BCssli",
+      "status": 403,
+      "error": "http_403",
+      "bytes": 0,
+      "title": "",
+      "dynamic": false,
+      "passages": 0,
+      "matches": [],
+      "capture_path": "research/children-20261023-sources/1.json",
+      "sha256": "34cafe5730581261ccbc9e4e9eceb791d8d66c758560f85c262334e4e27d30f1"
+    },
+    {
+      "requested": "https://everything.explained.today/Johann_Caspar_F%C3%BCssli/",
+      "url": "https://everything.explained.today/Johann_Caspar_F%C3%BCssli/",
+      "status": 403,
+      "error": "http_403",
+      "bytes": 0,
+      "title": "",
+      "dynamic": false,
+      "passages": 0,
+      "matches": [],
+      "capture_path": "research/children-20261023-sources/2.json",
+      "sha256": "5d6a1319650370cd04921fec1c9c4780c795b8c2ffd1b7a47f92e06b8518bb82"
+    },
+    {
+      "requested": "https://www.geni.com/people/Johann-F%C3%BCssli/6000000057827128108",
+      "url": "https://www.geni.com/login",
+      "status": 200,
+      "error": "",
+      "bytes": 56133,
+      "title": "Family Tree - Geni",
+      "dynamic": false,
+      "passages": 45,
+      "matches": [],
+      "capture_path": "research/children-20261023-sources/3.json",
+      "sha256": "6914b1b4c9d68683350886e460eceba67fda0675b4820d3c9f18ef585acf636c"
+    }
+  ]
+}

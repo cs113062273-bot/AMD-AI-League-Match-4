@@ -1,0 +1,437 @@
+{
+  "scope": "Controlled HTTP provider/navigation diagnosis; not real-web or LLM accuracy.\n\nThe semantic service extracts only an actual phone span and abstains on link\nselection. Search providers and pages are local HTTP fixtures, without network\ninterception or a public provider dependency.\n",
+  "passed": 1,
+  "total": 7,
+  "rows": [
+    {
+      "id": "weak-provider",
+      "passed": false,
+      "hits": [
+        "/root-search",
+        "/provider/bad",
+        "/provider/bad",
+        "/spam"
+      ],
+      "queries": [
+        "site:127.0.0.1 What is the support phone of Boreal Instruments?",
+        "support phone boreal instruments"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the support phone of Boreal Instruments?",
+            "url": "http://127.0.0.1:62726/root-search",
+            "kind": "phone",
+            "terms": [
+              "support",
+              "phone",
+              "boreal",
+              "instruments"
+            ],
+            "attributes": [
+              "phone",
+              "telephone",
+              "tel",
+              "contact",
+              "support",
+              "hotline",
+              "toll-free"
+            ],
+            "entity_terms": [
+              "boreal",
+              "instruments"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the support phone ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": []
+          },
+          "errors": [],
+          "selector": [
+            "abstain",
+            "abstain"
+          ],
+          "timings": {
+            "resolver": 0.00011689995881170034
+          },
+          "search_requests": 2,
+          "llm_calls": 3,
+          "content_pages": 2,
+          "search_recovery": "starting_url_unavailable_or_exhausted",
+          "search_recovery_depth": 0,
+          "search_hints": [],
+          "search_hint_state": "expanded",
+          "reader_state": "no_evidence",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:62726/root-search",
+              "final": "http://127.0.0.1:62726/root-search",
+              "status": 200,
+              "bytes": 27,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:62726/provider/bad?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "final": "http://127.0.0.1:62726/provider/bad?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "status": 200,
+              "bytes": 90,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:62726/provider/bad?q=support+phone+boreal+instruments",
+              "final": "http://127.0.0.1:62726/provider/bad?q=support+phone+boreal+instruments",
+              "status": 200,
+              "bytes": 90,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:62726/spam",
+              "final": "http://127.0.0.1:62726/spam",
+              "status": 200,
+              "bytes": 64,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 4,
+          "pages_fetched": 2,
+          "seconds": 0.021
+        }
+      }
+    },
+    {
+      "id": "one-weak-link",
+      "passed": false,
+      "hits": [
+        "/one"
+      ],
+      "queries": [],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the support phone of Boreal Instruments?",
+            "url": "http://127.0.0.1:62726/one",
+            "kind": "phone",
+            "terms": [
+              "support",
+              "phone",
+              "boreal",
+              "instruments"
+            ],
+            "attributes": [
+              "phone",
+              "telephone",
+              "tel",
+              "contact",
+              "support",
+              "hotline",
+              "toll-free"
+            ],
+            "entity_terms": [
+              "boreal",
+              "instruments"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the support phone ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": []
+          },
+          "errors": [],
+          "selector": [
+            "abstain"
+          ],
+          "timings": {
+            "resolver": 1.5900004655122757e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "navigation": [
+            {
+              "state": "abstain",
+              "chosen": ""
+            }
+          ],
+          "reader_state": "no_evidence",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:62726/one",
+              "final": "http://127.0.0.1:62726/one",
+              "status": 200,
+              "bytes": 51,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0055
+        }
+      }
+    },
+    {
+      "id": "two-weak-links",
+      "passed": false,
+      "hits": [
+        "/two"
+      ],
+      "queries": [],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the support phone of Boreal Instruments?",
+            "url": "http://127.0.0.1:62726/two",
+            "kind": "phone",
+            "terms": [
+              "support",
+              "phone",
+              "boreal",
+              "instruments"
+            ],
+            "attributes": [
+              "phone",
+              "telephone",
+              "tel",
+              "contact",
+              "support",
+              "hotline",
+              "toll-free"
+            ],
+            "entity_terms": [
+              "boreal",
+              "instruments"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the support phone ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": []
+          },
+          "errors": [],
+          "selector": [
+            "abstain"
+          ],
+          "timings": {
+            "resolver": 1.1499971151351929e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "navigation": [
+            {
+              "state": "abstain",
+              "chosen": ""
+            }
+          ],
+          "reader_state": "no_evidence",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:62726/two",
+              "final": "http://127.0.0.1:62726/two",
+              "status": 200,
+              "bytes": 79,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0043
+        }
+      }
+    },
+    {
+      "id": "foreign-weak-link",
+      "passed": true,
+      "hits": [
+        "/foreign"
+      ],
+      "queries": [],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the support phone of Boreal Instruments?",
+            "url": "http://127.0.0.1:62726/foreign",
+            "kind": "phone",
+            "terms": [
+              "support",
+              "phone",
+              "boreal",
+              "instruments"
+            ],
+            "attributes": [
+              "phone",
+              "telephone",
+              "tel",
+              "contact",
+              "support",
+              "hotline",
+              "toll-free"
+            ],
+            "entity_terms": [
+              "boreal",
+              "instruments"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the support phone ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": []
+          },
+          "errors": [],
+          "selector": [
+            "abstain"
+          ],
+          "timings": {
+            "resolver": 8.09994526207447e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "navigation": [
+            {
+              "state": "abstain",
+              "chosen": ""
+            }
+          ],
+          "reader_state": "no_evidence",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:62726/foreign",
+              "final": "http://127.0.0.1:62726/foreign",
+              "status": 200,
+              "bytes": 72,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0037
+        }
+      }
+    },
+    {
+      "id": "query-anchors-boreal",
+      "passed": false,
+      "queries": [
+        "contact telephone",
+        "support phone boreal instruments",
+        "What is the support phone of Boreal Instruments?"
+      ],
+      "anchors": [
+        "boreal",
+        "instruments"
+      ]
+    },
+    {
+      "id": "query-anchors-flintdb",
+      "passed": false,
+      "queries": [
+        "configuration client",
+        "\"async_pool\" default async_pool flintdb async pool",
+        "What is the default of `async_pool` in FlintDB?"
+      ],
+      "anchors": [
+        "flintdb",
+        "async_pool"
+      ]
+    },
+    {
+      "id": "query-anchors-pep",
+      "passed": false,
+      "queries": [
+        "python interpolation",
+        "title pep 750",
+        "What is the title of PEP 750?"
+      ],
+      "anchors": [
+        "pep",
+        "750"
+      ]
+    }
+  ]
+}

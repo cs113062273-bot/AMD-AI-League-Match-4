@@ -1,0 +1,2934 @@
+{
+  "scope": "Small fixed-correct-page reader diagnosis with an owned full-4B CUDA service.\n\nCases are exposed development data, not a held-out or public-web accuracy claim.\nAn oracle URL supplies the answer page; this separates reading from discovery.\n",
+  "context_limit": 1536,
+  "comparison_mode": true,
+  "baseline_revision": "fbed467abe125c1001de699ba29bc0fb87f51770",
+  "baseline_source_sha256": {
+    "agent/engine.py": "aad82e3f2c962afaaf8578703ac826264a6f9122691be65380b0dd8635f621a4",
+    "agent/types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent/planner.py": "97ae3cbf378d03e9b655fdf0cc05cbc28e66c02da8f1a6424704d8091dc79465",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/network.py": "c37ecb5b4b0fba4fac737954eda24952059922ed620c94b99bcb17daed8c5155",
+    "agent/urls.py": "2118381f70d0f44174db25833b989cd36dab64b588b83085cddd65cad7412a1f",
+    "agent/parser.py": "5395e0b9a105cf294399d03cf0363cbd49fc82651647b0fe6f8855d413784cff",
+    "agent/normalize.py": "6a4cb8311c29318d788c97a3e64cffa3c4085e595a0e1e9a2d5c418fa540e41c",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent/search.py": "ac3e239f6f3b86696877af3e237be0c125e78cebbb6e980060abab2eb3f4db90",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/candidates.py": "0eacf4e17eda25a888c544f3201df3abd7a5d669b4a088e77f1a227564c6e954",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/evidence.py": "756d35bc17919c32bc8db1ce2b8e609eaae5042bc376466fae862a0792b969cb",
+    "agent/selector.py": "a1319028ab2b86e1186dc2422e592c83a9d4fa7c129872c1377c39aa37962f5e",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/proofs.py": "42920966e3cae090d8a0d53f17270f607a4a6dcb8a96a1af20382d2785e64b74"
+  },
+  "case_path": "benchmarks/recordfields-20261023-cases.json",
+  "fixture_path": "research/recordfields-20261023/fixtures.json",
+  "max_depth": 0,
+  "budget": 12,
+  "production_sha256": {
+    "app.py": "c0267c0441330bd30559f48d2f33916418992b8e21ec8dd1d09ae4773c23b73b",
+    "agent\\browser.py": "f7a3d9479ec2ae9bc9fbbcb27efbddaeba9b5dd8639016e827840cc1c7e33cea",
+    "agent\\candidates.py": "781e9842d46a4a8da92085c8be57d74c704509846ae1983fe9609abcfd6a5d5a",
+    "agent\\currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent\\engine.py": "aad82e3f2c962afaaf8578703ac826264a6f9122691be65380b0dd8635f621a4",
+    "agent\\evidence.py": "756d35bc17919c32bc8db1ce2b8e609eaae5042bc376466fae862a0792b969cb",
+    "agent\\knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent\\model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+    "agent\\model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent\\model_protocol.py": "8ba6730e160eac47d8231985e1293bb981a5a63ef9b475cf46daf31ef17bdfb0",
+    "agent\\model_server.py": "14e840e32fe34ca594eb4fb0dadd89fc67768fb9026ac3359734a021c5190fc2",
+    "agent\\navigation.py": "0f849c0c570720114c45c14b0a5286fe409e5d26c2945fdc9f6c1a6922bb7718",
+    "agent\\network.py": "def1be3752f81423c313c2dfa83f6703ee063d7e98652cf0d816b423d0e2d9cb",
+    "agent\\normalize.py": "6a4cb8311c29318d788c97a3e64cffa3c4085e595a0e1e9a2d5c418fa540e41c",
+    "agent\\output.py": "b983ab2efe31707b1c974344a32dc4b40b708541257695de89cac9e343b073eb",
+    "agent\\parser.py": "eff971d546385c2f873de19e3d4e7dd84fae6829881a21d25b08bfa4f9ee8e5a",
+    "agent\\planner.py": "55ab71a544094a0f157153f05109573130c7b3677720b035fa1840507d314e21",
+    "agent\\processes.py": "677c4372b40d1da0ffc0cf4120ca5b6be2fcf6b6c30f6ec17d0d8fae19e198c1",
+    "agent\\proofs.py": "42920966e3cae090d8a0d53f17270f607a4a6dcb8a96a1af20382d2785e64b74",
+    "agent\\qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent\\resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent\\search.py": "69e505204a79bd130e8c29f1c043c2c0356770d11ad4f905a99a6ff3a2a7b02f",
+    "agent\\selector.py": "94ef26d4d5ad916437a4f21bf4c8f93cf9f59e269944787cb4bd366c350be487",
+    "agent\\signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent\\types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent\\urls.py": "2118381f70d0f44174db25833b989cd36dab64b588b83085cddd65cad7412a1f",
+    "agent\\worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f",
+    "agent\\__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41"
+  },
+  "cases_sha256": "1c562933ddac36c1b7b05eea06ff0485a058422e447f701a249f78a2247fd933",
+  "fixtures_sha256": "2a235281a98092796847ba4ff83bf6a82104c3f87eb3d833c685564fc2f958c5",
+  "rows": [
+    {
+      "id": "real-award",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "1984",
+        "sources": [
+          "http://127.0.0.1:39020/real-award.html"
+        ],
+        "confidence": 0.805,
+        "evidence": "1984 | Mildred Cohn, Ph.D. | National Medal of Science",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "In what year did the biochemist Mildred Cohn receive the Golden Plate Award from the American Academy of Achievement?",
+            "url": "http://127.0.0.1:39020/real-award.html",
+            "kind": "year",
+            "terms": [
+              "year",
+              "biochemist",
+              "mildred",
+              "cohn",
+              "receive",
+              "golden",
+              "plate",
+              "award",
+              "american",
+              "academy",
+              "achievement"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "year",
+              "biochemist",
+              "mildred",
+              "cohn",
+              "receive",
+              "golden",
+              "plate",
+              "award",
+              "american",
+              "academy",
+              "achievement"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "in what year did the biochemist mildred cohn receive the golden plate award from the american academy of achievement?",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.4099990949034691e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "1984",
+              "answer": "1984",
+              "source": "http://127.0.0.1:39020/real-award.html",
+              "evidence": "1984 | Mildred Cohn, Ph.D. | National Medal of Science",
+              "label": "",
+              "section": "All Honorees",
+              "kind": "year",
+              "score": 10.2,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "record[904]",
+                "structure": "record",
+                "qualifiers": {
+                  "source_fields": {
+                    "year": "1984",
+                    "surname": "Cohn"
+                  }
+                },
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "1984",
+            "answer": "1984",
+            "source": "http://127.0.0.1:39020/real-award.html",
+            "evidence": "1984 | Mildred Cohn, Ph.D. | National Medal of Science",
+            "label": "",
+            "section": "All Honorees",
+            "kind": "year",
+            "score": 10.2,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "record[904]",
+              "structure": "record",
+              "qualifiers": {
+                "source_fields": {
+                  "year": "1984",
+                  "surname": "Cohn"
+                }
+              },
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:39020/real-award.html",
+              "final": "http://127.0.0.1:39020/real-award.html",
+              "status": 200,
+              "bytes": 738478,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 2.7027
+        }
+      }
+    },
+    {
+      "id": "award-record",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "1987",
+        "sources": [
+          "http://127.0.0.1:39020/award-record.html"
+        ],
+        "confidence": 0.78,
+        "evidence": "1987 | Elin Voss | National Science Medal",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "In what year did Elin Voss receive the Cedar Prize?",
+            "url": "http://127.0.0.1:39020/award-record.html",
+            "kind": "year",
+            "terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "in what year did elin voss receive the cedar prize?",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.8000020645558834e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "1987",
+              "answer": "1987",
+              "source": "http://127.0.0.1:39020/award-record.html",
+              "evidence": "1987 | Elin Voss | National Science Medal",
+              "label": "",
+              "section": "Honorees",
+              "kind": "year",
+              "score": 9.2,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "record[2]",
+                "structure": "record",
+                "qualifiers": {
+                  "source_fields": {
+                    "year": "1987",
+                    "surname": "Voss"
+                  }
+                },
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "1987",
+            "answer": "1987",
+            "source": "http://127.0.0.1:39020/award-record.html",
+            "evidence": "1987 | Elin Voss | National Science Medal",
+            "label": "",
+            "section": "Honorees",
+            "kind": "year",
+            "score": 9.2,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "record[2]",
+              "structure": "record",
+              "qualifiers": {
+                "source_fields": {
+                  "year": "1987",
+                  "surname": "Voss"
+                }
+              },
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:39020/award-record.html",
+              "final": "http://127.0.0.1:39020/award-record.html",
+              "status": 200,
+              "bytes": 208,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 1.2453
+        }
+      }
+    },
+    {
+      "id": "foundation-record",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "1976",
+        "sources": [
+          "http://127.0.0.1:39020/foundation-record.html"
+        ],
+        "confidence": 0.82,
+        "evidence": "1976 | Ridge Works | Founded in Westport",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "In what year was Ridge Works founded?",
+            "url": "http://127.0.0.1:39020/foundation-record.html",
+            "kind": "year",
+            "terms": [
+              "year",
+              "ridge",
+              "works",
+              "founded"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "year",
+              "ridge",
+              "works",
+              "founded"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "in what year was ridge works founded?",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.0499963536858559e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "1976",
+              "answer": "1976",
+              "source": "http://127.0.0.1:39020/foundation-record.html",
+              "evidence": "1976 | Ridge Works | Founded in Westport",
+              "label": "",
+              "section": "Founded companies",
+              "kind": "year",
+              "score": 10.8,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "record[1]",
+                "structure": "record",
+                "qualifiers": {
+                  "source_fields": {
+                    "year": "1976",
+                    "name": "Ridge Works"
+                  }
+                },
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "1976",
+            "answer": "1976",
+            "source": "http://127.0.0.1:39020/foundation-record.html",
+            "evidence": "1976 | Ridge Works | Founded in Westport",
+            "label": "",
+            "section": "Founded companies",
+            "kind": "year",
+            "score": 10.8,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "record[1]",
+              "structure": "record",
+              "qualifiers": {
+                "source_fields": {
+                  "year": "1976",
+                  "name": "Ridge Works"
+                }
+              },
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:39020/foundation-record.html",
+              "final": "http://127.0.0.1:39020/foundation-record.html",
+              "status": 200,
+              "bytes": 189,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 1.2008
+        }
+      }
+    },
+    {
+      "id": "wrong-person",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "In what year did Elin Voss receive the Cedar Prize?",
+            "url": "http://127.0.0.1:39020/wrong-person.html",
+            "kind": "year",
+            "terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "in what year did elin voss receive the cedar prize?",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.009996049106121e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "1987",
+              "answer": "1987",
+              "source": "http://127.0.0.1:39020/wrong-person.html",
+              "evidence": "1987 | Marin Shaw | Biochemist",
+              "label": "",
+              "section": "Honorees",
+              "kind": "year",
+              "score": 6.0,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "record[2]",
+                "structure": "record",
+                "qualifiers": {
+                  "source_fields": {
+                    "year": "1987",
+                    "surname": "Shaw"
+                  }
+                },
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "unsupported"
+          ],
+          "reader_state": "no_evidence",
+          "top_candidates": [
+            {
+              "raw": "1987",
+              "answer": "1987",
+              "source": "http://127.0.0.1:39020/wrong-person.html",
+              "evidence": "1987 | Marin Shaw | Biochemist",
+              "label": "",
+              "section": "Honorees",
+              "kind": "year",
+              "score": 2.0,
+              "signals": {
+                "locator": "record[2]",
+                "page_title": "Ridge Council records",
+                "structure": "record",
+                "qualifiers": {
+                  "source_fields": {
+                    "year": "1987",
+                    "surname": "Shaw"
+                  }
+                },
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:39020/wrong-person.html",
+              "final": "http://127.0.0.1:39020/wrong-person.html",
+              "status": 200,
+              "bytes": 197,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 1.2598
+        }
+      }
+    },
+    {
+      "id": "wrong-award",
+      "answer_ok": false,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "1987",
+        "sources": [
+          "http://127.0.0.1:39020/wrong-award.html"
+        ],
+        "confidence": 0.78,
+        "evidence": "1987 | Elin Voss | Biochemist",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "In what year did Elin Voss receive the Cedar Prize?",
+            "url": "http://127.0.0.1:39020/wrong-award.html",
+            "kind": "year",
+            "terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "in what year did elin voss receive the cedar prize?",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.0299962013959885e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "1987",
+              "answer": "1987",
+              "source": "http://127.0.0.1:39020/wrong-award.html",
+              "evidence": "1987 | Elin Voss | Biochemist",
+              "label": "",
+              "section": "Honorees",
+              "kind": "year",
+              "score": 9.2,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "record[2]",
+                "structure": "record",
+                "qualifiers": {
+                  "source_fields": {
+                    "year": "1987",
+                    "surname": "Voss"
+                  }
+                },
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "1987",
+            "answer": "1987",
+            "source": "http://127.0.0.1:39020/wrong-award.html",
+            "evidence": "1987 | Elin Voss | Biochemist",
+            "label": "",
+            "section": "Honorees",
+            "kind": "year",
+            "score": 9.2,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "record[2]",
+              "structure": "record",
+              "qualifiers": {
+                "source_fields": {
+                  "year": "1987",
+                  "surname": "Voss"
+                }
+              },
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:39020/wrong-award.html",
+              "final": "http://127.0.0.1:39020/wrong-award.html",
+              "status": 200,
+              "bytes": 196,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 1.2211
+        }
+      }
+    },
+    {
+      "id": "unseen-attribute",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "1994",
+        "sources": [
+          "http://127.0.0.1:39020/unseen-attribute.html"
+        ],
+        "confidence": 0.78,
+        "evidence": "1994 | Elin Voss | Biochemist",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "In what year did Elin Voss receive the Cedar Prize?",
+            "url": "http://127.0.0.1:39020/unseen-attribute.html",
+            "kind": "year",
+            "terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "in what year did elin voss receive the cedar prize?",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.0499963536858559e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "1994",
+              "answer": "1994",
+              "source": "http://127.0.0.1:39020/unseen-attribute.html",
+              "evidence": "1994 | Elin Voss | Biochemist",
+              "label": "",
+              "section": "Honorees",
+              "kind": "year",
+              "score": 9.2,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "record[2]",
+                "structure": "record",
+                "qualifiers": {
+                  "source_fields": {
+                    "surname": "Voss"
+                  }
+                },
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "1994",
+            "answer": "1994",
+            "source": "http://127.0.0.1:39020/unseen-attribute.html",
+            "evidence": "1994 | Elin Voss | Biochemist",
+            "label": "",
+            "section": "Honorees",
+            "kind": "year",
+            "score": 9.2,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "record[2]",
+              "structure": "record",
+              "qualifiers": {
+                "source_fields": {
+                  "surname": "Voss"
+                }
+              },
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:39020/unseen-attribute.html",
+              "final": "http://127.0.0.1:39020/unseen-attribute.html",
+              "status": 200,
+              "bytes": 196,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 1.2637
+        }
+      }
+    },
+    {
+      "id": "conflicting-records",
+      "answer_ok": false,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "1987",
+        "sources": [
+          "http://127.0.0.1:39020/conflicting-records.html"
+        ],
+        "confidence": 0.78,
+        "evidence": "1987 | Elin Voss | Biochemist",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "In what year did Elin Voss receive the Cedar Prize?",
+            "url": "http://127.0.0.1:39020/conflicting-records.html",
+            "kind": "year",
+            "terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "in what year did elin voss receive the cedar prize?",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.0499963536858559e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "1987",
+              "answer": "1987",
+              "source": "http://127.0.0.1:39020/conflicting-records.html",
+              "evidence": "1987 | Elin Voss | Biochemist",
+              "label": "",
+              "section": "Honorees",
+              "kind": "year",
+              "score": 9.2,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "record[2]",
+                "structure": "record",
+                "qualifiers": {
+                  "source_fields": {
+                    "year": "1987"
+                  }
+                },
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "1987",
+            "answer": "1987",
+            "source": "http://127.0.0.1:39020/conflicting-records.html",
+            "evidence": "1987 | Elin Voss | Biochemist",
+            "label": "",
+            "section": "Honorees",
+            "kind": "year",
+            "score": 9.2,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "record[2]",
+              "structure": "record",
+              "qualifiers": {
+                "source_fields": {
+                  "year": "1987"
+                }
+              },
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:39020/conflicting-records.html",
+              "final": "http://127.0.0.1:39020/conflicting-records.html",
+              "status": 200,
+              "bytes": 268,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 1.3711
+        }
+      }
+    },
+    {
+      "id": "wrong-event",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "In what year did Elin Voss receive the Cedar Prize?",
+            "url": "http://127.0.0.1:39020/wrong-event.html",
+            "kind": "year",
+            "terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "in what year did elin voss receive the cedar prize?",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.0300078429281712e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "1962",
+              "answer": "1962",
+              "source": "http://127.0.0.1:39020/wrong-event.html",
+              "evidence": "1962 | Elin Voss | Biochemist",
+              "label": "",
+              "section": "Birth records",
+              "kind": "year",
+              "score": 9.2,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "record[1]",
+                "structure": "record",
+                "qualifiers": {
+                  "source_fields": {
+                    "birth-year": "1962"
+                  }
+                },
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "unsupported"
+          ],
+          "reader_state": "no_evidence",
+          "top_candidates": [
+            {
+              "raw": "1962",
+              "answer": "1962",
+              "source": "http://127.0.0.1:39020/wrong-event.html",
+              "evidence": "1962 | Elin Voss | Biochemist",
+              "label": "",
+              "section": "Birth records",
+              "kind": "year",
+              "score": 5.2,
+              "signals": {
+                "locator": "record[1]",
+                "page_title": "Ridge Council records",
+                "structure": "record",
+                "qualifiers": {
+                  "source_fields": {
+                    "birth-year": "1962"
+                  }
+                },
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:39020/wrong-event.html",
+              "final": "http://127.0.0.1:39020/wrong-event.html",
+              "status": 200,
+              "bytes": 156,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 1.1831
+        }
+      }
+    }
+  ],
+  "health_before": {
+    "ready": true,
+    "device": "cuda",
+    "hip": null,
+    "pid": 14520,
+    "startup_token": "ca73508ca2c5404fbc3227a6d96e7936",
+    "backend_source_sha256": {
+      "model_server.py": "14e840e32fe34ca594eb4fb0dadd89fc67768fb9026ac3359734a021c5190fc2",
+      "model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+      "selector.py": "94ef26d4d5ad916437a4f21bf4c8f93cf9f59e269944787cb4bd366c350be487",
+      "model_protocol.py": "8ba6730e160eac47d8231985e1293bb981a5a63ef9b475cf46daf31ef17bdfb0",
+      "model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+      "normalize.py": "6a4cb8311c29318d788c97a3e64cffa3c4085e595a0e1e9a2d5c418fa540e41c",
+      "types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512"
+    },
+    "software": {
+      "torch": "2.9.1+cu128",
+      "transformers": "4.57.1",
+      "tokenizers": "0.22.1",
+      "safetensors": "0.6.2",
+      "accelerate": "1.11.0"
+    },
+    "parameters": 4022468096,
+    "assets": {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "verified_files": 12,
+      "full_sha256": false,
+      "weight_shards": 3
+    },
+    "warmup_reply": {
+      "candidate": -1,
+      "passage": 0,
+      "answer": "7"
+    },
+    "torch": "2.9.1+cu128",
+    "startup_seconds": 11.432048900052905,
+    "calls": 0,
+    "outcomes": {},
+    "active_request": null,
+    "busy_rejections": 0,
+    "recent_requests": [
+      {
+        "request_id": "warmup",
+        "mode": "select",
+        "input_tokens": 268,
+        "packing_seconds": 0.01167680008802563,
+        "transfer_seconds": 0.00223129999358207,
+        "generated_tokens": 14,
+        "stop_reason": "completed",
+        "generation_seconds": 1.3805214000167325,
+        "prefill_and_first_token_seconds": 0.7782896999269724
+      }
+    ],
+    "context_limit": 1536,
+    "token_stats": {
+      "max_input": 268,
+      "generated": 14,
+      "pruned_requests": 0
+    },
+    "device_memory_bytes": 12878086144,
+    "peak_vram_bytes": 8141605888,
+    "allocated_vram_bytes": 8053474816,
+    "reserved_vram_bytes": 8185184256
+  },
+  "baseline_rows": [
+    {
+      "id": "real-award",
+      "answer_ok": false,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "In what year did the biochemist Mildred Cohn receive the Golden Plate Award from the American Academy of Achievement?",
+            "url": "http://127.0.0.1:39020/real-award.html",
+            "kind": "year",
+            "terms": [
+              "year",
+              "biochemist",
+              "mildred",
+              "cohn",
+              "receive",
+              "golden",
+              "plate",
+              "award",
+              "american",
+              "academy",
+              "achievement"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "year",
+              "biochemist",
+              "mildred",
+              "cohn",
+              "receive",
+              "golden",
+              "plate",
+              "award",
+              "american",
+              "academy",
+              "achievement"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "in what year did the biochemist mildred cohn receive the golden plate award from the american academy of achievement?",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 0.00012750003952533007
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "1984",
+              "answer": "1984",
+              "source": "http://127.0.0.1:39020/real-award.html",
+              "evidence": "1984 | Mildred Cohn, Ph.D. | National Medal of Science",
+              "label": "",
+              "section": "All Honorees",
+              "kind": "year",
+              "score": 10.2,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "record[904]",
+                "structure": "record",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "unsupported"
+          ],
+          "reader_state": "no_evidence",
+          "top_candidates": [
+            {
+              "raw": "1961",
+              "answer": "1961",
+              "source": "http://127.0.0.1:39020/real-award.html",
+              "evidence": "description: The Golden Plate Award has been presented since 1961 by the American Academy of Achievement to approximately 25 guests of honor at the International Achievement Summit. Chosen by the Academy’s Awards Council and other distinguished authorities, these men and women of exceptional accomplishment in the sciences, the professions, business, industry, arts, literature, sports, entertainment, and public service are acclaimed … not as winners, but as visionaries and achievers who represent the many who excel.",
+              "label": "description",
+              "section": "",
+              "kind": "year",
+              "score": 9.772855887687,
+              "signals": {
+                "locator": "meta[11]",
+                "page_title": "All Honorees | Academy of Achievement",
+                "structure": "meta",
+                "qualifiers": {},
+                "field_value": "The Golden Plate Award has been presented since 1961 by the American Academy of Achievement to approximately 25 guests of honor at the International Achievement Summit. Chosen by the Academy’s Awards Council and other distinguished authorities, these men and women of exceptional accomplishment in the sciences, the professions, business, industry, arts, literature, sports, entertainment, and public service are acclaimed … not as winners, but as visionaries and achievers who represent the many who excel.",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "1988",
+              "answer": "1988",
+              "source": "http://127.0.0.1:39020/real-award.html",
+              "evidence": "1988 | E. L. Doctorow | American Book Award",
+              "label": "",
+              "section": "All Honorees",
+              "kind": "year",
+              "score": 6.2,
+              "signals": {
+                "locator": "record[1029]",
+                "page_title": "All Honorees | Academy of Achievement",
+                "structure": "record",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "1984",
+              "answer": "1984",
+              "source": "http://127.0.0.1:39020/real-award.html",
+              "evidence": "1984 | Mildred Cohn, Ph.D. | National Medal of Science",
+              "label": "",
+              "section": "All Honorees",
+              "kind": "year",
+              "score": 6.2,
+              "signals": {
+                "locator": "record[904]",
+                "page_title": "All Honorees | Academy of Achievement",
+                "structure": "record",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2014",
+              "answer": "2014",
+              "source": "http://127.0.0.1:39020/real-award.html",
+              "evidence": "2014 | Diana Ross | Grammy Award for Lifetime Achievement",
+              "label": "",
+              "section": "All Honorees",
+              "kind": "year",
+              "score": 5.7,
+              "signals": {
+                "locator": "record[656]",
+                "page_title": "All Honorees | Academy of Achievement",
+                "structure": "record",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2004",
+              "answer": "2004",
+              "source": "http://127.0.0.1:39020/real-award.html",
+              "evidence": "2004 | Norman Mailer | National Book Award for Lifetime Achievement",
+              "label": "",
+              "section": "All Honorees",
+              "kind": "year",
+              "score": 5.7,
+              "signals": {
+                "locator": "record[116]",
+                "page_title": "All Honorees | Academy of Achievement",
+                "structure": "record",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2001",
+              "answer": "2001",
+              "source": "http://127.0.0.1:39020/real-award.html",
+              "evidence": "2001 | Dan Rather | Emmy Award for Lifetime Achievement",
+              "label": "",
+              "section": "All Honorees",
+              "kind": "year",
+              "score": 5.7,
+              "signals": {
+                "locator": "record[1376]",
+                "page_title": "All Honorees | Academy of Achievement",
+                "structure": "record",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2000",
+              "answer": "2000",
+              "source": "http://127.0.0.1:39020/real-award.html",
+              "evidence": "2000 | Sir David Frost | Emmy Award for Lifetime Achievement",
+              "label": "",
+              "section": "All Honorees",
+              "kind": "year",
+              "score": 5.7,
+              "signals": {
+                "locator": "record[1324]",
+                "page_title": "All Honorees | Academy of Achievement",
+                "structure": "record",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "1996",
+              "answer": "1996",
+              "source": "http://127.0.0.1:39020/real-award.html",
+              "evidence": "1996 | James Earl Jones | Tony Award for Lifetime Achievement",
+              "label": "",
+              "section": "All Honorees",
+              "kind": "year",
+              "score": 5.7,
+              "signals": {
+                "locator": "record[61]",
+                "page_title": "All Honorees | Academy of Achievement",
+                "structure": "record",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:39020/real-award.html",
+              "final": "http://127.0.0.1:39020/real-award.html",
+              "status": 200,
+              "bytes": 738478,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 2.4436
+        }
+      }
+    },
+    {
+      "id": "award-record",
+      "answer_ok": false,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "In what year did Elin Voss receive the Cedar Prize?",
+            "url": "http://127.0.0.1:39020/award-record.html",
+            "kind": "year",
+            "terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "in what year did elin voss receive the cedar prize?",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.2800097465515137e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "1987",
+              "answer": "1987",
+              "source": "http://127.0.0.1:39020/award-record.html",
+              "evidence": "1987 | Elin Voss | National Science Medal",
+              "label": "",
+              "section": "Honorees",
+              "kind": "year",
+              "score": 9.2,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "record[2]",
+                "structure": "record",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "unsupported"
+          ],
+          "reader_state": "no_evidence",
+          "top_candidates": [
+            {
+              "raw": "1987",
+              "answer": "1987",
+              "source": "http://127.0.0.1:39020/award-record.html",
+              "evidence": "1987 | Elin Voss | National Science Medal",
+              "label": "",
+              "section": "Honorees",
+              "kind": "year",
+              "score": 5.2,
+              "signals": {
+                "locator": "record[2]",
+                "page_title": "Ridge Council records",
+                "structure": "record",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:39020/award-record.html",
+              "final": "http://127.0.0.1:39020/award-record.html",
+              "status": 200,
+              "bytes": 208,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 1.271
+        }
+      }
+    },
+    {
+      "id": "foundation-record",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "1976",
+        "sources": [
+          "http://127.0.0.1:39020/foundation-record.html"
+        ],
+        "confidence": 0.82,
+        "evidence": "1976 | Ridge Works | Founded in Westport",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "In what year was Ridge Works founded?",
+            "url": "http://127.0.0.1:39020/foundation-record.html",
+            "kind": "year",
+            "terms": [
+              "year",
+              "ridge",
+              "works",
+              "founded"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "year",
+              "ridge",
+              "works",
+              "founded"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "in what year was ridge works founded?",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.0100076906383038e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "1976",
+              "answer": "1976",
+              "source": "http://127.0.0.1:39020/foundation-record.html",
+              "evidence": "1976 | Ridge Works | Founded in Westport",
+              "label": "",
+              "section": "Founded companies",
+              "kind": "year",
+              "score": 10.8,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "record[1]",
+                "structure": "record",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "1976",
+            "answer": "1976",
+            "source": "http://127.0.0.1:39020/foundation-record.html",
+            "evidence": "1976 | Ridge Works | Founded in Westport",
+            "label": "",
+            "section": "Founded companies",
+            "kind": "year",
+            "score": 10.8,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "record[1]",
+              "structure": "record",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:39020/foundation-record.html",
+              "final": "http://127.0.0.1:39020/foundation-record.html",
+              "status": 200,
+              "bytes": 189,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 1.1643
+        }
+      }
+    },
+    {
+      "id": "wrong-person",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "In what year did Elin Voss receive the Cedar Prize?",
+            "url": "http://127.0.0.1:39020/wrong-person.html",
+            "kind": "year",
+            "terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "in what year did elin voss receive the cedar prize?",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.0899966582655907e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "1987",
+              "answer": "1987",
+              "source": "http://127.0.0.1:39020/wrong-person.html",
+              "evidence": "1987 | Marin Shaw | Biochemist",
+              "label": "",
+              "section": "Honorees",
+              "kind": "year",
+              "score": 6.0,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "record[2]",
+                "structure": "record",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "unsupported"
+          ],
+          "reader_state": "no_evidence",
+          "top_candidates": [
+            {
+              "raw": "1987",
+              "answer": "1987",
+              "source": "http://127.0.0.1:39020/wrong-person.html",
+              "evidence": "1987 | Marin Shaw | Biochemist",
+              "label": "",
+              "section": "Honorees",
+              "kind": "year",
+              "score": 2.0,
+              "signals": {
+                "locator": "record[2]",
+                "page_title": "Ridge Council records",
+                "structure": "record",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:39020/wrong-person.html",
+              "final": "http://127.0.0.1:39020/wrong-person.html",
+              "status": 200,
+              "bytes": 197,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 1.2371
+        }
+      }
+    },
+    {
+      "id": "wrong-award",
+      "answer_ok": false,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "1987",
+        "sources": [
+          "http://127.0.0.1:39020/wrong-award.html"
+        ],
+        "confidence": 0.78,
+        "evidence": "1987 | Elin Voss | Biochemist",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "In what year did Elin Voss receive the Cedar Prize?",
+            "url": "http://127.0.0.1:39020/wrong-award.html",
+            "kind": "year",
+            "terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "in what year did elin voss receive the cedar prize?",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 9.899958968162537e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "1987",
+              "answer": "1987",
+              "source": "http://127.0.0.1:39020/wrong-award.html",
+              "evidence": "1987 | Elin Voss | Biochemist",
+              "label": "",
+              "section": "Honorees",
+              "kind": "year",
+              "score": 9.2,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "record[2]",
+                "structure": "record",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "1987",
+            "answer": "1987",
+            "source": "http://127.0.0.1:39020/wrong-award.html",
+            "evidence": "1987 | Elin Voss | Biochemist",
+            "label": "",
+            "section": "Honorees",
+            "kind": "year",
+            "score": 9.2,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "record[2]",
+              "structure": "record",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:39020/wrong-award.html",
+              "final": "http://127.0.0.1:39020/wrong-award.html",
+              "status": 200,
+              "bytes": 196,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 1.2654
+        }
+      }
+    },
+    {
+      "id": "unseen-attribute",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "1994",
+        "sources": [
+          "http://127.0.0.1:39020/unseen-attribute.html"
+        ],
+        "confidence": 0.78,
+        "evidence": "1994 | Elin Voss | Biochemist",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "In what year did Elin Voss receive the Cedar Prize?",
+            "url": "http://127.0.0.1:39020/unseen-attribute.html",
+            "kind": "year",
+            "terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "in what year did elin voss receive the cedar prize?",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.0499963536858559e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "1994",
+              "answer": "1994",
+              "source": "http://127.0.0.1:39020/unseen-attribute.html",
+              "evidence": "1994 | Elin Voss | Biochemist",
+              "label": "",
+              "section": "Honorees",
+              "kind": "year",
+              "score": 9.2,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "record[2]",
+                "structure": "record",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "1994",
+            "answer": "1994",
+            "source": "http://127.0.0.1:39020/unseen-attribute.html",
+            "evidence": "1994 | Elin Voss | Biochemist",
+            "label": "",
+            "section": "Honorees",
+            "kind": "year",
+            "score": 9.2,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "record[2]",
+              "structure": "record",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:39020/unseen-attribute.html",
+              "final": "http://127.0.0.1:39020/unseen-attribute.html",
+              "status": 200,
+              "bytes": 196,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 1.2556
+        }
+      }
+    },
+    {
+      "id": "conflicting-records",
+      "answer_ok": false,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "1987",
+        "sources": [
+          "http://127.0.0.1:39020/conflicting-records.html"
+        ],
+        "confidence": 0.78,
+        "evidence": "1987 | Elin Voss | Biochemist",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "In what year did Elin Voss receive the Cedar Prize?",
+            "url": "http://127.0.0.1:39020/conflicting-records.html",
+            "kind": "year",
+            "terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "in what year did elin voss receive the cedar prize?",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.00000761449337e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "1987",
+              "answer": "1987",
+              "source": "http://127.0.0.1:39020/conflicting-records.html",
+              "evidence": "1987 | Elin Voss | Biochemist",
+              "label": "",
+              "section": "Honorees",
+              "kind": "year",
+              "score": 9.2,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "record[2]",
+                "structure": "record",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "1987",
+            "answer": "1987",
+            "source": "http://127.0.0.1:39020/conflicting-records.html",
+            "evidence": "1987 | Elin Voss | Biochemist",
+            "label": "",
+            "section": "Honorees",
+            "kind": "year",
+            "score": 9.2,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "record[2]",
+              "structure": "record",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:39020/conflicting-records.html",
+              "final": "http://127.0.0.1:39020/conflicting-records.html",
+              "status": 200,
+              "bytes": 268,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 1.3604
+        }
+      }
+    },
+    {
+      "id": "wrong-event",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "In what year did Elin Voss receive the Cedar Prize?",
+            "url": "http://127.0.0.1:39020/wrong-event.html",
+            "kind": "year",
+            "terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "in what year did elin voss receive the cedar prize?",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 9.7999582067132e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "1962",
+              "answer": "1962",
+              "source": "http://127.0.0.1:39020/wrong-event.html",
+              "evidence": "1962 | Elin Voss | Biochemist",
+              "label": "",
+              "section": "Birth records",
+              "kind": "year",
+              "score": 9.2,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "record[1]",
+                "structure": "record",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "unsupported"
+          ],
+          "reader_state": "no_evidence",
+          "top_candidates": [
+            {
+              "raw": "1962",
+              "answer": "1962",
+              "source": "http://127.0.0.1:39020/wrong-event.html",
+              "evidence": "1962 | Elin Voss | Biochemist",
+              "label": "",
+              "section": "Birth records",
+              "kind": "year",
+              "score": 5.2,
+              "signals": {
+                "locator": "record[1]",
+                "page_title": "Ridge Council records",
+                "structure": "record",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:39020/wrong-event.html",
+              "final": "http://127.0.0.1:39020/wrong-event.html",
+              "status": 200,
+              "bytes": 156,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 1.1804
+        }
+      }
+    }
+  ],
+  "health_after_baseline": {
+    "ready": true,
+    "device": "cuda",
+    "hip": null,
+    "pid": 14520,
+    "startup_token": "ca73508ca2c5404fbc3227a6d96e7936",
+    "backend_source_sha256": {
+      "model_server.py": "14e840e32fe34ca594eb4fb0dadd89fc67768fb9026ac3359734a021c5190fc2",
+      "model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+      "selector.py": "94ef26d4d5ad916437a4f21bf4c8f93cf9f59e269944787cb4bd366c350be487",
+      "model_protocol.py": "8ba6730e160eac47d8231985e1293bb981a5a63ef9b475cf46daf31ef17bdfb0",
+      "model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+      "normalize.py": "6a4cb8311c29318d788c97a3e64cffa3c4085e595a0e1e9a2d5c418fa540e41c",
+      "types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512"
+    },
+    "software": {
+      "torch": "2.9.1+cu128",
+      "transformers": "4.57.1",
+      "tokenizers": "0.22.1",
+      "safetensors": "0.6.2",
+      "accelerate": "1.11.0"
+    },
+    "parameters": 4022468096,
+    "assets": {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "verified_files": 12,
+      "full_sha256": false,
+      "weight_shards": 3
+    },
+    "warmup_reply": {
+      "candidate": -1,
+      "passage": 0,
+      "answer": "7"
+    },
+    "torch": "2.9.1+cu128",
+    "startup_seconds": 11.432048900052905,
+    "calls": 16,
+    "outcomes": {
+      "selected": 8,
+      "unsupported": 4,
+      "supported": 4
+    },
+    "active_request": null,
+    "busy_rejections": 0,
+    "recent_requests": [
+      {
+        "request_id": "warmup",
+        "mode": "select",
+        "input_tokens": 268,
+        "packing_seconds": 0.01167680008802563,
+        "transfer_seconds": 0.00223129999358207,
+        "generated_tokens": 14,
+        "stop_reason": "completed",
+        "generation_seconds": 1.3805214000167325,
+        "prefill_and_first_token_seconds": 0.7782896999269724
+      },
+      {
+        "request_id": "798f8e492dd7497e8d967ae581535601",
+        "mode": "select",
+        "input_tokens": 1339,
+        "packing_seconds": 0.005758399958722293,
+        "transfer_seconds": 0.0023777999449521303,
+        "generated_tokens": 17,
+        "stop_reason": "completed",
+        "generation_seconds": 1.0697527000447735,
+        "prefill_and_first_token_seconds": 0.2976346000796184
+      },
+      {
+        "request_id": "16702e25f57541eeb4bece71cc7d240f",
+        "mode": "verify",
+        "input_tokens": 1280,
+        "packing_seconds": 0.00486720004118979,
+        "transfer_seconds": 0.002358500030823052,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.5824020999716595,
+        "prefill_and_first_token_seconds": 0.2670054999180138
+      },
+      {
+        "request_id": "64fcce610a7749329f3d2ae526cd9539",
+        "mode": "select",
+        "input_tokens": 774,
+        "packing_seconds": 0.003197200014255941,
+        "transfer_seconds": 0.0016171999741345644,
+        "generated_tokens": 17,
+        "stop_reason": "completed",
+        "generation_seconds": 0.8705778999719769,
+        "prefill_and_first_token_seconds": 0.13748340005986392
+      },
+      {
+        "request_id": "b86270aaf65841a78258637986e4b916",
+        "mode": "verify",
+        "input_tokens": 715,
+        "packing_seconds": 0.003675200045108795,
+        "transfer_seconds": 0.001743100001476705,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.3838359999936074,
+        "prefill_and_first_token_seconds": 0.12592159991618246
+      },
+      {
+        "request_id": "531524ca6254464890bcb8499a121598",
+        "mode": "select",
+        "input_tokens": 685,
+        "packing_seconds": 0.0028956999303773046,
+        "transfer_seconds": 0.0014891000464558601,
+        "generated_tokens": 17,
+        "stop_reason": "completed",
+        "generation_seconds": 0.7968774000182748,
+        "prefill_and_first_token_seconds": 0.11803090001922101
+      },
+      {
+        "request_id": "dc11754d9d6e480a910e183738c834ab",
+        "mode": "verify",
+        "input_tokens": 626,
+        "packing_seconds": 0.0028818000573664904,
+        "transfer_seconds": 0.0013401999603956938,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.3528338000178337,
+        "prefill_and_first_token_seconds": 0.09826120000798255
+      },
+      {
+        "request_id": "e804394343914963ac46221877879019",
+        "mode": "select",
+        "input_tokens": 769,
+        "packing_seconds": 0.003174800076521933,
+        "transfer_seconds": 0.001755499979481101,
+        "generated_tokens": 17,
+        "stop_reason": "completed",
+        "generation_seconds": 0.8503862000070512,
+        "prefill_and_first_token_seconds": 0.13498019997496158
+      },
+      {
+        "request_id": "2386719fd1e14f2db78956caff2d41dd",
+        "mode": "verify",
+        "input_tokens": 710,
+        "packing_seconds": 0.0026440999936312437,
+        "transfer_seconds": 0.0012039999710395932,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.37164869997650385,
+        "prefill_and_first_token_seconds": 0.12484760000370443
+      },
+      {
+        "request_id": "e4779b89c40246bca2e7b696a6fb45bb",
+        "mode": "select",
+        "input_tokens": 776,
+        "packing_seconds": 0.0031515000155195594,
+        "transfer_seconds": 0.0016193999908864498,
+        "generated_tokens": 17,
+        "stop_reason": "completed",
+        "generation_seconds": 0.8667325000278652,
+        "prefill_and_first_token_seconds": 0.13592590007465333
+      },
+      {
+        "request_id": "f001277d8f894d71aaf026b9f5a5881a",
+        "mode": "verify",
+        "input_tokens": 717,
+        "packing_seconds": 0.002653299947269261,
+        "transfer_seconds": 0.0012076999992132187,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.38380190008319914,
+        "prefill_and_first_token_seconds": 0.12905600003432482
+      },
+      {
+        "request_id": "45dfe2259dcc43bdb70547145351278a",
+        "mode": "select",
+        "input_tokens": 779,
+        "packing_seconds": 0.0031799999997019768,
+        "transfer_seconds": 0.0016005999641492963,
+        "generated_tokens": 17,
+        "stop_reason": "completed",
+        "generation_seconds": 0.8620829000137746,
+        "prefill_and_first_token_seconds": 0.13703380001243204
+      },
+      {
+        "request_id": "d4988cec88c34efcae23cf0aec4f08ef",
+        "mode": "verify",
+        "input_tokens": 720,
+        "packing_seconds": 0.0026968999300152063,
+        "transfer_seconds": 0.0019530000863596797,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.3779833000153303,
+        "prefill_and_first_token_seconds": 0.11911799991503358
+      },
+      {
+        "request_id": "338f6c84e4444f949f28d5d97125c885",
+        "mode": "select",
+        "input_tokens": 936,
+        "packing_seconds": 0.0033282999647781253,
+        "transfer_seconds": 0.0022316999966278672,
+        "generated_tokens": 17,
+        "stop_reason": "completed",
+        "generation_seconds": 0.9224310000427067,
+        "prefill_and_first_token_seconds": 0.1823426999617368
+      },
+      {
+        "request_id": "e77a0272e05e46f98e22843f175fda3e",
+        "mode": "verify",
+        "input_tokens": 877,
+        "packing_seconds": 0.0033100999426096678,
+        "transfer_seconds": 0.0015241000801324844,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.42078619997482747,
+        "prefill_and_first_token_seconds": 0.15427129995077848
+      },
+      {
+        "request_id": "581d4f1851fb4ca39f019509de0ade38",
+        "mode": "select",
+        "input_tokens": 694,
+        "packing_seconds": 0.0028605000115931034,
+        "transfer_seconds": 0.0014397999038919806,
+        "generated_tokens": 17,
+        "stop_reason": "completed",
+        "generation_seconds": 0.8102048001019284,
+        "prefill_and_first_token_seconds": 0.11961310007609427
+      },
+      {
+        "request_id": "bc9ce43f99a74ab88103ad4d2a763ed9",
+        "mode": "verify",
+        "input_tokens": 635,
+        "packing_seconds": 0.0026132999919354916,
+        "transfer_seconds": 0.0011839000508189201,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.35600250004790723,
+        "prefill_and_first_token_seconds": 0.1049073999747634
+      }
+    ],
+    "context_limit": 1536,
+    "token_stats": {
+      "max_input": 1339,
+      "generated": 198,
+      "pruned_requests": 0
+    },
+    "device_memory_bytes": 12878086144,
+    "peak_vram_bytes": 8914238976,
+    "allocated_vram_bytes": 8061994496,
+    "reserved_vram_bytes": 9055502336
+  },
+  "health_after": {
+    "ready": true,
+    "device": "cuda",
+    "hip": null,
+    "pid": 14520,
+    "startup_token": "ca73508ca2c5404fbc3227a6d96e7936",
+    "backend_source_sha256": {
+      "model_server.py": "14e840e32fe34ca594eb4fb0dadd89fc67768fb9026ac3359734a021c5190fc2",
+      "model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+      "selector.py": "94ef26d4d5ad916437a4f21bf4c8f93cf9f59e269944787cb4bd366c350be487",
+      "model_protocol.py": "8ba6730e160eac47d8231985e1293bb981a5a63ef9b475cf46daf31ef17bdfb0",
+      "model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+      "normalize.py": "6a4cb8311c29318d788c97a3e64cffa3c4085e595a0e1e9a2d5c418fa540e41c",
+      "types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512"
+    },
+    "software": {
+      "torch": "2.9.1+cu128",
+      "transformers": "4.57.1",
+      "tokenizers": "0.22.1",
+      "safetensors": "0.6.2",
+      "accelerate": "1.11.0"
+    },
+    "parameters": 4022468096,
+    "assets": {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "verified_files": 12,
+      "full_sha256": false,
+      "weight_shards": 3
+    },
+    "warmup_reply": {
+      "candidate": -1,
+      "passage": 0,
+      "answer": "7"
+    },
+    "torch": "2.9.1+cu128",
+    "startup_seconds": 11.432048900052905,
+    "calls": 32,
+    "outcomes": {
+      "selected": 16,
+      "unsupported": 6,
+      "supported": 10
+    },
+    "active_request": null,
+    "busy_rejections": 0,
+    "recent_requests": [
+      {
+        "request_id": "798f8e492dd7497e8d967ae581535601",
+        "mode": "select",
+        "input_tokens": 1339,
+        "packing_seconds": 0.005758399958722293,
+        "transfer_seconds": 0.0023777999449521303,
+        "generated_tokens": 17,
+        "stop_reason": "completed",
+        "generation_seconds": 1.0697527000447735,
+        "prefill_and_first_token_seconds": 0.2976346000796184
+      },
+      {
+        "request_id": "16702e25f57541eeb4bece71cc7d240f",
+        "mode": "verify",
+        "input_tokens": 1280,
+        "packing_seconds": 0.00486720004118979,
+        "transfer_seconds": 0.002358500030823052,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.5824020999716595,
+        "prefill_and_first_token_seconds": 0.2670054999180138
+      },
+      {
+        "request_id": "64fcce610a7749329f3d2ae526cd9539",
+        "mode": "select",
+        "input_tokens": 774,
+        "packing_seconds": 0.003197200014255941,
+        "transfer_seconds": 0.0016171999741345644,
+        "generated_tokens": 17,
+        "stop_reason": "completed",
+        "generation_seconds": 0.8705778999719769,
+        "prefill_and_first_token_seconds": 0.13748340005986392
+      },
+      {
+        "request_id": "b86270aaf65841a78258637986e4b916",
+        "mode": "verify",
+        "input_tokens": 715,
+        "packing_seconds": 0.003675200045108795,
+        "transfer_seconds": 0.001743100001476705,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.3838359999936074,
+        "prefill_and_first_token_seconds": 0.12592159991618246
+      },
+      {
+        "request_id": "531524ca6254464890bcb8499a121598",
+        "mode": "select",
+        "input_tokens": 685,
+        "packing_seconds": 0.0028956999303773046,
+        "transfer_seconds": 0.0014891000464558601,
+        "generated_tokens": 17,
+        "stop_reason": "completed",
+        "generation_seconds": 0.7968774000182748,
+        "prefill_and_first_token_seconds": 0.11803090001922101
+      },
+      {
+        "request_id": "dc11754d9d6e480a910e183738c834ab",
+        "mode": "verify",
+        "input_tokens": 626,
+        "packing_seconds": 0.0028818000573664904,
+        "transfer_seconds": 0.0013401999603956938,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.3528338000178337,
+        "prefill_and_first_token_seconds": 0.09826120000798255
+      },
+      {
+        "request_id": "e804394343914963ac46221877879019",
+        "mode": "select",
+        "input_tokens": 769,
+        "packing_seconds": 0.003174800076521933,
+        "transfer_seconds": 0.001755499979481101,
+        "generated_tokens": 17,
+        "stop_reason": "completed",
+        "generation_seconds": 0.8503862000070512,
+        "prefill_and_first_token_seconds": 0.13498019997496158
+      },
+      {
+        "request_id": "2386719fd1e14f2db78956caff2d41dd",
+        "mode": "verify",
+        "input_tokens": 710,
+        "packing_seconds": 0.0026440999936312437,
+        "transfer_seconds": 0.0012039999710395932,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.37164869997650385,
+        "prefill_and_first_token_seconds": 0.12484760000370443
+      },
+      {
+        "request_id": "e4779b89c40246bca2e7b696a6fb45bb",
+        "mode": "select",
+        "input_tokens": 776,
+        "packing_seconds": 0.0031515000155195594,
+        "transfer_seconds": 0.0016193999908864498,
+        "generated_tokens": 17,
+        "stop_reason": "completed",
+        "generation_seconds": 0.8667325000278652,
+        "prefill_and_first_token_seconds": 0.13592590007465333
+      },
+      {
+        "request_id": "f001277d8f894d71aaf026b9f5a5881a",
+        "mode": "verify",
+        "input_tokens": 717,
+        "packing_seconds": 0.002653299947269261,
+        "transfer_seconds": 0.0012076999992132187,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.38380190008319914,
+        "prefill_and_first_token_seconds": 0.12905600003432482
+      },
+      {
+        "request_id": "45dfe2259dcc43bdb70547145351278a",
+        "mode": "select",
+        "input_tokens": 779,
+        "packing_seconds": 0.0031799999997019768,
+        "transfer_seconds": 0.0016005999641492963,
+        "generated_tokens": 17,
+        "stop_reason": "completed",
+        "generation_seconds": 0.8620829000137746,
+        "prefill_and_first_token_seconds": 0.13703380001243204
+      },
+      {
+        "request_id": "d4988cec88c34efcae23cf0aec4f08ef",
+        "mode": "verify",
+        "input_tokens": 720,
+        "packing_seconds": 0.0026968999300152063,
+        "transfer_seconds": 0.0019530000863596797,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.3779833000153303,
+        "prefill_and_first_token_seconds": 0.11911799991503358
+      },
+      {
+        "request_id": "338f6c84e4444f949f28d5d97125c885",
+        "mode": "select",
+        "input_tokens": 936,
+        "packing_seconds": 0.0033282999647781253,
+        "transfer_seconds": 0.0022316999966278672,
+        "generated_tokens": 17,
+        "stop_reason": "completed",
+        "generation_seconds": 0.9224310000427067,
+        "prefill_and_first_token_seconds": 0.1823426999617368
+      },
+      {
+        "request_id": "e77a0272e05e46f98e22843f175fda3e",
+        "mode": "verify",
+        "input_tokens": 877,
+        "packing_seconds": 0.0033100999426096678,
+        "transfer_seconds": 0.0015241000801324844,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.42078619997482747,
+        "prefill_and_first_token_seconds": 0.15427129995077848
+      },
+      {
+        "request_id": "581d4f1851fb4ca39f019509de0ade38",
+        "mode": "select",
+        "input_tokens": 694,
+        "packing_seconds": 0.0028605000115931034,
+        "transfer_seconds": 0.0014397999038919806,
+        "generated_tokens": 17,
+        "stop_reason": "completed",
+        "generation_seconds": 0.8102048001019284,
+        "prefill_and_first_token_seconds": 0.11961310007609427
+      },
+      {
+        "request_id": "bc9ce43f99a74ab88103ad4d2a763ed9",
+        "mode": "verify",
+        "input_tokens": 635,
+        "packing_seconds": 0.0026132999919354916,
+        "transfer_seconds": 0.0011839000508189201,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.35600250004790723,
+        "prefill_and_first_token_seconds": 0.1049073999747634
+      },
+      {
+        "request_id": "c326216f51bd4f1ea61010611ca333e5",
+        "mode": "select",
+        "input_tokens": 1451,
+        "packing_seconds": 0.007755500031635165,
+        "transfer_seconds": 0.0039203999331220984,
+        "generated_tokens": 17,
+        "stop_reason": "completed",
+        "generation_seconds": 1.1571079000132158,
+        "prefill_and_first_token_seconds": 0.3459104000357911
+      },
+      {
+        "request_id": "a4bb4a8ce5a8465cb2aff0a648c3db40",
+        "mode": "verify",
+        "input_tokens": 1392,
+        "packing_seconds": 0.005256199976429343,
+        "transfer_seconds": 0.0023813999723643064,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.6507145001087338,
+        "prefill_and_first_token_seconds": 0.3249815000453964
+      },
+      {
+        "request_id": "8231b7678c464458af37f547c0a9fc44",
+        "mode": "select",
+        "input_tokens": 794,
+        "packing_seconds": 0.0034663999686017632,
+        "transfer_seconds": 0.0015528000658378005,
+        "generated_tokens": 17,
+        "stop_reason": "completed",
+        "generation_seconds": 0.8454733999678865,
+        "prefill_and_first_token_seconds": 0.13348159997258335
+      },
+      {
+        "request_id": "3749df72f1074bb1a96b38297277c06b",
+        "mode": "verify",
+        "input_tokens": 735,
+        "packing_seconds": 0.0029697000281885266,
+        "transfer_seconds": 0.0013540000654757023,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.383159099961631,
+        "prefill_and_first_token_seconds": 0.12904869997873902
+      },
+      {
+        "request_id": "57ddbb27956a4f72803f535f6863c2d9",
+        "mode": "select",
+        "input_tokens": 706,
+        "packing_seconds": 0.0029666998889297247,
+        "transfer_seconds": 0.0017176000401377678,
+        "generated_tokens": 17,
+        "stop_reason": "completed",
+        "generation_seconds": 0.8251342000439763,
+        "prefill_and_first_token_seconds": 0.11632829997688532
+      },
+      {
+        "request_id": "a64cd1819fd445e0ac420fb0d1804d36",
+        "mode": "verify",
+        "input_tokens": 647,
+        "packing_seconds": 0.0025884000351652503,
+        "transfer_seconds": 0.00113619992043823,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.3612738000229001,
+        "prefill_and_first_token_seconds": 0.11743800004478544
+      },
+      {
+        "request_id": "9b426e6521dd4149ac5bd646caaaf92b",
+        "mode": "select",
+        "input_tokens": 789,
+        "packing_seconds": 0.0037091999547556043,
+        "transfer_seconds": 0.001536400057375431,
+        "generated_tokens": 17,
+        "stop_reason": "completed",
+        "generation_seconds": 0.8461820000084117,
+        "prefill_and_first_token_seconds": 0.13309239991940558
+      },
+      {
+        "request_id": "f92707e9c07e48ab922a9ba607a1d57c",
+        "mode": "verify",
+        "input_tokens": 730,
+        "packing_seconds": 0.0029322999762371182,
+        "transfer_seconds": 0.001358299981802702,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.39771599997766316,
+        "prefill_and_first_token_seconds": 0.12902430002577603
+      },
+      {
+        "request_id": "77d4f53487904c79a88f444ade54f813",
+        "mode": "select",
+        "input_tokens": 796,
+        "packing_seconds": 0.003024199977517128,
+        "transfer_seconds": 0.0016779000870883465,
+        "generated_tokens": 17,
+        "stop_reason": "completed",
+        "generation_seconds": 0.83326169999782,
+        "prefill_and_first_token_seconds": 0.1366959000006318
+      },
+      {
+        "request_id": "1dec33631eda4cb8aa7639c3e8184430",
+        "mode": "verify",
+        "input_tokens": 737,
+        "packing_seconds": 0.0027704000240191817,
+        "transfer_seconds": 0.0013555999612435699,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.37269450002349913,
+        "prefill_and_first_token_seconds": 0.12651349999941885
+      },
+      {
+        "request_id": "7ab3e8cf1aa24bafb082a019c761b6c3",
+        "mode": "select",
+        "input_tokens": 790,
+        "packing_seconds": 0.0034904000349342823,
+        "transfer_seconds": 0.0015289000002667308,
+        "generated_tokens": 17,
+        "stop_reason": "completed",
+        "generation_seconds": 0.8719263999955729,
+        "prefill_and_first_token_seconds": 0.13534359994810075
+      },
+      {
+        "request_id": "711a96e8d5644fe8869a0069d030cfdd",
+        "mode": "verify",
+        "input_tokens": 731,
+        "packing_seconds": 0.002907899906858802,
+        "transfer_seconds": 0.0014153000665828586,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.3759405999444425,
+        "prefill_and_first_token_seconds": 0.1240692000137642
+      },
+      {
+        "request_id": "527befc1f80340ef808ba1f25e928c04",
+        "mode": "select",
+        "input_tokens": 962,
+        "packing_seconds": 0.003575399983674288,
+        "transfer_seconds": 0.0017571999924257398,
+        "generated_tokens": 17,
+        "stop_reason": "completed",
+        "generation_seconds": 0.8990013999864459,
+        "prefill_and_first_token_seconds": 0.18964160000905395
+      },
+      {
+        "request_id": "6281decaa5014adb8bdacde78c726933",
+        "mode": "verify",
+        "input_tokens": 903,
+        "packing_seconds": 0.003388300072401762,
+        "transfer_seconds": 0.0015305998967960477,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.45490900008007884,
+        "prefill_and_first_token_seconds": 0.1703880000859499
+      },
+      {
+        "request_id": "51b47dcb579145e2a3b9871480d98725",
+        "mode": "select",
+        "input_tokens": 708,
+        "packing_seconds": 0.0029109000461176038,
+        "transfer_seconds": 0.0015709999715909362,
+        "generated_tokens": 17,
+        "stop_reason": "completed",
+        "generation_seconds": 0.8149746999843046,
+        "prefill_and_first_token_seconds": 0.12092309992294759
+      },
+      {
+        "request_id": "e56eac02ecf84a25a14e57232e074904",
+        "mode": "verify",
+        "input_tokens": 649,
+        "packing_seconds": 0.002644500113092363,
+        "transfer_seconds": 0.001365399919450283,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.3535759000806138,
+        "prefill_and_first_token_seconds": 0.11579269997309893
+      }
+    ],
+    "context_limit": 1536,
+    "token_stats": {
+      "max_input": 1451,
+      "generated": 382,
+      "pruned_requests": 0
+    },
+    "device_memory_bytes": 12878086144,
+    "peak_vram_bytes": 9038059008,
+    "allocated_vram_bytes": 8061994496,
+    "reserved_vram_bytes": 9596567552
+  },
+  "memory_after_run": {
+    "used_mib": 10915,
+    "total_mib": 12282
+  },
+  "memory_after_shutdown": {
+    "used_mib": 1548,
+    "total_mib": 12282
+  },
+  "passed": 6,
+  "total": 8,
+  "comparison": {
+    "before_passed": 4,
+    "after_passed": 6,
+    "total": 8,
+    "wins": [
+      "real-award",
+      "award-record"
+    ],
+    "losses": []
+  }
+}

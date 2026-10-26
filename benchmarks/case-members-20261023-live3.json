@@ -1,0 +1,1640 @@
+{
+  "scope": "Actual public HTTP/search + full4B end-to-end diagnosis on exposed failures. Exact answer aliases and gold sources frozen before run; not holdout or official accuracy.",
+  "context_limit": 1536,
+  "comparison_mode": false,
+  "baseline_revision": null,
+  "baseline_source_sha256": null,
+  "case_path": "benchmarks/expansion-20261023-live-cases.json",
+  "fixture_path": null,
+  "max_depth": 2,
+  "budget": 24.0,
+  "live_web": true,
+  "browser": true,
+  "production_sha256": {
+    "app.py": "c0267c0441330bd30559f48d2f33916418992b8e21ec8dd1d09ae4773c23b73b",
+    "agent\\browser.py": "53ac9a99f3afcefcdb197cd9b2296c2d380910a782178fadb65235e548efc353",
+    "agent\\candidates.py": "c55cd074f50d1b0c944cf5552bd604caf4b313bada23accd73674d5d1d93d116",
+    "agent\\currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent\\engine.py": "763afa6e9897e5d605c364be68c562794594fb1e545ea7ffccca59cb7578f78f",
+    "agent\\evidence.py": "09da13b3f2fb17de30734c44ddad1c89b856ec682ff2e88a78a57773409c0089",
+    "agent\\knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent\\members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "agent\\model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+    "agent\\model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent\\model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+    "agent\\model_server.py": "8d326a696942d259697a6fba8586441bbbe4874042ea900c6d7788a2a0e9fd22",
+    "agent\\navigation.py": "0f849c0c570720114c45c14b0a5286fe409e5d26c2945fdc9f6c1a6922bb7718",
+    "agent\\network.py": "def1be3752f81423c313c2dfa83f6703ee063d7e98652cf0d816b423d0e2d9cb",
+    "agent\\normalize.py": "05e48fa0be8384aa656bf1280ba0be44545efa51b7d4451f0716d836d39a1973",
+    "agent\\output.py": "b983ab2efe31707b1c974344a32dc4b40b708541257695de89cac9e343b073eb",
+    "agent\\oyez.py": "e7a6054e97e602aa49715a42e5ed21609b372af5728d1d2c49ffa7073e7fa81e",
+    "agent\\parser.py": "60f4199ea41c63376ad347793e8b517b38557dcc238e266621cddef27481124e",
+    "agent\\planner.py": "8a617d26e724e8ebc5e604892e867ebcc9e417aa97cbd7e0feda4954cd5a1d2b",
+    "agent\\processes.py": "677c4372b40d1da0ffc0cf4120ca5b6be2fcf6b6c30f6ec17d0d8fae19e198c1",
+    "agent\\proofs.py": "0d7ae78df6ea9949c29f33c7b817dda352c75b3d99c960c3e987e37c7401faab",
+    "agent\\qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent\\resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent\\search.py": "fadb6dd66114dc2de17edf5dc012d469a3e10ac529ff3b062f43ea137dfaf398",
+    "agent\\selector.py": "be7c0fce11c10921d5cd4e3d1072d5a2ca5a62f1c328730384d19b0fecd19566",
+    "agent\\signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent\\types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent\\urls.py": "2118381f70d0f44174db25833b989cd36dab64b588b83085cddd65cad7412a1f",
+    "agent\\worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f",
+    "agent\\__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41"
+  },
+  "cases_sha256": "cc07562445c59e1a1f0c208f571ab47939486f91e13db39942505aefb0e405b9",
+  "fixtures_sha256": null,
+  "rows": [
+    {
+      "id": "simpleqa-37",
+      "answer_ok": false,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_evidence_rejected",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the first and last name of the woman whom the British linguist Bernard Comrie married in 1985?",
+            "url": "https://en.wikipedia.org/wiki/Bernard_Comrie",
+            "kind": "text",
+            "terms": [
+              "first",
+              "last",
+              "name",
+              "woman",
+              "whom",
+              "british",
+              "linguist",
+              "bernard",
+              "comrie",
+              "married",
+              "1985"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "first",
+              "last",
+              "woman",
+              "whom",
+              "british",
+              "linguist",
+              "bernard",
+              "comrie",
+              "married"
+            ],
+            "versions": [],
+            "year": "1985",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "en.wikipedia.org",
+            "focus": "what is the first and last name ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Bernard_Comrie",
+              "error": "http_403"
+            },
+            {
+              "url": "https://www.ancestry.com/genealogy/records/bernard-comrie-24-4qsy0r",
+              "error": "http_403"
+            },
+            {
+              "url": "https://de.wikipedia.org/wiki/Bernard_Comrie",
+              "error": "http_403"
+            },
+            {
+              "url": "https://www.linguistics.ucsb.edu/people/bernard-comrie",
+              "error": "http_403"
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Bill_Comrie",
+              "error": "http_403"
+            }
+          ],
+          "selector": [
+            "span",
+            "span"
+          ],
+          "timings": {
+            "resolver": 0.00011509994510561228
+          },
+          "search_requests": 7,
+          "llm_calls": 4,
+          "content_pages": 4,
+          "search_recovery": "starting_url_unavailable_or_exhausted",
+          "search_recovery_depth": 0,
+          "search_hints": [
+            "bernard comrie spouse"
+          ],
+          "search_hint_state": "expanded",
+          "model_selections": [
+            {
+              "raw": "Akiko Kumahira",
+              "answer": "Akiko Kumahira",
+              "source": "https://notablepeopleproject.org/bernard_comrie",
+              "evidence": "Beyond his professional life, Bernard Comrie is known for his deep engagement with the cultures behind the languages he studies. His long-term academic postings in the United States and Germany, and his extensive travels for field research and conferences, reflect a genuinely global outlook and adaptability. He is married to linguist Akiko Kumahira, sharing both a personal and professional life dedicated to the study of language.",
+              "label": "",
+              "section": "Personal Characteristics",
+              "kind": "text",
+              "score": 5.85446788846423,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[42]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            },
+            {
+              "raw": "Akiko Kumahira",
+              "answer": "Akiko Kumahira",
+              "source": "https://notablepeopleproject.org/bernard_comrie",
+              "evidence": "Beyond his professional life, Bernard Comrie is known for his deep engagement with the cultures behind the languages he studies. His long-term academic postings in the United States and Germany, and his extensive travels for field research and conferences, reflect a genuinely global outlook and adaptability. He is married to linguist Akiko Kumahira, sharing both a personal and professional life dedicated to the study of language.",
+              "label": "",
+              "section": "Personal Characteristics",
+              "kind": "text",
+              "score": 5.85446788846423,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[42]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "navigation": [
+            {
+              "state": "span",
+              "chosen": "https://notablepeopleproject.org/suggest-edits?biographyUrl=https%3A%2F%2Fnotablepeopleproject.org%2Fbernard_comrie"
+            }
+          ],
+          "discovery_refill": [
+            {
+              "depth": 1,
+              "urls": [
+                "https://www.linguistics.ucsb.edu/people/bernard-comrie",
+                "https://www.geni.com/people/Theresa-Comrie/6000000014465331859",
+                "https://en.wikipedia.org/wiki/Bill_Comrie"
+              ]
+            }
+          ],
+          "reader_state": "evidence_rejected",
+          "top_candidates": [
+            {
+              "raw": "Bernard Comrie",
+              "answer": "Bernard Comrie",
+              "source": "https://notablepeopleproject.org/bernard_comrie",
+              "evidence": "Bernard Comrie",
+              "label": "title",
+              "section": "Bernard Comrie",
+              "kind": "text",
+              "score": 6.1000000000000005,
+              "signals": {
+                "locator": "h1[8]",
+                "page_title": "Bernard Comrie - Notable People",
+                "structure": "field",
+                "qualifiers": {},
+                "field_value": "Bernard Comrie",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "Notable People",
+              "answer": "Notable People",
+              "source": "https://notablepeopleproject.org/bernard_comrie",
+              "evidence": "og:site_name: Notable People",
+              "label": "og:site_name",
+              "section": "",
+              "kind": "text",
+              "score": 6.05,
+              "signals": {
+                "locator": "meta[12]",
+                "page_title": "Bernard Comrie - Notable People",
+                "structure": "meta",
+                "qualifiers": {},
+                "field_value": "Notable People",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "Bernard Comrie - Notable People",
+              "answer": "Bernard Comrie - Notable People",
+              "source": "https://notablepeopleproject.org/bernard_comrie",
+              "evidence": "title: Bernard Comrie - Notable People",
+              "label": "title",
+              "section": "",
+              "kind": "text",
+              "score": 4.8500000000000005,
+              "signals": {
+                "locator": "meta[2]",
+                "page_title": "Bernard Comrie - Notable People",
+                "structure": "meta",
+                "qualifiers": {},
+                "field_value": "Bernard Comrie - Notable People",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "Welcome to Geni",
+              "answer": "Welcome to Geni",
+              "source": "https://www.geni.com/login",
+              "evidence": "Welcome to Geni",
+              "label": "title",
+              "section": "Welcome to Geni",
+              "kind": "text",
+              "score": 2.9000000000000004,
+              "signals": {
+                "locator": "h1[6]",
+                "page_title": "Family Tree - Geni",
+                "structure": "field",
+                "qualifiers": {},
+                "field_value": "Welcome to Geni",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [
+            {
+              "a": "Bernard Comrie",
+              "b": "Notable People",
+              "sources": [
+                "https://notablepeopleproject.org/bernard_comrie",
+                "https://notablepeopleproject.org/bernard_comrie"
+              ],
+              "margin": 0.05
+            }
+          ],
+          "fetches": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Bernard_Comrie",
+              "final": "https://en.wikipedia.org/wiki/Bernard_Comrie",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985+bernard+comrie+spouse",
+              "final": "https://www.bing.com/search?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985+bernard+comrie+spouse",
+              "status": 200,
+              "bytes": 121863,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985",
+              "final": "https://www.bing.com/search?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985",
+              "status": 200,
+              "bytes": 125798,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://html.duckduckgo.com/html/?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985+bernard+comrie+spouse",
+              "final": "https://html.duckduckgo.com/html/?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985+bernard+comrie+spouse",
+              "status": 202,
+              "bytes": 14420,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://html.duckduckgo.com/html/?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985",
+              "final": "https://html.duckduckgo.com/html/?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985",
+              "status": 202,
+              "bytes": 14370,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?format=rss&q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985+bernard+comrie+spouse",
+              "final": "https://www.bing.com/search?format=rss&q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985+bernard+comrie+spouse",
+              "status": 200,
+              "bytes": 7390,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://lite.duckduckgo.com/lite/?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985+bernard+comrie+spouse",
+              "final": "https://lite.duckduckgo.com/lite/?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985+bernard+comrie+spouse",
+              "status": 202,
+              "bytes": 14414,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://lite.duckduckgo.com/lite/?q=bernard+comrie+spouse",
+              "final": "https://lite.duckduckgo.com/lite/?q=bernard+comrie+spouse",
+              "status": 200,
+              "bytes": 24481,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.ancestry.com/genealogy/records/bernard-comrie-24-4qsy0r",
+              "final": "https://www.ancestry.com/genealogy/records/bernard-comrie-24-4qsy0r",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://de.wikipedia.org/wiki/Bernard_Comrie",
+              "final": "https://de.wikipedia.org/wiki/Bernard_Comrie",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://notablepeopleproject.org/bernard_comrie",
+              "final": "https://notablepeopleproject.org/bernard_comrie",
+              "status": 200,
+              "bytes": 128822,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.elinguistics.org/studentportal/linguists/comrie.cfm",
+              "final": "https://www.elinguistics.org/studentportal/linguists/comrie.cfm",
+              "status": 200,
+              "bytes": 6069,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://en.wikipedia.org/wiki/Bill_Comrie",
+              "final": "https://en.wikipedia.org/wiki/Bill_Comrie",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.geni.com/people/Theresa-Comrie/6000000014465331859",
+              "final": "https://www.geni.com/login",
+              "status": 200,
+              "bytes": 56132,
+              "error": "",
+              "redirects": [
+                "https://www.geni.com/people/Theresa-Comrie/6000000014465331859"
+              ],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.linguistics.ucsb.edu/people/bernard-comrie",
+              "final": "https://www.linguistics.ucsb.edu/people/bernard-comrie",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://notablepeopleproject.org/suggest-edits?biographyUrl=https%3A%2F%2Fnotablepeopleproject.org%2Fbernard_comrie",
+              "final": "https://notablepeopleproject.org/suggest-edits?biographyUrl=https%3A%2F%2Fnotablepeopleproject.org%2Fbernard_comrie",
+              "status": 200,
+              "bytes": 3513,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 11,
+          "pages_fetched": 4,
+          "seconds": 9.5111
+        }
+      },
+      "capture_path": "research\\case-members-20261023-live3\\simpleqa-37.json",
+      "capture_sha256": "9967867b379fa7a3003d1a2430321bc5d62392872ca763eb9b533a0828c4eea1",
+      "capture_omitted": []
+    },
+    {
+      "id": "simpleqa-395",
+      "answer_ok": true,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "University of Georgia and University of Alabama",
+        "sources": [
+          "https://api.oyez.org/cases/1966/37?labels=true"
+        ],
+        "confidence": 0.906,
+        "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+            "url": "https://en.wikipedia.org/wiki/Curtis_Publishing_Co._v._Butts",
+            "kind": "text",
+            "terms": [
+              "two",
+              "football",
+              "teams",
+              "mentioned",
+              "libel",
+              "case",
+              "against",
+              "saturday",
+              "evening",
+              "post",
+              "1963"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "two",
+              "football",
+              "teams",
+              "mentioned",
+              "libel",
+              "case",
+              "against",
+              "saturday",
+              "evening",
+              "post"
+            ],
+            "versions": [],
+            "year": "1963",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 2,
+            "negations": [],
+            "domain": "en.wikipedia.org",
+            "focus": "what two football teams were mentioned ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Curtis_Publishing_Co._v._Butts",
+              "error": "http_403"
+            },
+            {
+              "url": "https://www.saturdayeveningpost.com/2013/03/curtis-publishing-butts/",
+              "error": "http_403"
+            },
+            {
+              "url": "https://www.saturdayeveningpost.com/sep-keyword/curtis-publishing/",
+              "error": "http_403"
+            },
+            {
+              "url": "https://law.justia.com/cases/federal/appellate-courts/F2/351/702/278587/",
+              "error": "http_403"
+            }
+          ],
+          "selector": [
+            "span",
+            "span"
+          ],
+          "timings": {
+            "resolver": 2.1300045773386955e-05
+          },
+          "search_requests": 7,
+          "llm_calls": 5,
+          "content_pages": 5,
+          "search_recovery": "starting_url_unavailable_or_exhausted",
+          "search_recovery_depth": 0,
+          "search_hints": [
+            "saturday evening post libel teams"
+          ],
+          "search_hint_state": "expanded",
+          "model_selections": [
+            {
+              "raw": "Georgia and Alabama",
+              "answer": "Georgia and Alabama",
+              "source": "https://gallery.library.vanderbilt.edu/items/show/11",
+              "evidence": "A compilation of Fred Russell’s coverage of a libel suit filed by Georgia’s head coach Wally Butts, 1905-1973, against The Saturday Evening Post . He sued for libel an Atlanta jury awarded Georgia Athletic Director Wally Butts $3.06 million in damages for a story published in the Saturday Evening Post that alleged he and Alabama head coach and athletic director, Paul W. “Bear” Bryant had conspired to fix the 1962 game between the two teams. Butts, who had lost his job as a result of the scandal, eventually collected $460,000.",
+              "label": "",
+              "section": "The Libel Case of Wally Butts vs. The Saturday Evening Post",
+              "kind": "text",
+              "score": 4.019486503108352,
+              "signals": {
+                "selector": "literal_spans",
+                "literal_spans": [
+                  "Georgia",
+                  "Alabama"
+                ],
+                "locator": "p[3]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            },
+            {
+              "raw": "University of Georgia and University of Alabama",
+              "answer": "University of Georgia and University of Alabama",
+              "source": "https://api.oyez.org/cases/1966/37?labels=true",
+              "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+              "label": "",
+              "section": "facts of the case",
+              "kind": "text",
+              "score": 14.231663905423373,
+              "signals": {
+                "selector": "literal_spans",
+                "literal_spans": [
+                  "University of Georgia",
+                  "University of Alabama"
+                ],
+                "locator": "oyez/facts_of_the_case/p[0]:0:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "navigation": [
+            {
+              "state": "span",
+              "chosen": ""
+            }
+          ],
+          "discovery_refill": [
+            {
+              "depth": 1,
+              "urls": [
+                "https://gradynewsource.uga.edu/the-story-of-a-magazines-failing-fix/",
+                "https://www.oyez.org/cases/1966/37",
+                "https://law.justia.com/cases/federal/appellate-courts/F2/351/702/278587/"
+              ]
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "University of Georgia and University of Alabama",
+            "answer": "University of Georgia and University of Alabama",
+            "source": "https://api.oyez.org/cases/1966/37?labels=true",
+            "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+            "label": "",
+            "section": "facts of the case",
+            "kind": "text",
+            "score": 14.231663905423373,
+            "signals": {
+              "selector": "literal_spans",
+              "literal_spans": [
+                "University of Georgia",
+                "University of Alabama"
+              ],
+              "locator": "oyez/facts_of_the_case/p[0]:0:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "https://en.wikipedia.org/wiki/Curtis_Publishing_Co._v._Butts",
+              "final": "https://en.wikipedia.org/wiki/Curtis_Publishing_Co._v._Butts",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963+saturday+evening+post+libel+teams",
+              "final": "https://www.bing.com/search?q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963+saturday+evening+post+libel+teams",
+              "status": 200,
+              "bytes": 123601,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://html.duckduckgo.com/html/?q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963+saturday+evening+post+libel+teams",
+              "final": "https://html.duckduckgo.com/html/?q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963+saturday+evening+post+libel+teams",
+              "status": 202,
+              "bytes": 14432,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://html.duckduckgo.com/html/?q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+              "final": "https://html.duckduckgo.com/html/?q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+              "status": 202,
+              "bytes": 14388,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+              "final": "https://www.bing.com/search?q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+              "status": 200,
+              "bytes": 123344,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?format=rss&q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963+saturday+evening+post+libel+teams",
+              "final": "https://www.bing.com/search?format=rss&q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963+saturday+evening+post+libel+teams",
+              "status": 200,
+              "bytes": 5399,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://lite.duckduckgo.com/lite/?q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963+saturday+evening+post+libel+teams",
+              "final": "https://lite.duckduckgo.com/lite/?q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963+saturday+evening+post+libel+teams",
+              "status": 202,
+              "bytes": 14456,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://lite.duckduckgo.com/lite/?q=saturday+evening+post+libel+teams",
+              "final": "https://lite.duckduckgo.com/lite/?q=saturday+evening+post+libel+teams",
+              "status": 200,
+              "bytes": 25703,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.saturdayeveningpost.com/sep-keyword/curtis-publishing/",
+              "final": "https://www.saturdayeveningpost.com/sep-keyword/curtis-publishing/",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.saturdayeveningpost.com/2013/03/curtis-publishing-butts/",
+              "final": "https://www.saturdayeveningpost.com/2013/03/curtis-publishing-butts/",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://gallery.library.vanderbilt.edu/items/show/11",
+              "final": "https://gallery.library.vanderbilt.edu/items/show/11",
+              "status": 200,
+              "bytes": 14667,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.wordplays.com/crossword-solver/Two-football-teams-mentioned-in-the-libel-case-against-'The-Saturday-Evening-Post'-in-1963",
+              "final": "https://www.wordplays.com/wordgames/signin.pl?mustsignin=1",
+              "status": 200,
+              "bytes": 17747,
+              "error": "",
+              "redirects": [
+                "https://www.wordplays.com/crossword-solver/Two-football-teams-mentioned-in-the-libel-case-against-'The-Saturday-Evening-Post'-in-1963"
+              ],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://law.justia.com/cases/federal/appellate-courts/F2/351/702/278587/",
+              "final": "https://law.justia.com/cases/federal/appellate-courts/F2/351/702/278587/",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://gallery.library.vanderbilt.edu/items/browse?advanced%5B0%5D%5Belement_id%5D=49&advanced%5B0%5D%5Btype%5D=is+exactly&advanced%5B0%5D%5Bterms%5D=Saturday+Evening+Post+Society%E2%80%94Trials%2C+litigation%2C+etc.",
+              "final": "https://gallery.library.vanderbilt.edu/items/browse?advanced%5B0%5D%5Belement_id%5D=49&advanced%5B0%5D%5Btype%5D=is+exactly&advanced%5B0%5D%5Bterms%5D=Saturday+Evening+Post+Society%E2%80%94Trials%2C+litigation%2C+etc.",
+              "status": 200,
+              "bytes": 11496,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.oyez.org/cases/1966/37",
+              "final": "https://www.oyez.org/cases/1966/37",
+              "status": 200,
+              "bytes": 2453,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://gradynewsource.uga.edu/the-story-of-a-magazines-failing-fix/",
+              "final": "https://gradynewsource.uga.edu/the-story-of-a-magazines-failing-fix/",
+              "status": 200,
+              "bytes": 128348,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://api.oyez.org/cases/1966/37?labels=true",
+              "final": "https://api.oyez.org/cases/1966/37?labels=true",
+              "status": 200,
+              "bytes": 31699,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 13,
+          "pages_fetched": 5,
+          "seconds": 11.0547
+        }
+      },
+      "capture_path": "research\\case-members-20261023-live3\\simpleqa-395.json",
+      "capture_sha256": "e6b63903d72f6041f328a4ffa7fc89f3ff14a9678e9edc08ba86a46eda95185e",
+      "capture_omitted": []
+    },
+    {
+      "id": "simpleqa-32",
+      "answer_ok": false,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_invalid_reply",
+        "diagnostics": {
+          "plan": {
+            "question": "What day, month, and year was Carrie Underwood's album \"Cry Pretty\" certified Gold by the RIAA?",
+            "url": "https://www.riaa.com/gold-platinum/?tab_active=default-award&se=cry+pretty",
+            "kind": "date",
+            "terms": [
+              "day",
+              "month",
+              "year",
+              "carrie",
+              "underwood",
+              "s",
+              "album",
+              "cry",
+              "pretty",
+              "certified",
+              "gold",
+              "riaa"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "day",
+              "month",
+              "year",
+              "carrie",
+              "underwood",
+              "s",
+              "album",
+              "cry",
+              "pretty",
+              "certified",
+              "gold",
+              "riaa"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "www.riaa.com",
+            "focus": "what day, month, and year was carrie underwood's album \"cry pretty\" certified gold by the riaa",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [
+            {
+              "url": "https://www.riaa.com/gold-platinum/?tab_active=default-award&se=cry+pretty",
+              "error": "http_403"
+            },
+            {
+              "url": "https://app.box.com/s/9xyembdkf4c103l1eppxnid6iu7jit6r",
+              "error": "http_404"
+            },
+            {
+              "url": "https://musicrow.com/2018/11/carrie-underwood-celebrates-pretty-riaa-certifications/",
+              "error": "http_403"
+            }
+          ],
+          "selector": [
+            "model_invalid_selection",
+            "model_invalid_selection"
+          ],
+          "timings": {
+            "resolver": 1.2299977242946625e-05
+          },
+          "search_requests": 7,
+          "llm_calls": 3,
+          "content_pages": 6,
+          "search_recovery": "starting_url_unavailable_or_exhausted",
+          "search_recovery_depth": 0,
+          "search_hints": [
+            "carrie underwood cry pretty gold certification date",
+            "cry pretty riaa gold date"
+          ],
+          "search_hint_state": "expanded",
+          "discovery_refill": [
+            {
+              "depth": 1,
+              "urls": [
+                "https://www.carrieunderwood.fm/news/News/carrie-celebrates-new-cry-pretty-riaa-certifications/",
+                "https://musicrow.com/2018/11/carrie-underwood-celebrates-pretty-riaa-certifications/"
+              ]
+            }
+          ],
+          "reader_state": "invalid_reply",
+          "top_candidates": [
+            {
+              "raw": "November 6, 2026",
+              "answer": "November 6, 2026",
+              "source": "https://newlore.ai/carrie-underwood",
+              "evidence": "Date: November 6, 2026 | Venue: Grand Ole Opry House | City: Nashville, TN | Type: ",
+              "label": "Date",
+              "section": "2. Verified live snapshot",
+              "kind": "date",
+              "score": 3.3,
+              "signals": {
+                "locator": "table[5]/row[0]/cell[0]",
+                "page_title": "Carrie Underwood",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 5,
+                  "row": 0,
+                  "columns": [
+                    "Date",
+                    "Venue",
+                    "City",
+                    "Type"
+                  ],
+                  "cells": [
+                    "November 6, 2026",
+                    "Grand Ole Opry House",
+                    "Nashville, TN",
+                    ""
+                  ],
+                  "column": 0
+                },
+                "field_value": "November 6, 2026",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "November 7, 2026",
+              "answer": "November 7, 2026",
+              "source": "https://newlore.ai/carrie-underwood",
+              "evidence": "Date: November 7, 2026 | Venue: Grand Ole Opry House | City: Nashville, TN | Type: ",
+              "label": "Date",
+              "section": "2. Verified live snapshot",
+              "kind": "date",
+              "score": 3.3,
+              "signals": {
+                "locator": "table[5]/row[1]/cell[0]",
+                "page_title": "Carrie Underwood",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 5,
+                  "row": 1,
+                  "columns": [
+                    "Date",
+                    "Venue",
+                    "City",
+                    "Type"
+                  ],
+                  "cells": [
+                    "November 7, 2026",
+                    "Grand Ole Opry House",
+                    "Nashville, TN",
+                    ""
+                  ],
+                  "column": 0
+                },
+                "field_value": "November 7, 2026",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "2/24/2020",
+              "answer": "2/24/2020",
+              "source": "https://www.carrieunderwoodofficial.com/carrie-underwoods-cry-pretty-album-certified-platinum-by-riaa/",
+              "evidence": "2/24/2020",
+              "label": "",
+              "section": "",
+              "kind": "date",
+              "score": 2.0,
+              "signals": {
+                "locator": "block[12]",
+                "page_title": "Carrie Underwood’s Cry Pretty Album Certified Platinum By RIAA - Carrie Underwood | Official Site",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "Feb 24 2020",
+              "answer": "Feb 24 2020",
+              "source": "https://www.mca.com/carrie-underwoods-cry-pretty-album-certified-platinum-by-riaa/",
+              "evidence": "Feb 24 2020",
+              "label": "",
+              "section": "",
+              "kind": "date",
+              "score": 2.0,
+              "signals": {
+                "locator": "block[19]",
+                "page_title": "CARRIE UNDERWOOD’S CRY PRETTY ALBUM CERTIFIED PLATINUM BY RIAA - MCA",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "11/20/2018",
+              "answer": "11/20/2018",
+              "source": "https://www.carrieunderwoodofficial.com/carrie-celebrates-new-cry-pretty-riaa-certifications/",
+              "evidence": "11/20/2018",
+              "label": "",
+              "section": "",
+              "kind": "date",
+              "score": 2.0,
+              "signals": {
+                "locator": "block[12]",
+                "page_title": "Carrie Celebrates New \"Cry Pretty\" RIAA Certifications - Carrie Underwood | Official Site",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "November 6th 2026",
+              "answer": "November 6th 2026",
+              "source": "https://www.carrieunderwoodofficial.com/carrie-underwoods-cry-pretty-album-certified-platinum-by-riaa/",
+              "evidence": "[0].name: Friday November 6th 2026 - Grand Ole Opry House | [0] { @context: http://schema.org | @type: MusicEvent | name: Friday November 6th 2026 - Grand Ole Opry House | startDate: 2026-11-06T19:00 }",
+              "label": "[0].name",
+              "section": "[0] { @context: http://schema.org | @type: MusicEvent | name: Friday November 6th 2026 - Grand Ole Opry House | startDate: 2026-11-06T19:00 }",
+              "kind": "date",
+              "score": 1.6806852819440055,
+              "signals": {
+                "locator": "script[17]/[0].name",
+                "page_title": "Carrie Underwood’s Cry Pretty Album Certified Platinum By RIAA - Carrie Underwood | Official Site",
+                "structure": "jsonld",
+                "qualifiers": {
+                  "identity": [
+                    "Friday November 6th 2026 - Grand Ole Opry House"
+                  ],
+                  "structured": true,
+                  "bindings": {
+                    "@context": "http://schema.org",
+                    "@type": "MusicEvent",
+                    "name": "Friday November 6th 2026 - Grand Ole Opry House",
+                    "startDate": "2026-11-06T19:00"
+                  },
+                  "schema_types": [
+                    "MusicEvent"
+                  ],
+                  "value_type": "scalar"
+                },
+                "field_value": "Friday November 6th 2026 - Grand Ole Opry House",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "November 6th 2026",
+              "answer": "November 6th 2026",
+              "source": "https://www.carrieunderwoodofficial.com/carrie-celebrates-new-cry-pretty-riaa-certifications/",
+              "evidence": "[0].name: Friday November 6th 2026 - Grand Ole Opry House | [0] { @context: http://schema.org | @type: MusicEvent | name: Friday November 6th 2026 - Grand Ole Opry House | startDate: 2026-11-06T19:00 }",
+              "label": "[0].name",
+              "section": "[0] { @context: http://schema.org | @type: MusicEvent | name: Friday November 6th 2026 - Grand Ole Opry House | startDate: 2026-11-06T19:00 }",
+              "kind": "date",
+              "score": 1.6806852819440055,
+              "signals": {
+                "locator": "script[17]/[0].name",
+                "page_title": "Carrie Celebrates New \"Cry Pretty\" RIAA Certifications - Carrie Underwood | Official Site",
+                "structure": "jsonld",
+                "qualifiers": {
+                  "identity": [
+                    "Friday November 6th 2026 - Grand Ole Opry House"
+                  ],
+                  "structured": true,
+                  "bindings": {
+                    "@context": "http://schema.org",
+                    "@type": "MusicEvent",
+                    "name": "Friday November 6th 2026 - Grand Ole Opry House",
+                    "startDate": "2026-11-06T19:00"
+                  },
+                  "schema_types": [
+                    "MusicEvent"
+                  ],
+                  "value_type": "scalar"
+                },
+                "field_value": "Friday November 6th 2026 - Grand Ole Opry House",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "November 7th 2026",
+              "answer": "November 7th 2026",
+              "source": "https://www.carrieunderwoodofficial.com/carrie-underwoods-cry-pretty-album-certified-platinum-by-riaa/",
+              "evidence": "[1].name: Saturday November 7th 2026 - Grand Ole Opry House | [1] { @context: http://schema.org | @type: MusicEvent | name: Saturday November 7th 2026 - Grand Ole Opry House | startDate: 2026-11-07T21:30 }",
+              "label": "[1].name",
+              "section": "[1] { @context: http://schema.org | @type: MusicEvent | name: Saturday November 7th 2026 - Grand Ole Opry House | startDate: 2026-11-07T21:30 }",
+              "kind": "date",
+              "score": 1.5708240530771944,
+              "signals": {
+                "locator": "script[17]/[1].name",
+                "page_title": "Carrie Underwood’s Cry Pretty Album Certified Platinum By RIAA - Carrie Underwood | Official Site",
+                "structure": "jsonld",
+                "qualifiers": {
+                  "identity": [
+                    "Saturday November 7th 2026 - Grand Ole Opry House"
+                  ],
+                  "structured": true,
+                  "bindings": {
+                    "@context": "http://schema.org",
+                    "@type": "MusicEvent",
+                    "name": "Saturday November 7th 2026 - Grand Ole Opry House",
+                    "startDate": "2026-11-07T21:30"
+                  },
+                  "schema_types": [
+                    "MusicEvent"
+                  ],
+                  "value_type": "scalar"
+                },
+                "field_value": "Saturday November 7th 2026 - Grand Ole Opry House",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [
+            {
+              "a": "November 6, 2026",
+              "b": "November 7, 2026",
+              "sources": [
+                "https://newlore.ai/carrie-underwood",
+                "https://newlore.ai/carrie-underwood"
+              ],
+              "margin": 0.0
+            }
+          ],
+          "fetches": [
+            {
+              "url": "https://www.riaa.com/gold-platinum/?tab_active=default-award&se=cry+pretty",
+              "final": "https://www.riaa.com/gold-platinum/?tab_active=default-award&se=cry+pretty",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa+carrie+underwood+cry+pretty+gold+certification+date+cry+pretty+riaa+gold+date",
+              "final": "https://www.bing.com/search?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa+carrie+underwood+cry+pretty+gold+certification+date+cry+pretty+riaa+gold+date",
+              "status": 200,
+              "bytes": 117442,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://html.duckduckgo.com/html/?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa+carrie+underwood+cry+pretty+gold+certification+date+cry+pretty+riaa+gold+date",
+              "final": "https://html.duckduckgo.com/html/?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa+carrie+underwood+cry+pretty+gold+certification+date+cry+pretty+riaa+gold+date",
+              "status": 202,
+              "bytes": 14518,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://html.duckduckgo.com/html/?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa",
+              "final": "https://html.duckduckgo.com/html/?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa",
+              "status": 202,
+              "bytes": 14356,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa",
+              "final": "https://www.bing.com/search?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa",
+              "status": 200,
+              "bytes": 128142,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.bing.com/search?format=rss&q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa+carrie+underwood+cry+pretty+gold+certification+date+cry+pretty+riaa+gold+date",
+              "final": "https://www.bing.com/search?format=rss&q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa+carrie+underwood+cry+pretty+gold+certification+date+cry+pretty+riaa+gold+date",
+              "status": 200,
+              "bytes": 7269,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://lite.duckduckgo.com/lite/?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa+carrie+underwood+cry+pretty+gold+certification+date+cry+pretty+riaa+gold+date",
+              "final": "https://lite.duckduckgo.com/lite/?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa+carrie+underwood+cry+pretty+gold+certification+date+cry+pretty+riaa+gold+date",
+              "status": 202,
+              "bytes": 14524,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://lite.duckduckgo.com/lite/?q=carrie+underwood+cry+pretty+gold+certification+date",
+              "final": "https://lite.duckduckgo.com/lite/?q=carrie+underwood+cry+pretty+gold+certification+date",
+              "status": 200,
+              "bytes": 25570,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.carrieunderwood.fm/news/news/carrie-underwoods-cry-pretty-album-certified-platinum-by-riaa/",
+              "final": "https://www.carrieunderwood.fm/news/news/carrie-underwoods-cry-pretty-album-certified-platinum-by-riaa/",
+              "status": 200,
+              "bytes": 46994,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.mca.com/carrie-underwoods-cry-pretty-album-certified-platinum-by-riaa/",
+              "final": "https://www.mca.com/carrie-underwoods-cry-pretty-album-certified-platinum-by-riaa/",
+              "status": 200,
+              "bytes": 166559,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.carrieunderwoodofficial.com/carrie-underwoods-cry-pretty-album-certified-platinum-by-riaa/",
+              "final": "https://www.carrieunderwoodofficial.com/carrie-underwoods-cry-pretty-album-certified-platinum-by-riaa/",
+              "status": 200,
+              "bytes": 126899,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.carrieunderwoodofficial.com/carrie-celebrates-new-cry-pretty-riaa-certifications/",
+              "final": "https://www.carrieunderwoodofficial.com/carrie-celebrates-new-cry-pretty-riaa-certifications/",
+              "status": 200,
+              "bytes": 115188,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://musicrow.com/2018/11/carrie-underwood-celebrates-pretty-riaa-certifications/",
+              "final": "https://musicrow.com/2018/11/carrie-underwood-celebrates-pretty-riaa-certifications/",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://www.carrieunderwood.fm/news/News/carrie-celebrates-new-cry-pretty-riaa-certifications/",
+              "final": "https://www.carrieunderwood.fm/news/News/carrie-celebrates-new-cry-pretty-riaa-certifications/",
+              "status": 200,
+              "bytes": 42243,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://app.box.com/s/9xyembdkf4c103l1eppxnid6iu7jit6r",
+              "final": "https://app.box.com/s/9xyembdkf4c103l1eppxnid6iu7jit6r",
+              "status": 404,
+              "bytes": 0,
+              "error": "http_404",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://newlore.ai/carrie-underwood",
+              "final": "https://newlore.ai/carrie-underwood",
+              "status": 200,
+              "bytes": 24241,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 13,
+          "pages_fetched": 6,
+          "seconds": 8.4898
+        }
+      },
+      "capture_path": "research\\case-members-20261023-live3\\simpleqa-32.json",
+      "capture_sha256": "e38c181d7891757e8a220709037b78c8d6ca1f4b3a715853822014a0fd45ee8b",
+      "capture_omitted": []
+    }
+  ],
+  "runner_sha256": "b255c61f8fb7dcbe1636e193b990f33bcf63d3afae06eae1e4502d1d23cbfeb9",
+  "health_before": {
+    "ready": true,
+    "device": "cuda",
+    "hip": null,
+    "pid": 37360,
+    "startup_token": "8b4e3b9e7b6a41ee802483c65962d8d0",
+    "backend_source_sha256": {
+      "model_server.py": "8d326a696942d259697a6fba8586441bbbe4874042ea900c6d7788a2a0e9fd22",
+      "model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+      "selector.py": "be7c0fce11c10921d5cd4e3d1072d5a2ca5a62f1c328730384d19b0fecd19566",
+      "model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+      "members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+      "model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+      "normalize.py": "05e48fa0be8384aa656bf1280ba0be44545efa51b7d4451f0716d836d39a1973",
+      "types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512"
+    },
+    "software": {
+      "torch": "2.9.1+cu128",
+      "transformers": "4.57.1",
+      "tokenizers": "0.22.1",
+      "safetensors": "0.6.2",
+      "accelerate": "1.11.0"
+    },
+    "parameters": 4022468096,
+    "assets": {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "verified_files": 12,
+      "full_sha256": false,
+      "weight_shards": 3
+    },
+    "warmup_reply": {
+      "candidate": -1,
+      "passage": 0,
+      "answer": "7"
+    },
+    "torch": "2.9.1+cu128",
+    "startup_seconds": 5.283601900096983,
+    "calls": 0,
+    "outcomes": {},
+    "active_request": null,
+    "busy_rejections": 0,
+    "recent_requests": [
+      {
+        "request_id": "warmup",
+        "mode": "select",
+        "input_tokens": 268,
+        "packing_seconds": 0.011182100046426058,
+        "transfer_seconds": 0.0009345000144094229,
+        "generated_tokens": 14,
+        "stop_reason": "completed",
+        "generation_seconds": 1.0321847000159323,
+        "prefill_and_first_token_seconds": 0.3929563999408856
+      }
+    ],
+    "context_limit": 1536,
+    "token_stats": {
+      "max_input": 268,
+      "generated": 14,
+      "pruned_requests": 0
+    },
+    "device_memory_bytes": 12878086144,
+    "peak_vram_bytes": 8141605888,
+    "allocated_vram_bytes": 8053474816,
+    "reserved_vram_bytes": 8185184256
+  },
+  "health_after": {
+    "ready": true,
+    "device": "cuda",
+    "hip": null,
+    "pid": 37360,
+    "startup_token": "8b4e3b9e7b6a41ee802483c65962d8d0",
+    "backend_source_sha256": {
+      "model_server.py": "8d326a696942d259697a6fba8586441bbbe4874042ea900c6d7788a2a0e9fd22",
+      "model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+      "selector.py": "be7c0fce11c10921d5cd4e3d1072d5a2ca5a62f1c328730384d19b0fecd19566",
+      "model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+      "members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+      "model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+      "normalize.py": "05e48fa0be8384aa656bf1280ba0be44545efa51b7d4451f0716d836d39a1973",
+      "types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512"
+    },
+    "software": {
+      "torch": "2.9.1+cu128",
+      "transformers": "4.57.1",
+      "tokenizers": "0.22.1",
+      "safetensors": "0.6.2",
+      "accelerate": "1.11.0"
+    },
+    "parameters": 4022468096,
+    "assets": {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "verified_files": 12,
+      "full_sha256": false,
+      "weight_shards": 3
+    },
+    "warmup_reply": {
+      "candidate": -1,
+      "passage": 0,
+      "answer": "7"
+    },
+    "torch": "2.9.1+cu128",
+    "startup_seconds": 5.283601900096983,
+    "calls": 12,
+    "outcomes": {
+      "expanded": 3,
+      "selected": 6,
+      "supported": 1,
+      "invalid_selection": 2
+    },
+    "active_request": null,
+    "busy_rejections": 0,
+    "recent_requests": [
+      {
+        "request_id": "warmup",
+        "mode": "select",
+        "input_tokens": 268,
+        "packing_seconds": 0.011182100046426058,
+        "transfer_seconds": 0.0009345000144094229,
+        "generated_tokens": 14,
+        "stop_reason": "completed",
+        "generation_seconds": 1.0321847000159323,
+        "prefill_and_first_token_seconds": 0.3929563999408856
+      },
+      {
+        "request_id": "9c7e8ad01b4940e98189b0b5fa4bf1cf",
+        "mode": "expand",
+        "input_tokens": 134,
+        "packing_seconds": 0.0013710000785067677,
+        "transfer_seconds": 0.0007605999708175659,
+        "generated_tokens": 20,
+        "stop_reason": "completed",
+        "generation_seconds": 0.9335911999223754,
+        "prefill_and_first_token_seconds": 0.054362399969249964
+      },
+      {
+        "request_id": "1dc9cabe0c914a2f9f9588c2141a0a9b",
+        "mode": "select",
+        "input_tokens": 1210,
+        "packing_seconds": 0.006133100017905235,
+        "transfer_seconds": 0.0022690000478178263,
+        "generated_tokens": 18,
+        "stop_reason": "completed",
+        "generation_seconds": 1.1540281999623403,
+        "prefill_and_first_token_seconds": 0.271564899943769
+      },
+      {
+        "request_id": "e5fe4539eaf34deaaf088e26485b8522",
+        "mode": "select",
+        "input_tokens": 628,
+        "packing_seconds": 0.0029799999902024865,
+        "transfer_seconds": 0.0012080000014975667,
+        "generated_tokens": 50,
+        "stop_reason": "completed",
+        "generation_seconds": 2.4567138999700546,
+        "prefill_and_first_token_seconds": 0.10107530001550913
+      },
+      {
+        "request_id": "959f4742929a4941879ae29557a6427a",
+        "mode": "select",
+        "input_tokens": 1210,
+        "packing_seconds": 0.0053521000081673265,
+        "transfer_seconds": 0.002236400032415986,
+        "generated_tokens": 18,
+        "stop_reason": "completed",
+        "generation_seconds": 1.1815428000409156,
+        "prefill_and_first_token_seconds": 0.26528419996611774
+      },
+      {
+        "request_id": "521057eb03fc46f6bec4c7c23f91454a",
+        "mode": "expand",
+        "input_tokens": 133,
+        "packing_seconds": 0.000977699994109571,
+        "transfer_seconds": 0.0006424000021070242,
+        "generated_tokens": 21,
+        "stop_reason": "completed",
+        "generation_seconds": 0.9937744999770075,
+        "prefill_and_first_token_seconds": 0.05806860001757741
+      },
+      {
+        "request_id": "9f4960e1bdb245e1b66e9241c568c49d",
+        "mode": "select",
+        "input_tokens": 1132,
+        "packing_seconds": 0.005468999966979027,
+        "transfer_seconds": 0.00212309998460114,
+        "generated_tokens": 13,
+        "stop_reason": "completed",
+        "generation_seconds": 0.8936220000032336,
+        "prefill_and_first_token_seconds": 0.2456013000337407
+      },
+      {
+        "request_id": "b37847e5d3194732a7c21ba85c3767cc",
+        "mode": "select",
+        "input_tokens": 1458,
+        "packing_seconds": 0.0055451999651268125,
+        "transfer_seconds": 0.002911200048401952,
+        "generated_tokens": 18,
+        "stop_reason": "completed",
+        "generation_seconds": 1.2756431999150664,
+        "prefill_and_first_token_seconds": 0.35604280000552535
+      },
+      {
+        "request_id": "f2fdf537bd0e4e2b877cdcfecaccc4d7",
+        "mode": "select",
+        "input_tokens": 1461,
+        "packing_seconds": 0.016486900043673813,
+        "transfer_seconds": 0.0029124999418854713,
+        "generated_tokens": 17,
+        "stop_reason": "completed",
+        "generation_seconds": 1.224952399963513,
+        "prefill_and_first_token_seconds": 0.3620767999673262
+      },
+      {
+        "request_id": "3132950fd1954bae8c4b00a694f0c94f",
+        "mode": "verify",
+        "input_tokens": 1458,
+        "packing_seconds": 0.016010299907065928,
+        "transfer_seconds": 0.002760500065051019,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.738099499954842,
+        "prefill_and_first_token_seconds": 0.34944529994390905
+      },
+      {
+        "request_id": "aa8b3d814d764ff197ed91efcdd1067a",
+        "mode": "expand",
+        "input_tokens": 134,
+        "packing_seconds": 0.001483700005337596,
+        "transfer_seconds": 0.0007034000009298325,
+        "generated_tokens": 24,
+        "stop_reason": "completed",
+        "generation_seconds": 1.1033477999735624,
+        "prefill_and_first_token_seconds": 0.049343799939379096
+      },
+      {
+        "request_id": "5340d88648504b3ba42df51ca2536728",
+        "mode": "select",
+        "input_tokens": 1354,
+        "packing_seconds": 0.010176399955525994,
+        "transfer_seconds": 0.0023378999903798103,
+        "generated_tokens": 22,
+        "stop_reason": "completed",
+        "generation_seconds": 1.434911899967119,
+        "prefill_and_first_token_seconds": 0.3134459999855608
+      },
+      {
+        "request_id": "f697b87dc5f843338d59f49dd3fb8e12",
+        "mode": "select",
+        "input_tokens": 1354,
+        "packing_seconds": 0.011977100046351552,
+        "transfer_seconds": 0.002398399985395372,
+        "generated_tokens": 22,
+        "stop_reason": "completed",
+        "generation_seconds": 1.3794897000771016,
+        "prefill_and_first_token_seconds": 0.3155451000202447
+      }
+    ],
+    "context_limit": 1536,
+    "token_stats": {
+      "max_input": 1461,
+      "generated": 263,
+      "pruned_requests": 4
+    },
+    "device_memory_bytes": 12878086144,
+    "peak_vram_bytes": 9045539328,
+    "allocated_vram_bytes": 8061994496,
+    "reserved_vram_bytes": 10003415040
+  },
+  "memory_after_run": {
+    "used_mib": 10635,
+    "total_mib": 12282
+  },
+  "memory_after_shutdown": {
+    "used_mib": 880,
+    "total_mib": 12282
+  },
+  "production_after_sha256": {
+    "app.py": "c0267c0441330bd30559f48d2f33916418992b8e21ec8dd1d09ae4773c23b73b",
+    "agent\\browser.py": "53ac9a99f3afcefcdb197cd9b2296c2d380910a782178fadb65235e548efc353",
+    "agent\\candidates.py": "c55cd074f50d1b0c944cf5552bd604caf4b313bada23accd73674d5d1d93d116",
+    "agent\\currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent\\engine.py": "763afa6e9897e5d605c364be68c562794594fb1e545ea7ffccca59cb7578f78f",
+    "agent\\evidence.py": "09da13b3f2fb17de30734c44ddad1c89b856ec682ff2e88a78a57773409c0089",
+    "agent\\knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent\\members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "agent\\model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+    "agent\\model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent\\model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+    "agent\\model_server.py": "8d326a696942d259697a6fba8586441bbbe4874042ea900c6d7788a2a0e9fd22",
+    "agent\\navigation.py": "0f849c0c570720114c45c14b0a5286fe409e5d26c2945fdc9f6c1a6922bb7718",
+    "agent\\network.py": "def1be3752f81423c313c2dfa83f6703ee063d7e98652cf0d816b423d0e2d9cb",
+    "agent\\normalize.py": "05e48fa0be8384aa656bf1280ba0be44545efa51b7d4451f0716d836d39a1973",
+    "agent\\output.py": "b983ab2efe31707b1c974344a32dc4b40b708541257695de89cac9e343b073eb",
+    "agent\\oyez.py": "e7a6054e97e602aa49715a42e5ed21609b372af5728d1d2c49ffa7073e7fa81e",
+    "agent\\parser.py": "60f4199ea41c63376ad347793e8b517b38557dcc238e266621cddef27481124e",
+    "agent\\planner.py": "8a617d26e724e8ebc5e604892e867ebcc9e417aa97cbd7e0feda4954cd5a1d2b",
+    "agent\\processes.py": "677c4372b40d1da0ffc0cf4120ca5b6be2fcf6b6c30f6ec17d0d8fae19e198c1",
+    "agent\\proofs.py": "0d7ae78df6ea9949c29f33c7b817dda352c75b3d99c960c3e987e37c7401faab",
+    "agent\\qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent\\resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent\\search.py": "fadb6dd66114dc2de17edf5dc012d469a3e10ac529ff3b062f43ea137dfaf398",
+    "agent\\selector.py": "be7c0fce11c10921d5cd4e3d1072d5a2ca5a62f1c328730384d19b0fecd19566",
+    "agent\\signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent\\types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent\\urls.py": "2118381f70d0f44174db25833b989cd36dab64b588b83085cddd65cad7412a1f",
+    "agent\\worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f",
+    "agent\\__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41"
+  },
+  "production_changed_during_run": false,
+  "passed": 0,
+  "total": 3
+}

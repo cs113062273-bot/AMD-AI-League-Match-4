@@ -1,0 +1,630 @@
+{
+  "scope": "Ranking-only URL text and clue lookup isolation with actual local HTTP.\n\nRecorded public result pages are replayed unchanged; no model or accuracy claim.\nThe numeric-year query proposal is measured separately and is not promoted.\n",
+  "baseline": "5629aafe9bfccd37ad2e1585b7fb4d0586864dbb",
+  "before": [
+    {
+      "id": "query-only",
+      "passed": true,
+      "targets": [],
+      "hits": [
+        "/bad",
+        "/bad"
+      ]
+    },
+    {
+      "id": "encoded",
+      "passed": true,
+      "targets": [],
+      "hits": [
+        "/bad",
+        "/bad"
+      ]
+    },
+    {
+      "id": "identifier",
+      "passed": false,
+      "targets": [
+        "http://127.0.0.1:1275/unrelated?query=render_mode"
+      ],
+      "hits": [
+        "/bad",
+        "/bad"
+      ]
+    },
+    {
+      "id": "mixed",
+      "passed": true,
+      "targets": [
+        "http://127.0.0.1:1275/answer",
+        "http://127.0.0.1:1275/unrelated?SE=Boreal+Instruments+support+phone"
+      ],
+      "hits": [
+        "/bad",
+        "/bad"
+      ]
+    },
+    {
+      "id": "fallback",
+      "passed": true,
+      "targets": [
+        "http://127.0.0.1:1275/answer"
+      ],
+      "hits": [
+        "/bad",
+        "/bad",
+        "/good"
+      ]
+    },
+    {
+      "id": "lookup",
+      "passed": false,
+      "targets": [
+        "https://www.wordplays.com/crossword-solver/Boreal-Instruments-support-phone",
+        "http://127.0.0.1:1275/answer"
+      ],
+      "hits": [
+        "/bad",
+        "/bad"
+      ]
+    },
+    {
+      "id": "puzzle",
+      "passed": true,
+      "targets": [
+        "https://www.wordplays.com/crossword-solver/cedar-tree"
+      ],
+      "hits": [
+        "/bad",
+        "/bad"
+      ]
+    },
+    {
+      "id": "identity",
+      "passed": false,
+      "targets": [],
+      "hits": [
+        "/bad",
+        "/bad"
+      ]
+    },
+    {
+      "id": "label",
+      "passed": true,
+      "targets": [
+        "http://127.0.0.1:1275/resource?q=Boreal+Instruments"
+      ],
+      "hits": [
+        "/bad",
+        "/bad"
+      ]
+    }
+  ],
+  "after": [
+    {
+      "id": "query-only",
+      "passed": true,
+      "targets": [],
+      "hits": [
+        "/bad",
+        "/bad"
+      ]
+    },
+    {
+      "id": "encoded",
+      "passed": true,
+      "targets": [],
+      "hits": [
+        "/bad",
+        "/bad"
+      ]
+    },
+    {
+      "id": "identifier",
+      "passed": true,
+      "targets": [],
+      "hits": [
+        "/bad",
+        "/bad"
+      ]
+    },
+    {
+      "id": "mixed",
+      "passed": true,
+      "targets": [
+        "http://127.0.0.1:1296/answer",
+        "http://127.0.0.1:1296/unrelated?SE=Boreal+Instruments+support+phone"
+      ],
+      "hits": [
+        "/bad",
+        "/bad"
+      ]
+    },
+    {
+      "id": "fallback",
+      "passed": true,
+      "targets": [
+        "http://127.0.0.1:1296/answer"
+      ],
+      "hits": [
+        "/bad",
+        "/bad",
+        "/good"
+      ]
+    },
+    {
+      "id": "lookup",
+      "passed": true,
+      "targets": [
+        "http://127.0.0.1:1296/answer"
+      ],
+      "hits": [
+        "/bad",
+        "/bad"
+      ]
+    },
+    {
+      "id": "puzzle",
+      "passed": true,
+      "targets": [
+        "https://www.wordplays.com/crossword-solver/cedar-tree"
+      ],
+      "hits": [
+        "/bad",
+        "/bad"
+      ]
+    },
+    {
+      "id": "identity",
+      "passed": false,
+      "targets": [],
+      "hits": [
+        "/bad",
+        "/bad"
+      ]
+    },
+    {
+      "id": "label",
+      "passed": true,
+      "targets": [
+        "http://127.0.0.1:1296/resource?q=Boreal+Instruments"
+      ],
+      "hits": [
+        "/bad",
+        "/bad"
+      ]
+    }
+  ],
+  "guards": [
+    {
+      "id": "query-echo",
+      "passed": true,
+      "actual": "https://example.org/contact"
+    },
+    {
+      "id": "encoded-key",
+      "passed": true,
+      "actual": "https://example.org/contact"
+    },
+    {
+      "id": "identity",
+      "passed": true,
+      "actual": "https://example.org/resource?package=Boreal+Instruments&id=8"
+    },
+    {
+      "id": "signed",
+      "passed": true,
+      "actual": "https://example.org/file?sig=abc&expires=99"
+    },
+    {
+      "id": "lookup",
+      "passed": true
+    },
+    {
+      "id": "subdomain",
+      "passed": true
+    },
+    {
+      "id": "lookalike",
+      "passed": true
+    },
+    {
+      "id": "editorial",
+      "passed": true
+    },
+    {
+      "id": "path-boundary",
+      "passed": true
+    },
+    {
+      "id": "navigation-echo",
+      "passed": true,
+      "before": [
+        2.0,
+        7.0
+      ],
+      "after": [
+        2.0,
+        7.0
+      ]
+    },
+    {
+      "id": "navigation-lookup",
+      "passed": true
+    },
+    {
+      "id": "navigation-puzzle-retained",
+      "passed": true
+    }
+  ],
+  "recorded": [
+    {
+      "id": "simpleqa-37-before-query",
+      "query": "bernard comrie spouse",
+      "capture_sha256": "721f1ca9aeb42b569abfbca623d5c3981d3348691b938749a63194f2c421bb3c",
+      "before": [
+        [
+          "https://en.wikipedia.org/wiki/Bernard_Comrie",
+          "Bernard Comrie - Wikipedia"
+        ],
+        [
+          "https://notablepeopleproject.org/bernard_comrie",
+          "Bernard Comrie - Notable People"
+        ],
+        [
+          "https://www.ancestry.com/genealogy/records/bernard-comrie-24-4qsy0r",
+          "Bernard Comrie - Ancestry\u00ae"
+        ],
+        [
+          "https://de.wikipedia.org/wiki/Bernard_Comrie",
+          "Bernard Comrie - Wikipedia"
+        ],
+        [
+          "https://www.elinguistics.org/studentportal/linguists/comrie.cfm",
+          "Bernard Comrie, Max Planck Institute for Evolutionary Anthropology ..."
+        ],
+        [
+          "https://fr.wikipedia.org/wiki/Bernard_Comrie",
+          "Bernard Comrie \u2014 Wikip\u00e9dia"
+        ],
+        [
+          "https://www.geni.com/people/Theresa-Comrie/6000000014465331859",
+          "Theresa Comrie (1948 - 1990) - Genealogy - Geni.com"
+        ],
+        [
+          "https://en.wikipedia.org/wiki/Bill_Comrie",
+          "Bill Comrie - Wikipedia"
+        ]
+      ],
+      "after": [
+        [
+          "https://en.wikipedia.org/wiki/Bernard_Comrie",
+          "Bernard Comrie - Wikipedia"
+        ],
+        [
+          "https://notablepeopleproject.org/bernard_comrie",
+          "Bernard Comrie - Notable People"
+        ],
+        [
+          "https://www.ancestry.com/genealogy/records/bernard-comrie-24-4qsy0r",
+          "Bernard Comrie - Ancestry\u00ae"
+        ],
+        [
+          "https://de.wikipedia.org/wiki/Bernard_Comrie",
+          "Bernard Comrie - Wikipedia"
+        ],
+        [
+          "https://www.elinguistics.org/studentportal/linguists/comrie.cfm",
+          "Bernard Comrie, Max Planck Institute for Evolutionary Anthropology ..."
+        ],
+        [
+          "https://fr.wikipedia.org/wiki/Bernard_Comrie",
+          "Bernard Comrie \u2014 Wikip\u00e9dia"
+        ],
+        [
+          "https://www.geni.com/people/Theresa-Comrie/6000000014465331859",
+          "Theresa Comrie (1948 - 1990) - Genealogy - Geni.com"
+        ],
+        [
+          "https://en.wikipedia.org/wiki/Bill_Comrie",
+          "Bill Comrie - Wikipedia"
+        ]
+      ],
+      "removed": [],
+      "added": []
+    },
+    {
+      "id": "simpleqa-37-after-query",
+      "query": "bernard comrie spouse 1985",
+      "capture_sha256": "aaf7f46a6740f0760642b22e9eae3225f0db2df61462f654aac0856724911d17",
+      "before": [
+        [
+          "https://www.wordplays.com/crossword-solver/Vor-und-Nachname-der-Frau,-die-der-britische-Linguist-Bernard-Comrie-1985-heiratete",
+          "Vor und Nachname der Frau, die der britische Linguist Bernard Comrie ..."
+        ],
+        [
+          "https://en.wikipedia.org/wiki/Bernard_Comrie",
+          "Bernard Comrie - Wikipedia"
+        ],
+        [
+          "https://www.mylife.com/bernard-comrie/e134032930596",
+          "Bernard S Comrie, 79 - Goleta, CA - Reputation & Contact Details"
+        ],
+        [
+          "https://www.fantascienza.com/cerca/nome%20e%20cognome%20della%20donna%20sposata%20da%20bernard%20comrie%20nel%201985/news/3",
+          "Ricerca: \u00abnome e cognome della donna sposata da bernard comrie nel 1985\u00bb"
+        ],
+        [
+          "https://www.academia.edu/31615644/Tense_Bernard_Comrie_1985_pdf",
+          "Tense - Bernard Comrie (1985).pdf - Academia"
+        ],
+        [
+          "https://archive.org/details/tense0000comr",
+          "Tense : Comrie, Bernard, 1947- : Free Download, Borrow, and Streaming ..."
+        ],
+        [
+          "https://www.scribd.com/document/946922517/Comrie-Bernard-Author-Tense-1985-Cambridge-University-Press-10-1017-cbo9781139165815-Libgen-li",
+          "Comprehensive Index of Names"
+        ],
+        [
+          "https://interior.gov.ng/ministry-of-interior-mandate/?SE=Bernard%20Comrie%20spouse%201985%20marriage%20personal%20life%20biography",
+          "Ministry of Interior"
+        ]
+      ],
+      "after": [
+        [
+          "https://en.wikipedia.org/wiki/Bernard_Comrie",
+          "Bernard Comrie - Wikipedia"
+        ],
+        [
+          "https://www.mylife.com/bernard-comrie/e134032930596",
+          "Bernard S Comrie, 79 - Goleta, CA - Reputation & Contact Details"
+        ],
+        [
+          "https://www.fantascienza.com/cerca/nome%20e%20cognome%20della%20donna%20sposata%20da%20bernard%20comrie%20nel%201985/news/3",
+          "Ricerca: \u00abnome e cognome della donna sposata da bernard comrie nel 1985\u00bb"
+        ],
+        [
+          "https://www.academia.edu/31615644/Tense_Bernard_Comrie_1985_pdf",
+          "Tense - Bernard Comrie (1985).pdf - Academia"
+        ],
+        [
+          "https://archive.org/details/tense0000comr",
+          "Tense : Comrie, Bernard, 1947- : Free Download, Borrow, and Streaming ..."
+        ],
+        [
+          "https://www.scribd.com/document/946922517/Comrie-Bernard-Author-Tense-1985-Cambridge-University-Press-10-1017-cbo9781139165815-Libgen-li",
+          "Comprehensive Index of Names"
+        ],
+        [
+          "https://www.comc.com/Cards,=Bernard+Comrie+spouse+1985",
+          "All Items matching: Bernard Comrie spouse 1985"
+        ],
+        [
+          "https://interior.gov.ng/ministry-of-interior-mandate/?SE=Bernard%20Comrie%20spouse%201985%20marriage%20personal%20life%20biography",
+          "Ministry of Interior"
+        ]
+      ],
+      "removed": [
+        [
+          "https://www.wordplays.com/crossword-solver/Vor-und-Nachname-der-Frau,-die-der-britische-Linguist-Bernard-Comrie-1985-heiratete",
+          "Vor und Nachname der Frau, die der britische Linguist Bernard Comrie ..."
+        ]
+      ],
+      "added": [
+        [
+          "https://www.comc.com/Cards,=Bernard+Comrie+spouse+1985",
+          "All Items matching: Bernard Comrie spouse 1985"
+        ]
+      ]
+    },
+    {
+      "id": "simpleqa-395-before-query",
+      "query": "saturday evening post libel teams",
+      "capture_sha256": "fe95964785d27f9c23c38983637835c833efee2ab5b2f2a756285502ae879631",
+      "before": [
+        [
+          "https://www.wordplays.com/crossword-solver/Two-football-teams-mentioned-in-the-libel-case-against-'The-Saturday-Evening-Post'-in-1963",
+          "Two football teams mentioned in the libel case against 'The Saturday ..."
+        ],
+        [
+          "https://gallery.library.vanderbilt.edu/items/show/11",
+          "The Libel Case of Wally Butts vs. The Saturday Evening Post \u00b7 Gallery"
+        ],
+        [
+          "https://www.nytimes.com/1963/08/21/archives/butts-gets-3million-libel-award-for-saturday-evening-post-story.html",
+          "Butts Gets 3-Million Libel Award For Saturday Evening Post Story; Butts ..."
+        ],
+        [
+          "https://www.saturdayeveningpost.com/2013/03/curtis-publishing-butts/",
+          "Curtis Publishing Co. v. Butts | The Saturday Evening Post"
+        ],
+        [
+          "https://www.saturdayeveningpost.com/digital-archive/",
+          "Welcome to The Saturday Evening Post Society Digital Archive | The ..."
+        ],
+        [
+          "https://en.wikipedia.org/wiki/Curtis_Publishing_Co._v._Butts",
+          "Curtis Publishing Co. v. Butts - Wikipedia"
+        ],
+        [
+          "https://gradynewsource.uga.edu/the-story-of-a-magazines-failing-fix/",
+          "The Story of a Magazine's Failing Fix: UGA's Wally Butts and a Libel ..."
+        ],
+        [
+          "https://law.justia.com/cases/federal/appellate-courts/F2/351/702/278587/",
+          "Curtis Publishing Company, Appellant, v. Wallace Butts, Appellee ..."
+        ]
+      ],
+      "after": [
+        [
+          "https://gallery.library.vanderbilt.edu/items/show/11",
+          "The Libel Case of Wally Butts vs. The Saturday Evening Post \u00b7 Gallery"
+        ],
+        [
+          "https://exhibitions.library.vanderbilt.edu/journalists/item/the-libel-case-of-wally-butts-vs-the-saturday-evening-post/",
+          "\"The Libel Case of Wally Butts vs. The Saturday Evening Post\""
+        ],
+        [
+          "https://www.nytimes.com/1963/08/21/archives/butts-gets-3million-libel-award-for-saturday-evening-post-story.html",
+          "Butts Gets 3-Million Libel Award For Saturday Evening Post Story; Butts ..."
+        ],
+        [
+          "https://www.saturdayeveningpost.com/2013/03/curtis-publishing-butts/",
+          "Curtis Publishing Co. v. Butts | The Saturday Evening Post"
+        ],
+        [
+          "https://www.saturdayeveningpost.com/digital-archive/",
+          "Welcome to The Saturday Evening Post Society Digital Archive | The ..."
+        ],
+        [
+          "https://en.wikipedia.org/wiki/Curtis_Publishing_Co._v._Butts",
+          "Curtis Publishing Co. v. Butts - Wikipedia"
+        ],
+        [
+          "https://gradynewsource.uga.edu/the-story-of-a-magazines-failing-fix/",
+          "The Story of a Magazine's Failing Fix: UGA's Wally Butts and a Libel ..."
+        ],
+        [
+          "https://law.justia.com/cases/federal/appellate-courts/F2/351/702/278587/",
+          "Curtis Publishing Company, Appellant, v. Wallace Butts, Appellee ..."
+        ]
+      ],
+      "removed": [
+        [
+          "https://www.wordplays.com/crossword-solver/Two-football-teams-mentioned-in-the-libel-case-against-'The-Saturday-Evening-Post'-in-1963",
+          "Two football teams mentioned in the libel case against 'The Saturday ..."
+        ]
+      ],
+      "added": [
+        [
+          "https://exhibitions.library.vanderbilt.edu/journalists/item/the-libel-case-of-wally-butts-vs-the-saturday-evening-post/",
+          "\"The Libel Case of Wally Butts vs. The Saturday Evening Post\""
+        ]
+      ]
+    },
+    {
+      "id": "simpleqa-395-after-query",
+      "query": "saturday evening post libel teams 1963",
+      "capture_sha256": "ae1d9143f6ac8af9fe03c6bed95dedf2ebf979974f90760bafd95725ba23a197",
+      "before": [
+        [
+          "https://www.wordplays.com/crossword-solver/Two-football-teams-mentioned-in-the-libel-case-against-'The-Saturday-Evening-Post'-in-1963",
+          "Two football teams mentioned in the libel case against 'The Saturday ..."
+        ],
+        [
+          "https://www.saturdayeveningpost.com/2013/03/curtis-publishing-butts/",
+          "Curtis Publishing Co. v. Butts | The Saturday Evening Post"
+        ],
+        [
+          "https://www.saturdayeveningpost.com/sep-keyword/curtis-publishing/",
+          "Curtis Publishing Archives | The Saturday Evening Post"
+        ],
+        [
+          "https://studylib.net/doc/8909973/lies--libel--and-football--butts-v.-curtis-publishing",
+          "Lies, Libel, and Football: Butts v. Curtis Publishing - studylib.net"
+        ],
+        [
+          "https://en.wikipedia.org/wiki/Curtis_Publishing_Co._v._Butts",
+          "Curtis Publishing Co. v. Butts - Wikipedia"
+        ],
+        [
+          "https://law.justia.com/cases/federal/appellate-courts/F2/351/702/278587/",
+          "Curtis Publishing Company, Appellant, v. Wallace Butts, Appellee ..."
+        ],
+        [
+          "https://dlg.usg.edu/record/gsu_ajc_12387",
+          "Coach Wally Butts with lawyer Will Schroder after winning his libel ..."
+        ],
+        [
+          "https://gradynewsource.uga.edu/the-story-of-a-magazines-failing-fix/",
+          "The Story of a Magazine's Failing Fix: UGA's Wally Butts and a Libel ..."
+        ]
+      ],
+      "after": [
+        [
+          "https://www.nytimes.com/1963/08/21/archives/butts-gets-3million-libel-award-for-saturday-evening-post-story.html",
+          "Butts Gets 3-Million Libel Award For Saturday Evening Post Story; Butts ..."
+        ],
+        [
+          "https://www.saturdayeveningpost.com/2013/03/curtis-publishing-butts/",
+          "Curtis Publishing Co. v. Butts | The Saturday Evening Post"
+        ],
+        [
+          "https://www.saturdayeveningpost.com/sep-keyword/curtis-publishing/",
+          "Curtis Publishing Archives | The Saturday Evening Post"
+        ],
+        [
+          "https://studylib.net/doc/8909973/lies--libel--and-football--butts-v.-curtis-publishing",
+          "Lies, Libel, and Football: Butts v. Curtis Publishing - studylib.net"
+        ],
+        [
+          "https://en.wikipedia.org/wiki/Curtis_Publishing_Co._v._Butts",
+          "Curtis Publishing Co. v. Butts - Wikipedia"
+        ],
+        [
+          "https://law.justia.com/cases/federal/appellate-courts/F2/351/702/278587/",
+          "Curtis Publishing Company, Appellant, v. Wallace Butts, Appellee ..."
+        ],
+        [
+          "https://dlg.usg.edu/record/gsu_ajc_12387",
+          "Coach Wally Butts with lawyer Will Schroder after winning his libel ..."
+        ],
+        [
+          "https://gradynewsource.uga.edu/the-story-of-a-magazines-failing-fix/",
+          "The Story of a Magazine's Failing Fix: UGA's Wally Butts and a Libel ..."
+        ]
+      ],
+      "removed": [
+        [
+          "https://www.wordplays.com/crossword-solver/Two-football-teams-mentioned-in-the-libel-case-against-'The-Saturday-Evening-Post'-in-1963",
+          "Two football teams mentioned in the libel case against 'The Saturday ..."
+        ]
+      ],
+      "added": [
+        [
+          "https://www.nytimes.com/1963/08/21/archives/butts-gets-3million-libel-award-for-saturday-evening-post-story.html",
+          "Butts Gets 3-Million Libel Award For Saturday Evening Post Story; Butts ..."
+        ]
+      ]
+    }
+  ],
+  "before_passed": 6,
+  "after_passed": 8,
+  "total": 9,
+  "wins": [
+    "identifier",
+    "lookup"
+  ],
+  "losses": [],
+  "production_sha256": {
+    "agent/browser.py": "53ac9a99f3afcefcdb197cd9b2296c2d380910a782178fadb65235e548efc353",
+    "agent/candidates.py": "c55cd074f50d1b0c944cf5552bd604caf4b313bada23accd73674d5d1d93d116",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/engine.py": "2b90543d2edd5961cfa86a95a5279037f4f8f2dd0cf934fb66adfcfd77d0d2d8",
+    "agent/evidence.py": "09da13b3f2fb17de30734c44ddad1c89b856ec682ff2e88a78a57773409c0089",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "agent/model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+    "agent/model_server.py": "8d326a696942d259697a6fba8586441bbbe4874042ea900c6d7788a2a0e9fd22",
+    "agent/navigation.py": "0f849c0c570720114c45c14b0a5286fe409e5d26c2945fdc9f6c1a6922bb7718",
+    "agent/network.py": "def1be3752f81423c313c2dfa83f6703ee063d7e98652cf0d816b423d0e2d9cb",
+    "agent/normalize.py": "05e48fa0be8384aa656bf1280ba0be44545efa51b7d4451f0716d836d39a1973",
+    "agent/output.py": "b983ab2efe31707b1c974344a32dc4b40b708541257695de89cac9e343b073eb",
+    "agent/oyez.py": "8475f248d78925522e0742b13518be2c4f4db11eae0d8391a8002da7d4e3b67d",
+    "agent/parser.py": "60f4199ea41c63376ad347793e8b517b38557dcc238e266621cddef27481124e",
+    "agent/planner.py": "8a617d26e724e8ebc5e604892e867ebcc9e417aa97cbd7e0feda4954cd5a1d2b",
+    "agent/processes.py": "677c4372b40d1da0ffc0cf4120ca5b6be2fcf6b6c30f6ec17d0d8fae19e198c1",
+    "agent/proofs.py": "0d7ae78df6ea9949c29f33c7b817dda352c75b3d99c960c3e987e37c7401faab",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent/search.py": "6a4173e80dbe0e178056de5d0a4dd3d54560d140f0b3ffbb52f488566732636b",
+    "agent/selector.py": "be7c0fce11c10921d5cd4e3d1072d5a2ca5a62f1c328730384d19b0fecd19566",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent/urls.py": "3a6b8a380f6d7966f1f79b97ccdedab5a5959ffbe5a1aa244e3477a0fe6110f4",
+    "agent/worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f",
+    "agent/__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41"
+  }
+}

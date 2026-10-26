@@ -1,0 +1,541 @@
+{
+  "scope": "Small live-source availability probe from exposed historical failures.\n\nRuns actual production HTTP/search parsing, without model inference or gold\nanswers in production requests. This reports retrieval, not answer accuracy.\n",
+  "captured_utc": "2026-10-22T18:22:05.177943+00:00",
+  "rows": [
+    {
+      "id": "simpleqa-462",
+      "query": "What is the height of Vickerman Hill in New York in feet?",
+      "starting_url": "https://trailsnh.com/weather/n/357594518/Vickerman-Hill-NY-Summit-Forecast",
+      "starting_status": 418,
+      "starting_error": "http_418",
+      "candidates": [
+        [
+          "https://www.topozone.com/new-york/herkimer-ny/summit/vickerman-hill/",
+          "Vickerman Hill Topo Map in Herkimer County NY - Topozone"
+        ],
+        [
+          "https://topoquest.com/place/new-york/summit/vickerman-hill/968529",
+          "Vickerman Hill, NY - TopoQuest"
+        ],
+        [
+          "https://www.getamap.net/maps/united_states/new_york/herkimer/_vickerman_hill/",
+          "Vickerman Hill (Herkimer) Map, Weather and Photos - United States ..."
+        ],
+        [
+          "https://en.wikipedia.org/wiki/Vickerman_Hill",
+          "Vickerman Hill - Wikipedia"
+        ],
+        [
+          "https://www.wikiwand.com/en/Vickerman_Hill",
+          "Vickerman Hill - Wikiwand"
+        ],
+        [
+          "https://trailsnh.com/hike/n/357594518/Vickerman-Hill-NY",
+          "Vickerman Hill NY - trailsnh.com"
+        ],
+        [
+          "https://kids.kiddle.co/Vickerman_Hill",
+          "Vickerman Hill Facts for Kids"
+        ],
+        [
+          "https://peakvisor.com/peak/vickerman-hill.html",
+          "Vickerman Hill (348 m) - Allegheny Plateau, USA | PeakVisor"
+        ],
+        [
+          "https://shop.mirotek.com.tw/tutorial/arduino-start-17/",
+          "\u3010Arduino\u5165\u9580\u3011\u7b2c17\u7bc7\uff1a RGB LED \u5168\u5f69\u71c8\u5149\u63a7\u5236\uff08PWM \u6df7\u8272\u539f\u7406\u8207 \u2026"
+        ],
+        [
+          "https://blog.jmaker.com.tw/rgb-led/",
+          "\u300aArduino\u5165\u9580\u300b\u7b2c\u4e03\u7bc7\uff1a RGB LED \u71c8\u5168\u5f69\u6a21\u7d44 - JMaker"
+        ],
+        [
+          "https://store.sony.com.tw/article/what-is-rgb-led",
+          "RGB LED \u662f\u4ec0\u9ebc\uff1f\u4e00\u6b21\u770b\u61c2\u986f\u793a\u5668 (\u96fb\u8996)\u986f\u8272\u539f\u7406\u8207 Sony True RGB \u7684 \u2026"
+        ],
+        [
+          "https://store.sony.com.tw/article/rgb-led-vs-led-vs-oled",
+          "RGB LED \u3001\u4e00\u822c LED \u8207 OLED \u5dee\u5728\u54ea\uff1f\u4e00\u6b21\u770b\u61c2\u986f\u793a\u5668(\u96fb\u8996)\u986f\u793a\u539f\u7406 \u2026"
+        ]
+      ],
+      "pages": [
+        {
+          "url": "https://www.topozone.com/new-york/herkimer-ny/summit/vickerman-hill/",
+          "title": "",
+          "error": "http_403",
+          "passages": 0
+        },
+        {
+          "url": "https://topoquest.com/place/new-york/summit/vickerman-hill/968529",
+          "title": "Vickerman Hill, NY - TopoQuest",
+          "error": "",
+          "passages": 294
+        },
+        {
+          "url": "https://www.getamap.net/maps/united_states/new_york/herkimer/_vickerman_hill/",
+          "title": "",
+          "error": "http_403",
+          "passages": 0
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Vickerman_Hill",
+          "title": "",
+          "error": "http_403",
+          "passages": 0
+        }
+      ],
+      "events": [
+        {
+          "url": "https://trailsnh.com/weather/n/357594518/Vickerman-Hill-NY-Summit-Forecast",
+          "final": "https://trailsnh.com/weather/n/357594518/Vickerman-Hill-NY-Summit-Forecast",
+          "status": 418,
+          "bytes": 0,
+          "error": "http_418",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.bing.com/search?q=site%3Atrailsnh.com+What+is+the+height+of+Vickerman+Hill+in+New+York+in+feet%3F",
+          "final": "https://www.bing.com/search?q=site%3Atrailsnh.com+What+is+the+height+of+Vickerman+Hill+in+New+York+in+feet%3F",
+          "status": 200,
+          "bytes": 125467,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.bing.com/search?q=height+vickerman+hill+new+york+feet",
+          "final": "https://www.bing.com/search?q=height+vickerman+hill+new+york+feet",
+          "status": 200,
+          "bytes": 110966,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://html.duckduckgo.com/html/?q=site%3Atrailsnh.com+What+is+the+height+of+Vickerman+Hill+in+New+York+in+feet%3F",
+          "final": "https://html.duckduckgo.com/html/?q=site%3Atrailsnh.com+What+is+the+height+of+Vickerman+Hill+in+New+York+in+feet%3F",
+          "status": 202,
+          "bytes": 14366,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://html.duckduckgo.com/html/?q=height+vickerman+hill+new+york+feet",
+          "final": "https://html.duckduckgo.com/html/?q=height+vickerman+hill+new+york+feet",
+          "status": 200,
+          "bytes": 33009,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.topozone.com/new-york/herkimer-ny/summit/vickerman-hill/",
+          "final": "https://www.topozone.com/new-york/herkimer-ny/summit/vickerman-hill/",
+          "status": 403,
+          "bytes": 0,
+          "error": "http_403",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.getamap.net/maps/united_states/new_york/herkimer/_vickerman_hill/",
+          "final": "https://www.getamap.net/maps/united_states/new_york/herkimer/_vickerman_hill/",
+          "status": 403,
+          "bytes": 0,
+          "error": "http_403",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Vickerman_Hill",
+          "final": "https://en.wikipedia.org/wiki/Vickerman_Hill",
+          "status": 403,
+          "bytes": 0,
+          "error": "http_403",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://topoquest.com/place/new-york/summit/vickerman-hill/968529",
+          "final": "https://topoquest.com/place/new-york/summit/vickerman-hill/968529",
+          "status": 200,
+          "bytes": 177620,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        }
+      ],
+      "seconds": 3.439468500087969
+    },
+    {
+      "id": "simpleqa-3081",
+      "query": "What year did Ren\u00e9 Laennec claim that tubercles were the cause of pulmonary tuberculosis?",
+      "starting_url": "https://en.wikipedia.org/wiki/Tuberculosis",
+      "starting_status": 403,
+      "starting_error": "http_403",
+      "candidates": [
+        [
+          "https://www.sciencedirect.com/science/article/pii/0041387981900210",
+          "Laennec: A great student of tuberculosis - ScienceDirect"
+        ],
+        [
+          "https://www.sciencedirect.com/science/article/pii/S0019570720300822",
+          "\"How was tuberculosis known to the world?\" - ScienceDirect"
+        ],
+        [
+          "https://thorax.bmj.com/content/36/2/91",
+          "Laennec: his medical history. - Thorax"
+        ],
+        [
+          "https://www.scribd.com/document/403074106/rcmb-f293",
+          "History of Tuberculosis Research"
+        ],
+        [
+          "https://rjwave.org/jaafr/papers/JAAFR2511255.pdf",
+          "PDF Tuberculosis a Review of Current Trends"
+        ],
+        [
+          "https://www.resmedjournal.com/article/S0954-6111(06)00401-X/references",
+          "References in The history of tuberculosis - Respiratory Medicine"
+        ],
+        [
+          "https://htm.sf-express.com/tw/tc/dynamic_function/customs_application/",
+          "\u5831\u95dc \u55ae\u7533\u8acb - \u9806\u8c50\u901f\u904b"
+        ],
+        [
+          "https://htm.sf-express.com/tw/tc/Customer_Zone/download_center/formdownload/",
+          "\u5e38\u7528\u8868\u683c \u4e0b\u8f09 - \u9806\u8c50\u901f\u904b"
+        ],
+        [
+          "https://htm.sf-express.com/tw/tc/products_services/express_service/value_added_service/taxation_form/",
+          "\u5831\u55ae \u670d\u52d9 - \u9806\u8c50\u901f\u904b"
+        ],
+        [
+          "https://htm.sf-express.com/tw/tc/news/detail/-03255/",
+          "\u53f0\u7063\u9806\u8c50\u901f\u904b\u3010\u9032\u53e3\u6b63\u5f0f \u5831\u55ae \u7121\u7d19\u5316\u3011\u4e0a\u7dda\u901a\u77e5"
+        ],
+        [
+          "https://htm.sf-express.com/tw/tc/dynamic_function/waybill/",
+          "\u904b\u55ae\u8ffd\u8e64 - \u9806\u8c50\u901f\u904b"
+        ],
+        [
+          "https://htm.sf-express.com/tw/tc/news/detail/-02399/",
+          "\u53f0\u7063\u9806\u8c50\u901f\u904b [\u500b\u4eba\u9032\u53e3 \u5831\u55ae \u53ca\u7a05\u55ae\u7121\u7d19\u5316]\u4e0a\u7dda\u901a\u77e5"
+        ]
+      ],
+      "pages": [
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/0041387981900210",
+          "title": "",
+          "error": "http_403",
+          "passages": 0
+        },
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S0019570720300822",
+          "title": "",
+          "error": "http_403",
+          "passages": 0
+        },
+        {
+          "url": "https://thorax.bmj.com/content/36/2/91",
+          "title": "",
+          "error": "http_404",
+          "passages": 0
+        },
+        {
+          "url": "https://www.scribd.com/document/403074106/rcmb-f293",
+          "title": "History of Tuberculosis Research | PDF | Tuberculosis | T Helper Cell",
+          "error": "",
+          "passages": 62
+        }
+      ],
+      "events": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Tuberculosis",
+          "final": "https://en.wikipedia.org/wiki/Tuberculosis",
+          "status": 403,
+          "bytes": 0,
+          "error": "http_403",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.bing.com/search?q=year+ren%C3%A9+laennec+claim+tubercles+cause+pulmonary+tuberculosis",
+          "final": "https://www.bing.com/search?q=year+ren%C3%A9+laennec+claim+tubercles+cause+pulmonary+tuberculosis",
+          "status": 200,
+          "bytes": 125851,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.bing.com/search?q=What+year+did+Ren%C3%A9+Laennec+claim+that+tubercles+were+the+cause+of+pulmonary+tuberculosis%3F",
+          "final": "https://www.bing.com/search?q=What+year+did+Ren%C3%A9+Laennec+claim+that+tubercles+were+the+cause+of+pulmonary+tuberculosis%3F",
+          "status": 200,
+          "bytes": 126757,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://html.duckduckgo.com/html/?q=What+year+did+Ren%C3%A9+Laennec+claim+that+tubercles+were+the+cause+of+pulmonary+tuberculosis%3F",
+          "final": "https://html.duckduckgo.com/html/?q=What+year+did+Ren%C3%A9+Laennec+claim+that+tubercles+were+the+cause+of+pulmonary+tuberculosis%3F",
+          "status": 202,
+          "bytes": 14396,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://html.duckduckgo.com/html/?q=year+ren%C3%A9+laennec+claim+tubercles+cause+pulmonary+tuberculosis",
+          "final": "https://html.duckduckgo.com/html/?q=year+ren%C3%A9+laennec+claim+tubercles+cause+pulmonary+tuberculosis",
+          "status": 200,
+          "bytes": 35363,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S0019570720300822",
+          "final": "https://www.sciencedirect.com/science/article/pii/S0019570720300822",
+          "status": 403,
+          "bytes": 0,
+          "error": "http_403",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/0041387981900210",
+          "final": "https://www.sciencedirect.com/science/article/pii/0041387981900210",
+          "status": 403,
+          "bytes": 0,
+          "error": "http_403",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://thorax.bmj.com/content/36/2/91",
+          "final": "https://thorax.bmj.com/content/36/2/91",
+          "status": 404,
+          "bytes": 0,
+          "error": "http_404",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.scribd.com/document/403074106/rcmb-f293",
+          "final": "https://www.scribd.com/document/403074106/rcmb-f293",
+          "status": 200,
+          "bytes": 1136233,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        }
+      ],
+      "seconds": 2.3372190999798477
+    },
+    {
+      "id": "simpleqa-3598",
+      "query": "Who composed the music for the song \"We Rollin\" by Punjabi singer Shubh?",
+      "starting_url": "https://en.wikipedia.org/wiki/We_Rollin",
+      "starting_status": 403,
+      "starting_error": "http_403",
+      "candidates": [
+        [
+          "https://www.youtube.com/watch?v=hV8EGTjzD2s",
+          "We Rollin (Official Video) - Shubh | Rubbal GTR - YouTube"
+        ],
+        [
+          "https://www.youtube.com/watch?v=RLhuPD2ASKE",
+          "We Rollin (Official Audio) - Shubh - YouTube"
+        ],
+        [
+          "https://vimeo.com/763661471",
+          "We Rollin (Official Video) - Shubh _ Rubbal GTR.mp4"
+        ],
+        [
+          "https://www.dailymotion.com/video/x8gabun",
+          "Shubh - We Rollin (Official Video) - Dailymotion"
+        ],
+        [
+          "https://en.bharatpedia.org/wiki/We_Rollin",
+          "We Rollin - Bharatpedia"
+        ],
+        [
+          "https://www.wikiwand.com/en/We_Rollin",
+          "We Rollin - Wikiwand"
+        ],
+        [
+          "https://tw.live/work-school/",
+          "\u505c\u73ed\u505c\u8ab2 \u8207\u98b1\u98a8\u5047 \u67e5\u8a62 \uff5c\u5168\u53f0\u7e23\u5e02\u653f\u5e9c\u6700\u65b0\u516c\u544a\u8207\u8def\u6cc1\u5f71\u50cf - \u5373\u6642\u5f71\u50cf \u2026"
+        ],
+        [
+          "https://twtools.cc/typhoon/",
+          "\u505c\u73ed\u505c\u8ab2\u67e5\u8a62 \u2014 \u98b1\u98a8/\u8c6a\u96e8\u5168\u53f0 22 \u7e23\u5e02\u4eca\u660e\u5169\u65e5\u516c\u544a | TWTools"
+        ],
+        [
+          "https://www.tycg.gov.tw/typhoon/",
+          "\u6843\u5712\u5e02 \u653f\u5e9c\u707d\u9632\u5c08\u5340"
+        ],
+        [
+          "https://schooloff.site/",
+          "\u505c\u73ed\u505c\u8ab2\u67e5\u8a62 \u2014 \u505c \u4e86\u6c92"
+        ],
+        [
+          "https://www.facebook.com/tw.alerts/channels/",
+          "\u505c\u73ed\u505c\u8ab2 \u6700\u65b0\u901a\u77e5\u3010Taiwan Alerts\u3011 - Facebook"
+        ],
+        [
+          "https://data.gov.tw/applications/135794",
+          "\u5929\u7136\u707d\u5bb3 \u505c\u73ed\u505c\u8ab2\u67e5\u8a62 \uff5c \u653f\u5e9c\u8cc7\u6599\u958b\u653e\u5e73\u81fa"
+        ]
+      ],
+      "pages": [
+        {
+          "url": "https://www.youtube.com/watch?v=hV8EGTjzD2s",
+          "title": "We Rollin (Official Video) - Shubh | Rubbal GTR - YouTube",
+          "error": "",
+          "passages": 86
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=RLhuPD2ASKE",
+          "title": "We Rollin (Official Audio) - Shubh - YouTube",
+          "error": "",
+          "passages": 101
+        },
+        {
+          "url": "https://vimeo.com/763661471",
+          "title": "We Rollin (Official Video) - Shubh _ Rubbal GTR.mp4",
+          "error": "",
+          "passages": 42
+        },
+        {
+          "url": "https://www.dailymotion.com/video/x8gabun",
+          "title": "Dailymotion",
+          "error": "",
+          "passages": 14
+        }
+      ],
+      "events": [
+        {
+          "url": "https://en.wikipedia.org/wiki/We_Rollin",
+          "final": "https://en.wikipedia.org/wiki/We_Rollin",
+          "status": 403,
+          "bytes": 0,
+          "error": "http_403",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.bing.com/search?q=Who+composed+the+music+for+the+song+%22We+Rollin%22+by+Punjabi+singer+Shubh%3F",
+          "final": "https://www.bing.com/search?q=Who+composed+the+music+for+the+song+%22We+Rollin%22+by+Punjabi+singer+Shubh%3F",
+          "status": 200,
+          "bytes": 120810,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.bing.com/search?q=composed+music+song+we+rollin+punjabi+singer+shubh",
+          "final": "https://www.bing.com/search?q=composed+music+song+we+rollin+punjabi+singer+shubh",
+          "status": 200,
+          "bytes": 124307,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://html.duckduckgo.com/html/?q=Who+composed+the+music+for+the+song+%22We+Rollin%22+by+Punjabi+singer+Shubh%3F",
+          "final": "https://html.duckduckgo.com/html/?q=Who+composed+the+music+for+the+song+%22We+Rollin%22+by+Punjabi+singer+Shubh%3F",
+          "status": 202,
+          "bytes": 14392,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://html.duckduckgo.com/html/?q=composed+music+song+we+rollin+punjabi+singer+shubh",
+          "final": "https://html.duckduckgo.com/html/?q=composed+music+song+we+rollin+punjabi+singer+shubh",
+          "status": 200,
+          "bytes": 32342,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.dailymotion.com/video/x8gabun",
+          "final": "https://www.dailymotion.com/video/x8gabun",
+          "status": 200,
+          "bytes": 135171,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=RLhuPD2ASKE",
+          "final": "https://www.youtube.com/watch?v=RLhuPD2ASKE",
+          "status": 200,
+          "bytes": 1289834,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=hV8EGTjzD2s",
+          "final": "https://www.youtube.com/watch?v=hV8EGTjzD2s",
+          "status": 200,
+          "bytes": 1309982,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://vimeo.com/763661471",
+          "final": "https://vimeo.com/763661471",
+          "status": 200,
+          "bytes": 11560,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        }
+      ],
+      "seconds": 2.0726988000096753
+    }
+  ],
+  "source_sha256": {
+    "agent/search.py": "ac3e239f6f3b86696877af3e237be0c125e78cebbb6e980060abab2eb3f4db90",
+    "agent/urls.py": "2118381f70d0f44174db25833b989cd36dab64b588b83085cddd65cad7412a1f",
+    "agent/network.py": "def1be3752f81423c313c2dfa83f6703ee063d7e98652cf0d816b423d0e2d9cb",
+    "agent/planner.py": "55ab71a544094a0f157153f05109573130c7b3677720b035fa1840507d314e21"
+  },
+  "input_report": "benchmarks/external-transfer100-retest-20261021.json"
+}

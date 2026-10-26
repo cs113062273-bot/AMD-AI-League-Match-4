@@ -1,0 +1,85 @@
+{
+  "scope": "Controlled HTTP probe: reject unrelated provider batches, retain generic links in relevant batches.",
+  "passed": 3,
+  "total": 3,
+  "rows": [
+    {
+      "id": "unrelated-batch",
+      "passed": true,
+      "actual": [
+        [
+          "http://127.0.0.1:35362/contact",
+          "Boreal Instruments support"
+        ],
+        [
+          "http://127.0.0.1:35362/reference",
+          "More details"
+        ]
+      ],
+      "hits": [
+        [
+          "/bad",
+          "support phone boreal instruments"
+        ],
+        [
+          "/bad",
+          "site:127.0.0.1 What is the support phone of Boreal Instruments?"
+        ],
+        [
+          "/mixed",
+          "site:127.0.0.1 What is the support phone of Boreal Instruments?"
+        ],
+        [
+          "/mixed",
+          "support phone boreal instruments"
+        ]
+      ]
+    },
+    {
+      "id": "unrelated-query",
+      "passed": true,
+      "actual": [
+        [
+          "http://127.0.0.1:35362/contact",
+          "Boreal Instruments support"
+        ],
+        [
+          "http://127.0.0.1:35362/reference",
+          "More details"
+        ]
+      ],
+      "hits": [
+        [
+          "/rewrite",
+          "support phone boreal instruments"
+        ],
+        [
+          "/rewrite",
+          "site:127.0.0.1 What is the support phone of Boreal Instruments?"
+        ]
+      ]
+    },
+    {
+      "id": "weak-only-fallback",
+      "passed": true,
+      "actual": [
+        [
+          "http://127.0.0.1:35362/spam",
+          "Kitchen gadgets"
+        ]
+      ],
+      "hits": [
+        [
+          "/bad",
+          "support phone boreal instruments"
+        ],
+        [
+          "/bad",
+          "site:127.0.0.1 What is the support phone of Boreal Instruments?"
+        ]
+      ]
+    }
+  ],
+  "revision": "working-tree",
+  "source_sha256": {}
+}

@@ -1,0 +1,1329 @@
+{
+  "scope": "Small fixed-page or actual-public-web diagnosis with an owned full-4B CUDA service.\n\nCases are exposed development data, not a held-out or public-web accuracy claim.\nAn oracle URL supplies the answer page; this separates reading from discovery.\n",
+  "context_limit": 1536,
+  "comparison_mode": true,
+  "baseline_revision": "eed167dc00a329b56ffc9ec4e0861e39aff3e8f7",
+  "baseline_source_sha256": {
+    "agent/engine.py": "8a0fa144451d6cf488c12bb248affce0fe9bb1db3f284dabce84f1e97dfc2ca8",
+    "agent/types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent/planner.py": "7135c1bda05839ed7d0e2b73144018e2140bce2a481fcb77c7133077510e4fa4",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/network.py": "c37ecb5b4b0fba4fac737954eda24952059922ed620c94b99bcb17daed8c5155",
+    "agent/urls.py": "2118381f70d0f44174db25833b989cd36dab64b588b83085cddd65cad7412a1f",
+    "agent/parser.py": "a6958b0f53e3b529377c7b5af48b8d5103a93a2ec8206d645c8932144941278a",
+    "agent/normalize.py": "6a4cb8311c29318d788c97a3e64cffa3c4085e595a0e1e9a2d5c418fa540e41c",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent/search.py": "489c8fee52ce0775b2e7d29d21f977e3d644a00098f834f736e456f1a34faf87",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/candidates.py": "a17fae4f1b8a9d65bce6ea77b4cfbf223eaaaf893bcc1ad7f65a4b1e57f25483",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/evidence.py": "3a5b361433e2aac2f8a7d4b292d137b4c80f32183057c0138b852a9190020cbb",
+    "agent/selector.py": "c985e196b77711845eba76a3694cb07ad8beab074bd65f8a4e8fffaa4eb82ea3",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/proofs.py": "42920966e3cae090d8a0d53f17270f607a4a6dcb8a96a1af20382d2785e64b74"
+  },
+  "case_path": "benchmarks/projection-fields-20261023-cases.json",
+  "fixture_path": "research/projection-fields-20261023/fixtures.json",
+  "max_depth": 0,
+  "budget": 12.0,
+  "live_web": false,
+  "browser": false,
+  "production_sha256": {
+    "app.py": "c0267c0441330bd30559f48d2f33916418992b8e21ec8dd1d09ae4773c23b73b",
+    "agent\\browser.py": "f7a3d9479ec2ae9bc9fbbcb27efbddaeba9b5dd8639016e827840cc1c7e33cea",
+    "agent\\candidates.py": "944c2dfffbd7e0d875c633cb1ee260563cebd88e554181d6ad35914cdf0de8cd",
+    "agent\\currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent\\engine.py": "8a0fa144451d6cf488c12bb248affce0fe9bb1db3f284dabce84f1e97dfc2ca8",
+    "agent\\evidence.py": "3a5b361433e2aac2f8a7d4b292d137b4c80f32183057c0138b852a9190020cbb",
+    "agent\\knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent\\model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+    "agent\\model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent\\model_protocol.py": "8ba6730e160eac47d8231985e1293bb981a5a63ef9b475cf46daf31ef17bdfb0",
+    "agent\\model_server.py": "14e840e32fe34ca594eb4fb0dadd89fc67768fb9026ac3359734a021c5190fc2",
+    "agent\\navigation.py": "0f849c0c570720114c45c14b0a5286fe409e5d26c2945fdc9f6c1a6922bb7718",
+    "agent\\network.py": "def1be3752f81423c313c2dfa83f6703ee063d7e98652cf0d816b423d0e2d9cb",
+    "agent\\normalize.py": "6a4cb8311c29318d788c97a3e64cffa3c4085e595a0e1e9a2d5c418fa540e41c",
+    "agent\\output.py": "b983ab2efe31707b1c974344a32dc4b40b708541257695de89cac9e343b073eb",
+    "agent\\parser.py": "adee2e94345415b11b80fb4f38053ed85f1b49b27d1ab73df16264e59cdf2803",
+    "agent\\planner.py": "56d3747fd466f414800221f35a8f4d3fa25d1c40b484ace1fee7dae66be51921",
+    "agent\\processes.py": "677c4372b40d1da0ffc0cf4120ca5b6be2fcf6b6c30f6ec17d0d8fae19e198c1",
+    "agent\\proofs.py": "0d7ae78df6ea9949c29f33c7b817dda352c75b3d99c960c3e987e37c7401faab",
+    "agent\\qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent\\resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent\\search.py": "489c8fee52ce0775b2e7d29d21f977e3d644a00098f834f736e456f1a34faf87",
+    "agent\\selector.py": "7427a98f8eac2f36a8d2d736d5065d0ca7894c0c76b929d0458dbc57df74fbbc",
+    "agent\\signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent\\types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent\\urls.py": "2118381f70d0f44174db25833b989cd36dab64b588b83085cddd65cad7412a1f",
+    "agent\\worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f",
+    "agent\\__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41"
+  },
+  "cases_sha256": "c246f1421cf91ae69281bf66788c87e319afa2d80ff15ec40aef01e00e5a0393",
+  "fixtures_sha256": "2c847e9f987cf6966be7ab62cfdb9351442af5437f40170ab01647422e0217c7",
+  "rows": [
+    {
+      "id": "name-email",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "Orin, orin@example.org",
+        "sources": [
+          "http://127.0.0.1:26130/name-email.html"
+        ],
+        "confidence": 0.0,
+        "evidence": "Name: Orin Vale | First name: Orin | Email: orin@example.org",
+        "reason": "proof_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What are the first name and email of Orin Vale?",
+            "url": "http://127.0.0.1:26130/name-email.html",
+            "kind": "email",
+            "terms": [
+              "first",
+              "name",
+              "email",
+              "orin",
+              "vale"
+            ],
+            "attributes": [
+              "email",
+              "e-mail",
+              "contact",
+              "mail",
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "first",
+              "orin",
+              "vale"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what are the first name and email ",
+            "choices": [],
+            "operation": "compose_fields",
+            "required_fields": [
+              "first name",
+              "email"
+            ],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.2699980288743973e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "proof_state": "verified",
+          "proposed_proof": {
+            "operation": "compose_fields",
+            "atoms": [
+              {
+                "source": "http://127.0.0.1:26130/name-email.html",
+                "locator": "table[0]/row[0]",
+                "span": "Name: Orin Vale | First name: Orin | Email: orin@example.org",
+                "value": "Orin",
+                "role": "first name",
+                "version": "",
+                "key": "",
+                "relation": ""
+              },
+              {
+                "source": "http://127.0.0.1:26130/name-email.html",
+                "locator": "table[0]/row[0]",
+                "span": "Name: Orin Vale | First name: Orin | Email: orin@example.org",
+                "value": "orin@example.org",
+                "role": "email",
+                "version": "",
+                "key": "",
+                "relation": ""
+              }
+            ]
+          },
+          "proof_verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:26130/name-email.html",
+              "final": "http://127.0.0.1:26130/name-email.html",
+              "status": 200,
+              "bytes": 169,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.4981
+        }
+      }
+    },
+    {
+      "id": "departure-platform",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "09:15, 4",
+        "sources": [
+          "http://127.0.0.1:26130/departure-platform.html"
+        ],
+        "confidence": 0.0,
+        "evidence": "Name: Northline | Time: 09:00 | Departure time: 09:15 | Platform: 4",
+        "reason": "proof_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What are the departure time and platform for Northline?",
+            "url": "http://127.0.0.1:26130/departure-platform.html",
+            "kind": "text",
+            "terms": [
+              "departure",
+              "time",
+              "platform",
+              "northline"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "departure",
+              "time",
+              "platform",
+              "northline"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what are the departure time and platform ",
+            "choices": [],
+            "operation": "compose_fields",
+            "required_fields": [
+              "departure time",
+              "platform"
+            ],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.2599979527294636e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "proof_state": "verified",
+          "proposed_proof": {
+            "operation": "compose_fields",
+            "atoms": [
+              {
+                "source": "http://127.0.0.1:26130/departure-platform.html",
+                "locator": "table[0]/row[0]",
+                "span": "Name: Northline | Time: 09:00 | Departure time: 09:15 | Platform: 4",
+                "value": "09:15",
+                "role": "departure time",
+                "version": "",
+                "key": "",
+                "relation": ""
+              },
+              {
+                "source": "http://127.0.0.1:26130/departure-platform.html",
+                "locator": "table[0]/row[0]",
+                "span": "Name: Northline | Time: 09:00 | Departure time: 09:15 | Platform: 4",
+                "value": "4",
+                "role": "platform",
+                "version": "",
+                "key": "",
+                "relation": ""
+              }
+            ]
+          },
+          "proof_verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:26130/departure-platform.html",
+              "final": "http://127.0.0.1:26130/departure-platform.html",
+              "status": 200,
+              "bytes": 203,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.3941
+        }
+      }
+    },
+    {
+      "id": "duplicate-exact",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "proof_incomplete",
+        "diagnostics": {
+          "plan": {
+            "question": "What are the first name and email of Orin Vale?",
+            "url": "http://127.0.0.1:26130/duplicate-exact.html",
+            "kind": "email",
+            "terms": [
+              "first",
+              "name",
+              "email",
+              "orin",
+              "vale"
+            ],
+            "attributes": [
+              "email",
+              "e-mail",
+              "contact",
+              "mail",
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "first",
+              "orin",
+              "vale"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what are the first name and email ",
+            "choices": [],
+            "operation": "compose_fields",
+            "required_fields": [
+              "first name",
+              "email"
+            ],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.070008147507906e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "proof_state": "incomplete",
+          "reader_state": "not_run",
+          "top_candidates": [
+            {
+              "raw": "orin@example.org",
+              "answer": "orin@example.org",
+              "source": "http://127.0.0.1:26130/duplicate-exact.html",
+              "evidence": "Name: Orin Vale | First name: Orin | First name: Mira | Email: orin@example.org",
+              "label": "Email",
+              "section": "",
+              "kind": "email",
+              "score": 14.200000000000001,
+              "signals": {
+                "locator": "table[0]/row[0]/cell[3]",
+                "page_title": "Northline directory and timetable",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 0,
+                  "row": 0,
+                  "columns": [
+                    "Name",
+                    "First name",
+                    "First name",
+                    "Email"
+                  ],
+                  "cells": [
+                    "Orin Vale",
+                    "Orin",
+                    "Mira",
+                    "orin@example.org"
+                  ],
+                  "column": 3
+                },
+                "field_value": "orin@example.org",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:26130/duplicate-exact.html",
+              "final": "http://127.0.0.1:26130/duplicate-exact.html",
+              "status": 200,
+              "bytes": 215,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0035
+        }
+      }
+    },
+    {
+      "id": "missing-specific",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "proof_incomplete",
+        "diagnostics": {
+          "plan": {
+            "question": "What are the first name and email of Orin Vale?",
+            "url": "http://127.0.0.1:26130/missing-specific.html",
+            "kind": "email",
+            "terms": [
+              "first",
+              "name",
+              "email",
+              "orin",
+              "vale"
+            ],
+            "attributes": [
+              "email",
+              "e-mail",
+              "contact",
+              "mail",
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "first",
+              "orin",
+              "vale"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what are the first name and email ",
+            "choices": [],
+            "operation": "compose_fields",
+            "required_fields": [
+              "first name",
+              "email"
+            ],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.0199961252510548e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "proof_state": "incomplete",
+          "reader_state": "not_run",
+          "top_candidates": [
+            {
+              "raw": "orin@example.org",
+              "answer": "orin@example.org",
+              "source": "http://127.0.0.1:26130/missing-specific.html",
+              "evidence": "Name: Orin Vale | Email: orin@example.org",
+              "label": "Email",
+              "section": "",
+              "kind": "email",
+              "score": 12.600000000000001,
+              "signals": {
+                "locator": "table[0]/row[0]/cell[1]",
+                "page_title": "Northline directory and timetable",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 0,
+                  "row": 0,
+                  "columns": [
+                    "Name",
+                    "Email"
+                  ],
+                  "cells": [
+                    "Orin Vale",
+                    "orin@example.org"
+                  ],
+                  "column": 1
+                },
+                "field_value": "orin@example.org",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:26130/missing-specific.html",
+              "final": "http://127.0.0.1:26130/missing-specific.html",
+              "status": 200,
+              "bytes": 151,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0038
+        }
+      }
+    }
+  ],
+  "runner_sha256": "b255c61f8fb7dcbe1636e193b990f33bcf63d3afae06eae1e4502d1d23cbfeb9",
+  "health_before": {
+    "ready": true,
+    "device": "cuda",
+    "hip": null,
+    "pid": 15004,
+    "startup_token": "2e9c86f5847e4a8ca18deef299081917",
+    "backend_source_sha256": {
+      "model_server.py": "14e840e32fe34ca594eb4fb0dadd89fc67768fb9026ac3359734a021c5190fc2",
+      "model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+      "selector.py": "7427a98f8eac2f36a8d2d736d5065d0ca7894c0c76b929d0458dbc57df74fbbc",
+      "model_protocol.py": "8ba6730e160eac47d8231985e1293bb981a5a63ef9b475cf46daf31ef17bdfb0",
+      "model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+      "normalize.py": "6a4cb8311c29318d788c97a3e64cffa3c4085e595a0e1e9a2d5c418fa540e41c",
+      "types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512"
+    },
+    "software": {
+      "torch": "2.9.1+cu128",
+      "transformers": "4.57.1",
+      "tokenizers": "0.22.1",
+      "safetensors": "0.6.2",
+      "accelerate": "1.11.0"
+    },
+    "parameters": 4022468096,
+    "assets": {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "verified_files": 12,
+      "full_sha256": false,
+      "weight_shards": 3
+    },
+    "warmup_reply": {
+      "candidate": -1,
+      "passage": 0,
+      "answer": "7"
+    },
+    "torch": "2.9.1+cu128",
+    "startup_seconds": 5.718050300027244,
+    "calls": 0,
+    "outcomes": {},
+    "active_request": null,
+    "busy_rejections": 0,
+    "recent_requests": [
+      {
+        "request_id": "warmup",
+        "mode": "select",
+        "input_tokens": 268,
+        "packing_seconds": 0.011370199965313077,
+        "transfer_seconds": 0.0008062000852078199,
+        "generated_tokens": 14,
+        "stop_reason": "completed",
+        "generation_seconds": 1.2178100999444723,
+        "prefill_and_first_token_seconds": 0.507255999953486
+      }
+    ],
+    "context_limit": 1536,
+    "token_stats": {
+      "max_input": 268,
+      "generated": 14,
+      "pruned_requests": 0
+    },
+    "device_memory_bytes": 12878086144,
+    "peak_vram_bytes": 8141605888,
+    "allocated_vram_bytes": 8053474816,
+    "reserved_vram_bytes": 8185184256
+  },
+  "baseline_rows": [
+    {
+      "id": "name-email",
+      "answer_ok": false,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "proof_incomplete",
+        "diagnostics": {
+          "plan": {
+            "question": "What are the first name and email of Orin Vale?",
+            "url": "http://127.0.0.1:26130/name-email.html",
+            "kind": "email",
+            "terms": [
+              "first",
+              "name",
+              "email",
+              "orin",
+              "vale"
+            ],
+            "attributes": [
+              "email",
+              "e-mail",
+              "contact",
+              "mail",
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "first",
+              "orin",
+              "vale"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what are the first name and email ",
+            "choices": [],
+            "operation": "compose_fields",
+            "required_fields": [
+              "first name",
+              "email"
+            ],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.00023420003708451986
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "proof_state": "incomplete",
+          "reader_state": "not_run",
+          "top_candidates": [
+            {
+              "raw": "orin@example.org",
+              "answer": "orin@example.org",
+              "source": "http://127.0.0.1:26130/name-email.html",
+              "evidence": "Name: Orin Vale | First name: Orin | Email: orin@example.org",
+              "label": "Email",
+              "section": "",
+              "kind": "email",
+              "score": 14.200000000000001,
+              "signals": {
+                "locator": "table[0]/row[0]/cell[2]",
+                "page_title": "Orin Vale directory",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 0,
+                  "row": 0,
+                  "columns": [
+                    "Name",
+                    "First name",
+                    "Email"
+                  ],
+                  "cells": [
+                    "Orin Vale",
+                    "Orin",
+                    "orin@example.org"
+                  ],
+                  "column": 2
+                },
+                "field_value": "orin@example.org",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:26130/name-email.html",
+              "final": "http://127.0.0.1:26130/name-email.html",
+              "status": 200,
+              "bytes": 169,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0133
+        }
+      }
+    },
+    {
+      "id": "departure-platform",
+      "answer_ok": false,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "proof_incomplete",
+        "diagnostics": {
+          "plan": {
+            "question": "What are the departure time and platform for Northline?",
+            "url": "http://127.0.0.1:26130/departure-platform.html",
+            "kind": "text",
+            "terms": [
+              "departure",
+              "time",
+              "platform",
+              "northline"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "departure",
+              "time",
+              "platform",
+              "northline"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what are the departure time and platform ",
+            "choices": [],
+            "operation": "compose_fields",
+            "required_fields": [
+              "departure time",
+              "platform"
+            ],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 2.6999972760677338e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "proof_state": "incomplete",
+          "reader_state": "not_run",
+          "top_candidates": [
+            {
+              "raw": "09:15",
+              "answer": "09:15",
+              "source": "http://127.0.0.1:26130/departure-platform.html",
+              "evidence": "Name: Northline | Time: 09:00 | Departure time: 09:15 | Platform: 4",
+              "label": "Departure time",
+              "section": "",
+              "kind": "text",
+              "score": 15.3,
+              "signals": {
+                "locator": "table[0]/row[0]/cell[2]",
+                "page_title": "Northline directory and timetable",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 0,
+                  "row": 0,
+                  "columns": [
+                    "Name",
+                    "Time",
+                    "Departure time",
+                    "Platform"
+                  ],
+                  "cells": [
+                    "Northline",
+                    "09:00",
+                    "09:15",
+                    "4"
+                  ],
+                  "column": 2
+                },
+                "field_value": "09:15",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "09:00",
+              "answer": "09:00",
+              "source": "http://127.0.0.1:26130/departure-platform.html",
+              "evidence": "Name: Northline | Time: 09:00 | Departure time: 09:15 | Platform: 4",
+              "label": "Time",
+              "section": "",
+              "kind": "text",
+              "score": 13.0,
+              "signals": {
+                "locator": "table[0]/row[0]/cell[1]",
+                "page_title": "Northline directory and timetable",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 0,
+                  "row": 0,
+                  "columns": [
+                    "Name",
+                    "Time",
+                    "Departure time",
+                    "Platform"
+                  ],
+                  "cells": [
+                    "Northline",
+                    "09:00",
+                    "09:15",
+                    "4"
+                  ],
+                  "column": 1
+                },
+                "field_value": "09:00",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "4",
+              "answer": "4",
+              "source": "http://127.0.0.1:26130/departure-platform.html",
+              "evidence": "Name: Northline | Time: 09:00 | Departure time: 09:15 | Platform: 4",
+              "label": "Platform",
+              "section": "",
+              "kind": "text",
+              "score": 13.0,
+              "signals": {
+                "locator": "table[0]/row[0]/cell[3]",
+                "page_title": "Northline directory and timetable",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 0,
+                  "row": 0,
+                  "columns": [
+                    "Name",
+                    "Time",
+                    "Departure time",
+                    "Platform"
+                  ],
+                  "cells": [
+                    "Northline",
+                    "09:00",
+                    "09:15",
+                    "4"
+                  ],
+                  "column": 3
+                },
+                "field_value": "4",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:26130/departure-platform.html",
+              "final": "http://127.0.0.1:26130/departure-platform.html",
+              "status": 200,
+              "bytes": 203,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0046
+        }
+      }
+    },
+    {
+      "id": "duplicate-exact",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "proof_incomplete",
+        "diagnostics": {
+          "plan": {
+            "question": "What are the first name and email of Orin Vale?",
+            "url": "http://127.0.0.1:26130/duplicate-exact.html",
+            "kind": "email",
+            "terms": [
+              "first",
+              "name",
+              "email",
+              "orin",
+              "vale"
+            ],
+            "attributes": [
+              "email",
+              "e-mail",
+              "contact",
+              "mail",
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "first",
+              "orin",
+              "vale"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what are the first name and email ",
+            "choices": [],
+            "operation": "compose_fields",
+            "required_fields": [
+              "first name",
+              "email"
+            ],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.0100076906383038e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "proof_state": "incomplete",
+          "reader_state": "not_run",
+          "top_candidates": [
+            {
+              "raw": "orin@example.org",
+              "answer": "orin@example.org",
+              "source": "http://127.0.0.1:26130/duplicate-exact.html",
+              "evidence": "Name: Orin Vale | First name: Orin | First name: Mira | Email: orin@example.org",
+              "label": "Email",
+              "section": "",
+              "kind": "email",
+              "score": 14.200000000000001,
+              "signals": {
+                "locator": "table[0]/row[0]/cell[3]",
+                "page_title": "Northline directory and timetable",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 0,
+                  "row": 0,
+                  "columns": [
+                    "Name",
+                    "First name",
+                    "First name",
+                    "Email"
+                  ],
+                  "cells": [
+                    "Orin Vale",
+                    "Orin",
+                    "Mira",
+                    "orin@example.org"
+                  ],
+                  "column": 3
+                },
+                "field_value": "orin@example.org",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:26130/duplicate-exact.html",
+              "final": "http://127.0.0.1:26130/duplicate-exact.html",
+              "status": 200,
+              "bytes": 215,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0031
+        }
+      }
+    },
+    {
+      "id": "missing-specific",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "proof_incomplete",
+        "diagnostics": {
+          "plan": {
+            "question": "What are the first name and email of Orin Vale?",
+            "url": "http://127.0.0.1:26130/missing-specific.html",
+            "kind": "email",
+            "terms": [
+              "first",
+              "name",
+              "email",
+              "orin",
+              "vale"
+            ],
+            "attributes": [
+              "email",
+              "e-mail",
+              "contact",
+              "mail",
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "first",
+              "orin",
+              "vale"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what are the first name and email ",
+            "choices": [],
+            "operation": "compose_fields",
+            "required_fields": [
+              "first name",
+              "email"
+            ],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 9.7999582067132e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "proof_state": "incomplete",
+          "reader_state": "not_run",
+          "top_candidates": [
+            {
+              "raw": "orin@example.org",
+              "answer": "orin@example.org",
+              "source": "http://127.0.0.1:26130/missing-specific.html",
+              "evidence": "Name: Orin Vale | Email: orin@example.org",
+              "label": "Email",
+              "section": "",
+              "kind": "email",
+              "score": 12.600000000000001,
+              "signals": {
+                "locator": "table[0]/row[0]/cell[1]",
+                "page_title": "Northline directory and timetable",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 0,
+                  "row": 0,
+                  "columns": [
+                    "Name",
+                    "Email"
+                  ],
+                  "cells": [
+                    "Orin Vale",
+                    "orin@example.org"
+                  ],
+                  "column": 1
+                },
+                "field_value": "orin@example.org",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:26130/missing-specific.html",
+              "final": "http://127.0.0.1:26130/missing-specific.html",
+              "status": 200,
+              "bytes": 151,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.003
+        }
+      }
+    }
+  ],
+  "health_after_baseline": {
+    "ready": true,
+    "device": "cuda",
+    "hip": null,
+    "pid": 15004,
+    "startup_token": "2e9c86f5847e4a8ca18deef299081917",
+    "backend_source_sha256": {
+      "model_server.py": "14e840e32fe34ca594eb4fb0dadd89fc67768fb9026ac3359734a021c5190fc2",
+      "model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+      "selector.py": "7427a98f8eac2f36a8d2d736d5065d0ca7894c0c76b929d0458dbc57df74fbbc",
+      "model_protocol.py": "8ba6730e160eac47d8231985e1293bb981a5a63ef9b475cf46daf31ef17bdfb0",
+      "model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+      "normalize.py": "6a4cb8311c29318d788c97a3e64cffa3c4085e595a0e1e9a2d5c418fa540e41c",
+      "types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512"
+    },
+    "software": {
+      "torch": "2.9.1+cu128",
+      "transformers": "4.57.1",
+      "tokenizers": "0.22.1",
+      "safetensors": "0.6.2",
+      "accelerate": "1.11.0"
+    },
+    "parameters": 4022468096,
+    "assets": {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "verified_files": 12,
+      "full_sha256": false,
+      "weight_shards": 3
+    },
+    "warmup_reply": {
+      "candidate": -1,
+      "passage": 0,
+      "answer": "7"
+    },
+    "torch": "2.9.1+cu128",
+    "startup_seconds": 5.718050300027244,
+    "calls": 0,
+    "outcomes": {},
+    "active_request": null,
+    "busy_rejections": 0,
+    "recent_requests": [
+      {
+        "request_id": "warmup",
+        "mode": "select",
+        "input_tokens": 268,
+        "packing_seconds": 0.011370199965313077,
+        "transfer_seconds": 0.0008062000852078199,
+        "generated_tokens": 14,
+        "stop_reason": "completed",
+        "generation_seconds": 1.2178100999444723,
+        "prefill_and_first_token_seconds": 0.507255999953486
+      }
+    ],
+    "context_limit": 1536,
+    "token_stats": {
+      "max_input": 268,
+      "generated": 14,
+      "pruned_requests": 0
+    },
+    "device_memory_bytes": 12878086144,
+    "peak_vram_bytes": 8141605888,
+    "allocated_vram_bytes": 8053474816,
+    "reserved_vram_bytes": 8185184256
+  },
+  "health_after": {
+    "ready": true,
+    "device": "cuda",
+    "hip": null,
+    "pid": 15004,
+    "startup_token": "2e9c86f5847e4a8ca18deef299081917",
+    "backend_source_sha256": {
+      "model_server.py": "14e840e32fe34ca594eb4fb0dadd89fc67768fb9026ac3359734a021c5190fc2",
+      "model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+      "selector.py": "7427a98f8eac2f36a8d2d736d5065d0ca7894c0c76b929d0458dbc57df74fbbc",
+      "model_protocol.py": "8ba6730e160eac47d8231985e1293bb981a5a63ef9b475cf46daf31ef17bdfb0",
+      "model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+      "normalize.py": "6a4cb8311c29318d788c97a3e64cffa3c4085e595a0e1e9a2d5c418fa540e41c",
+      "types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512"
+    },
+    "software": {
+      "torch": "2.9.1+cu128",
+      "transformers": "4.57.1",
+      "tokenizers": "0.22.1",
+      "safetensors": "0.6.2",
+      "accelerate": "1.11.0"
+    },
+    "parameters": 4022468096,
+    "assets": {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "verified_files": 12,
+      "full_sha256": false,
+      "weight_shards": 3
+    },
+    "warmup_reply": {
+      "candidate": -1,
+      "passage": 0,
+      "answer": "7"
+    },
+    "torch": "2.9.1+cu128",
+    "startup_seconds": 5.718050300027244,
+    "calls": 2,
+    "outcomes": {
+      "supported": 2
+    },
+    "active_request": null,
+    "busy_rejections": 0,
+    "recent_requests": [
+      {
+        "request_id": "warmup",
+        "mode": "select",
+        "input_tokens": 268,
+        "packing_seconds": 0.011370199965313077,
+        "transfer_seconds": 0.0008062000852078199,
+        "generated_tokens": 14,
+        "stop_reason": "completed",
+        "generation_seconds": 1.2178100999444723,
+        "prefill_and_first_token_seconds": 0.507255999953486
+      },
+      {
+        "request_id": "d3970b69deeb44ffa9cdf40b2ad9e595",
+        "mode": "verify",
+        "input_tokens": 521,
+        "packing_seconds": 0.0027850999031215906,
+        "transfer_seconds": 0.001251900102943182,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.4878060999326408,
+        "prefill_and_first_token_seconds": 0.10619520000182092
+      },
+      {
+        "request_id": "128febf4943a45f48328886812b2e5be",
+        "mode": "verify",
+        "input_tokens": 563,
+        "packing_seconds": 0.002711599925532937,
+        "transfer_seconds": 0.001243900042027235,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.38248409994412214,
+        "prefill_and_first_token_seconds": 0.09596359997522086
+      }
+    ],
+    "context_limit": 1536,
+    "token_stats": {
+      "max_input": 563,
+      "generated": 26,
+      "pruned_requests": 0
+    },
+    "device_memory_bytes": 12878086144,
+    "peak_vram_bytes": 8304131072,
+    "allocated_vram_bytes": 8061994496,
+    "reserved_vram_bytes": 8445231104
+  },
+  "memory_after_run": {
+    "used_mib": 9294,
+    "total_mib": 12282
+  },
+  "memory_after_shutdown": {
+    "used_mib": 1025,
+    "total_mib": 12282
+  },
+  "production_after_sha256": {
+    "app.py": "c0267c0441330bd30559f48d2f33916418992b8e21ec8dd1d09ae4773c23b73b",
+    "agent\\browser.py": "f7a3d9479ec2ae9bc9fbbcb27efbddaeba9b5dd8639016e827840cc1c7e33cea",
+    "agent\\candidates.py": "944c2dfffbd7e0d875c633cb1ee260563cebd88e554181d6ad35914cdf0de8cd",
+    "agent\\currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent\\engine.py": "8a0fa144451d6cf488c12bb248affce0fe9bb1db3f284dabce84f1e97dfc2ca8",
+    "agent\\evidence.py": "3a5b361433e2aac2f8a7d4b292d137b4c80f32183057c0138b852a9190020cbb",
+    "agent\\knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent\\model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+    "agent\\model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent\\model_protocol.py": "8ba6730e160eac47d8231985e1293bb981a5a63ef9b475cf46daf31ef17bdfb0",
+    "agent\\model_server.py": "14e840e32fe34ca594eb4fb0dadd89fc67768fb9026ac3359734a021c5190fc2",
+    "agent\\navigation.py": "0f849c0c570720114c45c14b0a5286fe409e5d26c2945fdc9f6c1a6922bb7718",
+    "agent\\network.py": "def1be3752f81423c313c2dfa83f6703ee063d7e98652cf0d816b423d0e2d9cb",
+    "agent\\normalize.py": "6a4cb8311c29318d788c97a3e64cffa3c4085e595a0e1e9a2d5c418fa540e41c",
+    "agent\\output.py": "b983ab2efe31707b1c974344a32dc4b40b708541257695de89cac9e343b073eb",
+    "agent\\parser.py": "adee2e94345415b11b80fb4f38053ed85f1b49b27d1ab73df16264e59cdf2803",
+    "agent\\planner.py": "56d3747fd466f414800221f35a8f4d3fa25d1c40b484ace1fee7dae66be51921",
+    "agent\\processes.py": "677c4372b40d1da0ffc0cf4120ca5b6be2fcf6b6c30f6ec17d0d8fae19e198c1",
+    "agent\\proofs.py": "0d7ae78df6ea9949c29f33c7b817dda352c75b3d99c960c3e987e37c7401faab",
+    "agent\\qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent\\resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent\\search.py": "489c8fee52ce0775b2e7d29d21f977e3d644a00098f834f736e456f1a34faf87",
+    "agent\\selector.py": "7427a98f8eac2f36a8d2d736d5065d0ca7894c0c76b929d0458dbc57df74fbbc",
+    "agent\\signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent\\types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent\\urls.py": "2118381f70d0f44174db25833b989cd36dab64b588b83085cddd65cad7412a1f",
+    "agent\\worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f",
+    "agent\\__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41"
+  },
+  "production_changed_during_run": false,
+  "passed": 4,
+  "total": 4,
+  "comparison": {
+    "before_passed": 2,
+    "after_passed": 4,
+    "total": 4,
+    "wins": [
+      "name-email",
+      "departure-platform"
+    ],
+    "losses": []
+  }
+}

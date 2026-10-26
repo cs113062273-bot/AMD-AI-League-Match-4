@@ -1,0 +1,246 @@
+{
+  "scope": "Two actual public registry reads; no model/GPU/browser. Source bodies captured unchanged.",
+  "rows": [
+    {
+      "registry": "pypi",
+      "package": "httpx",
+      "starting_url": "",
+      "result": {
+        "answer": "BSD",
+        "sources": [
+          "https://pypi.org/pypi/httpx/0.11.1/json"
+        ],
+        "confidence": 0.913,
+        "evidence": "license: BSD | package httpx version 0.11.1 release date 2020-01-17",
+        "reason": "deterministic_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of the pypi package httpx as of 2020-01-31?",
+            "url": "",
+            "kind": "license",
+            "terms": [
+              "license",
+              "pypi",
+              "package",
+              "httpx",
+              "2020-01-31",
+              "2020",
+              "01",
+              "31"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "pypi",
+              "package",
+              "httpx",
+              "2020-01-31",
+              "01",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-01-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.634253800031729
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "BSD",
+            "answer": "BSD",
+            "source": "https://pypi.org/pypi/httpx/0.11.1/json",
+            "evidence": "license: BSD | package httpx version 0.11.1 release date 2020-01-17",
+            "label": "license",
+            "section": "package httpx version 0.11.1 release date 2020-01-17",
+            "kind": "license",
+            "score": 14.500000000000002,
+            "signals": {
+              "locator": "adapter/license",
+              "page_title": "PyPI httpx",
+              "structure": "field",
+              "qualifiers": {
+                "registry_release": {
+                  "version": "0.11.1",
+                  "date": "2020-01-17"
+                }
+              },
+              "field_value": "BSD",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "https://pypi.org/pypi/httpx/json",
+              "final": "https://pypi.org/pypi/httpx/json",
+              "status": 200,
+              "bytes": 119911,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "https://pypi.org/pypi/httpx/0.11.1/json",
+              "final": "https://pypi.org/pypi/httpx/0.11.1/json",
+              "status": 200,
+              "bytes": 22500,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 2,
+          "pages_fetched": 1,
+          "seconds": 0.6464
+        }
+      },
+      "has_dated_release_scope": true,
+      "capture_path": "research/registry-history-20261023-live/pypi.json",
+      "capture_sha256": "a3183466f77e9f8f36d6b50be97f31321325395e75bedba4f42071a9026e6263",
+      "captured_urls": [
+        "https://pypi.org/pypi/httpx/json",
+        "https://pypi.org/pypi/httpx/0.11.1/json"
+      ],
+      "scope": "First actual free public API compatibility probe, CPU model disabled; not held-out accuracy or a before/after answer score."
+    },
+    {
+      "registry": "npm",
+      "package": "chalk",
+      "starting_url": "",
+      "result": {
+        "answer": "MIT",
+        "sources": [
+          "https://registry.npmjs.org/chalk"
+        ],
+        "confidence": 0.805,
+        "evidence": "license: MIT | chalk version 3.0.0 release date 2019-11-09",
+        "reason": "deterministic_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the license of the npm package chalk as of 2020-01-31?",
+            "url": "",
+            "kind": "license",
+            "terms": [
+              "license",
+              "npm",
+              "package",
+              "chalk",
+              "2020-01-31",
+              "2020",
+              "01",
+              "31"
+            ],
+            "attributes": [
+              "license",
+              "licence",
+              "licensing",
+              "spdx"
+            ],
+            "entity_terms": [
+              "npm",
+              "package",
+              "chalk",
+              "2020-01-31",
+              "01",
+              "31"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-01-31",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "",
+            "focus": "what was the license ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.2557578000705689
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "MIT",
+            "answer": "MIT",
+            "source": "https://registry.npmjs.org/chalk",
+            "evidence": "license: MIT | chalk version 3.0.0 release date 2019-11-09",
+            "label": "license",
+            "section": "chalk version 3.0.0 release date 2019-11-09",
+            "kind": "license",
+            "score": 10.200000000000001,
+            "signals": {
+              "locator": "adapter/license",
+              "page_title": "npm chalk",
+              "structure": "field",
+              "qualifiers": {
+                "registry_release": {
+                  "version": "3.0.0",
+                  "date": "2019-11-09"
+                }
+              },
+              "field_value": "MIT",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "https://registry.npmjs.org/chalk",
+              "final": "https://registry.npmjs.org/chalk",
+              "status": 200,
+              "bytes": 137439,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.2592
+        }
+      },
+      "has_dated_release_scope": true,
+      "capture_path": "research/registry-history-20261023-live/npm.json",
+      "capture_sha256": "756ac616e11a77737792874154ca3d63622eb6c3a177b7523d48dc0c3a93d513",
+      "captured_urls": [
+        "https://registry.npmjs.org/chalk"
+      ],
+      "scope": "First actual free public API compatibility probe, CPU model disabled; not held-out accuracy or a before/after answer score."
+    }
+  ]
+}

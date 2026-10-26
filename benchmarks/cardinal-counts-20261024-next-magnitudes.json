@@ -1,0 +1,34 @@
+{
+  "scope": "Known remaining Arabic-digit/magnitude boundary probe, authored source only. Mechanical guard acceptance is not model support or an assessment. Not counted in the pure English-cardinal diagnostic. Baseline and current both retain this pre-existing limitation; prioritize next.",
+  "baseline": "5ed15b26f1d7b360b719da3b1a3df9f0e14bb898",
+  "rows": [
+    {
+      "stage": "baseline",
+      "text": "Elm Hall has 4 hundred chairs.",
+      "partial_4_mechanically_accepted": true,
+      "full_literal_mechanically_accepted": false
+    },
+    {
+      "stage": "baseline",
+      "text": "Elm Hall has 4 million chairs.",
+      "partial_4_mechanically_accepted": true,
+      "full_literal_mechanically_accepted": true
+    },
+    {
+      "stage": "current",
+      "text": "Elm Hall has 4 hundred chairs.",
+      "partial_4_mechanically_accepted": true,
+      "full_literal_mechanically_accepted": false
+    },
+    {
+      "stage": "current",
+      "text": "Elm Hall has 4 million chairs.",
+      "partial_4_mechanically_accepted": true,
+      "full_literal_mechanically_accepted": true
+    }
+  ],
+  "production_sha256": {
+    "agent\\cardinals.py": "a30d36df9b3a8337c3c40e33a4d8b4f9b9683f448c48bed4b69a40db805fa05e",
+    "agent\\candidates.py": "058643a7cb99eeea612965c3e5826cc3176d92f14e4812eeb0a8f0403a8f273f"
+  }
+}

@@ -1,0 +1,17 @@
+id,family,answer,sources,expected_answer,expected_source,answer_ok,source_ok,joint_ok,seconds,error,failure_category,malformed_output
+pypi-httpx-license,registry,,[],['BSD-3-Clause'],https://pypi.org/pypi/httpx/json,False,False,False,23.705504700017627,,ABS,False
+pypi-flask-requires_python,registry,,[],['>=3.9'],https://pypi.org/pypi/flask/json,False,False,False,23.70952659996692,,ABS,False
+pypi-pydantic-version,registry,,[],['2.14.1'],https://pypi.org/pypi/pydantic/json,False,False,False,23.704500199994072,,ABS,False
+pypi-beautifulsoup4-requires_python,registry,>=3.7.0,['https://pypi.org/pypi/beautifulsoup4/json'],['>=3.7.0'],https://pypi.org/pypi/beautifulsoup4/json,True,True,True,3.956499200023245,,,False
+pypi-packaging-version,registry,,[],['26.3'],https://pypi.org/pypi/packaging/json,False,False,False,23.703180000011344,,ABS,False
+pypi-pytest-requires_python,registry,>=3.10,['https://pypi.org/pypi/pytest/json'],['>=3.10'],https://pypi.org/pypi/pytest/json,True,True,True,5.213243899983354,,,False
+github-encode-httpx,registry,,[],['Python'],https://api.github.com/repos/encode/httpx,False,False,False,17.798641600005794,,ABS,False
+github-pallets-flask,registry,main,['https://api.github.com/repos/pallets/flask'],['main'],https://api.github.com/repos/pallets/flask,True,True,True,2.733129400003236,,,False
+github-psf-requests,registry,,[],['Apache-2.0'],https://api.github.com/repos/psf/requests,False,False,False,21.534280099964235,,ABS,False
+github-pytest-dev-pytest,registry,,[],['MIT'],https://api.github.com/repos/pytest-dev/pytest,False,False,False,23.701771299995016,,ABS,False
+pep-440,docs,,[],['Version Identification and Dependency Specification'],https://peps.python.org/pep-0440/,False,False,False,5.1155728999874555,,ABS,False
+pep-498,docs,,[],['Literal String Interpolation'],https://peps.python.org/pep-0498/,False,False,False,5.110787200042978,,ABS,False
+pep-750,docs,,[],['Template Strings'],https://peps.python.org/pep-0750/,False,False,False,5.1084712000447325,,ABS,False
+arxiv-title,paper,,[],['BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding'],https://arxiv.org/abs/1810.04805,False,False,False,5.113716700056102,,ABS,False
+arxiv-first-author,paper,Jacob Devlin,['https://arxiv.org/abs/1810.04805'],['Jacob Devlin'],https://arxiv.org/abs/1810.04805,True,True,True,4.578242599964142,,,False
+python-docs,docs,,[],['True'],https://docs.python.org/3/library/urllib.parse.html,False,False,False,8.104967700026464,,ABS,False

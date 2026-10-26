@@ -1,0 +1,2816 @@
+{
+  "scope": "CPU-only URL extraction and actual local HTTP paths, with models disabled.\n\nSource handlers accept only exact expected request targets. This measures\nsource selection/transport, not Qwen or public-web answer accuracy.\n",
+  "baseline_revision": "b02880a9ad02d4a50e2c839da6b19048328efefb",
+  "baseline_source_sha256": {
+    "agent/engine.py": "01464cb276814f2d7c845c269da2522c285a7a7e28051abd7e36ad0ec62b41ff",
+    "agent/types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent/planner.py": "7f6277fe3431951f068059756c8ed66fbed68f2105355e060ff48e6ed767fa44",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "agent/normalize.py": "05e48fa0be8384aa656bf1280ba0be44545efa51b7d4451f0716d836d39a1973",
+    "agent/network.py": "c37ecb5b4b0fba4fac737954eda24952059922ed620c94b99bcb17daed8c5155",
+    "agent/urls.py": "3a6b8a380f6d7966f1f79b97ccdedab5a5959ffbe5a1aa244e3477a0fe6110f4",
+    "agent/parser.py": "c48380653ed62d28f9a9affc4530b09a6201a544a6f2643aedb7d937589d659f",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/challenges.py": "b6f51c720f332671725e08127a5d1c163ca0542d2a550bf3c980a6d4c49bf6a1",
+    "agent/field_groups.py": "52a54989253c59e9836dec4aaec4944b688376e79548b9336887558a454e9162",
+    "agent/resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent/search.py": "28e2454682bc8af4ef10b06f62b66117d39194fddc9ec218b9bc82cad96767fd",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/candidates.py": "16dd310d36390f5cb0323f0d81d7630542b116693dd0ee0b1e9fe015a80cb1d0",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/evidence.py": "56994f2e5046668e33630fbc2330cfac35c8971f3c4d4e25f22547f1d99feba2",
+    "agent/selector.py": "a693a62781fcb76dd11bc6d29eb19770b48dc7e2e29bd7619cc189b62bf70e1b",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+    "agent/proofs.py": "0d7ae78df6ea9949c29f33c7b817dda352c75b3d99c960c3e987e37c7401faab",
+    "agent/oyez.py": "8475f248d78925522e0742b13518be2c4f4db11eae0d8391a8002da7d4e3b67d"
+  },
+  "before": [
+    {
+      "id": "plain",
+      "passed": true,
+      "actual": "https://example.org/docs",
+      "expected": "https://example.org/docs",
+      "error": null
+    },
+    {
+      "id": "internal-parentheses",
+      "passed": false,
+      "actual": "https://example.org/Plum_(tree",
+      "expected": "https://example.org/Plum_(tree)",
+      "error": null
+    },
+    {
+      "id": "nested-parentheses",
+      "passed": false,
+      "actual": "https://example.org/Plum_(tree_(fruit",
+      "expected": "https://example.org/Plum_(tree_(fruit))",
+      "error": null
+    },
+    {
+      "id": "outer-parentheses",
+      "passed": false,
+      "actual": "https://example.org/Plum_(tree",
+      "expected": "https://example.org/Plum_(tree)",
+      "error": null
+    },
+    {
+      "id": "markdown",
+      "passed": false,
+      "actual": "https://example.org/Plum_(tree",
+      "expected": "https://example.org/Plum_(tree)",
+      "error": null
+    },
+    {
+      "id": "outer-square",
+      "passed": false,
+      "actual": "https://example.org/Plum_(tree",
+      "expected": "https://example.org/Plum_(tree)",
+      "error": null
+    },
+    {
+      "id": "angle",
+      "passed": false,
+      "actual": "https://example.org/Plum_(tree",
+      "expected": "https://example.org/Plum_(tree)",
+      "error": null
+    },
+    {
+      "id": "double-quote",
+      "passed": false,
+      "actual": "https://example.org/Plum_(tree",
+      "expected": "https://example.org/Plum_(tree)",
+      "error": null
+    },
+    {
+      "id": "single-quote",
+      "passed": false,
+      "actual": "https://example.org/Plum_(tree",
+      "expected": "https://example.org/Plum_(tree)",
+      "error": null
+    },
+    {
+      "id": "backtick",
+      "passed": false,
+      "actual": "https://example.org/Plum_(tree",
+      "expected": "https://example.org/Plum_(tree)",
+      "error": null
+    },
+    {
+      "id": "angle-unmatched-close",
+      "passed": false,
+      "actual": "https://example.org/literal",
+      "expected": "https://example.org/literal)",
+      "error": null
+    },
+    {
+      "id": "quote-unmatched-open",
+      "passed": true,
+      "actual": "https://example.org/literal(",
+      "expected": "https://example.org/literal(",
+      "error": null
+    },
+    {
+      "id": "unclosed-original",
+      "passed": true,
+      "actual": "https://example.org/literal_(tree",
+      "expected": "https://example.org/literal_(tree",
+      "error": null
+    },
+    {
+      "id": "percent-encoding",
+      "passed": true,
+      "actual": "https://example.org/Plum_%28tree%29?x=%2f&x=%2F",
+      "expected": "https://example.org/Plum_%28tree%29?x=%2f&x=%2F",
+      "error": null
+    },
+    {
+      "id": "query-delimiters",
+      "passed": false,
+      "actual": "https://example.org/lookup?filter=(a,b",
+      "expected": "https://example.org/lookup?filter=(a,b)&fields[]=name",
+      "error": null
+    },
+    {
+      "id": "query-terminal-punctuation",
+      "passed": false,
+      "actual": "https://example.org/lookup?token=a,b",
+      "expected": "https://example.org/lookup?token=a,b;",
+      "error": null
+    },
+    {
+      "id": "query-question-mark",
+      "passed": false,
+      "actual": "https://example.org/lookup?q=why",
+      "expected": "https://example.org/lookup?q=why?",
+      "error": null
+    },
+    {
+      "id": "signed-query",
+      "passed": false,
+      "actual": "https://example.org/file?utm_source=keep&sig=a%2Bb&x=1&x=2",
+      "expected": "https://example.org/file?utm_source=keep&sig=a%2Bb&x=1&x=2;",
+      "error": null
+    },
+    {
+      "id": "bare-period",
+      "passed": true,
+      "actual": "https://example.org/docs",
+      "expected": "https://example.org/docs",
+      "error": null
+    },
+    {
+      "id": "bare-comma",
+      "passed": true,
+      "actual": "https://example.org/docs",
+      "expected": "https://example.org/docs",
+      "error": null
+    },
+    {
+      "id": "quoted-period",
+      "passed": false,
+      "actual": "https://example.org/file",
+      "expected": "https://example.org/file.",
+      "error": null
+    },
+    {
+      "id": "markdown-period",
+      "passed": false,
+      "actual": "https://example.org/file",
+      "expected": "https://example.org/file.",
+      "error": null
+    },
+    {
+      "id": "bare-empty-query",
+      "passed": true,
+      "actual": "https://example.org/docs",
+      "expected": "https://example.org/docs",
+      "error": null
+    },
+    {
+      "id": "quoted-empty-query",
+      "passed": false,
+      "actual": "https://example.org/docs",
+      "expected": "https://example.org/docs?",
+      "error": null
+    },
+    {
+      "id": "apostrophe",
+      "passed": true,
+      "actual": "https://example.org/O'Brien",
+      "expected": "https://example.org/O'Brien",
+      "error": null
+    },
+    {
+      "id": "quoted-apostrophe",
+      "passed": true,
+      "actual": "https://example.org/O'Brien",
+      "expected": "https://example.org/O'Brien",
+      "error": null
+    },
+    {
+      "id": "ipv6",
+      "passed": false,
+      "actual": "http://[2001:db8::1]:8080/Plum_(tree",
+      "expected": "http://[2001:db8::1]:8080/Plum_(tree)",
+      "error": null
+    },
+    {
+      "id": "uppercase",
+      "passed": false,
+      "actual": "",
+      "expected": "HTTPS://EXAMPLE.ORG/Plum_(tree)",
+      "error": null
+    },
+    {
+      "id": "two-urls",
+      "passed": false,
+      "actual": "https://example.org/Plum_(tree",
+      "expected": "https://example.org/Plum_(tree)",
+      "error": null
+    },
+    {
+      "id": "inner-url",
+      "passed": true,
+      "actual": "https://example.org/go?next=https://other.example.net/docs",
+      "expected": "https://example.org/go?next=https://other.example.net/docs",
+      "error": null
+    },
+    {
+      "id": "fragment",
+      "passed": false,
+      "actual": "https://example.org/Plum_(tree",
+      "expected": "https://example.org/Plum_(tree)#details",
+      "error": null
+    },
+    {
+      "id": "malformed-ipv6",
+      "passed": false,
+      "actual": null,
+      "expected": "https://[broken",
+      "error": "ValueError"
+    },
+    {
+      "id": "no-url",
+      "passed": true,
+      "actual": "",
+      "expected": "",
+      "error": null
+    },
+    {
+      "id": "non-http",
+      "passed": true,
+      "actual": "",
+      "expected": "",
+      "error": null
+    },
+    {
+      "id": "explicit-precedence",
+      "passed": true,
+      "actual": "https://explicit.example.org/docs/(a)?sig=value;",
+      "expected": "https://explicit.example.org/docs/(a)?sig=value;"
+    },
+    {
+      "id": "http-bare",
+      "passed": false,
+      "expected_target": "/docs/Plum_(tree)",
+      "actual_targets": [
+        "/docs/Plum_(tree"
+      ],
+      "error": null,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "no_supported_candidate",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the title at http://127.0.0.1:19297/docs/Plum_(tree)?",
+            "url": "http://127.0.0.1:19297/docs/Plum_(tree",
+            "kind": "text",
+            "terms": [
+              "title"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the title ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [
+            {
+              "url": "http://127.0.0.1:19297/docs/Plum_(tree",
+              "error": "http_404"
+            }
+          ],
+          "selector": [],
+          "timings": {
+            "resolver": 0.00013129995204508305
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 0,
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:19297/docs/Plum_(tree",
+              "final": "http://127.0.0.1:19297/docs/Plum_(tree",
+              "status": 404,
+              "bytes": 0,
+              "error": "http_404",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 0,
+          "pages_fetched": 0,
+          "seconds": 0.0028
+        }
+      }
+    },
+    {
+      "id": "http-markdown",
+      "passed": false,
+      "expected_target": "/docs/Plum_(tree)",
+      "actual_targets": [
+        "/docs/Plum_(tree"
+      ],
+      "error": null,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "no_supported_candidate",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the title at [source](http://127.0.0.1:19297/docs/Plum_(tree))?",
+            "url": "http://127.0.0.1:19297/docs/Plum_(tree",
+            "kind": "text",
+            "terms": [
+              "title",
+              "source"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "source"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the title ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [
+            {
+              "url": "http://127.0.0.1:19297/docs/Plum_(tree",
+              "error": "http_404"
+            }
+          ],
+          "selector": [],
+          "timings": {
+            "resolver": 1.3299984857439995e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 0,
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:19297/docs/Plum_(tree",
+              "final": "http://127.0.0.1:19297/docs/Plum_(tree",
+              "status": 404,
+              "bytes": 0,
+              "error": "http_404",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 0,
+          "pages_fetched": 0,
+          "seconds": 0.0014
+        }
+      }
+    },
+    {
+      "id": "http-nested",
+      "passed": false,
+      "expected_target": "/docs/Plum_(tree_(fruit))",
+      "actual_targets": [
+        "/docs/Plum_(tree_(fruit"
+      ],
+      "error": null,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "no_supported_candidate",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the title at http://127.0.0.1:19297/docs/Plum_(tree_(fruit))?",
+            "url": "http://127.0.0.1:19297/docs/Plum_(tree_(fruit",
+            "kind": "text",
+            "terms": [
+              "title"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the title ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [
+            {
+              "url": "http://127.0.0.1:19297/docs/Plum_(tree_(fruit",
+              "error": "http_404"
+            }
+          ],
+          "selector": [],
+          "timings": {
+            "resolver": 2.5699962861835957e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 0,
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:19297/docs/Plum_(tree_(fruit",
+              "final": "http://127.0.0.1:19297/docs/Plum_(tree_(fruit",
+              "status": 404,
+              "bytes": 0,
+              "error": "http_404",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 0,
+          "pages_fetched": 0,
+          "seconds": 0.003
+        }
+      }
+    },
+    {
+      "id": "http-query",
+      "passed": false,
+      "expected_target": "/lookup?filter=(a,b)&fields[]=name",
+      "actual_targets": [
+        "/lookup?filter=(a,b"
+      ],
+      "error": null,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "no_supported_candidate",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the title at http://127.0.0.1:19297/lookup?filter=(a,b)&fields[]=name",
+            "url": "http://127.0.0.1:19297/lookup?filter=(a,b",
+            "kind": "text",
+            "terms": [
+              "title"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the title ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [
+            {
+              "url": "http://127.0.0.1:19297/lookup?filter=(a,b",
+              "error": "http_404"
+            }
+          ],
+          "selector": [],
+          "timings": {
+            "resolver": 3.330002073198557e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 0,
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:19297/lookup?filter=(a,b",
+              "final": "http://127.0.0.1:19297/lookup?filter=(a,b",
+              "status": 404,
+              "bytes": 0,
+              "error": "http_404",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 0,
+          "pages_fetched": 0,
+          "seconds": 0.0033
+        }
+      }
+    },
+    {
+      "id": "http-encoded",
+      "passed": true,
+      "expected_target": "/docs/Plum_%28tree%29?x=%2f&x=%2F",
+      "actual_targets": [
+        "/docs/Plum_%28tree%29?x=%2f&x=%2F"
+      ],
+      "error": null,
+      "result": {
+        "answer": "Cobalt Guide",
+        "sources": [
+          "http://127.0.0.1:19297/docs/Plum_%28tree%29?x=%2f&x=%2F"
+        ],
+        "confidence": 0.97,
+        "evidence": "Cobalt Guide",
+        "reason": "deterministic_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the title at http://127.0.0.1:19297/docs/Plum_%28tree%29?x=%2f&x=%2F",
+            "url": "http://127.0.0.1:19297/docs/Plum_%28tree%29?x=%2f&x=%2F",
+            "kind": "text",
+            "terms": [
+              "title"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the title ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 4.6900007873773575e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "Cobalt Guide",
+            "answer": "Cobalt Guide",
+            "source": "http://127.0.0.1:19297/docs/Plum_%28tree%29?x=%2f&x=%2F",
+            "evidence": "Cobalt Guide",
+            "label": "title",
+            "section": "Cobalt Guide",
+            "kind": "text",
+            "score": 17.3,
+            "signals": {
+              "locator": "h1[0]",
+              "page_title": "Cobalt Guide",
+              "structure": "field",
+              "qualifiers": {},
+              "field_value": "Cobalt Guide",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:19297/docs/Plum_%28tree%29?x=%2f&x=%2F",
+              "final": "http://127.0.0.1:19297/docs/Plum_%28tree%29?x=%2f&x=%2F",
+              "status": 200,
+              "bytes": 48,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0195
+        }
+      }
+    },
+    {
+      "id": "http-signed",
+      "passed": false,
+      "expected_target": "/lookup?utm_source=keep&sig=s%2C&x=1&x=2;",
+      "actual_targets": [
+        "/lookup?utm_source=keep&sig=s%2C&x=1&x=2"
+      ],
+      "error": null,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "no_supported_candidate",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the title at http://127.0.0.1:19297/lookup?utm_source=keep&sig=s%2C&x=1&x=2;",
+            "url": "http://127.0.0.1:19297/lookup?utm_source=keep&sig=s%2C&x=1&x=2",
+            "kind": "text",
+            "terms": [
+              "title"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the title ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [
+            {
+              "url": "http://127.0.0.1:19297/lookup?utm_source=keep&sig=s%2C&x=1&x=2",
+              "error": "http_404"
+            }
+          ],
+          "selector": [],
+          "timings": {
+            "resolver": 1.610000617802143e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 0,
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:19297/lookup?utm_source=keep&sig=s%2C&x=1&x=2",
+              "final": "http://127.0.0.1:19297/lookup?utm_source=keep&sig=s%2C&x=1&x=2",
+              "status": 404,
+              "bytes": 0,
+              "error": "http_404",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 0,
+          "pages_fetched": 0,
+          "seconds": 0.0016
+        }
+      }
+    },
+    {
+      "id": "http-unmatched",
+      "passed": false,
+      "expected_target": "/docs/unmatched)",
+      "actual_targets": [
+        "/docs/unmatched"
+      ],
+      "error": null,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "no_supported_candidate",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the title at \"http://127.0.0.1:19297/docs/unmatched)\"?",
+            "url": "http://127.0.0.1:19297/docs/unmatched",
+            "kind": "text",
+            "terms": [
+              "title"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the title ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [
+            {
+              "url": "http://127.0.0.1:19297/docs/unmatched",
+              "error": "http_404"
+            }
+          ],
+          "selector": [],
+          "timings": {
+            "resolver": 1.2699980288743973e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 0,
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:19297/docs/unmatched",
+              "final": "http://127.0.0.1:19297/docs/unmatched",
+              "status": 404,
+              "bytes": 0,
+              "error": "http_404",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 0,
+          "pages_fetched": 0,
+          "seconds": 0.0013
+        }
+      }
+    },
+    {
+      "id": "http-terminal-period",
+      "passed": false,
+      "expected_target": "/docs/version.",
+      "actual_targets": [
+        "/docs/version"
+      ],
+      "error": null,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "no_supported_candidate",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the title at <http://127.0.0.1:19297/docs/version.>?",
+            "url": "http://127.0.0.1:19297/docs/version",
+            "kind": "text",
+            "terms": [
+              "title"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the title ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [
+            {
+              "url": "http://127.0.0.1:19297/docs/version",
+              "error": "http_404"
+            }
+          ],
+          "selector": [],
+          "timings": {
+            "resolver": 1.2599979527294636e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 0,
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:19297/docs/version",
+              "final": "http://127.0.0.1:19297/docs/version",
+              "status": 404,
+              "bytes": 0,
+              "error": "http_404",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 0,
+          "pages_fetched": 0,
+          "seconds": 0.0013
+        }
+      }
+    },
+    {
+      "id": "http-apostrophe",
+      "passed": true,
+      "expected_target": "/docs/O'Brien",
+      "actual_targets": [
+        "/docs/O'Brien"
+      ],
+      "error": null,
+      "result": {
+        "answer": "Cobalt Guide",
+        "sources": [
+          "http://127.0.0.1:19297/docs/O'Brien"
+        ],
+        "confidence": 0.97,
+        "evidence": "Cobalt Guide",
+        "reason": "deterministic_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the title at http://127.0.0.1:19297/docs/O'Brien",
+            "url": "http://127.0.0.1:19297/docs/O'Brien",
+            "kind": "text",
+            "terms": [
+              "title"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the title ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.279998105019331e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "Cobalt Guide",
+            "answer": "Cobalt Guide",
+            "source": "http://127.0.0.1:19297/docs/O'Brien",
+            "evidence": "Cobalt Guide",
+            "label": "title",
+            "section": "Cobalt Guide",
+            "kind": "text",
+            "score": 17.3,
+            "signals": {
+              "locator": "h1[0]",
+              "page_title": "Cobalt Guide",
+              "structure": "field",
+              "qualifiers": {},
+              "field_value": "Cobalt Guide",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:19297/docs/O'Brien",
+              "final": "http://127.0.0.1:19297/docs/O'Brien",
+              "status": 200,
+              "bytes": 48,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0028
+        }
+      }
+    },
+    {
+      "id": "http-plain",
+      "passed": true,
+      "expected_target": "/docs/plain",
+      "actual_targets": [
+        "/docs/plain"
+      ],
+      "error": null,
+      "result": {
+        "answer": "Cobalt Guide",
+        "sources": [
+          "http://127.0.0.1:19297/docs/plain"
+        ],
+        "confidence": 0.97,
+        "evidence": "Cobalt Guide",
+        "reason": "deterministic_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the title at http://127.0.0.1:19297/docs/plain?",
+            "url": "http://127.0.0.1:19297/docs/plain",
+            "kind": "text",
+            "terms": [
+              "title"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the title ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.4199991710484028e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "Cobalt Guide",
+            "answer": "Cobalt Guide",
+            "source": "http://127.0.0.1:19297/docs/plain",
+            "evidence": "Cobalt Guide",
+            "label": "title",
+            "section": "Cobalt Guide",
+            "kind": "text",
+            "score": 17.3,
+            "signals": {
+              "locator": "h1[0]",
+              "page_title": "Cobalt Guide",
+              "structure": "field",
+              "qualifiers": {},
+              "field_value": "Cobalt Guide",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:19297/docs/plain",
+              "final": "http://127.0.0.1:19297/docs/plain",
+              "status": 200,
+              "bytes": 48,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0026
+        }
+      }
+    },
+    {
+      "id": "http-explicit",
+      "passed": true,
+      "expected_target": "/docs/Plum_(tree)",
+      "actual_targets": [
+        "/docs/Plum_(tree)"
+      ],
+      "error": null,
+      "result": {
+        "answer": "Cobalt Guide",
+        "sources": [
+          "http://127.0.0.1:19297/docs/Plum_(tree)"
+        ],
+        "confidence": 0.97,
+        "evidence": "Cobalt Guide",
+        "reason": "deterministic_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the title at https://other.example.net/ignored_(item)?",
+            "url": "http://127.0.0.1:19297/docs/Plum_(tree)",
+            "kind": "text",
+            "terms": [
+              "title"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the title ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.179997343569994e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "Cobalt Guide",
+            "answer": "Cobalt Guide",
+            "source": "http://127.0.0.1:19297/docs/Plum_(tree)",
+            "evidence": "Cobalt Guide",
+            "label": "title",
+            "section": "Cobalt Guide",
+            "kind": "text",
+            "score": 17.3,
+            "signals": {
+              "locator": "h1[0]",
+              "page_title": "Cobalt Guide",
+              "structure": "field",
+              "qualifiers": {},
+              "field_value": "Cobalt Guide",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:19297/docs/Plum_(tree)",
+              "final": "http://127.0.0.1:19297/docs/Plum_(tree)",
+              "status": 200,
+              "bytes": 48,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0026
+        }
+      }
+    },
+    {
+      "id": "guard-private",
+      "passed": true,
+      "actual_targets": [],
+      "error": null,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "no_supported_candidate",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the title at http://127.0.0.1:19297/docs/Plum_(tree)?",
+            "url": "http://127.0.0.1:19297/docs/Plum_(tree",
+            "kind": "text",
+            "terms": [
+              "title"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the title ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [
+            {
+              "url": "http://127.0.0.1:19297/docs/Plum_(tree",
+              "error": "Blocked non-public IP"
+            }
+          ],
+          "selector": [],
+          "timings": {
+            "resolver": 1.2399978004395962e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 0,
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [],
+          "http_responses_success": 0,
+          "pages_fetched": 0,
+          "seconds": 0.0004
+        }
+      }
+    },
+    {
+      "id": "guard-credentials",
+      "passed": true,
+      "actual_targets": [],
+      "error": null,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "no_supported_candidate",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the title at http://sample:sample@127.0.0.1:19297/docs/plain?",
+            "url": "http://sample:sample@127.0.0.1:19297/docs/plain",
+            "kind": "text",
+            "terms": [
+              "title"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the title ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.379998866468668e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 0,
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [],
+          "http_responses_success": 0,
+          "pages_fetched": 0,
+          "seconds": 0.0003
+        }
+      }
+    },
+    {
+      "id": "guard-malformed",
+      "passed": false,
+      "actual_targets": [],
+      "error": "ValueError",
+      "result": null
+    }
+  ],
+  "after": [
+    {
+      "id": "plain",
+      "passed": true,
+      "actual": "https://example.org/docs",
+      "expected": "https://example.org/docs",
+      "error": null
+    },
+    {
+      "id": "internal-parentheses",
+      "passed": true,
+      "actual": "https://example.org/Plum_(tree)",
+      "expected": "https://example.org/Plum_(tree)",
+      "error": null
+    },
+    {
+      "id": "nested-parentheses",
+      "passed": true,
+      "actual": "https://example.org/Plum_(tree_(fruit))",
+      "expected": "https://example.org/Plum_(tree_(fruit))",
+      "error": null
+    },
+    {
+      "id": "outer-parentheses",
+      "passed": true,
+      "actual": "https://example.org/Plum_(tree)",
+      "expected": "https://example.org/Plum_(tree)",
+      "error": null
+    },
+    {
+      "id": "markdown",
+      "passed": true,
+      "actual": "https://example.org/Plum_(tree)",
+      "expected": "https://example.org/Plum_(tree)",
+      "error": null
+    },
+    {
+      "id": "outer-square",
+      "passed": true,
+      "actual": "https://example.org/Plum_(tree)",
+      "expected": "https://example.org/Plum_(tree)",
+      "error": null
+    },
+    {
+      "id": "angle",
+      "passed": true,
+      "actual": "https://example.org/Plum_(tree)",
+      "expected": "https://example.org/Plum_(tree)",
+      "error": null
+    },
+    {
+      "id": "double-quote",
+      "passed": true,
+      "actual": "https://example.org/Plum_(tree)",
+      "expected": "https://example.org/Plum_(tree)",
+      "error": null
+    },
+    {
+      "id": "single-quote",
+      "passed": true,
+      "actual": "https://example.org/Plum_(tree)",
+      "expected": "https://example.org/Plum_(tree)",
+      "error": null
+    },
+    {
+      "id": "backtick",
+      "passed": true,
+      "actual": "https://example.org/Plum_(tree)",
+      "expected": "https://example.org/Plum_(tree)",
+      "error": null
+    },
+    {
+      "id": "angle-unmatched-close",
+      "passed": true,
+      "actual": "https://example.org/literal)",
+      "expected": "https://example.org/literal)",
+      "error": null
+    },
+    {
+      "id": "quote-unmatched-open",
+      "passed": true,
+      "actual": "https://example.org/literal(",
+      "expected": "https://example.org/literal(",
+      "error": null
+    },
+    {
+      "id": "unclosed-original",
+      "passed": true,
+      "actual": "https://example.org/literal_(tree",
+      "expected": "https://example.org/literal_(tree",
+      "error": null
+    },
+    {
+      "id": "percent-encoding",
+      "passed": true,
+      "actual": "https://example.org/Plum_%28tree%29?x=%2f&x=%2F",
+      "expected": "https://example.org/Plum_%28tree%29?x=%2f&x=%2F",
+      "error": null
+    },
+    {
+      "id": "query-delimiters",
+      "passed": true,
+      "actual": "https://example.org/lookup?filter=(a,b)&fields[]=name",
+      "expected": "https://example.org/lookup?filter=(a,b)&fields[]=name",
+      "error": null
+    },
+    {
+      "id": "query-terminal-punctuation",
+      "passed": true,
+      "actual": "https://example.org/lookup?token=a,b;",
+      "expected": "https://example.org/lookup?token=a,b;",
+      "error": null
+    },
+    {
+      "id": "query-question-mark",
+      "passed": true,
+      "actual": "https://example.org/lookup?q=why?",
+      "expected": "https://example.org/lookup?q=why?",
+      "error": null
+    },
+    {
+      "id": "signed-query",
+      "passed": true,
+      "actual": "https://example.org/file?utm_source=keep&sig=a%2Bb&x=1&x=2;",
+      "expected": "https://example.org/file?utm_source=keep&sig=a%2Bb&x=1&x=2;",
+      "error": null
+    },
+    {
+      "id": "bare-period",
+      "passed": true,
+      "actual": "https://example.org/docs",
+      "expected": "https://example.org/docs",
+      "error": null
+    },
+    {
+      "id": "bare-comma",
+      "passed": true,
+      "actual": "https://example.org/docs",
+      "expected": "https://example.org/docs",
+      "error": null
+    },
+    {
+      "id": "quoted-period",
+      "passed": true,
+      "actual": "https://example.org/file.",
+      "expected": "https://example.org/file.",
+      "error": null
+    },
+    {
+      "id": "markdown-period",
+      "passed": true,
+      "actual": "https://example.org/file.",
+      "expected": "https://example.org/file.",
+      "error": null
+    },
+    {
+      "id": "bare-empty-query",
+      "passed": true,
+      "actual": "https://example.org/docs",
+      "expected": "https://example.org/docs",
+      "error": null
+    },
+    {
+      "id": "quoted-empty-query",
+      "passed": true,
+      "actual": "https://example.org/docs?",
+      "expected": "https://example.org/docs?",
+      "error": null
+    },
+    {
+      "id": "apostrophe",
+      "passed": true,
+      "actual": "https://example.org/O'Brien",
+      "expected": "https://example.org/O'Brien",
+      "error": null
+    },
+    {
+      "id": "quoted-apostrophe",
+      "passed": true,
+      "actual": "https://example.org/O'Brien",
+      "expected": "https://example.org/O'Brien",
+      "error": null
+    },
+    {
+      "id": "ipv6",
+      "passed": true,
+      "actual": "http://[2001:db8::1]:8080/Plum_(tree)",
+      "expected": "http://[2001:db8::1]:8080/Plum_(tree)",
+      "error": null
+    },
+    {
+      "id": "uppercase",
+      "passed": true,
+      "actual": "HTTPS://EXAMPLE.ORG/Plum_(tree)",
+      "expected": "HTTPS://EXAMPLE.ORG/Plum_(tree)",
+      "error": null
+    },
+    {
+      "id": "two-urls",
+      "passed": true,
+      "actual": "https://example.org/Plum_(tree)",
+      "expected": "https://example.org/Plum_(tree)",
+      "error": null
+    },
+    {
+      "id": "inner-url",
+      "passed": true,
+      "actual": "https://example.org/go?next=https://other.example.net/docs",
+      "expected": "https://example.org/go?next=https://other.example.net/docs",
+      "error": null
+    },
+    {
+      "id": "fragment",
+      "passed": true,
+      "actual": "https://example.org/Plum_(tree)#details",
+      "expected": "https://example.org/Plum_(tree)#details",
+      "error": null
+    },
+    {
+      "id": "malformed-ipv6",
+      "passed": true,
+      "actual": "https://[broken",
+      "expected": "https://[broken",
+      "error": null
+    },
+    {
+      "id": "no-url",
+      "passed": true,
+      "actual": "",
+      "expected": "",
+      "error": null
+    },
+    {
+      "id": "non-http",
+      "passed": true,
+      "actual": "",
+      "expected": "",
+      "error": null
+    },
+    {
+      "id": "explicit-precedence",
+      "passed": true,
+      "actual": "https://explicit.example.org/docs/(a)?sig=value;",
+      "expected": "https://explicit.example.org/docs/(a)?sig=value;"
+    },
+    {
+      "id": "http-bare",
+      "passed": true,
+      "expected_target": "/docs/Plum_(tree)",
+      "actual_targets": [
+        "/docs/Plum_(tree)"
+      ],
+      "error": null,
+      "result": {
+        "answer": "Cobalt Guide",
+        "sources": [
+          "http://127.0.0.1:19311/docs/Plum_(tree)"
+        ],
+        "confidence": 0.97,
+        "evidence": "Cobalt Guide",
+        "reason": "deterministic_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the title at http://127.0.0.1:19311/docs/Plum_(tree)?",
+            "url": "http://127.0.0.1:19311/docs/Plum_(tree)",
+            "kind": "text",
+            "terms": [
+              "title"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the title ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 8.330005221068859e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "Cobalt Guide",
+            "answer": "Cobalt Guide",
+            "source": "http://127.0.0.1:19311/docs/Plum_(tree)",
+            "evidence": "Cobalt Guide",
+            "label": "title",
+            "section": "Cobalt Guide",
+            "kind": "text",
+            "score": 17.3,
+            "signals": {
+              "locator": "h1[0]",
+              "page_title": "Cobalt Guide",
+              "structure": "field",
+              "qualifiers": {},
+              "field_value": "Cobalt Guide",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:19311/docs/Plum_(tree)",
+              "final": "http://127.0.0.1:19311/docs/Plum_(tree)",
+              "status": 200,
+              "bytes": 48,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.009
+        }
+      }
+    },
+    {
+      "id": "http-markdown",
+      "passed": true,
+      "expected_target": "/docs/Plum_(tree)",
+      "actual_targets": [
+        "/docs/Plum_(tree)"
+      ],
+      "error": null,
+      "result": {
+        "answer": "Cobalt Guide",
+        "sources": [
+          "http://127.0.0.1:19311/docs/Plum_(tree)"
+        ],
+        "confidence": 0.97,
+        "evidence": "Cobalt Guide",
+        "reason": "deterministic_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the title at [source](http://127.0.0.1:19311/docs/Plum_(tree))?",
+            "url": "http://127.0.0.1:19311/docs/Plum_(tree)",
+            "kind": "text",
+            "terms": [
+              "title",
+              "source"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [
+              "source"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the title ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 2.9099988751113415e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "Cobalt Guide",
+            "answer": "Cobalt Guide",
+            "source": "http://127.0.0.1:19311/docs/Plum_(tree)",
+            "evidence": "Cobalt Guide",
+            "label": "title",
+            "section": "Cobalt Guide",
+            "kind": "text",
+            "score": 17.3,
+            "signals": {
+              "locator": "h1[0]",
+              "page_title": "Cobalt Guide",
+              "structure": "field",
+              "qualifiers": {},
+              "field_value": "Cobalt Guide",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:19311/docs/Plum_(tree)",
+              "final": "http://127.0.0.1:19311/docs/Plum_(tree)",
+              "status": 200,
+              "bytes": 48,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0044
+        }
+      }
+    },
+    {
+      "id": "http-nested",
+      "passed": true,
+      "expected_target": "/docs/Plum_(tree_(fruit))",
+      "actual_targets": [
+        "/docs/Plum_(tree_(fruit))"
+      ],
+      "error": null,
+      "result": {
+        "answer": "Cobalt Guide",
+        "sources": [
+          "http://127.0.0.1:19311/docs/Plum_(tree_(fruit))"
+        ],
+        "confidence": 0.97,
+        "evidence": "Cobalt Guide",
+        "reason": "deterministic_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the title at http://127.0.0.1:19311/docs/Plum_(tree_(fruit))?",
+            "url": "http://127.0.0.1:19311/docs/Plum_(tree_(fruit))",
+            "kind": "text",
+            "terms": [
+              "title"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the title ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.3699987903237343e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "Cobalt Guide",
+            "answer": "Cobalt Guide",
+            "source": "http://127.0.0.1:19311/docs/Plum_(tree_(fruit))",
+            "evidence": "Cobalt Guide",
+            "label": "title",
+            "section": "Cobalt Guide",
+            "kind": "text",
+            "score": 17.3,
+            "signals": {
+              "locator": "h1[0]",
+              "page_title": "Cobalt Guide",
+              "structure": "field",
+              "qualifiers": {},
+              "field_value": "Cobalt Guide",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:19311/docs/Plum_(tree_(fruit))",
+              "final": "http://127.0.0.1:19311/docs/Plum_(tree_(fruit))",
+              "status": 200,
+              "bytes": 48,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0033
+        }
+      }
+    },
+    {
+      "id": "http-query",
+      "passed": true,
+      "expected_target": "/lookup?filter=(a,b)&fields[]=name",
+      "actual_targets": [
+        "/lookup?filter=(a,b)&fields[]=name"
+      ],
+      "error": null,
+      "result": {
+        "answer": "Cobalt Guide",
+        "sources": [
+          "http://127.0.0.1:19311/lookup?filter=(a,b)&fields[]=name"
+        ],
+        "confidence": 0.97,
+        "evidence": "Cobalt Guide",
+        "reason": "deterministic_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the title at http://127.0.0.1:19311/lookup?filter=(a,b)&fields[]=name",
+            "url": "http://127.0.0.1:19311/lookup?filter=(a,b)&fields[]=name",
+            "kind": "text",
+            "terms": [
+              "title"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the title ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.4099990949034691e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "Cobalt Guide",
+            "answer": "Cobalt Guide",
+            "source": "http://127.0.0.1:19311/lookup?filter=(a,b)&fields[]=name",
+            "evidence": "Cobalt Guide",
+            "label": "title",
+            "section": "Cobalt Guide",
+            "kind": "text",
+            "score": 17.3,
+            "signals": {
+              "locator": "h1[0]",
+              "page_title": "Cobalt Guide",
+              "structure": "field",
+              "qualifiers": {},
+              "field_value": "Cobalt Guide",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:19311/lookup?filter=(a,b)&fields[]=name",
+              "final": "http://127.0.0.1:19311/lookup?filter=(a,b)&fields[]=name",
+              "status": 200,
+              "bytes": 48,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0198
+        }
+      }
+    },
+    {
+      "id": "http-encoded",
+      "passed": true,
+      "expected_target": "/docs/Plum_%28tree%29?x=%2f&x=%2F",
+      "actual_targets": [
+        "/docs/Plum_%28tree%29?x=%2f&x=%2F"
+      ],
+      "error": null,
+      "result": {
+        "answer": "Cobalt Guide",
+        "sources": [
+          "http://127.0.0.1:19311/docs/Plum_%28tree%29?x=%2f&x=%2F"
+        ],
+        "confidence": 0.97,
+        "evidence": "Cobalt Guide",
+        "reason": "deterministic_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the title at http://127.0.0.1:19311/docs/Plum_%28tree%29?x=%2f&x=%2F",
+            "url": "http://127.0.0.1:19311/docs/Plum_%28tree%29?x=%2f&x=%2F",
+            "kind": "text",
+            "terms": [
+              "title"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the title ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 2.050003968179226e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "Cobalt Guide",
+            "answer": "Cobalt Guide",
+            "source": "http://127.0.0.1:19311/docs/Plum_%28tree%29?x=%2f&x=%2F",
+            "evidence": "Cobalt Guide",
+            "label": "title",
+            "section": "Cobalt Guide",
+            "kind": "text",
+            "score": 17.3,
+            "signals": {
+              "locator": "h1[0]",
+              "page_title": "Cobalt Guide",
+              "structure": "field",
+              "qualifiers": {},
+              "field_value": "Cobalt Guide",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:19311/docs/Plum_%28tree%29?x=%2f&x=%2F",
+              "final": "http://127.0.0.1:19311/docs/Plum_%28tree%29?x=%2f&x=%2F",
+              "status": 200,
+              "bytes": 48,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0035
+        }
+      }
+    },
+    {
+      "id": "http-signed",
+      "passed": true,
+      "expected_target": "/lookup?utm_source=keep&sig=s%2C&x=1&x=2;",
+      "actual_targets": [
+        "/lookup?utm_source=keep&sig=s%2C&x=1&x=2;"
+      ],
+      "error": null,
+      "result": {
+        "answer": "Cobalt Guide",
+        "sources": [
+          "http://127.0.0.1:19311/lookup?utm_source=keep&sig=s%2C&x=1&x=2;"
+        ],
+        "confidence": 0.97,
+        "evidence": "Cobalt Guide",
+        "reason": "deterministic_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the title at http://127.0.0.1:19311/lookup?utm_source=keep&sig=s%2C&x=1&x=2;",
+            "url": "http://127.0.0.1:19311/lookup?utm_source=keep&sig=s%2C&x=1&x=2;",
+            "kind": "text",
+            "terms": [
+              "title"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the title ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.1399970389902592e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "Cobalt Guide",
+            "answer": "Cobalt Guide",
+            "source": "http://127.0.0.1:19311/lookup?utm_source=keep&sig=s%2C&x=1&x=2;",
+            "evidence": "Cobalt Guide",
+            "label": "title",
+            "section": "Cobalt Guide",
+            "kind": "text",
+            "score": 17.3,
+            "signals": {
+              "locator": "h1[0]",
+              "page_title": "Cobalt Guide",
+              "structure": "field",
+              "qualifiers": {},
+              "field_value": "Cobalt Guide",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:19311/lookup?utm_source=keep&sig=s%2C&x=1&x=2;",
+              "final": "http://127.0.0.1:19311/lookup?utm_source=keep&sig=s%2C&x=1&x=2;",
+              "status": 200,
+              "bytes": 48,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0157
+        }
+      }
+    },
+    {
+      "id": "http-unmatched",
+      "passed": true,
+      "expected_target": "/docs/unmatched)",
+      "actual_targets": [
+        "/docs/unmatched)"
+      ],
+      "error": null,
+      "result": {
+        "answer": "Cobalt Guide",
+        "sources": [
+          "http://127.0.0.1:19311/docs/unmatched)"
+        ],
+        "confidence": 0.97,
+        "evidence": "Cobalt Guide",
+        "reason": "deterministic_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the title at \"http://127.0.0.1:19311/docs/unmatched)\"?",
+            "url": "http://127.0.0.1:19311/docs/unmatched)",
+            "kind": "text",
+            "terms": [
+              "title"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the title ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.070008147507906e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "Cobalt Guide",
+            "answer": "Cobalt Guide",
+            "source": "http://127.0.0.1:19311/docs/unmatched)",
+            "evidence": "Cobalt Guide",
+            "label": "title",
+            "section": "Cobalt Guide",
+            "kind": "text",
+            "score": 17.3,
+            "signals": {
+              "locator": "h1[0]",
+              "page_title": "Cobalt Guide",
+              "structure": "field",
+              "qualifiers": {},
+              "field_value": "Cobalt Guide",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:19311/docs/unmatched)",
+              "final": "http://127.0.0.1:19311/docs/unmatched)",
+              "status": 200,
+              "bytes": 48,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0022
+        }
+      }
+    },
+    {
+      "id": "http-terminal-period",
+      "passed": true,
+      "expected_target": "/docs/version.",
+      "actual_targets": [
+        "/docs/version."
+      ],
+      "error": null,
+      "result": {
+        "answer": "Cobalt Guide",
+        "sources": [
+          "http://127.0.0.1:19311/docs/version."
+        ],
+        "confidence": 0.97,
+        "evidence": "Cobalt Guide",
+        "reason": "deterministic_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the title at <http://127.0.0.1:19311/docs/version.>?",
+            "url": "http://127.0.0.1:19311/docs/version.",
+            "kind": "text",
+            "terms": [
+              "title"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the title ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 9.199953638017178e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "Cobalt Guide",
+            "answer": "Cobalt Guide",
+            "source": "http://127.0.0.1:19311/docs/version.",
+            "evidence": "Cobalt Guide",
+            "label": "title",
+            "section": "Cobalt Guide",
+            "kind": "text",
+            "score": 17.3,
+            "signals": {
+              "locator": "h1[0]",
+              "page_title": "Cobalt Guide",
+              "structure": "field",
+              "qualifiers": {},
+              "field_value": "Cobalt Guide",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:19311/docs/version.",
+              "final": "http://127.0.0.1:19311/docs/version.",
+              "status": 200,
+              "bytes": 48,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.002
+        }
+      }
+    },
+    {
+      "id": "http-apostrophe",
+      "passed": true,
+      "expected_target": "/docs/O'Brien",
+      "actual_targets": [
+        "/docs/O'Brien"
+      ],
+      "error": null,
+      "result": {
+        "answer": "Cobalt Guide",
+        "sources": [
+          "http://127.0.0.1:19311/docs/O'Brien"
+        ],
+        "confidence": 0.97,
+        "evidence": "Cobalt Guide",
+        "reason": "deterministic_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the title at http://127.0.0.1:19311/docs/O'Brien",
+            "url": "http://127.0.0.1:19311/docs/O'Brien",
+            "kind": "text",
+            "terms": [
+              "title"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the title ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 2.750009298324585e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "Cobalt Guide",
+            "answer": "Cobalt Guide",
+            "source": "http://127.0.0.1:19311/docs/O'Brien",
+            "evidence": "Cobalt Guide",
+            "label": "title",
+            "section": "Cobalt Guide",
+            "kind": "text",
+            "score": 17.3,
+            "signals": {
+              "locator": "h1[0]",
+              "page_title": "Cobalt Guide",
+              "structure": "field",
+              "qualifiers": {},
+              "field_value": "Cobalt Guide",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:19311/docs/O'Brien",
+              "final": "http://127.0.0.1:19311/docs/O'Brien",
+              "status": 200,
+              "bytes": 48,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0159
+        }
+      }
+    },
+    {
+      "id": "http-plain",
+      "passed": true,
+      "expected_target": "/docs/plain",
+      "actual_targets": [
+        "/docs/plain"
+      ],
+      "error": null,
+      "result": {
+        "answer": "Cobalt Guide",
+        "sources": [
+          "http://127.0.0.1:19311/docs/plain"
+        ],
+        "confidence": 0.97,
+        "evidence": "Cobalt Guide",
+        "reason": "deterministic_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the title at http://127.0.0.1:19311/docs/plain?",
+            "url": "http://127.0.0.1:19311/docs/plain",
+            "kind": "text",
+            "terms": [
+              "title"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the title ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 2.1200045011937618e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "Cobalt Guide",
+            "answer": "Cobalt Guide",
+            "source": "http://127.0.0.1:19311/docs/plain",
+            "evidence": "Cobalt Guide",
+            "label": "title",
+            "section": "Cobalt Guide",
+            "kind": "text",
+            "score": 17.3,
+            "signals": {
+              "locator": "h1[0]",
+              "page_title": "Cobalt Guide",
+              "structure": "field",
+              "qualifiers": {},
+              "field_value": "Cobalt Guide",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:19311/docs/plain",
+              "final": "http://127.0.0.1:19311/docs/plain",
+              "status": 200,
+              "bytes": 48,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0038
+        }
+      }
+    },
+    {
+      "id": "http-explicit",
+      "passed": true,
+      "expected_target": "/docs/Plum_(tree)",
+      "actual_targets": [
+        "/docs/Plum_(tree)"
+      ],
+      "error": null,
+      "result": {
+        "answer": "Cobalt Guide",
+        "sources": [
+          "http://127.0.0.1:19311/docs/Plum_(tree)"
+        ],
+        "confidence": 0.97,
+        "evidence": "Cobalt Guide",
+        "reason": "deterministic_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the title at https://other.example.net/ignored_(item)?",
+            "url": "http://127.0.0.1:19311/docs/Plum_(tree)",
+            "kind": "text",
+            "terms": [
+              "title"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the title ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.4399993233382702e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "Cobalt Guide",
+            "answer": "Cobalt Guide",
+            "source": "http://127.0.0.1:19311/docs/Plum_(tree)",
+            "evidence": "Cobalt Guide",
+            "label": "title",
+            "section": "Cobalt Guide",
+            "kind": "text",
+            "score": 17.3,
+            "signals": {
+              "locator": "h1[0]",
+              "page_title": "Cobalt Guide",
+              "structure": "field",
+              "qualifiers": {},
+              "field_value": "Cobalt Guide",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:19311/docs/Plum_(tree)",
+              "final": "http://127.0.0.1:19311/docs/Plum_(tree)",
+              "status": 200,
+              "bytes": 48,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0171
+        }
+      }
+    },
+    {
+      "id": "guard-private",
+      "passed": true,
+      "actual_targets": [],
+      "error": null,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "no_supported_candidate",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the title at http://127.0.0.1:19311/docs/Plum_(tree)?",
+            "url": "http://127.0.0.1:19311/docs/Plum_(tree)",
+            "kind": "text",
+            "terms": [
+              "title"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the title ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [
+            {
+              "url": "http://127.0.0.1:19311/docs/Plum_(tree)",
+              "error": "Blocked non-public IP"
+            }
+          ],
+          "selector": [],
+          "timings": {
+            "resolver": 1.4299992471933365e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 0,
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [],
+          "http_responses_success": 0,
+          "pages_fetched": 0,
+          "seconds": 0.0006
+        }
+      }
+    },
+    {
+      "id": "guard-credentials",
+      "passed": true,
+      "actual_targets": [],
+      "error": null,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "no_supported_candidate",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the title at http://sample:sample@127.0.0.1:19311/docs/plain?",
+            "url": "http://sample:sample@127.0.0.1:19311/docs/plain",
+            "kind": "text",
+            "terms": [
+              "title"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the title ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.3499986380338669e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 0,
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [],
+          "http_responses_success": 0,
+          "pages_fetched": 0,
+          "seconds": 0.0004
+        }
+      }
+    },
+    {
+      "id": "guard-malformed",
+      "passed": true,
+      "actual_targets": [],
+      "error": null,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "no_supported_candidate",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the title at https://[broken",
+            "url": "https://[broken",
+            "kind": "text",
+            "terms": [
+              "title"
+            ],
+            "attributes": [
+              "title",
+              "name"
+            ],
+            "entity_terms": [],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "",
+            "focus": "what is the title ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.0299962013959885e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 0,
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [],
+          "http_responses_success": 0,
+          "pages_fetched": 0,
+          "seconds": 0.0003
+        }
+      }
+    }
+  ],
+  "before_passed": 19,
+  "after_passed": 49,
+  "total": 49,
+  "wins": [
+    "internal-parentheses",
+    "nested-parentheses",
+    "outer-parentheses",
+    "markdown",
+    "outer-square",
+    "angle",
+    "double-quote",
+    "single-quote",
+    "backtick",
+    "angle-unmatched-close",
+    "query-delimiters",
+    "query-terminal-punctuation",
+    "query-question-mark",
+    "signed-query",
+    "quoted-period",
+    "markdown-period",
+    "quoted-empty-query",
+    "ipv6",
+    "uppercase",
+    "two-urls",
+    "fragment",
+    "malformed-ipv6",
+    "http-bare",
+    "http-markdown",
+    "http-nested",
+    "http-query",
+    "http-signed",
+    "http-unmatched",
+    "http-terminal-period",
+    "guard-malformed"
+  ],
+  "losses": [],
+  "corpus": {
+    "scope": "Static planning of previously exposed questions and original starting URLs only; no fetch/reader/model and no unseen sample. Explicit starting URLs do not exercise URL extraction from prose.",
+    "inputs": [
+      {
+        "path": "benchmarks/external-simpleqa20.json",
+        "sha256": "d94cd8ccdec7aceedc9895571aa9365ac60a1b5bceeb908b95013974dafdcebf"
+      },
+      {
+        "path": "benchmarks/external-simpleqa100.json",
+        "sha256": "4a875aeb98d499d373c66ea03640c105f675d412d7e05aa5ca49c80080f1af64"
+      },
+      {
+        "path": "benchmarks/external-transfer100-v2.json",
+        "sha256": "9cc11a2c15cb304e9e711f04485c0624561e04612c6a24b82a0bcb6abf7af6be"
+      },
+      {
+        "path": "benchmarks/external-disjoint12-20261023.json",
+        "sha256": "7a944d63a878df44c9b8117c92b9b8c42fec98201d8d76cfa39007c5b68afdc0"
+      },
+      {
+        "path": "benchmarks/external-disjoint12b-20261023.json",
+        "sha256": "1af9b4a1921becccb2304adb7ffbac424f7e2b21dea4941f9e01b27e053c34f9"
+      }
+    ],
+    "total": 244,
+    "explicit_starting_urls": 244,
+    "inline_url_questions": 0,
+    "changes": []
+  },
+  "extractor_checks": [
+    {
+      "id": "multiple-order",
+      "passed": true
+    },
+    {
+      "id": "nested-query-url-is-not-second-source",
+      "passed": true
+    }
+  ],
+  "production_sha256": {
+    "agent/browser.py": "53ac9a99f3afcefcdb197cd9b2296c2d380910a782178fadb65235e548efc353",
+    "agent/candidates.py": "c55cd074f50d1b0c944cf5552bd604caf4b313bada23accd73674d5d1d93d116",
+    "agent/challenges.py": "b6f51c720f332671725e08127a5d1c163ca0542d2a550bf3c980a6d4c49bf6a1",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/engine.py": "01464cb276814f2d7c845c269da2522c285a7a7e28051abd7e36ad0ec62b41ff",
+    "agent/evidence.py": "56994f2e5046668e33630fbc2330cfac35c8971f3c4d4e25f22547f1d99feba2",
+    "agent/field_groups.py": "52a54989253c59e9836dec4aaec4944b688376e79548b9336887558a454e9162",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "agent/model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+    "agent/model_server.py": "8d326a696942d259697a6fba8586441bbbe4874042ea900c6d7788a2a0e9fd22",
+    "agent/navigation.py": "0f849c0c570720114c45c14b0a5286fe409e5d26c2945fdc9f6c1a6922bb7718",
+    "agent/network.py": "def1be3752f81423c313c2dfa83f6703ee063d7e98652cf0d816b423d0e2d9cb",
+    "agent/normalize.py": "05e48fa0be8384aa656bf1280ba0be44545efa51b7d4451f0716d836d39a1973",
+    "agent/output.py": "b983ab2efe31707b1c974344a32dc4b40b708541257695de89cac9e343b073eb",
+    "agent/oyez.py": "8475f248d78925522e0742b13518be2c4f4db11eae0d8391a8002da7d4e3b67d",
+    "agent/parser.py": "782bebc6fa89a4869ca007da385cbfc8dfed8102b4600584224e94fc702957f1",
+    "agent/planner.py": "90e6c02b6773bddb390ee6c6542cc8e4363870a08ce41485369758b90b38cc14",
+    "agent/processes.py": "677c4372b40d1da0ffc0cf4120ca5b6be2fcf6b6c30f6ec17d0d8fae19e198c1",
+    "agent/proofs.py": "0d7ae78df6ea9949c29f33c7b817dda352c75b3d99c960c3e987e37c7401faab",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/resolvers.py": "312d776118c6c6f0421939df58cf6bcaec8740a7fd341136c17a33f284a03ef2",
+    "agent/search.py": "28e2454682bc8af4ef10b06f62b66117d39194fddc9ec218b9bc82cad96767fd",
+    "agent/selector.py": "be7c0fce11c10921d5cd4e3d1072d5a2ca5a62f1c328730384d19b0fecd19566",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent/urls.py": "6bbf58adf3c55cf3787edf4b6607a7db8eea987f0c02dd6cdfea48f6c38e031f",
+    "agent/worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f",
+    "agent/__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41"
+  }
+}

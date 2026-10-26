@@ -1,0 +1,1884 @@
+{
+  "scope": "Small fixed-correct-page reader diagnosis with an owned full-4B CUDA service.\n\nCases are exposed development data, not a held-out or public-web accuracy claim.\nAn oracle URL supplies the answer page; this separates reading from discovery.\n",
+  "context_limit": 1536,
+  "production_sha256": {
+    "app.py": "c0267c0441330bd30559f48d2f33916418992b8e21ec8dd1d09ae4773c23b73b",
+    "agent\\browser.py": "f7a3d9479ec2ae9bc9fbbcb27efbddaeba9b5dd8639016e827840cc1c7e33cea",
+    "agent\\candidates.py": "d6cf00321386d228ac271566f7f9da1955687c1137dde51a544a25dcbb049e99",
+    "agent\\currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent\\engine.py": "c640e695bf91f262b84e601b3f0882a63adacd7b447f4def912ddcfcaf171bd3",
+    "agent\\knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent\\model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+    "agent\\model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent\\model_protocol.py": "8ba6730e160eac47d8231985e1293bb981a5a63ef9b475cf46daf31ef17bdfb0",
+    "agent\\model_server.py": "14e840e32fe34ca594eb4fb0dadd89fc67768fb9026ac3359734a021c5190fc2",
+    "agent\\navigation.py": "529ff8267e40a384cd1d0b3d6a4e09496b4f515305b478b3b41a64ca4f78e7a2",
+    "agent\\network.py": "def1be3752f81423c313c2dfa83f6703ee063d7e98652cf0d816b423d0e2d9cb",
+    "agent\\normalize.py": "f418f880472f21012ee943b8a0cd3866c8c09bbf6f6e54e3a0d935f3eec4f6b4",
+    "agent\\output.py": "b983ab2efe31707b1c974344a32dc4b40b708541257695de89cac9e343b073eb",
+    "agent\\parser.py": "93ee57c8ac3291c5dcc5397e3b336d8ad6d1a5f6eddf539c312d9d0ea4babc7c",
+    "agent\\planner.py": "a7391d76b08d600ff0448bd3df7f17d9a308fca0e74503db0e10e65791745ecf",
+    "agent\\processes.py": "677c4372b40d1da0ffc0cf4120ca5b6be2fcf6b6c30f6ec17d0d8fae19e198c1",
+    "agent\\qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent\\resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent\\search.py": "36e8a39132f3afc2b34f0db4ad89cafba085adaf4882fff02bfa821f6fedbfd2",
+    "agent\\selector.py": "99ceb481ea8d6a9988d873a402f53692eca61df5db5585ddb95264f3a4827da6",
+    "agent\\signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent\\types.py": "2dbac10dedae8e5c0df7eff4d8a368dabffc20e144be1ee93f349697ba82752a",
+    "agent\\urls.py": "fa57403f16921c7341c6edc6241cd3957012de426a07538b14c5aaa5d1425a76",
+    "agent\\worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f",
+    "agent\\__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41"
+  },
+  "cases_sha256": "1192f5491ed45969665f34d464dd26edc654b812c8464290cd3d164091dff0ea",
+  "fixtures_sha256": "beafe0ef59732620f1261d26de622e9142c6c2f99858989fab4b731b04182728",
+  "rows": [
+    {
+      "id": "01-doc-old-distractor",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "adaptive retry policy",
+        "sources": [
+          "http://127.0.0.1:36383/01-doc-old-distractor/v4.html"
+        ],
+        "confidence": 0.802,
+        "evidence": "Version 4 uses the adaptive retry policy by default.",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the default retry policy in AsterQueue version 4?",
+            "url": "http://127.0.0.1:36383/01-doc-old-distractor/v4.html",
+            "kind": "text",
+            "terms": [
+              "default",
+              "retry",
+              "policy",
+              "asterqueue",
+              "4"
+            ],
+            "attributes": [
+              "version",
+              "release",
+              "stable",
+              "latest",
+              "download"
+            ],
+            "entity_terms": [
+              "default",
+              "retry",
+              "policy",
+              "asterqueue",
+              "4"
+            ],
+            "versions": [
+              "4"
+            ],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the default retry policy in asterqueue version 4"
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 0.00011110003106296062
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "adaptive retry policy",
+              "answer": "adaptive retry policy",
+              "source": "http://127.0.0.1:36383/01-doc-old-distractor/v4.html",
+              "evidence": "Version 4 uses the adaptive retry policy by default.",
+              "label": "",
+              "section": "AsterQueue v4 retry policy — current stable",
+              "kind": "text",
+              "score": 10.1,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[3]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "adaptive retry policy",
+            "answer": "adaptive retry policy",
+            "source": "http://127.0.0.1:36383/01-doc-old-distractor/v4.html",
+            "evidence": "Version 4 uses the adaptive retry policy by default.",
+            "label": "",
+            "section": "AsterQueue v4 retry policy — current stable",
+            "kind": "text",
+            "score": 10.1,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[3]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:36383/01-doc-old-distractor/v4.html",
+              "final": "http://127.0.0.1:36383/01-doc-old-distractor/v4.html",
+              "status": 200,
+              "bytes": 476,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 1.3619
+        }
+      }
+    },
+    {
+      "id": "03-doc-renamed-configuration",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "page_cache",
+        "sources": [
+          "http://127.0.0.1:36383/03-doc-renamed-configuration/migration-v3.html"
+        ],
+        "confidence": 0.903,
+        "evidence": "In version 3, route_cache was renamed to page_cache. Use page_cache to enable page-output caching.",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "Which QuartzSite version 3 configuration option replaces route_cache?",
+            "url": "http://127.0.0.1:36383/03-doc-renamed-configuration/migration-v3.html",
+            "kind": "text",
+            "terms": [
+              "quartzsite",
+              "3",
+              "configuration",
+              "option",
+              "replaces",
+              "route_cache",
+              "route",
+              "cache"
+            ],
+            "attributes": [
+              "version",
+              "release",
+              "stable",
+              "latest",
+              "download"
+            ],
+            "entity_terms": [
+              "quartzsite",
+              "3",
+              "configuration",
+              "option",
+              "replaces",
+              "route_cache",
+              "route",
+              "cache"
+            ],
+            "versions": [
+              "3"
+            ],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "which quartzsite version 3 configuration option replaces route_cache"
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.209997572004795e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "page_cache",
+              "answer": "page_cache",
+              "source": "http://127.0.0.1:36383/03-doc-renamed-configuration/migration-v3.html",
+              "evidence": "In version 3, route_cache was renamed to page_cache. Use page_cache to enable page-output caching.",
+              "label": "",
+              "section": "QuartzSite v3 migration — current stable",
+              "kind": "text",
+              "score": 14.1,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[3]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "page_cache",
+            "answer": "page_cache",
+            "source": "http://127.0.0.1:36383/03-doc-renamed-configuration/migration-v3.html",
+            "evidence": "In version 3, route_cache was renamed to page_cache. Use page_cache to enable page-output caching.",
+            "label": "",
+            "section": "QuartzSite v3 migration — current stable",
+            "kind": "text",
+            "score": 14.1,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[3]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:36383/03-doc-renamed-configuration/migration-v3.html",
+              "final": "http://127.0.0.1:36383/03-doc-renamed-configuration/migration-v3.html",
+              "status": 200,
+              "bytes": 579,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 1.3171
+        }
+      }
+    },
+    {
+      "id": "04-doc-conditional-default",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "disabled",
+        "sources": [
+          "http://127.0.0.1:36383/04-doc-conditional-default/cache-v3.html"
+        ],
+        "confidence": 0.94,
+        "evidence": "In production mode with cold starts enabled, the result cache is disabled by default.",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "In LumenServe version 3 production mode with cold starts enabled, is the result cache enabled or disabled by default?",
+            "url": "http://127.0.0.1:36383/04-doc-conditional-default/cache-v3.html",
+            "kind": "text",
+            "terms": [
+              "lumenserve",
+              "3",
+              "production",
+              "mode",
+              "cold",
+              "starts",
+              "enabled",
+              "result",
+              "cache",
+              "disabled",
+              "default"
+            ],
+            "attributes": [
+              "version",
+              "release",
+              "stable",
+              "latest",
+              "download"
+            ],
+            "entity_terms": [
+              "lumenserve",
+              "3",
+              "production",
+              "mode",
+              "cold",
+              "starts",
+              "enabled",
+              "result",
+              "cache",
+              "disabled",
+              "default"
+            ],
+            "versions": [
+              "3"
+            ],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "in lumenserve version 3 production mode with cold starts enabled, is the result cache enabled or disabled by default?"
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.209997572004795e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "disabled",
+              "answer": "disabled",
+              "source": "http://127.0.0.1:36383/04-doc-conditional-default/cache-v3.html",
+              "evidence": "In production mode with cold starts enabled, the result cache is disabled by default.",
+              "label": "",
+              "section": "LumenServe v3 cache defaults — current stable",
+              "kind": "text",
+              "score": 15.6,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[4]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "disabled",
+            "answer": "disabled",
+            "source": "http://127.0.0.1:36383/04-doc-conditional-default/cache-v3.html",
+            "evidence": "In production mode with cold starts enabled, the result cache is disabled by default.",
+            "label": "",
+            "section": "LumenServe v3 cache defaults — current stable",
+            "kind": "text",
+            "score": 15.6,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[4]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:36383/04-doc-conditional-default/cache-v3.html",
+              "final": "http://127.0.0.1:36383/04-doc-conditional-default/cache-v3.html",
+              "status": 200,
+              "bytes": 666,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 1.3696
+        }
+      }
+    },
+    {
+      "id": "08-doc-prerelease-distractor",
+      "answer_ok": false,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_evidence_rejected",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the default request timeout in BirchClient stable version 4?",
+            "url": "http://127.0.0.1:36383/08-doc-prerelease-distractor/v4.html",
+            "kind": "version",
+            "terms": [
+              "default",
+              "request",
+              "timeout",
+              "birchclient",
+              "4"
+            ],
+            "attributes": [
+              "version",
+              "release",
+              "stable",
+              "latest",
+              "download",
+              "duration",
+              "timeout",
+              "lead",
+              "time",
+              "delivery",
+              "days",
+              "hours",
+              "minutes",
+              "seconds"
+            ],
+            "entity_terms": [
+              "default",
+              "request",
+              "birchclient",
+              "4"
+            ],
+            "versions": [
+              "4"
+            ],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": true,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the default request timeout in birchclient stable version 4"
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.209997572004795e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "8 seconds",
+              "answer": "8 seconds",
+              "source": "http://127.0.0.1:36383/08-doc-prerelease-distractor/v4.html",
+              "evidence": "The default request timeout in version 4 is 8 seconds.",
+              "label": "",
+              "section": "BirchClient v4 timeouts — current stable",
+              "kind": "version",
+              "score": 10.7,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[3]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "reader_state": "evidence_rejected",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:36383/08-doc-prerelease-distractor/v4.html",
+              "final": "http://127.0.0.1:36383/08-doc-prerelease-distractor/v4.html",
+              "status": 200,
+              "bytes": 472,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.8732
+        }
+      }
+    },
+    {
+      "id": "14-web-conditional-route",
+      "answer_ok": false,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_evidence_rejected",
+        "diagnostics": {
+          "plan": {
+            "question": "When does the first Wren Island ferry leave North Dock on a weekday?",
+            "url": "http://127.0.0.1:36383/14-web-conditional-route/north.html",
+            "kind": "date",
+            "terms": [
+              "first",
+              "wren",
+              "island",
+              "ferry",
+              "leave",
+              "north",
+              "dock",
+              "weekday"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "first",
+              "wren",
+              "island",
+              "ferry",
+              "leave",
+              "north",
+              "dock",
+              "weekday"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": true,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "when does the first wren island ferry leave north dock on a weekday"
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.0299962013959885e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "06:20",
+              "answer": "06:20",
+              "source": "http://127.0.0.1:36383/14-web-conditional-route/north.html",
+              "evidence": "The first North Dock weekday ferry departs at 06:20.",
+              "label": "",
+              "section": "Wren Island North Dock ferry",
+              "kind": "date",
+              "score": 11.700000000000001,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[2]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "reader_state": "evidence_rejected",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:36383/14-web-conditional-route/north.html",
+              "final": "http://127.0.0.1:36383/14-web-conditional-route/north.html",
+              "status": 200,
+              "bytes": 436,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.9438
+        }
+      }
+    },
+    {
+      "id": "15-web-effective-date-policy",
+      "answer_ok": false,
+      "source_ok": false,
+      "joint_ok": false,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_evidence_rejected",
+        "diagnostics": {
+          "plan": {
+            "question": "Under Juniper Workshop’s current repair policy effective 2026-07-01, how long is the warranty for completed repairs?",
+            "url": "http://127.0.0.1:36383/15-web-effective-date-policy/warranty-2026.html",
+            "kind": "duration",
+            "terms": [
+              "under",
+              "juniper",
+              "workshop",
+              "s",
+              "repair",
+              "policy",
+              "effective",
+              "2026-07-01",
+              "long",
+              "warranty",
+              "completed",
+              "repairs",
+              "2026",
+              "07",
+              "01"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "under",
+              "juniper",
+              "workshop",
+              "s",
+              "repair",
+              "policy",
+              "effective",
+              "2026-07-01",
+              "long",
+              "warranty",
+              "completed",
+              "repairs",
+              "07",
+              "01"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": true,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "how long is the warranty "
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.209997572004795e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "90-day",
+              "answer": "90-day",
+              "source": "http://127.0.0.1:36383/15-web-effective-date-policy/warranty-2026.html",
+              "evidence": "Completed repairs carry a 90-day warranty.",
+              "label": "",
+              "section": "Juniper Workshop current repair warranty",
+              "kind": "duration",
+              "score": 10.600000000000001,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[3]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "reader_state": "evidence_rejected",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:36383/15-web-effective-date-policy/warranty-2026.html",
+              "final": "http://127.0.0.1:36383/15-web-effective-date-policy/warranty-2026.html",
+              "status": 200,
+              "bytes": 475,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.876
+        }
+      }
+    },
+    {
+      "id": "h05-multiple-table-context",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "12 entries",
+        "sources": [
+          "http://127.0.0.1:36383/h05-multiple-table-context/index.html"
+        ],
+        "confidence": 0.87,
+        "evidence": "Plan: Studio | Maximum entries: 12 entries",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the operator entry limit for Turnstone Hall’s Studio plan?",
+            "url": "http://127.0.0.1:36383/h05-multiple-table-context/index.html",
+            "kind": "text",
+            "terms": [
+              "operator",
+              "entry",
+              "limit",
+              "turnstone",
+              "hall",
+              "s",
+              "studio",
+              "plan"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "operator",
+              "entry",
+              "limit",
+              "turnstone",
+              "hall",
+              "s",
+              "studio",
+              "plan"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the operator entry limit "
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.0599964298307896e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "12 entries",
+              "answer": "12 entries",
+              "source": "http://127.0.0.1:36383/h05-multiple-table-context/index.html",
+              "evidence": "Plan: Studio | Maximum entries: 12 entries",
+              "label": "Plan",
+              "section": "Operator entry limits",
+              "kind": "text",
+              "score": 12.8,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "table[7]/row[0]/cell[0]",
+                "structure": "cell",
+                "qualifiers": {},
+                "field_value": "Studio"
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "12 entries",
+            "answer": "12 entries",
+            "source": "http://127.0.0.1:36383/h05-multiple-table-context/index.html",
+            "evidence": "Plan: Studio | Maximum entries: 12 entries",
+            "label": "Plan",
+            "section": "Operator entry limits",
+            "kind": "text",
+            "score": 12.8,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "table[7]/row[0]/cell[0]",
+              "structure": "cell",
+              "qualifiers": {},
+              "field_value": "Studio"
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:36383/h05-multiple-table-context/index.html",
+              "final": "http://127.0.0.1:36383/h05-multiple-table-context/index.html",
+              "status": 200,
+              "bytes": 773,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 1.6216
+        }
+      }
+    },
+    {
+      "id": "h06-missing-query-qualifiers",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "What monthly Docklight Museum membership price applies to Quail County resident students in 2027?",
+            "url": "http://127.0.0.1:36383/h06-missing-query-qualifiers/index.html",
+            "kind": "price",
+            "terms": [
+              "monthly",
+              "docklight",
+              "museum",
+              "membership",
+              "price",
+              "applies",
+              "quail",
+              "county",
+              "resident",
+              "students",
+              "2027"
+            ],
+            "attributes": [
+              "price",
+              "cost",
+              "sale",
+              "discount",
+              "current",
+              "offer",
+              "amount",
+              "currency"
+            ],
+            "entity_terms": [
+              "monthly",
+              "docklight",
+              "museum",
+              "membership",
+              "applies",
+              "quail",
+              "county",
+              "resident",
+              "students"
+            ],
+            "versions": [],
+            "year": "2027",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what monthly docklight museum membership price applies to quail county resident students in 2027"
+          },
+          "errors": [],
+          "selector": [
+            "abstain"
+          ],
+          "timings": {
+            "resolver": 2.41999514400959e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "reader_state": "no_evidence",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:36383/h06-missing-query-qualifiers/index.html",
+              "final": "http://127.0.0.1:36383/h06-missing-query-qualifiers/index.html",
+              "status": 200,
+              "bytes": 401,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.7354
+        }
+      }
+    },
+    {
+      "id": "jsonld-author",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "Mira Chen",
+        "sources": [
+          "http://127.0.0.1:36383/reader/jsonld-author"
+        ],
+        "confidence": 0.674,
+        "evidence": "author.name: Mira Chen | author { @type: Person | name: Mira Chen } | parent $ { @type: Article | name: Alder essay }",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "Who wrote the Alder essay?",
+            "url": "http://127.0.0.1:36383/reader/jsonld-author",
+            "kind": "text",
+            "terms": [
+              "wrote",
+              "alder",
+              "essay"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "wrote",
+              "alder",
+              "essay"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "who wrote the alder essay"
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.4899997040629387e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Mira Chen",
+              "answer": "Mira Chen",
+              "source": "http://127.0.0.1:36383/reader/jsonld-author",
+              "evidence": "author.name: Mira Chen | author { @type: Person | name: Mira Chen } | parent $ { @type: Article | name: Alder essay }",
+              "label": "author.name",
+              "section": "author { @type: Person | name: Mira Chen } | parent $ { @type: Article | name: Alder essay }",
+              "kind": "text",
+              "score": 4.95,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "script[0]/author.name",
+                "structure": "jsonld",
+                "qualifiers": {
+                  "identity": [
+                    "Mira Chen"
+                  ],
+                  "structured": true,
+                  "bindings": {
+                    "@type": "Person",
+                    "name": "Mira Chen"
+                  }
+                },
+                "field_value": "Mira Chen"
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "Mira Chen",
+            "answer": "Mira Chen",
+            "source": "http://127.0.0.1:36383/reader/jsonld-author",
+            "evidence": "author.name: Mira Chen | author { @type: Person | name: Mira Chen } | parent $ { @type: Article | name: Alder essay }",
+            "label": "author.name",
+            "section": "author { @type: Person | name: Mira Chen } | parent $ { @type: Article | name: Alder essay }",
+            "kind": "text",
+            "score": 4.95,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "script[0]/author.name",
+              "structure": "jsonld",
+              "qualifiers": {
+                "identity": [
+                  "Mira Chen"
+                ],
+                "structured": true,
+                "bindings": {
+                  "@type": "Person",
+                  "name": "Mira Chen"
+                }
+              },
+              "field_value": "Mira Chen"
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:36383/reader/jsonld-author",
+              "final": "http://127.0.0.1:36383/reader/jsonld-author",
+              "status": 200,
+              "bytes": 151,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 1.3284
+        }
+      }
+    },
+    {
+      "id": "jsonld-product",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "24 GB",
+        "sources": [
+          "http://127.0.0.1:36383/reader/jsonld-product"
+        ],
+        "confidence": 0.874,
+        "evidence": "capacity: 24 GB | $ { @type: Product | name: Cedar drive | capacity: 24 GB }",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the capacity of the Cedar drive?",
+            "url": "http://127.0.0.1:36383/reader/jsonld-product",
+            "kind": "measurement",
+            "terms": [
+              "capacity",
+              "cedar",
+              "drive"
+            ],
+            "attributes": [
+              "capacity",
+              "memory",
+              "storage",
+              "vram",
+              "size"
+            ],
+            "entity_terms": [
+              "cedar",
+              "drive"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the capacity "
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.079996582120657e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "24 GB",
+              "answer": "24 GB",
+              "source": "http://127.0.0.1:36383/reader/jsonld-product",
+              "evidence": "capacity: 24 GB | $ { @type: Product | name: Cedar drive | capacity: 24 GB }",
+              "label": "capacity",
+              "section": "$ { @type: Product | name: Cedar drive | capacity: 24 GB }",
+              "kind": "measurement",
+              "score": 12.95,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "script[0]/capacity",
+                "structure": "jsonld",
+                "qualifiers": {
+                  "identity": [
+                    "Cedar drive"
+                  ],
+                  "structured": true,
+                  "bindings": {
+                    "@type": "Product",
+                    "name": "Cedar drive",
+                    "capacity": "24 GB"
+                  }
+                },
+                "field_value": "24 GB"
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "24 GB",
+            "answer": "24 GB",
+            "source": "http://127.0.0.1:36383/reader/jsonld-product",
+            "evidence": "capacity: 24 GB | $ { @type: Product | name: Cedar drive | capacity: 24 GB }",
+            "label": "capacity",
+            "section": "$ { @type: Product | name: Cedar drive | capacity: 24 GB }",
+            "kind": "measurement",
+            "score": 12.95,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "script[0]/capacity",
+              "structure": "jsonld",
+              "qualifiers": {
+                "identity": [
+                  "Cedar drive"
+                ],
+                "structured": true,
+                "bindings": {
+                  "@type": "Product",
+                  "name": "Cedar drive",
+                  "capacity": "24 GB"
+                }
+              },
+              "field_value": "24 GB"
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:36383/reader/jsonld-product",
+              "final": "http://127.0.0.1:36383/reader/jsonld-product",
+              "status": 200,
+              "bytes": 123,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 1.2156
+        }
+      }
+    },
+    {
+      "id": "ui-metadata",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "Who is the author of Alder?",
+            "url": "http://127.0.0.1:36383/reader/ui-metadata",
+            "kind": "text",
+            "terms": [
+              "author",
+              "alder"
+            ],
+            "attributes": [
+              "author",
+              "authors",
+              "creator",
+              "maintainer",
+              "written"
+            ],
+            "entity_terms": [
+              "alder"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "who is the author "
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.079996582120657e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "false",
+              "answer": "false",
+              "source": "http://127.0.0.1:36383/reader/ui-metadata",
+              "evidence": "author: false | $ { @type: WebPage | name: Alder | author: false }",
+              "label": "author",
+              "section": "$ { @type: WebPage | name: Alder | author: false }",
+              "kind": "text",
+              "score": 13.35,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "script[0]/author",
+                "structure": "jsonld",
+                "qualifiers": {
+                  "identity": [
+                    "Alder"
+                  ],
+                  "structured": true,
+                  "bindings": {
+                    "@type": "WebPage",
+                    "name": "Alder",
+                    "author": "false"
+                  }
+                },
+                "field_value": "false"
+              }
+            }
+          ],
+          "verification": [
+            "unsupported"
+          ],
+          "reader_state": "no_evidence",
+          "top_candidates": [
+            {
+              "raw": "false",
+              "answer": "false",
+              "source": "http://127.0.0.1:36383/reader/ui-metadata",
+              "evidence": "author: false | $ { @type: WebPage | name: Alder | author: false }",
+              "label": "author",
+              "section": "$ { @type: WebPage | name: Alder | author: false }",
+              "kind": "text",
+              "score": 14.65,
+              "signals": {
+                "locator": "script[0]/author",
+                "page_title": "",
+                "structure": "jsonld",
+                "qualifiers": {
+                  "identity": [
+                    "Alder"
+                  ],
+                  "structured": true,
+                  "bindings": {
+                    "@type": "WebPage",
+                    "name": "Alder",
+                    "author": "false"
+                  }
+                },
+                "field_value": "false",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "false | $ { @type: WebPage | name: Alder | author: false }",
+              "answer": "false | $ { @type: WebPage | name: Alder | author: false }",
+              "source": "http://127.0.0.1:36383/reader/ui-metadata",
+              "evidence": "author: false | $ { @type: WebPage | name: Alder | author: false }",
+              "label": "author",
+              "section": "$ { @type: WebPage | name: Alder | author: false }",
+              "kind": "text",
+              "score": 13.35,
+              "signals": {
+                "locator": "script[0]/author",
+                "page_title": "",
+                "structure": "jsonld",
+                "qualifiers": {
+                  "identity": [
+                    "Alder"
+                  ],
+                  "structured": true,
+                  "bindings": {
+                    "@type": "WebPage",
+                    "name": "Alder",
+                    "author": "false"
+                  }
+                },
+                "field_value": "false",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "false | settings { author: false | marketingCountry: Belize }",
+              "answer": "false | settings { author: false | marketingCountry: Belize }",
+              "source": "http://127.0.0.1:36383/reader/ui-metadata",
+              "evidence": "settings.author: false | settings { author: false | marketingCountry: Belize }",
+              "label": "settings.author",
+              "section": "settings { author: false | marketingCountry: Belize }",
+              "kind": "text",
+              "score": 11.75,
+              "signals": {
+                "locator": "script[1]/settings.author",
+                "page_title": "",
+                "structure": "embedded",
+                "qualifiers": {
+                  "structured": true,
+                  "bindings": {
+                    "author": "false",
+                    "marketingCountry": "Belize"
+                  }
+                },
+                "field_value": "false",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:36383/reader/ui-metadata",
+              "final": "http://127.0.0.1:36383/reader/ui-metadata",
+              "status": 200,
+              "bytes": 205,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 1.207
+        }
+      }
+    },
+    {
+      "id": "literal-false",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "false",
+        "sources": [
+          "http://127.0.0.1:36383/reader/literal-false"
+        ],
+        "confidence": 0.97,
+        "evidence": "settings.enable cache: false | settings { enable_cache: false }",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the default value of the `enable_cache` field?",
+            "url": "http://127.0.0.1:36383/reader/literal-false",
+            "kind": "text",
+            "terms": [
+              "default",
+              "enable_cache",
+              "field",
+              "enable",
+              "cache"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "default",
+              "enable_cache",
+              "field",
+              "enable",
+              "cache"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the default value "
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.1100084520876408e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "false",
+              "answer": "false",
+              "source": "http://127.0.0.1:36383/reader/literal-false",
+              "evidence": "settings.enable cache: false | settings { enable_cache: false }",
+              "label": "settings.enable cache",
+              "section": "settings { enable_cache: false }",
+              "kind": "text",
+              "score": 23.15,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "script[0]/settings.enable_cache",
+                "structure": "embedded",
+                "qualifiers": {
+                  "structured": true,
+                  "bindings": {
+                    "enable_cache": "false"
+                  }
+                },
+                "field_value": "false"
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "false",
+            "answer": "false",
+            "source": "http://127.0.0.1:36383/reader/literal-false",
+            "evidence": "settings.enable cache: false | settings { enable_cache: false }",
+            "label": "settings.enable cache",
+            "section": "settings { enable_cache: false }",
+            "kind": "text",
+            "score": 23.15,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "script[0]/settings.enable_cache",
+              "structure": "embedded",
+              "qualifiers": {
+                "structured": true,
+                "bindings": {
+                  "enable_cache": "false"
+                }
+              },
+              "field_value": "false"
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:36383/reader/literal-false",
+              "final": "http://127.0.0.1:36383/reader/literal-false",
+              "status": 200,
+              "bytes": 99,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.9805
+        }
+      }
+    }
+  ],
+  "health_before": {
+    "ready": true,
+    "device": "cuda",
+    "hip": null,
+    "pid": 36536,
+    "startup_token": "6a379aa4ae55410d95b87b7a7e70436b",
+    "backend_source_sha256": {
+      "model_server.py": "14e840e32fe34ca594eb4fb0dadd89fc67768fb9026ac3359734a021c5190fc2",
+      "model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+      "selector.py": "99ceb481ea8d6a9988d873a402f53692eca61df5db5585ddb95264f3a4827da6",
+      "model_protocol.py": "8ba6730e160eac47d8231985e1293bb981a5a63ef9b475cf46daf31ef17bdfb0",
+      "model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+      "normalize.py": "f418f880472f21012ee943b8a0cd3866c8c09bbf6f6e54e3a0d935f3eec4f6b4",
+      "types.py": "2dbac10dedae8e5c0df7eff4d8a368dabffc20e144be1ee93f349697ba82752a"
+    },
+    "software": {
+      "torch": "2.9.1+cu128",
+      "transformers": "4.57.1",
+      "tokenizers": "0.22.1",
+      "safetensors": "0.6.2",
+      "accelerate": "1.11.0"
+    },
+    "parameters": 4022468096,
+    "assets": {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "verified_files": 12,
+      "full_sha256": false,
+      "weight_shards": 3
+    },
+    "warmup_reply": {
+      "candidate": -1,
+      "passage": 0,
+      "answer": "7"
+    },
+    "torch": "2.9.1+cu128",
+    "startup_seconds": 5.202943200012669,
+    "calls": 0,
+    "outcomes": {},
+    "active_request": null,
+    "busy_rejections": 0,
+    "recent_requests": [
+      {
+        "request_id": "warmup",
+        "mode": "select",
+        "input_tokens": 268,
+        "packing_seconds": 0.013518600026145577,
+        "transfer_seconds": 0.0010133000323548913,
+        "generated_tokens": 14,
+        "stop_reason": "completed",
+        "generation_seconds": 1.0565835000015795,
+        "prefill_and_first_token_seconds": 0.40646699990611523
+      }
+    ],
+    "context_limit": 1536,
+    "token_stats": {
+      "max_input": 268,
+      "generated": 14,
+      "pruned_requests": 0
+    },
+    "device_memory_bytes": 12878086144,
+    "peak_vram_bytes": 8141605888,
+    "allocated_vram_bytes": 8053474816,
+    "reserved_vram_bytes": 8185184256
+  },
+  "health_after": {
+    "ready": true,
+    "device": "cuda",
+    "hip": null,
+    "pid": 36536,
+    "startup_token": "6a379aa4ae55410d95b87b7a7e70436b",
+    "backend_source_sha256": {
+      "model_server.py": "14e840e32fe34ca594eb4fb0dadd89fc67768fb9026ac3359734a021c5190fc2",
+      "model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+      "selector.py": "99ceb481ea8d6a9988d873a402f53692eca61df5db5585ddb95264f3a4827da6",
+      "model_protocol.py": "8ba6730e160eac47d8231985e1293bb981a5a63ef9b475cf46daf31ef17bdfb0",
+      "model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+      "normalize.py": "f418f880472f21012ee943b8a0cd3866c8c09bbf6f6e54e3a0d935f3eec4f6b4",
+      "types.py": "2dbac10dedae8e5c0df7eff4d8a368dabffc20e144be1ee93f349697ba82752a"
+    },
+    "software": {
+      "torch": "2.9.1+cu128",
+      "transformers": "4.57.1",
+      "tokenizers": "0.22.1",
+      "safetensors": "0.6.2",
+      "accelerate": "1.11.0"
+    },
+    "parameters": 4022468096,
+    "assets": {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "verified_files": 12,
+      "full_sha256": false,
+      "weight_shards": 3
+    },
+    "warmup_reply": {
+      "candidate": -1,
+      "passage": 0,
+      "answer": "7"
+    },
+    "torch": "2.9.1+cu128",
+    "startup_seconds": 5.202943200012669,
+    "calls": 20,
+    "outcomes": {
+      "selected": 11,
+      "supported": 7,
+      "abstained": 1,
+      "unsupported": 1
+    },
+    "active_request": null,
+    "busy_rejections": 0,
+    "recent_requests": [
+      {
+        "request_id": "warmup",
+        "mode": "select",
+        "input_tokens": 268,
+        "packing_seconds": 0.013518600026145577,
+        "transfer_seconds": 0.0010133000323548913,
+        "generated_tokens": 14,
+        "stop_reason": "completed",
+        "generation_seconds": 1.0565835000015795,
+        "prefill_and_first_token_seconds": 0.40646699990611523
+      },
+      {
+        "request_id": "87f38ed20b6b40c09a04245ccf3f8ab6",
+        "mode": "select",
+        "input_tokens": 779,
+        "packing_seconds": 0.0078436000039801,
+        "transfer_seconds": 0.0015657999319955707,
+        "generated_tokens": 16,
+        "stop_reason": "completed",
+        "generation_seconds": 0.9246847000904381,
+        "prefill_and_first_token_seconds": 0.14979450008831918
+      },
+      {
+        "request_id": "28f665e1b37342b9881ee6691081d6a5",
+        "mode": "verify",
+        "input_tokens": 719,
+        "packing_seconds": 0.003154900041408837,
+        "transfer_seconds": 0.0014941999688744545,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.4053210000274703,
+        "prefill_and_first_token_seconds": 0.12313469999935478
+      },
+      {
+        "request_id": "213984d809b64ef9921c0d2a5e8cc9ea",
+        "mode": "select",
+        "input_tokens": 889,
+        "packing_seconds": 0.003544400096870959,
+        "transfer_seconds": 0.0017495999345555902,
+        "generated_tokens": 15,
+        "stop_reason": "completed",
+        "generation_seconds": 0.8609010999789461,
+        "prefill_and_first_token_seconds": 0.1585657000541687
+      },
+      {
+        "request_id": "29ceec46f92f4b3aaf3ea94248c6df7a",
+        "mode": "verify",
+        "input_tokens": 828,
+        "packing_seconds": 0.0034821999724954367,
+        "transfer_seconds": 0.0015205000527203083,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.437905199942179,
+        "prefill_and_first_token_seconds": 0.1480096000013873
+      },
+      {
+        "request_id": "41904a9f30fe4d2baca5d34bb972b404",
+        "mode": "select",
+        "input_tokens": 990,
+        "packing_seconds": 0.004510800004936755,
+        "transfer_seconds": 0.0019431000109761953,
+        "generated_tokens": 14,
+        "stop_reason": "completed",
+        "generation_seconds": 0.8765758000081405,
+        "prefill_and_first_token_seconds": 0.19369850005023181
+      },
+      {
+        "request_id": "3d0b1bfcacd042979e5100a22965b499",
+        "mode": "verify",
+        "input_tokens": 928,
+        "packing_seconds": 0.0037403999594971538,
+        "transfer_seconds": 0.0017430000007152557,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.47127029998227954,
+        "prefill_and_first_token_seconds": 0.18173750001005828
+      },
+      {
+        "request_id": "30482cd3976343beac717d4903d85d85",
+        "mode": "select",
+        "input_tokens": 794,
+        "packing_seconds": 0.003218800062313676,
+        "transfer_seconds": 0.0015447000041604042,
+        "generated_tokens": 15,
+        "stop_reason": "completed",
+        "generation_seconds": 0.8631336999824271,
+        "prefill_and_first_token_seconds": 0.13636589993257076
+      },
+      {
+        "request_id": "5a83e0fc71c74cd7a7c264b1e5dbca49",
+        "mode": "select",
+        "input_tokens": 681,
+        "packing_seconds": 0.003472800017334521,
+        "transfer_seconds": 0.0016751999501138926,
+        "generated_tokens": 18,
+        "stop_reason": "completed",
+        "generation_seconds": 0.9327965000411496,
+        "prefill_and_first_token_seconds": 0.12337669997941703
+      },
+      {
+        "request_id": "741d76e498574ed0b30eac69a1289d22",
+        "mode": "select",
+        "input_tokens": 728,
+        "packing_seconds": 0.0035976999206468463,
+        "transfer_seconds": 0.0015293000033125281,
+        "generated_tokens": 16,
+        "stop_reason": "completed",
+        "generation_seconds": 0.8652811000356451,
+        "prefill_and_first_token_seconds": 0.12779489997774363
+      },
+      {
+        "request_id": "310922b5be8e43afbdb91200d1759228",
+        "mode": "select",
+        "input_tokens": 977,
+        "packing_seconds": 0.003928499994799495,
+        "transfer_seconds": 0.00205629994161427,
+        "generated_tokens": 16,
+        "stop_reason": "completed",
+        "generation_seconds": 1.0859845000086352,
+        "prefill_and_first_token_seconds": 0.18903790006879717
+      },
+      {
+        "request_id": "4e03910dcf6349e09e90a9dbf74cd4a6",
+        "mode": "verify",
+        "input_tokens": 917,
+        "packing_seconds": 0.005509200040251017,
+        "transfer_seconds": 0.0030734000029042363,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.5109374999301508,
+        "prefill_and_first_token_seconds": 0.19638129998929799
+      },
+      {
+        "request_id": "d98f9e7ab1944909a11d7144b67fa708",
+        "mode": "select",
+        "input_tokens": 507,
+        "packing_seconds": 0.003015700029209256,
+        "transfer_seconds": 0.0012589999241754413,
+        "generated_tokens": 13,
+        "stop_reason": "completed",
+        "generation_seconds": 0.722736700088717,
+        "prefill_and_first_token_seconds": 0.10299580008722842
+      },
+      {
+        "request_id": "6eaf754041fe4f6eae6f31d907a8ae90",
+        "mode": "select",
+        "input_tokens": 819,
+        "packing_seconds": 0.0038160000694915652,
+        "transfer_seconds": 0.001585699967108667,
+        "generated_tokens": 16,
+        "stop_reason": "completed",
+        "generation_seconds": 0.8916122999507934,
+        "prefill_and_first_token_seconds": 0.1446384999435395
+      },
+      {
+        "request_id": "e1833cc88f8044009503239a856d1b3e",
+        "mode": "verify",
+        "input_tokens": 759,
+        "packing_seconds": 0.003127699950709939,
+        "transfer_seconds": 0.0014140000566840172,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.420503499917686,
+        "prefill_and_first_token_seconds": 0.1292505000019446
+      },
+      {
+        "request_id": "ecfd34cba91249348467c37793231792",
+        "mode": "select",
+        "input_tokens": 698,
+        "packing_seconds": 0.0029694000259041786,
+        "transfer_seconds": 0.001488200039602816,
+        "generated_tokens": 16,
+        "stop_reason": "completed",
+        "generation_seconds": 0.83600349992048,
+        "prefill_and_first_token_seconds": 0.12350649992004037
+      },
+      {
+        "request_id": "7ad3b470d489479a9c315ab9aa3bea6b",
+        "mode": "verify",
+        "input_tokens": 638,
+        "packing_seconds": 0.0026426000986248255,
+        "transfer_seconds": 0.0012215999886393547,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.3645223999628797,
+        "prefill_and_first_token_seconds": 0.11399300000630319
+      },
+      {
+        "request_id": "0bc950a4bab14a3089b4ec4293c55053",
+        "mode": "select",
+        "input_tokens": 852,
+        "packing_seconds": 0.003893099958077073,
+        "transfer_seconds": 0.0016802001046016812,
+        "generated_tokens": 14,
+        "stop_reason": "completed",
+        "generation_seconds": 0.7627242999151349,
+        "prefill_and_first_token_seconds": 0.15444620000198483
+      },
+      {
+        "request_id": "49769a63374541e7a0daaefcc8672554",
+        "mode": "verify",
+        "input_tokens": 790,
+        "packing_seconds": 0.0032381999772042036,
+        "transfer_seconds": 0.001561800017952919,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.4272081999806687,
+        "prefill_and_first_token_seconds": 0.13765649998094887
+      },
+      {
+        "request_id": "eb1a5ec0c3044b639fd805cc0eaa29a2",
+        "mode": "select",
+        "input_tokens": 471,
+        "packing_seconds": 0.0024701999500393867,
+        "transfer_seconds": 0.0011224000481888652,
+        "generated_tokens": 14,
+        "stop_reason": "completed",
+        "generation_seconds": 0.6546791000291705,
+        "prefill_and_first_token_seconds": 0.0689538000151515
+      },
+      {
+        "request_id": "110d459a13ea4318898e95893ec7df17",
+        "mode": "verify",
+        "input_tokens": 409,
+        "packing_seconds": 0.0019308000337332487,
+        "transfer_seconds": 0.0010520999785512686,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.3128435999387875,
+        "prefill_and_first_token_seconds": 0.0722737000323832
+      }
+    ],
+    "context_limit": 1536,
+    "token_stats": {
+      "max_input": 990,
+      "generated": 245,
+      "pruned_requests": 0
+    },
+    "device_memory_bytes": 12878086144,
+    "peak_vram_bytes": 8620829184,
+    "allocated_vram_bytes": 8061994496,
+    "reserved_vram_bytes": 9038725120
+  },
+  "memory_after_run": {
+    "used_mib": 10292,
+    "total_mib": 12282
+  },
+  "memory_after_shutdown": {
+    "used_mib": 1457,
+    "total_mib": 12282
+  },
+  "passed": 9,
+  "total": 12
+}

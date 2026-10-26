@@ -1,0 +1,95 @@
+{
+  "scope": "Small structural diagnosis for calendar precision and compact DOM record scope.",
+  "passed": 22,
+  "total": 22,
+  "rows": [
+    {
+      "id": "month-intent-0",
+      "passed": true
+    },
+    {
+      "id": "month-intent-1",
+      "passed": true
+    },
+    {
+      "id": "month-intent-2",
+      "passed": true
+    },
+    {
+      "id": "month-intent-3",
+      "passed": true
+    },
+    {
+      "id": "preserve-In what year was Oriole appointed?",
+      "passed": true
+    },
+    {
+      "id": "preserve-What day, month, and year was Oriole appointed?",
+      "passed": true
+    },
+    {
+      "id": "preserve-How many months and years did Oriole serve?",
+      "passed": true
+    },
+    {
+      "id": "projection-February 14, 1942",
+      "passed": true
+    },
+    {
+      "id": "projection-2024-02-29",
+      "passed": true
+    },
+    {
+      "id": "projection-Feb 1942",
+      "passed": true
+    },
+    {
+      "id": "projection-1942-02",
+      "passed": true
+    },
+    {
+      "id": "invalid-2023-02-29",
+      "passed": true
+    },
+    {
+      "id": "invalid-1942-13",
+      "passed": true
+    },
+    {
+      "id": "invalid-February 30, 1942",
+      "passed": true
+    },
+    {
+      "id": "invalid-February",
+      "passed": true
+    },
+    {
+      "id": "invalid-1942",
+      "passed": true
+    },
+    {
+      "id": "no-invalid-day-prefix",
+      "passed": true
+    },
+    {
+      "id": "verified-calendar-projection",
+      "passed": true
+    },
+    {
+      "id": "changed-projection-rejected",
+      "passed": true
+    },
+    {
+      "id": "compact-records",
+      "passed": true
+    },
+    {
+      "id": "no-cross-record-fusion",
+      "passed": true
+    },
+    {
+      "id": "record-source-headings",
+      "passed": true
+    }
+  ]
+}

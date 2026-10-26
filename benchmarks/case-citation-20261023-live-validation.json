@@ -1,0 +1,32 @@
+{
+  "scope": "Frozen original3 gold, starting URLs and retained HTTP capture verification; dynamic actualweb, not causal comparison or newwhole12 score.",
+  "cases_sha256": "cc07562445c59e1a1f0c208f571ab47939486f91e13db39942505aefb0e405b9",
+  "before_joint": 0,
+  "after_joint": 1,
+  "rows": [
+    {
+      "id": "simpleqa-37",
+      "capture_sha256_verified": true,
+      "no_omission": true,
+      "original_starting_url": "https://en.wikipedia.org/wiki/Bernard_Comrie",
+      "answer_ok": false,
+      "joint_ok": false
+    },
+    {
+      "id": "simpleqa-395",
+      "capture_sha256_verified": true,
+      "no_omission": true,
+      "original_starting_url": "https://en.wikipedia.org/wiki/Curtis_Publishing_Co._v._Butts",
+      "answer_ok": true,
+      "joint_ok": true
+    },
+    {
+      "id": "simpleqa-32",
+      "capture_sha256_verified": true,
+      "no_omission": true,
+      "original_starting_url": "https://www.riaa.com/gold-platinum/?tab_active=default-award&se=cry+pretty",
+      "answer_ok": false,
+      "joint_ok": false
+    }
+  ]
+}

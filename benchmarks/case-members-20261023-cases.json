@@ -1,0 +1,90 @@
+[
+  {
+    "id": "real-case-teams",
+    "query": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+    "url": "https://www.oyez.org/cases/1966/37",
+    "answer": "University of Georgia and University of Alabama",
+    "source": "https://api.oyez.org/cases/1966/37?labels=true",
+    "mode": "case"
+  },
+  {
+    "id": "real-api-teams",
+    "query": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+    "url": "https://api.oyez.org/cases/1966/37?labels=true",
+    "answer": "University of Georgia and University of Alabama",
+    "source": "https://api.oyez.org/cases/1966/37?labels=true",
+    "mode": "case"
+  },
+  {
+    "id": "real-case-informant",
+    "query": "Who was the source of the article in Curtis Publishing v. Butts?",
+    "url": "https://www.oyez.org/cases/1966/37",
+    "answer": "George Burnett",
+    "source": "https://api.oyez.org/cases/1966/37?labels=true",
+    "mode": "case"
+  },
+  {
+    "id": "wrong-case-identity",
+    "query": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+    "url": "https://api.oyez.org/cases/1966/37?labels=true",
+    "answer": "",
+    "source": "",
+    "mode": "wrong"
+  },
+  {
+    "id": "teams-with-coaches",
+    "query": "Which two football teams played in the Cedar Cup?",
+    "answer": "Maple United and Cedar FC",
+    "mode": "plain",
+    "text": "The Cedar Cup featured Maple United, coached by Mira Chen, against Cedar FC, coached by Orin Vale."
+  },
+  {
+    "id": "one-team-only",
+    "query": "Which two football teams played in the Cedar Cup?",
+    "answer": "",
+    "mode": "plain",
+    "text": "Maple United played in the Cedar Cup. Its coach was Mira Chen."
+  },
+  {
+    "id": "different-award-years",
+    "query": "Which two authors won the Cedar Prize in 1998?",
+    "answer": "",
+    "mode": "plain",
+    "text": "Mira Chen won the Cedar Prize in 1998. Orin Vale won the Cedar Prize in 2001."
+  },
+  {
+    "id": "same-award-year",
+    "query": "Which two authors won the Cedar Prize in 1998?",
+    "answer": "Mira Chen and Orin Vale",
+    "mode": "plain",
+    "text": "Mira Chen won the Cedar Prize in 1998. Orin Vale won the Cedar Prize in 1998."
+  },
+  {
+    "id": "scalar-retained",
+    "query": "What is the access code of the Cedar Library?",
+    "answer": "R8",
+    "mode": "plain",
+    "text": "The access code of the Cedar Library is R8."
+  },
+  {
+    "id": "three-countries",
+    "query": "Which three countries joined the Birch Accord?",
+    "answer": "Canada, Japan and Chile",
+    "mode": "plain",
+    "text": "Canada signed the Birch Accord on Monday. Japan signed it on Tuesday. Chile joined the accord on Wednesday."
+  },
+  {
+    "id": "aliases-are-one",
+    "query": "Which two football teams played in the Cedar Cup?",
+    "answer": "",
+    "mode": "plain",
+    "text": "Maple United, also known as MUFC, played in the Cedar Cup. No other participating team is identified."
+  },
+  {
+    "id": "contiguous-pair",
+    "query": "Which two football teams played in the Cedar Cup?",
+    "answer": "Maple United and Cedar FC",
+    "mode": "plain",
+    "text": "Maple United and Cedar FC played in the Cedar Cup."
+  }
+]

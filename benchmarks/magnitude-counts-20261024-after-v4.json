@@ -1,0 +1,744 @@
+{
+  "scope": "Complete scaled-count source atoms, authored CPU and loopback HTTP controls.\n\nNo model, browser, public API, gold changes or independent accuracy claim.\n",
+  "baseline": null,
+  "source_hashes": {},
+  "diagnostic_sha256": "1881d7323ec050e71745190c81d8f0fdc19b9bc6523b25ae08398f6d8e85fdee",
+  "passed": 99,
+  "total": 99,
+  "rows": [
+    {
+      "id": "literal-number-0",
+      "passed": true,
+      "raw": "4",
+      "text": "Count: 4 million"
+    },
+    {
+      "id": "literal-number-1",
+      "passed": true,
+      "raw": "4.5",
+      "text": "Count: 4.5 million"
+    },
+    {
+      "id": "literal-number-2",
+      "passed": true,
+      "raw": "4",
+      "text": "Count: 4 hundred"
+    },
+    {
+      "id": "literal-number-3",
+      "passed": true,
+      "raw": "1,234",
+      "text": "Count: 1,234 thousand"
+    },
+    {
+      "id": "literal-number-4",
+      "passed": true,
+      "raw": "4 million",
+      "text": "Count: 4 million and 200 thousand"
+    },
+    {
+      "id": "literal-number-5",
+      "passed": true,
+      "raw": "200 thousand",
+      "text": "Count: 4 million and 200 thousand"
+    },
+    {
+      "id": "literal-number-6",
+      "passed": true,
+      "raw": "$4",
+      "text": "Cost: $4 million"
+    },
+    {
+      "id": "literal-price-0",
+      "passed": true,
+      "raw": "4",
+      "text": "Count: 4 million"
+    },
+    {
+      "id": "literal-price-1",
+      "passed": true,
+      "raw": "4.5",
+      "text": "Count: 4.5 million"
+    },
+    {
+      "id": "literal-price-2",
+      "passed": true,
+      "raw": "4",
+      "text": "Count: 4 hundred"
+    },
+    {
+      "id": "literal-price-3",
+      "passed": true,
+      "raw": "1,234",
+      "text": "Count: 1,234 thousand"
+    },
+    {
+      "id": "literal-price-4",
+      "passed": true,
+      "raw": "4 million",
+      "text": "Count: 4 million and 200 thousand"
+    },
+    {
+      "id": "literal-price-5",
+      "passed": true,
+      "raw": "200 thousand",
+      "text": "Count: 4 million and 200 thousand"
+    },
+    {
+      "id": "literal-price-6",
+      "passed": true,
+      "raw": "$4",
+      "text": "Cost: $4 million"
+    },
+    {
+      "id": "literal-measurement-0",
+      "passed": true,
+      "raw": "4",
+      "text": "Count: 4 million"
+    },
+    {
+      "id": "literal-measurement-1",
+      "passed": true,
+      "raw": "4.5",
+      "text": "Count: 4.5 million"
+    },
+    {
+      "id": "literal-measurement-2",
+      "passed": true,
+      "raw": "4",
+      "text": "Count: 4 hundred"
+    },
+    {
+      "id": "literal-measurement-3",
+      "passed": true,
+      "raw": "1,234",
+      "text": "Count: 1,234 thousand"
+    },
+    {
+      "id": "literal-measurement-4",
+      "passed": true,
+      "raw": "4 million",
+      "text": "Count: 4 million and 200 thousand"
+    },
+    {
+      "id": "literal-measurement-5",
+      "passed": true,
+      "raw": "200 thousand",
+      "text": "Count: 4 million and 200 thousand"
+    },
+    {
+      "id": "literal-measurement-6",
+      "passed": true,
+      "raw": "$4",
+      "text": "Cost: $4 million"
+    },
+    {
+      "id": "literal-duration-0",
+      "passed": true,
+      "raw": "4",
+      "text": "Count: 4 million"
+    },
+    {
+      "id": "literal-duration-1",
+      "passed": true,
+      "raw": "4.5",
+      "text": "Count: 4.5 million"
+    },
+    {
+      "id": "literal-duration-2",
+      "passed": true,
+      "raw": "4",
+      "text": "Count: 4 hundred"
+    },
+    {
+      "id": "literal-duration-3",
+      "passed": true,
+      "raw": "1,234",
+      "text": "Count: 1,234 thousand"
+    },
+    {
+      "id": "literal-duration-4",
+      "passed": true,
+      "raw": "4 million",
+      "text": "Count: 4 million and 200 thousand"
+    },
+    {
+      "id": "literal-duration-5",
+      "passed": true,
+      "raw": "200 thousand",
+      "text": "Count: 4 million and 200 thousand"
+    },
+    {
+      "id": "literal-duration-6",
+      "passed": true,
+      "raw": "$4",
+      "text": "Cost: $4 million"
+    },
+    {
+      "id": "literal-percentage-0",
+      "passed": true,
+      "raw": "4",
+      "text": "Count: 4 million"
+    },
+    {
+      "id": "literal-percentage-1",
+      "passed": true,
+      "raw": "4.5",
+      "text": "Count: 4.5 million"
+    },
+    {
+      "id": "literal-percentage-2",
+      "passed": true,
+      "raw": "4",
+      "text": "Count: 4 hundred"
+    },
+    {
+      "id": "literal-percentage-3",
+      "passed": true,
+      "raw": "1,234",
+      "text": "Count: 1,234 thousand"
+    },
+    {
+      "id": "literal-percentage-4",
+      "passed": true,
+      "raw": "4 million",
+      "text": "Count: 4 million and 200 thousand"
+    },
+    {
+      "id": "literal-percentage-5",
+      "passed": true,
+      "raw": "200 thousand",
+      "text": "Count: 4 million and 200 thousand"
+    },
+    {
+      "id": "literal-percentage-6",
+      "passed": true,
+      "raw": "$4",
+      "text": "Cost: $4 million"
+    },
+    {
+      "id": "literal-year-0",
+      "passed": true,
+      "raw": "4",
+      "text": "Count: 4 million"
+    },
+    {
+      "id": "literal-year-1",
+      "passed": true,
+      "raw": "4.5",
+      "text": "Count: 4.5 million"
+    },
+    {
+      "id": "literal-year-2",
+      "passed": true,
+      "raw": "4",
+      "text": "Count: 4 hundred"
+    },
+    {
+      "id": "literal-year-3",
+      "passed": true,
+      "raw": "1,234",
+      "text": "Count: 1,234 thousand"
+    },
+    {
+      "id": "literal-year-4",
+      "passed": true,
+      "raw": "4 million",
+      "text": "Count: 4 million and 200 thousand"
+    },
+    {
+      "id": "literal-year-5",
+      "passed": true,
+      "raw": "200 thousand",
+      "text": "Count: 4 million and 200 thousand"
+    },
+    {
+      "id": "literal-year-6",
+      "passed": true,
+      "raw": "$4",
+      "text": "Cost: $4 million"
+    },
+    {
+      "id": "literal-time-0",
+      "passed": true,
+      "raw": "4",
+      "text": "Count: 4 million"
+    },
+    {
+      "id": "literal-time-1",
+      "passed": true,
+      "raw": "4.5",
+      "text": "Count: 4.5 million"
+    },
+    {
+      "id": "literal-time-2",
+      "passed": true,
+      "raw": "4",
+      "text": "Count: 4 hundred"
+    },
+    {
+      "id": "literal-time-3",
+      "passed": true,
+      "raw": "1,234",
+      "text": "Count: 1,234 thousand"
+    },
+    {
+      "id": "literal-time-4",
+      "passed": true,
+      "raw": "4 million",
+      "text": "Count: 4 million and 200 thousand"
+    },
+    {
+      "id": "literal-time-5",
+      "passed": true,
+      "raw": "200 thousand",
+      "text": "Count: 4 million and 200 thousand"
+    },
+    {
+      "id": "literal-time-6",
+      "passed": true,
+      "raw": "$4",
+      "text": "Cost: $4 million"
+    },
+    {
+      "id": "full-or-later-49",
+      "passed": true,
+      "raw": "4 million",
+      "text": "Count: 4 million"
+    },
+    {
+      "id": "full-or-later-50",
+      "passed": true,
+      "raw": "4",
+      "text": "Count: 4 million. Reserve: 4"
+    },
+    {
+      "id": "full-or-later-51",
+      "passed": true,
+      "raw": "4.5 million",
+      "text": "Count: 4.5 million"
+    },
+    {
+      "id": "full-or-later-52",
+      "passed": true,
+      "raw": "$4 million",
+      "text": "Cost: $4 million"
+    },
+    {
+      "id": "full-or-later-53",
+      "passed": true,
+      "raw": "4",
+      "text": "Score: 5\u20134"
+    },
+    {
+      "id": "full-or-later-54",
+      "passed": true,
+      "raw": "2014",
+      "text": "March 1,2014"
+    },
+    {
+      "id": "full-or-later-55",
+      "passed": true,
+      "raw": "4",
+      "text": "Count: 4 chairs"
+    },
+    {
+      "id": "non-numeric-text",
+      "passed": true
+    },
+    {
+      "id": "non-numeric-version",
+      "passed": true
+    },
+    {
+      "id": "canonical-4 hundred",
+      "passed": true,
+      "actual": true
+    },
+    {
+      "id": "canonical-4 million",
+      "passed": true,
+      "actual": true
+    },
+    {
+      "id": "canonical-1.25 million",
+      "passed": true,
+      "actual": true
+    },
+    {
+      "id": "canonical-1,234 thousand",
+      "passed": true,
+      "actual": true
+    },
+    {
+      "id": "canonical-0.5 thousand",
+      "passed": true,
+      "actual": true
+    },
+    {
+      "id": "canonical-4million",
+      "passed": true,
+      "actual": true
+    },
+    {
+      "id": "canonical-4 million and 200 thousand",
+      "passed": true,
+      "actual": true
+    },
+    {
+      "id": "canonical-4 hundred and five",
+      "passed": true,
+      "actual": true
+    },
+    {
+      "id": "canonical-four million 200 thousand",
+      "passed": true,
+      "actual": true
+    },
+    {
+      "id": "canonical-.5 million",
+      "passed": true,
+      "actual": true
+    },
+    {
+      "id": "canonical-1.2e3 thousand",
+      "passed": true,
+      "actual": true
+    },
+    {
+      "id": "canonical-.5e2 thousand",
+      "passed": true,
+      "actual": true
+    },
+    {
+      "id": "canonical-4 hundred twenty thousand",
+      "passed": true,
+      "actual": true
+    },
+    {
+      "id": "canonical-4.123456 million",
+      "passed": true,
+      "actual": true
+    },
+    {
+      "id": "reject-72",
+      "passed": true,
+      "actual": false,
+      "raw": "4",
+      "text": "Elm Hall has 4 million chairs."
+    },
+    {
+      "id": "reject-73",
+      "passed": true,
+      "actual": false,
+      "raw": "4 million",
+      "text": "Elm Hall has 4 million chairs."
+    },
+    {
+      "id": "reject-74",
+      "passed": true,
+      "actual": false,
+      "raw": "4 million",
+      "text": "Elm Hall has 4 million chairs."
+    },
+    {
+      "id": "reject-75",
+      "passed": true,
+      "actual": false,
+      "raw": "4 million",
+      "text": "Elm Hall has about 4 million chairs."
+    },
+    {
+      "id": "reject-76",
+      "passed": true,
+      "actual": false,
+      "raw": "4 million",
+      "text": "Elm Hall has 4 million to 6 million chairs."
+    },
+    {
+      "id": "no-rounded-derivation-4.0000000000000000000000000000001 million",
+      "passed": true,
+      "mechanical_acceptance": false,
+      "normalized_candidate": false
+    },
+    {
+      "id": "no-rounded-derivation-4 thousand million",
+      "passed": true,
+      "mechanical_acceptance": false,
+      "normalized_candidate": false
+    },
+    {
+      "id": "no-rounded-derivation-1,23 million",
+      "passed": true,
+      "mechanical_acceptance": false,
+      "normalized_candidate": false
+    },
+    {
+      "id": "no-rounded-derivation-1e999 million",
+      "passed": true,
+      "mechanical_acceptance": false,
+      "normalized_candidate": false
+    },
+    {
+      "id": "no-rounded-derivation-4 million and 2000 thousand",
+      "passed": true,
+      "mechanical_acceptance": false,
+      "normalized_candidate": false
+    },
+    {
+      "id": "no-rounded-derivation-4 million and",
+      "passed": true,
+      "mechanical_acceptance": false,
+      "normalized_candidate": false
+    },
+    {
+      "id": "fraction-prefix-a million",
+      "passed": true
+    },
+    {
+      "id": "fraction-prefix-4 million",
+      "passed": true
+    },
+    {
+      "id": "clipped-scalar-prefix",
+      "passed": true,
+      "partial_accepted": false,
+      "full_accepted": true
+    },
+    {
+      "id": "full-range-retained",
+      "passed": true
+    },
+    {
+      "id": "population-4 million",
+      "passed": true,
+      "actual": true,
+      "expected": true
+    },
+    {
+      "id": "population-2 hundred",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "id": "population-6 million",
+      "passed": true,
+      "actual": false,
+      "expected": false
+    },
+    {
+      "id": "http-prefix",
+      "passed": true,
+      "actual": "",
+      "expected": "",
+      "paths": [
+        "/select"
+      ],
+      "selections": null
+    },
+    {
+      "id": "http-word-scale",
+      "passed": true,
+      "actual": "4000000",
+      "expected": "4000000",
+      "paths": [
+        "/select",
+        "/verify"
+      ],
+      "selections": [
+        {
+          "raw": "4 million",
+          "answer": "4000000",
+          "source": "http://127.0.0.1:57926/source",
+          "evidence": "Elm Hall has 4 million chairs.",
+          "label": "",
+          "section": "Elm Hall",
+          "kind": "number",
+          "score": 10.8,
+          "signals": {
+            "selector": "literal_span",
+            "locator": "p[1]:0",
+            "structure": "prose",
+            "qualifiers": {},
+            "field_value": "",
+            "number_projection": {
+              "selected_span": "4 million",
+              "source_span": "4 million",
+              "value": "4000000"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "http-decimal-scale",
+      "passed": true,
+      "actual": "1250000",
+      "expected": "1250000",
+      "paths": [
+        "/select",
+        "/verify"
+      ],
+      "selections": [
+        {
+          "raw": "1.25 million",
+          "answer": "1250000",
+          "source": "http://127.0.0.1:57926/source",
+          "evidence": "Elm Hall has 1.25 million chairs.",
+          "label": "",
+          "section": "Elm Hall",
+          "kind": "number",
+          "score": 10.8,
+          "signals": {
+            "selector": "literal_span",
+            "locator": "p[1]:0",
+            "structure": "prose",
+            "qualifiers": {},
+            "field_value": "",
+            "number_projection": {
+              "selected_span": "1250000",
+              "source_span": "1.25 million",
+              "value": "1250000"
+            },
+            "canonicalized_from": "1250000"
+          }
+        }
+      ]
+    },
+    {
+      "id": "http-hundred",
+      "passed": true,
+      "actual": "400",
+      "expected": "400",
+      "paths": [
+        "/select",
+        "/verify"
+      ],
+      "selections": [
+        {
+          "raw": "4 hundred",
+          "answer": "400",
+          "source": "http://127.0.0.1:57926/source",
+          "evidence": "Elm Hall has 4 hundred chairs.",
+          "label": "",
+          "section": "Elm Hall",
+          "kind": "number",
+          "score": 10.8,
+          "signals": {
+            "selector": "literal_span",
+            "locator": "p[1]:0",
+            "structure": "prose",
+            "qualifiers": {},
+            "field_value": "",
+            "number_projection": {
+              "selected_span": "4 hundred",
+              "source_span": "4 hundred",
+              "value": "400"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "http-reject",
+      "passed": true,
+      "actual": "",
+      "expected": "",
+      "paths": [
+        "/select",
+        "/verify"
+      ],
+      "selections": [
+        {
+          "raw": "4 million",
+          "answer": "4000000",
+          "source": "http://127.0.0.1:57926/source",
+          "evidence": "Elm Hall has 4 million chairs.",
+          "label": "",
+          "section": "Elm Hall",
+          "kind": "number",
+          "score": 10.8,
+          "signals": {
+            "selector": "literal_span",
+            "locator": "p[1]:0",
+            "structure": "prose",
+            "qualifiers": {},
+            "field_value": "",
+            "number_projection": {
+              "selected_span": "4 million",
+              "source_span": "4 million",
+              "value": "4000000"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "http-ambiguous",
+      "passed": true,
+      "actual": "",
+      "expected": "",
+      "paths": [
+        "/select"
+      ],
+      "selections": null
+    },
+    {
+      "id": "http-range",
+      "passed": true,
+      "actual": "",
+      "expected": "",
+      "paths": [
+        "/select"
+      ],
+      "selections": null
+    },
+    {
+      "id": "http-qualified",
+      "passed": true,
+      "actual": "",
+      "expected": "",
+      "paths": [
+        "/select"
+      ],
+      "selections": null
+    },
+    {
+      "id": "http-sum",
+      "passed": true,
+      "actual": "4200000",
+      "expected": "4200000",
+      "paths": [
+        "/select",
+        "/verify"
+      ],
+      "selections": [
+        {
+          "raw": "4 million and 200 thousand",
+          "answer": "4200000",
+          "source": "http://127.0.0.1:57926/source",
+          "evidence": "Elm Hall has 4 million and 200 thousand chairs.",
+          "label": "",
+          "section": "Elm Hall",
+          "kind": "number",
+          "score": 10.8,
+          "signals": {
+            "selector": "literal_span",
+            "locator": "p[1]:0",
+            "structure": "prose",
+            "qualifiers": {},
+            "field_value": "",
+            "number_projection": {
+              "selected_span": "4200000",
+              "source_span": "4 million and 200 thousand",
+              "value": "4200000"
+            },
+            "canonicalized_from": "4200000"
+          }
+        }
+      ]
+    }
+  ],
+  "torch_imported": false
+}

@@ -1,0 +1,324 @@
+{
+  "scope": "Resource observations from the completed rerun. Samples are not a controlled causal experiment. No pagefile or GPU system settings changed.",
+  "before": {
+    "at_local": "2026-10-21T15:37:19.0726259+08:00",
+    "free_gib": 100,
+    "network": [
+      {
+        "Name": "Intel[R] Wi-Fi 6 AX201 160MHz",
+        "BytesTotalPersec": 0
+      },
+      {
+        "Name": "Npcap Loopback Adapter",
+        "BytesTotalPersec": 0
+      },
+      {
+        "Name": "Realtek Gaming 2.5GbE Family Controller",
+        "BytesTotalPersec": 36233
+      }
+    ],
+    "gpu": "NVIDIA GeForce RTX 4070 SUPER, 9434 MiB, 12282 MiB, 14 %",
+    "qemu_or_docker_processes": []
+  },
+  "samples": [
+    {
+      "at_local": "2026-10-21T15:38:27.2737359+08:00",
+      "model_calls": 18,
+      "network": [
+        {
+          "Name": "Intel[R] Wi-Fi 6 AX201 160MHz",
+          "BytesTotalPersec": 0
+        },
+        {
+          "Name": "Npcap Loopback Adapter",
+          "BytesTotalPersec": 0
+        },
+        {
+          "Name": "Realtek Gaming 2.5GbE Family Controller",
+          "BytesTotalPersec": 375407
+        }
+      ]
+    },
+    {
+      "at_local": "2026-10-21T15:43:19.6311288+08:00",
+      "model_calls": 47,
+      "network": [
+        {
+          "Name": "Intel[R] Wi-Fi 6 AX201 160MHz",
+          "BytesTotalPersec": 0
+        },
+        {
+          "Name": "Npcap Loopback Adapter",
+          "BytesTotalPersec": 0
+        },
+        {
+          "Name": "Realtek Gaming 2.5GbE Family Controller",
+          "BytesTotalPersec": 45158
+        }
+      ]
+    },
+    {
+      "at_local": "2026-10-21T15:45:05.3083802+08:00",
+      "model_calls": 60,
+      "network": [
+        {
+          "Name": "Intel[R] Wi-Fi 6 AX201 160MHz",
+          "BytesTotalPersec": 0
+        },
+        {
+          "Name": "Npcap Loopback Adapter",
+          "BytesTotalPersec": 0
+        },
+        {
+          "Name": "Realtek Gaming 2.5GbE Family Controller",
+          "BytesTotalPersec": 2158833
+        }
+      ]
+    },
+    {
+      "at_local": "2026-10-21T15:47:03.9026504+08:00",
+      "model_calls": 61,
+      "torch_peak_vram_bytes": 11044597248,
+      "gpu_process_memory": {
+        "Name": "pid_34884_luid_0x00000000_0x0001497E_phys_0",
+        "DedicatedUsage": 11632271360,
+        "SharedUsage": 2285895680,
+        "TotalCommitted": 13918167040
+      },
+      "network": [
+        {
+          "Name": "Intel[R] Wi-Fi 6 AX201 160MHz",
+          "BytesTotalPersec": 0
+        },
+        {
+          "Name": "Npcap Loopback Adapter",
+          "BytesTotalPersec": 0
+        },
+        {
+          "Name": "Realtek Gaming 2.5GbE Family Controller",
+          "BytesTotalPersec": 121197
+        }
+      ]
+    },
+    {
+      "at_local": "2026-10-21T15:51:00.0951714+08:00",
+      "model_pid": 6296,
+      "model_calls": 7,
+      "gpu_process_memory": {
+        "Name": "pid_6296_luid_0x00000000_0x0001497E_phys_0",
+        "DedicatedUsage": 10468225024,
+        "SharedUsage": 85983232,
+        "TotalCommitted": 10554208256
+      },
+      "network": [
+        {
+          "Name": "Intel[R] Wi-Fi 6 AX201 160MHz",
+          "BytesTotalPersec": 0
+        },
+        {
+          "Name": "Npcap Loopback Adapter",
+          "BytesTotalPersec": 0
+        },
+        {
+          "Name": "Realtek Gaming 2.5GbE Family Controller",
+          "BytesTotalPersec": 67040
+        }
+      ]
+    },
+    {
+      "at_local": "2026-10-21T15:53:54.4769417+08:00",
+      "model_pid": 36608,
+      "model_calls": 14,
+      "gpu_process_memory": {
+        "DedicatedUsage": 11594502144,
+        "SharedUsage": 2275409920
+      }
+    },
+    {
+      "at_local": "2026-10-21T16:07:03.8481942+08:00",
+      "suite": "dev",
+      "model_pid": 24472,
+      "model_calls": 198,
+      "gpu_process_memory": {
+        "DedicatedUsage": 9029566464,
+        "SharedUsage": 85983232
+      }
+    },
+    {
+      "at_local": "2026-10-21T16:16:33.1838025+08:00",
+      "suite": "external-simpleqa20",
+      "model_pid": 11444,
+      "model_calls": 20,
+      "gpu_process_memory": {
+        "DedicatedUsage": 11462160384,
+        "SharedUsage": 2162163712,
+        "TotalCommitted": 13624324096
+      },
+      "network": [
+        {
+          "Name": "Intel[R] Wi-Fi 6 AX201 160MHz",
+          "BytesTotalPersec": 0
+        },
+        {
+          "Name": "Npcap Loopback Adapter",
+          "BytesTotalPersec": 0
+        },
+        {
+          "Name": "Realtek Gaming 2.5GbE Family Controller",
+          "BytesTotalPersec": 79313
+        }
+      ]
+    },
+    {
+      "at_local": "2026-10-21T16:31:17.2006187+08:00",
+      "suite": "external-simpleqa100",
+      "model_pid": 16144,
+      "model_calls": 116,
+      "gpu_process_memory": {
+        "DedicatedUsage": 12024782848,
+        "SharedUsage": 320864256,
+        "TotalCommitted": 12345647104
+      },
+      "free_gib": 93.9
+    }
+  ],
+  "memory_storage_observation": {
+    "at_local": "2026-10-21T16:27:30.6135261+08:00",
+    "suite": "external-simpleqa100",
+    "free_gib": 93.9,
+    "pagefile": [
+      {
+        "Name": "C:\\pagefile.sys",
+        "AllocatedBaseSize": 26981,
+        "CurrentUsage": 1556,
+        "PeakUsage": 8854
+      }
+    ],
+    "memory": {
+      "CommittedBytes": 59380674560,
+      "CommitLimit": 62455799808,
+      "AvailableMBytes": 11364
+    },
+    "attribution": "No baseline pagefile counter; do not attribute the entire disk delta to paging with certainty."
+  },
+  "after": {
+    "at_local": "2026-10-21T16:39:17.4761530+08:00",
+    "free_gib": 109.8,
+    "gpu": "NVIDIA GeForce RTX 4070 SUPER, 519 MiB, 2 %",
+    "pagefile": [
+      {
+        "Name": "C:\\pagefile.sys",
+        "AllocatedBaseSize": 15377,
+        "CurrentUsage": 1540,
+        "PeakUsage": 8854
+      }
+    ],
+    "memory": {
+      "CommittedBytes": 40233721856,
+      "CommitLimit": 50288517120,
+      "AvailableMBytes": 14574
+    },
+    "port_8765_listening": false
+  },
+  "shutdown": {
+    "stopped_owned_pids": [
+      16144,
+      32212
+    ],
+    "at_local": "2026-10-21T16:38:56.5489006+08:00",
+    "reason": "All authorized rerun suites completed"
+  },
+  "model_lifecycle": [
+    {
+      "suite": "pinpoint",
+      "previous_pid": 34884,
+      "pid": 6296,
+      "startup_seconds": 12.246947899984661,
+      "context_limit": 3072
+    },
+    {
+      "suite": "webscout",
+      "previous_pid": 6296,
+      "pid": 36608,
+      "startup_seconds": 9.663794299995061,
+      "context_limit": 3072
+    },
+    {
+      "suite": "kaminari",
+      "previous_pid": 36608,
+      "pid": 38908,
+      "startup_seconds": 10.63749320001807,
+      "context_limit": 3072
+    },
+    {
+      "suite": "source-trail",
+      "previous_pid": 38908,
+      "pid": 36880,
+      "startup_seconds": 9.631032100005541,
+      "context_limit": 3072
+    },
+    {
+      "suite": "source-trail-stress",
+      "previous_pid": 36880,
+      "pid": 34620,
+      "startup_seconds": 9.6722737000091,
+      "context_limit": 3072
+    },
+    {
+      "suite": "live",
+      "previous_pid": 34620,
+      "pid": 26948,
+      "startup_seconds": 9.177611900027841,
+      "context_limit": 3072
+    },
+    {
+      "suite": "live-holdout",
+      "previous_pid": 26948,
+      "pid": 38468,
+      "startup_seconds": 9.617068199964706,
+      "context_limit": 3072
+    },
+    {
+      "suite": "dev",
+      "previous_pid": 38468,
+      "pid": 24472,
+      "startup_seconds": 9.61556089995429,
+      "context_limit": 3072
+    },
+    {
+      "suite": "holdout",
+      "previous_pid": 24472,
+      "pid": 25464,
+      "startup_seconds": 10.163137700001244,
+      "context_limit": 3072
+    },
+    {
+      "suite": "final-holdout",
+      "previous_pid": 25464,
+      "pid": 26948,
+      "startup_seconds": 10.160464200016577,
+      "context_limit": 3072
+    },
+    {
+      "suite": "transfer-frozen",
+      "previous_pid": 26948,
+      "pid": 22364,
+      "startup_seconds": 11.171767099993303,
+      "context_limit": 3072
+    },
+    {
+      "suite": "external-simpleqa20",
+      "previous_pid": 22364,
+      "pid": 11444,
+      "startup_seconds": 10.165157100011129,
+      "context_limit": 3072
+    },
+    {
+      "suite": "external-simpleqa100",
+      "previous_pid": 11444,
+      "pid": 16144,
+      "startup_seconds": 10.674313800001983,
+      "context_limit": 3072
+    }
+  ]
+}

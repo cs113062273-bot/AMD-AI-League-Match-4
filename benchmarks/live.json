@@ -1,0 +1,131 @@
+[
+  {
+    "id": "pypi-httpx-license",
+    "family": "registry",
+    "query": "What is the license of the httpx package on PyPI?",
+    "answer": "BSD-3-Clause",
+    "source": "https://pypi.org/pypi/httpx/json",
+    "truth_retrieved_at": "2026-10-20T00:37:29.119145+00:00"
+  },
+  {
+    "id": "pypi-flask-requires_python",
+    "family": "registry",
+    "query": "What is the Requires-Python constraint of the flask package on PyPI?",
+    "answer": ">=3.9",
+    "source": "https://pypi.org/pypi/flask/json",
+    "truth_retrieved_at": "2026-10-20T00:37:30.086152+00:00"
+  },
+  {
+    "id": "pypi-pydantic-version",
+    "family": "registry",
+    "query": "What is the latest stable version of the pydantic package on PyPI?",
+    "answer": "2.14.1",
+    "source": "https://pypi.org/pypi/pydantic/json",
+    "truth_retrieved_at": "2026-10-20T00:37:40.769784+00:00"
+  },
+  {
+    "id": "pypi-beautifulsoup4-requires_python",
+    "family": "registry",
+    "query": "What is the Requires-Python constraint of the beautifulsoup4 package on PyPI?",
+    "answer": ">=3.7.0",
+    "source": "https://pypi.org/pypi/beautifulsoup4/json",
+    "truth_retrieved_at": "2026-10-20T00:37:41.842172+00:00"
+  },
+  {
+    "id": "pypi-packaging-version",
+    "family": "registry",
+    "query": "What is the latest stable version of the packaging package on PyPI?",
+    "answer": "26.3",
+    "source": "https://pypi.org/pypi/packaging/json",
+    "truth_retrieved_at": "2026-10-20T00:37:42.568147+00:00"
+  },
+  {
+    "id": "pypi-pytest-requires_python",
+    "family": "registry",
+    "query": "What is the Requires-Python constraint of the pytest package on PyPI?",
+    "answer": ">=3.10",
+    "source": "https://pypi.org/pypi/pytest/json",
+    "truth_retrieved_at": "2026-10-20T00:37:43.931495+00:00"
+  },
+  {
+    "id": "github-encode-httpx",
+    "family": "registry",
+    "query": "What is the language of the encode/httpx GitHub repository?",
+    "answer": "Python",
+    "source": "https://api.github.com/repos/encode/httpx",
+    "truth_retrieved_at": "2026-10-20T00:37:44.506796+00:00"
+  },
+  {
+    "id": "github-pallets-flask",
+    "family": "registry",
+    "query": "What is the default branch of the pallets/flask GitHub repository?",
+    "answer": "main",
+    "source": "https://api.github.com/repos/pallets/flask",
+    "truth_retrieved_at": "2026-10-20T00:37:44.834341+00:00"
+  },
+  {
+    "id": "github-psf-requests",
+    "family": "registry",
+    "query": "What is the license of the psf/requests GitHub repository?",
+    "answer": "Apache-2.0",
+    "source": "https://api.github.com/repos/psf/requests",
+    "truth_retrieved_at": "2026-10-20T00:37:45.159473+00:00"
+  },
+  {
+    "id": "github-pytest-dev-pytest",
+    "family": "registry",
+    "query": "What is the license of the pytest-dev/pytest GitHub repository?",
+    "answer": "MIT",
+    "source": "https://api.github.com/repos/pytest-dev/pytest",
+    "truth_retrieved_at": "2026-10-20T00:37:45.504768+00:00"
+  },
+  {
+    "id": "pep-440",
+    "family": "docs",
+    "query": "What is the title of PEP 440?",
+    "url": "https://peps.python.org/pep-0440/",
+    "answer": "Version Identification and Dependency Specification",
+    "source": "https://peps.python.org/pep-0440/"
+  },
+  {
+    "id": "pep-498",
+    "family": "docs",
+    "query": "What is the title of PEP 498?",
+    "url": "https://peps.python.org/pep-0498/",
+    "answer": "Literal String Interpolation",
+    "source": "https://peps.python.org/pep-0498/"
+  },
+  {
+    "id": "pep-750",
+    "family": "docs",
+    "query": "What is the title of PEP 750?",
+    "url": "https://peps.python.org/pep-0750/",
+    "answer": "Template Strings",
+    "source": "https://peps.python.org/pep-0750/",
+    "truth_correction": "Verified current title in research/live/pep750.html; initial hand-written expected title was stale."
+  },
+  {
+    "id": "arxiv-title",
+    "family": "paper",
+    "query": "What is the title of arXiv paper 1810.04805?",
+    "url": "https://arxiv.org/abs/1810.04805",
+    "answer": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+    "source": "https://arxiv.org/abs/1810.04805"
+  },
+  {
+    "id": "arxiv-first-author",
+    "family": "paper",
+    "query": "Who is the first author of arXiv paper 1810.04805?",
+    "url": "https://arxiv.org/abs/1810.04805",
+    "answer": "Jacob Devlin",
+    "source": "https://arxiv.org/abs/1810.04805"
+  },
+  {
+    "id": "python-docs",
+    "family": "docs",
+    "query": "What is the default value of the allow_fragments parameter in urlparse?",
+    "url": "https://docs.python.org/3/library/urllib.parse.html",
+    "answer": "True",
+    "source": "https://docs.python.org/3/library/urllib.parse.html"
+  }
+]

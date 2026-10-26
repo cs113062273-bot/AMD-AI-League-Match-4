@@ -1,0 +1,15 @@
+id,family,answer,sources,expected_answer,expected_source,answer_ok,source_ok,joint_ok,seconds,error,failure_category
+curl-connect,curl,"//example.com""); /* complete connection within 10 seconds */ curl_easy_setopt (curl, CURLOPT_CONNECTTIMEOUT , 10L); result = curl_easy_perform (curl); curl_easy_cleanup (curl); } }",['https://curl.se/libcurl/c/CURLOPT_CONNECTTIMEOUT.html'],['300'],,False,False,False,11.419812200008892,,RANK
+nginx-keepalive,nginx,,[],['75s'],,False,False,False,5.005927099962719,,ABS
+postgres-connections,postgres,,[],['100'],,False,False,False,5.01187960000243,,ABS
+sshd-port,openssh,,[],['22'],,False,False,False,5.014840699965134,,ABS
+pi-header,pi,,[],['40'],,False,False,False,3.7529935999773443,,ABS
+sqlite-columns,sqlite,The maximum number of columns in a table definition or in the result set of a SELECT or the maximum number of columns in an index or in an ORDER BY or GROUP BY clause.,['https://www.sqlite.org/c3ref/c_limit_attached.html'],['2000'],,False,False,False,8.009977100009564,,RANK
+json-ensure-ascii,python,True,['https://docs.python.org/3/library/json.html'],['True'],,True,False,False,0.709984400018584,,CIT
+wcag-normal-aa,wcag,,[],['4.5:1'],,False,False,False,5.003504399966914,,ABS
+wcag-normal-aaa,wcag,,[],['7:1'],,False,False,False,17.155695600027684,,ABS
+rfc-title,ietf,HTTP Semantics,['https://datatracker.ietf.org/api/v1/doc/document/rfc9110/'],['HTTP Semantics'],,True,False,False,2.1503741999622434,,CIT
+sqlite-missing-email,sqlite,drh@hwaci.com,['https://www.sqlite.org/support.html'],[''],,False,False,False,9.334885800024495,,RANK
+curl-false-premise,curl,,[],[''],,True,True,True,5.001592100015841,,
+sqlite-discovery,discovery-sqlite,,[],['2000'],,False,False,False,15.112962299957871,,ABS
+sshd-discovery,discovery-openssh,,[],['22'],,False,False,False,15.099513100052718,,ABS

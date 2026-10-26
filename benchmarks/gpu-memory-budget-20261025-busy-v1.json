@@ -1,0 +1,346 @@
+{
+  "scope": "Bounded resident-client busy recovery, actual loopback HTTP and CPU workers only.\n\nAuthored protocol controls, not real-model or public-web accuracy. No weights loaded.\n",
+  "baseline": null,
+  "source_hashes": {
+    "agent/model_client.py": "07f16cb173444af03917c3548456a80bf7eb3504d08b6cb5e5b4bbaba5ad1703",
+    "agent/model_server.py": "9a83f33af0f214d4205b19eabe942c3ee81a3a5422ae7ce2120aabf0d30a1adc"
+  },
+  "diagnostic_sha256": "c53223533daa3aa80447b5c3bf783b2d57a428ffcfad4af64d5d29894fe94f0c",
+  "passed": 30,
+  "total": 30,
+  "rows": [
+    {
+      "id": "normal",
+      "passed": true,
+      "state": "ok",
+      "attempts": 1,
+      "expected_attempts": 1
+    },
+    {
+      "id": "busy-once",
+      "passed": true,
+      "state": "ok",
+      "attempts": 2,
+      "expected_attempts": 2
+    },
+    {
+      "id": "busy-once-request-identity",
+      "passed": true,
+      "requests": [
+        {
+          "path": "/select",
+          "id": "c8d146daf2fc48b1890d71c25abaa4ea",
+          "expires": "1792905192.3945458",
+          "data": {
+            "question": "What is the code?",
+            "passages": [
+              {
+                "id": 0,
+                "text": "Code: R8"
+              }
+            ]
+          }
+        },
+        {
+          "path": "/select",
+          "id": "c8d146daf2fc48b1890d71c25abaa4ea",
+          "expires": "1792905192.3945458",
+          "data": {
+            "question": "What is the code?",
+            "passages": [
+              {
+                "id": 0,
+                "text": "Code: R8"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "busy-twice",
+      "passed": true,
+      "state": "ok",
+      "attempts": 3,
+      "expected_attempts": 3
+    },
+    {
+      "id": "busy-twice-request-identity",
+      "passed": true,
+      "requests": [
+        {
+          "path": "/select",
+          "id": "3beddf44b58440c499961a7f1dfcfd1e",
+          "expires": "1792905192.5081542",
+          "data": {
+            "question": "What is the code?",
+            "passages": [
+              {
+                "id": 0,
+                "text": "Code: R8"
+              }
+            ]
+          }
+        },
+        {
+          "path": "/select",
+          "id": "3beddf44b58440c499961a7f1dfcfd1e",
+          "expires": "1792905192.5081542",
+          "data": {
+            "question": "What is the code?",
+            "passages": [
+              {
+                "id": 0,
+                "text": "Code: R8"
+              }
+            ]
+          }
+        },
+        {
+          "path": "/select",
+          "id": "3beddf44b58440c499961a7f1dfcfd1e",
+          "expires": "1792905192.5081542",
+          "data": {
+            "question": "What is the code?",
+            "passages": [
+              {
+                "id": 0,
+                "text": "Code: R8"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "always-busy",
+      "passed": true,
+      "state": "model_busy",
+      "attempts": 3,
+      "expected_attempts": 3
+    },
+    {
+      "id": "always-busy-request-identity",
+      "passed": true,
+      "requests": [
+        {
+          "path": "/select",
+          "id": "47fad4d920f34d83aebef61814ceb938",
+          "expires": "1792905192.819696",
+          "data": {
+            "question": "What is the code?",
+            "passages": [
+              {
+                "id": 0,
+                "text": "Code: R8"
+              }
+            ]
+          }
+        },
+        {
+          "path": "/select",
+          "id": "47fad4d920f34d83aebef61814ceb938",
+          "expires": "1792905192.819696",
+          "data": {
+            "question": "What is the code?",
+            "passages": [
+              {
+                "id": 0,
+                "text": "Code: R8"
+              }
+            ]
+          }
+        },
+        {
+          "path": "/select",
+          "id": "47fad4d920f34d83aebef61814ceb938",
+          "expires": "1792905192.819696",
+          "data": {
+            "question": "What is the code?",
+            "passages": [
+              {
+                "id": 0,
+                "text": "Code: R8"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "unknown-503",
+      "passed": true,
+      "state": "http_503",
+      "attempts": 1,
+      "expected_attempts": 1
+    },
+    {
+      "id": "unrecognized-503",
+      "passed": true,
+      "state": "http_503",
+      "attempts": 1,
+      "expected_attempts": 1
+    },
+    {
+      "id": "html-503",
+      "passed": true,
+      "state": "http_503",
+      "attempts": 1,
+      "expected_attempts": 1
+    },
+    {
+      "id": "large-503",
+      "passed": true,
+      "state": "http_503",
+      "attempts": 1,
+      "expected_attempts": 1
+    },
+    {
+      "id": "500",
+      "passed": true,
+      "state": "http_500",
+      "attempts": 1,
+      "expected_attempts": 1
+    },
+    {
+      "id": "429",
+      "passed": true,
+      "state": "http_429",
+      "attempts": 1,
+      "expected_attempts": 1
+    },
+    {
+      "id": "invalid-200",
+      "passed": true,
+      "state": "invalid_json",
+      "attempts": 1,
+      "expected_attempts": 1
+    },
+    {
+      "id": "large-200",
+      "passed": true,
+      "state": "oversized_reply",
+      "attempts": 1,
+      "expected_attempts": 1
+    },
+    {
+      "id": "busy-200",
+      "passed": true,
+      "state": "model_busy",
+      "attempts": 1,
+      "expected_attempts": 1
+    },
+    {
+      "id": "short-budget",
+      "passed": true,
+      "state": "model_busy",
+      "attempts": 1,
+      "expected_attempts": 1
+    },
+    {
+      "id": "short-query",
+      "passed": true,
+      "state": "model_busy",
+      "attempts": 1,
+      "expected_attempts": 1
+    },
+    {
+      "id": "short-cap",
+      "passed": true,
+      "state": "model_busy",
+      "attempts": 1,
+      "expected_attempts": 1
+    },
+    {
+      "id": "/verify-busy-recovery",
+      "passed": true,
+      "state": "ok",
+      "attempts": 2
+    },
+    {
+      "id": "/expand-busy-recovery",
+      "passed": true,
+      "state": "ok",
+      "attempts": 2
+    },
+    {
+      "id": "exhausted-no-http",
+      "passed": true
+    },
+    {
+      "id": "original-call-cap",
+      "passed": true,
+      "state": "TimeoutError",
+      "seconds": 0.35873359997640364,
+      "attempts": 2
+    },
+    {
+      "id": "cancel-backoff",
+      "passed": true
+    },
+    {
+      "id": "engine-busy-once",
+      "passed": true,
+      "answer": "+1 800 555 0142",
+      "paths": [
+        "/select",
+        "/select",
+        "/verify",
+        "/verify"
+      ],
+      "reason": "model_verified"
+    },
+    {
+      "id": "engine-reject-after-busy",
+      "passed": true,
+      "answer": "",
+      "paths": [
+        "/select",
+        "/select",
+        "/verify",
+        "/verify"
+      ],
+      "reason": "model_no_evidence"
+    },
+    {
+      "id": "engine-abstain-after-busy",
+      "passed": true,
+      "answer": "",
+      "paths": [
+        "/select",
+        "/select"
+      ],
+      "reason": "model_no_evidence"
+    },
+    {
+      "id": "engine-always-busy",
+      "passed": true,
+      "answer": "",
+      "paths": [
+        "/select",
+        "/select",
+        "/select"
+      ],
+      "reason": "model_service_unavailable"
+    },
+    {
+      "id": "production-lock-recovery",
+      "passed": true,
+      "state": "ok",
+      "health": {
+        "calls": 2,
+        "active_request": null,
+        "outcomes": {
+          "cancelled": 1,
+          "selected": 1
+        },
+        "busy_rejections": 1
+      }
+    },
+    {
+      "id": "production-waiter-cancel-keeps-owner",
+      "passed": true
+    }
+  ],
+  "torch_imported": false
+}

@@ -1,0 +1,35 @@
+{
+  "scope": "Actual project-client GETs of two static assets referenced by the immutable exposed FamilySearch HTML. No script execution, API key/token, login, browser, model/GPU, paid service or score. Route strings are discovery evidence only.",
+  "parent_capture_sha256": "71ea4be5da2aa66fb49b9f1293dcfb86252299c5ccd7b0c7233b4891c4bf6817",
+  "rows": [
+    {
+      "requested": "https://edge.fscdn.org/assets/static/js/7286.6204a4026d7df90d.js",
+      "url": "https://edge.fscdn.org/assets/static/js/7286.6204a4026d7df90d.js",
+      "status": 200,
+      "error": "body_limit",
+      "bytes": 0,
+      "truncated": false,
+      "capture_path": "research\\family-source-assets-20261024-v1\\0.json",
+      "capture_sha256": "ae1e887c99bf6ca7d3f7bfad1efbea7dd276b0fe2bae861ca5892dc1dcfbe1f9",
+      "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "route_literals": []
+    },
+    {
+      "requested": "https://edge.fscdn.org/assets/static/js/main.a48cc897dfa750e2.js",
+      "url": "https://edge.fscdn.org/assets/static/js/main.a48cc897dfa750e2.js",
+      "status": 200,
+      "error": "",
+      "bytes": 206657,
+      "truncated": false,
+      "capture_path": "research\\family-source-assets-20261024-v1\\1.json",
+      "capture_sha256": "e6e6ffef2ef84f6360be952fb513585e3d0680dcbc1f37f500fe22f92e15ea2d",
+      "body_sha256": "7a40df830e5251f383ad3dd67736dd36d894eec2e9891a3707d703afe1aa2ba7",
+      "route_literals": [
+        "/tree/ancestors/",
+        "/tree/ancestors/search",
+        "/tree/person/*",
+        "/tree/pedigree/*"
+      ]
+    }
+  ]
+}

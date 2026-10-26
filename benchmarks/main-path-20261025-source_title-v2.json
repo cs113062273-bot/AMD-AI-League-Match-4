@@ -1,0 +1,457 @@
+{
+  "scope": "CPU-only paired discovery replay over hash-verified actual public bodies.\n\nNo model/browser or synthetic answer. The replay measures recovered retrieval\nand source text in the reader payload, not answer accuracy or source gold.\n",
+  "baseline_revision": "ee623ca63d751af116ba2ac1bb272224de179655",
+  "baseline_source_sha256": {
+    "agent/engine.py": "01464cb276814f2d7c845c269da2522c285a7a7e28051abd7e36ad0ec62b41ff",
+    "agent/types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent/planner.py": "8ee6e9dc255c73840582af0f438331a16a3023cfe886b562fbb7681b1e74ae90",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "agent/normalize.py": "05e48fa0be8384aa656bf1280ba0be44545efa51b7d4451f0716d836d39a1973",
+    "agent/urls.py": "6bbf58adf3c55cf3787edf4b6607a7db8eea987f0c02dd6cdfea48f6c38e031f",
+    "agent/network.py": "c37ecb5b4b0fba4fac737954eda24952059922ed620c94b99bcb17daed8c5155",
+    "agent/parser.py": "92fc37b32045b8c7f25d7d161c2ca00e9e49c82d2460616ef84d66fe31442069",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/challenges.py": "b6f51c720f332671725e08127a5d1c163ca0542d2a550bf3c980a6d4c49bf6a1",
+    "agent/field_groups.py": "52a54989253c59e9836dec4aaec4944b688376e79548b9336887558a454e9162",
+    "agent/resolvers.py": "312d776118c6c6f0421939df58cf6bcaec8740a7fd341136c17a33f284a03ef2",
+    "agent/search.py": "28e2454682bc8af4ef10b06f62b66117d39194fddc9ec218b9bc82cad96767fd",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/candidates.py": "16dd310d36390f5cb0323f0d81d7630542b116693dd0ee0b1e9fe015a80cb1d0",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/evidence.py": "56994f2e5046668e33630fbc2330cfac35c8971f3c4d4e25f22547f1d99feba2",
+    "agent/selector.py": "a693a62781fcb76dd11bc6d29eb19770b48dc7e2e29bd7619cc189b62bf70e1b",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+    "agent/proofs.py": "0d7ae78df6ea9949c29f33c7b817dda352c75b3d99c960c3e987e37c7401faab",
+    "agent/oyez.py": "8475f248d78925522e0742b13518be2c4f4db11eae0d8391a8002da7d4e3b67d"
+  },
+  "input_sha256": {
+    "research\\external-disjoint12b-20261023-repeat\\simpleqa-2215.json": "c5aefaff2946a732f1d030edfb81e4d7cc243e1d2de5340317db6f4d1c043e6e",
+    "research/source-title-20261023-live.json": "c9db8ad8bb6431dcbed9c538ef8f5cafb215b9f065a3cc10c5fafb31e0ccd49c"
+  },
+  "before": {
+    "links": [
+      [
+        "https://www.linkedin.com/jobs/what-is-the-name-of-the-individual-known-as-the-horse-who-won-eight-running-events-over-three-olympics-between-81-and-89-ce%3F-jobs",
+        "4,000+ What Is The Name Of The Individual Known As The Horse ... - LinkedIn"
+      ],
+      [
+        "https://www.beyonddracula.com/connection-long-forgotten-romanian-individual-horse/",
+        "A connection long forgotten: the Romanian individual and his horse"
+      ],
+      [
+        "https://thehorse.co/",
+        "The Horse"
+      ],
+      [
+        "https://www.facebook.com/TheMobMad/posts/on-october-13-1988-matthew-matty-the-horse-ianniello-a-powerful-figure-in-the-ge/1759527302477176/",
+        "On October 13, 1988, Matthew \"Matty the Horse\" Ianniello ... - Facebook"
+      ],
+      [
+        "https://www.thecollector.com/5-famous-horses-throughout-history/",
+        "5 Famous Horses and Their Roles in History - TheCollector"
+      ],
+      [
+        "https://www.forbes.com/sites/scotttravers/2025/02/08/meet-the-most-legendary-war-horse-of-wwi-heres-how-he-became-the-horse-the-germans-couldnt-kill/",
+        "Meet The Most Legendary War Horse Of WWI\u2014Here's How He ... - Forbes"
+      ],
+      [
+        "https://en.wikipedia.org/wiki/The_Horse_in_Motion",
+        "The Horse in Motion - Wikipedia"
+      ],
+      [
+        "https://en.wikipedia.org/wiki/Comanche_%28horse%29",
+        "Comanche (horse) - Wikipedia"
+      ]
+    ],
+    "requests": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Hermogenes_of_Xanthos",
+        "error": "http_403"
+      },
+      {
+        "url": "https://www.bing.com/search?q=name+individual+known+horse+won+eight+running+events+over+three+olympics+between+81+89+ce+the+horse+athlete",
+        "error": ""
+      },
+      {
+        "url": "https://www.bing.com/search?q=name+individual+known+horse+won+eight+running+events+over+three+olympics+between+81+89+ce",
+        "error": ""
+      },
+      {
+        "url": "https://html.duckduckgo.com/html/?q=name+individual+known+horse+won+eight+running+events+over+three+olympics+between+81+89+ce+the+horse+athlete",
+        "error": ""
+      },
+      {
+        "url": "https://html.duckduckgo.com/html/?q=name+individual+known+horse+won+eight+running+events+over+three+olympics+between+81+89+ce",
+        "error": ""
+      },
+      {
+        "url": "https://www.bing.com/search?format=rss&q=name+individual+known+horse+won+eight+running+events+over+three+olympics+between+81+89+ce+the+horse+athlete",
+        "error": ""
+      },
+      {
+        "url": "https://lite.duckduckgo.com/lite/?q=name+individual+known+horse+won+eight+running+events+over+three+olympics+between+81+89+ce+the+horse+athlete",
+        "error": ""
+      },
+      {
+        "url": "https://lite.duckduckgo.com/lite/?q=%22The+Horse%22+individual+known",
+        "error": ""
+      },
+      {
+        "url": "https://www.linkedin.com/jobs/what-is-the-name-of-the-individual-known-as-the-horse-who-won-eight-running-events-over-three-olympics-between-81-and-89-ce%3F-jobs",
+        "error": ""
+      },
+      {
+        "url": "https://www.beyonddracula.com/connection-long-forgotten-romanian-individual-horse/",
+        "error": ""
+      },
+      {
+        "url": "https://thehorse.co/",
+        "error": ""
+      },
+      {
+        "url": "https://www.facebook.com/TheMobMad/posts/on-october-13-1988-matthew-matty-the-horse-ianniello-a-powerful-figure-in-the-ge/1759527302477176/",
+        "error": ""
+      }
+    ],
+    "missing_captures": [],
+    "reader_passages": [
+      {
+        "id": 0,
+        "text": "4,000+ What Is The Name Of The Individual Known As The Horse Who Won Eight Running Events Over Three Olympics Between 81 And 89 Ce? Jobs in United States",
+        "source_start": 0,
+        "source_end": 153,
+        "section": "4,000+ What Is The Name Of The Individual Known As The Horse Who Won Eight Running Events Over Three Olympics Between 81 And 89 Ce? Jobs in United States",
+        "source": "https://www.linkedin.com/jobs/what-is-the-name-of-the-individual-known-as-the-horse-who-won-eight-running-events-over-three-olympics-between-81-and-89-ce%3F-jobs",
+        "locator": "h1[0]",
+        "document_title": "What Is The Name Of The Individual Known As The Horse Who Won Eight Running Events Over Three Olympics Between 81 And 89 Ce? Jobs in United States (4,000+ Open Roles) | LinkedIn"
+      },
+      {
+        "id": 1,
+        "text": "Equine Surgeon Equine Surgeon Steinbeck Peninsula Equine Clinics Salinas, CA Be an early applicant 1 week ago",
+        "source_start": 0,
+        "source_end": 109,
+        "section": "4,000+ What Is The Name Of The Individual Known As The Horse Who Won Eight Running Events Over Three Olympics Between 81 And 89 Ce? Jobs in United States",
+        "source": "https://www.linkedin.com/jobs/what-is-the-name-of-the-individual-known-as-the-horse-who-won-eight-running-events-over-three-olympics-between-81-and-89-ce%3F-jobs",
+        "locator": "li[1]:0",
+        "document_title": "What Is The Name Of The Individual Known As The Horse Who Won Eight Running Events Over Three Olympics Between 81 And 89 Ce? Jobs in United States (4,000+ Open Roles) | LinkedIn"
+      },
+      {
+        "id": 2,
+        "text": "og:title: What Is The Name Of The Individual Known As The Horse Who Won Eight Running Events Over Three Olympics Between 81 And 89 Ce? Jobs in United States (4,000+ Open Roles) | LinkedIn",
+        "source_start": 0,
+        "source_end": 187,
+        "section": "",
+        "source": "https://www.linkedin.com/jobs/what-is-the-name-of-the-individual-known-as-the-horse-who-won-eight-running-events-over-three-olympics-between-81-and-89-ce%3F-jobs",
+        "locator": "meta[12]",
+        "document_title": "What Is The Name Of The Individual Known As The Horse Who Won Eight Running Events Over Three Olympics Between 81 And 89 Ce? Jobs in United States (4,000+ Open Roles) | LinkedIn"
+      },
+      {
+        "id": 3,
+        "text": "twitter:title: What Is The Name Of The Individual Known As The Horse Who Won Eight Running Events Over Three Olympics Between 81 And 89 Ce? Jobs in United States (4,000+ Open Roles) | LinkedIn",
+        "source_start": 0,
+        "source_end": 192,
+        "section": "",
+        "source": "https://www.linkedin.com/jobs/what-is-the-name-of-the-individual-known-as-the-horse-who-won-eight-running-events-over-three-olympics-between-81-and-89-ce%3F-jobs",
+        "locator": "meta[15]",
+        "document_title": "What Is The Name Of The Individual Known As The Horse Who Won Eight Running Events Over Three Olympics Between 81 And 89 Ce? Jobs in United States (4,000+ Open Roles) | LinkedIn"
+      },
+      {
+        "id": 4,
+        "text": "What Is The Name Of The Individual Known As The Horse Who Won Eight Running Events Over Three Olympics Between 81 And 89 Ce? Jobs in United States",
+        "source_start": 0,
+        "source_end": 146,
+        "section": "",
+        "source": "https://www.linkedin.com/jobs/what-is-the-name-of-the-individual-known-as-the-horse-who-won-eight-running-events-over-three-olympics-between-81-and-89-ce%3F-jobs",
+        "locator": "block[16]",
+        "document_title": "What Is The Name Of The Individual Known As The Horse Who Won Eight Running Events Over Three Olympics Between 81 And 89 Ce? Jobs in United States (4,000+ Open Roles) | LinkedIn"
+      },
+      {
+        "id": 5,
+        "text": "og:url: https://www.linkedin.com/jobs/what-is-the-name-of-the-individual-known-as-the-horse-who-won-eight-running-events-over-three-olympics-between-81-and-89-ce%3F-jobs",
+        "source_start": 0,
+        "source_end": 169,
+        "section": "",
+        "source": "https://www.linkedin.com/jobs/what-is-the-name-of-the-individual-known-as-the-horse-who-won-eight-running-events-over-three-olympics-between-81-and-89-ce%3F-jobs",
+        "locator": "meta[13]",
+        "document_title": "What Is The Name Of The Individual Known As The Horse Who Won Eight Running Events Over Three Olympics Between 81 And 89 Ce? Jobs in United States (4,000+ Open Roles) | LinkedIn"
+      },
+      {
+        "id": 6,
+        "text": "lnkd:url: https://www.linkedin.com/jobs/what-is-the-name-of-the-individual-known-as-the-horse-who-won-eight-running-events-over-three-olympics-between-81-and-89-ce%3F-jobs",
+        "source_start": 0,
+        "source_end": 171,
+        "section": "",
+        "source": "https://www.linkedin.com/jobs/what-is-the-name-of-the-individual-known-as-the-horse-who-won-eight-running-events-over-three-olympics-between-81-and-89-ce%3F-jobs",
+        "locator": "meta[19]",
+        "document_title": "What Is The Name Of The Individual Known As The Horse Who Won Eight Running Events Over Three Olympics Between 81 And 89 Ce? Jobs in United States (4,000+ Open Roles) | LinkedIn"
+      },
+      {
+        "id": 7,
+        "text": "description: Today\u2019s top 4,000+ What Is The Name Of The Individual Known As The Horse Who Won Eight Running Events Over Three Olympics Between 81 And 89 Ce? jobs in United States. Leverage your professional network, and get hired. New What Is The Name Of The Individual Known As The Horse Who Won Eight Running Events Over Three Olympics Between 81 And 89 Ce? jobs added daily.",
+        "source_start": 0,
+        "source_end": 377,
+        "section": "",
+        "source": "https://www.linkedin.com/jobs/what-is-the-name-of-the-individual-known-as-the-horse-who-won-eight-running-events-over-three-olympics-between-81-and-89-ce%3F-jobs",
+        "locator": "meta[6]",
+        "document_title": "What Is The Name Of The Individual Known As The Horse Who Won Eight Running Events Over Three Olympics Between 81 And 89 Ce? Jobs in United States (4,000+ Open Roles) | LinkedIn"
+      }
+    ],
+    "complete_witness_in_payload": false,
+    "witness_source": ""
+  },
+  "after": {
+    "links": [
+      [
+        "https://www.wikiwand.com/en/Hermogenes_of_Xanthos",
+        "Hermogenes of Xanthos - Wikiwand"
+      ],
+      [
+        "https://everything.explained.today/Hermogenes_of_Xanthos/",
+        "Hermogenes of Xanthos explained"
+      ],
+      [
+        "https://grokipedia.com/page/hermogenes_of_xanthos",
+        "Hermogenes of Xanthos \u2014 Grokipedia"
+      ],
+      [
+        "https://wiki2.org/en/Hermogenes_of_Xanthos",
+        "Hermogenes of Xanthos \u2014 Wikipedia Republished // WIKI 2"
+      ],
+      [
+        "https://www.wikiwand.com/en/articles/Hermogenes_of_Xanthos",
+        "Hermogenes of Xanthos - Wikiwand"
+      ],
+      [
+        "https://www.wikidata.org/wiki/Q18691702",
+        "Hermogenes of Xanthos - Wikidata"
+      ],
+      [
+        "https://topostext.org/people/17549",
+        "Hermogenes of Xanthos - ToposText"
+      ],
+      [
+        "https://en.wikipedia.org/wiki/Hermogenes_of_Xanthos",
+        "Hermogenes of Xanthos - Wikipedia"
+      ]
+    ],
+    "requests": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Hermogenes_of_Xanthos",
+        "error": "http_403"
+      },
+      {
+        "url": "https://www.bing.com/search?q=%22Hermogenes+of+Xanthos%22",
+        "error": ""
+      },
+      {
+        "url": "https://www.bing.com/search?q=name+individual+known+horse+won+eight+running+events+over+three+olympics+between+81+89+ce+the+horse+athlete",
+        "error": ""
+      },
+      {
+        "url": "https://html.duckduckgo.com/html/?q=%22Hermogenes+of+Xanthos%22",
+        "error": ""
+      },
+      {
+        "url": "https://html.duckduckgo.com/html/?q=name+individual+known+horse+won+eight+running+events+over+three+olympics+between+81+89+ce+the+horse+athlete",
+        "error": ""
+      },
+      {
+        "url": "https://www.wikiwand.com/en/Hermogenes_of_Xanthos",
+        "error": "http_403"
+      },
+      {
+        "url": "https://everything.explained.today/Hermogenes_of_Xanthos/",
+        "error": "http_403"
+      },
+      {
+        "url": "https://grokipedia.com/page/hermogenes_of_xanthos",
+        "error": ""
+      },
+      {
+        "url": "https://wiki2.org/en/Hermogenes_of_Xanthos",
+        "error": "http_403"
+      }
+    ],
+    "missing_captures": [],
+    "reader_passages": [
+      {
+        "id": 0,
+        "text": "Hermogenes of Xanthos (fl. 81\u201389 CE), also known as Titus Flavius Hermogenes son of Apollonios, was a celebrated ancient athlete from the Lycian city of Xanthos in Asia Minor, renowned for his extraordinary success in foot racing at the Panhellenic Games during the Flavian era of the Roman Empire. Specializing in the stadion (short sprint), diaulos (double stadion), and hoplitodromos (race in armor), he amassed a record 31 victories across major festivals, including eight Olympic crowns over three consecutive Games, earning him the nickname \"Hippos\" (Horse) from his peers for his unparalleled speed and endurance. [1] [2] [3]",
+        "source_start": 0,
+        "source_end": 632,
+        "section": "",
+        "source": "https://grokipedia.com/page/hermogenes_of_xanthos",
+        "locator": "block[29]",
+        "document_title": "Hermogenes of Xanthos \u2014 Grokipedia"
+      },
+      {
+        "id": 1,
+        "text": "Hermogenes of Xanthos likely began his competitive career in local or provincial Lycian games, building the foundation for his ascent to the prestigious Panhellenic circuit. His documented entry into the major festivals occurred at the Olympic Games of 81 CE, where he secured victories in three running events: the stadion, diaulos, and hoplitodromos, marking an immediate and impressive debut on the grand stage. [1]",
+        "source_start": 0,
+        "source_end": 418,
+        "section": "",
+        "source": "https://grokipedia.com/page/hermogenes_of_xanthos",
+        "locator": "block[48]",
+        "document_title": "Hermogenes of Xanthos \u2014 Grokipedia"
+      },
+      {
+        "id": 2,
+        "text": "In the 215th Olympiad of 81 CE, held shortly after Domitian's accession as Roman emperor, Hermogenes triumphed in all three running events: the stadion , diaulos , and hoplitodromos . [16] This triple victory marked a strong debut, showcasing his versatility in both speed and endurance disciplines, as recorded in Eusebius' chronological lists. [14] Four years later, at the 216th Olympiad in 85 CE, he defended his titles in the diaulos and hoplitodromos , though he did not compete in or win the stadion that cycle. [1] These successes amid the ongoing Roman imperial era underscored the Games' role in fostering unity across the empire.",
+        "source_start": 0,
+        "source_end": 640,
+        "section": "",
+        "source": "https://grokipedia.com/page/hermogenes_of_xanthos",
+        "locator": "block[54]",
+        "document_title": "Hermogenes of Xanthos \u2014 Grokipedia"
+      },
+      {
+        "id": 3,
+        "text": "In 81 CE, Hermogenes claimed gold in the stadion , diaulos , and hoplitodromos at Olympia, repeating the diaulos and hoplitodromos triumphs in 85 CE before securing another sweep of all three events in 89 CE, thus achieving the rare feat of multiple wins in armored racing, which tested both speed and stamina under heavy gear weighing approximately 25\u201330 pounds. [1] These accomplishments, documented in ancient inscriptions and literary accounts, cemented his status as one of antiquity's greatest runners, comparable to earlier legends like Chionis of Sparta. Beyond Olympia, his victories spanned other prestigious venues such as the Pythian, Nemean, and Isthmian Games, underscoring his dominance in the periodos circuit of Panhellenic competitions. [2] [3]",
+        "source_start": 0,
+        "source_end": 762,
+        "section": "",
+        "source": "https://grokipedia.com/page/hermogenes_of_xanthos",
+        "locator": "block[31]",
+        "document_title": "Hermogenes of Xanthos \u2014 Grokipedia"
+      },
+      {
+        "id": 4,
+        "text": "Hermogenes of Xanthos achieved remarkable success at the Olympic Games, securing a total of eight victories across three consecutive Olympiads in the late first century CE, establishing him as one of the most prolific non-combat athletes in ancient Greek history. [1] These triumphs, documented primarily through the victor lists compiled by Eusebius of Caesarea and supported by fragmentary inscriptions, spanned the running events of the stadion (short sprint), diaulos (double-stadion race), and hoplitodromos (race in armor). [14] His record as a provincial athlete from Lycia highlighted the integration of eastern Roman subjects into the Panhellenic tradition, with his wins likely contributing to local pride and imperial celebrations under Domitian. [15]",
+        "source_start": 0,
+        "source_end": 762,
+        "section": "",
+        "source": "https://grokipedia.com/page/hermogenes_of_xanthos",
+        "locator": "block[53]",
+        "document_title": "Hermogenes of Xanthos \u2014 Grokipedia"
+      },
+      {
+        "id": 5,
+        "text": "Hermogenes, the celebrated athlete known for his sprinting prowess, was likely born in Xanthos around 50\u201360 CE, during this era of Roman stability, as inferred from his documented victories at the Olympic Games in 81, 85, and 89 CE when he would have been in his prime athletic years. [1]",
+        "source_start": 0,
+        "source_end": 288,
+        "section": "",
+        "source": "https://grokipedia.com/page/hermogenes_of_xanthos",
+        "locator": "block[36]",
+        "document_title": "Hermogenes of Xanthos \u2014 Grokipedia"
+      },
+      {
+        "id": 6,
+        "text": "description: Hermogenes of Xanthos (fl. 81\u201389 CE), also known as Titus Flavius Hermogenes son of Apollonios, was a celebrated ancient athlete from the Lycian city of Xanthos in Asia Minor, renowned for his extra",
+        "source_start": 0,
+        "source_end": 211,
+        "section": "",
+        "source": "https://grokipedia.com/page/hermogenes_of_xanthos",
+        "locator": "meta[2]",
+        "document_title": "Hermogenes of Xanthos \u2014 Grokipedia"
+      },
+      {
+        "id": 7,
+        "text": "og:description: Hermogenes of Xanthos (fl. 81\u201389 CE), also known as Titus Flavius Hermogenes son of Apollonios, was a celebrated ancient athlete from the Lycian city of Xanthos in Asia Minor, renowned for his extra",
+        "source_start": 0,
+        "source_end": 214,
+        "section": "",
+        "source": "https://grokipedia.com/page/hermogenes_of_xanthos",
+        "locator": "meta[4]",
+        "document_title": "Hermogenes of Xanthos \u2014 Grokipedia"
+      }
+    ],
+    "complete_witness_in_payload": true,
+    "witness_source": "https://grokipedia.com/page/hermogenes_of_xanthos"
+  },
+  "guards": [
+    {
+      "id": "unmentioned-title",
+      "passed": true,
+      "actual": "\"Oriole of Ridge\"",
+      "expected": "\"Oriole of Ridge\""
+    },
+    {
+      "id": "already-anchored",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "id": "ordinary-company",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "id": "mobile-language",
+      "passed": true,
+      "actual": "\"Oriole de Ridge\"",
+      "expected": "\"Oriole de Ridge\""
+    },
+    {
+      "id": "other-site",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "id": "lookalike",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "id": "credentials",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "id": "non-http",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "id": "odd-port",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "id": "namespace",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "id": "encoded-control",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "id": "malformed",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "id": "invalid-utf8",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "id": "not-article",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    },
+    {
+      "id": "too-long",
+      "passed": true,
+      "actual": "",
+      "expected": ""
+    }
+  ],
+  "reachable_source_unchanged": false,
+  "all_passed": false
+}

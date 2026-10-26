@@ -1,0 +1,365 @@
+[
+  {
+    "id": "simpleqa-3883",
+    "family": "external-Number",
+    "query": "When was Gavi shown a yellow card in the La Liga match between Valencia CF and FC Barcelona that happened on October 29, 2022?",
+    "url": "https://www.laliga.com/en-ES/match/temporada-2022-2023-laliga-santander-valencia-cf-fc-barcelona-12",
+    "answer": "89 minutes (acceptable range: anything between 88 and 90 minutes)",
+    "answers": [
+      "89 minutes (acceptable range: anything between 88 and 90 minutes)"
+    ],
+    "sources": [
+      "https://www.laliga.com/en-ES/match/temporada-2022-2023-laliga-santander-valencia-cf-fc-barcelona-12",
+      "https://www.fcbarcelona.com/en/matches/77933/valencia-cf-fc-barcelona-la-liga-2022-2023"
+    ],
+    "upstream_row": 900,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1145",
+    "family": "external-Place",
+    "query": "Where did Adore Delano attend high school?",
+    "url": "https://cashtvogue.s3.waw.io.cloud.ovh.net/is-adore-delano-trans-sexuality-partner-and.html",
+    "answer": "Sierra High School.",
+    "answers": [
+      "Sierra High School."
+    ],
+    "sources": [
+      "https://cashtvogue.s3.waw.io.cloud.ovh.net/is-adore-delano-trans-sexuality-partner-and.html",
+      "https://en.wikipedia.org/wiki/Adore_Delano",
+      "https://kids.kiddle.co/Adore_Delano"
+    ],
+    "upstream_row": 262,
+    "upstream_topic": "Other",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3672",
+    "family": "external-Other",
+    "query": "What team came second in Group C in the 2018–19 UEFA Champions League?",
+    "url": "https://www.uefa.com/uefachampionsleague/history/seasons/2019/groups/",
+    "answer": "Liverpool FC",
+    "answers": [
+      "Liverpool FC"
+    ],
+    "sources": [
+      "https://www.uefa.com/uefachampionsleague/history/seasons/2019/groups/",
+      "https://en.wikipedia.org/wiki/2018%E2%80%9319_UEFA_Champions_League_group_stage",
+      "https://en.wikipedia.org/wiki/2018%E2%80%9319_UEFA_Champions_League",
+      "https://www.uefa.com/uefachampionsleague/news/0252-0e9902dd97ae-bd3c7b568287-1000--champions-league-2018-19-all-the-fixtures-and-results/"
+    ],
+    "upstream_row": 856,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-4232",
+    "family": "external-Person",
+    "query": "Which former governor is tied with Jim Hunt for the sixth-longest gubernatorial tenure in post-Constitutional U.S. history at 5,838 days?",
+    "url": "https://en.wikipedia.org/wiki/Jim_Hunt",
+    "answer": "Jim Rhodes",
+    "answers": [
+      "Jim Rhodes"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Jim_Hunt",
+      "https://kids.kiddle.co/Jim_Hunt"
+    ],
+    "upstream_row": 979,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-750",
+    "family": "external-Person",
+    "query": "What is the name of the man who purchased Belmont on St. Saviour's Hill, Jersey, UK, in 1822?",
+    "url": "https://www.theislandwiki.org/index.php/Government_House",
+    "answer": "Sir Colin Halkett",
+    "answers": [
+      "Sir Colin Halkett"
+    ],
+    "sources": [
+      "https://www.theislandwiki.org/index.php/Government_House",
+      "https://www.governmenthouse.gov.je/governmenthouse/",
+      "https://en.wikipedia.org/wiki/Government_House"
+    ],
+    "upstream_row": 165,
+    "upstream_topic": "History",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3183",
+    "family": "external-Other",
+    "query": "What Mozilla Firefox release version included the patch note: \"Improved the performance of the instance when Microsoft's IME and Defender retrieve the URL of a focused document in Windows 11 version 22H2\"?",
+    "url": "https://www.ghacks.net/2022/11/15/firefox-107-out-with-security-fixes-and-windows-performance-improvements/",
+    "answer": "107",
+    "answers": [
+      "107"
+    ],
+    "sources": [
+      "https://www.ghacks.net/2022/11/15/firefox-107-out-with-security-fixes-and-windows-performance-improvements/",
+      "https://www.dell.com/community/en/conversations/virus-spyware/updates-111522-firefox-107/647fa0b9f4ccf8a8de5cac01",
+      "https://www.mozilla.org/en-US/firefox/107.0/releasenotes/"
+    ],
+    "upstream_row": 722,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3210",
+    "family": "external-Other",
+    "query": "What is the scientific name for the African forest elephant?",
+    "url": "https://www.ifaw.org/international/animals/african-forest-elephants",
+    "answer": "Loxodonta cyclotis",
+    "answers": [
+      "Loxodonta cyclotis"
+    ],
+    "sources": [
+      "https://www.ifaw.org/international/animals/african-forest-elephants",
+      "https://en.wikipedia.org/wiki/African_forest_elephant",
+      "https://www.worldwildlife.org/species/african-forest-elephant"
+    ],
+    "upstream_row": 731,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2099",
+    "family": "external-Person",
+    "query": "Who graduated from McGill and was convicted in 2019 of espionage by Iranian authorities in a closed-door trial in Iran?",
+    "url": "https://en.wikipedia.org/wiki/Niloufar_Bayani",
+    "answer": "Niloufar Bayan",
+    "answers": [
+      "Niloufar Bayan"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Niloufar_Bayani",
+      "https://www.scholarsatrisk.org/actions/niloufar-bayani-iran/"
+    ],
+    "upstream_row": 475,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1140",
+    "family": "external-Date",
+    "query": "In what year did Jon Kleinberg become a fellow of the Association for Computing Machinery?",
+    "url": "https://en.wikipedia.org/wiki/Jon_Kleinberg",
+    "answer": "2013",
+    "answers": [
+      "2013",
+      "2,013"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Jon_Kleinberg",
+      "https://awards.acm.org/award_winners/kleinberg_0032532",
+      "https://www.siggraph.org/news/acm-announces-2013-fellows/"
+    ],
+    "upstream_row": 261,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3667",
+    "family": "external-Other",
+    "query": "What Little League did Johnny Damon play baseball in as a child before junior high school?",
+    "url": "https://en.wikipedia.org/wiki/Johnny_Damon",
+    "answer": "South Orange Little League",
+    "answers": [
+      "South Orange Little League"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Johnny_Damon",
+      "https://mn2s.com/booking-agency/talent-roster/johnny-damon/",
+      "https://www.ocps.net/departments/public_relations/hall_of_fame/inductees/johnny_damon"
+    ],
+    "upstream_row": 853,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-254",
+    "family": "external-Number",
+    "query": "In how many games did Matija Radović appear for the Hofstra Pride during the 2017-18 season?",
+    "url": "https://gohofstra.com/sports/mens-basketball/roster/matija-radovic/6070",
+    "answer": "25",
+    "answers": [
+      "25"
+    ],
+    "sources": [
+      "https://gohofstra.com/sports/mens-basketball/roster/matija-radovic/6070",
+      "https://en.wikipedia.org/wiki/Matija_Radovi%C4%87",
+      "https://wikiroulette.co/?p=Matija_Radovi%C4%87",
+      "https://www.foxsports.com/college-basketball/matija-radovic-player-stats?category=scoring&seasonType=reg"
+    ],
+    "upstream_row": 59,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1984",
+    "family": "external-Place",
+    "query": "Which Ivy League university granted psychologist Robert Rutherford Holt both a master's degree and a Ph.D.?",
+    "url": "https://en.wikipedia.org/wiki/Robert_R._Holt",
+    "answer": "Harvard",
+    "answers": [
+      "Harvard"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Robert_R._Holt",
+      "https://provincetownindependent.org/obituaries/2024/04/17/psychologist-and-peace-activist-robert-holt-dies-at-106/",
+      "https://prabook.com/web/robert_rutherford.holt/247960"
+    ],
+    "upstream_row": 455,
+    "upstream_topic": "Other",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-151",
+    "family": "external-Other",
+    "query": "What is Harees, a famous dish of Armenia and the Arabian Peninsula, called in Zanzibar?",
+    "url": "https://en.wikipedia.org/wiki/Harees",
+    "answer": "boko boko",
+    "answers": [
+      "boko boko"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Harees",
+      "https://donimranfamilykitchen.wordpress.com/2020/11/08/bokoboko-recipe-arabic-style-haleem-known-as-harees-or-hareesa-famous-in-zanzibar-and-mombasa/"
+    ],
+    "upstream_row": 37,
+    "upstream_topic": "Geography",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3317",
+    "family": "external-Place",
+    "query": "In which country was the 4th edition of the ASEAN-India Grassroots Innovation Forum (AIGIF) launched?",
+    "url": "https://indiaaseaninnovation.com/upload/download/4th_AIGIF_(2023)-Project_Report.pdf",
+    "answer": "Malaysia",
+    "answers": [
+      "Malaysia"
+    ],
+    "sources": [
+      "https://indiaaseaninnovation.com/upload/download/4th_AIGIF_(2023)-Project_Report.pdf",
+      "https://pib.gov.in/PressReleasePage.aspx?PRID=1982421",
+      "https://www.drishtiias.com/daily-updates/daily-news-analysis/4th-edition-of-asean-india-grassroots-innovation-forum-aigif",
+      "https://dst.gov.in/4th-edition-asean-india-grassroots-innovation-forum-aigif-launched-strengthen-sti-co-operation"
+    ],
+    "upstream_row": 766,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1955",
+    "family": "external-Other",
+    "query": "What is the name of Daniel arap Moi's mother?",
+    "url": "https://www.presidentiallibrary.go.ke/he-daniel-arap-moi",
+    "answer": "Kabon",
+    "answers": [
+      "Kabon"
+    ],
+    "sources": [
+      "https://www.presidentiallibrary.go.ke/he-daniel-arap-moi",
+      "https://en.wikipedia.org/wiki/Daniel_arap_Moi"
+    ],
+    "upstream_row": 445,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2934",
+    "family": "external-Number",
+    "query": "In the 2020 census, what was the population of Boliney, Abra, Philippines?",
+    "url": "https://en.wikipedia.org/wiki/Boliney",
+    "answer": "4551 (acceptable range: anything between 4505 and 4597)",
+    "answers": [
+      "4551 (acceptable range: anything between 4505 and 4597)"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Boliney",
+      "https://www.philatlas.com/luzon/car/abra/boliney.html",
+      "https://citypopulation.de/en/philippines/luzon/admin/abra/140102__boliney/"
+    ],
+    "upstream_row": 668,
+    "upstream_topic": "Geography",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3629",
+    "family": "external-Other",
+    "query": "What is the binomial name of Acidalia virginaria?",
+    "url": "https://en.wikipedia.org/wiki/Arthur_William_Bacot",
+    "answer": "Scopula modicaria",
+    "answers": [
+      "Scopula modicaria"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Arthur_William_Bacot",
+      "https://en.wikipedia.org/wiki/Scopula_modicaria",
+      "https://www.funet.fi/pub/sci/bio/life/insecta/lepidoptera/ditrysia/geometroidea/geometridae/sterrhinae/scopula/"
+    ],
+    "upstream_row": 844,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1258",
+    "family": "external-Number",
+    "query": "How many votes did Alisher Usmanov receive when he won the 2008 election for President of the Fédération Internationale d'Escrime?",
+    "url": "https://www.insidethegames.biz/articles/1114757/usmanov-to-be-reelected-fencing",
+    "answer": "66 votes",
+    "answers": [
+      "66 votes"
+    ],
+    "sources": [
+      "https://www.insidethegames.biz/articles/1114757/usmanov-to-be-reelected-fencing",
+      "https://en.wikipedia.org/wiki/Alisher_Usmanov",
+      "https://en.wikipedia.org/wiki/F%C3%A9d%C3%A9ration_Internationale_d%27Escrime",
+      "https://kids.kiddle.co/Alisher_Usmanov"
+    ],
+    "upstream_row": 290,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-81",
+    "family": "external-Other",
+    "query": "What company was Natasha Merle a civil rights fellow at from 2013 to 2015 in New York City?",
+    "url": "https://en.wikipedia.org/wiki/Natasha_C._Merle",
+    "answer": " Fried, Frank, Harris, Shriver & Jacobson",
+    "answers": [
+      " Fried, Frank, Harris, Shriver & Jacobson"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Natasha_C._Merle",
+      "https://deathpenaltyinfo.org/news/womens-history-month-profile-u-s-district-court-judge-natasha-merle",
+      "https://afj.org/nominee/natasha-merle/",
+      "https://www.naacpldf.org/about-us/staff/natasha-merle/"
+    ],
+    "upstream_row": 26,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3533",
+    "family": "external-Date",
+    "query": "During which year was NASA's Vehicle Assembly Building designated as a National Historic Civil Engineering Landmark by the American Society of Civil Engineers?",
+    "url": "https://www.nasa.gov/centers-and-facilities/kennedy/kennedy-at-60-vehicle-assembly-building-ready-for-new-era-of-launch-vehicles/",
+    "answer": "2020",
+    "answers": [
+      "2020",
+      "2,020"
+    ],
+    "sources": [
+      "https://www.nasa.gov/centers-and-facilities/kennedy/kennedy-at-60-vehicle-assembly-building-ready-for-new-era-of-launch-vehicles/",
+      "https://en.wikipedia.org/wiki/Vehicle_Assembly_Building",
+      "https://spaceagechronicle.com/iconic-building-remains-a-pillar-of-americas-spaceport/",
+      "https://www.nasa.gov/image-article/a-floridian-sunset/"
+    ],
+    "upstream_row": 816,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  }
+]

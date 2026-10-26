@@ -1,0 +1,623 @@
+APERTURE CLEAN ROOM START
+NAME="Alpine Linux"
+ID=alpine
+VERSION_ID=3.22.6
+PRETTY_NAME="Alpine Linux v3.22"
+HOME_URL="https://alpinelinux.org/"
+BUG_REPORT_URL="https://gitlab.alpinelinux.org/alpine/aports/-/issues"
+fetch http://10.0.2.2:8489/alpine/v3.22/main/x86_64/APKINDEX.tar.gz
+fetch http://10.0.2.2:8489/alpine/v3.22/community/x86_64/APKINDEX.tar.gz
+(1/86) Installing brotli-libs (1.1.0-r2)
+(2/86) Installing c-ares (1.34.8-r0)
+(3/86) Installing libunistring (1.3-r0)
+(4/86) Installing libidn2 (2.3.7-r0)
+(5/86) Installing nghttp2-libs (1.69.0-r0)
+(6/86) Installing libpsl (0.21.5-r3)
+(7/86) Installing zstd-libs (1.5.7-r0)
+(8/86) Installing libcurl (8.14.1-r4)
+(9/86) Installing curl (8.14.1-r4)
+(10/86) Installing ca-certificates (20260909-r0)
+(11/86) Installing libseccomp (2.6.1-r0)
+(12/86) Installing runc (1.3.4-r1)
+(13/86) Installing containerd (2.1.5-r2)
+(14/86) Installing libffi (3.4.8-r0)
+(15/86) Installing libintl (0.24.1-r0)
+(16/86) Installing libeconf (0.6.3-r0)
+(17/86) Installing libblkid (2.41.6-r1)
+(18/86) Installing libmount (2.41.6-r1)
+(19/86) Installing pcre2 (10.46-r0)
+(20/86) Installing glib (2.84.4-r0)
+(21/86) Installing log_proxy (0.7.4-r0)
+(22/86) Installing containerd-openrc (2.1.5-r2)
+(23/86) Installing libmnl (1.0.5-r2)
+(24/86) Installing libnftnl (1.2.9-r0)
+(25/86) Installing libxtables (1.8.11-r1)
+(26/86) Installing iptables (1.8.11-r1)
+(27/86) Installing iptables-openrc (1.8.11-r1)
+(28/86) Installing tini-static (0.19.0-r3)
+(29/86) Installing docker-engine (28.3.3-r5)
+Executing docker-engine-28.3.3-r5.pre-install
+(30/86) Installing docker-openrc (28.3.3-r5)
+(31/86) Installing docker-cli (28.3.3-r5)
+(32/86) Installing docker-cli-buildx (0.24.0-r5)
+(33/86) Installing docker (28.3.3-r5)
+(34/86) Installing libcom_err (1.47.2-r2)
+(35/86) Installing e2fsprogs-libs (1.47.2-r2)
+(36/86) Installing libuuid (2.41.6-r1)
+(37/86) Installing e2fsprogs (1.47.2-r2)
+(38/86) Installing e2fsprogs-extra (1.47.2-r2)
+(39/86) Installing libexpat (2.9.0-r0)
+(40/86) Installing libbz2 (1.0.8-r6)
+(41/86) Installing gdbm (1.24-r0)
+(42/86) Installing xz-libs (5.8.4-r0)
+(43/86) Installing libgcc (14.2.0-r6)
+(44/86) Installing libstdc++ (14.2.0-r6)
+(45/86) Installing mpdecimal (4.0.1-r0)
+(46/86) Installing ncurses-terminfo-base (6.5_p20250503-r0)
+(47/86) Installing libncursesw (6.5_p20250503-r0)
+(48/86) Installing libpanelw (6.5_p20250503-r0)
+(49/86) Installing readline (8.2.13-r1)
+(50/86) Installing sqlite-libs (3.49.2-r1)
+(51/86) Installing python3 (3.12.15-r0)
+(52/86) Installing python3-pycache-pyc0 (3.12.15-r0)
+(53/86) Installing pyc (3.12.15-r0)
+(54/86) Installing python3-pyc (3.12.15-r0)
+(55/86) Installing util-linux (2.41.6-r1)
+(56/86) Installing dmesg (2.41.6-r1)
+(57/86) Installing setarch (2.41.6-r1)
+(58/86) Installing libfdisk (2.41.6-r1)
+(59/86) Installing libsmartcols (2.41.6-r1)
+(60/86) Installing skalibs-libs (2.14.4.0-r0)
+(61/86) Installing utmps-libs (0.1.3.1-r0)
+(62/86) Installing util-linux-misc (2.41.6-r1)
+(63/86) Installing linux-pam (1.7.0-r4)
+(64/86) Installing runuser (2.41.6-r1)
+(65/86) Installing mount (2.41.6-r1)
+(66/86) Installing losetup (2.41.6-r1)
+(67/86) Installing hexdump (2.41.6-r1)
+(68/86) Installing uuidgen (2.41.6-r1)
+(69/86) Installing blkid (2.41.6-r1)
+(70/86) Installing sfdisk (2.41.6-r1)
+(71/86) Installing mcookie (2.41.6-r1)
+(72/86) Installing agetty (2.41.6-r1)
+(73/86) Installing agetty-openrc (0.62.6-r0)
+(74/86) Installing wipefs (2.41.6-r1)
+(75/86) Installing cfdisk (2.41.6-r1)
+(76/86) Installing umount (2.41.6-r1)
+(77/86) Installing util-linux-openrc (2.41.6-r1)
+(78/86) Installing flock (2.41.6-r1)
+(79/86) Installing lsblk (2.41.6-r1)
+(80/86) Installing libcap-ng (0.8.5-r0)
+(81/86) Installing setpriv (2.41.6-r1)
+(82/86) Installing lscpu (2.41.6-r1)
+(83/86) Installing logger (2.41.6-r1)
+(84/86) Installing partx (2.41.6-r1)
+(85/86) Installing fstrim (2.41.6-r1)
+(86/86) Installing findmnt (2.41.6-r1)
+Executing busybox-1.37.0-r20.trigger
+Executing ca-certificates-20260909-r0.trigger
+Executing glib-2.84.4-r0.trigger
+OK: 306 MiB in 115 packages
+/dev/vda: LABEL="APERTUREDATA" UUID="b13a0e74-fd46-420c-94cb-040476b11f8c" BLOCK_SIZE="4096" TYPE="ext4"
+APERTUREDATA: recovering journal
+APERTUREDATA: 13394/10485760 files (0.2% non-contiguous), 1052341/41943040 blocks
+resize2fs 1.47.2 (1-Jan-2025)
+The filesystem is already 41943040 (4k) blocks long.  Nothing to do!
+
+ *   Caching service dependencies ... [ ok ]
+Client:
+ Version:    28.3.3
+ Context:    default
+ Debug Mode: false
+ Plugins:
+  buildx: Docker Buildx (Docker Inc.)
+    Version:  v0.24.0
+    Path:     /usr/libexec/docker/cli-plugins/docker-buildx
+
+Server:
+ Containers: 0
+  Running: 0
+  Paused: 0
+  Stopped: 0
+ Images: 8
+ Server Version: 28.3.3
+ Storage Driver: overlay2
+  Backing Filesystem: extfs
+  Supports d_type: true
+  Using metacopy: false
+  Native Overlay Diff: true
+  userxattr: false
+ Logging Driver: json-file
+ Cgroup Driver: cgroupfs
+ Cgroup Version: 2
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+ CDI spec directories:
+  /etc/cdi
+  /var/run/cdi
+ Swarm: inactive
+ Runtimes: io.containerd.runc.v2 runc
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version: fcd43222d6b07379a4be9786bda52438f0dd16a1
+ runc version: d842d7719497cc3b774fd71620278ac9e17710e0
+ init version: 
+ Security Options:
+  seccomp
+   Profile: builtin
+  cgroupns
+ Kernel Version: 6.12.110-0-virt
+ Operating System: Alpine Linux v3.22
+ OSType: linux
+ Architecture: x86_64
+ CPUs: 4
+ Total Memory: 3.834GiB
+ Name: localhost
+ ID: b4c5eb1a-9f49-4a74-a845-9a43132489e1
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: false
+ Experimental: false
+ Insecure Registries:
+  ::1/128
+  127.0.0.0/8
+ Registry Mirrors:
+  http://10.0.2.2:8489/
+ Live Restore Enabled: false
+
+WARNING: No swap limit support
+Client:
+ Version:           28.3.3
+ API version:       1.51
+ Go version:        go1.24.12
+ Git commit:        980b85681696fbd95927fd8ded8f6d91bdca95b0
+ Built:             Thu Jan 15 20:35:20 2026
+ OS/Arch:           linux/amd64
+ Context:           default
+
+Server:
+ Engine:
+  Version:          28.3.3
+  API version:      1.51 (minimum version 1.24)
+  Go version:       go1.24.12
+  Git commit:       bea959c7b793b32a893820b97c4eadc7c87fabb0
+  Built:            Thu Jan 15 20:35:20 2026
+  OS/Arch:          linux/amd64
+  Experimental:     false
+ containerd:
+  Version:          v2.1.5
+  GitCommit:        fcd43222d6b07379a4be9786bda52438f0dd16a1
+ runc:
+  Version:          1.3.4
+  GitCommit:        d842d7719497cc3b774fd71620278ac9e17710e0
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  143k  100  143k    0     0  64.8M      0 --:--:-- --:--:-- --:--:-- 70.2M
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100    15  100    15    0     0  16094      0 --:--:-- --:--:-- --:--:-- 15000
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.clean
+#1 transferring dockerfile: 717B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.14.4-slim
+#2 DONE 5.1s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [1/5] FROM docker.io/library/python:3.14.4-slim@sha256:2ca02f32b4d9d893863367ce07ec1972819f476dd38d8612f2a9cb6a41cbb727
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 574.14kB 0.0s done
+#5 DONE 0.0s
+
+#6 [2/5] WORKDIR /app
+#6 CACHED
+
+#7 [3/5] COPY requirements-core.lock requirements-test.lock requirements-browser.lock /app/
+#7 CACHED
+
+#8 [4/5] RUN if [ -n "http://10.0.2.2:8489" ]; then sed -i "s|http://deb.debian.org|http://10.0.2.2:8489/apt/deb.debian.org|g" /etc/apt/sources.list.d/debian.sources; fi  && pip install --no-cache-dir --no-deps -r requirements-core.lock -r requirements-test.lock -r requirements-browser.lock && pip check && python -m playwright install --with-deps --only-shell chromium
+#8 CACHED
+
+#9 [5/5] COPY . /app
+#9 DONE 0.0s
+
+#10 exporting to image
+#10 exporting layers 0.0s done
+#10 writing image sha256:e9dd37de08832a87523a96a86c9c4c451b066e0975fe64c29ed75360ae21891c done
+#10 naming to docker.io/library/aperture-cpu-clean:local done
+#10 DONE 0.0s
+........................................................................ [ 15%]
+........................................................................ [ 31%]
+........................................................................ [ 46%]
+........................................................................ [ 62%]
+........................................................................ [ 78%]
+........................................................................ [ 93%]
+............................                                             [100%]
+460 passed in 41.37s
+{
+  "method": "actual fresh Chromium + loopback HTTP; security case injects a public document cache only",
+  "http_only_answer": "",
+  "rows": [
+    {
+      "path": "/",
+      "answer": "24 GB",
+      "sources": [
+        "http://127.0.0.1:40355/"
+      ],
+      "seconds": 2.4335188999999957,
+      "browser": [
+        {
+          "state": "rendered",
+          "requests": 3,
+          "blocked": 0,
+          "bytes": 234,
+          "browser_version": "156.0.8078.4",
+          "seconds": 2.3456
+        }
+      ],
+      "expected": "24 GB",
+      "ok": true
+    },
+    {
+      "path": "/redirect",
+      "answer": "24 GB",
+      "sources": [
+        "http://127.0.0.1:40355/"
+      ],
+      "seconds": 0.9555543000000029,
+      "browser": [
+        {
+          "state": "rendered",
+          "requests": 3,
+          "blocked": 0,
+          "bytes": 234,
+          "browser_version": "156.0.8078.4",
+          "seconds": 0.9509
+        }
+      ],
+      "expected": "24 GB",
+      "ok": true
+    },
+    {
+      "path": "/late",
+      "answer": "24 GB",
+      "sources": [
+        "http://127.0.0.1:40355/late"
+      ],
+      "seconds": 1.6597421000000026,
+      "browser": [
+        {
+          "state": "rendered",
+          "requests": 2,
+          "blocked": 1,
+          "bytes": 142,
+          "browser_version": "156.0.8078.4",
+          "seconds": 1.6569
+        }
+      ],
+      "expected": "24 GB",
+      "ok": true
+    },
+    {
+      "path": "/spin",
+      "answer": "",
+      "sources": [],
+      "seconds": 6.032677800000002,
+      "browser": [
+        {
+          "state": "TimeoutError",
+          "requests": 2,
+          "blocked": 0,
+          "bytes": 63,
+          "browser_version": "156.0.8078.4",
+          "error": "",
+          "seconds": 6.0284
+        }
+      ],
+      "expected": "",
+      "ok": true
+    },
+    {
+      "test": "fresh CLI browser worker with process/memory limits",
+      "ok": true,
+      "answer": "24 GB",
+      "seconds": 1.3953670999999872,
+      "browser": [
+        {
+          "state": "rendered",
+          "requests": 3,
+          "blocked": 0,
+          "bytes": 234,
+          "browser_version": "156.0.8078.4",
+          "seconds": 1.0046
+        }
+      ]
+    },
+    {
+      "test": "private destination blocked",
+      "ok": true,
+      "browser": {
+        "state": "rendered",
+        "requests": 2,
+        "blocked": 1,
+        "bytes": 103,
+        "browser_version": "156.0.8078.4",
+        "seconds": 0.9475
+      }
+    }
+  ],
+  "all_passed": true,
+  "unexpected_stderr": ""
+}
+{
+  "n": 180,
+  "answer_accuracy": 1.0,
+  "source_accuracy": 1.0,
+  "joint_accuracy": 1.0,
+  "abstention_precision": 1.0,
+  "abstention_recall": 1.0,
+  "crashes": 0,
+  "malformed_outputs": 0,
+  "internal_deadlines": 0,
+  "recovered_engine_errors": 0,
+  "latency": {
+    "mean": 0.0036107605555551615,
+    "p50": 0.003309200000003898,
+    "p90": 0.0048874399999931485,
+    "p95": 0.005375789999997236,
+    "p99": 0.00729616299999691,
+    "max": 0.012902099999990924
+  },
+  "failure_taxonomy": {},
+  "pages_per_query": 1.0666666666666667,
+  "llm_calls": 0,
+  "search_requests": 0,
+  "confidence_diagnostic": {
+    "n": 180,
+    "answered": 168,
+    "confidence_available": 168,
+    "brier_answered_joint": 0.008159071428571427,
+    "ece_answered_joint": 0.07192857142857143,
+    "bins": [
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "n": 60,
+        "mean_confidence": 0.86,
+        "joint_accuracy": 1.0
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "n": 108,
+        "mean_confidence": 0.9658888888888889,
+        "joint_accuracy": 1.0
+      }
+    ],
+    "selective_risk": [
+      {
+        "threshold": 0,
+        "retained": 168,
+        "coverage_all_cases": 0.9333333333333333,
+        "joint_precision_when_retained": 1.0,
+        "retained_errors": 0,
+        "correct_all_cases": 0.9333333333333333
+      },
+      {
+        "threshold": 0.55,
+        "retained": 168,
+        "coverage_all_cases": 0.9333333333333333,
+        "joint_precision_when_retained": 1.0,
+        "retained_errors": 0,
+        "correct_all_cases": 0.9333333333333333
+      },
+      {
+        "threshold": 0.7,
+        "retained": 168,
+        "coverage_all_cases": 0.9333333333333333,
+        "joint_precision_when_retained": 1.0,
+        "retained_errors": 0,
+        "correct_all_cases": 0.9333333333333333
+      },
+      {
+        "threshold": 0.8,
+        "retained": 168,
+        "coverage_all_cases": 0.9333333333333333,
+        "joint_precision_when_retained": 1.0,
+        "retained_errors": 0,
+        "correct_all_cases": 0.9333333333333333
+      },
+      {
+        "threshold": 0.85,
+        "retained": 144,
+        "coverage_all_cases": 0.8,
+        "joint_precision_when_retained": 1.0,
+        "retained_errors": 0,
+        "correct_all_cases": 0.8
+      },
+      {
+        "threshold": 0.9,
+        "retained": 108,
+        "coverage_all_cases": 0.6,
+        "joint_precision_when_retained": 1.0,
+        "retained_errors": 0,
+        "correct_all_cases": 0.6
+      },
+      {
+        "threshold": 0.95,
+        "retained": 96,
+        "coverage_all_cases": 0.5333333333333333,
+        "joint_precision_when_retained": 1.0,
+        "retained_errors": 0,
+        "correct_all_cases": 0.5333333333333333
+      },
+      {
+        "threshold": 0.97,
+        "retained": 96,
+        "coverage_all_cases": 0.5333333333333333,
+        "joint_precision_when_retained": 1.0,
+        "retained_errors": 0,
+        "correct_all_cases": 0.5333333333333333
+      }
+    ]
+  }
+}
+FAIL director-0: 'Alex Stone'; expected 'Nora Weber'
+FAIL prose-name-0: ''; expected 'Nora Weber'
+FAIL no-regional-office-0: '+81 3 1234 5678'; expected ''
+FAIL unit-decimal-0: '20 kg'; expected '8.1 kg'
+FAIL director-1: 'Alex Stone'; expected 'Luis Martins'
+FAIL prose-name-1: ''; expected 'Luis Martins'
+FAIL no-regional-office-1: '+81 3 1234 5678'; expected ''
+FAIL unit-decimal-1: '20 kg'; expected '6.5 kg'
+FAIL director-2: 'Alex Stone'; expected 'Ava Okafor'
+FAIL prose-name-2: ''; expected 'Ava Okafor'
+FAIL no-regional-office-2: '+81 3 1234 5678'; expected ''
+FAIL unit-decimal-2: '20 kg'; expected '7.3 kg'
+FAIL director-3: 'Alex Stone'; expected 'Maya Chen'
+FAIL prose-name-3: ''; expected 'Maya Chen'
+FAIL no-regional-office-3: '+81 3 1234 5678'; expected ''
+FAIL unit-decimal-3: '20 kg'; expected '7.2 kg'
+FAIL director-4: 'Alex Stone'; expected 'Maya Chen'
+FAIL prose-name-4: ''; expected 'Maya Chen'
+FAIL no-regional-office-4: '+81 3 1234 5678'; expected ''
+FAIL unit-decimal-4: '20 kg'; expected '6.4 kg'
+{
+  "n": 100,
+  "answer_accuracy": 0.8,
+  "source_accuracy": 0.9,
+  "joint_accuracy": 0.8,
+  "abstention_precision": 0.6666666666666666,
+  "abstention_recall": 0.6666666666666666,
+  "crashes": 0,
+  "malformed_outputs": 0,
+  "internal_deadlines": 0,
+  "recovered_engine_errors": 0,
+  "latency": {
+    "mean": 0.0038061629999995715,
+    "p50": 0.0032512499999981515,
+    "p90": 0.005400749999995469,
+    "p95": 0.007335879999996564,
+    "p99": 0.009890290000008597,
+    "max": 0.01922500000000582
+  },
+  "failure_taxonomy": {
+    "RANK": 15,
+    "ABS": 5
+  },
+  "pages_per_query": 1.05,
+  "llm_calls": 0,
+  "search_requests": 0,
+  "confidence_diagnostic": {
+    "n": 100,
+    "answered": 85,
+    "confidence_available": 85,
+    "brier_answered_joint": 0.143144,
+    "ece_answered_joint": 0.08223529411764699,
+    "bins": [
+      {
+        "lower": 0.7,
+        "upper": 0.8,
+        "n": 5,
+        "mean_confidence": 0.78,
+        "joint_accuracy": 0.0
+      },
+      {
+        "lower": 0.8,
+        "upper": 0.9,
+        "n": 30,
+        "mean_confidence": 0.8468333333333332,
+        "joint_accuracy": 0.8333333333333334
+      },
+      {
+        "lower": 0.9,
+        "upper": 1.0,
+        "n": 50,
+        "mean_confidence": 0.9537,
+        "joint_accuracy": 0.9
+      }
+    ],
+    "selective_risk": [
+      {
+        "threshold": 0,
+        "retained": 85,
+        "coverage_all_cases": 0.85,
+        "joint_precision_when_retained": 0.8235294117647058,
+        "retained_errors": 15,
+        "correct_all_cases": 0.7
+      },
+      {
+        "threshold": 0.55,
+        "retained": 85,
+        "coverage_all_cases": 0.85,
+        "joint_precision_when_retained": 0.8235294117647058,
+        "retained_errors": 15,
+        "correct_all_cases": 0.7
+      },
+      {
+        "threshold": 0.7,
+        "retained": 85,
+        "coverage_all_cases": 0.85,
+        "joint_precision_when_retained": 0.8235294117647058,
+        "retained_errors": 15,
+        "correct_all_cases": 0.7
+      },
+      {
+        "threshold": 0.8,
+        "retained": 80,
+        "coverage_all_cases": 0.8,
+        "joint_precision_when_retained": 0.875,
+        "retained_errors": 10,
+        "correct_all_cases": 0.7
+      },
+      {
+        "threshold": 0.85,
+        "retained": 65,
+        "coverage_all_cases": 0.65,
+        "joint_precision_when_retained": 0.8461538461538461,
+        "retained_errors": 10,
+        "correct_all_cases": 0.55
+      },
+      {
+        "threshold": 0.9,
+        "retained": 50,
+        "coverage_all_cases": 0.5,
+        "joint_precision_when_retained": 0.9,
+        "retained_errors": 5,
+        "correct_all_cases": 0.45
+      },
+      {
+        "threshold": 0.95,
+        "retained": 35,
+        "coverage_all_cases": 0.35,
+        "joint_precision_when_retained": 0.8571428571428571,
+        "retained_errors": 5,
+        "correct_all_cases": 0.3
+      },
+      {
+        "threshold": 0.97,
+        "retained": 10,
+        "coverage_all_cases": 0.1,
+        "joint_precision_when_retained": 1.0,
+        "retained_errors": 0,
+        "correct_all_cases": 0.1
+      }
+    ]
+  }
+}
+324077f35ce6bfcbbd710618775d81c63155b54121730ab82c258f302b4488b2
+{"answer": "BSD-3-Clause", "sources": ["https://pypi.org/pypi/httpx/json"]}
+{"answer": "BSD-3-Clause", "sources": ["https://pypi.org/pypi/httpx/json"]}
+{"answer": "BSD-3-Clause", "sources": ["https://pypi.org/pypi/httpx/json"], "confidence": 0.845, "evidence": "license: BSD-3-Clause | package httpx", "reason": "direct_source", "diagnostics": {"plan": {"question": "What is the license of the httpx package on PyPI?", "url": "", "kind": "license", "terms": ["license", "httpx", "package", "pypi"], "attributes": ["license", "licence", "licensing", "spdx"], "entity_terms": ["httpx", "package", "pypi"], "versions": [], "year": "", "as_of": "", "latest": false, "stable": false, "first": false, "currency": "", "cardinality": 1, "negations": [], "domain": "", "focus": "what is the license "}, "errors": [], "selector": [], "timings": {"resolver": 0.9437154000000021}, "search_requests": 0, "llm_calls": 0, "content_pages": 1, "selection": {"raw": "BSD-3-Clause", "answer": "BSD-3-Clause", "source": "https://pypi.org/pypi/httpx/json", "evidence": "license: BSD-3-Clause | package httpx", "label": "license", "section": "package httpx", "kind": "license", "score": 11.8, "signals": {"locator": "adapter/license", "page_title": "PyPI httpx", "structure": "field", "qualifiers": {}, "field_value": "BSD-3-Clause", "agreement_domains": 1}}, "fetches": [{"url": "https://pypi.org/pypi/httpx/json", "final": "https://pypi.org/pypi/httpx/json", "status": 200, "bytes": 119911, "error": "", "redirects": [], "truncated": false, "truncation_reason": ""}], "http_responses_success": 1, "pages_fetched": 1, "seconds": 0.9486}, "seconds": 1.359667800000011}
+aperture-cli-clean

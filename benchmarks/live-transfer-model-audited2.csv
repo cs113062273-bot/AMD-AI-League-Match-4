@@ -1,0 +1,15 @@
+id,family,answer,sources,expected_answer,expected_source,answer_ok,source_ok,joint_ok,seconds,error,failure_category,malformed_output
+curl-connect,curl,,[],['300'],https://curl.se/libcurl/c/CURLOPT_CONNECTTIMEOUT.html,False,False,False,14.022643199947197,,ABS,False
+nginx-keepalive,nginx,75s,['https://nginx.org/en/docs/http/ngx_http_core_module.html'],['75s'],https://nginx.org/en/docs/http/ngx_http_core_module.html,True,True,True,3.894273800018709,,,False
+postgres-connections,postgres,100,['https://www.postgresql.org/docs/current/runtime-config-connection.html'],['100'],https://www.postgresql.org/docs/current/runtime-config-connection.html,True,True,True,4.012835500005167,,,False
+sshd-port,openssh,22,['https://man.openbsd.org/sshd_config'],['22'],https://man.openbsd.org/sshd_config,True,True,True,3.7785266000428237,,,False
+pi-header,pi,,[],['40'],https://www.raspberrypi.com/products/raspberry-pi-5/,False,False,False,14.878744600049686,,ABS,False
+sqlite-columns,sqlite,2000,['https://www.sqlite.org/limits.html'],['2000'],https://www.sqlite.org/limits.html,True,True,True,4.44867199996952,,,False
+json-ensure-ascii,python,True,['https://docs.python.org/3/library/json.html'],['True'],https://docs.python.org/3/library/json.html,True,True,True,0.450200000021141,,,False
+wcag-normal-aa,wcag,4.5:1,['https://www.w3.org/TR/WCAG22/'],['4.5:1'],https://www.w3.org/TR/WCAG22/,True,True,True,3.7749589000013657,,,False
+wcag-normal-aaa,wcag,7:1,['https://www.w3.org/TR/WCAG22/'],['7:1'],https://www.w3.org/TR/WCAG22/,True,True,True,3.1927052999963053,,,False
+rfc-title,ietf,HTTP Semantics,['https://datatracker.ietf.org/api/v1/doc/document/rfc9110/'],['HTTP Semantics'],https://datatracker.ietf.org/api/v1/doc/document/rfc9110/,True,True,True,6.404658499988727,,,False
+sqlite-missing-email,sqlite,,[],[''],,True,True,True,11.012455200019758,,,False
+curl-false-premise,curl,,[],[''],,True,True,True,11.882267699984368,,,False
+sqlite-discovery,discovery-sqlite,2000,['https://tool.oschina.net/uploads/apidocs/sqlite/limits.html'],['2000'],https://www.sqlite.org/limits.html,True,False,False,6.640909200010356,,CIT,False
+sshd-discovery,discovery-openssh,,[],['22'],https://man.openbsd.org/sshd_config,False,False,False,21.055456200032495,,ABS,False

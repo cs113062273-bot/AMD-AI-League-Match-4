@@ -1,0 +1,26 @@
+{
+  "scope": "CPU-only authored source-binding probe; no model or external question score",
+  "question": "Who won the award in 2024?",
+  "kind": "text",
+  "year": "2024",
+  "selected_locator": "row[1]",
+  "selected_section": "Awards 2024",
+  "expected_verification": true,
+  "actual_verification": false,
+  "source_records": [
+    {
+      "text": "Winner: Elm Choir",
+      "label": "Winner",
+      "section": "Awards 2023",
+      "locator": "row[0]"
+    },
+    {
+      "text": "Winner: Elm Choir",
+      "label": "Winner",
+      "section": "Awards 2024",
+      "locator": "row[1]"
+    }
+  ],
+  "torch_imported": false,
+  "source_sha256": "bb51d2a4403837771ed03cfc4d28188e341e4c82d3bf41809cdb175d5a331ca4"
+}

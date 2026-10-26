@@ -1,0 +1,56 @@
+{
+  "scope": "CPU-only actual bodies from input-URL-title search; no model/browser/answers injected.",
+  "rows": [
+    {
+      "requested": "https://everything.explained.today/Hermogenes_of_Xanthos/",
+      "url": "https://everything.explained.today/Hermogenes_of_Xanthos/",
+      "status": 403,
+      "error": "http_403",
+      "bytes": 0,
+      "title": "",
+      "matches": [],
+      "capture_path": "research/horse-20261023-sources/0.json",
+      "sha256": "7f7ba17f34378a706556384bd0b35878b5adf84534673e278cee78f35674e87b"
+    },
+    {
+      "requested": "https://grokipedia.com/page/hermogenes_of_xanthos",
+      "url": "https://grokipedia.com/page/hermogenes_of_xanthos",
+      "status": 200,
+      "error": "",
+      "bytes": 229460,
+      "title": "Hermogenes of Xanthos \u2014 Grokipedia",
+      "matches": [
+        "description: Hermogenes of Xanthos (fl. 81\u201389 CE), also known as Titus Flavius Hermogenes son of Apollonios, was a celebrated ancient athlete from the Lycian city of Xanthos in Asia Minor, renowned for his extra",
+        "og:description: Hermogenes of Xanthos (fl. 81\u201389 CE), also known as Titus Flavius Hermogenes son of Apollonios, was a celebrated ancient athlete from the Lycian city of Xanthos in Asia Minor, renowned for his extra",
+        "og:image:height: 1260",
+        "twitter:description: Hermogenes of Xanthos (fl. 81\u201389 CE), also known as Titus Flavius Hermogenes son of Apollonios, was a celebrated ancient athlete from the Lycian city of Xanthos in Asia Minor, renowned for his extra",
+        "5 \u2191 academia.edu/10481469/The_City_of_Xanthos_from_Archaic_to_Byzantine_Times",
+        "6 \u2191 onlinelibrary.wiley.com/doi/10.1002/9781118609965.ch24",
+        "Hermogenes of Xanthos (fl. 81\u201389 CE), also known as Titus Flavius Hermogenes son of Apollonios, was a celebrated ancient athlete from the Lycian city of Xanthos in Asia Minor, renowned for his extraordinary success in foot racing at the Panhellenic Games during the Flavian era of the Roman Empire. Specializing in the stadion (short sprint), diaulos (double stadion), and hoplitodromos (race in armor), he amassed a record 31 victories across major festivals, including eight Olympic crowns over three consecutive Games, earning him the nickname \"Hippos\" (Horse) from his peers for his unparalleled speed and endurance. [1] [2] [3]",
+        "In 81 CE, Hermogenes claimed gold in the stadion , diaulos , and hoplitodromos at Olympia, repeating the diaulos and hoplitodromos triumphs in 85 CE before securing another sweep of all three events in 89 CE, thus achieving the rare feat of multiple wins in armored racing, which tested both speed and stamina under heavy gear weighing approximately 25\u201330 pounds. [1] These accomplishments, documented in ancient inscriptions and literary accounts, cemented his status as one of antiquity's greatest runners, comparable to earlier legends like Chionis of Sparta. Beyond Olympia, his victories spanned other prestigious venues such as the Pythian, Nemean, and Isthmian Games, underscoring his dominance in the periodos circuit of Panhellenic competitions. [2] [3]"
+      ],
+      "capture_path": "research/horse-20261023-sources/1.json",
+      "sha256": "58482145713d104fecfb72e5387a3e99a8c92220b0fdf2a4579f851711b18c4a"
+    },
+    {
+      "requested": "https://www.dicolympique.fr/hermogenes-xanthos/",
+      "url": "https://www.dicolympique.fr/hermogenes-xanthos/",
+      "status": 200,
+      "error": "",
+      "bytes": 170967,
+      "title": "HERMOG\u00c9N\u00c8S \u2013 Xanthos / Course du stade | DICOLYMPIQUE",
+      "matches": [
+        "@graph[0].@type: Article | @graph[0] { @type: Article | @id: https://www.dicolympique.fr/hermogenes-xanthos/#article | name: HERMOG\u00c9N\u00c8S \u2013 Xanthos / Course du stade | DICOLYMPIQUE | headline: HERMOG\u00c9N\u00c8S \u2013 Xanthos / Course du stade | datePublished: 2026-05-25T06:00:12+02:00 | dateModified: 2026-05-24T21:06:35+02:00 | inLanguage: fr-FR | articleSection: Vainqueurs olympiques, anatolie, couronne olivier, diaulos, hermogenes, hoplitodromos, jeux antiquit\u00e9, le cheval, lycie, panhelleniques, stadion, triastes, xanthos, xystarque } | parent $ { @context: https://schema.org }",
+        "@graph[0].@id: https://www.dicolympique.fr/hermogenes-xanthos/#article | @graph[0] { @type: Article | @id: https://www.dicolympique.fr/hermogenes-xanthos/#article | name: HERMOG\u00c9N\u00c8S \u2013 Xanthos / Course du stade | DICOLYMPIQUE | headline: HERMOG\u00c9N\u00c8S \u2013 Xanthos / Course du stade | datePublished: 2026-05-25T06:00:12+02:00 | dateModified: 2026-05-24T21:06:35+02:00 | inLanguage: fr-FR | articleSection: Vainqueurs olympiques, anatolie, couronne olivier, diaulos, hermogenes, hoplitodromos, jeux antiquit\u00e9, le cheval, lycie, panhelleniques, stadion, triastes, xanthos, xystarque } | parent $ { @context: https://schema.org }",
+        "@graph[0].name: HERMOG\u00c9N\u00c8S \u2013 Xanthos / Course du stade | DICOLYMPIQUE | @graph[0] { @type: Article | @id: https://www.dicolympique.fr/hermogenes-xanthos/#article | name: HERMOG\u00c9N\u00c8S \u2013 Xanthos / Course du stade | DICOLYMPIQUE | headline: HERMOG\u00c9N\u00c8S \u2013 Xanthos / Course du stade | datePublished: 2026-05-25T06:00:12+02:00 | dateModified: 2026-05-24T21:06:35+02:00 | inLanguage: fr-FR | articleSection: Vainqueurs olympiques, anatolie, couronne olivier, diaulos, hermogenes, hoplitodromos, jeux antiquit\u00e9, le cheval, lycie, panhelleniques, stadion, triastes, xanthos, xystarque } | parent $ { @context: https://schema.org }",
+        "@graph[0].headline: HERMOG\u00c9N\u00c8S \u2013 Xanthos / Course du stade | @graph[0] { @type: Article | @id: https://www.dicolympique.fr/hermogenes-xanthos/#article | name: HERMOG\u00c9N\u00c8S \u2013 Xanthos / Course du stade | DICOLYMPIQUE | headline: HERMOG\u00c9N\u00c8S \u2013 Xanthos / Course du stade | datePublished: 2026-05-25T06:00:12+02:00 | dateModified: 2026-05-24T21:06:35+02:00 | inLanguage: fr-FR | articleSection: Vainqueurs olympiques, anatolie, couronne olivier, diaulos, hermogenes, hoplitodromos, jeux antiquit\u00e9, le cheval, lycie, panhelleniques, stadion, triastes, xanthos, xystarque } | parent $ { @context: https://schema.org }",
+        "@graph[0].author.@id: https://www.dicolympique.fr/author/telloch/#author | @graph[0].author { @id: https://www.dicolympique.fr/author/telloch/#author } | parent @graph[0] { @type: Article | @id: https://www.dicolympique.fr/hermogenes-xanthos/#article | name: HERMOG\u00c9N\u00c8S \u2013 Xanthos / Course du stade | DICOLYMPIQUE | headline: HERMOG\u00c9N\u00c8S \u2013 Xanthos / Course du stade | datePublished: 2026-05-25T06:00:12+02:00 | dateModified: 2026-05-24T21:06:35+02:00 | inLanguage: fr-FR | articleSection: Vainqueurs olympiques, anatolie, couronne olivier, diaulos, hermogenes, hoplitodromos, jeux antiquit\u00e9, le cheval, lycie, panhelleniques, stadion, triastes, xanthos, xystarque } | parent $ { @context: https://schema.org }",
+        "@graph[0].publisher.@id: https://www.dicolympique.fr/#person | @graph[0].publisher { @id: https://www.dicolympique.fr/#person } | parent @graph[0] { @type: Article | @id: https://www.dicolympique.fr/hermogenes-xanthos/#article | name: HERMOG\u00c9N\u00c8S \u2013 Xanthos / Course du stade | DICOLYMPIQUE | headline: HERMOG\u00c9N\u00c8S \u2013 Xanthos / Course du stade | datePublished: 2026-05-25T06:00:12+02:00 | dateModified: 2026-05-24T21:06:35+02:00 | inLanguage: fr-FR | articleSection: Vainqueurs olympiques, anatolie, couronne olivier, diaulos, hermogenes, hoplitodromos, jeux antiquit\u00e9, le cheval, lycie, panhelleniques, stadion, triastes, xanthos, xystarque } | parent $ { @context: https://schema.org }",
+        "@graph[0].image.@type: ImageObject | @graph[0].image { @type: ImageObject | url: https://www.dicolympique.fr/wp-content/uploads/2022/05/Hoplitodromos-2_820x400.jpg | width: 820 | height: 400 } | parent @graph[0] { @type: Article | @id: https://www.dicolympique.fr/hermogenes-xanthos/#article | name: HERMOG\u00c9N\u00c8S \u2013 Xanthos / Course du stade | DICOLYMPIQUE | headline: HERMOG\u00c9N\u00c8S \u2013 Xanthos / Course du stade | datePublished: 2026-05-25T06:00:12+02:00 | dateModified: 2026-05-24T21:06:35+02:00 | inLanguage: fr-FR | articleSection: Vainqueurs olympiques, anatolie, couronne olivier, diaulos, hermogenes, hoplitodromos, jeux antiquit\u00e9, le cheval, lycie, panhelleniques, stadion, triastes, xanthos, xystarque } | parent $ { @context: https://schema.org }",
+        "@graph[0].image.url: https://www.dicolympique.fr/wp-content/uploads/2022/05/Hoplitodromos-2_820x400.jpg | @graph[0].image { @type: ImageObject | url: https://www.dicolympique.fr/wp-content/uploads/2022/05/Hoplitodromos-2_820x400.jpg | width: 820 | height: 400 } | parent @graph[0] { @type: Article | @id: https://www.dicolympique.fr/hermogenes-xanthos/#article | name: HERMOG\u00c9N\u00c8S \u2013 Xanthos / Course du stade | DICOLYMPIQUE | headline: HERMOG\u00c9N\u00c8S \u2013 Xanthos / Course du stade | datePublished: 2026-05-25T06:00:12+02:00 | dateModified: 2026-05-24T21:06:35+02:00 | inLanguage: fr-FR | articleSection: Vainqueurs olympiques, anatolie, couronne olivier, diaulos, hermogenes, hoplitodromos, jeux antiquit\u00e9, le cheval, lycie, panhelleniques, stadion, triastes, xanthos, xystarque } | parent $ { @context: https://schema.org }"
+      ],
+      "capture_path": "research/horse-20261023-sources/2.json",
+      "sha256": "da48635bea0174d3c55db598ac20a32c633878c3526255eb342ae3487dba7422"
+    }
+  ]
+}

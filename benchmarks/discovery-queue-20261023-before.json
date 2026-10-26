@@ -1,0 +1,943 @@
+{
+  "scope": "Controlled HTTP replay of discovery starvation, duplicates and retrieval bounds.\n\nMotivated by external-transfer100's blocked top-four source failures; these are\nnew development scenarios, not a real-web/LLM accuracy measurement.\n",
+  "passed": 2,
+  "total": 6,
+  "rows": [
+    {
+      "id": "provider-duplicates",
+      "passed": false,
+      "hits": [
+        "/root",
+        "/provider",
+        "/provider",
+        "/empty"
+      ],
+      "model_calls": [
+        "/select",
+        "/expand",
+        "/select"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the support phone of Boreal Instruments?",
+            "url": "http://127.0.0.1:48543/root",
+            "kind": "phone",
+            "terms": [
+              "support",
+              "phone",
+              "boreal",
+              "instruments"
+            ],
+            "attributes": [
+              "phone",
+              "telephone",
+              "tel",
+              "contact",
+              "support",
+              "hotline",
+              "toll-free"
+            ],
+            "entity_terms": [
+              "boreal",
+              "instruments"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the support phone ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": []
+          },
+          "errors": [],
+          "selector": [
+            "abstain",
+            "abstain"
+          ],
+          "timings": {
+            "resolver": 0.00011799996718764305
+          },
+          "search_requests": 2,
+          "llm_calls": 3,
+          "content_pages": 2,
+          "search_recovery": "starting_url_unavailable_or_exhausted",
+          "search_recovery_depth": 0,
+          "search_hints": [],
+          "search_hint_state": "expanded",
+          "reader_state": "no_evidence",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:48543/root",
+              "final": "http://127.0.0.1:48543/root",
+              "status": 200,
+              "bytes": 69,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:48543/provider?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "final": "http://127.0.0.1:48543/provider?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "status": 200,
+              "bytes": 543,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:48543/provider?q=support+phone+boreal+instruments",
+              "final": "http://127.0.0.1:48543/provider?q=support+phone+boreal+instruments",
+              "status": 200,
+              "bytes": 543,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:48543/empty",
+              "final": "http://127.0.0.1:48543/empty",
+              "status": 200,
+              "bytes": 69,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 4,
+          "pages_fetched": 2,
+          "seconds": 0.0435
+        }
+      }
+    },
+    {
+      "id": "blocked-first-four",
+      "passed": false,
+      "hits": [
+        "/root",
+        "/provider",
+        "/provider",
+        "/blocked/0",
+        "/blocked/1",
+        "/blocked/3",
+        "/blocked/2"
+      ],
+      "model_calls": [
+        "/select",
+        "/expand",
+        "/select"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the support phone of Boreal Instruments?",
+            "url": "http://127.0.0.1:48543/root",
+            "kind": "phone",
+            "terms": [
+              "support",
+              "phone",
+              "boreal",
+              "instruments"
+            ],
+            "attributes": [
+              "phone",
+              "telephone",
+              "tel",
+              "contact",
+              "support",
+              "hotline",
+              "toll-free"
+            ],
+            "entity_terms": [
+              "boreal",
+              "instruments"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the support phone ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": []
+          },
+          "errors": [
+            {
+              "url": "http://127.0.0.1:48543/blocked/0",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:48543/blocked/1",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:48543/blocked/2",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:48543/blocked/3",
+              "error": "http_403"
+            }
+          ],
+          "selector": [
+            "abstain",
+            "abstain"
+          ],
+          "timings": {
+            "resolver": 9.399955160915852e-06
+          },
+          "search_requests": 2,
+          "llm_calls": 3,
+          "content_pages": 1,
+          "search_recovery": "starting_url_unavailable_or_exhausted",
+          "search_recovery_depth": 0,
+          "search_hints": [],
+          "search_hint_state": "expanded",
+          "reader_state": "no_evidence",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:48543/root",
+              "final": "http://127.0.0.1:48543/root",
+              "status": 200,
+              "bytes": 69,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:48543/provider?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "final": "http://127.0.0.1:48543/provider?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "status": 200,
+              "bytes": 559,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:48543/provider?q=support+phone+boreal+instruments",
+              "final": "http://127.0.0.1:48543/provider?q=support+phone+boreal+instruments",
+              "status": 200,
+              "bytes": 559,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:48543/blocked/0",
+              "final": "http://127.0.0.1:48543/blocked/0",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:48543/blocked/1",
+              "final": "http://127.0.0.1:48543/blocked/1",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:48543/blocked/3",
+              "final": "http://127.0.0.1:48543/blocked/3",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:48543/blocked/2",
+              "final": "http://127.0.0.1:48543/blocked/2",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 3,
+          "pages_fetched": 1,
+          "seconds": 0.0094
+        }
+      }
+    },
+    {
+      "id": "answerless-first-four",
+      "passed": false,
+      "hits": [
+        "/root",
+        "/provider",
+        "/provider",
+        "/empty/0",
+        "/empty/1",
+        "/empty/3",
+        "/empty/2"
+      ],
+      "model_calls": [
+        "/select",
+        "/expand",
+        "/select"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the support phone of Boreal Instruments?",
+            "url": "http://127.0.0.1:48543/root",
+            "kind": "phone",
+            "terms": [
+              "support",
+              "phone",
+              "boreal",
+              "instruments"
+            ],
+            "attributes": [
+              "phone",
+              "telephone",
+              "tel",
+              "contact",
+              "support",
+              "hotline",
+              "toll-free"
+            ],
+            "entity_terms": [
+              "boreal",
+              "instruments"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the support phone ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": []
+          },
+          "errors": [],
+          "selector": [
+            "abstain",
+            "abstain"
+          ],
+          "timings": {
+            "resolver": 9.7999582067132e-06
+          },
+          "search_requests": 2,
+          "llm_calls": 3,
+          "content_pages": 5,
+          "search_recovery": "starting_url_unavailable_or_exhausted",
+          "search_recovery_depth": 0,
+          "search_hints": [],
+          "search_hint_state": "expanded",
+          "reader_state": "no_evidence",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:48543/root",
+              "final": "http://127.0.0.1:48543/root",
+              "status": 200,
+              "bytes": 69,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:48543/provider?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "final": "http://127.0.0.1:48543/provider?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "status": 200,
+              "bytes": 551,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:48543/provider?q=support+phone+boreal+instruments",
+              "final": "http://127.0.0.1:48543/provider?q=support+phone+boreal+instruments",
+              "status": 200,
+              "bytes": 551,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:48543/empty/0",
+              "final": "http://127.0.0.1:48543/empty/0",
+              "status": 200,
+              "bytes": 69,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:48543/empty/1",
+              "final": "http://127.0.0.1:48543/empty/1",
+              "status": 200,
+              "bytes": 69,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:48543/empty/3",
+              "final": "http://127.0.0.1:48543/empty/3",
+              "status": 200,
+              "bytes": 69,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:48543/empty/2",
+              "final": "http://127.0.0.1:48543/empty/2",
+              "status": 200,
+              "bytes": 69,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 7,
+          "pages_fetched": 5,
+          "seconds": 0.0132
+        }
+      }
+    },
+    {
+      "id": "blocked-page-cap",
+      "passed": true,
+      "hits": [
+        "/root",
+        "/provider",
+        "/provider",
+        "/blocked/0",
+        "/blocked/1",
+        "/blocked/3",
+        "/blocked/2"
+      ],
+      "model_calls": [
+        "/select",
+        "/expand",
+        "/select"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the support phone of Boreal Instruments?",
+            "url": "http://127.0.0.1:48543/root",
+            "kind": "phone",
+            "terms": [
+              "support",
+              "phone",
+              "boreal",
+              "instruments"
+            ],
+            "attributes": [
+              "phone",
+              "telephone",
+              "tel",
+              "contact",
+              "support",
+              "hotline",
+              "toll-free"
+            ],
+            "entity_terms": [
+              "boreal",
+              "instruments"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the support phone ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": []
+          },
+          "errors": [
+            {
+              "url": "http://127.0.0.1:48543/blocked/0",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:48543/blocked/1",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:48543/blocked/2",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:48543/blocked/3",
+              "error": "http_403"
+            }
+          ],
+          "selector": [
+            "abstain",
+            "abstain"
+          ],
+          "timings": {
+            "resolver": 8.400063961744308e-06
+          },
+          "search_requests": 2,
+          "llm_calls": 3,
+          "content_pages": 1,
+          "search_recovery": "starting_url_unavailable_or_exhausted",
+          "search_recovery_depth": 0,
+          "search_hints": [],
+          "search_hint_state": "expanded",
+          "reader_state": "no_evidence",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:48543/root",
+              "final": "http://127.0.0.1:48543/root",
+              "status": 200,
+              "bytes": 69,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:48543/provider?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "final": "http://127.0.0.1:48543/provider?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "status": 200,
+              "bytes": 559,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:48543/provider?q=support+phone+boreal+instruments",
+              "final": "http://127.0.0.1:48543/provider?q=support+phone+boreal+instruments",
+              "status": 200,
+              "bytes": 559,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:48543/blocked/0",
+              "final": "http://127.0.0.1:48543/blocked/0",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:48543/blocked/1",
+              "final": "http://127.0.0.1:48543/blocked/1",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:48543/blocked/3",
+              "final": "http://127.0.0.1:48543/blocked/3",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:48543/blocked/2",
+              "final": "http://127.0.0.1:48543/blocked/2",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 3,
+          "pages_fetched": 1,
+          "seconds": 0.0092
+        }
+      }
+    },
+    {
+      "id": "blocked-depth-cap",
+      "passed": true,
+      "hits": [
+        "/root",
+        "/provider",
+        "/provider",
+        "/blocked/0",
+        "/blocked/1",
+        "/blocked/3",
+        "/blocked/2"
+      ],
+      "model_calls": [
+        "/select",
+        "/expand",
+        "/select"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the support phone of Boreal Instruments?",
+            "url": "http://127.0.0.1:48543/root",
+            "kind": "phone",
+            "terms": [
+              "support",
+              "phone",
+              "boreal",
+              "instruments"
+            ],
+            "attributes": [
+              "phone",
+              "telephone",
+              "tel",
+              "contact",
+              "support",
+              "hotline",
+              "toll-free"
+            ],
+            "entity_terms": [
+              "boreal",
+              "instruments"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the support phone ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": []
+          },
+          "errors": [
+            {
+              "url": "http://127.0.0.1:48543/blocked/0",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:48543/blocked/1",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:48543/blocked/2",
+              "error": "http_403"
+            },
+            {
+              "url": "http://127.0.0.1:48543/blocked/3",
+              "error": "http_403"
+            }
+          ],
+          "selector": [
+            "abstain",
+            "abstain"
+          ],
+          "timings": {
+            "resolver": 8.599949069321156e-06
+          },
+          "search_requests": 2,
+          "llm_calls": 3,
+          "content_pages": 1,
+          "search_recovery": "starting_url_unavailable_or_exhausted",
+          "search_recovery_depth": 0,
+          "search_hints": [],
+          "search_hint_state": "expanded",
+          "reader_state": "no_evidence",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:48543/root",
+              "final": "http://127.0.0.1:48543/root",
+              "status": 200,
+              "bytes": 69,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:48543/provider?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "final": "http://127.0.0.1:48543/provider?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "status": 200,
+              "bytes": 559,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:48543/provider?q=support+phone+boreal+instruments",
+              "final": "http://127.0.0.1:48543/provider?q=support+phone+boreal+instruments",
+              "status": 200,
+              "bytes": 559,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:48543/blocked/0",
+              "final": "http://127.0.0.1:48543/blocked/0",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:48543/blocked/1",
+              "final": "http://127.0.0.1:48543/blocked/1",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:48543/blocked/3",
+              "final": "http://127.0.0.1:48543/blocked/3",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:48543/blocked/2",
+              "final": "http://127.0.0.1:48543/blocked/2",
+              "status": 403,
+              "bytes": 0,
+              "error": "http_403",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 3,
+          "pages_fetched": 1,
+          "seconds": 0.0092
+        }
+      }
+    },
+    {
+      "id": "navigation-duplicates",
+      "passed": false,
+      "hits": [
+        "/navigation",
+        "/empty"
+      ],
+      "model_calls": [
+        "/select",
+        "/select",
+        "/select"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the support phone of Boreal Instruments?",
+            "url": "http://127.0.0.1:48543/navigation",
+            "kind": "phone",
+            "terms": [
+              "support",
+              "phone",
+              "boreal",
+              "instruments"
+            ],
+            "attributes": [
+              "phone",
+              "telephone",
+              "tel",
+              "contact",
+              "support",
+              "hotline",
+              "toll-free"
+            ],
+            "entity_terms": [
+              "boreal",
+              "instruments"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the support phone ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": []
+          },
+          "errors": [],
+          "selector": [
+            "abstain",
+            "abstain"
+          ],
+          "timings": {
+            "resolver": 8.600065484642982e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 3,
+          "content_pages": 2,
+          "navigation": [
+            {
+              "state": "abstain",
+              "chosen": ""
+            }
+          ],
+          "reader_state": "no_evidence",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:48543/navigation",
+              "final": "http://127.0.0.1:48543/navigation",
+              "status": 200,
+              "bytes": 570,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:48543/empty",
+              "final": "http://127.0.0.1:48543/empty",
+              "status": 200,
+              "bytes": 69,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 2,
+          "pages_fetched": 2,
+          "seconds": 0.0075
+        }
+      }
+    }
+  ],
+  "revision": "a4ac7f2dc842dea184be0417b1f9e8246e8c5f9b",
+  "source_sha256": {
+    "agent/engine.py": "d4669a4ff75be91d1bccfedcd2e16df519c3bb2ffd23f71bbb3f9ecb9d3f5595",
+    "agent/types.py": "42d14170127f88a247c0092e6a65b8151496cc46e7e02d7fee8c7317ffa011f2",
+    "agent/planner.py": "07700e3ff3efa41a3aae9558d281a5a4f3925206fb5f90c6e97fb7fce86120b2",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/network.py": "c37ecb5b4b0fba4fac737954eda24952059922ed620c94b99bcb17daed8c5155",
+    "agent/urls.py": "fa57403f16921c7341c6edc6241cd3957012de426a07538b14c5aaa5d1425a76",
+    "agent/parser.py": "cf9562f0071e58bc66abd6eeebea9cd8cccaf4b9cc5af4ba3a0f3f42033b0798",
+    "agent/normalize.py": "5120ed91dc0c70eff61c41f0242388e45be357d6fdd251042e437a1ccc5f34ff",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent/search.py": "4d416daa16fd4a8d3216a426e81c890659921be192c3627b3c9e6a8e53be1953",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/candidates.py": "34db65b75ef6e0da54230a39b1d11542f3f942bf79d8fc8cbe6076eaf3bb6507",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/evidence.py": "756d35bc17919c32bc8db1ce2b8e609eaae5042bc376466fae862a0792b969cb",
+    "agent/selector.py": "b98605e9c31d93b1486aee4d6e6ab207a70dd9b35e6300ae7bea5b949c7c346d",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/proofs.py": "42920966e3cae090d8a0d53f17270f607a4a6dcb8a96a1af20382d2785e64b74",
+    "agent/navigation.py": "0f849c0c570720114c45c14b0a5286fe409e5d26c2945fdc9f6c1a6922bb7718"
+  },
+  "diagnostic_sha256": "02207af268b1851b84e4bcc29e1db8e54f28d668b68019bfd85ea83e9686cb99"
+}

@@ -1,0 +1,46 @@
+{
+  "status": "FROZEN_BEFORE_FIRST_RUN",
+  "selection_seed": 940218,
+  "n": 100,
+  "eligible_rows": 980,
+  "selection": "Uniform sample of rows excluding previously exposed assessments; no source/topic/difficulty/answerability filtering.",
+  "excluded_assessments": [
+    {
+      "path": "benchmarks/external-simpleqa20.json",
+      "sha256": "d94cd8ccdec7aceedc9895571aa9365ac60a1b5bceeb908b95013974dafdcebf",
+      "n": 20
+    }
+  ],
+  "upstream": "google/simpleqa-verified",
+  "revision": "0dc97e0d28d8233463e005cdc4475cc2a13ba2dc",
+  "upstream_license": "mit",
+  "csv_sha256": "b5db21155444763543fe31b67e7cf28ce2bb225742a5b889421c5f182e2f92f5",
+  "cases_sha256": "4a875aeb98d499d373c66ea03640c105f675d412d7e05aa5ca49c80080f1af64",
+  "production_sha256": {
+    "app.py": "cf4a9bf3a235d42e407405ff1af85d286b7da990b6dfce8243b25e45a5df0f6c",
+    "agent/browser.py": "4d41f295058ea8507b48bf4c79816ec9e4e4a3114347f434a7ca862cc7167f7c",
+    "agent/candidates.py": "1008c4c93758ed9fe81e65ebabc4453cc39e52c98964f80828c461eb2df77be3",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/engine.py": "88ca764b102ae304be75640ca4da55d8253023fbc3d56693d6f1ece575c56d49",
+    "agent/knowledge.py": "b3ee97cf1b5e80f5ed0ffdb0e164f2ac91157f1fe2fd52e678298b73f28a9ee4",
+    "agent/model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+    "agent/model_protocol.py": "8ba6730e160eac47d8231985e1293bb981a5a63ef9b475cf46daf31ef17bdfb0",
+    "agent/model_server.py": "ef0a80fc04887a0451230245d8c974b5daf99520eba06b611906527c9953f01d",
+    "agent/navigation.py": "1b95f1f20c61fd2c0fbcef3035adceb959cc3b7685935335aaab5e9863706adc",
+    "agent/network.py": "f844dab79f4e2897e0a6ecc4014f327a1c40d291f3488a8e7879294fcf0e0f11",
+    "agent/normalize.py": "f418f880472f21012ee943b8a0cd3866c8c09bbf6f6e54e3a0d935f3eec4f6b4",
+    "agent/output.py": "fbd6d8626f123e2fd29b929aa80cb4c289f4f3b745ba38167b38bcd32867e868",
+    "agent/parser.py": "05c945810fed950950e74aa161ebfbf16b7bbc380440e8160b9d9ba6e3e037a0",
+    "agent/planner.py": "6ca621fc0707905379c967b15bea1c5d33d6ce84a94307ec53531ac305adb8c6",
+    "agent/processes.py": "b7e3855b6d2086af9feb3c39a43edf541ef5f8b1c02ab0829d004a34e313f685",
+    "agent/resolvers.py": "de4e045d5c71dccca61dcd6a0c208a718fc11a82a8ee12e0cd25778eba48b205",
+    "agent/search.py": "9a482f079e75d424952463927d627714f095df1de4f013468e7cce43a0fc779f",
+    "agent/selector.py": "76869894eac6376995d23319f13c459dbc688f94034292f0528ec3e2514000df",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/types.py": "f54b6d192b51cf7bd5ce4e3d479234905960781336ccc5a1ea07423293e15a72",
+    "agent/urls.py": "36ab0858cd5de11ad8b76a0eb9c689b4b299dc278aad4da17da549949c19f2b0",
+    "agent/worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f",
+    "agent/__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41"
+  },
+  "adaptation": "Starting URL is the first gold URL. Exact answer/source scoring with predeclared ISO-date and integer grouping aliases; not the official SimpleQA autorater."
+}

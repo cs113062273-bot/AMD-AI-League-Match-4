@@ -1,0 +1,103 @@
+{
+  "source_result": "benchmarks/kaminari-retest-20261021.json",
+  "scorer_source": "https://github.com/kaminariouji/kaminari-web-retrieval/blob/main/eval/run_eval.py",
+  "method": "Original values_match function definitions reproduced verbatim from inspected source; no new inference and no modified answers or gold. Source citations not graded by this value scorer.",
+  "summary": {
+    "n": 13,
+    "common_exact_passed": 6,
+    "published_answer_passed": 11
+  },
+  "rows": [
+    {
+      "id": "wiki-pulp-fiction-director",
+      "expected": "Quentin Tarantino",
+      "answer": "Quentin Tarantino",
+      "common_exact_ok": true,
+      "published_answer_ok": true
+    },
+    {
+      "id": "wiki-eiffel-tower-completed",
+      "expected": "1889",
+      "answer": "1889",
+      "common_exact_ok": true,
+      "published_answer_ok": true
+    },
+    {
+      "id": "wiki-mount-everest-elevation",
+      "expected": "8,848.86",
+      "answer": "8,848.86 m",
+      "common_exact_ok": false,
+      "published_answer_ok": true
+    },
+    {
+      "id": "wiki-machu-picchu-elevation",
+      "expected": "2,430",
+      "answer": "2,430 m",
+      "common_exact_ok": false,
+      "published_answer_ok": true
+    },
+    {
+      "id": "wiki-speed-of-light",
+      "expected": "299,792,458",
+      "answer": "299,792,458",
+      "common_exact_ok": true,
+      "published_answer_ok": true
+    },
+    {
+      "id": "wiki-australia-capital",
+      "expected": "Canberra",
+      "answer": "Canberra",
+      "common_exact_ok": true,
+      "published_answer_ok": true
+    },
+    {
+      "id": "wiki-titanic-sank-date",
+      "expected": "15 April 1912",
+      "answer": "April 15, 1912",
+      "common_exact_ok": false,
+      "published_answer_ok": false
+    },
+    {
+      "id": "wiki-pride-and-prejudice-author",
+      "expected": "Jane Austen",
+      "answer": "Jane Austen",
+      "common_exact_ok": true,
+      "published_answer_ok": true
+    },
+    {
+      "id": "quotes-einstein-attribution",
+      "expected": "Albert Einstein",
+      "answer": "Albert Einstein",
+      "common_exact_ok": true,
+      "published_answer_ok": true
+    },
+    {
+      "id": "quotes-rowling-attribution",
+      "expected": "J.K. Rowling",
+      "answer": "",
+      "common_exact_ok": false,
+      "published_answer_ok": false
+    },
+    {
+      "id": "books-tipping-the-velvet-price",
+      "expected": "53.74",
+      "answer": "£53.74",
+      "common_exact_ok": false,
+      "published_answer_ok": true
+    },
+    {
+      "id": "books-mystery-cheapest-price",
+      "expected": "10.69",
+      "answer": "£10.69",
+      "common_exact_ok": false,
+      "published_answer_ok": true
+    },
+    {
+      "id": "books-sharp-objects-price-url-in-request",
+      "expected": "47.82",
+      "answer": "£47.82",
+      "common_exact_ok": false,
+      "published_answer_ok": true
+    }
+  ]
+}

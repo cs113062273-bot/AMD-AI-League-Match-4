@@ -1,0 +1,55 @@
+{
+  "status": "FROZEN_IMMEDIATELY_BEFORE_FIRST_EXECUTION",
+  "selection_seed": 940219,
+  "n": 100,
+  "eligible_rows": 880,
+  "selection": "Uniform sample of rows excluding previously exposed assessments; no source/topic/difficulty/answerability filtering.",
+  "excluded_assessments": [
+    {
+      "path": "benchmarks/external-simpleqa20.json",
+      "sha256": "d94cd8ccdec7aceedc9895571aa9365ac60a1b5bceeb908b95013974dafdcebf",
+      "n": 20
+    },
+    {
+      "path": "benchmarks/external-simpleqa100.json",
+      "sha256": "4a875aeb98d499d373c66ea03640c105f675d412d7e05aa5ca49c80080f1af64",
+      "n": 100
+    }
+  ],
+  "url_preprocessing": "Split comma-delimited HTTP URLs including individually quoted entries; remove matching list quotes; preserve path spelling and punctuation. Deduplicate exact canonical URLs.",
+  "upstream": "google/simpleqa-verified",
+  "revision": "0dc97e0d28d8233463e005cdc4475cc2a13ba2dc",
+  "upstream_license": "mit",
+  "csv_sha256": "b5db21155444763543fe31b67e7cf28ce2bb225742a5b889421c5f182e2f92f5",
+  "cases_sha256": "9cc11a2c15cb304e9e711f04485c0624561e04612c6a24b82a0bcb6abf7af6be",
+  "production_sha256": {
+    "app.py": "c0267c0441330bd30559f48d2f33916418992b8e21ec8dd1d09ae4773c23b73b",
+    "agent/browser.py": "f7a3d9479ec2ae9bc9fbbcb27efbddaeba9b5dd8639016e827840cc1c7e33cea",
+    "agent/candidates.py": "d6cf00321386d228ac271566f7f9da1955687c1137dde51a544a25dcbb049e99",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/engine.py": "e829a8fb2acecebcf5e7d32686c500713188bd4dad6528e38de24a9bde975623",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+    "agent/model_protocol.py": "8ba6730e160eac47d8231985e1293bb981a5a63ef9b475cf46daf31ef17bdfb0",
+    "agent/model_server.py": "dd0f64e8c47188eda0c68f216d30b066723a41a65f78ee40a6d888eb117e3ef0",
+    "agent/navigation.py": "1b95f1f20c61fd2c0fbcef3035adceb959cc3b7685935335aaab5e9863706adc",
+    "agent/network.py": "def1be3752f81423c313c2dfa83f6703ee063d7e98652cf0d816b423d0e2d9cb",
+    "agent/normalize.py": "f418f880472f21012ee943b8a0cd3866c8c09bbf6f6e54e3a0d935f3eec4f6b4",
+    "agent/output.py": "b983ab2efe31707b1c974344a32dc4b40b708541257695de89cac9e343b073eb",
+    "agent/parser.py": "93ee57c8ac3291c5dcc5397e3b336d8ad6d1a5f6eddf539c312d9d0ea4babc7c",
+    "agent/planner.py": "a7391d76b08d600ff0448bd3df7f17d9a308fca0e74503db0e10e65791745ecf",
+    "agent/processes.py": "677c4372b40d1da0ffc0cf4120ca5b6be2fcf6b6c30f6ec17d0d8fae19e198c1",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/resolvers.py": "d73b077439ac0b4959cca2bc3e3ca75f2ba430ed85917603202fa42dcf7d077c",
+    "agent/search.py": "36e8a39132f3afc2b34f0db4ad89cafba085adaf4882fff02bfa821f6fedbfd2",
+    "agent/selector.py": "da308288f976d5962d99bc043f37c1579bfcf5607ad17a5a9398076a3f88ceaf",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/types.py": "b3741414446cc1c8e6e00c9bffc5d6ca873cf453b6e0330f275a5b11ff02eabf",
+    "agent/urls.py": "fa57403f16921c7341c6edc6241cd3957012de426a07538b14c5aaa5d1425a76",
+    "agent/worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f",
+    "agent/__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41"
+  },
+  "adaptation": "Starting URL is the first gold URL. Exact answer/source scoring with predeclared ISO-date and integer grouping aliases; not the official SimpleQA autorater.",
+  "execution_utc": "2026-10-20T14:17:45Z",
+  "conditions": "Heavy WAN downloads completed. Concurrent local ROCm image assembly/export may use CPU/disk; actual NVIDIA resident remains unchanged."
+}

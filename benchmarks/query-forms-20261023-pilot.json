@@ -1,0 +1,250 @@
+{
+  "scope": "Actual bounded Bing query-form probe from exposed question/hints only. No gold answers or alternate gold sources used in requests; not accuracy.",
+  "rows": [
+    {
+      "id": "simpleqa-37",
+      "form": "compact",
+      "query": "first last name woman whom british linguist bernard comrie married 1985",
+      "status": 200,
+      "error": "",
+      "echo": "first last name woman whom british linguist bernard comrie married 1985 - \u641c\u5c0b",
+      "titles": [
+        "\u91d1\u5c6c\u6c96\u58d3\u96f6\u4ef6 \u5b8c\u6574\u89e3\u6790\uff5c\u7a2e\u985e\u3001\u88fd\u7a0b\u8207\u61c9\u7528\u6307\u5357\uff5c\u798f\u6f6e\u8a18\u5de5\u696d",
+        "\u91d1\u5c6c\u6c96\u58d3\u96f6\u4ef6 \u61c9\u7528\uff0c\u7cbe\u5bc6\u6a21\u5177\u7814\u767c\u88fd\u9020\uff5c \u6c96\u58d3 \u5c08\u696d\u88fd\u9020\u8077\u4eba-\u798f\u6f6e\u8a18\u5de5\u696d",
+        "\u632f\u767c\u5be6\u696d | \u6c96\u58d3\u91d1\u5c6c\u96f6\u4ef6 \u4e00\u7ad9\u5f0f\u89e3\u6c7a\u65b9\u6848\u4f9b\u61c9\u5546 - Cheng Fwa",
+        "\u8cbf\u9d3b \u91d1\u5c6c\u6c96\u58d3 \uff5cISO9001\u3001IATF16949\u8a8d\u8b49\u5ee0 - \u91d1\u5c6c\u6c96\u58d3 - \u8cbf\u9d3b\u5de5\u696d\u80a1\u4efd \u2026",
+        "\u91d1\u5c6c\u6c96\u58d3 \u4ee3\u5de5\u5ee0\uff5c\u9023\u7e8c\u6a21\u30fb\u4f9d\u5716\u958b\u6a21\u30fb\u6c7d\u6a5f\u8eca \u96f6\u4ef6\u6c96\u58d3 \uff5c\u6b23\u9686\u71c1\u5de5\u696d"
+      ],
+      "capture_path": "research/query-forms-20261023/simpleqa-37-compact.json",
+      "capture_sha256": "8a563ea5eb5cbb530cbb8a66d346a92c08131699e0ec442cb07e723e8c0d76bf"
+    },
+    {
+      "id": "simpleqa-37",
+      "form": "short",
+      "query": "bernard comrie spouse",
+      "status": 200,
+      "error": "",
+      "echo": "bernard comrie spouse - \u641c\u5c0b",
+      "titles": [
+        "\u8001\u5e08\uff1a\u8fd9\u6b21\u8003\u8bd5\u6ca1\u6709\u8fd9\u4e48\u96be_\u54d4\u54e9\u54d4\u54e9_bilibili",
+        "4444444444444444444444444444444444444444444444444444444444\u2026",
+        "\u7c73\u65af\u8fbe\u5165\u9a7bb\u7ad9 _\u54d4\u54e9\u54d4\u54e9_bilibili",
+        "the four abnormal events - YouTube",
+        "4444444444444444444444444444444444444444444444444444444444\u2026"
+      ],
+      "capture_path": "research/query-forms-20261023/simpleqa-37-short.json",
+      "capture_sha256": "4b08be281b428650f986ede49e6694fcdf9ece5ef0302fce41141202c988f24d"
+    },
+    {
+      "id": "simpleqa-37",
+      "form": "exact",
+      "query": "\"bernard comrie spouse\"",
+      "status": 200,
+      "error": "",
+      "echo": "\"bernard comrie spouse\" - \u641c\u5c0b",
+      "titles": [
+        "[\u8a0e\u8ad6] Katfile??? - \u770b\u677f Free_box - \u6279\u8e22\u8e22\u5be6\u696d\u574a",
+        "[\u5fc3\u60c5] \u6709\u9023\u9396\u65e9\u9910\u5e97\u63a8\u85a6\u55ce? - \u770b\u677f WomenTalk - \u6279\u8e22\u8e22\u5be6\u696d\u574a",
+        "\u3010\u8a0e\u8ad6\u3011\u4e8c\u5e74\u7d1a\u5347\u968e\u6e2c\u9a57\u7bc7\u7ae0 (\u5fc3\u81df\u7834\u88c2)\u6574\u7406 (\u91cd\u96f7) (\u4e8c\u66f4-\u5b78\u5f1f\u59b9\u8cc7\u8a0a \u2026",
+        "\u8acb\u6ce8\u610f\u4e0a\u6d2a\u723a\u8981\u5c0f\u5fc3 - Mobile01",
+        "\u3010\u5546\u6d1e\u3011132\u7d1a +7 \u7a7a\u9593\u5ff5\u73e0\u4efb\u52d9 @\u52c7 Online \u7cbe\u83ef\u5340 - \u5df4\u54c8\u59c6\u7279"
+      ],
+      "capture_path": "research/query-forms-20261023/simpleqa-37-exact.json",
+      "capture_sha256": "dda5bb8ecb7d5804e5ca1d7464df15ef3acd7db440e6f0155cd813a3e6151f91"
+    },
+    {
+      "id": "simpleqa-395",
+      "form": "compact",
+      "query": "two football teams mentioned libel case against saturday evening post 1963",
+      "status": 200,
+      "error": "",
+      "echo": "two football teams mentioned libel case against saturday evening post 1963 - \u641c\u5c0b",
+      "titles": [
+        "2 - Wikipedia",
+        "TWO \u4e2d\u6587 (\u7e41\u9ad4)\u7ffb\u8b6f\uff1a\u528d\u6a4b\u8a5e\u5178 - Cambridge Dictionary",
+        "TWO | English meaning - Cambridge Dictionary",
+        "\u6ac3\u6aaf\u6307\u6578( TWO ) - \u5373\u6642\u8d70\u52e2\uff06\u6280\u8853\u5206\u6790 - \u53f0\u80a1 | \u73a9\u80a1\u7db2",
+        "2 ( number ) - Simple English Wikipedia, the free encyclopedia"
+      ],
+      "capture_path": "research/query-forms-20261023/simpleqa-395-compact.json",
+      "capture_sha256": "9e6e3432cb19443220e372bbab55b325ed744a052e056aa119fcf10452e7f2be"
+    },
+    {
+      "id": "simpleqa-395",
+      "form": "short",
+      "query": "\"The Saturday Evening Post\" two football teams mentioned libel case against saturday evening post 1963",
+      "status": 200,
+      "error": "",
+      "echo": "\"The Saturday Evening Post\" two football teams mentioned libel case against saturday evening post 1963 - \u641c\u5c0b",
+      "titles": [
+        "TikTok\u8001\u5916\u96c6\u4f53\u53d8\u300c\u7cbe\u795e\u4e2d\u56fd\u4eba\u300d\uff0c\u559d\u70ed\u6c34\u3001\u7ec3\u4e60\u516b\u6bb5\u9526\uff0c\u8fd9\u80a1\u98ce\u6f6e\u4e3a \u2026",
+        "tiktok\u8fd0\u8425\u5168\u653b\u7565:\u4ece\u4e0b\u8f7d\u5230\u8d5a\u94b1\u6d41\u7a0b\u8be6\u89e3 (10000\u5b57\u7eaf\u5e72\u8d27)",
+        "Tiktok | dafont.com",
+        "New fonts | dafont.com",
+        "\u7535\u5546\u8fd0\u8425\u6559\u7a0b - \u6dd8\u5e16 - \u543e\u7231\u7834\u89e3 - 52pojie.cn"
+      ],
+      "capture_path": "research/query-forms-20261023/simpleqa-395-short.json",
+      "capture_sha256": "43a646655d207574de0b1253d46f8d324b1147ddafbdb4c344536509fba6e76c"
+    },
+    {
+      "id": "simpleqa-395",
+      "form": "exact",
+      "query": "\"\"The Saturday Evening Post\" two football teams mentioned libel case against saturday evening post 1963\"",
+      "status": 200,
+      "error": "",
+      "echo": "\"\"The Saturday Evening Post\" two football teams mentioned libel case against saturday evening post 1963\" - \u641c\u5c0b",
+      "titles": [
+        "Saturday \u4e2d\u6587 (\u7e41\u9ad4)\u7ffb\u8b6f\uff1a\u528d\u6a4b\u8a5e\u5178 - Cambridge Dictionary",
+        "Saturday \u5728\u528d\u6a4b\u82f1\u8a9e\u8a5e\u5178\u4e2d\u7684\u89e3\u91cb\u53ca\u7ffb\u8b6f - Cambridge Dictionary",
+        "Saturday - Wikipedia",
+        "\u8bcd\u6e90\u6545\u4e8b\uff1a\u4e00\u5468\u4e03\u65e5\u82f1\u6587\u540d\u79f0\u7684\u7531\u6765 - \u641c\u72d0",
+        "Saturday - Yahoo\u5b57\u5178\u641c\u5c0b\u7d50\u679c"
+      ],
+      "capture_path": "research/query-forms-20261023/simpleqa-395-exact.json",
+      "capture_sha256": "1bea1a872d054eeaece4d5a553df2fc24ed9c120d157a86dcff195db011e1572"
+    },
+    {
+      "id": "simpleqa-32",
+      "form": "compact",
+      "query": "day month year carrie underwood s album cry pretty certified gold riaa",
+      "status": 200,
+      "error": "",
+      "echo": "day month year carrie underwood s album cry pretty certified gold riaa - \u641c\u5c0b",
+      "titles": [
+        "the four abnormal events - YouTube",
+        "\u8001\u5e08\uff1a\u8fd9\u6b21\u8003\u8bd5\u6ca1\u6709\u8fd9\u4e48\u96be_\u54d4\u54e9\u54d4\u54e9_bilibili",
+        "\u26a1\ufe0f \u8d70 \u53ec \u706b \u7136 \u5927 \u4e71 \u6597 2 \u26a1\ufe0f\uff08Blue\u4f53\u9a8c\u9547\u9b42\u66f2\u7279\u522b\u7248\uff09_\u54d4\u54e9\u54d4\u54e9bilibili",
+        "4444444444444444444444444444444444444444444444444444444444\u2026",
+        "\u4e00\u5c40\u4e0b\u67654\u628aACE44\u6740657\u5f97\u5206\u662f\u4ec0\u4e48\u4f53\u9a8c valorant - \u7231\u5947\u827a"
+      ],
+      "capture_path": "research/query-forms-20261023/simpleqa-32-compact.json",
+      "capture_sha256": "a33aa0dbae4f38f59e5a34c8726ea20850342685c8542bd54a3ac6b11cd0aa73"
+    },
+    {
+      "id": "simpleqa-32",
+      "form": "short",
+      "query": "carrie underwood cry pretty album",
+      "status": 200,
+      "error": "",
+      "echo": "carrie underwood cry pretty album - \u641c\u5c0b",
+      "titles": [
+        "\u3010\u9592\u804a\u3011\u8cfd\u5b63\u9650\u5b9a\u8679\u5149 @\u4f0a\u83ab \u54c8\u5566\u677f - \u5df4\u54c8\u59c6\u7279",
+        "\u3010\u5fc3\u5f97\u3011\u5e33\u865f\u4e0d\u5c0f\u5fc3\u88ab\u9396\u5b9a\uff0c\u89e3\u6cd5 @\u65b0\u6953\u4e4b\u8c37 \u54c8\u5566\u677f - \u5df4\u54c8\u59c6\u7279",
+        "\u3010\u554f\u984c\u3011\u95dc\u65bc\u88ab\u8aa4\u9396&\u5982\u4f55\u5feb\u901f\u89e3\u9396 \u5fc3\u6b77\u8def\u7a0b @MapleStory Worlds \u54c8 \u2026",
+        "\u3010\u60c5\u5831\u3011(Windows Phone) \u5929\u7136\u707d\u5bb3\u505c\u73ed\u505c\u8ab2\u67e5\u8a62 @Windows Phone",
+        "\u3010\u63d0\u9192\u3011\u65b0\u5317\u5e02\u660e\u5929\u505c\u73ed\u505c\u8ab2 \u8acb\u5404\u4f4d\u677f\u53cb\u6ce8\u610f\u81ea\u8eab\u5b89\u5168"
+      ],
+      "capture_path": "research/query-forms-20261023/simpleqa-32-short.json",
+      "capture_sha256": "294930616ce31f32a00c5a42794f4701a922b5cb0c10235deb4dbdc4815ad07d"
+    },
+    {
+      "id": "simpleqa-32",
+      "form": "exact",
+      "query": "\"carrie underwood cry pretty album\"",
+      "status": 200,
+      "error": "",
+      "echo": "\"carrie underwood cry pretty album\" - \u641c\u5c0b",
+      "titles": [
+        "\u4fee\u6b63\u6a94\u6848\u4e0b\u8f09\u932f\u8aa4 - Google Chrome\u8aaa\u660e",
+        "\u5373\u6642\u7ffb\u8b6f\u529f\u80fd\uff1a\u8046\u807d\u8a9e\u97f3\u7ffb\u8b6f - Android \u624b\u6a5f\u548c\u5e73\u677f\u96fb\u8166 - Google \u2026",
+        "\u6731\u745f\u91cc\u8bfa\u7684\u9884\u8a00\u7684\u771f\u5b9e\u6027\u5982\u4f55\uff1f - \u77e5\u4e4e",
+        "\u600e\u6837\u66f4\u6539\u8c37\u6b4c\u7ffb\u8bd1\u7684\u7537\u5973\u58f0\uff1f - \u77e5\u4e4e",
+        "Google Translate\u8aaa\u660e"
+      ],
+      "capture_path": "research/query-forms-20261023/simpleqa-32-exact.json",
+      "capture_sha256": "b0ddf201e74339a7f2344de2c974b72678c540b9504f19e45bec1fb988e592f2"
+    }
+  ],
+  "events": [
+    {
+      "url": "https://www.bing.com/search?q=bernard+comrie+spouse",
+      "final": "https://www.bing.com/search?q=bernard+comrie+spouse",
+      "status": 200,
+      "bytes": 125089,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://www.bing.com/search?q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+      "final": "https://www.bing.com/search?q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+      "status": 200,
+      "bytes": 124661,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://www.bing.com/search?q=%22The+Saturday+Evening+Post%22+two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+      "final": "https://www.bing.com/search?q=%22The+Saturday+Evening+Post%22+two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+      "status": 200,
+      "bytes": 122549,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://www.bing.com/search?q=%22bernard+comrie+spouse%22",
+      "final": "https://www.bing.com/search?q=%22bernard+comrie+spouse%22",
+      "status": 200,
+      "bytes": 122233,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://www.bing.com/search?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985",
+      "final": "https://www.bing.com/search?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985",
+      "status": 200,
+      "bytes": 119922,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://www.bing.com/search?q=%22%22The+Saturday+Evening+Post%22+two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963%22",
+      "final": "https://www.bing.com/search?q=%22%22The+Saturday+Evening+Post%22+two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963%22",
+      "status": 200,
+      "bytes": 126575,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://www.bing.com/search?q=carrie+underwood+cry+pretty+album",
+      "final": "https://www.bing.com/search?q=carrie+underwood+cry+pretty+album",
+      "status": 200,
+      "bytes": 124218,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://www.bing.com/search?q=%22carrie+underwood+cry+pretty+album%22",
+      "final": "https://www.bing.com/search?q=%22carrie+underwood+cry+pretty+album%22",
+      "status": 200,
+      "bytes": 124350,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://www.bing.com/search?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa",
+      "final": "https://www.bing.com/search?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa",
+      "status": 200,
+      "bytes": 126755,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    }
+  ]
+}

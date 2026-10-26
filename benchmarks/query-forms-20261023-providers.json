@@ -1,0 +1,246 @@
+{
+  "scope": "Bounded actual provider availability probe, one exposed query without gold values. Not accuracy.",
+  "rows": [
+    {
+      "provider": "yahoo",
+      "query": "Bernard Comrie spouse",
+      "status": 0,
+      "error": "redirect_loop",
+      "title": "",
+      "links": [],
+      "capture_path": "research/query-forms-20261023/yahoo.json",
+      "capture_sha256": "e8bab1c8f29c0f32de7bf273882ad912e0ed90b9a424aaf0724e3e9e36fa77d4"
+    },
+    {
+      "provider": "mojeek",
+      "query": "Bernard Comrie spouse",
+      "status": 200,
+      "error": "",
+      "title": "Captcha",
+      "links": [
+        [
+          "Blog",
+          "https://blog.mojeek.com/"
+        ],
+        [
+          "Community",
+          "https://community.mojeek.com/"
+        ],
+        [
+          "Newsletter",
+          "https://buttondown.email/Mojeek"
+        ],
+        [
+          "Blog",
+          "https://blog.mojeek.com/"
+        ]
+      ],
+      "capture_path": "research/query-forms-20261023/mojeek.json",
+      "capture_sha256": "6a057a5c991e1bea8c53a788d55a2a939ff508b3e64c4e5e9fefe884c13fc158"
+    },
+    {
+      "provider": "brave",
+      "query": "Bernard Comrie spouse",
+      "status": 429,
+      "error": "http_429",
+      "title": "",
+      "links": [],
+      "capture_path": "research/query-forms-20261023/brave.json",
+      "capture_sha256": "c75986e00720a8f1d1927b9af9bca4011148ac036ed39441e62efdde535e30fa"
+    },
+    {
+      "provider": "bing-us",
+      "query": "Bernard Comrie spouse",
+      "status": 200,
+      "error": "",
+      "title": "Bernard Comrie spouse - Search",
+      "links": [
+        [
+          "Web",
+          "https://www.bing.com/ck/a?!&&p=3c743aa5381f024b919b6cc9f647af509355f79f8b014d2d44147fdad574ddd5JmltdHM9MTc5MjYyNzIwMA&ptn=3&ver=2&hsh=4&fclid=1dfd93db-85bd-6853-2e8d-842084736959&u=a1L3NlYXJjaD9xPUJlcm5hcmQrQ29tcmllK3Nwb3VzZSZ3ZWJzY3A9MSZGT1JNPUhEUldTQw&ntb=1"
+        ],
+        [
+          "Images",
+          "https://www.bing.com/ck/a?!&&p=078a7d3dd7bed4310fd841465160a856e4ceff3a9395c78744f110e6629b7443JmltdHM9MTc5MjYyNzIwMA&ptn=3&ver=2&hsh=4&fclid=1dfd93db-85bd-6853-2e8d-842084736959&u=a1L2ltYWdlcy9zZWFyY2g_cT1CZXJuYXJkK0NvbXJpZStzcG91c2UmRk9STT1IRFJTQzI&ntb=1"
+        ],
+        [
+          "Videos",
+          "https://www.bing.com/ck/a?!&&p=0b1beea8fd3a13660344270890a7c34a6fac447dbc5c8ddf3c77e5c1158e32c8JmltdHM9MTc5MjYyNzIwMA&ptn=3&ver=2&hsh=4&fclid=1dfd93db-85bd-6853-2e8d-842084736959&u=a1L3ZpZGVvcy9zZWFyY2g_cT1CZXJuYXJkK0NvbXJpZStzcG91c2UmRk9STT1IRFJTQzM&ntb=1"
+        ],
+        [
+          "Maps",
+          "https://www.bing.com/ck/a?!&&p=b38e421a024693e49fbdc26d7d9639de0c414764372016ae4f19b10c54009f5fJmltdHM9MTc5MjYyNzIwMA&ptn=3&ver=2&hsh=4&fclid=1dfd93db-85bd-6853-2e8d-842084736959&u=a1L21hcHM_cT1CZXJuYXJkK0NvbXJpZStzcG91c2UmRk9STT1IRFJTQzQ&ntb=1"
+        ],
+        [
+          "News",
+          "https://www.bing.com/ck/a?!&&p=27ebd37d461ee5490d95275da504e965e57be5187d8c420366ada4218289d106JmltdHM9MTc5MjYyNzIwMA&ptn=3&ver=2&hsh=4&fclid=1dfd93db-85bd-6853-2e8d-842084736959&u=a1L25ld3Mvc2VhcmNoP3E9QmVybmFyZCtDb21yaWUrc3BvdXNlJkZPUk09SERSU0M2&ntb=1"
+        ],
+        [
+          "Shopping",
+          "https://www.bing.com/ck/a?!&&p=f1a09274a365f7c8411f270b3fa5524def3068e1ec4aa3ccbfe0d08bc255ee97JmltdHM9MTc5MjYyNzIwMA&ptn=3&ver=2&hsh=4&fclid=1dfd93db-85bd-6853-2e8d-842084736959&u=a1L3Nob3AvdG9waWNzP3E9QmVybmFyZCtDb21yaWUrc3BvdXNlJkZPUk09U0hPUFRC&ntb=1"
+        ],
+        [
+          "Flights",
+          "https://www.bing.com/ck/a?!&&p=7323c1f00f648a7d85fa8b1dd0276b7eb02b728dfc97f2dc132afd0672e50da1JmltdHM9MTc5MjYyNzIwMA&ptn=3&ver=2&hsh=4&fclid=1dfd93db-85bd-6853-2e8d-842084736959&u=a1L3RyYXZlbC9zZWFyY2g_cT1CZXJuYXJkK0NvbXJpZStzcG91c2UmbT1mbGlnaHRzJkZPUk09RkJTQ09Q&ntb=1"
+        ],
+        [
+          "Privacy and Cookies",
+          "https://www.bing.com/ck/a?!&&p=162336fb281b1b73a2132247a02819fcf0b80eb638d343115069db9f66cf7b3eJmltdHM9MTc5MjYyNzIwMA&ptn=3&ver=2&hsh=4&fclid=1dfd93db-85bd-6853-2e8d-842084736959&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSWQ9NTIxODM5&ntb=1"
+        ],
+        [
+          "Legal",
+          "https://www.bing.com/ck/a?!&&p=064814ae51bb91699f7652f8dd07670ddfc08f73bde52623bd8a867829ce7129JmltdHM9MTc5MjYyNzIwMA&ptn=3&ver=2&hsh=4&fclid=1dfd93db-85bd-6853-2e8d-842084736959&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSUQ9MjQ2MzM4&ntb=1"
+        ],
+        [
+          "Advertise",
+          "https://www.bing.com/ck/a?!&&p=bb8a82f3fffc5a41b1990b9057c38d5aa29f5dc8f3218ab70267122340bbc4beJmltdHM9MTc5MjYyNzIwMA&ptn=3&ver=2&hsh=4&fclid=1dfd93db-85bd-6853-2e8d-842084736959&u=a1aHR0cHM6Ly9nby5taWNyb3NvZnQuY29tL2Z3bGluay8_bGlua2lkPTg2ODkyMg&ntb=1"
+        ],
+        [
+          "About our ads",
+          "https://www.bing.com/ck/a?!&&p=7ce56180ceed3b68457cbfb8e3860762cdaab8ea2f52ca5ecd0c293d0ed3414eJmltdHM9MTc5MjYyNzIwMA&ptn=3&ver=2&hsh=4&fclid=1dfd93db-85bd-6853-2e8d-842084736959&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSUQ9Mjg2NzU5&ntb=1"
+        ],
+        [
+          "Help",
+          "https://www.bing.com/ck/a?!&&p=fce70fea32f4aafc2cebe7db0ea963ce3d0f3b13aa43f86c85253b2019146a63JmltdHM9MTc5MjYyNzIwMA&ptn=3&ver=2&hsh=4&fclid=1dfd93db-85bd-6853-2e8d-842084736959&u=a1aHR0cHM6Ly9zdXBwb3J0Lm1pY3Jvc29mdC5jb20vdG9waWMvODJkMjA3MjEtMmQ2Zi00MDEyLWExM2QtZDE5MTBjY2YyMDNm&ntb=1"
+        ]
+      ],
+      "capture_path": "research/query-forms-20261023/bing-us.json",
+      "capture_sha256": "ebd837fbfbe8c8da519c6f8a3ef5bcf155e8523ee99670bcd8165e4e02ed5e07"
+    },
+    {
+      "provider": "google-basic",
+      "query": "Bernard Comrie spouse",
+      "status": 200,
+      "error": "",
+      "title": "Google Search",
+      "links": [
+        [
+          "\u9019\u88e1",
+          "/httpservice/retry/enablejs?sei=jbnaasmzMKvk2roPxcbigQU"
+        ],
+        [
+          "\u610f\u898b\u56de\u994b",
+          "https://support.google.com/websearch"
+        ]
+      ],
+      "capture_path": "research/query-forms-20261023/google-basic.json",
+      "capture_sha256": "a2c01af26278d33149e9a8fc6c210b815452dc192319c41474e80af5908c9de9"
+    },
+    {
+      "provider": "duck-lite",
+      "query": "Bernard Comrie spouse",
+      "status": 200,
+      "error": "",
+      "title": "Bernard Comrie spouse at DuckDuckGo",
+      "links": [
+        [
+          "Bernard Comrie - Wikipedia",
+          "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBernard_Comrie&rut=822a3b208c644a11c0ca19b09f1062a26c17c30e298cf12bfe93cfb2402892e5"
+        ],
+        [
+          "Theresa Comrie (1948 - 1990) - Genealogy - Geni.com",
+          "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.geni.com%2Fpeople%2FTheresa%2DComrie%2F6000000014465331859&rut=a44bee2cc802a36352e591cf98eed4ffdd8ae1a17ab42efea745dfbf39ddfbdb"
+        ],
+        [
+          "Bernard Comrie - Ancestry\u00ae",
+          "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.ancestry.com%2Fgenealogy%2Frecords%2Fbernard%2Dcomrie%2D24%2D4qsy0r&rut=4780590844c39264d539d1851a91291f92208c54fee82b6c4e9db6d47e9a0c87"
+        ],
+        [
+          "Bernard Comrie \u2014 Wikip\u00e9dia",
+          "//duckduckgo.com/l/?uddg=https%3A%2F%2Ffr.wikipedia.org%2Fwiki%2FBernard_Comrie&rut=ff94577f269c85fa411565ccc06188b659ceb27f925a6fe32ef21737808fe154"
+        ],
+        [
+          "Bernard Comrie - Wikipedia",
+          "//duckduckgo.com/l/?uddg=https%3A%2F%2Fde.wikipedia.org%2Fwiki%2FBernard_Comrie&rut=ea8de397a096def58c724812f127c990108c1c999e4a21742680ab6eb887b338"
+        ],
+        [
+          "Bill Comrie - Wikipedia",
+          "//duckduckgo.com/l/?uddg=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FBill_Comrie&rut=c9062044d6563e716c613dd25b1ffb411c6ac25abbcedea19bf906188aab4eb8"
+        ],
+        [
+          "Bernard Comrie, Max Planck Institute for Evolutionary Anthropology ...",
+          "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.elinguistics.org%2Fstudentportal%2Flinguists%2Fcomrie.cfm&rut=620f7550b58f45cde67623a21193329684da973c67afe309a748b77b8d82d87c"
+        ],
+        [
+          "Bernard Comrie | Department of Linguistics",
+          "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.linguistics.ucsb.edu%2Fpeople%2Fbernard%2Dcomrie&rut=189ee3598c85fe9fcd736b74db5338b88728738f3227f25c0a4e47cdb56cd36a"
+        ],
+        [
+          "Ministry of Interior",
+          "//duckduckgo.com/l/?uddg=https%3A%2F%2Finterior.gov.ng%2Fhuman%2Dresource%2Dmanagement%2F%3FSE%3DBernard%2520Comrie%2520spouse%25201985%2520marriage%2520personal%2520life%2520biography&rut=fed0b862a010a955a37b0d64861abe47940454ac63dab77af2d4b6b02711e238"
+        ],
+        [
+          "Biography of Bernard Comrie",
+          "//duckduckgo.com/l/?uddg=https%3A%2F%2Fwww.biographies.net%2Fpeople%2Fen%2Fbernard_comrie&rut=860957871a8d326d8012a28c79603ce183311ed9992a0b43c858b37eaab35612"
+        ]
+      ],
+      "capture_path": "research/query-forms-20261023/duck-lite.json",
+      "capture_sha256": "b45450697f06dfe83920b72a5d2886cad3beba79c541d70dfe3eb3e47b5e556d"
+    }
+  ],
+  "events": [
+    {
+      "url": "https://www.google.com/search?gbv=1&q=Bernard+Comrie+spouse",
+      "final": "https://www.google.com/search?gbv=1&q=Bernard+Comrie+spouse",
+      "status": 200,
+      "bytes": 92293,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://www.bing.com/search?mkt=en-US&setlang=en-US&q=Bernard+Comrie+spouse",
+      "final": "https://www.bing.com/search?mkt=en-US&setlang=en-US&q=Bernard+Comrie+spouse",
+      "status": 200,
+      "bytes": 90342,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://search.yahoo.com/search?p=Bernard+Comrie+spouse",
+      "final": "https://search.yahoo.com/search?p=Bernard+Comrie+spouse",
+      "status": 0,
+      "bytes": 0,
+      "error": "redirect_loop",
+      "redirects": [
+        "https://search.yahoo.com/search?p=Bernard+Comrie+spouse",
+        "https://search.yahoo.com/_bv/v.gif?orig=%2Fsearch%3Fp%3DBernard%2BComrie%2Bspouse&_bvc=1.9bb9cf40efff75594c3d0e90c9df3462677c731661d02698e47434faf25da513"
+      ],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://search.brave.com/search?q=Bernard+Comrie+spouse",
+      "final": "https://search.brave.com/search?q=Bernard+Comrie+spouse",
+      "status": 429,
+      "bytes": 0,
+      "error": "http_429",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://www.mojeek.com/search?q=Bernard+Comrie+spouse",
+      "final": "https://www.mojeek.com/search?q=Bernard+Comrie+spouse",
+      "status": 200,
+      "bytes": 5510,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://lite.duckduckgo.com/lite/?q=Bernard+Comrie+spouse",
+      "final": "https://lite.duckduckgo.com/lite/?q=Bernard+Comrie+spouse",
+      "status": 200,
+      "bytes": 24084,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    }
+  ]
+}

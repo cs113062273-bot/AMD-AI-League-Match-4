@@ -1,0 +1,35 @@
+Dataset attribution
+
+Google SimpleQA Verified, authored by Lukas Haas, Gal Yona, Giovanni D'Antonio,
+Sasha Goldshtein and Dipanjan Das (Google DeepMind / Google Research), 2025.
+Builds on SimpleQA by Wei et al. (OpenAI), 2024.
+Dataset: https://huggingface.co/datasets/google/simpleqa-verified
+Pinned revision: 0dc97e0d28d8233463e005cdc4475cc2a13ba2dc
+Technical report: https://arxiv.org/abs/2509.07968
+
+The pinned upstream card declares the MIT license. Its original text is retained
+in SIMPLEQA_UPSTREAM_CARD.md. The derived assessment changes selection, starting
+URL presentation and exact-scoring aliases; it does not claim the official
+autorater or leaderboard score. Original questions, answers and source URLs
+remain attributed to their upstream authors. No replacement copyright ownership
+is asserted by Aperture.
+
+MIT permission terms
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

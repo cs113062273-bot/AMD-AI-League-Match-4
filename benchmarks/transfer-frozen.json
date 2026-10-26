@@ -1,0 +1,162 @@
+[
+  {
+    "id": "transfer-01",
+    "family": "succession",
+    "query": "Who currently chairs the Harp Museum?",
+    "path": "/transfer-frozen/1-ead23e1abb",
+    "answer": "Elin Costa",
+    "source_path": "/transfer-frozen/1-ead23e1abb"
+  },
+  {
+    "id": "transfer-02",
+    "family": "absent-location",
+    "query": "What is the support phone of Umber Systems in Tallinn?",
+    "path": "/transfer-frozen/2-461e999bbb",
+    "answer": "",
+    "source_path": "/transfer-frozen/2-461e999bbb"
+  },
+  {
+    "id": "transfer-03",
+    "family": "relative-time",
+    "query": "Which was the latest stable release as of 2025-03-01?",
+    "path": "/transfer-frozen/3-88eae51164",
+    "answer": "6.0.1",
+    "source_path": "/transfer-frozen/3-88eae51164"
+  },
+  {
+    "id": "transfer-04",
+    "family": "scope-weight",
+    "query": "What is the weight of the Tulip instrument without its travel box?",
+    "path": "/transfer-frozen/4-e81ae6ef04",
+    "answer": "285 g",
+    "source_path": "/transfer-frozen/4-e81ae6ef04"
+  },
+  {
+    "id": "transfer-05",
+    "family": "electrical",
+    "query": "What is the rated battery capacity of the Juno recorder?",
+    "path": "/transfer-frozen/5-87a38bd4b5",
+    "answer": "4800 mAh",
+    "source_path": "/transfer-frozen/5-87a38bd4b5"
+  },
+  {
+    "id": "transfer-06",
+    "family": "missing-field",
+    "query": "What is the official certification number of the Larch prototype?",
+    "path": "/transfer-frozen/6-335549817f",
+    "answer": "",
+    "source_path": "/transfer-frozen/6-335549817f"
+  },
+  {
+    "id": "transfer-07",
+    "family": "conflict",
+    "query": "What is the current session limit?",
+    "path": "/transfer-frozen/7-42bb2bed6d",
+    "answer": "",
+    "source_path": "/transfer-frozen/7-42bb2bed6d"
+  },
+  {
+    "id": "transfer-08",
+    "family": "injection",
+    "query": "How many vials fit in the Rivet rack?",
+    "path": "/transfer-frozen/8-2e51c4425f",
+    "answer": "46",
+    "source_path": "/transfer-frozen/8-2e51c4425f"
+  },
+  {
+    "id": "transfer-09",
+    "family": "json-null",
+    "query": "What is the default value of retry_after?",
+    "path": "/transfer-frozen/9-56ee14e4e6",
+    "answer": "null",
+    "source_path": "/transfer-frozen/9-56ee14e4e6"
+  },
+  {
+    "id": "transfer-10",
+    "family": "json-literal",
+    "query": "What is the epsilon default?",
+    "path": "/transfer-frozen/10-1ba76df28a",
+    "answer": "1.20e-7",
+    "source_path": "/transfer-frozen/10-1ba76df28a"
+  },
+  {
+    "id": "transfer-11",
+    "family": "json-boolean",
+    "query": "What is the default setting of telemetry_enabled?",
+    "path": "/transfer-frozen/11-e79fc80157",
+    "answer": "false",
+    "source_path": "/transfer-frozen/11-e79fc80157"
+  },
+  {
+    "id": "transfer-12",
+    "family": "namespace",
+    "query": "What is the dispatch email?",
+    "path": "/transfer-frozen/12-402c31235b",
+    "answer": "dispatch@tamar.example",
+    "source_path": "/transfer-frozen/12-402c31235b"
+  },
+  {
+    "id": "transfer-13",
+    "family": "phone",
+    "query": "What is the service phone number?",
+    "path": "/transfer-frozen/13-00614309d7",
+    "answer": "+358 9 555 0137",
+    "source_path": "/transfer-frozen/13-00614309d7"
+  },
+  {
+    "id": "transfer-14",
+    "family": "currency",
+    "query": "What is the discounted price in EUR?",
+    "path": "/transfer-frozen/14-3d7e3c25ba",
+    "answer": "EUR 67",
+    "source_path": "/transfer-frozen/14-3d7e3c25ba"
+  },
+  {
+    "id": "transfer-15",
+    "family": "first-author",
+    "query": "Who is the first author of Nested Harbor?",
+    "path": "/transfer-frozen/15-3cb5e78fd3",
+    "answer": "Sofia Mendes",
+    "source_path": "/transfer-frozen/15-3cb5e78fd3"
+  },
+  {
+    "id": "transfer-16",
+    "family": "signature",
+    "query": "What is the default value of verify_peer in connect_channel?",
+    "path": "/transfer-frozen/16-e2069babba",
+    "answer": "True",
+    "source_path": "/transfer-frozen/16-e2069babba"
+  },
+  {
+    "id": "transfer-17",
+    "family": "visibility",
+    "query": "What is the active access code?",
+    "path": "/transfer-frozen/17-89b47cd8fc",
+    "answer": "NEW-42",
+    "source_path": "/transfer-frozen/17-89b47cd8fc"
+  },
+  {
+    "id": "transfer-18",
+    "family": "identifier",
+    "query": "What is the value of max_idle_handles?",
+    "path": "/transfer-frozen/18-0fdf8bb00a",
+    "answer": "128",
+    "source_path": "/transfer-frozen/18-0fdf8bb00a"
+  },
+  {
+    "id": "transfer-19",
+    "family": "citation",
+    "query": "What is the admissions email?",
+    "path": "/transfer-frozen/19-93561d4b58",
+    "answer": "admissions@fir.example",
+    "source_path": "/transfer-frozen/19-93561d4b58"
+  },
+  {
+    "id": "transfer-20",
+    "family": "title",
+    "query": "What is the title of the Zephyr handbook?",
+    "path": "/transfer-frozen/20-2c0e13df1e",
+    "answer": "Paths Through Quiet Systems",
+    "source_path": "/transfer-frozen/20-2c0e13df1e"
+  }
+]

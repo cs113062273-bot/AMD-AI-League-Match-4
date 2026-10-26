@@ -1,0 +1,101 @@
+id,family,answer,sources,expected_answer,expected_source,answer_ok,source_ok,joint_ok,seconds,error,failure_category,malformed_output
+director-0,director,Nora Weber,['http://127.0.0.1:45605/holdout/director/0'],['Nora Weber'],http://127.0.0.1:45605/holdout/director/0,True,True,True,0.9336015000008047,,,False
+headquarters-0,headquarters,"Taipei, Taiwan",['http://127.0.0.1:45605/holdout/headquarters/0'],"['Taipei, Taiwan']",http://127.0.0.1:45605/holdout/headquarters/0,True,True,True,1.1963186000357382,,,False
+sale-eur-0,sale-eur,"EUR 81,90",['http://127.0.0.1:45605/holdout/sale-eur/0'],"['EUR 81,90']",http://127.0.0.1:45605/holdout/sale-eur/0,True,True,True,1.3278147000237368,,,False
+asof-release-0,asof-release,2.0.3,['http://127.0.0.1:45605/holdout/asof-release/0'],['2.0.3'],http://127.0.0.1:45605/holdout/asof-release/0,True,True,True,1.3073837999836542,,,False
+lts-0,lts,6.0.2,['http://127.0.0.1:45605/holdout/lts/0'],['6.0.2'],http://127.0.0.1:45605/holdout/lts/0,True,True,True,1.26129569998011,,,False
+rowspan-0,rowspan,81 GB,['http://127.0.0.1:45605/holdout/rowspan/0'],['81 GB'],http://127.0.0.1:45605/holdout/rowspan/0,True,True,True,1.1509241000167094,,,False
+release-size-0,release-size,5.0.8,['http://127.0.0.1:45605/holdout/release-size/0'],['5.0.8'],http://127.0.0.1:45605/holdout/release-size/0,True,True,True,1.2108663999824785,,,False
+field-xml-0,field-xml,vega0@help.example,['http://127.0.0.1:45605/holdout/field-xml/0'],['vega0@help.example'],http://127.0.0.1:45605/holdout/field-xml/0,True,True,True,1.2892883999738842,,,False
+prose-name-0,prose-name,,[],['Nora Weber'],http://127.0.0.1:45605/holdout/prose-name/0,False,False,False,0.8698053999687545,,ABS,False
+meta-author-0,meta-author,Nora Weber,['http://127.0.0.1:45605/holdout/meta-author/0'],['Nora Weber'],http://127.0.0.1:45605/holdout/meta-author/0,True,True,True,1.1132264999905601,,,False
+schema-conflict-0,schema-conflict,USD 81.00,['http://127.0.0.1:45605/holdout/schema-conflict/0'],['USD 81.00'],http://127.0.0.1:45605/holdout/schema-conflict/0,True,True,True,1.4255209999973886,,,False
+no-regional-office-0,no-regional-office,+81 3 1234 5678,['http://127.0.0.1:45605/holdout/no-regional-office/0'],[''],http://127.0.0.1:45605/holdout/no-regional-office/0,False,False,False,1.3852697999682277,,RANK,False
+injection-field-0,injection-field,81 GB,['http://127.0.0.1:45605/holdout/injection-field/0'],['81 GB'],http://127.0.0.1:45605/holdout/injection-field/0,True,True,True,1.1176892999792472,,,False
+hidden-duplicate-0,hidden-duplicate,$81.50,['http://127.0.0.1:45605/holdout/hidden-duplicate/0'],['$81.50'],http://127.0.0.1:45605/holdout/hidden-duplicate/0,True,True,True,1.2749851999687962,,,False
+ambiguous-current-0,ambiguous-current,800-555-1111,['http://127.0.0.1:45605/holdout/ambiguous-current/0'],[''],http://127.0.0.1:45605/holdout/ambiguous-current/0,False,False,False,1.6239935000194237,,RANK,False
+two-hop-0,two-hop,81 GB,['http://127.0.0.1:45605/holdout/two-hop/0/models/specs'],['81 GB'],http://127.0.0.1:45605/holdout/two-hop/0/models/specs,True,True,True,4.385117700032424,,,False
+percent-0,percent,81%,['http://127.0.0.1:45605/holdout/percent/0'],['81%'],http://127.0.0.1:45605/holdout/percent/0,True,True,True,1.1390098000410944,,,False
+unit-decimal-0,unit-decimal,20 kg,['http://127.0.0.1:45605/holdout/unit-decimal/0'],['8.1 kg'],http://127.0.0.1:45605/holdout/unit-decimal/0,False,True,False,1.1793622000259347,,RANK,False
+duration-0,duration,3 business days,['http://127.0.0.1:45605/holdout/duration/0'],['3 business days'],http://127.0.0.1:45605/holdout/duration/0,True,True,True,1.1687411000020802,,,False
+soft404-0,soft404,,[],[''],http://127.0.0.1:45605/holdout/soft404/0,True,True,True,0.0017361000063829124,,,False
+director-1,director,Luis Martins,['http://127.0.0.1:45605/holdout/director/1'],['Luis Martins'],http://127.0.0.1:45605/holdout/director/1,True,True,True,0.9086215000133961,,,False
+headquarters-1,headquarters,"Taipei, Taiwan",['http://127.0.0.1:45605/holdout/headquarters/1'],"['Taipei, Taiwan']",http://127.0.0.1:45605/holdout/headquarters/1,True,True,True,1.1748685000347905,,,False
+sale-eur-1,sale-eur,"EUR 65,90",['http://127.0.0.1:45605/holdout/sale-eur/1'],"['EUR 65,90']",http://127.0.0.1:45605/holdout/sale-eur/1,True,True,True,1.3162093999562785,,,False
+asof-release-1,asof-release,2.1.3,['http://127.0.0.1:45605/holdout/asof-release/1'],['2.1.3'],http://127.0.0.1:45605/holdout/asof-release/1,True,True,True,1.2347876999992877,,,False
+lts-1,lts,6.1.2,['http://127.0.0.1:45605/holdout/lts/1'],['6.1.2'],http://127.0.0.1:45605/holdout/lts/1,True,True,True,1.2362898000283167,,,False
+rowspan-1,rowspan,65 GB,['http://127.0.0.1:45605/holdout/rowspan/1'],['65 GB'],http://127.0.0.1:45605/holdout/rowspan/1,True,True,True,1.1655477000167593,,,False
+release-size-1,release-size,5.1.8,['http://127.0.0.1:45605/holdout/release-size/1'],['5.1.8'],http://127.0.0.1:45605/holdout/release-size/1,True,True,True,1.196041899966076,,,False
+field-xml-1,field-xml,vega1@help.example,['http://127.0.0.1:45605/holdout/field-xml/1'],['vega1@help.example'],http://127.0.0.1:45605/holdout/field-xml/1,True,True,True,1.2122518999967724,,,False
+prose-name-1,prose-name,,[],['Luis Martins'],http://127.0.0.1:45605/holdout/prose-name/1,False,False,False,0.8804066000157036,,ABS,False
+meta-author-1,meta-author,Luis Martins,['http://127.0.0.1:45605/holdout/meta-author/1'],['Luis Martins'],http://127.0.0.1:45605/holdout/meta-author/1,True,True,True,1.0967957000248134,,,False
+schema-conflict-1,schema-conflict,USD 65.00,['http://127.0.0.1:45605/holdout/schema-conflict/1'],['USD 65.00'],http://127.0.0.1:45605/holdout/schema-conflict/1,True,True,True,1.3933724999660626,,,False
+no-regional-office-1,no-regional-office,+81 3 1234 5678,['http://127.0.0.1:45605/holdout/no-regional-office/1'],[''],http://127.0.0.1:45605/holdout/no-regional-office/1,False,False,False,1.3751153000048362,,RANK,False
+injection-field-1,injection-field,65 GB,['http://127.0.0.1:45605/holdout/injection-field/1'],['65 GB'],http://127.0.0.1:45605/holdout/injection-field/1,True,True,True,1.1318155000335537,,,False
+hidden-duplicate-1,hidden-duplicate,$65.50,['http://127.0.0.1:45605/holdout/hidden-duplicate/1'],['$65.50'],http://127.0.0.1:45605/holdout/hidden-duplicate/1,True,True,True,1.1834572000079788,,,False
+ambiguous-current-1,ambiguous-current,800-555-1111,['http://127.0.0.1:45605/holdout/ambiguous-current/1'],[''],http://127.0.0.1:45605/holdout/ambiguous-current/1,False,False,False,1.5407818999956362,,RANK,False
+two-hop-1,two-hop,65 GB,['http://127.0.0.1:45605/holdout/two-hop/1/models/specs'],['65 GB'],http://127.0.0.1:45605/holdout/two-hop/1/models/specs,True,True,True,4.305471900035627,,,False
+percent-1,percent,65%,['http://127.0.0.1:45605/holdout/percent/1'],['65%'],http://127.0.0.1:45605/holdout/percent/1,True,True,True,1.1029631999554113,,,False
+unit-decimal-1,unit-decimal,20 kg,['http://127.0.0.1:45605/holdout/unit-decimal/1'],['6.5 kg'],http://127.0.0.1:45605/holdout/unit-decimal/1,False,True,False,1.1680369999958202,,RANK,False
+duration-1,duration,4 business days,['http://127.0.0.1:45605/holdout/duration/1'],['4 business days'],http://127.0.0.1:45605/holdout/duration/1,True,True,True,1.141454899974633,,,False
+soft404-1,soft404,,[],[''],http://127.0.0.1:45605/holdout/soft404/1,True,True,True,0.0017238999716937542,,,False
+director-2,director,Ava Okafor,['http://127.0.0.1:45605/holdout/director/2'],['Ava Okafor'],http://127.0.0.1:45605/holdout/director/2,True,True,True,0.9707243000157177,,,False
+headquarters-2,headquarters,"Taipei, Taiwan",['http://127.0.0.1:45605/holdout/headquarters/2'],"['Taipei, Taiwan']",http://127.0.0.1:45605/holdout/headquarters/2,True,True,True,1.1573214000090957,,,False
+sale-eur-2,sale-eur,"EUR 73,90",['http://127.0.0.1:45605/holdout/sale-eur/2'],"['EUR 73,90']",http://127.0.0.1:45605/holdout/sale-eur/2,True,True,True,1.3252387000247836,,,False
+asof-release-2,asof-release,2.2.3,['http://127.0.0.1:45605/holdout/asof-release/2'],['2.2.3'],http://127.0.0.1:45605/holdout/asof-release/2,True,True,True,1.298628899967298,,,False
+lts-2,lts,6.2.2,['http://127.0.0.1:45605/holdout/lts/2'],['6.2.2'],http://127.0.0.1:45605/holdout/lts/2,True,True,True,1.2320057000033557,,,False
+rowspan-2,rowspan,73 GB,['http://127.0.0.1:45605/holdout/rowspan/2'],['73 GB'],http://127.0.0.1:45605/holdout/rowspan/2,True,True,True,1.1204468999640085,,,False
+release-size-2,release-size,5.2.8,['http://127.0.0.1:45605/holdout/release-size/2'],['5.2.8'],http://127.0.0.1:45605/holdout/release-size/2,True,True,True,1.2069009999977425,,,False
+field-xml-2,field-xml,vega2@help.example,['http://127.0.0.1:45605/holdout/field-xml/2'],['vega2@help.example'],http://127.0.0.1:45605/holdout/field-xml/2,True,True,True,1.2142143999808468,,,False
+prose-name-2,prose-name,Ava Okafor,['http://127.0.0.1:45605/holdout/prose-name/2'],['Ava Okafor'],http://127.0.0.1:45605/holdout/prose-name/2,True,True,True,0.9448575000278652,,,False
+meta-author-2,meta-author,Ava Okafor,['http://127.0.0.1:45605/holdout/meta-author/2'],['Ava Okafor'],http://127.0.0.1:45605/holdout/meta-author/2,True,True,True,1.177757399971597,,,False
+schema-conflict-2,schema-conflict,USD 73.00,['http://127.0.0.1:45605/holdout/schema-conflict/2'],['USD 73.00'],http://127.0.0.1:45605/holdout/schema-conflict/2,True,True,True,1.4131536000058986,,,False
+no-regional-office-2,no-regional-office,+81 3 1234 5678,['http://127.0.0.1:45605/holdout/no-regional-office/2'],[''],http://127.0.0.1:45605/holdout/no-regional-office/2,False,False,False,1.1243151999660768,,RANK,False
+injection-field-2,injection-field,73 GB,['http://127.0.0.1:45605/holdout/injection-field/2'],['73 GB'],http://127.0.0.1:45605/holdout/injection-field/2,True,True,True,1.1587427000049502,,,False
+hidden-duplicate-2,hidden-duplicate,$73.50,['http://127.0.0.1:45605/holdout/hidden-duplicate/2'],['$73.50'],http://127.0.0.1:45605/holdout/hidden-duplicate/2,True,True,True,1.238237100013066,,,False
+ambiguous-current-2,ambiguous-current,800-555-1111,['http://127.0.0.1:45605/holdout/ambiguous-current/2'],[''],http://127.0.0.1:45605/holdout/ambiguous-current/2,False,False,False,1.568105599959381,,RANK,False
+two-hop-2,two-hop,73 GB,['http://127.0.0.1:45605/holdout/two-hop/2/models/specs'],['73 GB'],http://127.0.0.1:45605/holdout/two-hop/2/models/specs,True,True,True,4.311002100002952,,,False
+percent-2,percent,73%,['http://127.0.0.1:45605/holdout/percent/2'],['73%'],http://127.0.0.1:45605/holdout/percent/2,True,True,True,1.1295754999737255,,,False
+unit-decimal-2,unit-decimal,7.3 kg,['http://127.0.0.1:45605/holdout/unit-decimal/2'],['7.3 kg'],http://127.0.0.1:45605/holdout/unit-decimal/2,True,True,True,1.1966254999861121,,,False
+duration-2,duration,5 business days,['http://127.0.0.1:45605/holdout/duration/2'],['5 business days'],http://127.0.0.1:45605/holdout/duration/2,True,True,True,1.1164659000351094,,,False
+soft404-2,soft404,,[],[''],http://127.0.0.1:45605/holdout/soft404/2,True,True,True,0.0016826000064611435,,,False
+director-3,director,Maya Chen,['http://127.0.0.1:45605/holdout/director/3'],['Maya Chen'],http://127.0.0.1:45605/holdout/director/3,True,True,True,0.9159773000283167,,,False
+headquarters-3,headquarters,"Taipei, Taiwan",['http://127.0.0.1:45605/holdout/headquarters/3'],"['Taipei, Taiwan']",http://127.0.0.1:45605/holdout/headquarters/3,True,True,True,1.1527694000396878,,,False
+sale-eur-3,sale-eur,"EUR 72,90",['http://127.0.0.1:45605/holdout/sale-eur/3'],"['EUR 72,90']",http://127.0.0.1:45605/holdout/sale-eur/3,True,True,True,1.3328112000017427,,,False
+asof-release-3,asof-release,2.3.3,['http://127.0.0.1:45605/holdout/asof-release/3'],['2.3.3'],http://127.0.0.1:45605/holdout/asof-release/3,True,True,True,1.237936699995771,,,False
+lts-3,lts,6.3.2,['http://127.0.0.1:45605/holdout/lts/3'],['6.3.2'],http://127.0.0.1:45605/holdout/lts/3,True,True,True,1.2282254000310786,,,False
+rowspan-3,rowspan,72 GB,['http://127.0.0.1:45605/holdout/rowspan/3'],['72 GB'],http://127.0.0.1:45605/holdout/rowspan/3,True,True,True,1.1242849999689497,,,False
+release-size-3,release-size,5.3.8,['http://127.0.0.1:45605/holdout/release-size/3'],['5.3.8'],http://127.0.0.1:45605/holdout/release-size/3,True,True,True,1.2240685999859124,,,False
+field-xml-3,field-xml,vega3@help.example,['http://127.0.0.1:45605/holdout/field-xml/3'],['vega3@help.example'],http://127.0.0.1:45605/holdout/field-xml/3,True,True,True,1.2608825999777764,,,False
+prose-name-3,prose-name,Maya Chen,['http://127.0.0.1:45605/holdout/prose-name/3'],['Maya Chen'],http://127.0.0.1:45605/holdout/prose-name/3,True,True,True,1.0781809000181966,,,False
+meta-author-3,meta-author,Maya Chen,['http://127.0.0.1:45605/holdout/meta-author/3'],['Maya Chen'],http://127.0.0.1:45605/holdout/meta-author/3,True,True,True,1.0995121999876574,,,False
+schema-conflict-3,schema-conflict,USD 72.00,['http://127.0.0.1:45605/holdout/schema-conflict/3'],['USD 72.00'],http://127.0.0.1:45605/holdout/schema-conflict/3,True,True,True,1.4313224999932572,,,False
+no-regional-office-3,no-regional-office,+81 3 1234 5678,['http://127.0.0.1:45605/holdout/no-regional-office/3'],[''],http://127.0.0.1:45605/holdout/no-regional-office/3,False,False,False,1.4142760999966413,,RANK,False
+injection-field-3,injection-field,72 GB,['http://127.0.0.1:45605/holdout/injection-field/3'],['72 GB'],http://127.0.0.1:45605/holdout/injection-field/3,True,True,True,1.1229172000312246,,,False
+hidden-duplicate-3,hidden-duplicate,$72.50,['http://127.0.0.1:45605/holdout/hidden-duplicate/3'],['$72.50'],http://127.0.0.1:45605/holdout/hidden-duplicate/3,True,True,True,1.2053397999843583,,,False
+ambiguous-current-3,ambiguous-current,800-555-1111,['http://127.0.0.1:45605/holdout/ambiguous-current/3'],[''],http://127.0.0.1:45605/holdout/ambiguous-current/3,False,False,False,1.5695841999840923,,RANK,False
+two-hop-3,two-hop,72 GB,['http://127.0.0.1:45605/holdout/two-hop/3/models/specs'],['72 GB'],http://127.0.0.1:45605/holdout/two-hop/3/models/specs,True,True,True,4.266292100015562,,,False
+percent-3,percent,72%,['http://127.0.0.1:45605/holdout/percent/3'],['72%'],http://127.0.0.1:45605/holdout/percent/3,True,True,True,1.1173725999542512,,,False
+unit-decimal-3,unit-decimal,7.2 kg,['http://127.0.0.1:45605/holdout/unit-decimal/3'],['7.2 kg'],http://127.0.0.1:45605/holdout/unit-decimal/3,True,True,True,1.1503008999861777,,,False
+duration-3,duration,6 business days,['http://127.0.0.1:45605/holdout/duration/3'],['6 business days'],http://127.0.0.1:45605/holdout/duration/3,True,True,True,1.1491739000193775,,,False
+soft404-3,soft404,,[],[''],http://127.0.0.1:45605/holdout/soft404/3,True,True,True,0.0017312999698333442,,,False
+director-4,director,Maya Chen,['http://127.0.0.1:45605/holdout/director/4'],['Maya Chen'],http://127.0.0.1:45605/holdout/director/4,True,True,True,0.8982603999902494,,,False
+headquarters-4,headquarters,"Taipei, Taiwan",['http://127.0.0.1:45605/holdout/headquarters/4'],"['Taipei, Taiwan']",http://127.0.0.1:45605/holdout/headquarters/4,True,True,True,1.1971673000371084,,,False
+sale-eur-4,sale-eur,"EUR 64,90",['http://127.0.0.1:45605/holdout/sale-eur/4'],"['EUR 64,90']",http://127.0.0.1:45605/holdout/sale-eur/4,True,True,True,1.3498423999990337,,,False
+asof-release-4,asof-release,2.4.3,['http://127.0.0.1:45605/holdout/asof-release/4'],['2.4.3'],http://127.0.0.1:45605/holdout/asof-release/4,True,True,True,1.2466081000166014,,,False
+lts-4,lts,6.4.2,['http://127.0.0.1:45605/holdout/lts/4'],['6.4.2'],http://127.0.0.1:45605/holdout/lts/4,True,True,True,1.2382225999608636,,,False
+rowspan-4,rowspan,64 GB,['http://127.0.0.1:45605/holdout/rowspan/4'],['64 GB'],http://127.0.0.1:45605/holdout/rowspan/4,True,True,True,1.1384809000301175,,,False
+release-size-4,release-size,5.4.8,['http://127.0.0.1:45605/holdout/release-size/4'],['5.4.8'],http://127.0.0.1:45605/holdout/release-size/4,True,True,True,1.2335812999517657,,,False
+field-xml-4,field-xml,vega4@help.example,['http://127.0.0.1:45605/holdout/field-xml/4'],['vega4@help.example'],http://127.0.0.1:45605/holdout/field-xml/4,True,True,True,1.215116899984423,,,False
+prose-name-4,prose-name,,[],['Maya Chen'],http://127.0.0.1:45605/holdout/prose-name/4,False,False,False,0.8680203999974765,,ABS,False
+meta-author-4,meta-author,Maya Chen,['http://127.0.0.1:45605/holdout/meta-author/4'],['Maya Chen'],http://127.0.0.1:45605/holdout/meta-author/4,True,True,True,1.1051895000273362,,,False
+schema-conflict-4,schema-conflict,USD 64.00,['http://127.0.0.1:45605/holdout/schema-conflict/4'],['USD 64.00'],http://127.0.0.1:45605/holdout/schema-conflict/4,True,True,True,1.5128099999856204,,,False
+no-regional-office-4,no-regional-office,+81 3 1234 5678,['http://127.0.0.1:45605/holdout/no-regional-office/4'],[''],http://127.0.0.1:45605/holdout/no-regional-office/4,False,False,False,1.1879147000145167,,RANK,False
+injection-field-4,injection-field,64 GB,['http://127.0.0.1:45605/holdout/injection-field/4'],['64 GB'],http://127.0.0.1:45605/holdout/injection-field/4,True,True,True,1.175631100020837,,,False
+hidden-duplicate-4,hidden-duplicate,$64.50,['http://127.0.0.1:45605/holdout/hidden-duplicate/4'],['$64.50'],http://127.0.0.1:45605/holdout/hidden-duplicate/4,True,True,True,1.2228357000276446,,,False
+ambiguous-current-4,ambiguous-current,800-555-1111,['http://127.0.0.1:45605/holdout/ambiguous-current/4'],[''],http://127.0.0.1:45605/holdout/ambiguous-current/4,False,False,False,1.5489020999521017,,RANK,False
+two-hop-4,two-hop,64 GB,['http://127.0.0.1:45605/holdout/two-hop/4/models/specs'],['64 GB'],http://127.0.0.1:45605/holdout/two-hop/4/models/specs,True,True,True,4.3228034999920055,,,False
+percent-4,percent,64%,['http://127.0.0.1:45605/holdout/percent/4'],['64%'],http://127.0.0.1:45605/holdout/percent/4,True,True,True,1.132903800054919,,,False
+unit-decimal-4,unit-decimal,6.4 kg,['http://127.0.0.1:45605/holdout/unit-decimal/4'],['6.4 kg'],http://127.0.0.1:45605/holdout/unit-decimal/4,True,True,True,1.2008451000438072,,,False
+duration-4,duration,7 business days,['http://127.0.0.1:45605/holdout/duration/4'],['7 business days'],http://127.0.0.1:45605/holdout/duration/4,True,True,True,1.1701399000012316,,,False
+soft404-4,soft404,,[],[''],http://127.0.0.1:45605/holdout/soft404/4,True,True,True,0.001692800025921315,,,False

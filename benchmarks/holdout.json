@@ -1,0 +1,802 @@
+[
+  {
+    "id": "director-0",
+    "family": "director",
+    "query": "Who is the current director of Vega-9218?",
+    "path": "/holdout/director/0",
+    "answer": "Nora Weber",
+    "source_path": "/holdout/director/0"
+  },
+  {
+    "id": "headquarters-0",
+    "family": "headquarters",
+    "query": "Where are the headquarters of Vega-9218?",
+    "path": "/holdout/headquarters/0",
+    "answer": "Taipei, Taiwan",
+    "source_path": "/holdout/headquarters/0"
+  },
+  {
+    "id": "sale-eur-0",
+    "family": "sale-eur",
+    "query": "What is the current price of Vega-9218 in EUR?",
+    "path": "/holdout/sale-eur/0",
+    "answer": "EUR 81,90",
+    "source_path": "/holdout/sale-eur/0"
+  },
+  {
+    "id": "asof-release-0",
+    "family": "asof-release",
+    "query": "What was the latest stable version of Vega-9218 as of 2024-05-01?",
+    "path": "/holdout/asof-release/0",
+    "answer": "2.0.3",
+    "source_path": "/holdout/asof-release/0"
+  },
+  {
+    "id": "lts-0",
+    "family": "lts",
+    "query": "What is the current LTS version of Vega-9218?",
+    "path": "/holdout/lts/0",
+    "answer": "6.0.2",
+    "source_path": "/holdout/lts/0"
+  },
+  {
+    "id": "rowspan-0",
+    "family": "rowspan",
+    "query": "What is the memory capacity of Vega-9218 Pro?",
+    "path": "/holdout/rowspan/0",
+    "answer": "81 GB",
+    "source_path": "/holdout/rowspan/0"
+  },
+  {
+    "id": "release-size-0",
+    "family": "release-size",
+    "query": "What is the latest stable version of Vega-9218?",
+    "path": "/holdout/release-size/0",
+    "answer": "5.0.8",
+    "source_path": "/holdout/release-size/0"
+  },
+  {
+    "id": "field-xml-0",
+    "family": "field-xml",
+    "query": "What is the support email for Vega-9218?",
+    "path": "/holdout/field-xml/0",
+    "answer": "vega0@help.example",
+    "source_path": "/holdout/field-xml/0"
+  },
+  {
+    "id": "prose-name-0",
+    "family": "prose-name",
+    "query": "Who founded Vega-9218?",
+    "path": "/holdout/prose-name/0",
+    "answer": "Nora Weber",
+    "source_path": "/holdout/prose-name/0"
+  },
+  {
+    "id": "meta-author-0",
+    "family": "meta-author",
+    "query": "Who is the first author of the Vega-9218 paper?",
+    "path": "/holdout/meta-author/0",
+    "answer": "Nora Weber",
+    "source_path": "/holdout/meta-author/0"
+  },
+  {
+    "id": "schema-conflict-0",
+    "family": "schema-conflict",
+    "query": "What is the current price of Vega-9218 in USD?",
+    "path": "/holdout/schema-conflict/0",
+    "answer": "USD 81.00",
+    "source_path": "/holdout/schema-conflict/0"
+  },
+  {
+    "id": "no-regional-office-0",
+    "family": "no-regional-office",
+    "query": "What is the support phone for the Vega-9218 Reykjavik office?",
+    "path": "/holdout/no-regional-office/0",
+    "answer": "",
+    "source_path": "/holdout/no-regional-office/0"
+  },
+  {
+    "id": "injection-field-0",
+    "family": "injection-field",
+    "query": "What is the memory capacity of Vega-9218?",
+    "path": "/holdout/injection-field/0",
+    "answer": "81 GB",
+    "source_path": "/holdout/injection-field/0"
+  },
+  {
+    "id": "hidden-duplicate-0",
+    "family": "hidden-duplicate",
+    "query": "What is the current price of Vega-9218?",
+    "path": "/holdout/hidden-duplicate/0",
+    "answer": "$81.50",
+    "source_path": "/holdout/hidden-duplicate/0"
+  },
+  {
+    "id": "ambiguous-current-0",
+    "family": "ambiguous-current",
+    "query": "What is the current support phone for Vega-9218?",
+    "path": "/holdout/ambiguous-current/0",
+    "answer": "",
+    "source_path": "/holdout/ambiguous-current/0"
+  },
+  {
+    "id": "two-hop-0",
+    "family": "two-hop",
+    "query": "What is the memory capacity of Vega-9218?",
+    "path": "/holdout/two-hop/0",
+    "answer": "81 GB",
+    "source_path": "/holdout/two-hop/0/models/specs"
+  },
+  {
+    "id": "percent-0",
+    "family": "percent",
+    "query": "What percentage of Vega-9218 is recycled?",
+    "path": "/holdout/percent/0",
+    "answer": "81%",
+    "source_path": "/holdout/percent/0"
+  },
+  {
+    "id": "unit-decimal-0",
+    "family": "unit-decimal",
+    "query": "What is the weight of Vega-9218?",
+    "path": "/holdout/unit-decimal/0",
+    "answer": "8.1 kg",
+    "source_path": "/holdout/unit-decimal/0"
+  },
+  {
+    "id": "duration-0",
+    "family": "duration",
+    "query": "How long is the delivery lead time for Vega-9218?",
+    "path": "/holdout/duration/0",
+    "answer": "3 business days",
+    "source_path": "/holdout/duration/0"
+  },
+  {
+    "id": "soft404-0",
+    "family": "soft404",
+    "query": "What is the price of Vega-9218?",
+    "path": "/holdout/soft404/0",
+    "answer": "",
+    "source_path": "/holdout/soft404/0"
+  },
+  {
+    "id": "director-1",
+    "family": "director",
+    "query": "Who is the current director of Vega-4623?",
+    "path": "/holdout/director/1",
+    "answer": "Luis Martins",
+    "source_path": "/holdout/director/1"
+  },
+  {
+    "id": "headquarters-1",
+    "family": "headquarters",
+    "query": "Where are the headquarters of Vega-4623?",
+    "path": "/holdout/headquarters/1",
+    "answer": "Taipei, Taiwan",
+    "source_path": "/holdout/headquarters/1"
+  },
+  {
+    "id": "sale-eur-1",
+    "family": "sale-eur",
+    "query": "What is the current price of Vega-4623 in EUR?",
+    "path": "/holdout/sale-eur/1",
+    "answer": "EUR 65,90",
+    "source_path": "/holdout/sale-eur/1"
+  },
+  {
+    "id": "asof-release-1",
+    "family": "asof-release",
+    "query": "What was the latest stable version of Vega-4623 as of 2024-05-01?",
+    "path": "/holdout/asof-release/1",
+    "answer": "2.1.3",
+    "source_path": "/holdout/asof-release/1"
+  },
+  {
+    "id": "lts-1",
+    "family": "lts",
+    "query": "What is the current LTS version of Vega-4623?",
+    "path": "/holdout/lts/1",
+    "answer": "6.1.2",
+    "source_path": "/holdout/lts/1"
+  },
+  {
+    "id": "rowspan-1",
+    "family": "rowspan",
+    "query": "What is the memory capacity of Vega-4623 Pro?",
+    "path": "/holdout/rowspan/1",
+    "answer": "65 GB",
+    "source_path": "/holdout/rowspan/1"
+  },
+  {
+    "id": "release-size-1",
+    "family": "release-size",
+    "query": "What is the latest stable version of Vega-4623?",
+    "path": "/holdout/release-size/1",
+    "answer": "5.1.8",
+    "source_path": "/holdout/release-size/1"
+  },
+  {
+    "id": "field-xml-1",
+    "family": "field-xml",
+    "query": "What is the support email for Vega-4623?",
+    "path": "/holdout/field-xml/1",
+    "answer": "vega1@help.example",
+    "source_path": "/holdout/field-xml/1"
+  },
+  {
+    "id": "prose-name-1",
+    "family": "prose-name",
+    "query": "Who founded Vega-4623?",
+    "path": "/holdout/prose-name/1",
+    "answer": "Luis Martins",
+    "source_path": "/holdout/prose-name/1"
+  },
+  {
+    "id": "meta-author-1",
+    "family": "meta-author",
+    "query": "Who is the first author of the Vega-4623 paper?",
+    "path": "/holdout/meta-author/1",
+    "answer": "Luis Martins",
+    "source_path": "/holdout/meta-author/1"
+  },
+  {
+    "id": "schema-conflict-1",
+    "family": "schema-conflict",
+    "query": "What is the current price of Vega-4623 in USD?",
+    "path": "/holdout/schema-conflict/1",
+    "answer": "USD 65.00",
+    "source_path": "/holdout/schema-conflict/1"
+  },
+  {
+    "id": "no-regional-office-1",
+    "family": "no-regional-office",
+    "query": "What is the support phone for the Vega-4623 Reykjavik office?",
+    "path": "/holdout/no-regional-office/1",
+    "answer": "",
+    "source_path": "/holdout/no-regional-office/1"
+  },
+  {
+    "id": "injection-field-1",
+    "family": "injection-field",
+    "query": "What is the memory capacity of Vega-4623?",
+    "path": "/holdout/injection-field/1",
+    "answer": "65 GB",
+    "source_path": "/holdout/injection-field/1"
+  },
+  {
+    "id": "hidden-duplicate-1",
+    "family": "hidden-duplicate",
+    "query": "What is the current price of Vega-4623?",
+    "path": "/holdout/hidden-duplicate/1",
+    "answer": "$65.50",
+    "source_path": "/holdout/hidden-duplicate/1"
+  },
+  {
+    "id": "ambiguous-current-1",
+    "family": "ambiguous-current",
+    "query": "What is the current support phone for Vega-4623?",
+    "path": "/holdout/ambiguous-current/1",
+    "answer": "",
+    "source_path": "/holdout/ambiguous-current/1"
+  },
+  {
+    "id": "two-hop-1",
+    "family": "two-hop",
+    "query": "What is the memory capacity of Vega-4623?",
+    "path": "/holdout/two-hop/1",
+    "answer": "65 GB",
+    "source_path": "/holdout/two-hop/1/models/specs"
+  },
+  {
+    "id": "percent-1",
+    "family": "percent",
+    "query": "What percentage of Vega-4623 is recycled?",
+    "path": "/holdout/percent/1",
+    "answer": "65%",
+    "source_path": "/holdout/percent/1"
+  },
+  {
+    "id": "unit-decimal-1",
+    "family": "unit-decimal",
+    "query": "What is the weight of Vega-4623?",
+    "path": "/holdout/unit-decimal/1",
+    "answer": "6.5 kg",
+    "source_path": "/holdout/unit-decimal/1"
+  },
+  {
+    "id": "duration-1",
+    "family": "duration",
+    "query": "How long is the delivery lead time for Vega-4623?",
+    "path": "/holdout/duration/1",
+    "answer": "4 business days",
+    "source_path": "/holdout/duration/1"
+  },
+  {
+    "id": "soft404-1",
+    "family": "soft404",
+    "query": "What is the price of Vega-4623?",
+    "path": "/holdout/soft404/1",
+    "answer": "",
+    "source_path": "/holdout/soft404/1"
+  },
+  {
+    "id": "director-2",
+    "family": "director",
+    "query": "Who is the current director of Vega-6051?",
+    "path": "/holdout/director/2",
+    "answer": "Ava Okafor",
+    "source_path": "/holdout/director/2"
+  },
+  {
+    "id": "headquarters-2",
+    "family": "headquarters",
+    "query": "Where are the headquarters of Vega-6051?",
+    "path": "/holdout/headquarters/2",
+    "answer": "Taipei, Taiwan",
+    "source_path": "/holdout/headquarters/2"
+  },
+  {
+    "id": "sale-eur-2",
+    "family": "sale-eur",
+    "query": "What is the current price of Vega-6051 in EUR?",
+    "path": "/holdout/sale-eur/2",
+    "answer": "EUR 73,90",
+    "source_path": "/holdout/sale-eur/2"
+  },
+  {
+    "id": "asof-release-2",
+    "family": "asof-release",
+    "query": "What was the latest stable version of Vega-6051 as of 2024-05-01?",
+    "path": "/holdout/asof-release/2",
+    "answer": "2.2.3",
+    "source_path": "/holdout/asof-release/2"
+  },
+  {
+    "id": "lts-2",
+    "family": "lts",
+    "query": "What is the current LTS version of Vega-6051?",
+    "path": "/holdout/lts/2",
+    "answer": "6.2.2",
+    "source_path": "/holdout/lts/2"
+  },
+  {
+    "id": "rowspan-2",
+    "family": "rowspan",
+    "query": "What is the memory capacity of Vega-6051 Pro?",
+    "path": "/holdout/rowspan/2",
+    "answer": "73 GB",
+    "source_path": "/holdout/rowspan/2"
+  },
+  {
+    "id": "release-size-2",
+    "family": "release-size",
+    "query": "What is the latest stable version of Vega-6051?",
+    "path": "/holdout/release-size/2",
+    "answer": "5.2.8",
+    "source_path": "/holdout/release-size/2"
+  },
+  {
+    "id": "field-xml-2",
+    "family": "field-xml",
+    "query": "What is the support email for Vega-6051?",
+    "path": "/holdout/field-xml/2",
+    "answer": "vega2@help.example",
+    "source_path": "/holdout/field-xml/2"
+  },
+  {
+    "id": "prose-name-2",
+    "family": "prose-name",
+    "query": "Who founded Vega-6051?",
+    "path": "/holdout/prose-name/2",
+    "answer": "Ava Okafor",
+    "source_path": "/holdout/prose-name/2"
+  },
+  {
+    "id": "meta-author-2",
+    "family": "meta-author",
+    "query": "Who is the first author of the Vega-6051 paper?",
+    "path": "/holdout/meta-author/2",
+    "answer": "Ava Okafor",
+    "source_path": "/holdout/meta-author/2"
+  },
+  {
+    "id": "schema-conflict-2",
+    "family": "schema-conflict",
+    "query": "What is the current price of Vega-6051 in USD?",
+    "path": "/holdout/schema-conflict/2",
+    "answer": "USD 73.00",
+    "source_path": "/holdout/schema-conflict/2"
+  },
+  {
+    "id": "no-regional-office-2",
+    "family": "no-regional-office",
+    "query": "What is the support phone for the Vega-6051 Reykjavik office?",
+    "path": "/holdout/no-regional-office/2",
+    "answer": "",
+    "source_path": "/holdout/no-regional-office/2"
+  },
+  {
+    "id": "injection-field-2",
+    "family": "injection-field",
+    "query": "What is the memory capacity of Vega-6051?",
+    "path": "/holdout/injection-field/2",
+    "answer": "73 GB",
+    "source_path": "/holdout/injection-field/2"
+  },
+  {
+    "id": "hidden-duplicate-2",
+    "family": "hidden-duplicate",
+    "query": "What is the current price of Vega-6051?",
+    "path": "/holdout/hidden-duplicate/2",
+    "answer": "$73.50",
+    "source_path": "/holdout/hidden-duplicate/2"
+  },
+  {
+    "id": "ambiguous-current-2",
+    "family": "ambiguous-current",
+    "query": "What is the current support phone for Vega-6051?",
+    "path": "/holdout/ambiguous-current/2",
+    "answer": "",
+    "source_path": "/holdout/ambiguous-current/2"
+  },
+  {
+    "id": "two-hop-2",
+    "family": "two-hop",
+    "query": "What is the memory capacity of Vega-6051?",
+    "path": "/holdout/two-hop/2",
+    "answer": "73 GB",
+    "source_path": "/holdout/two-hop/2/models/specs"
+  },
+  {
+    "id": "percent-2",
+    "family": "percent",
+    "query": "What percentage of Vega-6051 is recycled?",
+    "path": "/holdout/percent/2",
+    "answer": "73%",
+    "source_path": "/holdout/percent/2"
+  },
+  {
+    "id": "unit-decimal-2",
+    "family": "unit-decimal",
+    "query": "What is the weight of Vega-6051?",
+    "path": "/holdout/unit-decimal/2",
+    "answer": "7.3 kg",
+    "source_path": "/holdout/unit-decimal/2"
+  },
+  {
+    "id": "duration-2",
+    "family": "duration",
+    "query": "How long is the delivery lead time for Vega-6051?",
+    "path": "/holdout/duration/2",
+    "answer": "5 business days",
+    "source_path": "/holdout/duration/2"
+  },
+  {
+    "id": "soft404-2",
+    "family": "soft404",
+    "query": "What is the price of Vega-6051?",
+    "path": "/holdout/soft404/2",
+    "answer": "",
+    "source_path": "/holdout/soft404/2"
+  },
+  {
+    "id": "director-3",
+    "family": "director",
+    "query": "Who is the current director of Vega-1027?",
+    "path": "/holdout/director/3",
+    "answer": "Maya Chen",
+    "source_path": "/holdout/director/3"
+  },
+  {
+    "id": "headquarters-3",
+    "family": "headquarters",
+    "query": "Where are the headquarters of Vega-1027?",
+    "path": "/holdout/headquarters/3",
+    "answer": "Taipei, Taiwan",
+    "source_path": "/holdout/headquarters/3"
+  },
+  {
+    "id": "sale-eur-3",
+    "family": "sale-eur",
+    "query": "What is the current price of Vega-1027 in EUR?",
+    "path": "/holdout/sale-eur/3",
+    "answer": "EUR 72,90",
+    "source_path": "/holdout/sale-eur/3"
+  },
+  {
+    "id": "asof-release-3",
+    "family": "asof-release",
+    "query": "What was the latest stable version of Vega-1027 as of 2024-05-01?",
+    "path": "/holdout/asof-release/3",
+    "answer": "2.3.3",
+    "source_path": "/holdout/asof-release/3"
+  },
+  {
+    "id": "lts-3",
+    "family": "lts",
+    "query": "What is the current LTS version of Vega-1027?",
+    "path": "/holdout/lts/3",
+    "answer": "6.3.2",
+    "source_path": "/holdout/lts/3"
+  },
+  {
+    "id": "rowspan-3",
+    "family": "rowspan",
+    "query": "What is the memory capacity of Vega-1027 Pro?",
+    "path": "/holdout/rowspan/3",
+    "answer": "72 GB",
+    "source_path": "/holdout/rowspan/3"
+  },
+  {
+    "id": "release-size-3",
+    "family": "release-size",
+    "query": "What is the latest stable version of Vega-1027?",
+    "path": "/holdout/release-size/3",
+    "answer": "5.3.8",
+    "source_path": "/holdout/release-size/3"
+  },
+  {
+    "id": "field-xml-3",
+    "family": "field-xml",
+    "query": "What is the support email for Vega-1027?",
+    "path": "/holdout/field-xml/3",
+    "answer": "vega3@help.example",
+    "source_path": "/holdout/field-xml/3"
+  },
+  {
+    "id": "prose-name-3",
+    "family": "prose-name",
+    "query": "Who founded Vega-1027?",
+    "path": "/holdout/prose-name/3",
+    "answer": "Maya Chen",
+    "source_path": "/holdout/prose-name/3"
+  },
+  {
+    "id": "meta-author-3",
+    "family": "meta-author",
+    "query": "Who is the first author of the Vega-1027 paper?",
+    "path": "/holdout/meta-author/3",
+    "answer": "Maya Chen",
+    "source_path": "/holdout/meta-author/3"
+  },
+  {
+    "id": "schema-conflict-3",
+    "family": "schema-conflict",
+    "query": "What is the current price of Vega-1027 in USD?",
+    "path": "/holdout/schema-conflict/3",
+    "answer": "USD 72.00",
+    "source_path": "/holdout/schema-conflict/3"
+  },
+  {
+    "id": "no-regional-office-3",
+    "family": "no-regional-office",
+    "query": "What is the support phone for the Vega-1027 Reykjavik office?",
+    "path": "/holdout/no-regional-office/3",
+    "answer": "",
+    "source_path": "/holdout/no-regional-office/3"
+  },
+  {
+    "id": "injection-field-3",
+    "family": "injection-field",
+    "query": "What is the memory capacity of Vega-1027?",
+    "path": "/holdout/injection-field/3",
+    "answer": "72 GB",
+    "source_path": "/holdout/injection-field/3"
+  },
+  {
+    "id": "hidden-duplicate-3",
+    "family": "hidden-duplicate",
+    "query": "What is the current price of Vega-1027?",
+    "path": "/holdout/hidden-duplicate/3",
+    "answer": "$72.50",
+    "source_path": "/holdout/hidden-duplicate/3"
+  },
+  {
+    "id": "ambiguous-current-3",
+    "family": "ambiguous-current",
+    "query": "What is the current support phone for Vega-1027?",
+    "path": "/holdout/ambiguous-current/3",
+    "answer": "",
+    "source_path": "/holdout/ambiguous-current/3"
+  },
+  {
+    "id": "two-hop-3",
+    "family": "two-hop",
+    "query": "What is the memory capacity of Vega-1027?",
+    "path": "/holdout/two-hop/3",
+    "answer": "72 GB",
+    "source_path": "/holdout/two-hop/3/models/specs"
+  },
+  {
+    "id": "percent-3",
+    "family": "percent",
+    "query": "What percentage of Vega-1027 is recycled?",
+    "path": "/holdout/percent/3",
+    "answer": "72%",
+    "source_path": "/holdout/percent/3"
+  },
+  {
+    "id": "unit-decimal-3",
+    "family": "unit-decimal",
+    "query": "What is the weight of Vega-1027?",
+    "path": "/holdout/unit-decimal/3",
+    "answer": "7.2 kg",
+    "source_path": "/holdout/unit-decimal/3"
+  },
+  {
+    "id": "duration-3",
+    "family": "duration",
+    "query": "How long is the delivery lead time for Vega-1027?",
+    "path": "/holdout/duration/3",
+    "answer": "6 business days",
+    "source_path": "/holdout/duration/3"
+  },
+  {
+    "id": "soft404-3",
+    "family": "soft404",
+    "query": "What is the price of Vega-1027?",
+    "path": "/holdout/soft404/3",
+    "answer": "",
+    "source_path": "/holdout/soft404/3"
+  },
+  {
+    "id": "director-4",
+    "family": "director",
+    "query": "Who is the current director of Vega-3199?",
+    "path": "/holdout/director/4",
+    "answer": "Maya Chen",
+    "source_path": "/holdout/director/4"
+  },
+  {
+    "id": "headquarters-4",
+    "family": "headquarters",
+    "query": "Where are the headquarters of Vega-3199?",
+    "path": "/holdout/headquarters/4",
+    "answer": "Taipei, Taiwan",
+    "source_path": "/holdout/headquarters/4"
+  },
+  {
+    "id": "sale-eur-4",
+    "family": "sale-eur",
+    "query": "What is the current price of Vega-3199 in EUR?",
+    "path": "/holdout/sale-eur/4",
+    "answer": "EUR 64,90",
+    "source_path": "/holdout/sale-eur/4"
+  },
+  {
+    "id": "asof-release-4",
+    "family": "asof-release",
+    "query": "What was the latest stable version of Vega-3199 as of 2024-05-01?",
+    "path": "/holdout/asof-release/4",
+    "answer": "2.4.3",
+    "source_path": "/holdout/asof-release/4"
+  },
+  {
+    "id": "lts-4",
+    "family": "lts",
+    "query": "What is the current LTS version of Vega-3199?",
+    "path": "/holdout/lts/4",
+    "answer": "6.4.2",
+    "source_path": "/holdout/lts/4"
+  },
+  {
+    "id": "rowspan-4",
+    "family": "rowspan",
+    "query": "What is the memory capacity of Vega-3199 Pro?",
+    "path": "/holdout/rowspan/4",
+    "answer": "64 GB",
+    "source_path": "/holdout/rowspan/4"
+  },
+  {
+    "id": "release-size-4",
+    "family": "release-size",
+    "query": "What is the latest stable version of Vega-3199?",
+    "path": "/holdout/release-size/4",
+    "answer": "5.4.8",
+    "source_path": "/holdout/release-size/4"
+  },
+  {
+    "id": "field-xml-4",
+    "family": "field-xml",
+    "query": "What is the support email for Vega-3199?",
+    "path": "/holdout/field-xml/4",
+    "answer": "vega4@help.example",
+    "source_path": "/holdout/field-xml/4"
+  },
+  {
+    "id": "prose-name-4",
+    "family": "prose-name",
+    "query": "Who founded Vega-3199?",
+    "path": "/holdout/prose-name/4",
+    "answer": "Maya Chen",
+    "source_path": "/holdout/prose-name/4"
+  },
+  {
+    "id": "meta-author-4",
+    "family": "meta-author",
+    "query": "Who is the first author of the Vega-3199 paper?",
+    "path": "/holdout/meta-author/4",
+    "answer": "Maya Chen",
+    "source_path": "/holdout/meta-author/4"
+  },
+  {
+    "id": "schema-conflict-4",
+    "family": "schema-conflict",
+    "query": "What is the current price of Vega-3199 in USD?",
+    "path": "/holdout/schema-conflict/4",
+    "answer": "USD 64.00",
+    "source_path": "/holdout/schema-conflict/4"
+  },
+  {
+    "id": "no-regional-office-4",
+    "family": "no-regional-office",
+    "query": "What is the support phone for the Vega-3199 Reykjavik office?",
+    "path": "/holdout/no-regional-office/4",
+    "answer": "",
+    "source_path": "/holdout/no-regional-office/4"
+  },
+  {
+    "id": "injection-field-4",
+    "family": "injection-field",
+    "query": "What is the memory capacity of Vega-3199?",
+    "path": "/holdout/injection-field/4",
+    "answer": "64 GB",
+    "source_path": "/holdout/injection-field/4"
+  },
+  {
+    "id": "hidden-duplicate-4",
+    "family": "hidden-duplicate",
+    "query": "What is the current price of Vega-3199?",
+    "path": "/holdout/hidden-duplicate/4",
+    "answer": "$64.50",
+    "source_path": "/holdout/hidden-duplicate/4"
+  },
+  {
+    "id": "ambiguous-current-4",
+    "family": "ambiguous-current",
+    "query": "What is the current support phone for Vega-3199?",
+    "path": "/holdout/ambiguous-current/4",
+    "answer": "",
+    "source_path": "/holdout/ambiguous-current/4"
+  },
+  {
+    "id": "two-hop-4",
+    "family": "two-hop",
+    "query": "What is the memory capacity of Vega-3199?",
+    "path": "/holdout/two-hop/4",
+    "answer": "64 GB",
+    "source_path": "/holdout/two-hop/4/models/specs"
+  },
+  {
+    "id": "percent-4",
+    "family": "percent",
+    "query": "What percentage of Vega-3199 is recycled?",
+    "path": "/holdout/percent/4",
+    "answer": "64%",
+    "source_path": "/holdout/percent/4"
+  },
+  {
+    "id": "unit-decimal-4",
+    "family": "unit-decimal",
+    "query": "What is the weight of Vega-3199?",
+    "path": "/holdout/unit-decimal/4",
+    "answer": "6.4 kg",
+    "source_path": "/holdout/unit-decimal/4"
+  },
+  {
+    "id": "duration-4",
+    "family": "duration",
+    "query": "How long is the delivery lead time for Vega-3199?",
+    "path": "/holdout/duration/4",
+    "answer": "7 business days",
+    "source_path": "/holdout/duration/4"
+  },
+  {
+    "id": "soft404-4",
+    "family": "soft404",
+    "query": "What is the price of Vega-3199?",
+    "path": "/holdout/soft404/4",
+    "answer": "",
+    "source_path": "/holdout/soft404/4"
+  }
+]

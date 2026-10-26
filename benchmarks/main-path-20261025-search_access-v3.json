@@ -1,0 +1,64 @@
+{
+  "scope": "Saved real Yahoo result replay and discovery-only isolation; no answer oracle.",
+  "baseline": "1557f3fdff4bd95aa8bb95fb727c30c195d70008",
+  "before": {
+    "links": [],
+    "actual_content_source_recovered": false,
+    "serp_not_returned_as_source": true,
+    "capture_sha256": "9367441eb013357ce4da10a0d11bc7a44c22f2ad1809f9ed53d12d0dc3d813db"
+  },
+  "after": {
+    "links": [
+      [
+        "https://hum54-15.omeka.fas.harvard.edu/exhibits/show/suleymaniye/deterioration",
+        "The Urban Imagination https://hum54-15.omeka.fas.harvard.edu \u203a exhibits \u203a show The Fall of an Empire \u00b7 The Magnificent's Magnificent Mosque ..."
+      ],
+      [
+        "https://www.ancient-history-sites.com/sites/suleymaniye-mosque/",
+        "ancient-history-sites.com https://www.ancient-history-sites.com \u203a sites \u203a suleymaniye S\u00fcleymaniye Mosque: An Ottoman Imperial Mosque in Istanbul"
+      ],
+      [
+        "https://everything.explained.today/%5C/S%C3%BCleymaniye_Mosque/",
+        "everything.explained.today https://everything.explained.today \u203a \\ \u203a S\u00fcleymaniye_Mosque S\u00fcleymaniye Mosque Explained"
+      ],
+      [
+        "https://www.islamicarchitecturalheritage.com/listings/suleymaniye-mosque",
+        "IRCICA https://www.islamicarchitecturalheritage.com \u203a listings Suleymaniye Mosque | IRCICA"
+      ],
+      [
+        "https://www.privilege.com.tr/en/suleymaniye-mosque",
+        "privilege.com.tr https://www.privilege.com.tr \u203a en \u203a suleymaniye-mosque SULEYMANIYE MOSQUE - privilege.com.tr"
+      ],
+      [
+        "https://madainproject.com/suleymaniye_mosque",
+        "Madain Project https://madainproject.com \u203a suleymaniye_mosque Suleymaniye Mosque - Madain Project (en)"
+      ],
+      [
+        "https://en.wikipedia.org/wiki/S%C3%BCleymaniye_Mosque",
+        "Wikipedia https://en.wikipedia.org \u203a wiki \u203a S\u00fcleymaniye_Mosque S\u00fcleymaniye Mosque - Wikipedia"
+      ]
+    ],
+    "actual_content_source_recovered": true,
+    "serp_not_returned_as_source": true,
+    "capture_sha256": "9367441eb013357ce4da10a0d11bc7a44c22f2ad1809f9ed53d12d0dc3d813db"
+  },
+  "guards": [
+    {
+      "url": "https://search.yahoo.com/search?p=secret",
+      "passed": true
+    },
+    {
+      "url": "https://r.search.yahoo.com/example",
+      "passed": true
+    },
+    {
+      "url": "https://finance.yahoo.com/news/article",
+      "passed": true
+    },
+    {
+      "url": "https://search.yahoo.com.evil.org/search",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

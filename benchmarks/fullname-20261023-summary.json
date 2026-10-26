@@ -1,0 +1,26 @@
+{
+  "scope": "Same-case/same-fixture/same-full4B-service controlled reader comparison, exposed real page plus authored controls. Not public-web or holdout accuracy.",
+  "comparison": {
+    "before_passed": 3,
+    "after_passed": 6,
+    "total": 7,
+    "wins": [
+      "real-name",
+      "prose-name",
+      "family-name"
+    ],
+    "losses": []
+  },
+  "cases_sha256": "a123083622259cf65c306bc2ab7e0525f9da3e8d52a1ca2a17bbf45603c54131",
+  "fixtures_sha256": "ff0612d5135b03354fe52077a01128d12bb5304459227cd6eabdd4ce5def5cad",
+  "production_changed_during_run": false,
+  "before_calls": 1,
+  "after_calls": 11,
+  "before_mean_seconds": 0.06774285714285715,
+  "after_mean_seconds": 0.9688857142857144,
+  "memory_after_shutdown": {
+    "used_mib": 919,
+    "total_mib": 12282
+  },
+  "remaining_failure": "name-email: exact First name overlaps generic Name; compound proof remains incomplete in both versions."
+}

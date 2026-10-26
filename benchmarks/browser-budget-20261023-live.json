@@ -1,0 +1,113 @@
+{
+  "scope": "Actual public headless render of exposed Oyez goldsource, no model or accuracy claim. Guardednetwork/caps retained; no challengehandling.",
+  "url": "https://www.oyez.org/cases/1966/37",
+  "state": {
+    "state": "rendered",
+    "requests": 18,
+    "blocked": 13,
+    "blocked_analytics": 1,
+    "bytes": 601004,
+    "browser_version": "156.0.8078.4",
+    "seconds": 4.4008
+  },
+  "title": "Oyez",
+  "passages": 12,
+  "matches": [],
+  "events": [
+    {
+      "url": "https://www.oyez.org/cases/1966/37",
+      "final": "https://www.oyez.org/cases/1966/37",
+      "status": 200,
+      "bytes": 2453,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js",
+      "final": "https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js",
+      "status": 200,
+      "bytes": 11084,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://www.oyez.org/scripts/scripts.dc9cbca2.js",
+      "final": "https://www.oyez.org/scripts/scripts.dc9cbca2.js",
+      "status": 200,
+      "bytes": 41641,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://www.oyez.org/scripts/vendor.a07b4858.js",
+      "final": "https://www.oyez.org/scripts/vendor.a07b4858.js",
+      "status": 200,
+      "bytes": 536948,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://www.oyez.org/templates/overhead.html",
+      "final": "https://www.oyez.org/templates/overhead.html",
+      "status": 200,
+      "bytes": 978,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://www.oyez.org/templates/navigation.html",
+      "final": "https://www.oyez.org/templates/navigation.html",
+      "status": 200,
+      "bytes": 2175,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://www.oyez.org/templates/search-bar.html",
+      "final": "https://www.oyez.org/templates/search-bar.html",
+      "status": 200,
+      "bytes": 147,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://www.oyez.org/templates/footer.html",
+      "final": "https://www.oyez.org/templates/footer.html",
+      "status": 200,
+      "bytes": 575,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://www.oyez.org/views/case.html",
+      "final": "https://www.oyez.org/views/case.html",
+      "status": 200,
+      "bytes": 5003,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    }
+  ],
+  "capture_path": "research/browser-budget-20261023/responses.json",
+  "capture_sha256": "526fb71bcbe896317c5cc55fd261254ddad1307e6a0c6be216ddee39d3020621",
+  "page_path": "research/browser-budget-20261023/page.json",
+  "page_sha256": "4ae5ff7c1b0993a77a99cfe54b4e83613d344acbcc7c929198e9e3984b0ec199",
+  "browser_sha256": "651c954452662f65bce2c85b6a40d1bfc48aa7eadf34dfe5278d527d63a1ed20"
+}

@@ -1,0 +1,45 @@
+{
+  "scope": "CPU-only actual primary publisher/fulltext/public keyless Europe PMC GET probes; no signup/card/billing/browser/model.",
+  "rows": [
+    {
+      "url": "https://www.frontiersin.org/journals/neurorobotics/articles/10.3389/fnbot.2021.618408/full",
+      "status": 200,
+      "error": "",
+      "bytes": 922666,
+      "title": "Frontiers | EEG-Based Driving Fatigue Detection Using a Two-Level Learning Hierarchy Radial Basis Function",
+      "passages": 1082,
+      "matches": [
+        "The EEG data used in this study were collected from six healthy, male volunteers (right-handed, aged 23 to 27 years). All volunteers had valid driver's licenses, and no participant had any history of physical or psychological disorders. The study was approved by the local ethics committee (Guangdong Provincial Work Injury Rehabilitation Center, China) and performed in accordance with the Declaration of Helsinki. Each subject was fully informed about the purpose of the research and provided written informed consent before the start of the experiment."
+      ],
+      "body_preview": "",
+      "capture_path": "research/paper-20261023-access/0.json",
+      "sha256": "950c93d7a1ad6e1ea3fe4f2c0d1214ff52c550467e31240749d096593a431ffa"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7905350/",
+      "status": 200,
+      "error": "",
+      "bytes": 224706,
+      "title": "EEG-Based Driving Fatigue Detection Using a Two-Level Learning Hierarchy Radial Basis Function - PMC",
+      "passages": 331,
+      "matches": [
+        "The EEG data used in this study were collected from six healthy, male volunteers (right-handed, aged 23 to 27 years). All volunteers had valid driver's licenses, and no participant had any history of physical or psychological disorders. The study was approved by the local ethics committee (Guangdong Provincial Work Injury Rehabilitation Center, China) and performed in accordance with the Declaration of Helsinki. Each subject was fully informed about the purpose of the research and provided written informed consent before the start of the experiment."
+      ],
+      "body_preview": "",
+      "capture_path": "research/paper-20261023-access/1.json",
+      "sha256": "a9b494a321566ebd9738ead3821a869d1dc7406d029f05912e33cebae1be5323"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22EEG-Based%20Driving%20Fatigue%20Detection%20Using%20a%20Two-Level%20Learning%20Hierarchy%20Radial%20Basis%20Function%22&format=json&pageSize=3&resultType=core",
+      "status": 200,
+      "error": "",
+      "bytes": 6754,
+      "title": "",
+      "passages": 135,
+      "matches": [],
+      "body_preview": "{\"version\":\"6.9\",\"hitCount\":1,\"request\":{\"queryString\":\"TITLE:\\\"EEG-Based Driving Fatigue Detection Using a Two-Level Learning Hierarchy Radial Basis Function\\\"\",\"resultType\":\"core\",\"cursorMark\":\"*\",\"pageSize\":3,\"sort\":\"\",\"synonym\":false},\"resultList\":{\"result\":[{\"id\":\"33643018\",\"source\":\"MED\",\"pmid\":\"33643018\",\"pmcid\":\"PMC7905350\",\"fullTextIdList\"",
+      "capture_path": "research/paper-20261023-access/2.json",
+      "sha256": "967594a869df83fda9c5b20c943b771a67a9998fa6c1b51560817fde09fe87f2"
+    }
+  ]
+}

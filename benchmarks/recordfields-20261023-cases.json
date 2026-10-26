@@ -1,0 +1,90 @@
+[
+  {
+    "id": "real-award",
+    "query": "In what year did the biochemist Mildred Cohn receive the Golden Plate Award from the American Academy of Achievement?",
+    "path": "/real-award.html",
+    "answer": "1984",
+    "answers": [
+      "1984"
+    ],
+    "source_path": "/real-award.html",
+    "origin": "Previously exposed real page; source body matches realpages capture."
+  },
+  {
+    "id": "award-record",
+    "query": "In what year did Elin Voss receive the Cedar Prize?",
+    "path": "/award-record.html",
+    "answer": "1987",
+    "answers": [
+      "1987"
+    ],
+    "source_path": "/award-record.html",
+    "origin": "New authored development scenario; frozen before paired model run."
+  },
+  {
+    "id": "foundation-record",
+    "query": "In what year was Ridge Works founded?",
+    "path": "/foundation-record.html",
+    "answer": "1976",
+    "answers": [
+      "1976"
+    ],
+    "source_path": "/foundation-record.html",
+    "origin": "New authored development scenario; frozen before paired model run."
+  },
+  {
+    "id": "wrong-person",
+    "query": "In what year did Elin Voss receive the Cedar Prize?",
+    "path": "/wrong-person.html",
+    "answer": "",
+    "answers": [
+      ""
+    ],
+    "source_path": "/wrong-person.html",
+    "origin": "New authored development scenario; frozen before paired model run."
+  },
+  {
+    "id": "wrong-award",
+    "query": "In what year did Elin Voss receive the Cedar Prize?",
+    "path": "/wrong-award.html",
+    "answer": "",
+    "answers": [
+      ""
+    ],
+    "source_path": "/wrong-award.html",
+    "origin": "New authored development scenario; frozen before paired model run."
+  },
+  {
+    "id": "unseen-attribute",
+    "query": "In what year did Elin Voss receive the Cedar Prize?",
+    "path": "/unseen-attribute.html",
+    "answer": "1994",
+    "answers": [
+      "1994"
+    ],
+    "source_path": "/unseen-attribute.html",
+    "origin": "New authored development scenario; frozen before paired model run."
+  },
+  {
+    "id": "conflicting-records",
+    "query": "In what year did Elin Voss receive the Cedar Prize?",
+    "path": "/conflicting-records.html",
+    "answer": "",
+    "answers": [
+      ""
+    ],
+    "source_path": "/conflicting-records.html",
+    "origin": "New authored development scenario; frozen before paired model run."
+  },
+  {
+    "id": "wrong-event",
+    "query": "In what year did Elin Voss receive the Cedar Prize?",
+    "path": "/wrong-event.html",
+    "answer": "",
+    "answers": [
+      ""
+    ],
+    "source_path": "/wrong-event.html",
+    "origin": "New authored development scenario; frozen before paired model run."
+  }
+]

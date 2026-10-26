@@ -1,0 +1,127 @@
+{
+  "scope": "Original same frozen8-case full4B reader development replay; baseline408426d then binding guards in one owned service. Not independent holdout or web discovery accuracy.",
+  "comparison": {
+    "before_passed": 6,
+    "after_passed": 8,
+    "total": 8,
+    "wins": [
+      "wrong-award",
+      "conflicting-records"
+    ],
+    "losses": []
+  },
+  "same_cases_as_source_fields": true,
+  "same_fixtures_as_source_fields": true,
+  "memory_after_shutdown": {
+    "used_mib": 1499,
+    "total_mib": 12282
+  },
+  "before": {
+    "mean_seconds": 1.5525375000000001,
+    "llm_calls": 15,
+    "rows": [
+      {
+        "id": "real-award",
+        "answer": "1984",
+        "joint_ok": true,
+        "reason": "model_verified"
+      },
+      {
+        "id": "award-record",
+        "answer": "1987",
+        "joint_ok": true,
+        "reason": "model_verified"
+      },
+      {
+        "id": "foundation-record",
+        "answer": "1976",
+        "joint_ok": true,
+        "reason": "model_verified"
+      },
+      {
+        "id": "wrong-person",
+        "answer": "",
+        "joint_ok": true,
+        "reason": "model_no_evidence"
+      },
+      {
+        "id": "wrong-award",
+        "answer": "1987",
+        "joint_ok": false,
+        "reason": "model_verified"
+      },
+      {
+        "id": "unseen-attribute",
+        "answer": "1994",
+        "joint_ok": true,
+        "reason": "model_verified"
+      },
+      {
+        "id": "conflicting-records",
+        "answer": "1987",
+        "joint_ok": false,
+        "reason": "model_verified"
+      },
+      {
+        "id": "wrong-event",
+        "answer": "",
+        "joint_ok": true,
+        "reason": "model_no_evidence"
+      }
+    ]
+  },
+  "after": {
+    "mean_seconds": 1.4001125,
+    "llm_calls": 12,
+    "rows": [
+      {
+        "id": "real-award",
+        "answer": "1984",
+        "joint_ok": true,
+        "reason": "model_verified"
+      },
+      {
+        "id": "award-record",
+        "answer": "1987",
+        "joint_ok": true,
+        "reason": "model_verified"
+      },
+      {
+        "id": "foundation-record",
+        "answer": "1976",
+        "joint_ok": true,
+        "reason": "model_verified"
+      },
+      {
+        "id": "wrong-person",
+        "answer": "",
+        "joint_ok": true,
+        "reason": "model_no_evidence"
+      },
+      {
+        "id": "wrong-award",
+        "answer": "",
+        "joint_ok": true,
+        "reason": "model_no_evidence"
+      },
+      {
+        "id": "unseen-attribute",
+        "answer": "1994",
+        "joint_ok": true,
+        "reason": "model_verified"
+      },
+      {
+        "id": "conflicting-records",
+        "answer": "",
+        "joint_ok": true,
+        "reason": "unresolved_conflict"
+      },
+      {
+        "id": "wrong-event",
+        "answer": "",
+        "joint_ok": true,
+        "reason": "model_no_evidence"
+      }
+    ]
+  }
+}

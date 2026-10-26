@@ -1,0 +1,33 @@
+{
+  "scope": "Observed replay outcomes, not question accuracy. Same171savedpayloads,6secondrequestbudgets; startupfreeGPUbudgetmaydiffer.",
+  "variants": {
+    "gpu-memory-budget-20261025-mixed-v1": {
+      "n": 171,
+      "states": {
+        "ok": 150,
+        "model_deadline": 3,
+        "model_context_limit": 10,
+        "http_503": 1,
+        "model_invalid_selection": 3,
+        "TimeoutError": 4
+      },
+      "peak_allocated_bytes": 10987850240,
+      "peak_reserved_bytes": 11060379648,
+      "input_log_sha256": "08520b2823aad1ce6b8264172876534e2be7a57869d0037935ce6584f90eeeee",
+      "last_active_request": null
+    },
+    "chunk-prefill-20261025-mixed-v1": {
+      "n": 171,
+      "states": {
+        "ok": 157,
+        "model_context_limit": 10,
+        "model_invalid_selection": 3,
+        "model_deadline": 1
+      },
+      "peak_allocated_bytes": 9129643008,
+      "peak_reserved_bytes": 9294577664,
+      "input_log_sha256": "cc901762d13a40796af54b960d0230be8cc705f7806dfa6078382bf5fbe59967",
+      "last_active_request": null
+    }
+  }
+}

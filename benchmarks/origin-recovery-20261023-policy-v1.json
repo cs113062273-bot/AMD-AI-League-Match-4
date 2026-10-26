@@ -1,0 +1,435 @@
+{
+  "scope": "Source queue policy invariants; direct data checks, no network/model/accuracy claim.",
+  "passed": 17,
+  "total": 17,
+  "rows": [
+    {
+      "id": "no-denial",
+      "passed": true,
+      "expected": [
+        "https://a.example/0",
+        "https://a.example/1",
+        "https://b.example/0"
+      ],
+      "actual": [
+        "https://a.example/0",
+        "https://a.example/1",
+        "https://b.example/0"
+      ],
+      "every_source_retained": true,
+      "trace": null,
+      "pending": [
+        "https://b.example/1",
+        "https://a.example/2",
+        "https://c.example/0"
+      ]
+    },
+    {
+      "id": "denied-origin-moves-back",
+      "passed": true,
+      "expected": [
+        "https://b.example/0",
+        "https://b.example/1",
+        "https://c.example/0"
+      ],
+      "actual": [
+        "https://b.example/0",
+        "https://b.example/1",
+        "https://c.example/0"
+      ],
+      "every_source_retained": true,
+      "trace": {
+        "denied_origins": [
+          "https://a.example"
+        ],
+        "previous_batch": [
+          "https://a.example/0",
+          "https://a.example/1",
+          "https://b.example/0"
+        ],
+        "next_batch": [
+          "https://b.example/0",
+          "https://b.example/1",
+          "https://c.example/0"
+        ],
+        "pending_count": 3,
+        "navigation_target": ""
+      },
+      "pending": [
+        "https://a.example/0",
+        "https://a.example/1",
+        "https://a.example/2"
+      ]
+    },
+    {
+      "id": "404-is-resource-specific",
+      "passed": true,
+      "expected": [
+        "https://a.example/0",
+        "https://a.example/1",
+        "https://b.example/0"
+      ],
+      "actual": [
+        "https://a.example/0",
+        "https://a.example/1",
+        "https://b.example/0"
+      ],
+      "every_source_retained": true,
+      "trace": null,
+      "pending": [
+        "https://b.example/1",
+        "https://a.example/2",
+        "https://c.example/0"
+      ]
+    },
+    {
+      "id": "429-has-no-new-policy",
+      "passed": true,
+      "expected": [
+        "https://a.example/0",
+        "https://a.example/1",
+        "https://b.example/0"
+      ],
+      "actual": [
+        "https://a.example/0",
+        "https://a.example/1",
+        "https://b.example/0"
+      ],
+      "every_source_retained": true,
+      "trace": null,
+      "pending": [
+        "https://b.example/1",
+        "https://a.example/2",
+        "https://c.example/0"
+      ]
+    },
+    {
+      "id": "later-success-restores-origin",
+      "passed": true,
+      "expected": [
+        "https://a.example/0",
+        "https://a.example/1",
+        "https://b.example/0"
+      ],
+      "actual": [
+        "https://a.example/0",
+        "https://a.example/1",
+        "https://b.example/0"
+      ],
+      "every_source_retained": true,
+      "trace": null,
+      "pending": [
+        "https://b.example/1",
+        "https://a.example/2",
+        "https://c.example/0"
+      ]
+    },
+    {
+      "id": "failed-success-does-not-clear",
+      "passed": true,
+      "expected": [
+        "https://b.example/0",
+        "https://b.example/1",
+        "https://c.example/0"
+      ],
+      "actual": [
+        "https://b.example/0",
+        "https://b.example/1",
+        "https://c.example/0"
+      ],
+      "every_source_retained": true,
+      "trace": {
+        "denied_origins": [
+          "https://a.example"
+        ],
+        "previous_batch": [
+          "https://a.example/0",
+          "https://a.example/1",
+          "https://b.example/0"
+        ],
+        "next_batch": [
+          "https://b.example/0",
+          "https://b.example/1",
+          "https://c.example/0"
+        ],
+        "pending_count": 3,
+        "navigation_target": ""
+      },
+      "pending": [
+        "https://a.example/0",
+        "https://a.example/1",
+        "https://a.example/2"
+      ]
+    },
+    {
+      "id": "all-same-origin-kept",
+      "passed": true,
+      "expected": [
+        "https://a.example/0",
+        "https://a.example/1"
+      ],
+      "actual": [
+        "https://a.example/0",
+        "https://a.example/1"
+      ],
+      "every_source_retained": true,
+      "trace": null,
+      "pending": [
+        "https://a.example/2"
+      ]
+    },
+    {
+      "id": "explicit-navigation-target-kept",
+      "passed": true,
+      "expected": [
+        "https://a.example/1",
+        "https://b.example/0",
+        "https://b.example/1"
+      ],
+      "actual": [
+        "https://a.example/1",
+        "https://b.example/0",
+        "https://b.example/1"
+      ],
+      "every_source_retained": true,
+      "trace": {
+        "denied_origins": [
+          "https://a.example"
+        ],
+        "previous_batch": [
+          "https://a.example/0",
+          "https://a.example/1",
+          "https://b.example/0"
+        ],
+        "next_batch": [
+          "https://a.example/1",
+          "https://b.example/0",
+          "https://b.example/1"
+        ],
+        "pending_count": 3,
+        "navigation_target": "https://a.example/1"
+      },
+      "pending": [
+        "https://c.example/0",
+        "https://a.example/0",
+        "https://a.example/2"
+      ]
+    },
+    {
+      "id": "unrelated-origin-no-effect",
+      "passed": true,
+      "expected": [
+        "https://a.example/0",
+        "https://a.example/1",
+        "https://b.example/0"
+      ],
+      "actual": [
+        "https://a.example/0",
+        "https://a.example/1",
+        "https://b.example/0"
+      ],
+      "every_source_retained": true,
+      "trace": null,
+      "pending": [
+        "https://b.example/1",
+        "https://a.example/2",
+        "https://c.example/0"
+      ]
+    },
+    {
+      "id": "custom-search-provider-not-content",
+      "passed": true,
+      "expected": [
+        "https://a.example/0",
+        "https://a.example/1",
+        "https://b.example/0"
+      ],
+      "actual": [
+        "https://a.example/0",
+        "https://a.example/1",
+        "https://b.example/0"
+      ],
+      "every_source_retained": true,
+      "trace": null,
+      "pending": [
+        "https://b.example/1",
+        "https://a.example/2",
+        "https://c.example/0"
+      ]
+    },
+    {
+      "id": "standard-search-not-content",
+      "passed": true,
+      "expected": [
+        "https://www.google.com/about",
+        "https://b.example/0"
+      ],
+      "actual": [
+        "https://www.google.com/about",
+        "https://b.example/0"
+      ],
+      "every_source_retained": true,
+      "trace": null,
+      "pending": [
+        "https://c.example/0"
+      ]
+    },
+    {
+      "id": "redirect-observation-is-final-origin",
+      "passed": true,
+      "expected": [
+        "https://a.example/0",
+        "https://a.example/1",
+        "https://a.example/2"
+      ],
+      "actual": [
+        "https://a.example/0",
+        "https://a.example/1",
+        "https://a.example/2"
+      ],
+      "every_source_retained": true,
+      "trace": {
+        "denied_origins": [
+          "https://b.example"
+        ],
+        "previous_batch": [
+          "https://a.example/0",
+          "https://a.example/1",
+          "https://b.example/0"
+        ],
+        "next_batch": [
+          "https://a.example/0",
+          "https://a.example/1",
+          "https://a.example/2"
+        ],
+        "pending_count": 3,
+        "navigation_target": ""
+      },
+      "pending": [
+        "https://c.example/0",
+        "https://b.example/0",
+        "https://b.example/1"
+      ]
+    },
+    {
+      "id": "canonical-default-port",
+      "passed": true,
+      "expected": [
+        "https://b.example/0",
+        "https://b.example/1",
+        "https://c.example/0"
+      ],
+      "actual": [
+        "https://b.example/0",
+        "https://b.example/1",
+        "https://c.example/0"
+      ],
+      "every_source_retained": true,
+      "trace": {
+        "denied_origins": [
+          "https://a.example"
+        ],
+        "previous_batch": [
+          "https://a.example/0",
+          "https://a.example/1",
+          "https://b.example/0"
+        ],
+        "next_batch": [
+          "https://b.example/0",
+          "https://b.example/1",
+          "https://c.example/0"
+        ],
+        "pending_count": 3,
+        "navigation_target": ""
+      },
+      "pending": [
+        "https://a.example/0",
+        "https://a.example/1",
+        "https://a.example/2"
+      ]
+    },
+    {
+      "id": "other-port-independent",
+      "passed": true,
+      "expected": [
+        "https://a.example/0",
+        "https://a.example/1",
+        "https://b.example/0"
+      ],
+      "actual": [
+        "https://a.example/0",
+        "https://a.example/1",
+        "https://b.example/0"
+      ],
+      "every_source_retained": true,
+      "trace": null,
+      "pending": [
+        "https://b.example/1",
+        "https://a.example/2",
+        "https://c.example/0"
+      ]
+    },
+    {
+      "id": "signed-url-retained",
+      "passed": true,
+      "expected": [
+        "https://b.example/0"
+      ],
+      "actual": [
+        "https://b.example/0"
+      ],
+      "every_source_retained": true,
+      "trace": {
+        "denied_origins": [
+          "https://a.example"
+        ],
+        "previous_batch": [
+          "https://a.example/signed?X-Amz-Signature=literal%2B&x=1"
+        ],
+        "next_batch": [
+          "https://b.example/0"
+        ],
+        "pending_count": 1,
+        "navigation_target": ""
+      },
+      "pending": [
+        "https://a.example/signed?X-Amz-Signature=literal%2B&x=1"
+      ]
+    },
+    {
+      "id": "empty-active-does-not-expand",
+      "passed": true,
+      "expected": [],
+      "actual": [],
+      "every_source_retained": true,
+      "trace": null,
+      "pending": [
+        "https://b.example/1",
+        "https://a.example/2",
+        "https://c.example/0"
+      ]
+    },
+    {
+      "id": "invalid-observation-ignored",
+      "passed": true,
+      "expected": [
+        "https://a.example/0",
+        "https://a.example/1",
+        "https://b.example/0"
+      ],
+      "actual": [
+        "https://a.example/0",
+        "https://a.example/1",
+        "https://b.example/0"
+      ],
+      "every_source_retained": true,
+      "trace": null,
+      "pending": [
+        "https://b.example/1",
+        "https://a.example/2",
+        "https://c.example/0"
+      ]
+    }
+  ],
+  "engine_sha256": "ed8d77d0d0fc3d78423cb28dd7f7799393bbf733fcae967344eddeda4a1bcbd1"
+}

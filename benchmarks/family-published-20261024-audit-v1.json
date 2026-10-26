@@ -1,0 +1,137 @@
+{
+  "scope": "Read-only audit of newly obtained actual public published-person JSON. No model/new assessment; count is listed relationship records, not proof of an exact biological family size.",
+  "capture_path": "research\\family-published-20261024-probe-v1\\0.json",
+  "capture_sha256": "51e08095f55ec81063b801051889e8fc4154bd5bba7b893959c66e99bf80eb96",
+  "body_sha256": "d1f7fe4b187dd89db72cfba70164ab378a60a42b17da2384930f456fb9175aeb",
+  "source": "https://www.familysearch.org/service/tree/tree-data/published/persons/9MF8-T95",
+  "person_identity": {
+    "identifier": "9MF8-T95",
+    "name": "Johann Caspar F\u00fcssli",
+    "birthDate": "+1706-01-03",
+    "deathDate": "+1782-05-06",
+    "url": "https://ancestors.familysearch.org/en/9MF8-T95/johann-caspar-f%C3%BCssli-1706-1782"
+  },
+  "spouse_identities": [
+    {
+      "identifier": "LY1P-YNW",
+      "name": "Anna Elisabeth Waser",
+      "url": "https://ancestors.familysearch.org/en/LY1P-YNW/anna-elisabeth-waser-1712-1759"
+    }
+  ],
+  "child_records": 18,
+  "unique_nonempty_child_identifiers": 18,
+  "other_parent_id_counts": {
+    "LY1P-YNW": 18
+  },
+  "published_flags": {
+    "False": 10,
+    "True": 8
+  },
+  "life_summary": "When Johann Caspar F\u00fcssli was born on 3 January 1706, in Z\u00fcrich, Switzerland, his father, Hans Rudolf F\u00fcssli, was 26 and his mother, Elisabetha Scherrer, was 26. He married Anna Elisabeth Waser on 22 January 1736, in Z\u00fcrich, Switzerland. They were the parents of at least 7 sons and 11 daughters. He died on 6 May 1782, in his hometown, at the age of 76.",
+  "summary_qualification": "The actual prose says at least 7 sons and 11 daughters. Do not silently turn that qualified prose into an exact total. The complete listed-record array and each otherParentId need a separate validated collection-count proof.",
+  "current_generic_parser": {
+    "passages": 3500,
+    "person_identity_passages": 8,
+    "top8_payload": {
+      "question": "How many children did Swiss painter Johann Caspar F\u00fcssli have with his wife, Elisabeth?",
+      "starting_url": "https://en.wikipedia.org/wiki/Johann_Caspar_F%C3%BCssli",
+      "constraints": {
+        "kind": "number",
+        "year": "",
+        "as_of": "",
+        "versions": [],
+        "stable": false,
+        "cardinality": 1,
+        "target": "how many children did swiss painter johann caspar f\u00fcssli have with his wife, elisabeth",
+        "choices": [],
+        "operation": "single",
+        "required_fields": [],
+        "date_precision": ""
+      },
+      "candidates": [],
+      "passages": [
+        {
+          "id": 0,
+          "text": "localized Data.en.life Summary: When Johann Caspar F\u00fcssli was born on 3 January 1706, in Z\u00fcrich, Switzerland, his father, Hans Rudolf F\u00fcssli, was 26 and his mother, Elisabetha Scherrer, was 26. He married Anna Elisabeth Waser on 22 January 1736, in Z\u00fcrich, Switzerland. They were the parents of at least 7 sons and 11 daughters. He died on 6 May 1782, in his hometown, at the age of 76. | localizedData.en { 3 January 1706\u20136 May 1782: 3 January 1706\u20136 May 1782 | 1706\u20131782: 1706\u20131782 | 1707\u20131707: 1707\u20131707 | 1708\u2013Female: 1708\u2013Deceased | 1709\u20131740: 1709\u20131740 | 1710\u20131784: 1710\u20131784 | 1711\u20131711: 1711\u20131711 | 1712\u20131774: 1712\u20131774 | 1713\u20131713: 1713\u20131713 | 1714\u20131749: 1714\u20131749 | 1715\u20131715: 1715\u20131715 | 1717\u2013Female: 1717\u2013Deceased | 1718\u20131718: 1718\u20131718 | 1720\u20131802: 1720\u20131802 | 1712\u20131759: 1712\u20131759 | 1737\u20131806: 1737\u20131806 | 1738\u20131738: 1738\u20131738 | 1738\u20131739: 1738\u20131739 | 1740\u20131740: 1740\u20131740 | 1741\u20131825: 1741\u20131825 | 1742\u20131743: 1742\u20131743 | 1743\u20131786: 1743\u20131786 | 1744\u20131780: 1744\u20131780 | 1745\u2013Female: 1745\u2013Deceased | 1746\u2013Female: 1746\u2013Deceased | 1747\u2013Male: 1747\u2013Deceased | 1748\u2013Male: 1748\u2013Deceased |",
+          "source_start": 0,
+          "source_end": 1092,
+          "section": "localizedData.en { 3 January 1706\u20136 May 1782: 3 January 1706\u20136 May 1782 | 1706\u20131782: 1706\u20131782 | 1707\u20131707: 1707\u20131707 | 1708\u2013Female: 1708\u2013Deceased | 1709\u20131740: 1709\u20131740 | 1710\u20131784: 1710\u20131784 | 1711\u20131711: 1711\u20131711 | 1712\u20131774: 1712\u20131774 | 1713\u20131713: 1713\u20131713 | 1714\u20131749: 1714\u20131749 | 1715\u20131715: 1715\u20131715 | 1717\u2013Female: 1717\u2013Deceased | 1718\u20131718: 1718\u20131718 | 1720\u20131802: 1720\u20131802 | 1712\u20131759: 1712",
+          "source": "https://www.familysearch.org/service/tree/tree-data/published/persons/9MF8-T95",
+          "locator": "localizedData.en.lifeSummary",
+          "document_title": ""
+        },
+        {
+          "id": 1,
+          "text": "localized Data.ko.life Summary: Johann Caspar F\u00fcssli(\uc774)\uac00 1706\ub144 1\uc6d4 3\uc77c \uc2a4\uc704\uc2a4 \uc988\u00fc\ub9ac\uce58\uc5d0\uc11c \ud0dc\uc5b4\ub0ac\uc744 \ub54c, \uadf8\uc758 \uc544\ubc84\uc9c0 Hans Rudolf F\u00fcssli(\uc740)\ub294 26\uc138\uc600\uace0, \uadf8\uc758 \uc5b4\uba38\ub2c8 Elisabetha Scherrer(\uc740)\ub294 26\uc138\uc600\ub2e4. \uadf8\ub294 1736\ub144 1\uc6d4 22\uc77c \uc2a4\uc704\uc2a4 \uc988\u00fc\ub9ac\uce58\uc5d0\uc11c Anna Elisabeth Waser(\uc640)\uacfc \uacb0\ud63c\ud588\ub2e4. \uadf8\ub4e4\uc740 \uc801\uc5b4\ub3c4 \uc77c\uacf1 \uba85\uc758 \uc544\ub4e4\uacfc \uc5f4 \uba85 \uc774\uc0c1\uc758 \ub538\uc744 \ub450\uc5c8\ub2e4. \uadf8\ub294 1782\ub144 5\uc6d4 6\uc77c \uadf8\uc758 \uace0\ud5a5\uc5d0\uc11c 76\uc138\uc758 \ub098\uc774\ub85c \uc0ac\ub9dd\ud588\ub2e4. | localizedData.ko { 3 January 1706\u20136 May 1782: 1706\ub144 1\uc6d4 3\uc77c\u20131782\ub144 5\uc6d4 6\uc77c | 1706\u20131782: 1706\ub144\u20131782\ub144 | 1707\u20131707: 1707\ub144\u20131707\ub144 | 1708\u2013Female: 1708\ub144\u2013Deceased | 1709\u20131740: 1709\ub144\u20131740\ub144 | 1710\u20131784: 1710\ub144\u20131784\ub144 | 1711\u20131711: 1711\ub144\u20131711\ub144 | 1712\u20131774: 1712\ub144\u20131774\ub144 | 1713\u20131713: 1713\ub144\u20131713\ub144 | 1714\u20131749: 1714\ub144\u20131749\ub144 | 1715\u20131715: 1715\ub144\u20131715\ub144 | 1717\u2013Female: 1717\ub144\u2013Deceased | 1718\u20131718: 1718\ub144\u20131718\ub144 | 1720\u20131802: 1720\ub144\u20131802\ub144 | 1712\u20131759: 1712\ub144\u20131759\ub144 | 1737\u20131806: 1737\ub144\u20131806\ub144 | 1738\u20131738: 1738\ub144\u20131738\ub144 | 1738\u20131739: 1738\ub144\u20131739\ub144 | 1740\u20131740: 1740\ub144\u20131740\ub144 | 1741\u20131825: 1741\ub144\u20131825\ub144 | 1742\u20131743: 1742\ub144\u20131743\ub144 | 1743\u20131786: 1743\ub144\u20131786\ub144 | 1744\u20131780: 1744\ub144\u20131780\ub144 | 1745\u2013Female: 1745\ub144\u2013Deceased | 1746\u2013Female: 1746\ub144\u2013Deceased | 1747\u2013Male: 1747\ub144\u2013Deceased | 1748\u2013Male: 1748\ub144\u2013Deceased | 1749\u20131772: 1749\ub144\u20131772\ub144 | 1750\u20131751: 1750\ub144\u20131751\ub144 |",
+          "source_start": 0,
+          "source_end": 1092,
+          "section": "localizedData.ko { 3 January 1706\u20136 May 1782: 1706\ub144 1\uc6d4 3\uc77c\u20131782\ub144 5\uc6d4 6\uc77c | 1706\u20131782: 1706\ub144\u20131782\ub144 | 1707\u20131707: 1707\ub144\u20131707\ub144 | 1708\u2013Female: 1708\ub144\u2013Deceased | 1709\u20131740: 1709\ub144\u20131740\ub144 | 1710\u20131784: 1710\ub144\u20131784\ub144 | 1711\u20131711: 1711\ub144\u20131711\ub144 | 1712\u20131774: 1712\ub144\u20131774\ub144 | 1713\u20131713: 1713\ub144\u20131713\ub144 | 1714\u20131749: 1714\ub144\u20131749\ub144 | 1715\u20131715: 1715\ub144\u20131715\ub144 | 1717\u2013Female: 1717\ub144\u2013Deceased | 1718\u20131718: 1718\ub144\u20131718\ub144 | 1720\u20131802: 1720\ub144\u20131",
+          "source": "https://www.familysearch.org/service/tree/tree-data/published/persons/9MF8-T95",
+          "locator": "localizedData.ko.lifeSummary",
+          "document_title": ""
+        },
+        {
+          "id": 2,
+          "text": "localized Data.fr.life Summary: Lorsque Johann Caspar F\u00fcssli est n\u00e9 le 3 janvier 1706, \u00e0 Zurich, Suisse, son p\u00e8re, Hans Rudolf F\u00fcssli, avait 26 ans et sa m\u00e8re, Elisabetha Scherrer, avait 26 ans. Il a \u00e9pous\u00e9 Anna Elisabeth Waser le 22 janvier 1736, \u00e0 Zurich, Suisse. Ils ont eu au moins 7 fils et 11 filles. Il est d\u00e9c\u00e9d\u00e9 le 6 mai 1782, dans sa ville natale, \u00e0 l\u2019\u00e2ge de 76 ans. | localizedData.fr { 3 January 1706\u20136 May 1782: 3 janvier 1706\u20136 mai 1782 | 1706\u20131782: 1706\u20131782 | 1707\u20131707: 1707\u20131707 | 1708\u2013Female: 1708\u2013Deceased | 1709\u20131740: 1709\u20131740 | 1710\u20131784: 1710\u20131784 | 1711\u20131711: 1711\u20131711 | 1712\u20131774: 1712\u20131774 | 1713\u20131713: 1713\u20131713 | 1714\u20131749: 1714\u20131749 | 1715\u20131715: 1715\u20131715 | 1717\u2013Female: 1717\u2013Deceased | 1718\u20131718: 1718\u20131718 | 1720\u20131802: 1720\u20131802 | 1712\u20131759: 1712\u20131759 | 1737\u20131806: 1737\u20131806 | 1738\u20131738: 1738\u20131738 | 1738\u20131739: 1738\u20131739 | 1740\u20131740: 1740\u20131740 | 1741\u20131825: 1741\u20131825 | 1742\u20131743: 1742\u20131743 | 1743\u20131786: 1743\u20131786 | 1744\u20131780: 1744\u20131780 | 1745\u2013Female: 1745\u2013Deceased | 1746\u2013Female: 1746\u2013Deceased | 1747\u2013Male: 1747\u2013Deceased | 1748\u2013Male: 1748\u2013Deceased | 1749\u20131772:",
+          "source_start": 0,
+          "source_end": 1093,
+          "section": "localizedData.fr { 3 January 1706\u20136 May 1782: 3 janvier 1706\u20136 mai 1782 | 1706\u20131782: 1706\u20131782 | 1707\u20131707: 1707\u20131707 | 1708\u2013Female: 1708\u2013Deceased | 1709\u20131740: 1709\u20131740 | 1710\u20131784: 1710\u20131784 | 1711\u20131711: 1711\u20131711 | 1712\u20131774: 1712\u20131774 | 1713\u20131713: 1713\u20131713 | 1714\u20131749: 1714\u20131749 | 1715\u20131715: 1715\u20131715 | 1717\u2013Female: 1717\u2013Deceased | 1718\u20131718: 1718\u20131718 | 1720\u20131802: 1720\u20131802 | 1712\u20131759: 1712",
+          "source": "https://www.familysearch.org/service/tree/tree-data/published/persons/9MF8-T95",
+          "locator": "localizedData.fr.lifeSummary",
+          "document_title": ""
+        },
+        {
+          "id": 3,
+          "text": "localized Data.de.life Summary: Als Johann Caspar F\u00fcssli am 3. Januar 1706 in Z\u00fcrich, Schweiz geboren wurde, war sein Vater Hans Rudolf F\u00fcssli 26 und seine Mutter Elisabetha Scherrer 26. Er hat am 22. Januar 1736 in Z\u00fcrich, Schweiz Anna Elisabeth Waser geheiratet. Sie hatten mindestens 7 S\u00f6hne und 11 T\u00f6chter. Er starb am 6. Mai 1782 im Alter von 76 Jahren in seinem Geburtsort. | localizedData.de { 3 January 1706\u20136 May 1782: 3. Januar 1706\u20136. Mai 1782 | 1706\u20131782: 1706\u20131782 | 1707\u20131707: 1707\u20131707 | 1708\u2013Female: 1708\u2013Deceased | 1709\u20131740: 1709\u20131740 | 1710\u20131784: 1710\u20131784 | 1711\u20131711: 1711\u20131711 | 1712\u20131774: 1712\u20131774 | 1713\u20131713: 1713\u20131713 | 1714\u20131749: 1714\u20131749 | 1715\u20131715: 1715\u20131715 | 1717\u2013Female: 1717\u2013Deceased | 1718\u20131718: 1718\u20131718 | 1720\u20131802: 1720\u20131802 | 1712\u20131759: 1712\u20131759 | 1737\u20131806: 1737\u20131806 | 1738\u20131738: 1738\u20131738 | 1738\u20131739: 1738\u20131739 | 1740\u20131740: 1740\u20131740 | 1741\u20131825: 1741\u20131825 | 1742\u20131743: 1742\u20131743 | 1743\u20131786: 1743\u20131786 | 1744\u20131780: 1744\u20131780 | 1745\u2013Female: 1745\u2013Deceased | 1746\u2013Female: 1746\u2013Deceased | 1747\u2013Male: 1747\u2013Deceased | 1748\u2013Male: 1748\u2013Deceased | 1749\u20131772:",
+          "source_start": 0,
+          "source_end": 1097,
+          "section": "localizedData.de { 3 January 1706\u20136 May 1782: 3. Januar 1706\u20136. Mai 1782 | 1706\u20131782: 1706\u20131782 | 1707\u20131707: 1707\u20131707 | 1708\u2013Female: 1708\u2013Deceased | 1709\u20131740: 1709\u20131740 | 1710\u20131784: 1710\u20131784 | 1711\u20131711: 1711\u20131711 | 1712\u20131774: 1712\u20131774 | 1713\u20131713: 1713\u20131713 | 1714\u20131749: 1714\u20131749 | 1715\u20131715: 1715\u20131715 | 1717\u2013Female: 1717\u2013Deceased | 1718\u20131718: 1718\u20131718 | 1720\u20131802: 1720\u20131802 | 1712\u20131759: 171",
+          "source": "https://www.familysearch.org/service/tree/tree-data/published/persons/9MF8-T95",
+          "locator": "localizedData.de.lifeSummary",
+          "document_title": ""
+        },
+        {
+          "id": 4,
+          "text": "localized Data.it.life Summary: Quando Johann Caspar F\u00fcssli \u00e8 nato il il 3 gennaio 1706 nel Zurigo, Svizzera, il suo padre, Hans Rudolf F\u00fcssli, aveva 26 anni e il suo madre, Elisabetha Scherrer, aveva 26 anni. Lui sposato Anna Elisabeth Waser il 22 gennaio 1736, nel Zurigo, Svizzera. Erano genitori di almeno 7 figli e 11 figlie. Mor\u00ec il 6 maggio 1782, nel sua cittadina, all'et\u00e0 di 76 anni. | localizedData.it { 3 January 1706\u20136 May 1782: 3 gennaio 1706\u20136 maggio 1782 | 1706\u20131782: 1706\u20131782 | 1707\u20131707: 1707\u20131707 | 1708\u2013Female: 1708\u2013Deceased | 1709\u20131740: 1709\u20131740 | 1710\u20131784: 1710\u20131784 | 1711\u20131711: 1711\u20131711 | 1712\u20131774: 1712\u20131774 | 1713\u20131713: 1713\u20131713 | 1714\u20131749: 1714\u20131749 | 1715\u20131715: 1715\u20131715 | 1717\u2013Female: 1717\u2013Deceased | 1718\u20131718: 1718\u20131718 | 1720\u20131802: 1720\u20131802 | 1712\u20131759: 1712\u20131759 | 1737\u20131806: 1737\u20131806 | 1738\u20131738: 1738\u20131738 | 1738\u20131739: 1738\u20131739 | 1740\u20131740: 1740\u20131740 | 1741\u20131825: 1741\u20131825 | 1742\u20131743: 1742\u20131743 | 1743\u20131786: 1743\u20131786 | 1744\u20131780: 1744\u20131780 | 1745\u2013Female: 1745\u2013Deceased | 1746\u2013Female: 1746\u2013Deceased | 1747\u2013Male: 1747\u2013Deceased | 1748\u2013Male: 1748\u2013Deceased",
+          "source_start": 0,
+          "source_end": 1099,
+          "section": "localizedData.it { 3 January 1706\u20136 May 1782: 3 gennaio 1706\u20136 maggio 1782 | 1706\u20131782: 1706\u20131782 | 1707\u20131707: 1707\u20131707 | 1708\u2013Female: 1708\u2013Deceased | 1709\u20131740: 1709\u20131740 | 1710\u20131784: 1710\u20131784 | 1711\u20131711: 1711\u20131711 | 1712\u20131774: 1712\u20131774 | 1713\u20131713: 1713\u20131713 | 1714\u20131749: 1714\u20131749 | 1715\u20131715: 1715\u20131715 | 1717\u2013Female: 1717\u2013Deceased | 1718\u20131718: 1718\u20131718 | 1720\u20131802: 1720\u20131802 | 1712\u20131759: 1",
+          "source": "https://www.familysearch.org/service/tree/tree-data/published/persons/9MF8-T95",
+          "locator": "localizedData.it.lifeSummary",
+          "document_title": ""
+        },
+        {
+          "id": 5,
+          "text": "localized Data.ja.life Summary: Johann Caspar F\u00fcssli\u304c1706\u5e741\u67083\u65e5\u306b\u30b9\u30a4\u30b9\u30ba\u00fc\u30ea\u30c1\u3067\u751f\u307e\u308c\u305f\u6642\uff0c\u7236Hans Rudolf F\u00fcssli\u306f26\u6b73\uff0c\u6bcdElisabetha Scherrer\u306f26\u6b73\u3067\u3042\u3063\u305f\u30021736\u5e741\u670822\u65e5\u306b\u30b9\u30a4\u30b9\u30ba\u00fc\u30ea\u30c1\u3067Anna Elisabeth Waser\u3068\u7d50\u5a5a\u3057\u305f\u3002\u5f7c\u3089\u306f\u5c11\u306a\u304f\u3068\u30827\u4eba\u306e\u606f\u5b50\u306811\u4eba\u306e\u5a18\u306e\u89aa\u3067\u3042\u3063\u305f\u3002\u5f7c\u306f1782\u5e745\u67086\u65e5\u306b\u6545\u90f7\u306776\u6b73\u3067\u6b7b\u53bb\u3057\u305f\u3002 | localizedData.ja { 3 January 1706\u20136 May 1782: 1706\u5e741\u67083\u65e5\u20131782\u5e745\u67086\u65e5 | 1706\u20131782: 1706\u5e74\u20131782\u5e74 | 1707\u20131707: 1707\u5e74\u20131707\u5e74 | 1708\u2013Female: 1708\u5e74\u2013Deceased | 1709\u20131740: 1709\u5e74\u20131740\u5e74 | 1710\u20131784: 1710\u5e74\u20131784\u5e74 | 1711\u20131711: 1711\u5e74\u20131711\u5e74 | 1712\u20131774: 1712\u5e74\u20131774\u5e74 | 1713\u20131713: 1713\u5e74\u20131713\u5e74 | 1714\u20131749: 1714\u5e74\u20131749\u5e74 | 1715\u20131715: 1715\u5e74\u20131715\u5e74 | 1717\u2013Female: 1717\u5e74\u2013Deceased | 1718\u20131718: 1718\u5e74\u20131718\u5e74 | 1720\u20131802: 1720\u5e74\u20131802\u5e74 | 1712\u20131759: 1712\u5e74\u20131759\u5e74 | 1737\u20131806: 1737\u5e74\u20131806\u5e74 | 1738\u20131738: 1738\u5e74\u20131738\u5e74 | 1738\u20131739: 1738\u5e74\u20131739\u5e74 | 1740\u20131740: 1740\u5e74\u20131740\u5e74 | 1741\u20131825: 1741\u5e74\u20131825\u5e74 | 1742\u20131743: 1742\u5e74\u20131743\u5e74 | 1743\u20131786: 1743\u5e74\u20131786\u5e74 | 1744\u20131780: 1744\u5e74\u20131780\u5e74 | 1745\u2013Female: 1745\u5e74\u2013Deceased | 1746\u2013Female: 1746\u5e74\u2013Deceased | 1747\u2013Male: 1747\u5e74\u2013Deceased | 1748\u2013Male: 1748\u5e74\u2013Deceased | 1749\u20131772: 1749\u5e74\u20131772\u5e74 | 1750\u20131751: 1750\u5e74\u20131751\u5e74 | 1752\u20131752: 1752\u5e74\u20131752\u5e74 | 1753\u20131754: 1753\u5e74\u20131754\u5e74 | 1754\u20131756: 1754\u5e74\u20131756\u5e74 |",
+          "source_start": 0,
+          "source_end": 1096,
+          "section": "localizedData.ja { 3 January 1706\u20136 May 1782: 1706\u5e741\u67083\u65e5\u20131782\u5e745\u67086\u65e5 | 1706\u20131782: 1706\u5e74\u20131782\u5e74 | 1707\u20131707: 1707\u5e74\u20131707\u5e74 | 1708\u2013Female: 1708\u5e74\u2013Deceased | 1709\u20131740: 1709\u5e74\u20131740\u5e74 | 1710\u20131784: 1710\u5e74\u20131784\u5e74 | 1711\u20131711: 1711\u5e74\u20131711\u5e74 | 1712\u20131774: 1712\u5e74\u20131774\u5e74 | 1713\u20131713: 1713\u5e74\u20131713\u5e74 | 1714\u20131749: 1714\u5e74\u20131749\u5e74 | 1715\u20131715: 1715\u5e74\u20131715\u5e74 | 1717\u2013Female: 1717\u5e74\u2013Deceased | 1718\u20131718: 1718\u5e74\u20131718\u5e74 | 1720\u20131802: 1720\u5e74\u20131802\u5e74",
+          "source": "https://www.familysearch.org/service/tree/tree-data/published/persons/9MF8-T95",
+          "locator": "localizedData.ja.lifeSummary",
+          "document_title": ""
+        },
+        {
+          "id": 6,
+          "text": "localized Data.zh.life Summary: \u7576Johann Caspar F\u00fcssli\u65bc1706\u5e741\u67083\u65e5\u51fa\u751f\u5728\u745e\u58eb\u723e\u5229\u6642\uff0c\u4ed6\u7684\u7236\u89aaHans Rudolf F\u00fcssli26\u6b72\uff0c\u6bcd\u89aaElisabetha Scherrer26\u6b72\u3002\u4ed6\u65bc1736\u5e741\u670822\u65e5\u8207Anna Elisabeth Waser\u5728\u745e\u58eb\u723e\u5229\u7d50\u5a5a\u3002\u4ed6\u5011\u81f3\u5c11\u662f7\u500b\u5152\u5b50\u548c11\u500b\u5973\u5152\u7684\u7236\u6bcd\u3002\u4ed6\u53bb\u4e16\u65bc1782\u5e745\u67086\u65e5\u5728\u4ed6\u7684\u5bb6\u9109\u4eab\u5e7476\u6b72\u3002 | localizedData.zh { 3 January 1706\u20136 May 1782: 1706\u5e741\u67083\u65e5\u20131782\u5e745\u67086\u65e5 | 1706\u20131782: 1706\u5e74\u20131782\u5e74 | 1707\u20131707: 1707\u5e74\u20131707\u5e74 | 1708\u2013Female: 1708\u5e74\u2013Deceased | 1709\u20131740: 1709\u5e74\u20131740\u5e74 | 1710\u20131784: 1710\u5e74\u20131784\u5e74 | 1711\u20131711: 1711\u5e74\u20131711\u5e74 | 1712\u20131774: 1712\u5e74\u20131774\u5e74 | 1713\u20131713: 1713\u5e74\u20131713\u5e74 | 1714\u20131749: 1714\u5e74\u20131749\u5e74 | 1715\u20131715: 1715\u5e74\u20131715\u5e74 | 1717\u2013Female: 1717\u5e74\u2013Deceased | 1718\u20131718: 1718\u5e74\u20131718\u5e74 | 1720\u20131802: 1720\u5e74\u20131802\u5e74 | 1712\u20131759: 1712\u5e74\u20131759\u5e74 | 1737\u20131806: 1737\u5e74\u20131806\u5e74 | 1738\u20131738: 1738\u5e74\u20131738\u5e74 | 1738\u20131739: 1738\u5e74\u20131739\u5e74 | 1740\u20131740: 1740\u5e74\u20131740\u5e74 | 1741\u20131825: 1741\u5e74\u20131825\u5e74 | 1742\u20131743: 1742\u5e74\u20131743\u5e74 | 1743\u20131786: 1743\u5e74\u20131786\u5e74 | 1744\u20131780: 1744\u5e74\u20131780\u5e74 | 1745\u2013Female: 1745\u5e74\u2013Deceased | 1746\u2013Female: 1746\u5e74\u2013Deceased | 1747\u2013Male: 1747\u5e74\u2013Deceased | 1748\u2013Male: 1748\u5e74\u2013Deceased | 1749\u20131772: 1749\u5e74\u20131772\u5e74 | 1750\u20131751: 1750\u5e74\u20131751\u5e74 | 1752\u20131752: 1752\u5e74\u20131752\u5e74 | 1753\u20131754: 1753\u5e74\u20131754\u5e74 | 1754\u20131756: 1754\u5e74\u20131756\u5e74 | 1757\u20131780:",
+          "source_start": 0,
+          "source_end": 1089,
+          "section": "localizedData.zh { 3 January 1706\u20136 May 1782: 1706\u5e741\u67083\u65e5\u20131782\u5e745\u67086\u65e5 | 1706\u20131782: 1706\u5e74\u20131782\u5e74 | 1707\u20131707: 1707\u5e74\u20131707\u5e74 | 1708\u2013Female: 1708\u5e74\u2013Deceased | 1709\u20131740: 1709\u5e74\u20131740\u5e74 | 1710\u20131784: 1710\u5e74\u20131784\u5e74 | 1711\u20131711: 1711\u5e74\u20131711\u5e74 | 1712\u20131774: 1712\u5e74\u20131774\u5e74 | 1713\u20131713: 1713\u5e74\u20131713\u5e74 | 1714\u20131749: 1714\u5e74\u20131749\u5e74 | 1715\u20131715: 1715\u5e74\u20131715\u5e74 | 1717\u2013Female: 1717\u5e74\u2013Deceased | 1718\u20131718: 1718\u5e74\u20131718\u5e74 | 1720\u20131802: 1720\u5e74\u20131802\u5e74",
+          "source": "https://www.familysearch.org/service/tree/tree-data/published/persons/9MF8-T95",
+          "locator": "localizedData.zh.lifeSummary",
+          "document_title": ""
+        },
+        {
+          "id": 7,
+          "text": "localized Data.zh-hans.life Summary: \u5f53Johann Caspar F\u00fcssli\u4e8e1706\u5e741\u67083\u65e5\u51fa\u751f\u5728\u745e\u58eb\u723e\u5229\u65f6\uff0c\u4ed6\u7684\u7236\u4eb2Hans Rudolf F\u00fcssli26\u5c81\uff0c\u6bcd\u4eb2Elisabetha Scherrer26\u5c81\u3002\u4ed6\u4e8e1736\u5e741\u670822\u65e5\u4e0eAnna Elisabeth Waser\u5728\u745e\u58eb\u723e\u5229\u7ed3\u5a5a\u3002\u4ed6\u4eec\u81f3\u5c11\u662f7\u4e2a\u513f\u5b50\u548c11\u4e2a\u5973\u513f\u7684\u7236\u6bcd\u3002\u4ed6\u53bb\u4e16\u4e8e1782\u5e745\u67086\u65e5\u5728\u4ed6\u7684\u5bb6\u4e61\u4eab\u5e7476\u5c81\u3002 | localizedData.zh-hans { 3 January 1706\u20136 May 1782: 1706\u5e741\u67083\u65e5\u20131782\u5e745\u67086\u65e5 | 1706\u20131782: 1706\u5e74\u20131782\u5e74 | 1707\u20131707: 1707\u5e74\u20131707\u5e74 | 1708\u2013Female: 1708\u5e74\u2013Deceased | 1709\u20131740: 1709\u5e74\u20131740\u5e74 | 1710\u20131784: 1710\u5e74\u20131784\u5e74 | 1711\u20131711: 1711\u5e74\u20131711\u5e74 | 1712\u20131774: 1712\u5e74\u20131774\u5e74 | 1713\u20131713: 1713\u5e74\u20131713\u5e74 | 1714\u20131749: 1714\u5e74\u20131749\u5e74 | 1715\u20131715: 1715\u5e74\u20131715\u5e74 | 1717\u2013Female: 1717\u5e74\u2013Deceased | 1718\u20131718: 1718\u5e74\u20131718\u5e74 | 1720\u20131802: 1720\u5e74\u20131802\u5e74 | 1712\u20131759: 1712\u5e74\u20131759\u5e74 | 1737\u20131806: 1737\u5e74\u20131806\u5e74 | 1738\u20131738: 1738\u5e74\u20131738\u5e74 | 1738\u20131739: 1738\u5e74\u20131739\u5e74 | 1740\u20131740: 1740\u5e74\u20131740\u5e74 | 1741\u20131825: 1741\u5e74\u20131825\u5e74 | 1742\u20131743: 1742\u5e74\u20131743\u5e74 | 1743\u20131786: 1743\u5e74\u20131786\u5e74 | 1744\u20131780: 1744\u5e74\u20131780\u5e74 | 1745\u2013Female: 1745\u5e74\u2013Deceased | 1746\u2013Female: 1746\u5e74\u2013Deceased | 1747\u2013Male: 1747\u5e74\u2013Deceased | 1748\u2013Male: 1748\u5e74\u2013Deceased | 1749\u20131772: 1749\u5e74\u20131772\u5e74 | 1750\u20131751: 1750\u5e74\u20131751\u5e74 | 1752\u20131752: 1752\u5e74\u20131752\u5e74 | 1753\u20131754: 1753\u5e74\u20131754\u5e74 | 1754\u20131756: 1754\u5e74\u20131756\u5e74 | 1757\u20131780:",
+          "source_start": 0,
+          "source_end": 1099,
+          "section": "localizedData.zh-hans { 3 January 1706\u20136 May 1782: 1706\u5e741\u67083\u65e5\u20131782\u5e745\u67086\u65e5 | 1706\u20131782: 1706\u5e74\u20131782\u5e74 | 1707\u20131707: 1707\u5e74\u20131707\u5e74 | 1708\u2013Female: 1708\u5e74\u2013Deceased | 1709\u20131740: 1709\u5e74\u20131740\u5e74 | 1710\u20131784: 1710\u5e74\u20131784\u5e74 | 1711\u20131711: 1711\u5e74\u20131711\u5e74 | 1712\u20131774: 1712\u5e74\u20131774\u5e74 | 1713\u20131713: 1713\u5e74\u20131713\u5e74 | 1714\u20131749: 1714\u5e74\u20131749\u5e74 | 1715\u20131715: 1715\u5e74\u20131715\u5e74 | 1717\u2013Female: 1717\u5e74\u2013Deceased | 1718\u20131718: 1718\u5e74\u20131718\u5e74 | 1720\u20131802: 1720\u5e74\u2013",
+          "source": "https://www.familysearch.org/service/tree/tree-data/published/persons/9MF8-T95",
+          "locator": "localizedData.zh-hans.lifeSummary",
+          "document_title": ""
+        }
+      ]
+    }
+  },
+  "automatic_pipeline_status": "Not integrated. Manual URL discovery/read is not question-only retrieval or a scored answer."
+}

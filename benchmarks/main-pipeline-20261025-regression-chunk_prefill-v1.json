@@ -1,0 +1,65 @@
+{
+  "scope": "Real tiny CPU Qwen3 equivalence/cancellation tests; not model accuracy.",
+  "passed": 8,
+  "total": 8,
+  "rows": [
+    {
+      "id": "equivalent-1",
+      "passed": true,
+      "length": 1,
+      "prefix_length": 0,
+      "chunks": 0
+    },
+    {
+      "id": "equivalent-17",
+      "passed": true,
+      "length": 17,
+      "prefix_length": 16,
+      "chunks": 1
+    },
+    {
+      "id": "equivalent-32",
+      "passed": true,
+      "length": 32,
+      "prefix_length": 31,
+      "chunks": 2
+    },
+    {
+      "id": "equivalent-33",
+      "passed": true,
+      "length": 33,
+      "prefix_length": 32,
+      "chunks": 2
+    },
+    {
+      "id": "equivalent-65",
+      "passed": true,
+      "length": 65,
+      "prefix_length": 64,
+      "chunks": 4
+    },
+    {
+      "id": "equivalent-129",
+      "passed": true,
+      "length": 129,
+      "prefix_length": 128,
+      "chunks": 8
+    },
+    {
+      "id": "equivalent-257",
+      "passed": true,
+      "length": 257,
+      "prefix_length": 256,
+      "chunks": 16
+    },
+    {
+      "id": "cancel-between-prefix-chunks",
+      "passed": true
+    }
+  ],
+  "source_sha256": {
+    "C:/Users/chinh/Desktop/AMD AI League\uff1aMatch 4/eval/diagnose_chunk_prefill.py": "620a69a0807c5b4281a81bc82c19b0a50821a7e29ec70d5720ff6571c77e7f5f",
+    "C:/Users/chinh/Desktop/AMD AI League\uff1aMatch 4/agent/chunk_prefill.py": "fe2484f128dfc7d947fd511af6cc9b81773b400bba3d6150750541258de60eff",
+    "C:/Users/chinh/Desktop/AMD AI League\uff1aMatch 4/agent/model_server.py": "d68b1547b2226d008d2b978f622e83ca851bd030eb3ece776c6f65938b7f0032"
+  }
+}

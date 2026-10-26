@@ -1,0 +1,919 @@
+{
+  "scope": "CPU-only paired parser audit over existing, hash-verified public captures.\n\nNo network, models or browsers. Checks original passages are preserved while\nadding bounded field groups, not answer accuracy or semantic identity.\n",
+  "baseline_revision": "26ad9fba9221a78713e1e9e52b7ae407c46b8355",
+  "baseline_source_sha256": {
+    "agent/engine.py": "01464cb276814f2d7c845c269da2522c285a7a7e28051abd7e36ad0ec62b41ff",
+    "agent/types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent/planner.py": "7f6277fe3431951f068059756c8ed66fbed68f2105355e060ff48e6ed767fa44",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "agent/normalize.py": "05e48fa0be8384aa656bf1280ba0be44545efa51b7d4451f0716d836d39a1973",
+    "agent/network.py": "c37ecb5b4b0fba4fac737954eda24952059922ed620c94b99bcb17daed8c5155",
+    "agent/urls.py": "3a6b8a380f6d7966f1f79b97ccdedab5a5959ffbe5a1aa244e3477a0fe6110f4",
+    "agent/parser.py": "16d707bad4db2747d32bfae722d26bae91a8fd102e31883bd3e7ad9df561bd90",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/challenges.py": "b6f51c720f332671725e08127a5d1c163ca0542d2a550bf3c980a6d4c49bf6a1",
+    "agent/resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent/search.py": "28e2454682bc8af4ef10b06f62b66117d39194fddc9ec218b9bc82cad96767fd",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/candidates.py": "16dd310d36390f5cb0323f0d81d7630542b116693dd0ee0b1e9fe015a80cb1d0",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/evidence.py": "fc4afb2e29331828a3be8ececbec83e8b69270342726dc69f9d050120bacdaf0",
+    "agent/selector.py": "a693a62781fcb76dd11bc6d29eb19770b48dc7e2e29bd7619cc189b62bf70e1b",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+    "agent/proofs.py": "0d7ae78df6ea9949c29f33c7b817dda352c75b3d99c960c3e987e37c7401faab",
+    "agent/oyez.py": "8475f248d78925522e0742b13518be2c4f4db11eae0d8391a8002da7d4e3b67d"
+  },
+  "inputs": [
+    {
+      "case_id": "simpleqa-911",
+      "report": "benchmarks/external-disjoint12b-20261023-first.json",
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-911.json",
+      "sha256": "7bcc739613dd55df8f8f62bcc489abb46a2f69d6738849a5472b762c88eae764"
+    },
+    {
+      "case_id": "simpleqa-516",
+      "report": "benchmarks/external-disjoint12b-20261023-first.json",
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-516.json",
+      "sha256": "1878ae1c533af61eb2e0ccbc7cb9af019362ef819c196015e86861b55feed6a6"
+    },
+    {
+      "case_id": "simpleqa-1013",
+      "report": "benchmarks/external-disjoint12b-20261023-first.json",
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-1013.json",
+      "sha256": "71ea4be5da2aa66fb49b9f1293dcfb86252299c5ccd7b0c7233b4891c4bf6817"
+    },
+    {
+      "case_id": "simpleqa-1076",
+      "report": "benchmarks/external-disjoint12b-20261023-first.json",
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-1076.json",
+      "sha256": "9e6f2616668cffc6c53e2546782661a5a6525bad915dfdb24c14a3da2bc8a542"
+    },
+    {
+      "case_id": "simpleqa-483",
+      "report": "benchmarks/external-disjoint12b-20261023-first.json",
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-483.json",
+      "sha256": "f8871d6e6c123834ae2c0c217978f2e3630a43764e960afaa4464cfdf43b0580"
+    },
+    {
+      "case_id": "simpleqa-1232",
+      "report": "benchmarks/external-disjoint12b-20261023-first.json",
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-1232.json",
+      "sha256": "cd18e95ec94a639230b64256b1b500a2a37a63e10a02b5ea07b22f4bccda3506"
+    },
+    {
+      "case_id": "simpleqa-2010",
+      "report": "benchmarks/external-disjoint12b-20261023-first.json",
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-2010.json",
+      "sha256": "aefa6f6f23b3972e2c75184b8e8d8cc6684926647eabcddde04eb903f554bb8b"
+    },
+    {
+      "case_id": "simpleqa-2215",
+      "report": "benchmarks/external-disjoint12b-20261023-first.json",
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-2215.json",
+      "sha256": "9c91f4be9a7c11191aa5b89ebb54eed6d33e45e249b8b2bd00593852c6397066"
+    },
+    {
+      "case_id": "simpleqa-3120",
+      "report": "benchmarks/external-disjoint12b-20261023-first.json",
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-3120.json",
+      "sha256": "dd4de2064f5cbe0f42dfc81ba0af5d8fb7e5c01929951296c8dc79a98466b0f6"
+    },
+    {
+      "case_id": "simpleqa-4145",
+      "report": "benchmarks/external-disjoint12b-20261023-first.json",
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-4145.json",
+      "sha256": "186861463adbfb19b5603222343f72fa1a229b967c69ff24493c747ae6993c24"
+    },
+    {
+      "case_id": "simpleqa-2811",
+      "report": "benchmarks/external-disjoint12b-20261023-first.json",
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-2811.json",
+      "sha256": "19c95b414ecb9031239aa913a93304b9d4b3d680bca355087b5f4034ace9c062"
+    },
+    {
+      "case_id": "simpleqa-415",
+      "report": "benchmarks/external-disjoint12b-20261023-first.json",
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-415.json",
+      "sha256": "4934bb519db839fde410d7d5d63a463bf0e38c5d69bf143200faeed8c4dde509"
+    },
+    {
+      "case_id": "simpleqa-911",
+      "report": "benchmarks/external-disjoint12b-20261023-repeat.json",
+      "capture_path": "research\\external-disjoint12b-20261023-repeat\\simpleqa-911.json",
+      "sha256": "251b7b255df62389ea731e90e673ba5a4e75445a81cae339d7af1b7aff8cc69b"
+    },
+    {
+      "case_id": "simpleqa-516",
+      "report": "benchmarks/external-disjoint12b-20261023-repeat.json",
+      "capture_path": "research\\external-disjoint12b-20261023-repeat\\simpleqa-516.json",
+      "sha256": "9f4ba56e3088c8fc233d7f9503d4897a98df5ca5cc86abb17cbd0b8da334d3d7"
+    },
+    {
+      "case_id": "simpleqa-1013",
+      "report": "benchmarks/external-disjoint12b-20261023-repeat.json",
+      "capture_path": "research\\external-disjoint12b-20261023-repeat\\simpleqa-1013.json",
+      "sha256": "734bdf97559ccd031d2a305939925c41be5a559aa4cb4d2863184dce57f1f8a0"
+    },
+    {
+      "case_id": "simpleqa-1076",
+      "report": "benchmarks/external-disjoint12b-20261023-repeat.json",
+      "capture_path": "research\\external-disjoint12b-20261023-repeat\\simpleqa-1076.json",
+      "sha256": "af0d98ae7bcbcfa0cfabc91fd99f359f2f31edcbf092e7f8f573f9dc7b421a6e"
+    },
+    {
+      "case_id": "simpleqa-483",
+      "report": "benchmarks/external-disjoint12b-20261023-repeat.json",
+      "capture_path": "research\\external-disjoint12b-20261023-repeat\\simpleqa-483.json",
+      "sha256": "2d6245db4c20b4bdf74e0bf2776cce91b1e3033cb63b6ba0488ac4c30555b020"
+    },
+    {
+      "case_id": "simpleqa-1232",
+      "report": "benchmarks/external-disjoint12b-20261023-repeat.json",
+      "capture_path": "research\\external-disjoint12b-20261023-repeat\\simpleqa-1232.json",
+      "sha256": "6b4daa0e12221eb4b8effade5af1ef0bd975ff44792b111bdaf9f5249c059006"
+    },
+    {
+      "case_id": "simpleqa-2010",
+      "report": "benchmarks/external-disjoint12b-20261023-repeat.json",
+      "capture_path": "research\\external-disjoint12b-20261023-repeat\\simpleqa-2010.json",
+      "sha256": "ef49b65190f2c5e994fc03abc430cd36cd2106471acfc20e16d2c7cf35619df5"
+    },
+    {
+      "case_id": "simpleqa-2215",
+      "report": "benchmarks/external-disjoint12b-20261023-repeat.json",
+      "capture_path": "research\\external-disjoint12b-20261023-repeat\\simpleqa-2215.json",
+      "sha256": "c5aefaff2946a732f1d030edfb81e4d7cc243e1d2de5340317db6f4d1c043e6e"
+    },
+    {
+      "case_id": "simpleqa-3120",
+      "report": "benchmarks/external-disjoint12b-20261023-repeat.json",
+      "capture_path": "research\\external-disjoint12b-20261023-repeat\\simpleqa-3120.json",
+      "sha256": "4df2da7e9962b9bee6f0164c84cf110e28662daa6de6b45bb56594278f0d9e13"
+    },
+    {
+      "case_id": "simpleqa-4145",
+      "report": "benchmarks/external-disjoint12b-20261023-repeat.json",
+      "capture_path": "research\\external-disjoint12b-20261023-repeat\\simpleqa-4145.json",
+      "sha256": "e6cb8716deac3053a313eefc6d259a81aae9f16a9b317ccd42a36703ef9a3283"
+    }
+  ],
+  "rows": [
+    {
+      "case_id": "simpleqa-911",
+      "url": "https://www.larosadei4venti.com/partnerships-and-projects/",
+      "body_sha256": "0bfd8948739d3879efcb7897d29be012b328569dbe2dee880f974ef32cc6bcf3",
+      "bytes": 68863,
+      "passed": true,
+      "original_passages": 158,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-516",
+      "url": "https://ieeexplore.ieee.org/document/10361706",
+      "body_sha256": "faad456de3da9f4578256951ee40144001eef60f270274de14b75b8cb53bb806",
+      "bytes": 2060,
+      "passed": true,
+      "original_passages": 0,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-516",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8970926/",
+      "body_sha256": "12ae339cb488f94d38cb7fa7e84a5cb8bcc7f0a66a3f88c53e6c70ba6247de82",
+      "bytes": 21431,
+      "passed": true,
+      "original_passages": 0,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-1013",
+      "url": "https://ancestors.familysearch.org/en/9MF8-T95/johann-caspar-f%C3%BCssli-1706-1782",
+      "body_sha256": "0ce55a539615f5ba2059f3f71f901ca4cedbd62d14b79fc760d0ab483d2852b3",
+      "bytes": 19132,
+      "passed": true,
+      "original_passages": 5,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-1013",
+      "url": "https://historydata.com/person/johann-kaspar-fussli",
+      "body_sha256": "764c3c10ab4fdfcdd6b9b6e08eb16ec2c92134cfbc6206eb95b3e295c6a153cc",
+      "bytes": 139753,
+      "passed": true,
+      "original_passages": 117,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-1013",
+      "url": "https://www.portraitarchiv.ch/index.php/portrait/show/481564",
+      "body_sha256": "eb936ab1c6e89990edf88df8f738eede5ee6a9d801a13b01e1c4aa84c6f60d23",
+      "bytes": 40853,
+      "passed": true,
+      "original_passages": 28,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-1013",
+      "url": "https://www.geni.com/people/Hans-F%C3%BCssli/6000000057827530906",
+      "body_sha256": "9ffaa817c8a48c745a43728aa96d80513c9e683d20052b8a4edd28e3010af8bd",
+      "bytes": 56132,
+      "passed": true,
+      "original_passages": 45,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-1013",
+      "url": "https://www.geni.com/people/Anna-Waser/6000000057827466885",
+      "body_sha256": "bd93f5fe1fb15848f8d02487b4560a456ef2bc34ec701a7cf41c00678b3e321e",
+      "bytes": 56132,
+      "passed": true,
+      "original_passages": 45,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-3120",
+      "url": "https://www.transfermarkt.com/juan-pablo-guzman/profil/spieler/170543",
+      "body_sha256": "f5c4e708a1ff4e2fe9703b162d5c48991e47be12a6fd145ea5d3a6f0d751b250",
+      "bytes": 2436,
+      "passed": true,
+      "original_passages": 0,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-3120",
+      "url": "https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/",
+      "body_sha256": "cb66ba38ba0ca950160ee8b19551880bdc3cdbed18d6b27d52b13560e54938e7",
+      "bytes": 57495,
+      "passed": true,
+      "original_passages": 91,
+      "added_fields": 10,
+      "groups": [
+        {
+          "text": "Full Name: Juan Pablo Guzm\u00e1n Perd\u00f3mo | Nationality: Colombia | Date of Birth: 31/08/1988 | Age: 34 | Country of Birth: Colombia | Place of Birth: Bogot\u00e1 | Pos: Midfielder | Height: 173 cm | Weight: 70 kg | Last Updated: Jul 27, 2026",
+          "bindings": {
+            "Full Name": "Juan Pablo Guzm\u00e1n Perd\u00f3mo",
+            "Nationality": "Colombia",
+            "Date of Birth": "31/08/1988",
+            "Age": "34",
+            "Country of Birth": "Colombia",
+            "Place of Birth": "Bogot\u00e1",
+            "Pos": "Midfielder",
+            "Height": "173 cm",
+            "Weight": "70 kg",
+            "Last Updated": "Jul 27, 2026"
+          },
+          "identity": [
+            "Juan Pablo Guzm\u00e1n Perd\u00f3mo"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-3120",
+      "url": "https://www.footballdatabase.eu/en/player/details/204458-juan-guzman",
+      "body_sha256": "d7f0bf8519a84e0853bcb36703000ca79e0ef6552e0665dc2cbcc093c636ca30",
+      "bytes": 1485066,
+      "passed": true,
+      "original_passages": 359,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-3120",
+      "url": "https://en.soccerwiki.org/player.php?pid=85733",
+      "body_sha256": "4b500b73310fd34811f1e3686238410ab4cd84a2f4011f3e57e2d9fc0e5d7d56",
+      "bytes": 103924,
+      "passed": true,
+      "original_passages": 252,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-3120",
+      "url": "https://en.soccerwiki.org/player.php?pid=99150",
+      "body_sha256": "1c9fcb9f8dd7f17892ab87d736f7c93f7c676591b45d1cfd966f7c03af75d4ea",
+      "bytes": 106064,
+      "passed": true,
+      "original_passages": 259,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-3120",
+      "url": "https://en.soccerwiki.org/player.php?pid=83418",
+      "body_sha256": "5cd4c6bb1f8c2f1bd619e9a07df4f2340b1eeff7af4ed37e2faf742a5ec62b9f",
+      "bytes": 106854,
+      "passed": true,
+      "original_passages": 261,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-3120",
+      "url": "https://en.soccerwiki.org/player.php?pid=99619",
+      "body_sha256": "23693b10acdeabc04f43bb42b25447ab0d5cd02f4ded1fdf2c676f2db5b8de55",
+      "bytes": 106764,
+      "passed": true,
+      "original_passages": 261,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-3120",
+      "url": "https://en.soccerwiki.org/player.php?pid=82573",
+      "body_sha256": "cb80284c89946f7e5520ba40a45e3a32b17d0e91a275173d7fd864f5c87f994b",
+      "bytes": 107773,
+      "passed": true,
+      "original_passages": 261,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-4145",
+      "url": "https://noehill.com/humboldt/nat1978000673.asp",
+      "body_sha256": "4cf35051ebc9b25ebfc0e630f2c471f0da6454d759f28a46c3fb7c75991f86b3",
+      "bytes": 10309,
+      "passed": true,
+      "original_passages": 37,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-4145",
+      "url": "https://noehill.com/california/default.asp",
+      "body_sha256": "bf49f9bceb9112e8a201ff260812622a8f2d24d62f79a4ec93e65cdadc11042b",
+      "bytes": 8532,
+      "passed": true,
+      "original_passages": 22,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-4145",
+      "url": "https://noehill.com/merced/poi_snelling_odd_fellows.asp",
+      "body_sha256": "7e56b17d8afc8cd2d471ffbcd5e61d2081e89d2241a046d79d828945afb9be30",
+      "bytes": 9550,
+      "passed": true,
+      "original_passages": 30,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-4145",
+      "url": "https://noehill.com/mariposa/poi_coulterville_odd_fellows_hall.asp",
+      "body_sha256": "a05ef5a4404b968b72f5ac8149612e78114977e5c71c88f449170f70c5ea2fc8",
+      "bytes": 10901,
+      "passed": true,
+      "original_passages": 41,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-2811",
+      "url": "https://www.cabbagetownpeople.ca/person/jack-layton/",
+      "body_sha256": "372bd28b0f04a2985239cc0e2e17027036dfd9e0f2fab643f86a8791007b7480",
+      "bytes": 34100,
+      "passed": true,
+      "original_passages": 37,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-2811",
+      "url": "https://www.douglascoldwelllayton.ca/jacklayton",
+      "body_sha256": "73b5c479c55d00fde9083e6a807c0c56c24ea107bff846837c3c878723c6a025",
+      "bytes": 75471,
+      "passed": true,
+      "original_passages": 90,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-2811",
+      "url": "https://www.laytonlegacy.ca/jack",
+      "body_sha256": "1bd43b2d7f6ed26e9da7ddf2b077077569cf5915fa54560b9e75803d57655cd6",
+      "bytes": 128314,
+      "passed": true,
+      "original_passages": 68,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-415",
+      "url": "https://ztgd.com/reviews/the-elder-scrolls-v-skyrim-dragonborn-dlc/",
+      "body_sha256": "18e2d396dc0c06e735f0004bdcc4ad12d250b227d8fd8275422fa7c0400bee1e",
+      "bytes": 88255,
+      "passed": true,
+      "original_passages": 70,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-415",
+      "url": "https://orbispatches.com/gaming-faq/is-the-dragonborn-dlc-in-morrowind",
+      "body_sha256": "56d9d65c1acd984d7fae3431e9d4f73b3c7084de2b0fe67a41a37cadfcdff76d",
+      "bytes": 76115,
+      "passed": true,
+      "original_passages": 47,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-415",
+      "url": "https://orbispatches.com/gaming-faq/does-dragonborn-dlc-take-place-in-morrowind",
+      "body_sha256": "ab1c083a804a614ba0b7464951c1fd19541b7b546aa2d2806713cf8fb8094a38",
+      "bytes": 76269,
+      "passed": true,
+      "original_passages": 44,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-415",
+      "url": "https://ztgd.com/reviews/the-elder-scrolls-v-skyrim-dragonborn-dlc/?share=reddit",
+      "body_sha256": "22e30005f3348760a5ea61d5ff3664e2ac8950991bc7d153edd5e04c2ea5be38",
+      "bytes": 8412,
+      "passed": true,
+      "original_passages": 1,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-415",
+      "url": "https://ztgd.com/reviews/the-elder-scrolls-v-skyrim-dragonborn-dlc/?share=x",
+      "body_sha256": "6286d44c88b66380b51a573e59beb019317d10fefeca64624a5e482e19bc9a3f",
+      "bytes": 23301,
+      "passed": true,
+      "original_passages": 29,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-415",
+      "url": "https://x.com/i/jf/onboarding/web?redirect_after_login=%2Fintent%2Ftweet%3Frelated%3DZTGD%253APlay%2Bgames%252C%2Bnot%2Bconsoles.%2BGame%2Breviews%252C%2Bpodcasts%2Band%2Bvideos.%26text%3DThe%2BElder%2BScrolls%2BV%253A%2BSkyrim%2B-%2BDragonborn%2B%2528DLC%2529%2BReview%26url%3Dhttps%253A%252F%252Fztgd.com%252Freviews%252Fthe-elder-scrolls-v-skyrim-dragonborn-dlc%252F&mode=login",
+      "body_sha256": "f78d41b5773d02587eb6f6e74b995f203a2683803959c65794fee83e809a347e",
+      "bytes": 23301,
+      "passed": true,
+      "original_passages": 29,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-415",
+      "url": "https://www.reddit.com/submit?url=https%3A%2F%2Fztgd.com%2Freviews%2Fthe-elder-scrolls-v-skyrim-dragonborn-dlc%2F&title=The%20Elder%20Scrolls%20V%3A%20Skyrim%20-%20Dragonborn%20%28DLC%29%20Review",
+      "body_sha256": "8c1999b07d4457981d6f30dfdb8b1ee269f86facb28d9bc0efd206d77994eb3b",
+      "bytes": 8412,
+      "passed": true,
+      "original_passages": 1,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-415",
+      "url": "https://steamcommunity.com/app/489830/discussions/0/3844431603855189893/",
+      "body_sha256": "62058e87c10f2ee16caa0ad3cfbe4c1b5a40d1b6f48c33f0306d1e7fc27774fe",
+      "bytes": 27745,
+      "passed": true,
+      "original_passages": 26,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-415",
+      "url": "https://en.uesp.net/wiki/Skyrim:Dragonborn",
+      "body_sha256": "1cd088d68f8c5e3eabbee876974f599264c3ea1b3374e94702b3cb16933a4192",
+      "bytes": 37221,
+      "passed": true,
+      "original_passages": 155,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-415",
+      "url": "https://ztgd.com/reviews/the-elder-scrolls-v-skyrim-dragonborn-dlc/?share=bluesky",
+      "body_sha256": "5c82e693e79520eb41c436df9a7018d248ad634c32dd037b14985a3cf5273177",
+      "bytes": 27003,
+      "passed": true,
+      "original_passages": 629,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-415",
+      "url": "https://bsky.app/intent/compose?text=The%20Elder%20Scrolls%20V%3A%20Skyrim%20-%20Dragonborn%20%28DLC%29%20Review%20https%3A%2F%2Fztgd.com%2Freviews%2Fthe-elder-scrolls-v-skyrim-dragonborn-dlc%2F",
+      "body_sha256": "4fce009e872ef4da76246c323bca11439a6271fbf08a214775766e46e285ffa9",
+      "bytes": 27003,
+      "passed": true,
+      "original_passages": 629,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-911",
+      "url": "https://www.larosadei4venti.com/partnerships-and-projects/",
+      "body_sha256": "f16ef760929fb36c92919b99e25441177b9e8e9eca62ae002a6d9de5f53aee39",
+      "bytes": 68863,
+      "passed": true,
+      "original_passages": 158,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-516",
+      "url": "https://ieeexplore.ieee.org/document/10361706",
+      "body_sha256": "5a45e013a1ade4e22f6ddf95dd4597f5d4bf6292adb6971a9dc65039be882dc9",
+      "bytes": 2060,
+      "passed": true,
+      "original_passages": 0,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-516",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8970926/",
+      "body_sha256": "b0a9076e79fa6f37048a9dec43cd7adf09159b8efddf5bb36dc69afba8e86362",
+      "bytes": 21431,
+      "passed": true,
+      "original_passages": 0,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-1013",
+      "url": "https://www.portraitarchiv.ch/index.php/portrait/show/481564",
+      "body_sha256": "7d155f8c23de399d98be60bf4d105885ca1e1ba9060b41ddbf3756b5cd2a4ca7",
+      "bytes": 40853,
+      "passed": true,
+      "original_passages": 28,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-1013",
+      "url": "https://ancestors.familysearch.org/en/9MF8-T95/johann-caspar-f%C3%BCssli-1706-1782",
+      "body_sha256": "bdda6bc0f858ffd0fd974f783376aa42198368a2faf83d89993855ce18bd0e4c",
+      "bytes": 19132,
+      "passed": true,
+      "original_passages": 5,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-1013",
+      "url": "https://www.portraitarchiv.ch/index.php/portrait?page=",
+      "body_sha256": "7296b8a948d1920c0abe0a619f7676396d8414cc5b964b44bf8fd952a4450479",
+      "bytes": 74081,
+      "passed": true,
+      "original_passages": 44,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-1013",
+      "url": "https://www.geni.com/people/Anna-Waser/6000000057827466885",
+      "body_sha256": "dc09378795eb0bcb809a3542ef25bd4869ec4e47f2ea0c2e0eb7c05986f1b2ae",
+      "bytes": 56130,
+      "passed": true,
+      "original_passages": 45,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-483",
+      "url": "https://saiganak.com/news/zetadivision-ntt-east-sponsorship-announcement/",
+      "body_sha256": "b745181143c8cbb4a02b3bea51ab0c6ea6a260c6cefb7be100251fa1e45c55a9",
+      "bytes": 87645,
+      "passed": true,
+      "original_passages": 144,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-483",
+      "url": "https://saiganak.com/event/vantan-zetadivision-gaming-academy-announcement/",
+      "body_sha256": "24f2ea89244b19aedefff7b5b13f1551e5473c94520eb8d49b3311836e2d5911",
+      "bytes": 98207,
+      "passed": true,
+      "original_passages": 189,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-483",
+      "url": "https://x.com/tyloogaming/status/2009475219464048914",
+      "body_sha256": "5e6ee1c6db833eada7b133fbde68090fc8250f78d6ac85c59deee87a7c66b583",
+      "bytes": 141526,
+      "passed": true,
+      "original_passages": 60,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-483",
+      "url": "https://www.kambi.com/investors/news-pr/kambi-groups-esports-division-abios-signs-data-partnership-with-google/",
+      "body_sha256": "71f37959c93fce539a9659dab166c730517b03fe10b0bd62d48626fc98e12955",
+      "bytes": 56482,
+      "passed": true,
+      "original_passages": 87,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-483",
+      "url": "https://saiganak.com/event/tgs2026-zetadivision-booth-announcement-part2/",
+      "body_sha256": "988a5153c0c767d165d0b138c70e8d3f1014de3dc2c3b608792a920144c361b9",
+      "bytes": 108617,
+      "passed": true,
+      "original_passages": 243,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-483",
+      "url": "https://saiganak.com/news/zetadivision-nakazawa-lab-university-of-tokyo-cooperative-research/",
+      "body_sha256": "dde25a5372a850f24e8d154fd42f3626cadbbafca9542f6762e8d616fb5a7745",
+      "bytes": 86335,
+      "passed": true,
+      "original_passages": 154,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-483",
+      "url": "https://www.vantan.co.jp/zetadivision/",
+      "body_sha256": "bada9cb49b6ae99a5586532d0c5febaacaaed5e1d09c91e76636af5f31601d50",
+      "bytes": 207801,
+      "passed": true,
+      "original_passages": 144,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-1232",
+      "url": "https://irandataportal.syr.edu/census",
+      "body_sha256": "6fd6519f79b3208caff4122a2010fc03aebaacf37d8902dd6bde198ddb4c7dce",
+      "bytes": 53681,
+      "passed": true,
+      "original_passages": 23,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-1232",
+      "url": "https://irandataportal.syr.edu/2006-census",
+      "body_sha256": "7ca1dfca01a22e8fadfe4dc38f7a2deb1f4399ee867272daf208fb04a9069d89",
+      "bytes": 70959,
+      "passed": true,
+      "original_passages": 103,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-1232",
+      "url": "https://irandataportal.syr.edu/1996-census",
+      "body_sha256": "a982c3fa7ecb300ede8ff57305f139d30ed941ef040fea7c9d065bb47657b849",
+      "bytes": 53170,
+      "passed": true,
+      "original_passages": 21,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-1232",
+      "url": "https://irandataportal.syr.edu/1986-census",
+      "body_sha256": "264deae029c2b6f43483cc0c1d63d8cc8a82b579cf02c33e74ef59298c26f0e0",
+      "bytes": 51601,
+      "passed": true,
+      "original_passages": 14,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-1232",
+      "url": "https://irandataportal.syr.edu/2011-census",
+      "body_sha256": "b8162b17f6fca3dcc4f77ef350aa3cfd2d225e64e2b914c7c34aa501a3cfc3b2",
+      "bytes": 54415,
+      "passed": true,
+      "original_passages": 20,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-2010",
+      "url": "https://grokipedia.com/page/ceres_sculpture",
+      "body_sha256": "099f778563085cc1d3c3aeeee95f9e15b8c2a20756fdce3fa1c8b03eac470621",
+      "bytes": 227358,
+      "passed": true,
+      "original_passages": 125,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-2010",
+      "url": "https://www.nybooks.com/articles/1998/03/05/the-art-of-the-possible/",
+      "body_sha256": "a9c461203c75653e86e35d51df1f32975abb8664f728791f86ba93e17b75cf66",
+      "bytes": 176234,
+      "passed": true,
+      "original_passages": 258,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-2010",
+      "url": "https://collections.louvre.fr/ark:/53355/cl010095546",
+      "body_sha256": "c5273c6fe318ed1894c2f1efe2a197bd2557f8e40c007c32b9b1c45451a49837",
+      "bytes": 57926,
+      "passed": true,
+      "original_passages": 134,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-2215",
+      "url": "https://thehorse.co/",
+      "body_sha256": "9e9425fc162cf8cba2b03d14844bbb0f9a8a4dd7e71c2593599dbd2a5c53afd6",
+      "bytes": 227608,
+      "passed": true,
+      "original_passages": 293,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-2215",
+      "url": "https://www.facebook.com/TheMobMad/posts/on-october-13-1988-matthew-matty-the-horse-ianniello-a-powerful-figure-in-the-ge/1759527302477176/",
+      "body_sha256": "37ba01c19e5aeeffe02f73a09a493a73c147d8cb4a9142c0ea72918395dda235",
+      "bytes": 734293,
+      "passed": true,
+      "original_passages": 3497,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-2215",
+      "url": "https://www.linkedin.com/jobs/what-is-the-name-of-the-individual-known-as-the-horse-who-won-eight-running-events-over-three-olympics-between-81-and-89-ce%3F-jobs",
+      "body_sha256": "c119e9b139a3178bf58c4c6f61a6837923ca55e816fb4394567eb7f7dc0d5ab9",
+      "bytes": 300099,
+      "passed": true,
+      "original_passages": 550,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-2215",
+      "url": "https://www.beyonddracula.com/connection-long-forgotten-romanian-individual-horse/",
+      "body_sha256": "bc4f888715bd90068c2636a4ff8956eb1cf5851fbe06f150cc95d52a811b0259",
+      "bytes": 210026,
+      "passed": true,
+      "original_passages": 153,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-2215",
+      "url": "https://thehorse.co/pages/email-subscription",
+      "body_sha256": "953286700e610160761e68df6b92b53487317ff98c3a9f75c5da1286f9957c62",
+      "bytes": 197041,
+      "passed": true,
+      "original_passages": 274,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-2215",
+      "url": "https://x.com/intent/tweet?url=https://www.beyonddracula.com/connection-long-forgotten-romanian-individual-horse/&text=A connection long forgotten: the Romanian individual and his horse - Beyond Dracula",
+      "body_sha256": "49ba61bde39fb09aff6138bfa2af60c762b6671ad07948629067cdac5a462015",
+      "bytes": 23300,
+      "passed": true,
+      "original_passages": 29,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-2215",
+      "url": "https://pinterest.com/pin/create/bookmarklet/?url=https://www.beyonddracula.com/connection-long-forgotten-romanian-individual-horse/&description=A connection long forgotten: the Romanian individual and his horse - Beyond Dracula",
+      "body_sha256": "eff80a4e2c38f2f05ae2bd519472c312b5f960c4e0c1a9c700b9ab7305ae95c1",
+      "bytes": 760323,
+      "passed": true,
+      "original_passages": 1539,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-2215",
+      "url": "https://x.com/i/jf/onboarding/web?redirect_after_login=%2Fintent%2Ftweet%3Furl%3Dhttps%253A%252F%252Fwww.beyonddracula.com%252Fconnection-long-forgotten-romanian-individual-horse%252F%26text%3DA%2Bconnection%2Blong%2Bforgotten%253A%2Bthe%2BRomanian%2Bindividual%2Band%2Bhis%2Bhorse%2B-%2BBeyond%2BDracula&mode=login",
+      "body_sha256": "df9dd80efd1e3539fc53eab513d8383bb4a2f88ffdab17676cbb20a136b2eef1",
+      "bytes": 23299,
+      "passed": true,
+      "original_passages": 29,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-2215",
+      "url": "https://www.pinterest.com/pin/create/bookmarklet/?url=https://www.beyonddracula.com/connection-long-forgotten-romanian-individual-horse/&description=A%20connection%20long%20forgotten:%20the%20Romanian%20individual%20and%20his%20horse%20-%20Beyond%20Dracula",
+      "body_sha256": "db5e0e61a719965ee70b6183b4484cc36f7cff6716327ec3581d3a52a8fce63f",
+      "bytes": 760323,
+      "passed": true,
+      "original_passages": 1539,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-3120",
+      "url": "https://www.transfermarkt.com/juan-pablo-guzman/profil/spieler/170543",
+      "body_sha256": "2529f199b4737d430e5aa92806289cc8430f64029e7c7efaa66ca10c48d77e92",
+      "bytes": 2436,
+      "passed": true,
+      "original_passages": 0,
+      "added_fields": 0,
+      "groups": []
+    },
+    {
+      "case_id": "simpleqa-3120",
+      "url": "https://www.soccerstats247.com/players/juan-pablo-guzman-perdomo-134947/",
+      "body_sha256": "2b4172ea705f48ee9ceccd59ef0692a36dd863e0c99380d986bddc11b44377b3",
+      "bytes": 57538,
+      "passed": true,
+      "original_passages": 91,
+      "added_fields": 10,
+      "groups": [
+        {
+          "text": "Full Name: Juan Pablo Guzm\u00e1n Perd\u00f3mo | Nationality: Colombia | Date of Birth: 31/08/1988 | Age: 34 | Country of Birth: Colombia | Place of Birth: Bogot\u00e1 | Pos: Midfielder | Height: 173 cm | Weight: 70 kg | Last Updated: Jul 27, 2026",
+          "bindings": {
+            "Full Name": "Juan Pablo Guzm\u00e1n Perd\u00f3mo",
+            "Nationality": "Colombia",
+            "Date of Birth": "31/08/1988",
+            "Age": "34",
+            "Country of Birth": "Colombia",
+            "Place of Birth": "Bogot\u00e1",
+            "Pos": "Midfielder",
+            "Height": "173 cm",
+            "Weight": "70 kg",
+            "Last Updated": "Jul 27, 2026"
+          },
+          "identity": [
+            "Juan Pablo Guzm\u00e1n Perd\u00f3mo"
+          ]
+        }
+      ]
+    },
+    {
+      "case_id": "simpleqa-3120",
+      "url": "https://www.footballdatabase.eu/en/player/details/204458-juan-guzman",
+      "body_sha256": "c22a0eaf003fdc77d67657f711d358e7d260a89ac2745281ba628d175145729a",
+      "bytes": 1485066,
+      "passed": true,
+      "original_passages": 359,
+      "added_fields": 0,
+      "groups": []
+    }
+  ],
+  "total": 68,
+  "passed": 68,
+  "pages_with_groups": 2,
+  "groups": 2,
+  "production_sha256": {
+    "agent/browser.py": "53ac9a99f3afcefcdb197cd9b2296c2d380910a782178fadb65235e548efc353",
+    "agent/candidates.py": "c55cd074f50d1b0c944cf5552bd604caf4b313bada23accd73674d5d1d93d116",
+    "agent/challenges.py": "b6f51c720f332671725e08127a5d1c163ca0542d2a550bf3c980a6d4c49bf6a1",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/engine.py": "01464cb276814f2d7c845c269da2522c285a7a7e28051abd7e36ad0ec62b41ff",
+    "agent/evidence.py": "56994f2e5046668e33630fbc2330cfac35c8971f3c4d4e25f22547f1d99feba2",
+    "agent/field_groups.py": "52a54989253c59e9836dec4aaec4944b688376e79548b9336887558a454e9162",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "agent/model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+    "agent/model_server.py": "8d326a696942d259697a6fba8586441bbbe4874042ea900c6d7788a2a0e9fd22",
+    "agent/navigation.py": "0f849c0c570720114c45c14b0a5286fe409e5d26c2945fdc9f6c1a6922bb7718",
+    "agent/network.py": "def1be3752f81423c313c2dfa83f6703ee063d7e98652cf0d816b423d0e2d9cb",
+    "agent/normalize.py": "05e48fa0be8384aa656bf1280ba0be44545efa51b7d4451f0716d836d39a1973",
+    "agent/output.py": "b983ab2efe31707b1c974344a32dc4b40b708541257695de89cac9e343b073eb",
+    "agent/oyez.py": "8475f248d78925522e0742b13518be2c4f4db11eae0d8391a8002da7d4e3b67d",
+    "agent/parser.py": "782bebc6fa89a4869ca007da385cbfc8dfed8102b4600584224e94fc702957f1",
+    "agent/planner.py": "8a617d26e724e8ebc5e604892e867ebcc9e417aa97cbd7e0feda4954cd5a1d2b",
+    "agent/processes.py": "677c4372b40d1da0ffc0cf4120ca5b6be2fcf6b6c30f6ec17d0d8fae19e198c1",
+    "agent/proofs.py": "0d7ae78df6ea9949c29f33c7b817dda352c75b3d99c960c3e987e37c7401faab",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent/search.py": "28e2454682bc8af4ef10b06f62b66117d39194fddc9ec218b9bc82cad96767fd",
+    "agent/selector.py": "be7c0fce11c10921d5cd4e3d1072d5a2ca5a62f1c328730384d19b0fecd19566",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent/urls.py": "3a6b8a380f6d7966f1f79b97ccdedab5a5959ffbe5a1aa244e3477a0fe6110f4",
+    "agent/worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f",
+    "agent/__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41"
+  }
+}

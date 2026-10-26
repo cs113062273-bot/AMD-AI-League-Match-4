@@ -1,0 +1,51 @@
+{
+  "scope": "Cooperative CPU HTTP probe only; no generation probe or model load",
+  "rows": [
+    {
+      "id": "single_active_request",
+      "passed": true
+    },
+    {
+      "id": "cancel_different_id_is_noop",
+      "passed": true
+    },
+    {
+      "id": "explicit_cancel_releases_worker",
+      "passed": true,
+      "seconds": 0.001737499998853309
+    },
+    {
+      "id": "next_request_after_cancel",
+      "passed": true
+    },
+    {
+      "id": "deadline_releases_worker",
+      "passed": true,
+      "seconds": 0.10271149999971385
+    },
+    {
+      "id": "cancelled_client_cancels_server",
+      "passed": true,
+      "seconds": 0.015495799998461735
+    },
+    {
+      "id": "next_client_request_succeeds",
+      "passed": true
+    },
+    {
+      "id": "expired_request_does_not_start",
+      "passed": true
+    }
+  ],
+  "health": {
+    "calls": 5,
+    "active_request": null,
+    "outcomes": {
+      "cancelled": 2,
+      "selected": 2,
+      "deadline": 1
+    },
+    "busy_rejections": 1
+  },
+  "torch_imported": false
+}

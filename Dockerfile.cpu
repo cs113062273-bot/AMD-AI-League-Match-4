@@ -1,0 +1,10 @@
+# Development only. This image cannot meet the competition GPU/base requirements.
+ARG PYTHON_IMAGE=python:3.14.4-slim
+FROM ${PYTHON_IMAGE}
+WORKDIR /app
+COPY requirements.txt requirements-core.lock /app/
+RUN pip install --no-cache-dir --no-deps -r requirements-core.lock && pip check
+COPY agent /app/agent
+COPY app.py /app/app.py
+ENV APERTURE_MODEL_URL="" APERTURE_OUTPUT=/app/output
+CMD ["sleep", "infinity"]

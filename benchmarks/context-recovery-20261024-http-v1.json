@@ -1,0 +1,53 @@
+{
+  "scope": "CPU loopback cooperative workers only; no model loading",
+  "rows": [
+    {
+      "id": "single_active_request",
+      "passed": true
+    },
+    {
+      "id": "cancel_different_id_is_noop",
+      "passed": true
+    },
+    {
+      "id": "explicit_cancel_releases_worker",
+      "passed": true,
+      "seconds": 0.0028207999966980424
+    },
+    {
+      "id": "next_request_after_cancel",
+      "passed": true
+    },
+    {
+      "id": "deadline_releases_worker",
+      "passed": true,
+      "seconds": 0.10756709999986924
+    },
+    {
+      "id": "cancelled_client_cancels_server",
+      "passed": true,
+      "seconds": 0.015680299999075942
+    },
+    {
+      "id": "next_client_request_succeeds",
+      "passed": true
+    },
+    {
+      "id": "expired_request_does_not_start",
+      "passed": true
+    }
+  ],
+  "health": {
+    "calls": 5,
+    "active_request": null,
+    "outcomes": {
+      "cancelled": 2,
+      "selected": 2,
+      "deadline": 1
+    },
+    "busy_rejections": 1
+  },
+  "passed": 8,
+  "total": 8,
+  "torch_imported": false
+}

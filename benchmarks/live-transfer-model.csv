@@ -1,0 +1,15 @@
+id,family,answer,sources,expected_answer,expected_source,answer_ok,source_ok,joint_ok,seconds,error,failure_category,malformed_output
+curl-connect,curl,300,['https://curl.se/libcurl/c/CURLOPT_CONNECTTIMEOUT.html'],['300'],https://curl.se/libcurl/c/CURLOPT_CONNECTTIMEOUT.html,True,True,True,6.1394991999841295,,,False
+nginx-keepalive,nginx,,[],['75s'],https://nginx.org/en/docs/http/ngx_http_core_module.html,False,False,False,8.036401099991053,,ABS,False
+postgres-connections,postgres,100,['https://www.postgresql.org/docs/current/runtime-config-connection.html'],['100'],https://www.postgresql.org/docs/current/runtime-config-connection.html,True,True,True,13.022137199994177,,,False
+sshd-port,openssh,,[],['22'],https://man.openbsd.org/sshd_config,False,False,False,8.10742830001982,,ABS,False
+pi-header,pi,,[],['40'],https://www.raspberrypi.com/products/raspberry-pi-5/,False,False,False,2.7433462000335567,,ABS,False
+sqlite-columns,sqlite,,[],['2000'],https://www.sqlite.org/limits.html,False,False,False,8.108454000030179,,ABS,False
+json-ensure-ascii,python,True,['https://docs.python.org/3/library/json.html'],['True'],https://docs.python.org/3/library/json.html,True,True,True,1.6027692999923602,,,False
+wcag-normal-aa,wcag,,[],['4.5:1'],https://www.w3.org/TR/WCAG22/,False,False,False,8.110027799964882,,ABS,False
+wcag-normal-aaa,wcag,,[],['7:1'],https://www.w3.org/TR/WCAG22/,False,False,False,24.607656300009694,,ABS,False
+rfc-title,ietf,RFC 9110 : STD 97 : HTTP Semantics,['https://www.rfc-editor.org/info/rfc9110/'],['HTTP Semantics'],https://datatracker.ietf.org/api/v1/doc/document/rfc9110/,False,False,False,21.81955630000448,,RANK,False
+sqlite-missing-email,sqlite,,[],[''],,True,True,True,8.108668599976227,,,False
+curl-false-premise,curl,,[],[''],,True,True,True,8.114110699971206,,,False
+sqlite-discovery,discovery-sqlite,,[],['2000'],https://www.sqlite.org/limits.html,False,False,False,23.714963100035675,,ABS,False
+sshd-discovery,discovery-openssh,,[],['22'],https://man.openbsd.org/sshd_config,False,False,False,23.70869220001623,,ABS,False

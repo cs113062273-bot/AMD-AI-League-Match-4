@@ -1,0 +1,218 @@
+[
+  {
+    "id": "simpleqa-3480",
+    "family": "external-Person",
+    "query": "Who was the sole winner of the Fulkerson Prize for outstanding papers in the area of discrete mathematics in 1997?",
+    "url": "",
+    "answer": "Jeong Han Kim",
+    "answers": [
+      "Jeong Han Kim"
+    ],
+    "sources": [
+      "https://www.mathopt.org/?nav=fulkerson,chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.ams.org/notices/199808/comm-fulkerson.pdf",
+      "https://en.wikipedia.org/wiki/Fulkerson_Prize"
+    ],
+    "upstream_row": 797,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1075",
+    "family": "external-Other",
+    "query": "What was P. V. Sanjay Kumar's position just before being appointed as a judge of the Supreme Court of India?",
+    "url": "",
+    "answer": "chief justice of the Manipur High Court",
+    "answers": [
+      "chief justice of the Manipur High Court"
+    ],
+    "sources": [
+      "https://www.scconline.com/blog/post/2023/08/14/know-thy-judge-supreme-court-of-india-justice-pv-sanjay-kumar/",
+      "https://www.scobserver.in/judges/p-v-sanjay-kumar/",
+      "https://en.wikipedia.org/wiki/P._V._Sanjay_Kumar"
+    ],
+    "upstream_row": 243,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-4248",
+    "family": "external-Other",
+    "query": "Which high school did former Assistant Secretary of Commerce and Labor Frank Bestow Wiborg attend?",
+    "url": "",
+    "answer": "Chickering Scientific and Classical Institute",
+    "answers": [
+      "Chickering Scientific and Classical Institute"
+    ],
+    "sources": [
+      "https://wwwcam.tripod.com/sherman/id21.html",
+      "https://www.easthamptonstar.com/archive/grandest-grand-summer-residence-fb-wiborg",
+      "https://en.wikipedia.org/wiki/Frank_Bestow_Wiborg"
+    ],
+    "upstream_row": 985,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-509",
+    "family": "external-Person",
+    "query": "Who joined Rose Matafeo in July 2020 on the comedy show Tiny Tour of Aotearoa, traveling across New Zealand?",
+    "url": "",
+    "answer": "Guy Montgomery",
+    "answers": [
+      "Guy Montgomery"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Rose_Matafeo",
+      "https://nz.datescloud.com/rose-matafeo-and-guy-montgomerys-tiny-tour-of-aotearoa-2020-the-meteor-hamilton-2027453-302617275.html",
+      "https://events.humanitix.com/rm-and-gm-tiny-tour-of-aotearoa"
+    ],
+    "upstream_row": 117,
+    "upstream_topic": "TV shows",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1848",
+    "family": "external-Other",
+    "query": "In what subject did photographer Kemka Ajoku attain a bachelor's degree in 2020?",
+    "url": "",
+    "answer": "Mechanical Engineering",
+    "answers": [
+      "Mechanical Engineering"
+    ],
+    "sources": [
+      "https://www.commarts.com/fresh/kemka-ajoku",
+      "https://www.kemkaajoku.com/cv",
+      "https://www.itsnicethat.com/articles/kemka-ajoku-photography-300121"
+    ],
+    "upstream_row": 421,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3763",
+    "family": "external-Other",
+    "query": "What's the painting by Munch called with a tired girl lying on a bed painted in 1894?",
+    "url": "",
+    "answer": "The Day After",
+    "answers": [
+      "The Day After"
+    ],
+    "sources": [
+      "https://www.overstockart.com/painting/the-day-after",
+      "https://www.artchive.com/artwork/the-day-after-edvard-munch-1894-1895/",
+      "https://www.arthistoryproject.com/artists/edvard-munch/the-day-after/",
+      "https://www.nasjonalmuseet.no/en/collection/object/NG.M.00808"
+    ],
+    "upstream_row": 879,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-109",
+    "family": "external-Person",
+    "query": "Who laid the foundation stone of Jamia Millia Islamia?",
+    "url": "",
+    "answer": "Mahmud Hasan Deobandi.",
+    "answers": [
+      "Mahmud Hasan Deobandi."
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Mahmud_Hasan_Deobandi",
+      "https://en.wikipedia.org/wiki/Jamia_Millia_Islamia",
+      "https://jmi.ac.in/About-Jamia/Profile/History/History/11521/Founder"
+    ],
+    "upstream_row": 31,
+    "upstream_topic": "History",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1157",
+    "family": "external-Number",
+    "query": "What is the exact number of visitors who visited Edinburgh Castle in 2018?",
+    "url": "",
+    "answer": "2,111,578 (acceptable range: anything between 2,006,000 and 2,217,157)",
+    "answers": [
+      "2,111,578 (acceptable range: anything between 2,006,000 and 2,217,157)"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/List_of_most_visited_palaces_and_monuments",
+      "https://www.historicenvironment.scot/about-us/news/scotland-out-performs-rest-of-uk-for-7th-year-running/"
+    ],
+    "upstream_row": 266,
+    "upstream_topic": "Geography",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3153",
+    "family": "external-Number",
+    "query": "How many livres did artist Jean-Antoine Watteau sell his painting \"Camp-fire\" first to Sirois for?",
+    "url": "",
+    "answer": "60 livres (acceptable range: anything between 58 and 62 livres)",
+    "answers": [
+      "60 livres (acceptable range: anything between 58 and 62 livres)"
+    ],
+    "sources": [
+      "https://lapada.org/art-and-antiques/antique-oil-painting-manner-of-jean-antoine-watteau-the-serenade-early-19th-c/",
+      "https://en.wikipedia.org/wiki/Antoine_Watteau",
+      "https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Watteau"
+    ],
+    "upstream_row": 715,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-410",
+    "family": "external-Date",
+    "query": "On what day, month, and year was Joeri Verlinden born?",
+    "url": "",
+    "answer": "22 January 1988",
+    "answers": [
+      "22 January 1988",
+      "1988-01-22"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Joeri_Verlinden",
+      "https://www.olympedia.org/athletes/125724",
+      "https://www.eurosport.com/swimming/joeri-verlinden_prs216871/person.shtml"
+    ],
+    "upstream_row": 96,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3797",
+    "family": "external-Other",
+    "query": "What was the first band Robbie Robertson joined that formed in '56?",
+    "url": "",
+    "answer": "Little Caesar and the Consuls",
+    "answers": [
+      "Little Caesar and the Consuls"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Robbie_Robertson",
+      "https://hellorayo.co.uk/absolute-radio/music/news/the-band-robbie-robertson-dead/",
+      "https://ultimateclassicrock.com/robbie-robertson-dead-at-80/"
+    ],
+    "upstream_row": 888,
+    "upstream_topic": "Music",
+    "multi_step": "True"
+  },
+  {
+    "id": "simpleqa-3290",
+    "family": "external-Date",
+    "query": "In what year was the beetle species Glipa andamana described?",
+    "url": "",
+    "answer": "1941",
+    "answers": [
+      "1941",
+      "1,941"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Glipa_andamana",
+      "https://www.irmng.org/aphia.php?p=taxdetails&id=1216691"
+    ],
+    "upstream_row": 759,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  }
+]

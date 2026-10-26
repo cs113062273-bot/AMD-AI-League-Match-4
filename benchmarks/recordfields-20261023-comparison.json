@@ -1,0 +1,132 @@
+{
+  "scope": "Original8 frozen development cases, same owned full4B service, baseline fbed467 then proposed source_fields. Not holdout or discovery accuracy.",
+  "comparison": {
+    "before_passed": 4,
+    "after_passed": 6,
+    "total": 8,
+    "wins": [
+      "real-award",
+      "award-record"
+    ],
+    "losses": []
+  },
+  "cases_match": true,
+  "fixtures_match": true,
+  "proposal_lf_matches": {
+    "agent/parser.py": true,
+    "agent/selector.py": true,
+    "eval/diagnose_temporal_records.py": true
+  },
+  "memory_after_shutdown": {
+    "used_mib": 1548,
+    "total_mib": 12282
+  },
+  "before": {
+    "mean_seconds": 1.397225,
+    "llm_calls": 16,
+    "rows": [
+      {
+        "id": "real-award",
+        "answer": "",
+        "passed": false,
+        "reason": "model_no_evidence"
+      },
+      {
+        "id": "award-record",
+        "answer": "",
+        "passed": false,
+        "reason": "model_no_evidence"
+      },
+      {
+        "id": "foundation-record",
+        "answer": "1976",
+        "passed": true,
+        "reason": "model_verified"
+      },
+      {
+        "id": "wrong-person",
+        "answer": "",
+        "passed": true,
+        "reason": "model_no_evidence"
+      },
+      {
+        "id": "wrong-award",
+        "answer": "1987",
+        "passed": false,
+        "reason": "model_verified"
+      },
+      {
+        "id": "unseen-attribute",
+        "answer": "1994",
+        "passed": true,
+        "reason": "model_verified"
+      },
+      {
+        "id": "conflicting-records",
+        "answer": "1987",
+        "passed": false,
+        "reason": "model_verified"
+      },
+      {
+        "id": "wrong-event",
+        "answer": "",
+        "passed": true,
+        "reason": "model_no_evidence"
+      }
+    ]
+  },
+  "after": {
+    "mean_seconds": 1.4309500000000002,
+    "llm_calls": 16,
+    "rows": [
+      {
+        "id": "real-award",
+        "answer": "1984",
+        "passed": true,
+        "reason": "model_verified"
+      },
+      {
+        "id": "award-record",
+        "answer": "1987",
+        "passed": true,
+        "reason": "model_verified"
+      },
+      {
+        "id": "foundation-record",
+        "answer": "1976",
+        "passed": true,
+        "reason": "model_verified"
+      },
+      {
+        "id": "wrong-person",
+        "answer": "",
+        "passed": true,
+        "reason": "model_no_evidence"
+      },
+      {
+        "id": "wrong-award",
+        "answer": "1987",
+        "passed": false,
+        "reason": "model_verified"
+      },
+      {
+        "id": "unseen-attribute",
+        "answer": "1994",
+        "passed": true,
+        "reason": "model_verified"
+      },
+      {
+        "id": "conflicting-records",
+        "answer": "1987",
+        "passed": false,
+        "reason": "model_verified"
+      },
+      {
+        "id": "wrong-event",
+        "answer": "",
+        "passed": true,
+        "reason": "model_no_evidence"
+      }
+    ]
+  }
+}

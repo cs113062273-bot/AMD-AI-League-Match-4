@@ -1,0 +1,38 @@
+{
+  "scope": "Three actual public source reads, development compatibility only, no model/GPU/browser/accounts/paidAPI. Discovered manually during exposed-case error analysis; not question-only discovery or new accuracy.",
+  "rows": [
+    {
+      "requested": "https://www.heavenandhell.ch/english/auffuehrung/index_event_003.html",
+      "url": "https://www.heavenandhell.ch/english/auffuehrung/index_event_003.html",
+      "status": 0,
+      "error": "ClientConnectorCertificateError: Cannot connect to host www.heavenandhell.ch:443 ssl:True [SSLCertVerificationError: (1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c",
+      "bytes": 0,
+      "capture_path": "research/family-count-20261023-sources-v1/0.json",
+      "capture_sha256": "13aadad9b3f6b7f8e7dc82c8a5d6dc2224dff0ea4c404bded0c534cff762dd8c",
+      "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "relevant_parsed_spans": []
+    },
+    {
+      "requested": "https://hls-dhs-dss.ch/fr/articles/022018/2006-11-20/",
+      "url": "https://hls-dhs-dss.ch/fr/articles/022018/2006-11-20/",
+      "status": 403,
+      "error": "http_403",
+      "bytes": 0,
+      "capture_path": "research/family-count-20261023-sources-v1/1.json",
+      "capture_sha256": "d186724a648b7e234c2ece26e68f88088883b754d0a51694b73b5a21f3777ecc",
+      "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "relevant_parsed_spans": []
+    },
+    {
+      "requested": "https://www.deutsche-biographie.de/sfz17976.html",
+      "url": "https://www.deutsche-biographie.de/sfz17976.html",
+      "status": 0,
+      "error": "ClientConnectorCertificateError: Cannot connect to host www.deutsche-biographie.de:443 ssl:True [SSLCertVerificationError: (5, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issue",
+      "bytes": 0,
+      "capture_path": "research/family-count-20261023-sources-v1/2.json",
+      "capture_sha256": "dccf7ced10032d0d286908828a8dfd15a525c1307ff83cabe298a6fca449802b",
+      "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "relevant_parsed_spans": []
+    }
+  ]
+}

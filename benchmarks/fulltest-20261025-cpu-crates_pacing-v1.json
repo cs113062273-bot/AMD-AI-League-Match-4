@@ -1,0 +1,157 @@
+{
+  "scope": "Cross-process crates API pacing against loopback HTTP; no public requests or model.\n\nAuthored transport controls, not competition questions or model accuracy.\n",
+  "baseline": null,
+  "platform": "win32",
+  "source_sha256": {
+    "agent/network.py": "cf1fa8c64a6d0d9bca14ec2f60b4c0aebc3e0d469c3cb715627f95e553dad588",
+    "agent/request_pacing.py": "dc9af13c9c4af1c6555442ba9adeb7824a63685c676924d1fbdd20318e23f274"
+  },
+  "diagnostic_sha256": "13f4bd334fd5ab3f8e93e37a485cc291384c5354521d53ef4b1e10d33eafc40c",
+  "passed": 19,
+  "total": 19,
+  "rows": [
+    {
+      "id": "three-workers-shared-bucket",
+      "passed": true,
+      "gaps": [
+        1.0568966999999247,
+        1.0547204999893438
+      ],
+      "outputs": [
+        {
+          "status": 200,
+          "error": "",
+          "torch_imported": false
+        },
+        {
+          "status": 200,
+          "error": "",
+          "torch_imported": false
+        },
+        {
+          "status": 200,
+          "error": "",
+          "torch_imported": false
+        }
+      ]
+    },
+    {
+      "id": "independent-fetchers-and-response-completion",
+      "passed": true,
+      "hits": [
+        {
+          "path": "/api/v1/crates/0",
+          "start": 134300.6795443,
+          "status": 200,
+          "end": 134300.8376195
+        },
+        {
+          "path": "/api/v1/crates/1",
+          "start": 134301.9011561,
+          "status": 200,
+          "end": 134302.0562186
+        }
+      ]
+    },
+    {
+      "id": "cache-needs-no-slot",
+      "passed": true
+    },
+    {
+      "id": "waiting-counts-against-query-deadline",
+      "passed": true,
+      "error": "TimeoutError: "
+    },
+    {
+      "id": "deadline-releases-lock",
+      "passed": true
+    },
+    {
+      "id": "waiting-counts-against-request-timeout",
+      "passed": true,
+      "error": "TimeoutError: "
+    },
+    {
+      "id": "cancel-waiter-sends-no-http",
+      "passed": true
+    },
+    {
+      "id": "cancel-releases-lock",
+      "passed": true
+    },
+    {
+      "id": "frontend-not-in-api-bucket",
+      "passed": true
+    },
+    {
+      "id": "other-origin-unaffected",
+      "passed": true
+    },
+    {
+      "id": "each-api-redirect-hop-paced",
+      "passed": true,
+      "hits": [
+        {
+          "path": "/api/v1/crates/first",
+          "start": 134304.451809,
+          "status": 200,
+          "end": 134304.4518127
+        },
+        {
+          "path": "/api/v1/crates/second",
+          "start": 134305.5074414,
+          "status": 200,
+          "end": 134305.5074497
+        }
+      ]
+    },
+    {
+      "id": "redirect-into-api-paced",
+      "passed": true
+    },
+    {
+      "id": "429-no-retry-and-counted",
+      "passed": true
+    },
+    {
+      "id": "state-failure-no-unpaced-request",
+      "passed": true,
+      "error": "FileExistsError: [WinError 183] \u7576\u6a94\u6848\u5df2\u5b58\u5728\u6642\uff0c\u7121\u6cd5\u5efa\u7acb\u8a72\u6a94\u6848\u3002: 'C:\\\\Users\\\\chinh\\\\AppData\\\\Local\\\\Temp\\\\aperture-crates-pacing-7myhia0f\\\\not-directory'"
+    },
+    {
+      "id": "corrupt-record-cooldown",
+      "passed": true
+    },
+    {
+      "id": "killed-owner-lock-recovers",
+      "passed": true,
+      "hits": [
+        {
+          "path": "/api/v1/crates/held",
+          "start": 134309.0909756,
+          "status": 200,
+          "end": 134310.1638827
+        },
+        {
+          "path": "/api/v1/crates/after-kill",
+          "start": 134310.159858,
+          "status": 200,
+          "end": 134310.1598667
+        }
+      ]
+    },
+    {
+      "id": "incomplete-old-owner-full-cooldown",
+      "passed": true
+    },
+    {
+      "id": "cancel-contending-waiter-keeps-owner",
+      "passed": true
+    },
+    {
+      "id": "cancel-active-owner-full-cooldown",
+      "passed": true
+    }
+  ],
+  "torch_imported": false
+}

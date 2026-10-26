@@ -1,0 +1,94 @@
+{
+  "scope": "CPU-only access probe; public official Wikipedia endpoints and discovered pages, no browser/model.",
+  "rows": [
+    {
+      "requested": "https://en.wikipedia.org/api/rest_v1/page/html/Johann_Caspar_F%C3%BCssli",
+      "url": "https://en.wikipedia.org/api/rest_v1/page/html/Johann_Caspar_F%C3%BCssli",
+      "status": 403,
+      "error": "http_403",
+      "bytes": 0,
+      "title": "",
+      "dynamic": false,
+      "passages": 0,
+      "matches": [],
+      "capture_path": "research/children-20261023-access/0.json",
+      "sha256": "f56a5b5bb46fe9c57e03dea4dc3c1543c74567e9041a8ed422b7660455346a34"
+    },
+    {
+      "requested": "https://en.wikipedia.org/w/api.php?action=parse&page=Johann_Caspar_F%C3%BCssli&prop=text&format=json",
+      "url": "https://en.wikipedia.org/w/api.php?action=parse&page=Johann_Caspar_F%C3%BCssli&prop=text&format=json",
+      "status": 403,
+      "error": "http_403",
+      "bytes": 0,
+      "title": "",
+      "dynamic": false,
+      "passages": 0,
+      "matches": [],
+      "capture_path": "research/children-20261023-access/1.json",
+      "sha256": "0775739e571909ef286823bdf6ac04ee11414317e9107629dc62c7b37cca64e8"
+    },
+    {
+      "requested": "https://en.wikipedia.org/w/index.php?title=Johann_Caspar_F%C3%BCssli&action=raw",
+      "url": "https://en.wikipedia.org/w/index.php?title=Johann_Caspar_F%C3%BCssli&action=raw",
+      "status": 403,
+      "error": "http_403",
+      "bytes": 0,
+      "title": "",
+      "dynamic": false,
+      "passages": 0,
+      "matches": [],
+      "capture_path": "research/children-20261023-access/2.json",
+      "sha256": "a48b57e8a9921b56e135b044591a457a5e53049dddce2a6884350ec8fa6c2692"
+    },
+    {
+      "requested": "https://ancestors.familysearch.org/en/9MF8-T95/johann-caspar-f%C3%BCssli-1706-1782",
+      "url": "https://ancestors.familysearch.org/en/9MF8-T95/johann-caspar-f%C3%BCssli-1706-1782",
+      "status": 200,
+      "error": "",
+      "bytes": 19128,
+      "title": "FamilySearch.org",
+      "dynamic": true,
+      "passages": 5,
+      "matches": [],
+      "capture_path": "research/children-20261023-access/3.json",
+      "sha256": "ab605a157f93cb2a96a5051852844ee0b76f7df04a705cf1caee16852dbabac7"
+    },
+    {
+      "requested": "https://web.kurzy.cz/wiki/Johann_Caspar_F%C3%BCssli",
+      "url": "https://web.kurzy.cz/wiki/Johann_Caspar_F%C3%BCssli",
+      "status": 200,
+      "error": "",
+      "bytes": 3769,
+      "title": "Kurzy.cz - nejv\u011bt\u0161\u00ed \u010desk\u00fd finan\u010dn\u00ed port\u00e1l",
+      "dynamic": true,
+      "passages": 2,
+      "matches": [],
+      "capture_path": "research/children-20261023-access/4.json",
+      "sha256": "a8dd1c6a871f08c294fedadad933af8fc6efb894693d4bb1d4ddcbf65f1a8b97"
+    },
+    {
+      "requested": "https://fame.am/person/johann-caspar-fussli",
+      "url": "https://fame.am/person/johann-caspar-fussli",
+      "status": 200,
+      "error": "",
+      "bytes": 149452,
+      "title": "Johann Caspar F\u00fcssli - Swiss portrait painter",
+      "dynamic": false,
+      "passages": 131,
+      "matches": [
+        "@graph[2].spouse[0].@type: Person | @graph[2].spouse[0] { @type: Person | @id: https://fame.am/person/elisabeth-waser#person | name: Elisabeth Waser | url: https://fame.am/person/elisabeth-waser | sameAs: https://www.wikidata.org/wiki/Q139832259 } | parent @graph[2] { @type: Person | @id: https://fame.am/person/johann-caspar-fussli#person | name: Johann Caspar F\u00fcssli | url: https://fame.am/person/johann-caspar-fussli | description: Johann Caspar F\u00fcssli was a Swiss portrait painter and art historian. | birthDate: 1706 | deathDate: 1782 } | parent $ { @context: https://schema.org }",
+        "@graph[2].spouse[0].@id: https://fame.am/person/elisabeth-waser#person | @graph[2].spouse[0] { @type: Person | @id: https://fame.am/person/elisabeth-waser#person | name: Elisabeth Waser | url: https://fame.am/person/elisabeth-waser | sameAs: https://www.wikidata.org/wiki/Q139832259 } | parent @graph[2] { @type: Person | @id: https://fame.am/person/johann-caspar-fussli#person | name: Johann Caspar F\u00fcssli | url: https://fame.am/person/johann-caspar-fussli | description: Johann Caspar F\u00fcssli was a Swiss portrait painter and art historian. | birthDate: 1706 | deathDate: 1782 } | parent $ { @context: https://schema.org }",
+        "@graph[2].spouse[0].name: Elisabeth Waser | @graph[2].spouse[0] { @type: Person | @id: https://fame.am/person/elisabeth-waser#person | name: Elisabeth Waser | url: https://fame.am/person/elisabeth-waser | sameAs: https://www.wikidata.org/wiki/Q139832259 } | parent @graph[2] { @type: Person | @id: https://fame.am/person/johann-caspar-fussli#person | name: Johann Caspar F\u00fcssli | url: https://fame.am/person/johann-caspar-fussli | description: Johann Caspar F\u00fcssli was a Swiss portrait painter and art historian. | birthDate: 1706 | deathDate: 1782 } | parent $ { @context: https://schema.org }",
+        "@graph[2].spouse[0].url: https://fame.am/person/elisabeth-waser | @graph[2].spouse[0] { @type: Person | @id: https://fame.am/person/elisabeth-waser#person | name: Elisabeth Waser | url: https://fame.am/person/elisabeth-waser | sameAs: https://www.wikidata.org/wiki/Q139832259 } | parent @graph[2] { @type: Person | @id: https://fame.am/person/johann-caspar-fussli#person | name: Johann Caspar F\u00fcssli | url: https://fame.am/person/johann-caspar-fussli | description: Johann Caspar F\u00fcssli was a Swiss portrait painter and art historian. | birthDate: 1706 | deathDate: 1782 } | parent $ { @context: https://schema.org }",
+        "@graph[2].spouse[0].same As: https://www.wikidata.org/wiki/Q139832259 | @graph[2].spouse[0] { @type: Person | @id: https://fame.am/person/elisabeth-waser#person | name: Elisabeth Waser | url: https://fame.am/person/elisabeth-waser | sameAs: https://www.wikidata.org/wiki/Q139832259 } | parent @graph[2] { @type: Person | @id: https://fame.am/person/johann-caspar-fussli#person | name: Johann Caspar F\u00fcssli | url: https://fame.am/person/johann-caspar-fussli | description: Johann Caspar F\u00fcssli was a Swiss portrait painter and art historian. | birthDate: 1706 | deathDate: 1782 } | parent $ { @context: https://schema.org }",
+        "@graph[2].children[0].@type: Person | @graph[2].children[0] { @type: Person | @id: https://fame.am/person/johann-kaspar-fussli#person | name: Johann Kaspar F\u00fcssli | url: https://fame.am/person/johann-kaspar-fussli | sameAs: https://www.wikidata.org/wiki/Q2630485 } | parent @graph[2] { @type: Person | @id: https://fame.am/person/johann-caspar-fussli#person | name: Johann Caspar F\u00fcssli | url: https://fame.am/person/johann-caspar-fussli | description: Johann Caspar F\u00fcssli was a Swiss portrait painter and art historian. | birthDate: 1706 | deathDate: 1782 } | parent $ { @context: https://schema.org }",
+        "@graph[2].children[0].@id: https://fame.am/person/johann-kaspar-fussli#person | @graph[2].children[0] { @type: Person | @id: https://fame.am/person/johann-kaspar-fussli#person | name: Johann Kaspar F\u00fcssli | url: https://fame.am/person/johann-kaspar-fussli | sameAs: https://www.wikidata.org/wiki/Q2630485 } | parent @graph[2] { @type: Person | @id: https://fame.am/person/johann-caspar-fussli#person | name: Johann Caspar F\u00fcssli | url: https://fame.am/person/johann-caspar-fussli | description: Johann Caspar F\u00fcssli was a Swiss portrait painter and art historian. | birthDate: 1706 | deathDate: 1782 } | parent $ { @context: https://schema.org }",
+        "@graph[2].children[0].name: Johann Kaspar F\u00fcssli | @graph[2].children[0] { @type: Person | @id: https://fame.am/person/johann-kaspar-fussli#person | name: Johann Kaspar F\u00fcssli | url: https://fame.am/person/johann-kaspar-fussli | sameAs: https://www.wikidata.org/wiki/Q2630485 } | parent @graph[2] { @type: Person | @id: https://fame.am/person/johann-caspar-fussli#person | name: Johann Caspar F\u00fcssli | url: https://fame.am/person/johann-caspar-fussli | description: Johann Caspar F\u00fcssli was a Swiss portrait painter and art historian. | birthDate: 1706 | deathDate: 1782 } | parent $ { @context: https://schema.org }",
+        "@graph[2].children[0].url: https://fame.am/person/johann-kaspar-fussli | @graph[2].children[0] { @type: Person | @id: https://fame.am/person/johann-kaspar-fussli#person | name: Johann Kaspar F\u00fcssli | url: https://fame.am/person/johann-kaspar-fussli | sameAs: https://www.wikidata.org/wiki/Q2630485 } | parent @graph[2] { @type: Person | @id: https://fame.am/person/johann-caspar-fussli#person | name: Johann Caspar F\u00fcssli | url: https://fame.am/person/johann-caspar-fussli | description: Johann Caspar F\u00fcssli was a Swiss portrait painter and art historian. | birthDate: 1706 | deathDate: 1782 } | parent $ { @context: https://schema.org }",
+        "@graph[2].children[0].same As: https://www.wikidata.org/wiki/Q2630485 | @graph[2].children[0] { @type: Person | @id: https://fame.am/person/johann-kaspar-fussli#person | name: Johann Kaspar F\u00fcssli | url: https://fame.am/person/johann-kaspar-fussli | sameAs: https://www.wikidata.org/wiki/Q2630485 } | parent @graph[2] { @type: Person | @id: https://fame.am/person/johann-caspar-fussli#person | name: Johann Caspar F\u00fcssli | url: https://fame.am/person/johann-caspar-fussli | description: Johann Caspar F\u00fcssli was a Swiss portrait painter and art historian. | birthDate: 1706 | deathDate: 1782 } | parent $ { @context: https://schema.org }"
+      ],
+      "capture_path": "research/children-20261023-access/5.json",
+      "sha256": "fcc3cee826a42521990ec703a2a16b87b71f0fcafe12558eb6b1e9ca2ee4c09b"
+    }
+  ]
+}

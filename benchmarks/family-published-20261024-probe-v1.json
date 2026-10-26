@@ -1,0 +1,18 @@
+{
+  "scope": "One anonymous public GET of the published/persons/{id} route observed in the actual page main bundle. Profile ID is from the immutable original profile URL, not an answer. No auth key/token/cookie, login, browser, model/GPU or paid wrapper. Manual exposed-case development probe, not question-only retrieval or a score.",
+  "requested": "https://www.familysearch.org/service/tree/tree-data/published/persons/9MF8-T95",
+  "url": "https://www.familysearch.org/service/tree/tree-data/published/persons/9MF8-T95",
+  "status": 200,
+  "error": "",
+  "bytes": 169942,
+  "truncated": false,
+  "capture_path": "research\\family-published-20261024-probe-v1\\0.json",
+  "capture_sha256": "51e08095f55ec81063b801051889e8fc4154bd5bba7b893959c66e99bf80eb96",
+  "body_sha256": "d1f7fe4b187dd89db72cfba70164ab378a60a42b17da2384930f456fb9175aeb",
+  "discovery_main_body_sha256": "7a40df830e5251f383ad3dd67736dd36d894eec2e9891a3707d703afe1aa2ba7",
+  "root_keys": [
+    "localizedData",
+    "person",
+    "version"
+  ]
+}

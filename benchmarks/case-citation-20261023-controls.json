@@ -1,0 +1,2726 @@
+{
+  "scope": "Real Chromium case citation from frozen official responses; optional paired full4B.\n\nNo public network in the pair. Logical URLs are served through actual loopback HTTP.\nThe DOM must contain matching primary case blocks before it can supply a citation.\n",
+  "model": false,
+  "baseline": "587ca659a32176ee687884f197b9993ac8a09e70",
+  "production_sha256": {
+    "agent/browser.py": "53ac9a99f3afcefcdb197cd9b2296c2d380910a782178fadb65235e548efc353",
+    "agent/candidates.py": "c55cd074f50d1b0c944cf5552bd604caf4b313bada23accd73674d5d1d93d116",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/engine.py": "fa84eeb46df1353045b1acf105b620d1ea6a596f80281a3944da5eca231ca4a2",
+    "agent/evidence.py": "09da13b3f2fb17de30734c44ddad1c89b856ec682ff2e88a78a57773409c0089",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "agent/model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+    "agent/model_server.py": "8d326a696942d259697a6fba8586441bbbe4874042ea900c6d7788a2a0e9fd22",
+    "agent/navigation.py": "0f849c0c570720114c45c14b0a5286fe409e5d26c2945fdc9f6c1a6922bb7718",
+    "agent/network.py": "def1be3752f81423c313c2dfa83f6703ee063d7e98652cf0d816b423d0e2d9cb",
+    "agent/normalize.py": "05e48fa0be8384aa656bf1280ba0be44545efa51b7d4451f0716d836d39a1973",
+    "agent/output.py": "b983ab2efe31707b1c974344a32dc4b40b708541257695de89cac9e343b073eb",
+    "agent/oyez.py": "556548f3e54dfc011f4256730f93b27e1245a7457e76a783d216fcb00239be81",
+    "agent/parser.py": "60f4199ea41c63376ad347793e8b517b38557dcc238e266621cddef27481124e",
+    "agent/planner.py": "8a617d26e724e8ebc5e604892e867ebcc9e417aa97cbd7e0feda4954cd5a1d2b",
+    "agent/processes.py": "677c4372b40d1da0ffc0cf4120ca5b6be2fcf6b6c30f6ec17d0d8fae19e198c1",
+    "agent/proofs.py": "0d7ae78df6ea9949c29f33c7b817dda352c75b3d99c960c3e987e37c7401faab",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent/search.py": "fadb6dd66114dc2de17edf5dc012d469a3e10ac529ff3b062f43ea137dfaf398",
+    "agent/selector.py": "be7c0fce11c10921d5cd4e3d1072d5a2ca5a62f1c328730384d19b0fecd19566",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent/urls.py": "2118381f70d0f44174db25833b989cd36dab64b588b83085cddd65cad7412a1f",
+    "agent/worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f",
+    "agent/__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41"
+  },
+  "controls": [
+    {
+      "id": "real-dom",
+      "passed": true,
+      "actual": true
+    },
+    {
+      "id": "wrong-url",
+      "passed": true,
+      "actual": false
+    },
+    {
+      "id": "foreign-host",
+      "passed": true,
+      "actual": false
+    },
+    {
+      "id": "api-url-is-not-frontend",
+      "passed": true,
+      "actual": false
+    },
+    {
+      "id": "wrong-title",
+      "passed": true,
+      "actual": false
+    },
+    {
+      "id": "metadata-only",
+      "passed": true,
+      "actual": false
+    },
+    {
+      "id": "partial-case",
+      "passed": true,
+      "actual": false
+    },
+    {
+      "id": "error",
+      "passed": true,
+      "actual": false
+    },
+    {
+      "id": "truncated",
+      "passed": true,
+      "actual": false
+    },
+    {
+      "id": "no-page",
+      "passed": true,
+      "actual": false
+    },
+    {
+      "id": "single-block-insufficient",
+      "passed": true
+    },
+    {
+      "id": "api-only-fields-retained",
+      "passed": true
+    }
+  ],
+  "cases": [
+    {
+      "id": "real-teams",
+      "query": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+      "answer": "University of Georgia and University of Alabama",
+      "source": "https://www.oyez.org/cases/1966/37",
+      "mode": "real"
+    },
+    {
+      "id": "real-informant",
+      "query": "Who was the source of the article in Curtis Publishing v. Butts?",
+      "answer": "George Burnett",
+      "source": "https://www.oyez.org/cases/1966/37",
+      "mode": "real"
+    },
+    {
+      "id": "api-only-docket",
+      "query": "What is the docket number of Curtis Publishing Company v. Butts?",
+      "answer": "37",
+      "source": "https://api.oyez.org/cases/1966/37?labels=true",
+      "mode": "real"
+    },
+    {
+      "id": "direct-api",
+      "query": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+      "answer": "University of Georgia and University of Alabama",
+      "source": "https://api.oyez.org/cases/1966/37?labels=true",
+      "mode": "api"
+    },
+    {
+      "id": "wrong-title",
+      "query": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+      "answer": "University of Georgia and University of Alabama",
+      "source": "https://api.oyez.org/cases/1966/37?labels=true",
+      "mode": "wrong-title"
+    },
+    {
+      "id": "shell-only",
+      "query": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+      "answer": "University of Georgia and University of Alabama",
+      "source": "https://api.oyez.org/cases/1966/37?labels=true",
+      "mode": "shell"
+    },
+    {
+      "id": "browser-off",
+      "query": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+      "answer": "University of Georgia and University of Alabama",
+      "source": "https://api.oyez.org/cases/1966/37?labels=true",
+      "mode": "off"
+    },
+    {
+      "id": "partial-content",
+      "query": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+      "answer": "University of Georgia and University of Alabama",
+      "source": "https://api.oyez.org/cases/1966/37?labels=true",
+      "mode": "partial"
+    }
+  ],
+  "rows": [
+    {
+      "id": "real-teams",
+      "before": {
+        "result": {
+          "answer": "University of Georgia and University of Alabama",
+          "sources": [
+            "https://api.oyez.org/cases/1966/37?labels=true"
+          ],
+          "confidence": 0.906,
+          "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+          "reason": "model_verified",
+          "diagnostics": {
+            "plan": {
+              "question": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+              "url": "https://www.oyez.org/cases/1966/37",
+              "kind": "text",
+              "terms": [
+                "two",
+                "football",
+                "teams",
+                "mentioned",
+                "libel",
+                "case",
+                "against",
+                "saturday",
+                "evening",
+                "post",
+                "1963"
+              ],
+              "attributes": [],
+              "entity_terms": [
+                "two",
+                "football",
+                "teams",
+                "mentioned",
+                "libel",
+                "case",
+                "against",
+                "saturday",
+                "evening",
+                "post"
+              ],
+              "versions": [],
+              "year": "1963",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 2,
+              "negations": [],
+              "domain": "www.oyez.org",
+              "focus": "what two football teams were mentioned ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "span"
+            ],
+            "timings": {
+              "resolver": 0.00011959997937083244
+            },
+            "search_requests": 0,
+            "llm_calls": 2,
+            "content_pages": 1,
+            "model_selections": [
+              {
+                "raw": "University of Georgia and University of Alabama",
+                "answer": "University of Georgia and University of Alabama",
+                "source": "https://api.oyez.org/cases/1966/37?labels=true",
+                "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+                "label": "",
+                "section": "facts of the case",
+                "kind": "text",
+                "score": 14.231663905423373,
+                "signals": {
+                  "selector": "literal_spans",
+                  "literal_spans": [
+                    "University of Georgia",
+                    "University of Alabama"
+                  ],
+                  "locator": "oyez/facts_of_the_case/p[0]:0:0",
+                  "structure": "prose",
+                  "qualifiers": {},
+                  "field_value": ""
+                }
+              }
+            ],
+            "verification": [
+              "supported"
+            ],
+            "reader_state": "answered",
+            "selection": {
+              "raw": "University of Georgia and University of Alabama",
+              "answer": "University of Georgia and University of Alabama",
+              "source": "https://api.oyez.org/cases/1966/37?labels=true",
+              "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+              "label": "",
+              "section": "facts of the case",
+              "kind": "text",
+              "score": 14.231663905423373,
+              "signals": {
+                "selector": "literal_spans",
+                "literal_spans": [
+                  "University of Georgia",
+                  "University of Alabama"
+                ],
+                "locator": "oyez/facts_of_the_case/p[0]:0:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            },
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:9178/r/6cba9d47281e879b33694957d993e77e5ce85613d4fca555b86c279a338c85d6",
+                "final": "http://127.0.0.1:9178/r/6cba9d47281e879b33694957d993e77e5ce85613d4fca555b86c279a338c85d6",
+                "status": 200,
+                "bytes": 2453,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9178/r/e2a0580619da755b7b686a9173942e3e4f588e2cea8fba0a96f00b62d5b6061b",
+                "final": "http://127.0.0.1:9178/r/e2a0580619da755b7b686a9173942e3e4f588e2cea8fba0a96f00b62d5b6061b",
+                "status": 200,
+                "bytes": 31699,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 2,
+            "pages_fetched": 1,
+            "seconds": 0.0208
+          }
+        },
+        "seconds": 0.020891500054858625,
+        "passed": false
+      },
+      "after": {
+        "result": {
+          "answer": "University of Georgia and University of Alabama",
+          "sources": [
+            "https://www.oyez.org/cases/1966/37"
+          ],
+          "confidence": 0.954,
+          "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public official. On appeal, the Fifth Circuit Court of Appeals affirmed the trial judge's decision on the basis that Curtis had waived any constitutional challenges by not raising such questions at trial. Associated Press v. Walker concerns dispatch reports of rioting that occurred on the campus of the University of Mississippi on September 30, 1962. The dispatches, authored by a correspondent on the scene, reported that Edwin A. Walker, a private citizen and political activist, had personally led a violent crowd attempting to prevent federal marshals from enforcing the court-ordered enrollment of an",
+          "reason": "model_verified",
+          "diagnostics": {
+            "plan": {
+              "question": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+              "url": "https://www.oyez.org/cases/1966/37",
+              "kind": "text",
+              "terms": [
+                "two",
+                "football",
+                "teams",
+                "mentioned",
+                "libel",
+                "case",
+                "against",
+                "saturday",
+                "evening",
+                "post",
+                "1963"
+              ],
+              "attributes": [],
+              "entity_terms": [
+                "two",
+                "football",
+                "teams",
+                "mentioned",
+                "libel",
+                "case",
+                "against",
+                "saturday",
+                "evening",
+                "post"
+              ],
+              "versions": [],
+              "year": "1963",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 2,
+              "negations": [],
+              "domain": "www.oyez.org",
+              "focus": "what two football teams were mentioned ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "span"
+            ],
+            "timings": {
+              "resolver": 1.5600002370774746e-05
+            },
+            "search_requests": 0,
+            "llm_calls": 2,
+            "content_pages": 2,
+            "browser": [
+              {
+                "state": "rendered",
+                "requests": 18,
+                "blocked": 21,
+                "blocked_analytics": 1,
+                "bytes": 632703,
+                "browser_version": "156.0.8078.4",
+                "seconds": 1.1377,
+                "purpose": "oyez_case_citation",
+                "content_matched": true
+              }
+            ],
+            "model_selections": [
+              {
+                "raw": "University of Georgia and University of Alabama",
+                "answer": "University of Georgia and University of Alabama",
+                "source": "https://www.oyez.org/cases/1966/37",
+                "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public official. On appeal, the Fifth Circuit Court of Appeals affirmed the trial judge's decision on the basis that Curtis had waived any constitutional challenges by not raising such questions at trial. Associated Press v. Walker concerns dispatch reports of rioting that occurred on the campus of the University of Mississippi on September 30, 1962. The dispatches, authored by a correspondent on the scene, reported that Edwin A. Walker, a private citizen and political activist, had personally led a violent crowd attempting to prevent federal marshals from enforcing the court-ordered enrollment of an",
+                "label": "",
+                "section": "Facts of the case",
+                "kind": "text",
+                "score": 16.175577248439662,
+                "signals": {
+                  "selector": "literal_spans",
+                  "literal_spans": [
+                    "University of Georgia",
+                    "University of Alabama"
+                  ],
+                  "locator": "p[3]:0",
+                  "structure": "prose",
+                  "qualifiers": {},
+                  "field_value": ""
+                }
+              }
+            ],
+            "verification": [
+              "supported"
+            ],
+            "reader_state": "answered",
+            "selection": {
+              "raw": "University of Georgia and University of Alabama",
+              "answer": "University of Georgia and University of Alabama",
+              "source": "https://www.oyez.org/cases/1966/37",
+              "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public official. On appeal, the Fifth Circuit Court of Appeals affirmed the trial judge's decision on the basis that Curtis had waived any constitutional challenges by not raising such questions at trial. Associated Press v. Walker concerns dispatch reports of rioting that occurred on the campus of the University of Mississippi on September 30, 1962. The dispatches, authored by a correspondent on the scene, reported that Edwin A. Walker, a private citizen and political activist, had personally led a violent crowd attempting to prevent federal marshals from enforcing the court-ordered enrollment of an",
+              "label": "",
+              "section": "Facts of the case",
+              "kind": "text",
+              "score": 16.175577248439662,
+              "signals": {
+                "selector": "literal_spans",
+                "literal_spans": [
+                  "University of Georgia",
+                  "University of Alabama"
+                ],
+                "locator": "p[3]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            },
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:9178/r/6cba9d47281e879b33694957d993e77e5ce85613d4fca555b86c279a338c85d6",
+                "final": "http://127.0.0.1:9178/r/6cba9d47281e879b33694957d993e77e5ce85613d4fca555b86c279a338c85d6",
+                "status": 200,
+                "bytes": 2453,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9178/r/e2a0580619da755b7b686a9173942e3e4f588e2cea8fba0a96f00b62d5b6061b",
+                "final": "http://127.0.0.1:9178/r/e2a0580619da755b7b686a9173942e3e4f588e2cea8fba0a96f00b62d5b6061b",
+                "status": 200,
+                "bytes": 31699,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9178/r/5ea04ef70fb3f963128af5ff83553f7b82392cd5f9322f79340cbfafa1e2f5d2",
+                "final": "http://127.0.0.1:9178/r/5ea04ef70fb3f963128af5ff83553f7b82392cd5f9322f79340cbfafa1e2f5d2",
+                "status": 200,
+                "bytes": 11084,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9178/r/20a70713da18cb7e6bbd48d0b4a5ce69cbe1609dee683cede5beab147b102417",
+                "final": "http://127.0.0.1:9178/r/20a70713da18cb7e6bbd48d0b4a5ce69cbe1609dee683cede5beab147b102417",
+                "status": 200,
+                "bytes": 41641,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9178/r/5a86d44ad25c396447e61272fcea441aaff51956e26b1c3b0211cbc6610a6b0a",
+                "final": "http://127.0.0.1:9178/r/5a86d44ad25c396447e61272fcea441aaff51956e26b1c3b0211cbc6610a6b0a",
+                "status": 200,
+                "bytes": 536948,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9178/r/dcaf9bdad29d066a807a8ca2da17a34d9eb2cc2df153e25bb8459492d889b8b7",
+                "final": "http://127.0.0.1:9178/r/dcaf9bdad29d066a807a8ca2da17a34d9eb2cc2df153e25bb8459492d889b8b7",
+                "status": 200,
+                "bytes": 978,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9178/r/69dc942196060bd47e1c7c3c1725de60ff266d866fa6a7404d261d6dba8faac2",
+                "final": "http://127.0.0.1:9178/r/69dc942196060bd47e1c7c3c1725de60ff266d866fa6a7404d261d6dba8faac2",
+                "status": 200,
+                "bytes": 2175,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9178/r/a0ab076b87c99f83f6c4f2aafe89fcabd5f630638ecf49c1e6c7aabffc0462cf",
+                "final": "http://127.0.0.1:9178/r/a0ab076b87c99f83f6c4f2aafe89fcabd5f630638ecf49c1e6c7aabffc0462cf",
+                "status": 200,
+                "bytes": 575,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9178/r/29059c9f552b87c24f8c242f72dd36e31cbd746c2b75d46ee02667f3f9281793",
+                "final": "http://127.0.0.1:9178/r/29059c9f552b87c24f8c242f72dd36e31cbd746c2b75d46ee02667f3f9281793",
+                "status": 200,
+                "bytes": 5003,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9178/r/fe1c5356d9a6d1ed766740b0299180fd9788d25f41584a5656a83b9a4f091e3b",
+                "final": "http://127.0.0.1:9178/r/fe1c5356d9a6d1ed766740b0299180fd9788d25f41584a5656a83b9a4f091e3b",
+                "status": 200,
+                "bytes": 147,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 10,
+            "pages_fetched": 2,
+            "seconds": 1.2103
+          }
+        },
+        "seconds": 1.210408499930054,
+        "passed": true
+      }
+    },
+    {
+      "id": "real-informant",
+      "after": {
+        "result": {
+          "answer": "George Burnett",
+          "sources": [
+            "https://www.oyez.org/cases/1966/37"
+          ],
+          "confidence": 0.797,
+          "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public official. On appeal, the Fifth Circuit Court of Appeals affirmed the trial judge's decision on the basis that Curtis had waived any constitutional challenges by not raising such questions at trial. Associated Press v. Walker concerns dispatch reports of rioting that occurred on the campus of the University of Mississippi on September 30, 1962. The dispatches, authored by a correspondent on the scene, reported that Edwin A. Walker, a private citizen and political activist, had personally led a violent crowd attempting to prevent federal marshals from enforcing the court-ordered enrollment of an",
+          "reason": "model_verified",
+          "diagnostics": {
+            "plan": {
+              "question": "Who was the source of the article in Curtis Publishing v. Butts?",
+              "url": "https://www.oyez.org/cases/1966/37",
+              "kind": "text",
+              "terms": [
+                "source",
+                "article",
+                "curtis",
+                "publishing",
+                "v",
+                "butts"
+              ],
+              "attributes": [],
+              "entity_terms": [
+                "source",
+                "article",
+                "curtis",
+                "publishing",
+                "v",
+                "butts"
+              ],
+              "versions": [],
+              "year": "",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 1,
+              "negations": [],
+              "domain": "www.oyez.org",
+              "focus": "who was the source ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "span"
+            ],
+            "timings": {
+              "resolver": 1.6700010746717453e-05
+            },
+            "search_requests": 0,
+            "llm_calls": 2,
+            "content_pages": 2,
+            "browser": [
+              {
+                "state": "rendered",
+                "requests": 18,
+                "blocked": 21,
+                "blocked_analytics": 1,
+                "bytes": 632703,
+                "browser_version": "156.0.8078.4",
+                "seconds": 1.1198,
+                "purpose": "oyez_case_citation",
+                "content_matched": true
+              }
+            ],
+            "model_selections": [
+              {
+                "raw": "George Burnett",
+                "answer": "George Burnett",
+                "source": "https://www.oyez.org/cases/1966/37",
+                "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public official. On appeal, the Fifth Circuit Court of Appeals affirmed the trial judge's decision on the basis that Curtis had waived any constitutional challenges by not raising such questions at trial. Associated Press v. Walker concerns dispatch reports of rioting that occurred on the campus of the University of Mississippi on September 30, 1962. The dispatches, authored by a correspondent on the scene, reported that Edwin A. Walker, a private citizen and political activist, had personally led a violent crowd attempting to prevent federal marshals from enforcing the court-ordered enrollment of an",
+                "label": "",
+                "section": "Facts of the case",
+                "kind": "text",
+                "score": 9.875577248439667,
+                "signals": {
+                  "selector": "literal_span",
+                  "locator": "p[3]:0",
+                  "structure": "prose",
+                  "qualifiers": {},
+                  "field_value": ""
+                }
+              }
+            ],
+            "verification": [
+              "supported"
+            ],
+            "reader_state": "answered",
+            "selection": {
+              "raw": "George Burnett",
+              "answer": "George Burnett",
+              "source": "https://www.oyez.org/cases/1966/37",
+              "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public official. On appeal, the Fifth Circuit Court of Appeals affirmed the trial judge's decision on the basis that Curtis had waived any constitutional challenges by not raising such questions at trial. Associated Press v. Walker concerns dispatch reports of rioting that occurred on the campus of the University of Mississippi on September 30, 1962. The dispatches, authored by a correspondent on the scene, reported that Edwin A. Walker, a private citizen and political activist, had personally led a violent crowd attempting to prevent federal marshals from enforcing the court-ordered enrollment of an",
+              "label": "",
+              "section": "Facts of the case",
+              "kind": "text",
+              "score": 9.875577248439667,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[3]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            },
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:9197/r/6cba9d47281e879b33694957d993e77e5ce85613d4fca555b86c279a338c85d6",
+                "final": "http://127.0.0.1:9197/r/6cba9d47281e879b33694957d993e77e5ce85613d4fca555b86c279a338c85d6",
+                "status": 200,
+                "bytes": 2453,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9197/r/e2a0580619da755b7b686a9173942e3e4f588e2cea8fba0a96f00b62d5b6061b",
+                "final": "http://127.0.0.1:9197/r/e2a0580619da755b7b686a9173942e3e4f588e2cea8fba0a96f00b62d5b6061b",
+                "status": 200,
+                "bytes": 31699,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9197/r/5ea04ef70fb3f963128af5ff83553f7b82392cd5f9322f79340cbfafa1e2f5d2",
+                "final": "http://127.0.0.1:9197/r/5ea04ef70fb3f963128af5ff83553f7b82392cd5f9322f79340cbfafa1e2f5d2",
+                "status": 200,
+                "bytes": 11084,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9197/r/20a70713da18cb7e6bbd48d0b4a5ce69cbe1609dee683cede5beab147b102417",
+                "final": "http://127.0.0.1:9197/r/20a70713da18cb7e6bbd48d0b4a5ce69cbe1609dee683cede5beab147b102417",
+                "status": 200,
+                "bytes": 41641,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9197/r/5a86d44ad25c396447e61272fcea441aaff51956e26b1c3b0211cbc6610a6b0a",
+                "final": "http://127.0.0.1:9197/r/5a86d44ad25c396447e61272fcea441aaff51956e26b1c3b0211cbc6610a6b0a",
+                "status": 200,
+                "bytes": 536948,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9197/r/dcaf9bdad29d066a807a8ca2da17a34d9eb2cc2df153e25bb8459492d889b8b7",
+                "final": "http://127.0.0.1:9197/r/dcaf9bdad29d066a807a8ca2da17a34d9eb2cc2df153e25bb8459492d889b8b7",
+                "status": 200,
+                "bytes": 978,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9197/r/69dc942196060bd47e1c7c3c1725de60ff266d866fa6a7404d261d6dba8faac2",
+                "final": "http://127.0.0.1:9197/r/69dc942196060bd47e1c7c3c1725de60ff266d866fa6a7404d261d6dba8faac2",
+                "status": 200,
+                "bytes": 2175,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9197/r/a0ab076b87c99f83f6c4f2aafe89fcabd5f630638ecf49c1e6c7aabffc0462cf",
+                "final": "http://127.0.0.1:9197/r/a0ab076b87c99f83f6c4f2aafe89fcabd5f630638ecf49c1e6c7aabffc0462cf",
+                "status": 200,
+                "bytes": 575,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9197/r/29059c9f552b87c24f8c242f72dd36e31cbd746c2b75d46ee02667f3f9281793",
+                "final": "http://127.0.0.1:9197/r/29059c9f552b87c24f8c242f72dd36e31cbd746c2b75d46ee02667f3f9281793",
+                "status": 200,
+                "bytes": 5003,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9197/r/fe1c5356d9a6d1ed766740b0299180fd9788d25f41584a5656a83b9a4f091e3b",
+                "final": "http://127.0.0.1:9197/r/fe1c5356d9a6d1ed766740b0299180fd9788d25f41584a5656a83b9a4f091e3b",
+                "status": 200,
+                "bytes": 147,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 10,
+            "pages_fetched": 2,
+            "seconds": 1.1339
+          }
+        },
+        "seconds": 1.1339692999608815,
+        "passed": true
+      },
+      "before": {
+        "result": {
+          "answer": "George Burnett",
+          "sources": [
+            "https://api.oyez.org/cases/1966/37?labels=true"
+          ],
+          "confidence": 0.748,
+          "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+          "reason": "model_verified",
+          "diagnostics": {
+            "plan": {
+              "question": "Who was the source of the article in Curtis Publishing v. Butts?",
+              "url": "https://www.oyez.org/cases/1966/37",
+              "kind": "text",
+              "terms": [
+                "source",
+                "article",
+                "curtis",
+                "publishing",
+                "v",
+                "butts"
+              ],
+              "attributes": [],
+              "entity_terms": [
+                "source",
+                "article",
+                "curtis",
+                "publishing",
+                "v",
+                "butts"
+              ],
+              "versions": [],
+              "year": "",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 1,
+              "negations": [],
+              "domain": "www.oyez.org",
+              "focus": "who was the source ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "span"
+            ],
+            "timings": {
+              "resolver": 1.1500087566673756e-05
+            },
+            "search_requests": 0,
+            "llm_calls": 2,
+            "content_pages": 1,
+            "model_selections": [
+              {
+                "raw": "George Burnett",
+                "answer": "George Burnett",
+                "source": "https://api.oyez.org/cases/1966/37?labels=true",
+                "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+                "label": "",
+                "section": "facts of the case",
+                "kind": "text",
+                "score": 7.931663905423374,
+                "signals": {
+                  "selector": "literal_span",
+                  "locator": "oyez/facts_of_the_case/p[0]:0:0",
+                  "structure": "prose",
+                  "qualifiers": {},
+                  "field_value": ""
+                }
+              }
+            ],
+            "verification": [
+              "supported"
+            ],
+            "reader_state": "answered",
+            "selection": {
+              "raw": "George Burnett",
+              "answer": "George Burnett",
+              "source": "https://api.oyez.org/cases/1966/37?labels=true",
+              "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+              "label": "",
+              "section": "facts of the case",
+              "kind": "text",
+              "score": 7.931663905423374,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "oyez/facts_of_the_case/p[0]:0:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            },
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:9197/r/6cba9d47281e879b33694957d993e77e5ce85613d4fca555b86c279a338c85d6",
+                "final": "http://127.0.0.1:9197/r/6cba9d47281e879b33694957d993e77e5ce85613d4fca555b86c279a338c85d6",
+                "status": 200,
+                "bytes": 2453,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9197/r/e2a0580619da755b7b686a9173942e3e4f588e2cea8fba0a96f00b62d5b6061b",
+                "final": "http://127.0.0.1:9197/r/e2a0580619da755b7b686a9173942e3e4f588e2cea8fba0a96f00b62d5b6061b",
+                "status": 200,
+                "bytes": 31699,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 2,
+            "pages_fetched": 1,
+            "seconds": 0.0096
+          }
+        },
+        "seconds": 0.00963650003541261,
+        "passed": false
+      }
+    },
+    {
+      "id": "api-only-docket",
+      "before": {
+        "result": {
+          "answer": "37",
+          "sources": [
+            "https://api.oyez.org/cases/1966/37?labels=true"
+          ],
+          "confidence": 0.81,
+          "evidence": "docket number: 37",
+          "reason": "model_verified",
+          "diagnostics": {
+            "plan": {
+              "question": "What is the docket number of Curtis Publishing Company v. Butts?",
+              "url": "https://www.oyez.org/cases/1966/37",
+              "kind": "number",
+              "terms": [
+                "docket",
+                "curtis",
+                "publishing",
+                "company",
+                "v",
+                "butts"
+              ],
+              "attributes": [],
+              "entity_terms": [
+                "docket",
+                "curtis",
+                "publishing",
+                "company",
+                "v",
+                "butts"
+              ],
+              "versions": [],
+              "year": "",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 1,
+              "negations": [],
+              "domain": "www.oyez.org",
+              "focus": "what is the docket number ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "span"
+            ],
+            "timings": {
+              "resolver": 1.7799902707338333e-05
+            },
+            "search_requests": 0,
+            "llm_calls": 2,
+            "content_pages": 1,
+            "model_selections": [
+              {
+                "raw": "37",
+                "answer": "37",
+                "source": "https://api.oyez.org/cases/1966/37?labels=true",
+                "evidence": "docket number: 37",
+                "label": "docket number",
+                "section": "",
+                "kind": "number",
+                "score": 10.4,
+                "signals": {
+                  "selector": "literal_span",
+                  "locator": "oyez/docket_number",
+                  "structure": "field",
+                  "qualifiers": {},
+                  "field_value": "37"
+                }
+              }
+            ],
+            "verification": [
+              "supported"
+            ],
+            "reader_state": "answered",
+            "selection": {
+              "raw": "37",
+              "answer": "37",
+              "source": "https://api.oyez.org/cases/1966/37?labels=true",
+              "evidence": "docket number: 37",
+              "label": "docket number",
+              "section": "",
+              "kind": "number",
+              "score": 10.4,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "oyez/docket_number",
+                "structure": "field",
+                "qualifiers": {},
+                "field_value": "37"
+              }
+            },
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:9216/r/6cba9d47281e879b33694957d993e77e5ce85613d4fca555b86c279a338c85d6",
+                "final": "http://127.0.0.1:9216/r/6cba9d47281e879b33694957d993e77e5ce85613d4fca555b86c279a338c85d6",
+                "status": 200,
+                "bytes": 2453,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9216/r/e2a0580619da755b7b686a9173942e3e4f588e2cea8fba0a96f00b62d5b6061b",
+                "final": "http://127.0.0.1:9216/r/e2a0580619da755b7b686a9173942e3e4f588e2cea8fba0a96f00b62d5b6061b",
+                "status": 200,
+                "bytes": 31699,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 2,
+            "pages_fetched": 1,
+            "seconds": 0.0133
+          }
+        },
+        "seconds": 0.013361399993300438,
+        "passed": true
+      },
+      "after": {
+        "result": {
+          "answer": "37",
+          "sources": [
+            "https://api.oyez.org/cases/1966/37?labels=true"
+          ],
+          "confidence": 0.81,
+          "evidence": "docket number: 37",
+          "reason": "model_verified",
+          "diagnostics": {
+            "plan": {
+              "question": "What is the docket number of Curtis Publishing Company v. Butts?",
+              "url": "https://www.oyez.org/cases/1966/37",
+              "kind": "number",
+              "terms": [
+                "docket",
+                "curtis",
+                "publishing",
+                "company",
+                "v",
+                "butts"
+              ],
+              "attributes": [],
+              "entity_terms": [
+                "docket",
+                "curtis",
+                "publishing",
+                "company",
+                "v",
+                "butts"
+              ],
+              "versions": [],
+              "year": "",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 1,
+              "negations": [],
+              "domain": "www.oyez.org",
+              "focus": "what is the docket number ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "span"
+            ],
+            "timings": {
+              "resolver": 9.70007386058569e-06
+            },
+            "search_requests": 0,
+            "llm_calls": 2,
+            "content_pages": 2,
+            "browser": [
+              {
+                "state": "rendered",
+                "requests": 18,
+                "blocked": 21,
+                "blocked_analytics": 1,
+                "bytes": 632703,
+                "browser_version": "156.0.8078.4",
+                "seconds": 1.1021,
+                "purpose": "oyez_case_citation",
+                "content_matched": true
+              }
+            ],
+            "model_selections": [
+              {
+                "raw": "37",
+                "answer": "37",
+                "source": "https://api.oyez.org/cases/1966/37?labels=true",
+                "evidence": "docket number: 37",
+                "label": "docket number",
+                "section": "",
+                "kind": "number",
+                "score": 10.4,
+                "signals": {
+                  "selector": "literal_span",
+                  "locator": "oyez/docket_number",
+                  "structure": "field",
+                  "qualifiers": {},
+                  "field_value": "37"
+                }
+              }
+            ],
+            "verification": [
+              "supported"
+            ],
+            "reader_state": "answered",
+            "selection": {
+              "raw": "37",
+              "answer": "37",
+              "source": "https://api.oyez.org/cases/1966/37?labels=true",
+              "evidence": "docket number: 37",
+              "label": "docket number",
+              "section": "",
+              "kind": "number",
+              "score": 10.4,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "oyez/docket_number",
+                "structure": "field",
+                "qualifiers": {},
+                "field_value": "37"
+              }
+            },
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:9216/r/6cba9d47281e879b33694957d993e77e5ce85613d4fca555b86c279a338c85d6",
+                "final": "http://127.0.0.1:9216/r/6cba9d47281e879b33694957d993e77e5ce85613d4fca555b86c279a338c85d6",
+                "status": 200,
+                "bytes": 2453,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9216/r/e2a0580619da755b7b686a9173942e3e4f588e2cea8fba0a96f00b62d5b6061b",
+                "final": "http://127.0.0.1:9216/r/e2a0580619da755b7b686a9173942e3e4f588e2cea8fba0a96f00b62d5b6061b",
+                "status": 200,
+                "bytes": 31699,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9216/r/5ea04ef70fb3f963128af5ff83553f7b82392cd5f9322f79340cbfafa1e2f5d2",
+                "final": "http://127.0.0.1:9216/r/5ea04ef70fb3f963128af5ff83553f7b82392cd5f9322f79340cbfafa1e2f5d2",
+                "status": 200,
+                "bytes": 11084,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9216/r/20a70713da18cb7e6bbd48d0b4a5ce69cbe1609dee683cede5beab147b102417",
+                "final": "http://127.0.0.1:9216/r/20a70713da18cb7e6bbd48d0b4a5ce69cbe1609dee683cede5beab147b102417",
+                "status": 200,
+                "bytes": 41641,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9216/r/5a86d44ad25c396447e61272fcea441aaff51956e26b1c3b0211cbc6610a6b0a",
+                "final": "http://127.0.0.1:9216/r/5a86d44ad25c396447e61272fcea441aaff51956e26b1c3b0211cbc6610a6b0a",
+                "status": 200,
+                "bytes": 536948,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9216/r/dcaf9bdad29d066a807a8ca2da17a34d9eb2cc2df153e25bb8459492d889b8b7",
+                "final": "http://127.0.0.1:9216/r/dcaf9bdad29d066a807a8ca2da17a34d9eb2cc2df153e25bb8459492d889b8b7",
+                "status": 200,
+                "bytes": 978,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9216/r/69dc942196060bd47e1c7c3c1725de60ff266d866fa6a7404d261d6dba8faac2",
+                "final": "http://127.0.0.1:9216/r/69dc942196060bd47e1c7c3c1725de60ff266d866fa6a7404d261d6dba8faac2",
+                "status": 200,
+                "bytes": 2175,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9216/r/a0ab076b87c99f83f6c4f2aafe89fcabd5f630638ecf49c1e6c7aabffc0462cf",
+                "final": "http://127.0.0.1:9216/r/a0ab076b87c99f83f6c4f2aafe89fcabd5f630638ecf49c1e6c7aabffc0462cf",
+                "status": 200,
+                "bytes": 575,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9216/r/29059c9f552b87c24f8c242f72dd36e31cbd746c2b75d46ee02667f3f9281793",
+                "final": "http://127.0.0.1:9216/r/29059c9f552b87c24f8c242f72dd36e31cbd746c2b75d46ee02667f3f9281793",
+                "status": 200,
+                "bytes": 5003,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9216/r/fe1c5356d9a6d1ed766740b0299180fd9788d25f41584a5656a83b9a4f091e3b",
+                "final": "http://127.0.0.1:9216/r/fe1c5356d9a6d1ed766740b0299180fd9788d25f41584a5656a83b9a4f091e3b",
+                "status": 200,
+                "bytes": 147,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 10,
+            "pages_fetched": 2,
+            "seconds": 1.1182
+          }
+        },
+        "seconds": 1.1182521999580786,
+        "passed": true
+      }
+    },
+    {
+      "id": "direct-api",
+      "after": {
+        "result": {
+          "answer": "University of Georgia and University of Alabama",
+          "sources": [
+            "https://api.oyez.org/cases/1966/37?labels=true"
+          ],
+          "confidence": 0.956,
+          "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+          "reason": "model_verified",
+          "diagnostics": {
+            "plan": {
+              "question": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+              "url": "https://api.oyez.org/cases/1966/37?labels=true",
+              "kind": "text",
+              "terms": [
+                "two",
+                "football",
+                "teams",
+                "mentioned",
+                "libel",
+                "case",
+                "against",
+                "saturday",
+                "evening",
+                "post",
+                "1963"
+              ],
+              "attributes": [],
+              "entity_terms": [
+                "two",
+                "football",
+                "teams",
+                "mentioned",
+                "libel",
+                "case",
+                "against",
+                "saturday",
+                "evening",
+                "post"
+              ],
+              "versions": [],
+              "year": "1963",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 2,
+              "negations": [],
+              "domain": "api.oyez.org",
+              "focus": "what two football teams were mentioned ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "span"
+            ],
+            "timings": {
+              "resolver": 1.2199976481497288e-05
+            },
+            "search_requests": 0,
+            "llm_calls": 2,
+            "content_pages": 1,
+            "model_selections": [
+              {
+                "raw": "University of Georgia and University of Alabama",
+                "answer": "University of Georgia and University of Alabama",
+                "source": "https://api.oyez.org/cases/1966/37?labels=true",
+                "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+                "label": "",
+                "section": "facts of the case",
+                "kind": "text",
+                "score": 16.23166390542337,
+                "signals": {
+                  "selector": "literal_spans",
+                  "literal_spans": [
+                    "University of Georgia",
+                    "University of Alabama"
+                  ],
+                  "locator": "oyez/facts_of_the_case/p[0]:0:0",
+                  "structure": "prose",
+                  "qualifiers": {},
+                  "field_value": ""
+                }
+              }
+            ],
+            "verification": [
+              "supported"
+            ],
+            "reader_state": "answered",
+            "selection": {
+              "raw": "University of Georgia and University of Alabama",
+              "answer": "University of Georgia and University of Alabama",
+              "source": "https://api.oyez.org/cases/1966/37?labels=true",
+              "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+              "label": "",
+              "section": "facts of the case",
+              "kind": "text",
+              "score": 16.23166390542337,
+              "signals": {
+                "selector": "literal_spans",
+                "literal_spans": [
+                  "University of Georgia",
+                  "University of Alabama"
+                ],
+                "locator": "oyez/facts_of_the_case/p[0]:0:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            },
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:9235/r/e2a0580619da755b7b686a9173942e3e4f588e2cea8fba0a96f00b62d5b6061b",
+                "final": "http://127.0.0.1:9235/r/e2a0580619da755b7b686a9173942e3e4f588e2cea8fba0a96f00b62d5b6061b",
+                "status": 200,
+                "bytes": 31699,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 1,
+            "pages_fetched": 1,
+            "seconds": 0.0101
+          }
+        },
+        "seconds": 0.010119599988684058,
+        "passed": true
+      },
+      "before": {
+        "result": {
+          "answer": "University of Georgia and University of Alabama",
+          "sources": [
+            "https://api.oyez.org/cases/1966/37?labels=true"
+          ],
+          "confidence": 0.956,
+          "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+          "reason": "model_verified",
+          "diagnostics": {
+            "plan": {
+              "question": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+              "url": "https://api.oyez.org/cases/1966/37?labels=true",
+              "kind": "text",
+              "terms": [
+                "two",
+                "football",
+                "teams",
+                "mentioned",
+                "libel",
+                "case",
+                "against",
+                "saturday",
+                "evening",
+                "post",
+                "1963"
+              ],
+              "attributes": [],
+              "entity_terms": [
+                "two",
+                "football",
+                "teams",
+                "mentioned",
+                "libel",
+                "case",
+                "against",
+                "saturday",
+                "evening",
+                "post"
+              ],
+              "versions": [],
+              "year": "1963",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 2,
+              "negations": [],
+              "domain": "api.oyez.org",
+              "focus": "what two football teams were mentioned ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "span"
+            ],
+            "timings": {
+              "resolver": 1.4699995517730713e-05
+            },
+            "search_requests": 0,
+            "llm_calls": 2,
+            "content_pages": 1,
+            "model_selections": [
+              {
+                "raw": "University of Georgia and University of Alabama",
+                "answer": "University of Georgia and University of Alabama",
+                "source": "https://api.oyez.org/cases/1966/37?labels=true",
+                "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+                "label": "",
+                "section": "facts of the case",
+                "kind": "text",
+                "score": 16.23166390542337,
+                "signals": {
+                  "selector": "literal_spans",
+                  "literal_spans": [
+                    "University of Georgia",
+                    "University of Alabama"
+                  ],
+                  "locator": "oyez/facts_of_the_case/p[0]:0:0",
+                  "structure": "prose",
+                  "qualifiers": {},
+                  "field_value": ""
+                }
+              }
+            ],
+            "verification": [
+              "supported"
+            ],
+            "reader_state": "answered",
+            "selection": {
+              "raw": "University of Georgia and University of Alabama",
+              "answer": "University of Georgia and University of Alabama",
+              "source": "https://api.oyez.org/cases/1966/37?labels=true",
+              "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+              "label": "",
+              "section": "facts of the case",
+              "kind": "text",
+              "score": 16.23166390542337,
+              "signals": {
+                "selector": "literal_spans",
+                "literal_spans": [
+                  "University of Georgia",
+                  "University of Alabama"
+                ],
+                "locator": "oyez/facts_of_the_case/p[0]:0:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            },
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:9235/r/e2a0580619da755b7b686a9173942e3e4f588e2cea8fba0a96f00b62d5b6061b",
+                "final": "http://127.0.0.1:9235/r/e2a0580619da755b7b686a9173942e3e4f588e2cea8fba0a96f00b62d5b6061b",
+                "status": 200,
+                "bytes": 31699,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 1,
+            "pages_fetched": 1,
+            "seconds": 0.0096
+          }
+        },
+        "seconds": 0.009634200017899275,
+        "passed": true
+      }
+    },
+    {
+      "id": "wrong-title",
+      "before": {
+        "result": {
+          "answer": "University of Georgia and University of Alabama",
+          "sources": [
+            "https://api.oyez.org/cases/1966/37?labels=true"
+          ],
+          "confidence": 0.906,
+          "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+          "reason": "model_verified",
+          "diagnostics": {
+            "plan": {
+              "question": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+              "url": "https://www.oyez.org/cases/1966/37",
+              "kind": "text",
+              "terms": [
+                "two",
+                "football",
+                "teams",
+                "mentioned",
+                "libel",
+                "case",
+                "against",
+                "saturday",
+                "evening",
+                "post",
+                "1963"
+              ],
+              "attributes": [],
+              "entity_terms": [
+                "two",
+                "football",
+                "teams",
+                "mentioned",
+                "libel",
+                "case",
+                "against",
+                "saturday",
+                "evening",
+                "post"
+              ],
+              "versions": [],
+              "year": "1963",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 2,
+              "negations": [],
+              "domain": "www.oyez.org",
+              "focus": "what two football teams were mentioned ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "span"
+            ],
+            "timings": {
+              "resolver": 1.1499971151351929e-05
+            },
+            "search_requests": 0,
+            "llm_calls": 2,
+            "content_pages": 1,
+            "model_selections": [
+              {
+                "raw": "University of Georgia and University of Alabama",
+                "answer": "University of Georgia and University of Alabama",
+                "source": "https://api.oyez.org/cases/1966/37?labels=true",
+                "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+                "label": "",
+                "section": "facts of the case",
+                "kind": "text",
+                "score": 14.231663905423373,
+                "signals": {
+                  "selector": "literal_spans",
+                  "literal_spans": [
+                    "University of Georgia",
+                    "University of Alabama"
+                  ],
+                  "locator": "oyez/facts_of_the_case/p[0]:0:0",
+                  "structure": "prose",
+                  "qualifiers": {},
+                  "field_value": ""
+                }
+              }
+            ],
+            "verification": [
+              "supported"
+            ],
+            "reader_state": "answered",
+            "selection": {
+              "raw": "University of Georgia and University of Alabama",
+              "answer": "University of Georgia and University of Alabama",
+              "source": "https://api.oyez.org/cases/1966/37?labels=true",
+              "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+              "label": "",
+              "section": "facts of the case",
+              "kind": "text",
+              "score": 14.231663905423373,
+              "signals": {
+                "selector": "literal_spans",
+                "literal_spans": [
+                  "University of Georgia",
+                  "University of Alabama"
+                ],
+                "locator": "oyez/facts_of_the_case/p[0]:0:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            },
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:9244/r/6cba9d47281e879b33694957d993e77e5ce85613d4fca555b86c279a338c85d6",
+                "final": "http://127.0.0.1:9244/r/6cba9d47281e879b33694957d993e77e5ce85613d4fca555b86c279a338c85d6",
+                "status": 200,
+                "bytes": 192,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9244/r/e2a0580619da755b7b686a9173942e3e4f588e2cea8fba0a96f00b62d5b6061b",
+                "final": "http://127.0.0.1:9244/r/e2a0580619da755b7b686a9173942e3e4f588e2cea8fba0a96f00b62d5b6061b",
+                "status": 200,
+                "bytes": 31699,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 2,
+            "pages_fetched": 1,
+            "seconds": 0.0119
+          }
+        },
+        "seconds": 0.01198760000988841,
+        "passed": true
+      },
+      "after": {
+        "result": {
+          "answer": "University of Georgia and University of Alabama",
+          "sources": [
+            "https://api.oyez.org/cases/1966/37?labels=true"
+          ],
+          "confidence": 0.906,
+          "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+          "reason": "model_verified",
+          "diagnostics": {
+            "plan": {
+              "question": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+              "url": "https://www.oyez.org/cases/1966/37",
+              "kind": "text",
+              "terms": [
+                "two",
+                "football",
+                "teams",
+                "mentioned",
+                "libel",
+                "case",
+                "against",
+                "saturday",
+                "evening",
+                "post",
+                "1963"
+              ],
+              "attributes": [],
+              "entity_terms": [
+                "two",
+                "football",
+                "teams",
+                "mentioned",
+                "libel",
+                "case",
+                "against",
+                "saturday",
+                "evening",
+                "post"
+              ],
+              "versions": [],
+              "year": "1963",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 2,
+              "negations": [],
+              "domain": "www.oyez.org",
+              "focus": "what two football teams were mentioned ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "span"
+            ],
+            "timings": {
+              "resolver": 1.2399978004395962e-05
+            },
+            "search_requests": 0,
+            "llm_calls": 2,
+            "content_pages": 1,
+            "browser": [
+              {
+                "state": "rendered",
+                "requests": 1,
+                "blocked": 0,
+                "blocked_analytics": 0,
+                "bytes": 192,
+                "browser_version": "156.0.8078.4",
+                "seconds": 0.9427,
+                "purpose": "oyez_case_citation",
+                "content_matched": false
+              }
+            ],
+            "model_selections": [
+              {
+                "raw": "University of Georgia and University of Alabama",
+                "answer": "University of Georgia and University of Alabama",
+                "source": "https://api.oyez.org/cases/1966/37?labels=true",
+                "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+                "label": "",
+                "section": "facts of the case",
+                "kind": "text",
+                "score": 14.231663905423373,
+                "signals": {
+                  "selector": "literal_spans",
+                  "literal_spans": [
+                    "University of Georgia",
+                    "University of Alabama"
+                  ],
+                  "locator": "oyez/facts_of_the_case/p[0]:0:0",
+                  "structure": "prose",
+                  "qualifiers": {},
+                  "field_value": ""
+                }
+              }
+            ],
+            "verification": [
+              "supported"
+            ],
+            "reader_state": "answered",
+            "selection": {
+              "raw": "University of Georgia and University of Alabama",
+              "answer": "University of Georgia and University of Alabama",
+              "source": "https://api.oyez.org/cases/1966/37?labels=true",
+              "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+              "label": "",
+              "section": "facts of the case",
+              "kind": "text",
+              "score": 14.231663905423373,
+              "signals": {
+                "selector": "literal_spans",
+                "literal_spans": [
+                  "University of Georgia",
+                  "University of Alabama"
+                ],
+                "locator": "oyez/facts_of_the_case/p[0]:0:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            },
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:9244/r/6cba9d47281e879b33694957d993e77e5ce85613d4fca555b86c279a338c85d6",
+                "final": "http://127.0.0.1:9244/r/6cba9d47281e879b33694957d993e77e5ce85613d4fca555b86c279a338c85d6",
+                "status": 200,
+                "bytes": 192,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9244/r/e2a0580619da755b7b686a9173942e3e4f588e2cea8fba0a96f00b62d5b6061b",
+                "final": "http://127.0.0.1:9244/r/e2a0580619da755b7b686a9173942e3e4f588e2cea8fba0a96f00b62d5b6061b",
+                "status": 200,
+                "bytes": 31699,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 2,
+            "pages_fetched": 1,
+            "seconds": 0.9551
+          }
+        },
+        "seconds": 0.9552073000231758,
+        "passed": true
+      }
+    },
+    {
+      "id": "shell-only",
+      "after": {
+        "result": {
+          "answer": "University of Georgia and University of Alabama",
+          "sources": [
+            "https://api.oyez.org/cases/1966/37?labels=true"
+          ],
+          "confidence": 0.906,
+          "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+          "reason": "model_verified",
+          "diagnostics": {
+            "plan": {
+              "question": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+              "url": "https://www.oyez.org/cases/1966/37",
+              "kind": "text",
+              "terms": [
+                "two",
+                "football",
+                "teams",
+                "mentioned",
+                "libel",
+                "case",
+                "against",
+                "saturday",
+                "evening",
+                "post",
+                "1963"
+              ],
+              "attributes": [],
+              "entity_terms": [
+                "two",
+                "football",
+                "teams",
+                "mentioned",
+                "libel",
+                "case",
+                "against",
+                "saturday",
+                "evening",
+                "post"
+              ],
+              "versions": [],
+              "year": "1963",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 2,
+              "negations": [],
+              "domain": "www.oyez.org",
+              "focus": "what two football teams were mentioned ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "span"
+            ],
+            "timings": {
+              "resolver": 1.9700033590197563e-05
+            },
+            "search_requests": 0,
+            "llm_calls": 2,
+            "content_pages": 1,
+            "browser": [
+              {
+                "state": "rendered",
+                "requests": 1,
+                "blocked": 0,
+                "blocked_analytics": 0,
+                "bytes": 37,
+                "browser_version": "156.0.8078.4",
+                "seconds": 0.9365,
+                "purpose": "oyez_case_citation",
+                "content_matched": false
+              }
+            ],
+            "model_selections": [
+              {
+                "raw": "University of Georgia and University of Alabama",
+                "answer": "University of Georgia and University of Alabama",
+                "source": "https://api.oyez.org/cases/1966/37?labels=true",
+                "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+                "label": "",
+                "section": "facts of the case",
+                "kind": "text",
+                "score": 14.231663905423373,
+                "signals": {
+                  "selector": "literal_spans",
+                  "literal_spans": [
+                    "University of Georgia",
+                    "University of Alabama"
+                  ],
+                  "locator": "oyez/facts_of_the_case/p[0]:0:0",
+                  "structure": "prose",
+                  "qualifiers": {},
+                  "field_value": ""
+                }
+              }
+            ],
+            "verification": [
+              "supported"
+            ],
+            "reader_state": "answered",
+            "selection": {
+              "raw": "University of Georgia and University of Alabama",
+              "answer": "University of Georgia and University of Alabama",
+              "source": "https://api.oyez.org/cases/1966/37?labels=true",
+              "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+              "label": "",
+              "section": "facts of the case",
+              "kind": "text",
+              "score": 14.231663905423373,
+              "signals": {
+                "selector": "literal_spans",
+                "literal_spans": [
+                  "University of Georgia",
+                  "University of Alabama"
+                ],
+                "locator": "oyez/facts_of_the_case/p[0]:0:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            },
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:9255/r/6cba9d47281e879b33694957d993e77e5ce85613d4fca555b86c279a338c85d6",
+                "final": "http://127.0.0.1:9255/r/6cba9d47281e879b33694957d993e77e5ce85613d4fca555b86c279a338c85d6",
+                "status": 200,
+                "bytes": 37,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9255/r/e2a0580619da755b7b686a9173942e3e4f588e2cea8fba0a96f00b62d5b6061b",
+                "final": "http://127.0.0.1:9255/r/e2a0580619da755b7b686a9173942e3e4f588e2cea8fba0a96f00b62d5b6061b",
+                "status": 200,
+                "bytes": 31699,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 2,
+            "pages_fetched": 1,
+            "seconds": 0.9515
+          }
+        },
+        "seconds": 0.9516249999869615,
+        "passed": true
+      },
+      "before": {
+        "result": {
+          "answer": "University of Georgia and University of Alabama",
+          "sources": [
+            "https://api.oyez.org/cases/1966/37?labels=true"
+          ],
+          "confidence": 0.906,
+          "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+          "reason": "model_verified",
+          "diagnostics": {
+            "plan": {
+              "question": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+              "url": "https://www.oyez.org/cases/1966/37",
+              "kind": "text",
+              "terms": [
+                "two",
+                "football",
+                "teams",
+                "mentioned",
+                "libel",
+                "case",
+                "against",
+                "saturday",
+                "evening",
+                "post",
+                "1963"
+              ],
+              "attributes": [],
+              "entity_terms": [
+                "two",
+                "football",
+                "teams",
+                "mentioned",
+                "libel",
+                "case",
+                "against",
+                "saturday",
+                "evening",
+                "post"
+              ],
+              "versions": [],
+              "year": "1963",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 2,
+              "negations": [],
+              "domain": "www.oyez.org",
+              "focus": "what two football teams were mentioned ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "span"
+            ],
+            "timings": {
+              "resolver": 1.1899974197149277e-05
+            },
+            "search_requests": 0,
+            "llm_calls": 2,
+            "content_pages": 1,
+            "model_selections": [
+              {
+                "raw": "University of Georgia and University of Alabama",
+                "answer": "University of Georgia and University of Alabama",
+                "source": "https://api.oyez.org/cases/1966/37?labels=true",
+                "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+                "label": "",
+                "section": "facts of the case",
+                "kind": "text",
+                "score": 14.231663905423373,
+                "signals": {
+                  "selector": "literal_spans",
+                  "literal_spans": [
+                    "University of Georgia",
+                    "University of Alabama"
+                  ],
+                  "locator": "oyez/facts_of_the_case/p[0]:0:0",
+                  "structure": "prose",
+                  "qualifiers": {},
+                  "field_value": ""
+                }
+              }
+            ],
+            "verification": [
+              "supported"
+            ],
+            "reader_state": "answered",
+            "selection": {
+              "raw": "University of Georgia and University of Alabama",
+              "answer": "University of Georgia and University of Alabama",
+              "source": "https://api.oyez.org/cases/1966/37?labels=true",
+              "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+              "label": "",
+              "section": "facts of the case",
+              "kind": "text",
+              "score": 14.231663905423373,
+              "signals": {
+                "selector": "literal_spans",
+                "literal_spans": [
+                  "University of Georgia",
+                  "University of Alabama"
+                ],
+                "locator": "oyez/facts_of_the_case/p[0]:0:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            },
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:9255/r/6cba9d47281e879b33694957d993e77e5ce85613d4fca555b86c279a338c85d6",
+                "final": "http://127.0.0.1:9255/r/6cba9d47281e879b33694957d993e77e5ce85613d4fca555b86c279a338c85d6",
+                "status": 200,
+                "bytes": 37,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9255/r/e2a0580619da755b7b686a9173942e3e4f588e2cea8fba0a96f00b62d5b6061b",
+                "final": "http://127.0.0.1:9255/r/e2a0580619da755b7b686a9173942e3e4f588e2cea8fba0a96f00b62d5b6061b",
+                "status": 200,
+                "bytes": 31699,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 2,
+            "pages_fetched": 1,
+            "seconds": 0.0124
+          }
+        },
+        "seconds": 0.012495300034061074,
+        "passed": true
+      }
+    },
+    {
+      "id": "browser-off",
+      "before": {
+        "result": {
+          "answer": "University of Georgia and University of Alabama",
+          "sources": [
+            "https://api.oyez.org/cases/1966/37?labels=true"
+          ],
+          "confidence": 0.906,
+          "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+          "reason": "model_verified",
+          "diagnostics": {
+            "plan": {
+              "question": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+              "url": "https://www.oyez.org/cases/1966/37",
+              "kind": "text",
+              "terms": [
+                "two",
+                "football",
+                "teams",
+                "mentioned",
+                "libel",
+                "case",
+                "against",
+                "saturday",
+                "evening",
+                "post",
+                "1963"
+              ],
+              "attributes": [],
+              "entity_terms": [
+                "two",
+                "football",
+                "teams",
+                "mentioned",
+                "libel",
+                "case",
+                "against",
+                "saturday",
+                "evening",
+                "post"
+              ],
+              "versions": [],
+              "year": "1963",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 2,
+              "negations": [],
+              "domain": "www.oyez.org",
+              "focus": "what two football teams were mentioned ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "span"
+            ],
+            "timings": {
+              "resolver": 1.9099912606179714e-05
+            },
+            "search_requests": 0,
+            "llm_calls": 2,
+            "content_pages": 1,
+            "model_selections": [
+              {
+                "raw": "University of Georgia and University of Alabama",
+                "answer": "University of Georgia and University of Alabama",
+                "source": "https://api.oyez.org/cases/1966/37?labels=true",
+                "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+                "label": "",
+                "section": "facts of the case",
+                "kind": "text",
+                "score": 14.231663905423373,
+                "signals": {
+                  "selector": "literal_spans",
+                  "literal_spans": [
+                    "University of Georgia",
+                    "University of Alabama"
+                  ],
+                  "locator": "oyez/facts_of_the_case/p[0]:0:0",
+                  "structure": "prose",
+                  "qualifiers": {},
+                  "field_value": ""
+                }
+              }
+            ],
+            "verification": [
+              "supported"
+            ],
+            "reader_state": "answered",
+            "selection": {
+              "raw": "University of Georgia and University of Alabama",
+              "answer": "University of Georgia and University of Alabama",
+              "source": "https://api.oyez.org/cases/1966/37?labels=true",
+              "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+              "label": "",
+              "section": "facts of the case",
+              "kind": "text",
+              "score": 14.231663905423373,
+              "signals": {
+                "selector": "literal_spans",
+                "literal_spans": [
+                  "University of Georgia",
+                  "University of Alabama"
+                ],
+                "locator": "oyez/facts_of_the_case/p[0]:0:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            },
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:9265/r/6cba9d47281e879b33694957d993e77e5ce85613d4fca555b86c279a338c85d6",
+                "final": "http://127.0.0.1:9265/r/6cba9d47281e879b33694957d993e77e5ce85613d4fca555b86c279a338c85d6",
+                "status": 200,
+                "bytes": 2453,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9265/r/e2a0580619da755b7b686a9173942e3e4f588e2cea8fba0a96f00b62d5b6061b",
+                "final": "http://127.0.0.1:9265/r/e2a0580619da755b7b686a9173942e3e4f588e2cea8fba0a96f00b62d5b6061b",
+                "status": 200,
+                "bytes": 31699,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 2,
+            "pages_fetched": 1,
+            "seconds": 0.0131
+          }
+        },
+        "seconds": 0.013182899914681911,
+        "passed": true
+      },
+      "after": {
+        "result": {
+          "answer": "University of Georgia and University of Alabama",
+          "sources": [
+            "https://api.oyez.org/cases/1966/37?labels=true"
+          ],
+          "confidence": 0.906,
+          "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+          "reason": "model_verified",
+          "diagnostics": {
+            "plan": {
+              "question": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+              "url": "https://www.oyez.org/cases/1966/37",
+              "kind": "text",
+              "terms": [
+                "two",
+                "football",
+                "teams",
+                "mentioned",
+                "libel",
+                "case",
+                "against",
+                "saturday",
+                "evening",
+                "post",
+                "1963"
+              ],
+              "attributes": [],
+              "entity_terms": [
+                "two",
+                "football",
+                "teams",
+                "mentioned",
+                "libel",
+                "case",
+                "against",
+                "saturday",
+                "evening",
+                "post"
+              ],
+              "versions": [],
+              "year": "1963",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 2,
+              "negations": [],
+              "domain": "www.oyez.org",
+              "focus": "what two football teams were mentioned ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "span"
+            ],
+            "timings": {
+              "resolver": 1.0299962013959885e-05
+            },
+            "search_requests": 0,
+            "llm_calls": 2,
+            "content_pages": 1,
+            "model_selections": [
+              {
+                "raw": "University of Georgia and University of Alabama",
+                "answer": "University of Georgia and University of Alabama",
+                "source": "https://api.oyez.org/cases/1966/37?labels=true",
+                "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+                "label": "",
+                "section": "facts of the case",
+                "kind": "text",
+                "score": 14.231663905423373,
+                "signals": {
+                  "selector": "literal_spans",
+                  "literal_spans": [
+                    "University of Georgia",
+                    "University of Alabama"
+                  ],
+                  "locator": "oyez/facts_of_the_case/p[0]:0:0",
+                  "structure": "prose",
+                  "qualifiers": {},
+                  "field_value": ""
+                }
+              }
+            ],
+            "verification": [
+              "supported"
+            ],
+            "reader_state": "answered",
+            "selection": {
+              "raw": "University of Georgia and University of Alabama",
+              "answer": "University of Georgia and University of Alabama",
+              "source": "https://api.oyez.org/cases/1966/37?labels=true",
+              "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+              "label": "",
+              "section": "facts of the case",
+              "kind": "text",
+              "score": 14.231663905423373,
+              "signals": {
+                "selector": "literal_spans",
+                "literal_spans": [
+                  "University of Georgia",
+                  "University of Alabama"
+                ],
+                "locator": "oyez/facts_of_the_case/p[0]:0:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            },
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:9265/r/6cba9d47281e879b33694957d993e77e5ce85613d4fca555b86c279a338c85d6",
+                "final": "http://127.0.0.1:9265/r/6cba9d47281e879b33694957d993e77e5ce85613d4fca555b86c279a338c85d6",
+                "status": 200,
+                "bytes": 2453,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9265/r/e2a0580619da755b7b686a9173942e3e4f588e2cea8fba0a96f00b62d5b6061b",
+                "final": "http://127.0.0.1:9265/r/e2a0580619da755b7b686a9173942e3e4f588e2cea8fba0a96f00b62d5b6061b",
+                "status": 200,
+                "bytes": 31699,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 2,
+            "pages_fetched": 1,
+            "seconds": 0.0102
+          }
+        },
+        "seconds": 0.010309500037692487,
+        "passed": true
+      }
+    },
+    {
+      "id": "partial-content",
+      "after": {
+        "result": {
+          "answer": "University of Georgia and University of Alabama",
+          "sources": [
+            "https://api.oyez.org/cases/1966/37?labels=true"
+          ],
+          "confidence": 0.906,
+          "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+          "reason": "model_verified",
+          "diagnostics": {
+            "plan": {
+              "question": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+              "url": "https://www.oyez.org/cases/1966/37",
+              "kind": "text",
+              "terms": [
+                "two",
+                "football",
+                "teams",
+                "mentioned",
+                "libel",
+                "case",
+                "against",
+                "saturday",
+                "evening",
+                "post",
+                "1963"
+              ],
+              "attributes": [],
+              "entity_terms": [
+                "two",
+                "football",
+                "teams",
+                "mentioned",
+                "libel",
+                "case",
+                "against",
+                "saturday",
+                "evening",
+                "post"
+              ],
+              "versions": [],
+              "year": "1963",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 2,
+              "negations": [],
+              "domain": "www.oyez.org",
+              "focus": "what two football teams were mentioned ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "span"
+            ],
+            "timings": {
+              "resolver": 1.2499978765845299e-05
+            },
+            "search_requests": 0,
+            "llm_calls": 2,
+            "content_pages": 1,
+            "browser": [
+              {
+                "state": "rendered",
+                "requests": 1,
+                "blocked": 0,
+                "blocked_analytics": 0,
+                "bytes": 2128,
+                "browser_version": "156.0.8078.4",
+                "seconds": 0.9601,
+                "purpose": "oyez_case_citation",
+                "content_matched": false
+              }
+            ],
+            "model_selections": [
+              {
+                "raw": "University of Georgia and University of Alabama",
+                "answer": "University of Georgia and University of Alabama",
+                "source": "https://api.oyez.org/cases/1966/37?labels=true",
+                "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+                "label": "",
+                "section": "facts of the case",
+                "kind": "text",
+                "score": 14.231663905423373,
+                "signals": {
+                  "selector": "literal_spans",
+                  "literal_spans": [
+                    "University of Georgia",
+                    "University of Alabama"
+                  ],
+                  "locator": "oyez/facts_of_the_case/p[0]:0:0",
+                  "structure": "prose",
+                  "qualifiers": {},
+                  "field_value": ""
+                }
+              }
+            ],
+            "verification": [
+              "supported"
+            ],
+            "reader_state": "answered",
+            "selection": {
+              "raw": "University of Georgia and University of Alabama",
+              "answer": "University of Georgia and University of Alabama",
+              "source": "https://api.oyez.org/cases/1966/37?labels=true",
+              "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+              "label": "",
+              "section": "facts of the case",
+              "kind": "text",
+              "score": 14.231663905423373,
+              "signals": {
+                "selector": "literal_spans",
+                "literal_spans": [
+                  "University of Georgia",
+                  "University of Alabama"
+                ],
+                "locator": "oyez/facts_of_the_case/p[0]:0:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            },
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:9274/r/6cba9d47281e879b33694957d993e77e5ce85613d4fca555b86c279a338c85d6",
+                "final": "http://127.0.0.1:9274/r/6cba9d47281e879b33694957d993e77e5ce85613d4fca555b86c279a338c85d6",
+                "status": 200,
+                "bytes": 2128,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9274/r/e2a0580619da755b7b686a9173942e3e4f588e2cea8fba0a96f00b62d5b6061b",
+                "final": "http://127.0.0.1:9274/r/e2a0580619da755b7b686a9173942e3e4f588e2cea8fba0a96f00b62d5b6061b",
+                "status": 200,
+                "bytes": 31699,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 2,
+            "pages_fetched": 1,
+            "seconds": 0.9739
+          }
+        },
+        "seconds": 0.9739832999184728,
+        "passed": true
+      },
+      "before": {
+        "result": {
+          "answer": "University of Georgia and University of Alabama",
+          "sources": [
+            "https://api.oyez.org/cases/1966/37?labels=true"
+          ],
+          "confidence": 0.906,
+          "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+          "reason": "model_verified",
+          "diagnostics": {
+            "plan": {
+              "question": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+              "url": "https://www.oyez.org/cases/1966/37",
+              "kind": "text",
+              "terms": [
+                "two",
+                "football",
+                "teams",
+                "mentioned",
+                "libel",
+                "case",
+                "against",
+                "saturday",
+                "evening",
+                "post",
+                "1963"
+              ],
+              "attributes": [],
+              "entity_terms": [
+                "two",
+                "football",
+                "teams",
+                "mentioned",
+                "libel",
+                "case",
+                "against",
+                "saturday",
+                "evening",
+                "post"
+              ],
+              "versions": [],
+              "year": "1963",
+              "as_of": "",
+              "latest": false,
+              "stable": false,
+              "first": false,
+              "currency": "",
+              "cardinality": 2,
+              "negations": [],
+              "domain": "www.oyez.org",
+              "focus": "what two football teams were mentioned ",
+              "choices": [],
+              "operation": "single",
+              "required_fields": [],
+              "date_precision": ""
+            },
+            "errors": [],
+            "selector": [
+              "span"
+            ],
+            "timings": {
+              "resolver": 1.109996810555458e-05
+            },
+            "search_requests": 0,
+            "llm_calls": 2,
+            "content_pages": 1,
+            "model_selections": [
+              {
+                "raw": "University of Georgia and University of Alabama",
+                "answer": "University of Georgia and University of Alabama",
+                "source": "https://api.oyez.org/cases/1966/37?labels=true",
+                "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+                "label": "",
+                "section": "facts of the case",
+                "kind": "text",
+                "score": 14.231663905423373,
+                "signals": {
+                  "selector": "literal_spans",
+                  "literal_spans": [
+                    "University of Georgia",
+                    "University of Alabama"
+                  ],
+                  "locator": "oyez/facts_of_the_case/p[0]:0:0",
+                  "structure": "prose",
+                  "qualifiers": {},
+                  "field_value": ""
+                }
+              }
+            ],
+            "verification": [
+              "supported"
+            ],
+            "reader_state": "answered",
+            "selection": {
+              "raw": "University of Georgia and University of Alabama",
+              "answer": "University of Georgia and University of Alabama",
+              "source": "https://api.oyez.org/cases/1966/37?labels=true",
+              "evidence": "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public",
+              "label": "",
+              "section": "facts of the case",
+              "kind": "text",
+              "score": 14.231663905423373,
+              "signals": {
+                "selector": "literal_spans",
+                "literal_spans": [
+                  "University of Georgia",
+                  "University of Alabama"
+                ],
+                "locator": "oyez/facts_of_the_case/p[0]:0:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            },
+            "fetches": [
+              {
+                "url": "http://127.0.0.1:9274/r/6cba9d47281e879b33694957d993e77e5ce85613d4fca555b86c279a338c85d6",
+                "final": "http://127.0.0.1:9274/r/6cba9d47281e879b33694957d993e77e5ce85613d4fca555b86c279a338c85d6",
+                "status": 200,
+                "bytes": 2128,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              },
+              {
+                "url": "http://127.0.0.1:9274/r/e2a0580619da755b7b686a9173942e3e4f588e2cea8fba0a96f00b62d5b6061b",
+                "final": "http://127.0.0.1:9274/r/e2a0580619da755b7b686a9173942e3e4f588e2cea8fba0a96f00b62d5b6061b",
+                "status": 200,
+                "bytes": 31699,
+                "error": "",
+                "redirects": [],
+                "truncated": false,
+                "truncation_reason": ""
+              }
+            ],
+            "http_responses_success": 2,
+            "pages_fetched": 1,
+            "seconds": 0.0123
+          }
+        },
+        "seconds": 0.012417000019922853,
+        "passed": true
+      }
+    }
+  ],
+  "capture_sha256": "9c81fa803515ec5e24495f25190e5dec39d691dff4c81b9ef3c72f098417c36e",
+  "production_changed_during_run": false,
+  "comparison": {
+    "before_passed": 6,
+    "after_passed": 8,
+    "total": 8,
+    "wins": [
+      "real-teams",
+      "real-informant"
+    ],
+    "losses": []
+  }
+}

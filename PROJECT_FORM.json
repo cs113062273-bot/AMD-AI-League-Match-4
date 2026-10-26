@@ -1,0 +1,19 @@
+{
+  "title": "Aperture - Web Retrieval with Traceable Evidence",
+  "short_description": "A local-model web agent that retrieves exact answers from fetched pages and returns supporting source URLs.",
+  "long_description": "Aperture is a web retrieval agent built for AMD AI League Match 4. It accepts a natural-language question and an optional starting URL, reads actual web pages, and returns a concise answer with the URLs supporting it. The agent preserves tables, headings and labeled fields so that names, dates, versions and numeric values retain their context.\n\nA resident Qwen3-4B-Instruct-2507 model helps select evidence and check meaning. Independent checks enforce literal support, source provenance, answer types and requested qualifiers. If the available evidence cannot establish the answer, the agent returns an empty answer instead of an unsupported guess. Inference runs locally; the retrieval paths use no paid search or remote model API.\n\nThe Dockerfile preserves the required ROCm base layers and bundles pinned model assets with hash receipts. Recorded CUDA tests and controlled HTTP checks are included in the repository. The latest frozen assessment passed 30/30 fixed regression cases, but its independent 12-question first run scored 0/12 under the documented constrained setup. These measurements describe development limitations rather than official competition results. AMD GPU acceptance remains to be verified.",
+  "github_url": "https://github.com/cs113062273-bot/AMD-AI-League-Match-4",
+  "categories": [
+    "AI Agents",
+    "Information Retrieval"
+  ],
+  "technologies": [
+    "Python",
+    "PyTorch",
+    "AMD ROCm",
+    "Qwen3",
+    "Playwright"
+  ],
+  "formal_submission_status": "NOT_SUBMITTED",
+  "certificate_status": "NOT_ISSUED; official general FAQ requires enrollment and project submission"
+}

@@ -1,0 +1,242 @@
+[
+  {
+    "id": "final-01",
+    "family": "prose-role",
+    "query": "Who currently directs the Aster Archive?",
+    "path": "/final/1-508010",
+    "answer": "Mateo Soren",
+    "source_path": "/final/1-508010"
+  },
+  {
+    "id": "final-02",
+    "family": "founding-prose",
+    "query": "Who founded Belpa Studio?",
+    "path": "/final/2-462140",
+    "answer": "Imani Vale",
+    "source_path": "/final/2-462140"
+  },
+  {
+    "id": "final-03",
+    "family": "false-location",
+    "query": "What is the phone number of the Kestrel Labs office in Oslo?",
+    "path": "/final/3-470850",
+    "answer": "",
+    "source_path": "/final/3-470850"
+  },
+  {
+    "id": "final-04",
+    "family": "packaging",
+    "query": "What is the net weight of the Vela gauge itself?",
+    "path": "/final/4-543350",
+    "answer": "340 g",
+    "source_path": "/final/4-543350"
+  },
+  {
+    "id": "final-05",
+    "family": "currency-qualified",
+    "query": "What is the Canadian price in CAD for the Mire Plan?",
+    "path": "/final/5-958260",
+    "answer": "CAD 57",
+    "source_path": "/final/5-958260"
+  },
+  {
+    "id": "final-06",
+    "family": "tier-constraint",
+    "query": "How many seats are included in the Team tier? Return the count.",
+    "path": "/final/6-408351",
+    "answer": "14",
+    "source_path": "/final/6-408351"
+  },
+  {
+    "id": "final-07",
+    "family": "annual-not-monthly",
+    "query": "What is the annual price of the Rill service?",
+    "path": "/final/7-716942",
+    "answer": "$173",
+    "source_path": "/final/7-716942"
+  },
+  {
+    "id": "final-08",
+    "family": "effective-date",
+    "query": "Which version was the latest stable version as of 2024-08-01?",
+    "path": "/final/8-455821",
+    "answer": "4.1.0",
+    "source_path": "/final/8-455821"
+  },
+  {
+    "id": "final-09",
+    "family": "stable-prerelease",
+    "query": "What is the latest stable version of Nomo?",
+    "path": "/final/9-969177",
+    "answer": "8.6.2",
+    "source_path": "/final/9-969177"
+  },
+  {
+    "id": "final-10",
+    "family": "ordered-author",
+    "query": "Who is the first author listed for Lumen Methods?",
+    "path": "/final/10-160270",
+    "answer": "Mira Kos",
+    "source_path": "/final/10-160270"
+  },
+  {
+    "id": "final-11",
+    "family": "numeric-pdf-like-text",
+    "query": "What is the maximum load of the Elmi crane?",
+    "path": "/final/11-734675",
+    "answer": "2.4 kg",
+    "source_path": "/final/11-734675"
+  },
+  {
+    "id": "final-12",
+    "family": "scientific-notation",
+    "query": "What is the stated mass of the Siva sample?",
+    "path": "/final/12-354600",
+    "answer": "2.7e-3 kg",
+    "source_path": "/final/12-354600"
+  },
+  {
+    "id": "final-13",
+    "family": "range",
+    "query": "How long is the standard dispatch lead time for Kori?",
+    "path": "/final/13-805067",
+    "answer": "4–7 business days",
+    "source_path": "/final/13-805067"
+  },
+  {
+    "id": "final-14",
+    "family": "default-signature",
+    "query": "What is the default value of retries parameter in nebula.connect?",
+    "path": "/final/14-179802",
+    "answer": "6",
+    "source_path": "/final/14-179802"
+  },
+  {
+    "id": "final-15",
+    "family": "nested-json",
+    "query": "What is the Boreal device battery capacity?",
+    "path": "/final/15-344291",
+    "answer": "6100 mAh",
+    "source_path": "/final/15-344291"
+  },
+  {
+    "id": "final-16",
+    "family": "html-microdata",
+    "query": "What is the support email for Tanis Instruments?",
+    "path": "/final/16-369665",
+    "answer": "help@tanis.example",
+    "source_path": "/final/16-369665"
+  },
+  {
+    "id": "final-17",
+    "family": "phone-fax",
+    "query": "What is the support phone number of Noru?",
+    "path": "/final/17-127306",
+    "answer": "+44 20 5555 0193",
+    "source_path": "/final/17-127306"
+  },
+  {
+    "id": "final-18",
+    "family": "locale-price",
+    "query": "What is the price of the Lato scale in EUR?",
+    "path": "/final/18-259297",
+    "answer": "EUR 1.249,50",
+    "source_path": "/final/18-259297"
+  },
+  {
+    "id": "final-19",
+    "family": "text-vs-model-injection",
+    "query": "How many samples does the Neri cassette hold?",
+    "path": "/final/19-789361",
+    "answer": "37",
+    "source_path": "/final/19-789361"
+  },
+  {
+    "id": "final-20",
+    "family": "contradictory-evidence",
+    "query": "What is the current limit for the Zori queue?",
+    "path": "/final/20-327377",
+    "answer": "",
+    "source_path": "/final/20-327377"
+  },
+  {
+    "id": "final-21",
+    "family": "nonexistent-field",
+    "query": "What is the safety certification number for Onka?",
+    "path": "/final/21-309100",
+    "answer": "",
+    "source_path": "/final/21-309100"
+  },
+  {
+    "id": "final-22",
+    "family": "unsupported-future",
+    "query": "What is the announced 2028 price for Arlo?",
+    "path": "/final/22-402901",
+    "answer": "",
+    "source_path": "/final/22-402901"
+  },
+  {
+    "id": "final-23",
+    "family": "table-row-alignment",
+    "query": "What is the operating temperature limit for Variant B?",
+    "path": "/final/23-420696",
+    "answer": "85 °C",
+    "source_path": "/final/23-420696"
+  },
+  {
+    "id": "final-24",
+    "family": "minimum-vs-typical",
+    "query": "What is the minimum input voltage for the Kado controller?",
+    "path": "/final/24-794482",
+    "answer": "3.1 V",
+    "source_path": "/final/24-794482"
+  },
+  {
+    "id": "final-25",
+    "family": "csv-column",
+    "query": "What is the Avra north sensor calibration offset?",
+    "path": "/final/25-245154",
+    "answer": "0.08 V",
+    "source_path": "/final/25-245154"
+  },
+  {
+    "id": "final-26",
+    "family": "xml-field",
+    "query": "Who maintains the Voro library?",
+    "path": "/final/26-743313",
+    "answer": "Rhea Mor",
+    "source_path": "/final/26-743313"
+  },
+  {
+    "id": "final-27",
+    "family": "calendar-date",
+    "query": "What is the publication date of Runo Notes?",
+    "path": "/final/27-376730",
+    "answer": "2024-02-29",
+    "source_path": "/final/27-376730"
+  },
+  {
+    "id": "final-28",
+    "family": "invalid-date",
+    "query": "What is the scheduled launch date of the Umi release?",
+    "path": "/final/28-862460",
+    "answer": "",
+    "source_path": "/final/28-862460"
+  },
+  {
+    "id": "final-29",
+    "family": "hidden-decoy",
+    "query": "What is the Tera device memory capacity?",
+    "path": "/final/29-581730",
+    "answer": "18 GB",
+    "source_path": "/final/29-581730"
+  },
+  {
+    "id": "final-30",
+    "family": "missing-version",
+    "query": "What is the default retry count in version 3.4?",
+    "path": "/final/30-766397",
+    "answer": "",
+    "source_path": "/final/30-766397"
+  }
+]

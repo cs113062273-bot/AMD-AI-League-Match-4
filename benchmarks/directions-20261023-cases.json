@@ -1,0 +1,90 @@
+[
+  {
+    "id": "real-nearby",
+    "query": "What river borders the west of Goldsboro, NC?",
+    "path": "/real-nearby.html",
+    "answer": "",
+    "answers": [
+      ""
+    ],
+    "source_path": "/real-nearby.html",
+    "origin": "Previously exposed actual wrong-source page; expected abstention without boundary evidence, not a change to original upstream truth."
+  },
+  {
+    "id": "direct-west",
+    "query": "What river borders the west of Briarton?",
+    "path": "/direct-west.html",
+    "answer": "Pine River",
+    "answers": [
+      "Pine River"
+    ],
+    "source_path": "/direct-west.html",
+    "origin": "Authored directional reader control"
+  },
+  {
+    "id": "nearby",
+    "query": "What river borders the west of Briarton?",
+    "path": "/nearby.html",
+    "answer": "",
+    "answers": [
+      ""
+    ],
+    "source_path": "/nearby.html",
+    "origin": "Authored directional reader control"
+  },
+  {
+    "id": "parallel",
+    "query": "What river borders the west of Briarton?",
+    "path": "/parallel.html",
+    "answer": "Pine River",
+    "answers": [
+      "Pine River"
+    ],
+    "source_path": "/parallel.html",
+    "origin": "Authored directional reader control"
+  },
+  {
+    "id": "proper-name",
+    "query": "What river borders the west of Briarton?",
+    "path": "/proper-name.html",
+    "answer": "",
+    "answers": [
+      ""
+    ],
+    "source_path": "/proper-name.html",
+    "origin": "Authored directional reader control"
+  },
+  {
+    "id": "heading",
+    "query": "What river borders the west of Briarton?",
+    "path": "/heading.html",
+    "answer": "Pine River",
+    "answers": [
+      "Pine River"
+    ],
+    "source_path": "/heading.html",
+    "origin": "Authored directional reader control"
+  },
+  {
+    "id": "south",
+    "query": "What river borders the south of Briarton?",
+    "path": "/south.html",
+    "answer": "Cedar River",
+    "answers": [
+      "Cedar River"
+    ],
+    "source_path": "/south.html",
+    "origin": "Authored directional reader control"
+  },
+  {
+    "id": "heading-opposite",
+    "query": "What river borders the west of Briarton?",
+    "path": "/heading-opposite.html",
+    "answer": "",
+    "answers": [
+      ""
+    ],
+    "source_path": "/heading-opposite.html",
+    "origin": "Authored directional reader control"
+  }
+]

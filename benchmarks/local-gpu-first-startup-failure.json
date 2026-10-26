@@ -1,0 +1,77 @@
+{
+  "hardware": "actual local execution",
+  "started_at_utc": "2026-10-20T02:24:35Z",
+  "runs": [],
+  "error": "RuntimeError: Model startup failed; see server.log",
+  "device_samples": [
+    {
+      "seconds": 0.056989400007296354,
+      "device_used_mib": 1628
+    },
+    {
+      "seconds": 1.1183791000512429,
+      "device_used_mib": 1631
+    },
+    {
+      "seconds": 2.170543100044597,
+      "device_used_mib": 1627
+    },
+    {
+      "seconds": 3.2270880000432953,
+      "device_used_mib": 1627
+    },
+    {
+      "seconds": 4.269344700034708,
+      "device_used_mib": 1626
+    },
+    {
+      "seconds": 5.327713200007565,
+      "device_used_mib": 1623
+    },
+    {
+      "seconds": 6.3767587000038475,
+      "device_used_mib": 1626
+    },
+    {
+      "seconds": 7.421529900049791,
+      "device_used_mib": 1625
+    },
+    {
+      "seconds": 8.466617300000507,
+      "device_used_mib": 1624
+    },
+    {
+      "seconds": 9.508266500022728,
+      "device_used_mib": 1625
+    },
+    {
+      "seconds": 10.55697820003843,
+      "device_used_mib": 1625
+    },
+    {
+      "seconds": 11.593715700029861,
+      "device_used_mib": 3802
+    },
+    {
+      "seconds": 12.633377000049222,
+      "device_used_mib": 5586
+    },
+    {
+      "seconds": 13.675928900018334,
+      "device_used_mib": 8507
+    },
+    {
+      "seconds": 14.72786600003019,
+      "device_used_mib": 9581
+    },
+    {
+      "seconds": 15.773438300006092,
+      "device_used_mib": 9685
+    },
+    {
+      "seconds": 16.814677100046538,
+      "device_used_mib": 1625
+    }
+  ],
+  "peak_total_device_mib": 9685
+}

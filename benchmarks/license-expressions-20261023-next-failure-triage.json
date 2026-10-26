@@ -1,0 +1,137 @@
+{
+  "scope": "Read-only triage of the already exposed latest first-assessment traces, not a rerun or new score. Many retrieval/planner issues have separate CPU fixes since this old assessment; these old reason counts are not current performance.",
+  "source": "benchmarks/external-disjoint12b-20261023-first.json",
+  "source_sha256": "da370539ff810e1787962ae408db1737c4f9e522202b3c327502548fb5f6dd09",
+  "old_reason_counts": {
+    "model_verified": 1,
+    "model_no_evidence": 1,
+    "model_budget_exhausted": 1,
+    "model_not_run": 5,
+    "model_service_unavailable": 4
+  },
+  "rows": [
+    {
+      "id": "simpleqa-911",
+      "reason": "model_verified",
+      "reader_state": "answered",
+      "fetch_count": 1,
+      "selector_states": [
+        "span"
+      ],
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-911.json"
+    },
+    {
+      "id": "simpleqa-516",
+      "reason": "model_no_evidence",
+      "reader_state": "no_evidence",
+      "fetch_count": 24,
+      "selector_states": [
+        "abstain",
+        "abstain"
+      ],
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-516.json"
+    },
+    {
+      "id": "simpleqa-1013",
+      "reason": "model_budget_exhausted",
+      "reader_state": "budget_exhausted",
+      "fetch_count": 12,
+      "selector_states": [
+        "model_deadline",
+        "model_deadline"
+      ],
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-1013.json"
+    },
+    {
+      "id": "simpleqa-1076",
+      "reason": "model_not_run",
+      "reader_state": "not_run",
+      "fetch_count": 9,
+      "selector_states": [],
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-1076.json"
+    },
+    {
+      "id": "simpleqa-483",
+      "reason": "model_not_run",
+      "reader_state": "not_run",
+      "fetch_count": 9,
+      "selector_states": [],
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-483.json"
+    },
+    {
+      "id": "simpleqa-1232",
+      "reason": "model_not_run",
+      "reader_state": "not_run",
+      "fetch_count": 9,
+      "selector_states": [],
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-1232.json"
+    },
+    {
+      "id": "simpleqa-2010",
+      "reason": "model_not_run",
+      "reader_state": "not_run",
+      "fetch_count": 9,
+      "selector_states": [],
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-2010.json"
+    },
+    {
+      "id": "simpleqa-2215",
+      "reason": "model_not_run",
+      "reader_state": "not_run",
+      "fetch_count": 10,
+      "selector_states": [],
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-2215.json"
+    },
+    {
+      "id": "simpleqa-3120",
+      "reason": "model_service_unavailable",
+      "reader_state": "service_unavailable",
+      "fetch_count": 15,
+      "selector_states": [
+        "http_503",
+        "http_503"
+      ],
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-3120.json"
+    },
+    {
+      "id": "simpleqa-4145",
+      "reason": "model_service_unavailable",
+      "reader_state": "service_unavailable",
+      "fetch_count": 13,
+      "selector_states": [
+        "http_503",
+        "http_503"
+      ],
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-4145.json"
+    },
+    {
+      "id": "simpleqa-2811",
+      "reason": "model_service_unavailable",
+      "reader_state": "service_unavailable",
+      "fetch_count": 13,
+      "selector_states": [
+        "http_503"
+      ],
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-2811.json"
+    },
+    {
+      "id": "simpleqa-415",
+      "reason": "model_service_unavailable",
+      "reader_state": "service_unavailable",
+      "fetch_count": 30,
+      "selector_states": [
+        "http_503",
+        "http_503",
+        "http_503"
+      ],
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-415.json"
+    }
+  ],
+  "next_candidate": {
+    "id": "simpleqa-911",
+    "question": "What is the name of the school where the Kaki Tree Project did its first planting?",
+    "selected_answer": "former Ryuhoku Elementary School",
+    "selected_evidence": "They received ten applications and selected the former Ryuhoku Elementary School in Taito-ku, Tokyo as a planting site. Through the process, Miyajima had conceived an art project called \u201cRevive Time: Kaki Tree Project\u201d and launched the Executive Committee. In 1996, the first planting of the project took place at the former Ryuhoku Elementary School. Miyajima himself conducted a workshop at the tree-planting ceremony.",
+    "interpretation": "The selected school span contains the lowercase status adjective former. Diagnose proper-name versus status-descriptor boundaries generally before making any change; do not add a case-specific name/alias lookup or assume an unseen accuracy win. Preserve titled/capitalized names and questions requiring status."
+  }
+}

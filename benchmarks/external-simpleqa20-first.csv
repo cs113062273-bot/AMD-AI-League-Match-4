@@ -1,0 +1,21 @@
+id,family,answer,sources,expected_answer,expected_source,answer_ok,source_ok,joint_ok,seconds,error,failure_category,malformed_output
+simpleqa-3883,external-Number,,[],['89 minutes (acceptable range: anything between 88 and 90 minutes)'],https://www.laliga.com/en-ES/match/temporada-2022-2023-laliga-santander-valencia-cf-fc-barcelona-12,False,False,False,2.218720700009726,,ABS,False
+simpleqa-1145,external-Place,,[],['Sierra High School.'],https://cashtvogue.s3.waw.io.cloud.ovh.net/is-adore-delano-trans-sexuality-partner-and.html,False,False,False,2.3690366000519134,,ABS,False
+simpleqa-3672,external-Other,,[],['Liverpool FC'],https://www.uefa.com/uefachampionsleague/history/seasons/2019/groups/,False,False,False,23.064550300012343,,ABS,False
+simpleqa-4232,external-Person,,[],['Jim Rhodes'],https://en.wikipedia.org/wiki/Jim_Hunt,False,False,False,0.3219721000059508,,ABS,False
+simpleqa-750,external-Person,,[],['Sir Colin Halkett'],https://www.theislandwiki.org/index.php/Government_House,False,False,False,0.3079926999635063,,ABS,False
+simpleqa-3183,external-Other,,[],['107'],https://www.ghacks.net/2022/11/15/firefox-107-out-with-security-fixes-and-windows-performance-improvements/,False,False,False,0.10246130003361031,,ABS,False
+simpleqa-3210,external-Other,Loxodonta cyclotis,['https://www.ifaw.org/international/animals/african-forest-elephants'],['Loxodonta cyclotis'],https://www.ifaw.org/international/animals/african-forest-elephants,True,True,True,3.593578699976206,,,False
+simpleqa-2099,external-Person,,[],['Niloufar Bayan'],https://en.wikipedia.org/wiki/Niloufar_Bayani,False,False,False,0.42275180004071444,,ABS,False
+simpleqa-1140,external-Date,,[],"['2013', '2,013']",https://en.wikipedia.org/wiki/Jon_Kleinberg,False,False,False,0.28980799997225404,,ABS,False
+simpleqa-3667,external-Other,,[],['South Orange Little League'],https://en.wikipedia.org/wiki/Johnny_Damon,False,False,False,0.30942229996435344,,ABS,False
+simpleqa-254,external-Number,25,['https://gohofstra.com/sports/mens-basketball/roster/matija-radovic/6070'],['25'],https://gohofstra.com/sports/mens-basketball/roster/matija-radovic/6070,True,True,True,3.223229099996388,,,False
+simpleqa-1984,external-Place,,[],['Harvard'],https://en.wikipedia.org/wiki/Robert_R._Holt,False,False,False,0.27960249996976927,,ABS,False
+simpleqa-151,external-Other,,[],['boko boko'],https://en.wikipedia.org/wiki/Harees,False,False,False,0.2764647000003606,,ABS,False
+simpleqa-3317,external-Place,,[],['Malaysia'],https://indiaaseaninnovation.com/upload/download/4th_AIGIF_(2023)-Project_Report.pdf,False,False,False,1.0064011000213213,,ABS,False
+simpleqa-1955,external-Other,,[],['Kabon'],https://www.presidentiallibrary.go.ke/he-daniel-arap-moi,False,False,False,2.9412696000072174,,ABS,False
+simpleqa-2934,external-Number,,[],['4551 (acceptable range: anything between 4505 and 4597)'],https://en.wikipedia.org/wiki/Boliney,False,False,False,0.3139833000022918,,ABS,False
+simpleqa-3629,external-Other,,[],['Scopula modicaria'],https://en.wikipedia.org/wiki/Arthur_William_Bacot,False,False,False,0.3075466000009328,,ABS,False
+simpleqa-1258,external-Number,,[],['66 votes'],https://www.insidethegames.biz/articles/1114757/usmanov-to-be-reelected-fencing,False,False,False,0.22091159998672083,,ABS,False
+simpleqa-81,external-Other,,[],"[' Fried, Frank, Harris, Shriver & Jacobson']",https://en.wikipedia.org/wiki/Natasha_C._Merle,False,False,False,0.3117389000253752,,ABS,False
+simpleqa-3533,external-Date,2020,['https://www.nasa.gov/centers-and-facilities/kennedy/kennedy-at-60-vehicle-assembly-building-ready-for-new-era-of-launch-vehicles/'],"['2020', '2,020']",https://www.nasa.gov/centers-and-facilities/kennedy/kennedy-at-60-vehicle-assembly-building-ready-for-new-era-of-launch-vehicles/,True,True,True,17.579573299968615,,,False

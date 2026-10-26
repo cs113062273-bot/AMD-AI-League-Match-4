@@ -1,0 +1,618 @@
+{
+  "scope": "Controlled HTTP provider/navigation diagnosis; not real-web or LLM accuracy.\n\nThe semantic service extracts only an actual phone span and abstains on link\nselection. Search providers and pages are local HTTP fixtures, without network\ninterception or a public provider dependency.\n",
+  "passed": 7,
+  "total": 7,
+  "rows": [
+    {
+      "id": "weak-provider",
+      "passed": true,
+      "hits": [
+        "/root-search",
+        "/provider/bad",
+        "/provider/bad",
+        "/provider/good",
+        "/contact"
+      ],
+      "queries": [
+        "site:127.0.0.1 What is the support phone of Boreal Instruments?",
+        "support phone boreal instruments",
+        "support phone boreal instruments"
+      ],
+      "result": {
+        "answer": "+1 800 555 0129",
+        "sources": [
+          "http://127.0.0.1:27918/contact"
+        ],
+        "confidence": 0.85,
+        "evidence": "Support phone: +1 800 555 0129",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the support phone of Boreal Instruments?",
+            "url": "http://127.0.0.1:27918/root-search",
+            "kind": "phone",
+            "terms": [
+              "support",
+              "phone",
+              "boreal",
+              "instruments"
+            ],
+            "attributes": [
+              "phone",
+              "telephone",
+              "tel",
+              "contact",
+              "support",
+              "hotline",
+              "toll-free"
+            ],
+            "entity_terms": [
+              "boreal",
+              "instruments"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the support phone ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "abstain",
+            "span"
+          ],
+          "timings": {
+            "resolver": 0.00012039998546242714
+          },
+          "search_requests": 3,
+          "llm_calls": 4,
+          "content_pages": 2,
+          "search_recovery": "starting_url_unavailable_or_exhausted",
+          "search_recovery_depth": 0,
+          "search_hints": [],
+          "search_hint_state": "expanded",
+          "model_selections": [
+            {
+              "raw": "+1 800 555 0129",
+              "answer": "+1 800 555 0129",
+              "source": "http://127.0.0.1:27918/contact",
+              "evidence": "Support phone: +1 800 555 0129",
+              "label": "",
+              "section": "Boreal Instruments support",
+              "kind": "phone",
+              "score": 12.0,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[1]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "+1 800 555 0129",
+            "answer": "+1 800 555 0129",
+            "source": "http://127.0.0.1:27918/contact",
+            "evidence": "Support phone: +1 800 555 0129",
+            "label": "",
+            "section": "Boreal Instruments support",
+            "kind": "phone",
+            "score": 12.0,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[1]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:27918/root-search",
+              "final": "http://127.0.0.1:27918/root-search",
+              "status": 200,
+              "bytes": 27,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:27918/provider/bad?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "final": "http://127.0.0.1:27918/provider/bad?q=site%3A127.0.0.1+What+is+the+support+phone+of+Boreal+Instruments%3F",
+              "status": 200,
+              "bytes": 90,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:27918/provider/bad?q=support+phone+boreal+instruments",
+              "final": "http://127.0.0.1:27918/provider/bad?q=support+phone+boreal+instruments",
+              "status": 200,
+              "bytes": 90,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:27918/provider/good?q=support+phone+boreal+instruments",
+              "final": "http://127.0.0.1:27918/provider/good?q=support+phone+boreal+instruments",
+              "status": 200,
+              "bytes": 112,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:27918/contact",
+              "final": "http://127.0.0.1:27918/contact",
+              "status": 200,
+              "bytes": 113,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 5,
+          "pages_fetched": 2,
+          "seconds": 0.0211
+        }
+      }
+    },
+    {
+      "id": "one-weak-link",
+      "passed": true,
+      "hits": [
+        "/one",
+        "/leaf"
+      ],
+      "queries": [],
+      "result": {
+        "answer": "+1 800 555 0129",
+        "sources": [
+          "http://127.0.0.1:27918/leaf"
+        ],
+        "confidence": 0.85,
+        "evidence": "Support phone: +1 800 555 0129",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the support phone of Boreal Instruments?",
+            "url": "http://127.0.0.1:27918/one",
+            "kind": "phone",
+            "terms": [
+              "support",
+              "phone",
+              "boreal",
+              "instruments"
+            ],
+            "attributes": [
+              "phone",
+              "telephone",
+              "tel",
+              "contact",
+              "support",
+              "hotline",
+              "toll-free"
+            ],
+            "entity_terms": [
+              "boreal",
+              "instruments"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the support phone ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "abstain",
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.0499963536858559e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 3,
+          "content_pages": 2,
+          "navigation_fallback": [
+            {
+              "depth": 0,
+              "reason": "bounded_same_origin",
+              "urls": [
+                "http://127.0.0.1:27918/leaf"
+              ]
+            }
+          ],
+          "model_selections": [
+            {
+              "raw": "+1 800 555 0129",
+              "answer": "+1 800 555 0129",
+              "source": "http://127.0.0.1:27918/leaf",
+              "evidence": "Support phone: +1 800 555 0129",
+              "label": "",
+              "section": "Boreal Instruments support",
+              "kind": "phone",
+              "score": 12.0,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[1]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "+1 800 555 0129",
+            "answer": "+1 800 555 0129",
+            "source": "http://127.0.0.1:27918/leaf",
+            "evidence": "Support phone: +1 800 555 0129",
+            "label": "",
+            "section": "Boreal Instruments support",
+            "kind": "phone",
+            "score": 12.0,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[1]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:27918/one",
+              "final": "http://127.0.0.1:27918/one",
+              "status": 200,
+              "bytes": 51,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:27918/leaf",
+              "final": "http://127.0.0.1:27918/leaf",
+              "status": 200,
+              "bytes": 113,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 2,
+          "pages_fetched": 2,
+          "seconds": 0.0062
+        }
+      }
+    },
+    {
+      "id": "two-weak-links",
+      "passed": true,
+      "hits": [
+        "/two",
+        "/spam",
+        "/leaf"
+      ],
+      "queries": [],
+      "result": {
+        "answer": "+1 800 555 0129",
+        "sources": [
+          "http://127.0.0.1:27918/leaf"
+        ],
+        "confidence": 0.85,
+        "evidence": "Support phone: +1 800 555 0129",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the support phone of Boreal Instruments?",
+            "url": "http://127.0.0.1:27918/two",
+            "kind": "phone",
+            "terms": [
+              "support",
+              "phone",
+              "boreal",
+              "instruments"
+            ],
+            "attributes": [
+              "phone",
+              "telephone",
+              "tel",
+              "contact",
+              "support",
+              "hotline",
+              "toll-free"
+            ],
+            "entity_terms": [
+              "boreal",
+              "instruments"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the support phone ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "abstain",
+            "span"
+          ],
+          "timings": {
+            "resolver": 8.399947546422482e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 4,
+          "content_pages": 3,
+          "navigation": [
+            {
+              "state": "abstain",
+              "chosen": ""
+            }
+          ],
+          "navigation_fallback": [
+            {
+              "depth": 0,
+              "reason": "bounded_same_origin",
+              "urls": [
+                "http://127.0.0.1:27918/spam",
+                "http://127.0.0.1:27918/leaf"
+              ]
+            }
+          ],
+          "model_selections": [
+            {
+              "raw": "+1 800 555 0129",
+              "answer": "+1 800 555 0129",
+              "source": "http://127.0.0.1:27918/leaf",
+              "evidence": "Support phone: +1 800 555 0129",
+              "label": "",
+              "section": "Boreal Instruments support",
+              "kind": "phone",
+              "score": 12.0,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[1]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "+1 800 555 0129",
+            "answer": "+1 800 555 0129",
+            "source": "http://127.0.0.1:27918/leaf",
+            "evidence": "Support phone: +1 800 555 0129",
+            "label": "",
+            "section": "Boreal Instruments support",
+            "kind": "phone",
+            "score": 12.0,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[1]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:27918/two",
+              "final": "http://127.0.0.1:27918/two",
+              "status": 200,
+              "bytes": 79,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:27918/spam",
+              "final": "http://127.0.0.1:27918/spam",
+              "status": 200,
+              "bytes": 64,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:27918/leaf",
+              "final": "http://127.0.0.1:27918/leaf",
+              "status": 200,
+              "bytes": 113,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 3,
+          "pages_fetched": 3,
+          "seconds": 0.0084
+        }
+      }
+    },
+    {
+      "id": "foreign-weak-link",
+      "passed": true,
+      "hits": [
+        "/foreign"
+      ],
+      "queries": [],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the support phone of Boreal Instruments?",
+            "url": "http://127.0.0.1:27918/foreign",
+            "kind": "phone",
+            "terms": [
+              "support",
+              "phone",
+              "boreal",
+              "instruments"
+            ],
+            "attributes": [
+              "phone",
+              "telephone",
+              "tel",
+              "contact",
+              "support",
+              "hotline",
+              "toll-free"
+            ],
+            "entity_terms": [
+              "boreal",
+              "instruments"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the support phone ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "abstain"
+          ],
+          "timings": {
+            "resolver": 9.400071576237679e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "navigation": [
+            {
+              "state": "abstain",
+              "chosen": ""
+            }
+          ],
+          "reader_state": "no_evidence",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:27918/foreign",
+              "final": "http://127.0.0.1:27918/foreign",
+              "status": 200,
+              "bytes": 72,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0037
+        }
+      }
+    },
+    {
+      "id": "query-anchors-boreal",
+      "passed": true,
+      "queries": [
+        "contact telephone support phone boreal instruments",
+        "support phone boreal instruments",
+        "What is the support phone of Boreal Instruments?"
+      ],
+      "anchors": [
+        "boreal",
+        "instruments"
+      ]
+    },
+    {
+      "id": "query-anchors-flintdb",
+      "passed": true,
+      "queries": [
+        "configuration client \"async_pool\" default async_pool flintdb async pool",
+        "\"async_pool\" default async_pool flintdb async pool",
+        "What is the default of `async_pool` in FlintDB?"
+      ],
+      "anchors": [
+        "flintdb",
+        "async_pool"
+      ]
+    },
+    {
+      "id": "query-anchors-pep",
+      "passed": true,
+      "queries": [
+        "python interpolation title pep 750",
+        "title pep 750",
+        "What is the title of PEP 750?"
+      ],
+      "anchors": [
+        "pep",
+        "750"
+      ]
+    }
+  ]
+}

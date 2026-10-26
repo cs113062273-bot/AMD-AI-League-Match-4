@@ -1,0 +1,504 @@
+{
+  "interpretation": "Diagnostic only. Confidence is a heuristic, not a calibrated probability. Older rows reconstruct the unchanged shipping score mapping from recorded selection scores. Answered-only calibration targets exact answer AND source correctness; it does not assign a probability to an abstention. Fixed threshold curves do not change production decisions or gold.",
+  "reports": [
+    {
+      "result": "benchmarks/dev-model-finaloffline.json",
+      "n": 180,
+      "answered": 168,
+      "confidence_available": 168,
+      "brier_answered_joint": 0.004285357142857145,
+      "ece_answered_joint": 0.05235714285714291,
+      "bins": [
+        {
+          "lower": 0.8,
+          "upper": 0.9,
+          "n": 24,
+          "mean_confidence": 0.86,
+          "joint_accuracy": 1.0
+        },
+        {
+          "lower": 0.9,
+          "upper": 1.0,
+          "n": 144,
+          "mean_confidence": 0.9622499999999999,
+          "joint_accuracy": 1.0
+        }
+      ],
+      "selective_risk": [
+        {
+          "threshold": 0,
+          "retained": 168,
+          "coverage_all_cases": 0.9333333333333333,
+          "joint_precision_when_retained": 1.0,
+          "retained_errors": 0,
+          "correct_all_cases": 0.9333333333333333
+        },
+        {
+          "threshold": 0.55,
+          "retained": 168,
+          "coverage_all_cases": 0.9333333333333333,
+          "joint_precision_when_retained": 1.0,
+          "retained_errors": 0,
+          "correct_all_cases": 0.9333333333333333
+        },
+        {
+          "threshold": 0.7,
+          "retained": 168,
+          "coverage_all_cases": 0.9333333333333333,
+          "joint_precision_when_retained": 1.0,
+          "retained_errors": 0,
+          "correct_all_cases": 0.9333333333333333
+        },
+        {
+          "threshold": 0.8,
+          "retained": 168,
+          "coverage_all_cases": 0.9333333333333333,
+          "joint_precision_when_retained": 1.0,
+          "retained_errors": 0,
+          "correct_all_cases": 0.9333333333333333
+        },
+        {
+          "threshold": 0.85,
+          "retained": 156,
+          "coverage_all_cases": 0.8666666666666667,
+          "joint_precision_when_retained": 1.0,
+          "retained_errors": 0,
+          "correct_all_cases": 0.8666666666666667
+        },
+        {
+          "threshold": 0.9,
+          "retained": 144,
+          "coverage_all_cases": 0.8,
+          "joint_precision_when_retained": 1.0,
+          "retained_errors": 0,
+          "correct_all_cases": 0.8
+        },
+        {
+          "threshold": 0.95,
+          "retained": 120,
+          "coverage_all_cases": 0.6666666666666666,
+          "joint_precision_when_retained": 1.0,
+          "retained_errors": 0,
+          "correct_all_cases": 0.6666666666666666
+        },
+        {
+          "threshold": 0.97,
+          "retained": 108,
+          "coverage_all_cases": 0.6,
+          "joint_precision_when_retained": 1.0,
+          "retained_errors": 0,
+          "correct_all_cases": 0.6
+        }
+      ]
+    },
+    {
+      "result": "benchmarks/holdout-model-finaloffline.json",
+      "n": 100,
+      "answered": 85,
+      "confidence_available": 85,
+      "brier_answered_joint": 0.015946764705882358,
+      "ece_answered_joint": 0.09770588235294118,
+      "bins": [
+        {
+          "lower": 0.7,
+          "upper": 0.8,
+          "n": 10,
+          "mean_confidence": 0.748,
+          "joint_accuracy": 1.0
+        },
+        {
+          "lower": 0.8,
+          "upper": 0.9,
+          "n": 25,
+          "mean_confidence": 0.841,
+          "joint_accuracy": 1.0
+        },
+        {
+          "lower": 0.9,
+          "upper": 1.0,
+          "n": 50,
+          "mean_confidence": 0.9638,
+          "joint_accuracy": 1.0
+        }
+      ],
+      "selective_risk": [
+        {
+          "threshold": 0,
+          "retained": 85,
+          "coverage_all_cases": 0.85,
+          "joint_precision_when_retained": 1.0,
+          "retained_errors": 0,
+          "correct_all_cases": 0.85
+        },
+        {
+          "threshold": 0.55,
+          "retained": 85,
+          "coverage_all_cases": 0.85,
+          "joint_precision_when_retained": 1.0,
+          "retained_errors": 0,
+          "correct_all_cases": 0.85
+        },
+        {
+          "threshold": 0.7,
+          "retained": 85,
+          "coverage_all_cases": 0.85,
+          "joint_precision_when_retained": 1.0,
+          "retained_errors": 0,
+          "correct_all_cases": 0.85
+        },
+        {
+          "threshold": 0.8,
+          "retained": 75,
+          "coverage_all_cases": 0.75,
+          "joint_precision_when_retained": 1.0,
+          "retained_errors": 0,
+          "correct_all_cases": 0.75
+        },
+        {
+          "threshold": 0.85,
+          "retained": 55,
+          "coverage_all_cases": 0.55,
+          "joint_precision_when_retained": 1.0,
+          "retained_errors": 0,
+          "correct_all_cases": 0.55
+        },
+        {
+          "threshold": 0.9,
+          "retained": 50,
+          "coverage_all_cases": 0.5,
+          "joint_precision_when_retained": 1.0,
+          "retained_errors": 0,
+          "correct_all_cases": 0.5
+        },
+        {
+          "threshold": 0.95,
+          "retained": 40,
+          "coverage_all_cases": 0.4,
+          "joint_precision_when_retained": 1.0,
+          "retained_errors": 0,
+          "correct_all_cases": 0.4
+        },
+        {
+          "threshold": 0.97,
+          "retained": 40,
+          "coverage_all_cases": 0.4,
+          "joint_precision_when_retained": 1.0,
+          "retained_errors": 0,
+          "correct_all_cases": 0.4
+        }
+      ]
+    },
+    {
+      "result": "benchmarks/final-holdout-model-finaloffline.json",
+      "n": 30,
+      "answered": 24,
+      "confidence_available": 24,
+      "brier_answered_joint": 0.030228208333333336,
+      "ece_answered_joint": 0.14112499999999997,
+      "bins": [
+        {
+          "lower": 0.6,
+          "upper": 0.7,
+          "n": 2,
+          "mean_confidence": 0.6725000000000001,
+          "joint_accuracy": 1.0
+        },
+        {
+          "lower": 0.7,
+          "upper": 0.8,
+          "n": 4,
+          "mean_confidence": 0.73875,
+          "joint_accuracy": 1.0
+        },
+        {
+          "lower": 0.8,
+          "upper": 0.9,
+          "n": 8,
+          "mean_confidence": 0.83725,
+          "joint_accuracy": 1.0
+        },
+        {
+          "lower": 0.9,
+          "upper": 1.0,
+          "n": 10,
+          "mean_confidence": 0.9615,
+          "joint_accuracy": 1.0
+        }
+      ],
+      "selective_risk": [
+        {
+          "threshold": 0,
+          "retained": 24,
+          "coverage_all_cases": 0.8,
+          "joint_precision_when_retained": 1.0,
+          "retained_errors": 0,
+          "correct_all_cases": 0.8
+        },
+        {
+          "threshold": 0.55,
+          "retained": 24,
+          "coverage_all_cases": 0.8,
+          "joint_precision_when_retained": 1.0,
+          "retained_errors": 0,
+          "correct_all_cases": 0.8
+        },
+        {
+          "threshold": 0.7,
+          "retained": 22,
+          "coverage_all_cases": 0.7333333333333333,
+          "joint_precision_when_retained": 1.0,
+          "retained_errors": 0,
+          "correct_all_cases": 0.7333333333333333
+        },
+        {
+          "threshold": 0.8,
+          "retained": 18,
+          "coverage_all_cases": 0.6,
+          "joint_precision_when_retained": 1.0,
+          "retained_errors": 0,
+          "correct_all_cases": 0.6
+        },
+        {
+          "threshold": 0.85,
+          "retained": 12,
+          "coverage_all_cases": 0.4,
+          "joint_precision_when_retained": 1.0,
+          "retained_errors": 0,
+          "correct_all_cases": 0.4
+        },
+        {
+          "threshold": 0.9,
+          "retained": 10,
+          "coverage_all_cases": 0.3333333333333333,
+          "joint_precision_when_retained": 1.0,
+          "retained_errors": 0,
+          "correct_all_cases": 0.3333333333333333
+        },
+        {
+          "threshold": 0.95,
+          "retained": 8,
+          "coverage_all_cases": 0.26666666666666666,
+          "joint_precision_when_retained": 1.0,
+          "retained_errors": 0,
+          "correct_all_cases": 0.26666666666666666
+        },
+        {
+          "threshold": 0.97,
+          "retained": 6,
+          "coverage_all_cases": 0.2,
+          "joint_precision_when_retained": 1.0,
+          "retained_errors": 0,
+          "correct_all_cases": 0.2
+        }
+      ]
+    },
+    {
+      "result": "benchmarks/transfer-frozen-model-finaloffline.json",
+      "n": 20,
+      "answered": 17,
+      "confidence_available": 17,
+      "brier_answered_joint": 0.018552882352941176,
+      "ece_answered_joint": 0.1054705882352941,
+      "bins": [
+        {
+          "lower": 0.6,
+          "upper": 0.7,
+          "n": 1,
+          "mean_confidence": 0.68,
+          "joint_accuracy": 1.0
+        },
+        {
+          "lower": 0.7,
+          "upper": 0.8,
+          "n": 2,
+          "mean_confidence": 0.7765,
+          "joint_accuracy": 1.0
+        },
+        {
+          "lower": 0.8,
+          "upper": 0.9,
+          "n": 3,
+          "mean_confidence": 0.8416666666666667,
+          "joint_accuracy": 1.0
+        },
+        {
+          "lower": 0.9,
+          "upper": 1.0,
+          "n": 11,
+          "mean_confidence": 0.9499090909090909,
+          "joint_accuracy": 1.0
+        }
+      ],
+      "selective_risk": [
+        {
+          "threshold": 0,
+          "retained": 17,
+          "coverage_all_cases": 0.85,
+          "joint_precision_when_retained": 1.0,
+          "retained_errors": 0,
+          "correct_all_cases": 0.85
+        },
+        {
+          "threshold": 0.55,
+          "retained": 17,
+          "coverage_all_cases": 0.85,
+          "joint_precision_when_retained": 1.0,
+          "retained_errors": 0,
+          "correct_all_cases": 0.85
+        },
+        {
+          "threshold": 0.7,
+          "retained": 16,
+          "coverage_all_cases": 0.8,
+          "joint_precision_when_retained": 1.0,
+          "retained_errors": 0,
+          "correct_all_cases": 0.8
+        },
+        {
+          "threshold": 0.8,
+          "retained": 14,
+          "coverage_all_cases": 0.7,
+          "joint_precision_when_retained": 1.0,
+          "retained_errors": 0,
+          "correct_all_cases": 0.7
+        },
+        {
+          "threshold": 0.85,
+          "retained": 12,
+          "coverage_all_cases": 0.6,
+          "joint_precision_when_retained": 1.0,
+          "retained_errors": 0,
+          "correct_all_cases": 0.6
+        },
+        {
+          "threshold": 0.9,
+          "retained": 11,
+          "coverage_all_cases": 0.55,
+          "joint_precision_when_retained": 1.0,
+          "retained_errors": 0,
+          "correct_all_cases": 0.55
+        },
+        {
+          "threshold": 0.95,
+          "retained": 7,
+          "coverage_all_cases": 0.35,
+          "joint_precision_when_retained": 1.0,
+          "retained_errors": 0,
+          "correct_all_cases": 0.35
+        },
+        {
+          "threshold": 0.97,
+          "retained": 6,
+          "coverage_all_cases": 0.3,
+          "joint_precision_when_retained": 1.0,
+          "retained_errors": 0,
+          "correct_all_cases": 0.3
+        }
+      ]
+    },
+    {
+      "result": "benchmarks/external-simpleqa100-first.json",
+      "n": 100,
+      "answered": 42,
+      "confidence_available": 42,
+      "brier_answered_joint": 0.6008012380952381,
+      "ece_answered_joint": 0.6986666666666665,
+      "bins": [
+        {
+          "lower": 0.6,
+          "upper": 0.7,
+          "n": 2,
+          "mean_confidence": 0.6779999999999999,
+          "joint_accuracy": 0.5
+        },
+        {
+          "lower": 0.7,
+          "upper": 0.8,
+          "n": 20,
+          "mean_confidence": 0.75695,
+          "joint_accuracy": 0.1
+        },
+        {
+          "lower": 0.8,
+          "upper": 0.9,
+          "n": 10,
+          "mean_confidence": 0.8507,
+          "joint_accuracy": 0.0
+        },
+        {
+          "lower": 0.9,
+          "upper": 1.0,
+          "n": 10,
+          "mean_confidence": 0.9342,
+          "joint_accuracy": 0.2
+        }
+      ],
+      "selective_risk": [
+        {
+          "threshold": 0,
+          "retained": 42,
+          "coverage_all_cases": 0.42,
+          "joint_precision_when_retained": 0.11904761904761904,
+          "retained_errors": 37,
+          "correct_all_cases": 0.05
+        },
+        {
+          "threshold": 0.55,
+          "retained": 42,
+          "coverage_all_cases": 0.42,
+          "joint_precision_when_retained": 0.11904761904761904,
+          "retained_errors": 37,
+          "correct_all_cases": 0.05
+        },
+        {
+          "threshold": 0.7,
+          "retained": 40,
+          "coverage_all_cases": 0.4,
+          "joint_precision_when_retained": 0.1,
+          "retained_errors": 36,
+          "correct_all_cases": 0.04
+        },
+        {
+          "threshold": 0.8,
+          "retained": 20,
+          "coverage_all_cases": 0.2,
+          "joint_precision_when_retained": 0.1,
+          "retained_errors": 18,
+          "correct_all_cases": 0.02
+        },
+        {
+          "threshold": 0.85,
+          "retained": 14,
+          "coverage_all_cases": 0.14,
+          "joint_precision_when_retained": 0.14285714285714285,
+          "retained_errors": 12,
+          "correct_all_cases": 0.02
+        },
+        {
+          "threshold": 0.9,
+          "retained": 10,
+          "coverage_all_cases": 0.1,
+          "joint_precision_when_retained": 0.2,
+          "retained_errors": 8,
+          "correct_all_cases": 0.02
+        },
+        {
+          "threshold": 0.95,
+          "retained": 2,
+          "coverage_all_cases": 0.02,
+          "joint_precision_when_retained": 0.0,
+          "retained_errors": 2,
+          "correct_all_cases": 0.0
+        },
+        {
+          "threshold": 0.97,
+          "retained": 1,
+          "coverage_all_cases": 0.01,
+          "joint_precision_when_retained": 0.0,
+          "retained_errors": 1,
+          "correct_all_cases": 0.0
+        }
+      ]
+    }
+  ]
+}

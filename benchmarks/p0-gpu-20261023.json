@@ -1,0 +1,401 @@
+{
+  "scope": "Small owned-process full-4B CUDA recovery probe; no benchmark sweep or model download.",
+  "context_limit": 1024,
+  "memory_before": {
+    "used_mib": 1607,
+    "total_mib": 12282
+  },
+  "rows": [
+    {
+      "id": "full_model_select",
+      "passed": true,
+      "reply": {
+        "candidate": -1,
+        "passage": 0,
+        "answer": "7"
+      },
+      "state": "ok"
+    },
+    {
+      "id": "full_model_cancel_inflight",
+      "passed": true,
+      "seconds": 0.10508030001074076,
+      "active_before_cancel": "01ddb547302d435e96cb9aeecab825b0",
+      "last_request": [
+        {
+          "request_id": "01ddb547302d435e96cb9aeecab825b0",
+          "mode": "select",
+          "input_tokens": 363,
+          "packing_seconds": 0.014131199917756021,
+          "transfer_seconds": 0.001893599983304739,
+          "generated_tokens": 1,
+          "stop_reason": "cancelled",
+          "generation_seconds": 0.10998090007342398,
+          "prefill_and_first_token_seconds": 0.07229480007663369
+        }
+      ]
+    },
+    {
+      "id": "full_model_next_after_cancel",
+      "passed": true,
+      "reply": {
+        "candidate": -1,
+        "passage": 0,
+        "answer": "7"
+      },
+      "state": "ok"
+    },
+    {
+      "id": "full_model_deadline",
+      "passed": true,
+      "seconds": 0.11336610000580549,
+      "reply": {
+        "error": "deadline"
+      }
+    },
+    {
+      "id": "full_model_next_after_deadline",
+      "passed": true,
+      "reply": {
+        "candidate": -1,
+        "passage": 0,
+        "answer": "7"
+      },
+      "state": "ok"
+    },
+    {
+      "id": "full_model_engine_select_verify",
+      "passed": true,
+      "result": {
+        "answer": "Mira Chen",
+        "sources": [
+          "http://127.0.0.1:19544/author"
+        ],
+        "confidence": 0.64,
+        "evidence": "Alder was authored by Mira Chen.",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "Who is the author of Alder?",
+            "url": "http://127.0.0.1:19544/author",
+            "kind": "text",
+            "terms": [
+              "author",
+              "alder"
+            ],
+            "attributes": [
+              "author",
+              "authors",
+              "creator",
+              "maintainer",
+              "written"
+            ],
+            "entity_terms": [
+              "alder"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "who is the author "
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 0.00012139999307692051
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Mira Chen",
+              "answer": "Mira Chen",
+              "source": "http://127.0.0.1:19544/author",
+              "evidence": "Alder was authored by Mira Chen.",
+              "label": "",
+              "section": "Alder",
+              "kind": "text",
+              "score": 3.6,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[1]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "Mira Chen",
+            "answer": "Mira Chen",
+            "source": "http://127.0.0.1:19544/author",
+            "evidence": "Alder was authored by Mira Chen.",
+            "label": "",
+            "section": "Alder",
+            "kind": "text",
+            "score": 3.6,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[1]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:19544/author",
+              "final": "http://127.0.0.1:19544/author",
+              "status": 200,
+              "bytes": 53,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 1.3671
+        }
+      }
+    }
+  ],
+  "owned_wrapper_pid": 13324,
+  "startup_peak_used_mib": 9604,
+  "health_before": {
+    "ready": true,
+    "device": "cuda",
+    "hip": null,
+    "pid": 28808,
+    "startup_token": "24c89463bc6f49ff8b625d7378291d22",
+    "backend_source_sha256": {
+      "model_server.py": "14e840e32fe34ca594eb4fb0dadd89fc67768fb9026ac3359734a021c5190fc2",
+      "model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+      "selector.py": "99ceb481ea8d6a9988d873a402f53692eca61df5db5585ddb95264f3a4827da6",
+      "model_protocol.py": "8ba6730e160eac47d8231985e1293bb981a5a63ef9b475cf46daf31ef17bdfb0",
+      "model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+      "normalize.py": "f418f880472f21012ee943b8a0cd3866c8c09bbf6f6e54e3a0d935f3eec4f6b4",
+      "types.py": "2dbac10dedae8e5c0df7eff4d8a368dabffc20e144be1ee93f349697ba82752a"
+    },
+    "software": {
+      "torch": "2.9.1+cu128",
+      "transformers": "4.57.1",
+      "tokenizers": "0.22.1",
+      "safetensors": "0.6.2",
+      "accelerate": "1.11.0"
+    },
+    "parameters": 4022468096,
+    "assets": {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "verified_files": 12,
+      "full_sha256": false,
+      "weight_shards": 3
+    },
+    "warmup_reply": {
+      "candidate": -1,
+      "passage": 0,
+      "answer": "7"
+    },
+    "torch": "2.9.1+cu128",
+    "startup_seconds": 14.164062600000761,
+    "calls": 0,
+    "outcomes": {},
+    "active_request": null,
+    "busy_rejections": 0,
+    "recent_requests": [
+      {
+        "request_id": "warmup",
+        "mode": "select",
+        "input_tokens": 268,
+        "packing_seconds": 0.011984999990090728,
+        "transfer_seconds": 0.0009031000081449747,
+        "generated_tokens": 14,
+        "stop_reason": "completed",
+        "generation_seconds": 1.5171043000882491,
+        "prefill_and_first_token_seconds": 0.8016319000162184
+      }
+    ],
+    "context_limit": 1024,
+    "token_stats": {
+      "max_input": 268,
+      "generated": 14,
+      "pruned_requests": 0
+    },
+    "device_memory_bytes": 12878086144,
+    "peak_vram_bytes": 8141605888,
+    "allocated_vram_bytes": 8053474816,
+    "reserved_vram_bytes": 8185184256
+  },
+  "health_after": {
+    "ready": true,
+    "device": "cuda",
+    "hip": null,
+    "pid": 28808,
+    "startup_token": "24c89463bc6f49ff8b625d7378291d22",
+    "backend_source_sha256": {
+      "model_server.py": "14e840e32fe34ca594eb4fb0dadd89fc67768fb9026ac3359734a021c5190fc2",
+      "model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+      "selector.py": "99ceb481ea8d6a9988d873a402f53692eca61df5db5585ddb95264f3a4827da6",
+      "model_protocol.py": "8ba6730e160eac47d8231985e1293bb981a5a63ef9b475cf46daf31ef17bdfb0",
+      "model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+      "normalize.py": "f418f880472f21012ee943b8a0cd3866c8c09bbf6f6e54e3a0d935f3eec4f6b4",
+      "types.py": "2dbac10dedae8e5c0df7eff4d8a368dabffc20e144be1ee93f349697ba82752a"
+    },
+    "software": {
+      "torch": "2.9.1+cu128",
+      "transformers": "4.57.1",
+      "tokenizers": "0.22.1",
+      "safetensors": "0.6.2",
+      "accelerate": "1.11.0"
+    },
+    "parameters": 4022468096,
+    "assets": {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "verified_files": 12,
+      "full_sha256": false,
+      "weight_shards": 3
+    },
+    "warmup_reply": {
+      "candidate": -1,
+      "passage": 0,
+      "answer": "7"
+    },
+    "torch": "2.9.1+cu128",
+    "startup_seconds": 14.164062600000761,
+    "calls": 7,
+    "outcomes": {
+      "selected": 4,
+      "cancelled": 1,
+      "deadline": 1,
+      "supported": 1
+    },
+    "active_request": null,
+    "busy_rejections": 0,
+    "recent_requests": [
+      {
+        "request_id": "warmup",
+        "mode": "select",
+        "input_tokens": 268,
+        "packing_seconds": 0.011984999990090728,
+        "transfer_seconds": 0.0009031000081449747,
+        "generated_tokens": 14,
+        "stop_reason": "completed",
+        "generation_seconds": 1.5171043000882491,
+        "prefill_and_first_token_seconds": 0.8016319000162184
+      },
+      {
+        "request_id": "737b4ba9f4094d72ac4b025ff0ce5c33",
+        "mode": "select",
+        "input_tokens": 264,
+        "packing_seconds": 0.0016161000821739435,
+        "transfer_seconds": 0.0011705999495461583,
+        "generated_tokens": 14,
+        "stop_reason": "completed",
+        "generation_seconds": 0.7770188000285998,
+        "prefill_and_first_token_seconds": 0.06696430000010878
+      },
+      {
+        "request_id": "01ddb547302d435e96cb9aeecab825b0",
+        "mode": "select",
+        "input_tokens": 363,
+        "packing_seconds": 0.014131199917756021,
+        "transfer_seconds": 0.001893599983304739,
+        "generated_tokens": 1,
+        "stop_reason": "cancelled",
+        "generation_seconds": 0.10998090007342398,
+        "prefill_and_first_token_seconds": 0.07229480007663369
+      },
+      {
+        "request_id": "2c9282cd0e8048558325be8e7f0b7e97",
+        "mode": "select",
+        "input_tokens": 264,
+        "packing_seconds": 0.004745400045067072,
+        "transfer_seconds": 0.0009370999177917838,
+        "generated_tokens": 14,
+        "stop_reason": "completed",
+        "generation_seconds": 0.7590547000290826,
+        "prefill_and_first_token_seconds": 0.06690069998148829
+      },
+      {
+        "request_id": "adf65c71ef564588971952d02bf156cd",
+        "mode": "select",
+        "input_tokens": 363,
+        "packing_seconds": 0.0019528999691829085,
+        "transfer_seconds": 0.00123559997882694,
+        "generated_tokens": 1,
+        "stop_reason": "deadline",
+        "generation_seconds": 0.10873530001845211,
+        "prefill_and_first_token_seconds": 0.0722932000644505
+      },
+      {
+        "request_id": "18fa9490a39d4ed6995d60f0559d8ae5",
+        "mode": "select",
+        "input_tokens": 264,
+        "packing_seconds": 0.0019642000552266836,
+        "transfer_seconds": 0.0009753999765962362,
+        "generated_tokens": 14,
+        "stop_reason": "completed",
+        "generation_seconds": 0.8055621000239626,
+        "prefill_and_first_token_seconds": 0.08287160005420446
+      },
+      {
+        "request_id": "889acf364a534ccc94cfa552eae33a61",
+        "mode": "select",
+        "input_tokens": 442,
+        "packing_seconds": 0.0021778999362140894,
+        "transfer_seconds": 0.001158099970780313,
+        "generated_tokens": 16,
+        "stop_reason": "completed",
+        "generation_seconds": 0.9717180000152439,
+        "prefill_and_first_token_seconds": 0.09780350001528859
+      },
+      {
+        "request_id": "cc1917e3d2fb4696a085009967af08bf",
+        "mode": "verify",
+        "input_tokens": 382,
+        "packing_seconds": 0.0020626999903470278,
+        "transfer_seconds": 0.0010439000325277448,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.3744448999641463,
+        "prefill_and_first_token_seconds": 0.08651529997587204
+      }
+    ],
+    "context_limit": 1024,
+    "token_stats": {
+      "max_input": 442,
+      "generated": 80,
+      "pruned_requests": 0
+    },
+    "device_memory_bytes": 12878086144,
+    "peak_vram_bytes": 8228900864,
+    "allocated_vram_bytes": 8061994496,
+    "reserved_vram_bytes": 8319401984
+  },
+  "memory_after_probes": {
+    "used_mib": 9740,
+    "total_mib": 12282
+  },
+  "memory_after_shutdown": {
+    "used_mib": 1591,
+    "total_mib": 12282
+  },
+  "passed": 6,
+  "total": 6
+}

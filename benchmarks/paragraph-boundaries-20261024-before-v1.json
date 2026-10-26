@@ -1,0 +1,608 @@
+{
+  "scope": "CPU diagnosis of omitted paragraph end tags, including saved exposed pages.\n\nNo public requests, model, browser, gold/alias changes, or accuracy estimate.\nStructural development expectations; source facts must remain literal.\n",
+  "baseline": "8aa920e",
+  "rows": [
+    {
+      "id": "omitted-p",
+      "passed": false,
+      "merged": [
+        "Alpha record Beta record"
+      ],
+      "passages": [
+        {
+          "text": "Alpha record Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[0]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[1]:0",
+          "qualifiers": {}
+        }
+      ]
+    },
+    {
+      "id": "closed-p",
+      "passed": true,
+      "merged": [],
+      "passages": [
+        {
+          "text": "Alpha record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[0]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[1]:0",
+          "qualifiers": {}
+        }
+      ]
+    },
+    {
+      "id": "mixed-closure",
+      "passed": false,
+      "merged": [
+        "Alpha record Beta record Gamma record"
+      ],
+      "passages": [
+        {
+          "text": "Alpha record Beta record Gamma record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[0]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[1]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Gamma record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[2]:0",
+          "qualifiers": {}
+        }
+      ]
+    },
+    {
+      "id": "uppercase",
+      "passed": false,
+      "merged": [
+        "Alpha record Beta record"
+      ],
+      "passages": [
+        {
+          "text": "Alpha record Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[0]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[1]:0",
+          "qualifiers": {}
+        }
+      ]
+    },
+    {
+      "id": "inline-strong",
+      "passed": false,
+      "merged": [
+        "Alpha record Beta record"
+      ],
+      "passages": [
+        {
+          "text": "Alpha record Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[0]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[1]:0",
+          "qualifiers": {}
+        }
+      ]
+    },
+    {
+      "id": "comment",
+      "passed": false,
+      "merged": [
+        "Alpha record Beta record"
+      ],
+      "passages": [
+        {
+          "text": "Alpha record Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[0]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[1]:0",
+          "qualifiers": {}
+        }
+      ]
+    },
+    {
+      "id": "quoted-attribute",
+      "passed": false,
+      "merged": [
+        "Alpha record Beta record"
+      ],
+      "passages": [
+        {
+          "text": "Alpha record Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[0]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[1]:0",
+          "qualifiers": {}
+        }
+      ]
+    },
+    {
+      "id": "div-after-p",
+      "passed": false,
+      "merged": [
+        "Alpha record Beta record"
+      ],
+      "passages": [
+        {
+          "text": "Alpha record Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[0]:0",
+          "qualifiers": {}
+        }
+      ]
+    },
+    {
+      "id": "heading-after-p",
+      "passed": false,
+      "merged": [],
+      "passages": [
+        {
+          "text": "Alpha record Beta heading Gamma record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[0]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Beta heading",
+          "label": "",
+          "value": "",
+          "section": "Beta heading",
+          "kind": "heading",
+          "locator": "heading[1]",
+          "qualifiers": {}
+        },
+        {
+          "text": "Gamma record",
+          "label": "",
+          "value": "",
+          "section": "Beta heading",
+          "kind": "prose",
+          "locator": "p[2]:0",
+          "qualifiers": {}
+        }
+      ]
+    },
+    {
+      "id": "footer-after-p",
+      "passed": true,
+      "merged": [],
+      "passages": [
+        {
+          "text": "Alpha record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[0]:0",
+          "qualifiers": {}
+        }
+      ]
+    },
+    {
+      "id": "paragraph-inside-nav",
+      "passed": false,
+      "merged": [
+        "Alpha record Beta record"
+      ],
+      "passages": [
+        {
+          "text": "Alpha record Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[0]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[1]:0",
+          "qualifiers": {}
+        }
+      ]
+    },
+    {
+      "id": "script-literals",
+      "passed": false,
+      "merged": [
+        "Alpha record Beta record"
+      ],
+      "passages": [
+        {
+          "text": "Alpha record Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[0]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[1]:0",
+          "qualifiers": {}
+        }
+      ]
+    },
+    {
+      "id": "metadata-json",
+      "passed": false,
+      "merged": [
+        "Alpha record Beta record"
+      ],
+      "passages": [
+        {
+          "text": "description: <p>literal | $ { description: <p>literal }",
+          "label": "description",
+          "value": "<p>literal",
+          "section": "$ { description: <p>literal }",
+          "kind": "jsonld",
+          "locator": "script[0]/description",
+          "qualifiers": {
+            "structured": true,
+            "bindings": {
+              "description": "<p>literal"
+            },
+            "value_type": "scalar"
+          }
+        },
+        {
+          "text": "Alpha record Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[0]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[1]:0",
+          "qualifiers": {}
+        }
+      ]
+    },
+    {
+      "id": "escaped-tags",
+      "passed": true,
+      "merged": [],
+      "passages": [
+        {
+          "text": "Alpha <p> record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[0]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Beta & record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[1]:0",
+          "qualifiers": {}
+        }
+      ]
+    },
+    {
+      "id": "br-inline",
+      "passed": true,
+      "merged": [],
+      "passages": [
+        {
+          "text": "Alpha record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[0]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[1]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Alpha",
+          "label": "line 1",
+          "value": "",
+          "section": "",
+          "kind": "line",
+          "locator": "lines[0]/line[0]",
+          "qualifiers": {
+            "source_line": 1,
+            "complete_line": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "list-after-p",
+      "passed": false,
+      "merged": [
+        "Alpha record Beta record"
+      ],
+      "passages": [
+        {
+          "text": "Alpha record Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[0]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "li[1]:0",
+          "qualifiers": {}
+        }
+      ]
+    },
+    {
+      "id": "table-after-p",
+      "passed": false,
+      "merged": [],
+      "passages": [
+        {
+          "text": "Alpha record Code R8",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[0]:0",
+          "qualifiers": {}
+        }
+      ]
+    },
+    {
+      "id": "blockquote-after-p",
+      "passed": false,
+      "merged": [
+        "Alpha record Beta record"
+      ],
+      "passages": [
+        {
+          "text": "Alpha record Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "p[0]:0",
+          "qualifiers": {}
+        },
+        {
+          "text": "Beta record",
+          "label": "",
+          "value": "",
+          "section": "",
+          "kind": "prose",
+          "locator": "blockquote[1]:0",
+          "qualifiers": {}
+        }
+      ]
+    },
+    {
+      "id": "saved-source-witness-and-boundary",
+      "passed": false,
+      "scope": "Source context availability only, not model correctness or a new answer win",
+      "capture_path": "research\\external-disjoint12b-20261023\\simpleqa-4145.json",
+      "capture_sha256": "186861463adbfb19b5603222343f72fa1a229b967c69ff24493c747ae6993c24",
+      "witness_first_payload_position": 2,
+      "witness_ranked_positions": [
+        2,
+        11,
+        12
+      ],
+      "polluted_witness_passages": 3,
+      "sources": [
+        {
+          "url": "https://noehill.com/humboldt/nat1978000673.asp",
+          "body_sha256": "4cf35051ebc9b25ebfc0e630f2c471f0da6454d759f28a46c3fb7c75991f86b3",
+          "max_nested_paragraphs": 16,
+          "passage_count": 37
+        },
+        {
+          "url": "https://noehill.com/california/default.asp",
+          "body_sha256": "bf49f9bceb9112e8a201ff260812622a8f2d24d62f79a4ec93e65cdadc11042b",
+          "max_nested_paragraphs": 4,
+          "passage_count": 22
+        },
+        {
+          "url": "https://noehill.com/merced/poi_snelling_odd_fellows.asp",
+          "body_sha256": "7e56b17d8afc8cd2d471ffbcd5e61d2081e89d2241a046d79d828945afb9be30",
+          "max_nested_paragraphs": 12,
+          "passage_count": 30
+        },
+        {
+          "url": "https://noehill.com/mariposa/poi_coulterville_odd_fellows_hall.asp",
+          "body_sha256": "a05ef5a4404b968b72f5ac8149612e78114977e5c71c88f449170f70c5ea2fc8",
+          "max_nested_paragraphs": 18,
+          "passage_count": 41
+        }
+      ],
+      "first_payload": [
+        {
+          "id": 0,
+          "text": "This two-story wood-frame structure in the Greek Revival architectural style was constructed shortly after the fire of 1899 on the site of an earlier lodge building. Its facade is dominated by a two-story veranda reaching across the width of the structure. This porch is supported by four turned columns at each level. Balusters on the second level are arranged in an interesting pattern of intersecting diagonals. The structure is sheathed in shiplap siding of redwood. Fenestration consists of six-over-six double-hung sash. A one-story extension was added to the rear of the lodge in 1925 and has served as a kitchen and dining area for the lodge. The interior of this structure is almost completely intact. A large meeting room surrounded by several smaller meeting rooms is located on the second story. The lower level is a large, open dance hall and meeting room, with a stage and proscenium at the rear. The Coulterville Odd Fellows Hall contributes to the National Register Coulterville Historic District . The Independent Order of Odd Fellows (I.O.O.F.) is an altruistic fraternal organizati",
+          "section": "",
+          "source": "https://noehill.com/mariposa/poi_coulterville_odd_fellows_hall.asp",
+          "locator": "p[9]:0",
+          "document_title": "Historic Point of Interest in Coulterville, California: Odd Fellows Hall"
+        },
+        {
+          "id": 1,
+          "text": "The Coulterville Odd Fellows Hall contributes to the National Register Coulterville Historic District . The Independent Order of Odd Fellows (I.O.O.F.) is an altruistic fraternal organization derived from the similar English Oddfellows service organizations which came into being during the 1700s....Although in Britain the Odd Fellows tended to meet in pubs, in the U.S. the lodges often built their own facilities. Many of these are now on the U.S. National Register of Historic Places.... From Wikipedia entry for Independent Order of Odd Fellows We command you to visit the sick Relieve the distressed Bury the dead And educate the orphan Historic IOOF Buildings in California Arbuckle , Arroyo Grande , Big Oak Flat , Bloomfield , Colusa , Copperopolis (1874-1903) , Copperopolis (1903-1939) , Coulterville , Etna , Eureka , Farmington , Ferndale , Forest Hill , Galt , Georgetown , Geyserville , Hanford , Jenny Lind , Knights Ferry , La Grange , Live Oak , Mokelumne Hill , Murphys , Nevada City , Oakdale , Orland , Point Arena , Quincy , Red Bluff , Roseville , Sebastopol , Snelling , Sonom",
+          "section": "",
+          "source": "https://noehill.com/mariposa/poi_coulterville_odd_fellows_hall.asp",
+          "locator": "p[13]:0",
+          "document_title": "Historic Point of Interest in Coulterville, California: Odd Fellows Hall"
+        },
+        {
+          "id": 2,
+          "text": "The French Empire Mansard Building was constructed by James Simpson, a well known builder who constructed several other large buildings, in 1883 to house the new lodge hall for the Independent Order of Odd Fellows. The large two story building was constructed of brick with an imposing two story entrance pavilion bordered by specially formed iron columns. This is Eureka's finest example of Second Empire architecture. Excerpted from the NRHP Nomination. The Independent Order of Odd Fellows (I.O.O.F.) is an altruistic fraternal organization derived from the similar English Oddfellows service organizations which came into being during the 1700s....Although in Britain the Odd Fellows tended to meet in pubs, in the U.S. the lodges often built their own facilities. Many of these are now on the U.S. National Register of Historic Places.... From Wikipedia entry for Independent Order of Odd Fellows We command you to visit the sick Relieve the distressed Bury the dead And educate the orphan Historic IOOF Buildings in California Arbuckle , Arroyo Grande , Big Oak Flat , Bloomfield , Colusa , Cop",
+          "section": "",
+          "source": "https://noehill.com/humboldt/nat1978000673.asp",
+          "locator": "p[9]:0",
+          "document_title": "National Register #78000673: Odd Fellows Hall in Eureka, California"
+        },
+        {
+          "id": 3,
+          "text": "Its facade is dominated by a two-story veranda reaching across the width of the structure. This porch is supported by four turned columns at each level. Balusters on the second level are arranged in an interesting pattern of intersecting diagonals. The structure is sheathed in shiplap siding of redwood. Fenestration consists of six-over-six double-hung sash. A one-story extension was added to the rear of the lodge in 1925 and has served as a kitchen and dining area for the lodge. The interior of this structure is almost completely intact. A large meeting room surrounded by several smaller meeting rooms is located on the second story. The lower level is a large, open dance hall and meeting room, with a stage and proscenium at the rear. The Coulterville Odd Fellows Hall contributes to the National Register Coulterville Historic District . The Independent Order of Odd Fellows (I.O.O.F.) is an altruistic fraternal organization derived from the similar English Oddfellows service organizations which came into being during the 1700s....Although in Britain the Odd Fellows tended to meet in p",
+          "section": "",
+          "source": "https://noehill.com/mariposa/poi_coulterville_odd_fellows_hall.asp",
+          "locator": "p[10]:0",
+          "document_title": "Historic Point of Interest in Coulterville, California: Odd Fellows Hall"
+        },
+        {
+          "id": 4,
+          "text": "The structure is sheathed in shiplap siding of redwood. Fenestration consists of six-over-six double-hung sash. A one-story extension was added to the rear of the lodge in 1925 and has served as a kitchen and dining area for the lodge. The interior of this structure is almost completely intact. A large meeting room surrounded by several smaller meeting rooms is located on the second story. The lower level is a large, open dance hall and meeting room, with a stage and proscenium at the rear. The Coulterville Odd Fellows Hall contributes to the National Register Coulterville Historic District . The Independent Order of Odd Fellows (I.O.O.F.) is an altruistic fraternal organization derived from the similar English Oddfellows service organizations which came into being during the 1700s....Although in Britain the Odd Fellows tended to meet in pubs, in the U.S. the lodges often built their own facilities. Many of these are now on the U.S. National Register of Historic Places.... From Wikipedia entry for Independent Order of Odd Fellows We command you to visit the sick Relieve the distresse",
+          "section": "",
+          "source": "https://noehill.com/mariposa/poi_coulterville_odd_fellows_hall.asp",
+          "locator": "p[11]:0",
+          "document_title": "Historic Point of Interest in Coulterville, California: Odd Fellows Hall"
+        },
+        {
+          "id": 5,
+          "text": "The interior of this structure is almost completely intact. A large meeting room surrounded by several smaller meeting rooms is located on the second story. The lower level is a large, open dance hall and meeting room, with a stage and proscenium at the rear. The Coulterville Odd Fellows Hall contributes to the National Register Coulterville Historic District . The Independent Order of Odd Fellows (I.O.O.F.) is an altruistic fraternal organization derived from the similar English Oddfellows service organizations which came into being during the 1700s....Although in Britain the Odd Fellows tended to meet in pubs, in the U.S. the lodges often built their own facilities. Many of these are now on the U.S. National Register of Historic Places.... From Wikipedia entry for Independent Order of Odd Fellows We command you to visit the sick Relieve the distressed Bury the dead And educate the orphan Historic IOOF Buildings in California Arbuckle , Arroyo Grande , Big Oak Flat , Bloomfield , Colusa , Copperopolis (1874-1903) , Copperopolis (1903-1939) , Coulterville , Etna , Eureka , Farmington",
+          "section": "",
+          "source": "https://noehill.com/mariposa/poi_coulterville_odd_fellows_hall.asp",
+          "locator": "p[12]:0",
+          "document_title": "Historic Point of Interest in Coulterville, California: Odd Fellows Hall"
+        },
+        {
+          "id": 6,
+          "text": "From Wikipedia entry for Independent Order of Odd Fellows We command you to visit the sick Relieve the distressed Bury the dead And educate the orphan Historic IOOF Buildings in California Arbuckle , Arroyo Grande , Big Oak Flat , Bloomfield , Colusa , Copperopolis (1874-1903) , Copperopolis (1903-1939) , Coulterville , Etna , Eureka , Farmington , Ferndale , Forest Hill , Galt , Georgetown , Geyserville , Hanford , Jenny Lind , Knights Ferry , La Grange , Live Oak , Mokelumne Hill , Murphys , Nevada City , Oakdale , Orland , Point Arena , Quincy , Red Bluff , Roseville , Sebastopol , Snelling , Sonoma , Truckee , Wheatland , Woodbridge , Woodland , Yreka Historic IOOF Buildings in Nevada Austin , Gardnerville, Nevada , Yerington Historic IOOF Buildings in Oregon Ashland , Coquille , Gold Hill , Klamath Falls Historic IOOF Buildings in Utah Beaver , Milford",
+          "section": "",
+          "source": "https://noehill.com/mariposa/poi_coulterville_odd_fellows_hall.asp",
+          "locator": "p[9]:1403",
+          "document_title": "Historic Point of Interest in Coulterville, California: Odd Fellows Hall"
+        },
+        {
+          "id": 7,
+          "text": "The Independent Order of Odd Fellows (I.O.O.F.) is an altruistic fraternal organization derived from the similar English Oddfellows service organizations which came into being during the 1700s....Although in Britain the Odd Fellows tended to meet in pubs, in the U.S. the lodges often built their own facilities. Many of these are now on the U.S. National Register of Historic Places.... From Wikipedia entry for Independent Order of Odd Fellows We command you to visit the sick Relieve the distressed Bury the dead And educate the orphan Historic IOOF Buildings in California Arbuckle , Arroyo Grande , Big Oak Flat , Bloomfield , Colusa , Copperopolis (1874-1903) , Copperopolis (1903-1939) , Coulterville , Etna , Eureka , Farmington , Ferndale , Forest Hill , Galt , Georgetown , Geyserville , Hanford , Jenny Lind , Knights Ferry , La Grange , Live Oak , Mokelumne Hill , Murphys , Nevada City , Oakdale , Orland , Point Arena , Quincy , Red Bluff , Roseville , Sebastopol , Snelling , Sonoma , Truckee , Wheatland , Woodbridge , Woodland , Yreka Historic IOOF Buildings in Nevada Austin , Gardn",
+          "section": "",
+          "source": "https://noehill.com/humboldt/nat1978000673.asp",
+          "locator": "p[14]:0",
+          "document_title": "National Register #78000673: Odd Fellows Hall in Eureka, California"
+        }
+      ]
+    }
+  ],
+  "diagnostic_sha256": "2599edec7f44fce8fc39aa1a06e4a2b3f40450ea0068734747b8b0d8bac6740f",
+  "passed": 4,
+  "total": 19,
+  "torch_imported": false
+}

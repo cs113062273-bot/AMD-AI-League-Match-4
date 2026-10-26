@@ -1,0 +1,87 @@
+{
+  "/07-doc-cross-version-comparison/index.html": [
+    200,
+    "text/html",
+    "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><title>FernAPI request quotas</title></head><body><header><p>Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional.</p></header><main><h1>FernAPI request quotas</h1><ul><li><a href=\"v2.html\">Version 2 quota (archived)</a></li><li><a href=\"v3.html\">Version 3 quota (current stable)</a></li></ul></main></body></html>\n"
+  ],
+  "/07-doc-cross-version-comparison/v2.html": [
+    200,
+    "text/html",
+    "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><title>FernAPI v2 request quota — archived</title><meta name=\"version\" content=\"2\"></head><body><header><p>Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional.</p></header><main><h1>FernAPI v2 request quota — archived</h1><p>Documentation version: 2.</p><p>The per-client request quota in version 2 is 40 requests per minute.</p></main></body></html>\n"
+  ],
+  "/07-doc-cross-version-comparison/v3.html": [
+    200,
+    "text/html",
+    "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><title>FernAPI v3 request quota — current stable</title><meta name=\"version\" content=\"3\"></head><body><header><p>Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional.</p></header><main><h1>FernAPI v3 request quota — current stable</h1><p>Documentation version: 3.</p><p>The per-client request quota in version 3 is 80 requests per minute.</p></main></body></html>\n"
+  ],
+  "/09-web-table-cell/index.html": [
+    200,
+    "text/html",
+    "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><title>Amber Bay collection services</title></head><body><header><p>Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional.</p></header><main><h1>Amber Bay collection services</h1><a href=\"schedule.html\">Collection schedule by material</a></main></body></html>\n"
+  ],
+  "/09-web-table-cell/schedule.html": [
+    200,
+    "text/html",
+    "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><title>Amber Bay collection timetable</title></head><body><header><p>Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional.</p></header><main><h1>Amber Bay collection timetable</h1><table><thead><tr><th>Material</th><th>Day</th><th>Time</th></tr></thead><tbody><tr><td>Glass</td><td>Every Tuesday</td><td>08:00–10:00</td></tr><tr><td>Electronics</td><td>First Saturday of each month</td><td>09:00–12:00</td></tr><tr><td>Cardboard</td><td>Every Friday</td><td>13:00–15:00</td></tr></tbody></table></main></body></html>\n"
+  ],
+  "/16-web-two-source-mapping/categories.html": [
+    200,
+    "text/html",
+    "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><title>Blue Lantern market vendor categories</title></head><body><header><p>Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional.</p></header><main><h1>Blue Lantern market vendor categories</h1><p>Book vendors are assigned category B.</p><p>Food vendors are assigned category F.</p></main></body></html>\n"
+  ],
+  "/16-web-two-source-mapping/fees.html": [
+    200,
+    "text/html",
+    "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><title>Blue Lantern market daily permit fees</title></head><body><header><p>Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional.</p></header><main><h1>Blue Lantern market daily permit fees</h1><p>The daily permit fee for category B is $18.</p><p>The daily permit fee for category F is $32.</p></main></body></html>\n"
+  ],
+  "/16-web-two-source-mapping/index.html": [
+    200,
+    "text/html",
+    "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><title>Blue Lantern market vendor permits</title></head><body><header><p>Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional.</p></header><main><h1>Blue Lantern market vendor permits</h1><ul><li><a href=\"categories.html\">Vendor category assignments</a></li><li><a href=\"fees.html\">Daily permit fees by category</a></li></ul></main></body></html>\n"
+  ],
+  "/proof/missing-version/index.html": [
+    200,
+    "text/html",
+    "<h1>FinchAPI quotas</h1><a href=\"v2.html\">Version 2 quota</a><a href=\"v4.html\">Version 4 quota</a>"
+  ],
+  "/proof/missing-version/v2.html": [
+    200,
+    "text/html",
+    "<title>FinchAPI v2 quota</title><p>The per-client request quota in version 2 is 40 requests per minute.</p>"
+  ],
+  "/proof/missing-version/v4.html": [
+    200,
+    "text/html",
+    "<title>FinchAPI v4 quota</title><p>The per-client request quota in version 4 is 160 requests per minute.</p>"
+  ],
+  "/proof/ambiguous-map/index.html": [
+    200,
+    "text/html",
+    "<h1>Pine Harbor market</h1><a href=\"categories.html\">Vendor categories</a><a href=\"fees.html\">Daily permit fees</a>"
+  ],
+  "/proof/ambiguous-map/categories.html": [
+    200,
+    "text/html",
+    "<title>Pine Harbor market categories</title><p>Book vendors are assigned category B.</p><p>Book vendors are assigned category C.</p>"
+  ],
+  "/proof/ambiguous-map/fees.html": [
+    200,
+    "text/html",
+    "<title>Pine Harbor market daily permit fees</title><p>The daily permit fee for category B is $18.</p><p>The daily permit fee for category C is $27.</p>"
+  ],
+  "/proof/incomplete-row/index.html": [
+    200,
+    "text/html",
+    "<h1>Maple Bay collection</h1><table><tr><th>Material</th><th>Day</th><th>Time</th></tr><tr><td>Electronics</td><td>Every Saturday</td><td>Not published</td></tr><tr><td>Glass</td><td>Every Tuesday</td><td>09:00?12:00</td></tr></table>"
+  ],
+  "/proof/single-fee/index.html": [
+    200,
+    "text/html",
+    "<h1>Rowan Grove festival permits</h1><p>The festival permit application fee is $28.</p>"
+  ],
+  "/proof/single-table/index.html": [
+    200,
+    "text/html",
+    "<h1>Maple Bay collection</h1><table><tr><th>Material</th><th>Day</th><th>Time</th></tr><tr><td>Electronics</td><td>Every Saturday</td><td>09:00?12:00</td></tr><tr><td>Glass</td><td>Every Tuesday</td><td>13:00?15:00</td></tr></table>"
+  ]
+}

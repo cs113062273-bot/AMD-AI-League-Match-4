@@ -1,0 +1,1625 @@
+{
+  "scope": "CPU exact cutoff parsing and actual local HTTP; invented histories, not accuracy.",
+  "revision": "working-tree",
+  "baseline_source_sha256": {},
+  "diagnostic_sha256": "e486bac6c907c688a273f8c471e1a35565ab4b3d60bc13573e95dd8742006b06",
+  "production_sha256": {
+    "app.py": "c0267c0441330bd30559f48d2f33916418992b8e21ec8dd1d09ae4773c23b73b",
+    "agent/__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41",
+    "agent/browser.py": "53ac9a99f3afcefcdb197cd9b2296c2d380910a782178fadb65235e548efc353",
+    "agent/candidates.py": "7ed5862f43246cfb738497553d94b5d6dfcb23f299f281c85a310cb0ca40a2e2",
+    "agent/challenges.py": "b6f51c720f332671725e08127a5d1c163ca0542d2a550bf3c980a6d4c49bf6a1",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/engine.py": "26c95e0e153190fe8335c625ec2bfdfcd4552c8e6598f650f020cac1f8992bb5",
+    "agent/evidence.py": "842de8eca754fbfa471b1be1f54b38fbc76f590ef89d87ba153a915bc4295c05",
+    "agent/field_groups.py": "52a54989253c59e9836dec4aaec4944b688376e79548b9336887558a454e9162",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/literature.py": "9b871500ab1ebaf88e8fca2c70bd7ade7eb81774412fa85a1f4be7d2fb06263f",
+    "agent/members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "agent/model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+    "agent/model_server.py": "8d326a696942d259697a6fba8586441bbbe4874042ea900c6d7788a2a0e9fd22",
+    "agent/navigation.py": "0f849c0c570720114c45c14b0a5286fe409e5d26c2945fdc9f6c1a6922bb7718",
+    "agent/network.py": "def1be3752f81423c313c2dfa83f6703ee063d7e98652cf0d816b423d0e2d9cb",
+    "agent/normalize.py": "582d9ef7b1ec775e5171c92e1ae96be746fd5d1dcd43ee588fee9a9aa6abc706",
+    "agent/output.py": "b983ab2efe31707b1c974344a32dc4b40b708541257695de89cac9e343b073eb",
+    "agent/oyez.py": "8475f248d78925522e0742b13518be2c4f4db11eae0d8391a8002da7d4e3b67d",
+    "agent/parser.py": "16741c809d33fbe08d5c9a69515decd4f8bc5546ed00afa9a3bb9c55bfb26e7b",
+    "agent/planner.py": "1514fb67d20b061da8116e3086b315fdc5f3d819613330098ab9d948844a4211",
+    "agent/population.py": "c9a2b2c59dc1bc90da68036545605b4c882043b09541687de253bb54e6a5ea75",
+    "agent/processes.py": "677c4372b40d1da0ffc0cf4120ca5b6be2fcf6b6c30f6ec17d0d8fae19e198c1",
+    "agent/proofs.py": "0d7ae78df6ea9949c29f33c7b817dda352c75b3d99c960c3e987e37c7401faab",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/registry_history.py": "244a10c46a9c6177e2cea72da1d4842082da046b39908101f5614abc0a4752e1",
+    "agent/resolvers.py": "70756028f2de4b236aee73fdfca674c980ce70b2f64b496f0e8d8395136b3aab",
+    "agent/search.py": "64ebf971ea4dd0f8a34bc0bdd2d3678f54edab80d6112328fefeede84687ec55",
+    "agent/selector.py": "be7c0fce11c10921d5cd4e3d1072d5a2ca5a62f1c328730384d19b0fecd19566",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/temporal.py": "f520ada0a6ea9f810225887080a495a4a47a0371cd6f613a9c5648587509012a",
+    "agent/types.py": "1bc24b341d11e9bd0da4a288ba843728f831897cf5222e51f43fa1265b740f30",
+    "agent/urls.py": "6bbf58adf3c55cf3787edf4b6607a7db8eea987f0c02dd6cdfea48f6c38e031f",
+    "agent/worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f"
+  },
+  "passed": 52,
+  "total": 52,
+  "rows": [
+    {
+      "id": "plan-2020",
+      "passed": true,
+      "expected": [
+        "2020-12-31",
+        ""
+      ],
+      "actual": [
+        "2020-12-31",
+        ""
+      ]
+    },
+    {
+      "id": "plan-2020-02-29",
+      "passed": true,
+      "expected": [
+        "2020-02-29",
+        ""
+      ],
+      "actual": [
+        "2020-02-29",
+        ""
+      ]
+    },
+    {
+      "id": "plan-2020-02",
+      "passed": true,
+      "expected": [
+        "2020-02-29",
+        ""
+      ],
+      "actual": [
+        "2020-02-29",
+        ""
+      ]
+    },
+    {
+      "id": "plan-2019-02",
+      "passed": true,
+      "expected": [
+        "2019-02-28",
+        ""
+      ],
+      "actual": [
+        "2019-02-28",
+        ""
+      ]
+    },
+    {
+      "id": "plan-2020-2-9",
+      "passed": true,
+      "expected": [
+        "2020-02-09",
+        ""
+      ],
+      "actual": [
+        "2020-02-09",
+        ""
+      ]
+    },
+    {
+      "id": "plan-2020/02/29",
+      "passed": true,
+      "expected": [
+        "2020-02-29",
+        ""
+      ],
+      "actual": [
+        "2020-02-29",
+        ""
+      ]
+    },
+    {
+      "id": "plan-March 2020",
+      "passed": true,
+      "expected": [
+        "2020-03-31",
+        ""
+      ],
+      "actual": [
+        "2020-03-31",
+        ""
+      ]
+    },
+    {
+      "id": "plan-Mar. 2020",
+      "passed": true,
+      "expected": [
+        "2020-03-31",
+        ""
+      ],
+      "actual": [
+        "2020-03-31",
+        ""
+      ]
+    },
+    {
+      "id": "plan-March 3, 2020",
+      "passed": true,
+      "expected": [
+        "2020-03-03",
+        ""
+      ],
+      "actual": [
+        "2020-03-03",
+        ""
+      ]
+    },
+    {
+      "id": "plan-3rd March 2020",
+      "passed": true,
+      "expected": [
+        "2020-03-03",
+        ""
+      ],
+      "actual": [
+        "2020-03-03",
+        ""
+      ]
+    },
+    {
+      "id": "plan-the year 2020",
+      "passed": true,
+      "expected": [
+        "2020-12-31",
+        ""
+      ],
+      "actual": [
+        "2020-12-31",
+        ""
+      ]
+    },
+    {
+      "id": "plan-the 2020-02-29",
+      "passed": true,
+      "expected": [
+        "2020-02-29",
+        ""
+      ],
+      "actual": [
+        "2020-02-29",
+        ""
+      ]
+    },
+    {
+      "id": "plan-29/02/2020",
+      "passed": true,
+      "expected": [
+        "2020-02-29",
+        ""
+      ],
+      "actual": [
+        "2020-02-29",
+        ""
+      ]
+    },
+    {
+      "id": "plan-02/29/2020",
+      "passed": true,
+      "expected": [
+        "2020-02-29",
+        ""
+      ],
+      "actual": [
+        "2020-02-29",
+        ""
+      ]
+    },
+    {
+      "id": "plan-2020.2",
+      "passed": true,
+      "expected": [
+        "",
+        "unresolved_cutoff"
+      ],
+      "actual": [
+        "",
+        "unresolved_cutoff"
+      ]
+    },
+    {
+      "id": "plan-2020-99-99",
+      "passed": true,
+      "expected": [
+        "",
+        "invalid_cutoff"
+      ],
+      "actual": [
+        "",
+        "invalid_cutoff"
+      ]
+    },
+    {
+      "id": "plan-2019-02-29",
+      "passed": true,
+      "expected": [
+        "",
+        "invalid_cutoff"
+      ],
+      "actual": [
+        "",
+        "invalid_cutoff"
+      ]
+    },
+    {
+      "id": "plan-2020-02-30",
+      "passed": true,
+      "expected": [
+        "",
+        "invalid_cutoff"
+      ],
+      "actual": [
+        "",
+        "invalid_cutoff"
+      ]
+    },
+    {
+      "id": "plan-2020-00",
+      "passed": true,
+      "expected": [
+        "",
+        "invalid_cutoff"
+      ],
+      "actual": [
+        "",
+        "invalid_cutoff"
+      ]
+    },
+    {
+      "id": "plan-0000",
+      "passed": true,
+      "expected": [
+        "",
+        "invalid_cutoff"
+      ],
+      "actual": [
+        "",
+        "invalid_cutoff"
+      ]
+    },
+    {
+      "id": "plan-March 32, 2020",
+      "passed": true,
+      "expected": [
+        "",
+        "invalid_cutoff"
+      ],
+      "actual": [
+        "",
+        "invalid_cutoff"
+      ]
+    },
+    {
+      "id": "plan-03/04/2020",
+      "passed": true,
+      "expected": [
+        "",
+        "ambiguous_cutoff"
+      ],
+      "actual": [
+        "",
+        "ambiguous_cutoff"
+      ]
+    },
+    {
+      "id": "plan-2020-2021",
+      "passed": true,
+      "expected": [
+        "",
+        "unresolved_cutoff"
+      ],
+      "actual": [
+        "",
+        "unresolved_cutoff"
+      ]
+    },
+    {
+      "id": "plan-2020 to 2021",
+      "passed": true,
+      "expected": [
+        "",
+        "ambiguous_cutoff"
+      ],
+      "actual": [
+        "",
+        "ambiguous_cutoff"
+      ]
+    },
+    {
+      "id": "plan-2020 or as of 2021",
+      "passed": true,
+      "expected": [
+        "",
+        "ambiguous_cutoff"
+      ],
+      "actual": [
+        "",
+        "ambiguous_cutoff"
+      ]
+    },
+    {
+      "id": "plan-next summer",
+      "passed": true,
+      "expected": [
+        "",
+        "unresolved_cutoff"
+      ],
+      "actual": [
+        "",
+        "unresolved_cutoff"
+      ]
+    },
+    {
+      "id": "plan-2020-02-29T12:00Z",
+      "passed": true,
+      "expected": [
+        "",
+        "unresolved_cutoff"
+      ],
+      "actual": [
+        "",
+        "unresolved_cutoff"
+      ]
+    },
+    {
+      "id": "plan-now",
+      "passed": true,
+      "expected": [
+        "",
+        ""
+      ],
+      "actual": [
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "plan-today",
+      "passed": true,
+      "expected": [
+        "",
+        ""
+      ],
+      "actual": [
+        "",
+        ""
+      ]
+    },
+    {
+      "id": "plan-2020 - 2021",
+      "passed": true,
+      "expected": [
+        "",
+        "ambiguous_cutoff"
+      ],
+      "actual": [
+        "",
+        "ambiguous_cutoff"
+      ]
+    },
+    {
+      "id": "plan-2020, or 2021",
+      "passed": true,
+      "expected": [
+        "",
+        "ambiguous_cutoff"
+      ],
+      "actual": [
+        "",
+        "ambiguous_cutoff"
+      ]
+    },
+    {
+      "id": "plan-March 2020 through April 2020",
+      "passed": true,
+      "expected": [
+        "",
+        "ambiguous_cutoff"
+      ],
+      "actual": [
+        "",
+        "ambiguous_cutoff"
+      ]
+    },
+    {
+      "id": "plan-2020-02-29 12:00Z",
+      "passed": true,
+      "expected": [
+        "",
+        "unresolved_cutoff"
+      ],
+      "actual": [
+        "",
+        "unresolved_cutoff"
+      ]
+    },
+    {
+      "id": "plan-2020-02-29 at 12:00",
+      "passed": true,
+      "expected": [
+        "",
+        "unresolved_cutoff"
+      ],
+      "actual": [
+        "",
+        "unresolved_cutoff"
+      ]
+    },
+    {
+      "id": "plan-now or 2020",
+      "passed": true,
+      "expected": [
+        "",
+        "ambiguous_cutoff"
+      ],
+      "actual": [
+        "",
+        "ambiguous_cutoff"
+      ]
+    },
+    {
+      "id": "plan-2020 or now",
+      "passed": true,
+      "expected": [
+        "",
+        "ambiguous_cutoff"
+      ],
+      "actual": [
+        "",
+        "ambiguous_cutoff"
+      ]
+    },
+    {
+      "id": "negated",
+      "passed": true,
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "id": "quoted",
+      "passed": true,
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "id": "url",
+      "passed": true,
+      "expected": "",
+      "actual": ""
+    },
+    {
+      "id": "repeat",
+      "passed": true,
+      "expected": "2020-12-31",
+      "actual": "2020-12-31"
+    },
+    {
+      "id": "http-history-2020",
+      "passed": true,
+      "expected": "2.0",
+      "actual": "2.0",
+      "hits": [
+        "/history"
+      ],
+      "model_calls": [],
+      "result": {
+        "answer": "2.0",
+        "sources": [
+          "http://127.0.0.1:11486/history"
+        ],
+        "confidence": 0.795,
+        "evidence": "Version: 2.0 | Release date: 2020-11-01",
+        "reason": "dated_release_table",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the latest version of River Sample as of 2020?",
+            "url": "http://127.0.0.1:11486/history",
+            "kind": "version",
+            "terms": [
+              "river",
+              "sample",
+              "2020"
+            ],
+            "attributes": [
+              "version",
+              "release",
+              "stable",
+              "latest",
+              "download"
+            ],
+            "entity_terms": [
+              "river",
+              "sample"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": true,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what was the latest version ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.00017499993555247784
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "2.0",
+            "answer": "2.0",
+            "source": "http://127.0.0.1:11486/history",
+            "evidence": "Version: 2.0 | Release date: 2020-11-01",
+            "label": "Version",
+            "section": "River Sample release history",
+            "kind": "version",
+            "score": 9.8,
+            "signals": {
+              "locator": "table[1]/row[3]/cell[0]",
+              "page_title": "",
+              "structure": "cell",
+              "qualifiers": {
+                "table": 1,
+                "row": 3,
+                "columns": [
+                  "Version",
+                  "Release date"
+                ],
+                "cells": [
+                  "2.0",
+                  "2020-11-01"
+                ],
+                "column": 0
+              },
+              "field_value": "2.0",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:11486/history",
+              "final": "http://127.0.0.1:11486/history",
+              "status": 200,
+              "bytes": 258,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0215
+        }
+      }
+    },
+    {
+      "id": "http-history-2020-02",
+      "passed": true,
+      "expected": "1.1",
+      "actual": "1.1",
+      "hits": [
+        "/history"
+      ],
+      "model_calls": [],
+      "result": {
+        "answer": "1.1",
+        "sources": [
+          "http://127.0.0.1:11486/history"
+        ],
+        "confidence": 0.835,
+        "evidence": "Version: 1.1 | Release date: 2020-02-29",
+        "reason": "dated_release_table",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the latest version of River Sample as of 2020-02?",
+            "url": "http://127.0.0.1:11486/history",
+            "kind": "version",
+            "terms": [
+              "river",
+              "sample",
+              "2020-02",
+              "2020",
+              "02"
+            ],
+            "attributes": [
+              "version",
+              "release",
+              "stable",
+              "latest",
+              "download"
+            ],
+            "entity_terms": [
+              "river",
+              "sample",
+              "2020-02",
+              "02"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-02-29",
+            "latest": true,
+            "stable": true,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what was the latest version ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.6700010746717453e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "1.1",
+            "answer": "1.1",
+            "source": "http://127.0.0.1:11486/history",
+            "evidence": "Version: 1.1 | Release date: 2020-02-29",
+            "label": "Version",
+            "section": "River Sample release history",
+            "kind": "version",
+            "score": 11.400000000000002,
+            "signals": {
+              "locator": "table[1]/row[1]/cell[0]",
+              "page_title": "",
+              "structure": "cell",
+              "qualifiers": {
+                "table": 1,
+                "row": 1,
+                "columns": [
+                  "Version",
+                  "Release date"
+                ],
+                "cells": [
+                  "1.1",
+                  "2020-02-29"
+                ],
+                "column": 0
+              },
+              "field_value": "1.1",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:11486/history",
+              "final": "http://127.0.0.1:11486/history",
+              "status": 200,
+              "bytes": 258,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0077
+        }
+      }
+    },
+    {
+      "id": "http-history-March 2020",
+      "passed": true,
+      "expected": "1.2",
+      "actual": "1.2",
+      "hits": [
+        "/history"
+      ],
+      "model_calls": [],
+      "result": {
+        "answer": "1.2",
+        "sources": [
+          "http://127.0.0.1:11486/history"
+        ],
+        "confidence": 0.795,
+        "evidence": "Version: 1.2 | Release date: 2020-03-03",
+        "reason": "dated_release_table",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the latest version of River Sample as of March 2020?",
+            "url": "http://127.0.0.1:11486/history",
+            "kind": "version",
+            "terms": [
+              "river",
+              "sample",
+              "march",
+              "2020"
+            ],
+            "attributes": [
+              "version",
+              "release",
+              "stable",
+              "latest",
+              "download"
+            ],
+            "entity_terms": [
+              "river",
+              "sample",
+              "march"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-03-31",
+            "latest": true,
+            "stable": true,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what was the latest version ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.610000617802143e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "1.2",
+            "answer": "1.2",
+            "source": "http://127.0.0.1:11486/history",
+            "evidence": "Version: 1.2 | Release date: 2020-03-03",
+            "label": "Version",
+            "section": "River Sample release history",
+            "kind": "version",
+            "score": 9.8,
+            "signals": {
+              "locator": "table[1]/row[2]/cell[0]",
+              "page_title": "",
+              "structure": "cell",
+              "qualifiers": {
+                "table": 1,
+                "row": 2,
+                "columns": [
+                  "Version",
+                  "Release date"
+                ],
+                "cells": [
+                  "1.2",
+                  "2020-03-03"
+                ],
+                "column": 0
+              },
+              "field_value": "1.2",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:11486/history",
+              "final": "http://127.0.0.1:11486/history",
+              "status": 200,
+              "bytes": 258,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0095
+        }
+      }
+    },
+    {
+      "id": "http-history-2020-02-29",
+      "passed": true,
+      "expected": "1.1",
+      "actual": "1.1",
+      "hits": [
+        "/history"
+      ],
+      "model_calls": [],
+      "result": {
+        "answer": "1.1",
+        "sources": [
+          "http://127.0.0.1:11486/history"
+        ],
+        "confidence": 0.903,
+        "evidence": "Version: 1.1 | Release date: 2020-02-29",
+        "reason": "dated_release_table",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the latest version of River Sample as of 2020-02-29?",
+            "url": "http://127.0.0.1:11486/history",
+            "kind": "version",
+            "terms": [
+              "river",
+              "sample",
+              "2020-02-29",
+              "2020",
+              "02",
+              "29"
+            ],
+            "attributes": [
+              "version",
+              "release",
+              "stable",
+              "latest",
+              "download"
+            ],
+            "entity_terms": [
+              "river",
+              "sample",
+              "2020-02-29",
+              "02",
+              "29"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-02-29",
+            "latest": true,
+            "stable": true,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what was the latest version ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.4899997040629387e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "1.1",
+            "answer": "1.1",
+            "source": "http://127.0.0.1:11486/history",
+            "evidence": "Version: 1.1 | Release date: 2020-02-29",
+            "label": "Version",
+            "section": "River Sample release history",
+            "kind": "version",
+            "score": 14.100000000000001,
+            "signals": {
+              "locator": "table[1]/row[1]/cell[0]",
+              "page_title": "",
+              "structure": "cell",
+              "qualifiers": {
+                "table": 1,
+                "row": 1,
+                "columns": [
+                  "Version",
+                  "Release date"
+                ],
+                "cells": [
+                  "1.1",
+                  "2020-02-29"
+                ],
+                "column": 0
+              },
+              "field_value": "1.1",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:11486/history",
+              "final": "http://127.0.0.1:11486/history",
+              "status": 200,
+              "bytes": 258,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0081
+        }
+      }
+    },
+    {
+      "id": "http-history-2020.2",
+      "passed": true,
+      "expected": "",
+      "actual": "",
+      "hits": [],
+      "model_calls": [],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "unresolved_cutoff",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the latest version of River Sample as of 2020.2?",
+            "url": "http://127.0.0.1:11486/history",
+            "kind": "version",
+            "terms": [
+              "river",
+              "sample",
+              "2020.2"
+            ],
+            "attributes": [
+              "version",
+              "release",
+              "stable",
+              "latest",
+              "download"
+            ],
+            "entity_terms": [
+              "river",
+              "sample",
+              "2020.2"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": true,
+            "stable": true,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what was the latest version ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "unresolved_cutoff",
+            "temporal_raw": [
+              "2020.2"
+            ]
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {},
+          "search_requests": 0,
+          "llm_calls": 0,
+          "reader_state": "not_run"
+        }
+      }
+    },
+    {
+      "id": "http-history-2020-99-99",
+      "passed": true,
+      "expected": "",
+      "actual": "",
+      "hits": [],
+      "model_calls": [],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "invalid_cutoff",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the latest version of River Sample as of 2020-99-99?",
+            "url": "http://127.0.0.1:11486/history",
+            "kind": "version",
+            "terms": [
+              "river",
+              "sample",
+              "2020-99-99",
+              "2020",
+              "99"
+            ],
+            "attributes": [
+              "version",
+              "release",
+              "stable",
+              "latest",
+              "download"
+            ],
+            "entity_terms": [
+              "river",
+              "sample",
+              "2020-99-99",
+              "99"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": true,
+            "stable": true,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what was the latest version ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "invalid_cutoff",
+            "temporal_raw": [
+              "2020-99-99"
+            ]
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {},
+          "search_requests": 0,
+          "llm_calls": 0,
+          "reader_state": "not_run"
+        }
+      }
+    },
+    {
+      "id": "http-history-03/04/2020",
+      "passed": true,
+      "expected": "",
+      "actual": "",
+      "hits": [],
+      "model_calls": [],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "ambiguous_cutoff",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the latest version of River Sample as of 03/04/2020?",
+            "url": "http://127.0.0.1:11486/history",
+            "kind": "version",
+            "terms": [
+              "river",
+              "sample",
+              "03",
+              "04",
+              "2020"
+            ],
+            "attributes": [
+              "version",
+              "release",
+              "stable",
+              "latest",
+              "download"
+            ],
+            "entity_terms": [
+              "river",
+              "sample",
+              "03",
+              "04"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": true,
+            "stable": true,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what was the latest version ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "ambiguous_cutoff",
+            "temporal_raw": [
+              "03/04/2020"
+            ]
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {},
+          "search_requests": 0,
+          "llm_calls": 0,
+          "reader_state": "not_run"
+        }
+      }
+    },
+    {
+      "id": "http-sparse-month",
+      "passed": true,
+      "expected": "1.0",
+      "actual": "1.0",
+      "hits": [
+        "/sparse"
+      ],
+      "result": {
+        "answer": "1.0",
+        "sources": [
+          "http://127.0.0.1:11486/sparse"
+        ],
+        "confidence": 0.795,
+        "evidence": "Version: 1.0 | Release date: 2020-01-01",
+        "reason": "dated_release_table",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the latest version of River Sample as of 2020-02?",
+            "url": "http://127.0.0.1:11486/sparse",
+            "kind": "version",
+            "terms": [
+              "river",
+              "sample",
+              "2020-02",
+              "2020",
+              "02"
+            ],
+            "attributes": [
+              "version",
+              "release",
+              "stable",
+              "latest",
+              "download"
+            ],
+            "entity_terms": [
+              "river",
+              "sample",
+              "2020-02",
+              "02"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-02-29",
+            "latest": true,
+            "stable": true,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what was the latest version ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.6600009985268116e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "1.0",
+            "answer": "1.0",
+            "source": "http://127.0.0.1:11486/sparse",
+            "evidence": "Version: 1.0 | Release date: 2020-01-01",
+            "label": "Version",
+            "section": "River Sample release history",
+            "kind": "version",
+            "score": 9.8,
+            "signals": {
+              "locator": "table[1]/row[0]/cell[0]",
+              "page_title": "",
+              "structure": "cell",
+              "qualifiers": {
+                "table": 1,
+                "row": 0,
+                "columns": [
+                  "Version",
+                  "Release date"
+                ],
+                "cells": [
+                  "1.0",
+                  "2020-01-01"
+                ],
+                "column": 0
+              },
+              "field_value": "1.0",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:11486/sparse",
+              "final": "http://127.0.0.1:11486/sparse",
+              "status": 200,
+              "bytes": 178,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0062
+        }
+      }
+    },
+    {
+      "id": "http-registry-now",
+      "passed": true,
+      "expected": "9.0",
+      "actual": "9.0",
+      "local_hits": [
+        "/pypi/river-sample/json"
+      ],
+      "logical_requests": [
+        "https://pypi.org/pypi/river-sample/json"
+      ],
+      "model_calls": [],
+      "result": {
+        "answer": "9.0",
+        "sources": [
+          "https://pypi.org/pypi/river-sample/json"
+        ],
+        "confidence": 0.843,
+        "evidence": "current stable version: 9.0 | package river-sample",
+        "reason": "direct_source",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the latest version of the PyPI package river-sample as of now?",
+            "url": "",
+            "kind": "version",
+            "terms": [
+              "pypi",
+              "package",
+              "river-sample",
+              "now",
+              "river",
+              "sample"
+            ],
+            "attributes": [
+              "version",
+              "release",
+              "stable",
+              "latest",
+              "download"
+            ],
+            "entity_terms": [
+              "pypi",
+              "package",
+              "river-sample",
+              "now",
+              "river",
+              "sample"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": true,
+            "stable": true,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "",
+            "focus": "what was the latest version ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.003284099977463484
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "9.0",
+            "answer": "9.0",
+            "source": "https://pypi.org/pypi/river-sample/json",
+            "evidence": "current stable version: 9.0 | package river-sample",
+            "label": "current stable version",
+            "section": "package river-sample",
+            "kind": "version",
+            "score": 11.700000000000003,
+            "signals": {
+              "locator": "adapter/current stable version",
+              "page_title": "PyPI river-sample",
+              "structure": "field",
+              "qualifiers": {},
+              "field_value": "9.0",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:11486/pypi/river-sample/json",
+              "final": "http://127.0.0.1:11486/pypi/river-sample/json",
+              "status": 200,
+              "bytes": 68,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0044
+        }
+      }
+    },
+    {
+      "id": "http-registry-the year 2020",
+      "passed": true,
+      "expected": "",
+      "actual": "",
+      "local_hits": [
+        "/pypi/river-sample/json"
+      ],
+      "logical_requests": [
+        "https://pypi.org/pypi/river-sample/json"
+      ],
+      "model_calls": [],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_not_run",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the latest version of the PyPI package river-sample as of the year 2020?",
+            "url": "",
+            "kind": "version",
+            "terms": [
+              "pypi",
+              "package",
+              "river-sample",
+              "year",
+              "2020",
+              "river",
+              "sample"
+            ],
+            "attributes": [
+              "version",
+              "release",
+              "stable",
+              "latest",
+              "download"
+            ],
+            "entity_terms": [
+              "pypi",
+              "package",
+              "river-sample",
+              "year",
+              "river",
+              "sample"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "2020-12-31",
+            "latest": true,
+            "stable": true,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "",
+            "focus": "what was the latest version ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "",
+            "temporal_raw": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.0025493999710306525
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:11486/pypi/river-sample/json",
+              "final": "http://127.0.0.1:11486/pypi/river-sample/json",
+              "status": 200,
+              "bytes": 68,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0035
+        }
+      }
+    },
+    {
+      "id": "http-registry-next summer",
+      "passed": true,
+      "expected": "",
+      "actual": "",
+      "local_hits": [],
+      "logical_requests": [],
+      "model_calls": [],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "unresolved_cutoff",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the latest version of the PyPI package river-sample as of next summer?",
+            "url": "",
+            "kind": "version",
+            "terms": [
+              "pypi",
+              "package",
+              "river-sample",
+              "next",
+              "summer",
+              "river",
+              "sample"
+            ],
+            "attributes": [
+              "version",
+              "release",
+              "stable",
+              "latest",
+              "download"
+            ],
+            "entity_terms": [
+              "pypi",
+              "package",
+              "river-sample",
+              "next",
+              "summer",
+              "river",
+              "sample"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": true,
+            "stable": true,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "",
+            "focus": "what was the latest version ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "unresolved_cutoff",
+            "temporal_raw": [
+              "next summer?"
+            ]
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {},
+          "search_requests": 0,
+          "llm_calls": 0,
+          "reader_state": "not_run"
+        }
+      }
+    },
+    {
+      "id": "http-registry-2020.2",
+      "passed": true,
+      "expected": "",
+      "actual": "",
+      "local_hits": [],
+      "logical_requests": [],
+      "model_calls": [],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "unresolved_cutoff",
+        "diagnostics": {
+          "plan": {
+            "question": "What was the latest version of the PyPI package river-sample as of 2020.2?",
+            "url": "",
+            "kind": "version",
+            "terms": [
+              "pypi",
+              "package",
+              "river-sample",
+              "2020.2",
+              "river",
+              "sample"
+            ],
+            "attributes": [
+              "version",
+              "release",
+              "stable",
+              "latest",
+              "download"
+            ],
+            "entity_terms": [
+              "pypi",
+              "package",
+              "river-sample",
+              "2020.2",
+              "river",
+              "sample"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": true,
+            "stable": true,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "",
+            "focus": "what was the latest version ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": "",
+            "temporal_issue": "unresolved_cutoff",
+            "temporal_raw": [
+              "2020.2"
+            ]
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {},
+          "search_requests": 0,
+          "llm_calls": 0,
+          "reader_state": "not_run"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1457 @@
+{
+  "scope": "Small fixed-correct-page reader diagnosis with an owned full-4B CUDA service.\n\nCases are exposed development data, not a held-out or public-web accuracy claim.\nAn oracle URL supplies the answer page; this separates reading from discovery.\n",
+  "context_limit": 1024,
+  "baseline_revision": null,
+  "baseline_source_sha256": null,
+  "case_path": "benchmarks/proof-20261023-cases.json",
+  "fixture_path": "fixtures/proof-20261023.json",
+  "max_depth": 2,
+  "budget": 20.0,
+  "production_sha256": {
+    "app.py": "c0267c0441330bd30559f48d2f33916418992b8e21ec8dd1d09ae4773c23b73b",
+    "agent\\browser.py": "f7a3d9479ec2ae9bc9fbbcb27efbddaeba9b5dd8639016e827840cc1c7e33cea",
+    "agent\\candidates.py": "003a1335fa31baf0255361292556f66c6c80307ddf20343c5c0be0385d78442a",
+    "agent\\currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent\\engine.py": "5aa326bc16e177cf79a4b86e7ef9a4a236233442acd46934b0a8dc7e95da6ada",
+    "agent\\evidence.py": "775e9a55848b710375d34b92cdda8357562a4ed2beb39183277a59438d2f9c0d",
+    "agent\\knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent\\model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+    "agent\\model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent\\model_protocol.py": "8ba6730e160eac47d8231985e1293bb981a5a63ef9b475cf46daf31ef17bdfb0",
+    "agent\\model_server.py": "14e840e32fe34ca594eb4fb0dadd89fc67768fb9026ac3359734a021c5190fc2",
+    "agent\\navigation.py": "0f849c0c570720114c45c14b0a5286fe409e5d26c2945fdc9f6c1a6922bb7718",
+    "agent\\network.py": "def1be3752f81423c313c2dfa83f6703ee063d7e98652cf0d816b423d0e2d9cb",
+    "agent\\normalize.py": "5120ed91dc0c70eff61c41f0242388e45be357d6fdd251042e437a1ccc5f34ff",
+    "agent\\output.py": "b983ab2efe31707b1c974344a32dc4b40b708541257695de89cac9e343b073eb",
+    "agent\\parser.py": "cf9562f0071e58bc66abd6eeebea9cd8cccaf4b9cc5af4ba3a0f3f42033b0798",
+    "agent\\planner.py": "e4192860ce13ee1d1a16765a948409c8c3a9e354b79844a6d6908530d2c2cb47",
+    "agent\\processes.py": "677c4372b40d1da0ffc0cf4120ca5b6be2fcf6b6c30f6ec17d0d8fae19e198c1",
+    "agent\\proofs.py": "7c50fb10a83e6bfd0e84929c0d1d9742d19f717528da288918818237691f0a62",
+    "agent\\qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent\\resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent\\search.py": "36e8a39132f3afc2b34f0db4ad89cafba085adaf4882fff02bfa821f6fedbfd2",
+    "agent\\selector.py": "b98605e9c31d93b1486aee4d6e6ab207a70dd9b35e6300ae7bea5b949c7c346d",
+    "agent\\signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent\\types.py": "42d14170127f88a247c0092e6a65b8151496cc46e7e02d7fee8c7317ffa011f2",
+    "agent\\urls.py": "fa57403f16921c7341c6edc6241cd3957012de426a07538b14c5aaa5d1425a76",
+    "agent\\worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f",
+    "agent\\__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41"
+  },
+  "cases_sha256": "c6eee22967590d4d5d9c7a1b95dfd9f2e9133e4a2dcb5be6754676d9c9e1c4d7",
+  "fixtures_sha256": "0b0d0eee41748670b239462ebc3b7448494e2ee0dae0905ae36d75d214f7758e",
+  "rows": [
+    {
+      "id": "07-doc-cross-version-comparison",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "from 40 to 80 requests per minute",
+        "sources": [
+          "http://127.0.0.1:1786/07-doc-cross-version-comparison/v2.html",
+          "http://127.0.0.1:1786/07-doc-cross-version-comparison/v3.html"
+        ],
+        "confidence": 0.0,
+        "evidence": "The per-client request quota in version 2 is 40 requests per minute.\nThe per-client request quota in version 3 is 80 requests per minute.",
+        "reason": "proof_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "How did the FernAPI per-client request quota change from version 2 to version 3?",
+            "url": "http://127.0.0.1:1786/07-doc-cross-version-comparison/index.html",
+            "kind": "text",
+            "terms": [
+              "fernapi",
+              "per-client",
+              "request",
+              "quota",
+              "change",
+              "2",
+              "3",
+              "client"
+            ],
+            "attributes": [
+              "version",
+              "release",
+              "stable",
+              "latest",
+              "download"
+            ],
+            "entity_terms": [
+              "fernapi",
+              "per-client",
+              "request",
+              "quota",
+              "change",
+              "2",
+              "3",
+              "client"
+            ],
+            "versions": [
+              "2",
+              "3"
+            ],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "how did the fernapi per-client request quota change ",
+            "choices": [],
+            "operation": "compare_versions",
+            "required_fields": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 0.0001235000090673566
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 3,
+          "proof_state": "verified",
+          "navigation": [
+            {
+              "state": "span",
+              "chosen": "http://127.0.0.1:1786/07-doc-cross-version-comparison/v3.html"
+            }
+          ],
+          "proposed_proof": {
+            "operation": "compare_versions",
+            "atoms": [
+              {
+                "source": "http://127.0.0.1:1786/07-doc-cross-version-comparison/v2.html",
+                "locator": "p[3]:0",
+                "span": "The per-client request quota in version 2 is 40 requests per minute.",
+                "value": "40 requests per minute",
+                "role": "2",
+                "version": "2",
+                "key": "",
+                "relation": ""
+              },
+              {
+                "source": "http://127.0.0.1:1786/07-doc-cross-version-comparison/v3.html",
+                "locator": "p[3]:0",
+                "span": "The per-client request quota in version 3 is 80 requests per minute.",
+                "value": "80 requests per minute",
+                "role": "3",
+                "version": "3",
+                "key": "",
+                "relation": ""
+              }
+            ]
+          },
+          "proof_verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:1786/07-doc-cross-version-comparison/index.html",
+              "final": "http://127.0.0.1:1786/07-doc-cross-version-comparison/index.html",
+              "status": 200,
+              "bytes": 435,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:1786/07-doc-cross-version-comparison/v3.html",
+              "final": "http://127.0.0.1:1786/07-doc-cross-version-comparison/v3.html",
+              "status": 200,
+              "bytes": 488,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:1786/07-doc-cross-version-comparison/v2.html",
+              "final": "http://127.0.0.1:1786/07-doc-cross-version-comparison/v2.html",
+              "status": 200,
+              "bytes": 476,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 3,
+          "pages_fetched": 3,
+          "seconds": 2.6305
+        }
+      }
+    },
+    {
+      "id": "09-web-table-cell",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "First Saturday of each month, 09:00–12:00",
+        "sources": [
+          "http://127.0.0.1:1786/09-web-table-cell/schedule.html"
+        ],
+        "confidence": 0.0,
+        "evidence": "Material: Electronics | Day: First Saturday of each month | Time: 09:00–12:00",
+        "reason": "proof_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "On what day and during which hours does Amber Bay collect electronics?",
+            "url": "http://127.0.0.1:1786/09-web-table-cell/index.html",
+            "kind": "text",
+            "terms": [
+              "day",
+              "during",
+              "hours",
+              "amber",
+              "bay",
+              "collect",
+              "electronics"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "day",
+              "during",
+              "hours",
+              "amber",
+              "bay",
+              "collect",
+              "electronics"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "on what day and during which hours does amber bay collect electronics?",
+            "choices": [],
+            "operation": "compose_fields",
+            "required_fields": [
+              "day",
+              "hours"
+            ]
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.6300007700920105e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 2,
+          "proof_state": "verified",
+          "navigation": [
+            {
+              "state": "span",
+              "chosen": "http://127.0.0.1:1786/09-web-table-cell/schedule.html"
+            }
+          ],
+          "proposed_proof": {
+            "operation": "compose_fields",
+            "atoms": [
+              {
+                "source": "http://127.0.0.1:1786/09-web-table-cell/schedule.html",
+                "locator": "table[2]/row[1]",
+                "span": "Material: Electronics | Day: First Saturday of each month | Time: 09:00–12:00",
+                "value": "First Saturday of each month",
+                "role": "day",
+                "version": "",
+                "key": "",
+                "relation": ""
+              },
+              {
+                "source": "http://127.0.0.1:1786/09-web-table-cell/schedule.html",
+                "locator": "table[2]/row[1]",
+                "span": "Material: Electronics | Day: First Saturday of each month | Time: 09:00–12:00",
+                "value": "09:00–12:00",
+                "role": "hours",
+                "version": "",
+                "key": "",
+                "relation": ""
+              }
+            ]
+          },
+          "proof_verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:1786/09-web-table-cell/index.html",
+              "final": "http://127.0.0.1:1786/09-web-table-cell/index.html",
+              "status": 200,
+              "bytes": 379,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:1786/09-web-table-cell/schedule.html",
+              "final": "http://127.0.0.1:1786/09-web-table-cell/schedule.html",
+              "status": 200,
+              "bytes": 643,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 2,
+          "pages_fetched": 2,
+          "seconds": 2.6755
+        }
+      }
+    },
+    {
+      "id": "16-web-two-source-mapping",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "$18",
+        "sources": [
+          "http://127.0.0.1:1786/16-web-two-source-mapping/categories.html",
+          "http://127.0.0.1:1786/16-web-two-source-mapping/fees.html"
+        ],
+        "confidence": 0.0,
+        "evidence": "Book vendors are assigned category B.\nThe daily permit fee for category B is $18.",
+        "reason": "proof_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the Blue Lantern market daily permit fee for a book vendor?",
+            "url": "http://127.0.0.1:1786/16-web-two-source-mapping/index.html",
+            "kind": "price",
+            "terms": [
+              "blue",
+              "lantern",
+              "market",
+              "daily",
+              "permit",
+              "fee",
+              "book",
+              "vendor"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "blue",
+              "lantern",
+              "market",
+              "daily",
+              "permit",
+              "fee",
+              "book",
+              "vendor"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the blue lantern market daily permit fee ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": []
+          },
+          "errors": [],
+          "selector": [
+            "abstain"
+          ],
+          "timings": {
+            "resolver": 1.2399978004395962e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 3,
+          "content_pages": 3,
+          "navigation": [
+            {
+              "state": "span",
+              "chosen": "http://127.0.0.1:1786/16-web-two-source-mapping/fees.html"
+            }
+          ],
+          "proof_state": "verified",
+          "proposed_proof": {
+            "operation": "join_category",
+            "atoms": [
+              {
+                "source": "http://127.0.0.1:1786/16-web-two-source-mapping/categories.html",
+                "locator": "p[2]:0",
+                "span": "Book vendors are assigned category B.",
+                "value": "B",
+                "role": "mapping",
+                "version": "",
+                "key": "B",
+                "relation": "category"
+              },
+              {
+                "source": "http://127.0.0.1:1786/16-web-two-source-mapping/fees.html",
+                "locator": "p[2]:0",
+                "span": "The daily permit fee for category B is $18.",
+                "value": "$18",
+                "role": "value",
+                "version": "",
+                "key": "B",
+                "relation": "category"
+              }
+            ]
+          },
+          "proof_verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:1786/16-web-two-source-mapping/index.html",
+              "final": "http://127.0.0.1:1786/16-web-two-source-mapping/index.html",
+              "status": 200,
+              "bytes": 467,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:1786/16-web-two-source-mapping/fees.html",
+              "final": "http://127.0.0.1:1786/16-web-two-source-mapping/fees.html",
+              "status": 200,
+              "bytes": 436,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:1786/16-web-two-source-mapping/categories.html",
+              "final": "http://127.0.0.1:1786/16-web-two-source-mapping/categories.html",
+              "status": 200,
+              "bytes": 424,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 3,
+          "pages_fetched": 3,
+          "seconds": 3.5451
+        }
+      }
+    },
+    {
+      "id": "missing-version",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "proof_incomplete_or_rejected",
+        "diagnostics": {
+          "plan": {
+            "question": "How did the FinchAPI per-client request quota change from version 2 to version 3?",
+            "url": "http://127.0.0.1:1786/proof/missing-version/index.html",
+            "kind": "text",
+            "terms": [
+              "finchapi",
+              "per-client",
+              "request",
+              "quota",
+              "change",
+              "2",
+              "3",
+              "client"
+            ],
+            "attributes": [
+              "version",
+              "release",
+              "stable",
+              "latest",
+              "download"
+            ],
+            "entity_terms": [
+              "finchapi",
+              "per-client",
+              "request",
+              "quota",
+              "change",
+              "2",
+              "3",
+              "client"
+            ],
+            "versions": [
+              "2",
+              "3"
+            ],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "how did the finchapi per-client request quota change ",
+            "choices": [],
+            "operation": "compare_versions",
+            "required_fields": []
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.1999974958598614e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 3,
+          "proof_state": "incomplete",
+          "navigation": [
+            {
+              "state": "span",
+              "chosen": "http://127.0.0.1:1786/proof/missing-version/v2.html"
+            }
+          ],
+          "reader_state": "not_run",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:1786/proof/missing-version/index.html",
+              "final": "http://127.0.0.1:1786/proof/missing-version/index.html",
+              "status": 200,
+              "bytes": 98,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:1786/proof/missing-version/v2.html",
+              "final": "http://127.0.0.1:1786/proof/missing-version/v2.html",
+              "status": 200,
+              "bytes": 107,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:1786/proof/missing-version/v4.html",
+              "final": "http://127.0.0.1:1786/proof/missing-version/v4.html",
+              "status": 200,
+              "bytes": 108,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 3,
+          "pages_fetched": 3,
+          "seconds": 1.8447
+        }
+      }
+    },
+    {
+      "id": "ambiguous-map",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "proof_incomplete_or_rejected",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the Pine Harbor market daily permit fee for a book vendor?",
+            "url": "http://127.0.0.1:1786/proof/ambiguous-map/index.html",
+            "kind": "price",
+            "terms": [
+              "pine",
+              "harbor",
+              "market",
+              "daily",
+              "permit",
+              "fee",
+              "book",
+              "vendor"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "pine",
+              "harbor",
+              "market",
+              "daily",
+              "permit",
+              "fee",
+              "book",
+              "vendor"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the pine harbor market daily permit fee ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.2199976481497288e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 3,
+          "model_selections": [
+            {
+              "raw": "Pine Harbor market Vendor categories Daily permit fees",
+              "answer": "Pine Harbor market Vendor categories Daily permit fees",
+              "source": "http://127.0.0.1:1786/proof/ambiguous-map/index.html",
+              "evidence": "Pine Harbor market Vendor categories Daily permit fees",
+              "label": "",
+              "section": "",
+              "kind": "price",
+              "score": 10.600000000000001,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "body:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "navigation": [
+            {
+              "state": "span",
+              "chosen": "http://127.0.0.1:1786/proof/ambiguous-map/fees.html"
+            }
+          ],
+          "proof_state": "incomplete",
+          "reader_state": "evidence_rejected",
+          "top_candidates": [
+            {
+              "raw": "$18",
+              "answer": "$18",
+              "source": "http://127.0.0.1:1786/proof/ambiguous-map/fees.html",
+              "evidence": "The daily permit fee for category B is $18.",
+              "label": "",
+              "section": "",
+              "kind": "price",
+              "score": 7.300000000000001,
+              "signals": {
+                "locator": "p[0]:0",
+                "page_title": "Pine Harbor market daily permit fees",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "$27",
+              "answer": "$27",
+              "source": "http://127.0.0.1:1786/proof/ambiguous-map/fees.html",
+              "evidence": "The daily permit fee for category C is $27.",
+              "label": "",
+              "section": "",
+              "kind": "price",
+              "score": 7.300000000000001,
+              "signals": {
+                "locator": "p[1]:0",
+                "page_title": "Pine Harbor market daily permit fees",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": "",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [
+            {
+              "a": "$18",
+              "b": "$27",
+              "sources": [
+                "http://127.0.0.1:1786/proof/ambiguous-map/fees.html",
+                "http://127.0.0.1:1786/proof/ambiguous-map/fees.html"
+              ],
+              "margin": 0.0
+            }
+          ],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:1786/proof/ambiguous-map/index.html",
+              "final": "http://127.0.0.1:1786/proof/ambiguous-map/index.html",
+              "status": 200,
+              "bytes": 115,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:1786/proof/ambiguous-map/fees.html",
+              "final": "http://127.0.0.1:1786/proof/ambiguous-map/fees.html",
+              "status": 200,
+              "bytes": 151,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            },
+            {
+              "url": "http://127.0.0.1:1786/proof/ambiguous-map/categories.html",
+              "final": "http://127.0.0.1:1786/proof/ambiguous-map/categories.html",
+              "status": 200,
+              "bytes": 132,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 3,
+          "pages_fetched": 3,
+          "seconds": 2.8494
+        }
+      }
+    },
+    {
+      "id": "incomplete-row",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "proof_incomplete_or_rejected",
+        "diagnostics": {
+          "plan": {
+            "question": "On what day and during which hours does Maple Bay collect electronics?",
+            "url": "http://127.0.0.1:1786/proof/incomplete-row/index.html",
+            "kind": "text",
+            "terms": [
+              "day",
+              "during",
+              "hours",
+              "maple",
+              "bay",
+              "collect",
+              "electronics"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "day",
+              "during",
+              "hours",
+              "maple",
+              "bay",
+              "collect",
+              "electronics"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "on what day and during which hours does maple bay collect electronics?",
+            "choices": [],
+            "operation": "compose_fields",
+            "required_fields": [
+              "day",
+              "hours"
+            ]
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 1.2399978004395962e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "proof_state": "incomplete",
+          "reader_state": "not_run",
+          "top_candidates": [
+            {
+              "raw": "Every Saturday",
+              "answer": "Every Saturday",
+              "source": "http://127.0.0.1:1786/proof/incomplete-row/index.html",
+              "evidence": "Material: Electronics | Day: Every Saturday | Time: Not published",
+              "label": "Day",
+              "section": "Maple Bay collection",
+              "kind": "text",
+              "score": 13.0,
+              "signals": {
+                "locator": "table[1]/row[0]/cell[1]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Material",
+                    "Day",
+                    "Time"
+                  ],
+                  "cells": [
+                    "Electronics",
+                    "Every Saturday",
+                    "Not published"
+                  ],
+                  "column": 1
+                },
+                "field_value": "Every Saturday",
+                "agreement_domains": 1
+              }
+            },
+            {
+              "raw": "Every Tuesday",
+              "answer": "Every Tuesday",
+              "source": "http://127.0.0.1:1786/proof/incomplete-row/index.html",
+              "evidence": "Material: Glass | Day: Every Tuesday | Time: 09:00?12:00",
+              "label": "Day",
+              "section": "Maple Bay collection",
+              "kind": "text",
+              "score": 11.4,
+              "signals": {
+                "locator": "table[1]/row[1]/cell[1]",
+                "page_title": "",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 1,
+                  "columns": [
+                    "Material",
+                    "Day",
+                    "Time"
+                  ],
+                  "cells": [
+                    "Glass",
+                    "Every Tuesday",
+                    "09:00?12:00"
+                  ],
+                  "column": 1
+                },
+                "field_value": "Every Tuesday",
+                "agreement_domains": 1
+              }
+            }
+          ],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:1786/proof/incomplete-row/index.html",
+              "final": "http://127.0.0.1:1786/proof/incomplete-row/index.html",
+              "status": 200,
+              "bytes": 234,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.004
+        }
+      }
+    },
+    {
+      "id": "single-fee",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "$28",
+        "sources": [
+          "http://127.0.0.1:1786/proof/single-fee/index.html"
+        ],
+        "confidence": 0.915,
+        "evidence": "The festival permit application fee is $28.",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the Rowan Grove festival permit application fee?",
+            "url": "http://127.0.0.1:1786/proof/single-fee/index.html",
+            "kind": "price",
+            "terms": [
+              "rowan",
+              "grove",
+              "festival",
+              "permit",
+              "application",
+              "fee"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "rowan",
+              "grove",
+              "festival",
+              "permit",
+              "application",
+              "fee"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the rowan grove festival permit application fee",
+            "choices": [],
+            "operation": "single",
+            "required_fields": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 1.1399970389902592e-05
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "$28",
+              "answer": "$28",
+              "source": "http://127.0.0.1:1786/proof/single-fee/index.html",
+              "evidence": "The festival permit application fee is $28.",
+              "label": "",
+              "section": "Rowan Grove festival permits",
+              "kind": "price",
+              "score": 14.600000000000001,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "p[1]:0",
+                "structure": "prose",
+                "qualifiers": {},
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "$28",
+            "answer": "$28",
+            "source": "http://127.0.0.1:1786/proof/single-fee/index.html",
+            "evidence": "The festival permit application fee is $28.",
+            "label": "",
+            "section": "Rowan Grove festival permits",
+            "kind": "price",
+            "score": 14.600000000000001,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "p[1]:0",
+              "structure": "prose",
+              "qualifiers": {},
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:1786/proof/single-fee/index.html",
+              "final": "http://127.0.0.1:1786/proof/single-fee/index.html",
+              "status": 200,
+              "bytes": 87,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 1.2497
+        }
+      }
+    },
+    {
+      "id": "single-table",
+      "answer_ok": true,
+      "source_ok": true,
+      "joint_ok": true,
+      "result": {
+        "answer": "Every Saturday",
+        "sources": [
+          "http://127.0.0.1:1786/proof/single-table/index.html"
+        ],
+        "confidence": 0.843,
+        "evidence": "Material: Electronics | Day: Every Saturday | Time: 09:00?12:00",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "On what day does Maple Bay collect electronics?",
+            "url": "http://127.0.0.1:1786/proof/single-table/index.html",
+            "kind": "text",
+            "terms": [
+              "day",
+              "maple",
+              "bay",
+              "collect",
+              "electronics"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "day",
+              "maple",
+              "bay",
+              "collect",
+              "electronics"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "on what day does maple bay collect electronics?",
+            "choices": [],
+            "operation": "single",
+            "required_fields": []
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 9.900075383484364e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "Every Saturday",
+              "answer": "Every Saturday",
+              "source": "http://127.0.0.1:1786/proof/single-table/index.html",
+              "evidence": "Material: Electronics | Day: Every Saturday | Time: 09:00?12:00",
+              "label": "Day",
+              "section": "Maple Bay collection",
+              "kind": "text",
+              "score": 11.7,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "table[1]/row[0]/cell[1]",
+                "structure": "cell",
+                "qualifiers": {
+                  "table": 1,
+                  "row": 0,
+                  "columns": [
+                    "Material",
+                    "Day",
+                    "Time"
+                  ],
+                  "cells": [
+                    "Electronics",
+                    "Every Saturday",
+                    "09:00?12:00"
+                  ],
+                  "column": 1
+                },
+                "field_value": "Every Saturday"
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "Every Saturday",
+            "answer": "Every Saturday",
+            "source": "http://127.0.0.1:1786/proof/single-table/index.html",
+            "evidence": "Material: Electronics | Day: Every Saturday | Time: 09:00?12:00",
+            "label": "Day",
+            "section": "Maple Bay collection",
+            "kind": "text",
+            "score": 11.7,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "table[1]/row[0]/cell[1]",
+              "structure": "cell",
+              "qualifiers": {
+                "table": 1,
+                "row": 0,
+                "columns": [
+                  "Material",
+                  "Day",
+                  "Time"
+                ],
+                "cells": [
+                  "Electronics",
+                  "Every Saturday",
+                  "09:00?12:00"
+                ],
+                "column": 1
+              },
+              "field_value": "Every Saturday"
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:1786/proof/single-table/index.html",
+              "final": "http://127.0.0.1:1786/proof/single-table/index.html",
+              "status": 200,
+              "bytes": 232,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 1.2726
+        }
+      }
+    }
+  ],
+  "health_before": {
+    "ready": true,
+    "device": "cuda",
+    "hip": null,
+    "pid": 37412,
+    "startup_token": "4703e15daf7b4a1f9a0583d4f68642bd",
+    "backend_source_sha256": {
+      "model_server.py": "14e840e32fe34ca594eb4fb0dadd89fc67768fb9026ac3359734a021c5190fc2",
+      "model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+      "selector.py": "b98605e9c31d93b1486aee4d6e6ab207a70dd9b35e6300ae7bea5b949c7c346d",
+      "model_protocol.py": "8ba6730e160eac47d8231985e1293bb981a5a63ef9b475cf46daf31ef17bdfb0",
+      "model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+      "normalize.py": "5120ed91dc0c70eff61c41f0242388e45be357d6fdd251042e437a1ccc5f34ff",
+      "types.py": "42d14170127f88a247c0092e6a65b8151496cc46e7e02d7fee8c7317ffa011f2"
+    },
+    "software": {
+      "torch": "2.9.1+cu128",
+      "transformers": "4.57.1",
+      "tokenizers": "0.22.1",
+      "safetensors": "0.6.2",
+      "accelerate": "1.11.0"
+    },
+    "parameters": 4022468096,
+    "assets": {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "verified_files": 12,
+      "full_sha256": false,
+      "weight_shards": 3
+    },
+    "warmup_reply": {
+      "candidate": -1,
+      "passage": 0,
+      "answer": "7"
+    },
+    "torch": "2.9.1+cu128",
+    "startup_seconds": 5.2211540000280365,
+    "calls": 0,
+    "outcomes": {},
+    "active_request": null,
+    "busy_rejections": 0,
+    "recent_requests": [
+      {
+        "request_id": "warmup",
+        "mode": "select",
+        "input_tokens": 268,
+        "packing_seconds": 0.011044299928471446,
+        "transfer_seconds": 0.0007215000223368406,
+        "generated_tokens": 14,
+        "stop_reason": "completed",
+        "generation_seconds": 1.0189683000789955,
+        "prefill_and_first_token_seconds": 0.4190375000471249
+      }
+    ],
+    "context_limit": 1024,
+    "token_stats": {
+      "max_input": 268,
+      "generated": 14,
+      "pruned_requests": 0
+    },
+    "device_memory_bytes": 12878086144,
+    "peak_vram_bytes": 8141605888,
+    "allocated_vram_bytes": 8053474816,
+    "reserved_vram_bytes": 8185184256
+  },
+  "health_after": {
+    "ready": true,
+    "device": "cuda",
+    "hip": null,
+    "pid": 37412,
+    "startup_token": "4703e15daf7b4a1f9a0583d4f68642bd",
+    "backend_source_sha256": {
+      "model_server.py": "14e840e32fe34ca594eb4fb0dadd89fc67768fb9026ac3359734a021c5190fc2",
+      "model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+      "selector.py": "b98605e9c31d93b1486aee4d6e6ab207a70dd9b35e6300ae7bea5b949c7c346d",
+      "model_protocol.py": "8ba6730e160eac47d8231985e1293bb981a5a63ef9b475cf46daf31ef17bdfb0",
+      "model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+      "normalize.py": "5120ed91dc0c70eff61c41f0242388e45be357d6fdd251042e437a1ccc5f34ff",
+      "types.py": "42d14170127f88a247c0092e6a65b8151496cc46e7e02d7fee8c7317ffa011f2"
+    },
+    "software": {
+      "torch": "2.9.1+cu128",
+      "transformers": "4.57.1",
+      "tokenizers": "0.22.1",
+      "safetensors": "0.6.2",
+      "accelerate": "1.11.0"
+    },
+    "parameters": 4022468096,
+    "assets": {
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "verified_files": 12,
+      "full_sha256": false,
+      "weight_shards": 3
+    },
+    "warmup_reply": {
+      "candidate": -1,
+      "passage": 0,
+      "answer": "7"
+    },
+    "torch": "2.9.1+cu128",
+    "startup_seconds": 5.2211540000280365,
+    "calls": 14,
+    "outcomes": {
+      "selected": 8,
+      "supported": 5,
+      "abstained": 1
+    },
+    "active_request": null,
+    "busy_rejections": 0,
+    "recent_requests": [
+      {
+        "request_id": "warmup",
+        "mode": "select",
+        "input_tokens": 268,
+        "packing_seconds": 0.011044299928471446,
+        "transfer_seconds": 0.0007215000223368406,
+        "generated_tokens": 14,
+        "stop_reason": "completed",
+        "generation_seconds": 1.0189683000789955,
+        "prefill_and_first_token_seconds": 0.4190375000471249
+      },
+      {
+        "request_id": "ce68ffe5236447f0bc4e5ce02a3eec6f",
+        "mode": "select",
+        "input_tokens": 510,
+        "packing_seconds": 0.0026633000234141946,
+        "transfer_seconds": 0.001353000057861209,
+        "generated_tokens": 40,
+        "stop_reason": "completed",
+        "generation_seconds": 2.1613384999800473,
+        "prefill_and_first_token_seconds": 0.08207309991121292
+      },
+      {
+        "request_id": "f8d80fcc2c9f497bb94ba48c91ec33e3",
+        "mode": "verify",
+        "input_tokens": 643,
+        "packing_seconds": 0.003208199981600046,
+        "transfer_seconds": 0.0013164000120013952,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.43470570002682507,
+        "prefill_and_first_token_seconds": 0.11825259996112436
+      },
+      {
+        "request_id": "a1b799a52def4af2967aa75be9949938",
+        "mode": "select",
+        "input_tokens": 456,
+        "packing_seconds": 0.0039224999491125345,
+        "transfer_seconds": 0.0014294000575318933,
+        "generated_tokens": 38,
+        "stop_reason": "completed",
+        "generation_seconds": 2.2861759000224993,
+        "prefill_and_first_token_seconds": 0.07454229996073991
+      },
+      {
+        "request_id": "1d5c0e4472a5494991910d663da2eefa",
+        "mode": "verify",
+        "input_tokens": 585,
+        "packing_seconds": 0.003034600056707859,
+        "transfer_seconds": 0.0013952999142929912,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.3675840999931097,
+        "prefill_and_first_token_seconds": 0.10460240009706467
+      },
+      {
+        "request_id": "f7865124ef27464983518f5c8be53bed",
+        "mode": "select",
+        "input_tokens": 675,
+        "packing_seconds": 0.0036163999466225505,
+        "transfer_seconds": 0.0014476000797003508,
+        "generated_tokens": 13,
+        "stop_reason": "completed",
+        "generation_seconds": 0.9902718999655917,
+        "prefill_and_first_token_seconds": 0.1334091000026092
+      },
+      {
+        "request_id": "3efef5de2d684dfb979a1f7f94ec9e7a",
+        "mode": "select",
+        "input_tokens": 491,
+        "packing_seconds": 0.002546899951994419,
+        "transfer_seconds": 0.0011829000432044268,
+        "generated_tokens": 41,
+        "stop_reason": "completed",
+        "generation_seconds": 2.1257545000407845,
+        "prefill_and_first_token_seconds": 0.0712504000402987
+      },
+      {
+        "request_id": "2513b075f2ca43fe895b027ecde53361",
+        "mode": "verify",
+        "input_tokens": 581,
+        "packing_seconds": 0.0035575999645516276,
+        "transfer_seconds": 0.0012954999692738056,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.39223560004029423,
+        "prefill_and_first_token_seconds": 0.09644110000226647
+      },
+      {
+        "request_id": "ab11a8032eed45809b03c8dda6a7d5b2",
+        "mode": "select",
+        "input_tokens": 494,
+        "packing_seconds": 0.0024432000936940312,
+        "transfer_seconds": 0.0014726999215781689,
+        "generated_tokens": 37,
+        "stop_reason": "completed",
+        "generation_seconds": 1.8328170999884605,
+        "prefill_and_first_token_seconds": 0.07724730006884784
+      },
+      {
+        "request_id": "d111a4899eb3448cb46b6186c2a09edf",
+        "mode": "select",
+        "input_tokens": 494,
+        "packing_seconds": 0.0024498000275343657,
+        "transfer_seconds": 0.0012113999109715223,
+        "generated_tokens": 22,
+        "stop_reason": "completed",
+        "generation_seconds": 1.1430286000249907,
+        "prefill_and_first_token_seconds": 0.07398980006109923
+      },
+      {
+        "request_id": "ca47ca1093d647fd9f60ef47fa2a4960",
+        "mode": "select",
+        "input_tokens": 479,
+        "packing_seconds": 0.0023456000490114093,
+        "transfer_seconds": 0.0010668999748304486,
+        "generated_tokens": 38,
+        "stop_reason": "completed",
+        "generation_seconds": 1.6891666000010446,
+        "prefill_and_first_token_seconds": 0.07300279999617487
+      },
+      {
+        "request_id": "ec2ca772445740f0a4d81b582d1a1e5e",
+        "mode": "select",
+        "input_tokens": 505,
+        "packing_seconds": 0.002466099918819964,
+        "transfer_seconds": 0.0011777000036090612,
+        "generated_tokens": 15,
+        "stop_reason": "completed",
+        "generation_seconds": 0.9343611000804231,
+        "prefill_and_first_token_seconds": 0.08033370005432516
+      },
+      {
+        "request_id": "f49bb77069b44cb4b64c9390570a1fdd",
+        "mode": "verify",
+        "input_tokens": 444,
+        "packing_seconds": 0.0025004000635817647,
+        "transfer_seconds": 0.001081199967302382,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.30178079998586327,
+        "prefill_and_first_token_seconds": 0.07516020000912249
+      },
+      {
+        "request_id": "409ee9559b80422a857b6f56ce711075",
+        "mode": "select",
+        "input_tokens": 608,
+        "packing_seconds": 0.0029935999773442745,
+        "transfer_seconds": 0.0013792000245302916,
+        "generated_tokens": 15,
+        "stop_reason": "completed",
+        "generation_seconds": 0.9193902000552043,
+        "prefill_and_first_token_seconds": 0.10624700004700571
+      },
+      {
+        "request_id": "8775b2c4e68b4f759511c2fb70582111",
+        "mode": "verify",
+        "input_tokens": 547,
+        "packing_seconds": 0.002476800000295043,
+        "transfer_seconds": 0.0011536999372765422,
+        "generated_tokens": 6,
+        "stop_reason": "completed",
+        "generation_seconds": 0.3371535000624135,
+        "prefill_and_first_token_seconds": 0.09334220003802329
+      }
+    ],
+    "context_limit": 1024,
+    "token_stats": {
+      "max_input": 675,
+      "generated": 303,
+      "pruned_requests": 0
+    },
+    "device_memory_bytes": 12878086144,
+    "peak_vram_bytes": 8375567872,
+    "allocated_vram_bytes": 8061994496,
+    "reserved_vram_bytes": 8592031744
+  },
+  "memory_after_run": {
+    "used_mib": 9826,
+    "total_mib": 12282
+  },
+  "memory_after_shutdown": {
+    "used_mib": 1417,
+    "total_mib": 12282
+  },
+  "passed": 8,
+  "total": 8
+}

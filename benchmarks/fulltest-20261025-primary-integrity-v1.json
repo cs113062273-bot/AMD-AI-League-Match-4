@@ -1,0 +1,100 @@
+{
+  "scope": "Frozen-input integrity and complete-source-set follow-up. Does not modify original scorers or results.",
+  "production_unchanged": true,
+  "frozen_inputs_unchanged": true,
+  "primary_rows": 634,
+  "separate_reader_rows": 12,
+  "local_multi_source_checks": [
+    {
+      "suite": "proof",
+      "id": "07-doc-cross-version-comparison",
+      "complete_source_set": true
+    },
+    {
+      "suite": "proof",
+      "id": "09-web-table-cell",
+      "complete_source_set": true
+    },
+    {
+      "suite": "proof",
+      "id": "16-web-two-source-mapping",
+      "complete_source_set": true
+    },
+    {
+      "suite": "proof",
+      "id": "missing-version",
+      "complete_source_set": true
+    },
+    {
+      "suite": "proof",
+      "id": "ambiguous-map",
+      "complete_source_set": true
+    },
+    {
+      "suite": "proof",
+      "id": "incomplete-row",
+      "complete_source_set": true
+    },
+    {
+      "suite": "proof",
+      "id": "single-fee",
+      "complete_source_set": true
+    },
+    {
+      "suite": "proof",
+      "id": "single-table",
+      "complete_source_set": true
+    },
+    {
+      "suite": "transfer-v2",
+      "id": "version-table",
+      "complete_source_set": true
+    },
+    {
+      "suite": "transfer-v2",
+      "id": "reordered-fields",
+      "complete_source_set": true
+    },
+    {
+      "suite": "transfer-v2",
+      "id": "category-tables",
+      "complete_source_set": true
+    },
+    {
+      "suite": "transfer-v2",
+      "id": "classification-paraphrase",
+      "complete_source_set": true
+    },
+    {
+      "suite": "transfer-v2",
+      "id": "comparison-control",
+      "complete_source_set": true
+    },
+    {
+      "suite": "transfer-v2",
+      "id": "missing-reordered-field",
+      "complete_source_set": true
+    },
+    {
+      "suite": "transfer-v2",
+      "id": "missing-table-version",
+      "complete_source_set": true
+    },
+    {
+      "suite": "transfer-v2",
+      "id": "conflicting-table-band",
+      "complete_source_set": true
+    },
+    {
+      "suite": "transfer-v2",
+      "id": "incompatible-table-units",
+      "complete_source_set": true
+    },
+    {
+      "suite": "transfer-v2",
+      "id": "single-control",
+      "complete_source_set": true
+    }
+  ],
+  "all_complete_source_sets": true
+}

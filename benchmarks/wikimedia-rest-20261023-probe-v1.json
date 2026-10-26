@@ -1,0 +1,25 @@
+{
+  "scope": "Two actual free public read API probes, no login/key/card/model/browser; not a batch assessment or answer score. No HTML block retries. Official Wikimedia endpoints only.",
+  "rows": [
+    {
+      "requested": "https://en.wikipedia.org/w/rest.php/v1/page/Jack_Layton/html",
+      "url": "https://en.wikipedia.org/w/rest.php/v1/page/Jack_Layton/html",
+      "status": 403,
+      "error": "http_403",
+      "bytes": 0,
+      "capture_path": "research/wikimedia-rest-20261023-probe-v1/0.json",
+      "capture_sha256": "6b8a53c4d59e1904a2f323d8630cc12a1f87afe2f90160e064614096e3b896f3",
+      "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "requested": "https://api.wikimedia.org/core/v1/wikipedia/en/page/Jack_Layton/html",
+      "url": "https://api.wikimedia.org/core/v1/wikipedia/en/page/Jack_Layton/html",
+      "status": 403,
+      "error": "http_403",
+      "bytes": 0,
+      "capture_path": "research/wikimedia-rest-20261023-probe-v1/1.json",
+      "capture_sha256": "d5d3de1668204df3f62061b9d2942eac185cb0545105d9daafca87bf26785b36",
+      "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

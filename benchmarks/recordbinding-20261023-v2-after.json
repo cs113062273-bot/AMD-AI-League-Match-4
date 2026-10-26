@@ -1,0 +1,1054 @@
+{
+  "scope": "Actual HTTP check of record scope/conflict guards with a deliberately permissive semantic service.\n\nThe service selects an actual first year span, preferring compact records, and\nalways verifies it. This isolates independent source-binding checks, not LLM accuracy.\n",
+  "passed": 11,
+  "total": 11,
+  "rows": [
+    {
+      "id": "valid-banner",
+      "passed": true,
+      "model_calls": [
+        "/select",
+        "/verify"
+      ],
+      "result": {
+        "answer": "1987",
+        "sources": [
+          "http://127.0.0.1:18860/valid-banner"
+        ],
+        "confidence": 0.86,
+        "evidence": "1987 | Elin Voss | Biochemist",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "In what year did Elin Voss receive the Cedar Prize?",
+            "url": "http://127.0.0.1:18860/valid-banner",
+            "kind": "year",
+            "terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "in what year did elin voss receive the cedar prize?",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 0.0001097000204026699
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "1987",
+              "answer": "1987",
+              "source": "http://127.0.0.1:18860/valid-banner",
+              "evidence": "1987 | Elin Voss | Biochemist",
+              "label": "",
+              "section": "Cedar Prize recipients > Honorees",
+              "kind": "year",
+              "score": 12.4,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "record[2]",
+                "structure": "record",
+                "qualifiers": {
+                  "source_fields": {
+                    "year": "1987"
+                  }
+                },
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "1987",
+            "answer": "1987",
+            "source": "http://127.0.0.1:18860/valid-banner",
+            "evidence": "1987 | Elin Voss | Biochemist",
+            "label": "",
+            "section": "Cedar Prize recipients > Honorees",
+            "kind": "year",
+            "score": 12.4,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "record[2]",
+              "structure": "record",
+              "qualifiers": {
+                "source_fields": {
+                  "year": "1987"
+                }
+              },
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:18860/valid-banner",
+              "final": "http://127.0.0.1:18860/valid-banner",
+              "status": 200,
+              "bytes": 176,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0135
+        }
+      }
+    },
+    {
+      "id": "valid-subsection",
+      "passed": true,
+      "model_calls": [
+        "/select",
+        "/verify"
+      ],
+      "result": {
+        "answer": "1987",
+        "sources": [
+          "http://127.0.0.1:18860/valid-subsection"
+        ],
+        "confidence": 0.86,
+        "evidence": "1987 | Elin Voss | Biochemist",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "In what year did Elin Voss receive the Cedar Prize?",
+            "url": "http://127.0.0.1:18860/valid-subsection",
+            "kind": "year",
+            "terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "in what year did elin voss receive the cedar prize?",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 9.399955160915852e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "1987",
+              "answer": "1987",
+              "source": "http://127.0.0.1:18860/valid-subsection",
+              "evidence": "1987 | Elin Voss | Biochemist",
+              "label": "",
+              "section": "Honorees > Cedar Prize recipients",
+              "kind": "year",
+              "score": 12.4,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "record[2]",
+                "structure": "record",
+                "qualifiers": {
+                  "source_fields": {
+                    "year": "1987"
+                  }
+                },
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "1987",
+            "answer": "1987",
+            "source": "http://127.0.0.1:18860/valid-subsection",
+            "evidence": "1987 | Elin Voss | Biochemist",
+            "label": "",
+            "section": "Honorees > Cedar Prize recipients",
+            "kind": "year",
+            "score": 12.4,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "record[2]",
+              "structure": "record",
+              "qualifiers": {
+                "source_fields": {
+                  "year": "1987"
+                }
+              },
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:18860/valid-subsection",
+              "final": "http://127.0.0.1:18860/valid-subsection",
+              "status": 200,
+              "bytes": 176,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0044
+        }
+      }
+    },
+    {
+      "id": "wrong-award",
+      "passed": true,
+      "model_calls": [
+        "/select"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "In what year did Elin Voss receive the Cedar Prize?",
+            "url": "http://127.0.0.1:18860/wrong-award",
+            "kind": "year",
+            "terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "in what year did elin voss receive the cedar prize?",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "abstain"
+          ],
+          "timings": {
+            "resolver": 8.899951353669167e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "reader_state": "no_evidence",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:18860/wrong-award",
+              "final": "http://127.0.0.1:18860/wrong-award",
+              "status": 200,
+              "bytes": 176,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0028
+        }
+      }
+    },
+    {
+      "id": "wrong-award-paragraph",
+      "passed": true,
+      "model_calls": [
+        "/select"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "In what year did Elin Voss receive the Cedar Prize?",
+            "url": "http://127.0.0.1:18860/wrong-award-paragraph",
+            "kind": "year",
+            "terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "in what year did elin voss receive the cedar prize?",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "abstain"
+          ],
+          "timings": {
+            "resolver": 7.900060154497623e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "reader_state": "no_evidence",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:18860/wrong-award-paragraph",
+              "final": "http://127.0.0.1:18860/wrong-award-paragraph",
+              "status": 200,
+              "bytes": 164,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0029
+        }
+      }
+    },
+    {
+      "id": "wrong-award-aria",
+      "passed": true,
+      "model_calls": [
+        "/select"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "In what year did Elin Voss receive the Cedar Prize?",
+            "url": "http://127.0.0.1:18860/wrong-award-aria",
+            "kind": "year",
+            "terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "in what year did elin voss receive the cedar prize?",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "abstain"
+          ],
+          "timings": {
+            "resolver": 8.200062438845634e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "reader_state": "no_evidence",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:18860/wrong-award-aria",
+              "final": "http://127.0.0.1:18860/wrong-award-aria",
+              "status": 200,
+              "bytes": 185,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0028
+        }
+      }
+    },
+    {
+      "id": "wrong-award-aria-paragraph",
+      "passed": true,
+      "model_calls": [
+        "/select"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "model_no_evidence",
+        "diagnostics": {
+          "plan": {
+            "question": "In what year did Elin Voss receive the Cedar Prize?",
+            "url": "http://127.0.0.1:18860/wrong-award-aria-paragraph",
+            "kind": "year",
+            "terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "in what year did elin voss receive the cedar prize?",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "abstain"
+          ],
+          "timings": {
+            "resolver": 7.999944500625134e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "reader_state": "no_evidence",
+          "top_candidates": [],
+          "conflicts": [],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:18860/wrong-award-aria-paragraph",
+              "final": "http://127.0.0.1:18860/wrong-award-aria-paragraph",
+              "status": 200,
+              "bytes": 181,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0028
+        }
+      }
+    },
+    {
+      "id": "sibling-scope",
+      "passed": true,
+      "model_calls": [
+        "/select",
+        "/verify"
+      ],
+      "result": {
+        "answer": "1994",
+        "sources": [
+          "http://127.0.0.1:18860/sibling-scope"
+        ],
+        "confidence": 0.86,
+        "evidence": "1994 | Elin Voss | Biochemist",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "In what year did Elin Voss receive the Cedar Prize?",
+            "url": "http://127.0.0.1:18860/sibling-scope",
+            "kind": "year",
+            "terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "in what year did elin voss receive the cedar prize?",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 8.200062438845634e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "1994",
+              "answer": "1994",
+              "source": "http://127.0.0.1:18860/sibling-scope",
+              "evidence": "1994 | Elin Voss | Biochemist",
+              "label": "",
+              "section": "Honorees > Cedar Prize recipients",
+              "kind": "year",
+              "score": 12.4,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "record[4]",
+                "structure": "record",
+                "qualifiers": {
+                  "source_fields": {
+                    "year": "1994"
+                  }
+                },
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "1994",
+            "answer": "1994",
+            "source": "http://127.0.0.1:18860/sibling-scope",
+            "evidence": "1994 | Elin Voss | Biochemist",
+            "label": "",
+            "section": "Honorees > Cedar Prize recipients",
+            "kind": "year",
+            "score": 12.4,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "record[4]",
+              "structure": "record",
+              "qualifiers": {
+                "source_fields": {
+                  "year": "1994"
+                }
+              },
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:18860/sibling-scope",
+              "final": "http://127.0.0.1:18860/sibling-scope",
+              "status": 200,
+              "bytes": 299,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0044
+        }
+      }
+    },
+    {
+      "id": "conflicting-records",
+      "passed": true,
+      "model_calls": [
+        "/select"
+      ],
+      "result": {
+        "answer": "",
+        "sources": [],
+        "confidence": 0.0,
+        "evidence": "",
+        "reason": "unresolved_conflict",
+        "diagnostics": {
+          "plan": {
+            "question": "In what year did Elin Voss receive the Cedar Prize?",
+            "url": "http://127.0.0.1:18860/conflicting-records",
+            "kind": "year",
+            "terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "in what year did elin voss receive the cedar prize?",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 8.100061677396297e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 1,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "1987",
+              "answer": "1987",
+              "source": "http://127.0.0.1:18860/conflicting-records",
+              "evidence": "1987 | Elin Voss | Biochemist",
+              "label": "",
+              "section": "Cedar Prize recipients > Honorees",
+              "kind": "year",
+              "score": 12.4,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "record[2]",
+                "structure": "record",
+                "qualifiers": {
+                  "source_fields": {
+                    "year": "1987"
+                  }
+                },
+                "field_value": ""
+              }
+            }
+          ],
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:18860/conflicting-records",
+              "final": "http://127.0.0.1:18860/conflicting-records",
+              "status": 200,
+              "bytes": 268,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0036
+        }
+      }
+    },
+    {
+      "id": "different-people",
+      "passed": true,
+      "model_calls": [
+        "/select",
+        "/verify"
+      ],
+      "result": {
+        "answer": "1987",
+        "sources": [
+          "http://127.0.0.1:18860/different-people"
+        ],
+        "confidence": 0.86,
+        "evidence": "1987 | Elin Voss | Biochemist",
+        "reason": "model_verified",
+        "diagnostics": {
+          "plan": {
+            "question": "In what year did Elin Voss receive the Cedar Prize?",
+            "url": "http://127.0.0.1:18860/different-people",
+            "kind": "year",
+            "terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "attributes": [],
+            "entity_terms": [
+              "year",
+              "elin",
+              "voss",
+              "receive",
+              "cedar",
+              "prize"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "in what year did elin voss receive the cedar prize?",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [
+            "span"
+          ],
+          "timings": {
+            "resolver": 8.199946023523808e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 2,
+          "content_pages": 1,
+          "model_selections": [
+            {
+              "raw": "1987",
+              "answer": "1987",
+              "source": "http://127.0.0.1:18860/different-people",
+              "evidence": "1987 | Elin Voss | Biochemist",
+              "label": "",
+              "section": "Cedar Prize recipients > Honorees",
+              "kind": "year",
+              "score": 12.4,
+              "signals": {
+                "selector": "literal_span",
+                "locator": "record[2]",
+                "structure": "record",
+                "qualifiers": {
+                  "source_fields": {
+                    "year": "1987"
+                  }
+                },
+                "field_value": ""
+              }
+            }
+          ],
+          "verification": [
+            "supported"
+          ],
+          "reader_state": "answered",
+          "selection": {
+            "raw": "1987",
+            "answer": "1987",
+            "source": "http://127.0.0.1:18860/different-people",
+            "evidence": "1987 | Elin Voss | Biochemist",
+            "label": "",
+            "section": "Cedar Prize recipients > Honorees",
+            "kind": "year",
+            "score": 12.4,
+            "signals": {
+              "selector": "literal_span",
+              "locator": "record[2]",
+              "structure": "record",
+              "qualifiers": {
+                "source_fields": {
+                  "year": "1987"
+                }
+              },
+              "field_value": ""
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:18860/different-people",
+              "final": "http://127.0.0.1:18860/different-people",
+              "status": 200,
+              "bytes": 269,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0045
+        }
+      }
+    },
+    {
+      "id": "api-signature",
+      "passed": true,
+      "model_calls": [],
+      "result": {
+        "answer": "30",
+        "sources": [
+          "http://127.0.0.1:18860/api-signature"
+        ],
+        "confidence": 0.868,
+        "evidence": "connect(timeout=30)",
+        "reason": "literal_parameter_binding",
+        "diagnostics": {
+          "plan": {
+            "question": "What is the default value of timeout parameter in connect?",
+            "url": "http://127.0.0.1:18860/api-signature",
+            "kind": "text",
+            "terms": [
+              "default",
+              "timeout",
+              "parameter",
+              "connect"
+            ],
+            "attributes": [
+              "duration",
+              "timeout",
+              "lead",
+              "time",
+              "delivery",
+              "days",
+              "hours",
+              "minutes",
+              "seconds"
+            ],
+            "entity_terms": [
+              "default",
+              "parameter",
+              "connect"
+            ],
+            "versions": [],
+            "year": "",
+            "as_of": "",
+            "latest": false,
+            "stable": false,
+            "first": false,
+            "currency": "",
+            "cardinality": 1,
+            "negations": [],
+            "domain": "127.0.0.1",
+            "focus": "what is the default value ",
+            "choices": [],
+            "operation": "single",
+            "required_fields": [],
+            "date_precision": ""
+          },
+          "errors": [],
+          "selector": [],
+          "timings": {
+            "resolver": 8.199946023523808e-06
+          },
+          "search_requests": 0,
+          "llm_calls": 0,
+          "content_pages": 1,
+          "selection": {
+            "raw": "30",
+            "answer": "30",
+            "source": "http://127.0.0.1:18860/api-signature",
+            "evidence": "connect(timeout=30)",
+            "label": "",
+            "section": "API",
+            "kind": "text",
+            "score": 12.7,
+            "signals": {
+              "locator": "signature[1]",
+              "page_title": "Ridge Council records",
+              "structure": "signature",
+              "qualifiers": {},
+              "field_value": "",
+              "agreement_domains": 1
+            }
+          },
+          "fetches": [
+            {
+              "url": "http://127.0.0.1:18860/api-signature",
+              "final": "http://127.0.0.1:18860/api-signature",
+              "status": 200,
+              "bytes": 116,
+              "error": "",
+              "redirects": [],
+              "truncated": false,
+              "truncation_reason": ""
+            }
+          ],
+          "http_responses_success": 1,
+          "pages_fetched": 1,
+          "seconds": 0.0028
+        }
+      }
+    },
+    {
+      "id": "selected-low-score-conflict",
+      "passed": true
+    }
+  ],
+  "revision": "working-tree",
+  "baseline_source_sha256": {},
+  "diagnostic_sha256": "05c73177a57905f8584d8e3bb38b501ca59e61ce643fb9cf734b9b12d766c0d3"
+}

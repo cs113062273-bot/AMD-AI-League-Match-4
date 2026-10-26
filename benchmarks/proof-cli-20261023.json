@@ -1,0 +1,14 @@
+{
+  "scope": "Fresh CLI serialization of a real two-page proof with a controlled semantic service.\n\nThis checks process/output integration, not model accuracy or official acceptance.\n",
+  "passed": true,
+  "exit_code": 0,
+  "result": {
+    "answer": "$18",
+    "sources": [
+      "http://127.0.0.1:30244/16-web-two-source-mapping/categories.html",
+      "http://127.0.0.1:30244/16-web-two-source-mapping/fees.html"
+    ]
+  },
+  "stdout": "{\"answer\": \"$18\", \"sources\": [\"http://127.0.0.1:30244/16-web-two-source-mapping/categories.html\", \"http://127.0.0.1:30244/16-web-two-source-mapping/fees.html\"]}\n",
+  "stderr": ""
+}

@@ -1,0 +1,237 @@
+{
+  "date_local": "2026-10-21",
+  "timezone": "Asia/Taipei",
+  "expected_cases": 670,
+  "completed_cases": 670,
+  "completed_suites": 14,
+  "running": null,
+  "finished": true,
+  "errors": [],
+  "model_lifecycle": "Fresh resident before each additional independent suite; same weights, code and context. Initial 100 retained without restart.",
+  "scope": "Existing end-to-end cases. No unit suite, production edits, new model download, or build. No pooled headline accuracy across different datasets/scorers.",
+  "rows": [
+    {
+      "suite": "external-transfer100",
+      "report": "benchmarks\\external-transfer100-retest-20261021.json",
+      "n": 100,
+      "answer_passed": 4,
+      "joint_passed": 1,
+      "scoring": "Unchanged local exact answer and predeclared source scoring",
+      "latency": {
+        "mean": 7.805523129000212,
+        "p50": 6.216841249988647,
+        "p90": 16.49440683998983,
+        "p95": 21.816362969999314,
+        "p99": 31.53740488298529,
+        "max": 32.79852459998801
+      },
+      "selector_503_calls": 141,
+      "selector_503_cases": 69,
+      "production_changed": false
+    },
+    {
+      "suite": "pinpoint",
+      "report": "benchmarks\\public-pinpoint-retest-20261021.json",
+      "n": 15,
+      "answer_passed": 14,
+      "joint_passed": null,
+      "scoring": "Published loose answer substring scoring; sources not scored"
+    },
+    {
+      "suite": "webscout",
+      "report": "benchmarks\\webscout-retest-20261021.json",
+      "n": 40,
+      "answer_passed": 21,
+      "joint_passed": null,
+      "scoring": "Published normalized answer equality; unchanged live gold may be stale; sources not scored",
+      "groups": {
+        "dev": {
+          "passed": 18,
+          "total": 32
+        },
+        "holdout": {
+          "passed": 3,
+          "total": 8
+        }
+      }
+    },
+    {
+      "suite": "kaminari",
+      "report": "benchmarks\\kaminari-retest-20261021.json",
+      "n": 13,
+      "answer_passed": 11,
+      "joint_passed": null,
+      "scoring": "Published values_match scoring; sources not scored",
+      "common_exact_passed": 6,
+      "published_score_report": "benchmarks/kaminari-retest-20261021-published-score.json"
+    },
+    {
+      "suite": "source-trail",
+      "report": "benchmarks\\source-trail-retest-20261021.json",
+      "n": 16,
+      "answer_passed": 8,
+      "joint_passed": 7,
+      "scoring": "Adapted question-level answer and required-source-set scoring; native status/quote/probe contract not scored; Aperture default 10-page cap versus native 6-page cap"
+    },
+    {
+      "suite": "source-trail-stress",
+      "report": "benchmarks\\source-trail-stress-retest-20261021.json",
+      "n": 6,
+      "answer_passed": 5,
+      "joint_passed": 5,
+      "scoring": "Adapted question-level answer and required-source-set scoring; native status/quote/probe contract not scored; Aperture default 10-page cap versus native 6-page cap"
+    },
+    {
+      "suite": "live",
+      "report": "benchmarks\\live-retest-20261021.json",
+      "n": 16,
+      "answer_passed": 16,
+      "joint_passed": 16,
+      "scoring": "Unchanged local exact answer and predeclared source scoring",
+      "latency": {
+        "mean": 1.554531181249331,
+        "p50": 1.6620276500179898,
+        "p90": 2.5450440000277013,
+        "p95": 2.686140250021708,
+        "p99": 2.7093927699752385,
+        "max": 2.715205899963621
+      },
+      "selector_503_calls": 0,
+      "selector_503_cases": 0,
+      "production_changed": false
+    },
+    {
+      "suite": "live-holdout",
+      "report": "benchmarks\\live-holdout-retest-20261021.json",
+      "n": 14,
+      "answer_passed": 5,
+      "joint_passed": 5,
+      "scoring": "Unchanged local exact answer and predeclared source scoring",
+      "latency": {
+        "mean": 5.842769521434093,
+        "p50": 3.517000949999783,
+        "p90": 13.765767610009064,
+        "p95": 16.14540595001308,
+        "p99": 18.67930927001638,
+        "max": 19.31278510001721
+      },
+      "selector_503_calls": 19,
+      "selector_503_cases": 8,
+      "production_changed": false
+    },
+    {
+      "suite": "dev",
+      "report": "benchmarks\\dev-retest-20261021.json",
+      "n": 180,
+      "answer_passed": 180,
+      "joint_passed": 180,
+      "scoring": "Unchanged local exact answer and predeclared source scoring",
+      "latency": {
+        "mean": 1.6877789605554425,
+        "p50": 1.4500983500038274,
+        "p90": 2.3826568400138055,
+        "p95": 3.9059696050011548,
+        "p99": 4.675329506986895,
+        "max": 5.1864177999668755
+      },
+      "selector_503_calls": 0,
+      "selector_503_cases": 0,
+      "production_changed": false
+    },
+    {
+      "suite": "holdout",
+      "report": "benchmarks\\holdout-retest-20261021.json",
+      "n": 100,
+      "answer_passed": 99,
+      "joint_passed": 99,
+      "scoring": "Unchanged local exact answer and predeclared source scoring",
+      "latency": {
+        "mean": 1.606499442998902,
+        "p50": 1.4160430500051007,
+        "p90": 1.8376131499826445,
+        "p95": 2.2507933900138464,
+        "p99": 7.669298795002397,
+        "max": 7.738123099959921
+      },
+      "selector_503_calls": 0,
+      "selector_503_cases": 0,
+      "production_changed": false
+    },
+    {
+      "suite": "final-holdout",
+      "report": "benchmarks\\final-holdout-retest-20261021.json",
+      "n": 30,
+      "answer_passed": 30,
+      "joint_passed": 30,
+      "scoring": "Unchanged local exact answer and predeclared source scoring",
+      "latency": {
+        "mean": 1.3058625199948437,
+        "p50": 1.3424272499687504,
+        "p90": 1.714998460019706,
+        "p95": 1.7940462650120024,
+        "p99": 2.179814913992305,
+        "max": 2.3282987999846227
+      },
+      "selector_503_calls": 0,
+      "selector_503_cases": 0,
+      "production_changed": false
+    },
+    {
+      "suite": "transfer-frozen",
+      "report": "benchmarks\\transfer-frozen-retest-20261021.json",
+      "n": 20,
+      "answer_passed": 20,
+      "joint_passed": 20,
+      "scoring": "Unchanged local exact answer and predeclared source scoring",
+      "latency": {
+        "mean": 1.4206622399942717,
+        "p50": 1.515380049997475,
+        "p90": 1.9194454799639065,
+        "p95": 2.093063924959279,
+        "p99": 2.1534827849891736,
+        "max": 2.1685874999966472
+      },
+      "selector_503_calls": 0,
+      "selector_503_cases": 0,
+      "production_changed": false
+    },
+    {
+      "suite": "external-simpleqa20",
+      "report": "benchmarks\\external-simpleqa20-retest-20261021.json",
+      "n": 20,
+      "answer_passed": 3,
+      "joint_passed": 1,
+      "scoring": "Unchanged local exact answer and predeclared source scoring",
+      "latency": {
+        "mean": 9.753490574998432,
+        "p50": 8.605879700015066,
+        "p90": 17.681927340000403,
+        "p95": 18.0913997699885,
+        "p99": 22.581558353964347,
+        "max": 23.70409799995832
+      },
+      "selector_503_calls": 12,
+      "selector_503_cases": 6,
+      "production_changed": false
+    },
+    {
+      "suite": "external-simpleqa100",
+      "report": "benchmarks\\external-simpleqa100-retest-20261021.json",
+      "n": 100,
+      "answer_passed": 10,
+      "joint_passed": 5,
+      "scoring": "Unchanged local exact answer and predeclared source scoring",
+      "latency": {
+        "mean": 12.4690641879983,
+        "p50": 11.810904799989657,
+        "p90": 23.71352086002589,
+        "p95": 24.496654094959375,
+        "p99": 30.73695850798979,
+        "max": 35.242221599968616
+      },
+      "selector_503_calls": 83,
+      "selector_503_cases": 48,
+      "production_changed": false
+    }
+  ]
+}

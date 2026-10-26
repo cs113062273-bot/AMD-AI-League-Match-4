@@ -1,0 +1,197 @@
+{
+  "hardware": "actual local execution",
+  "started_at_utc": "2026-10-20T02:33:42Z",
+  "runs": [],
+  "error": "RuntimeError: Model startup failed; see server.log",
+  "device_samples": [
+    {
+      "seconds": 0.04127750004408881,
+      "device_used_mib": 1623
+    },
+    {
+      "seconds": 1.085398300027009,
+      "device_used_mib": 1624
+    },
+    {
+      "seconds": 2.1443837000406347,
+      "device_used_mib": 1625
+    },
+    {
+      "seconds": 3.1908861999982037,
+      "device_used_mib": 1625
+    },
+    {
+      "seconds": 4.23526100005256,
+      "device_used_mib": 1624
+    },
+    {
+      "seconds": 5.279034800012596,
+      "device_used_mib": 1625
+    },
+    {
+      "seconds": 6.325832800008357,
+      "device_used_mib": 1625
+    },
+    {
+      "seconds": 7.368573900021147,
+      "device_used_mib": 1624
+    },
+    {
+      "seconds": 8.42918220005231,
+      "device_used_mib": 1623
+    },
+    {
+      "seconds": 9.476801200013142,
+      "device_used_mib": 1624
+    },
+    {
+      "seconds": 10.52506529999664,
+      "device_used_mib": 1624
+    },
+    {
+      "seconds": 11.568110699998215,
+      "device_used_mib": 1624
+    },
+    {
+      "seconds": 12.610598100000061,
+      "device_used_mib": 1623
+    },
+    {
+      "seconds": 13.65717170003336,
+      "device_used_mib": 1624
+    },
+    {
+      "seconds": 14.703203700017184,
+      "device_used_mib": 1624
+    },
+    {
+      "seconds": 15.749231500027236,
+      "device_used_mib": 1623
+    },
+    {
+      "seconds": 16.808870300010312,
+      "device_used_mib": 1622
+    },
+    {
+      "seconds": 17.854938200034667,
+      "device_used_mib": 1625
+    },
+    {
+      "seconds": 18.903054099995643,
+      "device_used_mib": 1625
+    },
+    {
+      "seconds": 19.956217500031926,
+      "device_used_mib": 1623
+    },
+    {
+      "seconds": 21.021397900010925,
+      "device_used_mib": 1625
+    },
+    {
+      "seconds": 22.066646400024183,
+      "device_used_mib": 1624
+    },
+    {
+      "seconds": 23.11196300003212,
+      "device_used_mib": 1624
+    },
+    {
+      "seconds": 24.180817000044044,
+      "device_used_mib": 1623
+    },
+    {
+      "seconds": 25.228027400036808,
+      "device_used_mib": 1624
+    },
+    {
+      "seconds": 26.271560000022873,
+      "device_used_mib": 1625
+    },
+    {
+      "seconds": 27.319014900014736,
+      "device_used_mib": 1623
+    },
+    {
+      "seconds": 28.364365400047973,
+      "device_used_mib": 1623
+    },
+    {
+      "seconds": 29.428913100040518,
+      "device_used_mib": 1625
+    },
+    {
+      "seconds": 30.469832200033125,
+      "device_used_mib": 1625
+    },
+    {
+      "seconds": 31.535960500012152,
+      "device_used_mib": 1623
+    },
+    {
+      "seconds": 32.59744700003648,
+      "device_used_mib": 1623
+    },
+    {
+      "seconds": 33.64995970000746,
+      "device_used_mib": 1625
+    },
+    {
+      "seconds": 34.71639840002172,
+      "device_used_mib": 1625
+    },
+    {
+      "seconds": 35.8295493000187,
+      "device_used_mib": 1622
+    },
+    {
+      "seconds": 36.87308260001009,
+      "device_used_mib": 1625
+    },
+    {
+      "seconds": 37.91562390001491,
+      "device_used_mib": 1625
+    },
+    {
+      "seconds": 38.96412690001307,
+      "device_used_mib": 1625
+    },
+    {
+      "seconds": 40.025040100037586,
+      "device_used_mib": 1623
+    },
+    {
+      "seconds": 41.08870980003849,
+      "device_used_mib": 1624
+    },
+    {
+      "seconds": 42.15053210000042,
+      "device_used_mib": 1634
+    },
+    {
+      "seconds": 43.19535160000669,
+      "device_used_mib": 1634
+    },
+    {
+      "seconds": 44.24278700002469,
+      "device_used_mib": 1626
+    },
+    {
+      "seconds": 45.287248000036925,
+      "device_used_mib": 1629
+    },
+    {
+      "seconds": 46.34883800003445,
+      "device_used_mib": 1629
+    },
+    {
+      "seconds": 47.38838900002884,
+      "device_used_mib": 1631
+    },
+    {
+      "seconds": 48.43289460003143,
+      "device_used_mib": 1631
+    }
+  ],
+  "peak_total_device_mib": 1634
+}

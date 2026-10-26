@@ -1,0 +1,25 @@
+{
+  "scope": "Fixed8 localpages, exposed unsupported publicsource plus authoredcontrols. Samecase/fixture/full4Bservice; not live or holdout accuracy.",
+  "comparison": {
+    "before_passed": 5,
+    "after_passed": 8,
+    "total": 8,
+    "wins": [
+      "real-nearby",
+      "nearby",
+      "proper-name"
+    ],
+    "losses": []
+  },
+  "cases_sha256": "ce09db189a42fffd51f4bd44ccf554f6df0c3c4595e751fa0c4a0205d26c46d5",
+  "fixtures_sha256": "1b76fdbd3f7f0634c98753b0a857b4f740cf7dddeac6d560991f55acefce6bd6",
+  "before_calls": 16,
+  "after_calls": 12,
+  "before_mean_seconds": 1.3931125,
+  "after_mean_seconds": 1.247225,
+  "production_changed_during_run": false,
+  "memory_after_shutdown": {
+    "used_mib": 938,
+    "total_mib": 12282
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "scope": "First actual public unauthenticated GitHub API shape probe. No model/GPU/browser, no repository writes or account. Not an accuracy assessment.",
+  "rows": [
+    {
+      "url": "https://api.github.com/repos/psf/requests/commits?until=2020-02-01T00%3A00%3A00Z&per_page=1",
+      "status": 200,
+      "error": "",
+      "fields": {
+        "sha": "d5c4cac0f4cc2f558099a55686ddb2e0bdc2dbd1",
+        "commit": {
+          "name": "Nick Watts",
+          "email": "nick@nawatts.com",
+          "date": "2020-01-25T23:19:22Z"
+        }
+      },
+      "capture_path": "research/github-history-20261023-probe/0.json",
+      "sha256": "7bd096a4ec15099dbf5ef1de3c249e66d2c15a6d41720c09c799b34a635aea77"
+    },
+    {
+      "url": "https://api.github.com/repos/psf/requests/license?ref=d5c4cac0f4cc2f558099a55686ddb2e0bdc2dbd1",
+      "status": 200,
+      "error": "",
+      "fields": {
+        "url": "https://api.github.com/repos/psf/requests/contents/LICENSE?ref=d5c4cac0f4cc2f558099a55686ddb2e0bdc2dbd1",
+        "html_url": "https://github.com/psf/requests/blob/d5c4cac0f4cc2f558099a55686ddb2e0bdc2dbd1/LICENSE",
+        "path": "LICENSE",
+        "type": "file",
+        "sha": "13d91ddc7a834d243717de34aa46dc51acf43818",
+        "license": {
+          "key": "other",
+          "name": "Other",
+          "spdx_id": "NOASSERTION",
+          "url": null,
+          "node_id": "MDc6TGljZW5zZTA="
+        }
+      },
+      "capture_path": "research/github-history-20261023-probe/1.json",
+      "sha256": "8ddf4da7dfea199a1eb19ec9dfdcd88905fe287e87585935b76eec9f4afd0c51"
+    }
+  ]
+}

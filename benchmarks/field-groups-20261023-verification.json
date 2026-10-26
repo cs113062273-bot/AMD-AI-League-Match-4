@@ -1,0 +1,163 @@
+{
+  "scope": "Final CPU-only validation after eligible/prose-fallback refinement. All commands completed with exit0. Raw regression reports retained locally by SHA; corpus copied to tracked final report. No GPU/model/browser/public requests.",
+  "checks": [
+    {
+      "id": "reader",
+      "command": ".venv/Scripts/python.exe eval/diagnose_reader_regression.py --out research/field-groups-20261023-verified/reader.json",
+      "report": "research/field-groups-20261023-verified/reader.json",
+      "report_sha256": "cebeeb14e9a0d0065a2d91348c56cccdb5fec72e15128e1f05580475cfcda9ce",
+      "script_sha256": "97b6e2b8f981549108c49cc165d3f5b8adbbc3ee15b0fed6602862b1be114652",
+      "checks": [
+        {
+          "passed": 15,
+          "total": 15
+        }
+      ]
+    },
+    {
+      "id": "proof",
+      "command": ".venv/Scripts/python.exe eval/diagnose_proofs.py --out research/field-groups-20261023-verified/proof.json",
+      "report": "research/field-groups-20261023-verified/proof.json",
+      "report_sha256": "bf9119d6aa47e939043087e338f8d74cb5cf04a793f7f5ac44c62da844dd3ce6",
+      "script_sha256": "f6905d00da2acce0852ba7833390bc21cdb79214ab1d984c0252b48c9a70149b",
+      "checks": [
+        {
+          "passed": 27,
+          "total": 27
+        }
+      ]
+    },
+    {
+      "id": "birth",
+      "command": ".venv/Scripts/python.exe eval/diagnose_birth_bindings.py --out research/field-groups-20261023-verified/birth.json",
+      "report": "research/field-groups-20261023-verified/birth.json",
+      "report_sha256": "936c9b9bbe2b774b2996a44e5ef6ddb44290292a0a365cd8a83e22388edacbfd",
+      "script_sha256": "09f0f579be111b15b4203f38632716ca8b3448d2814622d0a3e6f225518b7e0e",
+      "checks": [
+        {
+          "passed": 51,
+          "total": 51
+        }
+      ]
+    },
+    {
+      "id": "inline",
+      "command": ".venv/Scripts/python.exe eval/diagnose_inline_fields.py --out research/field-groups-20261023-verified/inline.json",
+      "report": "research/field-groups-20261023-verified/inline.json",
+      "report_sha256": "59209888d532a1a3e29f9569c92a121fd4ce0c491ab86e95a08aa50a882f225f",
+      "script_sha256": "8d07ebb458fe8deaea52b3159e15fec1f0219fbce8f00f05091c587240693d15",
+      "checks": [
+        {
+          "passed": 19,
+          "total": 19
+        }
+      ]
+    },
+    {
+      "id": "records",
+      "command": ".venv/Scripts/python.exe eval/diagnose_record_bindings.py --out research/field-groups-20261023-verified/records.json",
+      "report": "research/field-groups-20261023-verified/records.json",
+      "report_sha256": "6b37a5982fc9ced8443869c388f9e05a819813652eaec8aaeac9d1713fd0f5b8",
+      "script_sha256": "288ecef2bf6604ab1e67f81c1b7f279f4a1251dc1394579153034a68e34cb1d8",
+      "checks": [
+        {
+          "passed": 11,
+          "total": 11
+        }
+      ]
+    },
+    {
+      "id": "oyez",
+      "command": ".venv/Scripts/python.exe eval/diagnose_oyez.py --out research/field-groups-20261023-verified/oyez.json",
+      "report": "research/field-groups-20261023-verified/oyez.json",
+      "report_sha256": "b10acbc101c137ed0ca05c56ebb52200ee9959916eebef3dfe8acbaaa0eca9e7",
+      "script_sha256": "dba5e816ab85ec792511da9938192a6785c6f8e5be03b1ca124e49fd7c03ce35",
+      "checks": [
+        {
+          "passed": 4,
+          "total": 4
+        },
+        {
+          "passed": 24,
+          "total": 24
+        }
+      ]
+    },
+    {
+      "id": "years",
+      "command": ".venv/Scripts/python.exe eval/diagnose_event_years.py --out research/field-groups-20261023-verified/years.json",
+      "report": "research/field-groups-20261023-verified/years.json",
+      "report_sha256": "c8b0ab27d4868a4c64002d53b3186857eb444b70172c0b1c0567fe64173ade9e",
+      "script_sha256": "994de2cff902035b2383cf55645f834167a38f1b48e5e75284020f063dae2dd5",
+      "checks": [
+        {
+          "passed": 41,
+          "total": 41
+        }
+      ]
+    },
+    {
+      "id": "lines",
+      "command": ".venv/Scripts/python.exe eval/diagnose_first_lines.py --out research/field-groups-20261023-verified/lines.json",
+      "report": "research/field-groups-20261023-verified/lines.json",
+      "report_sha256": "5b699b4f3d88cf122a9deb9a9f905ac94bad68f087b63df5d64db0183803b768",
+      "script_sha256": "895cc6f4f521ca353454c328340d1611c698fbf3814e6c07c8969c58c2973bd0",
+      "checks": [
+        {
+          "passed": 22,
+          "total": 22
+        }
+      ]
+    },
+    {
+      "id": "corpus",
+      "command": ".venv/Scripts/python.exe eval/audit_field_group_captures.py --out research/field-groups-20261023-verified/corpus.json",
+      "report": "research/field-groups-20261023-verified/corpus.json",
+      "report_sha256": "f3e04f7a9fae90a59fc09b501d54829b5d4ccf6e490d867ccbd0169c4ba1f96e",
+      "script_sha256": "156fda424ee883917be9f54e3b8f6a95426b4f7753ea702a7289de524d4a5535",
+      "checks": [
+        {
+          "passed": 68,
+          "total": 68
+        }
+      ]
+    }
+  ],
+  "production_sha256": {
+    "agent/browser.py": "53ac9a99f3afcefcdb197cd9b2296c2d380910a782178fadb65235e548efc353",
+    "agent/candidates.py": "c55cd074f50d1b0c944cf5552bd604caf4b313bada23accd73674d5d1d93d116",
+    "agent/challenges.py": "b6f51c720f332671725e08127a5d1c163ca0542d2a550bf3c980a6d4c49bf6a1",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/engine.py": "01464cb276814f2d7c845c269da2522c285a7a7e28051abd7e36ad0ec62b41ff",
+    "agent/evidence.py": "56994f2e5046668e33630fbc2330cfac35c8971f3c4d4e25f22547f1d99feba2",
+    "agent/field_groups.py": "52a54989253c59e9836dec4aaec4944b688376e79548b9336887558a454e9162",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "agent/model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+    "agent/model_server.py": "8d326a696942d259697a6fba8586441bbbe4874042ea900c6d7788a2a0e9fd22",
+    "agent/navigation.py": "0f849c0c570720114c45c14b0a5286fe409e5d26c2945fdc9f6c1a6922bb7718",
+    "agent/network.py": "def1be3752f81423c313c2dfa83f6703ee063d7e98652cf0d816b423d0e2d9cb",
+    "agent/normalize.py": "05e48fa0be8384aa656bf1280ba0be44545efa51b7d4451f0716d836d39a1973",
+    "agent/output.py": "b983ab2efe31707b1c974344a32dc4b40b708541257695de89cac9e343b073eb",
+    "agent/oyez.py": "8475f248d78925522e0742b13518be2c4f4db11eae0d8391a8002da7d4e3b67d",
+    "agent/parser.py": "782bebc6fa89a4869ca007da385cbfc8dfed8102b4600584224e94fc702957f1",
+    "agent/planner.py": "8a617d26e724e8ebc5e604892e867ebcc9e417aa97cbd7e0feda4954cd5a1d2b",
+    "agent/processes.py": "677c4372b40d1da0ffc0cf4120ca5b6be2fcf6b6c30f6ec17d0d8fae19e198c1",
+    "agent/proofs.py": "0d7ae78df6ea9949c29f33c7b817dda352c75b3d99c960c3e987e37c7401faab",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "agent/search.py": "28e2454682bc8af4ef10b06f62b66117d39194fddc9ec218b9bc82cad96767fd",
+    "agent/selector.py": "be7c0fce11c10921d5cd4e3d1072d5a2ca5a62f1c328730384d19b0fecd19566",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent/urls.py": "3a6b8a380f6d7966f1f79b97ccdedab5a5959ffbe5a1aa244e3477a0fe6110f4",
+    "agent/worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f",
+    "agent/__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41"
+  },
+  "main_report": "benchmarks/field-groups-20261023-final.json",
+  "main_report_sha256": "e887b14f541dc7ed92e60fc3ea1dd872f7670a4f24cb660bfdd32085196d7a72",
+  "corpus_report": "benchmarks/field-groups-20261023-corpus-final.json",
+  "corpus_report_sha256": "f3e04f7a9fae90a59fc09b501d54829b5d4ccf6e490d867ccbd0169c4ba1f96e"
+}

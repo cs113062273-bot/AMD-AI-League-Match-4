@@ -1,0 +1,46 @@
+[
+  {
+    "id": "name-email",
+    "query": "What are the first name and email of Orin Vale?",
+    "path": "/name-email.html",
+    "answer": "Orin, orin@example.org",
+    "answers": [
+      "Orin, orin@example.org"
+    ],
+    "source_path": "/name-email.html",
+    "origin": "Authored controlled exact-field/ambiguity scenario"
+  },
+  {
+    "id": "departure-platform",
+    "query": "What are the departure time and platform for Northline?",
+    "path": "/departure-platform.html",
+    "answer": "09:15, 4",
+    "answers": [
+      "09:15, 4"
+    ],
+    "source_path": "/departure-platform.html",
+    "origin": "Authored controlled exact-field/ambiguity scenario"
+  },
+  {
+    "id": "duplicate-exact",
+    "query": "What are the first name and email of Orin Vale?",
+    "path": "/duplicate-exact.html",
+    "answer": "",
+    "answers": [
+      ""
+    ],
+    "source_path": "/duplicate-exact.html",
+    "origin": "Authored controlled exact-field/ambiguity scenario"
+  },
+  {
+    "id": "missing-specific",
+    "query": "What are the first name and email of Orin Vale?",
+    "path": "/missing-specific.html",
+    "answer": "",
+    "answers": [
+      ""
+    ],
+    "source_path": "/missing-specific.html",
+    "origin": "Authored controlled exact-field/ambiguity scenario"
+  }
+]

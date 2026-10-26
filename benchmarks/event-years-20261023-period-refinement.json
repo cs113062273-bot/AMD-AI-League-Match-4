@@ -1,0 +1,51 @@
+{
+  "scope": "Afterfull4B pair, sharedyearregex accepts sentenceperiod consistently inquestions/headings. Same11fixedpages: all extracted candidates and actualbaseline/currentselectedspans have identical guard decisions. Two newedgecases independently covered byfinalCPUdiagnostic. NoGPUrerun.",
+  "paired_evidence_sha256": "0415dae32e96d815506c51ed049c31a6668cf8425534125316081d00c31adc8c",
+  "final_evidence_sha256": "09da13b3f2fb17de30734c44ddad1c89b856ec682ff2e88a78a57773409c0089",
+  "rows": [
+    {
+      "id": "real-undated",
+      "verified_identical_guard_decisions": 5
+    },
+    {
+      "id": "real-positive",
+      "verified_identical_guard_decisions": 6
+    },
+    {
+      "id": "dated",
+      "verified_identical_guard_decisions": 2
+    },
+    {
+      "id": "undated",
+      "verified_identical_guard_decisions": 2
+    },
+    {
+      "id": "unrelated-date",
+      "verified_identical_guard_decisions": 2
+    },
+    {
+      "id": "other-person",
+      "verified_identical_guard_decisions": 2
+    },
+    {
+      "id": "birth-year",
+      "verified_identical_guard_decisions": 2
+    },
+    {
+      "id": "two-events",
+      "verified_identical_guard_decisions": 2
+    },
+    {
+      "id": "adjacent-coreference",
+      "verified_identical_guard_decisions": 2
+    },
+    {
+      "id": "heading-year",
+      "verified_identical_guard_decisions": 2
+    },
+    {
+      "id": "ordinary-person",
+      "verified_identical_guard_decisions": 2
+    }
+  ]
+}

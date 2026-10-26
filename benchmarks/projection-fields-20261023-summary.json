@@ -1,0 +1,24 @@
+{
+  "scope": "Same4-case/same-fixture/same-owned-full4B table-proof comparison; not live discovery, holdout or official accuracy.",
+  "comparison": {
+    "before_passed": 2,
+    "after_passed": 4,
+    "total": 4,
+    "wins": [
+      "name-email",
+      "departure-platform"
+    ],
+    "losses": []
+  },
+  "cases_sha256": "c246f1421cf91ae69281bf66788c87e319afa2d80ff15ec40aef01e00e5a0393",
+  "fixtures_sha256": "2c847e9f987cf6966be7ab62cfdb9351442af5437f40170ab01647422e0217c7",
+  "production_changed_during_run": false,
+  "before_mean_seconds": 0.006,
+  "after_mean_seconds": 0.224875,
+  "before_calls": 0,
+  "after_calls": 2,
+  "memory_after_shutdown": {
+    "used_mib": 1025,
+    "total_mib": 12282
+  }
+}

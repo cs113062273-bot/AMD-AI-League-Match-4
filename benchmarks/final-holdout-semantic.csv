@@ -1,0 +1,31 @@
+id,family,answer,sources,expected_answer,expected_source,answer_ok,source_ok,joint_ok,seconds,error,failure_category,malformed_output
+final-01,prose-role,,[],['Mateo Soren'],http://127.0.0.1:29102/final/1-508010,False,False,False,0.9795846000197344,,ABS,False
+final-02,founding-prose,Imani Vale,['http://127.0.0.1:29102/final/2-462140'],['Imani Vale'],http://127.0.0.1:29102/final/2-462140,True,True,True,1.4085701999720186,,,False
+final-03,false-location,+593 2 555 0148,['http://127.0.0.1:29102/final/3-470850'],[''],http://127.0.0.1:29102/final/3-470850,False,False,False,1.5343003000016324,,RANK,False
+final-04,packaging,,[],['340 g'],http://127.0.0.1:29102/final/4-543350,False,False,False,0.9176078999880701,,ABS,False
+final-05,currency-qualified,CAD 57,['http://127.0.0.1:29102/final/5-958260'],['CAD 57'],http://127.0.0.1:29102/final/5-958260,True,True,True,1.2146678999997675,,,False
+final-06,tier-constraint,14,['http://127.0.0.1:29102/final/6-408351'],['14'],http://127.0.0.1:29102/final/6-408351,True,True,True,1.1859061000286601,,,False
+final-07,annual-not-monthly,$173,['http://127.0.0.1:29102/final/7-716942'],['$173'],http://127.0.0.1:29102/final/7-716942,True,True,True,1.266153700009454,,,False
+final-08,effective-date,4.1.0,['http://127.0.0.1:29102/final/8-455821'],['4.1.0'],http://127.0.0.1:29102/final/8-455821,True,True,True,1.2892667999840342,,,False
+final-09,stable-prerelease,8.6.2,['http://127.0.0.1:29102/final/9-969177'],['8.6.2'],http://127.0.0.1:29102/final/9-969177,True,True,True,0.9900314999977127,,,False
+final-10,ordered-author,Mira Kos,['http://127.0.0.1:29102/final/10-160270'],['Mira Kos'],http://127.0.0.1:29102/final/10-160270,True,True,True,1.1477437000139616,,,False
+final-11,numeric-pdf-like-text,2.4 kg,['http://127.0.0.1:29102/final/11-734675'],['2.4 kg'],http://127.0.0.1:29102/final/11-734675,True,True,True,1.2033070999896154,,,False
+final-12,scientific-notation,2.7e-3 kg,['http://127.0.0.1:29102/final/12-354600'],['2.7e-3 kg'],http://127.0.0.1:29102/final/12-354600,True,True,True,1.3431446999893524,,,False
+final-13,range,4–7 business days,['http://127.0.0.1:29102/final/13-805067'],['4–7 business days'],http://127.0.0.1:29102/final/13-805067,True,True,True,1.253796599979978,,,False
+final-14,default-signature,6,['http://127.0.0.1:29102/final/14-179802'],['6'],http://127.0.0.1:29102/final/14-179802,True,True,True,1.1069175999728031,,,False
+final-15,nested-json,6100 mAh,['http://127.0.0.1:29102/final/15-344291'],['6100 mAh'],http://127.0.0.1:29102/final/15-344291,True,True,True,1.4346795000019483,,,False
+final-16,html-microdata,help@tanis.example,['http://127.0.0.1:29102/final/16-369665'],['help@tanis.example'],http://127.0.0.1:29102/final/16-369665,True,True,True,1.2788291000179015,,,False
+final-17,phone-fax,+44 20 5555 0193,['http://127.0.0.1:29102/final/17-127306'],['+44 20 5555 0193'],http://127.0.0.1:29102/final/17-127306,True,True,True,1.7369935999740846,,,False
+final-18,locale-price,"EUR 1.249,50",['http://127.0.0.1:29102/final/18-259297'],"['EUR 1.249,50']",http://127.0.0.1:29102/final/18-259297,True,True,True,1.0637634000158869,,,False
+final-19,text-vs-model-injection,37,['http://127.0.0.1:29102/final/19-789361'],['37'],http://127.0.0.1:29102/final/19-789361,True,True,True,1.3146303000394255,,,False
+final-20,contradictory-evidence,,[],[''],http://127.0.0.1:29102/final/20-327377,True,True,True,0.9231351999915205,,,False
+final-21,nonexistent-field,7316,['http://127.0.0.1:29102/final/21-309100'],[''],http://127.0.0.1:29102/final/21-309100,False,False,False,1.358000899956096,,RANK,False
+final-22,unsupported-future,,[],[''],http://127.0.0.1:29102/final/22-402901,True,True,True,1.2389728000271134,,,False
+final-23,table-row-alignment,85 °C,['http://127.0.0.1:29102/final/23-420696'],['85 °C'],http://127.0.0.1:29102/final/23-420696,True,True,True,1.2242124999756925,,,False
+final-24,minimum-vs-typical,3.1 V,['http://127.0.0.1:29102/final/24-794482'],['3.1 V'],http://127.0.0.1:29102/final/24-794482,True,True,True,1.2653063999605365,,,False
+final-25,csv-column,0.08 V,['http://127.0.0.1:29102/final/25-245154'],['0.08 V'],http://127.0.0.1:29102/final/25-245154,True,True,True,1.278105100034736,,,False
+final-26,xml-field,Rhea Mor,['http://127.0.0.1:29102/final/26-743313'],['Rhea Mor'],http://127.0.0.1:29102/final/26-743313,True,True,True,1.1782273999997415,,,False
+final-27,calendar-date,2024-02-29,['http://127.0.0.1:29102/final/27-376730'],['2024-02-29'],http://127.0.0.1:29102/final/27-376730,True,True,True,1.5433644000440836,,,False
+final-28,invalid-date,,[],[''],http://127.0.0.1:29102/final/28-862460,True,True,True,1.276178800035268,,,False
+final-29,hidden-decoy,18 GB,['http://127.0.0.1:29102/final/29-581730'],['18 GB'],http://127.0.0.1:29102/final/29-581730,True,True,True,1.1269049000111409,,,False
+final-30,missing-version,,[],[''],http://127.0.0.1:29102/final/30-766397,True,True,True,0.8045544000342488,,,False

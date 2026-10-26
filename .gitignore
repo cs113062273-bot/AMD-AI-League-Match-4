@@ -1,0 +1,21 @@
+.venv/
+.model-deps/
+.wheels/
+.state/
+.vm/
+__pycache__/
+.pytest_cache/
+.hypothesis/
+models/
+output/
+*.pyc
+*.log
+release/*.zip
+.env
+*.token
+
+# Local research snapshots, release artifacts, and original task inputs.
+/research/
+/release/
+/prompt.txt
+/AMD AI League Match 4 — Championship Build Prompt.md

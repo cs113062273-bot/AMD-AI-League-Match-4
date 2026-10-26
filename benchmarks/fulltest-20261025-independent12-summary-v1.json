@@ -1,0 +1,262 @@
+{
+  "scope": "Completed first question-only disjoint12 assessment at1536context/12secondbudget. All failures retained. Now exposed development data; no code/alias/scorer edits.",
+  "n": 12,
+  "answer_passed": 0,
+  "strict_joint_passed": 0,
+  "any_gold_source_in_sent_context": 4,
+  "sampling_exclusions_verified": true,
+  "previous_exposed": 244,
+  "new_exposed_total": 256,
+  "backend": {
+    "device": "cuda",
+    "hip": null,
+    "parameters": 4022468096,
+    "torch": "2.9.1+cu128",
+    "context_limit": 1536,
+    "software": {
+      "torch": "2.9.1+cu128",
+      "transformers": "4.57.1",
+      "tokenizers": "0.22.1",
+      "safetensors": "0.6.2",
+      "accelerate": "1.11.0"
+    }
+  },
+  "rows": [
+    {
+      "id": "simpleqa-3480",
+      "reason": "model_context_limit",
+      "answer_ok": false,
+      "strict_joint_ok": false,
+      "abstained": true,
+      "gold_source_in_sent_context": false,
+      "capacity_rejections": 3,
+      "model_states": [
+        "ok",
+        "ok",
+        "ok",
+        "model_context_limit",
+        "model_context_limit",
+        "model_context_limit"
+      ],
+      "pages_fetched": 6,
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/000-simpleqa-3480.json",
+      "receipt_sha256": "666045020be9866a0c2ce3b614eb12deec89d72e9f879dbe871168551eb1d384"
+    },
+    {
+      "id": "simpleqa-1075",
+      "reason": "model_context_limit",
+      "answer_ok": false,
+      "strict_joint_ok": false,
+      "abstained": true,
+      "gold_source_in_sent_context": false,
+      "capacity_rejections": 2,
+      "model_states": [
+        "ok",
+        "ok",
+        "ok",
+        "model_context_limit",
+        "model_context_limit"
+      ],
+      "pages_fetched": 6,
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/001-simpleqa-1075.json",
+      "receipt_sha256": "b27f3a460cc2edf843f2507ac2e836b194bb31c73cd33d2356929de2e89f2dc9"
+    },
+    {
+      "id": "simpleqa-4248",
+      "reason": "model_no_evidence",
+      "answer_ok": false,
+      "strict_joint_ok": false,
+      "abstained": true,
+      "gold_source_in_sent_context": false,
+      "capacity_rejections": 1,
+      "model_states": [
+        "ok",
+        "ok",
+        "model_context_limit",
+        "ok"
+      ],
+      "pages_fetched": 4,
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/002-simpleqa-4248.json",
+      "receipt_sha256": "b8855eed42a1aebd8f9aa7695c45bd46900cd7161a85a3d004d40bbe07f7649c"
+    },
+    {
+      "id": "simpleqa-509",
+      "reason": "model_context_limit",
+      "answer_ok": false,
+      "strict_joint_ok": false,
+      "abstained": true,
+      "gold_source_in_sent_context": true,
+      "capacity_rejections": 5,
+      "model_states": [
+        "ok",
+        "model_context_limit",
+        "model_context_limit",
+        "model_context_limit",
+        "model_context_limit",
+        "model_context_limit"
+      ],
+      "pages_fetched": 7,
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/003-simpleqa-509.json",
+      "receipt_sha256": "4d05c3d29295b507674b72a24cfc021e34d032e668d33410b7c923cf1a4fdef6"
+    },
+    {
+      "id": "simpleqa-1848",
+      "reason": "model_context_limit",
+      "answer_ok": false,
+      "strict_joint_ok": false,
+      "abstained": true,
+      "gold_source_in_sent_context": true,
+      "capacity_rejections": 5,
+      "model_states": [
+        "ok",
+        "model_context_limit",
+        "model_context_limit",
+        "model_context_limit",
+        "model_context_limit",
+        "model_context_limit"
+      ],
+      "pages_fetched": 9,
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/004-simpleqa-1848.json",
+      "receipt_sha256": "e14679d6c547b1b1b4bd74cfcd836b31b79375a0d158b780dc3826877896aa1a"
+    },
+    {
+      "id": "simpleqa-3763",
+      "reason": "model_verified",
+      "answer_ok": false,
+      "strict_joint_ok": false,
+      "abstained": false,
+      "gold_source_in_sent_context": false,
+      "capacity_rejections": 2,
+      "model_states": [
+        "ok",
+        "model_context_limit",
+        "model_context_limit",
+        "ok",
+        "ok"
+      ],
+      "pages_fetched": 5,
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/005-simpleqa-3763.json",
+      "receipt_sha256": "453df44f3c4569685a28d8d7c589abe8a8d579147f4fcf225252387237140e5c"
+    },
+    {
+      "id": "simpleqa-109",
+      "reason": "model_context_limit",
+      "answer_ok": false,
+      "strict_joint_ok": false,
+      "abstained": true,
+      "gold_source_in_sent_context": false,
+      "capacity_rejections": 5,
+      "model_states": [
+        "ok",
+        "model_context_limit",
+        "model_context_limit",
+        "model_context_limit",
+        "model_context_limit",
+        "model_context_limit"
+      ],
+      "pages_fetched": 8,
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/006-simpleqa-109.json",
+      "receipt_sha256": "96fae444df2e574708ec97c516fb12b82daec0c2aa8b74ec05739777d293eb23"
+    },
+    {
+      "id": "simpleqa-1157",
+      "reason": "model_context_limit",
+      "answer_ok": false,
+      "strict_joint_ok": false,
+      "abstained": true,
+      "gold_source_in_sent_context": false,
+      "capacity_rejections": 4,
+      "model_states": [
+        "ok",
+        "model_context_limit",
+        "model_context_limit",
+        "model_context_limit",
+        "model_context_limit"
+      ],
+      "pages_fetched": 9,
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/007-simpleqa-1157.json",
+      "receipt_sha256": "0c19490a6f97bebca372a3c61490edb96479117866b33d850da70eecec68249e"
+    },
+    {
+      "id": "simpleqa-3153",
+      "reason": "model_context_limit",
+      "answer_ok": false,
+      "strict_joint_ok": false,
+      "abstained": true,
+      "gold_source_in_sent_context": false,
+      "capacity_rejections": 5,
+      "model_states": [
+        "ok",
+        "model_context_limit",
+        "model_context_limit",
+        "model_context_limit",
+        "model_context_limit",
+        "model_context_limit"
+      ],
+      "pages_fetched": 7,
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/008-simpleqa-3153.json",
+      "receipt_sha256": "22052cfa9346b40ff00b6c85c2efa360952cd98ca843be31b9cd65defdbf31bb"
+    },
+    {
+      "id": "simpleqa-410",
+      "reason": "model_verified",
+      "answer_ok": false,
+      "strict_joint_ok": false,
+      "abstained": false,
+      "gold_source_in_sent_context": true,
+      "capacity_rejections": 3,
+      "model_states": [
+        "ok",
+        "model_context_limit",
+        "ok",
+        "model_context_limit",
+        "model_context_limit",
+        "ok",
+        "ok"
+      ],
+      "pages_fetched": 8,
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/009-simpleqa-410.json",
+      "receipt_sha256": "77afb912a99a35e9b9832ca31693d2a8720ae1dfd307f22bb7ecae60dc80c388"
+    },
+    {
+      "id": "simpleqa-3797",
+      "reason": "model_context_limit",
+      "answer_ok": false,
+      "strict_joint_ok": false,
+      "abstained": true,
+      "gold_source_in_sent_context": false,
+      "capacity_rejections": 5,
+      "model_states": [
+        "ok",
+        "model_context_limit",
+        "model_context_limit",
+        "model_context_limit",
+        "model_context_limit",
+        "model_context_limit"
+      ],
+      "pages_fetched": 8,
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/010-simpleqa-3797.json",
+      "receipt_sha256": "02f23c9239d175a478c888d9b5f43fdf53889d88153515205f94d76d54986f85"
+    },
+    {
+      "id": "simpleqa-3290",
+      "reason": "model_context_limit",
+      "answer_ok": false,
+      "strict_joint_ok": false,
+      "abstained": true,
+      "gold_source_in_sent_context": true,
+      "capacity_rejections": 5,
+      "model_states": [
+        "ok",
+        "model_context_limit",
+        "model_context_limit",
+        "model_context_limit",
+        "model_context_limit",
+        "model_context_limit"
+      ],
+      "pages_fetched": 4,
+      "receipt": "research/fulltest-20261025-gpu-v1/independent12/011-simpleqa-3290.json",
+      "receipt_sha256": "88b40322d44d8ff995dc14f1230c14e8426b58e93feb35a443646d61a259220e"
+    }
+  ]
+}

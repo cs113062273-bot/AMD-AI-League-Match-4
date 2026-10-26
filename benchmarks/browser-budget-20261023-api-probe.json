@@ -1,0 +1,26 @@
+{
+  "scope": "PublicGET fromhost+routepattern observed in OyezownfetchedJS (OY_API_HOST andCase resource), no goldanswers in request. Availability only, no productionadapter oraccuracyclaim.",
+  "url": "https://api.oyez.org/cases/1966/37?labels=true",
+  "status": 200,
+  "error": "",
+  "passages": 786,
+  "matches": [
+    "facts of the case: <p>In <em>New York Times Co. v. Sullivan</em> (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. <em>Curtis Publishing Co. v. Butts</em> concerns an article published in the March 23, 1963 edition of <em>The Saturday Evening Post</em> alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in <em>New York Times</em>, Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public official. On appeal, the Fifth Circuit Court of Appeals affirmed the trial judge's decision on the basis that Curtis had waived any constitutional challenges by not raising such questions at trial. <em>Associated Press v. Walker</em> concerns dispatch reports of rioting that occurred on the campus of the University of Mississippi on September 30, 1962. The dispatches, authored by a correspondent on the scene, reported that Edwin A. Walker, a private citizen and political activist, had personally led a violent crowd attempting to prevent f",
+    "location.latitude: 33.5114 | location { latitude: 33.5114 | longitude: -86.8428 | name: Legion Field | street: 400 Graymont AveBirmingham AL 35204 | city: Birmingham | province: AL | postal_code: 35204 | province_name: Alabama } | parent $ { ID: 61251 | name: Curtis Publishing Company v. Butts | href: https://api.oyez.org/cases/1966/37 | view_count: 0 | docket_number: 37 | additional_docket_numbers: null | manner_of_jurisdiction: Writ of <i>certiorari</i> | first_party: Curtis Publishing Company | second_party: Wallace Butts | question: <p>In light of the Court's ruling in <em>New York Times Co. v. Sullivan</em>, were the allegations made against Butts and Walker libelous?</p>\n | advocates: null | first_party_label: Petitioner | second_party_label: Respondent | decided_by: null | term: 1966 | opinion_announcement: null | related_cases: null | justia_url: https://supreme.justia.com/cases/federal/us/388/130/ | argument2_url: null }",
+    "location.longitude: -86.8428 | location { latitude: 33.5114 | longitude: -86.8428 | name: Legion Field | street: 400 Graymont AveBirmingham AL 35204 | city: Birmingham | province: AL | postal_code: 35204 | province_name: Alabama } | parent $ { ID: 61251 | name: Curtis Publishing Company v. Butts | href: https://api.oyez.org/cases/1966/37 | view_count: 0 | docket_number: 37 | additional_docket_numbers: null | manner_of_jurisdiction: Writ of <i>certiorari</i> | first_party: Curtis Publishing Company | second_party: Wallace Butts | question: <p>In light of the Court's ruling in <em>New York Times Co. v. Sullivan</em>, were the allegations made against Butts and Walker libelous?</p>\n | advocates: null | first_party_label: Petitioner | second_party_label: Respondent | decided_by: null | term: 1966 | opinion_announcement: null | related_cases: null | justia_url: https://supreme.justia.com/cases/federal/us/388/130/ | argument2_url: null }"
+  ],
+  "events": [
+    {
+      "url": "https://api.oyez.org/cases/1966/37?labels=true",
+      "final": "https://api.oyez.org/cases/1966/37?labels=true",
+      "status": 200,
+      "bytes": 31699,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    }
+  ],
+  "capture_path": "research/browser-budget-20261023/api-response.json",
+  "capture_sha256": "f7e921adef5833387c8bb37d0f5b3e0f424030ec0eba4133703794becfdf249b"
+}

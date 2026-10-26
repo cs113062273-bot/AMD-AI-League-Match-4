@@ -1,0 +1,42 @@
+[
+  {
+    "id": "simpleqa-37",
+    "question": "What is the first and last name of the woman whom the British linguist Bernard Comrie married in 1985?",
+    "original_hint_state": "model_deadline"
+  },
+  {
+    "id": "simpleqa-1838",
+    "question": "What Liverpool player scored the most goals in the 2021-2022 season of the FA Cup?",
+    "original_hint_state": "model_deadline"
+  },
+  {
+    "id": "simpleqa-395",
+    "question": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+    "original_hint_state": "model_deadline"
+  },
+  {
+    "id": "simpleqa-3207",
+    "question": "How many households were there in Weston, Ohio, as of the 2000 census?",
+    "original_hint_state": "model_deadline"
+  },
+  {
+    "id": "simpleqa-779",
+    "question": "What river borders the west of Goldsboro, NC?",
+    "original_hint_state": "TimeoutError"
+  },
+  {
+    "id": "simpleqa-32",
+    "question": "What day, month, and year was Carrie Underwood's album \"Cry Pretty\" certified Gold by the RIAA?",
+    "original_hint_state": "model_deadline"
+  },
+  {
+    "id": "technical-identifier",
+    "question": "What is the default value of the render_mode parameter in FernAPI?",
+    "origin": "Authored technical transfer prompt; no factual answer supplied"
+  },
+  {
+    "id": "abbreviation",
+    "question": "What is the license of the NYC Open Data portal?",
+    "origin": "Authored abbreviation transfer prompt; no factual answer supplied"
+  }
+]

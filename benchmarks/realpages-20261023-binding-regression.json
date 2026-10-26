@@ -1,0 +1,165 @@
+{
+  "scope": "Replay concrete wrong-column/row/section candidates through source verification.\n\nNo model or network is used. Old candidates/parser/planner match the previous\nP0 tree (unchanged from 81d7a9e); reports are development diagnostics only.\n",
+  "before": [
+    {
+      "id": "right_column",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "wrong_column",
+      "expected": false,
+      "actual": true,
+      "passed": false
+    },
+    {
+      "id": "wrong_row",
+      "expected": false,
+      "actual": true,
+      "passed": false
+    },
+    {
+      "id": "right_section",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "wrong_section",
+      "expected": false,
+      "actual": true,
+      "passed": false
+    },
+    {
+      "id": "person_boolean_is_not_fact",
+      "expected": false,
+      "actual": true,
+      "passed": false
+    },
+    {
+      "id": "technical_false_is_fact",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "technical_zero_is_fact",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "webpage_author_is_fact",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "webpage_title_is_fact",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    }
+  ],
+  "after": [
+    {
+      "id": "right_column",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "wrong_column",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "id": "wrong_row",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "id": "right_section",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "wrong_section",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "id": "person_boolean_is_not_fact",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "id": "technical_false_is_fact",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "technical_zero_is_fact",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "webpage_author_is_fact",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "id": "webpage_title_is_fact",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    }
+  ],
+  "before_passed": 6,
+  "after_passed": 10,
+  "wins": [
+    "wrong_column",
+    "wrong_row",
+    "wrong_section",
+    "person_boolean_is_not_fact"
+  ],
+  "losses": [],
+  "production_sha256": {
+    "browser.py": "f7a3d9479ec2ae9bc9fbbcb27efbddaeba9b5dd8639016e827840cc1c7e33cea",
+    "candidates.py": "781e9842d46a4a8da92085c8be57d74c704509846ae1983fe9609abcfd6a5d5a",
+    "currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "engine.py": "aad82e3f2c962afaaf8578703ac826264a6f9122691be65380b0dd8635f621a4",
+    "evidence.py": "756d35bc17919c32bc8db1ce2b8e609eaae5042bc376466fae862a0792b969cb",
+    "knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "model_assets.py": "75dd483ac1c2cf96a4317b1cf7e6b96a47ea5349449322e799665501db152889",
+    "model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "model_protocol.py": "8ba6730e160eac47d8231985e1293bb981a5a63ef9b475cf46daf31ef17bdfb0",
+    "model_server.py": "14e840e32fe34ca594eb4fb0dadd89fc67768fb9026ac3359734a021c5190fc2",
+    "navigation.py": "0f849c0c570720114c45c14b0a5286fe409e5d26c2945fdc9f6c1a6922bb7718",
+    "network.py": "def1be3752f81423c313c2dfa83f6703ee063d7e98652cf0d816b423d0e2d9cb",
+    "normalize.py": "6a4cb8311c29318d788c97a3e64cffa3c4085e595a0e1e9a2d5c418fa540e41c",
+    "output.py": "b983ab2efe31707b1c974344a32dc4b40b708541257695de89cac9e343b073eb",
+    "parser.py": "e2aa35d51f1a22ebe62428a2a83e8a6294c6a01fcd06783076df8114c93e2723",
+    "planner.py": "44c7f597de31a8b61395e51682487305372841524bd55151ffbbe777a9a03e5b",
+    "processes.py": "677c4372b40d1da0ffc0cf4120ca5b6be2fcf6b6c30f6ec17d0d8fae19e198c1",
+    "proofs.py": "42920966e3cae090d8a0d53f17270f607a4a6dcb8a96a1af20382d2785e64b74",
+    "qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "resolvers.py": "e7f1f68fc52c23a60f9cf03d9bcb335e7f954cdf274bef0f4835e5372bcf8d0f",
+    "search.py": "ac3e239f6f3b86696877af3e237be0c125e78cebbb6e980060abab2eb3f4db90",
+    "selector.py": "8946bd529baa426219d58bdf15d8fd976d662b5a497d61834ba17e1b6df7ef57",
+    "signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "urls.py": "2118381f70d0f44174db25833b989cd36dab64b588b83085cddd65cad7412a1f",
+    "worker.py": "df85488d7cb61eb352ce1de4eb74b59cae59c488ad546e9d8b3ac8835f1b293f",
+    "__init__.py": "3ba10ffebb711a74fb81d87c2e8013514247b6d58026d65f4f963c60b3600a41"
+  }
+}

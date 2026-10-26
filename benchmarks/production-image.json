@@ -1,0 +1,23 @@
+{
+  "status": "BUILT_AND_EXPORTED; EMPTY_DAEMON_RELOAD_CANCELLED_FOR_STORAGE",
+  "image": {
+    "size_bytes": 40103014862,
+    "base_layers": 11,
+    "layer_identity": true,
+    "image_id": "sha256:d1a7f9ad5f039d5ef6a54988b15b032c2f20ed7e5b44d1c36082610f63a88282"
+  },
+  "archive": {
+    "bytes": 27331995686,
+    "sha256": "f06e327ddfdc2eb9865c4e3a0085c112536ad59bc51171aec4d62ae93b28b371"
+  },
+  "archive_path": "release/aperture-rocm-image.tar.gz",
+  "production_smokes": "HIP torch import, random tiny Qwen CPU API, actual Chromium and fresh PyPI CLI passed; see raw log",
+  "actual_amd_gpu": "NOT YET VERIFIED ON AMD",
+  "scratch_cleanup": {
+    "export_completed": true,
+    "scratch_vm_deleted": true,
+    "empty_daemon_reload": "CANCELLED after user storage complaint; not completed",
+    "free_gib": 161.28401947021484,
+    "at_utc": "2026-10-20T14:49:42Z"
+  }
+}

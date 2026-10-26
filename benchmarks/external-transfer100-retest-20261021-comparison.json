@@ -1,0 +1,297 @@
+{
+  "old_file": "benchmarks/external-transfer100-first.json",
+  "new_file": "benchmarks/external-transfer100-retest-20261021.json",
+  "production_equal": true,
+  "cases_equal": true,
+  "old": {
+    "summary": {
+      "n": 100,
+      "answer_accuracy": 0.09,
+      "source_accuracy": 0.19,
+      "joint_accuracy": 0.04,
+      "abstention_precision": 0.0,
+      "abstention_recall": null,
+      "crashes": 0,
+      "malformed_outputs": 0,
+      "internal_deadlines": 1,
+      "recovered_engine_errors": 0,
+      "latency": {
+        "mean": 12.040193468998186,
+        "p50": 10.429695300001185,
+        "p90": 23.274293800018498,
+        "p95": 23.710368409979857,
+        "p99": 33.06317250995607,
+        "max": 35.07073510001646
+      },
+      "failure_taxonomy": {
+        "CIT": 5,
+        "RANK": 41,
+        "ABS": 50
+      },
+      "pages_per_query": 3.54,
+      "llm_calls": 357,
+      "search_requests": 320,
+      "confidence_diagnostic": {
+        "n": 100,
+        "answered": 50,
+        "confidence_available": 50,
+        "brier_answered_joint": 0.60518406,
+        "ece_answered_joint": 0.72126,
+        "bins": [
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "n": 2,
+            "mean_confidence": 0.697,
+            "joint_accuracy": 0.0
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "n": 24,
+            "mean_confidence": 0.7478750000000001,
+            "joint_accuracy": 0.125
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 18,
+            "mean_confidence": 0.8334444444444444,
+            "joint_accuracy": 0.05555555555555555
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 6,
+            "mean_confidence": 0.953,
+            "joint_accuracy": 0.0
+          }
+        ],
+        "selective_risk": [
+          {
+            "threshold": 0,
+            "retained": 50,
+            "coverage_all_cases": 0.5,
+            "joint_precision_when_retained": 0.08,
+            "retained_errors": 46,
+            "correct_all_cases": 0.04
+          },
+          {
+            "threshold": 0.55,
+            "retained": 50,
+            "coverage_all_cases": 0.5,
+            "joint_precision_when_retained": 0.08,
+            "retained_errors": 46,
+            "correct_all_cases": 0.04
+          },
+          {
+            "threshold": 0.7,
+            "retained": 48,
+            "coverage_all_cases": 0.48,
+            "joint_precision_when_retained": 0.08333333333333333,
+            "retained_errors": 44,
+            "correct_all_cases": 0.04
+          },
+          {
+            "threshold": 0.8,
+            "retained": 24,
+            "coverage_all_cases": 0.24,
+            "joint_precision_when_retained": 0.041666666666666664,
+            "retained_errors": 23,
+            "correct_all_cases": 0.01
+          },
+          {
+            "threshold": 0.85,
+            "retained": 10,
+            "coverage_all_cases": 0.1,
+            "joint_precision_when_retained": 0.1,
+            "retained_errors": 9,
+            "correct_all_cases": 0.01
+          },
+          {
+            "threshold": 0.9,
+            "retained": 6,
+            "coverage_all_cases": 0.06,
+            "joint_precision_when_retained": 0.0,
+            "retained_errors": 6,
+            "correct_all_cases": 0.0
+          },
+          {
+            "threshold": 0.95,
+            "retained": 5,
+            "coverage_all_cases": 0.05,
+            "joint_precision_when_retained": 0.0,
+            "retained_errors": 5,
+            "correct_all_cases": 0.0
+          },
+          {
+            "threshold": 0.97,
+            "retained": 3,
+            "coverage_all_cases": 0.03,
+            "joint_precision_when_retained": 0.0,
+            "retained_errors": 3,
+            "correct_all_cases": 0.0
+          }
+        ]
+      }
+    },
+    "selector_503_calls": 61,
+    "selector_503_cases": 34,
+    "model_completed_calls_delta": 218,
+    "starting_fetch_error_cases": 60
+  },
+  "new": {
+    "summary": {
+      "n": 100,
+      "answer_accuracy": 0.04,
+      "source_accuracy": 0.16,
+      "joint_accuracy": 0.01,
+      "abstention_precision": 0.0,
+      "abstention_recall": null,
+      "crashes": 0,
+      "malformed_outputs": 0,
+      "internal_deadlines": 0,
+      "recovered_engine_errors": 0,
+      "latency": {
+        "mean": 7.805523129000212,
+        "p50": 6.216841249988647,
+        "p90": 16.49440683998983,
+        "p95": 21.816362969999314,
+        "p99": 31.53740488298529,
+        "max": 32.79852459998801
+      },
+      "failure_taxonomy": {
+        "RANK": 40,
+        "ABS": 56,
+        "CIT": 3
+      },
+      "pages_per_query": 3.98,
+      "llm_calls": 363,
+      "search_requests": 308,
+      "confidence_diagnostic": {
+        "n": 100,
+        "answered": 44,
+        "confidence_available": 44,
+        "brier_answered_joint": 0.6214237727272727,
+        "ece_answered_joint": 0.7685909090909091,
+        "bins": [
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "n": 2,
+            "mean_confidence": 0.6964999999999999,
+            "joint_accuracy": 0.0
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "n": 25,
+            "mean_confidence": 0.7392,
+            "joint_accuracy": 0.04
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "n": 12,
+            "mean_confidence": 0.8489166666666667,
+            "joint_accuracy": 0.0
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "n": 5,
+            "mean_confidence": 0.9516,
+            "joint_accuracy": 0.0
+          }
+        ],
+        "selective_risk": [
+          {
+            "threshold": 0,
+            "retained": 44,
+            "coverage_all_cases": 0.44,
+            "joint_precision_when_retained": 0.022727272727272728,
+            "retained_errors": 43,
+            "correct_all_cases": 0.01
+          },
+          {
+            "threshold": 0.55,
+            "retained": 44,
+            "coverage_all_cases": 0.44,
+            "joint_precision_when_retained": 0.022727272727272728,
+            "retained_errors": 43,
+            "correct_all_cases": 0.01
+          },
+          {
+            "threshold": 0.7,
+            "retained": 42,
+            "coverage_all_cases": 0.42,
+            "joint_precision_when_retained": 0.023809523809523808,
+            "retained_errors": 41,
+            "correct_all_cases": 0.01
+          },
+          {
+            "threshold": 0.8,
+            "retained": 17,
+            "coverage_all_cases": 0.17,
+            "joint_precision_when_retained": 0.0,
+            "retained_errors": 17,
+            "correct_all_cases": 0.0
+          },
+          {
+            "threshold": 0.85,
+            "retained": 10,
+            "coverage_all_cases": 0.1,
+            "joint_precision_when_retained": 0.0,
+            "retained_errors": 10,
+            "correct_all_cases": 0.0
+          },
+          {
+            "threshold": 0.9,
+            "retained": 5,
+            "coverage_all_cases": 0.05,
+            "joint_precision_when_retained": 0.0,
+            "retained_errors": 5,
+            "correct_all_cases": 0.0
+          },
+          {
+            "threshold": 0.95,
+            "retained": 3,
+            "coverage_all_cases": 0.03,
+            "joint_precision_when_retained": 0.0,
+            "retained_errors": 3,
+            "correct_all_cases": 0.0
+          },
+          {
+            "threshold": 0.97,
+            "retained": 2,
+            "coverage_all_cases": 0.02,
+            "joint_precision_when_retained": 0.0,
+            "retained_errors": 2,
+            "correct_all_cases": 0.0
+          }
+        ]
+      }
+    },
+    "selector_503_calls": 141,
+    "selector_503_cases": 69,
+    "model_completed_calls_delta": 64,
+    "starting_fetch_error_cases": 58
+  },
+  "paired_changes": {
+    "joint_gained": [],
+    "joint_lost": [
+      "simpleqa-3980",
+      "simpleqa-3773",
+      "simpleqa-446"
+    ],
+    "answer_gained": [],
+    "answer_lost": [
+      "simpleqa-3489",
+      "simpleqa-3980",
+      "simpleqa-3382",
+      "simpleqa-3773",
+      "simpleqa-446"
+    ]
+  },
+  "limits": "Same cases/code/settings; public web changes, model lifecycle history, desktop resource usage and GPU memory differ. This is not a randomized isolation of network quality. Shared GPU memory was observed, but is not itself proof that every 503 or wrong answer is caused by VRAM pressure."
+}

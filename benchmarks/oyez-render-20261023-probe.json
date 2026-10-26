@@ -1,0 +1,122 @@
+{
+  "scope": "Actual public Oyez frontend render after official case GET cached; source/DOM availability only, no model or gold rewriting.",
+  "state": {
+    "state": "rendered",
+    "requests": 18,
+    "blocked": 13,
+    "blocked_analytics": 1,
+    "bytes": 632703,
+    "browser_version": "156.0.8078.4",
+    "seconds": 3.1686
+  },
+  "source": "https://www.oyez.org/cases/1966/37",
+  "title": "Curtis Publishing Company v. Butts | Oyez",
+  "passage_count": 20,
+  "fact_matches": [
+    "In New York Times Co. v. Sullivan (1964) the Court held that public officials in libel cases must show that a statement was made \"with knowledge that it was false or with reckless disregard of whether it was false or not.\" These two cases concern libel as it pertains to public figures who are not public officials. Curtis Publishing Co. v. Butts concerns an article published in the March 23, 1963 edition of The Saturday Evening Post alleging that former University of Georgia football coach Wallace Butts conspired with University of Alabama coach Paul \"Bear\" Bryant to fix a 1962 football game in Alabama's favor. The article's source was George Burnett, an Atlanta insurance salesman who had allegedly overheard a telephone conversation between the coaches. Butts brought and won a libel suit against Curtis Publishing, owner of the periodical. Soon after the Court's ruling in New York Times , Curtis moved for a new trial. The trial judge rejected the argument because Butts was not a public official. On appeal, the Fifth Circuit Court of Appeals affirmed the trial judge's decision on the ba"
+  ],
+  "events": [
+    {
+      "url": "https://www.oyez.org/cases/1966/37",
+      "final": "https://www.oyez.org/cases/1966/37",
+      "status": 200,
+      "bytes": 2453,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://api.oyez.org/cases/1966/37?labels=true",
+      "final": "https://api.oyez.org/cases/1966/37?labels=true",
+      "status": 200,
+      "bytes": 31699,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js",
+      "final": "https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js",
+      "status": 200,
+      "bytes": 11084,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://www.oyez.org/scripts/scripts.dc9cbca2.js",
+      "final": "https://www.oyez.org/scripts/scripts.dc9cbca2.js",
+      "status": 200,
+      "bytes": 41641,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://www.oyez.org/scripts/vendor.a07b4858.js",
+      "final": "https://www.oyez.org/scripts/vendor.a07b4858.js",
+      "status": 200,
+      "bytes": 536948,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://www.oyez.org/templates/overhead.html",
+      "final": "https://www.oyez.org/templates/overhead.html",
+      "status": 200,
+      "bytes": 978,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://www.oyez.org/templates/navigation.html",
+      "final": "https://www.oyez.org/templates/navigation.html",
+      "status": 200,
+      "bytes": 2175,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://www.oyez.org/templates/search-bar.html",
+      "final": "https://www.oyez.org/templates/search-bar.html",
+      "status": 200,
+      "bytes": 147,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://www.oyez.org/views/case.html",
+      "final": "https://www.oyez.org/views/case.html",
+      "status": 200,
+      "bytes": 5003,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://www.oyez.org/templates/footer.html",
+      "final": "https://www.oyez.org/templates/footer.html",
+      "status": 200,
+      "bytes": 575,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    }
+  ],
+  "capture_path": "research/oyez-render-20261023/live-responses.json",
+  "capture_sha256": "9c81fa803515ec5e24495f25190e5dec39d691dff4c81b9ef3c72f098417c36e"
+}

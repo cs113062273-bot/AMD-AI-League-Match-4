@@ -1,0 +1,360 @@
+{
+  "scope": "Actual CPU-only guarded HTTP GETs of official announcement, filing, and discovered report. No model/browser.",
+  "rows": [
+    {
+      "requested": "https://investor.activision.com/news-releases/news-release-details/former-ceo-espn-steve-bornstein-and-mlg-co-founder-mike-sepso",
+      "url": "https://investor.activision.com/news-releases/news-release-details/former-ceo-espn-steve-bornstein-and-mlg-co-founder-mike-sepso",
+      "status": 403,
+      "error": "http_403",
+      "bytes": 0,
+      "title": "",
+      "matches": [],
+      "capture_path": "research/announcement-20261023-sources/0.json",
+      "sha256": "874bd760ffba2fcd6cba11f72e60965a2ff6ae671e1087340b02abf972f34f0c"
+    },
+    {
+      "requested": "https://investor.activision.com/static-files/89c92575-48f3-4715-bf6c-d3659f3a112b",
+      "url": "https://investor.activision.com/static-files/89c92575-48f3-4715-bf6c-d3659f3a112b",
+      "status": 403,
+      "error": "http_403",
+      "bytes": 0,
+      "title": "",
+      "matches": [],
+      "capture_path": "research/announcement-20261023-sources/1.json",
+      "sha256": "bf5ecaf76df3f9e99928a67df738dc916dc3c356cea9ca0befa9cea777e8471a"
+    },
+    {
+      "requested": "https://www.sec.gov/Archives/edgar/data/718877/000110465915075068/a15-22145_1ex99d2.htm",
+      "url": "https://www.sec.gov/Archives/edgar/data/718877/000110465915075068/a15-22145_1ex99d2.htm",
+      "status": 403,
+      "error": "http_403",
+      "bytes": 0,
+      "title": "",
+      "matches": [],
+      "capture_path": "research/announcement-20261023-sources/2.json",
+      "sha256": "0fef21baf64455dd6c69d572b5e8b432ee5d2b9f1a3a5f4181849ed43b5280e6"
+    },
+    {
+      "requested": "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/",
+      "url": "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/",
+      "status": 200,
+      "error": "",
+      "bytes": 132320,
+      "title": "Activision Blizzard creates new esports division on the eve of BlizzCon's championships - GamesBeat",
+      "matches": [
+        {
+          "text": "@graph[0].@type: Article | @graph[0] { @type: Article | @id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article | headline: Activision Blizzard creates new esports division on the eve of BlizzCon&#8217;s championships | datePublished: 2015-10-22T22:41:39+00:00 | dateModified: 2025-06-19T06:42:47+00:00 | wordCount: 354 | thumbnailUrl: https://gamesbeat.com/wp-content/uploads/2025/05/cod-champs-day-3_alpha-stage-2-1.jpg | inLanguage: en-US | copyrightYear: 2015 } | parent $ { @context: https://schema.org }",
+          "label": "@graph[0].@type",
+          "value": "Article",
+          "section": "@graph[0] { @type: Article | @id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article | headline: Activision Blizzard creates new esports division on the eve of BlizzCon&#8217;s championships | datePublished: 2015-10-22T22:41:39+00:00 | dateModified: 2025-06-19T06:42:47+00:00 | wordCount: 354 | thumbnailUrl: https://gamesbeat.co",
+          "kind": "jsonld",
+          "locator": "script[2]/@graph[0].@type",
+          "qualifiers": {
+            "structured": true,
+            "bindings": {
+              "@type": "Article",
+              "@id": "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article",
+              "headline": "Activision Blizzard creates new esports division on the eve of BlizzCon&#8217;s championships",
+              "datePublished": "2015-10-22T22:41:39+00:00",
+              "dateModified": "2025-06-19T06:42:47+00:00",
+              "wordCount": "354",
+              "thumbnailUrl": "https://gamesbeat.com/wp-content/uploads/2025/05/cod-champs-day-3_alpha-stage-2-1.jpg",
+              "inLanguage": "en-US",
+              "copyrightYear": "2015",
+              "@context": "https://schema.org"
+            },
+            "identity": [
+              "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article"
+            ],
+            "schema_types": [
+              "Article"
+            ],
+            "value_type": "scalar"
+          }
+        },
+        {
+          "text": "@graph[0].@id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article | @graph[0] { @type: Article | @id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article | headline: Activision Blizzard creates new esports division on the eve of BlizzCon&#8217;s championships | datePublished: 2015-10-22T22:41:39+00:00 | dateModified: 2025-06-19T06:42:47+00:00 | wordCount: 354 | thumbnailUrl: https://gamesbeat.com/wp-content/uploads/2025/05/cod-champs-day-3_alpha-stage-2-1.jpg | inLanguage: en-US | copyrightYear: 2015 } | parent $ { @context: https://schema.org }",
+          "label": "@graph[0].@id",
+          "value": "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article",
+          "section": "@graph[0] { @type: Article | @id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article | headline: Activision Blizzard creates new esports division on the eve of BlizzCon&#8217;s championships | datePublished: 2015-10-22T22:41:39+00:00 | dateModified: 2025-06-19T06:42:47+00:00 | wordCount: 354 | thumbnailUrl: https://gamesbeat.co",
+          "kind": "jsonld",
+          "locator": "script[2]/@graph[0].@id",
+          "qualifiers": {
+            "structured": true,
+            "bindings": {
+              "@type": "Article",
+              "@id": "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article",
+              "headline": "Activision Blizzard creates new esports division on the eve of BlizzCon&#8217;s championships",
+              "datePublished": "2015-10-22T22:41:39+00:00",
+              "dateModified": "2025-06-19T06:42:47+00:00",
+              "wordCount": "354",
+              "thumbnailUrl": "https://gamesbeat.com/wp-content/uploads/2025/05/cod-champs-day-3_alpha-stage-2-1.jpg",
+              "inLanguage": "en-US",
+              "copyrightYear": "2015",
+              "@context": "https://schema.org"
+            },
+            "identity": [
+              "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article"
+            ],
+            "schema_types": [
+              "Article"
+            ],
+            "value_type": "scalar"
+          }
+        },
+        {
+          "text": "@graph[0].is Part Of.@id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/ | @graph[0].isPartOf { @id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/ } | parent @graph[0] { @type: Article | @id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article | headline: Activision Blizzard creates new esports division on the eve of BlizzCon&#8217;s championships | datePublished: 2015-10-22T22:41:39+00:00 | dateModified: 2025-06-19T06:42:47+00:00 | wordCount: 354 | thumbnailUrl: https://gamesbeat.com/wp-content/uploads/2025/05/cod-champs-day-3_alpha-stage-2-1.jpg | inLanguage: en-US | copyrightYear: 2015 } | parent $ { @context: https://schema.org }",
+          "label": "@graph[0].is Part Of.@id",
+          "value": "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/",
+          "section": "@graph[0].isPartOf { @id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/ } | parent @graph[0] { @type: Article | @id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article | headline: Activision Blizzard creates new esports division on the eve of BlizzCon&#8217;s c",
+          "kind": "jsonld",
+          "locator": "script[2]/@graph[0].isPartOf.@id",
+          "qualifiers": {
+            "structured": true,
+            "identity": [
+              "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/"
+            ],
+            "schema_types": [
+              "Article"
+            ],
+            "bindings": {
+              "@id": "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/"
+            },
+            "value_type": "scalar"
+          }
+        },
+        {
+          "text": "@graph[0].author.name: GamesBeat | @graph[0].author { name: GamesBeat | @id: https://gamesbeat.com/#/schema/person/dd122453a2b580f6a6e0ecd14fa90205 } | parent @graph[0] { @type: Article | @id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article | headline: Activision Blizzard creates new esports division on the eve of BlizzCon&#8217;s championships | datePublished: 2015-10-22T22:41:39+00:00 | dateModified: 2025-06-19T06:42:47+00:00 | wordCount: 354 | thumbnailUrl: https://gamesbeat.com/wp-content/uploads/2025/05/cod-champs-day-3_alpha-stage-2-1.jpg | inLanguage: en-US | copyrightYear: 2015 } | parent $ { @context: https://schema.org }",
+          "label": "@graph[0].author.name",
+          "value": "GamesBeat",
+          "section": "@graph[0].author { name: GamesBeat | @id: https://gamesbeat.com/#/schema/person/dd122453a2b580f6a6e0ecd14fa90205 } | parent @graph[0] { @type: Article | @id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article | headline: Activision Blizzard creates new esports division on the eve of BlizzCon&#8217;s championships | datePublishe",
+          "kind": "jsonld",
+          "locator": "script[2]/@graph[0].author.name",
+          "qualifiers": {
+            "structured": true,
+            "identity": [
+              "GamesBeat",
+              "https://gamesbeat.com/#/schema/person/dd122453a2b580f6a6e0ecd14fa90205"
+            ],
+            "schema_types": [
+              "Article"
+            ],
+            "bindings": {
+              "name": "GamesBeat",
+              "@id": "https://gamesbeat.com/#/schema/person/dd122453a2b580f6a6e0ecd14fa90205"
+            },
+            "value_type": "scalar"
+          }
+        },
+        {
+          "text": "@graph[0].author.@id: https://gamesbeat.com/#/schema/person/dd122453a2b580f6a6e0ecd14fa90205 | @graph[0].author { name: GamesBeat | @id: https://gamesbeat.com/#/schema/person/dd122453a2b580f6a6e0ecd14fa90205 } | parent @graph[0] { @type: Article | @id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article | headline: Activision Blizzard creates new esports division on the eve of BlizzCon&#8217;s championships | datePublished: 2015-10-22T22:41:39+00:00 | dateModified: 2025-06-19T06:42:47+00:00 | wordCount: 354 | thumbnailUrl: https://gamesbeat.com/wp-content/uploads/2025/05/cod-champs-day-3_alpha-stage-2-1.jpg | inLanguage: en-US | copyrightYear: 2015 } | parent $ { @context: https://schema.org }",
+          "label": "@graph[0].author.@id",
+          "value": "https://gamesbeat.com/#/schema/person/dd122453a2b580f6a6e0ecd14fa90205",
+          "section": "@graph[0].author { name: GamesBeat | @id: https://gamesbeat.com/#/schema/person/dd122453a2b580f6a6e0ecd14fa90205 } | parent @graph[0] { @type: Article | @id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article | headline: Activision Blizzard creates new esports division on the eve of BlizzCon&#8217;s championships | datePublishe",
+          "kind": "jsonld",
+          "locator": "script[2]/@graph[0].author.@id",
+          "qualifiers": {
+            "structured": true,
+            "identity": [
+              "GamesBeat",
+              "https://gamesbeat.com/#/schema/person/dd122453a2b580f6a6e0ecd14fa90205"
+            ],
+            "schema_types": [
+              "Article"
+            ],
+            "bindings": {
+              "name": "GamesBeat",
+              "@id": "https://gamesbeat.com/#/schema/person/dd122453a2b580f6a6e0ecd14fa90205"
+            },
+            "value_type": "scalar"
+          }
+        },
+        {
+          "text": "@graph[0].headline: Activision Blizzard creates new esports division on the eve of BlizzCon&#8217;s championships | @graph[0] { @type: Article | @id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article | headline: Activision Blizzard creates new esports division on the eve of BlizzCon&#8217;s championships | datePublished: 2015-10-22T22:41:39+00:00 | dateModified: 2025-06-19T06:42:47+00:00 | wordCount: 354 | thumbnailUrl: https://gamesbeat.com/wp-content/uploads/2025/05/cod-champs-day-3_alpha-stage-2-1.jpg | inLanguage: en-US | copyrightYear: 2015 } | parent $ { @context: https://schema.org }",
+          "label": "@graph[0].headline",
+          "value": "Activision Blizzard creates new esports division on the eve of BlizzCon&#8217;s championships",
+          "section": "@graph[0] { @type: Article | @id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article | headline: Activision Blizzard creates new esports division on the eve of BlizzCon&#8217;s championships | datePublished: 2015-10-22T22:41:39+00:00 | dateModified: 2025-06-19T06:42:47+00:00 | wordCount: 354 | thumbnailUrl: https://gamesbeat.co",
+          "kind": "jsonld",
+          "locator": "script[2]/@graph[0].headline",
+          "qualifiers": {
+            "structured": true,
+            "bindings": {
+              "@type": "Article",
+              "@id": "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article",
+              "headline": "Activision Blizzard creates new esports division on the eve of BlizzCon&#8217;s championships",
+              "datePublished": "2015-10-22T22:41:39+00:00",
+              "dateModified": "2025-06-19T06:42:47+00:00",
+              "wordCount": "354",
+              "thumbnailUrl": "https://gamesbeat.com/wp-content/uploads/2025/05/cod-champs-day-3_alpha-stage-2-1.jpg",
+              "inLanguage": "en-US",
+              "copyrightYear": "2015",
+              "@context": "https://schema.org"
+            },
+            "identity": [
+              "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article"
+            ],
+            "schema_types": [
+              "Article"
+            ],
+            "value_type": "scalar"
+          }
+        },
+        {
+          "text": "@graph[0].date Published: 2015-10-22T22:41:39+00:00 | @graph[0] { @type: Article | @id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article | headline: Activision Blizzard creates new esports division on the eve of BlizzCon&#8217;s championships | datePublished: 2015-10-22T22:41:39+00:00 | dateModified: 2025-06-19T06:42:47+00:00 | wordCount: 354 | thumbnailUrl: https://gamesbeat.com/wp-content/uploads/2025/05/cod-champs-day-3_alpha-stage-2-1.jpg | inLanguage: en-US | copyrightYear: 2015 } | parent $ { @context: https://schema.org }",
+          "label": "@graph[0].date Published",
+          "value": "2015-10-22T22:41:39+00:00",
+          "section": "@graph[0] { @type: Article | @id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article | headline: Activision Blizzard creates new esports division on the eve of BlizzCon&#8217;s championships | datePublished: 2015-10-22T22:41:39+00:00 | dateModified: 2025-06-19T06:42:47+00:00 | wordCount: 354 | thumbnailUrl: https://gamesbeat.co",
+          "kind": "jsonld",
+          "locator": "script[2]/@graph[0].datePublished",
+          "qualifiers": {
+            "structured": true,
+            "bindings": {
+              "@type": "Article",
+              "@id": "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article",
+              "headline": "Activision Blizzard creates new esports division on the eve of BlizzCon&#8217;s championships",
+              "datePublished": "2015-10-22T22:41:39+00:00",
+              "dateModified": "2025-06-19T06:42:47+00:00",
+              "wordCount": "354",
+              "thumbnailUrl": "https://gamesbeat.com/wp-content/uploads/2025/05/cod-champs-day-3_alpha-stage-2-1.jpg",
+              "inLanguage": "en-US",
+              "copyrightYear": "2015",
+              "@context": "https://schema.org"
+            },
+            "identity": [
+              "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article"
+            ],
+            "schema_types": [
+              "Article"
+            ],
+            "value_type": "scalar"
+          }
+        },
+        {
+          "text": "@graph[0].date Modified: 2025-06-19T06:42:47+00:00 | @graph[0] { @type: Article | @id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article | headline: Activision Blizzard creates new esports division on the eve of BlizzCon&#8217;s championships | datePublished: 2015-10-22T22:41:39+00:00 | dateModified: 2025-06-19T06:42:47+00:00 | wordCount: 354 | thumbnailUrl: https://gamesbeat.com/wp-content/uploads/2025/05/cod-champs-day-3_alpha-stage-2-1.jpg | inLanguage: en-US | copyrightYear: 2015 } | parent $ { @context: https://schema.org }",
+          "label": "@graph[0].date Modified",
+          "value": "2025-06-19T06:42:47+00:00",
+          "section": "@graph[0] { @type: Article | @id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article | headline: Activision Blizzard creates new esports division on the eve of BlizzCon&#8217;s championships | datePublished: 2015-10-22T22:41:39+00:00 | dateModified: 2025-06-19T06:42:47+00:00 | wordCount: 354 | thumbnailUrl: https://gamesbeat.co",
+          "kind": "jsonld",
+          "locator": "script[2]/@graph[0].dateModified",
+          "qualifiers": {
+            "structured": true,
+            "bindings": {
+              "@type": "Article",
+              "@id": "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article",
+              "headline": "Activision Blizzard creates new esports division on the eve of BlizzCon&#8217;s championships",
+              "datePublished": "2015-10-22T22:41:39+00:00",
+              "dateModified": "2025-06-19T06:42:47+00:00",
+              "wordCount": "354",
+              "thumbnailUrl": "https://gamesbeat.com/wp-content/uploads/2025/05/cod-champs-day-3_alpha-stage-2-1.jpg",
+              "inLanguage": "en-US",
+              "copyrightYear": "2015",
+              "@context": "https://schema.org"
+            },
+            "identity": [
+              "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article"
+            ],
+            "schema_types": [
+              "Article"
+            ],
+            "value_type": "scalar"
+          }
+        },
+        {
+          "text": "@graph[0].main Entity Of Page.@id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/ | @graph[0].mainEntityOfPage { @id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/ } | parent @graph[0] { @type: Article | @id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article | headline: Activision Blizzard creates new esports division on the eve of BlizzCon&#8217;s championships | datePublished: 2015-10-22T22:41:39+00:00 | dateModified: 2025-06-19T06:42:47+00:00 | wordCount: 354 | thumbnailUrl: https://gamesbeat.com/wp-content/uploads/2025/05/cod-champs-day-3_alpha-stage-2-1.jpg | inLanguage: en-US | copyrightYear: 2015 } | parent $ { @context: https://schema.org }",
+          "label": "@graph[0].main Entity Of Page.@id",
+          "value": "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/",
+          "section": "@graph[0].mainEntityOfPage { @id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/ } | parent @graph[0] { @type: Article | @id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article | headline: Activision Blizzard creates new esports division on the eve of BlizzCon&#",
+          "kind": "jsonld",
+          "locator": "script[2]/@graph[0].mainEntityOfPage.@id",
+          "qualifiers": {
+            "structured": true,
+            "identity": [
+              "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/"
+            ],
+            "schema_types": [
+              "Article"
+            ],
+            "bindings": {
+              "@id": "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/"
+            },
+            "value_type": "scalar"
+          }
+        },
+        {
+          "text": "@graph[0].word Count: 354 | @graph[0] { @type: Article | @id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article | headline: Activision Blizzard creates new esports division on the eve of BlizzCon&#8217;s championships | datePublished: 2015-10-22T22:41:39+00:00 | dateModified: 2025-06-19T06:42:47+00:00 | wordCount: 354 | thumbnailUrl: https://gamesbeat.com/wp-content/uploads/2025/05/cod-champs-day-3_alpha-stage-2-1.jpg | inLanguage: en-US | copyrightYear: 2015 } | parent $ { @context: https://schema.org }",
+          "label": "@graph[0].word Count",
+          "value": "354",
+          "section": "@graph[0] { @type: Article | @id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article | headline: Activision Blizzard creates new esports division on the eve of BlizzCon&#8217;s championships | datePublished: 2015-10-22T22:41:39+00:00 | dateModified: 2025-06-19T06:42:47+00:00 | wordCount: 354 | thumbnailUrl: https://gamesbeat.co",
+          "kind": "jsonld",
+          "locator": "script[2]/@graph[0].wordCount",
+          "qualifiers": {
+            "structured": true,
+            "bindings": {
+              "@type": "Article",
+              "@id": "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article",
+              "headline": "Activision Blizzard creates new esports division on the eve of BlizzCon&#8217;s championships",
+              "datePublished": "2015-10-22T22:41:39+00:00",
+              "dateModified": "2025-06-19T06:42:47+00:00",
+              "wordCount": "354",
+              "thumbnailUrl": "https://gamesbeat.com/wp-content/uploads/2025/05/cod-champs-day-3_alpha-stage-2-1.jpg",
+              "inLanguage": "en-US",
+              "copyrightYear": "2015",
+              "@context": "https://schema.org"
+            },
+            "identity": [
+              "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article"
+            ],
+            "schema_types": [
+              "Article"
+            ],
+            "value_type": "scalar"
+          }
+        },
+        {
+          "text": "@graph[0].publisher.@id: https://gamesbeat.com/#organization | @graph[0].publisher { @id: https://gamesbeat.com/#organization } | parent @graph[0] { @type: Article | @id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article | headline: Activision Blizzard creates new esports division on the eve of BlizzCon&#8217;s championships | datePublished: 2015-10-22T22:41:39+00:00 | dateModified: 2025-06-19T06:42:47+00:00 | wordCount: 354 | thumbnailUrl: https://gamesbeat.com/wp-content/uploads/2025/05/cod-champs-day-3_alpha-stage-2-1.jpg | inLanguage: en-US | copyrightYear: 2015 } | parent $ { @context: https://schema.org }",
+          "label": "@graph[0].publisher.@id",
+          "value": "https://gamesbeat.com/#organization",
+          "section": "@graph[0].publisher { @id: https://gamesbeat.com/#organization } | parent @graph[0] { @type: Article | @id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article | headline: Activision Blizzard creates new esports division on the eve of BlizzCon&#8217;s championships | datePublished: 2015-10-22T22:41:39+00:00 | dateModified: 2025-",
+          "kind": "jsonld",
+          "locator": "script[2]/@graph[0].publisher.@id",
+          "qualifiers": {
+            "structured": true,
+            "identity": [
+              "https://gamesbeat.com/#organization"
+            ],
+            "schema_types": [
+              "Article"
+            ],
+            "bindings": {
+              "@id": "https://gamesbeat.com/#organization"
+            },
+            "value_type": "scalar"
+          }
+        },
+        {
+          "text": "@graph[0].image.@id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#primaryimage | @graph[0].image { @id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#primaryimage } | parent @graph[0] { @type: Article | @id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article | headline: Activision Blizzard creates new esports division on the eve of BlizzCon&#8217;s championships | datePublished: 2015-10-22T22:41:39+00:00 | dateModified: 2025-06-19T06:42:47+00:00 | wordCount: 354 | thumbnailUrl: https://gamesbeat.com/wp-content/uploads/2025/05/cod-champs-day-3_alpha-stage-2-1.jpg | inLanguage: en-US | copyrightYear: 2015 } | parent $ { @context: https://schema.org }",
+          "label": "@graph[0].image.@id",
+          "value": "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#primaryimage",
+          "section": "@graph[0].image { @id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#primaryimage } | parent @graph[0] { @type: Article | @id: https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#article | headline: Activision Blizzard creates new esports division on the eve of BlizzCon",
+          "kind": "jsonld",
+          "locator": "script[2]/@graph[0].image.@id",
+          "qualifiers": {
+            "structured": true,
+            "identity": [
+              "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#primaryimage"
+            ],
+            "schema_types": [
+              "Article"
+            ],
+            "bindings": {
+              "@id": "https://gamesbeat.com/activision-blizzard-creates-new-division-for-esports-on-the-eve-of-blizzcons-championships/#primaryimage"
+            },
+            "value_type": "scalar"
+          }
+        }
+      ],
+      "capture_path": "research/announcement-20261023-sources/3.json",
+      "sha256": "707d2283ee7d5c7e638f5c9a5626e6d9ca65ad3eeef71f8ea6adb22258f3e811"
+    }
+  ]
+}

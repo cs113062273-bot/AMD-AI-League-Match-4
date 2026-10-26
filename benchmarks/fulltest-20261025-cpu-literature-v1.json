@@ -1,0 +1,341 @@
+{
+  "scope": "Actual scholarly discovery/field-ranking CPU replay with identity negatives.\n\nNo model, GPU or browser. API metadata supplies discovery only; answer spans\nare checked against the actual fetched article, not API metadata or URLs.\n",
+  "baseline_revision": "186f268726afbe2a884407036697f1e6734f1bea",
+  "baseline_source_sha256": {
+    "agent/engine.py": "01464cb276814f2d7c845c269da2522c285a7a7e28051abd7e36ad0ec62b41ff",
+    "agent/types.py": "04a2d7975fb0741adc7320037fa647df2b9937883ee2aed92785e9548fbfe512",
+    "agent/planner.py": "8ee6e9dc255c73840582af0f438331a16a3023cfe886b562fbb7681b1e74ae90",
+    "agent/currencies.py": "450d5f2932df9d795555526afcd47f2da6d797f016664608fea41842af4f7ee8",
+    "agent/members.py": "109aed7461685aec2c4d2161cd1300e62ce491a86c19ee7b6bad1f70a9ca9cef",
+    "agent/normalize.py": "05e48fa0be8384aa656bf1280ba0be44545efa51b7d4451f0716d836d39a1973",
+    "agent/urls.py": "6bbf58adf3c55cf3787edf4b6607a7db8eea987f0c02dd6cdfea48f6c38e031f",
+    "agent/network.py": "c37ecb5b4b0fba4fac737954eda24952059922ed620c94b99bcb17daed8c5155",
+    "agent/parser.py": "92fc37b32045b8c7f25d7d161c2ca00e9e49c82d2460616ef84d66fe31442069",
+    "agent/qualifiers.py": "43c42a1fc44a78fa5036d5dda1c42c6093e197991448df0ec152cec095d27ca6",
+    "agent/challenges.py": "b6f51c720f332671725e08127a5d1c163ca0542d2a550bf3c980a6d4c49bf6a1",
+    "agent/field_groups.py": "52a54989253c59e9836dec4aaec4944b688376e79548b9336887558a454e9162",
+    "agent/resolvers.py": "312d776118c6c6f0421939df58cf6bcaec8740a7fd341136c17a33f284a03ef2",
+    "agent/search.py": "8170a2d32f7d76d4ff903b449f4f7d717d437e7a3c8d4cda27a897adb74af422",
+    "agent/knowledge.py": "901238b900c85f9c3e05bcfaf8f391b01b17d88ae4106e6a3b95c914cd98b143",
+    "agent/candidates.py": "16dd310d36390f5cb0323f0d81d7630542b116693dd0ee0b1e9fe015a80cb1d0",
+    "agent/signatures.py": "b4b8ef03a97e41a2427c44f97c7a4c3e0d0153f8cc6ecf3ad37c610341df67a7",
+    "agent/evidence.py": "56994f2e5046668e33630fbc2330cfac35c8971f3c4d4e25f22547f1d99feba2",
+    "agent/selector.py": "a693a62781fcb76dd11bc6d29eb19770b48dc7e2e29bd7619cc189b62bf70e1b",
+    "agent/model_client.py": "08545bf9f58366fa62cbc21acf3babc9655785430936ade9ef839dbef1098204",
+    "agent/model_protocol.py": "7d59874f28fedf07e7f5473861009274e44b963d5410021100ce6cb4839a9672",
+    "agent/proofs.py": "0d7ae78df6ea9949c29f33c7b817dda352c75b3d99c960c3e987e37c7401faab",
+    "agent/oyez.py": "8475f248d78925522e0742b13518be2c4f4db11eae0d8391a8002da7d4e3b67d"
+  },
+  "input_sha256": {
+    "research\\external-disjoint12b-20261023-repeat\\simpleqa-516.json": "9f4ba56e3088c8fc233d7f9503d4897a98df5ca5cc86abb17cbd0b8da334d3d7",
+    "research/literature-20261023-live.json": "6a9cbd2017dad190a5104291e2471812340948d6318e0ffb1ec1b91e68a77748"
+  },
+  "before": {
+    "links": [
+      [
+        "https://www.sciencedirect.com/science/article/pii/S1746809421001889",
+        "EEG-based driving fatigue detection using multilevel feature extraction ..."
+      ],
+      [
+        "https://ieeexplore.ieee.org/document/10361706",
+        "Assessment of Fatigue Level of Drivers of Different Ages Based on EEG ..."
+      ],
+      [
+        "https://wires.onlinelibrary.wiley.com/doi/pdf/10.1002/widm.70099",
+        "A Review of EEG-Based Driver Fatigue Detection: Nonlinear Dynamics ..."
+      ],
+      [
+        "https://wires.onlinelibrary.wiley.com/doi/10.1002/widm.70099",
+        "A Review of <fc>EEG</fc>\u2010Based Driver Fatigue Detection: Nonlinear ..."
+      ],
+      [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC8970926/",
+        "Classifying Driving Fatigue by Using EEG Signals - PMC"
+      ],
+      [
+        "https://onlinelibrary.wiley.com/doi/full/10.1155/2022/1885677",
+        "Classifying Driving Fatigue by Using EEG Signals"
+      ],
+      [
+        "https://link.springer.com/article/10.1007/s11571-025-10320-3",
+        "Current status and challenges in electroencephalography (EEG)-based ..."
+      ],
+      [
+        "https://link.springer.com/content/pdf/10.1007/s11571-025-10320-3.pdf",
+        "PDF Current status and challenges in electroencephalography (EEG)-based ..."
+      ]
+    ],
+    "missing_captures": [],
+    "cohort_found": false,
+    "requests": [
+      {
+        "url": "https://www.researchgate.net/publication/349291260_EEG-Based_Driving_Fatigue_Detection_Using_a_Two-Level_Learning_Hierarchy_Radial_Basis_Function",
+        "error": "http_403"
+      },
+      {
+        "url": "https://www.bing.com/search?q=age+range+drivers+whose+eeg+data+collected+2021+research+paper+titled+eeg-based+driving+fatigue+detection+two-level+learning+hierarchy+radial+basis+function+ziwu+ren+et+al+based+two+level+eeg+driving+fatigue+age+range+driver+age+eeg+study",
+        "error": ""
+      },
+      {
+        "url": "https://www.bing.com/search?q=age+range+drivers+whose+eeg+data+collected+2021+research+paper+titled+eeg-based+driving+fatigue+detection+two-level+learning+hierarchy+radial+basis+function+ziwu+ren+et+al+based+two+level",
+        "error": ""
+      },
+      {
+        "url": "https://html.duckduckgo.com/html/?q=age+range+drivers+whose+eeg+data+collected+2021+research+paper+titled+eeg-based+driving+fatigue+detection+two-level+learning+hierarchy+radial+basis+function+ziwu+ren+et+al+based+two+level+eeg+driving+fatigue+age+range+driver+age+eeg+study",
+        "error": ""
+      },
+      {
+        "url": "https://html.duckduckgo.com/html/?q=age+range+drivers+whose+eeg+data+collected+2021+research+paper+titled+eeg-based+driving+fatigue+detection+two-level+learning+hierarchy+radial+basis+function+ziwu+ren+et+al+based+two+level",
+        "error": ""
+      },
+      {
+        "url": "https://www.bing.com/search?format=rss&q=age+range+drivers+whose+eeg+data+collected+2021+research+paper+titled+eeg-based+driving+fatigue+detection+two-level+learning+hierarchy+radial+basis+function+ziwu+ren+et+al+based+two+level+eeg+driving+fatigue+age+range+driver+age+eeg+study",
+        "error": ""
+      },
+      {
+        "url": "https://lite.duckduckgo.com/lite/?q=age+range+drivers+whose+eeg+data+collected+2021+research+paper+titled+eeg-based+driving+fatigue+detection+two-level+learning+hierarchy+radial+basis+function+ziwu+ren+et+al+based+two+level+eeg+driving+fatigue+age+range+driver+age+eeg+study",
+        "error": ""
+      },
+      {
+        "url": "https://lite.duckduckgo.com/lite/?q=eeg+driving+fatigue+age+range",
+        "error": ""
+      },
+      {
+        "url": "https://www.sciencedirect.com/science/article/pii/S1746809421001889",
+        "error": "http_403"
+      },
+      {
+        "url": "https://ieeexplore.ieee.org/document/10361706",
+        "error": ""
+      },
+      {
+        "url": "https://wires.onlinelibrary.wiley.com/doi/pdf/10.1002/widm.70099",
+        "error": "http_403"
+      },
+      {
+        "url": "https://wires.onlinelibrary.wiley.com/doi/10.1002/widm.70099",
+        "error": "http_403"
+      }
+    ]
+  },
+  "after": {
+    "links": [
+      [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC7905350/",
+        "EEG-Based Driving Fatigue Detection Using a Two-Level Learning Hierarchy Radial Basis Function."
+      ]
+    ],
+    "missing_captures": [],
+    "cohort_found": true,
+    "requests": [
+      {
+        "url": "https://www.researchgate.net/publication/349291260_EEG-Based_Driving_Fatigue_Detection_Using_a_Two-Level_Learning_Hierarchy_Radial_Basis_Function",
+        "error": "http_403"
+      },
+      {
+        "url": "https://www.bing.com/search?q=age+range+drivers+whose+eeg+data+collected+2021+research+paper+titled+eeg-based+driving+fatigue+detection+two-level+learning+hierarchy+radial+basis+function+ziwu+ren+et+al+based+two+level+eeg+driving+fatigue+age+range+driver+age+eeg+study",
+        "error": ""
+      },
+      {
+        "url": "https://www.bing.com/search?q=age+range+drivers+whose+eeg+data+collected+2021+research+paper+titled+eeg-based+driving+fatigue+detection+two-level+learning+hierarchy+radial+basis+function+ziwu+ren+et+al+based+two+level",
+        "error": ""
+      },
+      {
+        "url": "https://html.duckduckgo.com/html/?q=age+range+drivers+whose+eeg+data+collected+2021+research+paper+titled+eeg-based+driving+fatigue+detection+two-level+learning+hierarchy+radial+basis+function+ziwu+ren+et+al+based+two+level+eeg+driving+fatigue+age+range+driver+age+eeg+study",
+        "error": ""
+      },
+      {
+        "url": "https://html.duckduckgo.com/html/?q=age+range+drivers+whose+eeg+data+collected+2021+research+paper+titled+eeg-based+driving+fatigue+detection+two-level+learning+hierarchy+radial+basis+function+ziwu+ren+et+al+based+two+level",
+        "error": ""
+      },
+      {
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22EEG-Based%20Driving%20Fatigue%20Detection%20Using%20a%20Two-Level%20Learning%20Hierarchy%20Radial%20Basis%20Function%22&format=json&pageSize=3&resultType=core",
+        "error": ""
+      },
+      {
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7905350/",
+        "error": ""
+      }
+    ]
+  },
+  "controls": [
+    {
+      "id": "actual-exact-title",
+      "passed": true
+    },
+    {
+      "id": "http-error",
+      "passed": true
+    },
+    {
+      "id": "truncated",
+      "passed": true
+    },
+    {
+      "id": "wrong-status",
+      "passed": true
+    },
+    {
+      "id": "lookalike-host",
+      "passed": true
+    },
+    {
+      "id": "wrong-query",
+      "passed": true
+    },
+    {
+      "id": "bad-json",
+      "passed": true
+    },
+    {
+      "id": "different-title",
+      "passed": true
+    },
+    {
+      "id": "different-year",
+      "passed": true
+    },
+    {
+      "id": "unsafe-id",
+      "passed": true
+    },
+    {
+      "id": "non-open-access",
+      "passed": true
+    },
+    {
+      "id": "wrong-source",
+      "passed": true
+    },
+    {
+      "id": "wrong-request",
+      "passed": true
+    },
+    {
+      "id": "duplicate-title-id",
+      "passed": true
+    },
+    {
+      "id": "invalid-result-shape",
+      "passed": true
+    },
+    {
+      "id": "no-title-15",
+      "passed": true
+    },
+    {
+      "id": "no-title-16",
+      "passed": true
+    },
+    {
+      "id": "no-title-17",
+      "passed": true
+    },
+    {
+      "id": "no-title-18",
+      "passed": true
+    },
+    {
+      "id": "no-title-19",
+      "passed": true
+    }
+  ],
+  "before_cohort_ranks": [
+    60
+  ],
+  "after_cohort_ranks": [
+    1
+  ],
+  "mismatched_or_unquoted_source_score_unchanged": true,
+  "low_budget_no_request": true,
+  "stub_protocol": {
+    "state": "span",
+    "raw": "23 to 27",
+    "answer": "23 to 27",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7905350/",
+    "literal_verified": true,
+    "sent_passages": [
+      {
+        "id": 0,
+        "text": "The EEG data used in this study were collected from six healthy, male volunteers (right-handed, aged 23 to 27 years). All volunteers had valid driver's licenses, and no participant had any history of physical or psychological disorders. The study was approved by the local ethics committee (Guangdong Provincial Work Injury Rehabilitation Center, China) and performed in accordance with the Declaration of Helsinki. Each subject was fully informed about the purpose of the research and provided written informed consent before the start of the experiment.",
+        "source_start": 0,
+        "source_end": 555,
+        "section": "Participants and EEG Data Acquisition",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7905350/",
+        "locator": "p[27]:0",
+        "document_title": "EEG-Based Driving Fatigue Detection Using a Two-Level Learning Hierarchy Radial Basis Function - PMC"
+      },
+      {
+        "id": 1,
+        "text": "Driving fatigue is a typical mental and physical concern that weakens the driver's ability to control the vehicle (Li Z. et al., 2017 ). It not only poses a significant injury and fatality risk to the drivers but also causes injury to other road users such as passengers, motorbike users, other drivers, and pedestrians. According to the statistical data reported by the World Health Organization, more than 1.3 million people are killed in traffic accidents every year mainly due to fatigued driving (Sahayadhas et al., 2012 ; Li Z. et al., 2017 ). Therefore, it is of great importance to investigate the characteristics of driving fatigue and develop an automatic driving fatigue detection system with reliable detection performance (Li Z. et al., 2017 ; Sikander and Anwar, 2019 ).",
+        "source_start": 0,
+        "source_end": 784,
+        "section": "Introduction",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7905350/",
+        "locator": "p[16]:0",
+        "document_title": "EEG-Based Driving Fatigue Detection Using a Two-Level Learning Hierarchy Radial Basis Function - PMC"
+      },
+      {
+        "id": 2,
+        "text": "Despite the improvements achieved in this study, there are limitations that can be addressed in future studies. Only six subjects participated in the simulated driving fatigue experiment, so the sample size of this study is small. Our future efforts will be devoted to collecting a larger sample size from either simulated or real driving fatigue test to further evaluate the performance of the proposed RBF-TLLH in detecting driving fatigue. Furthermore, deep neural network models have attracted increasing attention in recent years because of their powerful non-linear fitting capability, high dimensional data processing capability, large fault tolerance, and strong feature extraction capability. The proposed RBF-TLLH will be compared with deep neural network models, such as LSTM, to further evaluate its performance in driving fatigue detection. In addition, recent research on latent analysis have proved its power in feature extraction, and this method will be used in a future study (Wu et al., 2019 , 2020 ). Lastly, labeling the driving states for a larger sample size could be expensive",
+        "source_start": 0,
+        "source_end": 1100,
+        "section": "Figure 8.",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7905350/",
+        "locator": "p[104]:0",
+        "document_title": "EEG-Based Driving Fatigue Detection Using a Two-Level Learning Hierarchy Radial Basis Function - PMC"
+      },
+      {
+        "id": 3,
+        "text": "and Liu, 2016 ). The RBF based on the ROLS+D-opt algorithm (RBF-ROLS+D-opt) has been widely used because of its robustness, sparsity of the parameters, and easy implementation (Chen et al., 2003 ). ANN-BP has the ability to approximate the non-linear function with arbitrary accuracy; therefore, it has been widely applied to various classification problems (Zaw et al., 2019 ; Zhang and Pu, 2020 ). The three-layer forward ANN with PSO optimization (ANN-PSO) is also widely used due to its advantages such as easy implementation, fewer adjustment parameters, and fast convergence (Li and Liu, 2016 ). The initial weights and thresholds are generated randomly within the interval [\u22121, 1] in the ANN-BP, the maximum epoch is set to 1,000, and the learning rate is 0.01. The MSE of the training data set is minimized as the objective function in the ANN-PSO. The variable parameters range is set to [\u22121, 1], the swarm size is set to 30, and the evolutionary iterations are set to 60. According to the empirical formula, the hidden nodes of these two ANN classifiers are both set to 30. In addition, in",
+        "source_start": 446,
+        "source_end": 1545,
+        "section": "Performance Evaluation",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7905350/",
+        "locator": "p[67]:0",
+        "document_title": "EEG-Based Driving Fatigue Detection Using a Two-Level Learning Hierarchy Radial Basis Function - PMC"
+      },
+      {
+        "id": 4,
+        "text": "Wu D., Shang M., Luo X., Xu J., Yan H., Den W., et al. (2018b). Self-training semi-supervised classification based on density peaks of data. Neurocomputing 275, 180\u2013191. 10.1016/j.neucom.2017.05.072 [ DOI ] [ Google Scholar ]",
+        "source_start": 0,
+        "source_end": 225,
+        "section": "References",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7905350/",
+        "locator": "li[171]:0",
+        "document_title": "EEG-Based Driving Fatigue Detection Using a Two-Level Learning Hierarchy Radial Basis Function - PMC"
+      },
+      {
+        "id": 5,
+        "text": "The regularization technique is employed in criterion function (4) in the proposed TLLH-RBF to prevent the over-fitting problem and improve the classification accuracy of the RBF network. The D-optimality cost is introduced to further enhance the efficiency and robustness of the selected subset model. The parameters, including the RBF width, regularization parameter, and D-optimality weighting parameter, are, respectively, set within range,\u03c1 \u2208 [1, 220], \u03bb \u2208 [10 \u22127 , 1], and \u03b2 \u2208 [10 \u22127 , 1], and optimized using the PSO. The swarm size p of PSO is set to 15, and the number of evolutionary iterations is set to 30. For further comparison, another RBF network classifier based on the ROLS+D-opt algorithm is also designed, where the width and D-optimality parameters are determined as\u03c1 = 110 and \u03b2 = 10 \u22124 , respectively, by the trial-and-error method, whereas the regularization parameter \u03bb is estimated by the Bayesian approach (MacKayi, 1992 ; Chen et al., 1996 ).",
+        "source_start": 0,
+        "source_end": 970,
+        "section": "Figure 5.",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7905350/",
+        "locator": "p[71]:0",
+        "document_title": "EEG-Based Driving Fatigue Detection Using a Two-Level Learning Hierarchy Radial Basis Function - PMC"
+      },
+      {
+        "id": 6,
+        "text": "EEG has the advantages of non-invasiveness and high temporal resolution for brain activity measurement and has been widely considered as a good indicator of the transition between the alert and fatigue states. Power spectral density (PSD), which converts the time domain of EEG data into the frequency domain, has been widely employed in traditional EEG-based fatigue detection studies. EEG signals can then be generally divided into five bands, i.e., Delta (0.5\u20134 Hz), Theta (4\u20138 Hz), Alpha (8\u201313 Hz), Beta (13\u201330 Hz), and Gamma (30\u201342 Hz) waves, according to frequency and amplitude characteristics (Sikander and Anwar, 2019 ). It has been found that the increase of EEG alpha band spindles is associated with the fatigue state when participants drive in the actual monotonous driving environment (Simon et al., 2011 ). It has also been demonstrated that EEG is sensitive to fluctuations in vigilance and has been shown to predict performance degradation due to sustained mental workload. During the monotonous driving task, the EEG alpha bursts will be dominant in the central and posterior EEG",
+        "source_start": 0,
+        "source_end": 1097,
+        "section": "Discussion",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7905350/",
+        "locator": "p[93]:0",
+        "document_title": "EEG-Based Driving Fatigue Detection Using a Two-Level Learning Hierarchy Radial Basis Function - PMC"
+      },
+      {
+        "id": 7,
+        "text": "method for dimensionality reduction of data (Hotelling, 1933 ). For a given EEG sample ( m 32-channels \u00d7 2,000 points), PCA transforms the sample data into a lower-dimension space through an orthogonal projection or transformation of the correlated points into uncorrelated variables of data, known as principal components (PCs) (Lever et al., 2017 ; Artoni et al., 2018 ). Based on the predetermined cumulative contribution rate, the first r components with the largest variances are preserved. The preserved number of PCs, r , is an important parameter in PCA. In this study, different r -values were tested through multiple trials, and the results showed that the first 10 PCs accounted for over 80% (the minimum cumulative contribution rate is up to 82.13%) of the total variance of the original signals for all EEG samples. Hence, the first 10 PCs were preserved, and the original EEG sample with a size of 32 by 2,000 was transformed into a lower-dimension matrix with a size of 32 by 10. These lower-dimensionality samples were used to construct the driving fatigue classification model.",
+        "source_start": 225,
+        "source_end": 1319,
+        "section": "Feature Extraction",
+        "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7905350/",
+        "locator": "p[36]:0",
+        "document_title": "EEG-Based Driving Fatigue Detection Using a Two-Level Learning Hierarchy Radial Basis Function - PMC"
+      }
+    ]
+  },
+  "all_passed": false
+}

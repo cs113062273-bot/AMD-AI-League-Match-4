@@ -1,0 +1,92 @@
+{
+  "/transfer/version-table/index.html": [
+    200,
+    "text/html",
+    "<title>BriarQueue worker quotas</title><h1>BriarQueue worker quotas</h1><table><tr><th>Version</th><th>Worker quota</th></tr><tr><td>1</td><td>24 jobs</td></tr><tr><td>2</td><td>48 jobs</td></tr></table>"
+  ],
+  "/transfer/reordered-fields/index.html": [
+    200,
+    "text/html",
+    "<title>Moss Bay pickup schedule</title><h1>Moss Bay pickup schedule</h1><table><tr><th>Hours</th><th>Material</th><th>Day</th></tr><tr><td>08:00?09:00</td><td>Glass</td><td>Every Friday</td></tr><tr><td>11:30?14:00</td><td>Batteries</td><td>Every Wednesday</td></tr></table>"
+  ],
+  "/transfer/category-tables/index.html": [
+    200,
+    "text/html",
+    "<title>Cedar Market permit information</title><h1>Cedar Market permit information</h1><a href=\"bands.html\">Ceramic seller category bands</a><a href=\"fees.html\">Daily permit fee table</a>"
+  ],
+  "/transfer/category-tables/bands.html": [
+    200,
+    "text/html",
+    "<title>Cedar Market merchant bands</title><h1>Cedar Market merchant bands</h1><table><tr><th>Band</th><th>Merchant</th></tr><tr><td>F1</td><td>Food stalls</td></tr><tr><td>B2</td><td>Ceramic sellers</td></tr></table>"
+  ],
+  "/transfer/category-tables/fees.html": [
+    200,
+    "text/html",
+    "<title>Cedar Market daily permit fees</title><h1>Cedar Market daily permit fees</h1><table><tr><th>Fee</th><th>Band</th></tr><tr><td>$38</td><td>F1</td></tr><tr><td>$21</td><td>B2</td></tr></table>"
+  ],
+  "/transfer/classification-paraphrase/index.html": [
+    200,
+    "text/html",
+    "<title>Alder Bazaar permit information</title><h1>Alder Bazaar permit information</h1><a href=\"bands.html\">Ceramic seller bands</a><a href=\"fees.html\">Daily permit fees</a>"
+  ],
+  "/transfer/classification-paraphrase/bands.html": [
+    200,
+    "text/html",
+    "<title>Alder Bazaar merchant bands</title><h1>Alder Bazaar merchant bands</h1><p>Ceramic sellers belong to band P.</p><p>Food stalls belong to band R.</p>"
+  ],
+  "/transfer/classification-paraphrase/fees.html": [
+    200,
+    "text/html",
+    "<title>Alder Bazaar daily permit fees</title><h1>Alder Bazaar daily permit fees</h1><p>Band P carries a daily permit fee of $23.</p><p>Band R carries a daily permit fee of $37.</p>"
+  ],
+  "/transfer/comparison-control/index.html": [
+    200,
+    "text/html",
+    "<title>QuartzRelay message quotas</title><h1>QuartzRelay message quotas</h1><a href=\"v4.html\">Version 4 message quota</a><a href=\"v5.html\">Version 5 message quota</a>"
+  ],
+  "/transfer/comparison-control/v4.html": [
+    200,
+    "text/html",
+    "<title>QuartzRelay v4 message quotas</title><h1>QuartzRelay v4 message quotas</h1><p>The per-client message quota in version 4 is 20 messages per second.</p>"
+  ],
+  "/transfer/comparison-control/v5.html": [
+    200,
+    "text/html",
+    "<title>QuartzRelay v5 message quotas</title><h1>QuartzRelay v5 message quotas</h1><p>The per-client message quota in version 5 is 32 messages per second.</p>"
+  ],
+  "/transfer/missing-reordered-field/index.html": [
+    200,
+    "text/html",
+    "<title>Slate Bay pickup schedule</title><h1>Slate Bay pickup schedule</h1><table><tr><th>Hours</th><th>Material</th><th>Day</th></tr><tr><td>08:00?09:00</td><td>Glass</td><td>Every Friday</td></tr><tr><td>Not announced</td><td>Batteries</td><td>Every Wednesday</td></tr></table>"
+  ],
+  "/transfer/missing-table-version/index.html": [
+    200,
+    "text/html",
+    "<title>LinenQueue worker quotas</title><h1>LinenQueue worker quotas</h1><table><tr><th>Version</th><th>Worker quota</th></tr><tr><td>1</td><td>24 jobs</td></tr><tr><td>3</td><td>72 jobs</td></tr></table>"
+  ],
+  "/transfer/conflicting-table-band/index.html": [
+    200,
+    "text/html",
+    "<title>Aspen Market permit information</title><h1>Aspen Market permit information</h1><a href=\"bands.html\">Ceramic seller category bands</a><a href=\"fees.html\">Daily permit fee table</a>"
+  ],
+  "/transfer/conflicting-table-band/bands.html": [
+    200,
+    "text/html",
+    "<title>Aspen Market merchant bands</title><h1>Aspen Market merchant bands</h1><table><tr><th>Band</th><th>Merchant</th></tr><tr><td>A2</td><td>Ceramic sellers</td></tr><tr><td>B3</td><td>Ceramic sellers</td></tr></table>"
+  ],
+  "/transfer/conflicting-table-band/fees.html": [
+    200,
+    "text/html",
+    "<title>Aspen Market daily permit fees</title><h1>Aspen Market daily permit fees</h1><table><tr><th>Fee</th><th>Band</th></tr><tr><td>$29</td><td>A2</td></tr><tr><td>$42</td><td>B3</td></tr></table>"
+  ],
+  "/transfer/incompatible-table-units/index.html": [
+    200,
+    "text/html",
+    "<title>SilkQueue worker quotas</title><h1>SilkQueue worker quotas</h1><table><tr><th>Version</th><th>Worker quota</th></tr><tr><td>1</td><td>20 jobs per hour</td></tr><tr><td>2</td><td>30 jobs per day</td></tr></table>"
+  ],
+  "/transfer/single-control/index.html": [
+    200,
+    "text/html",
+    "<title>Junco Park admissions</title><h1>Junco Park admissions</h1><p>The Junco Park entry fee is $35.</p>"
+  ]
+}

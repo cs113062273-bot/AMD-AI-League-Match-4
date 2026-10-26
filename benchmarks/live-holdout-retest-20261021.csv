@@ -1,0 +1,15 @@
+id,family,answer,sources,expected_answer,expected_source,answer_ok,source_ok,joint_ok,seconds,error,failure_category,confidence,reason,malformed_output
+curl-connect,curl,,[],['300'],https://curl.se/libcurl/c/CURLOPT_CONNECTTIMEOUT.html,False,False,False,14.43989410001086,,ABS,0.0,model_no_supported_answer,False
+nginx-keepalive,nginx,75s,['https://nginx.org/en/docs/http/ngx_http_core_module.html'],['75s'],https://nginx.org/en/docs/http/ngx_http_core_module.html,True,True,True,3.337740000046324,,,0.97,model_verified,False
+postgres-connections,postgres,100,['https://www.postgresql.org/docs/current/runtime-config-connection.html'],['100'],https://www.postgresql.org/docs/current/runtime-config-connection.html,True,True,True,3.67456980003044,,,0.97,model_verified,False
+sshd-port,openssh,22,['https://man.openbsd.org/sshd_config'],['22'],https://man.openbsd.org/sshd_config,True,True,True,3.658676699968055,,,0.97,model_verified,False
+pi-header,pi,5,['https://raspberry.tips/en/raspberry-pi-gpio-pinout'],['40'],https://www.raspberrypi.com/products/raspberry-pi-5/,False,False,False,19.31278510001721,,RANK,0.801,deterministic_verified,False
+sqlite-columns,sqlite,,[],['2000'],https://www.sqlite.org/limits.html,False,False,False,8.871191299986094,,ABS,0,insufficient_alignment,False
+json-ensure-ascii,python,True,['https://docs.python.org/3/library/json.html'],['True'],https://docs.python.org/3/library/json.html,True,True,True,0.44772569998167455,,,0.97,literal_parameter_binding,False
+wcag-normal-aa,wcag,4,['https://www.w3.org/TR/WCAG22/'],['4.5:1'],https://www.w3.org/TR/WCAG22/,False,True,False,3.3753252000315115,,RANK,0.97,deterministic_verified,False
+wcag-normal-aaa,wcag,4,['https://www.w3.org/TR/WCAG22/'],['7:1'],https://www.w3.org/TR/WCAG22/,False,True,False,3.285879999981262,,RANK,0.97,deterministic_verified,False
+rfc-title,ietf,HTTP Semantics,['https://datatracker.ietf.org/api/v1/doc/document/rfc9110/'],['HTTP Semantics'],https://datatracker.ietf.org/api/v1/doc/document/rfc9110/,True,True,True,0.7104790000012144,,,0.925,deterministic_verified,False
+sqlite-missing-email,sqlite,drh@hwaci.com,['https://www.sqlite.org/support.html'],[''],,False,False,False,2.6559462000150234,,RANK,0.783,deterministic_verified,False
+curl-false-premise,curl,3,['https://curl.se/libcurl/c/CURLOPT_CONNECTTIMEOUT.html'],[''],,False,False,False,1.9676103999954648,,RANK,0.82,deterministic_verified,False
+sqlite-discovery,discovery-sqlite,,[],['2000'],https://www.sqlite.org/limits.html,False,False,False,3.8681440000073053,,ABS,0,insufficient_alignment,False
+sshd-discovery,discovery-openssh,,[],['22'],https://man.openbsd.org/sshd_config,False,False,False,12.192805800004862,,ABS,0,insufficient_alignment,False

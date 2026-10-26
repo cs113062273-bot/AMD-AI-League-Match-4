@@ -1,0 +1,45 @@
+{
+  "scope": "CPU-only guarded public GET of actual location-enriched search links; no model/browser.",
+  "rows": [
+    {
+      "url": "https://historicengland.org.uk/listing/the-list/list-entry/1180136",
+      "status": 403,
+      "error": "http_403",
+      "bytes": 0,
+      "title": "",
+      "matches": [],
+      "capture_path": "research/ceres-20261023-sources/0.json",
+      "sha256": "aa0fba54ef987760567deecf06a824817341d60f48a5fb98073b398c9ba32bf0"
+    },
+    {
+      "url": "https://britishlistedbuildings.co.uk/101180136-sculpture-depicting-ceres-in-belvoir-castle-sculpture-garden-one-of-seven-statues-belvoir",
+      "status": 403,
+      "error": "http_403",
+      "bytes": 0,
+      "title": "",
+      "matches": [],
+      "capture_path": "research/ceres-20261023-sources/1.json",
+      "sha256": "67e7c787063086fda0ca8c8bd2b70ca69996dfb1e4044c82d27136023cbead9c"
+    },
+    {
+      "url": "https://www.thewrennreport.co.uk/building/E60000089-f0faa82c-704f-448a-adfe-17278c2ad71c/sculpture-depicting-ceres-in-belvoir-castle-sculpture-garden-one-of-seven-statue",
+      "status": 0,
+      "error": "TimeoutError: ",
+      "bytes": 0,
+      "title": "",
+      "matches": [],
+      "capture_path": "research/ceres-20261023-sources/2.json",
+      "sha256": "8ea8d361ef58f5b59be2054c4589c48315bd7e04efb2c603d69ac3b06e3c6769"
+    },
+    {
+      "url": "https://www.wikidata.org/wiki/Q17541704",
+      "status": 403,
+      "error": "http_403",
+      "bytes": 0,
+      "title": "",
+      "matches": [],
+      "capture_path": "research/ceres-20261023-sources/3.json",
+      "sha256": "3b3085730cd040bf0190583f324f3bf4cf9f42d1384529e0f3e45aed1379c7ce"
+    }
+  ]
+}

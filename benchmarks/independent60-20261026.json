@@ -1,0 +1,1095 @@
+[
+  {
+    "id": "simpleqa-786",
+    "family": "external-Person",
+    "query": "What was the name of the common-law husband of the Indian-Canadian serial killer Simmi Kahlon?",
+    "url": "",
+    "answer": "Harnek Mahal",
+    "answers": [
+      "Harnek Mahal"
+    ],
+    "sources": [
+      "https://www.cbc.ca/news/canada/calgary/calgary-woman-hid-3-dead-newborns-1.865822",
+      "https://en.wikipedia.org/wiki/Simmi_Kahlon",
+      "https://www.findagrave.com/memorial/259212238/harsimrat-kahlon"
+    ],
+    "upstream_row": 175,
+    "upstream_topic": "Other",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1471",
+    "family": "external-Other",
+    "query": "In which version of React was the switch from using the id attribute to data-reactid to track DOM nodes implemented?",
+    "url": "",
+    "answer": "v0.4.0",
+    "answers": [
+      "v0.4.0"
+    ],
+    "sources": [
+      "https://github.com/facebook/react/blob/main/CHANGELOG.md",
+      "https://legacy.reactjs.org/blog/2013/07/17/react-v0-4-0.html"
+    ],
+    "upstream_row": 333,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-4163",
+    "family": "external-Number",
+    "query": "What is the peak in meters of the Cochiquito volcanic group?",
+    "url": "",
+    "answer": "1435 m (acceptable range: anything between 1420 and 1450 m)",
+    "answers": [
+      "1435 m (acceptable range: anything between 1420 and 1450 m)"
+    ],
+    "sources": [
+      "https://www.mountain-forecast.com/peaks/Cochiquito-Volcanic-Group",
+      "https://en.wikipedia.org/wiki/Cochiquito_Volcanic_Group",
+      "https://volcano.si.edu/volcano.cfm?vn=357071"
+    ],
+    "upstream_row": 960,
+    "upstream_topic": "Geography",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-890",
+    "family": "external-Other",
+    "query": "What baseball team won the Burrard League Championship in 1940?",
+    "url": "",
+    "answer": "Asahis",
+    "answers": [
+      "Asahis"
+    ],
+    "sources": [
+      "https://parks.canada.ca/culture/designation/evenement-event/asahi-baseball",
+      "https://en.wikipedia.org/wiki/Asahi_(baseball_team)",
+      "https://dutchbaseballhangout.blog/2017/01/13/the-asahi-baseball-team-a-tragic-story/",
+      "https://attheplate.com/wcbl/1940_100i.html"
+    ],
+    "upstream_row": 199,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3023",
+    "family": "external-Other",
+    "query": "What album is the song \"God Is Alive, Magic Is Afoot\" by Chris Thile on?",
+    "url": "",
+    "answer": "Laysongs",
+    "answers": [
+      "Laysongs"
+    ],
+    "sources": [
+      "https://www.nonesuch.com/journal/watch-chris-thile-performs-god-alive-magic-afoot-new-album-laysongs-2021-07-19",
+      "https://christhile.bandcamp.com/album/laysongs",
+      "https://www.christhile.com/about",
+      "https://13thfloor.co.nz/album-review-chris-thile-laysongs-nonesuch/"
+    ],
+    "upstream_row": 692,
+    "upstream_topic": "Music",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2567",
+    "family": "external-Other",
+    "query": "On the Bannerman family crest, what is the man holding in his right hand?",
+    "url": "",
+    "answer": "A sword",
+    "answers": [
+      "A sword"
+    ],
+    "sources": [
+      "https://www.scotclans.com/blogs/clans-a2/clan-bannerman-crest-coats-of-arms",
+      "https://en.wikipedia.org/wiki/Clan_Bannerman",
+      "https://celticstudio.shop/collections/bannerman-scottish",
+      "https://archive.org/details/collinsscottishc0000wayg/page/70/mode/1up"
+    ],
+    "upstream_row": 580,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3332",
+    "family": "external-Other",
+    "query": "Norman Rockwell was hired as the art director of what publication while in his teens?",
+    "url": "",
+    "answer": "Boys' Life",
+    "answers": [
+      "Boys' Life"
+    ],
+    "sources": [
+      "https://www.illustrationhistory.org/artists/norman-rockwell",
+      "https://www.art.state.gov/personnel/norman_rockwell/",
+      "https://www.forumgallery.com/artists/norman-rockwell/biography",
+      "https://headsup.scoutlife.org/happy-birthday-to-bsa-legend-norman-rockwell/"
+    ],
+    "upstream_row": 768,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-619",
+    "family": "external-Place",
+    "query": "What is the second-largest island in the world?",
+    "url": "",
+    "answer": "New Guinea",
+    "answers": [
+      "New Guinea"
+    ],
+    "sources": [
+      "https://www.worldatlas.com/geography/10-largest-islands-countries-in-the-world.html",
+      "https://en.wikipedia.org/wiki/New_Guinea",
+      "https://www.worldatlas.com/articles/biggest-islands-in-indonesia.html",
+      "https://timesofindia.indiatimes.com/travel/destinations/a-look-at-10-largest-island-nations-in-the-world/photostory/101151868.cms?picid=101152215",
+      "https://www.easemytrip.com/blog/largest-islands-in-the-world"
+    ],
+    "upstream_row": 143,
+    "upstream_topic": "Geography",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-55",
+    "family": "external-Number",
+    "query": "What is the longitude of Lilongwe in decimal format?",
+    "url": "",
+    "answer": "33.7738 (acceptable range: anything between 33.7586 and 33.8022)",
+    "answers": [
+      "33.7738 (acceptable range: anything between 33.7586 and 33.8022)"
+    ],
+    "sources": [
+      "https://latitude.to/map/mw/malawi",
+      "https://worldpopulationreview.com/countries/malawi/location"
+    ],
+    "upstream_row": 15,
+    "upstream_topic": "Geography",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2558",
+    "family": "external-Other",
+    "query": "Which football team won the first and only ELFA Challenge Cup competition in 1922?",
+    "url": "",
+    "answer": "Stoke Ladies",
+    "answers": [
+      "Stoke Ladies"
+    ],
+    "sources": [
+      "https://www.thefa.com/womens-girls-football/heritage/kicking-down-barriers",
+      "https://donmouth.co.uk/womens_football/elfa.html",
+      "https://en.wikipedia.org/wiki/English_Ladies_Football_Association"
+    ],
+    "upstream_row": 576,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3555",
+    "family": "external-Place",
+    "query": "Where was the first B.A.S.S. Bassmaster Tournament held?",
+    "url": "",
+    "answer": "Lake Mead",
+    "answers": [
+      "Lake Mead"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Bassmaster_Classic",
+      "https://www.espn.com/outdoors/bassmaster/about/news/story?page=bass_history",
+      "https://www.bassmaster.com/50th-anniversary-of-b-a-s-s/news/b-a-s-s-historical-timeline/"
+    ],
+    "upstream_row": 826,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2261",
+    "family": "external-Other",
+    "query": "From which database did the authors of \"Identifying Semantic Role Clusters and Alignment Types via Microrole Coexpression Tendencies\" obtain the 25 languages used in their paper?",
+    "url": "",
+    "answer": "ValPaL (Valency Patterns Leipzig) database",
+    "answers": [
+      "ValPaL (Valency Patterns Leipzig) database"
+    ],
+    "sources": [
+      "https://www.jbe-platform.com/content/journals/10.1075/sl.38.3.02har",
+      "https://www.researchgate.net/publication/304460742_Identifying_semantic_role_clusters_and_alignment_types_via_microrole_coexpression_tendencies",
+      "https://cysouw.de/home/articles_files/cysouwhartmannhaspelmathCOEXPRESSION.pdf",
+      "https://www.ingentaconnect.com/content/jbp/sl/2014/00000038/00000003/art00002"
+    ],
+    "upstream_row": 511,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2070",
+    "family": "external-Other",
+    "query": "What did CSA Brigadier General James Lusk Alcorn denounce as \"a cancer upon the body of the nation\"?",
+    "url": "",
+    "answer": "slavery",
+    "answers": [
+      "slavery"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/James_L._Alcorn",
+      "https://www.politico.com/story/2007/02/this-day-on-capitol-hill-february-23-002845",
+      "https://historybynicklin.wordpress.com/reconstruction-in-mississippi/"
+    ],
+    "upstream_row": 471,
+    "upstream_topic": "History",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2151",
+    "family": "external-Other",
+    "query": "In 2011, during the Hands Across Hawthorne rally, which followed Brad Forkner's speech and Basic Rights Oregon's call for volunteers for the Queer Patrol, which Beatles song did the crowd sing?",
+    "url": "",
+    "answer": "\"I Want to Hold Your Hand\"",
+    "answers": [
+      "\"I Want to Hold Your Hand\""
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Hands_Across_Hawthorne",
+      "https://web.archive.org/web/20110602205758/http://www.dailykos.com/story/2011/05/30/980485/-Hands-Across-Hawthorne%3A-Photos-From-the-Portland-Rally",
+      "https://www.beinbean.com/2011/06/terry-bean-hands-across-hawthorne-a-success-in-portland/"
+    ],
+    "upstream_row": 488,
+    "upstream_topic": "Music",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1212",
+    "family": "external-Number",
+    "query": "As of 2010, what was the population of the village of Manyazybash in Russia?",
+    "url": "",
+    "answer": "30 (acceptable range: anything between 29 and 31)",
+    "answers": [
+      "30 (acceptable range: anything between 29 and 31)"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Manyazybash",
+      "https://web.archive.org/web/20190517104742/http://bashstat.gks.ru/wps/wcm/connect/rosstat_ts/bashstat/resources/2f055a804e303140ba45fe3bf8d20d64/%D0%A7%D0%B8%D1%81%D0%BB%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C+%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F+%D0%BF%D0%BE+%D0%BD%D0%B0%D1%81%D0%B5%D0%BB%D0%B5%D0%BD%D0%BD%D1%8B%D0%BC+%D0%BF%D1%83%D0%BD%D0%BA%D1%82%D0%B0%D0%BC+%D0%A0%D0%B5%D1%81%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B8+%D0%91%D0%B0%D1%88%D0%BA%D0%BE%D1%80%D1%82%D0%BE%D1%81%D1%82%D0%B0%D0%BD.pdf"
+    ],
+    "upstream_row": 279,
+    "upstream_topic": "Geography",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3985",
+    "family": "external-Number",
+    "query": "What is the exact number of first-class appearances that Neil Priestley, the former English cricketer, made for Northamptonshire against the touring Sri Lankans in 1981?",
+    "url": "",
+    "answer": "1",
+    "answers": [
+      "1"
+    ],
+    "sources": [
+      "https://wikiroulette.co/?p=Neil_Priestley",
+      "https://en.wikipedia.org/wiki/Neil_Priestley"
+    ],
+    "upstream_row": 923,
+    "upstream_topic": "Sports",
+    "multi_step": "True"
+  },
+  {
+    "id": "simpleqa-3704",
+    "family": "external-Person",
+    "query": "What man helped FitzGerald secure a pension for Oliver Heaviside in 1896?",
+    "url": "",
+    "answer": "John Perry",
+    "answers": [
+      "John Perry"
+    ],
+    "sources": [
+      "https://www.geni.com/people/Oliver-Heaviside/6000000043201196679",
+      "https://en.wikipedia.org/wiki/Oliver_Heaviside",
+      "https://www.worldradiohistory.com/Archive-ITT/20s/ITT-Vol-07-1928-02.pdf",
+      "https://www.microwavejournal.com/articles/6572-twenty-three-years-the-acceptance-of-maxwell-s-theory"
+    ],
+    "upstream_row": 867,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1737",
+    "family": "external-Place",
+    "query": "Which IIT (Indian Institute of Technology) in India installed the first supercomputer under the National Supercomputing Mission (NSM)?",
+    "url": "",
+    "answer": "IIT (BHU)",
+    "answers": [
+      "IIT (BHU)"
+    ],
+    "sources": [
+      "https://dst.gov.in/national-super-computing-mission",
+      "https://en.wikipedia.org/wiki/PARAM",
+      "https://timesofindia.indiatimes.com/city/varanasi/param-shivay-celebrates-completion-of-three-years-of-supercomputing/articleshow/98032902.cms",
+      "https://pib.gov.in/PressReleseDetail.aspx?PRID=1800356"
+    ],
+    "upstream_row": 386,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3112",
+    "family": "external-Other",
+    "query": "As of 2022, what is the name of the smallest (by radius) known exoplanet within 10 parsecs of Earth's solar system?",
+    "url": "",
+    "answer": "Gliese 367 b",
+    "answers": [
+      "Gliese 367 b"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Gliese_367",
+      "https://en.wikipedia.org/wiki/Gliese_367_b",
+      "https://www.stellarcatalog.com/exoplanet.php?planetID=100600"
+    ],
+    "upstream_row": 707,
+    "upstream_topic": "Science and technology",
+    "multi_step": "True"
+  },
+  {
+    "id": "simpleqa-4246",
+    "family": "external-Other",
+    "query": "What is Frida Kahlo's largest painting called in English?",
+    "url": "",
+    "answer": "The Two Fridas.",
+    "answers": [
+      "The Two Fridas."
+    ],
+    "sources": [
+      "https://www.britannica.com/topic/The-Two-Fridas",
+      "https://www.kahlo.org/two-fridas/",
+      "https://en.wikipedia.org/wiki/The_Two_Fridas"
+    ],
+    "upstream_row": 984,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-4198",
+    "family": "external-Other",
+    "query": "What was the Minute Man sculpture by Daniel Chester French originally intended to be made out of?",
+    "url": "",
+    "answer": "Stone",
+    "answers": [
+      "Stone"
+    ],
+    "sources": [
+      "https://eglomisedesigns.com/products/concord-massachusetts-the-minute-man-statue?variant=43633642438953",
+      "https://www.flickr.com/photos/pmeimon/52100430544/",
+      "https://en.wikipedia.org/wiki/The_Minute_Man"
+    ],
+    "upstream_row": 969,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2403",
+    "family": "external-Date",
+    "query": "What day, month, and year did the Union Minister of Health and Family Welfare launch the \"MusQan\" initiative in India?",
+    "url": "",
+    "answer": "17th September 2021",
+    "answers": [
+      "17th September 2021",
+      "2021-09-17"
+    ],
+    "sources": [
+      "https://nhm.gov.in/New-Update-2022-24/CH-Programmes/Resource-Material-MusQan/Musqan-JNS.pdf",
+      "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=1887285",
+      "https://qps.nhsrcindia.org/sites/default/files/2022-05/Quality_Darpan_Dec_2021.pdf",
+      "https://pib.gov.in/PressReleaseIframePage.aspx?PRID=1990674"
+    ],
+    "upstream_row": 538,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-356",
+    "family": "external-Date",
+    "query": "In what year was the Chinese survey conducted that obtained the figure of 29,029.24 feet (8,848.11 meters) for Mount Everest's height?",
+    "url": "",
+    "answer": "1975",
+    "answers": [
+      "1975",
+      "1,975"
+    ],
+    "sources": [
+      "https://www.britannica.com/place/Mount-Everest/The-height-of-Everest",
+      "https://nepalpeakadventure.com/how-tall-is-mount-everest/",
+      "https://kathmandupost.com/national/2020/12/08/it-s-official-mount-everest-is-8-848-86-metres-tall",
+      "https://www.britannica.com/place/Mount-Everest"
+    ],
+    "upstream_row": 86,
+    "upstream_topic": "Geography",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1391",
+    "family": "external-Date",
+    "query": "What year was the first SoCal Sword Fight tournament held?",
+    "url": "",
+    "answer": "2012",
+    "answers": [
+      "2012",
+      "2,012"
+    ],
+    "sources": [
+      "https://socalswordfight.com/pages/about-socal-swordfight",
+      "https://en.wikipedia.org/wiki/Historical_European_martial_arts",
+      "https://www.youtube.com/channel/UC6miMqtbfm1DXm2EcEdL29A"
+    ],
+    "upstream_row": 320,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2407",
+    "family": "external-Person",
+    "query": "In 2014, who took over development of the Brooding language for the Riddlesbrood Touring Theater Company?",
+    "url": "",
+    "answer": "BenJamin P. Johnson",
+    "answers": [
+      "BenJamin P. Johnson"
+    ],
+    "sources": [
+      "https://www.benjaminpauljohnson.com/",
+      "https://linguifex.com/wiki/Brooding"
+    ],
+    "upstream_row": 540,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3107",
+    "family": "external-Other",
+    "query": "In what round of the Nations Cup team competition at the FEI European Championships did a member of the jump crew interfere with Cian O'Connor and Good Luck?",
+    "url": "",
+    "answer": "Second",
+    "answers": [
+      "Second"
+    ],
+    "sources": [
+      "https://www.noellefloyd.com/blogs/archives/cian-o-connor-confirms-further-action-will-be-taken-regarding-ring-interference-incident",
+      "https://www.espn.com/olympics/story/_/id/13488822/cian-oconnor-totally-gutted-ireland-showjumping-team-rio-olympics-qualification-hopes-were-wrecked",
+      "https://www.chronofhorse.com/article/what-do-you-think-cian-oconnors-controversial-european-championships-round/"
+    ],
+    "upstream_row": 705,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3768",
+    "family": "external-Place",
+    "query": "In which Vermont town was politician Charles Jairus Adams born in 1917?",
+    "url": "",
+    "answer": "Randolph, Orange County",
+    "answers": [
+      "Randolph, Orange County"
+    ],
+    "sources": [
+      "https://graphsearch.epfl.ch/fr/concept/52198543",
+      "https://www.findagrave.com/memorial/72244056/charles-jairus-adams",
+      "https://en.wikipedia.org/wiki/Charles_J._Adams_(Vermont_politician)"
+    ],
+    "upstream_row": 880,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1301",
+    "family": "external-Date",
+    "query": "On which day, month, and year was the domain \"hindustantimes.com\" registered?",
+    "url": "",
+    "answer": "August 14, 1996",
+    "answers": [
+      "August 14, 1996",
+      "1996-08-14"
+    ],
+    "sources": [
+      "https://trak.in/tags/business/2007/07/26/top-50-web10-web-sites-of-india/",
+      "https://www.whois.com/whois/hindustantimes.com"
+    ],
+    "upstream_row": 301,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-871",
+    "family": "external-Number",
+    "query": "How many assists did Kostas Tsimikas have across all competitions in the 2021-2022 season?",
+    "url": "",
+    "answer": "6",
+    "answers": [
+      "6"
+    ],
+    "sources": [
+      "https://lfchistory.net/Players/Player/Profile/1372",
+      "https://en.wikipedia.org/wiki/2021%E2%80%9322_Liverpool_F.C._season",
+      "https://www.transfermarkt.co.uk/konstantinos-tsimikas/leistungsdaten/spieler/338070/plus/0?saison=2021",
+      "https://www.footballdatabase.eu/en/player/details/243380-konstantinos-tsimikas"
+    ],
+    "upstream_row": 193,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2487",
+    "family": "external-Person",
+    "query": "What is the surname of the individual who won the Faraday Medal, awarded by the Electrochemistry Group of the Royal Society of Chemistry in 2019?",
+    "url": "",
+    "answer": "Winter",
+    "answers": [
+      "Winter"
+    ],
+    "sources": [
+      "https://www.uni-muenster.de/news/view.php?cmdid=10491&lang=en",
+      "https://en.wikipedia.org/wiki/Faraday_Medal_(electrochemistry)",
+      "https://www.rsc.org/membership-and-community/connect-with-others/through-interests/interest-groups/electrochemistry/faraday-medal/"
+    ],
+    "upstream_row": 559,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2586",
+    "family": "external-Other",
+    "query": "What was the name of Helmut Lang's solo exhibition in New York in 2017?",
+    "url": "",
+    "answer": "Helmut Lang: new work",
+    "answers": [
+      "Helmut Lang: new work"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Helmut_Lang_(artist)",
+      "https://www.speronewestwater.com/exhibitions/helmut-lang4",
+      "https://h-lang.studio/"
+    ],
+    "upstream_row": 584,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1929",
+    "family": "external-Other",
+    "query": "What is the number and name of the second asteroid discovered by astronomer Édouard Jean-Marie Stephan?",
+    "url": "",
+    "answer": "91 Aegina",
+    "answers": [
+      "91 Aegina"
+    ],
+    "sources": [
+      "https://wikiless.copper.dedyn.io/wiki/%C3%89douard_Stephan?useskin=vector",
+      "https://en.wikipedia.org/wiki/91_Aegina",
+      "https://www.astronomy.com/science/web-extra-25-asteroids-to-spot-through-binoculars/"
+    ],
+    "upstream_row": 440,
+    "upstream_topic": "Science and technology",
+    "multi_step": "True"
+  },
+  {
+    "id": "simpleqa-1389",
+    "family": "external-Other",
+    "query": "What is the name of Nepal's first technical university established as part of a 2010 government bill?",
+    "url": "",
+    "answer": "Agriculture and Forestry University",
+    "answers": [
+      "Agriculture and Forestry University"
+    ],
+    "sources": [
+      "https://www.afu.edu.np/",
+      "https://en.wikipedia.org/wiki/Agriculture_and_Forestry_University"
+    ],
+    "upstream_row": 318,
+    "upstream_topic": "Geography",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3259",
+    "family": "external-Number",
+    "query": "In the women's singles 2022 Madrid Open, how many Romanian players played in the second round?",
+    "url": "",
+    "answer": "1",
+    "answers": [
+      "1"
+    ],
+    "sources": [
+      "https://www.wtatennis.com/news/2594387/halep-badosa-sweep-into-madrid-second-round-showdown",
+      "https://en.wikipedia.org/wiki/2022_Mutua_Madrid_Open_%E2%80%93_Women%27s_singles"
+    ],
+    "upstream_row": 746,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2523",
+    "family": "external-Number",
+    "query": "What is the number of months that Kingda Ka was closed after being struck by lightning in 2009?",
+    "url": "",
+    "answer": "3",
+    "answers": [
+      "3"
+    ],
+    "sources": [
+      "https://www.coastergallery.com/1999/GA87.html",
+      "https://parklore.com/main/top-thrill-dragster/3/",
+      "https://en.wikipedia.org/wiki/Kingda_Ka"
+    ],
+    "upstream_row": 566,
+    "upstream_topic": "Other",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2695",
+    "family": "external-Place",
+    "query": "In which Tokyo venue was P-Model's live album *Pause* recorded?",
+    "url": "",
+    "answer": "Hibiya Open-Air Concert Hall",
+    "answers": [
+      "Hibiya Open-Air Concert Hall"
+    ],
+    "sources": [
+      "https://www.last.fm/music/P-Model/Pause/+wiki",
+      "https://en.wikipedia.org/wiki/Pause_(P-Model_album)"
+    ],
+    "upstream_row": 614,
+    "upstream_topic": "Music",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2008",
+    "family": "external-Number",
+    "query": "How many innings did Game 5 of the '86 ALCS last?",
+    "url": "",
+    "answer": "11",
+    "answers": [
+      "11"
+    ],
+    "sources": [
+      "https://eu.telegram.com/story/sports/2016/05/26/red-sox-game-5-of-1986-alcs-is-one-of-all-time-greatest/28422969007/",
+      "https://en.wikipedia.org/wiki/Boston_Red_Sox",
+      "https://en.wikipedia.org/wiki/1986_American_League_Championship_Series",
+      "https://lastwordonsports.com/baseball/2020/06/22/1986-alcs-game-five/"
+    ],
+    "upstream_row": 460,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1805",
+    "family": "external-Person",
+    "query": "What Serbian player played in the quarterfinals of the 2018 Madrid Open men's singles?",
+    "url": "",
+    "answer": "Dušan Lajović",
+    "answers": [
+      "Dušan Lajović"
+    ],
+    "sources": [
+      "https://www.flashscore.co.uk/tennis/atp-singles/madrid-2018/",
+      "https://en.wikipedia.org/wiki/2018_Mutua_Madrid_Open_%E2%80%93_Men%27s_singles",
+      "https://www.eurosport.com/tennis/madrid-masters/2018/calendar-results.shtml"
+    ],
+    "upstream_row": 406,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-487",
+    "family": "external-Other",
+    "query": "Which was the first Indian album to have more than 1 billion streams on Spotify?",
+    "url": "",
+    "answer": "Moosetape",
+    "answers": [
+      "Moosetape"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sidhu_Moose_Wala",
+      "https://www.5dariyanews.com/news/426551-Sidhu-Moosewalas-Moosetape-Makes-History-As-The-First-Indian-Album-To-Surpass-1-Billion-Streams-O",
+      "https://culturehaze.com/breaking-moosetape-by-the-g-o-a-t-sidhu-moose-wala-becomes-the-first-indian-album-with-over-a-billion-spotify-streams/"
+    ],
+    "upstream_row": 113,
+    "upstream_topic": "Music",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2139",
+    "family": "external-Other",
+    "query": "What kind of factory did Anselm Kiefer transform into a studio in 1992?",
+    "url": "",
+    "answer": "Silk factory.",
+    "answers": [
+      "Silk factory."
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Anselm_Kiefer",
+      "https://ropac.net/news/833-anselm-kiefers-vast-studio-complex-opens-to-the/",
+      "https://www.theartstory.org/artist/kiefer-anselm/"
+    ],
+    "upstream_row": 485,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1001",
+    "family": "external-Person",
+    "query": "What was the first and last name of the recipient of the Annie Jump Cannon Award in Astronomy in 1952?",
+    "url": "",
+    "answer": "Ida Barney",
+    "answers": [
+      "Ida Barney"
+    ],
+    "sources": [
+      "https://peabodyhsi.wordpress.com/2022/07/06/ida-barney-calculating-the-cosmos/",
+      "https://aas.org/sites/default/files/2019-09/AJC01.02.pptx.pdf",
+      "https://en.wikipedia.org/wiki/Annie_Jump_Cannon_Award_in_Astronomy"
+    ],
+    "upstream_row": 218,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2657",
+    "family": "external-Date",
+    "query": "When was the album \"When the Sun Goes Down\" by Selena Gomez released in Japan (specific day, month, and year)?",
+    "url": "",
+    "answer": "14 September 2011",
+    "answers": [
+      "14 September 2011",
+      "2011-09-14"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/When_the_Sun_Goes_Down_(Selena_Gomez_%26_the_Scene_album)",
+      "https://www.yesasia.com/us/when-the-sun-goes-down-japan-version/1024605472-0-0-0-en/info.html",
+      "https://www.cdjapan.co.jp/product/NEODAI-56727"
+    ],
+    "upstream_row": 602,
+    "upstream_topic": "Music",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2001",
+    "family": "external-Other",
+    "query": "What country placed 8th in the women's épée team event of the 2020 Tokyo Olympics?",
+    "url": "",
+    "answer": "ROC",
+    "answers": [
+      "ROC"
+    ],
+    "sources": [
+      "https://academyoffencingmasters.com/blog/fencing-history-was-made-in-tokyo-2020/",
+      "https://olympics.com/en/athletes/aizanat-murtazaeva",
+      "https://en.wikipedia.org/wiki/Fencing_at_the_2020_Summer_Olympics_%E2%80%93_Women%27s_team_%C3%A9p%C3%A9e",
+      "https://olympics.com/en/olympic-games/tokyo-2020/results/fencing/women-s-epee-team"
+    ],
+    "upstream_row": 459,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1917",
+    "family": "external-Number",
+    "query": "What is the total number of tracks on the Ys Origin original soundtrack released in 2007?",
+    "url": "",
+    "answer": "37",
+    "answers": [
+      "37"
+    ],
+    "sources": [
+      "https://vgmdb.net/album/4430",
+      "https://falcommusicarchives.weebly.com/ys-origin-original-soundtrack.html",
+      "https://downloads.khinsider.com/game-soundtracks/album/ys-origin"
+    ],
+    "upstream_row": 439,
+    "upstream_topic": "Music",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3578",
+    "family": "external-Person",
+    "query": "In 1900, who broke the world record for consecutive chin-ups (39)?",
+    "url": "",
+    "answer": "Alfred Carlton Gilbert",
+    "answers": [
+      "Alfred Carlton Gilbert"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Alfred_Carlton_Gilbert",
+      "https://oregonsportshall.org/timeline/alfred-a-c-gilbert-track-field/",
+      "https://www.mentalfloss.com/article/89161/ac-gilbert-toymaker-who-actually-saved-christmas"
+    ],
+    "upstream_row": 830,
+    "upstream_topic": "Sports",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2997",
+    "family": "external-Other",
+    "query": "What are the four classifications of techniques and methodologies for mental fatigue measurement mentioned in Faramarz Gharagozlou et al.'s 2015 research paper, \"Detecting Driver Mental Fatigue Based on EEG Alpha Power Changes During Simulated Driving\"?",
+    "url": "",
+    "answer": "subjective,  psychological,  performance and physiological  methods",
+    "answers": [
+      "subjective,  psychological,  performance and physiological  methods"
+    ],
+    "sources": [
+      "https://europepmc.org/article/PMC/4724743",
+      "https://www.researchgate.net/publication/289248977_Detecting_Driver_Mental_Fatigue_Based_on_EEG_Alpha_Power_Changes_during_Simulated_Driving",
+      "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4724743/"
+    ],
+    "upstream_row": 682,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2382",
+    "family": "external-Other",
+    "query": "Which infraorder in the animal kingdom does the superfamily Psalidopodoidea belong to?",
+    "url": "",
+    "answer": "Caridea",
+    "answers": [
+      "Caridea"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Psalidopus",
+      "https://www.dutchcaribbeanspecies.org/linnaeus_ng/app/views/species/nsr_taxon.php?id=188590",
+      "https://en.wikipedia.org/wiki/Caridea",
+      "https://www.marinespecies.org/aphia.php?id=414748&p=taxdetails"
+    ],
+    "upstream_row": 534,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2928",
+    "family": "external-Date",
+    "query": "In what year did Danish mathematician and astronomer Niels Erik Norlund set up seismographic stations in Denmark and Greenland?",
+    "url": "",
+    "answer": "1925",
+    "answers": [
+      "1925",
+      "1,925"
+    ],
+    "sources": [
+      "https://nbi.ku.dk/english/www/inge/lehmann/andet-kap/",
+      "https://mathshistory.st-andrews.ac.uk/Biographies/Norlund/",
+      "https://www.encyclopedia.com/people/science-and-technology/geology-and-oceanography-biographies/inge-lehmann"
+    ],
+    "upstream_row": 666,
+    "upstream_topic": "Science and technology",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1246",
+    "family": "external-Date",
+    "query": "On what day, month, and year was the Dogra Art Museum (Jammu) inaugurated by the first President of India, Dr. Rajendra Prasad?",
+    "url": "",
+    "answer": "18th of April, 1954",
+    "answers": [
+      "18th of April, 1954"
+    ],
+    "sources": [
+      "https://www.dailyexcelsior.com/dogra-art-museum-pride-of-jammu-against-all-odds/",
+      "https://en.wikipedia.org/wiki/Dogra_Art_Museum",
+      "https://jkarchives.nic.in/Museum_Jammu.htm"
+    ],
+    "upstream_row": 287,
+    "upstream_topic": "Art",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-365",
+    "family": "external-Date",
+    "query": "In which month and year did \"Flying\" magazine publish \"Battling the Big Lie: John King's Crusade to Change Aviation's Culture\"?",
+    "url": "",
+    "answer": "March 2001",
+    "answers": [
+      "March 2001"
+    ],
+    "sources": [
+      "https://commons.erau.edu/cgi/viewcontent.cgi?article=1567&context=jaaer",
+      "https://web.archive.org/web/20180720134510id_/https://commons.erau.edu/cgi/viewcontent.cgi?article=1567&context=jaaer",
+      "https://en.wikipedia.org/wiki/King_Schools"
+    ],
+    "upstream_row": 89,
+    "upstream_topic": "Other",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1019",
+    "family": "external-Person",
+    "query": "Who succeeded Stefano Moshi as presiding bishop of the Evangelical Lutheran Church in Tanzania?",
+    "url": "",
+    "answer": "Sebastian Kolowa",
+    "answers": [
+      "Sebastian Kolowa"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Evangelical_Lutheran_Church_in_Tanzania",
+      "https://habarika1.rssing.com/chan-52911238/article1400.html"
+    ],
+    "upstream_row": 224,
+    "upstream_topic": "Other",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3415",
+    "family": "external-Person",
+    "query": "Who was the grandfather of the 14th Chief Justice of India, A.N. Ray?",
+    "url": "",
+    "answer": "Dr. Debendra Nath Ray",
+    "answers": [
+      "Dr. Debendra Nath Ray"
+    ],
+    "sources": [
+      "https://www.sci.gov.in/judge/justice-a-n-ray/",
+      "https://web.archive.org/web/20090409224539/http://www.supremecourtofindia.nic.in/judges/bio/anray.htm"
+    ],
+    "upstream_row": 781,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1296",
+    "family": "external-Other",
+    "query": "Which Indian agriculture is known as Golden Zest?",
+    "url": "",
+    "answer": "Saffron Cultivation",
+    "answers": [
+      "Saffron Cultivation"
+    ],
+    "sources": [
+      "https://justagriculture.in/files/newsletter/2023/june/45.%20Indoor%20Saffron%20Production%20-%20How%20and%20Why.pdf",
+      "https://www.dailyexcelsior.com/saffron-farming-in-jk/",
+      "https://www.dailyexcelsior.com/saffron-cultivation-in-kishtwar/",
+      "https://kashmirtravels.com/tours/kashmir-saffron-harvest-tour.html"
+    ],
+    "upstream_row": 299,
+    "upstream_topic": "Geography",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-3488",
+    "family": "external-Date",
+    "query": "In what year was Alain Stanké made a Knight of the National Order of Quebec?",
+    "url": "",
+    "answer": "2003",
+    "answers": [
+      "2003",
+      "2,003"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Alain_Stank%C3%A9",
+      "https://www.lithuanianheritage.ca/home/explore/montreal-artists-group/alain-stanke/",
+      "https://www.thecanadianencyclopedia.ca/en/article/alain-stanke",
+      "https://prabook.com/web/alain.stanke/2553426"
+    ],
+    "upstream_row": 799,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1042",
+    "family": "external-Person",
+    "query": "Who was Patricia Bullrich's first husband?",
+    "url": "",
+    "answer": "Marcelo Langieri",
+    "answers": [
+      "Marcelo Langieri"
+    ],
+    "sources": [
+      "https://noticias.perfil.com/noticias/actualidad/2017-11-26-la-tragica-historia-de-los-novios-de-patricia-bullrich-desaparecidos-durante-la-dictadura.phtml",
+      "https://www.batimes.com.ar/news/argentina/patricia-bullrich-a-profile.phtml",
+      "https://en.wikipedia.org/wiki/Patricia_Bullrich"
+    ],
+    "upstream_row": 230,
+    "upstream_topic": "Politics",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1442",
+    "family": "external-Other",
+    "query": "What's the first typhoon of the 2019 Pacific typhoon season called?",
+    "url": "",
+    "answer": "Wutip",
+    "answers": [
+      "Wutip"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Typhoon_Wutip_(2019)",
+      "https://en.wikipedia.org/wiki/2019_Pacific_typhoon_season",
+      "https://www.wunderground.com/cat6/Early-Start-2019-Typhoon-Season-Category-2-Wutip-Heads-Towards-Guam"
+    ],
+    "upstream_row": 329,
+    "upstream_topic": "Geography",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-2977",
+    "family": "external-Person",
+    "query": "Who was Markus Dörk's original replacement as guitarist for Blind Guardian?",
+    "url": "",
+    "answer": "Christof Theißen",
+    "answers": [
+      "Christof Theißen"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Blind_Guardian",
+      "https://www.pixeleyeindustries.com/blind-guardian",
+      "https://vinyl-records.nl/power-speed-metal/blind-guardian-vinyl-discography-and-album-covers-from-1989-1990.html"
+    ],
+    "upstream_row": 680,
+    "upstream_topic": "Music",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-4243",
+    "family": "external-Person",
+    "query": "Who wrote the song \"Let's Do It Again\" performed by TLC?",
+    "url": "",
+    "answer": "Babyface and Jon-John",
+    "answers": [
+      "Babyface and Jon-John"
+    ],
+    "sources": [
+      "https://mojim.com/usy100727x2x10.htm",
+      "https://genius.com/Tlc-lets-do-it-again-lyrics/q/writer",
+      "https://en.wikipedia.org/wiki/CrazySexyCool"
+    ],
+    "upstream_row": 982,
+    "upstream_topic": "Music",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-1537",
+    "family": "external-Number",
+    "query": "In what grade was the model and actress Hunter Schafer diagnosed with gender dysphoria?",
+    "url": "",
+    "answer": "9th",
+    "answers": [
+      "9th"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Hunter_Schafer",
+      "https://www.aclu.org/bio/hunter-schafer",
+      "https://www.idsnews.com/article/2024/02/hunter-shafer-brief-auditorium-events-recent"
+    ],
+    "upstream_row": 347,
+    "upstream_topic": "Other",
+    "multi_step": "False"
+  },
+  {
+    "id": "simpleqa-442",
+    "family": "external-Other",
+    "query": "What compilation did Machine Girl release in 2015?",
+    "url": "",
+    "answer": "Phantom Tracks",
+    "answers": [
+      "Phantom Tracks"
+    ],
+    "sources": [
+      "https://en.wikipedia.org/wiki/Machine_Girl_(band)",
+      "https://genius.com/albums/Machine-girl/Phantom-tracks",
+      "https://archive.org/details/MachineGirlPhantomTracks"
+    ],
+    "upstream_row": 100,
+    "upstream_topic": "Music",
+    "multi_step": "False"
+  }
+]

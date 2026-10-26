@@ -1,0 +1,52 @@
+{
+  "scope": "Local real-starting-page end-to-end development diagnosis; same frozen cases and fixtures, strict required source sets. Not general-web, unseen holdout, or official competition accuracy.",
+  "baseline_revision": "0fe4e6435940a5a4e9f589eb5ce1d74d90cfc46e",
+  "before_report": "benchmarks/proof-20261023-before.json",
+  "after_report": "benchmarks/proof-20261023-after.json",
+  "raw_scope_note": "The original reports inherited an oracle-reader docstring; actual case paths are index pages, max_depth is2, and navigation was executed. This ledger corrects that description without changing raw results.",
+  "context_limit": 1024,
+  "cases_sha256": "c6eee22967590d4d5d9c7a1b95dfd9f2e9133e4a2dcb5be6754676d9c9e1c4d7",
+  "fixtures_sha256": "0b0d0eee41748670b239462ebc3b7448494e2ee0dae0905ae36d75d214f7758e",
+  "before": {
+    "answer_passed": 5,
+    "joint_passed": 4,
+    "nonempty": 4,
+    "n": 8,
+    "mean_seconds": 2.915,
+    "p50_seconds": 3.31475,
+    "p95_seconds": 4.674695,
+    "max_seconds": 4.8351,
+    "model_calls": 23,
+    "maximum_input_tokens": 1011,
+    "context_prunings": 1
+  },
+  "after": {
+    "answer_passed": 8,
+    "joint_passed": 8,
+    "nonempty": 5,
+    "n": 8,
+    "mean_seconds": 2.0089375,
+    "p50_seconds": 2.2376,
+    "p95_seconds": 3.301605,
+    "max_seconds": 3.5451,
+    "model_calls": 14,
+    "maximum_input_tokens": 675,
+    "context_prunings": 0
+  },
+  "wins": [
+    "07-doc-cross-version-comparison",
+    "09-web-table-cell",
+    "16-web-two-source-mapping",
+    "ambiguous-map"
+  ],
+  "losses": [],
+  "ties": [
+    "missing-version",
+    "incomplete-row",
+    "single-fee",
+    "single-table"
+  ],
+  "checks_report": "benchmarks/proof-checks-20261023-complete.json",
+  "cli_report": "benchmarks/proof-cli-20261023.json",
+  "limitation": "After the full-model run, independent conflict/version/operation checking and diagnostic reason labels were strengthened, then covered by27 CPU/HTTP checks. No repeat full-model sweep. Typed proof grammar is bounded; no arbitrary multi-hop or unit conversion claim."
+}

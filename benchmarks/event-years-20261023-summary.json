@@ -1,0 +1,38 @@
+{
+  "scope": "Same11 localfixedpages, sameownedfull4Bservice; realdatedandundatedsources plusauthoredcontrols. Notpublicweb orholdoutaccuracy. Finalperiodrefinement independentlyattested onpairedcandidate decisions.",
+  "comparison": {
+    "before_passed": 5,
+    "after_passed": 11,
+    "total": 11,
+    "wins": [
+      "real-undated",
+      "undated",
+      "unrelated-date",
+      "other-person",
+      "birth-year",
+      "two-events"
+    ],
+    "losses": []
+  },
+  "cases_sha256": "ad23f18ff9983ac4811689f3641e8d5ff8e8e94b8e33991bff6ca45be44e5ba7",
+  "fixtures_sha256": "59af6f3343345eedf902c66810cdf81995d4c9d0cd4ad55ad19ba35c76743d2b",
+  "before_calls": 21,
+  "after_calls": 17,
+  "before_mean_seconds": 1.2882272727272728,
+  "after_mean_seconds": 1.1237727272727274,
+  "production_changed_during_run": false,
+  "memory_after_shutdown": {
+    "used_mib": 897,
+    "total_mib": 12282
+  },
+  "positive_answers_before": 5,
+  "positive_answers_after": 6,
+  "recovered_correct_abstentions": [
+    "real-undated",
+    "undated",
+    "unrelated-date",
+    "other-person",
+    "birth-year"
+  ],
+  "recovered_correct_answer": "two-events"
+}

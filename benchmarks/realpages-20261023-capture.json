@@ -1,0 +1,108 @@
+{
+  "captured_utc": "2026-10-22T18:06:07.024690+00:00",
+  "scope": "Four exposed development failures, live source capture only; no model or answer score.",
+  "events": [
+    {
+      "url": "https://achievement.org/our-history/golden-plate-awards/all-honorees/",
+      "final": "https://achievement.org/our-history/golden-plate-awards/all-honorees/",
+      "status": 200,
+      "bytes": 738478,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://www.research.ed.ac.uk/en/persons/gordon-plotkin",
+      "final": "https://www.research.ed.ac.uk/en/persons/gordon-plotkin-2/",
+      "status": 200,
+      "bytes": 115866,
+      "error": "",
+      "redirects": [
+        "https://www.research.ed.ac.uk/en/persons/gordon-plotkin",
+        "https://www.research.ed.ac.uk/en/persons/gordon-plotkin/"
+      ],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://fromfrancewithloves.wordpress.com/brilliant-me/well-known-scientists/72-names-written-on-eiffel-tower/",
+      "final": "https://fromfrancewithloves.wordpress.com/brilliant-me/well-known-scientists/72-names-written-on-eiffel-tower/",
+      "status": 200,
+      "bytes": 108815,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    },
+    {
+      "url": "https://history.state.gov/departmenthistory/people/standley-william-harrison",
+      "final": "https://history.state.gov/departmenthistory/people/standley-william-harrison",
+      "status": 200,
+      "bytes": 22230,
+      "error": "",
+      "redirects": [],
+      "truncated": false,
+      "truncation_reason": ""
+    }
+  ],
+  "rows": [
+    {
+      "id": "simpleqa-491",
+      "query": "In what year did the biochemist Mildred Cohn receive the Golden Plate Award from the American Academy of Achievement?",
+      "url": "https://achievement.org/our-history/golden-plate-awards/all-honorees/",
+      "expected": [
+        "1984",
+        "1,984"
+      ],
+      "final": "https://achievement.org/our-history/golden-plate-awards/all-honorees/",
+      "status": 200,
+      "error": "",
+      "file": "simpleqa-491.html",
+      "sha256": "cdb8dda31515154b8df75137722d884d43d9e0297a95e070be60bacf6689d4a7"
+    },
+    {
+      "id": "simpleqa-3382",
+      "query": "In what year did Gordon Plotkin win the ACM SIGPLAN Programming Languages Achievement Award?",
+      "url": "https://www.research.ed.ac.uk/en/persons/gordon-plotkin",
+      "expected": [
+        "2010",
+        "2,010"
+      ],
+      "final": "https://www.research.ed.ac.uk/en/persons/gordon-plotkin-2/",
+      "status": 200,
+      "error": "",
+      "file": "simpleqa-3382.html",
+      "sha256": "2dba1783bef74920699f4b9f6ca101b7799ae47af6692cc3becbf117142ce5ae"
+    },
+    {
+      "id": "simpleqa-4197",
+      "query": "What surname of a mathematician is engraved on the Eiffel Tower at location NW06?",
+      "url": "https://fromfrancewithloves.wordpress.com/brilliant-me/well-known-scientists/72-names-written-on-eiffel-tower/",
+      "expected": [
+        "LAGRANGE"
+      ],
+      "final": "https://fromfrancewithloves.wordpress.com/brilliant-me/well-known-scientists/72-names-written-on-eiffel-tower/",
+      "status": 200,
+      "error": "",
+      "file": "simpleqa-4197.html",
+      "sha256": "87de5e80a9f9e82428605c37addffc7663da01c5bb6f56457ee744c5ae6c924b"
+    },
+    {
+      "id": "simpleqa-969",
+      "query": "Which month and year was William Harrison Standley appointed as the American Ambassador to the USSR?",
+      "url": "https://history.state.gov/departmenthistory/people/standley-william-harrison",
+      "expected": [
+        "February 1942"
+      ],
+      "final": "https://history.state.gov/departmenthistory/people/standley-william-harrison",
+      "status": 200,
+      "error": "",
+      "file": "simpleqa-969.html",
+      "sha256": "625990416b4677de0a08f7fbd319392838c541cc1b0d05ed782b99458ff573e9"
+    }
+  ],
+  "fixture_path": "research/realpages-20261023/fixtures.json",
+  "fixture_sha256": "bfb21c81a47c57a9daf980d96121ef616ad56b83d1e652a0d1b19b6779e60a11",
+  "notes": "Raw HTML and frozen fixture JSON retained locally under ignored research directory. These four IDs were selected from previously exposed errors, not independent holdout. Gold answer aliases unchanged, including uppercase LAGRANGE."
+}

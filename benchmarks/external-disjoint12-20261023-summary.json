@@ -1,0 +1,31 @@
+{
+  "scope": "First frozen uniform disjoint12 actual live assessment. Small sample; not representative official accuracy. Reclassify as exposed after this first run. Every returned source must be frozen gold.",
+  "n": 12,
+  "answer_exact": 4,
+  "source_exact": 3,
+  "joint_exact": 2,
+  "answered": 7,
+  "unmatched_answer_ids": [
+    "simpleqa-73",
+    "simpleqa-779",
+    "simpleqa-1507"
+  ],
+  "answer_correct_source_unmatched_ids": [
+    "simpleqa-3263",
+    "simpleqa-1031"
+  ],
+  "mean_seconds": 9.3775,
+  "model_calls": 37,
+  "internal_deadlines": 0,
+  "engine_errors": 0,
+  "production_changed_during_run": false,
+  "capture_omissions": 0,
+  "report": "benchmarks/external-disjoint12-20261023-first.json",
+  "next_priorities": [
+    "Generic request words qualify unrelated dictionary provider responses as relevant and prevent fallback. Some relevant hints are appended after those leading words.",
+    "first and last name wrongly requests compose_fields table proof; no name read attempted.",
+    "Model semantic verifier accepted wrong geographic direction relation; treat as actual error.",
+    "Returned lyric excerpt overran first-line request; do not count as correct.",
+    "Gold descriptive-range strings and exact source aliases distinguish unmatched outputs from factual errors; no posthoc primary score changes."
+  ]
+}

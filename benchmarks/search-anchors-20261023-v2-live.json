@@ -1,0 +1,345 @@
+{
+  "scope": "Small live-source availability probe from exposed historical failures.\n\nRuns actual production HTTP/search parsing, without model inference or gold\nanswers in production requests. This reports retrieval, not answer accuracy.\n",
+  "captured_utc": "2026-10-23T00:58:20.607530+00:00",
+  "rows": [
+    {
+      "id": "simpleqa-37",
+      "query": "What is the first and last name of the woman whom the British linguist Bernard Comrie married in 1985?",
+      "starting_url": "https://en.wikipedia.org/wiki/Bernard_Comrie",
+      "starting_status": 403,
+      "starting_error": "http_403",
+      "candidates": [],
+      "search_hints": [
+        "bernard comrie spouse",
+        "bernard comrie wife",
+        "british linguist marriage",
+        "comrie marital partner",
+        "wife of bernard comrie",
+        "comrie personal life"
+      ],
+      "pages": [],
+      "events": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Bernard_Comrie",
+          "final": "https://en.wikipedia.org/wiki/Bernard_Comrie",
+          "status": 403,
+          "bytes": 0,
+          "error": "http_403",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://html.duckduckgo.com/html/?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985+bernard+comrie+spouse+bernard+comrie+wife+british+linguist+marriage+comrie+marital+partner",
+          "final": "https://html.duckduckgo.com/html/?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985+bernard+comrie+spouse+bernard+comrie+wife+british+linguist+marriage+comrie+marital+partner",
+          "status": 202,
+          "bytes": 14558,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.bing.com/search?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985",
+          "final": "https://www.bing.com/search?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985",
+          "status": 200,
+          "bytes": 126618,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://html.duckduckgo.com/html/?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985",
+          "final": "https://html.duckduckgo.com/html/?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985",
+          "status": 202,
+          "bytes": 14364,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.bing.com/search?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985+bernard+comrie+spouse+bernard+comrie+wife+british+linguist+marriage+comrie+marital+partner",
+          "final": "https://www.bing.com/search?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985+bernard+comrie+spouse+bernard+comrie+wife+british+linguist+marriage+comrie+marital+partner",
+          "status": 200,
+          "bytes": 125591,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://lite.duckduckgo.com/lite/?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985+bernard+comrie+spouse+bernard+comrie+wife+british+linguist+marriage+comrie+marital+partner",
+          "final": "https://lite.duckduckgo.com/lite/?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985+bernard+comrie+spouse+bernard+comrie+wife+british+linguist+marriage+comrie+marital+partner",
+          "status": 202,
+          "bytes": 14540,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.bing.com/search?format=rss&q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985+bernard+comrie+spouse+bernard+comrie+wife+british+linguist+marriage+comrie+marital+partner",
+          "final": "https://www.bing.com/search?format=rss&q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985+bernard+comrie+spouse+bernard+comrie+wife+british+linguist+marriage+comrie+marital+partner",
+          "status": 200,
+          "bytes": 8164,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.google.com/search?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985+bernard+comrie+spouse+bernard+comrie+wife+british+linguist+marriage+comrie+marital+partner",
+          "final": "https://www.google.com/search?q=first+last+name+woman+whom+british+linguist+bernard+comrie+married+1985+bernard+comrie+spouse+bernard+comrie+wife+british+linguist+marriage+comrie+marital+partner",
+          "status": 200,
+          "bytes": 92395,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=What%20is%20the%20first%20and%20last%20name%20of%20the%20woman%20whom%20the%20British%20linguist%20Bernard%20Comrie%20married%20in%201985%3F",
+          "final": "https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=What%20is%20the%20first%20and%20last%20name%20of%20the%20woman%20whom%20the%20British%20linguist%20Bernard%20Comrie%20married%20in%201985%3F",
+          "status": 403,
+          "bytes": 0,
+          "error": "http_403",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        }
+      ],
+      "seconds": 1.294503999990411,
+      "search_snapshot_path": "research\\search-anchors-20261023-v2\\simpleqa-37.json",
+      "search_snapshot_sha256": "8620ff91fc47d7d70f7cb98c77080c1c1a7f9c5e6cdf8242ef60fad439c51ee6"
+    },
+    {
+      "id": "simpleqa-395",
+      "query": "What two football teams were mentioned in the libel case against \"The Saturday Evening Post\" in 1963?",
+      "starting_url": "https://en.wikipedia.org/wiki/Curtis_Publishing_Co._v._Butts",
+      "starting_status": 403,
+      "starting_error": "http_403",
+      "candidates": [],
+      "search_hints": [],
+      "pages": [],
+      "events": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Curtis_Publishing_Co._v._Butts",
+          "final": "https://en.wikipedia.org/wiki/Curtis_Publishing_Co._v._Butts",
+          "status": 403,
+          "bytes": 0,
+          "error": "http_403",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://html.duckduckgo.com/html/?q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+          "final": "https://html.duckduckgo.com/html/?q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+          "status": 202,
+          "bytes": 14370,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://html.duckduckgo.com/html/?q=What+two+football+teams+were+mentioned+in+the+libel+case+against+%22The+Saturday+Evening+Post%22+in+1963%3F",
+          "final": "https://html.duckduckgo.com/html/?q=What+two+football+teams+were+mentioned+in+the+libel+case+against+%22The+Saturday+Evening+Post%22+in+1963%3F",
+          "status": 202,
+          "bytes": 14456,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.bing.com/search?q=What+two+football+teams+were+mentioned+in+the+libel+case+against+%22The+Saturday+Evening+Post%22+in+1963%3F",
+          "final": "https://www.bing.com/search?q=What+two+football+teams+were+mentioned+in+the+libel+case+against+%22The+Saturday+Evening+Post%22+in+1963%3F",
+          "status": 200,
+          "bytes": 122443,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.bing.com/search?q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+          "final": "https://www.bing.com/search?q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+          "status": 200,
+          "bytes": 121508,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.bing.com/search?format=rss&q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+          "final": "https://www.bing.com/search?format=rss&q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+          "status": 200,
+          "bytes": 5263,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://lite.duckduckgo.com/lite/?q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+          "final": "https://lite.duckduckgo.com/lite/?q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+          "status": 202,
+          "bytes": 14370,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.google.com/search?q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+          "final": "https://www.google.com/search?q=two+football+teams+mentioned+libel+case+against+saturday+evening+post+1963",
+          "status": 200,
+          "bytes": 92348,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=What%20two%20football%20teams%20were%20mentioned%20in%20the%20libel%20case%20against%20%22The%20Saturday%20Evening%20Post%22%20in%201963%3F",
+          "final": "https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=What%20two%20football%20teams%20were%20mentioned%20in%20the%20libel%20case%20against%20%22The%20Saturday%20Evening%20Post%22%20in%201963%3F",
+          "status": 403,
+          "bytes": 0,
+          "error": "http_403",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        }
+      ],
+      "seconds": 1.3067786999745294,
+      "search_snapshot_path": "research\\search-anchors-20261023-v2\\simpleqa-395.json",
+      "search_snapshot_sha256": "23bd10b2724ff7ccac5e86286b0bb32ecf1b4c84a006a04cac455c4296fc4c5b"
+    },
+    {
+      "id": "simpleqa-32",
+      "query": "What day, month, and year was Carrie Underwood's album \"Cry Pretty\" certified Gold by the RIAA?",
+      "starting_url": "https://www.riaa.com/gold-platinum/?tab_active=default-award&se=cry+pretty",
+      "starting_status": 403,
+      "starting_error": "http_403",
+      "candidates": [],
+      "search_hints": [
+        "carrie underwood cry pretty album",
+        "riaa certification gold",
+        "cry pretty certification date",
+        "riaa gold certification timeline",
+        "carrie underwood album release date",
+        "cry pretty riaa certification",
+        "gold certification music album",
+        "riaa certification event date"
+      ],
+      "pages": [],
+      "events": [
+        {
+          "url": "https://www.riaa.com/gold-platinum/?tab_active=default-award&se=cry+pretty",
+          "final": "https://www.riaa.com/gold-platinum/?tab_active=default-award&se=cry+pretty",
+          "status": 403,
+          "bytes": 0,
+          "error": "http_403",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.bing.com/search?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa",
+          "final": "https://www.bing.com/search?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa",
+          "status": 200,
+          "bytes": 122968,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.bing.com/search?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa+carrie+underwood+cry+pretty+album+riaa+certification+gold+cry+pretty+certification+date+riaa+gold+certification+timeline",
+          "final": "https://www.bing.com/search?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa+carrie+underwood+cry+pretty+album+riaa+certification+gold+cry+pretty+certification+date+riaa+gold+certification+timeline",
+          "status": 200,
+          "bytes": 128359,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://html.duckduckgo.com/html/?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa",
+          "final": "https://html.duckduckgo.com/html/?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa",
+          "status": 202,
+          "bytes": 14350,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://html.duckduckgo.com/html/?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa+carrie+underwood+cry+pretty+album+riaa+certification+gold+cry+pretty+certification+date+riaa+gold+certification+timeline",
+          "final": "https://html.duckduckgo.com/html/?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa+carrie+underwood+cry+pretty+album+riaa+certification+gold+cry+pretty+certification+date+riaa+gold+certification+timeline",
+          "status": 202,
+          "bytes": 14609,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.bing.com/search?format=rss&q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa+carrie+underwood+cry+pretty+album+riaa+certification+gold+cry+pretty+certification+date+riaa+gold+certification+timeline",
+          "final": "https://www.bing.com/search?format=rss&q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa+carrie+underwood+cry+pretty+album+riaa+certification+gold+cry+pretty+certification+date+riaa+gold+certification+timeline",
+          "status": 200,
+          "bytes": 6632,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://lite.duckduckgo.com/lite/?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa+carrie+underwood+cry+pretty+album+riaa+certification+gold+cry+pretty+certification+date+riaa+gold+certification+timeline",
+          "final": "https://lite.duckduckgo.com/lite/?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa+carrie+underwood+cry+pretty+album+riaa+certification+gold+cry+pretty+certification+date+riaa+gold+certification+timeline",
+          "status": 202,
+          "bytes": 14604,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://www.google.com/search?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa+carrie+underwood+cry+pretty+album+riaa+certification+gold+cry+pretty+certification+date+riaa+gold+certification+timeline",
+          "final": "https://www.google.com/search?q=day+month+year+carrie+underwood+s+album+cry+pretty+certified+gold+riaa+carrie+underwood+cry+pretty+album+riaa+certification+gold+cry+pretty+certification+date+riaa+gold+certification+timeline",
+          "status": 200,
+          "bytes": 92465,
+          "error": "",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        },
+        {
+          "url": "https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=What%20day%2C%20month%2C%20and%20year%20was%20Carrie%20Underwood%27s%20album%20%22Cry%20Pretty%22%20certified%20Gold%20by%20the%20RIAA%3F",
+          "final": "https://en.wikipedia.org/w/api.php?action=query&list=search&format=json&srsearch=What%20day%2C%20month%2C%20and%20year%20was%20Carrie%20Underwood%27s%20album%20%22Cry%20Pretty%22%20certified%20Gold%20by%20the%20RIAA%3F",
+          "status": 403,
+          "bytes": 0,
+          "error": "http_403",
+          "redirects": [],
+          "truncated": false,
+          "truncation_reason": ""
+        }
+      ],
+      "seconds": 1.0704749999567866,
+      "search_snapshot_path": "research\\search-anchors-20261023-v2\\simpleqa-32.json",
+      "search_snapshot_sha256": "83759a47052873a412cdf9b0a91e2569309ba1e1bd5497f29049cc1a2f86e7ff"
+    }
+  ],
+  "source_sha256": {
+    "agent/search.py": "489c8fee52ce0775b2e7d29d21f977e3d644a00098f834f736e456f1a34faf87",
+    "agent/urls.py": "2118381f70d0f44174db25833b989cd36dab64b588b83085cddd65cad7412a1f",
+    "agent/network.py": "def1be3752f81423c313c2dfa83f6703ee063d7e98652cf0d816b423d0e2d9cb",
+    "agent/planner.py": "0437ea114784095170a8e4b6d14e139f8fc80a27ab1c37c29ced95059525ca72"
+  },
+  "input_report": "benchmarks/external-disjoint12-20261023-first.json",
+  "reused_trace_hints": true
+}

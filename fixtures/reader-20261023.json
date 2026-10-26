@@ -1,0 +1,62 @@
+{
+  "/01-doc-old-distractor/v4.html": [
+    200,
+    "text/html",
+    "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><title>AsterQueue v4 retry policy — current stable</title><meta name=\"version\" content=\"4\"></head><body><header><p>Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional.</p></header><main><h1>AsterQueue v4 retry policy — current stable</h1><p>Documentation version: 4.</p><p>Version 4 uses the adaptive retry policy by default.</p></main></body></html>\n"
+  ],
+  "/03-doc-renamed-configuration/migration-v3.html": [
+    200,
+    "text/html",
+    "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><title>QuartzSite v3 migration — current stable</title><meta name=\"version\" content=\"3\"></head><body><header><p>Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional.</p></header><main><h1>QuartzSite v3 migration — current stable</h1><p>Documentation version: 3.</p><p>In version 3, route_cache was renamed to page_cache. Use page_cache to enable page-output caching.</p><p>The old option route_cache is not accepted in version 3.</p></main></body></html>\n"
+  ],
+  "/04-doc-conditional-default/cache-v3.html": [
+    200,
+    "text/html",
+    "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><title>LumenServe v3 cache defaults — current stable</title><meta name=\"version\" content=\"3\"></head><body><header><p>Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional.</p></header><main><h1>LumenServe v3 cache defaults — current stable</h1><p>Documentation version: 3.</p><p>In development mode, the result cache is enabled by default.</p><p>In production mode with cold starts enabled, the result cache is disabled by default.</p><p>In production mode without cold starts, the result cache is enabled by default.</p></main></body></html>\n"
+  ],
+  "/08-doc-prerelease-distractor/v4.html": [
+    200,
+    "text/html",
+    "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><title>BirchClient v4 timeouts — current stable</title><meta name=\"version\" content=\"4\"></head><body><header><p>Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional.</p></header><main><h1>BirchClient v4 timeouts — current stable</h1><p>Documentation version: 4.</p><p>The default request timeout in version 4 is 8 seconds.</p></main></body></html>\n"
+  ],
+  "/14-web-conditional-route/north.html": [
+    200,
+    "text/html",
+    "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><title>Wren Island North Dock ferry</title></head><body><header><p>Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional.</p></header><main><h1>Wren Island North Dock ferry</h1><p>The first North Dock weekday ferry departs at 06:20.</p><p>The first North Dock weekend ferry departs at 08:40.</p></main></body></html>\n"
+  ],
+  "/15-web-effective-date-policy/warranty-2026.html": [
+    200,
+    "text/html",
+    "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><title>Juniper Workshop current repair warranty</title></head><body><header><p>Synthetic benchmark fixture. All organizations, products, dates, policies, and figures on this page are fictional.</p></header><main><h1>Juniper Workshop current repair warranty</h1><p>Effective 2026-07-01. This policy supersedes the 2024 repair-warranty policy.</p><p>Completed repairs carry a 90-day warranty.</p></main></body></html>\n"
+  ],
+  "/h05-multiple-table-context/index.html": [
+    200,
+    "text/html",
+    "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><title>Turnstone Hall access limits</title></head><body><header><p>Synthetic stress-development fixture. All products, organizations, policies, dates, and figures are fictional.</p></header><main><h1>Turnstone Hall access limits</h1><h2>Guest entry limits</h2><p>The venue counts guest admissions at the main door.</p><table><tr><th>Plan</th><th>Maximum entries</th></tr><tr><td>Studio</td><td>6 entries</td></tr><tr><td>Gallery</td><td>18 entries</td></tr></table><h2>Operator entry limits</h2><p>The venue counts entries at the east door.</p><table><tr><th>Plan</th><th>Maximum entries</th></tr><tr><td>Studio</td><td>12 entries</td></tr><tr><td>Gallery</td><td>24 entries</td></tr></table></main></body></html>\n"
+  ],
+  "/h06-missing-query-qualifiers/index.html": [
+    200,
+    "text/html",
+    "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><title>Docklight Museum membership directory</title></head><body><header><p>Synthetic stress-development fixture. All products, organizations, policies, dates, and figures are fictional.</p></header><main><h1>Docklight Museum membership directory</h1><a href=\"membership.html\">Listed general monthly membership price</a></main></body></html>\n"
+  ],
+  "/reader/jsonld-author": [
+    200,
+    "text/html",
+    "<h1>Alder essay</h1><script type=\"application/ld+json\">{\"@type\":\"Article\",\"name\":\"Alder essay\",\"author\":{\"@type\":\"Person\",\"name\":\"Mira Chen\"}}</script>"
+  ],
+  "/reader/jsonld-product": [
+    200,
+    "text/html",
+    "<h1>Cedar drive</h1><script type=\"application/ld+json\">{\"@type\":\"Product\",\"name\":\"Cedar drive\",\"capacity\":\"24 GB\"}</script>"
+  ],
+  "/reader/ui-metadata": [
+    200,
+    "text/html",
+    "<h1>Alder</h1><script type=\"application/ld+json\">{\"@type\":\"WebPage\",\"name\":\"Alder\",\"author\":false}</script><script type=\"application/json\">{\"settings\":{\"author\":false,\"marketingCountry\":\"Belize\"}}</script>"
+  ],
+  "/reader/literal-false": [
+    200,
+    "text/html",
+    "<h1>Cache settings</h1><script type=\"application/json\">{\"settings\":{\"enable_cache\":false}}</script>"
+  ]
+}

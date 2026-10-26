@@ -1,0 +1,372 @@
+{
+  "scope": "CPU-only existing hints vs missing named-anchor proposal, all terms from original question; public GETs, no model/browser.",
+  "rows": [
+    {
+      "id": "simpleqa-516",
+      "question": "What was the age range of the drivers whose EEG data was collected in the 2021 research paper titled \"EEG-Based Driving Fatigue Detection Using a Two-Level Learning Hierarchy Radial Basis Function\" by Ziwu Ren et al.?",
+      "hints": [
+        "eeg driving fatigue age range",
+        "driver age eeg study"
+      ],
+      "variants": [
+        {
+          "query": "eeg driving fatigue age range",
+          "status": 200,
+          "error": "",
+          "links": [
+            [
+              "https://link.springer.com/article/10.1007/s11571-025-10320-3",
+              "Current status and challenges in electroencephalography (EEG)-based ..."
+            ],
+            [
+              "https://wires.onlinelibrary.wiley.com/doi/10.1002/widm.70099",
+              "A Review of <fc>EEG</fc>\u2010Based Driver Fatigue Detection: Nonlinear ..."
+            ],
+            [
+              "https://ieeexplore.ieee.org/document/10361706",
+              "Assessment of Fatigue Level of Drivers of Different Ages Based on EEG ..."
+            ],
+            [
+              "https://pmc.ncbi.nlm.nih.gov/articles/PMC8970926/",
+              "Classifying Driving Fatigue by Using EEG Signals - PMC"
+            ],
+            [
+              "https://www.sciencedirect.com/science/article/pii/S1746809421001889",
+              "EEG-based driving fatigue detection using multilevel feature extraction ..."
+            ],
+            [
+              "https://onlinelibrary.wiley.com/doi/full/10.1155/2022/1885677",
+              "Classifying Driving Fatigue by Using EEG Signals"
+            ],
+            [
+              "https://link.springer.com/content/pdf/10.1007/s11571-025-10320-3.pdf",
+              "PDF Current status and challenges in electroencephalography (EEG)-based ..."
+            ],
+            [
+              "https://wires.onlinelibrary.wiley.com/doi/pdf/10.1002/widm.70099",
+              "A Review of EEG-Based Driver Fatigue Detection: Nonlinear Dynamics ..."
+            ]
+          ],
+          "capture_path": "research/location-hints-20261023-probe/simpleqa-516-0.json",
+          "sha256": "bdd304ef3e66d7976bfa0a2e43321b3069a0419a94eedb8bb5c8ce52e6785ca9"
+        },
+        {
+          "query": "eeg driving fatigue age range Ziwu Ren",
+          "status": 200,
+          "error": "",
+          "links": [
+            [
+              "https://www.researchgate.net/publication/349291260_EEG-Based_Driving_Fatigue_Detection_Using_a_Two-Level_Learning_Hierarchy_Radial_Basis_Function",
+              "EEG-Based Driving Fatigue Detection Using a Two-Level Learning ..."
+            ],
+            [
+              "https://pubmed.ncbi.nlm.nih.gov/33643018/",
+              "EEG-Based Driving Fatigue Detection Using a Two-Level Learning ... - PubMed"
+            ],
+            [
+              "https://scispace.com/papers/eeg-based-driving-fatigue-detection-using-a-two-level-4t9gcn6vzn",
+              "EEG-Based Driving Fatigue Detection Using a Two-Level Learning ..."
+            ],
+            [
+              "https://wires.onlinelibrary.wiley.com/doi/10.1002/widm.70099",
+              "A Review of <fc>EEG</fc>\u2010Based Driver Fatigue Detection: Nonlinear ..."
+            ],
+            [
+              "https://ieeexplore.ieee.org/document/10361706",
+              "Assessment of Fatigue Level of Drivers of Different Ages Based on EEG ..."
+            ],
+            [
+              "https://www.bohrium.com/en/paper-details/eeg-based-driving-fatigue-detection-using-a-two-level-learning-hierarchy-radial-basis-function/812501908798308353-2662",
+              "EEG-Based Driving Fatigue Detection Using a Two-Level Learning ..."
+            ],
+            [
+              "https://www.sciencedirect.com/science/article/pii/S2590005623000450",
+              "Multiple robust approaches for EEG-based driving fatigue detection and ..."
+            ],
+            [
+              "https://www.sciencedirect.com/science/article/pii/S1568494625014103",
+              "Driver fatigue detection using EEG-based graph ... - ScienceDirect"
+            ]
+          ],
+          "capture_path": "research/location-hints-20261023-probe/simpleqa-516-1.json",
+          "sha256": "44038e901415e91b7125f0028b7fe53b5373372df403d5328d5951fc73b36aca"
+        }
+      ]
+    },
+    {
+      "id": "simpleqa-1013",
+      "question": "How many children did Swiss painter Johann Caspar F\u00fcssli have with his wife, Elisabeth?",
+      "hints": [
+        "f\u00fcssli children with elisabeth",
+        "johann caspar f\u00fcssli family"
+      ],
+      "variants": [
+        {
+          "query": "f\u00fcssli children with elisabeth",
+          "status": 200,
+          "error": "",
+          "links": [
+            [
+              "https://ancestors.familysearch.org/en/LY1P-YNW/anna-elisabeth-waser-1712-1759",
+              "Anna Elisabeth Waser (1712-1759) - FamilySearch.org"
+            ],
+            [
+              "https://www.geni.com/people/Anna-Waser/6000000057827466885",
+              "Anna Elisabeth Waser (1714 - 1759) - Genealogy - Geni.com"
+            ],
+            [
+              "https://en.wikipedia.org/wiki/Johann_Kaspar_F%C3%BCssli",
+              "Johann Kaspar F\u00fcssli - Wikipedia"
+            ],
+            [
+              "https://en.wikipedia.org/wiki/Johann_Caspar_F%C3%BCssli",
+              "Johann Caspar F\u00fcssli - Wikipedia"
+            ],
+            [
+              "https://de.wikipedia.org/wiki/Johann_Heinrich_F%C3%BCssli",
+              "Johann Heinrich F\u00fcssli - Wikipedia"
+            ],
+            [
+              "https://www.deutsche-biographie.de/pnd142872180.html?language=en",
+              "F\u00fcssli, Elisabeth - Deutsche Biographie"
+            ],
+            [
+              "https://www.himmelundhell.ch/english/auffuehrung/index_event_003.html",
+              "Johann Heinrich F\u00fcssli (Henry Fuseli), anglo-swiss painter, 1741-1825"
+            ],
+            [
+              "https://ancestors.familysearch.org/en/LBWN-5QP/anna-elisabetha-f%C3%BCssli-1744",
+              "Anna Elisabetha F\u00fcssli (1744-) \u2022 FamilySearch"
+            ]
+          ],
+          "capture_path": "research/location-hints-20261023-probe/simpleqa-1013-0.json",
+          "sha256": "248c6a6b776958a9806065be6f31f6af58e9f6f9f0621d4ca3c6423a25186df3"
+        },
+        {
+          "query": "f\u00fcssli children with elisabeth Johann Caspar",
+          "status": 200,
+          "error": "",
+          "links": [
+            [
+              "https://en.wikipedia.org/wiki/Johann_Caspar_F%C3%BCssli",
+              "Johann Caspar F\u00fcssli - Wikipedia"
+            ],
+            [
+              "https://en.wikipedia.org/wiki/Johann_Kaspar_F%C3%BCssli",
+              "Johann Kaspar F\u00fcssli - Wikipedia"
+            ],
+            [
+              "https://ancestors.familysearch.org/en/9MF8-T95/johann-caspar-f%C3%BCssli-1706-1782",
+              "Johann Caspar F\u00fcssli (1706-1782) - FamilySearch.org"
+            ],
+            [
+              "https://everything.explained.today/Johann_Caspar_F%C3%BCssli/",
+              "Johann Caspar F\u00fcssli Explained"
+            ],
+            [
+              "https://historydata.com/person/johann-kaspar-fussli",
+              "Johann Kaspar F\u00fcssli (1743-1786) \u2014 Biography & Historical Data ..."
+            ],
+            [
+              "https://www.geni.com/people/Anna-Waser/6000000057827466885",
+              "Anna Elisabeth Waser (1714 - 1759) - Genealogy - Geni.com"
+            ],
+            [
+              "https://www.geni.com/people/Johann-F%C3%BCssli/6000000057827244027",
+              "Johann Kaspar F\u00fcssli (1743 - 1786) - Genealogy - Geni.com"
+            ],
+            [
+              "https://www.himmelundhell.ch/english/auffuehrung/index_event_003.html",
+              "Johann Heinrich F\u00fcssli (Henry Fuseli), anglo-swiss painter, 1741-1825"
+            ]
+          ],
+          "capture_path": "research/location-hints-20261023-probe/simpleqa-1013-1.json",
+          "sha256": "713343ff917987f1847e07bfb2aad681b8db7bd629b57df176705dcf44c7b973"
+        }
+      ]
+    },
+    {
+      "id": "simpleqa-1232",
+      "question": "What was the population of Konaruiyeh, a village in Esfandaqeh Rural District, in the Central District of Jiroft County, Kerman Province, Iran, at the 2006 census?",
+      "hints": [
+        "konaruiyeh census data"
+      ],
+      "variants": [
+        {
+          "query": "konaruiyeh census data",
+          "status": 200,
+          "error": "",
+          "links": [
+            [
+              "https://en.wikipedia.org/wiki/Konaruiyeh",
+              "Konaruiyeh - Wikipedia"
+            ],
+            [
+              "https://mapcarta.com/12599014",
+              "Konaruiyeh Map - Locality - Kerman, Iran - Mapcarta"
+            ],
+            [
+              "https://irandataportal.syr.edu/census",
+              "Census - Iran Data Portal - Syracuse University"
+            ],
+            [
+              "https://www.wikiwand.com/en/Konaruiyeh",
+              "Konaruiyeh - Wikiwand"
+            ],
+            [
+              "https://everything.explained.today/Konaruiyeh/",
+              "Konaruiyeh Explained"
+            ],
+            [
+              "https://www.wikidata.org/wiki/Q5831163",
+              "Konaruiyeh - Wikidata"
+            ],
+            [
+              "https://zh-min-nan.wikipedia.org/wiki/Konaruiyeh",
+              "Konaruiyeh - Wikipedia"
+            ],
+            [
+              "https://alchetron.com/Konaruiyeh",
+              "Konaruiyeh - Alchetron, The Free Social Encyclopedia"
+            ]
+          ],
+          "capture_path": "research/location-hints-20261023-probe/simpleqa-1232-0.json",
+          "sha256": "40ad09b463caead9ded66e70ee63f3ef96175becc70eb7d8c355c08c407fe28e"
+        },
+        {
+          "query": "konaruiyeh census data Esfandaqeh Rural District",
+          "status": 200,
+          "error": "",
+          "links": [
+            [
+              "https://en.wikipedia.org/wiki/Konaruiyeh",
+              "Konaruiyeh - Wikipedia"
+            ],
+            [
+              "https://mapcarta.com/12599014",
+              "Konaruiyeh Map - Locality - Kerman, Iran - Mapcarta"
+            ],
+            [
+              "https://en.wikipedia.org/wiki/Esfandaqeh_Rural_District",
+              "Esfandaqeh Rural District - Wikipedia"
+            ],
+            [
+              "https://irandataportal.syr.edu/census",
+              "Census - Iran Data Portal - Syracuse University"
+            ],
+            [
+              "https://www.wikiwand.com/en/Konaruiyeh",
+              "Konaruiyeh - Wikiwand"
+            ],
+            [
+              "https://alchetron.com/Konaruiyeh",
+              "Konaruiyeh - Alchetron, The Free Social Encyclopedia"
+            ],
+            [
+              "https://everything.explained.today/Konaruiyeh/",
+              "Konaruiyeh Explained"
+            ],
+            [
+              "https://ur.wikipedia.org/wiki/%DA%A9%D9%86%D8%A7%D8%B1%D9%88%D8%A6%DB%8C%DB%81",
+              "\u06a9\u0646\u0627\u0631\u0648\u0626\u06cc\u06c1 - \u0622\u0632\u0627\u062f \u062f\u0627\u0626\u0631\u06c3 \u0627\u0644\u0645\u0639\u0627\u0631\u0641\u060c \u0648\u06cc\u06a9\u06cc\u067e\u06cc\u0688\u06cc\u0627"
+            ]
+          ],
+          "capture_path": "research/location-hints-20261023-probe/simpleqa-1232-1.json",
+          "sha256": "012e7c8391df165232129e737181019cad8afddd58a72488041bedc1ca916ee6"
+        }
+      ]
+    },
+    {
+      "id": "simpleqa-2010",
+      "question": "What is the name of the sculptor who created the c. 1680 sculpture depicting Ceres in the Belvoir Castle Sculpture Garden in Leicestershire, England?",
+      "hints": [
+        "sculptor of ceres sculpture",
+        "ceres statue creator"
+      ],
+      "variants": [
+        {
+          "query": "sculptor of ceres sculpture",
+          "status": 200,
+          "error": "",
+          "links": [
+            [
+              "https://en.wikipedia.org/wiki/Ceres_(sculpture)",
+              "Ceres (sculpture) - Wikipedia"
+            ],
+            [
+              "https://grokipedia.com/page/ceres_sculpture",
+              "Ceres (sculpture) \u2014 Grokipedia"
+            ],
+            [
+              "https://collections.louvre.fr/ark:/53355/cl010095546",
+              "C\u00e9r\u00e8s - Louvre site des collections"
+            ],
+            [
+              "https://www.metmuseum.org/art/collection/search/206711",
+              "Ceres - French, Paris - The Metropolitan Museum of Art"
+            ],
+            [
+              "https://www.wikiwand.com/en/Ceres_(sculpture)",
+              "Ceres (sculpture) - Wikiwand"
+            ],
+            [
+              "https://collections.louvre.fr/ark:/53355/cl010092049",
+              "C\u00e9r\u00e8s - Louvre site des collections"
+            ],
+            [
+              "https://www.artrenewal.org/artworks/c-and-233r-and-232s/jacques-augustin-pajou/15784",
+              "C\u00e9r\u00e8s by Jacques-Augustin Pajou - Art Renewal Center"
+            ],
+            [
+              "https://www.cultura.gob.es/mnromano/en/colecciones/nuestras-colecciones/seleccion-piezas/ceres.html",
+              "Ceres - Museo Nacional de Arte Romano | Ministerio de Cultura"
+            ]
+          ],
+          "capture_path": "research/location-hints-20261023-probe/simpleqa-2010-0.json",
+          "sha256": "9f4f203691c79c7996aef9555327f0d0a505bc71371f23c1e1eb91590fadea08"
+        },
+        {
+          "query": "sculptor of ceres sculpture Belvoir Castle Garden",
+          "status": 200,
+          "error": "",
+          "links": [
+            [
+              "https://historicengland.org.uk/listing/the-list/list-entry/1180136",
+              "Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of ..."
+            ],
+            [
+              "https://britishlistedbuildings.co.uk/101180136-sculpture-depicting-ceres-in-belvoir-castle-sculpture-garden-one-of-seven-statues-belvoir",
+              "Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of ..."
+            ],
+            [
+              "https://www.thewrennreport.co.uk/building/E60000089-f0faa82c-704f-448a-adfe-17278c2ad71c/sculpture-depicting-ceres-in-belvoir-castle-sculpture-garden-one-of-seven-statue",
+              "Sculpture Depicting Ceres in Belvoir Castle Sculpture Garden (One of ..."
+            ],
+            [
+              "https://www.wikidata.org/wiki/Q17541704",
+              "Sculpture Depicting Ceres In Belvoir Castle Sculpture Garden (one Of ..."
+            ],
+            [
+              "https://historicengland.org.uk/images-books/photos/item/IOE01/04527/03",
+              "Sculpture Depicting Ceres In Belvoir Castle Sculpture Garden (One Of ..."
+            ],
+            [
+              "https://www.flickr.com/photos/30120216@N07/52245858101",
+              "[111137] Belvoir Castle : Gardens - Ceres - Flickr"
+            ],
+            [
+              "https://www.geograph.org.uk/photo/7174153",
+              "Belvoir Castle and gardens [18] &copy; Michael Dibb"
+            ],
+            [
+              "https://collections.louvre.fr/ark:/53355/cl010092049",
+              "C\u00e9r\u00e8s - Louvre site des collections"
+            ]
+          ],
+          "capture_path": "research/location-hints-20261023-probe/simpleqa-2010-1.json",
+          "sha256": "561c0f1efb81245ecc1b2ee9ef9ec6d1c49aefaf49cce98c4793f6328d6f95bc"
+        }
+      ]
+    }
+  ]
+}
